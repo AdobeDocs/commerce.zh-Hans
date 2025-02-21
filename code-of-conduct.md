@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -9,8 +9,7 @@ ht-degree: 0%
 
 ## 我们的承诺
 
-为营造开放及友好的环境，我们将
-撰稿人和维护人员承诺参与我们的项目并
+为了营造开放友好的环境，参与者和维护者承诺参与我们的项目并
 我们的社区为所有人提供无骚扰的体验，无论年龄、身体如何
 体型、残疾、种族、性别认同和性别表现、经验水平、
 国籍、个人外貌、种族、宗教或性身份和
@@ -29,8 +28,7 @@ ht-degree: 0%
 
 参与者不可接受的行为示例包括：
 
-* 使用性语言或性图像，以及不受欢迎的性关注或
-预付款
+* 使用性语言或性图像，以及进行性骚扰
 * 发表挑衅、侮辱/贬损的评论，进行人身攻击或政治攻击
 * 公开或私下骚扰
 * 发布他人的私人信息，例如实物或电子信息
@@ -63,7 +61,7 @@ ht-degree: 0%
 
 虐待、骚扰或其他不可接受的行为可能包括
 通过Grp-opensourceoffice@adobe.com联系项目团队进行报告。 全部
-我们将审查和调查投诉，并将做出回应，
+审核和调查投诉，并做出响应，
 被认为在该情况下是必要和适当的。 项目团队是
 有义务对事件举报者保密。
 具体执行政策的更多细节可能会单独发布。
@@ -74,5 +72,5 @@ ht-degree: 0%
 
 ## 归因
 
-本行为准则改编自[参与者公约](https://contributor-covenant.org)版本1.4，
-可在[https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)中获取
+本行为准则改编自[参与者公约](https://www.contributor-covenant.org/)版本1.4，
+可在[https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/)中获取。

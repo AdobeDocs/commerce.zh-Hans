@@ -1,14 +1,17 @@
 ---
-cloud: Experience Cloud
 solution: Commerce
-product: commerce
+solution-title: Commerce
+product: magento
 type: Documentation
+audience: end-user
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce.zh-Hans
-hide: true
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+index: y
+role: User
+feature-set: Commerce
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
@@ -16,6 +19,21 @@ ht-degree: 0%
 
 # 元数据供内部使用
 
-metadata.md文件包含存储库级别的元数据，这些元数据会传送到存储库中的用户指南TOC.md文件。 如果要更改任何用户指南的metadata.md内容，请在任何TOC.md文件中进行更改。
+`metadata.md`文件包含存储库级别的元数据，这些元数据将传递到存储库中的用户指南`TOC.md`文件。 如果要更改任何用户指南的metadata.md内容，请在任意`TOC.md`文件中进行更改。
 
-查看[元数据](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html)以获取&#x200B;**解决方案**、**产品**&#x200B;和&#x200B;**类型**&#x200B;的有效值列表。
+| 元数据 | 作用 |
+|--- |--- |
+| solution-title | 在文章标题中用作链接 |
+| solution-hub-url | 打开helpx中心页面 |
+| 解决方案图标 | 在解决方案标题旁边显示解决方案图标。 尚未实施 |
+| getting-started-url | 指向helpx快速入门页面的链接 |
+| tutorials-url | 指向视频教程的链接 — helpx教程或KT教程 |
+| mini-toc-levels | 确定右边栏中显示的标题级别数。 默认值为2 |
+| git-repo | 指定主存储库的位置以供内部使用 |
+
+在TOC.md文件中
+
+| 元数据 | 作用 |
+|--- |--- |
+| user-guide-title | 在文章标题中用作链接 |
+| user-guide-url | 打开helpx中心页面 |

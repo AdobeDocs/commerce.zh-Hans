@@ -1,57 +1,53 @@
 ---
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 5%
+source-wordcount: '403'
+ht-degree: 6%
 
 ---
-# Contribute文章
+# Adobe Commerce用户文档
 
 我们欢迎社区成员以及文档团队以外的Adobe员工踊跃参与。
 
-## Adobe打开Source行为准则
+## Adobe Open Source行为准则
 
 本项目已采用 [Adobe 开源行为准则](code-of-conduct.md)或 [.NET Foundation 行为准则](https://dotnetfoundation.org/code-of-conduct)。有关更多信息，请参阅[贡献](contributing.md)文章。
 
-## 如何向Adobe内容投稿
+## 关于您对Adobe内容的投稿
 
-**如果您不是Adobe员工**，则可以提交外部社区贡献。 社区贡献内容会导入到我们的内部系统中，并在公共存储库中进行编辑和合并。 然后，公共存储库将与最新更改同步并合并到专用存储库中。
+请参阅[Adobe文档参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
-**如果您是Adobe员工**，则可以直接向专用[AdobeGitHub存储库](https://git.corp.adobe.com/AdobeDocs/)投稿。 有关详细信息，请参阅适用于Adobe员工的Adobe Experience League Authoring Guide 。
-
-## 外部参与者
+您的参与方式取决于您的身份以及您希望参与的更改类型：
 
 ### 次要更改
 
-如果您要投稿小幅度更新：
-
-1. 导航到要编辑的主题。
-1. 在“此内容是否有帮助？”中 浏览器窗口底部显示的横幅单击&#x200B;**详细的反馈选项**。
-1. 单击&#x200B;**建议编辑**，并在GitHub UI中提交包含所做更改的拉取请求(PR)。
-
-   有关详细信息，请参阅常规[Adobe文档参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+如果您出于善意而想要对文章进行次要更新，请访问文章，并单击文章中的&#x200B;**编辑**&#x200B;链接以转到文章所对应的GitHub源。 然后，只需使用GitHub UI即可进行更新。 有关详细信息，请参阅常规的[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 您为此存储库中的文档和代码示例提交的小幅度更正或说明受Adobe使用条款的约束。
 
-### 社区中的重大更改或新主题
+### 社区成员的重大更改或新文章
 
-如果您是Adobe社区的一员，并且希望创建新主题或提交重大更改，请使用适用的Git存储库中的&#x200B;**问题**&#x200B;选项卡提交问题以开始与文档团队的对话。 在就计划达成一致后，您将与Adobe编写器一起发布修订。
+如果您是Adobe社区的一员，并且希望创建新文章或提交重大更改，请使用Git存储库中的“问题”选项卡来提交问题，从而开始与文档团队的对话。 在就计划达成共识后，您需要与员工合作，通过公共和专用存储库中的工作组合来帮助引入新内容。
 
-**注意：**&#x200B;如果您提交了对文档和代码示例进行重大更改的拉取请求，您将在拉取请求中看到一条消息，要求您提交在线贡献许可协议(CLA)。 我们需要您填写在线表单，然后才能审阅您的拉取请求。
+<!--
+If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
+-->
 
-### 工具
+### Adobe员工做出的主要更改
+
+如果您是来自Adobe Experience Cloud解决方案产品团队的技术文档撰稿人、项目经理或开发人员，并且您的工作就是撰写或创作技术文章，那么您应当使用位于`https://git.corp.adobe.com/AdobeDocs`的专用存储库。
+
+<!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+
+## 工具和设置
 
 社区参与者可以使用GitHub UI进行基本编辑或创建存储库分支以进行重大更改。
 
-有关详细信息，请参阅[Adobe文档参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+有关详细信息，请参阅[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
-## 内部参与者
+## 如何使用Markdown格式化主题
 
-如果您是来自Adobe Experience Cloud解决方案产品团队的技术文档撰稿人、项目经理或开发人员，并且您的工作就是撰写或创作技术文章，请使用[专用存储库](https://git.corp.adobe.com/AdobeDocs)。
-
-## 设置主题格式
-
-此存储库中的所有文章都使用GitHub风格的Markdown。 如果您不熟悉Markdown，请参阅：
+此存储库中的所有文章都使用GitHub风格的标记。 如果您不熟悉Markdown，请参阅：
 
 * [标记基础知识](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [可打印的Markdown速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
