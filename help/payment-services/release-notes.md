@@ -2,9 +2,9 @@
 title: '[!DNL Payment Services]发行说明'
 description: 查看发行说明，了解所有 [!DNL Payment Services] 发行版本的信息。
 feature: Payments, Release Notes
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
 workflow-type: tm+mt
-source-wordcount: '3344'
+source-wordcount: '3392'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,24 @@ _2021年6月28日_
 ![新](../assets/new.svg)<!-- Issue PAY-2761 -->您现在可以通过使用“列”设置控件显示或隐藏列，自定义在[订单付款状态报表](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns)和[付款报表](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns)中显示的数据。
 
 +++
+
+## v2.10.3
+
+_2025年2月24日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![已修复问题](../assets/fix.svg)<!-- PAY-xxxx -->已改进整体稳定性和性能。
+
+![已修复问题](../assets/fix.svg)<!-- PAY-xxxx -->一般改进和优化。 修复了v2.10.2中的关键错误。
+
+## v2.10.2
+
+_2025年2月21日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![已知问题](../assets/bug.svg)<!-- PAY-xxxx -->包含可能影响稳定性和性能的严重错误。 Adobe建议升级到v2.10.3而不是使用此版本(v2.10.2)。
 
 ## v2.10.1
 
