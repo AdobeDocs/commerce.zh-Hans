@@ -2,9 +2,10 @@
 title: 边界和限制
 description: 了解 [!DNL Live Search] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -64,7 +65,6 @@ ht-degree: 0%
 ## 同义词
 
 - [!DNL Live Search]在每个存储视图中最多可管理200个[同义词](synonyms.md)。
-- 多词同义词可能无法始终按预期工作。 请务必先在暂存环境中测试这些同义词，然后再在生产中使用它们，因为它们可能会对相关性产生负面影响。
 
 ## 类别促销
 

@@ -1,7 +1,8 @@
 ---
 title: 添加同义词
 description: 添加 [!DNL Live Search] 同义词以改进对搜索请求的响应。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -30,7 +31,6 @@ ht-degree: 0%
 1. 接受默认的&#x200B;**双向**&#x200B;选项。
 
    ![添加双向同义词](assets/synonym-add-two-way.png)
-
 
 1. 输入要匹配的&#x200B;**关键字**&#x200B;词或短语。
 1. 输入要作为关键字的同义词添加的&#x200B;**扩展**术语。 用逗号分隔多个术语。
