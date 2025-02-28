@@ -3,9 +3,10 @@ title: '[!DNL SaaS Data Export Extension]发行说明'
 description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信息。
 feature: Services, Release Notes
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
+source-git-commit: 7e19d42f4e064cfc4efd7c275546725795b60310
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -27,6 +28,10 @@ ht-degree: 0%
 
 ## 当前主要版本
 
+## 103.3.20发行版
+
+![修复](../assets/fix.svg)通过改进与目录数据导出cron作业失败相关的错误消息传送功能，修复了`cron.log`中无法跟踪的`BulkException`错误。<!--MDEE-966-->
+![修复](../assets/fix.svg)提高了产品重新同步过程在拥有大量存储视图的实例上的性能。<!--MDEE-974-->
 
 ## 103.3.19发行版
 
