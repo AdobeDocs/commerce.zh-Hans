@@ -1,9 +1,10 @@
 ---
 title: 创建新推荐
 description: 了解如何创建产品推荐单元。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -81,6 +82,10 @@ _推荐单元_
    * **另存为草稿**&#x200B;以便稍后编辑推荐单元。 您无法修改处于草稿状态的推荐单元的页面类型或推荐类型。
 
    * **激活**&#x200B;以在您的店面启用推荐单元。
+
+>[!IMPORTANT]
+>
+>某些浏览器可能会阻止阻止阻止产品推荐按预期工作的关键脚本。
 
 ## 就绪指示器
 

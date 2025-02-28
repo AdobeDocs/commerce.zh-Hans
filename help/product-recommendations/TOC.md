@@ -4,7 +4,7 @@ user-guide-description: 本指南提供了使用Adobe Commerce中的 [!DNL Produ
 breadcrumb-title: '[!DNL Product Recommendations] 指南'
 role: Admin
 feature: Services, Recommendations
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 13%
