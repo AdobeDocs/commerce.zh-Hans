@@ -4,9 +4,10 @@ description: 了解如何为您的 [!DNL Adobe Commerce] 和 [!DNL Magento Open 
 role: User
 level: Intermediate
 feature: Payments, Checkout
-source-git-commit: 95d86654ad185b2c37a59777a29f6de1b0091ad7
+exl-id: 1d41f86a-f874-48df-9173-9cf9f07e6d79
+source-git-commit: 62b708f79ac011ef33b37f67384df7c94571ced2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,6 +52,12 @@ Payment Services在新用户引导期间为其他[可用国家/地区提供[快�
 
 有关特定于发行版和版本的详细信息，请参阅[生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)和[[!DNL Payment Services] 发行说明](release-notes.md)页面。
 
+### 哪个[!DNL Payment Services]选项适合您？
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
+
+有关设置[!DNL Payment Services]扩展的更多信息，请参阅[连接](connect.md)。
+
 ### 接受的信用卡和货币
 
 [!DNL Payment Services]接受其可用的国家/地区[的货币](#availability)。 有关详细信息，请参阅[货币配置](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html)。
@@ -71,9 +78,3 @@ Payment Services在新用户引导期间为其他[可用国家/地区提供[快�
 1. 在实时模式下激活[!DNL Payment Services]以开始处理实时付款。
 
 要获取完整说明并开始入门流程，请参阅[板载 [!DNL Payment Services]](onboard.md)。
-
-## [!DNL Payment Services]演示
-
-观看此视频以了解[!DNL Payment Services]：
-
->[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)
