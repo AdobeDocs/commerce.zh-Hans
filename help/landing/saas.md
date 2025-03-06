@@ -3,9 +3,10 @@ title: Commerce服务连接器
 description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magento Open Source实例集成到服务。
 feature: Services, Saas
 role: Admin, User
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
+source-git-commit: 5e2c32b66407585317e22649184337e2aace9bad
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -96,6 +97,8 @@ ht-degree: 0%
 - [提交支持请求](https://experienceleague.adobe.com/home?support-tab=home#support)以请求额外的测试数据空间，并指明额外数据空间的业务理由。 此请求有待审批。
 
 使用Adobe支付服务的Magento Open Source客户可能还会请求一个额外的数据空间。 在提交[支持请求](https://experienceleague.adobe.com/home?support-tab=home#support)以请求测试数据空间之前，请与付款团队联系，以请求其他数据空间。
+
+拥有多个云项目或内部部署（实时/生产）安装的客户还可以通过[提交支持请求](https://experienceleague.adobe.com/home?support-tab=home#support)，为每个项目或实例请求额外的生产和测试数据空间。
 
 ### 选择或创建SaaS项目 {#createsaasenv}
 
