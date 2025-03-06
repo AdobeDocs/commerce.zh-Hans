@@ -2,9 +2,10 @@
 title: 查看日志并排除故障
 description: 了解如何使用data-export和saas-export日志排除 [!DNL data export] 错误。
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d022756f-6e75-4c2a-9601-31958698dc43
+source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 | 日志名称 | 文件名 | 描述 |
 |-----------------| ----------| -------------|
-| SaaS数据导出日志 | `commerce-data-export.log` | 提供有关数据导出活动（如实体事件和完全重新同步触发器）的信息。  每个日志记录都具有特定的结构，并提供有关馈送、操作、状态、占用时间、进程ID和调用者的信息。 |
+| SaaS数据导出日志 | `commerce-data-export.log` | 提供有关数据导出活动的信息，如实体事件和完全重新同步触发器。  每个日志记录都具有特定的结构，并提供有关馈送、操作、状态、占用时间、进程ID和调用者的信息。 |
 | SaaS数据导出错误日志 | `data-export-errors.log` | 提供在数据同步过程中发生的错误消息和栈栈跟踪。 |
 | SaaS导出日志 | `saas-export.log` | 提供有关发送到Commerce SaaS服务的数据的信息。 |
 | SaaS导出错误日志 | `saas-export-errors.log` | 提供有关将数据发送到Commerce SaaS服务时发生的错误的信息。 |
@@ -36,8 +37,8 @@ ht-degree: 0%
    "feed": "<feed name>",
    "operation": "<executed operation>",
    "status": "<status of operation>",
-   "elapsed": "<time elaspsed from script run>",
-   "pid": "<proccess id who executed `operation`>",
+   "elapsed": "<time elapsed from script run>",
+   "pid": "<process id that executed `operation`>",
    "caller": "<who called this `operation`>"
 } [] []
 ```
@@ -50,10 +51,10 @@ ht-degree: 0%
 
 | 操作 | 描述 | 调用方示例 |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| 完全同步 | 完全同步会收集给定馈送的所有数据并将这些数据发送到SaaS。 | `bin/magento saas:resync --feed=products` |
-| 部分重索引 | 部分同步仅会收集给定馈送中更新的实体的数据并将这些数据发送到SaaS。 仅当存在更新的实体时，此日志才存在。 | `bin/magento cron:run --group=index` |
+| 完全同步 | 收集给定馈送的所有数据并将这些数据发送到SaaS。 | `bin/magento saas:resync --feed=products` |
+| 部分重索引 | 收集给定馈送中仅已更新实体的数据，并将其发送到SaaS。 仅当存在更新的实体时，此日志才存在。 | `bin/magento cron:run --group=index` |
 | 重试失败的项目 | 如果上一个同步操作因Commerce应用程序或服务器错误而失败，则将给定馈送的项目重新发送到SaaS。 仅当存在失败项目时，此日志才存在。 | `bin/magento cron:run --group=saas_data_exporter` (任何“*_data_exporter”cron组) |
-| 完全同步（旧版） | 在旧版导出模式下，给定馈送的完全同步。 | `bin/magento saas:resync --feed=categories` |
+| 完全同步（旧版） | 在旧版导出模式下，收集给定馈送的所有数据并将这些数据发送到SaaS。 | `bin/magento saas:resync --feed=categories` |
 | 部分重新索引（旧版） | 在旧版导出模式下，为给定的馈送将更新的实体发送到SaaS。 仅当存在更新的实体时，此日志才存在。 | `bin/magento cron:run --group=index` |
 | 部分同步（旧版） | 在旧版导出模式下，为给定的馈送将更新的实体发送到SaaS。 仅当存在更新的实体时，此日志才存在。 | `bin/magento cron:run --group=saas_data_exporter` (任何“*_data_exporter”cron组) |
 
@@ -123,12 +124,12 @@ Price feed full resync:
 
 ## 故障排除
 
-如果Commerce Services中的数据缺失或不正确，请检查日志，以查看在从Adobe Commerce实例同步到Commerce服务平台期间是否出现问题。 如果需要，可使用扩展日志记录将其他信息添加到日志以进行故障排除。
+如果Commerce Services中的数据缺失或不正确，请检查日志中有关在从Adobe Commerce同步到Commerce Services平台期间发生错误的消息。 如果需要，可使用扩展日志记录将其他信息添加到日志以进行故障排除。
 
-- commerce-data-export-errors.log — 如果在收集阶段发生错误
-- saas-export-errors.log — 如果在传输阶段发生错误
+- 数据导出错误日志(`commerce-data-export-errors.log`)捕获收集阶段发生的错误。
+- SaaS导出错误日志(`saas-export-errors.log`)捕获传输阶段发生的错误。
 
-如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)。
+如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
 
 ### 解决目录同步问题 {#resolvesync}
 
@@ -143,22 +144,15 @@ Price feed full resync:
 
 #### 同步未运行
 
-如果同步未按计划运行或未同步任何内容，请参阅此[知识库](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html)文章。
+如果同步未按计划运行或未同步任何内容，请参阅此[知识库](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
 
 #### 同步失败
 
-如果目录同步的状态为&#x200B;**失败**，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)。
+如果目录同步的状态为&#x200B;**失败**，请提交[支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 ## 扩展日志记录
 
-有关其他日志信息，您可以使用环境变量通过用于跟踪和疑难解答的其他数据来扩展日志。
-
-`var/log/`目录中有两个日志文件：
-
-- commerce-data-export-errors.log — 如果在收集阶段发生错误
-- saas-export-errors.log — 如果在传输阶段发生错误
-
-您可以使用环境变量通过其他数据扩展日志，以进行跟踪和故障排除。
+使用环境变量通过其他数据扩展日志，以进行跟踪和故障排除。 运行数据导出CLI命令时，将环境变量添加到命令行中，如以下示例所示。
 
 ### 检查馈送有效负荷
 
