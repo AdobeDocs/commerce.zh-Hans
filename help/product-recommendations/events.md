@@ -2,7 +2,8 @@
 title: 收集数据
 description: 了解事件如何收集 [!DNL Product Recommendations]的数据。
 feature: Services, Recommendations, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
+source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -118,14 +119,14 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 | 推荐类型 | 活动 | 页面 |
 | --- | --- | --- |
 | 查看次数最多 | `page-view`<br>`product-view` | 产品详细信息页面 |
-| 购买次数最多 | `page-view`<br>`complete-checkout` | 购物车/结帐 |
+| 购买次数最多 | `page-view`<br>`place-order` | 购物车/结帐 |
 | 添加到购物车的次数最多 | `page-view`<br>`add-to-cart` | 产品详细信息页面<br>产品列表页面<br>购物车<br>愿望清单 |
 | 查看了这个项目，也查看了那个项目 | `page-view`<br>`product-view` | 产品详细信息页面 |
 | 查看了这个项目，购买了那个项目 | 产品推荐 | `page-view`<br>`product-view` | 产品详细信息页面<br>购物车/结帐 |
 | 购买了此项，也购买了此项 | 产品推荐 | `page-view`<br>`product-view` | 产品详细信息页面 |
 | 趋势 | `page-view`<br>`product-view` | 产品详细信息页面 |
 | 转化：查看以购买 | 产品推荐 | `page-view`<br>`product-view` | 产品详细信息页面 |
-| 转化：查看以购买 | 产品推荐 | `page-view`<br>`complete-checkout` | 购物车/结帐 |
+| 转化：查看以购买 | 产品推荐 | `page-view`<br>`place-order` | 购物车/结帐 |
 | 转化：查看到购物车 | 产品推荐 | `page-view`<br>`product-view` | 产品详细信息页面 |
 | 转化：查看到购物车 | 产品推荐 | `page-view`<br>`add-to-cart` | 产品详细信息页面<br>产品列表页面<br>购物车<br>愿望清单 |
 

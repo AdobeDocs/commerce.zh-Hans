@@ -2,7 +2,8 @@
 title: '[!DNL Live Search]个事件'
 description: 了解事件如何收集 [!DNL Live Search]的数据。
 feature: Services, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: a9f4f254-d8ff-46f1-8deb-a75b90d70d52
+source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 | 排名策略 | 活动 | 页面 |
 | --- | --- | --- |
 | 查看次数最多 | `page-view`<br>`product-view` | 产品详细信息页面 |
-| 购买次数最多 | `page-view`<br>`complete-checkout` | 购物车/结帐 |
+| 购买次数最多 | `page-view`<br>`place-order` | 购物车/结帐 |
 | 添加到购物车的次数最多 | `page-view`<br>`add-to-cart` | 产品详细信息页面<br>产品列表页面<br>购物车<br>愿望清单 |
 | 查看了这个项目，也查看了那个项目 | `page-view`<br>`product-view` | 产品详细信息页面 |
 
