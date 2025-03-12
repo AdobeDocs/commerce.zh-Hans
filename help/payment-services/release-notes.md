@@ -2,13 +2,13 @@
 title: '[!DNL Payment Services]发行说明'
 description: 查看发行说明，了解所有 [!DNL Payment Services] 发行版本的信息。
 feature: Payments, Release Notes
-source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
+exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
+source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
 workflow-type: tm+mt
-source-wordcount: '3392'
+source-wordcount: '3644'
 ht-degree: 0%
 
 ---
-
 
 # 发行说明
 
@@ -89,6 +89,33 @@ _2021年6月28日_
 ![新](../assets/new.svg)<!-- Issue PAY-2761 -->您现在可以通过使用“列”设置控件显示或隐藏列，自定义在[订单付款状态报表](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns)和[付款报表](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns)中显示的数据。
 
 +++
+
+## v2.11.0
+
+_2025年3月13日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+
+![新](../assets/new.svg)<!-- PAY-5938 -->现在，[!DNL Payment Services]允许商家管理付款设置，以最大程度地提高业务的灵活性。 此版本改进了为商家支持的地区和品牌附加[多个PayPal帐户](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts)的功能。 我们的销售团队可以提供入门链接，以设置您的网站和商店视图范围。
+
+![新](../assets/new.svg)<!-- PAY-5968 -->现在，[!DNL Payment Services]使用&#x200B;**PayPal商家标识**&#x200B;和&#x200B;**PayPal商家状态**&#x200B;值更新管理员配置。 这些值使商家能够更好地了解其PayPal帐户状态。
+
+![修复了问题](../assets/fix.svg)<!-- PAY-5816 -->通过解决在v2.9.0版本的所有订单投放中导致错误的问题，恢复了[!DNL Payment Services]中的正常订单功能。
+
+![修复了问题](../assets/fix.svg)<!-- PAY-5825 -->修复了Apple Pay迷你购物车为登录客户使用的估计总计URL不正确的问题。 现在，[!DNL Payment Services]可确保准确的总数计算。
+
+![修复了问题](../assets/fix.svg)<!-- PAY-5826 -->通过解决在将报价状态更改为`inactive`时导致HTTP 500错误的问题，提高了订单管理的可靠性。
+
+![修复了问题](../assets/fix.svg)<!-- PAY-5849 -->修复了`LineItemProvider`引发的小数数量低于1的异常的问题。 现在，[!DNL Payment Services]为小数数量提供了更好的支持。
+
+![修复了问题](../assets/fix.svg)<!-- PAY-5868 -->修复了结账过程中的礼品卡金额错误。 [!DNL Payment Services]现在可以确保在结账过程中获得准确的值。
+
+![修复了问题](../assets/fix.svg)<!-- PAY-5911 -->解决了使用非[!DNL Payment Services]联机付款方式下订单的发货创建过程中出现的错误，提高了整体可靠性。
+
+![已修复问题](../assets/fix.svg)<!-- PAY-5954 --> [!DNL Payment Services]现在通过解决在钱包中选择其他信用卡时Apple Pay无法下订单的问题，提供了更顺畅的结账体验。
+
+![已修复问题](../assets/fix.svg)<!-- PAY-5971 --> 当Apple Pay失败时，[!DNL Payment Services]不再将客户重定向到订单审核页面，从而防止不必要的结账中断。
 
 ## v2.10.3
 
