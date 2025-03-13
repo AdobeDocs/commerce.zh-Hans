@@ -2,9 +2,10 @@
 title: 将数据与SaaS数据导出同步
 description: 了解 [!DNL SaaS Data Export] 如何在Adobe Commerce实例和连接的SaaS服务之间收集并同步数据。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
+source-git-commit: 55c433f36b122813e8fc9136a7efbb869246b7f5
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -79,7 +80,7 @@ SaaS数据导出支持三种同步类型：完全同步、部分同步和重试�
 
 - 管理员用户可以查看和跟踪同步进度，并从[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)获取有关数据的信息。
 
-- 有权访问Commerce应用程序服务器的开发人员、系统集成商或管理员可以使用Adobe Commerce命令行工具(CLI)管理同步过程和数据馈送。 请参阅[数据导出命令引用](data-export-cli-commands.md)。
+- 有权访问Commerce应用程序服务器的开发人员、系统集成商或管理员可以使用Adobe Commerce命令行工具(CLI)管理同步过程和数据馈送。 请参阅[使用Commerce CLI管理同步操作](data-export-cli-commands.md)。
 
 ### 验证Commerce应用程序配置
 

@@ -4,9 +4,9 @@ user-guide-description: 本指南提供了有关Adobe Commerce SaaS服务使用 
 breadcrumb-title: SaaS服务的[!DNL Data Export]指南
 role: Admin
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 54474408897c2b8462a064400fa53a2e9040db47
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '78'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 - 导出计划和性能{#performance}
    - [估计数据量及传输时间](estimate-data-volume-sync-time.md)
    - [提高导出性能](customize-export-processing.md)
-- [CLI命令参考](data-export-cli-commands.md)
+- [使用Commerce CLI同步馈送](data-export-cli-commands.md)
 - [查看日志并排除故障](troubleshooting-logging.md)
 - [管理SaaS数据导出扩展](manage-extension.md)
 - 可扩展性{#extensibility}
