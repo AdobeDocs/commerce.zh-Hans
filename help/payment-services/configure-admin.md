@@ -4,9 +4,10 @@ description: 安装后，您可以在商店配置管理员中配置 [!DNL Paymen
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: a4da36e2-4316-42d5-ae30-cf078f440444
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -34,6 +35,7 @@ ht-degree: 0%
    >
    > 如果您需要在Commerce Services Connector中更改数据空间ID，则需要重置[!DNL Payment Services] ID。 单击&#x200B;**重置付款服务ID**&#x200B;以重置沙盒或生产ID。 如果重置[!DNL Payment Services] ID，则必须重新载入。
 
+1. 首次访问[!DNL Payment Services]仪表板后，PayPal会自动提供您的&#x200B;**[!UICONTROL PayPal Merchant ID]**&#x200B;和&#x200B;**[!UICONTROL PayPal Merchant Status]**&#x200B;值。
 1. 对于&#x200B;**Soft Descriptor**（自定义值，显示在客户交易银行对帐单上，以便在商店/品牌/目录之间进行描述），请在文本字段中添加自定义文本（最多22个字符），替换`Soft descriptor`或现有值。
 1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;保存更改。
 1. 导航到&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以刷新所有无效缓存。
@@ -48,6 +50,8 @@ ht-degree: 0%
 | [!UICONTROL Method] | 商店视图 | 为存储设置方法或环境。 选项： [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | 商店视图 | 您的沙盒商家ID，在沙盒载入期间自动生成。 |
 | [!UICONTROL Payment Services Production ID] | 商店视图 | 您的生产商家ID，在生产（实时）载入期间自动生成。 |
+| [!UICONTROL PayPal Merchant ID] | 商店视图 | 您在创建PayPal帐户时生成的唯一PayPal商家帐户ID。 |
+| [!UICONTROL PayPal Merchant Status] | 商店视图 | 您的PayPal商家ID的状态。 |
 | [!UICONTROL Soft Descriptor] | 网站或商店视图 | 向您的网站和商店视图添加软描述符，以将信息添加到描述品牌、商店或产品线的客户交易。 |
 
 ## [!UICONTROL Credit Card Fields]
