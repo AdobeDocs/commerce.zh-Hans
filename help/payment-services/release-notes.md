@@ -3,9 +3,9 @@ title: '[!DNL Payment Services]发行说明'
 description: 查看发行说明，了解所有 [!DNL Payment Services] 发行版本的信息。
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
+source-git-commit: 0098e5bab2ea72f9abd7c846d49d5ee4d523ad73
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3681'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,14 @@ _2021年6月28日_
 ![新](../assets/new.svg)<!-- Issue PAY-2761 -->您现在可以通过使用“列”设置控件显示或隐藏列，自定义在[订单付款状态报表](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns)和[付款报表](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns)中显示的数据。
 
 +++
+
+## v2.11.1
+
+_2025年3月14日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![修复了问题](../assets/fix.svg)<!-- PAY-5849 -->修复了签出期间影响[行项目](line-items.md)的问题。 现在，[!DNL Payment Services]已改进&#x200B;**行项目**&#x200B;的结账过程可靠性。 如果您遇到类似问题，请联系您的[!DNL Payment Services]销售代表寻求帮助。
 
 ## v2.11.0
 
