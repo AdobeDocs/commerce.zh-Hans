@@ -1,16 +1,18 @@
 ---
 title: 设置您的店面
-description: 了解如何运行基架工具以设置您的Adobe Commerce as a Cloud Service店面。
+description: 了解如何运行基架工具来设置 [!DNL Adobe Commerce as a Cloud Service] 店面。
 role: Developer
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-
 # 设置您的店面
+
+{{accs-early-access}}
 
 以下步骤演示了如何使用`aio commerce init`命令快速设置由Edge Delivery提供支持的Adobe Commerce店面。 此过程将设置以下内容：
 

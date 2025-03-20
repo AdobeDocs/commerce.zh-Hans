@@ -1,18 +1,20 @@
 ---
 title: 分担责任
-description: 了解您的Adobe Commerce as a Cloud Service项目中涉及的每一方的安全责任。
+description: 了解 [!DNL Adobe Commerce as a Cloud Service] 项目中涉及的每一方的安全责任。
 role: Admin, Architect, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-
 # 分担责任的安全性和运营模式
 
-Adobe Commerce as a Cloud Service是一项按需提供的服务，它依赖于共同负责的安全性和运营模型。 这些职责由Adobe和客户分担。 各方对保护和运行Adobe Commerce应用程序负有各自的责任。
+{{accs-early-access}}
+
+[!DNL Adobe Commerce as a Cloud Service]是一项按需服务，它依赖于分担责任的安全性和操作模型。 这些职责由Adobe和客户分担。 各方对保护和运行Adobe Commerce应用程序负有各自的责任。
 
 >[!BEGINSHADEBOX]
 
@@ -33,8 +35,8 @@ Adobe Commerce as a Cloud Service是一项按需提供的服务，它依赖于�
 | 定义后端CDN WAF规则 | RA | |
 | 部署后端平台WAF规则 | RA | |
 | 部署后端CDN WAF规则 | RA | |
-| 修复Adobe Commerce as a Cloud Service中的核心错误 | RA | I |
-| 发布Adobe Commerce as a Cloud Service基础架构修补程序 | RA | |
+| 正在修复[!DNL Adobe Commerce as a Cloud Service]中的核心错误 | RA | I |
+| 正在发布[!DNL Adobe Commerce as a Cloud Service]基础结构修补程序 | RA | |
 | 扩展（基础架构） | RA | |
 | 缩放（核心应用程序） | RA | |
 | 集成外部应用程序 | | RA |
