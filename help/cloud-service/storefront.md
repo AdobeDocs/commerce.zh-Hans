@@ -3,9 +3,9 @@ title: 设置您的店面
 description: 了解如何运行基架工具来设置 [!DNL Adobe Commerce as a Cloud Service] 店面。
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 7f7a674b856090bd02752a9e2ad29475b2b56fcf
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -102,13 +102,11 @@ ht-degree: 0%
 
 1. 输入要创建的存储库的名称。
 
-1. 选择要使用的模板，例如`adobe-commerce/adobe-demo-store`。
-
 1. 选择以下选项之一：
 
-   * **使用Adobe的演示实例（默认端点）** — 使用Adobe的示例Commerce实例。
+   * **使用演示Adobe Commerce租户** — 使用演示租户。
       * 如果选择此选项，则系统会提示您在一个浏览器窗口中安装AEM代码同步机器人。 您必须指定您创建的存储库并授权机器人。 返回到CLI并输入`y`以确认AEM代码同步机器人的安装。
-   * **选择可用的API (Mesh -> SaaS)** — 选择所选组织中的现有Commerce实例。
+   * **选择可用的Adobe Commerce租户** — 在所选组织中选择现有的Commerce租户。
       * 如果选择此选项，则必须选择要在其中创建网格的项目和工作区。
 
    >[!NOTE]
