@@ -1,9 +1,10 @@
 ---
 title: Facet
 description: '[!DNL Live Search]个Facet使用属性值的多个维度作为搜索条件。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -15,6 +16,8 @@ ht-degree: 0%
 [!DNL Live Search]使用`productSearch`查询，该查询返回刻面和[!DNL Live Search]特有的其他数据。 有关代码示例，请参阅开发人员文档中的[`productSearch`查询](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)。
 
 ![已过滤的搜索结果](assets/storefront-search-results-run.png)
+
+在一个Facet中，购物者可以选择多个选项，例如“样式”下的“基本”和“紧靠”，搜索结果将更新以仅显示这些样式。 同样，如果购物者在多方面选择选项，例如“样式”下的“基本”和“气候”下的“室内”，则搜索结果会更新以显示所选样式和所选气候。
 
 任何定义的Facet都可以用作URL参数，并将根据参数值过滤结果： `http://yourstore.com?brand=acme&color=red`。
 

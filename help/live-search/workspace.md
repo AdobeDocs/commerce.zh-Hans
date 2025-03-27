@@ -1,7 +1,8 @@
 ---
 title: 设置Live Search
 description: ' [!DNL Live Search] 工作区用于配置、管理和监视搜索性能。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
@@ -29,7 +30,7 @@ ht-degree: 0%
 
 ### 医疗保健客户
 
-如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Live Search]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Live Search]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services)。
+如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Live Search]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Live Search]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)。
 
 ## 设置范围
 
