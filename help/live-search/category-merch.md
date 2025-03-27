@@ -2,9 +2,10 @@
 title: 类别促销
 description: 使用 [!DNL Live Search] 类别促销以获得更快的购物体验。
 gourl: ls_catalog_merchandising
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
+source-git-commit: e5e5443e0bdb12e4774856336157067b4ff6eb7c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -140,3 +141,7 @@ ht-degree: 0%
 1. 在“手动排名”下，单击&#x200B;**选择事件**&#x200B;菜单，然后选择满足相关条件时要发生的事件。
 1. 输入要影响的产品的名称。 产品随您的键入一起推荐。
 1. 对于多个事件，选择满足条件时要触发的任何其他事件。
+
+>[!NOTE]
+>
+>当在店面中打开特定类别并且存在该类别的规则时，将应用规则。 对于类别促销规则，默认排序顺序为“排序依据：位置”。 如果购物者更改排序顺序，则所有隐藏、固定和隐藏的产品将不再排序。
