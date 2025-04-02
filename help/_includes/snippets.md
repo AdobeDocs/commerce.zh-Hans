@@ -1,7 +1,7 @@
 ---
-source-git-commit: 06193f394fd0feb06e74a1941cc6865216966b45
+source-git-commit: c9aae333fa9808f8f27f7a9db1a07e990bfb7912
 workflow-type: tm+mt
-source-wordcount: '20'
+source-wordcount: '23'
 ht-degree: 0%
 
 ---
@@ -11,4 +11,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本文档当前处于预发行状态，如有更改，恕不另行通知。
+>本文档描述了早期访问开发中的产品，并未反映用于正式发布的所有功能。
