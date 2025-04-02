@@ -2,7 +2,8 @@
 title: 安装和配置
 description: 了解如何安装、更新和卸载 [!DNL Product Recommendations]。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
+source-git-commit: a3c20f64c9a18e97b6c0cbc36a246e5c30f67341
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -76,22 +77,22 @@ composer require magento/module-visual-product-recommendations
 composer update magento/product-recommendations --with-dependencies
 ```
 
-要更新到主要版本，例如从3.0到4.0，您必须编辑项目的根`composer.json`文件。 （有关最新版本的信息，请参阅[发行说明](release-notes.md)。） 例如，让我们打开主`composer.json`文件并搜索`magento/product-recommendations`模块：
+要更新到主要版本，例如从5.0到6.0，您必须编辑项目的根`composer.json`文件。 （有关最新版本的信息，请参阅[发行说明](release-notes.md)。） 例如，让我们打开主`composer.json`文件并搜索`magento/product-recommendations`模块：
 
 ```json
 "require": {
     ...
-    "magento/product-recommendations": "^3.0",
+    "magento/product-recommendations": "^5.0",
     ...
 }
 ```
 
-让我们将主要版本从`3.0`增大到`4.0`：
+让我们将主要版本从`5.0`增大到`6.0`：
 
 ```json
 "require": {
     ...
-    "magento/product-recommendations": "^4.0",
+    "magento/product-recommendations": "^6.0",
     ...
 }
 ```
