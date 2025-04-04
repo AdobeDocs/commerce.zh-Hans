@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations]发行说明'
 description: Adobe Commerce中 [!DNL Product Recommendations] 的最新发行信息。
 feature: Services, Recommendations, Release Notes
 exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
-source-git-commit: 615fa2967680c16ec123d41c20019f72cfeddc60
+source-git-commit: ea7618805596ac4100f5080efe32793feea001df
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 * [!DNL Product Recommendations]中继包： `magento/product-recommendations`
 * [!DNL Product Recommendations]（可选）模块中的页面生成器支持： `magento/module-page-builder-product-recommendations`
-* 对[!DNL Product Recommendations] （可选）模块的视觉相似性推荐类型支持： `magento/module-visual-product-recommendations`
+* [!DNL Product Recommendations]（可选）模块的可视相似性推荐类型支持： `magento/module-visual-product-recommendations`
 
-为当前的主要发行版本提供支持。 提供了旧版本的发行说明以供参考。
+支持当前主要发行的版本。 提供了旧版本的发行说明以供参考。
 发行说明包括：
 
 ![新](../assets/new.svg)新功能
@@ -29,26 +29,36 @@ ht-degree: 0%
 
 ## 托管服务更新
 
-这些说明描述了在版本化版本之外发布或发现的更新或已知问题，或对托管服务的改进。
+这些说明介绍了在版本控制版本之外发布或发现的更新或已知问题，以及对托管服务的改进。
 
 _2025年1月31日_
 
-![新](../assets/new.svg)测试环境中无查询的目录数据有新的数据保留策略。 [了解更多](overview.md#catalog-data-retention-policy)。
+![新](../assets/new.svg)测试环境中无查询的目录数据有新的数据保留策略。 [了解详情](overview.md#catalog-data-retention-policy)。
 
 _2024年6月28日_
 
 ![错误](../assets/bug.svg)重新加载购物车页面时，从购物车页面上的[!DNL Product Recommendations]设备添加到购物车的产品不会从推荐产品列表中删除。
-![错误](../assets/bug.svg)从购物车中删除的产品将继续保留在`cartSkus`阵列中，直到购物车页面重新加载为止。
+![错误](../assets/bug.svg)从购物车中删除的产品将继续保留在`cartSkus`阵列中，直到重新加载购物车页面。
 
 _2023年7月18日_
 
-![新](../assets/new.svg) [!DNL Product Recommendations]现在具有GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/)查询。
+![新建](../assets/new.svg) [!DNL Product Recommendations]现在具有GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/)查询。
 
 _2023年4月25日_
 
 ![新](../assets/new.svg) [!DNL Product Recommendations]客户现在可以使用[SaaS价格索引](../price-index/price-indexing.md)。
 
 ## 当前主要版本
+
+### 6.2.0的magento/product-recommendations
+
+_2025年4月4日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"}
+
+![新](../assets/new.svg)已将`recommendations-admin-ui`的CDN URL更新到`adobe.io`域。
+
+### 先前版本
 
 ### 6.1.0的magento/product-recommendations
 
@@ -57,8 +67,6 @@ _2025年3月11日_
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新](../assets/new.svg)添加了PHP 8.4支持。
-
-### 先前版本
 
 ### 6.0.3的magento/product-recommendations
 
@@ -111,7 +119,7 @@ _2023年9月15日_
 
 * 如果`websiteCode`值包含下划线(_)，则错误返回该值。
 
-### 5.0.0个magento/product-recommendations
+### Magento/product-recommendations中的5.0.0
 
 _2023年3月20日_
 
@@ -119,20 +127,20 @@ _2023年3月20日_
 
 ![新](../assets/new.svg)已更新[!DNL Product Recommendations]以支持Adobe Commerce 2.4.6。
 ![新建](../assets/new.svg)这是一个主要版本版本。 [编辑](install-configure.md#update)项目的根`composer.json`文件。
-![新](../assets/new.svg) [!DNL Product Recommendations]现在支持Commerce中的完整[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能(以前称为“多Source清单”或MSI)。 要启用完全支持，您必须[将](install-configure.md#update)依赖项模块`commerce-data-export`更新为版本102.2.0+。
+![新](../assets/new.svg) [!DNL Product Recommendations]现在支持Commerce（以前称为多源清单，或MSI）中的完整[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能。 要启用完全支持，必须将依赖关系模块`commerce-data-export`更新](install-configure.md#update)到版本102.2.0及更高版本。[
 
-### magento/product-recommendations的4.0.1
+### magento/product-recommendations中的4.0.1
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![修复](../assets/fix.svg)以前，[!DNL Product Recommendations]在将显示货币转换为非默认货币时会显示错误。 现在可以正常切换货币。
 
-### magento/product-recommendations的4.0.0
+### Magento/product-recommendations中的4.0.0
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新](../assets/new.svg)添加了[就绪指示器](create.md)，以帮助您可视化每个推荐类型的培训进度。
-![新建](../assets/new.svg)这是一个主要版本版本。 [编辑](install-configure.md#update)项目的根`composer.json`文件。 此版本还要求您在安装和配置[!DNL Product Recommendations]时提供两个API密钥： [生产密钥和沙盒密钥](../landing/saas.md)。
+![新](../assets/new.svg)添加了[就绪性指示器](create.md)，以帮助您直观地了解每个推荐类型的培训进度。
+![新增](../assets/new.svg)这是一个主要版本版本。 [编辑](install-configure.md#update)项目的根`composer.json`文件。 此版本还要求您在安装和配置[!DNL Product Recommendations]时提供两个API密钥： [生产密钥和沙箱密钥](../landing/saas.md)。
 
 #### 已知限制
 
@@ -183,9 +191,9 @@ _2023年3月20日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新](../assets/new.svg)添加了对Adobe客户端数据层的支持，以便跨Adobe Commerce功能和服务标准化行为数据收集。 请参阅[自述文件](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md)以了解详情。
+![新增了](../assets/new.svg)对Adobe客户端数据层的支持，以标准化跨Adobe Commerce功能和服务的行为数据收集。 请参阅[自述文件](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md)以了解详细信息。
 
-### 3.2.6的magento/product-recommendations
+### Magento/product-recommendations中的3.2.6
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
@@ -204,20 +212,20 @@ _2023年3月20日_
 
 ![修复](../assets/fix.svg)修复了在索引产品属性时“无法检索可配置产品选项数据”错误
 
-### 3.2.3的magento/product-recommendations
+### Magento/product-recommendations中的3.2.3
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![修复](../assets/fix.svg)修复了目录同步期间的“无法检索可配置产品选项数据”错误
-![修复](../assets/fix.svg)修复了在启用“将存储代码添加到URL”配置时存储代码设置不正确的问题
-![修复](../assets/fix.svg)改进了对Admin Panel配置更改的检测以确保这些更改反映在目录同步数据中
+![修复](../assets/fix.svg)修复了目录同步期间出现的“无法检索可配置产品选项数据”错误
+![修复](../assets/fix.svg)修复了在启用“将商店代码添加到URL”配置时未正确设置商店代码的问题
+![修复](../assets/fix.svg)改进了对Admin Panel配置更改的检测以确保在目录同步数据中反映这些更改
 
 ### 3.2.2的magento/product-recommendations
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新](../assets/new.svg)添加了在创建时[预览推荐结果](create.md)的功能。 这可能需要您将模块更新到最新版本。
-![新](../assets/new.svg)添加了[从管理员](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)监视和管理目录同步进程的功能。
+![新](../assets/new.svg)添加了从管理员[监视和管理](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)目录同步过程的功能。
 ![新](../assets/new.svg)添加了[筛选器](filters.md)以控制推荐中显示的产品。
 ![New](../assets/new.svg)已添加[视觉相似度](type.md#visualsim)推荐类型。
 
@@ -276,7 +284,7 @@ _2023年3月20日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新](../assets/new.svg)在编辑页面生成器内容类型时添加了产品推荐名称
+![New](../assets/new.svg)在编辑页面生成器内容类型时添加了产品推荐名称
 
 ### 3.0.2 magento/product-recommendations
 
