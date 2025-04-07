@@ -2,7 +2,8 @@
 title: 开始使用 [!DNL Live Search]
 description: 从Adobe Commerce中了解 [!DNL Live Search] 的系统要求和安装步骤。
 role: Admin, Developer
-source-git-commit: 039f04814c4e0b0c31f160446c67b2689f687818
+exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
+source-git-commit: 8ebb28641e8db3b88d8f9d818da6301558ed186b
 workflow-type: tm+mt
 source-wordcount: '3122'
 ht-degree: 0%
@@ -157,7 +158,7 @@ Adobe Commerce [!DNL Live Search]和[[!DNL Catalog Service]](../catalog-service/
    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
-1. 提交更改并将更改推送到`composer.json`和`composer.lock`云项目。 [了解更多](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
+1. 提交更改并将更改推送到`composer.json`和`composer.lock`云项目。 [了解详情](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
 
    此测试版在管理员中为&#x200B;**[!UICONTROL Autocomplete]**、**[!UICONTROL Contains]**&#x200B;和&#x200B;**[!UICONTROL Starts with]**&#x200B;添加&#x200B;**[!UICONTROL Search types]**&#x200B;复选框。 它还更新了[`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) GraphQL API以包含这些新搜索功能。
 
@@ -470,7 +471,7 @@ Adobe建议直接调用SaaS API，尤其是目录服务端点。
 
 ### Inventory management
 
-[!DNL Live Search]支持Commerce中的[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能(以前称为多Source清单，或MSI)。 要启用完全支持，您必须[将](install.md#update)依赖项模块`commerce-data-export`更新为版本102.2.0+。
+[!DNL Live Search]支持Commerce中的[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能(以前称为多Source清单，或MSI)。 要启用完全支持，您必须[将](install.md#updating-live-search)依赖项模块`commerce-data-export`更新为版本102.2.0+。
 
 [!DNL Live Search]返回一个布尔值，表明产品在Inventory management中是否可用，但不包含有关哪个来源具有库存的信息。
 

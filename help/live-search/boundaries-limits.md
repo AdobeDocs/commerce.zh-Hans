@@ -3,9 +3,9 @@ title: 边界和限制
 description: 了解 [!DNL Live Search] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 - 如果产品未添加到默认共享目录，则不会显示产品。
 - 使用[类别权限](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)限制客户组：
-   - 必须将产品分配给根类别。
+   - 必须将产品分配给根类别。 (**注意：**&#x200B;您可以通过将SaaS Data Export扩展更新到103.4.0+版来移除此限制。 请参阅[管理数据导出扩展](../data-export/manage-extension.md)。
    - 必须向“未登录”客户组提供“允许”浏览权限。
    - 要将产品限制为“未登录”客户组，请转到每个类别并为每个[客户组](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)设置权限。
 - 目前不支持在PWA Studio中使用PLP小组件对B2B提供开箱即用支持。 但是，您可以[使用API](install.md#pwa-support)来实施此功能。

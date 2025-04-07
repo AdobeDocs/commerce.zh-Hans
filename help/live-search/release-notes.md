@@ -3,9 +3,9 @@ title: '[!DNL Live Search]发行说明'
 description: Adobe Commerce中 [!DNL Live Search] 的最新发行信息。
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: eb016fa8e53cfb9d035d73979495171feccb764f
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -24,17 +24,21 @@ ht-degree: 0%
 
 这些说明描述了在未发布版本控制版本或对托管服务的改进的情况下发布的更新。
 
+_2025年4月3日_
+
+![修复](../assets/fix.svg)已更新SaaS数据导出扩展以删除B2B商家的“必须将产品分配给根类别”[限制](boundaries-limits.md#b2b-and-category-permissions)。 请参阅[管理数据导出扩展](../data-export/manage-extension.md)，了解如何将SaaS数据导出扩展更新到版本103.4.0+。
+
 _2025年2月20日_
 
 ![新](../assets/new.svg) Commerce支持多词同义词。 [了解更多](synonyms-type.md#multi-word-synonym-behavior)。 仅在2月20日这一发布日期之后才支持多词同义词。 任何现有的多词同义词都需要完全重新索引才能工作，可以通过[创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)来请求此操作。
 
 _2025年1月31日_
 
-![新](../assets/new.svg)测试环境中无查询的目录数据有新的数据保留策略。 [了解更多](overview.md#catalog-data-retention-policy)。
+![新](../assets/new.svg)测试环境中无查询的目录数据有新的数据保留策略。 [了解详情](overview.md#catalog-data-retention-policy)。
 
 _2024年9月19日_
 
-![新](../assets/new.svg)发布了一个测试版，该版本支持三种新搜索功能：分层搜索、开头搜索和包含搜索。 [了解更多](install.md#install-the-live-search-beta)。
+![新](../assets/new.svg)发布了一个测试版，该版本支持三种新搜索功能：分层搜索、开头搜索和包含搜索。 [了解详情](install.md#install-the-live-search-beta)。
 
 _2024年9月4日_
 
@@ -356,7 +360,7 @@ _2023年3月14日_
 
 [!BADGE 支持]{type="信息性" tooltip="支持"}
 
-![新](../assets/new.svg) [性能](performance.md)报告仪表板提供购物者使用的搜索词的洞察信息。
+![新](../assets/new.svg) [性能](performance.md)报告仪表板可为insight提供购物者使用的搜索词。
 ![新](../assets/new.svg) [!DNL Live Search] [Storefront事件SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)提供对公共数据层的访问，该数据层包含事件发布和订阅服务以及指标。
 ![修复](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)具有用于控制可见性的`.search-autocomplete`容器的新`active`类。
 ![修复](../assets/fix.svg)在店面，[搜索词](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)页脚链接已被删除，并且其缓存已为[!DNL Live Search]安装禁用。
