@@ -4,9 +4,9 @@ description: 了解 [!DNL Adobe Commerce as a Cloud Service]的主要功能和�
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Commerce Foundation提供了一个安全的自动托管平台和自助服务功�
 
 ### 简化的入门
 
-使用Commerce Cloud Manager自助配置门户在几分钟内启动沙盒和生产实例。 您需要的所有功能(包括促销服务、Commerce Storefront和App Builder)均可自动配置并与实例集成。
+使用[!UICONTROL Commerce Cloud Manager]自助配置门户在几分钟内启动沙盒和生产实例。 您需要的所有功能(包括促销服务、Headless Commerce实例和App Builder)均可自动配置并与实例集成。
 
 请参阅[快速入门](getting-started.md)，了解如何创建和管理Commerce实例。
 

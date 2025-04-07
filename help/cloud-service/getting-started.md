@@ -3,9 +3,9 @@ title: 开始使用 [!DNL Adobe Commerce as a Cloud Service]
 description: 了解如何使用 [!DNL Adobe Commerce as a Cloud Service]。
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-source-git-commit: a1b825a819b25d9374eef169c633d54fb94ee26c
+source-git-commit: 9b90e6f79a394ec0941c9e48aee3859f0bcdedd5
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ ht-degree: 0%
 >[!ENDTABS]
 
 ## 创建实例
+
+>[!NOTE]
+>
+>在创建实例之前，贵组织的产品管理员或系统管理员必须将您添加为[!DNL Adobe Commerce as a Cloud Service]产品的用户。 有关详细信息，请参阅[添加用户和管理员](./user-management.md#add-users-and-admins)。
 
 [!DNL Adobe Commerce as a Cloud Service]实例使用基于信用的系统。 您可以创建多个实例，但每个实例都需要相对数量的积分。 您最初的积分数量取决于您的订购。
 
