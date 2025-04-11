@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: e41b6c1c51ccb77e10406aaa9e8a5b7840b4ce55
+source-git-commit: 0d69fce1d6c2fab80065870fe8cdbe73969351cb
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 >SaaS数据导出扩展是随“实时搜索”、“产品推荐”和“目录服务”一起自动安装的模块的集合。 您可以使用编辑器检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 当前主要版本
+
+## 103.4.1发行版
+
+![Fix](../assets/fix.svg)为QueryXml缓存键添加了前缀，以防止与其他模块的命名冲突。<!--MDEE-1019-->
 
 ## 103.4.0发行版
 
