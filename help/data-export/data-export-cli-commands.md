@@ -2,9 +2,9 @@
 title: 使用Commerce CLI同步馈送
 description: 了解如何使用命令行界面命令来管理Adobe Commerce SaaS服务的 [!DNL data export extension] 的馈送和进程。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 086a571b69e8ad76a912c339895409b0037642b9
+source-git-commit: 6f578dfaf3d3e77d7b541714de613025b8c789a4
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -66,30 +66,33 @@ bin/magento saas:resync --help
 
 ## `--by-ids`
 
-按其ID部分重新同步特定实体。 支持`products`、`productAttributes`和`productOverrides`馈送。
+按其ID部分重新同步特定实体。 支持`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`信息源。
 
-默认情况下，实体由产品SKU指定。 请改用`--id-type=ProductID`来使用产品ID。
+默认情况下，实体按产品SKU以逗号分隔列表进行指定。 要使用产品ID，请添加`--id-type=ProductID`选项。
 
 **示例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<SKU-1>,<SKU-2>,<SKU-3>'
+bin/magento saas:resync --feed products --by-ids='ADB102,ADB111,ADB112'
 
-bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<ID-1>,<ID-2>,<ID-3>' --id-type='productId'
+bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 ```
+
 
 ## `--cleanup-feed`
 
-在重新索引并将数据发送到SaaS之前清理馈送索引器表。 仅支持`products`、`productOverrides`和`prices`馈送。
+在重新索引并将数据发送到SaaS之前，请清理馈送表馈送索引器表。 仅支持`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`。
+
+如果与`--dry-run`选项一起使用，则该操作将对所有项目执行试运行重新同步操作。
 
 >[!IMPORTANT]
 >
->仅在环境清理后使用。 可能会导致Commerce服务中出现数据同步问题。
+>仅在环境清理后或通过`--dry-run`选项使用。 如果用于其他情况，清理操作会导致数据丢失和数据同步问题，在这些问题中，必须在Adobe Commerce中删除的项目将不会从SaaS数据空间中删除。
 
 **示例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --cleanup-feed
+bin/magento saas:resync --feed products --cleanup-feed
 ```
 
 ## `--continue-resync`
@@ -99,19 +102,39 @@ bin/magento saas:resync --feed='<FEED_NAME>' --cleanup-feed
 **示例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --continue-resync
+bin/magento saas:resync --feed productAttributes --continue-resync
 ```
 
 ## `--dry-run`
 
-运行馈送重新索引过程，但不提交到SaaS或保存到馈送表。 用于验证数据。
+在不将馈送提交到SaaS且不保存到馈送表的情况下，运行馈送重新索引过程。 此选项对于识别数据集的任何问题很有用。
 
 添加`EXPORTER_EXTENDED_LOG=1`环境变量以将有效负载保存到`var/log/saas-export.log`。
 
 **示例：**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed='<FEED_NAME>' --dry-run
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run
+```
+
+### 测试特定信息源项目
+
+通过将`--by-ids`选项与扩展日志集合一起添加来测试特定馈送项目，以查看`var/log/saas-export.log`文件中生成的有效负载。
+
+**示例：**
+
+```shell
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
+```
+
+### 测试所有馈送项目
+
+默认情况下，在`resync --dry-run`操作期间提交的信息源仅包含新项目，或以前无法导出的项目。 要在要处理的信息源中包含所有项，请使用`--cleanup-feed`选项。
+
+**示例**
+
+```shell
+bin/magento saas:resync --feed products --dry-run --cleanup-feed
 ```
 
 ## `--feed`
@@ -135,7 +158,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed='<FEED_NAME>' --dry-run
 **示例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>'
+bin/magento saas:resync --feed products
 ```
 
 ## `--no-reindex`
@@ -150,8 +173,18 @@ bin/magento saas:resync --feed='<FEED_NAME>'
 **示例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --no-reindex
+bin/magento saas:resync --feed productAttributes --no-reindex
 ```
+
+## `--id-type=ProductId`
+
+默认情况下，在将`saas:resync feed`命令与`--by-ids`选项一起使用时指定的实体由产品SKU指定。 使用`--id-type=ProductId`选项，按产品ID指定实体。
+
+```shell
+bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
+```
+
+**示例：**
 
 ## 故障排除
 
