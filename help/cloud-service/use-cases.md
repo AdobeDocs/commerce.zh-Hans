@@ -3,9 +3,9 @@ title: 用例
 description: 了解如何使用 [!DNL Adobe Commerce as a Cloud Service]完成实际用例和支持的业务方案。
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: d5935f4d080c3be1f51bf8916575a3b2f357ee22
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 1. 打开您在先决条件中创建的[店面](./storefront.md)。
 
-1. 打开文档创作。 导航到`https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`。
+1. 打开店面生成器。 导航到`https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`。
 
 1. 打开&#x200B;[!UICONTROL **索引**]&#x200B;页。
 
@@ -110,7 +110,7 @@ Adobe Commerce的情境式试验功能允许您在店面中创建和管理试验
 
 * 安装[AEM Sidekick扩展](https://www.aem.live/docs/sidekick)
 
-1. 在店面的“文档创作”视图中，选择您的索引页面，然后单击&#x200B;[!UICONTROL **复制**]。
+1. 在Storefront Builder中，选择您的索引页并单击&#x200B;[!UICONTROL **复制**]。
 
 1. 在主文件夹下创建一个&#x200B;[!UICONTROL **试验**]&#x200B;文件夹，方法是单击&#x200B;[!UICONTROL **新建**]&#x200B;按钮并选择&#x200B;[!UICONTROL **文件夹**]。
 
