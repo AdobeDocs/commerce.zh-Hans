@@ -3,9 +3,9 @@ title: '[!DNL Live Search]发行说明'
 description: Adobe Commerce中 [!DNL Live Search] 的最新发行信息。
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
+source-git-commit: 5c34bf61ee441ef20a680a4f071308d17379f49d
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2399'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 ## 托管服务更新
 
 这些说明描述了在未发布版本控制版本或对托管服务的改进的情况下发布的更新。
+
+_2025年4月21日_
+
+![修复](../assets/fix.svg)修复了价格范围过滤器的问题，以便不将等于上限范围的产品包含在结果中。 此更改与为Facet定义价格范围的方式保持一致。
 
 _2025年4月3日_
 
@@ -82,7 +86,7 @@ _2023年10月27日_
 
 _2025年3月11日_
 
-[!BADGE 支持]{type=Informative tooltip="支持"}
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![修复](../assets/fix.svg) [!DNL Live Search]现在支持运行Adobe Commerce 2.4.8-beta2的安装使用PHP 8.4。
 ![修复](../assets/fix.svg)修复了搜索适配器与`psr/http-message:2.0`不兼容的问题。
@@ -91,7 +95,7 @@ _2025年3月11日_
 
 _2025年2月13日_
 
-[!BADGE 支持]{type=Informative tooltip="支持"}
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![修复](../assets/fix.svg)修复了订单详细信息页面缺少订单编号、日期和&#x200B;**[!UICONTROL Reorder]**&#x200B;按钮的问题。
 
@@ -99,7 +103,7 @@ _2025年2月13日_
 
 _2025年1月6日_
 
-[!BADGE 支持]{type=Informative tooltip="支持"}
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![修复](../assets/fix.svg)修复了导致Adobe Commerce版本2.4.5和更低版本上的`categoryList` GraphqL查询出错的问题。
 
@@ -107,7 +111,7 @@ _2025年1月6日_
 
 _2024年7月31日_
 
-[!BADGE 支持]{type=Informative tooltip="支持"}
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![修复](../assets/fix.svg)修复了某些脚本未在签出页面上加载的问题。
 ![修复](../assets/fix.svg)修复了`composer.json`文件中的依赖项版本。
@@ -116,7 +120,7 @@ _2024年7月31日_
 
 _2024年5月31日_
 
-[!BADGE 支持]{type=Informative tooltip="支持"}
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![新](../assets/new.svg)更新了Live Search扩展以使用PLP小组件2.0.0版。
 
@@ -124,7 +128,7 @@ _2024年5月31日_
 
 _2024年5月16日_
 
-[!BADGE 支持]{type=Informative tooltip="支持"}
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ### 更新
 
@@ -134,7 +138,7 @@ _2024年5月16日_
 
 _2024年3月19日_
 
-[!BADGE 支持]{type=Informative tooltip="支持"}
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ### 新增功能
 
@@ -145,7 +149,7 @@ _2024年3月19日_
 
 _2024年2月22日_
 
-[!BADGE 支持]{type=Informative tooltip="支持"}
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ### 新增功能
 
@@ -161,7 +165,7 @@ _2024年2月22日_
 
 _2023年11月13日_
 
-[!BADGE 支持]{type=Informative tooltip="支持"}
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ### 新增功能
 
@@ -192,7 +196,7 @@ _2023年11月13日_
 
 _2023年9月15日_
 
-[!BADGE 支持]{type=Informative tooltip="支持"}
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 已添加![新](../assets/new.svg)新类别促销选项卡。 用户现在可以按类别添加智能排名和手动排名（固定、提升、隐藏、隐藏）
 ![新](../assets/new.svg)用户可以添加具有智能或手动排名的单个类别规则
@@ -221,7 +225,7 @@ _2023年9月15日_
 
 _2023年9月1日_
 
-[!BADGE 支持]{type="信息性" tooltip="支持"}
+[!BADGE 支持]{type="Informative" tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 #### 更新
 
@@ -231,7 +235,7 @@ _2023年9月1日_
 
 _2023年8月7日_
 
-[!BADGE 支持]{type="信息性" tooltip="支持"}
+[!BADGE 支持]{type="Informative" tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 #### 新增功能
 
@@ -260,7 +264,7 @@ _2023年8月7日_
 
 _2023年3月14日_
 
-[!BADGE 支持]{type="信息性" tooltip="支持"}
+[!BADGE 支持]{type="Informative" tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 #### 新增功能
 
@@ -301,7 +305,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0.5
 
-[!BADGE 支持]{type="信息性" tooltip="支持"}
+[!BADGE 支持]{type="Informative" tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![修复](../assets/fix.svg) — 当SDK资源因网络问题而不可用时，Live Search会引发错误。 此错误已修复。
 
@@ -311,7 +315,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0.4
 
-[!BADGE 支持]{type="信息性" tooltip="支持"}
+[!BADGE 支持]{type="Informative" tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![新](../assets/new.svg)实时搜索现在支持按管理员中的“显示缺货产品”设置进行筛选。 如果“显示缺货产品”设置为false，则会将`inStock = true`添加到筛选条件。
 ![修复](../assets/fix.svg)为了提高性能，已从“实时搜索”弹出窗口中删除“建议”块。 如果要替换该功能，数据仍会通过GraphQL传递。
@@ -325,7 +329,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0.3
 
-[!BADGE 支持]{type="信息性" tooltip="支持"}
+[!BADGE 支持]{type="Informative" tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![新](../assets/new.svg) Live Search现在通过遵循类别权限、共享目录和特定于客户组的定价来支持B2B功能。
 
@@ -335,7 +339,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0
 
-[!BADGE 支持]{type="信息性" tooltip="支持"}
+[!BADGE 支持]{type="Informative" tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 现有[!DNL Live Search]安装必须升级到[!DNL Live Search] 2.0.0，才能利用以下新功能、修复和改进：
 
@@ -350,7 +354,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 1.3.1
 
-[!BADGE 支持]{type="信息性" tooltip="支持"}
+[!BADGE 支持]{type="Informative" tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![Fix](../assets/fix.svg) [自定义价格属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)在配置为[Facet](facets-add.md)时不再返回错误。
 ![修复](../assets/fix.svg)修复了在没有[货币符号](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`)可用时导致错误发生的问题。
@@ -358,7 +362,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 1.3.0
 
-[!BADGE 支持]{type="信息性" tooltip="支持"}
+[!BADGE 支持]{type="Informative" tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![新](../assets/new.svg) [性能](performance.md)报告仪表板可为insight提供购物者使用的搜索词。
 ![新](../assets/new.svg) [!DNL Live Search] [Storefront事件SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)提供对公共数据层的访问，该数据层包含事件发布和订阅服务以及指标。
@@ -369,7 +373,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 1.2.0
 
-[!BADGE 支持]{type="信息性" tooltip="支持"}
+[!BADGE 支持]{type="Informative" tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![新](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md)显示推荐的产品和排名最前的搜索结果的缩略图图像，购物者将查询键入搜索框。
 ![新](../assets/new.svg) Commerce *管理员*会话在长时间键盘不活动期间保持打开状态
@@ -382,7 +386,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 1.1.0
 
-[!BADGE 支持]{type="信息性" tooltip="支持"}
+[!BADGE 支持]{type="Informative" tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![错误](../assets/bug.svg) [!DNL Live Search]服务仅支持Adobe Commerce安装的[基础货币](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration)。
 ![错误](../assets/bug.svg)添加Facet时，产品属性信息源在设置为`Update on Save`时未正确更新。 为避免此问题，请转到[索引管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)并将产品属性信息源设置为`Update by Schedule`。
