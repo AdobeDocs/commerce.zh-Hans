@@ -5,13 +5,13 @@ feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: true
 hidefromtoc: true
-source-git-commit: 1e73f4dd45114cfdcd2fef87ae0d9b2504214c6b
+exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
+source-git-commit: 79d1b862c5cc307daf93f93c03f1993dbd45aa09
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce产品解决方案
 
@@ -39,13 +39,9 @@ Adobe提供了多个解决方案来满足您电子商务业务的需求。 有�
 
 此徽章仅标识[Adobe Commerce as a Cloud Service](../cloud-service/overview.md)和[Adobe Commerce Optimizer](../optimizer/overview.md)项目的文档。 这些项目在一个云原生、完全托管的软件即服务(SaaS)解决方案中托管，Adobe在该解决方案中负责大多数操作方面，如连续更新、安全监控和可扩展性，因此客户可以专注于商业而不是基础架构。
 
-#### 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce(Adobe管理的PaaS基础架构)。"}
+#### 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}
 
-此徽章仅标识与Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)项目上的[Adobe Commerce相关的文档。 这些项目在预配置环境中托管的云原生完全托管的平台即服务(PaaS)解决方案，该解决方案具有Adobe Commerce的所有核心功能。
-
->[!NOTE]
->
->除非另有说明，否则这还包括内部项目。
+此徽章仅标识与Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)上的[Adobe Commerce和内部部署项目相关的文档。 云上的Adobe Commerce项目在预配置的环境中托管在云原生、完全托管的平台即服务(PaaS)解决方案上，该解决方案具有Adobe Commerce的所有核心功能。 本地项目托管在客户管理的基础设施上。
 
 ### 规则
 
