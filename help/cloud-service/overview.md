@@ -4,9 +4,9 @@ description: 了解 [!DNL Adobe Commerce as a Cloud Service]的主要功能和�
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
+source-git-commit: 4cd5847eee52ff43e2fae27080a5971ceb939875
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1475'
 ht-degree: 0%
 
 ---
@@ -148,6 +148,5 @@ Adobe Commerce on Cloud的典型升级过程包括创建备份、克隆实例、
 | [内容暂存](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [目录服务](../catalog-service/overview.md) | 路线图 | 一种绑定到Adobe Experience Platform的目录管理工具，允许管理大型目录。 |
 | [页面生成器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce店面](https://www.aem.live/) | 可用 | 基本的CMS允许用户使用基于文档的创作轻松创建和管理文档和网站内容。 或者，也可以使用通用编辑器，跨多个平台进行更高级的内容管理和自定义。 |
 | [付款](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | Adobe Commerce的[付款服务](../payment-services/overview.md) | 可用 | 有助于安全高效地进行交易的集成支付服务。 |
-| [共享目录](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) | [价格索引服务](../price-index/price-indexing.md) | 路线图 | 分析定价数据并根据各种因素提出产品的最佳定价策略。 |
 | [URL重写](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce店面](https://www.aem.live/) | 可用 | 基本的CMS允许用户使用基于文档的创作轻松创建和管理文档和网站内容。 或者，也可以使用通用编辑器，跨多个平台进行更高级的内容管理和自定义。 |
 | [可视化促销活动](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [目录服务](../catalog-service/overview.md) | 路线图 | 一种绑定到Adobe Experience Platform的目录管理工具，允许管理大型目录。 |
