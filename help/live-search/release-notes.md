@@ -3,9 +3,9 @@ title: '[!DNL Live Search]发行说明'
 description: Adobe Commerce中 [!DNL Live Search] 的最新发行信息。
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 5c34bf61ee441ef20a680a4f071308d17379f49d
+source-git-commit: bf36d522b45218a10bde7a383feca99bdba62aa6
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,12 @@ ht-degree: 0%
 ## 托管服务更新
 
 这些说明描述了在未发布版本控制版本或对托管服务的改进的情况下发布的更新。
+
+_2025年4月29日_
+
+![修复](../assets/fix.svg)修复了&#x200B;[**性能**](./performance.md)&#x200B;选项卡上的&#x200B;**导出到CSV**报告未包含日期范围内指定的所有数据的问题。
+![修复](../assets/fix.svg)修复了在使用搜索查询筛选器时无法保存[促销规则](./rules.md)的问题。
+![修复](../assets/fix.svg)修复了[固定产品](./facets-manage.md#pinunpin-facet)未列在结果页面顶部的问题。
 
 _2025年4月21日_
 
