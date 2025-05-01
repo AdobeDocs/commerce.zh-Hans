@@ -4,14 +4,18 @@ description: 了解如何使用 [!DNL Adobe Commerce Optimizer] 提供具有可�
 hide: true
 recommendations: noCatalog
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 67a9d89a6f50818cdef0108c66e6c8dcb76bb29c
+source-git-commit: 425c801a852de566120504563e256b0351df588e
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
 # 什么是[!DNL Adobe Commerce Optimizer]？
+
+>[!NOTE]
+>
+>本文档描述了早期访问开发中的产品，并未反映用于正式发布的所有功能。
 
 [!DNL Adobe Commerce Optimizer]通过高性能店面增强您的电子商务体验，从而增加有机流量、客户参与度和收入。
 
@@ -39,7 +43,7 @@ ht-degree: 0%
 
 - 希望保持现有后端商业系统并只转换店面体验的商家。
 - 第三方系统管理购物车和结账生命周期的企业。
-- 当前未使用Adobe Commerce的AEM客户，正在寻求一种管理其产品目录的简单方法。
+- 寻求通过第三方商业引擎管理其产品目录的简单方法的AEM客户。
 
 ## 快速导览
 
@@ -49,7 +53,7 @@ ht-degree: 0%
 >
 >此图像是[!DNL Adobe Commerce Optimizer]可能具有的外观并且可能会发生更改的示例。
 
-![[!DNL Adobe Commerce Optimizer] UI](assets/user-interface.png)
+![[!DNL Adobe Commerce Optimizer] UI](./assets/user-interface.png)
 
 >[!BEGINTABS]
 
@@ -84,9 +88,9 @@ ht-degree: 0%
 
 主要功能包括：
 
-- **第三方目录摄取** — 从任何第三方源（PIM、ERP等）摄取目录数据。 您的目录数据直接摄取到促销服务层中，这是一个SaaS组件，称为由渠道和策略（渠道和策略）提供支持的促销服务。
-- **由渠道和策略提供支持的促销服务** — 此解决方案是[!DNL Adobe Commerce Optimizer]的基础部分。 由渠道和策略提供支持的促销服务是一种高度可扩展、灵活的目录数据模型，可解锁多品牌、多业务单元和多语言用例。 这些促销服务提供构建块，商家可以利用它大规模创建和管理目录。 在[!DNL Adobe Commerce Optimizer]内，您可以通过创建最能定义业务目标的渠道和策略来管理目录。 此外，商家还可以通过产品发现、产品推荐&#x200B;和智能促销&#x200B;来提供个性化体验以促进流量和参与。 了解有关[由渠道和策略提供支持的促销服务](https://experienceleague.adobe.com/en/docs/commerce/merchandising-services/overview)的更多信息。
-- **成功量度** — 提供对商务计划性能的实时洞察。 您可以查看特定KPI的结果之前和之后，并评估更改的影响和优化以获得更好的结果。
+- **第三方目录摄取** — 从任何第三方源(您现有的Commerce目录、PIM、ERP等)摄取目录数据。 您的目录数据直接摄取到促销服务层中，这是一个SaaS组件，称为由渠道和策略（渠道和策略）提供支持的促销服务。
+- **由渠道和策略提供支持的促销服务** — 此解决方案是[!DNL Adobe Commerce Optimizer]的基础部分。 由渠道和策略提供支持的促销服务是一种高度可扩展、灵活的目录数据模型，可解锁多品牌、多业务单元和多语言用例。 这些促销服务提供构建块，商家可以利用它大规模创建和管理目录。 在[!DNL Adobe Commerce Optimizer]内，您可以通过创建最能定义业务目标的渠道和策略来管理目录。 此外，商家还可以通过产品发现、产品推荐&#x200B;和智能促销&#x200B;来提供个性化体验以促进流量和参与。 了解有关[由渠道和策略提供支持的促销服务](./merchandising/overview.md)的更多信息。
+- **之前和之后的指标(PDF)** — 提供对商业计划性能的实时分析。 您可以查看特定KPI的结果之前和之后，并评估更改的影响和优化以获得更好的结果。 结果在PDF中提供。
 - **由Edge Delivery提供支持的Commerce店面** — 通过Edge交付，您可以使用预建的具有集成商务功能的店面组件快速启动您的网站，这些组件包括产品列表页面、产品详细信息页面、购物车和结账。
 - **第三方购物车和结帐** — 使用API网格和应用程序生成器与第三方购物车和结帐系统集成。
 
@@ -94,4 +98,4 @@ ht-degree: 0%
 
 下图描述了[!DNL Adobe Commerce Optimizer]的基本架构，从目录数据摄取到促销服务、您的店面之间的关系，以及与第三方购物车和结账流程的集成。
 
-![[!DNL Adobe Commerce Optimizer]架构](assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer]架构](./assets/architecture.png)
