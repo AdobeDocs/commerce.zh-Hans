@@ -15,14 +15,14 @@ ht-degree: 0%
 >
 >本文档描述了早期访问开发中的产品，并未反映用于正式发布的所有功能。
 
-本教程演示如何设置和使用[由Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)提供支持的Adobe Commerce店面，以创建由[!DNL Adobe Commerce Optimizer]实例中的数据提供支持的高性能、可扩展且安全的Commerce店面。
+本教程演示如何设置和使用[由Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)提供支持的Adobe Commerce店面，以创建由[!DNL Adobe Commerce Optimizer]实例中的数据提供支持的高性能、可扩展且安全的Commerce店面。
 
 
 ## 先决条件
 
 * 确保您拥有可以创建存储库并配置为本地开发的GitHub帐户(github.com)。
 
-* 通过查看Adobe Commerce Storefront文档中的[概述](https://experienceleague.adobe.com/developer/commerce/storefront/get-started)，熟悉与为Adobe Edge Delivery Services创建店面相关的基本工作流程和词汇。
+* 通过查看Adobe Commerce Storefront文档中的[概述](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=zh-Hans)，熟悉与为Adobe Edge Delivery Services创建店面相关的基本工作流程和词汇。
 * 设置开发环境
 
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->此设置适用于使用[!DNL Adobe Commerce Optimizer]和Adobe Commerce Edge Delivery服务店面进行开发。 可通过适用于Adobe Commerce[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)的[App Builder和适用于Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh)的API Mesh获得用于扩展和自定义[!DNL Adobe Commerce Optimizer]解决方案的其他资源。 有关访问和使用信息，请联系您的Adobe客户代表。
+>此设置适用于使用[!DNL Adobe Commerce Optimizer]和Adobe Commerce Edge Delivery服务店面进行开发。 可通过适用于Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)的[App Builder和适用于Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh)的API Mesh获得用于扩展和自定义[!DNL Adobe Commerce Optimizer]解决方案的其他资源。 有关访问和使用信息，请联系您的Adobe客户代表。
 
 #### 安装Sidekick
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 您为[!DNL Adobe Commerce Optimizer]项目创建的店面是使用Edge Delivery Services店面样板上的Adobe Commerce的自定义版本生成的。 样板是一组文件和文件夹，它们提供了构建店面的起点。
 
-此店面设置流程是专门为[!DNL Adobe Commerce Optimizer]项目自定义的。 该流与Edge Delivery Services Storefront[&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)设置中的标准Adobe Commerce的流不同。
+此店面设置流程是专门为[!DNL Adobe Commerce Optimizer]项目自定义的。 该流与Edge Delivery Services Storefront[&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)设置中的标准Adobe Commerce的流不同。
 
 >[!NOTE]
 >
@@ -96,8 +96,8 @@ ht-degree: 0%
 
 按照Adobe Commerce店面文档中的说明，在Google云端硬盘或Sharepoint中添加共享内容文件夹，然后添加示例内容。 示例内容包括图像、文本以及组成站点的其他资源。
 
-* [创建并共享Google Drive或Sharepoint文件夹](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#create-and-share-folder)
-* [将示例内容](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#add-sample-content)加载到您的文件夹中。
+* [创建并共享Google Drive或Sharepoint文件夹](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans#create-and-share-folder)
+* [将示例内容](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans#add-sample-content)加载到您的文件夹中。
 
 ### 步骤2：创建代码存储库
 
@@ -177,7 +177,7 @@ ht-degree: 0%
 
 1. 更新店面配置文件以指向您的内容URL。
 
-   1. 打开[fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary)配置文件。
+   1. 打开[fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans#vocabulary)配置文件。
 
       ```json
       mountpoints:
@@ -487,6 +487,6 @@ https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql
 
 >[!MORELIKETHIS]
 >
->* 如果您计划使用不具有Adobe Commerce后端的[!DNL Adobe Commerce Optimizer]，请参阅[Adobe Experience Manager storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)以了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。
+>* 如果您计划使用不具有Adobe Commerce后端的[!DNL Adobe Commerce Optimizer]，请参阅[Adobe Experience Manager storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)以了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。
 ></br></br>
->* 如果您计划将[!DNL Adobe Commerce Optimizer]与Adobe Commerce后端一起使用，请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)，了解如何更新内容并配置店面组件以实现帐户管理、结账和其他功能。
+>* 如果您计划将[!DNL Adobe Commerce Optimizer]与Adobe Commerce后端一起使用，请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)，了解如何更新内容并配置店面组件以实现帐户管理、结账和其他功能。

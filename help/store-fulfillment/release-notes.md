@@ -18,19 +18,19 @@ ht-degree: 0%
 ![已修复问题](../assets/fix.svg)修复和改进
 ![已知问题](../assets/bug.svg)已知问题
 
-请参阅[即将发布的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)，了解版本计划和支持。
+请参阅[即将发布的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=zh-Hans)，了解版本计划和支持。
 
-请参阅[产品可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)，了解哪些Adobe Commerce版本支持此扩展。
+请参阅[产品可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=zh-Hans)，了解哪些Adobe Commerce版本支持此扩展。
 
 ## v1.5.0
 
 *2023年8月3日*
 
-[!BADGE 支持]{type=Informative tooltip="支持"}[Adobe Commerce 2.4.4到2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)，包括2.4.6-p1、2.4.5-p3和2.4.4-p4安全修补程序版本
+[!BADGE 支持]{type=Informative tooltip="支持"}[Adobe Commerce 2.4.4到2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=zh-Hans)，包括2.4.6-p1、2.4.5-p3和2.4.4-p4安全修补程序版本
 
 此版本包含以下更新：
 
-![新](../assets/fix.svg)更新了扩展以支持[Adobe Commerce安全修补程序版本](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html) 2.4.6-p1、2.4.5-p3和2.4.4-p4。
+![新](../assets/fix.svg)更新了扩展以支持[Adobe Commerce安全修补程序版本](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html?lang=zh-Hans) 2.4.6-p1、2.4.5-p3和2.4.4-p4。
 
 ![新](../assets/new.svg)<!-- WMTP-918 -->添加了对销售电子邮件的[异步发送](sales-emails.md)配置选项的支持。 升级到版本1.5.0的商家可以选择立即发送电子邮件（默认）或异步发送。
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
-![新](../assets/fix.svg) [!DNL Store Fulfillment]现在[与 [!DNL Adobe Commerce] 2.4.4到2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)兼容。
+![新](../assets/fix.svg) [!DNL Store Fulfillment]现在[与 [!DNL Adobe Commerce] 2.4.4到2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=zh-Hans)兼容。
 
 
 ## v1.3.0
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 此版本包含以下更新：
 
-![新](../assets/fix.svg) [!DNL Store Fulfillment]现在[与 [!DNL Adobe Commerce] 2.4.4到2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)兼容。
+![新](../assets/fix.svg) [!DNL Store Fulfillment]现在[与 [!DNL Adobe Commerce] 2.4.4到2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=zh-Hans)兼容。
 
 
 ## v1.1.0

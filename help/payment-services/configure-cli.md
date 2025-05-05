@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ### 在[!DNL Magento Open Source]上配置cron
 
-如果要在[!DNL Magento Open Source]上使用`BY SCHEDULE`索引模式，则必须配置cron。 请参阅[配置和运行cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)。
+如果要在[!DNL Magento Open Source]上使用`BY SCHEDULE`索引模式，则必须配置cron。 请参阅[配置和运行cron](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)。
 
 ### 设置索引器
 
@@ -48,13 +48,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >如果未在命令中指定任何索引器，则所有索引器都会更新为相同的值。 如果要更改特定索引器，必须在命令中列出该索引器。
 
-要了解有关手动更改索引器模式的更多信息，请参阅开发人员文档中的[配置索引器](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"}。 若要了解如何在管理员中更改它，请参阅核心用户指南中的[索引管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"}。
+要了解有关手动更改索引器模式的更多信息，请参阅开发人员文档中的[配置索引器](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"}。 若要了解如何在管理员中更改它，请参阅核心用户指南中的[索引管理](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"}。
 
 ### 手动重新索引数据
 
-您可以手动重新索引数据，而不是等待数据自动生成。 有关详细信息，请参阅[管理索引器](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}中的[重新索引](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"}。
+您可以手动重新索引数据，而不是等待数据自动生成。 有关详细信息，请参阅[管理索引器](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}中的[重新索引](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"}。
 
-当设置`BY SCHEDULE`模式时，系统跟踪更改的实体，并且cron作业会根据设置的计划更新这些实体的索引。 请参阅[配置和运行cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)中的命令行[运行cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run)，了解如何使用cron作业手动触发索引。
+当设置`BY SCHEDULE`模式时，系统跟踪更改的实体，并且cron作业会根据设置的计划更新这些实体的索引。 请参阅[配置和运行cron](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)中的命令行[运行cron](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run)，了解如何使用cron作业手动触发索引。
 
 ### 将重新索引的数据发送到付款服务
 
@@ -88,7 +88,7 @@ bin/magento saas:resync --feed [feedName]
 bin/magento cron:run --group payment_services_data_export
 ```
 
-要了解有关重新索引和索引器的更多信息，请参阅开发人员文档中的[管理索引器](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)主题。
+要了解有关重新索引和索引器的更多信息，请参阅开发人员文档中的[管理索引器](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/manage-indexers)主题。
 
 ## 通过CLI配置作用域
 

@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 参与者指南文档
 
-请参阅[参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+请参阅[参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
 
 ## 有疑问吗？
 
@@ -56,4 +56,4 @@ submitting a pull request!
 
 ## 安全问题
 
-要报告安全问题，[请向我们的安全专家提出问题](https://helpx.adobe.com/security/alertus.html)。
+要报告安全问题，[请向我们的安全专家提出问题](https://helpx.adobe.com/cn/security/alertus.html)。

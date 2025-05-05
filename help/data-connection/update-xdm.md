@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 更新Commerce数据摄取的时间序列事件架构
 
-使用[!DNL Data Connection]扩展的[载入步骤](overview.md#onboarding-steps)之一是访问数据流工作区并[创建特定于Adobe Commerce的数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)。 在创建该数据流时，还必须选择描述您计划摄取的数据的架构。 该架构必须包含特定于商务的字段组。
+使用[!DNL Data Connection]扩展的[载入步骤](overview.md#onboarding-steps)之一是访问数据流工作区并[创建特定于Adobe Commerce的数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans)。 在创建该数据流时，还必须选择描述您计划摄取的数据的架构。 该架构必须包含特定于商务的字段组。
 
 本文为您提供了架构必须包含的字段组，以便成功收集由Adobe Commerce事件提供的以下时间序列数据：
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 了解有关[时间序列数据](data-ingestion.md)的详细信息。
 
-了解有关[架构组合的基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)的更多信息。
+了解有关[架构组合的基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans)的更多信息。
 
 ## 使用时间序列行为和后台事件数据更新模式
 
@@ -31,9 +31,9 @@ ht-degree: 0%
 >
 >请参阅[时间序列配置文件事件数据](#time-series-profile-event-data)，了解如何添加配置文件特定的字段。
 
-1. 如果您还没有架构，请[创建](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create)架构，并将类设置为&#x200B;**体验事件**。
+1. 如果您还没有架构，请[创建](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans#create)架构，并将类设置为&#x200B;**体验事件**。
 
-1. [添加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups)以下特定于Commerce的字段组（或者编辑现有架构并添加这些字段组）：
+1. [添加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans#add-field-groups)以下特定于Commerce的字段组（或者编辑现有架构并添加这些字段组）：
 
    - 站点搜索
    - 访问网页
@@ -50,15 +50,15 @@ ht-degree: 0%
 
    您的架构现在包含特定于Commerce的字段组，以便在架构中表示从Commerce [行为](events.md)和[后台](events-backoffice.md)事件收集的时间系列数据。
 
-1. [为配置文件启用](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile)架构。
+1. [为配置文件启用](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans#profile)架构。
 
    为配置文件启用某个架构后，从该架构创建的任何数据集都将参与Real-Time CDP，后者将合并来自不同源的数据，以构建每个客户的完整视图。
 
-1. [根据您创建或更新的架构创建数据集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset)。
+1. [根据您创建或更新的架构创建数据集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=zh-Hans#create-a-dataset)。
 
    数据集是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。
 
-1. [创建数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)并选择包含Commerce特定字段组和相应数据集的架构。
+1. [创建数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans)并选择包含Commerce特定字段组和相应数据集的架构。
 
    数据流将收集的数据转发到数据集。 数据根据所选架构在数据集中表示。
 
@@ -96,24 +96,24 @@ ht-degree: 0%
 
 如果要将[服务器端配置文件事件数据](events-backoffice.md#customer-profile-events-server-side)添加到新的特定于配置文件的数据流和架构，请完成以下步骤。
 
-1. [创建](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create)架构并将类设置为&#x200B;**体验事件**。
+1. [创建](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans#create)架构并将类设置为&#x200B;**体验事件**。
 
-1. [添加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups)以下特定于配置文件的字段组：
+1. [添加](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans#add-field-groups)以下特定于配置文件的字段组：
 
    - 人口统计详细信息
    - 个人联系人详细信息
    - 渠道详细信息
    - Commerce详细信息
 
-1. [为配置文件启用](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile)架构。
+1. [为配置文件启用](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans#profile)架构。
 
    为配置文件启用某个架构后，从该架构创建的任何数据集都将参与Real-Time CDP，后者将合并来自不同源的数据，以构建每个客户的完整视图。
 
-1. [根据您创建的架构创建数据集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset)。
+1. [根据您创建的架构创建数据集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=zh-Hans#create-a-dataset)。
 
    数据集是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。
 
-1. [创建数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)并选择包含特定于Commerce的字段组和相应数据集的XDM架构。
+1. [创建数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans)并选择包含特定于Commerce的字段组和相应数据集的XDM架构。
 
    数据流将收集的数据转发到数据集。 数据根据所选架构在数据集中表示。
 

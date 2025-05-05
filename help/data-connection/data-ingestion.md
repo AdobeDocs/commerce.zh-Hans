@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [Data Connection扩展](overview.md)将您的Commerce数据连接到Experience Platform。 要在Experience Platform中使用的数据将分组为两种行为类型：属于&#x200B;**Experience Event**&#x200B;类的时间系列数据和属于&#x200B;**个人资料**&#x200B;类的记录数据。
 
-了解有关Experience Platform中[数据行为](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors)和[类](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class)的更多信息。
+了解有关Experience Platform中[数据行为](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans#data-behaviors)和[类](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans#class)的更多信息。
 
 ## 时间序列数据
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 记录数据
 
-记录数据提供有关主题属性的信息。 主体可以是组织，也可以是个人。 例如，您网站上的购物者创建一个帐户并生成记录数据。 此数据是使用类设置为&#x200B;**个人资料**&#x200B;的架构摄取到Experience Platform中的。 您可以将该记录数据发送到Adobe的配置文件管理和分段服务：[Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html#)。
+记录数据提供有关主题属性的信息。 主体可以是组织，也可以是个人。 例如，您网站上的购物者创建一个帐户并生成记录数据。 此数据是使用类设置为&#x200B;**个人资料**&#x200B;的架构摄取到Experience Platform中的。 您可以将该记录数据发送到Adobe的配置文件管理和分段服务：[Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hans#)。
 
 ### 捕获的配置文件记录数据
 

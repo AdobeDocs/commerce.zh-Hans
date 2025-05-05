@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!TIP]
 >
->要同时添加多个用户，您可以执行[批量CSV上传](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}。
+>要同时添加多个用户，您可以执行[批量CSV上传](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html){target="_blank"}。
 > 
-> 您还可以通过创建[用户组](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}将多个用户添加到角色。 然后，您可以将&#x200B;[!UICONTROL **Adobe Commerce as a Cloud Service — 后端**]&#x200B;产品添加到用户组。
+> 您还可以通过创建[用户组](https://helpx.adobe.com/cn/enterprise/using/user-groups.html){target="_blank"}将多个用户添加到角色。 然后，您可以将&#x200B;[!UICONTROL **Adobe Commerce as a Cloud Service — 后端**]&#x200B;产品添加到用户组。
 
 ## 了解角色
 
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 * **用户** — 用户对Commerce管理员具有管理员访问权限，但无法在Admin Console中管理产品级访问权限。 用户还可以使用积分在[!DNL Commerce Cloud Manager]中[创建实例](./getting-started.md#create-an-instance)。
 
-* [**开发人员**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}开发人员具有用户权限，并且作为开发人员用户添加到Commerce实例。 这意味着他们可以使用[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[配置事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[创建Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
+* [**开发人员**](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}开发人员具有用户权限，并且作为开发人员用户添加到Commerce实例。 这意味着他们可以使用[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[配置事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[创建Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
 
 * 管理员 — 管理员分为三种类型：
-   * [系统管理员](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} — 系统管理员可以通过Admin Console访问组织中的所有产品和产品配置文件。
-   * [产品管理员](#add-a-product-admin) — 产品管理员可以在[!DNL Adobe Admin Console]中[&#128279;](#add-users-and-admins)管理产品的用户、角色和权限，在Commerce管理员中[管理用户](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
+   * [系统管理员](https://helpx.adobe.com/cn/enterprise/using/admin-roles.html){target="_blank"} — 系统管理员可以通过Admin Console访问组织中的所有产品和产品配置文件。
+   * [产品管理员](#add-a-product-admin) — 产品管理员可以在[!DNL Adobe Admin Console]中[&#128279;](#add-users-and-admins)管理产品的用户、角色和权限，在Commerce管理员中[管理用户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
    * [产品配置文件管理员](#add-users-developers-and-product-profile-admins) — 产品配置文件管理员无权访问Adobe Commerce管理员，但可以在[!DNL Adobe Admin Console]中管理产品的用户。
 
 有关授予Adobe Commerce中每个角色的权限的详细信息，请参阅[用户权限](#user-permissions)。

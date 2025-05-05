@@ -34,7 +34,7 @@ ht-degree: 0%
 * [**付款选项**](payments-options.md) — 设置付款选项以自定义商店（或多商店）客户可用的方式。
 * **现金流量管理Financial Reporting** — 将[付款详细信息](order-payment-status.md)与订单同步，以使已处理量、付款余额、[付款](payouts.md)和详细的[交易级别报告](transactions.md)完全透明，以实现财务对帐和交易可视性的最大化。
 * **透明的定价** — 定价是明确的，预先准备好；您所看到的就是您获得的东西。
-* **高效的结账体验** — 通过[卡保险存储](vaulting.md)和[即时购买](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html)&#x200B;(默认情况下为Adobe Commerce启用)功能，消除任何阻碍快速轻松结账的障碍，并创建忠诚客户。
+* **高效的结账体验** — 通过[卡保险存储](vaulting.md)和[即时购买](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html?lang=zh-Hans)&#x200B;(默认情况下为Adobe Commerce启用)功能，消除任何阻碍快速轻松结账的障碍，并创建忠诚客户。
 
 ## 可用性
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 Payment Services在新用户引导期间为其他[&#128279;](../payment-services/production.md#complete-merchant-onboarding)可用国家/地区提供[快速结账功能](../payment-services/payments-options.md)（付款选项的子集）。
 
-有关特定于发行版和版本的详细信息，请参阅[生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)和[[!DNL Payment Services] 发行说明](release-notes.md)页面。
+有关特定于发行版和版本的详细信息，请参阅[生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=zh-Hans)和[[!DNL Payment Services] 发行说明](release-notes.md)页面。
 
 ### 哪个[!DNL Payment Services]选项适合您？
 
@@ -60,7 +60,7 @@ Payment Services在新用户引导期间为其他[&#128279;](../payment-services
 
 ### 接受的信用卡和货币
 
-[!DNL Payment Services]接受其可用的国家/地区[的货币](#availability)。 有关详细信息，请参阅[货币配置](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html)。
+[!DNL Payment Services]接受其可用的国家/地区[的货币](#availability)。 有关详细信息，请参阅[货币配置](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=zh-Hans)。
 
 若要查看PayPal支持的货币，请参阅[支持的货币文档](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/)。
 

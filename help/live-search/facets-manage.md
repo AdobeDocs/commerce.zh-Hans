@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 要编辑多面标签，请执行下列操作之一：
 
-   * 对于[!DNL Commerce]店面，编辑[属性标签](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)。
+   * 对于[!DNL Commerce]店面，编辑[属性标签](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hans)。
    * 对于Headless实施，请单击第一列中的值，然后根据需要编辑文本。
 
    ![编辑标签](assets/facet-edit-label.png)

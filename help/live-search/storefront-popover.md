@@ -10,11 +10,11 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-当[!DNL Live Search]为[已安装](install.md)时，购物者在[搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search)框中键入内容时，店面中会出现[!DNL popover]。 键入每个字符后，[!DNL popover]将更新为排名最前的搜索结果的建议产品和缩略图图像。
+当[!DNL Live Search]为[已安装](install.md)时，购物者在[搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=zh-Hans#quick-search)框中键入内容时，店面中会出现[!DNL popover]。 键入每个字符后，[!DNL popover]将更新为排名最前的搜索结果的建议产品和缩略图图像。
 
 [!DNL Live Search]返回两个或更多字符的查询结果。 对于部分匹配，每个单词的最大字符数为20。 “键入时搜索”查询中的字符数无法配置。
 
-默认情况下，[!DNL Live Search]支持[搜索词重定向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html)。
+默认情况下，[!DNL Live Search]支持[搜索词重定向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=zh-Hans)。
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## [!DNL Popover]页面大小
 
-[!DNL popover]的页面大小决定了可以返回多少行自动完成产品。 在Live Search安装过程中，`page_size`值更改为[目录搜索](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit`设置的当前值。
+[!DNL popover]的页面大小决定了可以返回多少行自动完成产品。 在Live Search安装过程中，`page_size`值更改为[目录搜索](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html?lang=zh-Hans) - `Autocomplete Limit`设置的当前值。
 
 默认情况下，“目录搜索 — 自动完成限制”值设置为八行。 要更改[!DNL popover]的页面大小，请执行以下操作：
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 ## 正在禁用[!DNL popover]
 
-要禁用[!DNL popover]并恢复标准[快速搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search)功能，请输入以下命令：
+要禁用[!DNL popover]并恢复标准[快速搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=zh-Hans#quick-search)功能，请输入以下命令：
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

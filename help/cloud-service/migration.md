@@ -68,7 +68,7 @@ ht-degree: 0%
 
    * [Cloud Services架构上的Adobe Commerce](./overview.md) — 查看平台架构以及它与当前Adobe Commerce实例的差异。
    * [Adobe Commerce可扩展性框架](https://developer.adobe.com/commerce/extensibility/) — 确定您要如何转换当前的自定义设置。
-   * [由Edge Delivery提供支持的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/) — 查看推荐的店面解决方案。
+   * [由Edge Delivery提供支持的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans) — 查看推荐的店面解决方案。
 
 1. 审核您的自定义兼容性：
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 1. 设置以下基于GraphQL的店面之一：
 
-   * [创建Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
+   * [创建Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)
    * [使用PWA Studio创建基于GraphQL的自定义店面](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. 将您的数据从以前的Commerce实例迁移到ACCS：

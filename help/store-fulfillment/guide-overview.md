@@ -31,12 +31,12 @@ ht-degree: 0%
 
 | 指南 | 描述 |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Adobe Commerce 2.4用户指南](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Adobe Commerce以商家为中心的文档 |
+| [Adobe Commerce 2.4用户指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/user-guides/home) | Adobe Commerce以商家为中心的文档 |
 | [Adobe Commerce 2.4开发人员指南](https://developer.adobe.com/commerce/docs/) | 用于构建和自定义Adobe Commerce的以开发人员为中心的文档 |
 
 ## 支持
 
 如果您需要本指南中未涉及的信息或问题，请使用以下资源：
 
-* [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 查看与[!DNL Store Fulfillment]相关的故障排除文章。
-* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。
+* [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#submit-ticket){target="_blank"} — 查看与[!DNL Store Fulfillment]相关的故障排除文章。
+* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。

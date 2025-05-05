@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 设置范围
 
-如果Adobe Commerce安装包含多个存储视图，请将&#x200B;**范围**&#x200B;设置为应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
+如果Adobe Commerce安装包含多个存储视图，请将&#x200B;**范围**&#x200B;设置为应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)。
 
 ## 显示/隐藏列
 

@@ -24,7 +24,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/namespaces)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `person` | 包含有关客户的信息。 |
@@ -59,6 +59,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->每个配置文件记录还包含[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)字段，其中包括系统生成的Commerce客户ID作为配置文件的主要标识符，以及用作辅助标识符的电子邮件ID。
+>每个配置文件记录还包含[`identityMap`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/profile/identitymap)字段，其中包括系统生成的Commerce客户ID作为配置文件的主要标识符，以及用作辅助标识符的电子邮件ID。
 
 了解如何[创建配置文件记录特定的架构](profile-data.md)，该架构可以从您的配置文件记录中摄取数据。

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Live Search]个事件
 
-[!DNL Live Search]使用事件来增强搜索算法，例如“查看次数最多”和“查看了这个项目，查看了那个项目”。 虽然[Commerce示例Luma主题](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme)开箱即用地事件，但Headless和其他自定义实施必须根据自己的需求实施事件。
+[!DNL Live Search]使用事件来增强搜索算法，例如“查看次数最多”和“查看了这个项目，查看了那个项目”。 虽然[Commerce示例Luma主题](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/content-design/design/themes/themes#the-default-theme)开箱即用地事件，但Headless和其他自定义实施必须根据自己的需求实施事件。
 
 此表描述了[!DNL Live Search] [排名策略](rules-add.md#intelligent-ranking)使用的事件。
 
@@ -68,4 +68,4 @@ mse.publish.searchRequestSent("search-bar");
 
 >[!NOTE]
 >
->如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，则在购物者同意使用Cookie之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，Adobe Commerce会默认收集行为数据。
+>如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hans)，则在购物者同意使用Cookie之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，Adobe Commerce会默认收集行为数据。

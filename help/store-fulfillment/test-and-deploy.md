@@ -644,4 +644,4 @@ Adobe Commerce产品类型的测试方案将验证客户能否看到不同产品
 
 >[!TIP]
 >
->有关Adobe Commerce在云基础架构项目中的部署准则、核对表和最佳实践，请参阅Adobe Commerce开发人员文档中的[部署您的应用商店](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)。
+>有关Adobe Commerce在云基础架构项目中的部署准则、核对表和最佳实践，请参阅Adobe Commerce开发人员文档中的[部署您的应用商店](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)。

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->按照&#x200B;_Adobe Commerce Upgrade Guide_&#x200B;中的[升级说明](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html)升级Adobe Commerce内部部署的Store Fulfillment扩展。 有关云基础架构上的Adobe Commerce，请参阅《云基础架构上的Commerce指南》*中的[升级扩展](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension)*。
+>按照&#x200B;_Adobe Commerce Upgrade Guide_&#x200B;中的[升级说明](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=zh-Hans)升级Adobe Commerce内部部署的Store Fulfillment扩展。 有关云基础架构上的Adobe Commerce，请参阅《云基础架构上的Commerce指南》*中的[升级扩展](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=zh-Hans#upgrade-an-extension)*。
 
 ## 先决条件
 
@@ -35,17 +35,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **访问Walmart Commerce Technologies软件存档（.zip文件）的“商店履行”** — 在新用户引导和启用过程中，请与您的客户经理合作，以访问“商店履行”扩展的安装文件。
 
-- **Adobe Commerce帐户信息** — 安装[!DNL Store Fulfillment]解决方案需要[[!DNL Commerce] 帐户](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"}。 您需要具有对[!DNL Adobe Commerce]项目的所有者或管理员访问权限的帐户ID和凭据。
+- **Adobe Commerce帐户信息** — 安装[!DNL Store Fulfillment]解决方案需要[[!DNL Commerce] 帐户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"}。 您需要具有对[!DNL Adobe Commerce]项目的所有者或管理员访问权限的帐户ID和凭据。
 
-- 对于云基础架构项目上的[!DNL Adobe Commerce]，软件安装程序必须具有对云项目的管理员访问权限。 请参阅[管理用户访问权限](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access)。
+- 对于云基础架构项目上的[!DNL Adobe Commerce]，软件安装程序必须具有对云项目的管理员访问权限。 请参阅[管理用户访问权限](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/project/user-access)。
 
-- **使用编辑器和[!DNL Commerce CLI]**&#x200B;的体验 — 有关使用这些工具在[!DNL Adobe Commerce]平台上安装和管理扩展的信息，请参阅[常规CLI安装](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"}。
+- **使用编辑器和[!DNL Commerce CLI]**&#x200B;的体验 — 有关使用这些工具在[!DNL Adobe Commerce]平台上安装和管理扩展的信息，请参阅[常规CLI安装](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"}。
 
 - **在Adobe Commerce上安装第三方扩展的体验** — 有关参考，请参阅Adobe Commerce文档。
 
-   - [在云基础架构实例上安装Adobe Commerce的扩展](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension)。
+   - [在云基础架构实例上安装Adobe Commerce的扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension)。
 
-   - [为Adobe Commerce本地实例安装扩展](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)。
+   - [为Adobe Commerce本地实例安装扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/extensions)。
 
 ### 步骤1：下载扩展包
 
@@ -92,7 +92,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 >[!NOTE]
 >
->为提高Adobe Commerce本地实例的性能，您可以[更新自动加载配置](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html#update-the-autoloader)： `composer dump-autoload --optimize`
+>为提高Adobe Commerce本地实例的性能，您可以[更新自动加载配置](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html?lang=zh-Hans#update-the-autoloader)： `composer dump-autoload --optimize`
 
 ### 步骤4：升级数据库架构和数据
 
@@ -134,7 +134,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 1. 登录到服务器。
 
-   对于云基础架构上的Adobe Commerce安装，[使用SSH登录到远程环境](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh)。
+   对于云基础架构上的Adobe Commerce安装，[使用SSH登录到远程环境](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh)。
 
 1. 验证是否已启用“商店履行服务”模块。
 
@@ -188,7 +188,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ### 其他步骤
 
-如果需要，请使用[setup:static-content:deploy](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises){target="_blank"} CLI命令将静态视图文件部署到生产环境。
+如果需要，请使用[setup:static-content:deploy](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/tools/cli-reference/commerce-on-premises){target="_blank"} CLI命令将静态视图文件部署到生产环境。
 
 ```bash
 php bin/magento setup:static-content:deploy -f
@@ -198,6 +198,6 @@ php bin/magento setup:static-content:deploy -f
 
 >[!NOTE]
 >
->有关详细信息，请参阅Adobe Commerce帮助中心的[Adobe Commerce中的静态内容部署最佳实践](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html)。
+>有关详细信息，请参阅Adobe Commerce帮助中心的[Adobe Commerce中的静态内容部署最佳实践](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html?lang=zh-Hans)。
 
 

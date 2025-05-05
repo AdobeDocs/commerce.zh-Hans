@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # 验证事件集合
 
-在[安装和配置](install-configure.md) `magento/product-recommendations`模块后，您可以验证行为数据是否已发送到Adobe Commerce。 您可以使用Chrome中提供的开发人员工具，或安装Snowplow Chrome扩展。 如果需要其他帮助，请参阅支持知识库中的[疑难解答 [!DNL Product Recommendations] 模块](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html)。
+在[安装和配置](install-configure.md) `magento/product-recommendations`模块后，您可以验证行为数据是否已发送到Adobe Commerce。 您可以使用Chrome中提供的开发人员工具，或安装Snowplow Chrome扩展。 如果需要其他帮助，请参阅支持知识库中的[疑难解答 [!DNL Product Recommendations] 模块](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html?lang=zh-Hans)。
 
 ## 使用Chrome中的开发人员工具进行验证
 
@@ -50,7 +50,7 @@ _验证事件是否正在触发_
 
 1. 向下滚动直到看到&#x200B;**上下文数据&#x200B;_n_**&#x200B;为止。 在&#x200B;**架构**&#x200B;中查找店面实例。
 
-1. 验证是否已正确设置[SaaS数据空间ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)。
+1. 验证是否已正确设置[SaaS数据空间ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html?lang=zh-Hans)。
 
 ![雪铲过滤器](assets/snowplow-filter.png)
 _雪铲过滤器_
@@ -61,8 +61,8 @@ _雪铲过滤器_
 
 ## 验证事件是否正确触发
 
-要验证用于量度的事件是否正确触发，请在Snowplow Analytics调试器中查找`impression-render`、`view`和`rec-click`事件。 查看[事件的完整列表](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html)。
+要验证用于量度的事件是否正确触发，请在Snowplow Analytics调试器中查找`impression-render`、`view`和`rec-click`事件。 查看[事件的完整列表](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=zh-Hans)。
 
 >[!NOTE]
 >
-> 如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，则在购物者同意之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，则默认情况下会收集行为数据。
+> 如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hans)，则在购物者同意之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，则默认情况下会收集行为数据。

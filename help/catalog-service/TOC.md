@@ -25,5 +25,5 @@ ht-degree: 10%
    - [productSearch查询](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
    - [refineProduct查询](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)
 

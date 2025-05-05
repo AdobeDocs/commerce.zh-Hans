@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->付款报表仅显示捕获的订单（付款操作设置为[`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/production.html#set-payment-services-as-payment-method)），或[标记为`Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
+>付款报表仅显示捕获的订单（付款操作设置为[`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/production.html?lang=zh-Hans#set-payment-services-as-payment-method)），或[标记为`Invoiced`](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
 
 ## 支付数据可视化视图
 
@@ -154,7 +154,7 @@ ht-degree: 0%
 | [!UICONTROL Code] | 表示贷方(*CR*)或借方(*DR*)的交易代码 |
 | [!UICONTROL Reference ID] | 与此事件相关的原始交易ID |
 | [!UICONTROL Invoice] | 交易的发票ID（每张订单一个） |
-| [!UICONTROL Commerce order] | Commerce订单ID <br> <br>要查看相关的[订单信息](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders)，请单击ID。 |
+| [!UICONTROL Commerce order] | Commerce订单ID <br> <br>要查看相关的[订单信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/orders/orders)，请单击ID。 |
 | [!UICONTROL Commerce trans] | Commerce交易ID |
 | [!UICONTROL Pay method] | 信用卡类型 — *[!UICONTROL BANK]*、*[!UICONTROL PAYPAL]*、*[!UICONTROL CREDIT_CARD]* — 和相关联的卡提供商（如&#x200B;*Visa*&#x200B;或&#x200B;*MasterCard*） |
 | [!UICONTROL TRANS AMT] | 交易金额 |

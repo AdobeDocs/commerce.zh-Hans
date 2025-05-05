@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 产品库存管理
 
-作为商人，您可以使用Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)股票和来源期权。 此外，您可以使用Store Fulfillment解决方案来控制与商户商店操作相关的其他库存可用性选项。
+作为商人，您可以使用Adobe Commerce [Inventory management](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/introduction)股票和来源期权。 此外，您可以使用Store Fulfillment解决方案来控制与商户商店操作相关的其他库存可用性选项。
 
 - 商户商店中的主页交货选项
 

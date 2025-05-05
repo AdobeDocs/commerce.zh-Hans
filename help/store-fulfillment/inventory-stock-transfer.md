@@ -22,27 +22,27 @@ ht-degree: 0%
 
 这些配置更改可帮助您完成三件事：
 
-1. [将库存转移到来源](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer)以将库存从默认库存/来源转移到新库存/来源。
+1. [将库存转移到来源](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/quantities/inventory-transfer)以将库存从默认库存/来源转移到新库存/来源。
 
-1. [批量分配源](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment)以添加所有产品的新源。
+1. [批量分配源](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/quantities/bulk-assignment)以添加所有产品的新源。
 
-1. [完成产品属性的批量更新](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)以将`Allow Store Pickup`和`Allow Home Delivery`属性添加到现有产品。 安装解决方案后，属性具有最佳的&#x200B;*默认值*&#x200B;值。 但是，在完成批量更新内容过程之前，这些属性不会应用于现有产品。
+1. [完成产品属性的批量更新](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)以将`Allow Store Pickup`和`Allow Home Delivery`属性添加到现有产品。 安装解决方案后，属性具有最佳的&#x200B;*默认值*&#x200B;值。 但是，在完成批量更新内容过程之前，这些属性不会应用于现有产品。
 
-库存从所选源（零售商店库位或电子商务仓库）中扣除。 用作电子商务仓库的来源必须分配给与商店取货地点相同的库存，并在零售地点之前排定优先次序。 有关其他信息，请参阅[优先处理股票的来源](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)。
+库存从所选源（零售商店库位或电子商务仓库）中扣除。 用作电子商务仓库的来源必须分配给与商店取货地点相同的库存，并在零售地点之前排定优先次序。 有关其他信息，请参阅[优先处理股票的来源](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)。
 
 有关管理库存、库存和来源的详细信息，请参阅Adobe Commerce用户文档：
 
-- [管理库存](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
+- [管理库存](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/introduction)
 
-- [管理库存数量](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
+- [管理库存数量](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [管理库存](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
+- [管理库存](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [管理源](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
+- [管理源](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [优先处理库存的来源](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
+- [优先处理库存的来源](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [产品属性的批量更新](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
+- [产品属性的批量更新](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

@@ -112,7 +112,7 @@ ht-degree: 0%
 
 ![添加徽章](assets/unit-custom.png)
 
-若要确保在页面上呈现推荐单元时自定义产品属性可用，请在Admin的[产品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html)页面中将`Used in Product Listing`属性设置为`Yes`。
+若要确保在页面上呈现推荐单元时自定义产品属性可用，请在Admin的[产品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hans)页面中将`Used in Product Listing`属性设置为`Yes`。
 
 设置此属性后，JSON有效负载将包含一个包含属性代码和值的数组的`attributes`对象。 然后，您可以根据这些属性值应用自定义店面样式，例如添加特殊的可视化处理或徽章，如前所述。
 

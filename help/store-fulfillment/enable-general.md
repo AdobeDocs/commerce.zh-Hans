@@ -150,7 +150,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->对于Adobe Commerce内部部署，请要求系统管理员为`var/log/walmart-bopis.log`文件设置日志轮换以最小化大小。 有关Adobe Commerce内部部署安装，请参阅&#x200B;_Adobe Commerce安装指南_&#x200B;中的[日志轮换](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings)。 有关云基础架构项目上的Adobe Commerce，请参阅[查看和管理日志](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)。
+>对于Adobe Commerce内部部署，请要求系统管理员为`var/log/walmart-bopis.log`文件设置日志轮换以最小化大小。 有关Adobe Commerce内部部署安装，请参阅&#x200B;_Adobe Commerce安装指南_&#x200B;中的[日志轮换](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=zh-Hans#server-settings)。 有关云基础架构项目上的Adobe Commerce，请参阅[查看和管理日志](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=zh-Hans)。
 
 <table>
 <thead>
@@ -355,7 +355,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关配置店内传递选项的更多信息，请参阅&#x200B;_Adobe Commerce用户指南_&#x200B;中的[店内传递](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery)。
+>有关配置店内传递选项的更多信息，请参阅&#x200B;_Adobe Commerce用户指南_&#x200B;中的[店内传递](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery)。
 
 
 ### 投放方法配置

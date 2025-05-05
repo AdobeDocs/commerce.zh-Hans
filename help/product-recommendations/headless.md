@@ -14,7 +14,7 @@ ht-degree: 0%
 
 自定义和Headless集成商应该参考这些Luma和PWA说明作为建议的实施。 可通过多种方法将产品推荐实施到Headless解决方案中，本文档并未涵盖所有场景。 集成商必须为其实施提供事件、设计和测试服务。
 
-[!DNL Product Recommendations]需要[行为和目录数据](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html)才能运行。 在Headless实施中，目录数据同步过程保持不变，但行为数据收集需要更改。
+[!DNL Product Recommendations]需要[行为和目录数据](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=zh-Hans)才能运行。 在Headless实施中，目录数据同步过程保持不变，但行为数据收集需要更改。
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 1. [安装](install-configure.md) [!DNL Product Recommendations]模块。
 
-1. 安装并使用[Adobe Commerce Storefront活动SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)以触发[行为事件](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html)。
+1. 安装并使用[Adobe Commerce Storefront活动SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)以触发[行为事件](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=zh-Hans)。
 
    返回[!DNL Product Recommendations]结果所需的最小事件数：
 

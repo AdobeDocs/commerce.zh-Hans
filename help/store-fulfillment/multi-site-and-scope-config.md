@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 多个网站和范围配置
 
-您可以为一些元素设置[范围](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)以适应多个网站、商店和商店视图：
+您可以为一些元素设置[范围](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)以适应多个网站、商店和商店视图：
 
-- 每个范围[管理库存](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
+- 每个范围[管理库存](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/stocks/stocks-manage)
 
 - 管理每个作用域的[!DNL Delivery Methods]
 

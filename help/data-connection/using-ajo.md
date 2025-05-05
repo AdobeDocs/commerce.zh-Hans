@@ -21,7 +21,7 @@ ht-degree: 0%
 | 数据类型 | 店面数据（行为事件） | 后台数据（服务器端事件） |
 |---|---|---|
 | **定义** | 客户在您的网站上采取的点击或操作。 | 关于生命周期的信息和每个订单的详细信息（过去和当前）。 |
-| Adobe Commerce捕获的&#x200B;**事件** | [pageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [订购位置](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[订购历史记录](https://experienceleague.adobe.com/en/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| Adobe Commerce捕获的&#x200B;**事件** | [pageView](https://experienceleague.adobe.com/zh-hans/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/zh-hans/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/zh-hans/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/zh-hans/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/zh-hans/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/zh-hans/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [订购位置](https://experienceleague.adobe.com/zh-hans/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[订购历史记录](https://experienceleague.adobe.com/zh-hans/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### 其他客户取得了哪些成就？
 
@@ -47,7 +47,7 @@ Adobe [!DNL Commerce]客户通过使用Adobe [!DNL Commerce]、Adobe [!DNL Journ
 
 ### 什么是Adobe Journey Optimizer？
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html)帮助您为购物者打造个性化的商业体验。 例如，您可以使用Journey Optimizer创建和投放计划的营销活动，如零售商店的每周促销活动，或者，如果客户将产品添加到购物车，但未完成结账过程，则生成放弃的购物车电子邮件。
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=zh-Hans)帮助您为购物者打造个性化的商业体验。 例如，您可以使用Journey Optimizer创建和投放计划的营销活动，如零售商店的每周促销活动，或者，如果客户将产品添加到购物车，但未完成结账过程，则生成放弃的购物车电子邮件。
 
 在本主题中，您将学习如何通过侦听从您的[!DNL Commerce]实例生成的`checkout`事件并在Journey Optimizer中响应该事件来构建放弃的购物车电子邮件。
 
@@ -83,7 +83,7 @@ Adobe [!DNL Commerce]客户通过使用Adobe [!DNL Commerce]、Adobe [!DNL Journ
 
 在您的[!DNL Commerce]沙盒环境中，通过查看产品页面、将项目添加到购物车以及完成购物者将执行的各种其他活动来触发店面上的事件。 然后，确认这些事件正在流入Journey Optimizer。
 
-1. 启动[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html)。
+1. 启动[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=zh-Hans)。
 1. 选择&#x200B;**[!UICONTROL Profiles]**。
 1. 将&#x200B;**[!UICONTROL Identity namespace]**&#x200B;设置为`Email`。
 1. 将&#x200B;**[!UICONTROL Identity value]**&#x200B;设置为您的电子邮件地址。
@@ -112,7 +112,7 @@ Adobe [!DNL Commerce]客户通过使用Adobe [!DNL Commerce]、Adobe [!DNL Journ
 
 ### 创建监听程序事件
 
-1. 启动[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html)。
+1. 启动[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=zh-Hans)。
 
 1. 单击左窗格&#x200B;**[!UICONTROL Administration]**&#x200B;部分下的&#x200B;**[!UICONTROL Configurations]**。
 
@@ -185,7 +185,7 @@ Adobe [!DNL Commerce]客户通过使用Adobe [!DNL Commerce]、Adobe [!DNL Journ
 
 1. 在上面创建的历程中，双击画布上的&#x200B;**[!UICONTROL Email]**&#x200B;图标。
 
-1. 按照Journey Optimizer指南中的[步骤](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email)创建放弃的购物车电子邮件。
+1. 按照Journey Optimizer指南中的[步骤](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=zh-Hans#configure-email)创建放弃的购物车电子邮件。
 
 现在，您在Journey Optimizer中有一个历程，该历程侦听来自您的[!DNL Commerce]商店的`commerce.checkouts`事件，以及一个在一段时间后发送的已放弃购物车电子邮件。 下一部分将向您展示如何测试旅程。
 

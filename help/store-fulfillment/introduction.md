@@ -34,7 +34,7 @@ Store Fulfillment解决方案支持并增强了本机Adobe Commerce功能。
 
 * 支持大多数产品类型 — 简单、可配置、分组、捆绑和虚拟
 
-* 与[[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/sources-stocks)集成
+* 与[[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/basics/sources-stocks)集成
 
 * 与销售点(POS)商家库存管理系统（如ERP、OMS和WMS）集成
 
@@ -76,6 +76,6 @@ Store Fulfillment解决方案支持并增强了本机Adobe Commerce功能。
 
 >[!TIP]
 >
-> 要快速演示商店履行解决方案，请参阅&#x200B;_Adobe Commerce视频和教程_&#x200B;中提供的[商店履行概述](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html)。
+> 要快速演示商店履行解决方案，请参阅&#x200B;_Adobe Commerce视频和教程_&#x200B;中提供的[商店履行概述](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html?lang=zh-Hans)。
 
 

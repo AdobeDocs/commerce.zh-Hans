@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ### Facet标签
 
-对于[!DNL Commerce]店面，Facet标签由&#x200B;[*属性属性*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html)确定。 对于具有多个视图的存储，可在&#x200B;*管理标签*&#x200B;下定义其他标签。 对于Headless实施，从[彩块化工作区](faceting-workspace.md)编辑标签。
+对于[!DNL Commerce]店面，Facet标签由&#x200B;[*属性属性*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hans)确定。 对于具有多个视图的存储，可在&#x200B;*管理标签*&#x200B;下定义其他标签。 对于Headless实施，从[彩块化工作区](faceting-workspace.md)编辑标签。
 
 ### 排序类型
 

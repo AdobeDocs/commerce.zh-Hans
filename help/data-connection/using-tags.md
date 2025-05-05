@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 使用Adobe Experience Platform Tags收集Commerce数据
 
-虽然您可以使用[!DNL Data Connection]扩展发布和订阅店面活动，但一些商家可能已经在使用数据收集解决方案，例如[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html)。 对于这些商家，Adobe Commerce在使用Adobe Commerce Event SDK的[!DNL Data Connection]扩展中提供仅发布选项。
+虽然您可以使用[!DNL Data Connection]扩展发布和订阅店面活动，但一些商家可能已经在使用数据收集解决方案，例如[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=zh-Hans)。 对于这些商家，Adobe Commerce在使用Adobe Commerce Event SDK的[!DNL Data Connection]扩展中提供仅发布选项。
 
 ![[!DNL Data Connection]扩展数据流](assets/tags-data-flow.png)
 _[!DNL Data Connection]带有标记的扩展数据流_
@@ -33,15 +33,15 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 要将Commerce店面数据映射到Adobe Experience Platform，请从Adobe Experience Platform标记中配置并安装以下内容：
 
-1. [在Adobe Experience Platform数据收集中设置标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html)。
+1. [在Adobe Experience Platform数据收集中设置标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=zh-Hans)。
 
 1. 在&#x200B;**创作**&#x200B;下，选择&#x200B;**扩展**&#x200B;并安装和配置以下扩展：
 
-   - [Adobe客户端数据层](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)
+   - [Adobe客户端数据层](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html?lang=zh-Hans)
 
-   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
+   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=zh-Hans)
 
-1. [将标记](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)发布到开发环境。
+1. [将标记](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans)发布到开发环境。
 
 1. 按照下面的&#x200B;**事件映射**&#x200B;步骤配置特定事件的数据元素和规则。
 
@@ -57,7 +57,7 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 使用特定于Adobe Commerce的事件数据更新Adobe Experience Platform标记中的数据元素和规则时，您需要执行一些常用步骤。
 
-例如，让我们将Adobe Commerce `signOut`事件添加到Adobe Experience Platform标记。 除了您设置的特定值之外，下面列出的步骤说明了如何添加[数据元素](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element)和[规则](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule)，这些规则适用于您添加到标记的所有Adobe Commerce事件。
+例如，让我们将Adobe Commerce `signOut`事件添加到Adobe Experience Platform标记。 除了您设置的特定值之外，下面列出的步骤说明了如何添加[数据元素](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=zh-Hans#data-element)和[规则](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=zh-Hans#create-a-rule)，这些规则适用于您添加到标记的所有Adobe Commerce事件。
 
 1. 创建数据元素：
 
@@ -1411,7 +1411,7 @@ return IdentityMap;
 
 ## 设置同意
 
-在Adobe Commerce中安装[!DNL Data Connection]扩展时，默认情况下会启用数据收集同意。 选择退出通过[`mg_dnt` Cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)进行管理。 如果您选择使用`mg_dnt`管理同意，则可以按照此处列出的步骤操作。 [Adobe Experience Platform Web SDK文档](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html)提供了多个用于管理同意的其他选项。
+在Adobe Commerce中安装[!DNL Data Connection]扩展时，默认情况下会启用数据收集同意。 选择退出通过[`mg_dnt` Cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hans)进行管理。 如果您选择使用`mg_dnt`管理同意，则可以按照此处列出的步骤操作。 [Adobe Experience Platform Web SDK文档](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=zh-Hans)提供了多个用于管理同意的其他选项。
 
 1. 为`mg_dnt` Cookie创建&#x200B;**核心自定义代码**&#x200B;数据元素(`%do not track cookie%`)：
 

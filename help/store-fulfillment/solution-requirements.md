@@ -26,9 +26,9 @@ ht-degree: 0%
 
 - [存储履行发行说明](release-notes.md)
 
-- *Adobe Commerce发行信息*&#x200B;中的[Adobe Commerce发行说明](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)。
+- *Adobe Commerce发行信息*&#x200B;中的[Adobe Commerce发行说明](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html?lang=zh-Hans)。
 
-- *Adobe Commerce安装指南*&#x200B;中的[Adobe Commerce系统要求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)。
+- *Adobe Commerce安装指南*&#x200B;中的[Adobe Commerce系统要求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hans)。
 
 
 ## 商店协助应用程序要求

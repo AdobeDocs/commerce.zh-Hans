@@ -199,7 +199,7 @@ Adobe Commerce的情境式试验功能允许您在店面中创建和管理试验
 
 #### 将图像添加到Commerce AEM Assets
 
-1. 在AEM as a Cloud Service的[导航面板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)中，选择&#x200B;**Assets** > **文件** > **Commerce**，然后单击您在上一节中创建的资源。
+1. 在AEM as a Cloud Service的[导航面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)中，选择&#x200B;**Assets** > **文件** > **Commerce**，然后单击您在上一节中创建的资源。
 
    ![商务文件夹](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -249,7 +249,7 @@ Adobe Commerce的生成变体利用生成人工智能，自动生成高质量内
 
 ### 生成文本
 
-1. 使用[通用编辑器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)打开您的店面站点。
+1. 使用[通用编辑器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)打开您的店面站点。
 
 1. 选择要编辑的文本块。
 
@@ -263,7 +263,7 @@ Adobe Commerce的生成变体利用生成人工智能，自动生成高质量内
 
 ### 生成内容和图像
 
-1. 打开[生成变体](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. 打开[生成变体](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. 选择&#x200B;[!UICONTROL **主页横幅**]&#x200B;模板。
 
