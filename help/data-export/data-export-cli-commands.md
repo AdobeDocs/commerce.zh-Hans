@@ -2,9 +2,9 @@
 title: 使用Commerce CLI同步馈送
 description: 了解如何使用命令行界面命令来管理Adobe Commerce SaaS服务的 [!DNL data export extension] 的馈送和进程。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 6f578dfaf3d3e77d7b541714de613025b8c789a4
+source-git-commit: 8233b2e184c8af293ffc41cb22e085388cf18049
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Adobe不建议定期使用`saas:resync`命令。 使用该命令的典型情况包括：
 
 - 初始同步
-- 更改[SaaS数据空间ID](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/services/saas)后，将数据同步到新数据空间
+- 更改[SaaS数据空间ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)后，将数据同步到新数据空间
 - 故障排除
 
 监视`var/log/saas-export.log`文件中的同步操作。
@@ -68,7 +68,7 @@ bin/magento saas:resync --help
 
 按其ID部分重新同步特定实体。 支持`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`信息源。
 
-默认情况下，实体按产品SKU以逗号分隔列表进行指定。 要使用产品ID，请添加`--id-type=ProductID`选项。
+默认情况下，在使用`--by-ids`选项时，您会使用产品SKU值指定值。 要使用产品ID，请添加`--id-type=ProductID`选项。
 
 **示例：**
 
@@ -81,13 +81,13 @@ bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-在重新索引并将数据发送到SaaS之前，请清理馈送表馈送索引器表。 仅支持`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`。
+在重新索引并将数据发送到SaaS之前，请清理馈送索引器表。 仅支持`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`。
 
 如果与`--dry-run`选项一起使用，则该操作将对所有项目执行试运行重新同步操作。
 
 >[!IMPORTANT]
 >
->仅在环境清理后或通过`--dry-run`选项使用。 如果用于其他情况，清理操作会导致数据丢失和数据同步问题，在这些问题中，必须在Adobe Commerce中删除的项目将不会从SaaS数据空间中删除。
+>仅在环境清理后或通过`--dry-run`选项使用。 如果用于其他情况，清理操作可能会导致数据丢失和数据同步问题。
 
 **示例：**
 
@@ -124,7 +124,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run
 **示例：**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='ADB102,ADB111,ADB112'
 ```
 
 ### 测试所有馈送项目
