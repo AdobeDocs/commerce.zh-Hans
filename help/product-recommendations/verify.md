@@ -38,7 +38,7 @@ _验证事件是否正在触发_
 
 ## 使用Snowplow Chrome扩展进行验证
 
-安装适用于Chrome](https://chrome.google.com/webstore/detail/snowplow-analytics-debugg/jbnlcgeengmijcghameodeaenefieedm)的[Snowplow Analytics Debugger扩展。 此扩展显示正在收集并发送到Adobe Commerce的事件。
+安装适用于Chrome[&#128279;](https://chrome.google.com/webstore/detail/snowplow-analytics-debugg/jbnlcgeengmijcghameodeaenefieedm)的Snowplow Analytics Debugger扩展。 此扩展显示正在收集并发送到Adobe Commerce的事件。
 
 1. 请确保在浏览器上禁用所有广告拦截器，并在网站上接受Cookie。
 
@@ -48,7 +48,7 @@ _验证事件是否正在触发_
 
 1. 在&#x200B;**事件**&#x200B;列下，选择&#x200B;**结构化事件**。
 
-1. 向下滚动直到看到&#x200B;**上下文数据&#x200B;_n_**为止。 在&#x200B;**架构**中查找店面实例。
+1. 向下滚动直到看到&#x200B;**上下文数据&#x200B;_n_**&#x200B;为止。 在&#x200B;**架构**&#x200B;中查找店面实例。
 
 1. 验证是否已正确设置[SaaS数据空间ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)。
 

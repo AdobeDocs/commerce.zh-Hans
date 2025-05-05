@@ -142,9 +142,9 @@ ht-degree: 0%
 | **[!UICONTROL Is Parking Spot a Mandatory Field?]**</br>`Extension Attribute: parking_spot_mandatory` | 指定客户在购物体验期间是否需要停车位识别。</br></br>如果启用，将提示客户在到达时指定其停车位。 如果禁用，客户可以跳过此输入。 | 全局 | 否 |
 | **[!UICONTROL Parking Spots List]**</br> `Internal Attribute: inventory_source_parking_spot_dynamic_rows` | 这家商店提供路边取车的停车位。 使用提供的界面为每个点命名。</br></br>您无需为每个停车位命名，只需为指定路边的停车位命名。 例如，您可能有可供停车的A-G行，但只有行A的前8个点被指定用于路边取车。 在此方案中，您可以定义8个位置；例如：A1、A2、A3等。 | 全局 | 否 |
 | **[!UICONTROL Allow "Other" Parking Spot Field]**</br>`Extension Attribute: custom_parking_spot_enabled` | 启用后，此设置允许客户在登记入住期间描述其停车位。 | 全局 | 否 |
-| **[!UICONTROL Use Car Color]**</br>`Extension Attribute: use_car_color` | 指定在登记入住期间是否支持从客户收集车辆颜色。 </br></br> [!UICONTROL Car Color]的可用选择已在签入体验](check-in-experience-setup.md)的管理员[系统设置中配置。 | 全局 | 否 |
+| **[!UICONTROL Use Car Color]**</br>`Extension Attribute: use_car_color` | 指定在登记入住期间是否支持从客户收集车辆颜色。 </br></br> [!UICONTROL Car Color]的可用选择已在签入体验[&#128279;](check-in-experience-setup.md)的管理员系统设置中配置。 | 全局 | 否 |
 | **[!UICONTROL Is Car Color a Mandatory Field?]**</br>`Extension Attribute: car_color_mandatory` | 指定客户在登记入住期间是否需要车辆颜色标识。</br></br>如果启用，将提示客户在到达时指定其车辆的颜色。 如果禁用，客户可以跳过此输入。 | 全局 | 否 |
-| **[!UICONTROL Use Car Make]** </br>`Extension Attribute: use_car_make` | 指定在登记入住期间是否支持从客户处收集车辆。</br></br> [!UICONTROL Car Make]的可用选择已在签入体验](check-in-experience-setup.md)的管理员[系统设置中配置。 | 全局 | 否 |
+| **[!UICONTROL Use Car Make]** </br>`Extension Attribute: use_car_make` | 指定在登记入住期间是否支持从客户处收集车辆。</br></br> [!UICONTROL Car Make]的可用选择已在签入体验[&#128279;](check-in-experience-setup.md)的管理员系统设置中配置。 | 全局 | 否 |
 | **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | 指定客户在登记入住期间是否需要车辆制造标识。</br></br>如果启用，将提示客户在到达时指定其车辆的厂牌。 如果禁用，客户可以跳过此输入。 | 全局 | 否 |
 | **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | 指定在签到期间是否支持从客户收集其他信息。 | 全局 | 否 |
 | **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | 指定客户在签入期间是否需要其他信息。 </br></br>如果启用，则提示客户在到达时输入其他信息。 如果禁用，客户可以跳过此输入。 | 全局 | 否 |

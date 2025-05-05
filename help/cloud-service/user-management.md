@@ -32,7 +32,7 @@ ht-degree: 0%
 
 * 管理员 — 管理员分为三种类型：
    * [系统管理员](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} — 系统管理员可以通过Admin Console访问组织中的所有产品和产品配置文件。
-   * [产品管理员](#add-a-product-admin) — 产品管理员可以在[!DNL Adobe Admin Console]中[管理产品的用户、角色和权限，在Commerce管理员中[管理用户](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。](#add-users-and-admins)
+   * [产品管理员](#add-a-product-admin) — 产品管理员可以在[!DNL Adobe Admin Console]中[&#128279;](#add-users-and-admins)管理产品的用户、角色和权限，在Commerce管理员中[管理用户](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
    * [产品配置文件管理员](#add-users-developers-and-product-profile-admins) — 产品配置文件管理员无权访问Adobe Commerce管理员，但可以在[!DNL Adobe Admin Console]中管理产品的用户。
 
 有关授予Adobe Commerce中每个角色的权限的详细信息，请参阅[用户权限](#user-permissions)。

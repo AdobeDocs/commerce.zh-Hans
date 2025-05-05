@@ -40,9 +40,9 @@ ht-degree: 0%
 
 给定的API密钥对对适用于环境中的所有Commerce服务，因此，如果您已经为您的实例配置了Commerce服务，则Commerce Services Connector中已存在您的API密钥对。
 
-如果您的API密钥丢失，则必须生成一个新的API密钥对[并应用[到Admin中的Commerce Services Connector配置](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html#generate-an-api-key-and-private-key)和](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html#configure-saas-project)。 如果配置的密钥有误或配置中不存在任何密钥，则付款服务中将显示帐户验证错误对话框，通知您未验证帐户。
+如果您的API密钥丢失，则必须生成一个新的API密钥对[&#128279;](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html#configure-saas-project)并应用[到Admin中的Commerce Services Connector配置](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html#generate-an-api-key-and-private-key)和。 如果配置的密钥有误或配置中不存在任何密钥，则付款服务中将显示帐户验证错误对话框，通知您未验证帐户。
 
-查看使用API](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices)的可用Commerce服务的[列表。
+查看使用API[&#128279;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices)的可用Commerce服务的列表。
 
 要了解如何为沙盒或生产环境生成API密钥，请参阅[凭据](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html#apikey)。
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
    如果您尚未为帐户配置Commerce服务，则可以看到此选项。
 
-   您将被定向到管理员&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**中的配置区域，以配置您的Commerce服务连接器。
+   您将被定向到管理员&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**&#x200B;中的配置区域，以配置您的Commerce服务连接器。
 
 1. 要配置Commerce服务，请按照[SaaS配置](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html#saasenv)中所述的步骤操作。
 

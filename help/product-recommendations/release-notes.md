@@ -127,7 +127,7 @@ _2023年3月20日_
 
 ![新](../assets/new.svg)已更新[!DNL Product Recommendations]以支持Adobe Commerce 2.4.6。
 ![新建](../assets/new.svg)这是一个主要版本版本。 [编辑](install-configure.md#update)项目的根`composer.json`文件。
-![新](../assets/new.svg) [!DNL Product Recommendations]现在支持Commerce（以前称为多源清单，或MSI）中的完整[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能。 要启用完全支持，必须将依赖关系模块`commerce-data-export`更新](install-configure.md#update)到版本102.2.0及更高版本。[
+![新](../assets/new.svg) [!DNL Product Recommendations]现在支持Commerce（以前称为多源清单，或MSI）中的完整[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能。 要启用完全支持，必须将依赖关系模块`commerce-data-export`更新[&#128279;](install-configure.md#update)到版本102.2.0及更高版本。
 
 ### magento/product-recommendations中的4.0.1
 
@@ -164,7 +164,7 @@ _2023年3月20日_
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![新](../assets/new.svg)已在[!DNL Product Recommendations]中添加[B2B支持](onboarding.md#b2bsupport)
-![新](../assets/new.svg)已通过命令行将目录数据](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)同步到Commerce服务的新馈送添加到[同步
+![新](../assets/new.svg)已通过命令行将目录数据[&#128279;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)同步到Commerce服务的新馈送添加到同步
 
 ### 3.3.3的magento/product-recommendations
 
@@ -266,7 +266,7 @@ _2023年3月20日_
 [!BADGE 支持]{type=Informative tooltip="支持"}
 
 ![修复](../assets/fix.svg)修复了在目录导出期间可能发生的“无法检索产品选项数据”错误。
-![修复](../assets/fix.svg) _[!DNL Product Recommendations]_仪表板上_ Revenue _列中的货币符号现在正确反映了配置的基本货币。
+![修复](../assets/fix.svg) _[!DNL Product Recommendations]_&#x200B;仪表板上_ Revenue _列中的货币符号现在正确反映了配置的基本货币。
 
 ### 3.0.4的magento/product-recommendations
 

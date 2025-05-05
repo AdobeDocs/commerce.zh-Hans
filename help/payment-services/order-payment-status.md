@@ -70,7 +70,7 @@ ht-degree: 0%
 
 在Payment Services的“主页”视图中可以使用“订单付款状态”报表视图。 它包括所有交易的详细状态 — 付款、已开票、已发运、退款、争议等。
 
-在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**以查看详细的表格形式订单付款状态报告视图。
+在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;以查看详细的表格形式订单付款状态报告视图。
 
 ![管理员中的订单付款状态交易记录](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 即使默认情况下在`ON SAVE`模式下进行重新索引，仍建议您在`BY SCHEDULE`模式下进行索引。 `BY SCHEDULE`索引按一分钟的cron计划运行，任何更改的数据会在任何数据更改后的两分钟内显示在订单状态报表中。 此计划的重新索引可帮助您减少存储空间上的任何压力，尤其是在您有大量传入订单的情况下，因为它按计划进行（而不是在每次下订单时）。
 
-您可以在管理员](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)中更改索引模式 — `ON SAVE`或`BY SCHEDULE`—[。
+您可以在管理员[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)中更改索引模式 — `ON SAVE`或`BY SCHEDULE`—。
 
 要了解如何配置数据导出，请参阅[命令行配置](configure-cli.md#configure-data-export)。
 
@@ -143,7 +143,7 @@ ht-degree: 0%
 
 ![数据源选择](assets/datasource.png){width="300" zoomable="yes"}
 
-如果&#x200B;_[!UICONTROL Live]_是选定的数据源，则可以查看在生产模式下使用[!DNL Payment Services]的商店的报告信息。 如果_[!UICONTROL Sandbox]_&#x200B;是选定的数据源，则可以查看沙盒模式的报表信息。
+如果&#x200B;_[!UICONTROL Live]_&#x200B;是选定的数据源，则可以查看在生产模式下使用[!DNL Payment Services]的商店的报告信息。 如果&#x200B;_[!UICONTROL Sandbox]_&#x200B;是选定的数据源，则可以查看沙盒模式的报表信息。
 
 数据源选择的工作方式如下所示：
 
@@ -154,7 +154,7 @@ ht-degree: 0%
 要为[!UICONTROL Order Payment Status]报表选择数据源：
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**。
-1. 单击&#x200B;_[!UICONTROL Data source]_选择器筛选器并选择&#x200B;**[!UICONTROL Live]**或&#x200B;**[!UICONTROL Sandbox]**。
+1. 单击&#x200B;_[!UICONTROL Data source]_&#x200B;选择器筛选器并选择&#x200B;**[!UICONTROL Live]**&#x200B;或&#x200B;**[!UICONTROL Sandbox]**。
 
    报表结果会根据所选数据源重新生成。
 
@@ -163,7 +163,7 @@ ht-degree: 0%
 从“订单付款状态”报表视图中，您可以通过选择特定日期，自定义要查看的状态结果的时间范围。 默认情况下，网格中显示30天的订单付款状态。
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**。
-1. 单击&#x200B;_[!UICONTROL Order dates]_日历选择器筛选器。
+1. 单击&#x200B;_[!UICONTROL Order dates]_&#x200B;日历选择器筛选器。
 1. 选择适用的日期范围。
 1. 在网格中查看指定日期的订单付款状态。
 
@@ -174,7 +174,7 @@ ht-degree: 0%
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**。
 1. 单击&#x200B;**[!UICONTROL Filter]**&#x200B;选择器。
 1. 切换&#x200B;_支付状态_&#x200B;选项，以便仅查看选定订单支付状态的报表结果。
-1. 通过输入&#x200B;_[!UICONTROL Min Order Amount]_或_[!UICONTROL Max Order Amount_]查看订单金额范围内的报表结果。
+1. 通过输入&#x200B;_[!UICONTROL Min Order Amount]_&#x200B;或_[!UICONTROL Max Order Amount_]查看订单金额范围内的报表结果。
 1. 单击&#x200B;**[!UICONTROL Hide filters]**&#x200B;以隐藏筛选器。
 
 ### 显示和隐藏列
@@ -207,7 +207,7 @@ ht-degree: 0%
 
 ### 更新报表数据
 
-订单付款状态报表视图显示&#x200B;_[!UICONTROL Last updated]_时间戳，该时间戳显示上次更新报表信息的时间。 默认情况下，订单付款状态报表数据每三小时自动刷新一次。
+订单付款状态报表视图显示&#x200B;_[!UICONTROL Last updated]_&#x200B;时间戳，该时间戳显示上次更新报表信息的时间。 默认情况下，订单付款状态报表数据每三小时自动刷新一次。
 
 您也可以手动强制刷新订单付款状态报表数据，以查看最新的报表信息。
 

@@ -48,7 +48,7 @@ ht-degree: 0%
 * 法国(FR)
 * 英国（英国）
 
-Payment Services在新用户引导期间为其他[可用国家/地区提供[快速结账功能](../payment-services/payments-options.md)（付款选项的子集）](../payment-services/production.md#complete-merchant-onboarding)。
+Payment Services在新用户引导期间为其他[&#128279;](../payment-services/production.md#complete-merchant-onboarding)可用国家/地区提供[快速结账功能](../payment-services/payments-options.md)（付款选项的子集）。
 
 有关特定于发行版和版本的详细信息，请参阅[生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)和[[!DNL Payment Services] 发行说明](release-notes.md)页面。
 

@@ -269,7 +269,7 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
    - `ac-environment-id`： `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`： `"west_coast_inc"`
 
-+++
+   +++
 
 1. 将`ac-channel-id`值替换为您之前复制的Celport通道ID。
 1. 如果需要，请将`ac-environment-id`值替换为您[!DNL Adobe Commerce Optimizer]实例的租户ID。 您可以在抢先体验计划的入门电子邮件中或通过联系您的Adobe客户代表来查找ID。

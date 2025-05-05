@@ -28,7 +28,7 @@ ht-degree: 0%
 
    部署[!DNL Product Recommendations]需要两个主要[数据源](type.md)：目录和行为。 由于生产是捕获和分析购物者行为的唯一环境，因此请尽早在生产上开始收集数据。 [了解](events.md)Adobe Sensei如何训练机器学习模型，以获取更高质量的推荐。 作为一项附加好处，当您开始收集生产上的行为数据时，可以在非生产环境中操作时基于此生产数据[获取推荐](verify.md)。 然后，您可以测试和试验根据在生产过程中收集的实际购物者数据计算的各种推荐。
 
-   要将数据收集部署到生产环境，您必须[通过提供[API密钥](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html)来安装和配置](install-configure.md) [!DNL Product Recommendations]模块。
+   要将数据收集部署到生产环境，您必须[&#128279;](install-configure.md)通过提供[API密钥](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html)来安装和配置 [!DNL Product Recommendations]模块。
 
    >[!TIP]
    >

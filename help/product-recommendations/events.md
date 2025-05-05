@@ -90,7 +90,7 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 
 >[!NOTE]
 >
->产品推荐量度已针对Luma店面进行了优化。 如果店面是通过PWA Studio实施的，请参阅[PWA文档](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)。 如果您使用自定义前端技术，如React或Vue JS，则了解如何在Headless](headless.md)环境中集成[产品推荐。
+>产品推荐量度已针对Luma店面进行了优化。 如果店面是通过PWA Studio实施的，请参阅[PWA文档](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)。 如果您使用自定义前端技术，如React或Vue JS，则了解如何在Headless[&#128279;](headless.md)环境中集成产品推荐。
 
 #### 必需的报告面板事件
 

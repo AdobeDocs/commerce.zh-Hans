@@ -122,7 +122,7 @@ ht-degree: 0%
 
 +++
 
-有关这些字段及其限制的详细信息，请参阅有关行项目](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}的[PayPal开发人员文档。
+有关这些字段及其限制的详细信息，请参阅有关行项目[&#128279;](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}的PayPal开发人员文档。
 
 ## 管理行项目
 

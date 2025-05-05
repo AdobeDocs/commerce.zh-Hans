@@ -25,7 +25,7 @@ ht-degree: 0%
 
   | 商店协助应用程序 — 入门视图 | 应用商店助手应用程序 — 模块视图 |
   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-  | 在移动设备上查看![[!DNL Store Assist App Getting Started]](assets/store-assist-get-started-small.png) | 移动设备](assets/store-assist-orders-small.png)上的![[!DNL Store Assist App Orders view] |
+  | 在移动设备上查看![[!DNL Store Assist App Getting Started]](assets/store-assist-get-started-small.png) | 移动设备![&#128279;](assets/store-assist-orders-small.png)上的[!DNL Store Assist App Orders view] |
 
 ## 配置步骤
 

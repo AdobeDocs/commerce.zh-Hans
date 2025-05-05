@@ -236,7 +236,7 @@ ht-degree: 0%
 <li>等待订单同步。</li>
 <li>检查是否已创建发票（如果授权并捕获）以及是否已收到发票电子邮件。</li>
 <li>转到Postman并运行准备收取请求，将所有产品都设置为已收取。</li>
-<li>打开邮箱，找到“准备好取货”电子邮件。 然后单击**[!UICONTROL Confirm Arrival]**。</li>
+<li>打开邮箱，找到“准备好取货”电子邮件。 然后单击&#x200B;**[!UICONTROL Confirm Arrival]**。</li>
 <li>签到。</li>
 <li>转到Postman并运行Dispensed请求，将所有产品都设置为已拒绝。</li>
 </ol>

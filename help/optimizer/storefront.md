@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->此设置适用于使用[!DNL Adobe Commerce Optimizer]和Adobe Commerce Edge Delivery服务店面进行开发。 可通过适用于Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)的[App Builder和适用于Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh)的[API Mesh获得用于扩展和自定义[!DNL Adobe Commerce Optimizer]解决方案的其他资源。 有关访问和使用信息，请联系您的Adobe客户代表。
+>此设置适用于使用[!DNL Adobe Commerce Optimizer]和Adobe Commerce Edge Delivery服务店面进行开发。 可通过适用于Adobe Commerce[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)的[App Builder和适用于Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh)的API Mesh获得用于扩展和自定义[!DNL Adobe Commerce Optimizer]解决方案的其他资源。 有关访问和使用信息，请联系您的Adobe客户代表。
 
 #### 安装Sidekick
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 您为[!DNL Adobe Commerce Optimizer]项目创建的店面是使用Edge Delivery Services店面样板上的Adobe Commerce的自定义版本生成的。 样板是一组文件和文件夹，它们提供了构建店面的起点。
 
-此店面设置流程是专门为[!DNL Adobe Commerce Optimizer]项目自定义的。 该流与Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)设置中的标准[Adobe Commerce的流不同。
+此店面设置流程是专门为[!DNL Adobe Commerce Optimizer]项目自定义的。 该流与Edge Delivery Services Storefront[&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)设置中的标准Adobe Commerce的流不同。
 
 >[!NOTE]
 >
@@ -296,7 +296,7 @@ ht-degree: 0%
 
    有关详细信息，请参阅[Sidekick Library文档](https://www.aem.live/docs/sidekick-library)。
 
-+++
+   +++
 
 1. 使用GitHub存储库的值更新`url`键值。
 

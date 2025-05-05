@@ -133,16 +133,16 @@ ht-degree: 0%
 
 要&#x200B;**仅使用&#x200B;_捕获付款_ PayPal付款按钮（_不是_ PayPal信用卡付款选项）**：
 
-1. 请确保您的存储在生产模式](settings.md#enable-payment-services)中为[。
+1. 请确保您的存储在生产模式[&#128279;](settings.md#enable-payment-services)中为。
 1. 在“设置”中[配置所需的PayPal付款按钮](settings.md#payment-buttons)。
-1. 关闭&#x200B;_[!UICONTROL Payment buttons]_部分中的&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**选项_&#x200B;关闭&#x200B;_。
+1. 关闭&#x200B;_[!UICONTROL Payment buttons]_&#x200B;部分中的&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;选项_&#x200B;关闭&#x200B;_。
 
 要&#x200B;**使用现有信用卡提供商&#x200B;_和_ PayPal付款按钮**&#x200B;捕获付款：
 
-1. 请确保您的存储在生产模式](settings.md#enable-payment-services)中为[。
+1. 请确保您的存储在生产模式[&#128279;](settings.md#enable-payment-services)中为。
 1. [配置所需的PayPal付款按钮](settings.md#payment-buttons)。
-1. 关闭&#x200B;_[!UICONTROL Payment buttons]_部分中的&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**选项_&#x200B;关闭&#x200B;_。
-1. 关闭&#x200B;_[!UICONTROL Credit card fields]_部分中的_&#x200B;关闭&#x200B;_**[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)。
+1. 关闭&#x200B;_[!UICONTROL Payment buttons]_&#x200B;部分中的&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;选项_&#x200B;关闭&#x200B;_。
+1. 关闭&#x200B;_[!UICONTROL Credit card fields]_&#x200B;部分中的_&#x200B;关闭&#x200B;_&#x200B;**[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**&#x200B;选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)。
 
 ## 订单重新计算
 

@@ -32,7 +32,7 @@ ht-degree: 0%
 
 “事务处理”报表视图在“付款服务”的“事务处理”视图中可用。 它包括有关您商店交易的所有可用信息。
 
-在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**以查看详细的表格化交易报告视图。
+在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;以查看详细的表格化交易报告视图。
 
 ![事务报表视图](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ![数据源选择](assets/datasource.png){width="300" zoomable="yes"}
 
-如果&#x200B;_[!UICONTROL Live]_是选定的数据源，则可以查看在生产模式下使用[!DNL Payment Services]的商店的报告信息。 如果_[!UICONTROL Sandbox]_&#x200B;是选定的数据源，则可以查看沙盒模式的报表信息。
+如果&#x200B;_[!UICONTROL Live]_&#x200B;是选定的数据源，则可以查看在生产模式下使用[!DNL Payment Services]的商店的报告信息。 如果&#x200B;_[!UICONTROL Sandbox]_&#x200B;是选定的数据源，则可以查看沙盒模式的报表信息。
 
 数据源选择的工作方式如下所示：
 
@@ -84,14 +84,14 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**。
 1. 单击&#x200B;**[!UICONTROL Filter]**&#x200B;选择器。
-1. 切换&#x200B;_[!UICONTROL Transaction Result]_选项以仅查看选定订单交易记录的报表结果。
-1. 切换&#x200B;_[!UICONTROL Payment Method]_选项以查看用于交易的付款类型的报告结果。
-1. 切换&#x200B;_[!UICONTROL Payment Detail]_选项以查看使用的付款类型的附加信息（如果可用）。
+1. 切换&#x200B;_[!UICONTROL Transaction Result]_&#x200B;选项以仅查看选定订单交易记录的报表结果。
+1. 切换&#x200B;_[!UICONTROL Payment Method]_&#x200B;选项以查看用于交易的付款类型的报告结果。
+1. 切换&#x200B;_[!UICONTROL Payment Detail]_&#x200B;选项以查看使用的付款类型的附加信息（如果可用）。
 1. 输入&#x200B;_最小订单金额_&#x200B;或&#x200B;_最大订单金额_&#x200B;以查看该订单金额范围内的报表结果。
-1. 输入&#x200B;_[!UICONTROL Order ID]_以搜索特定事务。
-1. 介绍&#x200B;_[!UICONTROL Card Last Four]_以搜索特定的信用卡或借记卡。
-1. 输入&#x200B;_[!UICONTROL Customer ID]_以显示特定客户的所有交易记录。
-1. 输入&#x200B;_[!UICONTROL Customer Email]_以筛选该电子邮件的事务。
+1. 输入&#x200B;_[!UICONTROL Order ID]_&#x200B;以搜索特定事务。
+1. 介绍&#x200B;_[!UICONTROL Card Last Four]_&#x200B;以搜索特定的信用卡或借记卡。
+1. 输入&#x200B;_[!UICONTROL Customer ID]_&#x200B;以显示特定客户的所有交易记录。
+1. 输入&#x200B;_[!UICONTROL Customer Email]_&#x200B;以筛选该电子邮件的事务。
 1. 单击&#x200B;**[!UICONTROL Hide filters]**&#x200B;以隐藏筛选器。
 
 ### 显示和隐藏列
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 ### 更新报表数据
 
-事务报表视图显示一个&#x200B;_[!UICONTROL Last updated]_时间戳，该时间戳显示上次更新报表信息的时间。 默认情况下，事务报表数据每三小时自动刷新一次。
+事务报表视图显示一个&#x200B;_[!UICONTROL Last updated]_&#x200B;时间戳，该时间戳显示上次更新报表信息的时间。 默认情况下，事务报表数据每三小时自动刷新一次。
 
 您还可以手动强制刷新报表数据以查看最新的报表信息。
 

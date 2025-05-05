@@ -24,7 +24,7 @@ ht-degree: 0%
 
 必须先从[Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html)下载该扩展，然后才能安装它。
 
-1. 导航到Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)中的[Payment Services扩展。
+1. 导航到Commerce Marketplace[&#128279;](https://commercemarketplace.adobe.com/magento-payment-services.html)中的Payment Services扩展。
 1. 要选择版本和版本，请将&#x200B;**[!UICONTROL Edition]**&#x200B;和&#x200B;**[!UICONTROL Your store version]**&#x200B;切换到您的首选选项。
 1. 单击&#x200B;**[!UICONTROL Add to Cart]**。
 1. 完成签出，然后单击&#x200B;**[!UICONTROL Place Order]**。
@@ -164,7 +164,7 @@ Could not find a matching version of package magento/payment-services. Check the
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-在`php.ini`中增加环境上PHP的内存限制[](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit)。
+在`php.ini`中增加环境上PHP的内存限制[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit)。
 
 或者，也可以使用此命令指定内存限制： `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`。
 
