@@ -84,7 +84,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> 请仅在生产[!DNL Commerce]安装中使用&#x200B;**生产SaaS数据空间**以避免数据冲突。 否则，您可能会用测试数据污染生产站点数据，从而导致部署延迟。 例如，可能会从暂存数据（如暂存URL）错误地覆盖您的生产产品数据。
+> 请仅在生产[!DNL Commerce]安装中使用&#x200B;**生产SaaS数据空间**&#x200B;以避免数据冲突。 否则，您可能会用测试数据污染生产站点数据，从而导致部署延迟。 例如，可能会从暂存数据（如暂存URL）错误地覆盖您的生产产品数据。
 > 如果发生这种情况，[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以请求数据清理。
 
 ### SaaS数据空间配置
@@ -113,7 +113,7 @@ ht-degree: 0%
 
    如果在[!DNL Commerce]配置中未看到&#x200B;**[!UICONTROL Commerce Services Connector]**&#x200B;部分，请为所需的[[!DNL Commerce] 服务](#availableservices)安装[!DNL Commerce]模块。 另外，确保已安装`magento/module-services-id`包。
 
-1. 在&#x200B;_[!UICONTROL Sandbox API Keys]_和_[!UICONTROL Production API Keys]_&#x200B;部分中，粘贴您的键值。
+1. 在&#x200B;_[!UICONTROL Sandbox API Keys]_&#x200B;和_[!UICONTROL Production API Keys]_&#x200B;部分中，粘贴您的键值。
 
    - 私钥必须在密钥的开头包含`----BEGIN PRIVATE KEY---`，在密钥的结尾包含`----END PRIVATE KEY----`。
    - 如果您没有实际密钥的副本，请向帐户所有者索取这些密钥，然后将值插入配置。
