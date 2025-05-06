@@ -5,7 +5,7 @@ breadcrumb-title: Adobe Commerce的[!DNL Data Connection]扩展
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
 source-git-commit: 98a7ea9ff7d741bd7333b44618e7287da9d66353
 workflow-type: tm+mt
 source-wordcount: '146'
@@ -37,4 +37,4 @@ ht-degree: 2%
 - 用例 {#use-cases}
    - [使用Adobe Journey Optimizer发送放弃的购物车电子邮件](using-ajo.md)
    - [使用Commerce事件数据在Real-Time CDP中创建受众](create-audience.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)
