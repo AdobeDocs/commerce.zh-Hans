@@ -2,9 +2,11 @@
 title: '[!DNL Page Builder]集成'
 description: 了解如何在页面生成器中使用 [!DNL Product Recommendations] 单位。
 feature: Services, Recommendations, Page Builder
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 001e8e1d-3590-4b44-b5f8-dd8b9b61f370
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---

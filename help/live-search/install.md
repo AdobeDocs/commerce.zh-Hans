@@ -3,9 +3,10 @@ title: 开始使用 [!DNL Live Search]
 description: 从Adobe Commerce中了解 [!DNL Live Search] 的系统要求和安装步骤。
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
-source-git-commit: 8ebb28641e8db3b88d8f9d818da6301558ed186b
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
-source-wordcount: '3122'
+source-wordcount: '3139'
 ht-degree: 0%
 
 ---
@@ -60,11 +61,11 @@ Adobe Commerce [!DNL Live Search]和[[!DNL Catalog Service]](../catalog-service/
 >
 >从[!DNL Live Search] 4.0.0开始，已弃用搜索适配器。 今后，将仅更新搜索适配器以解决安全问题。
 
-1. 确认[cron作业](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)和[索引器](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management)正在运行。
+1. 确认[cron作业](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)和[索引器](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)正在运行。
 
    >[!IMPORTANT]
    >
-   >由于Elasticsearch 7将于2023年8月宣布终止支持，建议所有Adobe Commerce客户迁移到OpenSearch 2.x搜索引擎。 有关在产品升级期间迁移搜索引擎的信息，请参阅&#x200B;_升级指南_&#x200B;中的[迁移到OpenSearch](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration)。
+   >由于Elasticsearch 7将于2023年8月宣布终止支持，建议所有Adobe Commerce客户迁移到OpenSearch 2.x搜索引擎。 有关在产品升级期间迁移搜索引擎的信息，请参阅&#x200B;_升级指南_&#x200B;中的[迁移到OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration)。
 
 1. 从[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)下载`live-search`包。
 
@@ -94,7 +95,7 @@ Adobe Commerce [!DNL Live Search]和[[!DNL Catalog Service]](../catalog-service/
    bin/magento setup:upgrade
    ```
 
-1. 验证以下[索引器](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management)是否设置为“按计划更新”：
+1. 验证以下[索引器](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)是否设置为“按计划更新”：
 
    - 产品信息源
    - 产品变型馈送
@@ -150,7 +151,7 @@ Adobe Commerce [!DNL Live Search]和[[!DNL Catalog Service]](../catalog-service/
 
 这些新条件增强了搜索查询过滤机制以细化搜索结果。 这些新条件不会影响主搜索查询。
 
-您可以在搜索结果页面上实施这些新条件。 例如，您可以在页面上添加新部分，购物者可以进一步细化其搜索结果。 您可以允许购物者选择特定的产品属性，如“制造商”、“部件号”和“说明”。 从该位置，他们使用`contains`或`startsWith`条件在这些属性中搜索。 有关可搜索的[属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/attributes-input-types)的列表，请参阅管理员指南。
+您可以在搜索结果页面上实施这些新条件。 例如，您可以在页面上添加新部分，购物者可以进一步细化其搜索结果。 您可以允许购物者选择特定的产品属性，如“制造商”、“部件号”和“说明”。 从该位置，他们使用`contains`或`startsWith`条件在这些属性中搜索。 有关可搜索的[属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)的列表，请参阅管理员指南。
 
 1. 要安装测试版，请将以下依赖关系添加到您的项目中：
 
@@ -158,11 +159,11 @@ Adobe Commerce [!DNL Live Search]和[[!DNL Catalog Service]](../catalog-service/
    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
-1. 提交更改并将更改推送到`composer.json`和`composer.lock`云项目。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
+1. 提交更改并将更改推送到`composer.json`和`composer.lock`云项目。 [了解详情](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
 
    此测试版在管理员中为&#x200B;**[!UICONTROL Autocomplete]**、**[!UICONTROL Contains]**&#x200B;和&#x200B;**[!UICONTROL Starts with]**&#x200B;添加&#x200B;**[!UICONTROL Search types]**&#x200B;复选框。 它还更新了[`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) GraphQL API以包含这些新搜索功能。
 
-1. 在管理员中，[将产品属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)设置为可搜索，并指定该属性的搜索功能，如&#x200B;**包含**（默认值）或&#x200B;**开头为**。 您最多可以为&#x200B;**Contains**&#x200B;指定6个要启用的属性，为&#x200B;**Starts with**&#x200B;指定6个要启用的属性。 对于测试版，请注意，管理员不强制执行此限制，但会在API搜索中强制执行。
+1. 在管理员中，[将产品属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)设置为可搜索，并指定该属性的搜索功能，如&#x200B;**包含**（默认值）或&#x200B;**开头为**。 您最多可以为&#x200B;**Contains**&#x200B;指定6个要启用的属性，为&#x200B;**Starts with**&#x200B;指定6个要启用的属性。 对于测试版，请注意，管理员不强制执行此限制，但会在API搜索中强制执行。
 
    ![指定搜索功能](./assets/search-filters-admin.png)
 
@@ -208,7 +209,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 监视器同步进度
 
-您可以查看使用[数据管理功能板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard)同步和共享的数据。 此仪表板提供关于您店面产品数据可用性的宝贵见解，确保可及时向购物者显示这些数据。
+您可以查看使用[数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)同步和共享的数据。 此仪表板提供关于您店面产品数据可用性的宝贵见解，确保可及时向购物者显示这些数据。
 
 ![数据管理仪表板](assets/data-management-dashboard.png)
 
@@ -231,12 +232,12 @@ bin/magento saas:resync --feed categoryPermissions
   >
   >如果您收到`table does not exist`错误，请在`catalog_data_exporter_products`和`catalog_data_exporter_product_attributes`表中查找条目。 这些表名称在4.2.1之前的[!DNL Live Search]版本中使用。
 
-- 使用带有默认查询的[GraphQL游乐场](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/live-search-admin/graphql)&#x200B;(有关更多详细信息，请参阅[GraphQL引用](https://developer.adobe.com/commerce/services/graphql/live-search/))来验证以下内容：
+- 使用带有默认查询的[GraphQL游乐场](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/graphql)&#x200B;(有关更多详细信息，请参阅[GraphQL引用](https://developer.adobe.com/commerce/services/graphql/live-search/))来验证以下内容：
 
    - 返回的产品计数接近您对商店视图的预期。
    - 将返回Facet。
 
-有关其他帮助，请参阅支持知识库中的[[!DNL Live Search] 目录未同步](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)。
+有关其他帮助，请参阅支持知识库中的[[!DNL Live Search] 目录未同步](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)。
 
 ## 5.配置数据
 
@@ -256,7 +257,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 更改此配置时，将显示消息`Page cache is invalidated`。 您需要刷新Magento缓存以保存更改。
 
-1. 通过执行以下操作之一访问[缓存管理](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/cache-management)页：
+1. 通过执行以下操作之一访问[缓存管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)页：
 
    - 单击工作区上方消息中的&#x200B;**[!UICONTROL Cache Management]**&#x200B;链接。
    - 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Cache Management]**。
@@ -267,7 +268,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 分配类别
 
-[!DNL Live Search]中返回的产品必须分配给[类别](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/categories/categories)。 例如，在Luma中，产品被划分为“男性”、“女性”和“齿轮”等类别。 “Top”、“Bottoms”和“Watches”也设置了子类别。 这些类别分配可改进筛选时的粒度。
+[!DNL Live Search]中返回的产品必须分配给[类别](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)。 例如，在Luma中，产品被划分为“男性”、“女性”和“齿轮”等类别。 “Top”、“Bottoms”和“Watches”也设置了子类别。 这些类别分配可改进筛选时的粒度。
 
 ## 6.测试连接
 
@@ -351,7 +352,7 @@ composer update magento/live-search --with-dependencies
 
 ## 正在卸载[!DNL Live Search]
 
-要卸载[!DNL Live Search]，请参阅[卸载模块](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。
+要卸载[!DNL Live Search]，请参阅[卸载模块](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。
 
 ## [!DNL Live Search]包
 
@@ -360,7 +361,7 @@ composer update magento/live-search --with-dependencies
 | 包 | 描述 |
 |--- |--- |
 | `module-live-search` | 允许商家配置其针对分面、同义词、查询规则等的搜索设置，并提供对只读GraphQL游乐场的访问权限，以测试来自&#x200B;*管理员*&#x200B;的查询。 |
-| `module-live-search-adapter` | 将搜索请求从店面路由到[!DNL Live Search]服务，并在店面中呈现结果。 <br /> — 类别浏览 — 将请求从店面[顶部导航](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/navigation/navigation-top)路由到搜索服务。<br /> — 全局搜索 — 将请求从店面右上角的[快速搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search)框路由到[!DNL Live Search]服务。 |
+| `module-live-search-adapter` | 将搜索请求从店面路由到[!DNL Live Search]服务，并在店面中呈现结果。 <br /> — 类别浏览 — 将请求从店面[顶部导航](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top)路由到搜索服务。<br /> — 全局搜索 — 将请求从店面右上角的[快速搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)框路由到[!DNL Live Search]服务。 |
 | `module-live-search-storefront-popover` | “键入时搜索”弹出框取代了标准快速搜索，并返回排名最前的搜索结果的数据和缩略图。 |
 
 ## [!DNL Live Search]依赖项
@@ -471,7 +472,7 @@ Adobe建议直接调用SaaS API，尤其是目录服务端点。
 
 ### Inventory management
 
-[!DNL Live Search]支持Commerce中的[Inventory management](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/introduction)功能(以前称为多Source清单，或MSI)。 要启用完全支持，您必须[将](install.md#updating-live-search)依赖项模块`commerce-data-export`更新为版本102.2.0+。
+[!DNL Live Search]支持Commerce中的[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能(以前称为多Source清单，或MSI)。 要启用完全支持，您必须[将](install.md#updating-live-search)依赖项模块`commerce-data-export`更新为版本102.2.0+。
 
 [!DNL Live Search]返回一个布尔值，表明产品在Inventory management中是否可用，但不包含有关哪个来源具有库存的信息。
 
@@ -508,7 +509,7 @@ composer require magento/module-data-services-graphql
 
 ### B2B支持
 
-[!DNL Live Search]支持[B2B功能](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/guide-overview)及其他[限制](boundaries-limits.md#b2b-and-category-permissions)。
+[!DNL Live Search]支持[B2B功能](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview)及其他[限制](boundaries-limits.md#b2b-and-category-permissions)。
 
 ### PWA支持
 
@@ -540,4 +541,4 @@ composer require magento/module-data-services-graphql
 
 ### Cookies
 
-[!DNL Live Search]收集用户交互数据，作为其基本功能的一部分，Cookie用于存储此数据。 在收集任何用户信息时，用户必须同意存储Cookie。 [!DNL Live Search]和[!DNL Product Recommendations]共享数据流，因此使用相同的Cookie机制。 有关它的详细信息，请参阅[句柄Cookie限制](https://experienceleague.adobe.com/zh-hans/docs/commerce/product-recommendations/developer/setting-cookie)。
+[!DNL Live Search]收集用户交互数据，作为其基本功能的一部分，Cookie用于存储此数据。 在收集任何用户信息时，用户必须同意存储Cookie。 [!DNL Live Search]和[!DNL Product Recommendations]共享数据流，因此使用相同的Cookie机制。 有关它的详细信息，请参阅[句柄Cookie限制](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/setting-cookie)。
