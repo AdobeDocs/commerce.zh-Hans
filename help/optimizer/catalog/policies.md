@@ -3,9 +3,10 @@ title: 策略
 description: 了解如何使用策略对渠道内的数据进行筛选，以确保将数据发送到正确的目标。
 hide: true
 recommendations: noCatalog
-source-git-commit: 425c801a852de566120504563e256b0351df588e
+exl-id: 05bbad1a-d612-41a4-9575-543f507089c3
+source-git-commit: a731d978aa180633431b0dd9dde5439c286461a2
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -32,12 +33,12 @@ ht-degree: 0%
 |---|---|---|
 | **属性** | 用于筛选的产品属性。 | `part_category` |
 | **操作员** | 应用于属性的条件。 | `IN`，`EQUALS`，`CONTAINS` |
-| **值源** | 指定值是`STATIC`还是`TRIGGER`。 | `STATIC` |
+| **值源** | 指定值是`STATIC`还是`TRIGGER`。 | `STATIC` [了解更多](#value-source-types) |
 | **值** | 满足条件的特定值。 | `brakes, suspension` |
 
 ### 示例
 
-具有属性`part_category`、运算符`IN`和值`brakes, suspension`的筛选器可确保策略中只包含分类为制动和暂停的产品。
+具有属性`part_category`、运算符`IN`和值`brakes, suspension`的筛选器可确保策略只筛选并显示具有属性`part_category`且值为`brake`或`suspension`的产品。
 
 ### 值源类型
 

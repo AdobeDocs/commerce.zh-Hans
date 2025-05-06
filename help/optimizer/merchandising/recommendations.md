@@ -2,9 +2,10 @@
 title: Recommendations
 description: “推荐”是一种强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: 04228203-37a3-4535-ad61-d5e586e57d63
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -31,3 +32,11 @@ Recommendations使用人工智能和机器学习算法来对汇总的访客数�
 - [编辑](../../product-recommendations/edit.md)现有推荐。
 
 您可以使用推荐店面组件在店面中显示这些产品推荐。
+
+## 限制
+
+下面列出了推荐可提前访问的限制。
+
+- [!DNL Adobe Commerce Optimizer]支持&#x200B;_最近查看的_&#x200B;推荐类型。
+- 不支持类别或属性包含项或排除项。
+- 您无法在[!DNL Adobe Commerce Optimizer]中预览推荐。

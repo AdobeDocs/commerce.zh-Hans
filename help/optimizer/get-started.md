@@ -3,9 +3,10 @@ title: 开始使用 [!DNL Adobe Commerce Optimizer]
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer]。
 hide: true
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
+source-git-commit: ac79c8aa43ced017743fbef1f181b4eaf8e0a754
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ ht-degree: 0%
 
 >[!TAB Administrator and merchant workflow]
 
-This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/cn/enterprise/admin-guide.html) for more information about administrator workflows.
+This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
 
 NEED DIAGRAM
 
@@ -50,6 +51,10 @@ NEED DIAGRAM
 | [!DNL Adobe Commerce Optimizer] UI | `https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>` | 访问Commerce Optimizer UI以跨以下项管理您的目录：<br>1。 促销规则（产品发现、产品推荐）。<br>2。 目录管理（渠道和策略创建）。<br>3。 数据分析（查看您的目录数据摄取状态）。 |
 | 店面API | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql` | 访问设置由Edge Delivery Services提供支持的Commerce店面所需的API。 |
 | 目录数据摄取API | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>` | 访问摄取目录数据所需的API。 |
+
+>[!NOTE]
+>
+>请参阅[开发人员文档](https://developer-stage.adobe.com/commerce/services/composable-catalog/)，详细了解店面设置和目录摄取所需的API。
 
 作为抢先体验参与者，您将收到一封包含安全链接的电子邮件，该链接与您的IMS令牌一起允许您登录[!DNL Adobe Commerce Optimizer]或进行API调用。
 

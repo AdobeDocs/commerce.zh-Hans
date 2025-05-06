@@ -4,9 +4,10 @@ description: 了解如何使用 [!DNL Adobe Commerce Optimizer] 使用渠道和�
 hide: true
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---
@@ -17,23 +18,23 @@ ht-degree: 0%
 >
 >本文档描述了早期访问开发中的产品，并未反映用于正式发布的所有功能。
 
-以下用例演示了如何使用[!DNL Adobe Commerce Optimizer]组织目录以使用单个基础目录匹配零售操作。 还介绍了如何建立由Edge Delivery Services提供支持的店面。
+以下用例演示了如何使用[!DNL Adobe Commerce Optimizer]组织目录以使用单个基础目录匹配零售操作。 它还演示了如何设置由Edge Delivery Services提供支持的店面。
 
-## 前提条件
+## 先决条件
 
-在了解此用例之前，请确保您已[设置您的店面](../storefront.md)。
+在查看此用例之前，请确保您已[设置店面](../storefront.md)。
 
 ## 让我们开始吧
 
-在本例中，您将使用下列工具：
+在此使用案例中，您将使用下列内容：
 
-1. [!DNL Adobe Commerce Optimizer] UI — 设置所需的通道和策略以管理复杂的目录操作设置。
+1. [!DNL Adobe Commerce Optimizer] UI — 设置所需的渠道和策略以管理复杂的目录操作设置。
 
-1. Commerce店面 — 使用[!DNL Adobe Commerce Optimizer] UI中设置的目录数据以及Commerce店面配置文件`fstab.yaml`和`config.json`渲染店面。
+1. Commerce Storefront — 使用[!DNL Adobe Commerce Optimizer] UI中设置的目录数据以及Commerce Storefront配置文件`fstab.yaml`和`config.json`呈现店面。
 
-### 重要‌收获
+### 关‌键要点
 
-在本文结束时，您将：
+在本文末尾，您将了解：
 
 - 通过独特的性能和可扩展的目录数据模型了解[!DNL Adobe Commerce Optimizer]的基础知识。
 - 了解目录数据模型如何与Adobe构建的与平台无关的店面组件无缝地联系起来。
@@ -41,11 +42,11 @@ ht-degree: 0%
 
 ## 业务方案 — Carvelo Automobile
 
-Carvelo Automobile是一家虚构的汽车企业集团，拥有复杂的运营架构。
+卡韦洛汽车是一个虚拟的汽车集团，拥有复杂的运营结构。
 
 ![卡韦洛汽车](../assets/carvelo.png)
 
-在这张图中，您会看到Carvelo销售三个品牌的汽车产品。 每个品牌都是不同的子公司：
+在这张图表中，您会看到Carvelo销售三种品牌的汽车产品。 每个品牌都是不同的子公司：
 
 - Aurora（电动汽车）
 - 螺栓(SUV)
@@ -69,16 +70,16 @@ Carvelo Automobile是一家虚构的汽车企业集团，拥有复杂的运营�
 
 如您所见，这是一个非常复杂的业务用例。 使用[!DNL Adobe Commerce Optimizer]，商家可以使用单个基本目录支持复杂的业务结构，以联合数据，而无需目录重复，扩展价格手册（超过30k的价格手册），并将所有这些数据提供给Edge Delivery Services店面。
 
-现在您已大致了解了业务用例，下面是您在学习本教程时的目标：
+现在您已大致了解业务用例，下面是您在本教程中使用的目标：
 
 >[!BEGINSHADEBOX]
 
-Carvelo希望通过不同的经销商（Akbridge、Kingsbluff和Celport）跨三个品牌（Aurora、Bolt和Cruz）销售部件。 Carvelo希望确保各经销商根据各自的许可协议仅能获得正确的部件和价格。
+Carvelo希望通过不同的经销商（Akbridge、Kingsbluff和Celport）跨其三个品牌（Aurora、Bolt和Cruz）销售部件。 Carvelo希望确保经销商只能按各自的许可协议获得正确的部件和价格。
 
 最终，卡韦洛有两个主要目标：
 
 1. 维护一个“全球”网站，该网站具有涵盖所有三个品牌的所有SKU。
-1. 根据独特的SKU可见性和每个经销商的每个SKU价格，为经销商建立自己的店面提供途径。
+1. 根据独特的SKU可见性和每个经销商的每个SKU价格，为经销商建立自己的店面提供途径。 同时使用单个基本目录，可消除目录重复。
 
 >[!ENDSHADEBOX]
 
@@ -86,7 +87,7 @@ Carvelo希望通过不同的经销商（Akbridge、Kingsbluff和Celport）跨三
 
 ## 1.访问[!DNL Adobe Commerce Optimizer]实例
 
-加入抢先体验计划后，Adobe会发送一封电子邮件，其中提供了用于访问为您提供的l[!DNL Adobe Commerce Optimizer]实例的URL。 此实例已预先配置您成功完成本教程中概述的步骤所需的一切，包括支持Carvelo Automobile使用案例的目录数据。
+加入“抢先体验”计划后，Adobe会发送一封电子邮件，提供用于访问为您配置的l[!DNL Adobe Commerce Optimizer]实例的URL。 此实例已预配置了成功完成本教程中概述的步骤所需的一切，包括支持Carvelo汽车用例的目录数据。
 
 启动[!DNL Adobe Commerce Optimizer]时，您会看到以下内容：
 
@@ -117,7 +118,7 @@ Kingsbluff具有以下策略：
 
 - 品牌
 - 模型
-- East Coast Inc品牌
+- East Coast公司品牌
 - Kingsbluff部件类别
 
 在下一部分中，您将为Celport代理创建渠道和策略。
@@ -128,15 +129,15 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 
 ![Celport经销商](../assets/celport-dealer.png)
 
-使用[!DNL Adobe Commerce Optimizer]，商务经理将：
+使用[!DNL Adobe Commerce Optimizer]，商务管理器将：
 
-1. 为Celport创建一个名为&#x200B;*Celport部件类别*&#x200B;的新策略，以仅销售刹车和悬架部件。
-1. 为Celport店面创建新渠道。
+1. 为Celport创建一个名为&#x200B;*Celport部件类别*&#x200B;的新策略，以便仅销售制动和悬架部件。
+1. 为Celport店面创建一个新渠道。
 
-   此渠道使用您新创建的政策&#x200B;*Celport部件类别*&#x200B;和现有的&#x200B;*East Coast Inc品牌*&#x200B;来确保Celport仅可销售Bolt和Cruz品牌，这是您与East Coast Inc达成的协议的一部分。Celport渠道将使用`east_coast_inc`价格手册来支持与品牌许可协议相符的产品定价计划。
-1. 更新Commerce店面配置以使用您创建的Celport渠道中的数据。
+   此渠道使用您新创建的策略&#x200B;*Celport部件类别*&#x200B;和现有的&#x200B;*East Coast Inc品牌*，以确保Celport在与East Coast Inc签署的协议中只能销售Bolt和Cruz品牌。Celport渠道将使用`east_coast_inc`价格手册来支持与品牌许可协议相符的产品定价计划。
+1. 更新商务店面配置以使用来自您创建的Celport渠道的数据。
 
-在本节末尾，Celport将启动并运行，以销售Carvelo的产品。
+在本节末尾， Celport将启动并运行，准备销售Carvelo的产品。
 
 ### 创建策略
 
@@ -154,7 +155,7 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 
 1. 单击&#x200B;**[!UICONTROL Add Filter]**。
 
-   此时会显示一个对话框以添加过滤器详细信息。
+   将显示一个对话框以添加过滤器详细信息。
 
 1. 添加筛选器详细信息：
 
@@ -185,9 +186,9 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 
 ### 创建渠道
 
-为&#x200B;*Celport*&#x200B;经销商创建新渠道并链接以下策略： *East Coast Inc品牌*&#x200B;和&#x200B;*Celport部件类别*。
+为&#x200B;*Celport*&#x200B;经销商创建新的渠道并链接以下策略： *East Coast Inc品牌*&#x200B;和&#x200B;*Celport部件类别*。
 
-1. 在左侧导航栏中，展开&#x200B;**[!UICONTROL Catalog]**&#x200B;部分并单击&#x200B;**[!UICONTROL Channels]**。
+1. 在左侧导航中，展开&#x200B;**[!UICONTROL Catalog]**&#x200B;部分并单击&#x200B;**[!UICONTROL Channels]**。
 
    ![渠道](../assets/channels.png)
 
@@ -269,27 +270,29 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
    - `ac-environment-id`： `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`： `"west_coast_inc"`
 
-   +++
++++
 
 1. 将`ac-channel-id`值替换为您之前复制的Celport通道ID。
-1. 如果需要，请将`ac-environment-id`值替换为您[!DNL Adobe Commerce Optimizer]实例的租户ID。 您可以在抢先体验计划的入门电子邮件中或通过联系您的Adobe客户代表来查找ID。
+1. 将`ac-environment-id`值替换为您[!DNL Adobe Commerce Optimizer]实例的租户ID。 您可以在入门培训电子邮件中找到ID，以便提前访问项目，也可以联系Adobe客户代表。
 
-   确保`commerce-endpoint`值与[!DNL Adobe Commerce Optimizer]实例的GraphQL终结点匹配。
+   >[!IMPORTANT]
+   >
+   >确保`commerce-endpoint`值与您的[!DNL Adobe Commerce Optimizer]实例的GraphQL端点匹配。 欢迎电子邮件中提供了此信息。
 
 1. 将`ac-price-book-id`值替换为`"east_coast_inc"`。
 1. 保存文件。
 
 保存更改后，将更新目录配置以使用已配置为仅销售制动和悬架部件的Carvelo通道。
 
-1. 启动店面以查看由您的店面配置创建的Celport特定的目录体验。
+1. 启动店面以查看您的店面配置创建的Celport特定目录体验。
 
-   1. 从IDE中的终端窗口中，开始本地店面预览。
+   1. 从IDE的终端窗口中，启动本地店面预览。
 
       ```shell
       npm start
       ```
 
-   浏览器将在`http://localhost:3000`处打开本地开发预览。
+   浏览器打开，显示位于`http://localhost:3000`的本地开发预览。
 
    如果命令失败或浏览器未打开，请查看Storefront设置主题中有关本地开发的[说明](../storefront.md)。
 
@@ -297,11 +300,11 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 
       店面会更新以显示显示制动部件的产品列表页面。
 
-   ![刹车产品列表页](../assets/brakes-listing-page.png)
+   ![Brakes产品列表页](../assets/brakes-listing-page.png)
 
-   单击刹车部件图像，查看包含价格信息的产品详细信息并记录产品价格信息。
+   单击制动器部件图像以查看产品详细信息以及价格信息，并记录产品价格信息。
 
-1. 现在搜索`tires`，它是在[!DNL Adobe Commerce Optimizer]实例上的用例数据中可用的另一个部件类别。
+1. 现在搜索`tires`，它是您的[!DNL Adobe Commerce Optimizer]实例上的用例数据中提供的另一个部件类别。
 
    ![标头不正确的店面配置](../assets/storefront-configuration-with-incorrect-headers.png)
 
@@ -317,9 +320,9 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 
       保存文件时，本地店面预览会自动更新。
 
-   1. 使用“搜索”功能在浏览器中预览更改以查找轮胎部件。
+   1. 使用“搜索”功能在浏览器中预览更改以查找轮胎零件。
 
-      请注意不同的可用部件类型，并注意分配给Kingsbluff通道的价格。
+      请注意可用的不同部件类型，并注意分配给Kingsbluff渠道的价格。
 
       通过更改店面配置文件中的标题值并浏览更新的店面，您可以看到更新目录视图和数据筛选器以自定义店面体验是多么容易。
 
@@ -327,6 +330,6 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 
 在本教程中，您已了解[!DNL Adobe Commerce Optimizer]如何帮助您使用单个基础目录组织目录以匹配零售运营。 您还学习了如何设置由Edge Delivery Services提供支持的店面。
 
-## 从这里出发的方向
+## 从这里前往何处
 
-要了解如何使用产品发现和Recommendations为您的客户打造个性化的购物体验，请参阅[促销概述](../merchandising/overview.md)。
+要了解如何使用产品发现和推荐使客户的购物体验个性化，请参阅[促销概述](../merchandising/overview.md)。

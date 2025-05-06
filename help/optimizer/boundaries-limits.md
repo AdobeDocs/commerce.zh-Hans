@@ -2,9 +2,10 @@
 title: 边界和限制
 description: 了解 [!DNL Adobe Commerce Optimizer] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
-source-git-commit: 45a43fe2ada206515c512a04aa6e9072e08844cc
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -28,10 +29,7 @@ ht-degree: 0%
 
 ## 价格
 
-- 最高价格手册数量为30,000。 价格手册的基本层数不能超过100，并且应遵循以下规则：（价格手册数）x（渠道数）必须小于或等于100。
-- 保证的价格信息源摄取速率为每分钟5000条记录。
-- 单个价格记录的折扣不能超过10个。
-- 每日价格更新的基础数量为5,000,000。
+- 最大价格手册数量为1,000。
 
 ## 搜索和店面
 
@@ -53,6 +51,6 @@ ht-degree: 0%
 - 对于产品发现，不支持基于属性的推销和价格设置。
 - 对于推荐：
 
-   - ACO支持EA的&#x200B;_最近查看的_&#x200B;推荐类型
+   - [!DNL Adobe Commerce Optimizer]支持&#x200B;_最近查看的_&#x200B;推荐类型以便提前访问。
    - 不支持类别或属性包含项或排除项。
    - 您无法在[!DNL Adobe Commerce Optimizer]中预览推荐。
