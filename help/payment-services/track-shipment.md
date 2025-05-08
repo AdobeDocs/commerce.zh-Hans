@@ -1,8 +1,9 @@
 ---
 title: 在 [!DNL Payment Services]中跟踪您的装运
 description: 自定义Paypal商家信息板中显示的 [!DNL Payment Services] 发运和跟踪信息。
-feature: Payments
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Paas, Saas
+exl-id: 17aede1f-56ae-441a-b723-3193e865e469
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services]允许商家在其PayPal商家信息板中查看装运的跟踪信息。
 
-有关Adobe Commerce的装运网格的详细信息，请参阅[装运](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}主题。
+有关Adobe Commerce的装运网格的详细信息，请参阅[装运](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}主题。
 
 ## 如何跟踪您的装运
 

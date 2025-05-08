@@ -2,41 +2,44 @@
 title: 2级和3级处理
 description: ' [!DNL Payment Services] 交易记录中的卡付款处理级别。'
 role: Admin
-feature: Payments
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Paas, Saas
+exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
 # 2级和3级处理
 
-通过[!DNL Payment Services]提供三个级别的卡片处理：
+[!DNL Payment Services]提供高级卡处理功能，以帮助商家优化其支付交易并降低交换费用。 可用的卡处理分为三个级别，每个级别都有不同的交易数据要求。
 
-* 级别1是最常见的，需要的信息较少，因此与级别2或级别3数据处理的交易相比，通常会产生较高的交换费用，这些数据通常与企业和购买信用卡有关。
+## 每个处理级别的数据要求
 
-* 对于级别2和级别3的客户，如果采用交换加(IC++)定价，且接受大量购买卡或公司卡交易的[!DNL Payment Services]客户可以通过允许[!DNL Payment Services]发送有关交易的更多信息而获得较低的处理速率。 如果该交易符合条件，则根据卡网络要求，商家可以接收针对特定交易的较低处理速率。
-
->[!NOTE]
->
->2级和3级定价仅适用于Visa和MasterCard交易。 American Express只提供第2级定价。 Discover不提供2级或3级定价。 有关详细信息，请参阅PayPal开发人员文档中的[付款处理](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}。
-
-查看[什么是IC++?PayPal开发人员文档中的](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank}以了解更多信息。
-
-第2级和第3级处理数据使商家能够降低其IC++定价，前提是他们提供了关于购买的一些附加详细信息，这些细节降低了处理器风险并提供了有益方面：
-
-* 提供这种处理数据，大型客户将支付更少的费用。
-
-* 由于订单包含更多信息，因此客户不太可能遇到欺诈情况。
-
-但是，Visa和万事达卡等卡网络最终会确定交易是否符合第2级或第3级处理的条件：
-
-* 级别2数据包含附加信息，例如订单的税额、客户代码或PO编号。
-
-* 第3层数据是有关销售的更详细信息，这有助于获得比第2层更低的交换率。 级别3数据包含的信息包括已购买项目的说明、已购买件数、已订购项目的单位以及其他特定详细信息。
+![事务报表](assets/level-processing-details.png){width="500" zoomable="yes"}
 
 [!DNL Payment Services]收集此数据并提供付款交易的详细报告。
+
+## 按卡网络列出的可用处理级别
+
+![卡详细信息](assets/cards-details-level-processing.png){width="500" zoomable="yes"}
+
+有关详细信息，请参阅PayPal开发人员文档中的[付款处理](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}。
+
+### 1级
+
+级别1是最常见的，需要的信息较少，因此与级别2或级别3数据处理的交易相比，通常会产生较高的交换费用，这些数据通常与企业和购买信用卡有关。
+
+### 第2级和第3级
+
+如果Interchange Plus (IC++)上的[!DNL Payment Services]商家向卡网络提供其他交易详情并符合特定资格条件，则他们可能有资格进行第2级/第3级处理。 这些级别对于处理大量购买或公司卡流量的商户尤其有益，因为它们可以显着节省成本。 提供详细的级别2或级别3数据可以：
+
+* 降低处理费用并优化整体成本
+* 防止欺诈，降低处理器风险
+* 增强交易安全性
+
+查看[什么是IC++?有关详细信息，请参阅PayPal开发人员文档中的](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank}。
 
 ## [!DNL Payment Services]中的级别2和级别3卡付款交易记录
 

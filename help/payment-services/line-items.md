@@ -1,9 +1,10 @@
 ---
 title: ' [!DNL Payment Services]的行项目'
 description: 了解 [!DNL Payment Services] 的行项目以及如何查看商家仪表板中的行项目。
-feature: Payments
+feature: Payments, Paas, Saas
 role: User
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -122,11 +123,11 @@ ht-degree: 0%
 
 +++
 
-有关这些字段及其限制的详细信息，请参阅有关行项目[&#128279;](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}的PayPal开发人员文档。
+有关这些字段及其限制的详细信息，请参阅有关行项目](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}的[PayPal开发人员文档。
 
 ## 管理行项目
 
-Adobe Commerce [根据每行](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的总额计算税额，如果订购了相同项目的多个数量或者在目录中显示含税价格，则可能会导致舍入问题。 在这种情况下，总数量可以拆分为两行，但数量将等于订购的物料总数。
+Adobe Commerce [根据每行](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的总额计算税额，如果订购了同一物料的多个数量或者在目录中显示含税价格，则可能会导致舍入问题。 在这种情况下，总数量可以拆分为两行，但数量将等于订购的物料总数。
 
 > 贸易商仪表板视图中具有舍入问题的行项目示例
 
