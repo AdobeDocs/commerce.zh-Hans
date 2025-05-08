@@ -40,7 +40,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> [!DNL Payment Services]在入门培训期间为其他[可用国家/地区提供[快速签出功能](../payment-services/payments-options.md)（付款选项的子集）](../payment-services/production.md#complete-merchant-onboarding)。
+> [!DNL Payment Services]在入门培训期间为其他[&#128279;](../payment-services/production.md#complete-merchant-onboarding)可用国家/地区提供[快速签出功能](../payment-services/payments-options.md)（付款选项的子集）。
 
 ### 哪个[!DNL Payment Services]选项适合您？
 

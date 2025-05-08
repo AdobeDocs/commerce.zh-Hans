@@ -16,7 +16,7 @@ ht-degree: 0%
 
 您可以使用[!DNL Payment Services]主页中的有用设置根据需要自定义[!DNL Payment Services]。
 
-要为[!DNL Adobe Commerce]和[!DNL Magento Open Source]配置[!DNL Payment Services]，请单击&#x200B;**[!UICONTROL Settings]**。 这些配置选项仅适用于在&#x200B;[_常规_&#x200B;配置选项](#configure-general-settings)的&#x200B;_[!UICONTROL Payment mode]_字段中设置的环境。
+要为[!DNL Adobe Commerce]和[!DNL Magento Open Source]配置[!DNL Payment Services]，请单击&#x200B;**[!UICONTROL Settings]**。 这些配置选项仅适用于在&#x200B;[_常规_&#x200B;配置选项](#configure-general-settings)的&#x200B;_[!UICONTROL Payment mode]_&#x200B;字段中设置的环境。
 
 有关多存储或旧版配置，请参阅管理员中的[配置](configure-admin.md)。
 
@@ -34,9 +34,9 @@ ht-degree: 0%
 
    ![React设置视图](assets/react-settings-view.png){width="500" zoomable="yes"}
 
-   _[!UICONTROL General]_部分包含用于启用[!DNL Payment Services]作为付款方式的设置。
+   _[!UICONTROL General]_&#x200B;部分包含用于启用[!DNL Payment Services]作为付款方式的设置。
 
-1. 若要启用[!DNL Payment Services]作为商店的付款方式，请在&#x200B;_[!UICONTROL General]_部分中，将&#x200B;**[!UICONTROL Enable Payment Services as payment method]**切换为`Yes`。
+1. 若要启用[!DNL Payment Services]作为商店的付款方式，请在&#x200B;_[!UICONTROL General]_&#x200B;部分中，将&#x200B;**[!UICONTROL Enable Payment Services as payment method]**&#x200B;切换为`Yes`。
 
 1. 如果您仍在为应用商店测试[!DNL Payment Services]，请将&#x200B;**付款模式**&#x200B;设置为`Sandbox`。 如果您已准备好启用实时付款，请将其设置为`Production`。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ### 信用卡字段
 
-_[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提供了一个简单且安全的签出选项。
+_[!UICONTROL Credit Card Fields]_&#x200B;设置为信用卡或借记卡支付方法提供了一个简单且安全的签出选项。
 
 有关详细信息，请参阅[付款选项](payments-options.md#credit-card-fields)。
 
@@ -107,7 +107,7 @@ _[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提�
 1. 要启用[3DS安全身份验证](security.md#3ds) （默认为`Off`）将&#x200B;**[!UICONTROL 3DS Secure authentication]**&#x200B;选择器切换为`Always`或`When required`。
 1. 要启用或禁用签出页面上的信用卡字段，请切换&#x200B;**[!UICONTROL Show on checkout page]**&#x200B;选择器。
 1. 要启用或禁用[卡保险存储](#card-vaulting)，请切换&#x200B;**[!UICONTROL Vault enabled]**&#x200B;选择器。
-1. 若要启用或禁用Admin](#card-vaulting)中的[保管式付款方法（商户使用保管式付款方法为管理员中的客户完成订单），请切换&#x200B;**[!UICONTROL Show vaulted methods in Admin]**&#x200B;选择器。
+1. 若要启用或禁用Admin[&#128279;](#card-vaulting)中的保管式付款方法（商户使用保管式付款方法为管理员中的客户完成订单），请切换&#x200B;**[!UICONTROL Show vaulted methods in Admin]**&#x200B;选择器。
 1. 要启用或禁用调试模式，请切换&#x200B;**[!UICONTROL Debug Mode]**&#x200B;选择器。
 1. 单击&#x200B;**[!UICONTROL Save]**。
 
@@ -125,7 +125,7 @@ _[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提�
 | [!UICONTROL 3DS Secure authentication] | 网站 | 启用或禁用[3DS安全身份验证](security.md#3ds)。 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | 网站 | 启用或禁用要在结账页面上显示的信用卡字段。 选项： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Vault enabled] | 商店视图 | 启用或禁用[信用卡保险存储](vaulting.md)。 选项： [!UICONTROL Off] / [!UICONTROL On] |
-| [!UICONTROL Show vaulted payment methods in Admin] | 商店视图 | 启用或禁用商家使用保管库付款方式](vaulting.md)为管理员[中的客户完成订单的功能。 选项： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show vaulted payment methods in Admin] | 商店视图 | 启用或禁用商家使用保管库付款方式[&#128279;](vaulting.md)为管理员中的客户完成订单的功能。 选项： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： [!UICONTROL Off] / [!UICONTROL On] |
 
 ### Apple Pay
@@ -138,7 +138,7 @@ _[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提�
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
 1. 在&#x200B;**[!UICONTROL Scope]**&#x200B;下拉菜单中选择要为其启用付款方法的商店视图。
-1. 在&#x200B;**[!UICONTROL Apple Pay]**&#x200B;部分中，编辑&#x200B;_[!UICONTROL Checkout title]_字段中的值以更改结帐期间显示的付款方法的名称。
+1. 在&#x200B;**[!UICONTROL Apple Pay]**&#x200B;部分中，编辑&#x200B;_[!UICONTROL Checkout title]_&#x200B;字段中的值以更改结帐期间显示的付款方法的名称。
 1. 若要[设置付款操作](production.md#set-payment-services-as-payment-method)，请将&#x200B;**[!UICONTROL Payment action]**&#x200B;切换为`Authorize`或`Authorize and Capture`。
 1. 要在结账页面上启用或禁用Apple Pay，请切换&#x200B;**[!UICONTROL Show Apple Pay on checkout page]**&#x200B;选择器。
 1. 要在产品详细信息页面上启用或禁用Apple Pay，请切换&#x200B;**[!UICONTROL Show Apple Pay on product detail page]**&#x200B;选择器。
@@ -187,7 +187,7 @@ _[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提�
 
      >[!NOTE]
      >
-     > 要使用Apple Pay，您[必须拥有Apple沙盒测试者帐户](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)（包含虚假信用卡和帐单信息）才能对其进行测试。 当您准备好在沙盒&#x200B;_或_&#x200B;生产模式下使用Apple Pay时，完成任何[测试和验证](test-validate.md#test-in-sandbox-environment)后，向 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain)完成[自助注册（_仅注册活动域_&#x200B;部分），并[在 [!DNL Payment Services]](settings.md#payment-buttons)中为您的商店配置它。
+     > 要使用Apple Pay，您[必须拥有Apple沙盒测试者帐户](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)（包含虚假信用卡和帐单信息）才能对其进行测试。 当您准备好在沙盒&#x200B;_或_&#x200B;生产模式下使用Apple Pay时，完成任何[测试和验证](test-validate.md#test-in-sandbox-environment)后，向 [!DNL Apple Pay][&#128279;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain)完成自助注册（_仅注册活动域_&#x200B;部分），并[在 [!DNL Payment Services]](settings.md#payment-buttons)中为您的商店配置它。
 
      当您打开/关闭付款按钮或PayPal Pay Later消息的可见性时，“设置”页面底部会显示该配置的可视预览。
 
@@ -205,8 +205,8 @@ _[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提�
 | [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方式”视图中添加要作为此付款选项的标题显示的文本。 选项：文本字段 |
 | [!UICONTROL Payment Action] | 网站 | 指定付款方式的[付款操作](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | 商店视图 | 结账页面上指定支付方式的排序顺序。 `Numeric Only`值 |
-| [!UICONTROL Show PayPal buttons on checkout page] | 商店视图 | 在签出页面上启用或禁用[!DNL PayPal payment buttons]。 选项： [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on product detail page] | 商店视图 | 在产品详细信息页面上启用或禁用[!DNL PayPal payment buttons]。 选项： [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on checkout page] | 商店视图 | 在签出页面上启用或禁用[!DNL PayPal payment buttons]。 选项： [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on product detail page] | 商店视图 | 在产品详细信息页面上启用或禁用[!DNL PayPal payment buttons]。 选项： [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | 商店视图 | 在迷你购物车预览中启用或禁用[!DNL PayPal payment buttons]。 选项： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal buttons on cart page] | 商店视图 | 在购物车页面上启用或禁用[!DNL PayPal payment buttons]。 选项： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal Pay Later button] | 商店视图 | 启用或禁用显示付款按钮的稍后付款选项外观。 选项： [!UICONTROL Off] / [!UICONTROL On] |
@@ -218,7 +218,7 @@ _[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提�
 
 ### 按钮样式
 
-您还可以配置付款按钮的&#x200B;_[!UICONTROL Button style]_选项：
+您还可以配置付款按钮的&#x200B;_[!UICONTROL Button style]_&#x200B;选项：
 
 1. 要更改&#x200B;**[!UICONTROL Layout]**，请选择`Vertical`或`Horizontal`。
 
@@ -242,7 +242,7 @@ _[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提�
 
 1. [刷新缓存](#flush-the-cache)。
 
-您可以在Admin](configure-admin.md#configure-paypal-smart-buttons)的旧版配置中配置样式为[的付款按钮，也可以在[!DNL Payment Services Home]中配置此按钮。 有关设置PayPal付款按钮样式的详细信息，请参阅[PayPal的按钮样式指南](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/)。
+您可以在Admin[&#128279;](configure-admin.md#configure-paypal-smart-buttons)的旧版配置中配置样式为的付款按钮，也可以在[!DNL Payment Services Home]中配置此按钮。 有关设置PayPal付款按钮样式的详细信息，请参阅[PayPal的按钮样式指南](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/)。
 
 #### 配置选项
 
@@ -296,7 +296,7 @@ _[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提�
 
 在[信用卡字段设置](#credit-card-fields)中启用或禁用3DS。
 
-有关详细信息，请参阅安全性](security.md#3ds)中的[3DS。
+有关详细信息，请参阅安全性[&#128279;](security.md#3ds)中的3DS。
 
 ## 使用多个PayPal帐户
 
