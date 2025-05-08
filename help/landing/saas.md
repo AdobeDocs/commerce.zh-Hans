@@ -4,7 +4,7 @@ description: 了解如何使用生产和沙盒API密钥将Adobe Commerce或Magen
 feature: Services, Saas
 role: Admin, User
 exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
 source-git-commit: 55b342895be0fc81511644a95c52a79bdd34fc98
 workflow-type: tm+mt
 source-wordcount: '1420'
@@ -25,7 +25,7 @@ ht-degree: 0%
 | 由Adobe Sensei支持的[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) | Adobe Commerce |
 | 由Adobe Sensei支持的[[!DNL Live Search]](/help/live-search/overview.md) | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/guide-overview.md) | Adobe Commerce和Magento Open Source |
-| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro) | Adobe Commerce |
+| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/tools/site-wide-analysis-tool/intro) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 凭据 {#apikey}
 
-生产和沙盒API密钥从[许可证所有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帐户生成。 Commerce帐户由唯一的[!DNL Commerce] ID (MageID)标识。 商户组织的许可证所有者可以为产品推荐或实时搜索等服务生成API密钥，前提是帐户处于良好状态。
+生产和沙盒API密钥从[许可证所有者](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帐户生成。 Commerce帐户由唯一的[!DNL Commerce] ID (MageID)标识。 商户组织的许可证所有者可以为产品推荐或实时搜索等服务生成API密钥，前提是帐户处于良好状态。
 
 这些密钥可在“需要知道”的基础上与系统集成商或代表许可证持有人管理项目和环境的开发团队共享。 已被许可证所有者授予[!DNL Shared Access]的开发者无法代表他们生成密钥，即使商户的组织位于其帐户上的[!DNL Switch Accounts]下拉列表中。
 
@@ -80,12 +80,12 @@ ht-degree: 0%
 
 [!DNL Commerce]实例必须配置有SaaS项目和SaaS数据空间，以便[!DNL Commerce Services]能够将数据发送到正确的位置。 SaaS项目对所有SaaS数据空间进行分组。 SaaS数据空间用于收集和存储使[!DNL Commerce Services]能够工作的数据。 某些此类数据可从[!DNL Commerce]实例中导出，而某些数据可从店面的购物者行为中收集。 然后，该数据将保留到安全云存储中。
 
-对于[!DNL Product Recommendations]，SaaS数据空间包含目录和行为数据。 通过在[!DNL Commerce]配置中选择[实例](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)，您可以将[!DNL Commerce]实例指向SaaS数据空间。
+对于[!DNL Product Recommendations]，SaaS数据空间包含目录和行为数据。 通过在[!DNL Commerce]配置中选择[实例](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/services/saas)，您可以将[!DNL Commerce]实例指向SaaS数据空间。
 
 >[!WARNING]
 >
 > 请仅在生产[!DNL Commerce]安装中使用&#x200B;**生产SaaS数据空间**&#x200B;以避免数据冲突。 否则，您可能会用测试数据污染生产站点数据，从而导致部署延迟。 例如，可能会从暂存数据（如暂存URL）错误地覆盖您的生产产品数据。
-> 如果发生这种情况，[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以请求数据清理。
+> 如果发生这种情况，[提交支持请求](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)以请求数据清理。
 
 ### SaaS数据空间配置
 
@@ -93,15 +93,15 @@ ht-degree: 0%
 
 您可以在任何非生产环境中使用测试数据空间，但前提是不同时在多个环境中使用相同的数据空间。 要在其他环境中使用测试数据空间，请先执行数据清理，然后再在该环境中选择和配置数据空间。
 
-对于具有多个暂存环境的Adobe Commerce Cloud Pro项目，您可以通过[提交支持请求](https://experienceleague.adobe.com/home?support-tab=home#support)，为每个暂存环境请求额外的测试数据空间。 但是，如果您只有一个暂存环境并且需要额外的测试数据空间，则可以使用以下选项：
+对于具有多个暂存环境的Adobe Commerce Cloud Pro项目，您可以通过[提交支持请求](https://experienceleague.adobe.com/home?lang=zh-Hans&support-tab=home#support)，为每个暂存环境请求额外的测试数据空间。 但是，如果您只有一个暂存环境并且需要额外的测试数据空间，则可以使用以下选项：
 
 - 联系客户成功团队或您指定的客户成功经理以请求额外的暂存环境。
 
-- [提交支持请求](https://experienceleague.adobe.com/home?support-tab=home#support)以请求额外的测试数据空间，并指明额外数据空间的业务理由。 此请求有待审批。
+- [提交支持请求](https://experienceleague.adobe.com/home?lang=zh-Hans&support-tab=home#support)以请求额外的测试数据空间，并指明额外数据空间的业务理由。 此请求有待审批。
 
-使用Adobe支付服务的Magento Open Source客户可能还会请求一个额外的数据空间。 在提交[支持请求](https://experienceleague.adobe.com/home?support-tab=home#support)以请求测试数据空间之前，请与付款团队联系，以请求其他数据空间。
+使用Adobe支付服务的Magento Open Source客户可能还会请求一个额外的数据空间。 在提交[支持请求](https://experienceleague.adobe.com/home?lang=zh-Hans&support-tab=home#support)以请求测试数据空间之前，请与付款团队联系，以请求其他数据空间。
 
-拥有多个云项目或内部部署（实时/生产）安装的客户还可以通过[提交支持请求](https://experienceleague.adobe.com/home?support-tab=home#support)，为每个项目或实例请求额外的生产和测试数据空间。
+拥有多个云项目或内部部署（实时/生产）安装的客户还可以通过[提交支持请求](https://experienceleague.adobe.com/home?lang=zh-Hans&support-tab=home#support)，为每个项目或实例请求额外的生产和测试数据空间。
 
 ### 选择或创建SaaS项目 {#createsaasenv}
 
@@ -138,7 +138,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您有单独的实例要与Commerce服务集成，请[提交支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，以便为每个额外的实例请求新的SaaS项目。 在支持人员创建SaaS项目后，请使用相同的API密钥为实例配置Commerce Services集成，并为数据空间选择新的SaaS项目。
+>如果您有单独的实例要与Commerce服务集成，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，以便为每个额外的实例请求新的SaaS项目。 在支持人员创建SaaS项目后，请使用相同的API密钥为实例配置Commerce Services集成，并为数据空间选择新的SaaS项目。
 
 >[!WARNING]
 >
@@ -152,4 +152,4 @@ ht-degree: 0%
 
 ## SaaS数据导出
 
-当您的[!DNL Commerce]实例成功连接到[!DNL Commerce Services]时，SaaS数据导出过程会将Commerce数据从[!DNL Commerce]服务器导出到[!DNL Commerce SaaS Services]，以便将其同步到连接的Commerce服务。 在Admin中，您可以使用[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)检查同步状态。 有关详细信息，请参阅[SaaS数据导出指南](../data-export/overview.md)。
+当您的[!DNL Commerce]实例成功连接到[!DNL Commerce Services]时，SaaS数据导出过程会将Commerce数据从[!DNL Commerce]服务器导出到[!DNL Commerce SaaS Services]，以便将其同步到连接的Commerce服务。 在Admin中，您可以使用[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard)检查同步状态。 有关详细信息，请参阅[SaaS数据导出指南](../data-export/overview.md)。

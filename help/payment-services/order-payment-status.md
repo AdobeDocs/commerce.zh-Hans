@@ -106,7 +106,7 @@ ht-degree: 0%
 
 为确保此流程按预期运行，商家必须配置新的cron作业。 一旦作业配置为自动运行，就不需要商家进行其他干预。
 
-请参阅[配置cron作业](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)。 配置完毕后，新作业每30分钟运行一次，以获取处于`Payment Review`状态的订单的更新。
+请参阅[配置cron作业](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=zh-Hans)。 配置完毕后，新作业每30分钟运行一次，以获取处于`Payment Review`状态的订单的更新。
 
 商家可以通过“订单付款状态”报表视图检查更新的付款状态。
 
@@ -114,11 +114,11 @@ ht-degree: 0%
 
 [!DNL Payment Services]使用订单数据，并将其与其他来源（包括PayPal）的汇总付款数据相结合，以提供有意义且非常有用的报告。
 
-订单数据将导出并保留在支付服务中。 当您[更改或添加订单状态](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status)或[编辑商店视图](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[商店](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information)或网站名称时，该数据将与付款数据相结合，并且订单付款状态报表将填充该组合信息。
+订单数据将导出并保留在支付服务中。 当您[更改或添加订单状态](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status)或[编辑商店视图](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[商店](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/store-details#store-information)或网站名称时，该数据将与付款数据相结合，并且订单付款状态报表将填充该组合信息。
 
 此过程包括两个步骤：
 
-1. 索引更改了数据`ON SAVE` （每次更改订单信息或存储信息时）或`BY SCHEDULE` （在预配置的cron计划上），具体取决于它在管理员的[索引管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)中的配置方式。
+1. 索引更改了数据`ON SAVE` （每次更改订单信息或存储信息时）或`BY SCHEDULE` （在预配置的cron计划上），具体取决于它在管理员的[索引管理](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management)中的配置方式。
 
    默认情况下，数据索引发生`ON SAVE`，这意味着每当订单、订单状态、商店视图、商店或网站中的某些内容发生更改时，索引过程都会立即发生。
 
@@ -134,7 +134,7 @@ ht-degree: 0%
 
 即使默认情况下在`ON SAVE`模式下进行重新索引，仍建议您在`BY SCHEDULE`模式下进行索引。 `BY SCHEDULE`索引按一分钟的cron计划运行，任何更改的数据会在任何数据更改后的两分钟内显示在订单状态报表中。 此计划的重新索引可帮助您减少存储空间上的任何压力，尤其是在您有大量传入订单的情况下，因为它按计划进行（而不是在每次下订单时）。
 
-您可以在管理员[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)中更改索引模式 — `ON SAVE`或`BY SCHEDULE`—。
+您可以在管理员[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)中更改索引模式 — `ON SAVE`或`BY SCHEDULE`—。
 
 要了解如何配置数据导出，请参阅[命令行配置](configure-cli.md#configure-data-export)。
 
@@ -245,10 +245,10 @@ ht-degree: 0%
 
 | 列 | 描述 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce订单ID<br> <br>要查看相关的[订单信息](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，请单击ID。 |
+| [!UICONTROL Order ID] | Commerce订单ID<br> <br>要查看相关的[订单信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，请单击ID。 |
 | [!UICONTROL Order Date] | 订单日期时间戳 |
 | [!UICONTROL Authorized Date] | 付款授权的日期时间戳 |
-| [!UICONTROL Order Status] | 当前Commerce [订单状态](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | 当前Commerce [订单状态](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | 订单的发票状态 — *[!UICONTROL No]*、*[!UICONTROL Partial]*&#x200B;或&#x200B;*[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | 订单的配送状态 — *[!UICONTROL No]*、*[!UICONTROL Partial]*&#x200B;或&#x200B;*[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | 订单的总金额 |

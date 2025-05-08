@@ -132,9 +132,9 @@ ht-degree: 0%
 
 | 列 | 描述 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce订单ID（仅包含成功交易的值，对于拒绝的交易为空）<br> <br>要查看相关的[订单信息](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，请单击ID。 |
+| [!UICONTROL Order ID] | Commerce订单ID（仅包含成功交易的值，对于拒绝的交易为空）<br> <br>要查看相关的[订单信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，请单击ID。 |
 | [!UICONTROL PayPal Transaction ID] | 由付款提供商提供的交易ID；仅包含成功交易的值，并包含拒绝交易的短划线。 您可以单击此ID以访问PayPal交易详细信息页面。 |
-| [!UICONTROL Customer ID] | 订单的Commerce客户ID<br> <br>有关详细信息，请参阅[客户信息](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}主题。 |
+| [!UICONTROL Customer ID] | 订单的Commerce客户ID<br> <br>有关详细信息，请参阅[客户信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}主题。 |
 | [!UICONTROL Transaction Date] | 交易日期时间戳 |
 | [!UICONTROL Payment Method] | 用于交易的付款类型，其中包含有关品牌和卡类型的信息。 有关详细信息，请参阅[卡类型](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type)；适用于Payment Services 1.6.0及更高版本 |
 | [!UICONTROL Payment Detail] | 提供有关用于交易的付款类型的附加信息（如果可用）。 |

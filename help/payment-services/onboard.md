@@ -42,7 +42,7 @@ ht-degree: 0%
 1. [使用测试的PayPal付款处理帐户](sandbox.md#enable-sandbox-testing)设置沙盒服务（或者，如果已在其他环境中测试过功能，请转到[启用实时付款](sandbox.md#enable-live-payments)）。
 1. 在[沙盒](sandbox.md#test-in-sandbox-environment)环境中测试付款。
 
-[![了解更多](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![了解更多](assets/learn-more-button.svg)](https://helpx.adobe.com/cn/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB 生产]
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 1. [使用测试的PayPal付款处理帐户](sandbox.md#enable-sandbox-testing)设置沙盒服务（或者，如果已在其他环境中测试过功能，请转到[启用实时付款](sandbox.md#enable-live-payments)）。
 1. 在[沙盒](sandbox.md#test-in-sandbox-environment)环境中测试付款。
 
-[![了解更多](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![了解更多](assets/learn-more-button.svg)](https://helpx.adobe.com/cn/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB 生产]
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> * [疑难解答 [!DNL Payment Services] 安装](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
-> * [PayPal沙盒帐户未验证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
-> * [延迟 [!DNL Payment Services] 报告数据](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
-> * 在Sandbox环境中处理付款时，[在PayPal中测试信用卡失败](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
+> * [疑难解答 [!DNL Payment Services] 安装](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=zh-Hans)
+> * [PayPal沙盒帐户未验证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=zh-Hans)
+> * [延迟 [!DNL Payment Services] 报告数据](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=zh-Hans)
+> * 在Sandbox环境中处理付款时，[在PayPal中测试信用卡失败](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=zh-Hans)

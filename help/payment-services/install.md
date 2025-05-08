@@ -4,7 +4,7 @@ description: 安装Payments Services扩展。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade, Paas
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
 source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '511'
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 >[!INFO]
 >
-> 有关更多信息，请参阅我们的[为Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services)配置 [!DNL Payment Services] 视频。
+> 有关更多信息，请参阅我们的[为Adobe Commerce](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services)配置 [!DNL Payment Services] 视频。
 
 下载并安装[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]扩展是使用[!DNL Payment Services]的必备步骤。
 
 ## 下载扩展
 
-必须先从[Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html)下载该扩展，然后才能安装它。
+必须先从[Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html?lang=zh-Hans)下载该扩展，然后才能安装它。
 
 1. 导航到Commerce Marketplace[&#128279;](https://commercemarketplace.adobe.com/magento-payment-services.html)中的Payment Services扩展。
 1. 要选择版本和版本，请将&#x200B;**[!UICONTROL Edition]**&#x200B;和&#x200B;**[!UICONTROL Your store version]**&#x200B;切换到您的首选选项。
@@ -43,9 +43,9 @@ ht-degree: 0%
 
 Composer在初始安装[!DNL Adobe Commerce]期间使用这些密钥，或者在以前未将Composer密钥保存到`auth.json`文件的情况下使用这些密钥。
 
-有关获取编辑器密钥的详细信息，请参阅[获取您的身份验证密钥](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
+有关获取编辑器密钥的详细信息，请参阅[获取您的身份验证密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
 
-请参阅[安装扩展](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)，以了解有关下载和安装扩展之前应考虑哪些内容的更多信息。
+请参阅[安装扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/extensions)，以了解有关下载和安装扩展之前应考虑哪些内容的更多信息。
 
 ### 云基础架构上的[!DNL Adobe Commerce]
 
@@ -156,7 +156,7 @@ Could not find a matching version of package magento/payment-services. Check the
    cat /path/to/auth.json
    ```
 
-1. 查看[哪些密钥与您的Commerce帐户`MageID`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)关联。
+1. 查看[哪些密钥与您的Commerce帐户`MageID`](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)关联。
 
 ### 内存不足，无法用于PHP
 
@@ -166,7 +166,7 @@ Could not find a matching version of package magento/payment-services. Check the
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-在`php.ini`中增加环境上PHP的内存限制[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit)。
+在`php.ini`中增加环境上PHP的内存限制[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit)。
 
 或者，也可以使用此命令指定内存限制： `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`。
 

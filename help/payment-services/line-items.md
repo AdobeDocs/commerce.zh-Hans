@@ -127,7 +127,7 @@ ht-degree: 0%
 
 ## 管理行项目
 
-Adobe Commerce [根据每行](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的总额计算税额，如果订购了同一物料的多个数量或者在目录中显示含税价格，则可能会导致舍入问题。 在这种情况下，总数量可以拆分为两行，但数量将等于订购的物料总数。
+Adobe Commerce [根据每行](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的总额计算税额，如果订购了同一物料的多个数量或者在目录中显示含税价格，则可能会导致舍入问题。 在这种情况下，总数量可以拆分为两行，但数量将等于订购的物料总数。
 
 > 贸易商仪表板视图中具有舍入问题的行项目示例
 
