@@ -2,9 +2,10 @@
 title: 什么是 [!DNL Live Search]？
 description: Adobe Commerce的[!DNL Live Search]提供了快速、相关且直观的搜索体验。
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
+source-git-commit: 29374c45f57e923666e255bfefadd9a1e736cfef
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
@@ -34,13 +35,13 @@ ht-degree: 0%
 
 由于侧重于速度、相关性和易用性，[!DNL Live Search]对购物者和商家来说都是一个游戏规则的改变者。 请观看以下视频，然后从店面快速浏览[!DNL Live Search]。
 
->[!VIDEO](https://video.tv.adobe.com/v/3452579?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-有关使用和配置Live Search的更深入视频，请参阅[关于 [!DNL Live Search]](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)的完整演示主题。
+有关使用和配置Live Search的更深入视频，请参阅[关于 [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)的完整演示主题。
 
 ### 按键入内容搜索
 
-当购物者在[搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search)框中键入查询时，[!DNL Live Search]在[弹出框](storefront-popover.md)中回复建议的产品和排名最前的搜索结果的缩略图图像。 当购物者单击建议或精选产品时，将显示[产品详细信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/storefront/storefront)页面。 弹出框页脚中的&#x200B;_查看所有_&#x200B;链接显示搜索结果页面。
+当购物者在[搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)框中键入查询时，[!DNL Live Search]在[弹出框](storefront-popover.md)中回复建议的产品和排名最前的搜索结果的缩略图图像。 当购物者单击建议或精选产品时，将显示[产品详细信息](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront)页面。 弹出框页脚中的&#x200B;_查看所有_&#x200B;链接显示搜索结果页面。
 
 对于包含两个或更多字符的查询，[!DNL Live Search]返回“键入时搜索”结果。 对于部分匹配，每个单词的最大字符数为20。 查询中的字符数无法配置。 弹出框包括`name`、`sku`和`category_ids`字段。
 
@@ -51,6 +52,18 @@ ht-degree: 0%
 要列出“键入时搜索”查询返回的所有产品，请单击弹出框页脚中的&#x200B;_查看全部_。
 
 ![店面示例 — 价格Facet](assets/storefront-view-all-search-results.png)
+
+### [!DNL Live Search]如何处理拼写错误
+
+进行搜索时，[!DNL Live Search]运行非模糊搜索，该搜索不考虑任何拼写错误。 如果未找到结果，[!DNL Live Search]将执行第二个模糊搜索，该搜索会考虑较小的拼写错误。 模糊搜索以最大编辑距离1运行。 此编辑距离使用[Levenshtein距离](https://en.wikipedia.org/wiki/Levenshtein_distance)的概念，它允许三种类型的操作：
+
+| 操作 | 描述 | 示例 |
+|---|---|---|
+| 插入 | 添加字符。 | &quot;cat&quot; -> &quot;cart&quot; |
+| 删除 | 删除字符。 | &quot;cart&quot; -> &quot;cat&quot; |
+| 替换 | 将一个字符替换为另一个字符。 | “cart” -> “cast” |
+
+除了模糊搜索逻辑外，还考虑转置，即交换一个单词中两个相邻的字符，例如“teh”而不是“the”。 请注意，这些编辑限制是逐字的，而不是整个短语。
 
 ### 带有Facet的过滤搜索
 
@@ -68,7 +81,7 @@ ht-degree: 0%
 
 ### 搜索词支持
 
-[!DNL Live Search]支持Commerce [搜索词重定向](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-terms)。 例如，用户可以搜索诸如“运费”之类的术语，并直接转到运费页面。
+[!DNL Live Search]支持Commerce [搜索词重定向](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)。 例如，用户可以搜索诸如“运费”之类的术语，并直接转到运费页面。
 
 ## 实时搜索组件
 
@@ -88,4 +101,4 @@ ht-degree: 0%
 
 如果您连续90天没有在测试环境中提交目录数据的搜索查询，则目录数据将设置为休眠模式，并且任何搜索查询都不会返回任何数据。 此策略不会影响生产环境中的目录数据。
 
-要在测试环境中重新激活目录数据，请[提交标题为“重新激活[!DNL Live Search]”的支持请求](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)并包含环境ID。 测试环境中的目录数据应在几小时内恢复。
+要在测试环境中重新激活目录数据，请[提交标题为“重新激活[!DNL Live Search]”的支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)并包含环境ID。 测试环境中的目录数据应在几小时内恢复。
