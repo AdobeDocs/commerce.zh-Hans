@@ -23,15 +23,15 @@ ht-degree: 0%
 
 | 指南 | 描述 |
 |------ | ----------- |
-| [Adobe Commerce 2.4用户指南](https://experienceleague.adobe.com/docs/commerce.html) | Adobe Commerce和Magento Open Source的以商家为中心的文档 |
+| [Adobe Commerce 2.4用户指南](https://experienceleague.adobe.com/docs/commerce.html?lang=zh-Hans) | Adobe Commerce和Magento Open Source的以商家为中心的文档 |
 | [Adobe Commerce 2.4开发人员指南](https://developer.adobe.com/commerce/docs) | 用于构建和自定义Adobe Commerce或Magento Open Source的以开发人员为中心的文档 |
 
 ## 支持
 
-[载入流程](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html)旨在引导您完成设置和启用[!DNL Catalog Service]功能所需的步骤。
+[载入流程](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html?lang=zh-Hans)旨在引导您完成设置和启用[!DNL Catalog Service]功能所需的步骤。
 
 如果您需要本指南中未涉及的信息或问题，请使用以下资源：
 
-* 疑难解答文章的[帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)。
-* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) — 提交票证以接收其他帮助。
+* 疑难解答文章的[帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=zh-Hans)。
+* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#submit-ticket) — 提交票证以接收其他帮助。
 * 加入Adobe Commerce工程团队，并了解[#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4)公共Slack渠道中的SaaS storefront服务用户的最新信息。
