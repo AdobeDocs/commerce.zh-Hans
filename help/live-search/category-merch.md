@@ -17,7 +17,7 @@ ht-degree: 0%
 
 本视频介绍了类别推销。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424617)
+>[!VIDEO](https://video.tv.adobe.com/v/3448861?captions=chi_hans)
 
 可在管理员中访问该功能，其地址为： **营销** > SEO和搜索> **[!DNL Live Search]** > **类别促销**。
 
