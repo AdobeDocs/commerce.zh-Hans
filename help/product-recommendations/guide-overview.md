@@ -4,7 +4,8 @@ description: 有关Adobe Commerce管理员的 [!DNL Product Recommendations] 的
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 feature: Services, Recommendations
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 8df3ef2e-b00e-42d8-b92b-4fbdaaed9f8f
+source-git-commit: 8e3e71c7de56b367a73ab048fa13ba2cdeb55f41
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -31,12 +32,12 @@ ht-degree: 0%
 
 | 指南 | 描述 |
 |------ | ----------- |
-| [Adobe Commerce 2.4用户指南](https://experienceleague.adobe.com/docs/commerce.html?lang=zh-Hans) | Adobe Commerce和Magento Open Source的以商家为中心的文档 |
+| [Adobe Commerce 2.4用户指南](https://experienceleague.adobe.com/docs/commerce.html) | Adobe Commerce和Magento Open Source的以商家为中心的文档 |
 | [Adobe Commerce 2.4开发人员指南](https://developer.adobe.com/commerce/docs) | 用于构建和自定义Adobe Commerce或Magento Open Source的以开发人员为中心的文档 |
 
 ## 支持
 
 如果您需要本指南中未涉及的信息或问题，请使用以下资源：
 
-* [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#submit-tickets){target="_blank"} — 查看与[!DNL Product Recommendations]相关的故障排除文章。
-* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。
+* [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"} — 查看与[!DNL Product Recommendations]相关的故障排除文章。
+* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。
