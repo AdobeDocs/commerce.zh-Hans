@@ -3,9 +3,10 @@ title: 分担责任
 description: 了解 [!DNL Adobe Commerce as a Cloud Service] 项目中涉及的每一方的安全责任。
 role: Admin, Architect, Leader
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
