@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 5e5b3340f45b5db7a6a01ed1b89c42f6399f66b9
+source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,14 @@ ht-degree: 0%
 >SaaS数据导出扩展是随“实时搜索”、“产品推荐”和“目录服务”一起自动安装的模块的集合。 您可以使用编辑器检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 当前主要版本
+
+## 103.4.4发行版
+
+![New](../assets/new.svg)添加了一条警告消息，该消息在将`cleanup-feed`参数添加到`saas:resync` CLI命令时显示。 `--cleanup-feed`选项应谨慎使用，并且仅在特定情况下使用，例如在环境清理后或与`--dry-run`选项一起使用。 在其他情况下使用此插件可能会导致数据丢失和同步问题。 <!--MDEE-1047-->
+![Fix](../assets/fix.svg)已添加服务器响应中的`x-request-id`以提高可跟踪性。 <!--MDEE-1041-->
+![修复](../assets/fix.svg)修复了未为整个馈送批次保存同步状态的问题，该问题会导致不必要的重新同步。 <!--MDEE-1049-->
+![修复](../assets/fix.svg)修复了在同步期间如果一个馈送包含错误，则跳过馈送批次中的所有馈送的问题。 <!--MDEE-976-->
+![修复](../assets/fix.svg)在类别权限索引器中添加了对维度的支持。<!--MDEE-654-->
 
 ## 103.4.3发行版
 
