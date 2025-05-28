@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
+source-git-commit: c9a87df4aa64081b51fd52d84d97fe3949045e31
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ ht-degree: 0%
 >SaaS数据导出扩展是随“实时搜索”、“产品推荐”和“目录服务”一起自动安装的模块的集合。 您可以使用编辑器检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 当前主要版本
+
+## 103.4.5发行版
+
+![新](../assets/new.svg) SaaS数据导出现在支持Adobe Commerce `giftcard`产品类型。 在数据馈送中，礼品卡产品将导出为产品属性类型为`ac_giftcard`的简单产品。 <!--MDEE-1042-->
+![修复](../assets/fix.svg)已改进数据导出错误报告。 日志现在包含更详细的错误消息，包括原始技术详细信息，以便更轻松地调试和跟踪错误。<!--MDEE-1064-->
 
 ## 103.4.4发行版
 
