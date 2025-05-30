@@ -1,15 +1,14 @@
 ---
 user-guide-title: '[!DNL Adobe Commerce Optimizer] 指南'
 user-guide-description: ' [!DNL Adobe Commerce Optimizer]的文档和资源。'
-breadcrumb-title: '[!DNL Adobe Commerce Optimizer] 指南'
 hide: true
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '39'
-ht-degree: 20%
+source-wordcount: '38'
+ht-degree: 18%
 
 ---
 

@@ -1,12 +1,11 @@
 ---
-title: Services documentation
+title: 服务指南主页
 description: 浏览Commerce SaaS服务的Adobe Commerce产品文档
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
-breadcrumb-title: 文档
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
+source-git-commit: 2b948cd07020b1f53616fe201dcc5781ca2f9bcc
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
 
 >[!NOTE]
 >
->Adobe recommends upgrading to the latest supported version of all Commerce services. See the [release notes](release-notes-all.md).
+>Adobe建议升级到所有Commerce服务的最新支持版本。 请参阅[发行说明](release-notes-all.md)。
 
 ## Commerce服务
 
@@ -35,25 +34,25 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
          </a>
       </div>
       <p>
-         <em>Implement this AI-powered search tool that delivers smarter, faster, and more relevant results for B2C shoppers.</em>
+         <em>实施此AI支持的搜索工具，为B2C购物者提供更智能、更快和更相关的结果。</em>
       </p>
    </td>
    <td valign="top">
       <a href="../product-recommendations/overview.md">
-      <img alt="ThumbsUp" src="../assets/icons/ThumbUp.svg" width="40">
+      <img alt="竖起大拇指" src="../assets/icons/ThumbUp.svg" width="40">
       </a>
       <div>
          <a href="../product-recommendations/overview.md">
-         <strong>Product Recommendations</strong>
+         <strong>产品推荐</strong>
          </a>
       </div>
       <p>
-         <em>Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.</em>
+         <em>根据购物者行为、流行趋势、产品相似性等添加AI支持的推荐。</em>
       </p>
    </td>
    <td valign="top">
       <a href="../catalog-service/overview.md">
-      <img alt="Catalog data for connected services" src="../assets/icons/DataBook.svg" width="40">
+      <img alt="连接的服务的目录数据" src="../assets/icons/DataBook.svg" width="40">
       </a>
       <div>
          <a href="../catalog-service/overview.md">
@@ -66,15 +65,15 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
    </td>
    <td valign="top">
       <a href="../payment-services/guide-overview.md">
-      <img alt="Credit Card payments" src="../assets/icons/CreditCard.svg" width="40">
+      <img alt="信用卡付款" src="../assets/icons/CreditCard.svg" width="40">
       </a>
       <div>
          <a href="../payment-services/guide-overview.md">
-         <strong>Payment Services</strong>
+         <strong>付款服务</strong>
          </a>
       </div>
       <p>
-         <em>Drive customer satisfaction with diverse payment methods, including interest-free installments, and streamlined views of payment processing, orders, and invoices.</em>
+         <em>通过多种付款方式提高客户满意度，包括免息分期付款，以及简化付款处理、订单和发票的查看。</em>
       </p>
    </td>
 </tr>
@@ -86,7 +85,7 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
 <tr style="border: 0;">
    <td valign="top">
       <a href="../data-connection/overview.md">
-      <img alt="Transfer data to platform" src="../assets/icons/TransferToPlatform.svg" width="40">
+      <img alt="将数据传输到平台" src="../assets/icons/TransferToPlatform.svg" width="40">
       </a>
       <div>
          <a href="../data-connection/overview.md">
@@ -94,16 +93,16 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
          </a>
       </div>
       <p>
-         <em>Leverage the connection between Adobe Commerce and the Adobe Experience Platform edge to use Commerce data for other Adobe Experience Cloud products, such as Adobe Analytics and Adobe Target.</em>
+         <em>利用Adobe Commerce和Adobe Experience Platform Edge之间的连接将Commerce数据用于其他Adobe Experience Cloud产品，如Adobe Analytics和Adobe Target。</em>
       </p>
    </td>
    <td valign="top">
       <a href="../landing/saas.md">
-      <img alt="ThumbsUp" src="../assets/icons/DataSetting.svg" width="40">
+      <img alt="竖起大拇指" src="../assets/icons/DataSetting.svg" width="40">
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
+         <strong>Commerce服务连接器</strong> [！BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce。"}
          </a>
       </div>
       <p>
@@ -127,28 +126,28 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
          </a>
       </div>
       <p>
-         <em>Automatically sync catalog, order, and inventory data from Adobe Commerce to connected services. Use Commerce CLI commands or the <strong>Data Management Dashboard</strong> to manage sync processing.</em>
+         <em>自动将目录、订单和清单数据从Adobe Commerce同步到连接的服务。 使用Commerce CLI命令或<strong>数据管理功能板</strong>管理同步处理。</em>
       </p>
    </td>
    <td valign="top">
       <a href="../price-index/price-indexing.md">
-      <img alt="Product prices feed" src="../assets/icons/Feed.svg" width="40">
+      <img alt="产品价格信息源" src="../assets/icons/Feed.svg" width="40">
       </a>
       <div>
           <a href="../price-index/price-indexing.md">
-         <strong>SaaS Price Indexer</strong>
+         <strong>SaaS价格索引器</strong>
          </a>
       </div>
       <p>
-         <em>Optimize site performance by offloading resource-intensive tasks—like indexation and price calculation—from the Commerce application to Adobe's Cloud infrastructure.</em>
+         <em>通过从Commerce应用程序向Adobe的云基础架构转移大量占用资源的任务（如索引和价格计算），优化站点性能。</em>
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
-      <img alt="Monitor data sync" src="../assets/icons/Monitoring.svg" width="40">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <img alt="监控数据同步" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>数据管理仪表板</strong>
          </a>
       </div>
@@ -160,4 +159,4 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
 
 >[!NOTE]
 >
->使用Product Recommendations v6.0.0、Live Search v4.1.0或目录服务v1.17并具有有效许可证的Commerce商家可以免费使用数据管理功能板。 Merchants using earlier service versions can use [Catalog Sync](../landing/catalog-sync.md) to manage and track data synchronization.
+>使用Product Recommendations v6.0.0、Live Search v4.1.0或目录服务v1.17并具有有效许可证的Commerce商家可以免费使用数据管理功能板。 使用早期服务版本的商家可以使用[目录同步](../landing/catalog-sync.md)来管理和跟踪数据同步。
