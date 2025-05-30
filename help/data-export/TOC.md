@@ -24,4 +24,4 @@ ht-degree: 5%
    - [扩展和自定义SaaS数据导出源](extensibility-and-customizations.md)
    - [动态添加产品属性](add-attribute-dynamically.md)
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)

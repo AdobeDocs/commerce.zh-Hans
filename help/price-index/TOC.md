@@ -17,4 +17,4 @@ ht-degree: 9%
 - 目录适配器 {#catalog-adapter}
    - [概述](catalog-adapter.md)
    - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)
