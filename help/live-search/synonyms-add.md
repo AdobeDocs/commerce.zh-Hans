@@ -18,7 +18,7 @@ ht-degree: 0%
 ## 步骤1：添加同义词
 
 1. 在管理员中，转到&#x200B;**营销** > SEO和搜索> **[!DNL Live Search]**。
-1. 对于多个存储，将&#x200B;**作用域**&#x200B;设置为应用同义词设置的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
+1. 对于多个存储，将&#x200B;**作用域**&#x200B;设置为应用同义词设置的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)。
 1. 单击&#x200B;**同义词**&#x200B;选项卡。
 1. 单击&#x200B;**添加同义词**&#x200B;按钮。
 
