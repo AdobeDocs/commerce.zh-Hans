@@ -31,7 +31,7 @@ ht-degree: 0%
         <p>了解集成服务的最新改进，这些改进使我们的Commerce服务能够与其他服务以及Adobe扩展和产品相连接。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/data-connection/release-notes.html?lang=zh-Hans">[!DNL Data Connection]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html">[!DNL Services Connector]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html?lang=zh-Hans">[!DNL Services Connector]</a></li>
           </ul>
       </td>
       <td><strong>数据服务</strong>
