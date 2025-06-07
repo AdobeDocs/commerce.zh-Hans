@@ -2,9 +2,10 @@
 title: 扩展和自定义SaaS数据导出馈送数据
 description: 了解如何扩展和自定义 [!DNL SaaS Data Export] 馈送数据。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
+source-git-commit: ac6c690f87e3df2ac4997d80453028829be8e657
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ ht-degree: 0%
 
 ### 将属性添加到Adobe Commerce
 
-您可以通过Commerce管理员添加产品属性，或者使用自定义PHP模块以编程方式定义属性并更新Adobe Commerce。 这是添加产品属性的最简单方法，因为您可以添加属性和所有必需的元数据。 在下次计划同步期间，新属性及其元数据属性会自动导出到SaaS服务。
+您可以通过Commerce管理员添加产品属性，或者使用自定义PHP模块以编程方式定义属性并更新Adobe Commerce。 从Commerce管理员中添加属性是最简单的方法，因为您可以同时添加属性和所有必需的元数据。 在下次计划同步期间，新属性及其元数据属性会自动导出到SaaS服务。
 
 #### 从管理员创建产品属性
 
@@ -58,19 +59,19 @@ ht-degree: 0%
 
 1. 根据需要将属性添加到属性集。
 
-请参阅&#x200B;*Adobe Commerce管理指南*&#x200B;中的[创建产品属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
+请参阅&#x200B;*Adobe Commerce管理指南*&#x200B;中的[创建产品属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
 
 #### 以编程方式创建产品属性
 
 通过创建实现`DataPatchInterface`的数据修补程序以编程方式添加产品属性，并在构造函数中实例化`EavSetup Factory`类的副本以配置属性选项。
 
-定义属性选项时，除`type`、`label`和`input`之外的所有属性参数都是可选的。 定义以下附加选项以及与默认设置不同的任何其他选项。
+定义属性选项时，除`type`、`label`和`input`之外的所有属性参数都是可选的。 定义以下附加参数以及与默认设置不同的任何其他参数。
 
-- 通过设置`user_defined` = `1`，确保属性在数据同步期间导出到storefront服务
-- 若要确保在产品列表数据库查询中可访问该属性，请设置`used_in_product_listing` = `1`。
+- **`user_defined`=`1`** — 在数据同步期间将属性导出到storefront services
+- **`used_in_product_listing`=`1`** — 使属性可在产品列表数据库查询中访问
 
 有关创建数据修补程序的信息，请参阅&#x200B;*PHP Developer Guide*&#x200B;中的[开发数据和架构修补程序](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/)。
 
 ### 动态添加产品属性
 
-有关在不引入新Eav属性的情况下动态创建产品属性的详细信息，请参阅[动态添加属性](add-attribute-dynamically.md)。
+有关在不引入新EAV属性的情况下动态创建产品属性的详细信息，请参阅[动态添加属性](add-attribute-dynamically.md)。
