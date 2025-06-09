@@ -1,20 +1,20 @@
 ---
-user-guide-title: '[!DNL Adobe Commerce as a Cloud Service] 指南'
+user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: 本指南提供了有关使用 [!DNL Adobe Commerce as a Cloud Service]的详细说明。
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: 94e4e6647442f223df3074c83c73ab4b5ec1e911
 workflow-type: tm+mt
-source-wordcount: '23'
-ht-degree: 26%
+source-wordcount: '27'
+ht-degree: 14%
 
 ---
 
 
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
-- [概述](overview.md)
+- [Adobe Commerce as a Cloud Service](overview.md)
 - [功能比较](feature-comparison.md)
 - [快速入门](getting-started.md)
 - [用户管理](user-management.md)

@@ -2,8 +2,9 @@
 title: 迁移到 [!DNL Adobe Commerce as a Cloud Service]
 description: 了解如何迁移到 [!DNL Adobe Commerce as a Cloud Service]。
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+role: Architect
+source-git-commit: 395def94181016b12a00ce675bb15ef6c8f10309
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 0%
@@ -69,7 +70,7 @@ ht-degree: 0%
 
    * [Cloud Services架构上的Adobe Commerce](./overview.md) — 查看平台架构以及它与当前Adobe Commerce实例的差异。
    * [Adobe Commerce可扩展性框架](https://developer.adobe.com/commerce/extensibility/) — 确定您要如何转换当前的自定义设置。
-   * [由Edge Delivery提供支持的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans) — 查看推荐的店面解决方案。
+   * [由Edge Delivery提供支持的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/) — 查看推荐的店面解决方案。
 
 1. 审核您的自定义兼容性：
 
@@ -91,7 +92,7 @@ ht-degree: 0%
 
 1. 设置以下基于GraphQL的店面之一：
 
-   * [创建Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)
+   * [创建Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
    * [使用PWA Studio创建基于GraphQL的自定义店面](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. 将您的数据从以前的Commerce实例迁移到ACCS：
