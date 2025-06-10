@@ -48,7 +48,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX “先决条件”]
 >
-用户管理需要以下设置：
+>用户管理需要以下设置：
 
 * 为[!DNL Adobe Commerce Optimizer]设置的IMS组织
 * 具有系统或产品管理员角色的同一IMS组织中的Adobe Experience Cloud帐户
