@@ -5,10 +5,10 @@ hide: true
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: 06fc665062703422a3f9afde03cb7ffcc873ef4a
 workflow-type: tm+mt
-source-wordcount: '38'
-ht-degree: 18%
+source-wordcount: '40'
+ht-degree: 17%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 18%
 
 - [概述](overview.md)
 - [开始使用](get-started.md)
+- [User Management](user-management.md)
 - [边界和限制](boundaries-limits.md)
 - 促销 {#merchandising}
    - [概述](./merchandising/overview.md)
