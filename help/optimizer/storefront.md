@@ -3,9 +3,9 @@ title: 设置您的店面
 description: 了解如何设置 [!DNL Adobe Commerce Optimizer] 店面。
 role: Developer
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 785bc4e71431a4e62df2ef7b0b75d66f8bf34579
+source-git-commit: 134e5faeb13c37e10ccd14ae2b43f788c7d39d06
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1808'
 ht-degree: 0%
 
 ---
@@ -16,14 +16,14 @@ ht-degree: 0%
 >
 >本文档描述了早期访问开发中的产品，并未反映用于正式发布的所有功能。
 
-本教程演示如何设置和使用[由Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)提供支持的Adobe Commerce店面，以创建由[!DNL Adobe Commerce Optimizer]实例中的数据提供支持的高性能、可扩展且安全的Commerce店面。
+本教程演示如何设置和使用[由Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)提供支持的Adobe Commerce店面，以创建由[!DNL Adobe Commerce Optimizer]实例中的数据提供支持的高性能、可扩展且安全的Commerce店面。
 
 
 ## 先决条件
 
 * 确保您拥有可以创建存储库并配置为本地开发的GitHub帐户(github.com)。
 
-* 通过查看Commerce Storefront文档中的[概述](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=zh-Hans)，了解在Adobe Commerce Edge Delivery Services上开发Adobe Edge Storefront的概念和工作流。
+* 通过查看Commerce Storefront文档中的[概述](https://experienceleague.adobe.com/developer/commerce/storefront/get-started)，了解在Adobe Commerce Edge Delivery Services上开发Adobe Edge Storefront的概念和工作流。
 * 设置开发环境
 
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->可通过适用于Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)的[App Builder和适用于Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh)的API Mesh获得用于扩展和自定义[!DNL Adobe Commerce Optimizer]解决方案的其他资源。 有关访问和使用信息，请联系您的Adobe客户代表。
+>可通过适用于Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)的[App Builder和适用于Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh)的[API Mesh获得用于扩展和自定义[!DNL Adobe Commerce Optimizer]解决方案的其他资源。 有关访问和使用信息，请联系您的Adobe客户代表。
 
 #### 安装Sidekick
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## 创建您的店面
 
-您为[!DNL Adobe Commerce Optimizer]项目创建的店面使用Edge Delivery Services店面模板上的Adobe Commerce的自定义版本。 样板是一组文件和文件夹，它们提供了店面开发的起点。 此设置过程不同于Edge Delivery Services店面[&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)上Adobe Commerce的标准设置过程。
+您为[!DNL Adobe Commerce Optimizer]项目创建的店面使用Edge Delivery Services店面模板上的Adobe Commerce的自定义版本。 样板是一组文件和文件夹，它们提供了店面开发的起点。 此设置过程不同于Edge Delivery Services店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)上[Adobe Commerce的标准设置过程。
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ ht-degree: 0%
 
 1. 更新店面配置文件中的挂载点以指向您的内容URL。
 
-   1. 打开[fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans#vocabulary)配置文件。
+   1. 打开[fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary)配置文件。
 
       ```yaml
       mountpoints:
@@ -225,7 +225,7 @@ ht-degree: 0%
 
    有关详细信息，请参阅[Sidekick Library文档](https://www.aem.live/docs/sidekick-library)。
 
-   +++
++++
 
 1. 使用GitHub存储库的值更新`url`键值。
 
@@ -265,7 +265,7 @@ ht-degree: 0%
    }
    ```
 
-   +++
++++
 
 1. 保存文件。
 
@@ -324,14 +324,15 @@ ht-degree: 0%
 
 ### 步骤6：添加内容
 
-使用演示站点克隆工具，在托管在`https://da.live`上的文档作者环境中创建和初始化店面内容。 此工具将示例内容导入文档作者环境，并完成示例内容中所有文档的内容预览和发布过程。 示例内容包括页面布局、横幅、标签和其他元素以填充您的店面。
+使用站点创建器工具在`https://da.live`上托管的文档创作环境中创建和初始化店面内容。 此工具将示例内容导入文档作者环境，并完成示例内容中所有文档的内容预览和发布过程。 示例内容包括页面布局、横幅、标签和其他元素以填充您的店面。
 
-1. 打开[演示内容克隆工具](https://da.live/app/hlxsites/aem-boilerplate-commerce/tools/site-creator/site-creator)。
+1. 打开[站点创建者工具](https://da.live/hlxsites/aem-boilerplate-commerce/tools/site-creator/site-creator)。
 
-   ![[!DNL AEM demo content clone tool]](./assets/storefront-demo-content-clone-tool.png){width="700" zoomable="yes"}
+1. 配置存储库：
 
-1. 将店面模板项目的GitHub URL粘贴到&#x200B;[!UICONTROL **项目GitHub URL**]&#x200B;字段中。
-
+   * 选择&#x200B;**[!UICONTROL Use Existing Repository]**。
+   * 输入店面样板项目的&#x200B;**[!UICONTROL Organization/Username]**。
+   * 输入&#x200B;**[!UICONTROL Repository Name]**。
 
 1. 通过选择&#x200B;**创建站点**，导入、预览内容并将其发布到文档作者环境。
 
@@ -472,4 +473,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> 请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)，了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。
+> 请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)，了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。
