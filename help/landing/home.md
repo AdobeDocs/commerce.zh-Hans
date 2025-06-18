@@ -133,7 +133,7 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和本地项目上的Adobe Commerce。"}
+         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和本地项目上的Adobe Commerce。"}
          </a>
       </div>
       <p>
@@ -146,7 +146,7 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce服务连接器</strong> [!BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce。"}
+         <strong>Commerce服务连接器</strong> [!BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce。"}
          </a>
       </div>
       <p>
@@ -187,11 +187,11 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="监控数据同步" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>数据管理仪表板</strong>
          </a>
       </div>
