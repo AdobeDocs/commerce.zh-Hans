@@ -4,10 +4,10 @@ user-guide-description: 本指南提供了有关使用 [!DNL Adobe Commerce as a
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 94e4e6647442f223df3074c83c73ab4b5ec1e911
+source-git-commit: c820fa2995486027a1c048da21dc9db6f9cbb85c
 workflow-type: tm+mt
-source-wordcount: '27'
-ht-degree: 14%
+source-wordcount: '33'
+ht-degree: 12%
 
 ---
 
@@ -23,3 +23,4 @@ ht-degree: 14%
 - [用例](use-cases.md)
 - [分担责任](shared-responsibility.md)
 - [迁移](migration.md)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
