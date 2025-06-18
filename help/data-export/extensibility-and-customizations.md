@@ -3,7 +3,7 @@ title: 扩展和自定义SaaS数据导出馈送数据
 description: 了解如何扩展和自定义 [!DNL SaaS Data Export] 馈送数据。
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
-source-git-commit: ac6c690f87e3df2ac4997d80453028829be8e657
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Commerce Data Export]扩展提供了一种将数据从[!DNL Commerce]应用程序导出到Commerce服务（如Live Search、目录服务和产品推荐）的方法。 如果需要，您可以扩展和自定义馈送数据，以包含其他属性数据或修改收集的数据。
 
-添加属性数据后，可从店面服务的GraphQL架构中的[属性字段](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type)访问它。
+添加属性数据后，可从店面服务的GraphQL架构中的[属性字段](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type)访问它。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 将产品属性添加到Adobe Commerce
 
-开发人员可以使用以下方法之一添加可从[产品属性字段](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#output-fields)访问的产品属性：
+开发人员可以使用以下方法之一添加可从[产品属性字段](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields)访问的产品属性：
 
 - 将属性添加到Adobe Commerce，以包含在导出到Commerce店面服务的`products`信息源数据中。
 - 在使用插件的馈送同步过程中动态添加属性。
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 1. 根据需要将属性添加到属性集。
 
-请参阅&#x200B;*Adobe Commerce管理指南*&#x200B;中的[创建产品属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
+请参阅&#x200B;*Adobe Commerce管理指南*&#x200B;中的[创建产品属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
 
 #### 以编程方式创建产品属性
 

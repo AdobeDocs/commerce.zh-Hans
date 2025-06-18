@@ -4,7 +4,7 @@ description: 适用于Adobe Commerce的[!DNL Catalog Service]提供了一种检�
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Adobe Commerce有两个GraphQL系统。 核心GraphQL系统提供了广泛的查
 
 GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的URL访问每个系统，并且调用需要不同的标头信息。 这两个GraphQL系统旨在共同使用。 [!DNL Catalog Service] GraphQL系统增强了核心系统，使产品店面体验更快。
 
-您可以选择实施适用于Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/)的API Mesh，以便使用Adobe Developer将两个Adobe Commerce GraphQL系统与私有和第三方API以及其他软件接口集成。 可以配置网格以确保路由到每个端点的调用在标头中包含正确的授权信息。
+您可以选择实施适用于Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)的[API Mesh，以便使用Adobe Developer将两个Adobe Commerce GraphQL系统与私有和第三方API以及其他软件接口集成。 可以配置网格以确保路由到每个端点的调用在标头中包含正确的授权信息。
 
 ## 体系结构详细信息
 
@@ -65,7 +65,7 @@ GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的
 
 #### 产品视图属性
 
-简单和复杂的产品都有客户定义的属性，这些属性可显示在店面上。 这些属性作为[ProductViewAttributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type)返回。 在Adobe Commerce中，可用的属性在创建产品时定义。 您可以从Adobe Commerce后端或以编程方式添加其他属性。 请参阅[扩展和自定义SaaS数据导出馈送数据](../data-export/extensibility-and-customizations.md)。
+简单和复杂的产品都有客户定义的属性，这些属性可显示在店面上。 这些属性作为[ProductViewAttributes](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type)返回。 在Adobe Commerce中，可用的属性在创建产品时定义。 您可以从Adobe Commerce后端或以编程方式添加其他属性。 请参阅[扩展和自定义SaaS数据导出馈送数据](../data-export/extensibility-and-customizations.md)。
 
 >[!TIP]
 >
@@ -85,6 +85,6 @@ GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的
 
 ## 实现
 
-仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}
+仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}
 
 安装程序需要配置[Commerce服务连接器](../landing/saas.md)。 完成此操作后，下一步是系统集成商更新店面代码以纳入[!DNL Catalog Service]查询。 所有[!DNL Catalog Service]查询都路由到GraphQL网关。 在新用户引导过程中提供URL。

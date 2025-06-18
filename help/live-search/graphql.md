@@ -1,7 +1,8 @@
 ---
 title: GraphQL
 description: ' [!DNL Live Search] GraphQL工作区允许您使用实时数据构建查询。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d32edf42-1fb0-40f9-89e5-798b39521b77
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '39'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 *GraphQL*&#x200B;工作区允许管理员使用自己的数据构建和测试GraphQL查询。
 
-此工作区支持[`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)和[`attributeMetadata`](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)查询。
+此工作区支持[`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)和[`attributeMetadata`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)查询。
 
 ![GraphQL工作区](assets/graphql.png)
 
@@ -23,7 +24,7 @@ query productSearch {
     items {
       product {
         sku
-		name
+        name
       }
     }
     facets {
@@ -44,4 +45,3 @@ query productSearch {
   "X-Api-Key": "search_gql"
 }
 ```
-

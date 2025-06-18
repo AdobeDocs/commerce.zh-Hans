@@ -2,7 +2,7 @@
 title: 设置
 description: 了解如何更改 [!DNL Product Recommendations] 数据的源以及如何启用可视化推荐。
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: c11e3fbc871600f413867e0c5c0b75ad705cf115
+source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->通过REST使用产品推荐时，`alternateEnvironmentId`参数可用于指定其他数据空间。 通过[GraphQL](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/)使用产品推荐时，此参数不可用。
+>通过REST使用产品推荐时，`alternateEnvironmentId`参数可用于指定其他数据空间。 通过[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/)使用产品推荐时，此参数不可用。
 
 ## 选择推荐源
 
