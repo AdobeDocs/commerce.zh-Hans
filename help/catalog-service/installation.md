@@ -180,7 +180,7 @@ ht-degree: 0%
 
 ## 目录服务和API网格
 
-适用于Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)的[API Mesh使开发人员能够使用Adobe IO将专用或第三方API以及其他接口与Adobe产品集成。
+适用于Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)的API Mesh使开发人员能够使用Adobe IO将专用或第三方API以及其他接口与Adobe产品集成。
 
 有关安装和配置详细信息，请参阅[[!DNL Catalog Service] 和API Mesh](mesh.md)主题。
 

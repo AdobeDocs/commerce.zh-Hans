@@ -26,7 +26,7 @@ ht-degree: 0%
 
 _2025年4月29日_
 
-![修复](../assets/fix.svg)修复了&#x200B;[**性能**](./performance.md)&#x200B;选项卡上的&#x200B;**导出到CSV**报告未包含日期范围内指定的所有数据的问题。
+![修复](../assets/fix.svg)修复了&#x200B;[**性能**](./performance.md)&#x200B;选项卡上的&#x200B;**导出到CSV**&#x200B;报告未包含日期范围内指定的所有数据的问题。
 ![修复](../assets/fix.svg)修复了在使用搜索查询筛选器时无法保存[促销规则](./rules.md)的问题。
 ![修复](../assets/fix.svg)修复了[固定产品](./facets-manage.md#pinunpin-facet)未列在结果页面顶部的问题。
 
@@ -52,7 +52,7 @@ _2024年9月19日_
 
 _2024年9月4日_
 
-![Fix](../assets/fix.svg)将Facet](boundaries-limits.md#facets)内可返回[的最大存储段数增加到100。
+![Fix](../assets/fix.svg)将Facet[&#128279;](boundaries-limits.md#facets)内可返回的最大存储段数增加到100。
 
 _2024年8月7日_
 
@@ -280,7 +280,7 @@ _2023年3月14日_
 #### 新增功能
 
 规则预览中的![新](../assets/new.svg)产品项卡
-![新建](../assets/new.svg)[产品列表页小组件](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
+![新建](../assets/new.svg) [产品列表页小组件](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
 ![新](../assets/new.svg) [类别筛选选项](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
 ![新](../assets/new.svg)添加了拖放以创建Pin事件的功能
 ![新建](../assets/new.svg)个新Pin操作：
@@ -412,4 +412,4 @@ _2023年3月14日_
 
 - [Adobe Commerce开发人员文档](https://developer.adobe.com/commerce/docs)
 - [Adobe Commerce用户指南](https://experienceleague.adobe.com/en/docs/commerce)
-- Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)上的[[!DNL Live Search] 
+- Marketplace[&#128279;](https://commercemarketplace.adobe.com/magento-live-search.html)上的[!DNL Live Search] 
