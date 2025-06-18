@@ -85,6 +85,6 @@ GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的
 
 ## 实现
 
-仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}
+仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}
 
 安装程序需要配置[Commerce服务连接器](../landing/saas.md)。 完成此操作后，下一步是系统集成商更新店面代码以纳入[!DNL Catalog Service]查询。 所有[!DNL Catalog Service]查询都路由到GraphQL网关。 在新用户引导过程中提供URL。
