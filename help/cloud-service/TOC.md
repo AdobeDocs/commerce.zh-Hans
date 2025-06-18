@@ -23,4 +23,4 @@ ht-degree: 12%
 - [用例](use-cases.md)
 - [分担责任](shared-responsibility.md)
 - [迁移](migration.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)
