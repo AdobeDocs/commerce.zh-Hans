@@ -20,7 +20,7 @@ ht-degree: 0%
 
 有关在常规功能发布版本之外发布的功能更改和修复，请查看&#x200B;_托管服务更新_&#x200B;部分。
 
-有关即将发行的版本、产品支持以及哪些Adobe Commerce版本支持AEM Assets集成扩展的详细信息，请参阅Adobe Commerce [发行计划](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)和[产品可用性](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)主题。
+有关即将发行的版本、产品支持以及哪些Adobe Commerce版本支持AEM Assets集成扩展的详细信息，请参阅Adobe Commerce [发行计划](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/planning/schedule)和[产品可用性](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/product-availability)主题。
 
 ## 托管服务更新
 

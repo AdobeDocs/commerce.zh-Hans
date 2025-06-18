@@ -145,7 +145,7 @@ Adobe Commerce使商家能够将图像与产品类别相关联，从而帮助创
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;并继续。
 
-   有关创建类别的详细信息，请参阅&#x200B;**Commerce Catalog Management Guide**&#x200B;中的[完成类别内容](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)。
+   有关创建类别的详细信息，请参阅&#x200B;**Commerce Catalog Management Guide**&#x200B;中的[完成类别内容](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)。
 
 ## 更新资产
 
@@ -153,6 +153,6 @@ Adobe Commerce使商家能够将图像与产品类别相关联，从而帮助创
 
 有关详细信息，请参阅以下AEM Assets文档。
 
-* [正在重新处理数字资产](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [正在重新处理数字资产](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [批准资产](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [批准资产](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 自定义自动匹配
 
-如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或来自第三方系统的资源，该第三方系统无法将产品可视化元数据填充到AEM Assets中。
+如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或来自第三方系统的资源，该第三方系统无法将产品可视化元数据填充到AEM Assets中。
 
 ## 配置自定义自动匹配
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 自定义匹配器API端点
 
-当您使用[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}生成自定义匹配程序应用程序时，该应用程序必须公开以下端点：
+当您使用[App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}生成自定义匹配程序应用程序时，该应用程序必须公开以下端点：
 
 * **App Builder资源到产品URL**&#x200B;端点
 * **App Builder产品到资源URL**&#x200B;端点
@@ -144,4 +144,4 @@ GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to
 
 >[!TIP]
 >
-> 在`asset_roles`键中，使用支持的[Commerce资源角色](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，如`thumbnail`、`image`、`small_image`和`swatch_image`。
+> 在`asset_roles`键中，使用支持的[Commerce资源角色](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，如`thumbnail`、`image`、`small_image`和`swatch_image`。

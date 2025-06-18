@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> AEM资源选择器是一个AEM资源前端组件，用于将AEM Assets与创作应用程序集成。 有关此组件的详细信息，请参阅&#x200B;*AEM as a Cloud Service用户指南*&#x200B;中的[微前端资产选择器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}。
+> AEM资源选择器是一个AEM资源前端组件，用于将AEM Assets与创作应用程序集成。 有关此组件的详细信息，请参阅&#x200B;*AEM as a Cloud Service用户指南*&#x200B;中的[微前端资产选择器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}。
 
 ## 主要优点
 
