@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ![筛选量度](../assets/rec-filters.png)
 
-您可以为每个过滤器配置多个值。 有关每个筛选器的说明，请参阅下面](#column-descriptions)的[表。
+您可以为每个过滤器配置多个值。 有关每个筛选器的说明，请参阅下面[&#128279;](#column-descriptions)的表。
 
 ## 查看详细信息
 
