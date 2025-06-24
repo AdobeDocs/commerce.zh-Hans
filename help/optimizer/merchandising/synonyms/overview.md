@@ -1,7 +1,7 @@
 ---
 title: 同义词概述
 description: 了解 [!DNL Adobe Commerce Optimizer] 中的同义词以及如何改进搜索结果。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 source-git-commit: 3131cc27a25d1bf958071b973f1d4bf1a68be152
 workflow-type: tm+mt
 source-wordcount: '97'

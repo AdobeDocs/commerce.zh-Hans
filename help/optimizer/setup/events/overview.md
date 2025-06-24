@@ -173,4 +173,4 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于推
 
 ## 支持
 
-如果您发现任何数据差异，或者如果推荐和搜索结果未按预期工作，请[提交支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果您发现任何数据差异，或者如果推荐和搜索结果未按预期工作，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。

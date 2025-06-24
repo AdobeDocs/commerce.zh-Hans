@@ -45,4 +45,4 @@ ht-degree: 10%
    - [GraphQL](graphql.md)
    - [设置](settings.md)
 - [活动](events.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)

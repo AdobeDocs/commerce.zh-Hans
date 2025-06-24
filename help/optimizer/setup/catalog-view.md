@@ -3,7 +3,7 @@ title: 目录视图
 description: 了解如何在 [!DNL Adobe Commerce Optimizer]中创建和管理目录视图。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 source-git-commit: 553490762ef10e43ccce1654acec59aeb83bb5f9
 workflow-type: tm+mt
 source-wordcount: '1896'
@@ -47,7 +47,7 @@ ht-degree: 0%
 - 通过设计产品目录以反映您的业务（包括产品、客户、定价和分发），解锁目录联合并提供正确的内容。
 - 快速摄取和更新目录数据，并快速将更新交付到店面，以满足您的促销活动和营销活动需求。
 - 通过由Edge Delivery Services提供支持的、随时可用、速度快的UI组件实现完美的Lighthouse分数，以实现无缝的产品浏览和推荐。
-- 采用Adobe可扩展性架构([App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development))的现代可组合架构，以使用Adobe的[API Mesh](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh)导入产品数据并增强Headless商务店面。
+- 采用Adobe可扩展性架构([App Builder](https://experienceleague.adobe.com/zh-hans/playlists/commerce-get-started-app-builder-development))的现代可组合架构，以使用Adobe的[API Mesh](https://experienceleague.adobe.com/zh-hans/playlists/commerce-get-started-app-builder-and-api-mesh)导入产品数据并增强Headless商务店面。
 
 >[!INFO]
 >

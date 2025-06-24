@@ -2,7 +2,7 @@
 title: 同义词最佳实践
 description: 了解在您的存储中实施同义词的最佳实践。
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 source-git-commit: 54b300ed89f830c2fe5258ec889302a59decd59f
 workflow-type: tm+mt
 source-wordcount: '426'

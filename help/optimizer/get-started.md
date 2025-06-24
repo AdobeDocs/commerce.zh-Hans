@@ -3,7 +3,7 @@ title: 快速入门
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
 source-wordcount: '753'
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 管理员负责设置实例，管理组织的用户、组和权限。
 
-- **[访问Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html)** — 管理整个组织的Adobe权限。 请参阅[用户管理](./user-management.md)，了解您或您组织的产品管理员或系统管理员如何将用户添加到[!DNL Adobe Commerce Optimizer]产品。
+- **[访问Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/admin-guide.html)** — 管理整个组织的Adobe权限。 请参阅[用户管理](./user-management.md)，了解您或您组织的产品管理员或系统管理员如何将用户添加到[!DNL Adobe Commerce Optimizer]产品。
 
 - **创建实例** - [!DNL Adobe Commerce Optimizer]实例使用基于信用的系统。 您可以创建多个沙盒和生产实例，每个实例都需要一个相应的点数。 您最初的积分数量取决于您的订购。 [了解详情](#create-an-instance)。
 

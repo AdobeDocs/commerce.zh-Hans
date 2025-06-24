@@ -1,7 +1,7 @@
 ---
 title: 成功量度报表
 description: “成功量度”报表页面可将insight提供到 [!DNL Adobe Commerce Optimizer] 存储的关键性能量度中。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 source-git-commit: b462980c12342ae2fe6d24272c56c6a9d9b21989
 workflow-type: tm+mt
 source-wordcount: '418'

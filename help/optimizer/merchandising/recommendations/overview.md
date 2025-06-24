@@ -2,7 +2,7 @@
 title: Recommendations简介
 description: “推荐”是一种强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 source-git-commit: 09b6b1dea5916c5671c0eb58a551295b5be35fc0
 workflow-type: tm+mt
 source-wordcount: '194'
