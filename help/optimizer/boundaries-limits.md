@@ -1,29 +1,25 @@
 ---
 title: 边界和限制
-description: 了解 [!DNL Adobe Commerce Optimizer] 的界限和限制，以确保它满足您的业务需求。
+description: 了解 [!DNL Adobe Commerce Optimizer]的边界和限制。
 role: Admin, Developer
-exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+source-git-commit: 553490762ef10e43ccce1654acec59aeb83bb5f9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
 # 边界和限制
 
->[!NOTE]
->
->本文档描述了早期访问开发的边界和限制，并未反映用于正式发布的所有功能。
-
-下面提供了Adobe Commerce Optimizer的边界和限制。
+下面提供了[!DNL Adobe Commerce Optimizer]的边界和限制。
 
 ## 目录
 
-- 目录摄取的保证速率为：1000个产品/分钟，5000个价格/分钟
+- 目录摄取的保证速率为：1000个产品/分钟，5000个价格/分钟。
 - 每天的基本产品更新数为1,000,000。
 - 单个实例中允许的SKU总数为250,000。 
-- 作用域的最大数量为50。
+- 目录源的最大数量为50。
 - 每个产品的变体数量为10,000。
 - 产品大小不能超过200kb。
 
@@ -31,26 +27,22 @@ ht-degree: 0%
 
 - 最大价格手册数量为1,000。
 
-## 搜索和店面
+## 产品发现和店面
 
 - 单个搜索请求可以返回的产品数为100。
-- 可过滤属性的最大数量为200
-- 可搜索属性的最大数量为200
-- 可排序属性的最大数量为50
+- 可过滤属性的最大数量为200。
+- 可搜索属性的最大数量为200。
+- 可排序属性的最大数量为50。
 - Facet的最大数量为100。 所有Facet都必须是可过滤属性。
 - 单个Facet类别返回的最大选项数为100，可以按照支持请求增加该值。
 
-## 渠道和策略
+## 目录视图和策略
 
-- 每个租户的最大渠道数为1000。
-- 分配给一个通道的最大策略数为10。
+- 每个租户的目录查看最大数量为1000。
+- 分配给一个目录视图的策略的最大数量为10。
 - 策略中使用的属性值的最大数量为100。 
 
-## 产品发现和推荐
+## Recommendations
 
-- 对于产品发现，不支持基于属性的推销和价格设置。
-- 对于推荐：
-
-   - [!DNL Adobe Commerce Optimizer]支持&#x200B;_最近查看的_&#x200B;推荐类型以便提前访问。
-   - 不支持类别或属性包含项或排除项。
-   - 您无法在[!DNL Adobe Commerce Optimizer]中预览推荐。
+- 不支持类别或属性包含项或排除项。
+- 您无法在[!DNL Adobe Commerce Optimizer]中预览推荐。
