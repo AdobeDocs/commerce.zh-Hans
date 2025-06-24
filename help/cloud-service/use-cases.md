@@ -61,7 +61,7 @@ ht-degree: 0%
 
 1. 输入所需的联系人详细信息和送货信息。 您可以为此订单使用虚构的信息。
 
-1. 要结帐，请选择&#x200B;[!UICONTROL **支票/汇票**]。 如果要使用信用卡，请使用Paypal](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的[测试卡之一。 您可以将其与任何将来的到期日期和任何CVC一起使用。
+1. 要结帐，请选择&#x200B;[!UICONTROL **支票/汇票**]。 如果要使用信用卡，请使用Paypal[&#128279;](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的测试卡之一。 您可以将其与任何将来的到期日期和任何CVC一起使用。
 
    ![输入详细信息](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -268,7 +268,7 @@ Adobe Commerce的生成变体利用生成人工智能，自动生成高质量内
 
 1. 在&#x200B;[!UICONTROL **解释用户交互**]&#x200B;文本框中，输入：“Adobe员工和合作伙伴购买Adobe品牌齿轮的Experience！”。
 
-1. 在域知识&#x200B;**]的[!UICONTROL ** URL中，输入&#x200B;**www.adobestore.com**。
+1. 在域知识&#x200B;**的** URL中，输入&#x200B;**www.adobestore.com**。
 
 1. 单击&#x200B;[!UICONTROL **生成**]。
 
