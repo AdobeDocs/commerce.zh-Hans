@@ -3,8 +3,8 @@ title: 用例
 description: 了解如何使用 [!DNL Adobe Commerce as a Cloud Service]完成实际用例和支持的业务方案。
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: b00d9aee734af22dfb8e31110c405239b7c04ee5
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+source-git-commit: a06d64566fda76c0527aabfa9e8fdf27e7c149ca
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 0%
@@ -12,8 +12,6 @@ ht-degree: 0%
 ---
 
 # 用例
-
-{{accs-early-access}}
 
 以下用例演示了[!DNL Adobe Commerce as a Cloud Service]支持的核心功能和业务场景，使您能够加快开发并启动高影响力的体验。
 
@@ -63,7 +61,7 @@ ht-degree: 0%
 
 1. 输入所需的联系人详细信息和送货信息。 您可以为此订单使用虚构的信息。
 
-1. 要结帐，请选择&#x200B;[!UICONTROL **支票/汇票**]。 如果要使用信用卡，请使用Paypal[&#128279;](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的测试卡之一。 您可以将其与任何将来的到期日期和任何CVC一起使用。
+1. 要结帐，请选择&#x200B;[!UICONTROL **支票/汇票**]。 如果要使用信用卡，请使用Paypal](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的[测试卡之一。 您可以将其与任何将来的到期日期和任何CVC一起使用。
 
    ![输入详细信息](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -200,7 +198,7 @@ Adobe Commerce的情境式试验功能允许您在店面中创建和管理试验
 
 #### 将图像添加到Commerce AEM Assets
 
-1. 在AEM as a Cloud Service的[导航面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)中，选择&#x200B;**Assets** > **文件** > **Commerce**，然后单击您在上一节中创建的资源。
+1. 在AEM as a Cloud Service的[导航面板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)中，选择&#x200B;**Assets** > **文件** > **Commerce**，然后单击您在上一节中创建的资源。
 
    ![商务文件夹](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -250,7 +248,7 @@ Adobe Commerce的生成变体利用生成人工智能，自动生成高质量内
 
 ### 生成文本
 
-1. 使用[通用编辑器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)打开您的店面站点。
+1. 使用[通用编辑器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)打开您的店面站点。
 
 1. 选择要编辑的文本块。
 
@@ -264,13 +262,13 @@ Adobe Commerce的生成变体利用生成人工智能，自动生成高质量内
 
 ### 生成内容和图像
 
-1. 打开[生成变体](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. 打开[生成变体](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. 选择&#x200B;[!UICONTROL **主页横幅**]&#x200B;模板。
 
 1. 在&#x200B;[!UICONTROL **解释用户交互**]&#x200B;文本框中，输入：“Adobe员工和合作伙伴购买Adobe品牌齿轮的Experience！”。
 
-1. 在域知识&#x200B;**的** URL中，输入&#x200B;**www.adobestore.com**。
+1. 在域知识&#x200B;**]的[!UICONTROL ** URL中，输入&#x200B;**www.adobestore.com**。
 
 1. 单击&#x200B;[!UICONTROL **生成**]。
 
