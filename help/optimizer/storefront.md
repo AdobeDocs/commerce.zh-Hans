@@ -2,7 +2,7 @@
 title: 设置您的店面
 description: 了解如何设置 [!DNL Adobe Commerce Optimizer] 店面。
 role: Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 source-git-commit: 0d6d018b3c0d0bc7f267544844ceb8c6143394a3
 workflow-type: tm+mt
@@ -17,14 +17,14 @@ ht-degree: 0%
 >
 >本文档描述了早期访问开发中的产品，并未反映用于正式发布的所有功能。
 
-本教程演示如何设置和使用[由Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)提供支持的Adobe Commerce店面，以创建由[!DNL Adobe Commerce Optimizer]实例中的数据提供支持的高性能、可扩展且安全的Commerce店面。
+本教程演示如何设置和使用[由Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)提供支持的Adobe Commerce店面，以创建由[!DNL Adobe Commerce Optimizer]实例中的数据提供支持的高性能、可扩展且安全的Commerce店面。
 
 
 ## 先决条件
 
 * 确保您拥有可以创建存储库并配置为本地开发的GitHub帐户(github.com)。
 
-* 通过查看Commerce Storefront文档中的[概述](https://experienceleague.adobe.com/developer/commerce/storefront/get-started)，了解在Adobe Commerce Edge Delivery Services上开发Adobe Edge Storefront的概念和工作流。
+* 通过查看Commerce Storefront文档中的[概述](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=zh-Hans)，了解在Adobe Commerce Edge Delivery Services上开发Adobe Edge Storefront的概念和工作流。
 * 设置开发环境
 
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->可通过适用于Adobe Commerce[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)的[App Builder和适用于Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh)的API Mesh获得用于扩展和自定义[!DNL Adobe Commerce Optimizer]解决方案的其他资源。 有关访问和使用信息，请联系您的Adobe客户代表。
+>可通过适用于Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)的[App Builder和适用于Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh)的API Mesh获得用于扩展和自定义[!DNL Adobe Commerce Optimizer]解决方案的其他资源。 有关访问和使用信息，请联系您的Adobe客户代表。
 
 #### 安装Sidekick
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ## 创建您的店面
 
-您为[!DNL Adobe Commerce Optimizer]项目创建的店面使用Edge Delivery Services店面模板上的Adobe Commerce的自定义版本。 样板是一组文件和文件夹，它们提供了店面开发的起点。 此设置过程不同于Edge Delivery Services店面[&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)上Adobe Commerce的标准设置过程。
+您为[!DNL Adobe Commerce Optimizer]项目创建的店面使用Edge Delivery Services店面模板上的Adobe Commerce的自定义版本。 样板是一组文件和文件夹，它们提供了店面开发的起点。 此设置过程不同于Edge Delivery Services店面[&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)上Adobe Commerce的标准设置过程。
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ ht-degree: 0%
 
 1. 更新店面配置文件中的挂载点以指向您的内容URL。
 
-   1. 打开[fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary)配置文件。
+   1. 打开[fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans#vocabulary)配置文件。
 
       ```yaml
       mountpoints:
@@ -474,4 +474,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> 请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)，了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。
+> 请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)，了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。
