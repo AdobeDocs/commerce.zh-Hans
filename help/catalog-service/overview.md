@@ -1,49 +1,83 @@
 ---
 title: '[!DNL Catalog Service]'
-description: 适用于Adobe Commerce的[!DNL Catalog Service]提供了一种检索产品显示页面和产品列表页面内容的方法，其速度比本机Adobe Commerce GraphQL查询快得多。
+description: 通过 [!DNL Catalog Service] (一种高性能GraphQL API，可减少产品页面、类别页面和搜索结果的页面加载时间)加速Adobe Commerce店面。
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
+source-git-commit: e582bff6ee8ee7c4213f04bdab984efa94333fb6
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce的[!DNL Catalog Service]
 
-Adobe Commerce扩展的[!DNL Catalog Service]提供丰富视图模型（只读）目录数据，以便快速而全面地呈现与产品相关的店面体验，包括：
+适用于Adobe Commerce扩展的[!DNL Catalog Service]通过专用的GraphQL API提供优化的只读目录数据，从而缩短店面加载时间。 此服务专门用于增强与产品相关的页面体验，从而加快页面加载并提高转化率。
 
-* 产品详细信息页面
-* 产品列表和类别页面
-* 搜索结果页面
-* 产品轮播
-* 产品比较页面
-* 渲染产品数据的任何其他页面，如购物车、订单和愿望清单页面
+[!DNL Catalog Service]提供的丰富视图模型数据包括产品详细信息、属性、库存和价格，支持快速呈现与产品相关的店面体验，例如：
+
+- 产品详细信息页面
+- 产品列表和类别页面
+- 搜索结果页面
+- 产品轮播
+- 产品比较页面
+- 渲染产品数据的任何其他页面，如购物车、订单和愿望清单页面
+
+
+## 主要优势和功能
+
+- **页面加载速度更快**：优化查询，目录数据检索速度比核心GraphQL系统快10倍
+- **转化率提高**：加载时间越短，用户体验越好
+- **简化的产品类型**：基于简单和复杂产品类型的统一架构降低了开发人员的复杂性
+- **增强的价格精确度**：支持包含4位小数的16位值
+- **分离的架构**：目录数据的独立GraphQL系统可确保高性能，而不会影响Commerce的核心操作
+- **实时数据同步**：目录服务通过SaaS数据导出扩展与Adobe Commerce应用程序保持同步，确保查询返回最新的目录数据
+- **数据管理功能板**：从Adobe Commerce管理界面监视和管理数据同步操作
+- **API Mesh集成**：选择性地与Adobe Developer App Builder的[API Mesh集成](https://developer.adobe.com/graphql-mesh-gateway/)，以将Adobe Commerce GraphQL系统与其他内部和第三方API相结合，以扩展Catalog Service GraphQL架构并添加自定义数据或功能
+
+
+## 架构概述
 
 [!DNL Catalog Service]使用[GraphQL](https://graphql.org/)请求和接收目录数据，包括产品、产品属性、库存和价格。 GraphQL是一种查询语言，前端客户端使用它与在后端(如Adobe Commerce)上定义的应用程序编程接口(API)进行通信。 GraphQL是一种常用的通信方法，因为它非常轻量，允许系统集成商指定每个响应的内容和顺序。
 
-Adobe Commerce有两个GraphQL系统。 核心GraphQL系统提供了广泛的查询（读取操作）和突变（写入操作），允许购物者与多种类型的页面交互，包括产品、客户帐户、购物车、结账等。 但是，返回产品信息的查询未针对速度进行优化。 GraphQL系统提供的服务只能对产品和相关信息进行查询。 这些查询的性能优于类似的核心查询。
+Adobe Commerce提供两种用途不同的GraphQL系统：
+
+### 核心GraphQL System
+
+- **用途**：适用于所有Commerce操作的全功能API
+- **功能**：针对产品、客户、购物车、结账等的查询（读取）和变动（写入）
+- **限制**：产品查询未针对速度进行优化
+- **用例**：一般Commerce操作和写入操作
+
+### 目录服务GraphQL System
+
+- **用途**：仅高性能产品目录查询
+- **功能**：产品、属性、库存和价格的只读查询
+- **优势**：比产品数据的核心系统快很多
+- **用例**：速度至关重要的店面产品体验
 
 目录服务可用的数据由SaaS数据导出扩展提供。 此扩展在Commerce应用程序与连接的Commerce服务之间同步数据，以确保对服务GraphQL API端点的查询返回最新的目录数据。 有关管理和排查SaaS数据导出操作问题的信息，请参阅[SaaS Data Export Guide](../data-export/overview.md)。
 
 [!DNL Catalog Service]客户可以使用[SaaS价格索引器](../price-index/price-indexing.md)，这提供了更快的价格更新和同步时间。
 
-## 架构
+## 架构详细信息
 
-下图显示了两个GraphQL系统：
+下图说明了核心GraphQL系统和目录服务GraphQL系统之间的体系结构差异，说明了它们如何协作来优化店面性能：
 
 ![目录体系结构图](assets/catalog-service-architecture.png)
 
-在核心GraphQL系统中，PWA向Commerce应用程序发送请求，后者接收每个请求，对其进行处理，并可能通过多个子系统发送请求，然后向店面返回响应。 此往返可能会导致页面加载时间变慢，从而潜在地降低转化率。
+### 系统如何工作
 
-[!DNL Catalog Service]是Storefront服务网关。 该服务访问一个单独的数据库，其中包含产品详细信息和相关信息，如产品属性、变型、价格和类别。 该服务通过索引保持数据库与Adobe Commerce同步。
-由于服务绕过了与应用程序的直接通信，它能够减少请求的延迟和响应周期。
+**核心GraphQL系统（传统方法）：**
+渐进式Web应用程序(PWA)将请求直接发送到Commerce应用程序，后者在返回响应之前通过多个子系统处理每个请求。 这种多步往返可能会导致页面加载时间变慢，从而潜在地降低转化率。
+
+**目录服务（优化方法）：**
+目录服务充当一个Storefront Services Gateway，可访问专用的优化数据库，该数据库包含产品详细信息、属性、变体、价格和类别。 该服务通过自动索引来维护与Adobe Commerce的同步，从而绕过传统的请求 — 响应周期来显着减少延迟。
 
 GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的URL访问每个系统，并且调用需要不同的标头信息。 这两个GraphQL系统旨在共同使用。 [!DNL Catalog Service] GraphQL系统增强了核心系统，使产品店面体验更快。
 
-您可以选择实施适用于Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/)的API Mesh，以便使用Adobe Developer将两个Adobe Commerce GraphQL系统与私有和第三方API以及其他软件接口集成。 可以配置网格以确保路由到每个端点的调用在标头中包含正确的授权信息。
+您可以选择实施适用于Adobe Developer App Builder[的](https://developer.adobe.com/graphql-mesh-gateway/)API Mesh，以便使用Adobe Developer将两个Adobe Commerce GraphQL系统与私有和第三方API以及其他软件接口集成。 可以配置网格以确保路由到每个端点的调用在标头中包含正确的授权信息。
 
 ## 体系结构详细信息
 
@@ -57,11 +91,15 @@ GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的
 
 架构将产品类型的多样性减少为两个用例：
 
-* 简单产品是指用单一价格和单一数量定义的产品。 目录服务将简单、虚拟、可下载和礼品卡产品类型映射到`simpleProductViews`。
+- **简单产品** — 目录服务将Adobe Commerce简单、虚拟、可下载和礼品卡产品类型映射到`simpleProductViews`。 此类型具有：
+   - 单一、固定的价格和数量
+   - 常规价格（折扣前）和最终价格（折扣后）
+   - 支持产品属性，如颜色、大小和其他特征
 
-* 复杂的产品由多个简单的产品组成。 元件简单产品可以有不同的价格。 也可以定义复杂产品，以便购物者可以指定简单产品的组成数量。 目录服务将可配置、捆绑包和分组的产品类型映射到`complexProductViews`。
-
-复杂的产品选项通过其行为而非类型进行统一和区分。 每个选项值表示一个简单的产品。 此选项值可以访问简单产品属性，包括价格。 当购物者选择复杂产品的所有选项时，所选选项的组合指向特定的简单产品。 在购物者为所有可用选项选择值之前，简单产品将保持不明确。
+- **复杂产品** — 目录服务将Adobe Commerce可配置、捆绑包和分组产品类型映射到`complexProductViews`。 复杂产品是多个简单产品的集合，这些产品可以配置或捆绑在一起。
+   - 每个部件简单产品可以有自己的价格。
+   - 购物者可以指定单个组件产品的数量。
+   - 产品选项（如大小、颜色、材质）是统一的，无论产品类型如何，均以相同的方式工作。 每个选项选择都指向一个特定的简单产品，该产品具有自己的属性和价格。 在购物者选择所有必需选项之前，最终产品将保持未定义状态。
 
 #### 产品视图属性
 
@@ -85,6 +123,11 @@ GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的
 
 ## 实现
 
-仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}
+实施过程涉及：
 
-安装程序需要配置[Commerce服务连接器](../landing/saas.md)。 完成此操作后，下一步是系统集成商更新店面代码以纳入[!DNL Catalog Service]查询。 所有[!DNL Catalog Service]查询都路由到GraphQL网关。 在新用户引导过程中提供URL。
+1. [!BADGE 仅限PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"} **[安装和配置目录服务](installation.md)** — 安装和配置目录服务扩展并使用[!DNL Commerce Services Connector]设置SaaS连接。
+2. **更新店面代码**：将目录服务GraphQL查询集成到您的店面。
+3. **路由查询**：所有目录服务查询都通过GraphQL网关（载入期间提供的URL）
+4. **监视数据同步并排除其故障**：验证改进的性能并监视结果
+
+

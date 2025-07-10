@@ -3,16 +3,16 @@ title: 什么是 [!DNL Live Search]？
 description: Adobe Commerce 的 [!DNL Live Search] 可提供快速、相关和直观的搜索体验。
 recommendations: noCatalog
 exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
-source-git-commit: 29374c45f57e923666e255bfefadd9a1e736cfef
+source-git-commit: d07f36a71247a96bc2dd950867c2862205238d88
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '954'
 ht-degree: 1%
 
 ---
 
 # 什么是[!DNL Live Search]？
 
-[!DNL Live Search]是一项功能，取代了Adobe Commerce中的标准搜索功能。 [!DNL Live Search]功能随Composer一起安装，并将您的[!DNL Commerce]存储连接到[Commerce Services Connector](../landing/saas.md)。 配置后，默认搜索文本字段将替换为[!DNL Live Search]文本字段。 [!DNL Live Search]还安装产品列表页(PLP)构件，该构件在浏览搜索结果时提供强大的筛选功能。
+[!DNL Live Search]是一项功能，取代了Adobe Commerce中的标准搜索功能。 启用并配置[!DNL Live Search]功能后，默认搜索文本字段将替换为[!DNL Live Search]文本字段。 [!DNL Live Search]还包括产品列表页面(PLP)构件，该构件在浏览搜索结果时提供强大的筛选功能。
 
 使用[!DNL Live Search]，您可以：
 
@@ -35,13 +35,13 @@ ht-degree: 1%
 
 由于侧重于速度、相关性和易用性，[!DNL Live Search]对购物者和商家来说都是一个游戏规则的改变者。 请观看以下视频，然后从店面快速浏览[!DNL Live Search]。
 
->[!VIDEO](https://video.tv.adobe.com/v/3452579?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-有关使用和配置Live Search的更深入视频，请参阅[关于 [!DNL Live Search]](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)的完整演示主题。
+有关使用和配置Live Search的更深入视频，请参阅[关于 [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)的完整演示主题。
 
 ### 按键入内容搜索
 
-当购物者在[搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search)框中键入查询时，[!DNL Live Search]在[弹出框](storefront-popover.md)中回复建议的产品和排名最前的搜索结果的缩略图图像。 当购物者单击建议或精选产品时，将显示[产品详细信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/storefront/storefront)页面。 弹出框页脚中的&#x200B;_查看所有_&#x200B;链接显示搜索结果页面。
+当购物者在[!DNL Live Search]搜索[框中键入查询时，](storefront-popover.md)在[弹出框](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)中回复建议的产品和排名最前的搜索结果的缩略图图像。 当购物者单击建议或精选产品时，将显示[产品详细信息](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront)页面。 弹出框页脚中的&#x200B;_查看所有_&#x200B;链接显示搜索结果页面。
 
 对于包含两个或更多字符的查询，[!DNL Live Search]返回“键入时搜索”结果。 对于部分匹配，每个单词的最大字符数为20。 查询中的字符数无法配置。 弹出框包括`name`、`sku`和`category_ids`字段。
 
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 ### 搜索词支持
 
-[!DNL Live Search]支持Commerce [搜索词重定向](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-terms)。 例如，用户可以搜索诸如“运费”之类的术语，并直接转到运费页面。
+[!DNL Live Search]支持Commerce [搜索词重定向](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)。 例如，用户可以搜索诸如“运费”之类的术语，并直接转到运费页面。
 
 ## 实时搜索组件
 
@@ -101,4 +101,4 @@ ht-degree: 1%
 
 如果您连续90天没有在测试环境中提交目录数据的搜索查询，则目录数据将设置为休眠模式，并且任何搜索查询都不会返回任何数据。 此策略不会影响生产环境中的目录数据。
 
-要在测试环境中重新激活目录数据，请[提交标题为“重新激活[!DNL Live Search]”的支持请求](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)并包含环境ID。 测试环境中的目录数据应在几小时内恢复。
+要在测试环境中重新激活目录数据，请[提交标题为“重新激活](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)”的支持请求[!DNL Live Search]并包含环境ID。 测试环境中的目录数据应在几小时内恢复。

@@ -4,9 +4,9 @@ user-guide-description: 本指南提供了有关Adobe Commerce使用 [!DNL Catal
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: 2c3a67698927ab9a9840c49a5e46497e4111a7cc
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '48'
 ht-degree: 10%
 
 ---
@@ -15,12 +15,13 @@ ht-degree: 10%
 
 - [指南概述](guide-overview.md)
 - [ [!DNL Catalog Service]简介](overview.md)
-- [载入和安装](installation.md)
+- [安装](installation.md)
+- [开始使用 [!DNL Catalog Service]](get-started.md)
 - [检索目录数据](graphql-queries.md)
 - 与其他应用程序集成 {#integration}
    - [目录服务和API网格](mesh.md)
    - [用例：显示计税价格](taxes.md)
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 
