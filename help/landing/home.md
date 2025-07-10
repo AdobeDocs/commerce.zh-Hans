@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 526d15950fe77ac8c384d1fd670394695a824260
+source-git-commit: 525ad18961f46379360049b1bf49c18b208bf051
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -51,20 +51,17 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
       </p>
    </td>
    <td valign="top">
-      <a href="../product-visuals/overview.md">
-      <img alt="可视化" src="../assets/icons/images.svg" width="40">
+      <a href="../catalog-service/overview.md">
+      <img alt="连接的服务的目录数据" src="../assets/icons/DataBook.svg" width="40">
       </a>
       <div>
-         <a href="../product-visuals/overview.md">
-         <strong>产品视觉效果</strong>
+         <a href="../catalog-service/overview.md">
+         <strong>目录服务</strong>
          </a>
       </div>
       <p>
-         <em>使用与Adobe Experience Manager集成的系统简化数字资源管理，以便管理富媒体内容。</em>
+         <em>为您的客户提供优化的产品体验，同时提高性能、改进可扩展性和提高转化率。</em>
       </p>
-   </td>
-   <td valign="top">
-      <!-- Empty cell to maintain table structure -->
    </td>
 </tr>
 <tr style="border: 0;">
@@ -95,19 +92,6 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
       </p>
    </td>
    <td valign="top">
-      <a href="../catalog-service/overview.md">
-      <img alt="连接的服务的目录数据" src="../assets/icons/DataBook.svg" width="40">
-      </a>
-      <div>
-         <a href="../catalog-service/overview.md">
-         <strong>目录服务</strong>
-         </a>
-      </div>
-      <p>
-         <em>为您的客户提供优化的产品体验，同时提高性能、改进可扩展性和提高转化率。</em>
-      </p>
-   </td>
-   <td valign="top">
       <a href="../payment-services/guide-overview.md">
       <img alt="信用卡付款" src="../assets/icons/CreditCard.svg" width="40">
       </a>
@@ -133,7 +117,7 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和本地项目上的Adobe Commerce。"}
+         <strong>[!DNL Data Connection]</strong> [！BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和本地项目上的Adobe Commerce。"}
          </a>
       </div>
       <p>
@@ -146,11 +130,24 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce服务连接器</strong> [!BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce。"}
+         <strong>Commerce服务连接器</strong> [！BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce。"}
          </a>
       </div>
       <p>
          <em>配置身份验证以启用Adobe Commerce与连接的服务之间的安全通信。 对于每个环境，请为Commerce服务数据存储指定数据空间ID。</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../aem-assets-integration/overview.md">
+      <img alt="可视化" src="../assets/icons/images.svg" width="40">
+      </a>
+      <div>
+          <a href="../aem-assets-integration/overview.md">
+         <strong>AEM Assets集成</strong>
+         </a>
+      </div>
+      <p>
+         <em>使用与Adobe Experience Manager集成的系统简化数字资源管理，以便管理富媒体内容。</em>
       </p>
    </td>
 </tr>
@@ -187,11 +184,11 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="监控数据同步" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>数据管理仪表板</strong>
          </a>
       </div>
