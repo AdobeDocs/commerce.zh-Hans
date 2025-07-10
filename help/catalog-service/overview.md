@@ -125,7 +125,7 @@ GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的
 
 实施过程涉及：
 
-1. [!BADGE 仅限PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"} **[安装和配置目录服务](installation.md)** — 安装和配置目录服务扩展并使用[!DNL Commerce Services Connector]设置SaaS连接。
+1. [!BADGE 仅限PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"} **[安装和配置目录服务](installation.md)** — 安装和配置目录服务扩展并使用[!DNL Commerce Services Connector]设置SaaS连接。
 2. **更新店面代码**：将目录服务GraphQL查询集成到您的店面。
 3. **路由查询**：所有目录服务查询都通过GraphQL网关（载入期间提供的URL）
 4. **监视数据同步并排除其故障**：验证改进的性能并监视结果

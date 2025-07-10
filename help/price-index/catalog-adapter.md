@@ -56,7 +56,7 @@ Catalog Adapter扩展是一个Composer中继，用于安装以下模块：
 
    >[!NOTE]
    >
-   >有关在本地管理Commerce项目环境的信息，请参阅《云基础架构用户指南》[上的](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches)Adobe Commerce中的&#x200B;_使用CLI管理分支_。
+   >有关在本地管理Commerce项目环境的信息，请参阅《云基础架构用户指南》[上的](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/cli-branches)Adobe Commerce中的&#x200B;_使用CLI管理分支_。
 
 1. 查看要使用Adobe Commerce Cloud CLI更新的环境分支。
 
@@ -86,7 +86,7 @@ Catalog Adapter扩展是一个Composer中继，用于安装以下模块：
    git push origin <branch-name>
    ```
 
-   将更新推送到云环境会启动[Commerce云部署流程](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process)以应用更改。 从[部署日志](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)中检查部署状态。
+   将更新推送到云环境会启动[Commerce云部署流程](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/deploy/process)以应用更改。 从[部署日志](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)中检查部署状态。
 
 >[!TAB 内部部署]
 
