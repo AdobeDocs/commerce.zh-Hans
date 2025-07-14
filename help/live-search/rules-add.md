@@ -2,9 +2,9 @@
 title: 添加规则
 description: 了解如何创建搜索促销规则。
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
+source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 添加规则
 
 1. 在管理员中，转到&#x200B;**营销** > SEO和搜索> **[!DNL Live Search]**。
-1. 设置&#x200B;**范围**&#x200B;以标识应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)。
+1. 设置&#x200B;**范围**&#x200B;以标识应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 1. 单击&#x200B;**搜索促销**&#x200B;工作区。
 1. 单击&#x200B;**添加规则**&#x200B;以启动规则编辑器。
 
@@ -101,6 +101,10 @@ ht-degree: 0%
    1. 在&#x200B;**属性信息** > **店面属性**&#x200B;页面中，将搜索权重设置为小于或等于`5`。
 
       ![产品 — 搜索权重](assets/set-search-weight.png)
+
+>[!NOTE]
+>
+>店面搜索体验受多个配置协作的影响，例如彩块化、同义词和搜索/类别促销规则，这可能会导致结果与在“管理员”中测试单个配置时看到的结果不同。 虽然管理员测试可隔离特定配置区域，但店面可一起应用所有相关配置，从而生成更复杂和更真实的搜索输出。
 
 ## 手动排名
 
