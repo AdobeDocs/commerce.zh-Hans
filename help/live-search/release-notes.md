@@ -288,7 +288,7 @@ _2023年3月14日_
 #### 新增功能
 
 规则预览中的![新](../assets/new.svg)产品项卡
-![新建](../assets/new.svg)[产品列表页小组件](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
+![新建](../assets/new.svg) [产品列表页小组件](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
 ![新](../assets/new.svg) [类别筛选选项](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
 ![新](../assets/new.svg)添加了拖放以创建Pin事件的功能
 ![新建](../assets/new.svg)个新Pin操作：
