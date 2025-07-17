@@ -3,9 +3,9 @@ title: 收集数据
 description: 了解事件如何收集 [!DNL Product Recommendations]的数据。
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
+source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 | `rec-click` | 购物者单击推荐单元中的产品。 |
 | `view` | 当推荐单元变为至少50%可见（例如，通过向下滚动页面）时发送。 例如，如果推荐单元有两行，当购物者看到第二行中的一行加上一个像素时，将发送`view`事件。 如果购物者多次上下滚动页面，则发送`view`事件的次数与购物者在页面上再次看到整个推荐单元时发送的次数相同。 |
 
->[!NOTE]
->
->产品推荐量度已针对Luma店面进行了优化。 如果店面是通过PWA Studio实施的，请参阅[PWA文档](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)。 如果您使用自定义前端技术，如React或Vue JS，则了解如何在Headless[&#128279;](headless.md)环境中集成产品推荐。
+尽管产品推荐量度已针对Luma店面进行了优化，但它们也适用于其他店面实施：
+
+- [Edge Delivery店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
+- [自定义前台(React、Vue JS)](headless.md)
 
 #### 必需的报告面板事件
 
@@ -138,4 +140,4 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 
 >[!NOTE]
 >
->如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hans)，则在购物者同意使用Cookie之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，Adobe Commerce会默认收集行为数据。
+>如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，则在购物者同意使用Cookie之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，Adobe Commerce会默认收集行为数据。
