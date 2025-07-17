@@ -90,7 +90,7 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 
 尽管产品推荐量度已针对Luma店面进行了优化，但它们也适用于其他店面实施：
 
-- [Edge Delivery店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [Edge Delivery店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=zh-Hans)
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
 - [自定义前台(React、Vue JS)](headless.md)
 
@@ -140,4 +140,4 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 
 >[!NOTE]
 >
->如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，则在购物者同意使用Cookie之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，Adobe Commerce会默认收集行为数据。
+>如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hans)，则在购物者同意使用Cookie之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，Adobe Commerce会默认收集行为数据。
