@@ -203,7 +203,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 观看本视频，了解有关历史订单的更多信息，然后完成以下步骤来实施历史订单收集。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
+>[!VIDEO](https://video.tv.adobe.com/v/3450237?captions=chi_hans)
 
 #### 设置订单同步服务
 
