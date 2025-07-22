@@ -1,15 +1,15 @@
 ---
 title: 批量数据迁移工具
 description: 了解如何使用批量数据迁移工具将数据从云实例上的现有Adobe Commerce迁移到 [!DNL Adobe Commerce as a Cloud Service]。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Architect
-source-git-commit: bc8011189a46ccab986b22020881c808da6ee2cd
+exl-id: 81522de9-df54-4651-b8ed-58956376af86
+source-git-commit: 8bf8eb58aa9c1ae965f4bbf5a2987fb22f004769
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
-
 
 # 批量数据迁移工具
 
@@ -39,8 +39,8 @@ ht-degree: 0%
 
 批量数据迁移工具的可用性如下：
 
-- **2025年7月中旬** — 要访问批量数据迁移工具，请提交支持工单。
-- **2025年8月中旬** — 批量数据迁移工具将公开可用，可从此页面访问。
+- **2025年第三季度** — 要访问批量数据迁移工具，请提交支持票证。
+- **2025年第三季度** — 批量数据迁移工具将公开可用，可从此页面访问。
 
 ## 创建目标环境
 
@@ -63,7 +63,7 @@ ht-degree: 0%
       - IMS URL — 基本URL。 例如，`https://ims-na1.adobelogin.com/`。
       - IMS组织ID
 
-   对于IMS范围和其他值，请在[Adobe Developer Console](https://developer.adobe.com/console/)的项目的&#x200B;**凭据**&#x200B;分区中选择您的OAuth类型。 提取工具所包含的`.example.env`文件中提供了更多信息。
+   对于IMS范围和其他值，请在&#x200B;**Adobe Developer Console**&#x200B;的项目的[凭据](https://developer.adobe.com/console/)分区中选择您的OAuth类型。 提取工具所包含的`.example.env`文件中提供了更多信息。
 
 ### 提取数据
 
