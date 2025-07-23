@@ -2,7 +2,7 @@
 title: 安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
 source-git-commit: 1cb6443e79e0e3d813550f9b619b3a0f641cd989
 workflow-type: tm+mt
 source-wordcount: '754'
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您的Commerce实例使用实时搜索或产品推荐，则当您载入或升级这些服务时，会自动安装或更新目录服务。 有关详细信息，请参阅[实时搜索](https://experienceleague.adobe.com/en/docs/commerce/live-search/install)和[产品推荐](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure)的安装说明。
+>如果您的Commerce实例使用实时搜索或产品推荐，则当您载入或升级这些服务时，会自动安装或更新目录服务。 有关详细信息，请参阅[实时搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/install)和[产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce/product-recommendations/getting-started/install-configure)的安装说明。
 
 
 ## 系统要求
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 所有Commerce测试实例都使用沙盒端点。
 
-对沙盒端点执行所有加载测试。 在开始加载测试之前，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)，以便服务团队可以预见额外的服务器流量。
+对沙盒端点执行所有加载测试。 在开始加载测试之前，请提交[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#submit-ticket)，以便服务团队可以预见额外的服务器流量。
 
 ## 安装和配置
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 **预修课程**
 
-- 访问[repo.magento.com](https://repo.magento.com)以安装扩展。 有关密钥生成和获取必要的权限，请参阅[获取您的身份验证密钥](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。 有关云安装，请参阅[云基础架构上的Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+- 访问[repo.magento.com](https://repo.magento.com)以安装扩展。 有关密钥生成和获取必要的权限，请参阅[获取您的身份验证密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。 有关云安装，请参阅[云基础架构上的Commerce指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
 - 访问Adobe Commerce应用程序服务器的命令行。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关在本地管理Commerce项目环境的信息，请参阅《云基础架构用户指南》[上的](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches)Adobe Commerce中的&#x200B;_使用CLI管理分支_。
+   >有关在本地管理Commerce项目环境的信息，请参阅《云基础架构用户指南》[上的](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/cli-branches)Adobe Commerce中的&#x200B;_使用CLI管理分支_。
 
 1. 查看要使用Adobe Commerce Cloud CLI更新的环境分支。
 
@@ -103,7 +103,7 @@ ht-degree: 0%
    git push origin <branch-name>
    ```
 
-   将更新推送到云环境会启动[Commerce云部署流程](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process)以应用更改。 从[部署日志](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)中检查部署状态。
+   将更新推送到云环境会启动[Commerce云部署流程](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/deploy/process)以应用更改。 从[部署日志](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)中检查部署状态。
 
 >[!TAB 内部部署]
 
@@ -143,11 +143,11 @@ ht-degree: 0%
 
 安装[!DNL Catalog Service]后，请完成以下任务以将目录服务与Adobe Commerce实例集成。 此集成支持在Commerce实例、目录服务和其他支持服务之间进行数据同步和通信。 数据同步由[SaaS Data Export扩展](../data-export/overview.md)处理。
 
-1. 通过指定API密钥并选择SaaS数据空间来设置[Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)。
+1. 通过指定API密钥并选择SaaS数据空间来设置[Commerce Services Connector](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/integration-services/saas)。
 
    Commerce服务连接器设置是使用Adobe Commerce服务（如目录服务、实时搜索和产品推荐）所需的一次性过程。 如果已为其他服务配置了连接器，请跳过此步骤。
 
-1. 从[数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)执行初始数据同步。
+1. 从[数据管理功能板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard)执行初始数据同步。
 
    初始同步可能需要几分钟到几小时时间，具体取决于目录大小。 您可以从“数据管理”仪表板监视同步状态。 初始同步后，目录会持续导出产品数据以使服务保持最新。
 
@@ -157,10 +157,10 @@ ht-degree: 0%
 
 要确保正确运行目录导出，请执行以下操作：
 
-- [确认cron作业正在运行](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
-- 验证索引器是从[Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)运行，还是使用Commerce CLI命令`bin/magento indexer:info`运行。
+- [确认cron作业正在运行](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
+- 验证索引器是从[Admin](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management)运行，还是使用Commerce CLI命令`bin/magento indexer:info`运行。
 - 验证`Catalog Attributes Feed, Product Feed, Product Overrides Feed`和`Product Variant Feed`索引器是否设置为`Update by Schedule`。
 
 ### 监测数据同步并排除其故障
 
-通过Commerce Admin，您可以使用[数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)监视同步过程。 使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和日志管理该进程并对其进行故障排除。
+通过Commerce Admin，您可以使用[数据管理功能板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard)监视同步过程。 使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和日志管理该进程并对其进行故障排除。
