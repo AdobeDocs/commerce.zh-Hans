@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 597cdd929f7abed24a68f1347a214b46664b1c75
+source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 >SaaS数据导出扩展是随“实时搜索”、“产品推荐”和“目录服务”一起自动安装的模块的集合。 您可以使用编辑器检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 当前主要版本
+
+## 103.4.7发行版
+
+![修复](../assets/fix.svg)删除存储产品类别权限的过时表。<!--MDEE-1065-->
 
 ## 103.4.6发行版
 
@@ -52,7 +56,7 @@ ht-degree: 0%
 
 ## 103.4.2发行版
 
-![Fix](../assets/fix.svg)添加了在使用`saas:resync --dry-run`命令和`EXPORTER_EXTENDED_LOG=1`环境变量运行测试重新同步时在`saas-export.log`中收集实体负载的功能。<!--MDEE-1023-->
+![Fix](../assets/fix.svg)添加了在使用`saas-export.log`命令和`saas:resync --dry-run`环境变量运行测试重新同步时在`EXPORTER_EXTENDED_LOG=1`中收集实体负载的功能。<!--MDEE-1023-->
 
 ## 103.4.1发行版
 
@@ -74,7 +78,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## 103.3.20发行版
 
-![修复](../assets/fix.svg)通过改进与目录数据导出cron作业失败相关的错误消息传送功能，修复了`cron.log`中无法跟踪的`BulkException`错误。<!--MDEE-966-->
+![修复](../assets/fix.svg)通过改进与目录数据导出cron作业失败相关的错误消息传送功能，修复了`BulkException`中无法跟踪的`cron.log`错误。<!--MDEE-966-->
 ![修复](../assets/fix.svg)提高了产品重新同步过程在拥有大量存储视图的实例上的性能。<!--MDEE-974-->
 
 ## 103.3.19发行版
@@ -125,7 +129,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## 103.3.9发行版
 
-![修复](../assets/fix.svg)当删除实体时，将为网站(`scopesWebsite`)和客户组(`scopesCustomerGroup`)的范围界定服务源传播`deleted`标志。<!--MDEE-839-->
+![修复](../assets/fix.svg)当删除实体时，将为网站(`deleted`)和客户组(`scopesWebsite`)的范围界定服务源传播`scopesCustomerGroup`标志。<!--MDEE-839-->
 
 ## 103.3.8发行版
 
@@ -152,7 +156,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## 103.3.4发行版
 
-![修复](../assets/fix.svg)通过添加每次将数据从Commerce实例传输到Commerce服务<!--MDEE-785-->时发送`data_sent_outside`事件的机制，增加了对数据传输审核日志记录的支持
+![修复](../assets/fix.svg)通过添加每次将数据从Commerce实例传输到Commerce服务`data_sent_outside`时发送<!--MDEE-785-->事件的机制，增加了对数据传输审核日志记录的支持
 
 ## 103.3.3发行版
 
