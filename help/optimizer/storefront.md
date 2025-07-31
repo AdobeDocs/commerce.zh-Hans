@@ -226,7 +226,7 @@ ht-degree: 0%
 
    有关详细信息，请参阅[Sidekick Library文档](https://www.aem.live/docs/sidekick-library)。
 
-+++
+   +++
 
 1. 使用GitHub存储库的值更新`url`键值。
 
@@ -266,7 +266,7 @@ ht-degree: 0%
    }
    ```
 
-+++
+   +++
 
 1. 保存文件。
 
