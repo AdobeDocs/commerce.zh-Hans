@@ -3,11 +3,11 @@ title: 快速入门
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 036e04a02edadf4b8a48fc38e784d9dde734ba45
+source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 在开始之前，请确保您已：
 
-- 具有[!DNL Adobe Commerce Optimizer]权限的&#x200B;**Adobe Experience Cloud帐户**
+- 具有&#x200B;**权限的** Adobe Experience Cloud帐户[!DNL Adobe Commerce Optimizer]
 - **组织管理员访问权限**&#x200B;以创建实例和管理用户
 - **GitHub帐户**（用于加载示例数据和店面开发）
 - **基本了解**&#x200B;电子商务概念
@@ -109,7 +109,11 @@ ht-degree: 0%
 
 1. 访问实例：
 
-   单击实例名称以打开[!DNL Adobe Commerce Optimizer]应用程序。
+   单击实例名称以打开[!DNL Adobe Commerce Optimizer]应用程序。 在应用程序中，您可以使用页面顶部的下拉菜单在不同的[!DNL Adobe Commerce Optimizer]实例之间切换：
+
+   ![实例切换器](./assets/context-switcher.png){zoomable="yes"}
+
+   显示的所有实例都属于同一组织。 您可以在实例之间切换以查看每个实例的数据和设置，例如在沙盒环境和生产环境之间切换。
 
 1. 获取实例详细信息：
    - 单击实例名称旁边的信息图标。
@@ -186,5 +190,5 @@ Adobe提供了一个GitHub存储库，其中包含示例数据和工具，以帮
 ### 获取帮助
 
 - **开发人员资源**： [开发人员文档](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)
+- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

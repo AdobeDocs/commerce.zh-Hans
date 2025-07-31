@@ -3,10 +3,11 @@ title: 店面和目录管理员的端到端用例
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer] 使用目录视图和策略管理您的目录，以及如何根据您的目录配置设置店面。
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 474426ef1f99eed8d2c1b5d736332aaa666872fa
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2158'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ ht-degree: 0%
 - **用户权限**
    - 管理员访问Adobe Admin Console
    - 有关帐户设置，请参阅[用户管理](../user-management.md)
-   - 如果您没有访问权限，请联系您的Adobe客户代表或完成[提前访问计划表单](https://experienceleague.adobe.com/go/aco-early-access-program)
+   - 如果您没有访问权限，请联系您的Adobe客户代表。
 
 - **示例数据**
    - 已将Carvelo汽车目录数据加载到实例中
@@ -46,7 +47,7 @@ ht-degree: 0%
 
 ## 让我们开始吧
 
-在此使用案例中，您将使用下列内容：
+在此使用案例中，您使用的是以下内容：
 
 1. [!DNL Adobe Commerce Optimizer] UI — 设置目录视图和策略以管理Carvelo用例的复杂目录操作设置。
 
@@ -54,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 通过查看Adobe Commerce Storefront文档中的[探索样板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=zh-Hans)主题来了解店面配置文件。
+> 通过查看Adobe Commerce Storefront文档中的[探索样板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/)主题来了解店面配置文件。
 
 ### 关‌键要点
 
@@ -156,7 +157,7 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 1. 为Celport创建一个名为&#x200B;*Celport部件类别*&#x200B;的新策略，以便仅销售制动和悬架部件。
 1. 为Celport店面创建新的目录视图。
 
-   此目录视图使用您新创建的策略&#x200B;*Celport部件类别*&#x200B;和现有的&#x200B;*East Coast Inc品牌*，以确保Celport在与East Coast Inc签署的协议中只能销售Bolt和Cruz品牌。Celport目录视图将使用`east_coast_inc`价格手册来支持与品牌许可协议相符的产品定价计划。
+   此目录视图使用您新创建的策略&#x200B;*Celport部件类别*&#x200B;和现有的&#x200B;*East Coast Inc品牌*，以确保Celport在与East Coast Inc签署的协议中只能销售Bolt和Cruz品牌。Celport目录视图使用`east_coast_inc`价格手册来支持与品牌许可协议相符的产品定价计划。
 1. 更新商务店面配置以使用来自您创建的Celport目录视图的数据。
 
 在本节末尾， Celport将启动并运行，准备销售Carvelo的产品。
@@ -228,17 +229,13 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 1. 填写目录视图详细信息：
 
    - **名称** = *Celport*
-   - **目录源** = *zh-CN*（按Enter）
+   - **目录源** = *en-US*
    - **策略** （使用下拉列表） = *East Coast Inc品牌*；*Celport部件类别*；*品牌*；*型号*                          
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建目录视图。
 
    目录视图页面将更新以显示新的目录视图。
 
    ![已更新的目录视图列表](../assets/updated-catalog-view-list.png)
-
-   >[!NOTE]
-   >
-   >如果&#x200B;**[!UICONTROL Add]**&#x200B;按钮不是蓝色的，请通过将光标置于&#x200B;**[!UICONTROL Catalog sources]**&#x200B;部分并按&#x200B;**Enter**&#x200B;来确保选定目录源。
 
 1. 获取Celport目录视图ID。
 
@@ -403,7 +400,7 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 
 **问题：**&#x200B;保存按钮未处于活动状态
 
-- **解决方案：**&#x200B;确保已输入策略名称并且已完成所有必填字段
+- **解决方案：**&#x200B;请确保已输入策略名称并已填写所有必填字段
 
 **问题：**&#x200B;筛选器未按预期工作
 
@@ -414,10 +411,6 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 **问题：**&#x200B;目录视图未出现在列表中
 
 - **解决方案：**&#x200B;验证是否已启用和正确配置所有关联的策略
-
-**问题：**“添加”按钮不是蓝色的
-
-- **解决方案：**&#x200B;将光标置于字段并按Enter键以确保选择了目录源
 
 ### 店面配置问题
 
@@ -451,7 +444,5 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 - 探索[促销功能](../merchandising/overview.md)以个性化购物体验
 - 了解[高级策略配置](../setup/policies.md)
 - 为其他经销商设置[其他目录视图](../setup/catalog-view.md)
-- 查看[API文档](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/)以进行程序化目录管理
-- 了解如何为您的Edge Delivery Services店面配置下拉组件，以创建自定义店面体验，用于产品发现、推荐和其他店面功能。 请参阅[Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hans)
-
-
+- 查看[API文档](https://developer.adobe.com/commerce/services/optimizer/)以进行程序化目录管理
+- 了解如何为您的Edge Delivery Services店面配置下拉组件，以创建自定义店面体验，用于产品发现、推荐和其他店面功能。 请参阅[Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
