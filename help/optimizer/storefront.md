@@ -2,9 +2,9 @@
 title: 设置您的店面
 description: 了解如何设置 [!DNL Adobe Commerce Optimizer] 店面。
 role: Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 0d6d018b3c0d0bc7f267544844ceb8c6143394a3
+source-git-commit: 7ff78711972cbd73fc75f7523d8ac734081dbe10
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 0%
@@ -17,14 +17,14 @@ ht-degree: 0%
 >
 >本文档描述了早期访问开发中的产品，并未反映用于正式发布的所有功能。
 
-本教程演示如何设置和使用[由Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)提供支持的Adobe Commerce店面，以创建由[!DNL Adobe Commerce Optimizer]实例中的数据提供支持的高性能、可扩展且安全的Commerce店面。
+本教程演示如何设置和使用[由Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)提供支持的Adobe Commerce店面，以创建由[!DNL Adobe Commerce Optimizer]实例中的数据提供支持的高性能、可扩展且安全的Commerce店面。
 
 
 ## 先决条件
 
 * 确保您拥有可以创建存储库并配置为本地开发的GitHub帐户(github.com)。
 
-* 通过查看Commerce Storefront文档中的[概述](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=zh-Hans)，了解在Adobe Commerce Edge Delivery Services上开发Adobe Edge Storefront的概念和工作流。
+* 通过查看Commerce Storefront文档中的[概述](https://experienceleague.adobe.com/developer/commerce/storefront/get-started)，了解在Adobe Commerce Edge Delivery Services上开发Adobe Edge Storefront的概念和工作流。
 * 设置开发环境
 
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->可通过适用于Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)的[App Builder和适用于Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh)的API Mesh获得用于扩展和自定义[!DNL Adobe Commerce Optimizer]解决方案的其他资源。 有关访问和使用信息，请联系您的Adobe客户代表。
+>可通过适用于Adobe Commerce[!DNL Adobe Commerce Optimizer]的[App Builder和适用于Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)的[API Mesh获得用于扩展和自定义](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh)解决方案的其他资源。 有关访问和使用信息，请联系您的Adobe客户代表。
 
 #### 安装Sidekick
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ## 创建您的店面
 
-您为[!DNL Adobe Commerce Optimizer]项目创建的店面使用Edge Delivery Services店面模板上的Adobe Commerce的自定义版本。 样板是一组文件和文件夹，它们提供了店面开发的起点。 此设置过程不同于Edge Delivery Services店面[&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)上Adobe Commerce的标准设置过程。
+您为[!DNL Adobe Commerce Optimizer]项目创建的店面使用Edge Delivery Services店面模板上的Adobe Commerce的自定义版本。 样板是一组文件和文件夹，它们提供了店面开发的起点。 此设置过程不同于Edge Delivery Services店面[上](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)Adobe Commerce的标准设置过程。
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 1. **[创建代码存储库](#step-1-create-site-code-repository)** — 从Adobe Commerce + Edge Delivery Services样板模板创建GitHub存储库。 包括来自源存储库的所有分支。
 1. **[更新店面模板](#step-2-update-the-storefront-boilerplate)** — 更新`aco`分支上的自定义模板以将内容文件夹连接到店面。
-1. **[部署更改](#step-3-deploy-changes)** — 使用`aco`分支中的更新代码覆盖`main`分支上的代码。
+1. **[部署更改](#step-3-deploy-changes)** — 使用`main`分支中的更新代码覆盖`aco`分支上的代码。
 1. **[添加CodeSync应用程序](#step-5-add-the-aem-code-sync-app)** — 将您的存储库连接到Edge Delivery服务。 在完成源代码自定义并将代码推送到`main`分支之前，请勿连接代码同步应用程序。
 1. **[添加内容](#step-6-add-content)** — 使用演示内容克隆工具在`https://da.live`上托管的文档创作环境中创建和初始化店面内容。
 1. **[预览演示站点](#step-7-preview-demo-site)** — 连接到您的店面站点以查看[!DNL Adobe Commerce Optimizer]演示实例的示例内容和数据。
@@ -159,7 +159,7 @@ ht-degree: 0%
 
 1. 更新店面配置文件中的挂载点以指向您的内容URL。
 
-   1. 打开[fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans#vocabulary)配置文件。
+   1. 打开[fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary)配置文件。
 
       ```yaml
       mountpoints:
@@ -226,7 +226,7 @@ ht-degree: 0%
 
    有关详细信息，请参阅[Sidekick Library文档](https://www.aem.live/docs/sidekick-library)。
 
-   +++
++++
 
 1. 使用GitHub存储库的值更新`url`键值。
 
@@ -266,7 +266,7 @@ ht-degree: 0%
    }
    ```
 
-   +++
++++
 
 1. 保存文件。
 
@@ -299,7 +299,7 @@ ht-degree: 0%
    git commit -m "Update storefront boilerplate for Adobe Commerce Optimizer"
    ```
 
-1. 使用`aco`分支上的更改覆盖`main`分支上的样板。
+1. 使用`main`分支上的更改覆盖`aco`分支上的样板。
 
    ```bash
    git push origin aco:main -f
@@ -327,7 +327,7 @@ ht-degree: 0%
 
 使用站点创建器工具在`https://da.live`上托管的文档创作环境中创建和初始化店面内容。 此工具将示例内容导入文档作者环境，并完成示例内容中所有文档的内容预览和发布过程。 示例内容包括页面布局、横幅、标签和其他元素以填充您的店面。
 
-1. 打开[站点创建者工具](https://da.live/hlxsites/aem-boilerplate-commerce/tools/site-creator/site-creator)。
+1. 打开[站点创建者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)。
 
 1. 配置存储库：
 
@@ -360,7 +360,7 @@ ht-degree: 0%
 验证是否正确显示了示例内容和Adobe Commerce Optimizer演示实例中的数据。
 
 * **示例内容**&#x200B;是从文档创作环境的内容文件夹中提供的。 它包括您网站的页面布局、横幅和标签。
-* 从[!DNL Adobe Commerce Optimizer]演示实例中提供了&#x200B;**示例数据**。 数据包括产品数据，其中产品属性、图像、产品说明和价格基于店面配置文件`config.json`中指定的标题值填充。
+* 从&#x200B;**演示实例中提供了**&#x200B;示例数据[!DNL Adobe Commerce Optimizer]。 数据包括产品数据，其中产品属性、图像、产品说明和价格基于店面配置文件`config.json`中指定的标题值填充。
 
 #### 连接到您的站点以查看示例内容和数据
 
@@ -393,7 +393,7 @@ ht-degree: 0%
 
       ![[!DNL View product details page]](./assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
 
-      产品详细信息页面组件由`product`文件夹中的`default`内容文档定义。
+      产品详细信息页面组件由`default`文件夹中的`product`内容文档定义。
 
 ### 步骤8：在本地环境中开发
 
@@ -474,4 +474,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> 请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)，了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。
+> 请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)，了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。
