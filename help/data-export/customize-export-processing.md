@@ -3,16 +3,16 @@ title: 提高SaaS数据导出性能
 description: 了解如何使用多线程数据导出模式提高Commerce服务的SaaS数据导出性能。
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: 9b28da0bf861a266e9d679ba59470f46d9a89c1c
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
 # 提高SaaS数据导出性能
 
-**多线程数据导出模式**&#x200B;通过将馈送数据拆分为多个批次并并行处理来加速导出过程。
+**多线程数据导出模式**&#x200B;通过将馈送数据分成批处理并并发处理这些批处理来加速导出过程。
 
 开发人员或系统集成商可以通过使用多线程数据导出模式而不是默认的单线程模式来提高性能。 在单线程模式下，馈送提交过程不会并行化。 此外，由于设置了默认限制，所有客户端只能使用一个线程。 在大多数情况下，不需要自定义配置。
 
@@ -64,7 +64,7 @@ bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 
 要使用多线程处理所有数据导出操作，系统集成商或开发人员可以在Commerce应用程序配置中修改每个馈送的线程数和批量大小。
 
-可以通过将自定义值添加到配置文件[的](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)系统节`app/etc/config.php`来应用这些更改。
+可以通过将自定义值添加到配置文件[的](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)系统节`app/etc/config.php`来应用这些更改。
 
 **示例：为产品和价格配置多线程**
 
