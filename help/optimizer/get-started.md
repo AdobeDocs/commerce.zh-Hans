@@ -3,11 +3,11 @@ title: 快速入门
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
+source-git-commit: f920cfe7cd433e85f343fefe1062a1972e5e5e5f
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,6 @@ ht-degree: 0%
 创建实例后：
 
 1. 从Commerce Cloud Manager [管理您的实例](#manage-an-instance)。
-1. 使用[目录视图指南](./setup/catalog-view.md)设置目录视图和策略。
 1. 使用[用户管理指南](./user-management.md)配置用户访问权限。
 
 ### 步骤3. 添加示例数据（可选）
@@ -146,15 +145,12 @@ Adobe提供了一个GitHub存储库，其中包含示例数据和工具，以帮
 
 1. 访问GitHub存储库：
    - 访问[示例目录数据摄取存储库](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
-   - 按照存储库自述文件中的设置说明进行操作。
 
-2. 运行引入：
-   - 使用提供的脚本将示例数据加载到Adobe Commerce Optimizer暂存环境中。
-   - 验证数据是否显示在您的[数据同步](./setup/data-sync.md)页面中。
+1. 按照存储库自述文件中的设置说明进行操作。
 
-3. 清理（可选）：
-
-   使用示例数据加载器源代码中包含的`reset.js`脚本删除示例数据。
+   - 配置并运行数据摄取
+   - 使用示例数据配置目录策略和视图
+   - 清理示例数据（可选）
 
 ## 后续步骤
 
@@ -190,5 +186,5 @@ Adobe提供了一个GitHub存储库，其中包含示例数据和工具，以帮
 ### 获取帮助
 
 - **开发人员资源**： [开发人员文档](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)
+- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
