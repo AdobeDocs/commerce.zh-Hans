@@ -84,7 +84,7 @@ ht-degree: 0%
 >[!WARNING]
 >
 > 请仅在生产&#x200B;**安装中使用**&#x200B;生产SaaS数据空间[!DNL Commerce]以避免数据冲突。 否则，您可能会用测试数据污染生产站点数据，从而导致部署延迟。 例如，可能会从暂存数据（如暂存URL）错误地覆盖您的生产产品数据。
-> > 如果发生这种情况，[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以请求数据清理。
+> &#x200B;> 如果发生这种情况，[提交支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以请求数据清理。
 
 如果在“管理面板”中找不到LiveSearch配置字段，请验证您输入的SaaS API密钥是否正确。  确保在配置生产数据空间时添加了生产SaaS密钥，并在配置暂存数据空间时添加了暂存密钥。 如果配置不正确的键，则Adobe Commerce环境中将不可用SaaS服务，例如LiveSearch。
 
@@ -116,7 +116,7 @@ ht-degree: 0%
 
    如果在&#x200B;**[!UICONTROL Commerce Services Connector]**&#x200B;配置中未看到[!DNL Commerce]部分，请为所需的[!DNL Commerce]服务[[!DNL Commerce] 安装](#availableservices)模块。 另外，确保已安装`magento/module-services-id`包。
 
-1. 在&#x200B;_[!UICONTROL Sandbox API Keys]_和_[!UICONTROL Production API Keys]_&#x200B;部分中，粘贴您的键值。
+1. 在&#x200B;_[!UICONTROL Sandbox API Keys]_&#x200B;和_[!UICONTROL Production API Keys]_&#x200B;部分中，粘贴您的键值。
 
    - 私钥必须在密钥的开头包含`----BEGIN PRIVATE KEY---`，在密钥的结尾包含`----END PRIVATE KEY----`。
    - 如果您没有实际密钥的副本，请向帐户所有者索取这些密钥，然后将值插入配置。
