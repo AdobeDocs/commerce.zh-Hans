@@ -3,11 +3,11 @@ title: 快速入门
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: f920cfe7cd433e85f343fefe1062a1972e5e5e5f
+source-git-commit: b0ce0a399e89baaeabe87c53d069df866378f8c8
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 0%
 | 任务 | 描述 | 链接 |
 |---|---|---|
 | **访问Developer Console** | 创建项目并生成凭据 | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **摄取目录数据** | 从现有系统导入产品数据 | [数据摄取API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) |
+| **摄取目录数据** | 从现有系统导入产品数据 | [数据摄取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) |
 | **设置店面** | 配置Edge Delivery Services店面 | [店面设置](./storefront.md) |
 
 ### 促销员任务
@@ -143,14 +143,14 @@ Adobe提供了一个GitHub存储库，其中包含示例数据和工具，以帮
 
 **加载示例数据：**
 
-1. 访问GitHub存储库：
-   - 访问[示例目录数据摄取存储库](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+1. 访问[示例目录数据摄取](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) GitHub存储库。
 
-1. 按照存储库自述文件中的设置说明进行操作。
+1. 按照存储库自述文件中的设置说明完成以下任务：
 
-   - 配置并运行数据摄取
-   - 使用示例数据配置目录策略和视图
-   - 清理示例数据（可选）
+   - 设置环境
+   - 完成数据摄取过程
+   - 使用示例数据创建目录视图和策略
+   - 通过检查[数据同步](./setup/data-sync.md)页上的目录服务数据来验证数据摄取
 
 ## 后续步骤
 
@@ -185,6 +185,6 @@ Adobe提供了一个GitHub存储库，其中包含示例数据和工具，以帮
 
 ### 获取帮助
 
-- **开发人员资源**： [开发人员文档](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)
+- **开发人员资源**： [开发人员文档](https://developer.adobe.com/commerce/services/optimizer/)
+- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

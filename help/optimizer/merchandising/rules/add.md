@@ -1,10 +1,11 @@
 ---
 title: 创建和管理规则
 description: 了解如何创建和管理促销规则。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 746c016f149fb49b9c483968a8a5f40196b163ed
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -88,7 +89,9 @@ ht-degree: 0%
 #### 注意事项
 
 - 查询中的撇号和引号可能会导致某些语言中的排名和相关性出现一些小问题。
-- 为确保智能排名正常工作，请确保用于搜索或筛选(Facet)的任何[产品属性](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata)的&#x200B;**搜索权重**&#x200B;等于或小于`5`。
+- 为确保智能排名正常工作，请确保用于搜索或筛选(Facet)的任何属性的&#x200B;**搜索权重**&#x200B;为`5`或更少。
+
+有关设置搜索权重的信息，请参阅[元数据API](https://developer.adobe.com/commerce/services/reference/rest/)。
 
 ### 手动排名
 

@@ -3,9 +3,9 @@ title: 店面和目录管理员的端到端用例
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer] 使用目录视图和策略管理您的目录，以及如何根据您的目录配置设置店面。
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
+source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
 workflow-type: tm+mt
 source-wordcount: '2158'
 ht-degree: 0%
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 通过查看Adobe Commerce Storefront文档中的[探索样板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=zh-Hans)主题来了解店面配置文件。
+> 通过查看Adobe Commerce Storefront文档中的[探索样板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/)主题来了解店面配置文件。
 
 ### 关‌键要点
 
@@ -271,7 +271,7 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
       "headers": {
          "cs": {
-            "ac-catalog-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
+            "ac-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
             "ac-price-book-id": "west_coast_inc",
             "ac-source-locale": "en-US"
            }
@@ -295,7 +295,7 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
    请注意，目录视图标题包含以下值：
 
    - `commerce-endpoint`： `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
-   - `ac-catalog-view-id`：`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
+   - `ac-view-id`：`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
    - `ac-price-book-id`： `"west_coast_inc"`
    - `ac-source-locale`： `"en-US"`
 
@@ -307,7 +307,7 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
    https://experience.adobe.com/#/@commerceprojectbeacon/in:XDevkG9W6UbwgQmPn995r3/commerce-optimizer-studio/catalog
    ```
 
-1. 将`ac-catalog-view-id`值替换为您之前复制的Celport目录视图ID。
+1. 将`ac-view-id`值替换为您之前复制的Celport目录视图ID。
 
 1. 将`ac-price-book-id`值替换为`"east_coast_inc"`。
 
@@ -321,7 +321,7 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
         "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
         "headers": {
             "cs": {
-                "ac-catalog-view-id": "{{celport-catalog-view-id}}",
+                "ac-view-id": "{{celport-catalog-view-id}}",
                 "ac-price-book-id": "east_coast_inc",
                 "ac-source-locale": "en-US"
               }
@@ -378,7 +378,7 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 
 1. 尝试更新店面配置文件(`config.json`)。
 
-   1. 更改`ac-catalog-view-id`和`ac-price-book`值。
+   1. 更改`ac-view-id`和`ac-price-book`值。
 
    例如，您可以将目录视图ID更改为Kingsbluff目录视图，将价格手册ID更改为`east_coast_inc`。 您可以通过查看&#x200B;*Kingsbluff部件类别*&#x200B;策略来查看Kingsbluff可用的部件类别。
 
@@ -445,4 +445,4 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 - 了解[高级策略配置](../setup/policies.md)
 - 为其他经销商设置[其他目录视图](../setup/catalog-view.md)
 - 查看[API文档](https://developer.adobe.com/commerce/services/optimizer/)以进行程序化目录管理
-- 了解如何为您的Edge Delivery Services店面配置下拉组件，以创建自定义店面体验，用于产品发现、推荐和其他店面功能。 请参阅[Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hans)
+- 了解如何为您的Edge Delivery Services店面配置下拉组件，以创建自定义店面体验，用于产品发现、推荐和其他店面功能。 请参阅[Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

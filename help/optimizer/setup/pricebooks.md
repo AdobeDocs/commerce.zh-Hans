@@ -3,11 +3,11 @@ title: 价格手册
 description: 了解如何在 [!DNL Adobe Commerce Optimizer]中管理价格手册。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 513ed97442bfffe74d64f4eb0484cfa8f25b5ecc
+source-git-commit: 502d8d21ff052f4ecb212176459b38ce51f85dfc
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 基本价格手册定义了它本身及其所有子价格手册的币种。 子价格帐簿将继承此币种，并且无法覆盖它。
 
-请参阅[开发人员文档](https://developer.adobe.com/commerce/services/reference/rest/)，了解如何使用价格手册API创建、更新和删除价格手册[!DNL Adobe Commerce Optimizer]。
+请参阅[开发人员文档](https://developer.adobe.com/commerce/services/reference/rest/)，了解如何使用价格手册API创建、更新和删除[!DNL Adobe Commerce Optimizer]的价格手册。
 
 ## 重要概念
 

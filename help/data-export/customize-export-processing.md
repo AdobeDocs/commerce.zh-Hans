@@ -2,9 +2,10 @@
 title: 提高SaaS数据导出性能
 description: 了解如何使用多线程数据导出模式提高Commerce服务的SaaS数据导出性能。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Adobe建议使用默认配置进行数据摄取，这通常满足Commerce商家�
 
 >[!NOTE]
 >
->Adobe建议在使用多线程处理时务必谨慎。 此功能是一项仍在改进的早期访问功能。 如果配置多线程以提高性能，则可以触发包含的Adobe Commerce Services护栏，以防止在数据摄取期间误用系统。 这些护栏还限制用户触发可能使系统过载的同步更改。 当触发护栏时，请求被阻止，系统返回429错误。 如果您遇到这些错误，请调整您的配置，并提交支持票证以获得帮助。
+>Adobe建议在使用多线程处理时务必谨慎。 如果配置多线程以提高性能，则可以触发包含的Adobe Commerce Services护栏，以防止在数据摄取期间误用系统。 这些护栏还限制用户触发可能使系统过载的同步更改。 当触发护栏时，请求被阻止，系统返回429错误。 如果您遇到这些错误，请调整您的配置，并提交支持票证以获得帮助。
 
 ## 配置多线程
 
@@ -63,7 +64,7 @@ bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 
 要使用多线程处理所有数据导出操作，系统集成商或开发人员可以在Commerce应用程序配置中修改每个馈送的线程数和批量大小。
 
-可以通过将自定义值添加到配置文件`app/etc/config.php`的[系统节](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)来应用这些更改。
+可以通过将自定义值添加到配置文件[的](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)系统节`app/etc/config.php`来应用这些更改。
 
 **示例：为产品和价格配置多线程**
 

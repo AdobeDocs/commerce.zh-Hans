@@ -1,10 +1,11 @@
 ---
 title: Facet概述
 description: 了解 [!DNL Adobe Commerce Optimizer] 中的Facet以及它们如何改进搜索结果。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -29,12 +30,14 @@ Facet是一种高性能筛选方法，它使用属性值的多个维度作为搜
 
 ## 默认属性值
 
-以下[产品属性](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata)由[!DNL Adobe Commerce Optimizer]使用并默认启用。
+以下产品属性由[!DNL Adobe Commerce Optimizer]使用并默认启用。
 
 | 属性 | 描述 | 属性 |
 |---|---|---|
 | 可排序 | 用于产品列表中的排序 | `price` |
 | 可搜索 | 在搜索中使用 | `price` <br />`sku`<br />`name` |
+
+请参阅[数据摄取元数据API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)，了解有关产品属性及其属性的更多信息。
 
 ## 默认的非系统属性属性
 
