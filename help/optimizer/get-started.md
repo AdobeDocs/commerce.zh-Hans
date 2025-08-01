@@ -3,7 +3,7 @@ title: 快速入门
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 source-git-commit: f920cfe7cd433e85f343fefe1062a1972e5e5e5f
 workflow-type: tm+mt
@@ -186,5 +186,5 @@ Adobe提供了一个GitHub存储库，其中包含示例数据和工具，以帮
 ### 获取帮助
 
 - **开发人员资源**： [开发人员文档](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/)
-- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
+- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)
