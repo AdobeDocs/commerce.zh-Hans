@@ -24,9 +24,9 @@ ht-degree: 1%
 
 有关[!DNL Data Connection]扩展使用的扩展的功能更改和修复，请参阅&#x200B;**支持的服务更新**。
 
-请参阅[即将发布的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，了解版本计划和支持。
+请参阅[即将发布的版本](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/planning/schedule)，了解版本计划和支持。
 
-请参阅开发人员文档，以[了解哪些Commerce版本支持此模块](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
+请参阅开发人员文档，以[了解哪些Commerce版本支持此模块](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/product-availability)。
 
 ## 支持的服务更新
 

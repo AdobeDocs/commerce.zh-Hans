@@ -37,7 +37,7 @@ ht-degree: 0%
 ## 步骤1：配置Experience Platform架构
 
 1. 登录Adobe Experience Platform并选择您的Commerce架构。
-1. [在根级别添加自定义标识字段](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups)：
+1. [在根级别添加自定义标识字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups)：
    - `hashedPID` （字符串） — 主身份哈希
    - `hashedSID` （字符串） — 辅助标识哈希
    - `primaryID` （字符串） — 主标识字段名称
