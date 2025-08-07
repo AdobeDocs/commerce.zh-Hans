@@ -1,18 +1,23 @@
 ---
-title: 添加自定义订单属性
+title: 将自定义属性添加到订单
 description: 了解如何将自定义订单属性添加到您的后台数据并将这些属性发送到Experience Platform。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
+source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '602'
 ht-degree: 2%
 
 ---
 
-# 添加自定义订单属性
+# 将自定义属性添加到订单
 
 在本文中，您将了解如何向后台事件添加自定义属性。 通过自定义属性，您可以捕获丰富的数据见解以增强分析并进而为购物者创建个性化体验。
+
+>[!NOTE]
+>
+>了解如何[将自定义身份](custom-identities.md)添加到配置文件。
 
 自定义属性可在两个级别受支持：
 
@@ -35,7 +40,7 @@ ht-degree: 2%
 
 ## 步骤1：创建目录结构
 
-1. 导航到[!DNL Commerce]安装中的`app/code`目录并创建模块目录。 例如： `Magento/AepCustomAttributes`。 此目录包含自定义属性所需的文件。
+1. 导航到`app/code`安装中的[!DNL Commerce]目录并创建模块目录。 例如： `Magento/AepCustomAttributes`。 此目录包含自定义属性所需的文件。
 1. 在模块目录中，创建一个名为`etc`的子目录。 `etc`目录包含`module.xml`、`query.xml`、`di.xml`和`et_schema.xml`文件。
 
 ## 步骤2：定义依赖项和设置版本
@@ -344,7 +349,7 @@ ComponentRegistrar::register(
 
 要确保Experience Platform中的[!DNL Commerce]架构能够摄取新的自定义订单属性，您需要扩展架构以包含这些自定义字段。
 
-要了解如何扩展现有XDM架构以包含这些自定义字段，请参阅Experience Platform文档中的[在UI中创建和编辑架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)一文。 租户ID字段是动态生成的；但是，字段结构应类似于Experience Platform文档中提供的示例。
+要了解如何扩展现有XDM架构以包含这些自定义字段，请参阅Experience Platform文档中的[在UI中创建和编辑架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)一文。 租户ID字段是动态生成的；但是，字段结构应类似于Experience Platform文档中提供的示例。
 
 >[!IMPORTANT]
 >
@@ -364,7 +369,7 @@ ComponentRegistrar::register(
 
 ### 故障排除
 
-如果您在&#x200B;**[!UICONTROL Data Customization]**&#x200B;选项卡上看到消息`No custom order attributes found.`，请确认以下事项：
+如果您在`No custom order attributes found.`选项卡上看到消息&#x200B;**[!UICONTROL Data Customization]**，请确认以下事项：
 
 1. 您已完成启用[Data Connector扩展](overview.md#prerequisites)的先决条件。
 1. 您已配置[自定义订单属性](#add-custom-order-attributes)。

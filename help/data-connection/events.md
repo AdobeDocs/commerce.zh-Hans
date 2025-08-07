@@ -3,9 +3,10 @@ title: 行为事件
 description: 了解每个行为事件捕获的数据。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bcabccc9-8a2e-4045-9306-1d999bb75624
+source-git-commit: 1750aee715946d3a871e021cbbee687f54d1ff09
 workflow-type: tm+mt
-source-wordcount: '4516'
+source-wordcount: '4528'
 ht-degree: 0%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 下面列出了安装[!DNL Data Connection]扩展时可用的Commerce行为事件。 这些事件收集的数据将发送到Adobe Experience Platform。 您还可以创建[自定义事件](custom-events.md)以收集未开箱即用的其他数据。
 
-除了以下事件收集的数据之外，您还会获得由Adobe Experience Platform Web SDK提供的[其他数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=zh-Hans)。
+除了以下事件收集的数据之外，您还会获得由Adobe Experience Platform Web SDK提供的[其他数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html)。
 
 行为事件在购物者浏览您的网站时收集来自他们的匿名行为数据。 您可以使用这些事件收集的数据创建针对特定购物者集的促销和促销活动。
 
 >[!NOTE]
 >
->所有行为事件都包含[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=zh-Hans)字段，其中包括购物者的电子邮件地址（可用时）和ECID。
+>所有行为事件都包含[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html)字段，其中包括购物者的电子邮件地址（可用时）和ECID。
 
 ## 店面活动
 
@@ -38,7 +39,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.productListAdds` | 指示是否将产品添加到购物车。 值为`1`表示已添加产品。 |
@@ -72,7 +73,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.productListOpens` | 指示是否已创建购物车。 值为`1`表示已创建购物车。 |
@@ -106,7 +107,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.productListRemovals` | 指示产品是否已从购物车中删除。 值为`1`表示产品已从购物车中删除。 |
@@ -140,7 +141,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.productListViews` | 指示是否已查看产品列表。 |
@@ -176,10 +177,10 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
-| `web.webPageDetails.pageViews` | 指示是否已加载页面。 `1`的`value`表示页面已加载。 |
+| `web.webPageDetails.pageViews` | 指示是否已加载页面。 `value`的`1`表示页面已加载。 |
 | `web.webPageDetails.URL` | 网页的规范或常用URL。 这可能是用于访问页面的实际URL，将使用`Web Link`记录该URL。 |
 | `web.webPageDetails.name` | 网页的规范名称。 此名称不一定是页面标题或直接与页面内容关联，但用于整理网站页面以进行分类。 |
 | `web.webReferrer.URL` | 购物者在单击指向您的网站的链接之前访问过的网页的URL。 |
@@ -201,7 +202,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.productViews` | 指示是否查看了产品。 |
@@ -234,7 +235,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.checkouts` | 指示在结账过程中是否执行了某个操作。 |
@@ -268,7 +269,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.purchases` | 指示是否已接受订单。 |
@@ -308,6 +309,10 @@ ht-degree: 0%
 
 从店面捕获的配置文件事件包括帐户信息，如`signIn`、`signOut`、`createAccount`和`editAccount`。 此数据用于帮助填充更好地定义区段或执行营销活动所需的关键客户详细信息，例如发送注册折扣优惠、帐户更改确认等。 从[服务器端](events-backoffice.md#customer-profile-events)捕获到类似的配置文件事件。
 
+>[!NOTE]
+>
+>[了解](custom-identities.md)如何创建自定义身份属性以增强客户配置文件识别。
+
 ### 登录
 
 | 描述 | XDM事件名称 |
@@ -324,7 +329,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `person` | 单独的操作者、联系人或所有者。 |
@@ -357,7 +362,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `userAccount` | 指示任何忠诚度详细信息、偏好设置、登录流程和其他帐户偏好设置。 |
@@ -384,7 +389,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `person` | 单独的操作者、联系人或所有者。 |
@@ -417,7 +422,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `person` | 单独的操作者、联系人或所有者。 |
@@ -436,9 +441,9 @@ ht-degree: 0%
 
 ## 搜索事件
 
-搜索事件会提供与购物者意图相关的数据。 洞察购物者的意图有助于商家了解购物者如何搜索商品、点击内容，最终购买或放弃。 例如，如果您希望定位现有购物者，这些购物者搜索您的热门产品，但从未购买该产品，您可能会如何使用此数据。 您必须安装[[!DNL Live Search]](../live-search/install.md)扩展才能访问这些事件。
+搜索事件会提供与购物者意图相关的数据。 insight迎合购物者的意图，有助于商家了解购物者如何搜索商品、点击什么，最终购买或放弃。 例如，如果您希望定位现有购物者，这些购物者搜索您的热门产品，但从未购买该产品，您可能会如何使用此数据。 您必须安装[[!DNL Live Search]](../live-search/install.md)扩展才能访问这些事件。
 
-使用在`searchRequestSent`和`searchResponseReceived`事件中找到的`searchRequest.id`和`searchResponse.id`字段交叉引用搜索请求到相应的搜索响应。
+使用在`searchRequest.id`和`searchResponse.id`事件中找到的`searchRequestSent`和`searchResponseReceived`字段交叉引用搜索请求到相应的搜索响应。
 
 ### searchRequestSent
 
@@ -456,7 +461,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `searchRequest` | 指示是否发送了搜索请求。 |
@@ -493,7 +498,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `searchResponse` | 指示是否已收到搜索响应。 |
@@ -515,7 +520,7 @@ ht-degree: 0%
 
 Adobe Commerce的![B2B](../assets/b2b.svg)对于B2B商家，您必须[安装](install.md#install-the-b2b-extension) `experience-platform-connector-b2b`扩展才能访问这些事件。
 
-B2B事件包含[申请列表](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=zh-Hans)信息，例如，是否创建、添加或删除了申请列表。 通过跟踪特定于申请列表的事件，您可以查看客户经常购买的产品，并根据这些数据创建营销活动。
+B2B事件包含[申请列表](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html)信息，例如，是否创建、添加或删除了申请列表。 通过跟踪特定于申请列表的事件，您可以查看客户经常购买的产品，并根据这些数据创建营销活动。
 
 ### createRequisitionList
 
@@ -529,7 +534,7 @@ B2B事件包含[申请列表](https://experienceleague.adobe.com/docs/commerce-a
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.requisitionListOpens` | 指示新申请列表的初始化。 |
@@ -555,7 +560,7 @@ B2B事件包含[申请列表](https://experienceleague.adobe.com/docs/commerce-a
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.requisitionListAdds` | 指示向申请列表添加一个或多个产品。 |
@@ -591,7 +596,7 @@ B2B事件包含[申请列表](https://experienceleague.adobe.com/docs/commerce-a
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.requsitionListRemovals` | 指示从申请列表中删除一个或多个产品。 |
@@ -627,7 +632,7 @@ B2B事件包含[申请列表](https://experienceleague.adobe.com/docs/commerce-a
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hans)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.requisitionListDeletes` | 指示已删除申请列表。 |

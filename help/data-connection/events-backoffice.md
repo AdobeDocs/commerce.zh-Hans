@@ -3,9 +3,10 @@ title: 后台事件
 description: 了解每个后台事件捕获哪些数据。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
+source-git-commit: 1750aee715946d3a871e021cbbee687f54d1ff09
 workflow-type: tm+mt
-source-wordcount: '3606'
+source-wordcount: '3618'
 ht-degree: 0%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 下面列出了安装[!DNL Data Connection]扩展时可用的Commerce后台事件。 这些事件收集的数据将发送到Adobe Experience Platform。 您还可以创建[自定义事件](custom-events.md)以收集未开箱即用的其他数据。
 
-除了以下事件收集的数据之外，您还会获得由Adobe Experience Platform Web SDK提供的[其他数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=zh-Hans)。
+除了以下事件收集的数据之外，您还会获得由Adobe Experience Platform Web SDK提供的[其他数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html)。
 
 后台事件包含服务器端数据。 此数据包含[订单状态](#order-status)信息，例如订单是否已下达、取消、退款、已发运或已完成。 服务器端数据还包含[客户配置文件事件](#customer-profile-events)信息，例如帐户是否已创建、更新或删除。
 
 >[!NOTE]
 >
->所有后台事件都包含[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=zh-Hans)字段，其中包括购物者的电子邮件地址（如果可用）和ECID。
+>所有后台事件都包含[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html)字段，其中包括购物者的电子邮件地址（如果可用）和ECID。
 
 ## 订单状态
 
@@ -407,7 +408,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->每个客户个人资料事件还包括[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=zh-Hans)字段，其中包括系统生成的Commerce客户ID作为个人资料的主要标识符，以及用作辅助标识符的电子邮件ID。
+>每个客户个人资料事件还包括[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html)字段，其中包括系统生成的Commerce客户ID作为个人资料的主要标识符，以及用作辅助标识符的电子邮件ID。 [了解](custom-identities.md)如何创建自定义身份属性以增强客户配置文件识别。
 
 ### 帐户已创建
 
