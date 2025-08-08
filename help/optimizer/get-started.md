@@ -3,11 +3,11 @@ title: 快速入门
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: b0ce0a399e89baaeabe87c53d069df866378f8c8
+source-git-commit: ee11900f0ddf77a8cb7df7d5ae378924bdf1f2d7
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 - 具有&#x200B;**权限的** Adobe Experience Cloud帐户[!DNL Adobe Commerce Optimizer]
 - **组织管理员访问权限**&#x200B;以创建实例和管理用户
-- **GitHub帐户**（用于加载示例数据和店面开发）
+- 用于加载示例数据和店面开发的&#x200B;**GitHub帐户**
 - **基本了解**&#x200B;电子商务概念
 
 ## 快速入门指南
@@ -76,6 +76,7 @@ ht-degree: 0%
 |---|---|---|
 | **管理用户** | 添加用户、开发人员和管理员 | [用户管理](./user-management.md) |
 | **创建实例** | 设置沙盒和生产环境 | [创建实例](#create-an-instance) |
+| **管理实例** | 检查状态，更新实例名称和描述，并获取用于应用程序和API访问的密钥URL | [管理实例](#manage-instances) |
 | **配置访问** | 设置目录视图和策略 | [目录视图](./setup/catalog-view.md) |
 
 ### 开发人员任务
@@ -100,36 +101,61 @@ ht-degree: 0%
 
 ## 管理实例
 
+从Commerce Cloud管理器管理实例。
+
+>[!NOTE]
+>
+>并非所有Adobe Commerce Optimizer用户都具有访问Cloud Manager的权限。 访问权限取决于分配给用户帐户的角色和权限。
+
 1. 登录到[Adobe Experience Cloud](https://experience.adobe.com/)。
 
 1. 打开Commerce Cloud Manager：
+
    - 在&#x200B;**快速访问**&#x200B;下，单击&#x200B;**Commerce**。
    - 查看可用的实例。
 
-1. 访问实例：
+### 搜索和筛选实例
 
-   单击实例名称以打开[!DNL Adobe Commerce Optimizer]应用程序。 在应用程序中，您可以使用页面顶部的下拉菜单在不同的[!DNL Adobe Commerce Optimizer]实例之间切换：
+登录后，功能板显示组织中可用的所有Commerce产品实例。
+“产品”列指示为实例配置的Commerce应用程序。
+
+使用“筛选器”和“搜索”选项可快速查找特定实例。 您可以按创建的数据、区域、创建者、产品类型、环境和状态进行搜索。
+
+### 访问[!DNL Adobe Commerce Optimizer]应用程序
+
+应用程序打开后，您可以轻松地在沙盒和生产等环境之间进行切换，以查看每个环境的数据和设置，而无需返回Commerce Cloud Manager。
+
+1. 在Commerce Cloud管理器中，单击实例名称以打开[!DNL Adobe Commerce Optimizer]应用程序。
+
+1. 在不离开应用程序的情况下在[!DNL Adobe Commerce Optimizer]实例之间切换。
+
+   实例下拉列表列出了组织中可用的所有Optimizer实例。 选择要查看的实例。
 
    ![实例切换器](./assets/context-switcher.png){zoomable="yes"}
 
-   显示的所有实例都属于同一组织。 您可以在实例之间切换以查看每个实例的数据和设置，例如在沙盒环境和生产环境之间切换。
+### 获取实例详细信息**
 
-1. 获取实例详细信息：
-   - 单击实例名称旁边的信息图标。
-   - 记下GraphQL端点、用于数据摄取的目录服务端点以及实例ID（也称为`tenant ID`）。
+单击实例名称旁边的信息图标可查看实例详细信息。
 
-   ![实例详细信息](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+![实例详细信息](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
-   要与前端应用程序和后端系统集成，需要端点和实例ID（租户ID）详细信息。 此处还提供了用于访问[!DNL Adobe Commerce Optimizer]应用程序的URL。
+请注意以下关键信息：
 
-   并非所有Adobe Commerce Optimizer用户都可以访问Cloud Manager和实例详细信息。 访问权限取决于分配给用户帐户的角色和权限。 如果您没有访问权限，请联系您的组织管理员以获取实例详细信息。
+- **GraphQL端点**，以使用促销API检索Commerce目录数据
+- 使用REST API进行数据摄取的&#x200B;**目录服务终结点**
+- **Commerce Optimizer URL**&#x200B;以访问[!DNL Adobe Commerce Optimizer]应用程序
+- **实例ID**&#x200B;标识该实例的唯一租户ID
 
-1. 编辑实例名称和描述：
-   - 单击实例名称旁边的&#x200B;**编辑**&#x200B;图标。
-   - 根据需要更新名称和描述。
-   - 单击&#x200B;**保存**。
+需要端点和实例ID详细信息才能配置API访问以及与前端应用程序和后端系统集成。
+如果您无权访问实例详细信息，请联系您的组织管理员以获取值。
 
-   您还可以使用搜索和筛选选项来快速查找特定实例。
+### 编辑实例名称和描述
+
+根据需要更新实例名称和描述。
+
+1. 单击实例名称旁边的&#x200B;**编辑**&#x200B;图标。
+1. 根据需要更新&#x200B;**实例名称**&#x200B;和&#x200B;**描述**。
+1. 单击&#x200B;**保存**。
 
 ## 添加示例数据
 
@@ -186,5 +212,5 @@ Adobe提供了一个GitHub存储库，其中包含示例数据和工具，以帮
 ### 获取帮助
 
 - **开发人员资源**： [开发人员文档](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)
+- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
