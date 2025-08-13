@@ -3,7 +3,7 @@ title: 目录视图
 description: 了解目录视图是什么以及如何创建它们以按业务结构、策略和定价整理产品目录。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
 workflow-type: tm+mt
