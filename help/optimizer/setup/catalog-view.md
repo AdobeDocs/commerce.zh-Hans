@@ -3,11 +3,11 @@ title: 目录视图
 description: 了解目录视图是什么以及如何创建它们以按业务结构、策略和定价整理产品目录。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
+source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,43 @@ ht-degree: 0%
 目录视图页面将更新以显示新的目录视图&#x200B;。
 
 完成这些步骤后，目录视图现在配置为根据您选择的来源和策略显示产品和定价。
+
+## 管理目录视图
+
+按照以下说明更新或查看现有目录视图的属性。
+
+### 编辑目录视图
+
+1. 在&#x200B;*目录视图*&#x200B;工作区上，在网格中找到要编辑的目录视图，然后单击&#x200B;**...**&#x200B;以打开操作菜单。
+1. 单击&#x200B;**编辑**&#x200B;以访问目录视图编辑器。
+1. 根据需要更新名称、目录来源、策略和价格手册信息。
+1. 保存更改。
+
+### 删除目录视图
+
+1. 在&#x200B;*目录视图*&#x200B;工作区中，在网格中找到要编辑的目录视图，然后单击&#x200B;**...**&#x200B;以打开操作菜单。
+1. 单击&#x200B;**删除**。
+
+   出现确认对话框时，单击&#x200B;**[!UICONTROL Delete]**。
+
+### 查看详细信息
+
+此选项提供了一种快速查看所有目录视图参数的方法，同时保留在&#x200B;*目录视图*&#x200B;表中。
+
+在&#x200B;*目录视图*&#x200B;工作区上，在网格中查找要编辑的目录视图，然后单击![信息图标](../assets/info-icon.png)。
+
+![目录视图详细信息](../assets/catalog-view-details.png)
+
+在此处，您可以查看目录视图配置详细信息，例如：
+
+- 视图ID
+- 名称
+- 目录源
+- 支持
+- 创建日期
+- 数据已修改
+
+在设置店面或使用数据摄取API时，需要其中的一些配置设置。
 
 ## 架构概述
 
