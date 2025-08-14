@@ -3,11 +3,11 @@ title: 快速入门
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 87fbd979b0660af1bf3a8786eb1e1f5f79cea043
+source-git-commit: 5cb7dc4d2bd1b9bd43d4a858e4814ca803a49027
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -119,11 +119,13 @@ ht-degree: 0%
 登录后，功能板显示组织中可用的所有Commerce产品实例。
 “产品”列指示为实例配置的Commerce应用程序。
 
-使用“筛选器”和“搜索”选项可快速查找特定实例。 您可以按创建的数据、区域、创建者、产品类型、环境和状态进行搜索。
+![实例搜索和筛选器](./assets/search-filter-instances.png){zoomable="yes"}
+
+使用过滤器和搜索工具按创建日期、区域、创建者、产品类型、环境或状态快速查找特定实例。
 
 ### 访问[!DNL Adobe Commerce Optimizer]应用程序
 
-应用程序打开后，您可以轻松地在沙盒和生产等环境之间进行切换，以查看每个环境的数据和设置，而无需返回Commerce Cloud Manager。
+应用程序打开后，可在沙盒和生产等环境之间轻松切换以查看每个环境的数据和设置，而无需返回Commerce Cloud Manager。
 
 1. 在Commerce Cloud管理器中，单击实例名称以打开[!DNL Adobe Commerce Optimizer]应用程序。
 
@@ -146,8 +148,11 @@ ht-degree: 0%
 - **Commerce Optimizer URL**&#x200B;以访问[!DNL Adobe Commerce Optimizer]应用程序
 - **实例ID**&#x200B;标识该实例的唯一租户ID
 
-需要端点和实例ID详细信息才能配置API访问以及与前端应用程序和后端系统集成。
-如果您无权访问实例详细信息，请联系您的组织管理员以获取值。
+如果您是开发人员，则需要这些详细信息来设置开发环境并连接到[!DNL Adobe Commerce Optimizer] API。
+
+>[!NOTE]
+>
+>要访问实例详细信息，您必须在Adobe IMS组织中拥有必要权限。 如果您看不到实例详细信息或无法访问应用程序，请与您的组织管理员联系。
 
 ### 编辑实例名称和描述
 
@@ -212,6 +217,6 @@ Adobe提供了一个GitHub存储库，其中包含示例数据和工具，以帮
 ### 获取帮助
 
 - **开发人员资源**： [开发人员文档](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-- **教程**： [Commerce Optimizer教程](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)
+- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **教程**： [Commerce Optimizer教程](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
