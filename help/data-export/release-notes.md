@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
+source-git-commit: 0722458a67a945b13d2cb27d8848d58d909aea35
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ ht-degree: 0%
 >SaaS数据导出扩展是随“实时搜索”、“产品推荐”和“目录服务”一起自动安装的模块的集合。 您可以使用编辑器检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 当前主要版本
+
+## 103.4.8发行版
+
+![修复](../assets/fix.svg)修复了在删除产品或更改产品SKU时，未重新生成产品价格馈送的问题。<!--MDEE-1125-->
+![修复](../assets/fix.svg)改进了产品更新处理，以确保在更新新创建的产品时，所做的更改与以前删除的产品具有相同的SKU，从而能够准确地反映出来。 现在，产品同步可正确使用更新的产品ID，从而确保准确可靠的数据导出。<!--MDEE-1126-->
+![修复](../assets/fix.svg)修复了目录服务通过确保在属性删除后发布产品更新事件而返回可配置产品的过期变体数据的问题。<!--MDEE-1127-->
 
 ## 103.4.8发行版
 
