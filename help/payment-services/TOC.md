@@ -1,13 +1,13 @@
 ---
 user-guide-title: '[!DNL Payment Services] 指南'
-user-guide-description: 本指南提供有关为 [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] 存储安装和配置 [!DNL Payment Services] 的详细信息。
+user-guide-description: 本指南提供有关为 [!DNL Payment Services] 或 [!DNL Adobe Commerce] 存储安装和配置 [!DNL Magento Open Source] 的详细信息。
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '106'
 ht-degree: 2%
 
 ---
@@ -27,9 +27,8 @@ ht-degree: 2%
    - [为生产启用](production.md)
 - 配置[!DNL Payment Services] {#configure}
    - [[!DNL Payment Services]主页](payments-home.md)
-   - [[!DNL Payment Services]设置](settings.md)
+   - [[!DNL Payment Services]配置](configure-admin.md)
    - [命令行配置](configure-cli.md)
-   - [旧版配置](configure-admin.md)
    - [测试和验证](test-validate.md)
 - 支付和结账 {#payments-checkout}
    - [付款选项](payments-options.md)
@@ -50,4 +49,4 @@ ht-degree: 2%
 - 安全性和合规性 {#security-compliance}
    - [安全性](security.md)
    - [有效保护欺诈行为](fraud-protection.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=zh-Hans)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

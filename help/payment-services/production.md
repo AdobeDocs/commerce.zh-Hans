@@ -3,9 +3,9 @@ title: '为生产启用 [!DNL Payment Services] '
 description: 通过启用 [!DNL Payment Services] 以进行生产，完成载入流程。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 0f2e9c3a7d990a46bafc5f3b8a083436d42643b5
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,10 @@ ht-degree: 0%
 
    如果您尚未将[!DNL Payment Services]配置为一个或多个网站的付款方式，则此选项可见。
 
-   您被定向到“主页”视图中的设置区域，相关选项已展开(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在其中启用[!DNL Payment Services]选项作为[付款方式](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
+   您被定向到“主页”视图中的设置区域，相关选项已展开(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在其中启用[!DNL Payment Services]选项作为[付款方式](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
 
-1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;中，将&#x200B;**[!UICONTROL Enable]**&#x200B;设置为`Yes`。
-1. 将&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;和_[!UICONTROL PayPal payment buttons]_&#x200B;的&#x200B;**[!UICONTROL Payment Action]**&#x200B;设置为以下任一项：
+1. 在&#x200B;_[!UICONTROL General Configuration]_中，将&#x200B;**[!UICONTROL Enable]**设置为`Yes`。
+1. 将&#x200B;**[!UICONTROL Payment Action]**&#x200B;和&#x200B;_[!UICONTROL Credit Card Fields]_的_[!UICONTROL PayPal payment buttons]_&#x200B;设置为以下任一项：
 
    | 设置 | 描述 |
    |---|---|
@@ -43,11 +43,11 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Save]**。
 1. 单击&#x200B;**[!UICONTROL Go to Payment Services]**&#x200B;以定向回[!DNL Payment Services]主页。
-1. [清除您的缓存](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=zh-Hans)。
+1. [清除您的缓存](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html)。
 
    应在每次配置更改后进行清除。
 
-有关配置信用卡字段和PayPal付款按钮的详细信息，请参阅[配置付款服务](settings.md)。
+有关配置信用卡字段和PayPal付款按钮的详细信息，请参阅[配置 [!DNL Payment Services]](configure-admin.md)。
 
 ## 完成商户入门
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 1. 在管理员侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
-   _[!UICONTROL Live onboarding]_&#x200B;按钮不再可见，并且您看到“[!UICONTROL Live payments pending]”文本框。
+   _[!UICONTROL Live onboarding]_按钮不再可见，并且您看到“[!UICONTROL Live payments pending]”文本框。
 
    在该文本框中，系统可能还会要求您通过PayPal确认您的电子邮件地址以完成入门。
 
@@ -117,14 +117,14 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >如果您撤销了对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]的同意，以处理您的付款（在您的PayPal帐户设置中），则[!DNL Payment Services]无法处理您商店中的订单。 在您的Payment Services主页上，会显示有关撤销同意的警报。
+   >如果您撤销了对[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]的同意，以处理您的付款（在您的PayPal帐户设置中），则[!DNL Payment Services]无法处理您商店中的订单。 在您的Payment Services主页上，会显示有关撤销同意的警报。
 
 ## 从Adobe请求付款权利
 
 要启用您的商店，请从Adobe请求付款权利（仅适用于[高级入门](#advanced-onboarding)）：
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
-1. 单击[!DNL Payment Services]主页中的&#x200B;**[!UICONTROL Get Live Payments]**。
+1. 单击&#x200B;**[!UICONTROL Get Live Payments]**&#x200B;主页中的[!DNL Payment Services]。
 
    ![请求授权](assets/request-entitlements.png){width="500" zoomable="yes"}
 
@@ -155,9 +155,9 @@ _生产商家ID_&#x200B;是自动生成的，并在[配置](configure-admin.md)�
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
 1. 在主页上，单击页面右上角的&#x200B;**[!UICONTROL Settings]**。 有关详细信息，请参阅[主页](payments-home.md)。
-1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;分区中，将&#x200B;**[!UICONTROL Payment mode]**&#x200B;设置为`Production`。
+1. 在&#x200B;_[!UICONTROL General Configuration]_分区中，将&#x200B;**[!UICONTROL Payment mode]**设置为`Production`。
 1. 单击&#x200B;**[!UICONTROL Save]**。
-1. [清除您的缓存](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
+1. [清除您的缓存](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
 
    >[!IMPORTANT]
    >

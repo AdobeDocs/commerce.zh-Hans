@@ -4,9 +4,9 @@ description: ' [!DNL Payment Services] 交易记录中的卡付款处理级别�
 role: Admin
 feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 2级和3级处理
 
 [!DNL Payment Services]提供高级卡处理功能，以帮助商家优化其支付交易并降低交换费用。 可用的卡处理分为三个级别，每个级别都有不同的交易数据要求。
+
+>[!CAUTION]
+>
+> [Fastlane](payments-options.md#fastlane-button)订单不包括2级/3级数据、行项目和金额细分。
 
 ## 每个处理级别的数据要求
 
