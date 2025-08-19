@@ -33,7 +33,7 @@ Signifyd/[!DNL Payment Services]集成提供信用卡、借记卡、保险存储
 使用Signfyd登录时，您必须：
 
 1. 联系Signid以设置新帐户。
-1. 列入允许列表默认情况下，Signifyd为[](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md)，以确保Signifyd不会为其当前不支持的其他付款选项触发。 如果要禁止特定付款方式，则必须进行更改。
+1. 列入允许列表默认情况下，Signifyd为[&#128279;](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md)，以确保Signifyd不会为其当前不支持的其他付款选项触发。 如果要禁止特定付款方式，则必须进行更改。
 1. 通过Signifyd确认贝宝不会拒绝可能由Signifyd批准的订单，具体方式是通过Paypal中的商家欺诈保护设置。
 1. 启用Signifyd扩展以与[!DNL Payment Services]兼容：
    * 在[!DNL Payment Services]Live _模式下使用_&#x200B;时，Signifyd必须处于“生产”模式。
@@ -45,12 +45,12 @@ Signifyd/[!DNL Payment Services]集成提供信用卡、借记卡、保险存储
 
 这些配置选项与Payment Services和Signifyd集成不兼容：
 
-* 当[!DNL Payment Services]配置有`Authorize`付款操作&#x200B;_且_ Signifyd处于`PostAuth`模式且&#x200B;_[!UICONTROL Decline Guarantees]_选项设置为&#x200B;**创建贷项通知单**时。
+* 当[!DNL Payment Services]配置有`Authorize`付款操作&#x200B;_且_ Signifyd处于`PostAuth`模式且&#x200B;_[!UICONTROL Decline Guarantees]_&#x200B;选项设置为&#x200B;**创建贷项通知单**&#x200B;时。
 
   原因： [!DNL Payment Services]创建了一个授权交易记录，表示随后尝试退款。
 
 
-* [!DNL Payment Services]配置有`Authorize and Capture`付款操作&#x200B;_，且_ Signifyd处于`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_选项设置为&#x200B;**取消订单**。
+* [!DNL Payment Services]配置有`Authorize and Capture`付款操作&#x200B;_，且_ Signifyd处于`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_&#x200B;选项设置为&#x200B;**取消订单**。
 
   原因： [!DNL Payment Services]创建了一个捕获事务，该事务表示Signifyd然后尝试作废。
 

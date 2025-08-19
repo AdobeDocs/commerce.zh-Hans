@@ -16,7 +16,7 @@ ht-degree: 0%
 
 您可以使用[!DNL Payment Services]主页中的有用设置根据需要自定义[!DNL Payment Services]。
 
-要为[!DNL Payment Services]和[!DNL Adobe Commerce]配置[!DNL Magento Open Source]，请单击&#x200B;**[!UICONTROL Settings]**。 这些配置选项仅适用于在&#x200B;_[!UICONTROL Payment mode]_常规[_&#x200B;配置选项&#x200B;_的](#configure-general-settings)字段中设置的环境。
+要为[!DNL Payment Services]和[!DNL Adobe Commerce]配置[!DNL Magento Open Source]，请单击&#x200B;**[!UICONTROL Settings]**。 这些配置选项仅适用于在&#x200B;_[!UICONTROL Payment mode]_&#x200B;常规[_&#x200B;配置选项&#x200B;_的](#configure-general-settings)字段中设置的环境。
 
 有关多存储或旧版配置，请参阅管理员中的[配置](configure-admin.md)。
 
@@ -34,9 +34,9 @@ ht-degree: 0%
 
    ![React设置视图](assets/react-settings-view.png){width="500" zoomable="yes"}
 
-   _[!UICONTROL General]_部分包含用于启用[!DNL Payment Services]作为付款方式的设置。
+   _[!UICONTROL General]_&#x200B;部分包含用于启用[!DNL Payment Services]作为付款方式的设置。
 
-1. 若要启用[!DNL Payment Services]作为商店的付款方式，请在&#x200B;_[!UICONTROL General]_部分中，将&#x200B;**[!UICONTROL Enable Payment Services as payment method]**切换为`Yes`。
+1. 若要启用[!DNL Payment Services]作为商店的付款方式，请在&#x200B;_[!UICONTROL General]_&#x200B;部分中，将&#x200B;**[!UICONTROL Enable Payment Services as payment method]**&#x200B;切换为`Yes`。
 
 1. 如果您仍在为应用商店测试[!DNL Payment Services]，请将&#x200B;**付款模式**&#x200B;设置为`Sandbox`。 如果您已准备好启用实时付款，请将其设置为`Production`。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ### 信用卡字段
 
-_[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提供了一个简单且安全的签出选项。
+_[!UICONTROL Credit Card Fields]_&#x200B;设置为信用卡或借记卡支付方法提供了一个简单且安全的签出选项。
 
 有关详细信息，请参阅[付款选项](payments-options.md#credit-card-fields)。
 
@@ -140,7 +140,7 @@ _[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提�
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
 1. 在&#x200B;**[!UICONTROL Scope]**&#x200B;下拉菜单中选择要为其启用付款方法的商店视图。
-1. 在&#x200B;**[!UICONTROL Apple Pay]**&#x200B;部分中，编辑&#x200B;_[!UICONTROL Checkout title]_字段中的值以更改结帐期间显示的付款方法的名称。
+1. 在&#x200B;**[!UICONTROL Apple Pay]**&#x200B;部分中，编辑&#x200B;_[!UICONTROL Checkout title]_&#x200B;字段中的值以更改结帐期间显示的付款方法的名称。
 1. 若要[设置付款操作](production.md#set-payment-services-as-payment-method)，请将&#x200B;**[!UICONTROL Payment action]**&#x200B;切换为`Authorize`或`Authorize and Capture`。
 1. 要在结账页面上启用或禁用Apple Pay，请切换&#x200B;**[!UICONTROL Show Apple Pay on checkout page]**&#x200B;选择器。
 1. 要在产品详细信息页面上启用或禁用Apple Pay，请切换&#x200B;**[!UICONTROL Show Apple Pay on product detail page]**&#x200B;选择器。
@@ -207,8 +207,8 @@ _[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提�
 | [!UICONTROL Title] | 商店视图 | 在结帐期间，在“付款方式”视图中添加要作为此付款选项的标题显示的文本。 选项：文本字段 |
 | [!UICONTROL Payment Action] | 网站 | 指定付款方式的[付款操作](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | 商店视图 | 结账页面上指定支付方式的排序顺序。 `Numeric Only`值 |
-| [!UICONTROL Show PayPal buttons on checkout page] | 商店视图 | 在签出页面上启用或禁用[!DNL PayPal payment buttons]。 选项： [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on product detail page] | 商店视图 | 在产品详细信息页面上启用或禁用[!DNL PayPal payment buttons]。 选项： [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on checkout page] | 商店视图 | 在签出页面上启用或禁用[!DNL PayPal payment buttons]。 选项： [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on product detail page] | 商店视图 | 在产品详细信息页面上启用或禁用[!DNL PayPal payment buttons]。 选项： [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | 商店视图 | 在迷你购物车预览中启用或禁用[!DNL PayPal payment buttons]。 选项： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal buttons on cart page] | 商店视图 | 在购物车页面上启用或禁用[!DNL PayPal payment buttons]。 选项： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal Pay Later button] | 商店视图 | 启用或禁用显示付款按钮的稍后付款选项外观。 选项： [!UICONTROL Off] / [!UICONTROL On] |
@@ -220,7 +220,7 @@ _[!UICONTROL Credit Card Fields]_设置为信用卡或借记卡支付方法提�
 
 ### 按钮样式
 
-您还可以配置付款按钮的&#x200B;_[!UICONTROL Button style]_选项：
+您还可以配置付款按钮的&#x200B;_[!UICONTROL Button style]_&#x200B;选项：
 
 1. 要更改&#x200B;**[!UICONTROL Layout]**，请选择`Vertical`或`Horizontal`。
 
