@@ -29,7 +29,7 @@ ht-degree: 0%
 
    部署[!DNL Product Recommendations]需要两个主要[数据源](type.md)：目录和行为。 由于生产是捕获和分析购物者行为的唯一环境，因此请尽早在生产上开始收集数据。 [了解](events.md)Adobe Sensei如何训练机器学习模型，以获取更高质量的推荐。 作为一项附加好处，当您开始收集生产上的行为数据时，可以在非生产环境中操作时基于此生产数据[获取推荐](staging-environment.md#fetch-recommendations-from-production-environment-recommended)。 然后，您可以测试和试验根据在生产过程中收集的实际购物者数据计算的各种推荐。
 
-   要将数据收集部署到生产环境，您必须[通过提供](install-configure.md)API密钥[!DNL Product Recommendations]来安装和配置[&#128279;](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html)模块。
+   要将数据收集部署到生产环境，您必须[通过提供](install-configure.md)API密钥[!DNL Product Recommendations]来安装和配置[&#128279;](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=zh-Hans)模块。
 
    >[!TIP]
    >
@@ -43,7 +43,7 @@ ht-degree: 0%
    >
    > 通过自定义模板，您可以指定样式表、覆盖推荐单元在页面上出现的位置等等。
 
-   请参阅开发人员文档中的[自定义](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html)，了解如何完成此步骤。
+   请参阅开发人员文档中的[自定义](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=zh-Hans)，了解如何完成此步骤。
 
 1. **在非生产环境中测试推荐**
 

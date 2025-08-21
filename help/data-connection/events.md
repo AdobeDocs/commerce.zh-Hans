@@ -15,13 +15,13 @@ ht-degree: 0%
 
 下面列出了安装[!DNL Data Connection]扩展时可用的Commerce行为事件。 这些事件收集的数据将发送到Adobe Experience Platform。 您还可以创建[自定义事件](custom-events.md)以收集未开箱即用的其他数据。
 
-除了以下事件收集的数据之外，您还会获得由Adobe Experience Platform Web SDK提供的[其他数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html)。
+除了以下事件收集的数据之外，您还会获得由Adobe Experience Platform Web SDK提供的[其他数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=zh-Hans)。
 
 行为事件在购物者浏览您的网站时收集来自他们的匿名行为数据。 您可以使用这些事件收集的数据创建针对特定购物者集的促销和促销活动。
 
 >[!NOTE]
 >
->所有行为事件都包含[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html)字段，其中包括购物者的电子邮件地址（可用时）和ECID。
+>所有行为事件都包含[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=zh-Hans)字段，其中包括购物者的电子邮件地址（可用时）和ECID。
 
 ## 店面活动
 
@@ -47,6 +47,6 @@ ht-degree: 0%
 
 Adobe Commerce的![B2B](../assets/b2b.svg)对于B2B商家，您必须[安装](install.md#install-the-b2b-extension) `experience-platform-connector-b2b`扩展才能访问这些事件。
 
-B2B事件包含[申请列表](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html)信息，例如，是否创建、添加或删除了申请列表。 通过跟踪特定于申请列表的事件，您可以查看客户经常购买的产品，并根据这些数据创建营销活动。
+B2B事件包含[申请列表](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=zh-Hans)信息，例如，是否创建、添加或删除了申请列表。 通过跟踪特定于申请列表的事件，您可以查看客户经常购买的产品，并根据这些数据创建营销活动。
 
 请参阅[开发人员文档](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)以了解有关B2B事件的更多信息。
