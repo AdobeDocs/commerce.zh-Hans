@@ -2,9 +2,9 @@
 title: 设置
 description: 了解如何更改 [!DNL Product Recommendations] 数据的源以及如何启用可视化推荐。
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 要更改产品推荐数据的来源，请选择包含要使用的行为数据的SaaS数据空间。 在开始之前，请确保：
 
-- 必须为您的生产环境配置[并启用](install-configure.md)店面数据收集，并[验证](verify.md)行为数据正在发送到Adobe Commerce。
+- 必须为您的生产环境配置[并启用](install-configure.md)店面数据收集，并[验证](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)行为数据正在发送到Adobe Commerce。
 - 您的非生产环境目录应该与生产目录基本相同。 使用类似的目录可确保产品推荐单元的返回与生产中的单元非常相似。
 
 1. 登录到非生产Adobe Commerce环境的管理员。
