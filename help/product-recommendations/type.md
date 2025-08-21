@@ -1,9 +1,10 @@
 ---
 title: 推荐类型
 description: 了解您可以部署到网站上各个页面的建议。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Adobe Commerce提供了一大批推荐，您可以将这些推荐部署到网站
 
 >[!NOTE]
 >
->有关本文中所述事件的详细信息，请参阅[事件](events.md)。
+>有关本文中描述的事件的更多信息，请参阅开发人员文档中的[storefront事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)。
 
 ## 个性化 {#personalized}
 
@@ -119,7 +120,7 @@ Adobe Sensei使用AI处理和分析目录中的图像，并构建用于确定视
 
 1. 完成后，单击&#x200B;**保存更改**。
 
-   当页面类型为&#x200B;**产品详细信息**&#x200B;时，[新建推荐](create.md)页面现在将&#x200B;**视觉相似度**&#x200B;显示为可选推荐类型。
+   当页面类型为[产品详细信息](create.md)时，**新建推荐**&#x200B;页面现在将&#x200B;**视觉相似度**&#x200B;显示为可选推荐类型。
 
 启用可视化推荐后，Adobe Sensei将启动图像处理。 所需时间取决于目录的大小。
 

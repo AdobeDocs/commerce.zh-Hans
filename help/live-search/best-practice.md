@@ -2,9 +2,10 @@
 title: '[!DNL Live Search]最佳实践'
 description: 了解在商店中实施 [!DNL Live Search] 的最佳实践。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2429'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 - 搜索规则至关重要，因为它们可以根据热门程度、新到达次数、促销标准或任何其他促销策略来提高某些产品的可见性，以满足您的业务需求。
 - 多面向导航让购物者能够优化搜索并快速获得相关结果。
 
-要管理[!DNL Live Search]，请在Adobe [!DNL Commerce]管理员中转到&#x200B;**营销** > *SEO和搜索* > **[!DNL Live Search]**。 
+要管理[!DNL Live Search]，请在Adobe **管理员中转到**&#x200B;营销&#x200B;*>* SEO和搜索&#x200B;**[!DNL Live Search]** > [!DNL Commerce]。 
 
 ## 优化搜索功能
 
@@ -100,7 +101,7 @@ ht-degree: 0%
 
 始终测试搜索重定向，以确保它们正常运行并导向最相关的页面。 持续监控其性能并根据需要进行调整。
 
-了解如何[管理搜索重定向](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-terms)。
+了解如何[管理搜索重定向](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)。
 
 ## 改进搜索结果相关性
 
@@ -128,7 +129,7 @@ ht-degree: 0%
 - 稍微优先处理利润率较高的产品，而不影响其相关性。
 - 突出显示正在销售或属于特殊促销的产品。
 - 通过使用促销期间的日期范围，在促销期间或销售期间自动设置搜索规则。
-- 使用[智能排名](rules-add.md#intelligent-ranking)（例如“为您推荐”、“查看次数最多”等），根据每位购物者的行为定制搜索结果。 要定制购物者行为，必须确保正确实施事件。 对于Luma商家，活动是现成可用的。 对于Headless或自定义实施，您必须根据特定需求[实施事件](events.md)。
+- 使用[智能排名](rules-add.md#intelligent-ranking)（例如“为您推荐”、“查看次数最多”等），根据每位购物者的行为定制搜索结果。 要定制购物者行为，必须确保正确实施事件。 对于Luma商家，活动是现成可用的。 对于Headless或自定义实施，您必须根据特定需求[实施事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)。
 
 了解有关搜索规则的更多信息：
 
@@ -139,7 +140,7 @@ ht-degree: 0%
    - [创建](rules-add.md)
    - [编辑、查看、删除](rules-manage.md)
 - 数据收集
-   - [[!DNL Live Search]个事件](events.md)
+   - [[!DNL Live Search] 个事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
    - [Adobe Commerce事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
    - [GitHub Commerce事件](https://github.com/adobe/commerce-events/tree/main/examples) 
 
@@ -154,7 +155,7 @@ ht-degree: 0%
 了解有关搜索的产品属性的更多信息：
 
 - [将属性设置为可搜索](workspace.md#set-attributes-as-searchable)
-- [为属性分配权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [为属性分配权重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 监控搜索结果
 
@@ -195,4 +196,4 @@ ht-degree: 0%
 - 分析热门搜索词和产品数据以识别重要关键词。 使用这些关键字优化产品可搜索属性以提高搜索相关性。
 - 定期分析结果数据以了解不断变化的趋势、购物者偏好和行为、识别热门搜索词以及检测问题。 使用此反馈循环不断优化和改进您的搜索规则和产品
 
-要获取[!DNL Live Search]报表中的正确数据，必须确保正确实施事件。 对于Luma商家，活动是现成可用的。 对于Headless或自定义实施，您必须根据特定需求[实施事件](events.md)。
+要获取[!DNL Live Search]报表中的正确数据，必须确保正确实施事件。 对于Luma商家，活动是现成可用的。 对于Headless或自定义实施，您必须根据特定需求[实施事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)。

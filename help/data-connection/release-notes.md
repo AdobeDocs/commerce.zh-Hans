@@ -3,9 +3,9 @@ title: 发行说明
 description: 来自Adobe Commerce的 [!DNL Data Connection] 扩展的最新发行信息。
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 43020e33ce57861cf586ace12a0832b24c23872d
+source-git-commit: 90fcaa2cdd7c869ceddaeea7525cac00a41d94c5
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1257'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 1%
 
 有关[!DNL Data Connection]扩展使用的扩展的功能更改和修复，请参阅&#x200B;**支持的服务更新**。
 
-请参阅[即将发布的版本](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/planning/schedule)，了解版本计划和支持。
+请参阅[即将发布的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，了解版本计划和支持。
 
-请参阅开发人员文档，以[了解哪些Commerce版本支持此模块](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/product-availability)。
+请参阅开发人员文档，以[了解哪些Commerce版本支持此模块](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 支持的服务更新
 
@@ -46,12 +46,12 @@ _2024年8月2日_
 
 _2024年1月24日_
 
-![新](../assets/new.svg) — 已更新`data-services-b2b`扩展以包含针对B2B商户的名为[deleteRequisitionList](events.md#deleterequisitionlist)的新申请事件。
+![新](../assets/new.svg) — 已更新`data-services-b2b`扩展以包含针对B2B商家称为`deleteRequisitionList`的新申请事件。
 
 _2023年11月16日_
 
 ![修复](../assets/fix.svg) — 修复了在您下具有多个送货地址的订单时，错误消息显示不正确的问题。
-![修复](../assets/fix.svg) — 修复了[productPageView](events.md#productpageview)事件中的一个问题，即在商店视图上切换货币后，`productListItems.priceTotal`事件字段未转换价格。
+![修复](../assets/fix.svg) — 修复了`productPageView`事件中的一个问题，即在商店视图上切换货币后，`productListItems.priceTotal`事件字段未转换价格。
 ![修复](../assets/fix.svg) — 修复了`productListItems`事件字段中货币代码在商家切换商店视图时未更新的问题。
 
 _2023年10月10日_
@@ -59,11 +59,11 @@ _2023年10月10日_
 ![新](../assets/new.svg) — 已添加新的订单状态事件：[已开发票的订单](events-backoffice.md#orderinvoiced)、[已初始的订单项退货](events-backoffice.md#orderitemsreturninitiated)以及[已完成订单项退货](events-backoffice.md#orderitemreturncompleted)。
 ![修复](../assets/fix.svg) — 修复了在刷新缓存后，货币配置更改未反映在事件中的问题。
 ![Fix](../assets/fix.svg) — 修复了在启用异步订单放置后未显示订单确认消息的错误。
-![新](../assets/new.svg) — 已将数据添加到“类别”视图页面上的简单产品的[addToRequisitionList](events.md#addtorequisitionlist)事件中。
-![修复](../assets/fix.svg) — 修复了从订单确认页面添加产品时，`selectedOptions`addToRequisitionList[事件中](events.md#addtorequisitionlist)数据的问题。
-![新建](../assets/new.svg) — 当产品从“类别”视图页面添加到申请列表时，已将产品数据添加到[addToRequisitionList](events.md#addtorequisitionlist)事件。
-![新建](../assets/new.svg) — 将可配置产品从“产品视图”页面添加到申请列表时，添加了[addToRequisitionList](events.md#addtorequisitionlist)事件。
-![新建](../assets/new.svg) — 在产品数量增加和/或从申请列表中减少时，添加了[addToRequisitionList](events.md#addtorequisitionlist)和[removeFromRequisitionList](events.md#removefromrequisitionlist)事件。
+![新](../assets/new.svg) — 已将类别视图页面上的简单产品数据添加到`addToRequisitionList`事件。
+![修复](../assets/fix.svg) — 修复了从订单确认页面添加产品时，`selectedOptions`事件中`addToRequisitionList`数据出现的问题。
+![新建](../assets/new.svg) — 将产品从“类别”视图页面添加到申请列表时，已将产品数据添加到`addToRequisitionList`事件。
+![新建](../assets/new.svg) — 将可配置产品从“产品视图”页面添加到申请列表时添加了`addToRequisitionList`事件。
+![新](../assets/new.svg) — 在产品数量增加和/或从申请列表中减少时添加了`addToRequisitionList`和`removeFromRequisitionList`事件。
 
 _2023年6月10日_
 
@@ -141,7 +141,7 @@ _2024年6月5日_
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"} Adobe Commerce版本2.4.4及更高版本
 
 ![修复](../assets/fix.svg) — 修复了在启动[历史同步](connect-data.md#specify-order-history-date-range)时使用错误日期格式的问题。
-![修复](../assets/fix.svg) — 修复了Adobe Commerce 2.4.7上未发送[startCheckout](events.md#startcheckout)事件的问题。
+![修复](../assets/fix.svg) — 修复了Adobe Commerce 2.4.7中未发送`startCheckout`事件的问题。
 
 ## 3.1.1
 

@@ -2,9 +2,9 @@
 title: 创建新推荐
 description: 了解如何创建产品推荐单元。
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ _推荐单元_
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**营销** > _促销活动_ > **产品推荐**&#x200B;以显示&#x200B;_产品推荐_&#x200B;工作区。
 
-1. 指定要显示推荐的[存储视图](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/websites-stores-views)。
+1. 指定要显示推荐的[存储视图](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)。
 
    >[!NOTE]
    >
-   > 必须在默认的存储区视图中创建Page Builder推荐单元，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅[添加内容 — 产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)。
+   > 必须在默认的存储区视图中创建Page Builder推荐单元，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅[添加内容 — 产品推荐](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)。
 
 1. 单击&#x200B;**创建推荐**。
 
@@ -38,14 +38,14 @@ _推荐单元_
 
    >[!NOTE]
    >
-   > 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面上不支持产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
+   > 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面上不支持产品推荐](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
 
    * 主页
    * 类别
    * 产品详细信息
    * 购物车
    * 确认
-   * [页面生成器](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [页面生成器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    您最多可以为每种页面类型创建5个有效的推荐单元，为页面生成器创建25个有效的推荐单元。 当达到限制时，页面类型将灰显。
 
@@ -172,7 +172,7 @@ _推荐类型_
 * **基于静态** — 这些指示器的百分比较低可能是由于缺少可显示产品的目录数据所致。 如果它们低于预期值，则完全同步可以修复此问题。
 * **基于动态** — 基于动态的指示器的低百分比可能是由以下原因造成的：
 
-   * 在必需的[storefront事件](events.md)中缺少相应推荐类型（requestId、产品上下文等）的字段。
+   * 在必需的[storefront事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)中缺少相应推荐类型（requestId、产品上下文等）的字段。
    * 存储区上的低流量，因此我们收到的行为事件量很低。
    * 您商店中不同产品的店面行为事件多样性很低。 例如，如果在大多数情况下仅查看或购买了10%的产品，则相应的就绪指示器将会较低。
 

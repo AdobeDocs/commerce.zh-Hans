@@ -2,9 +2,9 @@
 title: 设置Live Search
 description: ' [!DNL Live Search] 工作区用于配置、管理和监视搜索性能。'
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: 54fbf7f65ee5e464a4b61a9df95fef7536f1cedb
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -24,17 +24,17 @@ ht-degree: 0%
 
 如果您使用的是Headless店面，请参阅以下文档以获得有关需要添加的事件的更多信息：
 
-- 实时搜索仪表板的[必需事件](events.md)。
+- 实时搜索仪表板的[必需事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)。
 - 需要添加为先决条件的[店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
 - 事件结构的[示例](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ### 医疗保健客户
 
-如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Live Search]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Live Search]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/general/general#data-services)。
+如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Live Search]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Live Search]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)。
 
 ## 设置范围
 
-最初，所有[!DNL Live Search]设置的[作用域](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)设置为`Default Store View`。 如果[!DNL Commerce]安装包含多个商店视图，请将&#x200B;**范围**&#x200B;设置为应用Facet设置的[商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans)。
+最初，所有[设置的](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)作用域[!DNL Live Search]设置为`Default Store View`。 如果[!DNL Commerce]安装包含多个商店视图，请将&#x200B;**范围**&#x200B;设置为应用Facet设置的[商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)。
 
 ## 菜单选项
 
@@ -45,12 +45,12 @@ ht-degree: 0%
 | [同义词](synonyms.md) | 扩展搜索范围，以包含购物者可能用于查找与您的目录中的产品不同的字词。 |
 | [搜索促销](rules.md) | 使用触发计划操作的逻辑规则塑造搜索体验。 提升、隐藏、固定或隐藏产品以校准搜索结果来支持您的业务目标。 |
 | [类别促销](category-merch.md) | 在类别级别应用规则和智能促销。 |
-| [GraphQL](graphql.md) | 登录到商店管理员的开发人员可以使用实际目录数据编写和测试查询。 要了解更多信息，请转到[!DNL Live Search]开发人员文档中的[GraphQL概述](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)。 |
+| [GraphQL](graphql.md) | 登录到商店管理员的开发人员可以使用实际目录数据编写和测试查询。 要了解更多信息，请转到[开发人员文档中的](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)GraphQL概述[!DNL Live Search]。 |
 | [设置](settings.md) | 确定如何在店面中按价格范围对价格方面值进行分组并设置索引语言。 |
 
 ## 将属性设置为可搜索
 
-要生成目标明确的结果，请查看[可搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hans) (`searchable=true`)产品属性集。 为确保相关性，请仅在属性包含含义清晰而简洁的内容时才允许搜索属性。 避免使用包含不太精确、长度较长的文本的属性，例如`description`，虽然默认情况下启用了搜索，但可能会降低搜索结果的精度。 例如，如果人员搜索“短裤”，并且有描述包含“短袖”一词的衬衫，则衬衫将包含在搜索结果中。
+要生成目标明确的结果，请查看[可搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`)产品属性集。 为确保相关性，请仅在属性包含含义清晰而简洁的内容时才允许搜索属性。 避免使用包含不太精确、长度较长的文本的属性，例如`description`，虽然默认情况下启用了搜索，但可能会降低搜索结果的精度。 例如，如果人员搜索“短裤”，并且有描述包含“短袖”一词的衬衫，则衬衫将包含在搜索结果中。
 
 要允许搜索属性，请完成以下步骤：
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
    ![Workspace](assets/attribute-searchable.png)
 
-[!DNL Live Search]还遵循在Adobe Commerce中设置的产品属性的[权重](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=zh-Hans#weighted-search)。 权重较高的属性在搜索结果中的显示位置将较高。
+[!DNL Live Search]还遵循在Adobe Commerce中设置的产品属性的[权重](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search)。 权重较高的属性在搜索结果中的显示位置将较高。
 
 以下属性始终可搜索：
 
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 搜索词
 
-[!DNL Live Search]支持[搜索词重定向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=zh-Hans)，用于Adobe Commerce处理路由的实现，例如在Luma和其他基于php的主题上。
+[!DNL Live Search]支持[搜索词重定向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html)，用于Adobe Commerce处理路由的实现，例如在Luma和其他基于php的主题上。

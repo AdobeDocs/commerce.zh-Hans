@@ -2,7 +2,7 @@
 title: Headless
 description: 了解如何在headless店面中集成 [!DNL Product Recommendations] 。
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Headless
 
-您可以使用[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)或自定义前端技术（如React或Vue JS）将[!DNL Product Recommendations]集成到Headless店面。
+您可以使用[!DNL Product Recommendations]PWA Studio[或自定义前端技术（如React或Vue JS）将](https://developer.adobe.com/commerce/pwa-studio/)集成到Headless店面。
 
 自定义和Headless集成商应该参考这些Luma和PWA说明作为建议的实施。 可通过多种方法将产品推荐实施到Headless解决方案中，本文档并未涵盖所有场景。 集成商必须为其实施提供事件、设计和测试服务。
 
-[!DNL Product Recommendations]需要[行为和目录数据](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=zh-Hans)才能运行。 在Headless实施中，目录数据同步过程保持不变，但行为数据收集需要更改。
+[!DNL Product Recommendations]需要[行为和目录数据](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html)才能运行。 在Headless实施中，目录数据同步过程保持不变，但行为数据收集需要更改。
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. [安装](install-configure.md) [!DNL Product Recommendations]模块。
 
-1. 安装并使用[Adobe Commerce Storefront活动SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)以触发[行为事件](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=zh-Hans)。
+1. 安装并使用[Adobe Commerce Storefront活动SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)以触发[行为事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)。
 
    返回[!DNL Product Recommendations]结果所需的最小事件数：
 

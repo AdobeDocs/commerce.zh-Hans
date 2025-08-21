@@ -3,16 +3,18 @@ title: 收集数据
 description: 了解事件如何收集 [!DNL Product Recommendations]的数据。
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
 
 # 收集数据
 
-当您安装和配置基于SaaS的Adobe Commerce功能（如[[!DNL Product Recommendations]](install-configure.md)或[[!DNL Live Search]](../live-search/install.md)）时，模块会将行为数据收集部署到您的店面。 此机制从购物者那里收集匿名行为数据并支持[!DNL Product Recommendations]。 例如，`view`事件用于计算`Viewed this, viewed that`推荐类型，`place-order`事件用于计算`Bought this, bought that`推荐类型。
+安装和配置[[!DNL Product Recommendations]](install-configure.md)时，模块会将行为数据收集部署到您的店面。 此机制从购物者那里收集匿名行为数据并支持[!DNL Product Recommendations]。 例如，`view`事件用于计算`Viewed this, viewed that`推荐类型，`place-order`事件用于计算`Bought this, bought that`推荐类型。
+
+请参阅[开发人员文档](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)以了解有关[!DNL Product Recommendations]事件收集的行为数据的更多信息。
 
 >[!NOTE]
 >
@@ -77,61 +79,6 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 - `Conversion (view to purchase)`
 - `Conversion (view to cart)`
 
-### 活动
-
-[Adobe Commerce店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start)列出了部署到您的店面的所有事件。 在该列表中，有一个特定于[!DNL Product Recommendations]的事件子集。 当购物者与店面上的推荐单元进行交互时，这些事件会收集数据，并有助于量度分析推荐的执行情况。
-
-| 事件 | 描述 |
-| --- | --- |
-| `impression-render` | 在页面上呈现推荐单元时发送。 如果页面有两个推荐单位（已购买、已查看），则会发送两个`impression-render`事件。 此事件用于跟踪展示次数的量度。 |
-| `rec-add-to-cart-click` | 购物者单击推荐单元中项目的&#x200B;**添加到购物车**&#x200B;按钮。 |
-| `rec-click` | 购物者单击推荐单元中的产品。 |
-| `view` | 当推荐单元变为至少50%可见（例如，通过向下滚动页面）时发送。 例如，如果推荐单元有两行，当购物者看到第二行中的一行加上一个像素时，将发送`view`事件。 如果购物者多次上下滚动页面，则发送`view`事件的次数与购物者在页面上再次看到整个推荐单元时发送的次数相同。 |
-
-尽管产品推荐量度已针对Luma店面进行了优化，但它们也适用于其他店面实施：
-
-- [Edge Delivery店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=zh-Hans)
-- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
-- [自定义前台(React、Vue JS)](headless.md)
-
-#### 必需的报告面板事件
-
-需要以下事件来填充[[!DNL Product Recommendations] 仪表板](workspace.md)
-
-| “仪表板”列 | 活动 | 加入字段 |
-| ---------------- | --------- | ----------- |
-| 展示次数 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render` | `unitId` |
-| 视图 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-unit-view` | `unitId` |
-| 点击次数 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click` | `unitId` |
-| 收入 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click`，`place-order` | `unitId`，`sku`，`parentSku` |
-| LT收入 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click`，`place-order` | `unitId`，`sku`，`parentSku` |
-| CTR | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-item-click`，`recs-add-to-cart-click` | `unitId`，`sku`，`parentSku` |
-| vCTR | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-unit-view`，`recs-item-click`，`recs-add-to-cart-click` | `unitId`，`sku`，`parentSku` |
-
-以下事件并非特定于产品推荐，而是Adobe Sensei正确解释购物者数据所必需的：
-
-- `view`
-- `add-to-cart`
-- `place-order`
-
-#### 推荐类型
-
-此表描述了每种建议案类型使用的事件。
-
-| 推荐类型 | 活动 | 页面 |
-| --- | --- | --- |
-| 查看次数最多 | `page-view`<br>`product-view` | 产品详细信息页面 |
-| 购买次数最多 | `page-view`<br>`place-order` | 购物车/结帐 |
-| 添加到购物车的次数最多 | `page-view`<br>`add-to-cart` | 产品详细信息页面<br>产品列表页面<br>购物车<br>愿望清单 |
-| 查看了这个项目，也查看了那个项目 | `page-view`<br>`product-view` | 产品详细信息页面 |
-| 查看了这个项目，购买了那个项目 | 产品推荐 | `page-view`<br>`product-view` | 产品详细信息页面<br>购物车/结帐 |
-| 购买了此项，也购买了此项 | 产品推荐 | `page-view`<br>`product-view` | 产品详细信息页面 |
-| 趋势 | `page-view`<br>`product-view` | 产品详细信息页面 |
-| 转化：查看以购买 | 产品推荐 | `page-view`<br>`product-view` | 产品详细信息页面 |
-| 转化：查看以购买 | 产品推荐 | `page-view`<br>`place-order` | 购物车/结帐 |
-| 转化：查看到购物车 | 产品推荐 | `page-view`<br>`product-view` | 产品详细信息页面 |
-| 转化：查看到购物车 | 产品推荐 | `page-view`<br>`add-to-cart` | 产品详细信息页面<br>产品列表页面<br>购物车<br>愿望清单 |
-
 #### 注意事项
 
 - 广告拦截器和隐私设置可能会阻止捕获事件，并可能导致参与和收入[量度](workspace.md#column-descriptions)少报。 此外，由于购物者离开页面或网络问题，某些事件可能无法发送。
@@ -140,4 +87,4 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 
 >[!NOTE]
 >
->如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hans)，则在购物者同意使用Cookie之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，Adobe Commerce会默认收集行为数据。
+>如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，则在购物者同意使用Cookie之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，Adobe Commerce会默认收集行为数据。

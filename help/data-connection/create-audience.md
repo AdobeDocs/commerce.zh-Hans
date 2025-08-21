@@ -3,9 +3,10 @@ title: 在Real-Time CDP中使用 [!DNL Commerce] 事件数据创建受众
 description: 了解如何使用 [!DNL Commerce] 事件数据在Real-Time CDP中创建受众
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0e9d286b-c459-44db-bbf8-2cb46e21739d
+source-git-commit: a3e19940e2a3d8a240bb17703cfdd9903df311aa
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -21,13 +22,13 @@ ht-degree: 0%
 | 数据类型 | 店面数据（行为事件） | 后台数据（服务器端事件） | 客户个人资料和区段数据 |
 |---|---|---|---|
 | **定义** | 客户在您的网站上采取的点击或操作。 | 关于生命周期的信息和每个订单的详细信息（过去和当前）。 | 您的购物者是谁，他们符合哪些区段的条件。 |
-| Adobe Commerce捕获的&#x200B;**事件** | [productPageView](events.md#productpageview)<br>[addToCart](events.md#addtocart) | [placeOrder](events.md#completecheckout)<br>[orderplaced](events-backoffice.md#orderplaced)<br>[orderLineItemRefrained](events-backoffice.md#orderlineitemrefunded)<br>[已取消订单](events-backoffice.md#ordercancelled)<br>[订单历史记录](connect-data.md#send-historical-order-data) | [createAccount](events.md#createaccount)<br>[editAccount](events.md#editaccount)<br>[个人资料记录](events-profilerecord.md) |
+| Adobe Commerce捕获的&#x200B;**事件** | `productPageView`<br>`addToCart` | `placeOrder`<br>`orderplaced`<br>`orderLineItemRefunded`<br>`order Canceled`<br>`order history` | `createAccount`<br>`editAccount`<br>`Profile Record` |
 
 ## 其他客户取得了哪些成就？
 
 Adobe [!DNL Commerce]客户通过激活内置于Real-Time CDP中的受众并将它们部署到其[!DNL Commerce]实例中，实现了显着的业务影响。
 
-一家全球多品牌服装零售商实现了：
+retailer实现了全球多品牌服装：
 
 - 一个拥有数百万统一客户档案的真实来源
 - 创建了40多个独特的“高意图客户”受众来参与各个渠道
@@ -53,14 +54,14 @@ Adobe [!DNL Commerce]客户通过激活内置于Real-Time CDP中的受众并将�
 在开始之前，请确保：
 
 - 您已配置为使用Real-Time CDP。 如果您不确定，请咨询您的系统集成商或管理项目和环境的开发团队。
-- 您[已在[!DNL Commerce]中安装](install.md)并[配置了](connect-data.md) [!DNL Data Connection]扩展。
+- 您[已在](install.md)中安装[并](connect-data.md)配置了[!DNL Data Connection] [!DNL Commerce]扩展。
 - 您[已确认](connect-data.md#confirm-that-event-data-is-collected)您的[!DNL Commerce]事件数据已到达Experience Platform Edge。
 
 ### 1.创建受众
 
 受众是指一组具有相似行为或特征的客户。 在本练习中，您将创建一个受众，该受众可使对您商店中的特定产品感兴趣的人员符合条件。
 
-要简化此练习，请使用[productPageView](events.md#productpageview)事件中的事件数据。 此事件可捕获有关所查看产品的详细信息，如产品名称、SKU、价格等。
+要简化此练习，请使用`productPageView`事件中的事件数据。 此事件可捕获有关所查看产品的详细信息，如产品名称、SKU、价格等。
 
 使用此事件数据指定受众包括至少有一个“产品查看”事件的个人，其中SKU（产品标识符）等于网站上的特定产品，并且该事件发生在前一天。&#x200B;AEM
 
@@ -78,9 +79,9 @@ Adobe [!DNL Commerce]客户通过激活内置于Real-Time CDP中的受众并将�
 
    ![生成规则](assets/build-rule.png)
 
-   在&#x200B;**区段生成器**&#x200B;工作区中，您可以为受众定义规则和条件&#x200B;。 这些规则和条件基于Commerce存储中的事件和配置文件数据，并定义了用于确定用户是否符合受众条件的条件。 例如，您可以创建一个规则，以包含查看过特定产品的用户或在特定时间段内购买过产品的用户。 了解有关[区段生成器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/segmentation/ui/segment-builder)以及规则和条件的更多信息。
+   在&#x200B;**区段生成器**&#x200B;工作区中，您可以为受众定义规则和条件&#x200B;。 这些规则和条件基于Commerce存储中的事件和配置文件数据，并定义了用于确定用户是否符合受众条件的条件。 例如，您可以创建一个规则，以包含查看过特定产品的用户或在特定时间段内购买过产品的用户。 了解有关[区段生成器](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)以及规则和条件的更多信息。
 
-1. 选择[事件](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/segmentation/ui/segment-builder#events)选项卡。
+1. 选择[事件](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events)选项卡。
 
    ![事件选项卡](assets/audience-events-tab.png)
 
@@ -108,7 +109,7 @@ Adobe [!DNL Commerce]客户通过激活内置于Real-Time CDP中的受众并将�
 
 >[!IMPORTANT]
 >
->如果您尚未将[!DNL Commerce]设置为接收数据的可用目标，请参阅[Adobe [!DNL Commerce] 连接](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/personalization/adobe-commerce)主题。
+>如果您尚未将[!DNL Commerce]设置为接收数据的可用目标，请参阅[Adobe [!DNL Commerce] 连接](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-commerce)主题。
 
 1. 在受众的&#x200B;**详细信息**&#x200B;选项卡中，单击&#x200B;**激活到目标**。
 
@@ -118,7 +119,7 @@ Adobe [!DNL Commerce]客户通过激活内置于Real-Time CDP中的受众并将�
 
 ## 3.在受众功能板中查看受众
 
-在[!DNL Commerce]中，您可以使用&#x200B;**Real-Time CDP Audiences**&#x200B;仪表板查看可为您的[!DNL Commerce]实例个性化的所有[活动](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)受众。
+在[!DNL Commerce]中，您可以使用[Real-Time CDP Audiences](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)仪表板查看可为您的[!DNL Commerce]实例个性化的所有&#x200B;**活动**&#x200B;受众。
 
 要访问&#x200B;**Real-Time CDP受众**&#x200B;仪表板，请转到&#x200B;_管理员_&#x200B;侧栏，然后转到&#x200B;**[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**。
 
@@ -131,9 +132,9 @@ Adobe [!DNL Commerce]客户通过激活内置于Real-Time CDP中的受众并将�
 此部分将向您展示如何根据新受众创建购物车价格规则。
 
 1. 确认新受众显示在&#x200B;**Real-Time CDP Audiences**&#x200B;仪表板中。
-1. [创建购物车价格规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)。
-1. [使用新受众设置购物车价格规则的条件](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition)。
-1. [设置将产品添加到购物车时要执行的操作](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions)。
+1. [创建购物车价格规则](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)。
+1. [使用新受众设置购物车价格规则的条件](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition)。
+1. [设置将产品添加到购物车时要执行的操作](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions)。
 1. 继续配置购物车价格规则。
 1. 转到沙盒实例的客户视图。
 1. 将基于受众的产品添加到购物车。 请注意，购物车价格规则已启用。

@@ -3,7 +3,8 @@ title: 将Adobe Experience Platform Mobile SDK与Commerce集成
 description: 了解如何将Adobe Experience Platform Mobile SDK与Headless或自定义Commerce店面结合使用。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 02d07abb-8d7f-4f0a-9f96-f42654cd79d3
+source-git-commit: a3e19940e2a3d8a240bb17703cfdd9903df311aa
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 将[Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)与Commerce Mobile应用程序集成后，商家可以将Commerce [事件数据](events.md)发送到Experience Platform Edge。
 
-当Commerce事件数据在边缘可用时，其他Adobe Experience Cloud应用程序即可访问该数据。 例如，您可以使用此数据在Real-Time CDP中构建受众，然后[使用这些受众](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=zh-Hans)个性化您的Commerce移动应用程序。
+当Commerce事件数据在边缘可用时，其他Adobe Experience Cloud应用程序即可访问该数据。 例如，您可以使用此数据在Real-Time CDP中构建受众，然后[使用这些受众](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html)个性化您的Commerce移动应用程序。
 
 ## 配置
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 ### Experience Platform
 
-1. 通过查看移动设备应用程序中的[Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans)了解移动设备应用程序功能。
+1. 通过查看移动设备应用程序中的[Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)了解移动设备应用程序功能。
 
 1. [在Experience Platform中安装和配置](https://developer.adobe.com/client-sdks/documentation/getting-started/)SDK。
 
@@ -162,4 +163,4 @@ ht-degree: 0%
 
 ## 后续步骤
 
-要了解如何从移动Real-Time CDP应用程序中检索Commerce受众以告知购物车价格规则、动态块和相关产品规则，请参阅[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=zh-Hans#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)。
+要了解如何从移动Real-Time CDP应用程序中检索Commerce受众以告知购物车价格规则、动态块和相关产品规则，请参阅[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)。

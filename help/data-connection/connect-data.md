@@ -3,7 +3,7 @@ title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 feature: Personalization, Integration, Configuration
 exl-id: 8ba33277-38a5-45af-86e0-906cfb3b998d
-source-git-commit: 5f7565f5bb80fcc65cbbcdc31c5c3b12fed4e5ee
+source-git-commit: 7c480598ebfb862432b0e83a27467e1d932c6666
 workflow-type: tm+mt
 source-wordcount: '2917'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ### 添加服务帐户和凭据详细信息
 
-如果您计划收集和发送[历史订单数据](#send-historical-order-data)或[客户配置文件数据](#send-customer-profile-data)，则必须添加服务帐户和凭据详细信息。 此外，如果您正在配置[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=zh-Hans)扩展，则必须完成这些步骤。
+如果您计划收集和发送[历史订单数据](#send-historical-order-data)或[客户配置文件数据](#send-customer-profile-data)，则必须添加服务帐户和凭据详细信息。 此外，如果您正在配置[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html)扩展，则必须完成这些步骤。
 
 如果您仅收集和发送店面或后台数据，则可以跳到[常规](#general)部分。
 
@@ -43,12 +43,12 @@ ht-degree: 0%
 
 在Adobe Developer Console中创建一个验证Commerce的项目，以便它能进行Experience Platform API调用。
 
-要创建项目，请按照[身份验证和访问Experience Platform API](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=zh-Hans)教程中所述的步骤进行操作。
+要创建项目，请按照[身份验证和访问Experience Platform API](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html)教程中所述的步骤进行操作。
 
 在学习本教程时，请确保您的项目具备以下条件：
 
-- 访问以下[产品配置文件](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=zh-Hans#select-product-profiles)： **默认的生产所有访问**&#x200B;和&#x200B;**AEP默认所有访问**。
-- 已配置正确的[角色和权限](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=zh-Hans#assign-api-to-a-role)。
+- 访问以下[产品配置文件](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles)： **默认的生产所有访问**&#x200B;和&#x200B;**AEP默认所有访问**。
+- 已配置正确的[角色和权限](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role)。
 - 如果您决定使用JSON Web令牌(JWT)作为服务器到服务器的身份验证方法，则还必须上传私钥。
 
 此步骤的结果将创建一个配置文件，供您在下一步中使用。
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**范围**&#x200B;下拉列表中，将上下文设置为&#x200B;**网站**。
 
-1. （可选）如果您已将[AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)部署到您的网站，请启用该复选框并添加AEP Web SDK的名称。 否则，请将这些字段留空，[!DNL Data Connection]扩展将为您部署一个字段。
+1. （可选）如果您已将[AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)部署到您的网站，请启用该复选框并添加AEP Web SDK的名称。 否则，请将这些字段留空，[!DNL Data Connection]扩展将为您部署一个字段。
 
    >[!NOTE]
    >
@@ -117,9 +117,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果选择&#x200B;**后台事件**，则所有后台数据都会发送到Experience Platform Edge。 如果购物者选择退出数据收集，您必须在Experience Platform中明确设置购物者的隐私偏好设置。 这与店面事件不同，店面事件收集器已根据购物者偏好处理同意。 了解[更多](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=zh-Hans)有关在Experience Platform中设置购物者的隐私首选项的信息。
+   >如果选择&#x200B;**后台事件**，则所有后台数据都会发送到Experience Platform Edge。 如果购物者选择退出数据收集，您必须在Experience Platform中明确设置购物者的隐私偏好设置。 这与店面事件不同，店面事件收集器已根据购物者偏好处理同意。 了解[更多](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html)有关在Experience Platform中设置购物者的隐私首选项的信息。
 
-1. (如果您使用自己的AEP Web SDK，请跳过此步骤。) [在Adobe Experience Platform中创建](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hans#create)数据流，或选择要用于收集的现有数据流。 在&#x200B;**数据流ID**&#x200B;字段中输入该数据流ID。
+1. (如果您使用自己的AEP Web SDK，请跳过此步骤。)[在Adobe Experience Platform中创建](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create)数据流，或选择要用于收集的现有数据流。 在&#x200B;**数据流ID**&#x200B;字段中输入该数据流ID。
 
 1. 输入要包含Commerce数据的&#x200B;**数据集ID**。 要查找数据集ID，请执行以下操作：
 
@@ -127,7 +127,7 @@ ht-degree: 0%
    1. 打开与数据流关联的数据集。
    1. 在右侧窗格中，查看有关数据集的详细信息。 复制数据集ID。
 
-1. 若要确保根据[cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=zh-Hans)作业按计划更新后台事件数据，必须将`Sales Orders Feed`索引更改为`Update by Schedule`。
+1. 若要确保根据[cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)作业按计划更新后台事件数据，必须将`Sales Orders Feed`索引更改为`Update by Schedule`。
 
    1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**。
 
@@ -135,7 +135,7 @@ ht-degree: 0%
 
    1. 将&#x200B;**[!UICONTROL Actions]**&#x200B;设置为`Update by Schedule`。
 
-   1. 如果您是首次启用后台数据，请运行以下命令来重新索引并触发重新同步。 只要[cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=zh-Hans)作业设置正确，后续的重新同步就会自动进行。
+   1. 如果您是首次启用后台数据，请运行以下命令来重新索引并触发重新同步。 只要[cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)作业设置正确，后续的重新同步就会自动进行。
 
       ```bash
       bin/magento index:reindex sales_order_data_exporter_v2
@@ -164,7 +164,7 @@ ht-degree: 0%
 
 有两种类型的配置文件数据可发送到Experience Platform：配置文件记录和时间序列配置文件事件。
 
-配置文件记录包含购物者在Commerce实例中创建配置文件时保存的数据，例如购物者的姓名。 如果您的架构和数据集配置正确[&#128279;](profile-data.md)，则会将配置文件记录发送到Experience Platform并转发到Adobe的配置文件管理和分段服务： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hans#)。
+配置文件记录包含购物者在Commerce实例中创建配置文件时保存的数据，例如购物者的姓名。 如果您的架构和数据集配置正确[](profile-data.md)，则会将配置文件记录发送到Experience Platform并转发到Adobe的配置文件管理和分段服务： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html#)。
 
 时间序列配置文件事件包含有关购物者配置文件信息的数据，例如，购物者在您的网站上创建、编辑或删除帐户的情况。 将配置文件事件数据发送到Experience Platform时，该数据会位于可供其他DX产品使用的数据集中。
 
@@ -184,7 +184,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您未在Experience Platform中看到配置文件数据，请参阅[Commerce知识库](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以获取故障排除建议。
+>如果您未在Experience Platform中看到配置文件数据，请参阅[Commerce知识库](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以获取故障排除建议。
 
 #### 字段描述
 
@@ -203,7 +203,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 观看本视频，了解有关历史订单的更多信息，然后完成以下步骤来实施历史订单收集。
 
->[!VIDEO](https://video.tv.adobe.com/v/3450237?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 #### 设置订单同步服务
 
@@ -211,7 +211,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 1. 确保您已[提供](#add-service-account-and-credential-details)服务帐户和凭据详细信息。
 
-1. [启用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html?lang=zh-Hans) RabbitMQ。
+1. [启用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ。
 
    >[!NOTE]
    >
@@ -228,7 +228,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
    >[!NOTE]
    >
-   >请参阅[部署变量文档](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hans#cron_consumers_runner)以了解所有可用的配置选项。
+   >请参阅[部署变量文档](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner)以了解所有可用的配置选项。
 
 启用订单同步服务后，您可以在&#x200B;**[!UICONTROL [!DNL Data Connection]]**&#x200B;页面中指定历史订单日期范围。
 
@@ -290,7 +290,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 ## 确认已收集事件数据
 
-要确认正在从Commerce存储中收集数据，请使用[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=zh-Hans)来检查您的Commerce网站。 确认正在收集数据后，通过运行返回来自您创建的[数据集的数据](overview.md#prerequisites)的查询，可以验证店面和后台事件数据是否显示在边缘。
+要确认正在从Commerce存储中收集数据，请使用[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html)来检查您的Commerce网站。 确认正在收集数据后，通过运行返回来自您创建的[数据集的数据](overview.md#prerequisites)的查询，可以验证店面和后台事件数据是否显示在边缘。
 
 1. 在Experience Platform的左侧导航中选择&#x200B;**查询**，然后单击[!UICONTROL Create Query]。
 
@@ -310,13 +310,13 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
    ![查询编辑器](assets/query-results.png)
 
-在此示例中，您看到来自[`commerce.productListAdds`](events.md#addtocart)、[`commerce.productViews`](events.md#productpageview)、[`web.webpagedetails.pageViews`](events.md#pageview)等的事件数据。 通过此视图，可验证您的Commerce数据是否已到达边缘。
+在此示例中，您看到来自`commerce.productListAdds`、`commerce.productViews`、`web.webpagedetails.pageViews`等的事件数据。 通过此视图，可验证您的Commerce数据是否已到达边缘。
 
-如果结果不符合预期，请打开您的数据集并查找任何失败的批量导入。 了解有关[批处理导入疑难解答的详细信息](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html?lang=zh-Hans)。
+如果结果不符合预期，请打开您的数据集并查找任何失败的批量导入。 了解有关[批处理导入疑难解答的详细信息](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html)。
 
 ### 验证配置文件数据是否显示在Experience Platform中
 
-如果您未在Experience Platform中看到配置文件数据，请参阅[Commerce知识库](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以获取故障排除建议。
+如果您未在Experience Platform中看到配置文件数据，请参阅[Commerce知识库](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以获取故障排除建议。
 
 ## 后续步骤
 
