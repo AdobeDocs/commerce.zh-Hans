@@ -3,153 +3,40 @@ title: 设置您的店面
 description: 了解如何运行基架工具来设置 [!DNL Adobe Commerce as a Cloud Service] 店面。
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+source-git-commit: b0d492ffab2dcf5742772d02bed026e241ac43cd
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
 # 设置您的店面
 
-以下步骤演示了如何使用`aio commerce init`命令快速设置由Edge Delivery提供支持的Adobe Commerce店面。 此过程将设置以下内容：
+要设置由Edge Delivery Services提供支持的Adobe Commerce Storefront for Adobe Commerce as a Cloud Service (SaaS)，请执行以下步骤。
 
-* [由Edge Delivery Services提供支持的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans) — 由Adobe的Edge Delivery Services提供支持的高性能、可扩展且安全的店面。
-* 适用于Adobe Developer App Builder的[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/) — 一个API平台，允许开发人员将多个数据源合并到单个GraphQL端点中。 API Mesh通过单个网关使用Adobe API协调第三方API。 对单个GraphQL端点的一个查询可以返回来自多个源的结果。
-* [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) — 开发人员工具集合，具有对API、事件、运行时函数和插件的访问权限，可用于为Adobe应用程序构建项目。
-* [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) — 用于部署自定义代码的无服务器引擎，该引擎响应云中的事件并执行函数。
+如果您想要更可自定义的详细演练，请参阅[店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)。
 
-## 先决条件
+1. 打开[站点创建者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)。
 
-运行`aio commerce init`命令之前，必须完成以下先决条件：
+1. 选择&#x200B;**创建新站点（代码和内容）**。
 
-1. 安装节点版本管理器(NVM)。
+1. 输入要在其中创建店面代码存储库的&#x200B;**Github组织/用户名**。
 
-   ```bash
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-   ```
+1. 输入&#x200B;**站点名称**。
 
-1. 安装Node.js和NPM。 有关详细信息，请参阅[Node.js](https://nodejs.org/en/)。
+1. 在&#x200B;**Commerce GraphQL端点（可选）**&#x200B;字段中，输入您的Adobe Commerce as a Cloud Service (SaaS) GraphQL端点，在创建实例[后，您可以在Commerce Cloud Manager中访问该端点](./getting-started.md#create-an-instance)。
 
-   ```bash
-   nvm install 22
-   ```
+   或者，如果您使用的是[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic)，请在&#x200B;**Commerce GraphQL端点（可选）**&#x200B;字段中输入API Mesh GraphQL端点。 有关详细信息，请参阅[创建网格](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)。
 
-   ```bash
-   npm install -g npm
-   ```
+1. 单击&#x200B;**创建站点**。 按照屏幕上的说明授权访问您的Github存储库。
 
-1. 安装[Adobe I/O Runtime CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)。
+该过程完成后，您可以使用以下方法自定义您的店面：
 
-   ```bash
-   npm install -g @adobe/aio-cli
-   ```
-
-1. 安装Adobe I/O API网格插件。
-
-   ```bash
-   aio plugins:install @adobe/aio-cli-plugin-api-mesh
-   ```
-
-1. 安装Adobe I/O Commerce插件。
-
-   ```bash
-   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
-   ```
-
-1. 更新任何现有的插件。
-
-   ```bash
-   aio plugins:update
-   ```
-
-1. 登录到您的Adobe Experience Cloud帐户。
-
-   ```bash
-   aio login
-   ```
-
-   如果`aio login`命令未启动浏览器窗口，请参阅[疑难解答](#troubleshooting)部分。
-
-1. 选择IMS组织、项目和工作区。 使用箭头键并按&#x200B;**Enter**&#x200B;进行选择。 有关`aio`命令的详细信息，请参阅[Adobe I/O CLI文档](https://github.com/adobe/aio-cli-plugin-console?tab=readme-ov-file#commands)。
-
-   ```bash
-   aio console org select
-   ```
-
-   ```bash
-   aio console project select
-   ```
-
-   ```bash
-   aio console workspace select
-   ```
-
-1. 如果您尚未这样做，请导航到https://developer.adobe.com/console/home并单击&#x200B;**接受并继续**，以接受Adobe Developer控制台中的开发人员使用条款。
-
-## 运行`aio commerce init`命令
-
-运行以下命令将为您的Commerce店面创建基架。 此基架是构建和了解店面的绝佳起点。 有关使用店面的更多信息，请参阅[Adobe Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)。
-
-
-1. 运行`init`命令：
-
-   ```bash
-   aio commerce init
-   ```
-
-1. 如果您已经登录GitHub，请输入`Y`以在您的用户名下创建存储库。
-
-1. 输入要创建的存储库的名称。
-
-1. 选择以下选项之一：
-
-   * **使用演示Adobe Commerce租户** — 使用演示租户。
-      * 如果选择此选项，则系统会提示您在一个浏览器窗口中安装AEM代码同步机器人。 您必须指定您创建的存储库并授权机器人。 返回到CLI并输入`y`以确认AEM代码同步机器人的安装。
-   * **选择可用的Adobe Commerce租户** — 在所选组织中选择现有的Commerce租户。
-      * 如果选择此选项，则必须选择要在其中创建网格的项目和工作区。
-   * **提供您自己的Adobe Commerce租户API URL** — 如果您是试用访问计划参与者，请选择此选项。 输入Adobe入门培训电子邮件中提供的API URL。
-
-   >[!NOTE]
-   >
-   >如果选择`Pick an available API (Mesh -> SaaS)`选项，则Adobe Developer Console中必须具有现有的项目和Workspace。 [创建模板化项目](https://developer.adobe.com/developer-console/docs/guides/projects/projects-template/)并选择App Builder将自动创建所需的工作区。
-
-1. 该过程完成后，您可以使用以下方法自定义您的店面：
-
-   * 自定义您的代码： `https://github.com/<username or org>/<repo name>`
-   * 编辑您的内容： `https://da.live/#/<username or org>/<repo name>`
-   * 管理您的配置： `https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
-   * 预览店面： `https://main--<repo name>--<username or org>.aem.page/`
-   * 本地运行： `aio commerce:dev`
-
-要自定义您的店面，请参阅[Adobe Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)。
-
-## 故障排除
-
-如果您遇到`aio login`命令问题，Adobe建议完全注销CLI和浏览器，然后重新登录。
-
-1. 要注销CLI，请运行：
-
-   ```bash
-   aio logout
-   ```
-
-1. 在浏览器中，导航到[Adobe Developer Console](https://developer.adobe.com/console)，单击右上角的配置文件图标，然后选择&#x200B;**注销**。
-
-1. 返回到CLI并再次运行`aio login`命令，该命令将启动浏览器窗口以登录。 然后，您可以继续选择组织、项目和工作区。
-
-   ```bash
-   aio console org select
-   ```
-
-   ```bash
-   aio console workspace select
-   ```
-
-   ```bash
-   aio console project select
-   ```
+* 自定义您的代码： `https://github.com/<username or org>/<repo name>`
+* 编辑您的内容： `https://da.live/#/<username or org>/<repo name>`
+* 管理您的配置： `https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
+* 预览店面： `https://main--<repo name>--<username or org>.aem.page/`
 
 ## 后续步骤
 
@@ -158,4 +45,4 @@ ht-degree: 0%
 * 要了解有关管理和显示店面中内容和数据的更多信息，请参阅[更新店面内容](./use-cases.md#update-storefront-content)。
 * 有关上下文试验功能的详细信息，请参阅[上下文试验](./use-cases.md#contextual-experimentation)。
 * 有关使用创作AI自动生成高质量内容的更多信息，请参阅[生成变体](./use-cases.md#generate-variations)。
-* 要了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息，请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)。
+* 要了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息，请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)。
