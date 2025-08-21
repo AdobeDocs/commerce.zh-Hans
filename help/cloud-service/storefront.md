@@ -3,7 +3,7 @@ title: 设置您的店面
 description: 了解如何运行基架工具来设置 [!DNL Adobe Commerce as a Cloud Service] 店面。
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 source-git-commit: b0d492ffab2dcf5742772d02bed026e241ac43cd
 workflow-type: tm+mt
 source-wordcount: '282'
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 要设置由Edge Delivery Services提供支持的Adobe Commerce Storefront for Adobe Commerce as a Cloud Service (SaaS)，请执行以下步骤。
 
-如果您想要更可自定义的详细演练，请参阅[店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)。
+如果您想要更可自定义的详细演练，请参阅[店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)。
 
 1. 打开[站点创建者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)。
 
@@ -45,4 +45,4 @@ ht-degree: 0%
 * 要了解有关管理和显示店面中内容和数据的更多信息，请参阅[更新店面内容](./use-cases.md#update-storefront-content)。
 * 有关上下文试验功能的详细信息，请参阅[上下文试验](./use-cases.md#contextual-experimentation)。
 * 有关使用创作AI自动生成高质量内容的更多信息，请参阅[生成变体](./use-cases.md#generate-variations)。
-* 要了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息，请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)。
+* 要了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息，请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)。
