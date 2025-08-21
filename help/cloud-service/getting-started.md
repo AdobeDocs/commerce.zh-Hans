@@ -3,10 +3,10 @@ title: 开始使用 [!DNL Adobe Commerce as a Cloud Service]
 description: 了解如何使用 [!DNL Adobe Commerce as a Cloud Service]。
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 81dd617b0a6460b8dcb01c0a21b696663b0ae493
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+source-git-commit: d8c0cf5f54a8518b033013cdb24b25f8ff363f02
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!TAB 管理员和商家工作流]
 
-此图表提供了管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/cn/enterprise/admin-guide.html)。
+此图表提供了管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/enterprise/admin-guide.html)。
 
 ![[!DNL Adobe Commerce as a Cloud Service]商家流程图](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -59,12 +59,6 @@ ht-degree: 0%
 
 1. 为您的实例输入&#x200B;**名称**&#x200B;和&#x200B;**描述**。
 
-1. 选择要托管实例的地区。
-
-   >[!NOTE]
-   >
-   >创建实例后，您将无法修改区域。
-
 1. 为您的实例选择&#x200B;[!UICONTROL **环境类型**]。 您可以选择以下选项：
 
    * [!UICONTROL **沙盒**] — 非常适合用于设计和测试目的。 您应该使用沙盒环境开始[!DNL Adobe Commerce as a Cloud Service]历程。
@@ -72,8 +66,14 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >* 沙盒实例当前仅限于北美地区。
+   >* 沙盒实例仅限于北美地区。
    >* 安装示例数据的选项当前不可用。
+
+1. 选择要托管实例的地区。
+
+   >[!NOTE]
+   >
+   >创建实例后，您将无法修改区域。
 
 1. 单击&#x200B;[!UICONTROL **添加实例**]。
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 有两种方法可以将您的目录导入[!DNL Adobe Commerce as a Cloud Service]：
 
-* [**Commerce管理员**](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/import/data-import) — 一个用户友好的界面，允许您通过单击几下导入目录数据。
+* [**Commerce管理员**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) — 一个用户友好的界面，允许您通过单击几下导入目录数据。
 * [**导入JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) — 一个REST API，允许您以编程方式导入目录数据。
 
 <!-- TODO
