@@ -4,27 +4,73 @@ description: 了解 [!DNL Adobe Commerce as a Cloud Service]的主要功能和�
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: cd5244d67f67c6f1e8a10f09a39f33073fcea9af
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+source-git-commit: 8fc46b0b93ac5102477f33bf2a8ae70a7acaf85d
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
+
 
 # [!DNL Adobe Commerce as a Cloud Service] 概述
 
 [!DNL Adobe Commerce as a Cloud Service]通过使企业能够交付并快速扩展数字运营并加快创新，提供了灵活性、可扩展性和效率。 Adobe的云原生基础架构可自动调整资源，以满足流量、订单和目录管理的峰值需求。
 
-下图突出显示支持[!DNL Adobe Commerce as a Cloud Service]的产品：
+下表突出显示支持[!DNL Adobe Commerce as a Cloud Service]的产品：
 
-![[!DNL Adobe Commerce as a Cloud Service]产品栈栈](./assets/product-stack.svg){align="center" zoomable="yes"}
+<table style="table-layout:auto">
+  <tr>
+    <td>
+      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
+        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
+      </span>
+      <strong>Commerce店面</strong>
+    </td>
+    <td>
+      面向客户的界面，购物者可在此浏览和购买产品
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
+        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
+      </span>
+      <strong>促销服务</strong>
+    </td>
+    <td>
+      管理产品目录、定价和库存的后端服务
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
+        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
+      </span>
+      <strong>产品视觉效果</strong>
+    </td>
+    <td>
+      产品图像和媒体的数字资产管理
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
+        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
+      </span>
+      <strong>开发人员平台</strong>
+    </td>
+    <td>
+      用于构建自定义功能的核心开发工具和API
+    </td>
+  </tr>
+</table>
 
 ## 架构
 
 请观看以下视频，了解[!DNL Adobe Commerce as a Cloud Service]架构的简介。 视频下方提供了说明体系结构的图。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443277?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 此图说明了[!DNL Adobe Commerce as a Cloud Service]和所有Adobe Experience Cloud解决方案之间的数据流。
 
@@ -32,13 +78,13 @@ ht-degree: 0%
 
 ## Commerce店面
 
-使用由Edge Delivery Services提供支持的Adobe [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=zh-Hans)，通过Storefront Builder的基于文档的简单创作或可视化编辑，在几分钟内创建丰富的体验。
+使用由Edge Delivery Services提供支持的Adobe [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront)，通过Storefront Builder的基于文档的简单创作或可视化编辑，在几分钟内创建丰富的体验。
 
 Commerce Storefront是完全无头的，具有解耦的架构，通过GraphQL API层提供所有促销服务和数据。 此架构允许团队独立于Commerce Foundation开发其前台，从而提供使用新兴技术构建和测试新接触点的灵活性。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]不支持Luma店面。 如果您是从Adobe Commerce在云中或内部部署迁移，请参阅[现有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hans#existing-storefronts)以获取有关过渡的指导。
+>[!DNL Adobe Commerce as a Cloud Service]不支持Luma店面。 如果您是从Adobe Commerce在云中或内部部署迁移，请参阅[现有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts)以获取有关过渡的指导。
 
 ## 商品推销服务和支付服务
 
@@ -61,10 +107,54 @@ Adobe提供了一组丰富的智能、可组合的推销服务，帮助您支持
 
 ### 产品可视化图表或AEM Assets
 
-下图显示了这两种产品，具体取决于您的内容供应链需求：
+以下比较可帮助您选择最符合内容供应链需求的选项：
 
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+  <tr style="border: none;">
+    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
+      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">由AEM Assets提供支持的产品视觉效果</h3>
+      <ul style="margin: 0; padding-left: 20px;">
+        <li>集成的自动化产品图像和视频Digital Asset Manager (DAM)</li>
+        <li>调整图像大小、裁切和转换图像</li>
+        <li>高速图像和视频传送</li>
+        <li>根据客户端浏览器功能优化图像格式、大小和质量</li>
+        <li>访问Adobe Express和Adobe Firefly</li>
+        <li>图像/视频投放容量和用户访问的使用限制</li>
+        <li>集成的资产选择器</li>
+      </ul>
+    </td>
+    <td style="width: 10%; text-align: center; vertical-align: middle; font-size: 98px; color: #d32f2f; font-weight: bold;">
+      ’
+    </td>
+    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
+      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">AEM Assets</h3>
+      <ul style="margin: 0; padding-left: 20px;">
+        <li>产品可视化图表的所有功能</li>
+        <li>Full marketing Digital Asset Manager (DAM)</li>
+        <li>无限制用户（按用户付费）</li>
+        <li>无限制的图像和视频交付</li>
+        <li>高级资产管理功能：</li>
+        <ul>
+          <li>360°旋转集和交互式查看器</li>
+          <li>3D模型支持和沉浸式内容</li>
+          <li>PDF支持</li>
+          <li>AI支持的智能裁剪</li>
+         <li>动态图像模板</li>
+        <li>智能标记</li>
+        <li>跟踪和分析资产性能</li>
+        </ul>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-![检查](assets/compare-offerings.png){width="700" zoomable="yes"}
+<table style="width: 100%; margin: 20px 0;">
+  <tr>
+    <td style="background: #f5f5f5; padding: 15px; text-align: center; font-weight: bold;">
+      Adobe品牌集成可用于轻松在产品之间迁移。
+    </td>
+  </tr>
+</table>
 
 请参阅[AEM Assets集成](../aem-assets-integration/overview.md)指南，详细了解如何将由AEM Assets支持的产品可视化与[!DNL Adobe Commerce as a Cloud Service]集成。
 
@@ -121,7 +211,7 @@ Adobe Commerce on Cloud的典型升级过程包括创建备份、克隆实例、
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 
