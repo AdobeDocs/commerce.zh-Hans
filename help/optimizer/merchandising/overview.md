@@ -2,7 +2,7 @@
 title: 促销概述
 description: 了解 [!DNL Adobe Commerce Optimizer]中的促销功能。
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
 source-git-commit: 17d1872321e664ca58a702b0948fd5e6d2f33202
 workflow-type: tm+mt
