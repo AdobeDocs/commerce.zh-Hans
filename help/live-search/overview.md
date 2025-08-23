@@ -41,7 +41,7 @@ ht-degree: 1%
 
 ### 按键入内容搜索
 
-当购物者在[!DNL Live Search]搜索[框中键入查询时，](storefront-popover.md)在[弹出框](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)中回复建议的产品和排名最前的搜索结果的缩略图图像。 当购物者单击建议或精选产品时，将显示[产品详细信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/storefront/storefront)页面。 弹出框页脚中的&#x200B;_查看所有_&#x200B;链接显示搜索结果页面。
+当购物者在[!DNL Live Search]搜索[框中键入查询时，](storefront-popover.md)在[弹出框](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search)中回复建议的产品和排名最前的搜索结果的缩略图图像。 当购物者单击建议或精选产品时，将显示[产品详细信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/storefront/storefront)页面。 弹出框页脚中的&#x200B;_查看所有_&#x200B;链接显示搜索结果页面。
 
 对于包含两个或更多字符的查询，[!DNL Live Search]返回“键入时搜索”结果。 对于部分匹配，每个单词的最大字符数为20。 查询中的字符数无法配置。 弹出框包括`name`、`sku`和`category_ids`字段。
 
