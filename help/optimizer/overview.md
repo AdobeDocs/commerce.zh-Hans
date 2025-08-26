@@ -2,11 +2,11 @@
 title: 什么是Adobe Commerce Optimizer？
 description: 了解 [!DNL Adobe Commerce Optimizer] 及其主要功能。
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 877f3c377715f204904eefe3b93d796084721aa7
+source-git-commit: 69c752322b01985a2eb55de69d4736d75f6bd60a
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 请观看以下视频，了解[!DNL Adobe Commerce Optimizer]的高级概述：
 
->[!VIDEO](https://video.tv.adobe.com/v/3450473?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## 谁从[!DNL Adobe Commerce Optimizer]中受益最大？
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 主要功能包括：
 
-- **第三方目录摄取** — 从任何第三方源(您现有的Commerce目录、PIM、ERP等)摄取目录数据。 您的目录数据直接摄取到促销服务层中，这是一个称为促销服务的SaaS组件，由目录视图和策略（目录视图和策略）提供支持。
+- **第三方目录摄取** — 从任何第三方源(您现有的Commerce目录、PIM、ERP等)摄取目录数据。 您的目录数据直接摄取到促销服务层中，这是一个称为促销服务的SaaS组件，由目录视图和策略提供支持。
 - **由目录视图和策略提供支持的促销服务** — 此解决方案是[!DNL Adobe Commerce Optimizer]的基础部分。 由目录视图和策略提供支持的促销服务是一种高度可扩展、灵活的目录数据模型，可解锁多品牌、多业务单元和多语言用例。 这些促销服务提供构建块，商家可以利用它大规模创建和管理目录。 在[!DNL Adobe Commerce Optimizer]内，您可以通过创建最能定义业务目标的目录视图和策略来管理您的目录。 此外，商家还可以提供个性化体验，通过产品发现、推荐&#x200B;和智能促销来促进流量和参与。
 - **之前和之后的量度** — 提供对商务计划性能的实时分析。 您可以查看特定KPI的结果之前和之后，并评估更改的影响和优化以获得更好的结果。 您可以在PDF中导出结果。
 - **由Edge Delivery提供支持的Commerce店面** — 通过Edge交付，您可以使用预建的具有集成商务功能的店面组件快速启动您的网站，这些组件包括产品列表页面、产品详细信息页面、购物车和结账。
