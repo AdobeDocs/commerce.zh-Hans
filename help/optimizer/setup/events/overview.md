@@ -3,7 +3,8 @@ title: 事件概述
 description: 了解 [!DNL Adobe Commerce Optimizer] 用于改进搜索和推荐的事件。
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
+source-git-commit: f12aff86957c2f8f1f830da6f481d28cd54e1f20
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -61,7 +62,7 @@ ht-degree: 0%
 | 添加到购物车的次数最多 | `page-view`<br>`add-to-cart` | 产品详细信息页面<br>产品列表页面<br>购物车<br>愿望清单 |
 | 查看了这个项目，也查看了那个项目 | `page-view`<br>`product-view` | 产品详细信息页面 |
 
-### 必需的报告面板事件
+#### 必需的报告面板事件
 
 需要一些事件来填充[搜索性能仪表板](../../manage-results/search-performance.md)
 
@@ -173,4 +174,4 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于推
 
 ## 支持
 
-如果您发现任何数据差异，或者如果推荐和搜索结果未按预期工作，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果您发现任何数据差异，或者如果推荐和搜索结果未按预期工作，请[提交支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
