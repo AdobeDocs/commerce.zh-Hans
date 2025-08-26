@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: fa3900de75ae36a3efccc7791b6345875b46148f
+source-git-commit: 728be19f73f19d9e229ae38fd5c171df74b963fb
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1522'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 103.4.10发行版
 
-![修复](../assets/fix.svg)修复了为某些动态创建的属性返回错误类型（`text`而不是`OBJECT`）的问题。 现在，可以始终如一地返回正确的类型信息，而无需手动进行重新同步或采取变通办法。<!--MDEE-1131-->
+![修复](../assets/fix.svg)修复了某些动态创建的属性返回了错误类型（`text`而不是`OBJECT`）的问题。 现在，可以始终如一地返回正确的类型信息，而无需手动进行重新同步或采取变通办法。<!--MDEE-1131-->
 ![修复](../assets/fix.svg)修复了由于LowStock库存提供程序中的错误而导致在部分同步期间产品数据收集失败的问题。 此修复确保可靠地导出产品数据，并且不会由于LowStock相关错误而跳过任何产品ID。<!--MDEE-1132-->
 
 ## 103.4.9发行版
