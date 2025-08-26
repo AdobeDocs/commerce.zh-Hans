@@ -3,16 +3,16 @@ title: 自定义自动匹配
 description: 了解自定义自动匹配对于具有复杂匹配逻辑或依赖第三方系统且无法将元数据填充到AEM Assets中的商户特别有用。
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: ff6affa5bcc4111e14054f3f6b3ce970619ca295
+source-git-commit: ee1dd902a883e5653a9fb8764fac708975c37091
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '323'
 ht-degree: 1%
 
 ---
 
 # 自定义自动匹配
 
-如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或者处理来自无法将元数据填充到AEM Assets中的第三方系统的资源。
+如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或者处理来自无法将元数据填充到AEM Assets中的第三方系统的资源。
 
 ## 配置自定义自动匹配
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## 自定义匹配器API端点
 
-当您使用[App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}生成自定义匹配程序应用程序时，该应用程序必须公开以下端点：
+当您使用[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}生成自定义匹配程序应用程序时，该应用程序必须公开以下端点：
 
 * **App Builder资源到产品URL**&#x200B;端点
 * **App Builder产品到资源URL**&#x200B;端点
@@ -76,8 +76,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 | 参数 | 数据类型 | 描述 |
 | --- | --- | --- |
-| `assetId` | 字符串 | 表示更新的资产ID |
-| `eventData` | 字符串 | 返回与`assetId`关联的数据有效负载 |
+| `assetId` | 字符串 | 表示更新的资产ID。 |
+| `eventData` | 字符串 | 返回与资产ID关联的数据有效负载。 |
 
 **响应**
 
@@ -136,22 +136,13 @@ exports.main = main;
 **请求**
 
 ```bash
-GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
+POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
 | 参数 | 数据类型 | 描述 |
 | --- | --- | --- |
 | `productSKU` | 字符串 | 表示更新的产品SKU。 |
-| `asset_matches` | 字符串 | 返回与特定`productSku`关联的所有资源。 |
-
-`asset_matches`参数包含以下属性：
-
-| 属性 | 数据类型 | 描述 |
-| --- | --- | --- |
-| `asset_id` | 字符串 | 表示更新的资产ID。 |
-| `asset_roles` | 字符串 | 返回所有可用的资源角色。 使用支持的[Commerce资源角色](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，如`thumbnail`、`image`、`small_image`和`swatch_image`。 |
-| `asset_format` | 字符串 | 提供资源的可用格式。 可能的值为`image`和`video`。 |
-| `asset_position` | 字符串 | 显示资源的位置。 |
+| `eventData` | 字符串 | 返回与产品SKU关联的数据有效负载。 |
 
 **响应**
 
@@ -161,12 +152,30 @@ GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail","image"],
+      "asset_position": 1,
+      "asset_format": image
     },
     {
       "asset_id": "{ASSET_ID_2}",
       "asset_roles": ["thumbnail"]
+      "asset_position": 2,
+      "asset_format": image     
     }
   ]
 }
 ```
+
+| 参数 | 数据类型 | 描述 |
+| --- | --- | --- |
+| `productSKU` | 字符串 | 表示更新的产品SKU。 |
+| `asset_matches` | 字符串 | 返回与特定产品SKU关联的所有资产。 |
+
+`asset_matches`参数包含以下属性：
+
+| 属性 | 数据类型 | 描述 |
+| --- | --- | --- |
+| `asset_id` | 字符串 | 表示更新的资产ID。 |
+| `asset_roles` | 字符串 | 返回所有可用的资源角色。 使用支持的[Commerce资源角色](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，如`thumbnail`、`image`、`small_image`和`swatch_image`。 |
+| `asset_format` | 字符串 | 提供资源的可用格式。 可能的值为`image`和`video`。 |
+| `asset_position` | 字符串 | 显示资源的位置。 |
