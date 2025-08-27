@@ -3,11 +3,11 @@ title: 快速入门
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 7a77cc79be9b6f835668b394909ea2325b642b03
+source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -38,24 +38,24 @@ ht-degree: 0%
    ![创建实例](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. 配置实例设置：
-   - **名称**：描述性名称（例如，“My Company Sandbox”）
+   - **实例名称**：描述性名称（例如，“My Company Sandbox”）
    - **描述**：用途的简短描述
-   - **地区**：选择您的首选地区
    - **环境类型**：从用于测试的&#x200B;**沙盒**&#x200B;环境开始
+   - **地区**：选择您的首选地区
 
 1. 单击&#x200B;**添加实例**。
 
-   Cloud Manager将更新以包含您的新实例。 有关访问和管理实例的详细信息，请参阅[管理实例](#manage-an-instance)。
+   Cloud Manager将更新以包含您的新实例。 有关访问和管理实例的详细信息，请参阅[管理实例](#manage-instances)。
 
 >[!NOTE]
 >
->沙盒实例仅限于北美地区。 创建后无法更改区域。
+>您只能在北美区域创建沙盒环境。 创建实例后，便无法更改区域。
 
 ### 步骤2. 设置环境
 
 创建实例后：
 
-1. 从Commerce Cloud Manager [管理您的实例](#manage-an-instance)。
+1. 从Commerce Cloud Manager [管理您的实例](#manage-instances)。
 1. 使用[用户管理指南](./user-management.md)配置用户访问权限。
 
 ### 步骤3. 添加示例数据（可选）
@@ -217,6 +217,6 @@ Adobe提供了一个GitHub存储库，其中包含示例数据和工具，以帮
 ### 获取帮助
 
 - **开发人员资源**： [开发人员文档](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-- **教程**： [Commerce Optimizer教程](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)
+- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **教程**： [Commerce Optimizer教程](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
