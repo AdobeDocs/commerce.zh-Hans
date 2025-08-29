@@ -3,7 +3,7 @@ title: '[!DNL Adobe Commerce as a Cloud Service]发行说明'
 description: 了解 [!DNL Adobe Commerce as a Cloud Service]中的最新功能和改进。
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User, Leader
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 source-git-commit: 776b2a2e2db649d126fdc67639c784ad3f1be576
 workflow-type: tm+mt
 source-wordcount: '126'
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 发行说明
 
-以下发行说明包含[!DNL Adobe Commerce as a Cloud Service]的更新。 有关其他产品的发行信息，请参阅[Adobe Commerce Optimizer](../optimizer/release-notes.md)或[Adobe Commerce内部部署和Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)。
+以下发行说明包含[!DNL Adobe Commerce as a Cloud Service]的更新。 有关其他产品的发行信息，请参阅[Adobe Commerce Optimizer](../optimizer/release-notes.md)或[Adobe Commerce内部部署和Adobe Commerce on Cloud](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/notes/overview)。
 
 ## 2025年8月
 
