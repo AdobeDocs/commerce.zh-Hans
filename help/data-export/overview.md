@@ -25,9 +25,9 @@ SaaS数据导出是作为PHP扩展提供的。 它支持多种方法来启动和
 
 - **从Admin或命令行手动同步**
 
-   - Commerce管理员中的[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)提供了同步状态的图形视图。 您可以使用仪表板对所有源执行完全重新同步（_完全同步_）。 但是，Adobe建议仅在首次将Adobe Commerce连接到Commerce服务时执行完全同步。 请参阅[同步进程](data-synchronization.md)。
+   - Commerce管理员中的[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard)提供了同步状态的图形视图。 您可以使用仪表板对所有源执行完全重新同步（_完全同步_）。 但是，Adobe建议仅在首次将Adobe Commerce连接到Commerce服务时执行完全同步。 请参阅[同步进程](data-synchronization.md)。
 
-   - [Adobe Commerce命令行工具](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供了同步特定馈送的命令，并包含用于自定义馈送处理的其他选项。
+   - [Adobe Commerce命令行工具](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供了同步特定馈送的命令，并包含用于自定义馈送处理的其他选项。
 
 - **与cron作业的自动同步**
 
