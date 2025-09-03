@@ -23,7 +23,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>您现在可以使用<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">站点创建者工具</a>来设置店面，而无需使用CLI。</p>
+      <td><p>您现在可以使用<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/storefront">站点创建者工具</a>来设置店面，而无需使用CLI。</p>
 </td>
       <td>
         重大更新
@@ -45,7 +45,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了有关如何将<a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">自定义属性添加到配置文件</a>的主题。</p>
+      <td><p>添加了有关如何将<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/data-connection/customize-data/custom-identities">自定义属性添加到配置文件</a>的主题。</p>
 </td>
       <td>
         新主题
