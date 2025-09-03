@@ -1,5 +1,5 @@
 ---
-source-git-commit: 757c1f430346ef82cba0f708cdd17580d8e6dba9
+source-git-commit: c7c9c19936ed1db8e262daaf391bd2d168b91741
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 3%
@@ -23,12 +23,12 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>缺少主要更新PR #197中的新增内容：分配给jhoover的“删除基架”(https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/197)</p>
+      <td><p>您现在可以使用<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">站点创建者工具</a>来设置店面，而无需使用CLI。</p>
 </td>
       <td>
         重大更新
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf3954af26fba0aa943261a0673166c0537e692e">提交</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf3954af26fba0aa943261a0673166c0537e692e">提交</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>缺少新主题PR #158中的新增内容：分配给emarr的“添加有关自定义身份的新主题”(https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/158)</p>
+      <td><p>添加了有关如何将<a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">自定义属性添加到配置文件</a>的主题。</p>
 </td>
       <td>
         新主题
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/403b15368c52f3965e65a9175c82c2f6cd1773bb">提交</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/403b15368c52f3965e65a9175c82c2f6cd1773bb">提交</a></td>
     </tr>
   </tbody>
 </table>
@@ -72,7 +72,7 @@ ht-degree: 3%
       <td>
         反馈
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad0c36006a01491aee1ca1643c6a3ab63f39f7e4">提交</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ad0c36006a01491aee1ca1643c6a3ab63f39f7e4">提交</a></td>
     </tr>
   </tbody>
 </table>
