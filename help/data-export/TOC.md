@@ -25,4 +25,4 @@ ht-degree: 4%
    - [动态添加产品属性](add-attribute-dynamically.md)
    - [添加税分类、属性集和库存元数据](add-tax-attribute-set-inventory-attributes.md)
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)
