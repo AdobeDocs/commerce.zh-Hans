@@ -3,7 +3,7 @@ title: '[!DNL Manage the Data Export extension]'
 description: 了解如何升级 [!DNL Data Export] 扩展以及删除或禁用不需要的数据导出服务。
 role: Admin, Developer
 exl-id: 94702995-d272-47b9-9560-198eee3250a6
-source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
+source-git-commit: c7a08cabe07ec94e31e9f4c27448ee0862e62cf2
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -36,7 +36,7 @@ bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCa
 1. 从命令行中，使用编辑器更新模块：
 
    ```bash
-   composer require magento/module-saas-price:103.3.1 --with-all-dependencies
+   composer require magento/commerce-data-export:103.4.11 --with-all-dependencies
    ```
 
-如果将Commerce实例部署在云基础架构上，请从云项目目录更新扩展。 请参阅&#x200B;_云基础架构上的Adobe Commerce指南_&#x200B;中的[升级扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
+如果将Commerce实例部署在云基础架构上，请从云项目目录更新扩展。 请参阅[云基础架构上的Adobe Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)中的&#x200B;_升级扩展_。

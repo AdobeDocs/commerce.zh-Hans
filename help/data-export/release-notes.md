@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 728be19f73f19d9e229ae38fd5c171df74b963fb
+source-git-commit: 6abfeca68ab67fb11493f78440e09408479e1535
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1635'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ ht-degree: 0%
 >SaaS数据导出扩展是随“实时搜索”、“产品推荐”和“目录服务”一起自动安装的模块的集合。 您可以使用编辑器检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 当前主要版本
+
+## 103.4.11发行版
+
+![新](../assets/new.svg) [!BADGE 仅PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}
+为其他产品属性(包括产品信息源中Commerce产品配置的税类、属性集和库存数据)添加支持。 如果客户希望在产品导出信息源中包含这些属性，则必须将额外产品属性模块添加到其Adobe Commerce项目。 请参阅[添加税分类、属性集和库存属性](add-tax-attribute-set-inventory-attributes.md)。<!--MDEE-1135-->
+![修复](../assets/fix.svg)解决了在完整产品索引期间发生错误时，导致已删除产品更新的同步不正确的问题。 现在，即使索引过程中发生错误，所有产品删除仍会正确同步。<!--MDEE-1144-->
 
 ## 103.4.10发行版
 

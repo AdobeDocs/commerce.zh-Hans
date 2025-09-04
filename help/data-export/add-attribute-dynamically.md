@@ -3,7 +3,7 @@ title: 动态添加产品属性
 description: 了解如何在数据同步过程中动态地将自定义产品属性添加到数据导出馈送。
 role: Admin, Developer
 exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
-source-git-commit: bf45670a0bc5fb02dd229a9e3d7af7f2676c5a1f
+source-git-commit: 37d5699315e34f1504602090fae5201ee51cf470
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 1. 创建指向以下提供程序`\Magento\CatalogDataExporter\Model\Provider\ProductMetadata`的插件。
 
-   检查`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`中的`ProductAttributeMetadata`以了解必填字段。
+   检查`ProductAttributeMetadata`中的`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`以了解必填字段。
 
    ```php
     <?php
@@ -176,3 +176,4 @@ ht-degree: 0%
    ```
    bin/magento saas:resync --feed=productattributes
    ```
+
