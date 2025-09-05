@@ -5,7 +5,7 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: c7c9c19936ed1db8e262daaf391bd2d168b91741
+source-git-commit: ac32b6eb65d9e44bcbe976ab462814678f200639
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和本地项目上的Adobe Commerce。"}
+         <strong>[!DNL Data Connection]</strong> [！BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和本地项目上的Adobe Commerce。"}
          </a>
       </div>
       <p>
@@ -130,7 +130,7 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce服务连接器</strong> [!BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce。"}
+         <strong>Commerce服务连接器</strong> [！BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce。"}
          </a>
       </div>
       <p>
@@ -184,11 +184,11 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="监控数据同步" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>数据管理仪表板</strong>
          </a>
       </div>
@@ -204,4 +204,4 @@ Adobe提供Commerce服务、集成服务和数据工具的集合，以帮助商�
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2025-08-29 15:18:45 -->
+<!-- Last updated from includes: 2025-09-03 16:10:23 -->
