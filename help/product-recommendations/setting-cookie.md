@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 处理Cookie限制
 
-Adobe Commerce和Magento Open Source都会在数据存储在浏览器Cookie中之前请求同意。 有关详细信息，请参阅[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)。
+Adobe Commerce和Magento Open Source都会在数据存储在浏览器Cookie中之前请求同意。 有关详细信息，请参阅[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hans)。
 
 ## 产品推荐如何处理Cookie限制
 
