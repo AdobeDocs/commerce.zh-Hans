@@ -1,8 +1,9 @@
 ---
 title: 设置
 description: 配置 [!DNL Adobe Commerce Optimizer]的设置。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
+source-git-commit: 652681cc9aef416040ccd470d04bf2540fe97262
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -22,7 +23,7 @@ ht-degree: 0%
 您可以指定价格范围组的数量以及价格值在它们之间的分配方式。 每个价格范围与上一组价目表各一重叠。 例如，间隔为20的五个组将创建以下价格范围：0-20、20-40、40-60、60-80和>80。 如果目录中没有足够的产品来填满所有定义的范围，则会相应地调整可用组的显示。 例如：0-20、60-80、>80。
 
 1. 在&#x200B;**设置**&#x200B;工作区中，选择&#x200B;**[!UICONTROL Search]**，然后在&#x200B;**价格彩块化**&#x200B;下执行以下操作：
-   - 输入&#x200B;**选择的数量**&#x200B;或可用的价格分组。 最多可以定义50个价格分组。
+   - 输入&#x200B;**选择的数量**&#x200B;或可用的价格分组。 最多可以定义100个价格分组。
    - 输入每个组的&#x200B;**间隔值**&#x200B;或价格范围。 最大值为40,000,000。
 1. 单击&#x200B;**保存**。
 
@@ -32,7 +33,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |--- |--- |
-| 选择数量 | 指定可在店面中用作搜索过滤器的价格范围分组的数量。 默认值：8，最大值：50 |
+| 选择数量 | 指定可在店面中用作搜索过滤器的价格范围分组的数量。 默认值：8，最大值：100 |
 | 间隔值 | 指定每个组的价格范围间隔。 例如，间隔值为20的五个选择将创建0-20、20-40、40-60、60-80和>80的五个分组。 默认值：5，最大值：40,000,000 |
 
 ## 语言
