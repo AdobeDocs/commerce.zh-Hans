@@ -4,9 +4,9 @@ description: 了解如何创建自定义事件以将您的Adobe Commerce数据�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
+source-git-commit: 4e8cf0ad3f8f94d4f59bc8d78a44f4b3e86cbc3e
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,9 @@ const mse = window.magentoStorefrontEvents;
 mse.publish.productPageView(customCtx);
 ```
 
-### 示例1 — 添加`productCategories`
+### 示例1
+
+此示例在发布事件时添加自定义上下文。
 
 ```javascript
 magentoStorefrontEvents.publish.productPageView({
@@ -107,7 +109,9 @@ magentoStorefrontEvents.publish.productPageView({
 });
 ```
 
-### 示例2 — 在发布事件之前添加自定义上下文
+### 示例2
+
+此示例在发布事件之前添加自定义上下文。
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -129,7 +133,9 @@ mse.context.setCustom({
 mse.publish.productPageView();
 ```
 
-### 示例3 — 发布者中设置的自定义上下文覆盖之前在Adobe客户端数据层中设置的自定义上下文。
+### 示例3
+
+此示例在发布者中设置自定义上下文，并覆盖之前在Adobe客户端数据层中设置的自定义上下文。
 
 在此示例中，`pageView`事件在&#x200B;**字段中将具有**&#x200B;自定义页面名称2`web.webPageDetails.name`。
 
@@ -153,7 +159,9 @@ mse.publish.pageView({
 });
 ```
 
-### 示例4 — 使用具有多个产品的事件将自定义上下文添加到`productListItems`
+### 示例4
+
+此示例将自定义上下文添加到具有多个产品的`productListItems`事件。
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -174,6 +182,22 @@ mse.context.setCustom({
 });
 
 mse.publish.shoppingCartView();
+```
+
+基于Luma的商店：
+
+基于Luma的存储以本机方式实施发布事件，因此您可以通过扩展`customContext`来设置自定义数据。
+
+例如：
+
+```javascript
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name'
+    },
+  },
+});
 ```
 
 >[!NOTE]
