@@ -2,16 +2,16 @@
 title: Facet
 description: '[!DNL Live Search]个Facet使用属性值的多个维度作为搜索条件。'
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: 31223f4196187e4960c5bec0e90aa55cc4e0ac9a
+source-git-commit: 269f68868f5df14b1ca3709c01f6c17e6775df05
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
 
 # Facet
 
-分面是一种高性能筛选方法，它使用多个属性值的维度作为搜索条件。 分面搜索类似，但比标准[分层导航](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=zh-Hans)更“智能”。 可用筛选器的列表由搜索结果中返回的产品的[可筛选属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=zh-Hans#filterable-attributes)确定。
+分面是一种高性能筛选方法，它使用多个属性值的维度作为搜索条件。 分面搜索类似，但比标准[分层导航](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html)更“智能”。 可用筛选器的列表由搜索结果中返回的产品的[可筛选属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes)确定。
 
 [!DNL Live Search]使用`productSearch`查询，该查询返回刻面和[!DNL Live Search]特有的其他数据。 有关代码示例，请参阅开发人员文档中的[`productSearch`查询](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果将产品类别定义为Facet，则Facet将显示类别和子类别。
+>如果将产品类别定义为Facet，则Facet将显示类别和子类别的`url_path`。
 >
 >![类别Facet](assets/facet-category.png)
 
@@ -37,8 +37,8 @@ ht-degree: 0%
 
 | 设置 | 描述 |
 |--- |--- |
-| [类别显示设置](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=zh-Hans) | 锚点 — `Yes` |
-| [属性属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hans) | [目录输入类型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=zh-Hans) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch`（仅限构件）、`Text swatch`（仅限构件） |
+| [类别显示设置](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | 锚点 — `Yes` |
+| [属性属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [目录输入类型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch`（仅限构件）、`Text swatch`（仅限构件） |
 | 属性店面属性 | 在搜索结果分层导航中使用 — `Yes` |
 
 ## Facet聚合
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 默认属性值
 
-以下产品属性具有[店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hans)，这些属性由[!DNL Live Search]使用并默认启用。
+以下产品属性具有[店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)，这些属性由[!DNL Live Search]使用并默认启用。
 
 | 属性 | 店面属性 | 属性 |
 |---|---|---|
