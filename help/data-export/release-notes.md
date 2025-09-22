@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 6abfeca68ab67fb11493f78440e09408479e1535
+source-git-commit: 4a25bcb82f98eb44c83a186caa6e5d6d664851d4
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1669'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,13 @@ ht-degree: 0%
 
 ## 当前主要版本
 
+## 103.4.12发行版
+
+![修复](../assets/fix.svg)修复了在存在客户组定价时产品详细信息页面(PDP)不显示目录价格规则折扣的问题。 PDP现在正确显示最低价格。<!--MDEE-1158-->
+
 ## 103.4.11发行版
 
-![新](../assets/new.svg) [!BADGE 仅PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}
+![新](../assets/new.svg) [!BADGE 仅PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}
 为其他产品属性(包括产品信息源中Commerce产品配置的税类、属性集和库存数据)添加支持。 如果客户希望在产品导出信息源中包含这些属性，则必须将额外产品属性模块添加到其Adobe Commerce项目。 请参阅[添加税分类、属性集和库存属性](add-tax-attribute-set-inventory-attributes.md)。<!--MDEE-1135-->
 ![修复](../assets/fix.svg)解决了在完整产品索引期间发生错误时，导致已删除产品更新的同步不正确的问题。 现在，即使索引过程中发生错误，所有产品删除仍会正确同步。<!--MDEE-1144-->
 
