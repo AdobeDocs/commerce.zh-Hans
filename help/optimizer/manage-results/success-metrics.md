@@ -1,7 +1,7 @@
 ---
 title: 成功量度
 description: 成功量度可将insight纳入 [!DNL Adobe Commerce Optimizer] 存储的关键性能量度。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 source-git-commit: 497f5e887d987435d57a340ef16fcfa561edc545
 workflow-type: tm+mt
