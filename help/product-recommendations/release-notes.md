@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations]发行说明'
 description: Adobe Commerce中 [!DNL Product Recommendations] 的最新发行信息。
 feature: Services, Recommendations, Release Notes
 exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
-source-git-commit: ac1f3497292cc586810eb44a408f7d4d7088a96d
+source-git-commit: 6b74580a3135322f222b8cfa5c51277a34e6bb83
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1833'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,15 @@ ht-degree: 0%
 ![修复](../assets/fix.svg)修复和改进
 ![错误](../assets/bug.svg)已知问题
 
-请参阅开发人员文档，以[了解产品支持](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/product-availability)。
+请参阅开发人员文档，以[了解产品支持](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 托管服务更新
 
 这些说明描述了在版本化版本之外发布或发现的更新或已知问题，或对托管服务的改进。
+
+_2025年10月1日_
+
+![新](../assets/new.svg)已添加名为`ds-logged-in`的新数据存储密钥供客户登录数据。
 
 _2025年1月31日_
 
@@ -126,7 +130,7 @@ _2024年2月22日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) [!DNL Catalog Sync Dashboard]现在是[[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard)。 此改版后的仪表板提供[!DNL Product Recommendations]、[!DNL Live Search]和[!DNL Catalog Service]的数据流分析。
+![新](../assets/new.svg) [!DNL Catalog Sync Dashboard]现在是[[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)。 此改版后的仪表板提供[!DNL Product Recommendations]、[!DNL Live Search]和[!DNL Catalog Service]的数据流分析。
 ![修复](../assets/fix.svg)修复了导致[!DNL Product Recommendations]出现签出错误的问题。
 
 +++5.0.0及更早版本
@@ -153,7 +157,7 @@ _2023年3月20日_
 
 ![新](../assets/new.svg)已更新[!DNL Product Recommendations]以支持Adobe Commerce 2.4.6。
 ![新建](../assets/new.svg)这是一个主要版本版本。 [编辑](install-configure.md#update)项目的根`composer.json`文件。
-![新](../assets/new.svg) [!DNL Product Recommendations]现在支持Commerce中的完整[Inventory management](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/introduction)功能(以前称为“多Source清单”或MSI)。 要启用完全支持，您必须[将](install-configure.md#update)依赖项模块`commerce-data-export`更新为版本102.2.0+。
+![新](../assets/new.svg) [!DNL Product Recommendations]现在支持Commerce中的完整[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能(以前称为“多Source清单”或MSI)。 要启用完全支持，您必须[将](install-configure.md#update)依赖项模块`commerce-data-export`更新为版本102.2.0+。
 
 ### magento/product-recommendations的4.0.1
 
@@ -190,7 +194,7 @@ _2023年3月20日_
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![新](../assets/new.svg)已在[中添加](onboarding.md#b2bsupport)B2B支持[!DNL Product Recommendations]
-![新](../assets/new.svg)已通过命令行将目录数据[同步到Commerce服务的新馈送添加到](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/data-services/catalog-sync)同步
+![新](../assets/new.svg)已通过命令行将目录数据[同步到Commerce服务的新馈送添加到](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)同步
 
 ### 3.3.3的magento/product-recommendations
 
@@ -230,7 +234,7 @@ _2023年3月20日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
-![新](../assets/new.svg)已将Magento服务重命名为[Commerce服务](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/integration-services/saas)，并提高了管理员的可用性
+![新](../assets/new.svg)已将Magento服务重命名为[Commerce服务](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)，并提高了管理员的可用性
 
 ### 3.2.4的magento/product-recommendations
 
@@ -251,7 +255,7 @@ _2023年3月20日_
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![新](../assets/new.svg)添加了在创建时[预览推荐结果](create.md)的功能。 这可能需要您将模块更新到最新版本。
-![新](../assets/new.svg)添加了[从管理员](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/data-services/catalog-sync)监视和管理目录同步进程的功能。
+![新](../assets/new.svg)添加了[从管理员](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)监视和管理目录同步进程的功能。
 ![新](../assets/new.svg)添加了[筛选器](filters.md)以控制推荐中显示的产品。
 ![New](../assets/new.svg)已添加[视觉相似度](type.md#visualsim)推荐类型。
 
@@ -265,7 +269,7 @@ _2023年3月20日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
-![新](../assets/new.svg)已添加通过命令行[将您的目录](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/data-services/catalog-sync)重新同步到SaaS服务的功能。
+![新](../assets/new.svg)已添加通过命令行[将您的目录](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)重新同步到SaaS服务的功能。
 ![新](../assets/new.svg)添加了对数据库表前缀的支持
 ![修复](../assets/fix.svg)删除了PHP 7.1支持
 
@@ -292,7 +296,7 @@ _2023年3月20日_
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![修复](../assets/fix.svg)修复了在目录导出期间可能发生的“无法检索产品选项数据”错误。
-![修复](../assets/fix.svg) _仪表板上_ Revenue _[!DNL Product Recommendations]_&#x200B;列中的货币符号现在正确反映了配置的基本货币。
+![修复](../assets/fix.svg) _仪表板上_ Revenue _[!DNL Product Recommendations]_列中的货币符号现在正确反映了配置的基本货币。
 
 ### 3.0.4的magento/product-recommendations
 
@@ -334,7 +338,7 @@ _2023年3月20日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
-![新](../assets/new.svg)页面生成器支持。 通过页面生成器集成，您可以将推荐单元准确并粒度地放置在页面生成器创作内容上的任意位置。 您还可以设置标题和推荐单位本身的样式。 有关详细信息，请转到[页面生成器](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)。
+![新](../assets/new.svg)页面生成器支持。 通过页面生成器集成，您可以将推荐单元准确并粒度地放置在页面生成器创作内容上的任意位置。 您还可以设置标题和推荐单位本身的样式。 有关详细信息，请转到[页面生成器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)。
 
 ### 2.0.0的magento/product-recommendations
 
@@ -349,4 +353,4 @@ _2023年3月20日_
 要了解有关[!DNL Product Recommendations]和[!DNL Product Recommendations]开发的更多信息：
 
 * [用户指南](overview.md)
-* [开发人员文档](https://experienceleague.adobe.com/zh-hans/docs/commerce/product-recommendations/developer/development-overview)
+* [开发人员文档](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/development-overview)
