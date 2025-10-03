@@ -3,16 +3,16 @@ title: '[!DNL Manage the Data Export extension]'
 description: 了解如何升级 [!DNL Data Export] 扩展以及删除或禁用不需要的数据导出服务。
 role: Admin, Developer
 exl-id: 94702995-d272-47b9-9560-198eee3250a6
-source-git-commit: c7a08cabe07ec94e31e9f4c27448ee0862e62cf2
+source-git-commit: ea722d5e427e5bf536b9f2d2322f0dabb2981c77
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
 
 # 管理SaaS数据导出扩展
 
-SaaS服务的[!DNL data export]扩展是启用Adobe Commerce与连接的Commerce服务之间的数据收集和同步的模块的集合。
+SaaS服务的[[!DNL data export] 扩展](https://github.com/magento/commerce-data-export)是启用Adobe Commerce与连接的Commerce服务之间的数据收集和同步的模块的集合。
 
 Adobe Commerce Services扩展的中继中包含特定模块，例如
 作为[实时搜索](/help/live-search/overview.md)、[产品推荐](/help/product-recommendations/overview.md)和[目录服务](/help/catalog-service/overview.md)。 如果您使用这些服务，则无需单独安装即可启用Data Export扩展。
@@ -36,7 +36,7 @@ bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCa
 1. 从命令行中，使用编辑器更新模块：
 
    ```bash
-   composer require magento/commerce-data-export:103.4.11 --with-all-dependencies
+   composer require magento/module-data-exporter:103.0.4 --with-all-dependencies
    ```
 
-如果将Commerce实例部署在云基础架构上，请从云项目目录更新扩展。 请参阅[云基础架构上的Adobe Commerce指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)中的&#x200B;_升级扩展_。
+如果将Commerce实例部署在云基础架构上，请从云项目目录更新扩展。 请参阅[云基础架构上的Adobe Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)中的&#x200B;_升级扩展_。
