@@ -1,7 +1,7 @@
 ---
-source-git-commit: 130bf80114ce8b699457b752f93b489e9a401e83
+source-git-commit: 8ba935c4e8c39f0897bf2c031ff07be178b2a91d
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '193'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management">用户管理</a>现在要求所有开发人员和产品管理员首先添加用户角色。</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">用户管理</a>现在要求所有开发人员和产品管理员首先添加用户角色。</p>
 </td>
       <td>
         重大更新
@@ -45,7 +45,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已为Payment Services v2.12.2发布<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/release-notes">发行说明</a>。</p>
+      <td><p>已为Payment Services v2.12.2发布<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -67,7 +67,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已将AEM Assets设置信息添加到Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management">用户管理</a>页面。</p>
+      <td><p>已将AEM Assets设置信息添加到Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">用户管理</a>页面。</p>
 </td>
       <td>
         重大更新
@@ -75,7 +75,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/acce1aad405e74b1171faddf7f0d6681bd0a048d">提交</a></td>
     </tr>
     <tr>
-      <td><p>向Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/getting-started">快速入门</a>页面添加了基于角色的任务和工作流信息</p>
+      <td><p>向Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/getting-started">快速入门</a>页面添加了基于角色的任务和工作流信息</p>
 </td>
       <td>
         新主题
@@ -97,7 +97,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了关于可选<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">额外产品属性模块</a>的文档。 在Adobe Commerce环境中安装此模块后，数据导出过程会自动将税类、属性集和库存元数据从Commerce产品配置导出到<code class="language-plaintext highlighter-rouge">products</code>和<code class="language-plaintext highlighter-rouge">product attributes</code>源。</p>
+      <td><p>添加了关于可选<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">额外产品属性模块</a>的文档。 在Adobe Commerce环境中安装此模块后，数据导出过程会自动将税类、属性集和库存元数据从Commerce产品配置导出到<code class="language-plaintext highlighter-rouge">products</code>和<code class="language-plaintext highlighter-rouge">product attributes</code>源。</p>
 </td>
       <td>
         新主题
@@ -119,56 +119,12 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>您现在可以使用<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/storefront">站点创建者工具</a>来设置店面，而无需使用CLI。</p>
+      <td><p>您现在可以使用<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">站点创建者工具</a>来设置店面，而无需使用CLI。</p>
 </td>
       <td>
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf3954af26fba0aa943261a0673166c0537e692e">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025年8月7日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>添加了有关如何将<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/data-connection/customize-data/custom-identities">自定义属性添加到配置文件</a>的主题。</p>
-</td>
-      <td>
-        新主题
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/403b15368c52f3965e65a9175c82c2f6cd1773bb">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025年8月6日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>添加了关于在使用Adobe Commerce as a Cloud Service店面基架后配置店面的扩展指南。</p>
-</td>
-      <td>
-        反馈
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ad0c36006a01491aee1ca1643c6a3ab63f39f7e4">提交</a></td>
     </tr>
   </tbody>
 </table>
