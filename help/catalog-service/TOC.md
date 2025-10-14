@@ -14,7 +14,7 @@ ht-degree: 10%
 # Adobe Commerce的[!DNL Catalog Service] {#catalog-service}
 
 - [指南概述](guide-overview.md)
-- [ [!DNL Catalog Service]简介](overview.md)
+- [&#x200B; [!DNL Catalog Service]简介](overview.md)
 - [安装](installation.md)
 - [开始使用 [!DNL Catalog Service]](get-started.md)
 - [检索目录数据](graphql-queries.md)

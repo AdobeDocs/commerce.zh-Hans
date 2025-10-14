@@ -35,7 +35,7 @@ ht-degree: 0%
 
 * **Standard** — 付款选项（快速结帐）（PayPal信用卡和借记卡）的子集适用于其他受支持的国家/地区。 [信用卡字段](#credit-card-fields)和[Apple Pay](#apple-pay-button)不适用于此入门培训选项。 在新用户引导以启用实时支付时，选择[标准新用户引导选项](../payment-services/production.md#standard-onboarding)。
 
-有关完成Advanced和Standard入门的信息，请参阅[为生产启用 [!DNL Payment Services] ](../payment-services/production.md#complete-merchant-onboarding)。
+有关完成Advanced和Standard入门的信息，请参阅[为生产启用 [!DNL Payment Services] &#x200B;](../payment-services/production.md#complete-merchant-onboarding)。
 
 ## [!UICONTROL Credit Card Fields]
 

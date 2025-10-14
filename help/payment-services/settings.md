@@ -30,7 +30,7 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
 
-1. 单击&#x200B;**[!UICONTROL Settings]**。 有关详细信息，请参阅[ [!DNL Payment Services] 主页](payments-home.md)简介。
+1. 单击&#x200B;**[!UICONTROL Settings]**。 有关详细信息，请参阅[&#x200B; [!DNL Payment Services] 主页](payments-home.md)简介。
 
    ![React设置视图](assets/react-settings-view.png){width="500" zoomable="yes"}
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 您可以将[!UICONTROL Soft Descriptor]添加到您的网站或单个商店视图配置。 客户交易银行对帐单上显示软描述符。 例如，如果您有多个商店/品牌/目录，则可以通过将自定义文本添加到[!UICONTROL Soft Descriptor]字段来轻松地在这些商店/品牌/目录之间进行描述。
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
-1. 单击&#x200B;**[!UICONTROL Settings]**。 有关详细信息，请参阅[ [!DNL Payment Services] 主页](payments-home.md)简介。
+1. 单击&#x200B;**[!UICONTROL Settings]**。 有关详细信息，请参阅[&#x200B; [!DNL Payment Services] 主页](payments-home.md)简介。
 1. 在&#x200B;**[!UICONTROL Scope]**&#x200B;下拉菜单中选择要为其创建软描述符的网站或商店视图。 对于初始设置，将其保留为&#x200B;**[!UICONTROL Default]**&#x200B;以设置默认值。
 1. 在文本字段中添加自定义文本（最多22个字符），替换`Soft descriptor`。
 1. 单击&#x200B;**[!UICONTROL Save]**。
@@ -90,7 +90,7 @@ ht-degree: 0%
 现在您已经为网站启用了[!UICONTROL Payment Services]，您可以更改付款功能和店面显示的默认设置。
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
-1. 单击&#x200B;**[!UICONTROL Settings]**。 有关详细信息，请参阅[ [!DNL Payment Services] 主页](payments-home.md)简介。
+1. 单击&#x200B;**[!UICONTROL Settings]**。 有关详细信息，请参阅[&#x200B; [!DNL Payment Services] 主页](payments-home.md)简介。
 1. 按照以下部分配置[信用卡](#credit-card-fields)、[付款按钮](#payment-buttons)和[按钮样式](#button-style)的付款选项。
 
 ### 信用卡字段
@@ -189,7 +189,7 @@ _[!UICONTROL Credit Card Fields]_&#x200B;设置为信用卡或借记卡支付方
 
      >[!NOTE]
      >
-     > 要使用Apple Pay，您[必须拥有Apple沙盒测试者帐户](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)（包含虚假信用卡和帐单信息）才能对其进行测试。 当您准备好在沙盒&#x200B;_或_&#x200B;生产模式下使用Apple Pay时，完成任何[测试和验证](test-validate.md#test-in-sandbox-environment)后，向[ [!DNL Apple Pay]完成](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain)自助注册（_仅注册活动域_&#x200B;部分）并为[!DNL Payment Services]中的商店配置它。
+     > 要使用Apple Pay，您[必须拥有Apple沙盒测试者帐户](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)（包含虚假信用卡和帐单信息）才能对其进行测试。 当您准备好在沙盒&#x200B;_或_&#x200B;生产模式下使用Apple Pay时，完成任何[测试和验证](test-validate.md#test-in-sandbox-environment)后，向[&#x200B; [!DNL Apple Pay]完成](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain)自助注册（_仅注册活动域_&#x200B;部分）并为[!DNL Payment Services]中的商店配置它。
 
      当您打开/关闭付款按钮或PayPal Pay Later消息的可见性时，“设置”页面底部会显示该配置的可视预览。
 
