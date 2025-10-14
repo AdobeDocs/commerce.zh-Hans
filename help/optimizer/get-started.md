@@ -3,11 +3,11 @@ title: 快速入门
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: c27b2a8c7dffdcc5d5195cf809d5b475f3e01059
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 1. 导航到&#x200B;**Commerce** > **Commerce Cloud Manager**。
 1. 单击&#x200B;**添加实例** > **Commerce Optimizer**。
 
-   ![创建实例](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
+   用于创建Commerce Optimizer环境的![Adobe Commerce Cloud Manager添加实例屏幕](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. 配置实例设置：
    - **实例名称**：描述性名称（例如，“My Company Sandbox”）
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer]设置和管理依赖三个关键角色。 每个角色都有特定的任务和责任：
 
-![高级工作流](./assets/high-level-workflow.png){zoomable="yes"}
+![适用于Adobe Commerce Optimizer设置的基于角色的工作流，其中显示管理员、开发人员和用户任务](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### 管理员任务
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 登录后，功能板显示组织中可用的所有Commerce产品实例。
 “产品”列指示为实例配置的Commerce应用程序。
 
-![实例搜索和筛选器](./assets/search-filter-instances.png){zoomable="yes"}
+![显示Adobe Commerce Cloud产品实例的搜索和筛选选项的功能板](./assets/search-filter-instances.png){zoomable="yes"}
 
 使用过滤器和搜索工具按创建日期、区域、创建者、产品类型、环境或状态快速查找特定实例。
 
@@ -133,20 +133,20 @@ ht-degree: 0%
 
    实例下拉列表列出了组织中可用的所有Optimizer实例。 选择要查看的实例。
 
-   ![实例切换器](./assets/context-switcher.png){zoomable="yes"}
+   用于选择Adobe Commerce Optimizer环境的![实例切换器下拉列表](./assets/context-switcher.png){zoomable="yes"}
 
 ### 获取实例详细信息
 
 单击实例名称旁边的信息图标可查看实例详细信息。
 
-![实例详细信息](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+显示端点和实例ID的![Adobe Commerce Optimizer实例详细信息面板](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 请注意以下关键信息：
 
 - **GraphQL端点**，以使用促销API检索Commerce目录数据
 - 使用REST API进行数据摄取的&#x200B;**目录服务终结点**
 - **Commerce Optimizer URL**&#x200B;以访问[!DNL Adobe Commerce Optimizer]应用程序
-- **实例ID**&#x200B;标识该实例的唯一租户ID
+- **实例ID**：标识该实例的唯一租户ID
 
 如果您是开发人员，则需要这些详细信息来设置开发环境并连接到[!DNL Adobe Commerce Optimizer] API。
 
@@ -217,6 +217,6 @@ Adobe提供了一个GitHub存储库，其中包含示例数据和工具，以帮
 ### 获取帮助
 
 - **开发人员资源**： [开发人员文档](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-- **教程**： [Commerce Optimizer教程](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)
+- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **教程**： [Commerce Optimizer教程](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

@@ -1,8 +1,9 @@
 ---
 title: 创建和管理推荐
 description: 了解如何创建和管理推荐。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
+source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -135,7 +136,7 @@ _推荐类型_
 >
 >指标可能永远不会达到100%。
 
-依赖目录数据的推荐类型的就绪指示器百分比变化不大，因为商人的目录变化不频繁。 但是，基于购物者行为数据的推荐类型的就绪指示器百分比可能会经常更改，具体取决于购物者的日常活动。
+依赖目录数据的推荐类型的就绪指示器百分比变化不大，因为商人的目录变化不频繁。 但是，基于购物者行为数据的推荐类型的就绪指示器百分比可能会经常更改，具体取决于每日购物者活动。
 
 #### 如果就绪指示器百分比很低，该怎么办
 
