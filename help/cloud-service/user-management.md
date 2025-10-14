@@ -2,11 +2,11 @@
 title: 用户管理
 description: 了解如何管理 [!DNL Adobe Commerce as a Cloud Service]中的用户。
 exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Admin
-source-git-commit: 00d31ca7e4e81ecbc34373ce95b1256a7ae012db
+source-git-commit: b18f2017d8e7751d2a0d4cd38b690c273e36c7bd
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 >[!TIP]
 >
->要同时添加多个用户，您可以执行[批量CSV上传](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html){target="_blank"}。
-> 
-> 您还可以通过创建[用户组](https://helpx.adobe.com/cn/enterprise/using/user-groups.html){target="_blank"}将多个用户添加到角色。 然后，您可以将&#x200B;[!UICONTROL **Adobe Commerce - Commerce Cloud Manager**]&#x200B;产品添加到用户组。
+>要同时添加多个用户，您可以执行[批量CSV上传](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}。
+>
+> 您还可以通过创建[用户组](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}将多个用户添加到角色。 然后，您可以将&#x200B;[!UICONTROL **Adobe Commerce - Commerce Cloud Manager**]&#x200B;产品添加到用户组。
 
 ## 了解角色
 
@@ -33,22 +33,52 @@ ht-degree: 0%
   >
   >所有Commerce用户（包括开发人员和管理员）还必须具有分配给他们的用户角色。 基本Commerce权限需要此项。
 
-* [**开发人员**](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}开发人员具有用户权限，并作为开发人员用户添加到Commerce实例。 这意味着他们可以使用[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[配置事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[创建Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
+* [**开发人员**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}开发人员具有用户权限，并作为开发人员用户添加到Commerce实例。 这意味着他们可以使用[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[配置事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[创建Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
 
 * 管理员 — 管理员分为三种类型：
-   * [系统管理员](https://helpx.adobe.com/cn/enterprise/using/admin-roles.html){target="_blank"} — 系统管理员可以通过Admin Console访问组织中的所有产品和产品配置文件。
-   * [产品管理员](#add-a-product-admin) — 产品管理员可以在[中](#add-users)管理产品的用户、角色和权限[!DNL Adobe Admin Console]，在Commerce管理员中[管理用户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
+   * [系统管理员](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} — 系统管理员可以通过Admin Console访问组织中的所有产品和产品配置文件。
+   * [产品管理员](#add-a-product-admin) — 产品管理员可以在[中](#add-users)管理产品的用户、角色和权限[!DNL Adobe Admin Console]，在Commerce管理员中[管理用户](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
    * [产品配置文件管理员](#add-developers-and-product-profile-admins) — 产品配置文件管理员无权访问Adobe Commerce管理员，但可以在[!DNL Adobe Admin Console]中管理产品的用户。
 
 有关授予Adobe Commerce中每个角色的权限的详细信息，请参阅[用户权限](#user-permissions)。
 
 ## 添加产品管理员
 
+>[!BEGINTABS]
+
 >[!NOTE]
 >
 >将产品管理员添加为产品管理员之前，请为其分配[用户角色](#add-users)。 基本Commerce权限需要用户角色。
 
-1. 导航到https://adminconsole.adobe.com并使用您的Adobe ID登录。
+>[!TAB GA（2025年10月13日之后配置）]
+
+1. 导航到<https://adminconsole.adobe.com>并使用您的Adobe ID登录。
+
+1. 选择您的组织。
+
+1. 选择&#x200B;[!UICONTROL **用户**]&#x200B;选项卡。
+
+1. 选择&#x200B;[!UICONTROL **管理员**]&#x200B;选项卡。
+
+1. 单击&#x200B;[!UICONTROL **添加管理员**]。
+
+1. 输入要添加为管理员的用户名或电子邮件地址，然后单击&#x200B;[!UICONTROL **下一步**]。
+
+1. 选择&#x200B;[!UICONTROL **产品配置文件管理员**]&#x200B;角色。
+
+1. 单击&#x200B;**+**&#x200B;添加产品。
+
+1. 选择要将管理员添加到的现有Commerce实例。 Commerce实例使用以下格式： `Adobe Commerce - <instance-name> - ACCS - <environment-type> - <tenant-id>`。
+
+1. 选择产品配置文件。
+
+1. 单击&#x200B;[!UICONTROL **应用**]。
+
+1. 单击&#x200B;[!UICONTROL **保存**]。
+
+>[!TAB 提前访问（2025年10月13日之前配置）]
+
+1. 导航到<https://adminconsole.adobe.com>并使用您的Adobe ID登录。
 
 1. 选择您的组织。
 
@@ -62,6 +92,8 @@ ht-degree: 0%
 
 1. 输入要添加为管理员的用户名或电子邮件地址，然后单击&#x200B;[!UICONTROL **保存**]。
 
+>[!ENDTABS]
+
 ## 添加用户
 
 以下说明提供了有关如何将用户添加到[!DNL Commerce Cloud Manager]和Commerce管理员的信息。 [!DNL Commerce Cloud Manager]界面允许您创建和管理Commerce实例。 所有用户（包括开发人员和管理员）都需要执行此流程。
@@ -70,7 +102,33 @@ ht-degree: 0%
 >
 >只有产品管理员和系统管理员可以将用户和开发人员添加到Adobe Commerce as a Cloud Service产品。
 
-1. 导航到https://adminconsole.adobe.com并使用您的Adobe ID登录。
+>[!BEGINTABS]
+
+>[!TAB GA（2025年10月13日之后配置）]
+
+1. 导航到<https://adminconsole.adobe.com>并使用您的Adobe ID登录。
+
+1. 选择您的组织。
+
+1. 选择&#x200B;[!UICONTROL **产品**]&#x200B;选项卡。
+
+1. 选择&#x200B;[!UICONTROL **Adobe Commerce**]&#x200B;产品。
+
+1. 如果要将用户添加到Commerce Cloud Manager界面(用户可以在该界面中创建和管理Commerce实例)，请选择Manager产品，或者选择要将用户添加到的现有Commerce实例。 Commerce实例使用以下格式： `Adobe Commerce - <instance-name> - ACCS - <environment-type> - <tenant-id>`。
+
+1. 选择&#x200B;[!UICONTROL **用户**]&#x200B;选项卡，然后单击&#x200B;[!UICONTROL **添加用户**]。
+
+1. 输入要添加的用户的用户名或电子邮件地址，然后单击&#x200B;[!UICONTROL **保存**]。
+
+1. 选择所需的产品配置文件。
+
+1. 单击&#x200B;[!UICONTROL **应用**]。
+
+1. 单击&#x200B;[!UICONTROL **保存**]。
+
+>[!TAB 提前访问（2025年10月13日之前配置）]
+
+1. 导航到<https://adminconsole.adobe.com>并使用您的Adobe ID登录。
 
 1. 选择您的组织。
 
@@ -84,7 +142,9 @@ ht-degree: 0%
 
    ![选项卡选择](./assets/tab-select.png){width=600 zoomable="yes"}
 
-1. 输入要添加为管理员的用户名或电子邮件地址，然后单击&#x200B;[!UICONTROL **保存**]。
+1. 输入要添加的用户的用户名或电子邮件地址，然后单击&#x200B;[!UICONTROL **保存**]。
+
+>[!ENDTABS]
 
 ### 添加开发人员和产品配置文件管理员
 
@@ -157,19 +217,19 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets]和[!DNL Product Visuals powered by AEM Assets]用户需要以下设置。
 
-如果您的帐户有权访问[Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service)，并且您希望允许用户同时访问[AEM Assets](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/overview){target="_blank"}和[!DNL Adobe Commerce as a Cloud Service]的高级功能，请使用以下流程：
+如果您的帐户有权访问[Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service)，并且您希望允许用户同时访问[AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"}和[!DNL Adobe Commerce as a Cloud Service]的高级功能，请使用以下流程：
 
 >[!NOTE]
 >
->没有适当资产权限的用户将无法访问[!DNL AEM Assets]的高级功能，例如[AI图像生成](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}、[生成的变量](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"}等。
+>没有适当资产权限的用户将无法访问[!DNL AEM Assets]的高级功能，例如[AI图像生成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}、[生成的变量](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"}等。
 
 >[!TIP]
 >
->要同时添加多个用户，您可以执行[批量CSV上传](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html){target="_blank"}。
+>要同时添加多个用户，您可以执行[批量CSV上传](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}。
 >
->您还可以通过创建[用户组](https://helpx.adobe.com/cn/enterprise/using/user-groups.html){target="_blank"}将多个用户添加到角色。 然后，您可以将&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;产品添加到用户组。
+>您还可以通过创建[用户组](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}将多个用户添加到角色。 然后，您可以将&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;产品添加到用户组。
 
-1. 导航到https://adminconsole.adobe.com并使用您的Adobe ID登录。
+1. 导航到<https://adminconsole.adobe.com>并使用您的Adobe ID登录。
 
 1. 选择您的组织。
 
@@ -194,7 +254,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关这些权限如何影响您访问AEM Assets的更多信息，请参阅[Cloud Manager产品配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}。
+   >有关这些权限如何影响您访问AEM Assets的更多信息，请参阅[Cloud Manager产品配置文件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}。
 
 1. 单击&#x200B;[!UICONTROL **应用**]。
 
@@ -212,15 +272,15 @@ ht-degree: 0%
 
 1. 从&#x200B;[!UICONTROL **Cloud Manager**]&#x200B;页面，单击&#x200B;[!UICONTROL **添加程序**]&#x200B;以开始。
 
-1. [创建新程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}。
+1. [创建新程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}。
 
-1. [创建新环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}。
+1. [创建新环境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}。
 
 1. 创建环境后，返回到[Admin Console](https://adminconsole.adobe.com){target="_blank"}并选择&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service**]。
 
 1. 您现在应该会看到新的产品配置文件。 选择包含`- author -`的。 例如，`<environment-name> - author - <program-id> - <environment-id>`。
 
-1. [将用户添加到产品配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}。
+1. [将用户添加到产品配置文件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}。
 
-* [配置AEM Assets以支持Commerce元数据](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/configure-aem)
-* [将AEM Assets与Commerce集成以进行资源同步](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
+* [配置AEM Assets以支持Commerce元数据](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
+* [将AEM Assets与Commerce集成以进行资源同步](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
