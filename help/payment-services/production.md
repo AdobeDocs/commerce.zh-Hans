@@ -131,7 +131,7 @@ ht-degree: 0%
 1. 完成表单。
 1. 销售团队的成员将与您联系。
 
-或者，您可以通过[business.adobe.com](https://business.adobe.com/resources/payment-services.html)向Adobe请求付款权利。
+或者，您可以通过[business.adobe.com](https://business.adobe.com/cn/resources/payment-services.html)向Adobe请求付款权利。
 
 >[!IMPORTANT]
 >
