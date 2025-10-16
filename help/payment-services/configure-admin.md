@@ -16,7 +16,7 @@ ht-degree: 0%
 
 您可以使用“管理员”中有用的配置选项根据您的需求自定义[!DNL Payment Services]。
 
-当您在管理员中为[!DNL Payment Services]和[!DNL Adobe Commerce]配置[!DNL Magento Open Source]时，这些配置仅适用于&#x200B;_[!UICONTROL Method]_&#x200B;的_[!UICONTROL General Configuration]_&#x200B;字段中设置的环境。 您在配置字段中所做的任何更改与切换&#x200B;_[!UICONTROL Method]_&#x200B;选项无关 — 如果切换方法，您的选择不会重置。
+当您在管理员中为[!DNL Payment Services]和[!DNL Adobe Commerce]配置[!DNL Magento Open Source]时，这些配置仅适用于&#x200B;_[!UICONTROL Method]_&#x200B;的&#x200B;_[!UICONTROL General Configuration]_&#x200B;字段中设置的环境。 您在配置字段中所做的任何更改与切换&#x200B;_[!UICONTROL Method]_&#x200B;选项无关 — 如果切换方法，您的选择不会重置。
 
 ## 常规配置
 
