@@ -4,9 +4,9 @@ user-guide-description: ' [!DNL Adobe Commerce Optimizer]的文档和资源。'
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b524c75b59984ddfa63ce133a917b9891dd6719f
+source-git-commit: d788c6419831814f2a81229c2354ffc41b637873
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '106'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 - [什么是Adobe Commerce Optimizer？](overview.md)
 - [开始使用](get-started.md)
-- [User Management](user-management.md)
+- [用户和身份管理](user-management.md)
 - [分担责任](shared-responsibility.md)
 - [边界和限制](boundaries-limits.md)
 - [发行说明](release-notes.md)
@@ -57,7 +57,7 @@ ht-degree: 10%
 - [店面](storefront.md)
 - [设置](settings.md)
 - 用例 {#use-case}
-   - [店面和目录管理员的端到端用例](./use-case/admin-use-case.md)
+   - [店面和目录管理员端到端用例](./use-case/admin-use-case.md)
 - 开发人员资源 {#developer}
    - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
    - [数据摄取REST API引用](https://developer.adobe.com/commerce/services/reference/rest/)
