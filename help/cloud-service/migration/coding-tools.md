@@ -1,13 +1,13 @@
 ---
 title: 扩展的AI编码工具
 description: 了解如何使用AI工具创建Commerce App Builder扩展。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Architect
 hide: true
 hidefromtoc: true
-source-git-commit: e032571ba0dd8a2f71813f9e3114afa3f7d617bf
+source-git-commit: 4ee3a547aa292f3e52cf424e368c9fba12d3e4e0
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 先决条件
 
-* [游标](https://cursor.com/download)
+* 编码代理，如[Cursor](https://cursor.com/download)（推荐）、[Github Copilot](https://github.com/features/copilot)、[Google Gemini CLI](https://github.com/google-gemini/gemini-cli)或[克劳德代码](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download)： LTS版本
 * 包管理器： [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)或[yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git)：用于存储库克隆和版本控制
@@ -68,6 +68,16 @@ ht-degree: 0%
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
+```
+
+选择编码代理时，Adobe建议选择`Cursor`以获得最佳开发体验：
+
+```terminal
+? Which coding agent would you like to use?
+❯ Cursor
+  Copilot
+  Gemini CLI
+  Claude Code
 ```
 
 选择包管理器时，Adobe建议使用`npm`来保持一致性：
@@ -164,7 +174,7 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 
 * [集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入门套件模板](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder示例应用程序](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 为什么应使用这些资源
