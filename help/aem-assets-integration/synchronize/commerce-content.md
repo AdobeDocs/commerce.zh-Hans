@@ -3,9 +3,9 @@ title: 维护准确和相关的内容
 description: 电子商务平台是最关键的参与渠道之一。 确保资产管理系统中的无缝更新可确保Commerce店面始终显示最新的产品信息。
 feature: CMS, Media, Integration
 exl-id: 2c749e84-fcc4-4bf9-90b2-87438329889e
-source-git-commit: 6640635fca5c53fe4b06b9bbb3120fffc46cb0b8
+source-git-commit: 141f2291d1ead324a159053145e92ee7d4237a7d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ AEM Assets集成侦听在&#x200B;**Admin**&#x200B;中或使用&#x200B;**API**&#x
 * 产品更新保持快速，因为资产创建不会延迟目录更改，从而能够更灵活地管理新产品。
 
 * 自动化提高了效率和准确性，减少了产品数据和相关内容之间的不匹配情况。
+
+>[!NOTE]
+>
+> PaaS和SaaS中的CSV产品导入不会触发更新事件。 使用API导入和更新目录。
 
 ## AEM Assets生命周期更改
 
