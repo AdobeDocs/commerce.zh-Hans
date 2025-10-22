@@ -68,7 +68,7 @@ _2024年5月23日_
 
 ![修复](../assets/fix.svg) <!--DATA-5033-->选项值的`InStock`标志现在会考虑产品变体的作用域`enabled`状态。
 
-![修复](../assets/fix.svg) <!--DATA-5888-->添加对需要大数字（最多16位）和高小数精度（最多4位小数）的产品价格的支持。 要将价格配置更新应用到现有目录，请从[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)重新同步目录数据，或使用[Adobe Commerce命令行界面](../landing/catalog-sync.md#command-line-interface)重新同步目录数据。
+![修复](../assets/fix.svg) <!--DATA-5888-->添加对需要大数字（最多16位）和高小数精度（最多4位小数）的产品价格的支持。 要将价格配置更新应用到现有目录，请从[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-dashboard)重新同步目录数据，或使用[Adobe Commerce命令行界面](../landing/catalog-sync.md#command-line-interface)重新同步目录数据。
 
 #### 已知限制
 
@@ -102,7 +102,7 @@ _2024年2月22日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html)现已可用。 此改版后的仪表板提供[!DNL Product Recommendations]、[!DNL Live Search]和[!DNL Catalog Service]的数据流分析。 `catalog-service`中继v3.1.0中引入了对此功能的支持。
+![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=zh-Hans)现已可用。 此改版后的仪表板提供[!DNL Product Recommendations]、[!DNL Live Search]和[!DNL Catalog Service]的数据流分析。 `catalog-service`中继v3.1.0中引入了对此功能的支持。
 
 ### V1.16发布
 
