@@ -3,7 +3,7 @@ title: 管理资源
 description: 使用适用于Commerce的AEM Assets集成来管理店面的媒体资源。
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 394a958250fcc9b0d9f672c1daf46a6d7c16a71d
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Adobe Commerce将Page Builder作为&#x200B;**内容管理系统(CMS)**&#x200B;�
 
 >[!TIP]
 >
-> [DA.live （文档创作）](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=zh-Hans#dalive-document-authoring){target=_blank}还提供了一个资产选择器以扩充数据。
+> [DA.live （文档创作）](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank}还提供了一个资产选择器以扩充数据。
 
 ## 产品视频
 
@@ -149,7 +149,7 @@ Adobe Commerce使商家能够将图像与产品类别相关联，从而帮助创
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;并继续。
 
-   有关创建类别的详细信息，请参阅[Commerce Catalog Management Guide](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)中的&#x200B;**完成类别内容**。
+   有关创建类别的详细信息，请参阅[Commerce Catalog Management Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)中的&#x200B;**完成类别内容**。
 
 ## 更新资产
 
@@ -157,6 +157,6 @@ Adobe Commerce使商家能够将图像与产品类别相关联，从而帮助创
 
 有关详细信息，请参阅以下AEM Assets文档。
 
-* [正在重新处理数字资产](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [正在重新处理数字资产](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [批准资产](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [批准资产](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

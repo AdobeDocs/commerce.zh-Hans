@@ -3,7 +3,8 @@ title: 使用API网格显示计税价格
 description: 使用Adobe Commerce和目录服务的 [!DNL API Mesh] 显示含税价格。
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
@@ -20,8 +21,8 @@ ht-degree: 0%
 
 您必须为其配置税才能在产品详细信息页面上显示。
 
-1. [设置税率](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=zh-Hans)。
-1. 使税在目录[&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=zh-Hans#step-1%3A-configure-catalog-prices-display-settings)中显示为，并将其设置为`Including and Excluding Tax`或`Including Tax`。
+1. [设置税率](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html)。
+1. 使税在目录[中显示为](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings)，并将其设置为`Including and Excluding Tax`或`Including Tax`。
 
 通过检查产品详细信息页面，验证目录服务是否正常工作。
 
@@ -31,7 +32,7 @@ ht-degree: 0%
 
 如果尚未这样做，请将API网格与目录服务连接到您的实例。 请参阅API Mesh开发人员指南的[快速入门](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/)主题中的详细说明。
 
-在`mesh.json`文件中，替换`name `、`endpoint`和`x-api-key`值。
+在`mesh.json`文件中，替换`name`、`endpoint`和`x-api-key`值。
 
 ```json
 {
@@ -107,7 +108,7 @@ ht-degree: 0%
 此`mesh.json`配置文件：
 
 * 转换Commerce核心应用程序以要求在其任何查询或类型之前添加“Core_”。 这样可防止与目录服务可能出现的命名冲突。
-* 使用名为`priceWithTaxes`的新字段扩展`ComplexProductView`和`SimpleProductView`类型。
+* 使用名为`ComplexProductView`的新字段扩展`SimpleProductView`和`priceWithTaxes`类型。
 * 为新字段添加自定义解析程序。
 
 使用[创建命令](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1)和`mesh.json`文件创建网格。

@@ -3,8 +3,8 @@ title: 用例
 description: 了解如何使用 [!DNL Adobe Commerce as a Cloud Service]完成实际用例和支持的业务方案。
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 0%
@@ -198,7 +198,7 @@ Adobe Commerce的情境式试验功能允许您在店面中创建和管理试验
 
 #### 将图像添加到Commerce AEM Assets
 
-1. 在AEM as a Cloud Service的[导航面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)中，选择&#x200B;**Assets** > **文件** > **Commerce**，然后单击您在上一节中创建的资源。
+1. 在AEM as a Cloud Service的[导航面板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)中，选择&#x200B;**Assets** > **文件** > **Commerce**，然后单击您在上一节中创建的资源。
 
    ![商务文件夹](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -248,7 +248,7 @@ Adobe Commerce的生成变体利用生成人工智能，自动生成高质量内
 
 ### 生成文本
 
-1. 使用[通用编辑器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)打开您的店面站点。
+1. 使用[通用编辑器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)打开您的店面站点。
 
 1. 选择要编辑的文本块。
 
@@ -262,7 +262,7 @@ Adobe Commerce的生成变体利用生成人工智能，自动生成高质量内
 
 ### 生成内容和图像
 
-1. 打开[生成变体](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. 打开[生成变体](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. 选择&#x200B;[!UICONTROL **主页横幅**]&#x200B;模板。
 
@@ -290,30 +290,36 @@ Adobe Commerce的生成变体利用生成人工智能，自动生成高质量内
 使用下列建议来解决您在尝试这些教程时遇到的任何问题。
 
 * 如果您需要有关命令或标志的指导：
+
    1. 运行`aio --help`以查看所有可用的命令和标志。
    1. 对于特定命令，请使用`--help`标志。 例如：
       * `aio console --help`
       * `aio commerce –help`
 
 * 如果您遇到无效的登录问题：
-   1. 运行`aio config clear `。
-   1. 运行`aio auth login –-force `。
+
+   1. 运行`aio config clear`。
+   1. 运行`aio auth login –-force`。
    1. 登录浏览器。
    1. 选择您的个人资料。
    1. 切换回终端以继续。
 
 * 如果`init`命令失败：
+
    1. 运行`aio api-mesh delete`。
    1. 重新运行`aio commerce init`。
 
 * 如果在运行`init`命令之前选择了错误的组织、项目或工作区：
+
    1. 运行`aio console org select`。
    1. 运行`aio console project select`。
    1. 运行`aio console workspace select`。
 
 * 如果您的租户选择无效：
+
    1. 按&#x200B;**Ctrl-C**&#x200B;取消当前CLI执行。
    1. 运行`aio commerce init`。
 
 * 如果您遇到无效的API Mesh安装：
+
    * 运行`aio api-mesh update mesh-config.json`。

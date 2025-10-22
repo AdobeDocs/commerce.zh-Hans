@@ -4,7 +4,7 @@ description: 适用于Adobe Commerce的[!DNL API Mesh]提供了一种通过公�
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
-source-git-commit: ca0b2b2a158b9a376724b30c80a6bf9a60e3d1ba
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Catalog Service and API Mesh]
 
-适用于Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)的API Mesh使开发人员能够使用Adobe I/O Runtime将私有或第三方API和其他接口与Adobe产品集成。
+适用于Adobe Developer App Builder[的](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)API Mesh使开发人员能够使用Adobe I/O Runtime将私有或第三方API和其他接口与Adobe产品集成。
 
 ![目录体系结构图](assets/catalog-service-architecture-mesh.png)
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 连接并配置API网格。
 
-1. 按照&#x200B;_API Mesh Developer Guide_&#x200B;中[创建Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)的说明将API Mesh连接到您的Adobe Commerce实例。
+1. 按照[API Mesh Developer Guide](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)中&#x200B;_创建Mesh_&#x200B;的说明将API Mesh连接到您的Adobe Commerce实例。
 
    如果这是您第一次使用API Mesh，请先完成[入门流程](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)，然后再创建网格。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
    }
    ```
 
-1. 使用[Adobe I/O可扩展CLI](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli)将`CommerceCatalogServiceGraph`源添加到您的网格。
+1. 使用`CommerceCatalogServiceGraph`Adobe I/O可扩展CLI[将](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli)源添加到您的网格。
 
    ```bash
    aio api-mesh source install "CommerceCatalogServiceGraph" -f variables.json
@@ -50,7 +50,7 @@ API网格允许用户使用外部数据源来增强您的Adobe Commerce实例。
 ### 启用层价格
 
 在此示例中，API Mesh用于在Adobe Commerce中启用层价格。
-替换`name `、`endpoint`和`x-api-key`值。
+替换`name`、`endpoint`和`x-api-key`值。
 
 ```json
 {
@@ -165,7 +165,7 @@ query {
 
 ### 获取实体ID
 
-此网格会将`entityId`附加到ProductView界面。 替换`name `、`endpoint`和`x-api-key`值。
+此网格会将`entityId`附加到ProductView界面。 替换`name`、`endpoint`和`x-api-key`值。
 
 ```json
 {

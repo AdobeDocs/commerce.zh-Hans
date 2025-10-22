@@ -3,7 +3,7 @@ title: 发行说明
 description: 来自Adobe Commerce的 [!DNL Data Connection] 扩展的最新发行信息。
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 9c10aecb303dd09a85bdafa93d791d30611ec8b2
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 1%
@@ -24,9 +24,9 @@ ht-degree: 1%
 
 有关[!DNL Data Connection]扩展使用的扩展的功能更改和修复，请参阅&#x200B;**支持的服务更新**。
 
-请参阅[即将发布的版本](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/planning/schedule)，了解版本计划和支持。
+请参阅[即将发布的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，了解版本计划和支持。
 
-请参阅开发人员文档，以[了解哪些Commerce版本支持此模块](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/product-availability)。
+请参阅开发人员文档，以[了解哪些Commerce版本支持此模块](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 支持的服务更新
 
@@ -123,7 +123,7 @@ _2024年8月27日_
 
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) — 如果您正在参与测试版，请确保您的`composer.json`文件在根级别具有以下内容： ` "minimum-stability": "beta"`。 此外，添加`composer require "magento/customers-connector: ^1.2.0"`以将客户配置文件从Commerce实例发送到SaaS。
+![新](../assets/new.svg) — 如果您正在参与测试版，请确保您的`composer.json`文件在根级别具有以下内容： `"minimum-stability": "beta"`。 此外，添加`composer require "magento/customers-connector: ^1.2.0"`以将客户配置文件从Commerce实例发送到SaaS。
 ![新](../assets/new.svg) — 此版本包含3.1.1、3.1.2、3.1.3和3.1.4中发布的修补程序。
 
 ## 3.1.4
@@ -166,7 +166,7 @@ _2024年3月4日_
 
 [!BADGE 兼容性]{type=Informative tooltip="兼容性"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) — 如果您正在参与测试版，请确保您的`composer.json`文件在根级别具有以下内容： ` "minimum-stability": "beta"`。 此外，添加`composer require "magento/customers-connector: ^1.2.0"`以将客户配置文件从Commerce实例发送到SaaS。
+![新](../assets/new.svg) — 如果您正在参与测试版，请确保您的`composer.json`文件在根级别具有以下内容： `"minimum-stability": "beta"`。 此外，添加`composer require "magento/customers-connector: ^1.2.0"`以将客户配置文件从Commerce实例发送到SaaS。
 ![新](../assets/new.svg) — 已添加[添加自定义属性](custom-attributes.md)的功能。
 ![新](../assets/new.svg) — 已添加[收集配置文件记录](connect-data.md#send-customer-profile-data)和数据并将其发送到Experience Platform的功能。
 
