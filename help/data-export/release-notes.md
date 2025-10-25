@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 103.4.15发行版
 
-![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，可用于监视和排除从Adobe Commerce到连接的服务（目录服务、实时搜索和产品推荐）的数据传输。 有关安装和使用此扩展的详细信息，请参阅[Commerce管理指南](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html)中的&#x200B;*数据馈送同步状态监控*。<!--MDEE-954-->
+![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，可用于监视和排除从Adobe Commerce到连接的服务（目录服务、实时搜索和产品推荐）的数据传输。 有关安装和使用此扩展的详细信息，请参阅[Commerce管理指南](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=zh-Hans)中的&#x200B;*数据馈送同步状态监控*。<!--MDEE-954-->
 
 ## 103.4.14发行版
 
