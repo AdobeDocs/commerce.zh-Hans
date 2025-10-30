@@ -3,7 +3,7 @@ title: '[!DNL Live Search]最佳实践'
 description: 了解在商店中实施 [!DNL Live Search] 的最佳实践。
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: 4ba9734946f551784cd429ffa7cb23358f0f9710
+source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
 workflow-type: tm+mt
 source-wordcount: '2429'
 ht-degree: 0%
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 要将产品属性设置为Facet，它必须设置以下[属性](facets-add.md#step-1-add-a-facet)：
 
-- **[!UICONTROL Use in Search]** -  `No`
+- **[!UICONTROL Use in Search]** -  `Yes`
 - **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
 - **[!UICONTROL Use in Search Results Layered Navigation]** -  `Yes`
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 始终测试搜索重定向，以确保它们正常运行并导向最相关的页面。 持续监控其性能并根据需要进行调整。
 
-了解如何[管理搜索重定向](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-terms)。
+了解如何[管理搜索重定向](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)。
 
 ## 改进搜索结果相关性
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 了解有关搜索的产品属性的更多信息：
 
 - [将属性设置为可搜索](workspace.md#set-attributes-as-searchable)
-- [为属性分配权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [为属性分配权重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 监控搜索结果
 

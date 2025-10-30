@@ -2,9 +2,9 @@
 title: 添加Facet
 description: 了解如何将可筛选的产品属性添加为 [!DNL Live Search] Facet。
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 053533bc5f3f990ce8219f1e0c7c4930b28f0cd5
+source-git-commit: 15afc6fcd1e6783640dc3980ee06290e017abf37
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 1. 如果找不到要添加的Facet，请转到&#x200B;**商店** >属性> **产品**，并验证该属性是否具有要用作Facet的[必需属性](facets.md)。 如有必要，请更新属性的以下店面属性：
 
-   * 在搜索中使用 — `No`
-   * 在搜索结果分层导航中使用 — `Yes`
-   * 在分层导航中使用 — `Filterable (with results)`
+   * **[!UICONTROL Use in Search]** -  `Yes`
+   * **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
+   * **[!UICONTROL Use in Search Results Layered Navigation]** -  `Yes`
 
 1. 出现提示时，刷新缓存。
 
