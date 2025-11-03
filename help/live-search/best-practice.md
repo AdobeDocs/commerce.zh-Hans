@@ -137,7 +137,7 @@ ht-degree: 0%
 了解有关搜索的产品属性的更多信息：
 
 - [将属性设置为可搜索](workspace.md#set-attributes-as-searchable)
-- [为属性分配权重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [为属性分配权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 监控搜索结果
 
