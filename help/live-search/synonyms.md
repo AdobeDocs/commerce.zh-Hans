@@ -1,9 +1,10 @@
 ---
 title: 同义词
 description: '[!DNL Live Search]同义词展开包含与目录中不同词的查询。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 4aa731b0-b922-476b-a311-5c400f31f749
+source-git-commit: f96e7d8d2a31d5e0f49bd3ac2da320313908a868
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
@@ -14,6 +15,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->对于已安装[!DNL Live Search]的Adobe Commerce安装，[!DNL Live Search]同义词取代了标准Adobe Commerce [搜索同义词](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=zh-Hans#search-synonyms)功能，不过两者都显示在营销菜单的&#x200B;*SEO和搜索*&#x200B;部分中。 如果您使用[!DNL Live Search]，请按照本节中的说明操作。
-
-[!DNL Live Search]还支持[搜索词重定向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=zh-Hans)。
+>对于已安装[!DNL Live Search]的Adobe Commerce安装，[!DNL Live Search]同义词取代了标准Adobe Commerce [搜索同义词](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms)功能，不过两者都显示在营销菜单的&#x200B;*SEO和搜索*&#x200B;部分中。 如果您使用[!DNL Live Search]，请按照本节中的说明操作。

@@ -1,11 +1,11 @@
 ---
 title: 搜索性能
 description: “搜索性能”页面可让insight了解购物者使用的搜索词。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1837'
 ht-degree: 0%
 
 ---
@@ -136,3 +136,41 @@ ht-degree: 0%
 | 零个结果 | 列出未返回结果的搜索查询以及在指定日期范围内使用的次数。 报告限制：前500个术语 |
 | 常见结果 | 列出在指定日期范围内查看次数最多的产品的名称。 热门结果仅根据展示次数计算，不受点击次数或收入的影响。 报告限制：前500个术语 |
 | 独特搜索 | 列出在指定日期范围内使用的唯一搜索查询。 报表数据的计算方式与唯一搜索快照数据的计算方式相同。 如果购物者两次键入相同的搜索查询，但间隔超过一小时，则该搜索被视为两次唯一搜索。 报告限制：前500个术语 |
+
+## 默认的非系统属性属性
+
+下表显示了非系统属性的默认搜索和可过滤属性。 将&#x200B;*Use in Search*&#x200B;属性属性设置为`Yes`可使该属性在[!DNL Adobe Commerce Optimizer]中可搜索。
+
+| 属性代码 | 可搜索 |
+|--- |--- |
+| 活动 | 是 |
+| attributes_brand | 是 |
+| 品牌 | 是 |
+| 气候 | 是 |
+| 项圈 | 是 |
+| 颜色 | 是 |
+| 成本 | 是 |
+| eco_collection |  |
+| 性别 | 是 |
+| 制造商 | 是 |
+| 材料 | 是 |
+| 用途 | 是 |
+| 捆绑_包 | 是 |
+| style_general | 是 |
+
+## 默认系统属性属性
+
+下表显示了系统属性的默认搜索和可过滤属性。
+
+| 属性代码 | 可搜索 |
+|--- |--- |
+| allow_open_amou | 是 |
+| 描述 | 是 |
+| name | 是 |
+| 价格 | 是 |
+| short_description | 是 |
+| sku | 是 |
+| 状态 | 是 |
+| tax_class_id | 是 |
+| url_key | 是 |
+| 粗细 | 是 |

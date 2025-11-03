@@ -3,9 +3,9 @@ title: '[!DNL Live Search]最佳实践'
 description: 了解在商店中实施 [!DNL Live Search] 的最佳实践。
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
+source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
 workflow-type: tm+mt
-source-wordcount: '2429'
+source-wordcount: '2180'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 优化搜索功能
 
-在本节中，您将了解如何使用自动完成等功能来优化搜索功能，从而提供购物者类型、同义词和拼写形式的实时建议，以确保购物者能够找到产品（即使他们使用不同的单词），Facet允许购物者缩小搜索结果范围，而搜索重定向会将购物者从搜索查询自动重定向到特定页面。
+在本节中，您将了解如何使用自动完成等功能来优化搜索功能，以便根据购物者的类型、同义词和拼写提供实时建议，从而确保购物者能够找到产品（即使他们使用不同的单词），并了解彩块化以允许购物者缩小搜索结果。
 
 ### 自动完成
 
@@ -85,24 +85,6 @@ ht-degree: 0%
 - [管理Facet](facets-manage.md) （编辑、固定Facet、删除、发布）
 - [价格刻面](settings.md#price-faceting)
 
-### 搜索重定向
-
-搜索重定向允许您自动将购物者从搜索查询重定向到特定页面。 搜索重定向可以改善购物者体验并引导客户查看最相关的内容，例如产品页面、类别、登陆页面或一组量身定制的搜索结果。 搜索重定向有助于简化购物体验，并确保购物者能够快速高效地找到他们想要的东西。
-
-设置搜索重定向的推荐用例：
-
-- **热门产品或类别** — 当购物者搜索常用或热门术语时，将他们重定向到特定的产品页面或类别。 例如，搜索“iPhone”可能会直接重定向到iPhone类别页面或特定的模型页面。
-
-- **促销活动** — 在促销活动或销售期间，将相关搜索词重定向到突出显示特殊优惠或特色产品的登陆页面。
-
-- **品牌搜索** — 当购物者搜索品牌名称时，将它们重定向到该品牌的专用页面，其中列出了该品牌的所有产品。
-
-- **产品停产** — 如果某个产品停产，您可以将对该产品的搜索重定向到相似的产品或该产品的新版本。
-
-始终测试搜索重定向，以确保它们正常运行并导向最相关的页面。 持续监控其性能并根据需要进行调整。
-
-了解如何[管理搜索重定向](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-terms)。
-
 ## 改进搜索结果相关性
 
 此部分讨论如何通过实施有效的搜索规则并使用产品元数据来确保准确而详细的属性可搜索来改进搜索结果相关性。
@@ -155,7 +137,7 @@ ht-degree: 0%
 了解有关搜索的产品属性的更多信息：
 
 - [将属性设置为可搜索](workspace.md#set-attributes-as-searchable)
-- [为属性分配权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [为属性分配权重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 监控搜索结果
 
@@ -182,7 +164,6 @@ ht-degree: 0%
   要降低零结果率，您可以：
 
    - 提供替代或相关搜索词，例如[同义词](synonyms.md)，但找不到完全匹配的搜索词。
-   - 通过设置搜索重定向，在搜索未产生结果时为购物者提供相关或替代建议。
    - 定期查看零结果查询以确定模式并对产品目录和搜索设置进行必要的调整。
 
 - **热门结果** — 可以通过使搜索结果与购物者的偏好和行为保持一致，显着增强搜索结果。
