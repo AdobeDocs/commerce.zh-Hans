@@ -2,9 +2,9 @@
 title: Salesforce Commerce Connector
 description: 了解 [!DNL Commerce Optimizer SFCC Connector] ，它提供了一个起点，用于将Salesforce Commerce B2C与 [!DNL Adobe Commerce Optimizer] 集成以同步目录数据并实施和自定义连接器来支持业务操作。
 role: Admin, Developer
-source-git-commit: f3da99ec4d2c518748d0911d6cf5d2d89ab45a47
+source-git-commit: fc6f8566a1932e830a37bcfa32cd1c4168c67c68
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 [!DNL Commerce Optimizer Salesforce Commerce Connector]构建于Adobe App Builder技术之上，支持将目录数据从Salesforce Commerce Cloud B2C无缝传输和管理[!DNL Adobe Commerce Optimizer]。 它连接了两个平台，使产品信息、定价和更新保持同步，而无需重新调整平台。
 
 该连接器开箱即用地提供可靠的数据同步功能，并灵活地自定义工作流程以满足您的业务需求。
+
+有关端到端视频教程系列，请参阅[了解Salesforce Commerce云入门工具包](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
 
 ## 主要功能
 
@@ -87,7 +89,6 @@ ht-degree: 0%
 * **ACO SFCC Starter Kit App Builder应用程序** — 提供无服务器功能，用于处理SFCC和Adobe Commerce Optimizer之间的数据同步。
 * **自定义SFCC墨盒** — 使用数据提取所需的API扩展Salesforce Commerce Cloud实例的所需墨盒。
 * **管理UI** — 用于监视同步状态和管理连接器操作的Web界面。
-
 
 ### 同步过程
 
