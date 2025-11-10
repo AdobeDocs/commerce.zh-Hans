@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了AEM Assets集成v1.2.7版本的<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">发行说明</a>。</p>
+      <td><p>更新了AEM Assets集成v1.2.7版本的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/release-notes">发行说明</a>。</p>
 </td>
       <td>
         技术
@@ -45,7 +45,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了以下主题，以包括关于从Adobe Admin Console配置身份管理和单点登录的信息：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service User和Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer： User和Identity Management</a></p>
+      <td><p>更新了以下主题，以包括关于从Adobe Admin Console配置身份管理和单点登录的信息：<br />- <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service User和Identity Management</a><br />- <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer： User和Identity Management</a></p>
 </td>
       <td>
         反馈，技术
@@ -67,7 +67,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了添加用户的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">用户管理</a>步骤。</p>
+      <td><p>更新了添加用户的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management">用户管理</a>步骤。</p>
 </td>
       <td>
         重大更新
@@ -89,7 +89,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了Adobe Commerce Optimizer的<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">店面设置指南</a>，提供了使用站点创建者工具创建店面项目、自定义店面配置以及通过检查默认产品详细信息和产品搜索结果页面验证站点和目录数据的说明。</p>
+      <td><p>更新了Adobe Commerce Optimizer的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/storefront">店面设置指南</a>，提供了使用站点创建者工具创建店面项目、自定义店面配置以及通过检查默认产品详细信息和产品搜索结果页面验证站点和目录数据的说明。</p>
 </td>
       <td>
         重大更新
@@ -111,7 +111,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">用户管理</a>现在要求所有开发人员和产品管理员首先添加用户角色。</p>
+      <td><p><a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management">用户管理</a>现在要求所有开发人员和产品管理员首先添加用户角色。</p>
 </td>
       <td>
         重大更新
@@ -133,7 +133,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已为Payment Services v2.12.2发布<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">发行说明</a>。</p>
+      <td><p>已为Payment Services v2.12.2发布<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
