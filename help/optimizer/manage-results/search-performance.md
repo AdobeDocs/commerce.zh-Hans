@@ -1,11 +1,11 @@
 ---
 title: 搜索性能
 description: “搜索性能”页面可让insight了解购物者使用的搜索词。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
+source-git-commit: c408f3de4e3b980545a655e2f6040187f00bc571
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 有几个关键因素决定了搜索结果的关联性和有效性：
 
 - 结构良好的产品数据确保搜索算法能够有效地将产品与查询相匹配。 低质量的产品数据会导致搜索结果相关性降低。 要直接影响促销策略的成功，请执行以下操作：
-   - 将正确的[属性设置为可搜索](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)及其相应权重。
+   - 将正确的[属性设置为可搜索](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)及其相应权重。
    - 确保这些属性中的数据相关。
 - 设计良好的搜索体验与客户建立了信任，并让他们相信自己会找到所需的内容。
 - 搜索规则至关重要，因为它们可以根据热门程度、新到达次数、促销标准或任何其他促销策略来提高某些产品的可见性，以满足您的业务需求。
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 ## 改进搜索结果相关性
 
-为了提高搜索结果相关性，请实施有效的[搜索规则](../merchandising/rules/overview.md)，并使用产品元数据来确保[属性的准确和详细是可搜索的](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)。
+为了提高搜索结果相关性，请实施有效的[搜索规则](../merchandising/rules/overview.md)，并使用产品元数据来确保[属性的准确和详细是可搜索的](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)。
 
 ### 图像
 
@@ -110,16 +110,11 @@ ht-degree: 0%
 
 ### 利用产品元数据
 
-确保将准确而详细的产品[属性设置为可搜索](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)。 请注意，默认情况下，SKU、名称和类别属性是可搜索的，不能从搜索中排除。 为获得最佳结果，请勿在SKU中使用空格。
+确保将准确而详细的产品[属性设置为可搜索并具有分配的权重](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)。 请注意，默认情况下，SKU、名称和类别属性是可搜索的，不能从搜索中排除。 为获得最佳结果，请勿在SKU中使用空格。
 
 要增加搜索相关性，请为每个可搜索属性分配一个权重。 权重较高的属性在搜索结果中应显示在较高的位置。 按相关性排序受多个标准影响，例如搜索权重。 这意味着，有时搜索权重较低的属性仍可以比搜索权重较高的属性具有更大的相关性。 其他标准可以包括任何给定属性中的匹配数、找到的搜索词的位置以及搜索词之前和之后的整体文本结构。
 
 确保每个产品在每个可搜索属性内都包含相关内容。 如果属性包含大量内容，则建议不要将属性设置为可搜索，因为这样可能会降低搜索结果的相关性。
-
-了解有关搜索的产品属性的更多信息：
-
-- [将属性设置为可搜索](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
-- [为属性分配权重](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
 
 ## 字段描述
 
