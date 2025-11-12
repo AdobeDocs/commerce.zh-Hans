@@ -2,7 +2,7 @@
 title: 适用于Commerce的Adobe Commerce Optimizer Connector
 description: 了解如何将Commerce云或内部部署项目中的数据连接到Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
 hidefromtoc: true
 hide: true
 source-git-commit: 36cfafff243a2310a17a2c9ec8a00f10403bc133
@@ -58,15 +58,15 @@ Adobe Commerce Connector通过将Commerce的`website/store/storeview`目录层�
 
 * 访问[repo.magento.com](https://repo.magento.com)以使用Composer下载Commerce连接器中继包。
 
-* 管理员访问[Adobe Commerce Optimizer沙盒实例](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance)。
+* 管理员访问[Adobe Commerce Optimizer沙盒实例](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance)。
 
 配置集成的Adobe Commerce用户必须具有：
 
 * Adobe Commerce管理员的管理员访问权限。
 
-* [对Adobe Commerce应用程序服务器的命令行访问权限](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)。
+* [对Adobe Commerce应用程序服务器的命令行访问权限](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/project/user-access)。
 
-* 开发人员对配置了Adobe Commerce Optimizer项目的[IMS组织](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?)的访问权限。
+* 开发人员对配置了Adobe Commerce Optimizer项目的[IMS组织](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations?)的访问权限。
 
 ## 开始使用
 
@@ -106,9 +106,9 @@ Adobe Commerce Connector通过将Commerce的`website/store/storeview`目录层�
 >
 >有关详细的扩展安装说明，请参阅以下指南：
 >
->在云基础架构上的Adobe Commerce上[安装扩展](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>在云基础架构上的Adobe Commerce上[安装扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 >
->[在本地安装Adobe Commerce扩展](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
+>[在本地安装Adobe Commerce扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## 获取配置Commerce Optimizer连接所需的值
 
@@ -150,7 +150,7 @@ Adobe Commerce Connector通过将Commerce的`website/store/storeview`目录层�
 
    ![Adobe Commerce Optimizer配置页面](../assets/aco-connector-config-page.png)
 
-1. 从命令行中，[使用SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)连接到Commerce暂存环境。
+1. 从命令行中，[使用SSH](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/secure-connections)连接到Commerce暂存环境。
 
 1. 运行以下Commerce CLI命令配置集成，将占位符值替换为Commerce Optimizer项目的值：
 
@@ -166,9 +166,9 @@ bin/magento aco:config:init --org_id=<<your_org_id>> --tenant_id=<<your_tenant_i
 
 您可以从Commerce管理员和Commerce Optimizer中检查数据同步。
 
-* **[数据馈送同步状态页面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.md)**&#x200B;显示从Commerce到Adobe Commerce Optimizer的目录数据同步进度。
+* **[数据馈送同步状态页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.md)**&#x200B;显示从Commerce到Adobe Commerce Optimizer的目录数据同步进度。
 
-* Adobe Commerce Optimizer中的&#x200B;**[[!UICONTROL Data Sync]页面](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**&#x200B;显示从Commerce实例传输的目录数据。
+* Adobe Commerce Optimizer中的&#x200B;**[[!UICONTROL Data Sync]页面](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/data-sync)**&#x200B;显示从Commerce实例传输的目录数据。
 
 1. 验证目录数据是否从Commerce流向Commerce Optimizer：
 
@@ -204,19 +204,19 @@ bin/magento indexer:reindex" catalog indexer re-index CLI command to start PaaS 
 
 ## 配置Adobe Commerce Optimizer商店
 
-通过创建目录视图和策略来配置Adobe Commerce Optimizer存储。&#x200B; 请参阅Adobe Commerce Optimizer指南中的[创建目录视图](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view)。
+通过创建目录视图和策略来配置Adobe Commerce Optimizer存储。&#x200B; 请参阅Adobe Commerce Optimizer指南中的[创建目录视图](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view)。
 
 请注意，价格手册是自动从Adobe Commerce客户组创建的。
 
 ## 在Edge Delivery Services上设置Commerce店面
 
-本节简要介绍设置Commerce店面所需的步骤。 有关详细信息，请参阅[Adobe Commerce店面] (https://experienceleague.adobe.com/developer/commerce/storefront/)文档网站。
+本节简要介绍设置Commerce店面所需的步骤。 有关详细信息，请参阅[Adobe Commerce店面] (https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)文档网站。
 
 1. 使用[站点创建者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)将Adobe Commerce店面模板克隆并部署到EDS。
 
-1. [设置本地开发环境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)。
+1. [设置本地开发环境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans#set-up-local-environment)。
 
-1. [安装GraphQL Storefront兼容包](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/)。&#x200B;
+1. [安装GraphQL Storefront兼容包](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/?lang=zh-Hans)。&#x200B;
 
 1. [在云环境中为Commerce实例配置CORS标头](#configure-cors-headers-for-commerce-instance)。
 
@@ -230,7 +230,7 @@ bin/magento indexer:reindex" catalog indexer re-index CLI command to start PaaS 
 
    **选项1：为Adobe Commerce foundation实施PHP自定义模块，以便能够添加CORS标头。&#x200B;**
 
-   **选项2：安装第三方社区模块graycore/magento2-cors&#x200B;** — 请参阅[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/cors-setup/)文档中的&#x200B;*CORS设置*。
+   **选项2：安装第三方社区模块graycore/magento2-cors&#x200B;** — 请参阅[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/cors-setup/?lang=zh-Hans)文档中的&#x200B;*CORS设置*。
 
 1. 将以下CORS变量添加到云实例`app.yaml`环境配置文件上的Commerce：
 
@@ -243,9 +243,9 @@ bin/magento indexer:reindex" catalog indexer re-index CLI command to start PaaS 
 
 * `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint"`
 
-* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"` — 从[Commerce Optimizer实例详细信息页面](https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started#get-instance-details)获取此值&#x200B;
+* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"` — 从[Commerce Optimizer实例详细信息页面](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/get-started#get-instance-details)获取此值&#x200B;
 
-* `"AC-Environment-Id": "Customer organization ID"` — 从[Commerce云项目](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#project-overview)中获取此值
+* `"AC-Environment-Id": "Customer organization ID"` — 从[Commerce云项目](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/project/overview#project-overview)中获取此值
 
 * `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` — 从Adobe Commerce Optimizer管理员处获取此值。
 
@@ -253,6 +253,6 @@ bin/magento indexer:reindex" catalog indexer re-index CLI command to start PaaS 
 
 * `"AC-Source-Locale": "Catalog source – Store View code from Commerce cloud instance"`
 
-有关详细信息，请参阅[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/)文档中的&#x200B;*店面配置*。
+有关详细信息，请参阅[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hans)文档中的&#x200B;*店面配置*。
 
 
