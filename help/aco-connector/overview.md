@@ -129,11 +129,11 @@ Adobe Commerce Connector通过将Commerce的`website/store/storeview`目录层�
 
 从Adobe Commerce Optimizer实例详细信息中保存以下值。
 
-* **实例ID - **您的Adobe Commerce Optimizer实例的唯一标识符。 也称为租户ID。
+* **实例ID - &#x200B;** 您的Adobe Commerce Optimizer实例的唯一标识符。 也称为租户ID。
 
   从URL获取实例ID以访问您的Adobe Commerce Optimizer实例。 例如，在URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`中，实例ID为`1234567890abcdef`。
 
-* **区域 — **托管Adobe Commerce Optimizer沙盒实例的区域。
+* **区域 — &#x200B;** 托管Adobe Commerce Optimizer沙盒实例的区域。
 
   从Adobe Commerce Optimizer URL获取区域。 例如，在URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`中，区域是`na1`。
 
@@ -171,7 +171,7 @@ bin/magento aco:config:init --org_id=<<your_org_id>> --tenant_id=<<your_tenant_i
 
 1. 验证目录数据是否从Commerce流向Commerce Optimizer：
 
-   从Commerce管理员中，选择[!UICONTROL Data Feed Sync Status]** > [!UICONTROL System] > [!UICONTROL Data Transfer]以打开&#x200B;**[!UICONTROL Data Feed Sync Status]**&#x200B;页面。
+   从Commerce管理员中，选择[!UICONTROL Data Feed Sync Status] **&#x200B; > [!UICONTROL System] > [!UICONTROL Data Transfer]以打开&#x200B;**&#x200B;[!UICONTROL Data Feed Sync Status]**&#x200B;页面。
 
    ![带有馈送项状态报告的数据馈送同步状态页面](./assets/data-feed-sync-status.png)
 
