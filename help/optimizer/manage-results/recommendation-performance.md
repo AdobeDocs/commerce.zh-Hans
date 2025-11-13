@@ -1,11 +1,11 @@
 ---
 title: 推荐性能
 description: 推荐性能页面可向insight提供产品推荐的性能信息。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
+source-git-commit: 177ebffe0295fdc87b6f4a60473ebfda6bea0f01
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,15 @@ ht-degree: 0%
 
 ![推荐性能](../assets/rec-performance.png){zoomable="yes"}
 
-## 选择&#x200B;**目录视图**
-
-选择您的推荐所应用的[目录视图](../setup/catalog-view.md)。
-
-![目录视图](../assets/catalog-view.png)
-
 ## 查看报表
 
-单击&#x200B;**[!UICONTROL Date Range]**&#x200B;并选择以下范围之一：
+1. 选择应用推荐的&#x200B;**目录源**，如`en-US`。
 
-![推荐日期范围](../assets/rec-perf-date-range.png)
+1. 单击&#x200B;**[!UICONTROL Date Range]**&#x200B;并选择以下范围之一：
 
-推荐表将更新以显示该日期范围的量度。
+   ![推荐日期范围](../assets/rec-perf-date-range.png)
+
+   推荐表将更新以显示该日期范围的量度。
 
 ## 自定义表
 
@@ -46,14 +42,6 @@ ht-degree: 0%
    - 要隐藏可见列，请单击带有复选标记的任何列名称。
 
    将刷新表以仅包含选定的列。
-
-## 设置筛选器
-
-单击过滤器图标可在推荐性能工作区中过滤量度。
-
-![筛选量度](../assets/rec-filters.png)
-
-您可以为每个过滤器配置多个值。 有关每个筛选器的说明，请参阅下面[的](#column-descriptions)表。
 
 ## 查看详细信息
 
