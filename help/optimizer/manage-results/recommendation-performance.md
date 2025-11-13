@@ -1,10 +1,11 @@
 ---
 title: 推荐性能
 description: 推荐性能页面可向insight提供产品推荐的性能信息。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
+source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -27,14 +28,11 @@ ht-degree: 0%
 
 ## 查看报表
 
-单击日历，然后执行以下操作之一：
+单击&#x200B;**[!UICONTROL Date Range]**&#x200B;并选择以下范围之一：
 
-- 要指定单个日期，请双击日历上的日期。
-- 要指定日期范围，请单击日历上的第一个日期和最后一个日期。
+![推荐日期范围](../assets/rec-perf-date-range.png)
 
->[!NOTE]
->
->日期范围不能超过一年。
+推荐表将更新以显示该日期范围的量度。
 
 ## 自定义表
 
@@ -55,7 +53,7 @@ ht-degree: 0%
 
 ![筛选量度](../assets/rec-filters.png)
 
-您可以为每个过滤器配置多个值。 有关每个筛选器的说明，请参阅下面[&#128279;](#column-descriptions)的表。
+您可以为每个过滤器配置多个值。 有关每个筛选器的说明，请参阅下面[的](#column-descriptions)表。
 
 ## 查看详细信息
 
@@ -71,7 +69,7 @@ ht-degree: 0%
 
 | 控件 | 描述 |
 |---|---|
-| ![日历选择器](../assets/icon-calendar.png) | 确定用于量度计算的时间范围。 |
+| ![日期范围](../assets/rec-perf-date-range.png) | 确定用于量度计算的时间范围。 |
 | ![列选择器](../assets/icon-show-hide-columns.png) | 确定“推荐”表中显示的列。 |
 | 创建推荐 | 打开[新建推荐](../merchandising/recommendations/create.md)页面。 |
 
