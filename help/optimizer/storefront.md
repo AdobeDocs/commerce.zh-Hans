@@ -2,7 +2,7 @@
 title: 设置您的店面
 description: 了解如何设置 [!DNL Adobe Commerce Optimizer] 店面。
 role: Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 source-git-commit: d6d559728361f4421829f34818aa368eac407225
 workflow-type: tm+mt
@@ -218,26 +218,26 @@ ht-degree: 0%
 
 如果问题仍然存在：
 
-* 查看[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* 查看[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
 * 查看[Adobe Commerce Optimizer开发人员指南](https://developer.adobe.com/commerce/services/optimizer/)
-* 访问[Adobe Commerce支持资源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+* 访问[Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)
 
 ## 后续步骤
 
 设置并验证店面后，您可以：
 
-1. **[安装Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** — 用于直接从您的网站编辑、预览和发布内容的浏览器扩展
+1. **[安装Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans#install-and-configure-sidekick)** — 用于直接从您的网站编辑、预览和发布内容的浏览器扩展
 
-2. **[设置本地开发环境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** — 创建本地环境以自定义店面代码和内容
+2. **[设置本地开发环境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans#set-up-local-environment)** — 创建本地环境以自定义店面代码和内容
 
 ### 学习和探索
 
 * **[完成端到端用例](./use-case/admin-use-case.md)** — 使用[!DNL Adobe Commerce Optimizer]了解有关店面设置和目录管理的更多信息
 
-* **[探索店面自定义](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)** — 了解高级设置和配置选项
+* **[探索店面自定义](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=zh-Hans)** — 了解高级设置和配置选项
 
-* **[使用Commerce下拉列表自定义店面体验](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)** — 添加预建组件以增强您的店面体验
+* **[使用Commerce下拉列表自定义店面体验](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hans)** — 添加预建组件以增强您的店面体验
 
 >[!MORELIKETHIS]
 >
-> 请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)，了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。
+> 请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)，了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。
