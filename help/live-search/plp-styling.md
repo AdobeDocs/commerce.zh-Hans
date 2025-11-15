@@ -1,9 +1,10 @@
 ---
 title: 产品列表页面小组件
 description: 正在启用和设置 [!DNL Live Search Product Listing Page Widget]的样式
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
+source-git-commit: 7684d5cded63f2b0805ee307dff77932607c47eb
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,15 @@ ht-degree: 0%
 
 安装[!DNL Live Search]服务后，默认搜索功能会自动转换为[!DNL Live Search]。
 
-默认情况下，新安装已启用[!DNL Live Search] PLP小组件。 如果您正在升级[!DNL Live Search]，并且PLP构件已关闭，则它仍将处于关闭状态。
+默认情况下，新安装已启用[!DNL Live Search] PLP小组件。
+
+如果您正在升级[!DNL Live Search]，并且PLP构件已关闭，则它仍将处于关闭状态。 要将其打开，请执行以下操作：
+1. 在Adobe Commerce管理员中，转到存储→设置→配置。
+1. 在左侧导航中，单击&#x200B;**[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**。
+1. 单击[!UICONTROL Storefront Features]部分。
+1. 设置[!UICONTROL Enable Product Listing Widget] =是
+1. 保存配置
+1. 如果出现提示，请刷新缓存（转到“系统”>“工具”>“缓存管理”>[!UICONTROL Flush Magento Cache]）。
 
 >[!IMPORTANT]
 >
@@ -38,7 +47,7 @@ PLP小组件提供以下开箱即用的功能：
 - 多语言支持
 - 价格滑块
 
-有关如何自定义PLP构件以处理上述功能的信息，请参阅以下[存储库](https://github.com/adobe/storefront-product-listing-page/)中的`storefront-product-listing-page`自述文件。 此存储库中的自述文件提供了一个示例，说明如何自定义PLP构件并将这些自定义项部署到您的站点。
+有关如何自定义PLP构件以处理上述功能的信息，请参阅以下`storefront-product-listing-page`存储库[中的](https://github.com/adobe/storefront-product-listing-page/)自述文件。 此存储库中的自述文件提供了一个示例，说明如何自定义PLP构件并将这些自定义项部署到您的站点。
 
 >[!WARNING]
 >
