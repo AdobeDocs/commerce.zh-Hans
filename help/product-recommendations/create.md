@@ -2,9 +2,9 @@
 title: 创建新推荐
 description: 了解如何创建产品推荐单元。
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
+source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1505'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ _推荐单元_
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**营销** > _促销活动_ > **产品推荐**&#x200B;以显示&#x200B;_产品推荐_&#x200B;工作区。
 
-1. 指定要显示推荐的[存储视图](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/websites-stores-views)。
+1. 指定要显示推荐的[存储视图](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)。
 
    >[!NOTE]
    >
-   > 必须在默认的存储区视图中创建Page Builder推荐单元，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅[添加内容 — 产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)。
+   > 必须在默认的存储区视图中创建Page Builder推荐单元，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅[添加内容 — 产品推荐](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)。
 
 1. 单击&#x200B;**创建推荐**。
 
@@ -38,16 +38,16 @@ _推荐单元_
 
    >[!NOTE]
    >
-   > 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面上不支持产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
+   > 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面上不支持产品推荐](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
 
    * 主页
    * 类别
    * 产品详细信息
    * 购物车
    * 确认
-   * [页面生成器](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [页面生成器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
-   您最多可以为每种页面类型创建5个有效的推荐单元，为页面生成器创建25个有效的推荐单元。 当达到限制时，页面类型将灰显。
+   您最多可以为每种页面类型创建50个有效的推荐单位。 当达到限制时，页面类型将灰显。
 
    ![推荐名称和页面](assets/create-recommendation.png)
    _推荐名称和页面位置_
