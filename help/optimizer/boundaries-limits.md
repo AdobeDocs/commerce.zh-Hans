@@ -2,11 +2,11 @@
 title: 边界和限制
 description: 了解 [!DNL Adobe Commerce Optimizer]的边界和限制。
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 1eb95f26a196ad4e66cbc980c7f8a41cae950cb6
+source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -47,3 +47,4 @@ ht-degree: 0%
 
 - 不支持类别或属性包含项或排除项。
 - 您无法在[!DNL Adobe Commerce Optimizer]中预览推荐。
+- 您最多可以创建50个有效的推荐单位。
