@@ -1,11 +1,11 @@
 ---
 title: 创建和管理推荐
 description: 了解如何创建和管理推荐。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
+source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1369'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,10 @@ _推荐单元_
    - **激活**&#x200B;以在您的店面启用推荐单元。
 
 1. 出现提示时，复制推荐ID。 使用此ID可帮助您识别您的Edge Delivery Services店面的推荐下拉列表中正在使用的推荐单元。
+
+>[!NOTE]
+>
+> 您最多可以创建50个有效的推荐单位。
 
 >[!IMPORTANT]
 >
