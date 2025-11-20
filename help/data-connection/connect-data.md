@@ -111,7 +111,7 @@ ht-degree: 0%
    >
    >如果选择&#x200B;**后台事件**，则所有后台数据都会发送到Experience Platform Edge。 如果购物者选择退出数据收集，您必须在Experience Platform中明确设置购物者的隐私偏好设置。 这与店面事件不同，店面事件收集器已根据购物者偏好处理同意。 了解[更多](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html)有关在Experience Platform中设置购物者的隐私首选项的信息。
 
-1. (如果您使用自己的AEP Web SDK，请跳过此步骤。)[在Adobe Experience Platform中创建](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create)数据流，或选择要用于收集的现有数据流。 在&#x200B;**数据流ID**&#x200B;字段中输入该数据流ID。
+1. (如果您使用自己的AEP Web SDK，请跳过此步骤。) [在Adobe Experience Platform中创建](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create)数据流，或选择要用于收集的现有数据流。 在&#x200B;**数据流ID**&#x200B;字段中输入该数据流ID。
 
 1. 输入要包含Commerce数据的&#x200B;**数据集ID**。 要查找数据集ID，请执行以下操作：
 
@@ -156,7 +156,7 @@ ht-degree: 0%
 
 有两种类型的配置文件数据可发送到Experience Platform：配置文件记录和时间序列配置文件事件。
 
-配置文件记录包含购物者在Commerce实例中创建配置文件时保存的数据，例如购物者的姓名。 如果您的架构和数据集配置正确[](profile-data.md)，则会将配置文件记录发送到Experience Platform并转发到Adobe的配置文件管理和分段服务： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html#)。
+配置文件记录包含购物者在Commerce实例中创建配置文件时保存的数据，例如购物者的姓名。 如果您的架构和数据集配置正确[&#128279;](profile-data.md)，则会将配置文件记录发送到Experience Platform并转发到Adobe的配置文件管理和分段服务： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html#)。
 
 时间序列配置文件事件包含有关购物者配置文件信息的数据，例如，购物者在您的网站上创建、编辑或删除帐户的情况。 将配置文件事件数据发送到Experience Platform时，该数据会位于可供其他DX产品使用的数据集中。
 
