@@ -69,7 +69,7 @@ ht-degree: 0%
 
 付款报表视图在Payment Services的“付款”视图中可用。 它包括有关您商店的付款的所有可用信息。
 
-在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**以查看详细的表格式支付报告视图。
+在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;以查看详细的表格式支付报告视图。
 
 管理员中的![付款交易记录](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ![数据源选择](assets/datasource.png){width="300" zoomable="yes"}
 
-如果&#x200B;_[!UICONTROL Live]_是选定的数据源，则可以查看生产模式下存储的报表信息。 如果_[!UICONTROL Sandbox]_&#x200B;是选定的数据源，则可以看到在沙盒模式下存储的报表信息。
+如果&#x200B;_[!UICONTROL Live]_&#x200B;是选定的数据源，则可以查看生产模式下存储的报表信息。 如果&#x200B;_[!UICONTROL Sandbox]_&#x200B;是选定的数据源，则可以看到在沙盒模式下存储的报表信息。
 
 数据源选择的工作方式如下所示：
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 在“支付报表”视图中，您可以通过输入特定日期或从日期选择器中选择日期范围，自定义要查看的支付事务处理的时间范围：
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**。
-1. 单击&#x200B;_[!UICONTROL Transaction dates]_日历选择器筛选器。
+1. 单击&#x200B;_[!UICONTROL Transaction dates]_&#x200B;日历选择器筛选器。
 1. 选择适用的日期范围。
 1. 查看网格中指定日期的付款状态。
 

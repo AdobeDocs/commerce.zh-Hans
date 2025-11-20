@@ -308,7 +308,7 @@ _2023年3月20日_
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![修复](../assets/fix.svg)修复了在目录导出期间可能发生的“无法检索产品选项数据”错误。
-![修复](../assets/fix.svg) _仪表板上_ Revenue _[!DNL Product Recommendations]_列中的货币符号现在正确反映了配置的基本货币。
+![修复](../assets/fix.svg) _仪表板上_ Revenue _[!DNL Product Recommendations]_&#x200B;列中的货币符号现在正确反映了配置的基本货币。
 
 ### 3.0.4的magento/product-recommendations
 
