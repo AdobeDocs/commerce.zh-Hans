@@ -2,7 +2,7 @@
 title: ' [!DNL Product Recommendations]简介'
 description: '[!DNL Product Recommendations]是一个强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。'
 recommendations: noCatalog
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
 exl-id: 72850cfd-555c-4e0e-ac3e-097e6dac2030
 source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
@@ -27,11 +27,11 @@ ht-degree: 0%
 
 为[!DNL Product Recommendations]目的的数据收集不包括任何个人身份信息(PII)。 此外，所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 若要了解更多信息，请参阅[Adobe隐私政策](https://www.adobe.com/privacy/policy.html)。
 
-[!DNL Product Recommendations]用户可以参考[数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)，了解有关数据同步的更多数据。
+[!DNL Product Recommendations]用户可以参考[数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hans)，了解有关数据同步的更多数据。
 
 ## 产品推荐与产品关系
 
-鉴于在线购物不断变化的复杂性，最适合您店面的往往是多种关键技术的组合。 同时使用[!DNL Product Recommendations]和[产品关系](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html)可让您在促销产品时拥有更大的灵活性。 您可以利用由Adobe Sensei提供支持的[!DNL Product Recommendations]，大规模智能地自动执行您的推荐。 然后，在必须手动干预并确保向目标购物者区段提供特定推荐时，或者在必须满足某些业务目标时，您可以利用[相关产品规则](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html)。
+鉴于在线购物不断变化的复杂性，最适合您店面的往往是多种关键技术的组合。 同时使用[!DNL Product Recommendations]和[产品关系](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html?lang=zh-Hans)可让您在促销产品时拥有更大的灵活性。 您可以利用由Adobe Sensei提供支持的[!DNL Product Recommendations]，大规模智能地自动执行您的推荐。 然后，在必须手动干预并确保向目标购物者区段提供特定推荐时，或者在必须满足某些业务目标时，您可以利用[相关产品规则](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html?lang=zh-Hans)。
 
 通过产品推荐，您可以：
 
@@ -49,4 +49,4 @@ ht-degree: 0%
 
 如果您连续90天没有在测试环境中提交对目录数据的查询，则目录数据将设置为休眠模式，并且任何查询都不会返回任何数据。 此策略不会影响生产环境中的目录数据。
 
-要在测试环境中重新激活目录数据，请[提交标题为“重新激活](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)”的支持请求[!DNL Product Recommendations]并包含环境ID。 测试环境中的目录数据应在几小时内恢复。
+要在测试环境中重新激活目录数据，请[提交标题为“重新激活](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)”的支持请求[!DNL Product Recommendations]并包含环境ID。 测试环境中的目录数据应在几小时内恢复。
