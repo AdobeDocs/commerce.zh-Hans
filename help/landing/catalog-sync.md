@@ -2,23 +2,23 @@
 title: 目录同步
 description: 了解如何将产品数据从 [!DNL Commerce] 服务器导出到 [!DNL Commerce Services]。
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 99f96b93-b036-490c-8c57-40463a0de365
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
-
 # 目录同步
 
 >[!NOTE]
 >
-> “目录同步”功能板现在是“数据管理功能板”。 此改版后的仪表板现在支持[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+、[[!DNL Live Search]](../live-search/overview.md) v4.1.0+和[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+。 客户可以通过更新到其中一项服务的最新版本来获取数据管理功能板。 请在[数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=zh-Hans)文档中阅读更多相关信息。 对于尚未升级但仍拥有目录同步功能板的用户，此当前主题仍然适用。
+> “目录同步”功能板现在是“数据管理功能板”。 此改版后的仪表板现在支持[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+、[[!DNL Live Search]](../live-search/overview.md) v4.1.0+和[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+。 客户可以通过更新到其中一项服务的最新版本来获取数据管理功能板。 请在[数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)文档中阅读更多相关信息。 对于尚未升级但仍拥有目录同步功能板的用户，此当前主题仍然适用。
 
-Adobe Commerce使用索引器将目录数据编译到表中。 该进程由[事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=zh-Hans#events-that-trigger-full-reindexing)自动触发，例如产品价格或库存级别的更改。
+Adobe Commerce使用索引器将目录数据编译到表中。 该进程由[事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing)自动触发，例如产品价格或库存级别的更改。
 
-目录同步服务会持续将产品数据从[!DNL Adobe Commerce]实例移动到[!DNL Commerce Services]平台，以使数据保持最新。 例如，[[!DNL Product Recommendations]](/help/product-recommendations/overview.md)需要当前目录信息才能准确返回具有正确名称、定价和可用性的推荐。 使用&#x200B;_目录同步_&#x200B;仪表板观察和管理同步过程或命令行界面以触发目录同步并重新索引产品数据以供[!DNL Commerce Services]使用。 请参阅&#x200B;_SaaS数据导出_&#x200B;指南中的[命令行接口引用](../data-export/data-export-cli-commands.md)。
+目录同步服务会持续将产品数据从[!DNL Adobe Commerce]实例移动到[!DNL Commerce Services]平台，以使数据保持最新。 例如，[[!DNL Product Recommendations]](/help/product-recommendations/overview.md)需要当前目录信息才能准确返回具有正确名称、定价和可用性的推荐。 使用&#x200B;_目录同步_&#x200B;仪表板观察和管理同步过程或命令行界面以触发目录同步并重新索引产品数据以供[!DNL Commerce Services]使用。 请参阅[SaaS数据导出](../data-export/data-export-cli-commands.md)指南中的&#x200B;_命令行接口引用_。
 
 ## 访问目录同步仪表板
 
@@ -80,4 +80,4 @@ Adobe Commerce使用索引器将目录数据编译到表中。 该进程由[事�
 
 ## 解决目录同步问题 {#resolvesync}
 
-请参阅&#x200B;_SaaS数据导出指南_&#x200B;中的[日志和疑难解答](../data-export/troubleshooting-logging.md#troubleshooting)。
+请参阅[SaaS数据导出指南](../data-export/troubleshooting-logging.md#troubleshooting)中的&#x200B;_日志和疑难解答_。

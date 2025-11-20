@@ -1,7 +1,8 @@
 ---
 title: 性能
-description: ' [!DNL Live Search] 性能工作区提供了有关购物者使用的搜索词的洞察信息。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+description: ' [!DNL Live Search] 性能工作区将insight提供给购物者使用的搜索词。'
+exl-id: 07a63df8-b981-4913-841a-7e81ec634281
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # 性能
 
-*性能*&#x200B;工作区提供了有关购物者使用的搜索词的洞察信息。 此信息可用于识别趋势、增加点进次数并提高转化率。 性能工作区提供特定日期范围的搜索度量的快照，并包括以下报表：
+*性能*&#x200B;工作区可提供insight了解购物者使用的搜索词。 此信息可用于识别趋势、增加点进次数并提高转化率。 性能工作区提供特定日期范围的搜索度量的快照，并包括以下报表：
 
 * 独特搜索
 * 零个结果
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 ![性能](assets/performance-unique-searches.png)
 
-您还可以参考[数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=zh-Hans)，了解有关数据同步的更多数据。
+您还可以参考[数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)，了解有关数据同步的更多数据。
 
 >[!NOTE]
 >
