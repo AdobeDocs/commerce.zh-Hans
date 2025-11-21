@@ -2,10 +2,11 @@
 title: 促销规则最佳实践
 description: 了解在您的商店中实施促销规则的最佳实践。
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 09b6b1dea5916c5671c0eb58a551295b5be35fc0
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
+source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -25,3 +26,4 @@ ht-degree: 0%
 - 突出显示正在销售或属于特殊促销的产品。
 - 通过使用促销期间的日期范围，在促销期间或销售期间自动设置搜索规则。
 - 使用[智能排名](add.md#intelligent-ranking)（例如“为您推荐”、“查看次数最多”等），根据每位购物者的行为定制搜索结果。
+- 始终使用“测试规则”面板来预览您的智能排名策略对不同查询的实际搜索结果有何影响。

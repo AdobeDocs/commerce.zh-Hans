@@ -3,9 +3,9 @@ title: '[!DNL Live Search]最佳实践'
 description: 了解在商店中实施 [!DNL Live Search] 的最佳实践。
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
+source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2201'
 ht-degree: 0%
 
 ---
@@ -111,6 +111,7 @@ ht-degree: 0%
 - 稍微优先处理利润率较高的产品，而不影响其相关性。
 - 突出显示正在销售或属于特殊促销的产品。
 - 通过使用促销期间的日期范围，在促销期间或销售期间自动设置搜索规则。
+- 始终使用“测试规则”面板来预览您的智能排名策略对不同查询的实际搜索结果有何影响。
 - 使用[智能排名](rules-add.md#intelligent-ranking)（例如“为您推荐”、“查看次数最多”等），根据每位购物者的行为定制搜索结果。 要定制购物者行为，必须确保正确实施事件。 对于Luma商家，活动是现成可用的。 对于Headless或自定义实施，您必须根据特定需求[实施事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)。
 
 了解有关搜索规则的更多信息：
@@ -137,7 +138,7 @@ ht-degree: 0%
 了解有关搜索的产品属性的更多信息：
 
 - [将属性设置为可搜索](workspace.md#set-attributes-as-searchable)
-- [为属性分配权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [为属性分配权重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 监控搜索结果
 

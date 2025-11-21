@@ -1,11 +1,11 @@
 ---
 title: 创建和管理规则
 description: 了解如何创建和管理促销规则。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
+source-git-commit: 5f3bde7070857cbfd6892e5881ce0437973f0cc0
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '2103'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,33 @@ ht-degree: 0%
 - 无：产品按相关性排序。
 
 选择规则的策略类型。 **测试您的规则**&#x200B;窗口显示预期的结果。
+
+#### 智能排名评分的工作原理
+
+智能排名通过组合两个关键因素来确定最终产品订单：**文本相关性**&#x200B;和&#x200B;**行为信号**。 了解这些因素如何相互作用有助于您为搜索结果设置现实的期望。
+
+**评分组件：**
+
+- **文本相关性**：得分中的主导因素。 这会测量产品名称、描述和属性与搜索查询的匹配程度。 文本相关性得分是无界的（没有特定的上限），并且受以下因素影响：
+
+   - 匹配单词出现的频率。
+   - 产品名称/说明的长度（以字为单位）。
+
+- **行为信号**：在文本相关性得分之上应用的有界提升。 当您选择“查看次数最多”或“购买次数最多”等智能排名策略时，具有更高行为信号的产品会获得得分的固定提升。 然而，这种提升有一个明确的限制。
+
+**为什么查看次数最多的产品可能不会首先显示：**
+
+文本相关性通常主导排名，因为其分数不受限制，而行为提升是固定的。 因此，具有强文本匹配的产品通常比那些具有较高参与信号的产品更出色。 行为增强本身可能无法弥补文本相关性的巨大差距。 智能排名通过同时考虑匹配质量和购物者互动来解决这个问题，从而提高整体相关性。 但是，文本匹配质量仍然是排名的主要驱动因素。
+
+**示例：**
+
+商户使用“查看次数最多”的智能排名策略并搜索“蜡烛”。 他们预计产品SKU YAN-K-E-512会显示在结果顶部，因为它具有最高的查看计数。 然而，其他产品的排名更高：
+
+- **Texas Candle** （第1个位置）：具有更短、更干净的产品名称，这会产生非常高的文本相关性分数。 尽管它的观看次数比YAN-K-E-512少，但是其优越的文本匹配超过了行为提升。
+
+- **YAN-K-E-512**（较低位置）：尽管在“查看次数最多”行为数据中拥有最高的查看百分位数，但其基于SKU的复杂名称会生成较低的文本相关性分数。 固定行为提升不足以克服文本相关性差距。
+
+请参阅[搜索规则](./best-practice.md#tips-to-optimize-search-rules)，了解如何使用规则提高产品可查找性。
 
 #### 注意事项
 
