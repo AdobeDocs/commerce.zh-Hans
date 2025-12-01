@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4a0fc2259e7e8e19160ca7001d081f6faddd5d9f
+source-git-commit: 7e3a7794e417ecbc48cd4258b355dceeee138061
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 3%
+source-wordcount: '269'
+ht-degree: 2%
 
 ---
 # 新增功能模板
@@ -23,7 +23,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了11月份Adobe Commerce as a Cloud Service版本的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>更新了11月份Adobe Commerce as a Cloud Service版本的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -45,7 +45,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>介绍了连接到Adobe Commerce后端的Commerce Optimizer客户如何从信息源同步状态页面监视数据信息源导出并进行疑难解答。 请参阅Adobe Commerce Optimizer指南中的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/data-sync">Data Sync</a>。</p>
+      <td><p>介绍了连接到Adobe Commerce后端的Commerce Optimizer客户如何从信息源同步状态页面监视数据信息源导出并进行疑难解答。 请参阅Adobe Commerce Optimizer指南中的<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Data Sync</a>。</p>
 </td>
       <td>
         技术
@@ -67,7 +67,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新Payment Services v2.13.0版本的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/release-notes">发行说明</a>。</p>
+      <td><p>已更新Payment Services v2.13.0版本的<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">发行说明</a>。</p>
 </td>
       <td>
         技术
@@ -89,7 +89,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了AEM Assets集成v1.2.7版本的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/release-notes">发行说明</a>。</p>
+      <td><p>更新了AEM Assets集成v1.2.7版本的<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">发行说明</a>。</p>
 </td>
       <td>
         技术
@@ -111,7 +111,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了以下主题，以包括关于从Adobe Admin Console配置身份管理和单点登录的信息：<br />- <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service User和Identity Management</a><br />- <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer： User和Identity Management</a></p>
+      <td><p>更新了以下主题，以包括关于从Adobe Admin Console配置身份管理和单点登录的信息：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service User和Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer： User和Identity Management</a></p>
 </td>
       <td>
         反馈，技术
@@ -133,7 +133,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了添加用户的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management">用户管理</a>步骤。</p>
+      <td><p>更新了添加用户的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">用户管理</a>步骤。</p>
 </td>
       <td>
         重大更新
@@ -155,7 +155,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了Adobe Commerce Optimizer的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/storefront">店面设置指南</a>，提供了使用站点创建者工具创建店面项目、自定义店面配置以及通过检查默认产品详细信息和产品搜索结果页面验证站点和目录数据的说明。</p>
+      <td><p>更新了Adobe Commerce Optimizer的<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">店面设置指南</a>，提供了使用站点创建者工具创建店面项目、自定义店面配置以及通过检查默认产品详细信息和产品搜索结果页面验证站点和目录数据的说明。</p>
 </td>
       <td>
         重大更新
@@ -177,34 +177,12 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management">用户管理</a>现在要求所有开发人员和产品管理员首先添加用户角色。</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">用户管理</a>现在要求所有开发人员和产品管理员首先添加用户角色。</p>
 </td>
       <td>
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e12b4c18cacd43d73ced180a62d7162a745ced56">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025年9月23日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已为Payment Services v2.12.2发布<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1e5ee370bf91d33f35585d2d64b393fede721ce6">提交</a></td>
     </tr>
   </tbody>
 </table>
