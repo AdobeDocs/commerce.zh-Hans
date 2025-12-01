@@ -1,13 +1,13 @@
 ---
 title: 扩展的AI编码工具
 description: 了解如何使用AI工具创建Commerce App Builder扩展。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 9382ce8f139f9d2f4ec1732c0d83b466cd54fa37
+source-git-commit: 0e76dee3b33ca7906b22d33d15c6c75ca1c391ef
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
@@ -105,6 +105,16 @@ ht-degree: 0%
 
    * MCP配置： `.vscode/mcp.json`
    * Rules目录： `.github/copilot-instructions.md`
+
+>[!NOTE]
+>
+>在部署项目之前，您需要完成以下配置任务：
+>
+>* 使用Adobe I/O CLI登录到[Adobe Developer Console](https://developer.adobe.com/console)。
+>* 创建App Builder项目（请参阅[项目设置](https://developer.adobe.com/commerce/extensibility/events/project-setup)）。
+>* 在`.env`文件中设置环境变量。
+>
+>您可以手动完成这些配置步骤，或利用AI编码工具引导您完成该过程。 有关详细的配置说明，请参阅[创建集成](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/)。
 
 ## 安装后配置
 
@@ -222,7 +232,7 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 
 * [集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入门套件模板](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder示例应用程序](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 为什么应使用这些资源
