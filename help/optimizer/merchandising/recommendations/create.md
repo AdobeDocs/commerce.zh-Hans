@@ -1,11 +1,11 @@
 ---
 title: 创建和管理推荐
 description: 了解如何创建和管理推荐。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
+source-git-commit: 032a19183b79cea1bfe27e8a4e20c60ba5ac6b8b
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -161,11 +161,9 @@ _推荐类型_
 
 ## 预览推荐
 
->[!IMPORTANT]
->
->此功能尚不可用。
-
 _推荐的产品预览_&#x200B;面板始终随示例产品选择提供，这些产品在部署到店面时可能会出现在推荐单元中。
+
+![推荐预览](../../assets/rec-preview.png)
 
 要在非生产环境中工作时测试推荐，您可以从其他源获取推荐数据。 这允许商家在部署到生产环境之前试验规则并预览推荐。
 
