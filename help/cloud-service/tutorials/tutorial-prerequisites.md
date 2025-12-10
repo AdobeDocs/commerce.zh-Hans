@@ -4,9 +4,9 @@ description: 了解评级扩展实验室的先决条件。
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: e153e974be1dc5ec8ff2eff8d699ce87ef6708dc
+source-git-commit: fda04de3301a305c897c34d3dd0166d50fc3c12a
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,10 @@ ht-degree: 0%
   npm install -g @adobe/aio-cli
   ```
 
-* 安装Commerce插件
+* 安装[Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)、[Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime)和[App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev)插件：
 
   ```bash
-  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
+  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
 * 下载AI辅助的IDE，如[Cursor](https://cursor.com/download)（推荐），其他IDE，如Claude Code、Gemini CLI或Copilot也受支持，但可能需要修改提示和教程中的其他步骤。
@@ -169,6 +169,12 @@ EVENT_PREFIX=test
 
 ```bash
 aio console workspace download workspace.json
+```
+
+将工作区配置文件复制到`scripts`目录：
+
+```bash
+cp workspace.json scripts/
 ```
 
 ### 将本地工作区连接到远程工作区
