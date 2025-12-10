@@ -75,4 +75,4 @@ ht-degree: 0%
 ## 类别推销和类别产品分配
 
 [!DNL Live Search]允许您按类别筛选。 有关详细信息，请参阅[类别推销](category-merch.md)。
-但是，在Adobe Commerce中，您可以创建具有[类别产品分配](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)的虚拟类别。 此类类别是在运行时生成的，在类别数据库中不存在。 因此，[!DNL Live Search]无法读取或使用此类别类型。
+但是，在Adobe Commerce中，您可以创建具有[类别产品分配](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html?lang=zh-Hans)的虚拟类别。 此类类别是在运行时生成的，在类别数据库中不存在。 因此，[!DNL Live Search]无法读取或使用此类别类型。
