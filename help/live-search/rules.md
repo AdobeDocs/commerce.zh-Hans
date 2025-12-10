@@ -1,7 +1,8 @@
 ---
 title: 搜索促销
 description: '[!DNL Live Search]促销规则将逻辑与操作结合起来以塑造购物体验。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 9894bf2b-8556-4057-aa23-ebdcb1599914
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 0%
@@ -74,4 +75,4 @@ ht-degree: 0%
 ## 类别推销和类别产品分配
 
 [!DNL Live Search]允许您按类别筛选。 有关详细信息，请参阅[类别推销](category-merch.md)。
-但是，在Adobe Commerce中，您可以创建具有[类别产品分配](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html?lang=zh-Hans)的虚拟类别。 此类类别是在运行时生成的，在类别数据库中不存在。 因此，[!DNL Live Search]无法读取或使用此类别类型。
+但是，在Adobe Commerce中，您可以创建具有[类别产品分配](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)的虚拟类别。 此类类别是在运行时生成的，在类别数据库中不存在。 因此，[!DNL Live Search]无法读取或使用此类别类型。

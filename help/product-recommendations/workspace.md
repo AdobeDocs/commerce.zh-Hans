@@ -2,7 +2,7 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: 了解如何配置、管理和监控产品推荐性能。
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
-source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 0%
@@ -35,7 +35,7 @@ _推荐Workspace_
 
 ## 设置范围
 
-最初，所有推荐设置的[范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans)设置为`Default Store View`。 如果您的Commerce安装包含多个存储视图，请将&#x200B;**范围**&#x200B;设置为您的建议适用的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)。
+最初，所有推荐设置的[范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)设置为`Default Store View`。 如果您的Commerce安装包含多个存储视图，请将&#x200B;**范围**&#x200B;设置为您的建议适用的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 
 ## 设置量度日期范围
 
@@ -106,7 +106,7 @@ _推荐设置_
 | 设置 | 确定从中获取推荐行为数据的SaaS数据空间，还启用视觉相似性推荐类型。 |
 | 创建推荐 | 打开[新建推荐](create.md)页面。 |
 
-## 列说明
+## 列描述
 
 | 列 | 描述 |
 |---|---|

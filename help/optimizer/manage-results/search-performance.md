@@ -1,9 +1,9 @@
 ---
 title: 搜索性能
 description: “搜索性能”页面可让insight了解购物者使用的搜索词。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c408f3de4e3b980545a655e2f6040187f00bc571
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 0%
@@ -58,7 +58,7 @@ ht-degree: 0%
 - 搜索规则至关重要，因为它们可以根据热门程度、新到达次数、促销标准或任何其他促销策略来提高某些产品的可见性，以满足您的业务需求。
 - 多面向导航让购物者能够优化搜索并快速获得相关结果。
 
-### 监控搜索结果
+### 监视搜索结果
 
 要使用[!DNL Adobe Commerce Optimizer]优化搜索结果，请监控相关关键绩效指标(KPI)（如独特查询、平均点击位置、点进率、转化率和零结果率），以了解购物者如何与您的搜索功能进行交互。 此数据可指导您定期更新和优化搜索规则。
 

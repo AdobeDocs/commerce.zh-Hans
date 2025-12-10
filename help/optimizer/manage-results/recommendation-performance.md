@@ -1,9 +1,9 @@
 ---
 title: 推荐性能
 description: 推荐性能页面可向insight提供产品推荐的性能信息。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: 177ebffe0295fdc87b6f4a60473ebfda6bea0f01
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -61,7 +61,7 @@ ht-degree: 0%
 | ![列选择器](../assets/icon-show-hide-columns.png) | 确定“推荐”表中显示的列。 |
 | 创建推荐 | 打开[新建推荐](../merchandising/recommendations/create.md)页面。 |
 
-## 列说明
+## 列描述
 
 | 列 | 描述 |
 |---|---|
