@@ -33,7 +33,7 @@ ht-degree: 0%
    ![添加双向同义词](assets/synonym-add-two-way.png)
 
 1. 输入要匹配的&#x200B;**关键字**&#x200B;词或短语。
-1. 输入要作为关键字的同义词添加的&#x200B;**扩展**术语。 用逗号分隔多个术语。
+1. 输入要作为关键字的同义词添加的&#x200B;**扩展**&#x200B;术语。 用逗号分隔多个术语。
 在此示例中，要匹配的关键字是“pants”，而扩展术语集是“trousers， slacks”。
 
    ![双向同义词示例](assets/synonym-add-two-way-example.png)
