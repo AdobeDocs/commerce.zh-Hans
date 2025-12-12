@@ -4,7 +4,7 @@ description: 了解评级扩展实验室的先决条件。
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: fda04de3301a305c897c34d3dd0166d50fc3c12a
+source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -127,7 +127,7 @@ cp env.dist .env
 
 在文本编辑器中打开`.env`文件并添加以下OAuth凭据：
 
-```text
+```plain
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_TECHNICAL_ACCOUNT_ID=
@@ -143,7 +143,7 @@ OAUTH_ORG_ID=
 
 将以下Commerce实例详细信息添加到您的`.env`文件：
 
-```text
+```plain
 COMMERCE_BASE_URL=
 COMMERCE_GRAPHQL_ENDPOINT=
 ```
@@ -159,7 +159,7 @@ COMMERCE_GRAPHQL_ENDPOINT=
 
 为事件前缀设置临时值：
 
-```text
+```plain
 EVENT_PREFIX=test
 ```
 
@@ -331,7 +331,7 @@ Check that the MCP server is running correctly:
 1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
 1. Try entering a prompt like the following:
 
-   ```text
+   ```plain
    Search the storefront docs for information about slots
    ```
 

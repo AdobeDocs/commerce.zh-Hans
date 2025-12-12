@@ -1,11 +1,11 @@
 ---
 title: 扩展的AI编码工具
 description: 了解如何使用AI工具创建Commerce App Builder扩展。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 8f7b5536388e8f4cb1e763b430bdca8644d1da5c
+source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 0%
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 安装过程将为您提示配置选项。 对于安装位置，选择“当前目录”以在当前工作区中安装工具：
 
-```terminal
+```plain
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 选择编码代理时，Adobe建议选择`Cursor`以获得最佳开发体验：
 
-```terminal
+```plain
 ? Which coding agent would you like to use?
 ❯ Cursor
   Copilot
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 选择包管理器时，Adobe建议使用`npm`来保持一致性：
 
-```terminal
+```plain
 ? Which package manager would you like to use?
 ❯ npm
   yarn
@@ -168,7 +168,7 @@ aio auth login
 
 1. 验证服务器状态 — Commerce可扩展性MCP服务器应显示为：
 
-   ```terminal
+   ```plain
    Status: Connected/Active
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
@@ -176,7 +176,7 @@ aio auth login
 
 1. 使用以下提示查看代理是否使用MCP服务器。 如果不能，请明确要求代理使用可用的MCP工具。
 
-```terminal
+```plain
 What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
 ```
 
@@ -195,7 +195,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. 验证服务器状态。 `MCP:commerce-extensibility`输出应匹配以下内容：
 
-   ```terminal
+   ```plain
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
    2025-11-13 12:58:50.652 [info] Connection state: Starting
    2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
@@ -209,7 +209,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. 使用以下提示查看代理是否使用MCP服务器。 如果不能，请明确要求代理使用可用的MCP工具。
 
-   ```terminal
+   ```plain
    What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
    ```
 
@@ -217,7 +217,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 以下示例提示创建一个扩展，用于在下订单时发送通知。
 
-```terminal
+```plain
 Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
@@ -230,7 +230,7 @@ Payment Type -> pType
 
 除了提示，您还可以使用`/search-commerce-docs`命令在与代理的对话中搜索文档。 例如：
 
-```text
+```plain
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
@@ -275,7 +275,7 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 
 * [集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入门套件模板](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder示例应用程序](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 为什么应使用这些资源
@@ -304,7 +304,7 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 
 对于涉及多个运行时操作、接触点或集成的复杂开发，明确要求AI工具创建详细的实施计划。 当您在[阶段2](#protocol)中看到涉及多个组件的高级计划时，请要求提供详细的实施计划以将其划分为可管理的任务：
 
-```terminal
+```plain
 Create a detailed implementation plan for this complex development.
 ```
 
@@ -326,7 +326,7 @@ Create a detailed implementation plan for this complex development.
 
 如果您看到正在使用的CLI命令并希望改用MCP工具，请使用以下提示：
 
-```terminal
+```plain
 Use only MCP tools and not CLI commands
 ```
 
@@ -346,7 +346,7 @@ CLI命令可用于以下情况：
 
 为简单只读端点添加不必要的文件(`validator.js`、`transformer.js`、`sender.js`)时，请使用以下提示：
 
-```terminal
+```plain
 Why do we need these files for a simple read-only endpoint?
 Perform a root cause analysis before adding complexity
 Verify if simpler solutions exist
@@ -402,47 +402,47 @@ Verify if simpler solutions exist
 
 **测试运行时操作**：
 
-```terminal
+```plain
 Help me test the customer-created runtime action running locally
 ```
 
 **调试失败**：
 
-```terminal
+```plain
 Why did the subscription-updated runtime action activation fail?
 ```
 
 **检查日志**：
 
-```terminal
+```plain
 Help me check the logs for the last stock-monitoring runtime action invocation
 ```
 
 **创建测试负载**：
 
-```terminal
+```plain
 Generate test data for this Commerce event
 ```
 
-```terminal
+```plain
 Create a test payload for the customer_save_after event
 ```
 
 **查找运行时终结点**：
 
-```terminal
+```plain
 What's the URL for this deployed action?
 ```
 
 **处理身份验证**：
 
-```terminal
+```plain
 How do I authenticate with this external API?
 ```
 
 **疑难解答**：
 
-```terminal
+```plain
 Help me debug why this action is returning 500 errors
 ```
 
@@ -477,19 +477,19 @@ Help me debug why this action is returning 500 errors
 
 在进行重大更改后，请利用这些工具来清理孤立的操作。 AI工具可以系统地处理清除过程，高效地识别孤立的操作，验证其状态，并且无需手动干预即可安全移除孤立的操作。
 
-```terminal
+```plain
 Help me identify and clean up orphaned runtime actions
 ```
 
 请求人工智能工具列出已部署的操作并识别未使用的操作
 
-```terminal
+```plain
 List all deployed actions and identify which ones are no longer needed
 ```
 
 让AI工具使用适当的命令删除孤立的操作
 
-```terminal
+```plain
 Remove the orphaned actions that are no longer part of the current implementation
 ```
 
