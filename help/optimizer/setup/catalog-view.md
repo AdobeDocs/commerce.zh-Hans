@@ -3,11 +3,11 @@ title: 目录视图
 description: 了解目录视图是什么以及如何创建它们以按业务结构、策略和定价整理产品目录。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 769aafeb261d978623e68c466888924c92632883
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,11 @@ ht-degree: 0%
 
 在创建目录视图之前，请确保您具有：
 
-- [已创建策略](policies.md)以定义产品筛选器
+- [已创建策略](policies.md)以定义产品筛选器。
 
-- [已摄取价格手册](pricebooks.md)以进行定价
+- [定义目录层](catalog-layer.md)以定义产品的变体。
+
+- [已摄取价格手册](pricebooks.md)以进行定价。
 
 1. 从左侧菜单中，转到&#x200B;_商店设置_，然后单击&#x200B;**[!UICONTROL Catalog views]**。
 
@@ -50,6 +52,7 @@ ht-degree: 0%
 
    - **名称** — 输入目录视图的名称，例如`Celport`&#x200B;。
    - **目录源** — 选择目录源（区域设置），例如`en-US`。
+   - **编录图层** — 审阅摄取的图层和优先级。
    - **策略** — 使用下拉菜单选择相关策略。 例如，“品牌”、“型号”。&#x200B;AEM确保您已[创建策略](policies.md)。
 
 1. 选择要链接到目录视图的价格手册。
@@ -63,6 +66,20 @@ ht-degree: 0%
 目录视图页面将更新以显示新的目录视图&#x200B;。
 
 完成这些步骤后，目录视图现在配置为根据您选择的来源和策略显示产品和定价。
+
+## 目录层
+
+目录层允许您修改目录视图中的产品数据，而无需更改原始源数据。 图层通过在基本目录之上创建一个图层，将更改应用于特定的产品属性，如名称、描述、图像、链接和元数据。 原始产品数据将保持不变，允许您安全地自定义产品并随时恢复更改。
+
+目录层的常见用例包括：
+
+- **SEO优化** — 根据[Sites Optimizer](../manage-results/opportunities.md)中的AI建议覆盖产品元标题和描述
+- **季节性促销活动** — 临时更新促销活动的产品名称、描述或图像
+- **区域自定义** — 根据地理位置或语言显示不同的产品信息
+- **A/B测试** — 测试不同的产品演示以优化转化率
+- **多品牌管理** — 自定义不同品牌目录视图的产品属性
+
+要了解有关创建、管理和排列目录层的详细信息，请参阅[目录层](catalog-layer.md)。
 
 ## 管理目录视图
 
@@ -166,3 +183,9 @@ ht-degree: 0%
 >[!INFO]
 >
 >有关目录数据摄取和投放的详细信息，请参阅[开发人员文档](https://developer.adobe.com/commerce/services/optimizer/)。
+
+## 更多此类内容
+
+- [目录层](catalog-layer.md) — 了解如何在不更改原始源的情况下修改产品数据
+- [策略](policies.md) — 创建策略以筛选目录视图中的产品
+- [价格手册](pricebooks.md) — 管理不同客户区段的定价结构
