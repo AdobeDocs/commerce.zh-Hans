@@ -79,7 +79,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->对于批量层操作，请使用上面描述的数据摄取API方法[](#add-a-catalog-layer-via-data-ingestion)。
+>对于批量层操作，请使用上面描述的数据摄取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
 
 **创建手动图层：**
 
