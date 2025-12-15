@@ -3,7 +3,7 @@ title: 目录层
 description: 了解目录层如何允许您修改产品数据而不更改原始源数据，以便您可以安全地自定义并随时恢复更改。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 source-git-commit: 4a904527af172a5e35b87410135d55484d07ad84
 workflow-type: tm+mt
 source-wordcount: '1207'

@@ -1,7 +1,7 @@
 ---
 title: 机会
 description: 通过与Adobe Sites Optimizer集成以实现智能的数据驱动型网站改进，发现增加流量、参与度和转化率的机会。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 source-git-commit: 7f7b4a3c866c453d9722b708a0ed4e1b601c8e8e
 workflow-type: tm+mt
 source-wordcount: '1349'
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 什么是机会？
 
-[机会](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支持的推荐，可帮助商家识别并解决影响其商业网站性能的问题。 这些建议由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)提供支持，这是一项基于云的服务，可分析和改进网站性能。
+[机会](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支持的推荐，可帮助商家识别并解决影响其商业网站性能的问题。 这些建议由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/home)提供支持，这是一项基于云的服务，可分析和改进网站性能。
 
 ## 主要功能
 
@@ -176,7 +176,7 @@ ht-degree: 0%
 
 ## 了解有关Sites Optimizer的更多信息
 
-有关Sites Optimizer功能和特征的详细信息，请参阅[Adobe Experience Manager Sites Optimizer文档](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)。
+有关Sites Optimizer功能和特征的详细信息，请参阅[Adobe Experience Manager Sites Optimizer文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/home)。
 
 其他资源：
 
