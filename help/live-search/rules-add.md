@@ -2,9 +2,9 @@
 title: 添加规则
 description: 了解如何创建搜索促销规则。
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 085eb0fa1a278701cc889d219db7e8571327a632
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2067'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 添加规则
 
 1. 在管理员中，转到&#x200B;**营销** > SEO和搜索> **[!DNL Live Search]**。
-1. 设置&#x200B;**范围**&#x200B;以标识应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)。
+1. 设置&#x200B;**范围**&#x200B;以标识应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 1. 单击&#x200B;**搜索促销**&#x200B;工作区。
 1. 单击&#x200B;**添加规则**&#x200B;以启动规则编辑器。
 
@@ -181,6 +181,10 @@ ht-degree: 0%
 1. 完成后，单击&#x200B;**保存并发布**。
 
    该规则已添加到&#x200B;*规则*&#x200B;工作区中的列表。
+
+   >[!IMPORTANT]
+   >
+   >如果&#x200B;**[!UICONTROL Save and publish]**&#x200B;按钮呈灰显状态，请确保已输入规则的所有必需信息，包括规则名称。
 
 1. 虽然活动规则会立即生效，但您最多可能必须等待15分钟才能刷新店面中的缓存查询结果。
 
