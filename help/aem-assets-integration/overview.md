@@ -68,7 +68,7 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 观看本视频，了解Adobe Commerce和AEM Assets如何协作以简化内容工作流：
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447898?captions=chi_hans)
 
 ## 后续步骤
 
