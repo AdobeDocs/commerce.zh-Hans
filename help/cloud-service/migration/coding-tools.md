@@ -1,13 +1,13 @@
 ---
 title: 扩展的AI编码工具
 description: 了解如何使用AI工具创建Commerce App Builder扩展。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: d2f2563a1f3a656d7bfaa12a0c3ca2b828e7fc33
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ ht-degree: 0%
 * [Git](https://github.com/git-guides/install-git)：用于存储库克隆和版本控制
 
 ## 安装
+
+>[!NOTE]
+>
+>如果只想安装文档RAG服务，而不是整个AI编码工具包，请参阅[文档RAG服务](./doc-rag.md)。
 
 1. 全局安装最新的[Adobe I/O CLI](https://github.com/adobe/aio-cli)：
 
@@ -151,7 +155,7 @@ aio auth login
 >
 >MCP服务器的某些功能无需登录即可工作，但RAG (Retrieval-Enhanced Generation)服务无法工作。 RAG服务让AI编码代理能够实时访问完整的Adobe Commerce文档集，从而使其能够基于当前Commerce开发实践、API和架构模式回答问题并生成代码。
 >
->在将来的版本中，RAG服务将可以独立访问，而无需安装其他工具。
+>要单独安装RAG服务，请参阅[文档RAG服务](./doc-rag.md)。
 
 ### 光标
 
@@ -275,7 +279,7 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 
 * [集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入门套件模板](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder示例应用程序](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 为什么应使用这些资源
