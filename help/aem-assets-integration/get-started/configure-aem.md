@@ -44,23 +44,23 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 您需要以下资源和权限才能将`assets-commerce`包代码部署到AEM Assets as a Cloud Service AEM环境：
 
-* [使用计划和部署管理员角色访问AEM Assets Cloud Manager计划和环境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)。
+* [使用计划和部署管理员角色访问AEM Assets Cloud Manager计划和环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)。
 
-* [本地AEM开发环境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)，熟悉AEM本地开发过程。
+* [本地AEM开发环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)，熟悉AEM本地开发过程。
 
 * 了解[AEM项目结构](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)以及如何使用Cloud Manager部署自定义内容包。
 
 ### 步骤1：安装`assets-commerce`包
 
-1. 如果需要，可以从AEM Cloud Manager中[为您的AEM Assets项目创建生产和暂存环境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)。
+1. 如果需要，可以从AEM Cloud Manager中[为您的AEM Assets项目创建生产和暂存环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)。
 
-1. 根据需要配置[部署管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline)。
+1. 根据需要配置[部署管道](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline)。
 
-1. [克隆Git存储库](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)。
+1. [克隆Git存储库](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)。
 
 1. 从GitHub中，从[AEM Assets Commerce存储库](https://github.com/ankumalh/assets-commerce)下载包代码。
 
-1. 从您的[本地AEM开发环境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)中，通过将代码手动复制到现有项目配置中，并将`<my-app>`中出现的所有`filter.xml`以及项目中的所有`pom.xml files`替换为您的应用程序名称。
+1. 从您的[本地AEM开发环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)中，通过将代码手动复制到现有项目配置中，并将`<my-app>`中出现的所有`filter.xml`以及项目中的所有`pom.xml files`替换为您的应用程序名称。
 
    >[!NOTE]
    >
@@ -154,4 +154,4 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 * 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce(Adobe管理的PaaS基础架构)。"} [安装Adobe Commerce包](configure-commerce.md)
 
-* **配置您的Commerce店面** — 要将AEM Assets与由Edge Delivery Services提供支持的Commerce店面一起使用，请完成[EDS AEM Assets配置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/)主题中所述的店面配置。
+* **配置您的Commerce店面** — 要将AEM Assets与由Edge Delivery Services提供支持的Commerce店面一起使用，请完成[EDS AEM Assets配置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hans)主题中所述的店面配置。
