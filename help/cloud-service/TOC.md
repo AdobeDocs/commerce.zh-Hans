@@ -30,4 +30,4 @@ ht-degree: 10%
    - [评级扩展教程先决条件](tutorials/tutorial-prerequisites.md)
    - [评级扩展教程](tutorials/ratings-extension.md)
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)
