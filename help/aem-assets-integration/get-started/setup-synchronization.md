@@ -3,9 +3,9 @@ title: 配置集成
 description: 了解如何将Adobe Commerce项目与Experience Manager Assets项目连接起来，以便在这两个系统之间启用资源同步。
 feature: CMS, Media
 exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
-source-git-commit: 6cd37fda03bb51a1375b0e9dc542f9e02d3c6e54
+source-git-commit: d426c7878f7a66fe1047673be7c5bf65ae1949a7
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 识别AEM Assets项目后，选择用于在Adobe Commerce和AEM Assets之间同步资产的匹配规则。
 
-* **[!UICONTROL Match by product SKU]** — 将资源元数据中的SKU与[Commerce产品SKU](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/implementation-playbook/glossary#sku)匹配的默认规则，以确保资源与正确的产品关联。
+* **[!UICONTROL Match by product SKU]** — 将资源元数据中的SKU与[Commerce产品SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)匹配的默认规则，以确保资源与正确的产品关联。
 
 * **[!UICONTROL Custom match]** — 匹配规则，用于需要自定义匹配逻辑的更复杂方案或特定业务要求。 实施自定义匹配需要在Adobe Developer App Builder中开发自定义代码以定义资源与产品的匹配方式。 更多详细信息即将推出……
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 * [!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce(Adobe管理的PaaS基础架构)。"} [安装Adobe Commerce包](configure-commerce.md)以添加扩展并生成使用该扩展所需的凭据和连接。
 
-* 按照[启用Dynamic Media Open API](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis)主题中描述的步骤操作。 请向支持团队提供以下信息：
+* 按照[启用Dynamic Media Open API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis)主题中描述的步骤操作。 请向支持团队提供以下信息：
 
    * **[!UICONTROL AEM Program ID]**
    * **[!UICONTROL Adobe Commerce URL]**
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 配置连接
 
-1. 获取[AEM Assets创作环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/quick-start)项目和环境ID。
+1. 获取[AEM Assets创作环境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/quick-start)项目和环境ID。
 
    1. 打开AEM Cloud Manager并选择&#x200B;**[!UICONTROL Assets]**。
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 1. 从&#x200B;**[!UICONTROL Asset matching rule]**&#x200B;下拉列表中选择一个资源匹配规则以进行资源同步。
 
    * 为&#x200B;**[!UICONTROL Match by SKU]**&#x200B;默认自动匹配[选择](../synchronize/default-match.md)，
-   * 为&#x200B;**[!UICONTROL Custom match]**&#x200B;自定义自动匹配[选择](../synchronize/custom-match.md)(需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)。)
+   * 为&#x200B;**[!UICONTROL Custom match]**&#x200B;自定义自动匹配[选择](../synchronize/custom-match.md)(需要[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)。)
 
 1. 将为AEM Assets产品SKU定义的[Commerce元数据字段名称](configure-aem.md#configure-metadata)添加到&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;字段`commerce:skus`中（默认情况下）。
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 管理员显示该所有者的可用图像，而其余图像则呈灰显状态，并带有&#x200B;**hidden**&#x200B;标签。
 
-有关图像显示行为的详细信息，请参阅[设置图像详细信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主题。
+有关图像显示行为的详细信息，请参阅[设置图像详细信息](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主题。
 
 >[!TIP]
 >
@@ -127,4 +127,8 @@ ht-degree: 0%
 
 ## 下一步
 
-[管理Commerce资源](../manage-assets.md)
+* **配置您的Commerce店面** — 要将AEM Assets与由Edge Delivery Services提供支持的Commerce店面一起使用，请完成[Adobe Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/)的&#x200B;*AEM Assets集成*&#x200B;主题中所述的店面配置。
+
+* 在Adobe Commerce与AEM Assets集成之间设置[匹配规则](../synchronize/default-match.md)。
+
+* [管理Commerce资源](../manage-assets.md)。

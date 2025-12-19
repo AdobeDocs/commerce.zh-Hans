@@ -3,9 +3,9 @@ title: 默认自动匹配
 description: 了解默认的自动匹配规则如何实现Adobe Commerce与AEM Assets集成之间的无缝同步，确保资产自动链接到正确的促销实体。
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
-source-git-commit: 6640635fca5c53fe4b06b9bbb3120fffc46cb0b8
+source-git-commit: d426c7878f7a66fe1047673be7c5bf65ae1949a7
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -32,14 +32,18 @@ Commerce的AEM Assets集成提供了基于&#x200B;**[!UICONTROL Match by product
 
 在Commerce Admin中配置&#x200B;**[!UICONTROL Match by product SKU]**&#x200B;匹配规则后，Commerce资源文件会根据为每个文件配置的资源元数据，自动从AEM Assets同步到Commerce项目。 您可以在&#x200B;**AEM创作**&#x200B;环境的AEM Assets **Commerce**&#x200B;选项卡中配置元数据：
 
-![示例元数据](../assets/example-metadata.png){width="600" zoomable="yes"}
+1. 在AEM Assets中，通过将`Eligible for Commerce`字段设置为`Yes`来更新图像元数据以添加Adobe Commerce关联。
 
-1. 在AEM Assets中，更新图像元数据以添加Adobe Commerce关联`Commerce=yes`。
+   ![示例元数据](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
 
 1. 配置元数据（[!UICONTROL SKU]、[!UICONTROL position]和[!UICONTROL role]）以将资产链接到关联的产品SKU。
 
    >[!NOTE]
    >
    > 如果资产用于多个产品，请为每个关联的SKU配置元数据。
+
+1. 在`Basic`选项卡中，将&#x200B;_[!UICONTROL Review Status]_字段的默认值设置为`approved`。
+
+   ![示例元数据](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
 此方法可确保正确地链接数字资源并在Adobe Commerce中显示这些资源。 此外，它还可让商家和营销人员直接在AEM Assets中管理角色和资产定位，从而在所有参与渠道中提供一致的集中式图像选择和排序机制。
