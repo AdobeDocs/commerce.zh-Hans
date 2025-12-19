@@ -42,7 +42,7 @@ Commerce的AEM Assets集成提供了基于&#x200B;**[!UICONTROL Match by product
    >
    > 如果资产用于多个产品，请为每个关联的SKU配置元数据。
 
-1. 在`Basic`选项卡中，将&#x200B;_[!UICONTROL Review Status]_字段的默认值设置为`approved`。
+1. 在`Basic`选项卡中，将&#x200B;_[!UICONTROL Review Status]_&#x200B;字段的默认值设置为`approved`。
 
    ![示例元数据](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
