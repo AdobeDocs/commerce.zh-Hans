@@ -16,7 +16,7 @@ ht-degree: 0%
 
 完成以下步骤，使用所需的包代码和元数据配置AEM Assets项目，以便从AEM创作环境管理Commerce资源：
 
-1. [了解 ](#aem-commerce-assets-commerce-package-contents)
+1. [了解 &#x200B;](#aem-commerce-assets-commerce-package-contents)
 
 1. [完成安装步骤以配置AEM Assets项目以支持Commerce元数据](#step-1-install-the-assets-commerce-package)
 
@@ -160,13 +160,13 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. 可选。 要在已批准的Commerce资源上传到AEM Assets环境时自动对其进行同步，请将&#x200B;_[!UICONTROL Review Status]_选项卡上`Basic`字段的默认值设置为`approved`。
+1. 可选。 要在已批准的Commerce资源上传到AEM Assets环境时自动对其进行同步，请将&#x200B;_[!UICONTROL Review Status]_&#x200B;选项卡上`Basic`字段的默认值设置为`approved`。
 
 1. 保存更新。
 
 ### 将元数据配置文件应用到Commerce资源源文件夹
 
-1. 从[!UICONTROL  Metadata Profiles]页面中，选择Commerce集成配置文件。
+1. 从[!UICONTROL &#x200B; Metadata Profiles]页面中，选择Commerce集成配置文件。
 
 1. 从操作菜单中选择&#x200B;**[!UICONTROL Apply Metadata Profiles to Folders]**。
 
