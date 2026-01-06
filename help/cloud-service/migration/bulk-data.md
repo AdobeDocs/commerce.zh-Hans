@@ -1,19 +1,21 @@
 ---
 title: 批量数据迁移工具
 description: 了解如何使用批量数据迁移工具将数据从云实例上的现有Adobe Commerce迁移到 [!DNL Adobe Commerce as a Cloud Service]。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+feature: Cloud
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Developer
+level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 06bdcfbff5d376064b18bdab3945e7609075b8bc
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
 
 # 批量数据迁移工具
 
-批量数据迁移工具遵循分布式架构，支持从PaaS环境到SaaS环境的安全高效数据迁移。 此工具专为解决方案实施人员设计用于将数据从云实例上的现有Adobe Commerce (PaaS)迁移到[!DNL Adobe Commerce as a Cloud Service] (SaaS)。 有关迁移过程的详细信息，请参阅[迁移概述](./overview.md)。
+批量数据迁移工具遵循分布式架构，支持从PaaS环境到SaaS环境的安全高效数据迁移。 此工具可帮助解决方案实施者将数据从云实例上的现有Adobe Commerce (PaaS)迁移到[!DNL Adobe Commerce as a Cloud Service] (SaaS)。 有关迁移过程的详细信息，请参阅[迁移概述](./overview.md)。
 
 >[!NOTE]
 >
@@ -21,7 +23,7 @@ ht-degree: 0%
 
 下图详细介绍了用于批量数据迁移工具的架构和关键组件。
 
-![批量数据迁移工具体系结构](../assets/bulk-data-diagram.png)
+![批量数据迁移工具体系结构图，显示PaaS到SaaS的数据流](../assets/bulk-data-diagram.png){zoomable="yes"}
 
 ## 迁移工作流
 
@@ -44,13 +46,13 @@ ht-degree: 0%
 
 ## 创建目标环境
 
-解决方案实施人员(SI)为迁移创建目标环境。 此环境用于存储从源实例迁移的数据。
+解决方案实施人员(SI)为迁移创建目标环境。 此环境存储从源实例迁移的数据。
 
 首先，[创建一个新的 [!DNL Adobe Commerce as a Cloud Service] (SaaS)实例](../getting-started.md#create-an-instance)。
 
 ### 配置提取工具
 
-提取工具用于从源实例中提取数据。
+使用提取工具从源实例中提取数据。
 
 1. 从Adobe提供给您的链接下载提取工具。
 1. 在提取工具中设置以下环境变量：
@@ -93,7 +95,7 @@ magento-cloud tunnel:open
 
 数据加载后，目录数据会自动从SaaS租户数据库流向目录服务。
 
-目录服务会与实时搜索和产品推荐共享此数据。 此过程不需要手动干预。 一旦摄取完成，数据将可用于所有服务。
+目录服务会与实时搜索和产品推荐共享此数据。 此过程不需要手动干预。 一旦摄取完成，数据将在所有服务中可用。
 
 ### 数据完整性验证
 

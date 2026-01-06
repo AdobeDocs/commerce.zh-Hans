@@ -1,12 +1,14 @@
 ---
 title: 评级扩展教程
 description: 了解如何使用App Builder和AI辅助开发工具为Adobe Commerce as a Cloud Service构建产品评级扩展。
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -39,29 +41,29 @@ git --version
 bash --version
 ```
 
-如果前面任何命令未返回预期结果，请参阅[先决条件](tutorial-prerequisites.md)获取指导。
+如果前面的任何命令未返回预期结果，请参阅[先决条件](tutorial-prerequisites.md)获取指导。
 
 ## 扩展开发
 
-此部分将指导您使用人工智能辅助开发工具来为Adobe Commerce as a Cloud Service开发评级扩展的过程。
+此部分将指导您使用AI辅助开发工具为Adobe Commerce as a Cloud Service开发评级扩展。
 
 1. 导航到&#x200B;**[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**，并验证`commerce-extensibility`工具集是否已启用且未出现错误。 如果看到错误，请关闭和打开工具集。
 
-   ![光标设置](../assets/cursor-settings.png){width="600" zoomable="yes"}
+   ![Cursor IDE设置显示MCP商务扩展工具集已启用](../assets/cursor-settings.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
-   >在使用人工智能辅助开发工具时，代理生成的代码和响应将发生自然变化。
+   >使用人工智能辅助开发工具时，预期代码和代理生成的响应会发生自然变化。
    >如果您遇到任何代码问题，始终可以请求代理帮助您对其进行调试。
 
 1. 如果有任何文档添加到光标上下文中，请禁用它：
 
    - 导航到&#x200B;[!UICONTROL **Cursor**] > [!UICONTROL **设置**] > [!UICONTROL **Cursor设置**] > [!UICONTROL **索引和文档**]，并删除列出的任何文档。
 
-   ![禁用文档](../assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![文档列表为空的游标索引和文档设置](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. 为产品评级扩展生成代码：
-   - 从光标聊天窗中，选择&#x200B;**代理**&#x200B;模式。
+   - 在“光标聊天”窗口中，选择&#x200B;[!UICONTROL **代理**]&#x200B;模式。
    - 输入以下提示：
 
    ```shell-session
@@ -80,9 +82,9 @@ bash --version
 
 1. 准确地回答座席的问题以帮助其生成最佳代码。
 
-   ![在光标中输入提示](../assets/enter-prompt.png){width="600" zoomable="yes"}
+   ![在代理模式下光标聊天窗口，已输入扩展提示](../assets/enter-prompt.png){width="600" zoomable="yes"}
 
-   ![代理询问澄清问题](../assets/agent-questions.png){width="600" zoomable="yes"}
+   ![AI代理询问有关扩展要求的问题](../assets/agent-questions.png){width="600" zoomable="yes"}
 
 1. 使用以下示例文本回答座席的问题，以设置随机评级数据：
 
@@ -90,7 +92,7 @@ bash --version
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
    
-   This extension will be called directly from the storefront, no async invocation, such as events or webhooks, is required.
+   This extension is called directly from the storefront, no async invocation, such as events or webhooks, is required.
    
    Start with just the GET API for now, we will implement other CRUD operations at a later time.
    
@@ -102,7 +104,7 @@ bash --version
 
    代理将创建一个`requirements.md`文件，用作实现的真实来源。
 
-   已创建![要求文件](../assets/requirements-file.png){width="600" zoomable="yes"}
+   AI代理创建的![Requirements.md文件及实现详细信息](../assets/requirements-file.png){width="600" zoomable="yes"}
 
 1. 查看`requirements.md`文件并验证计划。
 
@@ -112,11 +114,11 @@ bash --version
 
    代理程序会生成必要的代码并提供详细的摘要，其中包含后续步骤。
 
-   ![架构计划](../assets/architecture-planning.png){width="600" zoomable="yes"}
+   ![分级API的AI代理2期体系结构计划](../assets/architecture-planning.png){width="600" zoomable="yes"}
 
-   ![代码生成摘要](../assets/code-generation-summary.png){width="600" zoomable="yes"}
+   ![生成的代码文件和结构的摘要](../assets/code-generation-summary.png){width="600" zoomable="yes"}
 
-   ![后续步骤](../assets/next-steps.png){width="600" zoomable="yes"}
+   ![AI代理提供测试和部署的后续步骤](../assets/next-steps.png){width="600" zoomable="yes"}
 
 ### 本地测试
 
@@ -128,9 +130,9 @@ bash --version
 
 1. 按照代理的说明操作，并确认API在本地工作。
 
-   ![本地测试](../assets/local-testing.png){width="600" zoomable="yes"}
+   用于本地API测试的![AI代理说明](../assets/local-testing.png){width="600" zoomable="yes"}
 
-   ![本地测试结果](../assets/local-testing-1.png){width="600" zoomable="yes"}
+   ![终端显示成功的本地API测试结果(cURL](../assets/local-testing-1.png){width="600" zoomable="yes"})
 
 ### 部署扩展
 
@@ -142,19 +144,19 @@ bash --version
 
    代理在部署之前执行部署前就绪性评估。
 
-   ![部署前评估](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+   ![AI代理部署前准备情况评估核对清单](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 1. 如果对评估结果有信心，请指示代理继续部署。
 
    代理使用MCP工具包自动验证、构建和部署。
 
-   ![部署](../assets/deployment-process.png){width="600" zoomable="yes"}
+   ![MCP工具包验证生成和部署过程](../assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### 部署后
 
 您可以在将API集成到店面之前对其进行测试。 代理应提供新操作的位置和测试策略。
 
-![测试策略](../assets/testing-strategy.png){width="600" zoomable="yes"}
+具有已部署的操作URL和测试命令的![AI代理测试策略](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
 您还可以在终端中使用cURL手动测试API：
 
@@ -162,7 +164,7 @@ bash --version
 curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
-![cURL测试](../assets/curl-test.png){width="600" zoomable="yes"}
+![终端显示已部署的分级API的cURL测试成功](../assets/curl-test.png){width="600" zoomable="yes"}
 
 ### 与Edge Delivery Services集成
 
@@ -172,9 +174,9 @@ curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=T
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![服务合同](../assets/create-contract.png){width="600" zoomable="yes"}
+![AI代理为店面集成创建服务合同文件](../assets/create-contract.png){width="600" zoomable="yes"}
 
-![服务合同详细信息](../assets/contract.png){width="600" zoomable="yes"}
+![带有端点和响应详细信息的Rating API合同Markdown文件](../assets/contract.png){width="600" zoomable="yes"}
 <!-- 
 Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
 
@@ -246,7 +248,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=zh-Hans).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

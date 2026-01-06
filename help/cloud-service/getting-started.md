@@ -1,19 +1,21 @@
 ---
 title: 开始使用 [!DNL Adobe Commerce as a Cloud Service]
 description: 了解如何使用 [!DNL Adobe Commerce as a Cloud Service]。
+feature: Cloud, Integration
 role: Admin, Developer, User
+level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 69870bc7037bdad5a8d5fa769a06c07f8cd920aa
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1261'
 ht-degree: 0%
 
 ---
 
 # 快速入门
 
-[!DNL Adobe Commerce as a Cloud Service]提供大部分现成的配置。 完成几个基本设置过程后，您的存储将很快启动并运行。 本指南将指导您完成创建和使用实例。 本指南还通过确保您的团队具有对[!DNL Adobe Commerce as a Cloud Service]的正确访问权限以及开始使用所需的工具，帮助您设置组织以取得成功。
+[!DNL Adobe Commerce as a Cloud Service]提供大部分现成的配置。 完成几个基本设置过程后，您的存储即已启动并立即运行。 本指南将指导您逐步创建和使用实例，并帮助您设置组织以取得成功。 它确保您的团队能够正确访问[!DNL Adobe Commerce as a Cloud Service]以及开始使用所需的工具。
 
 [!DNL Adobe Commerce as a Cloud Service]是一个云原生商务平台，为交付数字商务体验提供了灵活性、可扩展性和效率。 此SaaS产品是一个完全受管、无版本的平台，它提供了无缝升级体验，无需手动干预。
 
@@ -21,13 +23,13 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service]包含以下组件：
 
-* **[Adobe Experience Cloud](https://experience.adobe.com/)** — 您位于[!DNL Adobe Commerce]experience.adobe.com[的所有](https://experience.adobe.com/)产品的中心入口点
+* **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)** — 您位于[!DNL Adobe Commerce]experience.adobe.com[的所有](https://experience.adobe.com/)产品的中心入口点
    * 单击&#x200B;[!UICONTROL **快速访问**]&#x200B;下的&#x200B;[!UICONTROL **Commerce**]&#x200B;以打开Commerce Cloud管理器
-* **[Commerce Cloud管理器](https://experience.adobe.com/#/commerce/cloud-service)** — 创建和管理实例，访问API URL和您的Commerce管理员
-* **[Adobe Admin Console](https://adminconsole.adobe.com/)** — 管理用户和角色
+* **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)** — 创建和管理实例，访问API URL和您的Commerce管理员
+* **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** — 管理用户和角色
 * **Commerce管理员** — 管理产品、订单、客户和商店配置
-* **[由Edge Delivery Services提供支持的Storefront](./storefront.md)** — 使用可为商家和开发人员提供卓越速度、SEO和用户体验的可组合的高性能系统，创建和自定义面向客户的店面
-* **[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)** — 使用App Builder以及其他可扩展性工具（如[集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)和[API网格](https://developer.adobe.com/graphql-mesh-gateway/)）构建自定义集成
+* **[店面由 [!DNL Edge Delivery Services]](./storefront.md)**&#x200B;提供支持 — 使用可为商家和开发人员提供卓越速度、SEO和用户体验的可组合的高性能系统，创建和自定义面向客户的店面
+* **[[!DNL Adobe Developer App Builder]](https://developer.adobe.com/app-builder/)** — 使用[!DNL App Builder]以及其他可扩展性工具（如[集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)和[[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/)）构建自定义集成
 
 ## 设置和管理
 
@@ -46,9 +48,9 @@ ht-degree: 0%
 
 需要执行以下步骤才能将[!DNL Adobe Experience Manager Assets]或[!DNL Product Visuals powered by AEM Assets]与[!DNL Adobe Commerce as a Cloud Service]集成：
 
-1. **系统管理员**：[将用户添加到AEM Assets和产品可视化产品配置文件](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
-1. **开发人员**：[集成AEM Assets和产品可视化图表](../aem-assets-integration/overview.md)
-1. **商家**： [访问您的AEM Assets和产品视觉效果](./user-management.md#access-the-experience-manager-interface)
+1. **系统管理员**： [将用户添加到 [!DNL AEM Assets] 和 [!DNL Product Visuals] 产品配置文件](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
+1. **开发人员**： [集成 [!DNL AEM Assets] 和 [!DNL Product Visuals]](../aem-assets-integration/overview.md)
+1. **商家**： [访问您的 [!DNL AEM Assets] 和 [!DNL Product Visuals]](./user-management.md#access-the-experience-manager-interface)
 
 ### 基于角色的设置和管理任务
 
@@ -58,15 +60,15 @@ ht-degree: 0%
 
 >[!TAB 系统管理员和商家工作流]
 
-此图表提供了系统管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/cn/enterprise/admin-guide.html)。
+此图表提供了系统管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/enterprise/admin-guide.html)。
 
-![[!DNL Adobe Commerce as a Cloud Service]商家流程图](./assets/merchant-flow.svg){zoomable="yes"}
+![Adobe Commerce as a Cloud Service的系统管理员和商家工作流程图](./assets/merchant-flow.svg){zoomable="yes"}
 
 >[!TAB 开发人员工作流程]
 
 此图提供了开发人员如何使用App Builder为[!DNL Adobe Commerce as a Cloud Service]创建集成的简要概述。 有关详细信息，请参阅[API文档](https://developer.adobe.com/commerce/webapi/rest/)。
 
-![[!DNL Adobe Commerce as a Cloud Service]开发人员流程图](./assets/developer-flow.svg){zoomable="yes"}
+![用于创建与Adobe Commerce as a Cloud Service集成的开发人员工作流程图](./assets/developer-flow.svg){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -84,7 +86,7 @@ ht-degree: 0%
 | 比较功能 | 了解Cloud Service与其他Adobe Commerce产品之间的差异 | [功能比较](feature-comparison.md) |
 | 创建实例 | 配置沙盒和生产环境 | [创建实例](#create-an-instance) |
 | 设置用户管理 | 添加用户、分配角色和管理权限 | [用户管理](user-management.md) |
-| 设置AEM Assets和产品可视化图表（可选） | 添加用户、分配角色和管理权限 | [用户管理](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
+| 设置[!DNL AEM Assets]和[!DNL Product Visuals]（可选） | 添加用户、分配角色和管理权限 | [用户管理](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB 商家]
 
@@ -95,7 +97,7 @@ ht-degree: 0%
 | 访问实例 | 登录Commerce管理员以管理您的商店 | [访问实例](#access-an-instance) |
 | 探索用例 | 了解实际的业务方案和工作流程 | [用例](./use-cases.md) |
 | 导入目录 | 了解如何将产品数据导入平台 | [导入您的目录](#import-your-catalog) |
-| 访问AEM Assets和产品可视化图表（可选） | 访问Experience Manager以开始使用AEM Assets和产品可视化图表 | [访问Experience Manger界面](./user-management.md#access-the-experience-manager-interface) |
+| 访问[!DNL AEM Assets]和[!DNL Product Visuals]（可选） | 访问Experience Manager以开始使用[!DNL AEM Assets]和[!DNL Product Visuals] | [访问Experience Manager界面](./user-management.md#access-the-experience-manager-interface) |
 
 >[!TAB 开发人员]
 
@@ -108,7 +110,7 @@ ht-degree: 0%
 | 构建店面 | 了解如何设置和自定义Commerce店面 | [店面设置](./storefront.md) |
 | 配置您的店面 | 了解如何设置店面 | [店面设置](./storefront.md) |
 | 浏览集成选项 | 了解您有权访问的App Builder、API Mesh和其他可扩展性工具 | [概述 — 开发人员平台](overview.md#developer-platform) |
-| 集成AEM Assets和产品可视化图表（可选） | 了解如何将AEM Assets和产品可视化与Adobe Commerce集成 | [AEM Assets集成](../aem-assets-integration/overview.md) |
+| 集成[!DNL AEM Assets]和[!DNL Product Visuals]（可选） | 了解如何将[!DNL AEM Assets]和[!DNL Product Visuals]与[!DNL Adobe Commerce]集成 | [AEM Assets集成](../aem-assets-integration/overview.md) |
 
 >[!ENDTABS]
 
@@ -132,7 +134,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service]实例使用基于信用的系统。 您可以创建多个实例，但每个实例都需要可用的积分。 您最初拥有的积分数取决于您的订购。
 
-1. 登录到您的[Adobe Experience Cloud](https://experience.adobe.com/)帐户。
+1. 登录到您的[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)帐户。
 
 1. 在[!UICONTROL Quick access]下，单击&#x200B;[!UICONTROL **Commerce**]&#x200B;以打开[!UICONTROL Commerce Cloud Manager]。
 
@@ -140,7 +142,7 @@ ht-degree: 0%
 
 1. 单击屏幕右上角的&#x200B;[!UICONTROL **添加实例**]。
 
-   ![创建实例](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
+   Commerce Cloud Manager中的![创建实例按钮和实例名称字段](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
 
 1. 选择&#x200B;[!UICONTROL **Commerce as a Cloud Service**]。
 
@@ -203,15 +205,15 @@ ht-degree: 0%
 
 有两种方法可以将您的目录导入[!DNL Adobe Commerce as a Cloud Service]：
 
-* [**Commerce管理员**](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/import/data-import) — 一个用户友好的界面，允许您通过单击几下导入目录数据。
+* [**Commerce管理员**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) — 一个用户友好的界面，允许您通过单击几下导入目录数据。
 * [**导入JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) — 一个REST API，允许您以编程方式导入目录数据。
 
 ### 设置店面
 
-现在您已经创建了实例，接下来可以[设置由Edge Delivery Services提供支持的店面](storefront.md)。
+现在您已经创建了实例，可以[设置由](storefront.md)提供支持的店面[!DNL Edge Delivery Services]。
 
 ## 其他资源
 
 * [发行说明](release-notes.md)
 * [迁移指南](migration/overview.md)
-* [Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
+* [Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)

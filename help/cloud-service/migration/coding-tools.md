@@ -1,22 +1,24 @@
 ---
 title: 扩展的AI编码工具
 description: 了解如何使用AI工具创建Commerce App Builder扩展。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+feature: App Builder, Cloud
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: d2f2563a1f3a656d7bfaa12a0c3ca2b828e7fc33
+source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
 
 # 扩展的AI编码工具
 
-迁移到[!DNL Adobe Commerce as a Cloud Service]时，您可以使用AI编码工具将现有[!DNL Adobe Commerce] PHP扩展转换为[!DNL Adobe Developer App Builder]扩展。 它也可用于创建新的[!DNL App Builder]扩展。
+迁移到[!DNL Adobe Commerce as a Cloud Service]时，您可以使用AI编码工具将现有[!DNL Adobe Commerce] PHP扩展转换为[!DNL Adobe Developer App Builder]扩展。 您还可以使用这些工具创建新的[!DNL App Builder]扩展。
 
-使用AI编码工具具有以下优势：
+AI编码工具具有以下优势：
 
 * **增强的开发工作流**：集成的Adobe Commerce开发工具。
 * **AI支持的帮助**：上下文感知代码生成和调试。
@@ -74,7 +76,7 @@ ht-degree: 0%
    aio commerce extensibility tools-setup
    ```
 
-安装过程将为您提示配置选项。 对于安装位置，选择“当前目录”以在当前工作区中安装工具：
+安装过程会提示您配置选项。 对于安装位置，选择“当前目录”以在当前工作区中安装工具：
 
 ```shell-session
 ? Where would you like to setup the tools?
@@ -130,9 +132,9 @@ ht-degree: 0%
 
 ## 安装后配置
 
-### 登录到[!DNL Adobe I/O CLI]
+### 登录到Adobe I/O CLI
 
-安装[!DNL Adobe I/O CLI]后，您需要随时登录以使用MCP服务器。
+安装[!DNL Adobe I/O CLI]后，必须随时登录，才能使用MCP服务器。
 
 ```bash
 aio auth login
@@ -193,9 +195,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 1. 启用MCP服务器：
 
    * 单击左侧边栏活动栏中的&#x200B;**Extensions**&#x200B;图标，或者使用&#x200B;**Cmd+Shift+X** (macOs)或&#x200B;**Ctrl+Shift+X** （Windows和Linux）打开“扩展”面板。
-   * 单击&#x200B;**MCP服务器 — 已安装**。
-   * 单击&#x200B;**commerce-extensibility MCP服务器**&#x200B;旁边的齿轮图标，然后选择&#x200B;**启动服务器**（如果服务器已停止）。
-   * 再次单击齿轮图标，然后选择&#x200B;**显示输出**。
+   * 单击&#x200B;[!UICONTROL **MCP服务器 — 已安装**]。
+   * 单击&#x200B;[!UICONTROL **commerce-extensibility MCP服务器**]&#x200B;旁边的齿轮图标，然后选择&#x200B;[!UICONTROL **启动服务器**]（如果服务器已停止）。
+   * 再次单击齿轮图标，然后选择&#x200B;[!UICONTROL **显示输出**]。
 
 1. 验证服务器状态。 `MCP:commerce-extensibility`输出应匹配以下内容：
 
@@ -279,7 +281,7 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 
 * [集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入门套件模板](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder示例应用程序](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 为什么应使用这些资源
@@ -326,7 +328,7 @@ Create a detailed implementation plan for this complex development.
 >
 >在使用MCP工具之前，请确保您[已登录Adobe I/O CLI](#log-in-to-the-adobe-io-cli)。
 
-该工具默认为MCP工具，但在某些情况下，它可以改用CLI命令。 如果要确保MCP工具的使用情况，请在提示符下明确请求使用。
+该工具默认为MCP工具，但在某些情况下，它可以改用CLI命令。 要确保使用MCP工具，请在提示符下明确请求它们。
 
 如果您看到正在使用的CLI命令并希望改用MCP工具，请使用以下提示：
 
@@ -346,7 +348,7 @@ CLI命令可用于以下情况：
 
 ### 开发
 
-重要的是，要质疑人工智能工具所造成的不必要的复杂性。
+质疑AI工具所造成的不必要的复杂性。
 
 为简单只读端点添加不必要的文件(`validator.js`、`transformer.js`、`sender.js`)时，请使用以下提示：
 
@@ -466,7 +468,7 @@ Help me debug why this action is returning 500 errors
 
 #### 增量部署
 
-仅部署已修改的操作，以加快开发。 这将降低中断现有功能的风险，并加快提供更改的反馈。 它还降低了中断现有功能的风险。
+仅部署已修改的操作，以加快开发。 此方法可降低中断现有功能的风险，并加快提供更改的反馈。
 
 * 使用MCP工具部署特定操作
 
@@ -479,7 +481,7 @@ Help me debug why this action is returning 500 errors
 
 #### 运行时清理
 
-在进行重大更改后，请利用这些工具来清理孤立的操作。 AI工具可以系统地处理清除过程，高效地识别孤立的操作，验证其状态，并且无需手动干预即可安全移除孤立的操作。
+在进行重大更改后，请利用这些工具来清理孤立的操作。 让AI工具系统地处理清理过程。 它可以高效地识别孤立的操作，验证其状态，并且无需手动干预即可安全删除它们。
 
 ```shell-session
 Help me identify and clean up orphaned runtime actions
@@ -520,7 +522,7 @@ Remove the orphaned actions that are no longer part of the current implementatio
 
 ## 应避免的内容
 
-在使用AI编码工具时，您应该避免以下反模式：
+在使用AI编码工具时，请避免以下反模式：
 
 * **不要跳过澄清阶段** — 始终确保在实施之前完成阶段1。
 * **在每个功能之后不要跳过测试** — 增量测试，不要等到所有功能都完成。
