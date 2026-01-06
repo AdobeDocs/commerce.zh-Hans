@@ -2,7 +2,7 @@
 title: 批量数据迁移工具
 description: 了解如何使用批量数据迁移工具将数据从云实例上的现有Adobe Commerce迁移到 [!DNL Adobe Commerce as a Cloud Service]。
 feature: Cloud
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Developer
 level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86

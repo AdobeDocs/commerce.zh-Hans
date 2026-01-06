@@ -4,7 +4,7 @@ description: 了解 [!DNL Adobe Commerce as a Cloud Service]中的最新功能�
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 发行说明
 
-以下发行说明包含[!DNL Adobe Commerce as a Cloud Service]的更新。 有关其他产品的发行信息，请参阅[Adobe Commerce Optimizer](../optimizer/release-notes.md)或[Adobe Commerce内部部署和Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)。
+以下发行说明包含[!DNL Adobe Commerce as a Cloud Service]的更新。 有关其他产品的发行信息，请参阅[Adobe Commerce Optimizer](../optimizer/release-notes.md)或[Adobe Commerce内部部署和Adobe Commerce on Cloud](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/notes/overview)。
 
 [!DNL Adobe Commerce as a Cloud Service]包含最新版本的促销服务、支付服务和可扩展性版本。 请使用以下链接查看每个页面的发行说明：
 
@@ -49,6 +49,6 @@ ht-degree: 0%
 
 #### 自定义订单属性
 
-* 管理员用户现在可以直接从“管理员”面板的“订单查看”、“编辑”和“创建”屏幕查看和编辑[自定义订单属性](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes)。 此增强功能改进了通过GraphQL创建的自定义订单数据的管理。<!-- CEXT-5044 -->
+* 管理员用户现在可以直接从“管理员”面板的“订单查看”、“编辑”和“创建”屏幕查看和编辑[自定义订单属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes)。 此增强功能改进了通过GraphQL创建的自定义订单数据的管理。<!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
