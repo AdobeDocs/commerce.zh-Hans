@@ -3,25 +3,51 @@ title: 测试和验证
 description: 测试和验证有助于确保 [!DNL Payment Services] 功能按预期工作，并为您的客户提供最佳付款选项
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: b75cad4fd71b5ab9c0199ca47800c36cbd1ae76c
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
 
 # 测试和验证
 
-在您向购物者公开[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]之前，最好在沙盒环境&#x200B;_和_&#x200B;中在生产环境中进行测试。 测试和验证有助于确保[!DNL Payment Services]功能按预期工作，并为您的商店和客户提供最佳付款选项。
+在您向购物者公开[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]之前，最好在沙盒环境&#x200B;_和_&#x200B;中在生产环境中进行测试。 测试和验证有助于确保[!DNL Payment Services]功能按预期工作，并为您的商店和客户提供最佳付款选项。
 
 ## 在沙盒环境中测试
 
 在沙盒环境中测试[!DNL Payment Services]是一个重要的验证步骤，即使它是一个仅连接到PayPal沙盒而非实际银行和商家的模拟环境。
 
 1. 使用[信用卡字段](payments-options.md#credit-card-fields)或任何[PayPal付款按钮](payments-options.md#paypal-smart-buttons)成功完成从商店结帐。 有关使用假信用卡进行测试的更多信息，请参阅[测试凭据](#testing-credentials)。
-1. 捕获（当您的付款操作为[设置为`Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)时）、[退款](refunds.md)或[void](voids.md)刚刚完成的订单。 如果您的付款操作设置为`Authorize`而不是`Authorize and Capture`，则您也可以[为订单](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}创建发票。
+1. 捕获（当您的付款操作为[设置为`Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)时）、[退款](refunds.md)或[void](voids.md)刚刚完成的订单。 如果您的付款操作设置为[而不是](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}，则您也可以`Authorize`为订单`Authorize and Capture`创建发票。
 1. 在24-48小时内，查看[付款报表](payouts.md)中的交易和其他信息。
 1. 在[订单付款状态报告](order-payment-status.md)中查看订单的详细信息。
+
+### 在本地开发环境中测试
+
+在本地开发环境中测试PayPal、PayLater和Venmo支付方法时，需要能够从Internet访问您的环境。 这些付款方法使用[服务器端送货回拨](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/)，该回拨需要PayPal与您的Commerce实例通信以检索送货选项并计算总计。
+
+>[!INFO]
+>
+>如果没有可访问Internet的URL，则Shipping回调无法正常运行，从而导致结账流程与生产环境不同。 应始终使用可访问的URL进行测试，以确保准确的结果。
+
+要公开您的本地环境，请执行以下操作：
+
+1. 使用隧道服务（如[ngrok](https://ngrok.com/)）为您的本地环境创建可公开访问的URL。
+
+1. 更新您的Commerce基本URL配置以匹配登录URL：
+
+   ```bash
+   bin/magento config:set web/unsecure/base_url https://your-ngrok-url.ngrok.io/
+   bin/magento config:set web/secure/base_url https://your-ngrok-url.ngrok.io/
+   bin/magento cache:flush
+   ```
+
+1. 使用PayPal、PayLater或Venmo支付方式完成测试。
+
+1. 测试完成时恢复原始基本URL配置。
+
+如果端点的响应时间少于5秒，则PayPal在弹出窗口中显示错误消息。
 
 ### 测试凭据
 
