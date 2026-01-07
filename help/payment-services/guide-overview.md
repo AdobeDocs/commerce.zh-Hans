@@ -113,11 +113,11 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4用户指南](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) — 针对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的以商家为中心的文档
-> * [[!DNL Adobe Commerce] 2.4用户指南](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) — 用于生成和自定义[!DNL Adobe Commerce]或[!DNL Magento Open Source]的以开发人员为中心的文档
+> * [[!DNL Adobe Commerce] 2.4用户指南](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=zh-Hans) — 针对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的以商家为中心的文档
+> * [[!DNL Adobe Commerce] 2.4用户指南](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=zh-Hans) — 用于生成和自定义[!DNL Adobe Commerce]或[!DNL Magento Open Source]的以开发人员为中心的文档
 > * [发行说明](release-notes.md) — 了解有关即将发行的版本、产品详细信息以及哪些Adobe Commerce版本支持[!DNL Payment Services]扩展的更多信息
-> * [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) — 在知识库中搜索与[!DNL Payment Services]相关的故障排除文章
-> * [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)—Commerce客户可以提交票证以接收其他帮助
+> * [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=zh-Hans) — 在知识库中搜索与[!DNL Payment Services]相关的故障排除文章
+> * [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#submit-ticket)—Commerce客户可以提交票证以接收其他帮助
 
 ## 支持
 
