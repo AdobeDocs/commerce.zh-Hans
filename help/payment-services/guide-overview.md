@@ -123,6 +123,6 @@ ht-degree: 0%
 
 如果您需要了解本指南中未涵盖的有关于[!DNL Payment Services]的信息或有疑问，请联系您的[!DNL Payment Services]销售代表或使用[!DNL Payment Services]主页中的可用资源：
 
->[!VIDEO](https://video.tv.adobe.com/v/3447836)
+>[!VIDEO](https://video.tv.adobe.com/v/3448237?captions=chi_hans)
 
 查看[哪个 [!DNL Payment Services] 选项适合您？](compatibility.md#which-payment-services-option-is-right-for-you)主题以检查哪个[!DNL Payment Services]选项最适合您。
