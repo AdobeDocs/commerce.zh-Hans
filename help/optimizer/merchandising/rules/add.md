@@ -1,11 +1,11 @@
 ---
 title: 创建和管理规则
 description: 了解如何创建和管理促销规则。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2146'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您只能固定查询中返回的产品。
+>您只能固定出现在已配置查询和规则条件的搜索结果中的产品。
+>
+>产品必须已编制索引、可见、有库存，并且符合所有规则筛选器才能进行固定。 如果某个产品未出现在规则的预览或结果中，则固定它不起作用。
 
 或者，可以手动设置事件：
 
