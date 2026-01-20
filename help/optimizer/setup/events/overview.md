@@ -4,7 +4,7 @@ description: 了解 [!DNL Adobe Commerce Optimizer] 用于改进搜索和推荐�
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -78,7 +78,7 @@ ht-degree: 0%
 - **行为** — 购物者在您网站上的参与数据，例如产品查看次数、添加到购物车的商品数和购买次数。
 - **目录** — 产品元数据，如名称、价格、可用性等。
 
-Adobe Sensei汇总行为和目录数据，为每个推荐类型创建推荐。 推荐服务随后以包含推荐的产品&#x200B;_项目_&#x200B;的小组件的形式将这些推荐部署到您的店面。
+Adobe AI会聚合行为和目录数据，为每个推荐类型创建推荐。 推荐服务随后以包含推荐的产品&#x200B;_项目_&#x200B;的小组件的形式将这些推荐部署到您的店面。
 
 某些推荐类型使用购物者的行为数据来训练机器学习模型，以构建个性化推荐。 其他推荐类型仅使用目录数据，不使用任何行为数据。 如果要快速开始使用网站上的推荐，则可以使用`More like this`推荐类型。
 
@@ -86,7 +86,7 @@ Adobe Sensei汇总行为和目录数据，为每个推荐类型创建推荐。 �
 
 何时可以开始使用使用使用行为数据的推荐类型？ 视情况而定。 这称为&#x200B;_冷启动_&#x200B;问题。
 
-_冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于推荐，这意味着在网站上部署推荐单元之前，需要等待Adobe Sensei收集足够的数据来训练其机器学习模型。 模型拥有的数据越多，推荐就越准确和有用。 由于数据收集是在实时网站上进行的，因此最好提前启动此过程。
+_冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于推荐，这意味着等待Adobe AI收集足够的数据来训练其机器学习模型，然后再在网站上部署推荐单元。 模型拥有的数据越多，推荐就越准确和有用。 由于数据收集是在实时网站上进行的，因此最好提前启动此过程。
 
 下表针对为每种推荐类型收集足够数据所花费的时间提供了一般性指导：
 
@@ -148,7 +148,7 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于推
 | CTR | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-item-click`，`recs-add-to-cart-click` | `unitId`，`sku`，`parentSku` |
 | vCTR | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-unit-view`，`recs-item-click`，`recs-add-to-cart-click` | `unitId`，`sku`，`parentSku` |
 
-以下事件并非特定于推荐，而是Adobe Sensei正确解释购物者数据所必需的：
+以下事件并非特定于推荐，而是Adobe人工智能正确解释购物者数据所必需的：
 
 - `view`
 - `add-to-cart`
@@ -174,4 +174,4 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于推
 
 ## 支持
 
-如果您发现任何数据差异，或者如果推荐和搜索结果未按预期工作，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果您发现任何数据差异，或者如果推荐和搜索结果未按预期工作，请[提交支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。

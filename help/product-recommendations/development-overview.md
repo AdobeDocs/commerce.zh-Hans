@@ -1,7 +1,8 @@
 ---
 title: 产品Recommendations管理员开发
 description: “产品推荐”体系结构和开发功能的概述。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 5967259e-c531-4fc7-9abd-cc18433fab33
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # 产品Recommendations管理员开发
 
-产品推荐是一个强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。 产品推荐以单元的形式出现在店面上，如“查看了这个产品的客户也查看了”、“购买了这个产品的客户也购买了”、“为您推荐”等。 Adobe Commerce产品推荐由[Adobe Sensei](https://www.adobe.com/sensei.html)提供支持，它使用人工智能和机器学习算法来对汇总的购物者数据进行深入分析。 此数据与Commerce目录结合使用后，可为购物者提供引人入胜、相关且个性化的体验。
+产品推荐是一个强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。 产品推荐以单元的形式出现在店面上，如“查看了这个产品的客户也查看了”、“购买了这个产品的客户也购买了”、“为您推荐”等。 Adobe Commerce产品推荐由[Adobe AI](https://business.adobe.com/ai.html)提供支持，它使用人工智能和机器学习算法对汇总的购物者数据进行深入分析。 此数据与Commerce目录结合使用后，可为购物者提供引人入胜、相关且个性化的体验。
 
 >[!NOTE]
 >
@@ -18,11 +19,11 @@ ht-degree: 0%
 
 ## 架构概述
 
-从较高层面来看，Commerce产品推荐部署为SaaS。 Commerce端包括店面（其中包含事件收集器和推荐布局模板）和后端（其中包含数据服务、SaaS导出模块和管理UI）。 Adobe Sensei情报服务在SaaS方面得到利用。
+从较高层面来看，Commerce产品推荐部署为SaaS。 Commerce端包括店面（其中包含事件收集器和推荐布局模板）和后端（其中包含数据服务、SaaS导出模块和管理UI）。 Adobe AI智能服务在SaaS端利用。
 
 ![产品推荐体系结构图](assets/arch-diag-sensei.svg)
 
-安装和配置推荐模块后，您的店面将开始收集行为数据。 Adobe Sensei会处理此行为数据与您的目录数据，并计算推荐服务所利用的产品关联。 此时，商家可以直接从管理UI创建、管理产品推荐单元并将其部署到其店面。
+安装和配置推荐模块后，您的店面将开始收集行为数据。 Adobe AI会处理此行为数据与您的目录数据，并计算推荐服务所利用的产品关联。 此时，商家可以直接从管理UI创建、管理产品推荐单元并将其部署到其店面。
 
 ## 后续步骤
 

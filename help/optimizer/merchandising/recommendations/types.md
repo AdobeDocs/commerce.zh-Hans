@@ -1,9 +1,9 @@
 ---
 title: 推荐类型
 description: 了解您可以部署到网站上各个页面的建议。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
-source-git-commit: 3fa6816c539494ce2cc67a9e3c601b8d3048f5d9
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1731'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Adobe Commerce Optimizer提供了一大批推荐，您可以将这些推荐部�
 | 查看次数最多 | 推荐通过计算过去七天内发生查看操作的会话数查看次数最多的产品。<br/><br/>**使用位置：**<br/> — 主页<br/> — 类别<br/> — 产品详细信息<br/> — 购物车<br/> — 确认&#x200B;<br/><br/>**建议的标签：**<br/> — 最受欢迎<br/> — 趋势<br/> — 当前最受欢迎<br/> — 最近受欢迎<br/> — 受此产品(PDP)启发的热门产品<br/> — 最畅销商品 |
 | 购买次数最多 | 推荐过去7天内购物者最常购买的产品。<br/><br/>**使用位置：**<br/> — 主页<br/> — 类别<br/> — 产品详细信息<br/> — 购物车<br/> — 确认&#x200B;<br/><br/>**建议的标签：**<br/> — 最受欢迎<br/> — 趋势<br/> — 当前最受欢迎<br/> — 最近受欢迎<br/> — 受此产品(PDP)启发的热门产品<br/> — 最畅销商品 |
 | 添加到购物车的次数最多 | 推荐购物者在过去七天内最常添加到购物车中的产品。 此推荐类型可在所有页面上使用。<br/><br/>**使用位置：**<br/> — 主页<br/> — 类别<br/> — 产品详细信息<br/> — 购物车<br/> — 确认&#x200B;<br/><br/>**建议的标签：**<br/> — 最受欢迎<br/> — 趋势<br/> — 当前最受欢迎<br/> — 最近受欢迎<br/> — 受此产品(PDP)启发的热门产品<br/> — 最畅销商品 |
-| 趋势 | 根据产品在网站中最近受欢迎程度动态推荐产品。<br/><br/>Adobe Sensei会汇总您网站上的浏览和购买数据，以确定和排名哪些产品最近受购物者欢迎。 由于“趋势”分析的是近期产品发展势头，因此对于周转率较高的目录来说，它是一种有效的推荐类型。 如果您的目录比较静态，则除非受众的购物模式是高度可变的，否则它可能没有那么有用。<br/><br/>在主页上使用时，Trending会推荐最近在整个网站上都很受欢迎的产品。 潮流展示的产品不是一直很受欢迎的产品，而是最近才流行起来的产品。 例如，如果您有促销某些产品的电子邮件营销活动，则电子邮件产生的热门程度增加会增加促销产品被分类为趋势的可能性。<br/><br/>**使用位置：**<br/> — 主页<br/> — 类别<br/> — 产品详细信息<br/> — 购物车<br/> — 确认&#x200B;<br/><br/>**建议的标签：**<br/> — 趋势<br/> — 当前趋势<br/> — 最近趋势<br/> — 热门产品<br/> — 趋势相关产品(PDP) |
+| 趋势 | 根据产品在网站中最近受欢迎程度动态推荐产品。<br/><br/>Adobe AI会汇总您网站上的浏览和购买数据，以确定和排名哪些产品最近受购物者欢迎。 由于“趋势”分析的是近期产品发展势头，因此对于周转率较高的目录来说，它是一种有效的推荐类型。 如果您的目录比较静态，则除非受众的购物模式是高度可变的，否则它可能没有那么有用。<br/><br/>在主页上使用时，Trending会推荐最近在整个网站上都很受欢迎的产品。 潮流展示的产品不是一直很受欢迎的产品，而是最近才流行起来的产品。 例如，如果您有促销某些产品的电子邮件营销活动，则电子邮件产生的热门程度增加会增加促销产品被分类为趋势的可能性。<br/><br/>**使用位置：**<br/> — 主页<br/> — 类别<br/> — 产品详细信息<br/> — 购物车<br/> — 确认&#x200B;<br/><br/>**建议的标签：**<br/> — 趋势<br/> — 当前趋势<br/> — 最近趋势<br/> — 热门产品<br/> — 趋势相关产品(PDP) |
 
 ## 高性能 {#highperf}
 

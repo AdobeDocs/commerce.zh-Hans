@@ -3,7 +3,7 @@ title: 收集数据
 description: 了解事件如何收集 [!DNL Product Recommendations]的数据。
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: d770d4d99802f7ecf6e395518dfc9aeaac9aa130
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 医疗保健客户
 
-如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Product Recommendations]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Product Recommendations]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/general/general#data-services)。
+如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Product Recommendations]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Product Recommendations]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)。
 
 ## 数据类型和事件
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 - **行为** — 购物者在您网站上的参与数据，例如产品查看次数、添加到购物车的商品数和购买次数。
 - **目录** — 产品元数据，如名称、价格、可用性等。
 
-安装`magento/product-recommendations`模块时，Adobe Sensei会聚合行为和目录数据，并为每种推荐类型创建产品推荐。 然后，产品推荐服务以包含推荐的产品&#x200B;_项_&#x200B;的小组件的形式将这些推荐部署到您的店面。
+安装`magento/product-recommendations`模块时，Adobe AI会聚合行为和目录数据，并为每种推荐类型创建产品推荐。 然后，产品推荐服务以包含推荐的产品&#x200B;_项_&#x200B;的小组件的形式将这些推荐部署到您的店面。
 
 某些推荐类型使用购物者的行为数据来训练机器学习模型，以构建个性化推荐。 其他推荐类型仅使用目录数据，不使用任何行为数据。 如果您想快速开始使用网站上的产品推荐，则可以使用以下仅目录推荐类型：
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 何时可以开始使用使用使用行为数据的推荐类型？ 视情况而定。 这称为&#x200B;_冷启动_&#x200B;问题。
 
-_冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产品推荐，这意味着在网站上部署推荐单元之前，需要等待Adobe Sensei收集足够的数据来训练其机器学习模型。 模型拥有的数据越多，推荐就越准确和有用。 由于数据收集是在实时网站上进行的，因此最好通过安装和设置`magento/production-recommendations`模块来提前启动此过程。
+_冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产品推荐，这意味着在网站上部署推荐单元之前，需要等待Adobe AI收集足够的数据来训练其机器学习模型。 模型拥有的数据越多，推荐就越准确和有用。 由于数据收集是在实时网站上进行的，因此最好通过安装和设置`magento/production-recommendations`模块来提前启动此过程。
 
 下表针对为每种推荐类型收集足够数据所花费的时间提供了一般性指导：
 
@@ -87,4 +87,4 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 
 >[!NOTE]
 >
->如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hans)，则在购物者同意使用Cookie之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，Adobe Commerce会默认收集行为数据。
+>如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，则在购物者同意使用Cookie之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，Adobe Commerce会默认收集行为数据。

@@ -1,7 +1,8 @@
 ---
 title: 彩块化的类型
 description: '[!DNL Live Search]个Facet是动态的，并在相关时显示在筛选器列表中。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: cd05c0c5-1028-4d66-951d-0b61c1ecc440
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 [!DNL Live Search]使用各种Facet类型，只有在相关时它们才会出现在&#x200B;*筛选器*&#x200B;列表中。 可用Facet的列表会根据返回的产品而发生更改。 以下特征会影响其呈现方式和行为：
 
 * 固定Facet — 最常用的Facet可以固定到列表顶部。 其余Facet在固定的Facet之后以&#x200B;*排序类型*&#x200B;顺序列出。
-* 动态Facet - [Adobe Sensei](https://www.adobe.com/sensei.html)发现与产品集和查询最相关的产品属性。 该计算会考虑整个目录的属性元数据，并在查询时确定与查询最相关的Facet。
+* 动态Facet - [Adobe AI](https://business.adobe.com/ai.html)发现与产品集和查询最相关的产品属性。 该计算会考虑整个目录的属性元数据，并在查询时确定与查询最相关的Facet。
 
   >[!NOTE]
   >
@@ -34,7 +35,7 @@ ht-degree: 0%
 
 ### Facet标签
 
-对于[!DNL Commerce]店面，Facet标签由&#x200B;[*属性属性*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hans)确定。 对于具有多个视图的存储，可在&#x200B;*管理标签*&#x200B;下定义其他标签。 对于Headless实施，从[彩块化工作区](faceting-workspace.md)编辑标签。
+对于[!DNL Commerce]店面，Facet标签由&#x200B;[*属性属性*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html)确定。 对于具有多个视图的存储，可在&#x200B;*管理标签*&#x200B;下定义其他标签。 对于Headless实施，从[彩块化工作区](faceting-workspace.md)编辑标签。
 
 ### 排序类型
 

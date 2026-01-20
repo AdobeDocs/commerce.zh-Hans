@@ -3,8 +3,8 @@ title: 类别促销
 description: 使用 [!DNL Live Search] 类别促销以获得更快的购物体验。
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
-source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 本视频介绍了类别推销。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448861?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 可在管理员中访问该功能，其地址为： **营销** > SEO和搜索> **[!DNL Live Search]** > **类别促销**。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 类别促销使用与[单个产品](rules-workspace.md)相同的排名类型。
 排名有两种类型：智能和手动。
 
-**智能排名**&#x200B;利用[Adobe Sensei](https://www.adobe.com/sensei.html)的店面行为数据分析，通过特定算法对选定类别中的所有产品进行排序。 在选择智能排名后，由于Adobe Sensei会持续重新分析基础数据，因此预计产品的特定订单会随着时间的推移而发生变化。 例如，随着购物者偏好变化，热门趋势产品会自动随着时间的推移而改变。
+**智能排名**&#x200B;利用[Adobe人工智能](https://business.adobe.com/ai.html)对店面行为数据进行分析，通过特定算法对选定类别中的所有产品进行排序。 一旦选择了智能排名，随着Adobe人工智能持续重新分析基础数据，预计产品的具体订单会随着时间的推移而改变。 例如，随着购物者偏好变化，热门趋势产品会自动随着时间的推移而改变。
 智能排名方法有：
 
 * 购买次数最多：按购物者过去7天购买产品的频率对产品进行排名。

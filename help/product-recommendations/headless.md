@@ -2,7 +2,7 @@
 title: Headless
 description: 了解如何在headless店面中集成 [!DNL Product Recommendations] 。
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 自定义和Headless集成商应该参考这些Luma和PWA说明作为建议的实施。 可通过多种方法将产品推荐实施到Headless解决方案中，本文档并未涵盖所有场景。 集成商必须为其实施提供事件、设计和测试服务。
 
-[!DNL Product Recommendations]需要[行为和目录数据](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=zh-Hans)才能运行。 在Headless实施中，目录数据同步过程保持不变，但行为数据收集需要更改。
+[!DNL Product Recommendations]需要[行为和目录数据](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html)才能运行。 在Headless实施中，目录数据同步过程保持不变，但行为数据收集需要更改。
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 要将[!DNL Product Recommendations]集成到Headless店面，您必须：
 
-1. 将行为数据发送到Adobe Sensei以分析和计算产品推荐结果。 您还可以发送其他数据以启用产品推荐[量度报告](workspace.md)。
+1. 将行为数据发送到Adobe AI以分析和计算产品推荐结果。 您还可以发送其他数据以启用产品推荐[量度报告](workspace.md)。
 
 1. 获取产品推荐结果并在页面上呈现这些结果。
 
@@ -50,7 +50,7 @@ ht-degree: 0%
    | `rec-click` | 推荐单元 |
    | `rec-add-to-cart-click` | 推荐单元（如果推荐模板中存在“添加到购物车”按钮） |
 
-1. 触发事件时，请使用[Adobe Commerce Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)处理事件并将它们发送到Adobe Sensei。
+1. 触发事件时，请使用[Adobe Commerce Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)处理事件并将它们发送到Adobe AI。
 
 1. 收集行为数据后，您可以[在“管理员”中创建](create.md) [!DNL Product Recommendations]。
 
