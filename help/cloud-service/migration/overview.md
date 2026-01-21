@@ -3,7 +3,7 @@ title: 迁移到 [!DNL Adobe Commerce as a Cloud Service]
 description: 了解如何迁移到 [!DNL Adobe Commerce as a Cloud Service]。
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Developer
 level: Intermediate
 source-git-commit: af56d52f98a83310b858f82f16693f5323c1b962
@@ -25,8 +25,8 @@ ht-degree: 0%
 
 **主要差异**
 
-* 仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce on Cloud项目(Adobe管理的PaaS基础架构)和本地项目。"} **PaaS（当前）**：商家在Adobe的托管环境中管理应用程序代码、升级、修补和基础架构配置。 [共享责任模型](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)，适用于服务(MySQL、Elasticsearch等)。
-* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"} **SaaS（新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe完全管理核心应用程序、基础架构和更新。 商家则注重通过扩展点（API、应用构建器、UI SDK）实现定制。 核心应用代码被锁定。
+* 仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce on Cloud项目(Adobe管理的PaaS基础架构)和本地项目。"} **PaaS（当前）**：商家在Adobe的托管环境中管理应用程序代码、升级、修补和基础架构配置。 [共享责任模型](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/security-and-compliance/shared-responsibility)，适用于服务(MySQL、Elasticsearch等)。
+* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"} **SaaS（新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe完全管理核心应用程序、基础架构和更新。 商家则注重通过扩展点（API、应用构建器、UI SDK）实现定制。 核心应用代码被锁定。
 
 **建筑学意义**
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 * [Adobe 开发者应用构建](https://developer.adobe.com/app-builder/) [器和 Adobe 开发者应用构建器的 API 网格](https://developer.adobe.com/graphql-mesh-gateway)
 * [商业优化器](../../optimizer/overview.md)
-* [边缘传递服务](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* [边缘传递服务](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
 * 使用 [Commerce Cloud Manager实现自助服务配置](../getting-started.md#create-an-instance)
 
 ## 迁徙路径
@@ -169,7 +169,7 @@ ht-degree: 0%
 
 * **目录数据同步**：确保您的Adobe Commerce PaaS实例继续将产品和目录数据同步到您现有的Adobe Commerce目录SaaS服务。 这通常依赖于PaaS实例中已建立的连接器或模块。 目录SaaS服务仍然是搜索和促销功能的权威来源，其数据来自PaaS后端。
 * 用于优化的&#x200B;**API网格**：虽然Headless店面(在Edge Delivery Services上)和其他服务可以直接使用目录SaaS服务中的数据，但Adobe强烈建议使用API网格(在App Builder内)。 API网格可以将目录SaaS服务中的API与PaaS后端中的其他必要API（例如，来自事务性数据库的实时清单检查或未完全复制到目录SaaS服务的自定义产品属性）统一到单个高性能GraphQL端点中。 这还可以实现集中式缓存、身份验证和响应转换。
-* **集成实时搜索和产品推荐**：配置实时搜索和产品推荐SaaS服务，直接 [从现有的Adobe Commerce目录SaaS服务中导入目录数据](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) ，这些数据由您的PaaS后端填充。
+* **集成实时搜索和产品推荐**：配置实时搜索和产品推荐SaaS服务，直接 [从现有的Adobe Commerce目录SaaS服务中导入目录数据](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/install#configure-the-data) ，这些数据由您的PaaS后端填充。
 
 **好处**：通过利用现有且运营中的目录SaaS服务及其与PaaS后端的集成管道，为实现无头店和高级SaaS商品化功能提供了更快的路径。 但是，它保留了对主目录数据源的PaaS后端的依赖关系，并且不提供新的可组合目录数据模型中固有的多源聚合功能。 这一选项是迈向更完整可组合架构的有效跳板。
 
