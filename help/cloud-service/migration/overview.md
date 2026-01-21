@@ -3,19 +3,19 @@ title: 迁移到 [!DNL Adobe Commerce as a Cloud Service]
 description: 了解如何迁移到 [!DNL Adobe Commerce as a Cloud Service]。
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Developer
 level: Intermediate
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+source-git-commit: af56d52f98a83310b858f82f16693f5323c1b962
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3016'
 ht-degree: 0%
 
 ---
 
 # 迁移到[!DNL Adobe Commerce as a Cloud Service]
 
-[!DNL Adobe Commerce as a Cloud Service]为开发人员提供了从现有Adobe Commerce PaaS实施过渡到新Adobe Commerce as a Cloud Service (SaaS)产品的全面指南。 Adobe Commerce as a Cloud Service代表着向完全托管、无版本SaaS模型的重大转变，提供了增强的性能、可扩展性、简化的操作，以及与更广的[!DNL Adobe Experience Cloud]的更紧密集成。
+[!DNL Adobe Commerce as a Cloud Service]为从现有Adobe Commerce PaaS实施过渡到新Adobe Commerce as a Cloud Service(SaaS)产品的开发人员提供了全面的指南。 Adobe Commerce as a Cloud Service代表着向完全托管、无版本SaaS模型的重大转变，提供了增强的性能、可扩展性、简化的操作，以及与更广的[!DNL Adobe Experience Cloud]的更紧密集成。
 
 >[!NOTE]
 >
@@ -25,10 +25,10 @@ ht-degree: 0%
 
 **主要差异**
 
-* 仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"} **PaaS（当前）**：商家在Adobe的托管环境中管理应用程序代码、升级、修补和基础架构配置。 [共享责任模型](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/security-and-compliance/shared-responsibility)，适用于服务(MySQL、Elasticsearch等)。
-* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"} **SaaS（新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe完全管理核心应用程序、基础架构和更新。 商家专注于通过可扩展性点(API、App Builder、UI SDK)进行自定义。 核心应用程序代码已锁定。
+* 仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce on Cloud项目(Adobe管理的PaaS基础架构)和本地项目。"} **PaaS（当前）**：商家在Adobe的托管环境中管理应用程序代码、升级、修补和基础架构配置。 [共享责任模型](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)，适用于服务(MySQL、Elasticsearch等)。
+* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"} **SaaS（新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe完全管理核心应用程序、基础架构和更新。 商家则注重通过扩展点（API、应用构建器、UI SDK）实现定制。 核心应用代码被锁定。
 
-**架构影响**
+**建筑学意义**
 
 * **无版本平台**：持续更新意味着核心不再进行主要版本升级。
 * **微服务和API优先**：更加依赖于API来实现可扩展性和集成。
@@ -37,54 +37,54 @@ ht-degree: 0%
 
 **新工具和概念**
 
-* Adobe Developer App Builder的[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)和[API Mesh](https://developer.adobe.com/graphql-mesh-gateway)
-* [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-* 使用[Commerce Cloud Manager](../getting-started.md#create-an-instance)进行自助配置
+* [Adobe 开发者应用构建](https://developer.adobe.com/app-builder/)[器和 Adobe 开发者应用构建器的 API 网格](https://developer.adobe.com/graphql-mesh-gateway)
+* [商业优化器](../../optimizer/overview.md)
+* [边缘传递服务](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* 使用 [Commerce Cloud Manager实现自助服务配置](../getting-started.md#create-an-instance)
 
-## 迁移路径
+## 迁徙路径
 
 [!DNL Adobe Commerce as a Cloud Service]支持多个迁移路径，具体取决于您的时间线、店面和自定义设置。
 
-作为完整迁移的替代方法，[!DNL Adobe Commerce as a Cloud Service]支持使用Commerce Optimizer或增量方法执行分阶段迁移。
+作为全面迁移的替代方案， [!DNL Adobe Commerce as a Cloud Service] 支持分阶段迁移，使用Commerce Optimizer或增量式方法。
 
-* **增量迁移** — 此方法包括分阶段迁移您的数据、自定义项和集成。 这种方法非常适用于具有许多自定义项的大型商家，这些商家希望按照自己的步调将其复杂的自定义项和数据逐步过渡到[!DNL Adobe Commerce as a Cloud Service]。
+* **增量迁移**——这种方法涉及分阶段迁移数据、定制和集成。 这种方法非常适合拥有大量定制服务的大型商家，他们希望逐步将复杂的定制和数据逐步过渡到 [!DNL Adobe Commerce as a Cloud Service] 自己的节奏。
 
 ![增量迁移](../assets/incremental.png){width="600" zoomable="yes"}
 
-* **Commerce Optimizer** — 此方法允许您循环迁移，方法是使用Commerce Optimizer作为过渡阶段，按照自己的步调将复杂的自定义项和数据移动到[!DNL Adobe Commerce as a Cloud Service]。 Commerce Optimizer提供对由目录视图和策略提供支持的促销服务、由Edge Delivery提供支持的Commerce Storefront以及[!DNL Product Visuals powered by AEM Assets]的访问权限。
+* **Commerce Optimizer**——这种方法允许您通过将Commerce Optimizer作为过渡阶段，以自己的节奏将复杂的定制和数据迁移到 [!DNL Adobe Commerce as a Cloud Service] 各个阶段，实现迭代迁移。 Commerce Optimizer 提供由目录视图和策略驱动的商品陈列服务、由边缘交付驱动的商业商店服务等 [!DNL Product Visuals powered by AEM Assets]访问。
 
 ![迭代迁移](../assets/optimizer.png){width="600" zoomable="yes"}
 
-* **完全迁移** — 此方法包括同时迁移所有数据、自定义项和集成。 这种方法非常适用于那些自定义项很少且想要快速过渡到[!DNL Adobe Commerce as a Cloud Service]的小型商家。
+* **全面迁移**——该方法涉及一次性迁移所有数据、定制和集成。 这种方式非常适合那些需要快速过渡到 [!DNL Adobe Commerce as a Cloud Service]定制化的小型商家。
 
-下表概述了不同存储前端和配置的迁移过程：
+下表概述了不同商店和配置的迁移过程：
 
-|                    | LUMA店面 | PWA店面 | 由Edge Delivery提供支持的Commerce店面 | Headless |
+|                    | LUMA 店面 | PWA店面 | 由Edge Delivery提供支持的Commerce店面 | Headless |
 |--------------------|----------------------------------------|----------------------------------------|------------------------------------------------------|----------------------------------------|
 | 数据迁移 | 必填 | 必填 | 必填 | 必填 |
 | 店面 | 迁移到由Edge Delivery提供支持的Commerce Storefront | 迁移到由Edge Delivery提供支持的Commerce Storefront或进行维护 | 无影响 | 无影响 |
 | API网格 | 构建新网格 | 构建新网格或重新配置现有网格 | 构建新网格或重新配置现有网格 | 构建新网格或重新配置现有网格 |
 | 集成 | 利用集成入门工具包 | 利用集成入门工具包 | 利用集成入门工具包 | 利用集成入门工具包 |
 | 自定义 | 移动到App Builder和API Mesh | 移动到App Builder和API Mesh | 移动到App Builder和API Mesh | 移动到App Builder和API Mesh |
-| Assets管理 | 使用OOTB时需要迁移 | 使用OOTB时需要迁移 | 使用OOTB时需要迁移 | 使用OOTB时需要迁移 |
+| Assets管理 | 在使用OOTB时需要迁移 | 在使用OOTB时需要迁移 | 在使用OOTB时需要迁移 | 使用OOTB时需要迁移 |
 | 扩展 | 迁移到App Builder | 迁移到App Builder | 迁移到App Builder | 迁移到App Builder |
 
-如表所示，每次迁移的缓解措施将包括：
+如表所示，每次迁移的缓解措施包括：
 
-* **数据迁移** — 使用提供的[迁移工具](./bulk-data.md)将数据从现有实例迁移到[!DNL Adobe Commerce as a Cloud Service]。
+* **数据迁移**——使用提供的 [迁移工具](./bulk-data.md) 将数据从现有实例迁移到 [!DNL Adobe Commerce as a Cloud Service]。
 * **店面** — 由Edge Delivery提供支持的现有Commerce店面和headless店面不需要缓解问题，但Luma店面需要迁移到由Edge Delivery提供支持的Commerce店面。 PWA Studio店面可以迁移到由Edge Delivery提供支持的Commerce店面，也可以保持其当前状态。 Adobe将提供加速器以帮助店面迁移。
 * **[API网格](https://developer.adobe.com/graphql-mesh-gateway)** — 创建新网格或修改现有网格。 Adobe将提供预配置的网格以帮助完成此过程。
 * **集成** — 所有集成都需要利用[集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)或[[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/)。
 * **自定义项** — 所有自定义项都必须移至App Builder和API网格。
-* **Assets管理** — 所有资源管理都需要迁移。 如果您已在使用[!DNL AEM Assets]，则无需迁移。
-* **扩展** — 任何进程内扩展都需要重新创建为进程外扩展。 到2025年底，Adobe将提供对我们最受欢迎的扩展的访问，以最大程度地缩短构建时间。
+* **资产管理**——所有资产管理都需要迁移。 如果你已经在使用 [!DNL AEM Assets]，就没必要迁移。
+* **扩展**——任何进程中的扩展都需要重新创建为进程外扩展。 到2025年底，Adobe将提供我们最受欢迎的扩展访问权限，以缩短构建时间。
 
 ## 迁移阶段
 
 以下阶段描述了迁移到[!DNL Adobe Commerce as a Cloud Service]的必要步骤和注意事项。
 
-### 迁移前评估和规划
+### 迁徙前评估与规划
 
 此阶段对于最大限度地降低风险、建立明确的迁移路径并在问题出现之前发现问题至关重要。
 
@@ -123,7 +123,7 @@ ht-degree: 0%
 * **确定核心业务流程：**&#x200B;优先处理必须首先迁移的功能，例如：
    * 复杂的定价规则
    * 在正式下达或处理订单之前应用的自定义业务规则
-   * 复杂的税费计算
+   * 复杂的税务计算
    * 地址验证
    * 下达订单后触发的自定义逻辑
 * **Headless与整体式店面：**&#x200B;新店面开发或调整现有店面的决策点。
@@ -143,9 +143,9 @@ ht-degree: 0%
 
 **策略重构和外部化**
 
-此阶段包含迁移的核心，侧重于使代码库适应[!DNL Adobe Commerce as a Cloud Service]云原生范式。 这包括从战略上采用新的Adobe服务和将自定义逻辑移出核心Commerce平台。
+此阶段包括迁移的核心，侧重于使您的代码库适应[!DNL Adobe Commerce as a Cloud Service]云原生模式。 这涉及从战略上采用新的Adobe服务并将自定义逻辑移出核心Commerce平台。
 
-#### 1.将“处理中”自定义项和扩展迁移到App Builder
+#### 1.将“处理中”自定义设置和扩展迁移到App Builder
 
 这是实现“锁定核心”和面向未来的解决方案的关键阶段，是[!DNL Adobe Commerce as a Cloud Service]架构理念的核心。
 
@@ -153,11 +153,11 @@ ht-degree: 0%
 * **利用API Mesh**：对于需要来自多个后端系统(例如，您的PaaS Commerce后端、ERP、CRM和自定义App Builder微服务)的数据的情况，请在App Builder中实施API Mesh层。 这会将不同的API整合到单个高性能的GraphQL端点中，供您的新店面或其他服务使用，从而简化复杂的数据提取。
 * **事件驱动型架构**：利用Adobe I/O Events根据PaaS实例中发生的事件（例如，产品更新、客户注册、订单状态更改）或其他连接系统中发生的事件，触发App Builder操作。 这促进了异步通信，降低了紧密耦合，并增强了系统恢复能力。
 
-**好处**：此步骤可显着减少与深度嵌入的自定义项相关的技术债务，显着加快将Commerce实例过渡到[!DNL Adobe Commerce as a Cloud Service]的速度，增强自定义逻辑的可扩展性和独立部署能力，并加快扩展的开发周期。
+**好处**：这一步显著减少了深度定制带来的技术债务，极大加快了 Commerce 实例的 [!DNL Adobe Commerce as a Cloud Service]迁移速度，增强自定义逻辑的可扩展性和独立部署能力，并加快扩展开发周期。
 
-#### 2.采用基于SaaS的Adobe Commerce促销服务并集成目录数据
+#### &#x200B;2. 采用基于SaaS的Adobe Commerce商品管理服务并整合目录数据
 
-这是一个关键的初始集成点，它有两个关于目录数据管理的选项：
+这是一个关键的初始整合点，涉及目录数据管理的两个选项：
 
 >[!BEGINTABS]
 
@@ -169,9 +169,9 @@ ht-degree: 0%
 
 * **目录数据同步**：确保您的Adobe Commerce PaaS实例继续将产品和目录数据同步到您现有的Adobe Commerce目录SaaS服务。 这通常依赖于PaaS实例中已建立的连接器或模块。 目录SaaS服务仍然是搜索和促销功能的权威来源，其数据来自PaaS后端。
 * 用于优化的&#x200B;**API网格**：虽然Headless店面(在Edge Delivery Services上)和其他服务可以直接使用目录SaaS服务中的数据，但Adobe强烈建议使用API网格(在App Builder内)。 API网格可以将目录SaaS服务中的API与PaaS后端中的其他必要API（例如，来自事务性数据库的实时清单检查或未完全复制到目录SaaS服务的自定义产品属性）统一到单个高性能GraphQL端点中。 这还可以实现集中式缓存、身份验证和响应转换。
-* **集成实时搜索和产品推荐**：将实时搜索和产品推荐SaaS服务配置为直接从现有Adobe Commerce目录SaaS服务[摄取目录数据](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/install#configure-the-data)，而您的目录SaaS服务又由PaaS后端填充。
+* **集成实时搜索和产品推荐**：配置实时搜索和产品推荐SaaS服务，直接 [从现有的Adobe Commerce目录SaaS服务中导入目录数据](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) ，这些数据由您的PaaS后端填充。
 
-**优势**：通过利用现有的可操作目录SaaS服务及其与PaaS后端的集成管道，这可以更快地通向Headless店面和高级SaaS促销功能。 但是，它保留了对主目录数据源的PaaS后端的依赖关系，并且不提供新的可组合目录数据模型中固有的多源聚合功能。 此选项是实现更完整可组合架构的有效基础。
+**好处**：通过利用现有且运营中的目录SaaS服务及其与PaaS后端的集成管道，为实现无头店和高级SaaS商品化功能提供了更快的路径。 但是，它保留了对主目录数据源的PaaS后端的依赖关系，并且不提供新的可组合目录数据模型中固有的多源聚合功能。 这一选项是迈向更完整可组合架构的有效跳板。
 
 >[!TAB 选项2 — 可组合的目录数据模型]
 
@@ -203,9 +203,9 @@ ht-degree: 0%
    * **选项2**：从CCDM获取产品信息和促销规则。
    * 从API Mesh获取旧版后端（PaaS实例）或自定义App Builder服务中的任何编排数据（例如，显示实时库存、自定义产品属性和忠诚度点数）。
 * **内容迁移(AEM服务)**：将您现有的静态内容（例如，“关于我们”页面、博客文章和营销横幅）迁移到支持Commerce店面的AEM服务。 利用AEM的内容创作功能并确保针对Edge Delivery Services优化资产。
-* **开发核心UI组件**：使用Edge Delivery Services插件组件和自定义React/Vue组件为产品详细信息页面(PDP)、产品列表页面(PLP)和常规内容页面构建关键用户界面组件。 确定核心商务流的优先级。
-* **与现有购物车/结帐集成**：最初，Edge Delivery Services店面将协调您向现有Adobe Commerce PaaS（或其他第三方平台）的切换，以进行购物车管理和结帐。 这通常涉及：
-   * **重定向**：将用户重定向到旧版平台的本机购物车和结帐URL，并传递必要的会话和购物车标识符。
+* **开发核心UI组件**：使用Edge Delivery Services插件组件和自定义React/Vue组件，为产品详细信息页面(PDP)、产品列表页面(PLP)和常规内容页面构建关键的用户界面组件。 确定核心商务流的优先级。
+* **与现有购物车/结账集成**：最初，Edge Delivery Services店面将安排切换到您现有的Adobe Commerce PaaS（或其他第三方平台）以进行购物车管理和结账。 这通常包括：
+   * **重定向**：正在将用户重定向到旧版平台的本机购物车和结帐URL，并传递必要的会话和购物车标识符。
    * **直接API交互**(使用App Builder编排)：在Edge Delivery Services中构建直接与PaaS后端的购物车和结帐API交互的自定义购物车和结帐UI组件。 这通常涉及将App Builder作为前端后端(BFF)来编排对多个后端服务（例如，PaaS cart、支付网关和配送计算器）的调用。
 
 **优势**：提供超快、SEO优化和高度灵活的店面体验。 此阶段直接有助于提供卓越的客户体验，并为未来前端创新奠定基础。
@@ -220,33 +220,33 @@ ht-degree: 0%
 
 批量数据迁移包括从Adobe Commerce PaaS实例中获取完整数据转储，转换整个数据集，并将其导入Adobe Commerce as a Cloud Service中，所有这些操作都可以同时完成。 此方法通常用于初始数据群体。
 
-* **工具可用性**：将在2025年7月中旬应请求提供专门的[批量数据迁移工具](./bulk-data.md)，以供客户用于第一方Commerce批量数据迁移。 如果客户在批量数据迁移之前需要帮助，Adobe可以代表他们根据请求促进数据传输。
+* **工具可用性**：将在2026年第1季度应请求提供专门的[批量数据迁移工具](./bulk-data.md)，以供客户用于第一方Commerce批量数据迁移。 如果客户在批量数据迁移之前需要帮助，Adobe可以代表他们根据请求促进数据传输。
 
-* **进程**：
-   * **完整数据导出**：从Adobe Commerce PaaS实例中提取完整的数据集（例如，产品、类别、客户帐户、历史订单数据、静态块和页面内容）。
-   * **数据转换**：应用必要的转换以使提取的数据符合新Adobe Commerce as a Cloud Service组件的架构要求，包括可组合目录数据模型(CCDM)（如果采用）以及任何其他相关Adobe服务或数据库。 这可能涉及自定义脚本或专门的数据映射工具。
-   * **初始导入**：将转换后的完整数据集导入Adobe Commerce as a Cloud Service的相应组件中。 对于产品和类别数据，这将填充所选的目录服务（CCDM或现有的目录SaaS）。 对于客户和订单数据，这将填充事务型后端或关联的服务。
-   * **验证**：严格验证导入的数据，以确保所有新系统的完整性、准确性和一致性。
+* **进程**:
+   * **完全数据导出**：从Adobe Commerce PaaS实例中提取完整的数据集（例如，产品、类别、客户帐户、历史订单数据、静态块和页面内容）。
+   * **数据转换**：应用必要的转换，使提取的数据与新的 Adobe 商业云服务组件的模式要求保持一致，包括采用的可组合目录数据模型（CCDM）及其他相关 Adobe 服务或数据库。 这可能涉及定制脚本或专用数据映射工具。
+   * **初始导入**：将转换后的完整数据集导入 Adobe Commerce as a Cloud Service 的相应组件。 对于产品和类别数据，这会填充所选的目录服务（CCDM 或现有的目录 SaaS）。 对于客户和订单数据，这会填充交易后台或相关服务。
+   * **验证**：严格验证导入数据，确保所有新系统的数据完整性、准确性和一致性。
 
 **迭代数据迁移**
 
-迭代数据迁移侧重于将增量更改和删除从源PaaS实例同步到新的Cloud Service组件，确保数据在转换之前和之后保持新鲜。
+迭代数据迁移侧重于同步源PaaS实例到新云服务组件的增量变更和差异，确保数据在切换前后保持新鲜。
 
-* **工具可用性**：专门为迭代数据迁移设计的工具将在2025年下半年推出。
+* **工具可用性**：专为迭代数据迁移设计的工具将于2026年推出。
 
-* **进程**：
-   * **增量标识**：建立机制以标识自上次同步以来PaaS环境中关键数据集中的更改（创建、更新和删除）。 这可能涉及更改数据捕获(CDC)、时间戳比较或基于事件的触发器。
+* **流程**：
+   * **Delta 识别**：建立机制，识别自上次同步以来 PaaS 环境中关键数据集的变化（创建、更新和删除）。 这可能涉及变更数据采集（CDC）、时间戳比较或基于事件的触发器。
    * **连续同步**：为从PaaS环境到新Cloud Service组件（例如，CCDM和事务性后端）的连续、增量数据同步实施可靠的机制。 这对于保持数据新鲜度以及在转换期间最大程度地减少停机时间至关重要。
    * **利用事件**：尽可能利用Adobe I/O Events触发App Builder操作，以便从您的PaaS实例实时或近乎实时地更新新服务。 例如，PaaS中的产品更新可能会触发一个事件，该事件会更新CCDM中的相应条目。
    * **API驱动更新**：对于非事件驱动的数据，使用计划的API调用(通过App Builder或其他集成平台)从PaaS中提取更改并将它们推送到新系统。
    * **错误处理和监控**：对所有迭代数据管道实施可靠的错误处理、日志记录和监控，以确保在整个过程中保持数据完整性。
 
-### 迁移后和日常操作
+### 迁徙后及持续运营
 
-**DNS直接转换并上线：**
+**DNS 切换与上线：**
 
-* 仔细规划DNS切换，最大限度地减少停机时间。
-* 启动后立即监控站点运行状况和性能。
+* 谨慎规划DNS切换，尽量减少停机时间。
+* 发射后立即监测站点健康状况和性能。
 
 **启动后操作：**
 
