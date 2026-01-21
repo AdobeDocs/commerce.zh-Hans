@@ -37,7 +37,7 @@ ht-degree: 0%
 
 **新工具和概念**
 
-* [Adobe 开发者应用构建](https://developer.adobe.com/app-builder/)[器和 Adobe 开发者应用构建器的 API 网格](https://developer.adobe.com/graphql-mesh-gateway)
+* [Adobe 开发者应用构建](https://developer.adobe.com/app-builder/) [器和 Adobe 开发者应用构建器的 API 网格](https://developer.adobe.com/graphql-mesh-gateway)
 * [商业优化器](../../optimizer/overview.md)
 * [边缘传递服务](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * 使用 [Commerce Cloud Manager实现自助服务配置](../getting-started.md#create-an-instance)
