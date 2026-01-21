@@ -2,11 +2,11 @@
 title: 支持
 description: 了解如何在 [!DNL Adobe Commerce Optimizer]中创建和管理策略。
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: 845d93e367c8e2495943afe8c7d5d0a4bde990c2
+source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 0%
    1. **属性** — 输入目录中的属性。 例如，“part_category”。 此名称必须与目录中属性的名称完全匹配。
    1. **运算符** — 选择运算符。 例如，**IN**&#x200B;。
    1. **值Source** — 选择&#x200B;**STATIC**&#x200B;。
-   1. **值** — 输入您之前指定的属性定义中的值。 例如，输入“制动器”为制动部件创建过滤器。&#x200B;AEM该值必须与属性名称完全匹配。
+   1. **值** — 输入您之前指定的属性定义中的值。 例如，输入“制动器”为制动部件创建过滤器。
    1. 要保存该值，请按&#x200B;**Enter**。
 
       如果策略设计为按多个值过滤，请分别输入每个值。
