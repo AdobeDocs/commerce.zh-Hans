@@ -5,10 +5,10 @@ feature: Storefront
 role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 6eda2197fde2e88292e58b2bb4fc4759f24da558
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 要为[!DNL Adobe Commerce Storefront] (SaaS)设置由[!DNL Edge Delivery Services]提供支持的[!DNL Adobe Commerce as a Cloud Service]，请完成以下步骤。
 
-有关更可自定义的详细演练，请参阅[店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)。
+有关更可自定义的详细演练，请参阅[店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)。
 
 1. 打开[站点创建者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)。
 
@@ -44,7 +44,8 @@ ht-degree: 0%
 
 有关更多信息，请参阅以下文章：
 
-* 要了解有关管理和显示店面中内容和数据的更多信息，请参阅[更新店面内容](./use-cases.md#update-storefront-content)。
-* 有关上下文试验功能的详细信息，请参阅[上下文试验](./use-cases.md#contextual-experimentation)。
-* 有关使用创作AI自动生成高质量内容的更多信息，请参阅[生成变体](./use-cases.md#generate-variations)。
-* 要了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息，请参阅[[!DNL Adobe Commerce Storefront documentation]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)。
+* [更新店面内容](./use-cases.md#update-storefront-content) — 管理和显示店面上的内容和数据。
+* [情境实验](./use-cases.md#contextual-experimentation) — 在店面中创建和管理实验。
+* [生成变体](./use-cases.md#generate-variations) — 使用创作AI自动生成高质量的内容。
+* [Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/) — 获取有关更新网站内容以及与Commerce前端组件和后端数据集成的详细信息。
+* [配置服务](https://www.aem.live/docs/config-service-setup) — 了解如何从`config.json`迁移店面配置以使用配置服务，该服务支持高级用例，如重写配置和覆盖。
