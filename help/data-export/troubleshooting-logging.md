@@ -3,7 +3,7 @@ title: 查看日志并排除故障
 description: 了解如何使用data-export和saas-export日志排除 [!DNL data export] 错误。
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
+source-git-commit: a1afed7b635a2b05c5c0e0d1c9bf4a07fc5eef31
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -116,7 +116,7 @@ Price feed full resync:
 
    - **正在分析规则**
 
-     `\[%{DATA:timestamp}\] report.%{DATA:logLevel} %{GREEDYDATA:feed:json}`
+     `\[%{DATA:timestamp}\] report.%{DATA:logLevel}: %{GREEDYDATA:feed:json}`
 
 此示例添加了一个规则，允许您按特定馈送类型、操作等查询New Relic日志。
 
@@ -129,7 +129,7 @@ Price feed full resync:
 - 数据导出错误日志(`commerce-data-export-errors.log`)捕获收集阶段发生的错误。
 - SaaS导出错误日志(`saas-export-errors.log`)捕获传输阶段发生的错误。
 
-如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
 
 ### 解决目录同步问题 {#resolvesync}
 
@@ -144,11 +144,11 @@ Price feed full resync:
 
 #### 同步未运行
 
-如果同步未按计划运行或未同步任何内容，请参阅此[知识库](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
+如果同步未按计划运行或未同步任何内容，请参阅此[知识库](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
 
 #### 同步失败
 
-如果目录同步的状态为&#x200B;**失败**，请提交[支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+如果目录同步的状态为&#x200B;**失败**，请提交[支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 ## 扩展日志记录
 
