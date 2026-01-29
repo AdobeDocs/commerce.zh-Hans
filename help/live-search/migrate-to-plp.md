@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # 从搜索适配器迁移到PLP小组件
 
-搜索适配器自[ 4.0.0起已](release-notes.md#live-search-400)弃用[!DNL Live Search]，将仅接收安全更新。 [产品列表页面(PLP)小组件](plp-styling.md)是所有[!DNL Live Search]实施都支持的解决方案。 本指南可帮助您了解何时可以直接迁移以及何时需要执行其他工作。
+搜索适配器自[&#x200B; 4.0.0起已](release-notes.md#live-search-400)弃用[!DNL Live Search]，将仅接收安全更新。 [产品列表页面(PLP)小组件](plp-styling.md)是所有[!DNL Live Search]实施都支持的解决方案。 本指南可帮助您了解何时可以直接迁移以及何时需要执行其他工作。
 
 ## 先决条件
 
