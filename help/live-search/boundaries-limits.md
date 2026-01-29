@@ -3,9 +3,9 @@ title: 边界和限制
 description: 了解 [!DNL Live Search] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 6103707941c0a5544734d3523dded19d65717890
+source-git-commit: 2b38d9f6cb0b45f81acabec4b90251c13e7f146b
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1235'
 ht-degree: 0%
 
 ---
@@ -16,20 +16,20 @@ ht-degree: 0%
 
 ## 常规
 
-- 安装[后，](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search)高级搜索[!DNL Live Search]模块被禁用，店面页脚中的高级搜索链接被删除。
-- [层定价](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/pricing/product-price-tier)在[!DNL Live Search]字段和产品列表页小部件中不受支持。
+- 从[ 4.0.0开始，搜索适配器已](release-notes.md#live-search-400)弃用[!DNL Live Search]。产品列表页面(PLP)小组件是所有[!DNL Live Search]实施都支持的解决方案。 搜索适配器将仅接收安全相关更新。 有关迁移到PLP小组件的信息，请参阅[迁移指南](migrate-to-plp.md)。
+- 安装[后，](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)高级搜索[!DNL Live Search]模块被禁用，店面页脚中的高级搜索链接被删除。
+- [层定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)在[!DNL Live Search]字段和产品列表页小部件中不受支持。
 - 产品价格包含增值税(VAT)，但[!DNL Live Search]不能将增值税显示为单独的值。
 - 不支持内容搜索(CMS页面和块)。
 - 可分页的结果数量上限为10,000。 为了确保购物者在类别或搜索结果中包含大量产品时不必使用深度分页，请提供有意义的方法来过滤产品。
 - 每个属性（包括描述和自定义属性）硬限制为1MB。
 - 搜索适配器不支持使用自定义源模型创建并用作彩块化的产品属性。 若要支持此功能，您必须使用[产品列表页小组件](plp-styling.md)。
-- 搜索适配器自Live Search 4.0.0起已被弃用。
 - 不支持自定义产品类型。
 - 不支持用`"is_user_defined": false`编程创建的自定义属性。
 - 您可以使用“开头为”或“包含”条件筛选结果，但存在一些限制，如[开发人员文档](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations)中所述。
 - 您只能跟踪去年内的绩效指标。
 - 如果搜索查询包含多个单词，则单词之间的空格会导致将它们视为单独的搜索词。 如果要考虑多词搜索查询，请使用[同义词](./synonyms.md)。
-- [!DNL Live Search]不支持本地的[搜索词重定向](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-terms)。 通过使用Fastly或其他自定义配置实施重定向。
+- [!DNL Live Search]不支持本地的[搜索词重定向](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)。 通过使用Fastly或其他自定义配置实施重定向。
 
 ## 索引
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 ## Facet
 
 - 从定义的可过滤属性集中，最多可以将100个属性配置为Facet。
-- 在一个Facet中，最多可返回100个分段。 如果您需要返回100个以上的分段，请[创建一个支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)，以便Adobe分析性能影响并确定为您的环境提高此限制是否可行。
+- 在一个Facet中，最多可返回100个分段。 如果您需要返回100个以上的分段，请[创建一个支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)，以便Adobe分析性能影响并确定为您的环境提高此限制是否可行。
 - 动态Facet会导致大型索引和高序度索引的性能问题。 如果您已创建动态Facet，并且发现任何性能下降或页面未加载但存在超时错误，请尝试将您的Facet更改为Pinded以确定这是否解决了您的性能问题。
 - Stock状态(`quantity_and_stock_status`)不支持作为Facet。 您可以使用`inStock: 'true'`筛选缺货产品。 当`LiveSearchAdapter`管理员中的“Display out of stock products”设置为“True”时，[!DNL Commerce]模块即开即用支持此功能。
 - 不支持将日期类型属性作为Facet。
@@ -84,12 +84,12 @@ ht-degree: 0%
 ## B2B和类别权限
 
 - 如果产品未添加到默认共享目录，则不会显示产品。
-- 使用[类别权限](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/categories/category-permissions)限制客户组：
+- 使用[类别权限](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)限制客户组：
    - 必须将产品分配给根类别。 (**注意：**&#x200B;您可以通过将SaaS Data Export扩展更新到103.4.0+版来移除此限制。 请参阅[管理数据导出扩展](../data-export/manage-extension.md)。
    - 必须向“未登录”客户组提供“允许”浏览权限。
-   - 要将产品限制为“未登录”客户组，请转到每个类别并为每个[客户组](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)设置权限。
+   - 要将产品限制为“未登录”客户组，请转到每个类别并为每个[客户组](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)设置权限。
 - 目前不支持在PWA Studio中使用PLP小组件对B2B提供开箱即用支持。 但是，您可以[使用API](install.md#pwa-support)来实施此功能。
-- [!DNL Live Search]中的类别Facet可能显示无法显示给特定[客户组](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)的类别。
+- [!DNL Live Search]中的类别Facet可能显示无法显示给特定[客户组](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)的类别。
 - [!DNL Live Search]最多可支持1,000个客户组。
 
 ## [!DNL Storefront popover]
@@ -104,8 +104,8 @@ ht-degree: 0%
 
 有关对[!DNL Live Search]中常见问题进行故障排除的帮助，请参阅以下知识库文章：
 
-- [[!DNL Live Search] 目录未同步](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) — 为产品目录数据未在Adobe Commerce存储和Live Search服务之间正确同步提供解决方案。 本文介绍如何验证同步状态、识别同步错误以及解决数据同步问题。
-- [[!DNL Live Search] 功能板和搜索结果排名不正确](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) — 解决实时搜索功能板中显示的搜索结果或性能量度未按预期显示的问题。 本文介绍如何解决排名差异和数据仪表板数据不一致的问题。
-- [[!DNL Live Search] Facet未按字母顺序排序](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) — 解决了Facet值按意外顺序而非按字母顺序显示的问题。 本文提供了配置和更正店面彩块化排序行为的步骤。
+- [[!DNL Live Search] 目录未同步](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) — 为产品目录数据未在Adobe Commerce存储和Live Search服务之间正确同步提供解决方案。 本文介绍如何验证同步状态、识别同步错误以及解决数据同步问题。
+- [[!DNL Live Search] 功能板和搜索结果排名不正确](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) — 解决实时搜索功能板中显示的搜索结果或性能量度未按预期显示的问题。 本文介绍如何解决排名差异和数据仪表板数据不一致的问题。
+- [[!DNL Live Search] Facet未按字母顺序排序](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) — 解决了Facet值按意外顺序而非按字母顺序显示的问题。 本文提供了配置和更正店面彩块化排序行为的步骤。
 
-如果您需要其他帮助，请联系[支持](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果您需要其他帮助，请联系[支持](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。

@@ -2,9 +2,9 @@
 title: 产品列表页面小组件
 description: 正在启用和设置 [!DNL Live Search Product Listing Page Widget]的样式
 exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
-source-git-commit: 7684d5cded63f2b0805ee307dff77932607c47eb
+source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,14 @@ ht-degree: 0%
 
 默认情况下，新安装已启用[!DNL Live Search] PLP小组件。
 
-如果您正在升级[!DNL Live Search]，并且PLP构件已关闭，则它仍将处于关闭状态。 要将其打开，请执行以下操作：
+如果您正在升级[!DNL Live Search]，并且PLP构件已关闭，则它仍将处于关闭状态。
+
+>[!NOTE]
+>
+>如果要从已弃用的搜索适配器进行迁移，请参阅[迁移指南](migrate-to-plp.md)，以获取有关方案、先决条件和分步说明的详细指南。
+
+要打开PLP小组件，请执行以下操作：
+
 1. 在Adobe Commerce管理员中，转到存储→设置→配置。
 1. 在左侧导航中，单击&#x200B;**[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**。
 1. 单击[!UICONTROL Storefront Features]部分。
