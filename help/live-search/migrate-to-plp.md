@@ -319,7 +319,7 @@ ht-degree: 0%
 
 **选项3：将GTM替换为Adobe Analytics**
 
-- 考虑迁移到[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html)（如果适用）。
+- 考虑迁移到[Adobe Analytics](https://business.adobe.com/cn/products/adobe-analytics.html)（如果适用）。
 - 请联系客户工程部门以获取指导。
 
 **联系对象**：提交支持票证以获取GTM兼容性更新或客户工程部门帮助。
@@ -444,7 +444,7 @@ ht-degree: 0%
 - Headless或PWA实施
 - 自定义事件跟踪
 
-要联系Adobe支持，请参阅[帮助中心用户指南](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+要联系Adobe支持，请参阅[帮助中心用户指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
 
 ## 常见问题解答
 
