@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Adobe Commerce产品解决方案
 
-Adobe提供了多个解决方案来满足您电子商务业务的需求。 有关[Experience League](https://experienceleague.adobe.com/en/docs/commerce)和[Adobe Developer](https://developer.adobe.com/commerce/docs/)网站的Adobe Commerce文档为客户提供了支持所有解决方案的自助服务资源。 但是，如果没有指南，浏览如此大量的内容可能具有挑战性。
+Adobe提供了多个解决方案来满足您电子商务业务的需求。 有关[Experience League](https://experienceleague.adobe.com/zh-hans/docs/commerce)和[Adobe Developer](https://developer.adobe.com/commerce/docs/)网站的Adobe Commerce文档为客户提供了支持所有解决方案的自助服务资源。 但是，如果没有指南，浏览如此大量的内容可能具有挑战性。
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Adobe提供了多个解决方案来满足您电子商务业务的需求。 有�
 
 #### 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}
 
-此徽章仅标识与Cloud[上的](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)Adobe Commerce和内部部署项目相关的文档。 云上的Adobe Commerce项目在预配置的环境中托管在云原生、完全托管的平台即服务(PaaS)解决方案上，该解决方案具有Adobe Commerce的所有核心功能。 本地项目托管在客户管理的基础设施上。
+此徽章仅标识与Cloud[上的](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/overview)Adobe Commerce和内部部署项目相关的文档。 云上的Adobe Commerce项目在预配置的环境中托管在云原生、完全托管的平台即服务(PaaS)解决方案上，该解决方案具有Adobe Commerce的所有核心功能。 本地项目托管在客户管理的基础设施上。
 
 >[!NOTE]
 >
