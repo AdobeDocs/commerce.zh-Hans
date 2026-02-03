@@ -1,11 +1,11 @@
 ---
 title: 创建和管理推荐
 description: 了解如何创建和管理推荐。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ _推荐单元_
 
    - **激活**&#x200B;以在您的店面启用推荐单元。
 
-1. 出现提示时，复制推荐ID。 使用此ID可帮助您识别您的Edge Delivery Services店面的推荐下拉列表中正在使用的推荐单元。
+   您的推荐将显示在“推荐”工作区中。 若要在店面中使用推荐，您需要查找[推荐ID](#get-recommendation-id)。
 
 >[!NOTE]
 >
@@ -50,6 +50,22 @@ _推荐单元_
 >[!IMPORTANT]
 >
 >某些浏览器可能会阻止阻止阻止推荐按预期工作的关键脚本。
+
+## 获取推荐ID
+
+创建推荐后，您需要检索其ID以在您的店面中实施推荐单元。
+
+1. 在&#x200B;**推荐**&#x200B;页面上，选择推荐。
+
+1. 单击推荐名称旁边的信息图标（![信息图标](../../assets/info-icon.png)）。
+
+   此时将显示&#x200B;**推荐单元详细信息**&#x200B;页。
+
+   ![获取推荐ID](../../assets/get-rec-id.png)
+
+1. 在&#x200B;**推荐ID**&#x200B;部分中，复制ID。
+
+1. 使用此ID在您的Edge Delivery Services店面中配置[推荐放置区](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/)。
 
 ## 管理现有推荐
 
