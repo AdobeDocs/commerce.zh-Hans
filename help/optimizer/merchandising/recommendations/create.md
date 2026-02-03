@@ -1,7 +1,7 @@
 ---
 title: 创建和管理推荐
 description: 了解如何创建和管理推荐。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
 workflow-type: tm+mt
@@ -65,7 +65,7 @@ _推荐单元_
 
 1. 在&#x200B;**推荐ID**&#x200B;部分中，复制ID。
 
-1. 使用此ID在您的Edge Delivery Services店面中配置[推荐放置区](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/)。
+1. 使用此ID在您的Edge Delivery Services店面中配置[推荐放置区](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=zh-Hans)。
 
 ## 管理现有推荐
 
