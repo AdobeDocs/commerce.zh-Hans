@@ -4,9 +4,9 @@ description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 029cbbf75a21ba68f9829d5755a40a610d34d479
+source-git-commit: eb55055653717cef4b6e568a36593177d821a743
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '2012'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,11 @@ ht-degree: 0%
 
 ## 当前主要版本
 
+## 103.4.18发行版
+
+![修复](../assets/fix.svg)修复了在更新期间项批次可能超过允许的限制，从而导致将数据同步到`items_limit_exceeded`Commerce服务[或](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)Adobe Commerce Optimizer[时出现](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)错误的问题。 <!--MDEE-1264-->
+![修复](../assets/fix.svg)通过在捆绑产品选项收集期间添加逻辑以注册失败的项目，提高了产品数据导出的可靠性。<!--CCSAAS-4458-->
+
 ## 103.4.17发行版   
 
 ![修复](../assets/fix.svg)更新了数据导出扩展(`magento/module-data-exporter`)以删除`magento/module-analytics`依赖关系，该依赖关系不再需要。<!--MDEE-1260--> 
@@ -41,7 +46,7 @@ ht-degree: 0%
 
 ## 103.4.15发行版
 
-![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，可用于监视和排除从Adobe Commerce到连接的服务（目录服务、实时搜索和产品推荐）的数据传输。 有关安装和使用此扩展的详细信息，请参阅[Commerce管理指南](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=zh-Hans)中的&#x200B;*数据馈送同步状态监控*。<!--MDEE-954-->
+![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，可用于监视和排除从Adobe Commerce到连接的服务（目录服务、实时搜索和产品推荐）的数据传输。 有关安装和使用此扩展的详细信息，请参阅[Commerce管理指南](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html)中的&#x200B;*数据馈送同步状态监控*。<!--MDEE-954-->
 
 ## 103.4.14发行版
 
@@ -58,7 +63,7 @@ ht-degree: 0%
 
 ## 103.4.11发行版
 
-![新](../assets/new.svg) [!BADGE 仅PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}
+![新](../assets/new.svg) [!BADGE 仅PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}
 为其他产品属性(包括产品信息源中Commerce产品配置的税类、属性集和库存数据)添加支持。 如果客户希望在产品导出信息源中包含这些属性，则必须将额外产品属性模块添加到其Adobe Commerce项目。 请参阅[添加税分类、属性集和库存属性](add-tax-attribute-set-inventory-attributes.md)。<!--MDEE-1135-->
 ![修复](../assets/fix.svg)解决了在完整产品索引期间发生错误时，导致已删除产品更新的同步不正确的问题。 现在，即使索引过程中发生错误，所有产品删除仍会正确同步。<!--MDEE-1144-->
 
