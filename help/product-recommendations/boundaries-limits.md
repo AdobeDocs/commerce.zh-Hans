@@ -17,10 +17,10 @@ ht-degree: 0%
 
 - **产品类型** — 支持的产品类型包括&#x200B;_简单_、_可配置_、_虚拟_、_可下载_&#x200B;和&#x200B;_礼品卡_。 不支持&#x200B;_捆绑包_、_分组_&#x200B;和自定义产品类型。 如果您的目录包含大量不受支持的产品类型，则[就绪性分数](create.md#readiness-indicators)可能较低。 请参阅[按产品类型筛选](filters.md#type)。
 - **包含空格的SKU** — 包含空格的SKU可能会降低推荐相关性，应尽可能避免使用。
-- **购物车页面** — 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面不支持产品推荐](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。 请参阅[创建推荐](create.md)。
+- **购物车页面** — 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面不支持产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。 请参阅[创建推荐](create.md)。
 - **子产品** — 可配置产品的子产品（可见性&#x200B;_不可见_）未显示在推荐单元中。 只能显示可配置（父）产品。 查看[筛选产品](filters.md#product)。
 - **已禁用或不可见的产品** — 单独禁用或不可见的产品永远不会出现在推荐中，也不能在产品筛选器中选择。
-- 推荐单位中不支持具有开始和结束日期的&#x200B;**特殊定价** - [特殊价格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)。 具有特殊价格的产品可能会出现在推荐中，但单位不显示特殊价格、开始日期或结束日期。 在打开产品页面之前，购物者会看到常规价格（或您的目录/价格信息源提供的其他价格数据）。
+- 推荐单位中不支持具有开始和结束日期的&#x200B;**特殊定价** - [特殊价格](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/pricing/product-price-special)。 具有特殊价格的产品可能会出现在推荐中，但单位不显示特殊价格、开始日期或结束日期。 在打开产品页面之前，购物者会看到常规价格（或您的目录/价格信息源提供的其他价格数据）。
 
 ## 推荐单位
 
@@ -63,4 +63,4 @@ ht-degree: 0%
 
 ## 故障排除
 
-有关目录同步、建议未显示或其他常见问题的帮助，请搜索[Commerce知识库](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)或联系[支持部门](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+有关目录同步、建议未显示或其他常见问题的帮助，请搜索[Commerce知识库](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)或联系[支持部门](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
