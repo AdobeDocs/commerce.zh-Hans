@@ -13,7 +13,7 @@ ht-degree: 11%
 # Commerce的[!DNL Product Recommendations] {#product-recommendations}
 
 - [指南概述](guide-overview.md)
-- [ [!DNL Product Recommendations]简介](overview.md)
+- [&#x200B; [!DNL Product Recommendations]简介](overview.md)
 - [发行说明](release-notes.md)
 - [边界和限制](boundaries-limits.md)
 - 开始使用 {#getting-started}
