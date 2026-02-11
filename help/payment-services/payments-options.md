@@ -3,9 +3,9 @@ title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
+source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 * **Standard** — 付款选项（快速结帐）（PayPal信用卡和借记卡）的子集适用于其他受支持的国家/地区。 [信用卡字段](#credit-card-fields)和[Apple Pay](#apple-pay-button)不适用于此入门培训选项。 在新用户引导以启用实时支付时，选择[标准新用户引导选项](../payment-services/production.md#standard-onboarding)。
 
-有关完成Advanced和Standard入门的信息，请参阅[为生产启用 [!DNL Payment Services] &#x200B;](../payment-services/production.md#complete-merchant-onboarding)。
+有关完成Advanced和Standard入门的信息，请参阅[为生产启用 [!DNL Payment Services] ](../payment-services/production.md#complete-merchant-onboarding)。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -135,6 +135,16 @@ ht-degree: 0%
 
 ![稍后付费消息](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
+### PayPal付款按钮的服务器端送货回调
+
+PayPal、Pay Later和Venmo付款方法使用[服务器端送货回拨](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/)，使PayPal能够直接与您的Commerce实例通信，以检索送货选项并实时计算总计。
+
+这种服务器端方法允许[!DNL Payment Services]跳过订单确认弹出窗口，从而提供更快、更简化的购买体验。 由于运输成本和税额是通过回调动态计算的，因此买方可以直接在PayPal或Venmo审核页面中查看准确的总额。
+
+>[!NOTE]
+>
+>回调端点必须公开可用，并且必须在5秒内响应。 如果响应时间超过此限制，PayPal将在弹出窗口中显示错误消息。 有关在本地测试这些付款方法的信息，请参阅[在本地开发环境中测试](test-validate.md#test-on-local-development-environments)。
+
 ### 仅使用PayPal付款按钮
 
 若要快速将商店设置为生产模式，您可以仅配置&#x200B;_个_ PayPal付款按钮（Venmo、PayPal等）。 — 而不使用PayPal信用卡支付选项。
@@ -156,7 +166,7 @@ ht-degree: 0%
 1. 请确保您的存储在生产模式[中为](configure-admin.md#enable-payment-services)。
 1. [配置所需的PayPal付款按钮](configure-admin.md#payment-buttons)。
 1. 关闭&#x200B;_部分中的_&#x200B;选项&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**&#x200B;关闭&#x200B;_[!UICONTROL Payment buttons]_。
-1. 关闭&#x200B;_部分中的_&#x200B;关闭&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_&#x200B;选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=zh-Hans#payments)。
+1. 关闭&#x200B;_部分中的_&#x200B;关闭&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)。
 
 ## 签出选项
 
