@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 设置
 
-当您[为推荐配置SaaS数据空间](../landing/saas.md#saas-configuration)时，SaaS数据空间将收集目录数据和店面行为数据。 [Adobe AI](https://business.adobe.com/ai.html)将分析该数据并计算用于提供产品推荐的产品关联。
+当您[为推荐配置SaaS数据空间](../landing/saas.md#saas-configuration)时，SaaS数据空间将收集目录数据和店面行为数据。 [Adobe AI](https://business.adobe.com/cn/ai.html)将分析该数据并计算用于提供产品推荐的产品关联。
 
 用于测试或暂存的非生产环境通常不具备店面行为数据的数量或质量，因而无法提供切实可行的产品推荐。 实际购物者行为只能在生产环境中捕获。 要解决此问题，Adobe Commerce允许您将生产环境中的产品推荐与其他非生产SaaS数据空间结合使用。 通过在非生产环境中使用实际的店面数据，您可以预览购物者看到的推荐，并尝试使用不同的推荐类型和放置位置。 购物者可以预览来自不同SaaS数据空间的推荐，但不能单击该推荐。
 
