@@ -4,9 +4,9 @@ description: 通过 [!DNL Catalog Service] (一种高性能GraphQL API，可减�
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: e582bff6ee8ee7c4213f04bdab984efa94333fb6
+source-git-commit: 4f3f8accd653dbee6fec45c065f55ff04b17bd2d
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ ht-degree: 0%
 
 
 ## 架构概述
+
+>[!NOTE]
+>
+>如果您要将可组合目录与Adobe Commerce Optimizer或Adobe Commerce Optimizer Connector结合使用，请参阅[Adobe Commerce Optimizer指南](../optimizer/overview.md#architecture)和《Merchandising Services开发人员指南》。
 
 [!DNL Catalog Service]使用[GraphQL](https://graphql.org/)请求和接收目录数据，包括产品、产品属性、库存和价格。 GraphQL是一种查询语言，前端客户端使用它与在后端(如Adobe Commerce)上定义的应用程序编程接口(API)进行通信。 GraphQL是一种常用的通信方法，因为它非常轻量，允许系统集成商指定每个响应的内容和顺序。
 
@@ -125,7 +129,7 @@ GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的
 
 实施过程涉及：
 
-1. [!BADGE 仅限PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"} **[安装和配置目录服务](installation.md)** — 安装和配置目录服务扩展并使用[!DNL Commerce Services Connector]设置SaaS连接。
+1. [!BADGE 仅限PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"} **[安装和配置目录服务](installation.md)** — 安装和配置目录服务扩展并使用[!DNL Commerce Services Connector]设置SaaS连接。
 2. **更新店面代码**：将目录服务GraphQL查询集成到您的店面。
 3. **路由查询**：所有目录服务查询都通过GraphQL网关（载入期间提供的URL）
 4. **监视数据同步并排除其故障**：验证改进的性能并监视结果
