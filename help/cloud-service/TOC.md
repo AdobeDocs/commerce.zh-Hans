@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: 本指南提供了有关使用 [!DNL Adobe Commerce as a Cloud Service]的详细说明。
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
+source-git-commit: c2d8adefb2d60da5ee251208e2350b6f0c1524b4
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: '61'
 ht-degree: 11%
 
 ---
@@ -28,5 +28,8 @@ ht-degree: 11%
 - 教程 {#tutorials}
    - [评级扩展教程先决条件](tutorials/tutorial-prerequisites.md)
    - [评级扩展教程](tutorials/ratings-extension.md)
+- 架构 {#schemas}
+   - [GraphQL架构](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
+   - [REST API架构](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
