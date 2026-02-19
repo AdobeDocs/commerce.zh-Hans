@@ -1,22 +1,22 @@
 ---
-title: 扩展的AI编码工具
-description: 了解如何使用AI工具创建Commerce App Builder扩展。
+title: Adobe Commerce App Builder的人工智能编码开发人员工具
+description: 了解如何使用AI工具创建Commerce App Builder应用程序。
 feature: App Builder, Cloud
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Developer
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
+source-git-commit: 5d4726f7191f74507524667555ab46838bb2407a
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '2098'
 ht-degree: 0%
 
 ---
 
-# 扩展的AI编码工具
+# Adobe Commerce App Builder的人工智能编码开发人员工具
 
-迁移到[!DNL Adobe Commerce as a Cloud Service]时，您可以使用AI编码工具将现有[!DNL Adobe Commerce] PHP扩展转换为[!DNL Adobe Developer App Builder]扩展。 您还可以使用这些工具创建新的[!DNL App Builder]扩展。
+迁移到[!DNL Adobe Commerce as a Cloud Service]时，您可以使用AI编码工具将现有[!DNL Adobe Commerce] PHP扩展转换为[!DNL Adobe Developer App Builder]应用程序。 您还可以使用这些工具创建新的[!DNL App Builder]应用程序。
 
 AI编码工具具有以下优势：
 
@@ -25,10 +25,26 @@ AI编码工具具有以下优势：
 * **Commerce特定功能**：用于Adobe Commerce App Builder开发的专用工具。
 * **自动化工作流**：简化了开发和部署流程。
 
+通过安装AI编码工具，您可以访问：
+
+* 规则 — 特定于Adobe Commerce和App Builder的规则集，旨在指导和通知您的应用程序开发。
+* 开发人员MCP服务器
+* App Builder MCP服务器
+
+## 正在更新到最新版本
+
+在[安装AI编码开发人员工具](#installation)后，您可以通过运行以下命令更新到最新版本：
+
+```bash
+aio commerce extensibility tools-setup
+```
+
+这会将工具更新到最新版本。
+
 ## 先决条件
 
 * 以下编码代理之一：
-   * [游标](https://cursor.com/download) （推荐）
+   * [游标](https://cursor.com/download)
    * [Github Copilot](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [克劳德代码](https://www.claude.com/product/claude-code)
@@ -84,7 +100,7 @@ AI编码工具具有以下优势：
   New directory
 ```
 
-选择编码代理时，Adobe建议选择`Cursor`以获得最佳开发体验：
+选择首选编码代理：
 
 ```shell-session
 ? Which coding agent would you like to use?
@@ -221,10 +237,10 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 ## 示例提示
 
-以下示例提示创建一个扩展，用于在下订单时发送通知。
+以下示例提示创建一个应用程序，用于在下订单时发送通知。
 
 ```shell-session
-Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
+Implement an Adobe Commerce SaaS application that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
 Order Total -> total
@@ -281,14 +297,14 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 
 * [集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入门套件模板](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder示例应用程序](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 为什么应使用这些资源
 
 * **经验证的模式**：入门套件体现了Adobe的最佳实践和体系结构决策
 * **加快开发**：减少花在样板和配置上的时间
-* **一致性**：确保扩展遵循已建立的约定
+* **一致性**：确保您的应用程序遵循已建立的约定
 * **可维护性**：遵循标准模式时，更容易维护和更新
 * **文档**：入门套件随附示例和文档
 * **社区支持**：使用标准方法时更容易获得帮助
@@ -297,7 +313,7 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 
 ### 协议
 
-规则系统会自动实施以下四阶段协议。 在开发扩展时，工具应自动遵循此协议：
+规则系统会自动实施以下四阶段协议。 在开发应用程序时，工具应自动遵循此协议：
 
 * 第1阶段：需求分析和说明
    * 当被问及澄清问题时，请提供完整的答案。
@@ -314,7 +330,7 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 Create a detailed implementation plan for this complex development.
 ```
 
-复杂的Adobe Commerce扩展通常涉及：
+复杂的Adobe Commerce应用程序通常涉及：
 
 * 多个运行时操作
 * 跨多个接触点的事件配置
@@ -529,3 +545,31 @@ Remove the orphaned actions that are no longer part of the current implementatio
 * **在没有根本原因分析的情况下不要增加复杂性** — 询问不必要的文件添加情况并要求进行适当的调查。
 * **没有实际数据测试时不声明成功** — 始终使用实际数据进行测试，而不仅仅是边缘案例。
 * **不要忘记运行时清理** — 始终在主要更改后清理孤立的操作。
+
+## 提供反馈
+
+希望针对AI编码工具提供反馈的开发者可以使用`/feedback`命令。
+
+此命令允许您提供文本反馈并将日志发送到Adobe。 您发送的任何日志都将经过清理，以删除任何私人或个人信息。
+
+>[!TIP]
+>
+>根据所使用的IDE，用户体验会略有不同。 以下过程介绍了光标中的体验。
+
+1. 在代理中，键入`/feedback`并选择`commerce-extensibility/feedback`命令。
+
+1. 在IDE顶部显示的&#x200B;**反馈**&#x200B;字段中提供工具的反馈，然后按&#x200B;**Enter**&#x200B;键。
+
+   ![光标反馈命令输入字段](../assets/feedback-response.png){width="600" zoomable="yes"}
+
+1. 在&#x200B;**本地保存**&#x200B;字段中，键入`yes`或`no`，然后按&#x200B;**Enter**&#x200B;指示是否要保存日志的本地副本。
+
+   ![光标反馈命令在本地保存字段](../assets/feedback-save.png){width="600" zoomable="yes"}
+
+   如果您选择了&#x200B;**是**，则可以在发送反馈后查看`chats`文件夹中的日志。
+
+1. `commerce-extensibility/feedback`命令显示在代理的聊天输入字段中。 按&#x200B;**Enter**&#x200B;或单击&#x200B;**发送**&#x200B;将您的反馈发送到Adobe。
+
+>[!NOTE]
+>
+>如果未看到`/feedback`命令，则可能需要将[更新到最新版本](#updating-to-the-latest-version)。
