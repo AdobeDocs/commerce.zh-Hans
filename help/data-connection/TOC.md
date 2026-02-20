@@ -4,7 +4,7 @@ user-guide-description: 本指南提供了有关使用Adobe Commerce的 [!DNL Da
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
 source-git-commit: 60a8e8f5cedff0c6fa56c563807b9604e3ae1d21
 workflow-type: tm+mt
 source-wordcount: '138'
@@ -38,4 +38,4 @@ ht-degree: 1%
 - 用例 {#use-cases}
    - [使用Adobe Journey Optimizer发送放弃的购物车电子邮件](using-ajo.md)
    - [使用Commerce事件数据在Real-Time CDP中创建受众](create-audience.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)
