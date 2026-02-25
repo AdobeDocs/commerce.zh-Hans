@@ -4,20 +4,14 @@ description: 了解如何使用App Builder和AI辅助开发工具为Adobe Commer
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
+source-git-commit: fb3595284761e9478c819150c27d06631de67e18
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
 
-# 评级扩展教程(Beta)
-
->[!NOTE]
->
->本教程中使用的AI工具当前位于Beta中，可能包含错误或其他问题。
+# 评级扩展教程
 
 本教程将指导您使用[!DNL Adobe Commerce as a Cloud Service]和AI辅助开发工具为[!DNL Adobe App Builder]构建产品评级扩展。
 
@@ -41,7 +35,7 @@ git --version
 bash --version
 ```
 
-如果前面的任何命令未返回预期结果，请参阅[先决条件](tutorial-prerequisites.md)获取指导。
+如果前面的任何命令未返回预期结果，请参阅[先决条件](./tutorial-prerequisites.md)获取指导。
 
 ## 扩展开发
 
@@ -248,7 +242,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=zh-Hans).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

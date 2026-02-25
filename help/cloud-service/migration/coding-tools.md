@@ -2,14 +2,12 @@
 title: Adobe Commerce App Builder的人工智能编码开发人员工具
 description: 了解如何使用AI工具创建Commerce App Builder应用程序。
 feature: App Builder, Cloud
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Developer
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 5d4726f7191f74507524667555ab46838bb2407a
+source-git-commit: 4e3f593ead4b0e32bdf474498421b20475dcbe52
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2470'
 ht-degree: 0%
 
 ---
@@ -27,7 +25,7 @@ AI编码工具具有以下优势：
 
 通过安装AI编码工具，您可以访问：
 
-* 规则 — 特定于Adobe Commerce和App Builder的规则集，旨在指导和通知您的应用程序开发。
+* 技能 — 特定于Adobe Commerce和App Builder的技能集，旨在指导您的应用程序开发并为其提供信息。
 * 开发人员MCP服务器
 * App Builder MCP服务器
 
@@ -43,11 +41,16 @@ aio commerce extensibility tools-setup
 
 ## 先决条件
 
-* 以下编码代理之一：
+* 任何支持[代理技能](https://agentskills.io/home#adoption)的编码代理，例如：
+
    * [游标](https://cursor.com/download)
-   * [Github Copilot](https://github.com/features/copilot)
-   * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [克劳德代码](https://www.claude.com/product/claude-code)
+   * [GitHub Copilot](https://github.com/features/copilot)
+   * [Windsurf](https://windsurf.com)
+   * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
+   * [OpenAI代码](https://openai.com/index/introducing-codex/)
+   * [斜面](https://cline.bot)
+
 * [Node.js](https://nodejs.org/en/download)： LTS版本
 * 包管理器： [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)或[yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git)：用于存储库克隆和版本控制
@@ -74,11 +77,19 @@ aio commerce extensibility tools-setup
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
-1. 克隆Commerce [集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)：
+1. 克隆以下项之一：
 
-   ```bash
-   git clone git@github.com:adobe/commerce-integration-starter-kit.git
-   ```
+   * Commerce [集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) — 用于构建后台集成。
+
+     ```bash
+     git clone git@github.com:adobe/commerce-integration-starter-kit.git
+     ```
+
+   * 用于构建或扩展结账体验的Commerce [结账入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)，包括付款、运费和税金。
+
+     ```bash
+     git clone git@github.com:adobe/commerce-checkout-starter-kit.git
+     ```
 
 1. 导航到starter kit目录：
 
@@ -92,49 +103,45 @@ aio commerce extensibility tools-setup
    aio commerce extensibility tools-setup
    ```
 
-安装过程会提示您配置选项。 对于安装位置，选择“当前目录”以在当前工作区中安装工具：
+   安装过程会提示您配置选项。 按照提示完成安装。 工具将安装在所选目录中。
 
-```shell-session
-? Where would you like to setup the tools?
-❯ Current directory
-  New directory
-```
+   * 选择要用于项目的入门工具包。
 
-选择首选编码代理：
+     ```shell-session
+     ? Which starter kit would you like to use?
+     ❯ Integration starter kit
+        Checkout starter kit
+     ```
 
-```shell-session
-? Which coding agent would you like to use?
-❯ Cursor
-  Copilot
-  Gemini CLI
-  Claude Code
-```
+   * 选择您的首选编码代理。 支持超过40个编码代理，但如果您看不到首选代理，则可以使用`Other`选项为任何编码代理安装技能。 有关如何配置技能的说明，请参阅编码代理的文档。
 
-选择包管理器时，Adobe建议使用`npm`来保持一致性：
+     ```shell-session
+     ? Which coding agent would you like to install skills for?
+     ❯ Cursor
+        Claude Code
+        GithubCopilot
+        Windsurf
+        Gemini CLI
+        OpenAI Codex
+        Cline
+        ...
+     ```
 
-```shell-session
-? Which package manager would you like to use?
-❯ npm
-  yarn
-```
+   * 安装程序将检测您是否安装了NPM或Yarn，并自动进行相应的选择。 但是，如果您尚未安装这两个软件，则会提示您选择包管理器，Adobe建议使用`npm`来保持一致性：
+
+     ```shell-session
+     ? Which package manager would you like to use?
+     ❯ npm
+        yarn
+     ```
 
 1. 成功安装编码工具后，安装过程将配置：
 
    * 用于Adobe Commerce开发的MCP服务器集成
-   * 用于增强开发体验的光标IDE规则
+   * [代理技能](#skills)用于增强开发体验
    * 特定于Commerce的开发工具和工作流
 
-   以下文件将添加到您的工作区：
-
-   **游标**
-
-   * MCP配置： `.cursor/mcp.json`
-   * Rules目录： `.cursor/rules/`
-
-   **Copilot**
-
-   * MCP配置： `.vscode/mcp.json`
-   * Rules目录： `.github/copilot-instructions.md`
+   现已安装技能和MCP工具。 如果您看不到技能和MCP工具，请重新启动编码代理。
 
 >[!NOTE]
 >
@@ -179,7 +186,7 @@ aio auth login
 
 1. 重新启动光标IDE以加载新的MCP工具和配置。
 
-1. 通过确认规则存在于`.cursor/rules/`文件夹下来验证安装。
+1. 通过确认技能存在于`.cursor/skills/`文件夹下来验证安装。
 
 1. 启用MCP服务器：
 
@@ -198,9 +205,9 @@ aio auth login
 
 1. 使用以下提示查看代理是否使用MCP服务器。 如果不能，请明确要求代理使用可用的MCP工具。
 
-```shell-session
-What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
-```
+   ```shell-session
+   What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
+   ```
 
 ### Copilot
 
@@ -237,7 +244,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 ## 示例提示
 
-以下示例提示创建一个应用程序，用于在下订单时发送通知。
+以下示例提示使用集成入门工具包创建应用程序，以便在下订单时发送通知。
 
 ```shell-session
 Implement an Adobe Commerce SaaS application that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
@@ -248,6 +255,19 @@ Customer Email ID -> emailID
 Payment Type -> pType
 ```
 
+以下示例提示符使用checkout starter kit创建一个提供自定义配送方法的应用程序。
+
+```shell-session
+Implement an Adobe Commerce SaaS application that provides custom shipping methods.
+The extension should:
+1. Return shipping options based on the destination postal code
+2. If postal code is in California, add an "Express California" option for $15
+3. If postal code is outside US, add an "International Standard" option for $25
+4. The carrier code should be "MYSHIP"
+```
+
+
+
 ## 提示命令
 
 除了提示，您还可以使用`/search-commerce-docs`命令在与代理的对话中搜索文档。 例如：
@@ -256,9 +276,31 @@ Payment Type -> pType
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
+## 技能
+
+虽然当您与编码代理聊天时，会自动调用技能，但您也可以使用以下命令手动调用这些技能：
+
+* `/architect` — 使用[!DNL App Builder]和选定的入门套件设计Adobe Commerce扩展的架构。 在规划集成、选择事件、设计数据流或做出体系结构决策时使用。
+* `/developer` — 按照[!DNL App Builder]模式和文件结构实现Adobe Commerce扩展。 在生成代码、更新配置文件或实施运行时操作时使用。
+* `/devops-engineer` — 部署和运行[!DNL App Builder]扩展。 用于部署应用程序、配置环境、排除部署问题、设置CI/CD或解决载入错误。
+* `/product-manager` - Adobe Commerce扩展的收集和文档要求。 在启动新项目、定义接受标准、阐明业务目标或创建`REQUIREMENTS.md`文档时使用。
+* `/technical-writer` — 为[!DNL App Builder]应用程序创建全面的文档。 在编写`README.md`、用户指南、API文档、更改日志或确保文档完整性时使用。
+* `/tester` — 为[!DNL App Builder]应用程序创建全面的测试。 在编写单元测试、集成测试、验证安全性或确保代码质量和覆盖范围时使用。
+* `/tutor` （实验性） — 教导[!DNL Adobe Commerce]应用程序开发概念，并提供明确的说明和示例。 在学习[!DNL App Builder]、了解事件或需要有关开发模式的指导时使用。
+
 ## 最佳实践
 
 Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
+
+### 计划模式
+
+与编码代理聊天时，您应该选择&#x200B;**计划**&#x200B;模式以创建项目的详细实施计划。
+
+选择&#x200B;**计划**&#x200B;模式的方法因您使用的代理而异。 有关说明，请参阅代理的文档。 例如：
+
+* [游标](https://cursor.com/docs/agent/modes)
+* [克劳德代码](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
+* [Gemini CLI](https://geminicli.com/docs/cli/plan-mode/)
 
 ### 清单
 
@@ -296,8 +338,9 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 请查阅以下资源以开始使用：
 
 * [集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
+* [结帐入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce入门套件模板](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder示例应用程序](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 为什么应使用这些资源
@@ -313,7 +356,7 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 
 ### 协议
 
-规则系统会自动实施以下四阶段协议。 在开发应用程序时，工具应自动遵循此协议：
+已安装的技能会自动强制执行以下四阶段协议。 在开发应用程序时，工具应自动遵循此协议：
 
 * 第1阶段：需求分析和说明
    * 当被问及澄清问题时，请提供完整的答案。

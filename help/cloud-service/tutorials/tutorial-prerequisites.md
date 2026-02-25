@@ -1,25 +1,19 @@
 ---
-title: 评级扩展教程先决条件
+title: 教程先决条件
 description: 了解评级扩展实验室的先决条件。
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
+source-git-commit: 68e34cecbc1b16194ccc2e0296c2d66f37855b7c
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
 
-# 评级扩展教程先决条件(Beta)
+# 教程先决条件
 
->[!NOTE]
->
->本教程中使用的AI工具当前位于Beta中，可能包含错误或其他问题。
-
-此页面列出了[!DNL Adobe Commerce as a Cloud Service]教程的先决条件和设置步骤，如[评级扩展教程](./ratings-extension.md)。
+此页面列出了[!DNL Adobe Commerce as a Cloud Service]教程的先决条件和设置步骤，如[评级扩展教程](./ratings-extension.md)和[送货方法扩展教程](./shipping-method-extension.md)。
 
 ## Adobe Commerce as a Cloud Service先决条件
 
@@ -108,16 +102,27 @@ ht-degree: 0%
 
    ![终端显示Adobe I/O CLI组织项目和工作区选择](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
-### 克隆集成入门工具包
+### 克隆入门工具包
 
-克隆Commerce集成入门套件存储库并准备项目：
+为您正在构建的扩展克隆以下Commerce starter kit存储库之一，并准备项目：
+
+集成入门工具包：
 
 ```bash
 git clone https://github.com/adobe/commerce-integration-starter-kit.git extension
 cd extension
 ```
 
-![终端输出，显示Commerce集成入门套件的git clone命令](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
+结帐入门工具包：
+
+```bash
+git clone https://github.com/adobe/commerce-checkout-starter-kit.git extension
+cd extension
+```
+
+>[!BEGINTABS]
+
+>[!TAB 集成入门工具包]
 
 ### 创建.env文件
 
@@ -189,9 +194,26 @@ aio app use workspace.json -m
 
 ![终端显示与aio应用成功的工作区连接，使用命令](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
+>[!TAB 结帐入门工具包]
+
+### 将本地工作区连接到远程工作区
+
+将本地项目链接到远程工作区。 从项目根目录（`extension`文件夹）中，运行：
+
+```bash
+aio app use --merge
+```
+
+出现提示时，选择使用您在配置Adobe I/O CLI时选择的组织、项目和工作区的选项。 这会将工作区配置写入应用程序中，以便部署和本地开发使用该工作区。
+
+![终端显示与aio应用成功的工作区连接，使用命令](../assets/connect-workspace.png){width="600" zoomable="yes"}
+
+>[!ENDTABS]
+
 ### 安装可扩展性人工智能工具
 
-更新游标规则文件和MCP配置以包含`commerce-extensibility-tools`包。
+此进程创建MCP配置(`.<agent>/mcp.json`)、技能目录(`.<agent>/skills/`)，并将`AGENTS.md`添加到项目根目录。 系统将提示您选择入门套件、编码代理和包管理器。
+
 
 1. 使用以下命令在`extension`文件夹中设置AI辅助开发工具：
 
@@ -204,6 +226,15 @@ aio app use workspace.json -m
    ```
 
    ![显示AI可扩展性工具设置命令输出的终端](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+
+1. 安装完成后，请重新启动编码代理，以便加载新的MCP工具和技能。 Commerce App Builder工具现在可在您的环境中使用。
+
+   >[!NOTE]
+   >
+   >如果您看到一则警告，指出未找到入门工具包的技能，则说明出现了问题，这通常是因为安装程序在克隆入门工具包以外的文件夹中运行。 从`aio commerce extensibility tools-setup`文件夹（入门套件项目根）运行`extension`并在出现提示时选择相应的入门套件。
+
+   ![终端显示AI可扩展性工具设置，已选择签出启动工具包](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
+
 <!--
 ## Storefront prerequisites
 
