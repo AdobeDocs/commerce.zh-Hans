@@ -4,9 +4,9 @@ description: 了解 [!DNL Payment Services] 的行项目以及如何查看商家
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,29 @@ ht-degree: 0%
 
 此信息对于客户服务、订单管理和正确计费非常有用。
 
-此功能默认对[!DNL Payment Services]启用。 要查看行项目，请执行以下操作：
+## 配置行项目
+
+默认情况下为[!DNL Payment Services]启用行项目。 要配置：
+
+1. 在&#x200B;_管理员_&#x200B;侧边栏中，导航到&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
+
+1. 转到&#x200B;**[!UICONTROL Sales]**&#x200B;并选择&#x200B;**[!UICONTROL Payment Methods]**。
+
+1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_部分。
+
+1. 在&#x200B;_[!UICONTROL Payment Services]_部分中，展开_[!UICONTROL Line Items]_&#x200B;部分。
+
+1. 对于&#x200B;**[!UICONTROL Line Items Enabled]**，选择要启用（默认）的`Yes`或要禁用行项目的`No`。
+
+1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;保存更改。
+
+>[!IMPORTANT]
+>
+> 如果您有第三方扩展，这些扩展会将自定义费用（如手续费）添加到订单中，则可能需要禁用行项目。 [!DNL Payment Services]根据标准Commerce订单组件（项目、税、运费和折扣）计算行项目。 [!DNL Payment Services]无法识别的第三方费用可能会导致行项目总数与订单总数不匹配，这可能会阻止完成签出。
+
+## 查看行项目
+
+要查看行项目，请执行以下操作：
 
 1. 导航到您的[PayPal商家信息板](https://www.paypal.com/merchant/){target=_blank}。
 
@@ -123,11 +145,11 @@ ht-degree: 0%
 
 +++
 
-有关这些字段及其限制的详细信息，请参阅有关行项目[&#128279;](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}的PayPal开发人员文档。
+有关这些字段及其限制的详细信息，请参阅有关行项目[的](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}PayPal开发人员文档。
 
 ## 管理行项目
 
-Adobe Commerce [根据每行](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的总额计算税额，如果订购了同一物料的多个数量或者在目录中显示含税价格，则可能会导致舍入问题。 在这种情况下，总数量可以拆分为两行，但数量将等于订购的物料总数。
+Adobe Commerce [根据每行](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的总额计算税额，如果订购了同一物料的多个数量或者在目录中显示含税价格，则可能会导致舍入问题。 在这种情况下，总数量可以拆分为两行，但数量将等于订购的物料总数。
 
 > 贸易商仪表板视图中具有舍入问题的行项目示例
 

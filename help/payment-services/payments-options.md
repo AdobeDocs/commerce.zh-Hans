@@ -3,9 +3,9 @@ title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1728'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 * **Standard** — 付款选项（快速结帐）（PayPal信用卡和借记卡）的子集适用于其他受支持的国家/地区。 [信用卡字段](#credit-card-fields)和[Apple Pay](#apple-pay-button)不适用于此入门培训选项。 在新用户引导以启用实时支付时，选择[标准新用户引导选项](../payment-services/production.md#standard-onboarding)。
 
-有关完成Advanced和Standard入门的信息，请参阅[为生产启用 [!DNL Payment Services] &#x200B;](../payment-services/production.md#complete-merchant-onboarding)。
+有关完成Advanced和Standard入门的信息，请参阅[为生产启用 [!DNL Payment Services] ](../payment-services/production.md#complete-merchant-onboarding)。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -166,7 +166,44 @@ PayPal、Pay Later和Venmo付款方法使用[服务器端送货回拨](https://d
 1. 请确保您的存储在生产模式[中为](configure-admin.md#enable-payment-services)。
 1. [配置所需的PayPal付款按钮](configure-admin.md#payment-buttons)。
 1. 关闭&#x200B;_部分中的_&#x200B;选项&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**&#x200B;关闭&#x200B;_[!UICONTROL Payment buttons]_。
-1. 关闭&#x200B;_部分中的_&#x200B;关闭&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_&#x200B;选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=zh-Hans#payments)。
+1. 关闭&#x200B;_部分中的_&#x200B;关闭&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)。
+
+## 本地支付方式
+
+本地支付方法(LPM)在现有基于卡选项的基础上，支持特定于地区和本地的支付方法，如银行转账和本地化支付解决方案。 商家可以直接在Commerce配置中启用或禁用可用的LPM。 LPM可扩展Adobe的支付功能，支持欧洲市场的需求，改善结账本地化，并帮助提高转化率、商家采用率和买方满意度。
+
+可用的LPM包括：
+
+| 付款方式 | 国家/地区 | 货币 |
+|----------------|-----------|----------|
+| Bancontact | 比利时 | EUR |
+| 闪烁 | 波兰 | 计划 |
+| eps | 奥地利 | EUR |
+| iDEAL | 荷兰 | EUR |
+| 我的银行 | 意大利 | EUR |
+| 普热莱维24 | 波兰 | 欧元，计划 |
+
+LPM会根据客户的账单地址和网站的基本货币向客户显示。 仅当两个条件都符合付款方法的要求时，才会显示付款方法。
+
+有关详细信息，请参阅[本地付款方法配置](configure-admin.md#local-payment-methods)。
+
+## 快速签出按钮
+
+为了提供更快速的结账体验，在结账流程开始时可以使用快速付款选项。 客户可以使用PayPal、PayPal Pay Later、Venmo、Apple Pay或Google Pay完成购买。
+
+启用后，在结账流程开始时会显示快速结账按钮，为喜欢数字钱包支付方法的客户提供更快的购买途径。
+
+要启用快速结帐按钮，请分别配置每种付款方式：
+
+* **PayPal和稍后付款**：在&#x200B;**[!UICONTROL Show buttons at start of checkout]** PayPal付款按钮[设置中启用](configure-admin.md#paypal-payment-buttons)。
+
+* **Apple支付**：在&#x200B;**[!UICONTROL Show Apple Pay at start of checkout]** Apple支付[设置中启用](configure-admin.md#apple-pay)。
+
+* **Google支付**：在&#x200B;**[!UICONTROL Show Google Pay at start of checkout]** Google支付[设置中启用](configure-admin.md#google-pay)。
+
+>[!NOTE]
+>
+>付款方式的可用性取决于买方的地点。 对于沙盒测试，请使用[购买者的国家/地区](sandbox.md#buyers-country)配置来模拟不同的区域。 例如，Venmo仅在美国可用。 Pay Later在美国和英国有售。
 
 ## 签出选项
 

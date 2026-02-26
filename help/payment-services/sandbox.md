@@ -3,9 +3,9 @@ title: 设置测试沙盒
 description: 使用PayPal沙盒帐户在测试模式下使用 [!DNL Payment Services] 。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ PayPal沙盒帐户允许您在测试模式下使用[!DNL Payment Services]。 Pa
       如果您在沙盒PayPal载入过程中创建了PayPal沙盒帐户，则必须[重置载入沙盒](#reset-your-sandbox-account)，因为或者您无法验证电子邮件。
 
    1. 选择&#x200B;**[!UICONTROL Business]**&#x200B;作为帐户类型，然后单击&#x200B;**[!UICONTROL Create]**。
-   1. 在&#x200B;_[!UICONTROL Sandbox Accounts]_&#x200B;部分中，单击您创建的沙盒帐户&#x200B;_[!UICONTROL Manage accounts]_&#x200B;列中的三个圆点。
+   1. 在&#x200B;_[!UICONTROL Sandbox Accounts]_部分中，单击您创建的沙盒帐户_[!UICONTROL Manage accounts]_&#x200B;列中的三个圆点。
    1. 单击&#x200B;**[!UICONTROL View/edit account]**。
 
       ![PayPal — 查看/编辑沙盒帐户](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -79,6 +79,32 @@ PayPal沙盒帐户允许您在测试模式下使用[!DNL Payment Services]。 Pa
 >[!IMPORTANT]
 >
 >此设置不适用于其他签出流。
+
+## 买方所在国家/地区
+
+在生产中，PayPal使用买方的地理位置来确定哪些支付方式可用于结账和快速流程。 由于沙盒模式不支持地理位置，因此请使用&#x200B;**购买者的国家/地区**&#x200B;配置来模拟购买者的位置，并控制呈现的付款方法。
+
+此设置可用于测试区域特定的支付方式，如Venmo （仅限美国）、Pay Later （美国和英国）或[本地支付方式](payments-options.md#local-payment-methods) （欧洲），而无需使用VPN。
+
+要配置买方所在国家/地区，请执行以下操作：
+
+1. 在&#x200B;_管理员_&#x200B;侧边栏中，导航到&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
+
+1. 在左侧面板中，展开&#x200B;**[!UICONTROL Sales]**&#x200B;并选择&#x200B;**[!UICONTROL Payment Methods]**。
+
+1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_部分。
+
+1. 在&#x200B;_[!UICONTROL Payment Services]_部分中，展开_[!UICONTROL General Configuration]_&#x200B;部分。
+
+1. 将&#x200B;**[!UICONTROL Method]**&#x200B;设置为`Sandbox`。
+
+1. 从&#x200B;**[!UICONTROL Buyer's country]**&#x200B;下拉列表中选择所需的国家/地区。
+
+1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;保存更改。
+
+>[!NOTE]
+>
+>仅当该方法设置为&#x200B;**[!UICONTROL Buyer's country]**&#x200B;时，`Sandbox`设置才会显示。 这不会影响生产环境。
 
 ## 在沙盒环境中测试
 
