@@ -2,11 +2,11 @@
 title: 什么是Adobe Commerce Optimizer？
 description: 了解 [!DNL Adobe Commerce Optimizer] 及其主要功能。
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 请观看以下视频，了解[!DNL Adobe Commerce Optimizer]的高级概述：
 
->[!VIDEO](https://video.tv.adobe.com/v/3450473?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## 谁从[!DNL Adobe Commerce Optimizer]中受益最大？
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 - 希望保持现有后端商业系统并只转换店面体验的商家。
 - 第三方系统管理购物车和结账生命周期的企业。
-- 寻求通过第三方商业引擎管理其产品目录的简单方法的AEM客户。
+- [AEM客户](setup/product-visuals.md)，正在寻求一种通过第三方商业引擎管理其产品目录的简单方法。
 
 ## 快速导览
 
@@ -69,6 +69,7 @@ ht-degree: 0%
 定义目录视图和策略。 目录不仅包含您的产品数据，还有助于您定义业务结构。 此外，您还可以查看有关您店面的产品数据可用性的宝贵见解，确保可及时向购物者显示这些数据。
 
 - **目录视图** — 帮助您将零售结构定义成有意义的业务组。 例如，汽车行业的经销商、面向多品牌集团企业的子公司或面向供应商的制造地点。
+- **目录层** — 修改产品数据而不更改源数据。 将AEM Assets用于产品图像时，AEM-Assets层通过[产品可视化图表](setup/product-visuals.md)应用。 有关详细信息，请参阅[目录层](setup/catalog-layer.md)。
 - **策略** — 存储在目录视图中的数据访问筛选器。 策略有助于确保将正确的内容发送到正确的目标。 例如，销售点实体商店、市场、广告管道(Google、Facebook、Instagram)。
 - **数据同步** — 显示从数据源（PIM、ERP等）传输到[!DNL Adobe Commerce Optimizer]的产品数据的同步状态概览。 该产品数据显示在&#x200B;**[!UICONTROL Catalog Service]**、**[!UICONTROL Search]**&#x200B;和&#x200B;**[!UICONTROL Recommendations]**&#x200B;选项卡中。
 - **事件** — 显示支持产品发现和推荐的店面事件数据。 通过&#x200B;**事件**&#x200B;页面，商家可以验证是否已正确实施店面事件，以及是否成功捕获了事件。 商家可以使用此页面识别潜在问题，并采取措施解决任何问题。
