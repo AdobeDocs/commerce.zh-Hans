@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 入门
 
-要载入与[!DNL Commerce Optimizer]的AEM Assets集成，您必须[创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+要载入与[!DNL Commerce Optimizer]的AEM Assets集成，您必须[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 Adobe支持使用您票证中的信息来向Assets集成服务注册您的租户，并配置集成。
 
@@ -115,7 +115,7 @@ Adobe支持处理您的票证后，配置集成，并且您的租户向Assets集
 
 >[!CAUTION]
 >
-> 将`AEM-Assets`图层分配给您的[目录视图](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view)。 如果未指定图层，产品图像数据可能会意外被覆盖。
+> 将`AEM-Assets`图层分配给您的[目录视图](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view)。 如果未指定图层，产品图像数据可能会意外被覆盖。
 
 ## 同步
 
