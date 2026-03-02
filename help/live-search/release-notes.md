@@ -330,7 +330,7 @@ _2023年3月14日_
 #### 新增功能
 
 规则预览中的![新](../assets/new.svg)产品项卡
-![新建](../assets/new.svg)[产品列表页小组件](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
+![新建](../assets/new.svg) [产品列表页小组件](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
 ![新](../assets/new.svg) [类别筛选选项](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
 ![新](../assets/new.svg)添加了拖放以创建Pin事件的功能
 ![新建](../assets/new.svg)个新Pin操作：
@@ -407,7 +407,7 @@ _2023年3月14日_
 对于运行Adobe Commerce 2.4.4的安装，![New](../assets/new.svg) [!DNL Live Search]现在支持PHP 8.1。
 ![新](../assets/new.svg) `Magento_ElasticsearchCatalogPermissionsGraphQl`模块已添加到安装期间禁用的模块列表中。
 ![新](../assets/new.svg) [[!DNL storefront popover]](overview.md)中的可用行数可以从&#x200B;*管理员*中配置。
-![支持](../assets/new.svg)新[ Beta ](https://developer.adobe.com/commerce/pwa-studio/)PWA[!DNL Live Search]。
+![支持](../assets/new.svg)新[&#x200B; Beta &#x200B;](https://developer.adobe.com/commerce/pwa-studio/)PWA[!DNL Live Search]。
 ![新建](../assets/new.svg) [!DNL Live Search]安装过程已更新，其中包含高级过程更改。
 已从店面页脚中删除![修复](../assets/fix.svg) [高级搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)链接。
 ![错误](../assets/bug.svg)以下产品属性在与PWA的Beta版一起使用时，[Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)不支持： `description`、`name`、`short_description`
