@@ -5,11 +5,11 @@ feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
-source-git-commit: 7755da397c579f8ac5cb17f9dcbe9ac850cd5cf9
+source-git-commit: f0f667254bb8b33905543afe83f17428bc3dbdc2
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1735'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,102 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您正在本地使用Adobe Commerce或在云基础架构上使用Adobe Commerce，请参阅[Adobe Commerce发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/notes/overview)。
+>如果您正在本地使用Adobe Commerce或在云基础架构上使用Adobe Commerce，请参阅[Adobe Commerce发行说明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)。
 
-## 2026年2月 — 发行说#2 {#latest}
+## 2026年3月 {#latest}
+
+[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+
+以下项目当前在[!DNL Adobe Commerce as a Cloud Service]的沙盒环境中可用，并将于2026年3月9日发布到生产环境。
+
+>[!BEGINSHADEBOX]
+
+### App Builder AI编码工具和教程
+
+您现在可以使用[AI编码开发人员工具](./migration/coding-tools.md)创建新的[!DNL App Builder]应用程序并将现有[!DNL Adobe Commerce] PHP扩展转换为[!DNL App Builder]应用程序。 以下教程将演示这些工具的使用方法：
+
+* [教程先决条件](./tutorials/tutorial-prerequisites.md)
+* [评级扩展教程](./tutorials/ratings-extension.md)
+* [配送方法扩展教程](./tutorials/shipping-method-extension.md)
+
+### 通过管理员访问App Builder应用程序管理
+
+[!DNL Commerce Admin]现在包含一个链接到[应用程序管理](https://developer.adobe.com/commerce/extensibility/app-management/){target="_blank"}的菜单项，这是一个统一的Shell，用于管理与Commerce实例关联的[!DNL App Builder]个应用程序。 此添加由最新的Admin UI SDK更新提供支持。<!-- CEXT-5755 -->
+
+### 请求实体创建限制更改
+
+网站、商店和商店查看次数的限制以前限制为50。 如有必要，您现在可以提交[支持请求](https://experienceleague.adobe.com/home?support-tab=home#support)以修改这些限制。<!-- ACCS-398 -->
+
+### 使用结构化错误代码自定义店面身份验证消息
+
+[`generateCustomerToken` GraphQL突变](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"}现在会随错误消息一起返回键入的错误代码，使店面能够按失败原因显示特定的UI消息。 可用的错误代码包括： `CUSTOMER_MISSING_EMAIL`、`CUSTOMER_MISSING_PASSWORD`、`CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`、`CUSTOMER_ACCOUNT_NOT_CONFIRMED`和`CUSTOMER_GENERIC_ERROR`。<!-- ACCS-301 -->
+
+### 发送有关购物车和愿望清单不活动的自动电子邮件提醒
+
+[电子邮件提醒模块](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`)现在在[!DNL Adobe Commerce as a Cloud Service]中处于活动状态，允许商家创建自动提醒规则，以根据购物车和愿望清单非活动状态触发发送给客户的电子邮件。<!-- CCSAAS-4597 -->
+
+### 订阅类别删除事件webhook
+
+`observer.catalog_category_delete_before` webhook现在可在[!DNL Adobe Commerce as a Cloud Service]中使用。 使用它可在删除类别之前运行逻辑。<!-- CEXT-5862 -->
+
+### 跟踪在注册电子邮件中下单的访客订单
+
+新的可选商店级别配置（默认情况下处于禁用状态）允许商家跟踪使用与已注册客户帐户匹配的电子邮件地址下达的访客订单。 启用后，随已注册电子邮件一起下达的访客结帐订单将保持可访问状态，但同时也会显示在客户的订单历史记录中。
+
+要启用此功能，请导航到&#x200B;**商店** >设置> **配置** >销售> **销售** > **来宾签出**，并将&#x200B;**允许已注册电子邮件访问来宾订单**&#x200B;设置设置为`Yes`。
+<!-- ACCS-289 -->
+
+### 增强功能和错误修复
+
+此版本中包含以下选定的增强功能、优化和错误修复：
+
+* 修复了以下问题：某些组织管理员在没有每个租户权利的情况下可能错误地访问租户实例。<!-- ACCS-335 -->
+
+* 修复了在更改共享目录时可能导致用户从[!DNL Commerce Admin]中注销的问题。<!-- ACCS-318 -->
+
+* 修复了导致某些Webhook字段在[!DNL Commerce Admin] UI中显示不正确的问题。<!-- CEXT-5874 -->
+
+### 内部（待删除）
+
+包括以下基础架构改进：
+
+* 将[!DNL Adobe Commerce]核心从2.4.8-p3升级到2.4.8-p4。<!-- CCSAAS-4588 -->
+
+* 修复了访客结帐会话处理问题，以便在访客结帐流程中正确关联和维护购物车报价。<!-- ACCS-261 -->
+
+* 扩展了GraphQL错误日志记录以捕获完整的异常栈栈跟踪，从而提高可调试性。<!-- ACCS-305 -->
+
+* 将Company Resolver GraphQL测试套件移植到CCSaaS测试环境。<!-- CCSAAS-2122 -->
+
+* 修复了PAT devbox CI内部版本中的管理场景故障。<!-- ACCS-351 -->
+
+* 向PAT趋势构建添加了产品创建方案。<!-- CCSAAS-4498 -->
+
+* 将BundleRequisitionList GraphQL测试套件移植到CCSaaS测试环境。<!-- CCSAAS-2113 -->
+
+* 在CI中并行执行GraphQL API功能测试，以减少反馈时间。<!-- CCSAAS-4607 -->
+
+* 更新了自述文件文档。<!-- ACCS-404 -->
+
+* 扩展了CCSaaS存储库上下文的游标人工智能规则。<!-- PR #1295 -->
+
+* 已删除过时的迁移文件。<!-- PR #1296 -->
+
+* 在生成性能数据期间禁用了模板处理。<!-- PR #1297 -->
+
+* 添加了光标规则和Magento CLI文档。<!-- PR #1300 -->
+
+* 添加了用于开发的本地数据库帮助程序脚本。<!-- PR #1305 -->
+
+* 引入了Cursor安全编码规则。<!-- PR #1306 -->
+
+* 优化了CI静态分析，使其仅在更改的文件上运行。<!-- PR #1309 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年2月 — 发行说#2
 
 [!BADGE 生产]{type=Neutral tooltip="列出的项目当前在生产环境中可用。"}
 
@@ -64,15 +157,15 @@ ht-degree: 0%
 
 * 增强了进程外[送货webhook负载](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload)以包含送货地址自定义属性。 这项更改使商家能够实施自定义配送方式。<!-- ACCS-235 -->
 
-* 已添加对管理员报告的访问权限，这些报告包括[客户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/reporting/customer-reports)、[营销](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/reporting/marketing-reports)、[产品](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/reporting/product-reports)和[销售](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/reporting/sales-reports)的报告。<!-- CCSAAS-3085 -->
+* 已添加对管理员报告的访问权限，这些报告包括[客户](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports)、[营销](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports)、[产品](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports)和[销售](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports)的报告。<!-- CCSAAS-3085 -->
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]中不可用的报告仅标记为PaaS （[!BADGE 仅PaaS &#x200B;]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}）。
+>[!DNL Adobe Commerce as a Cloud Service]中不可用的报告仅标记为PaaS （[!BADGE 仅PaaS ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"}）。
 
 ### 通过REST API捕获自定义发票金额
 
-发票API现在支持使用扩展属性的[自定义捕获金额](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)。<!-- ACCS-186, ACCS-197, ACCS-143 -->
+发票API现在支持使用扩展属性的[自定义捕获金额](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)。<!-- ACCS-186, ACCS-197, ACCS-143 -->
 
 >[!NOTE]
 >
@@ -112,28 +205,28 @@ ht-degree: 0%
 
 对B2B放置组件进行了以下更改：
 
-* [!DNL Commerce Storefront on Edge Delivery Services]现在包含[B2B放置组件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=zh-Hans)。 以下B2B下拉列表现已可用：
+* [!DNL Commerce Storefront on Edge Delivery Services]现在包含[B2B放置组件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/)。 以下B2B下拉列表现已可用：
 
-   * **[公司管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=zh-Hans)** — 启用Adobe Commerce店面的公司配置文件管理和基于角色的权限。
-   * **[公司切换器](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=zh-Hans)** — 为用户提供UI组件，以便在其关联的多个公司之间进行切换。
-   * **[采购订单](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=zh-Hans)** — 管理B2B交易的采购订单工作流、审批规则和采购订单历史记录。
-   * **[报价管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=zh-Hans)** — 为具有报价请求、洽谈和批准工作流的B2B客户启用可协商报价。
-   * **[申购单列表](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=zh-Hans)** — 提供用于创建和管理重复购买和批量订购的申购单列表的工具。
+   * **[公司管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** — 启用Adobe Commerce店面的公司配置文件管理和基于角色的权限。
+   * **[公司切换器](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** — 为用户提供UI组件，以便在其关联的多个公司之间进行切换。
+   * **[采购订单](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** — 管理B2B交易的采购订单工作流、审批规则和采购订单历史记录。
+   * **[报价管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** — 为具有报价请求、洽谈和批准工作流的B2B客户启用可协商报价。
+   * **[申购单列表](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)** — 提供用于创建和管理重复购买和批量订购的申购单列表的工具。
 
 * 发布了B2B店面兼容包。 此包增强了[!DNL Adobe Commerce] B2B GraphQL架构，以帮助改进B2B系统上的开发。
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=zh-Hans). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/?lang=zh-Hans). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. -->
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. -->
 
 ### 指向外部配送跟踪器的可点击链接
 
-通过[启用自定义跟踪URL](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls)，将购物者电子邮件中包含的装运跟踪编号从纯文本转换为可点击链接。 USPS、UPS、FedEx和DHL支持此功能。<!-- See PR #716 in commerce-admin -->
+通过[启用自定义跟踪URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls)，将购物者电子邮件中包含的装运跟踪编号从纯文本转换为可点击链接。 USPS、UPS、FedEx和DHL支持此功能。<!-- See PR #716 in commerce-admin -->
 
 ### Google reCAPTCHA企业支持
 
-[!DNL Adobe Commerce as a Cloud Service]店面现在支持[reCAPTCHA Enterprise](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise)。 此功能通过使用自适应风险分析和机器学习准确地区分人类用户和自动化机器人，提供高级机器人保护。 它增强了网站安全性，防止了欺诈性活动，并减少了垃圾邮件和滥用，以保持可信的购物体验。<!-- CCSAAS-4242 -->
+[!DNL Adobe Commerce as a Cloud Service]店面现在支持[reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise)。 此功能通过使用自适应风险分析和机器学习准确地区分人类用户和自动化机器人，提供高级机器人保护。 它增强了网站安全性，防止了欺诈性活动，并减少了垃圾邮件和滥用，以保持可信的购物体验。<!-- CCSAAS-4242 -->
 
 ### 特定于实例的管理员访问权限
 
@@ -149,7 +242,7 @@ ht-degree: 0%
 
 ### 目录价格规则的分层定价
 
-您现在可以使用[目录价格规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules)将分层定价折扣与目录规则折扣相结合。 此增强功能允许您创建更动态、更有竞争力的定价策略，在奖励批量购买的同时应用促销折扣。 这样可以更灵活地吸引客户、增加订单价值并促进转化。<!-- See PR #708 in commerce-admin -->
+您现在可以使用[目录价格规则](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules)将分层定价折扣与目录规则折扣相结合。 此增强功能允许您创建更动态、更有竞争力的定价策略，在奖励批量购买的同时应用促销折扣。 这样可以更灵活地吸引客户、增加订单价值并促进转化。<!-- See PR #708 in commerce-admin -->
 
 ### 增强功能和错误修复
 
@@ -189,6 +282,6 @@ ht-degree: 0%
 
 #### 自定义订单属性
 
-* 管理员用户现在可以直接从“管理员”面板的“订单查看”、“编辑”和“创建”屏幕查看和编辑[自定义订单属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes)。 此增强功能改进了通过GraphQL创建的自定义订单数据的管理。<!-- CEXT-5044 -->
+* 管理员用户现在可以直接从“管理员”面板的“订单查看”、“编辑”和“创建”屏幕查看和编辑[自定义订单属性](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes)。 此增强功能改进了通过GraphQL创建的自定义订单数据的管理。<!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]

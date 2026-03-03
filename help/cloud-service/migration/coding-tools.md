@@ -2,12 +2,12 @@
 title: Adobe Commerce App Builder的人工智能编码开发人员工具
 description: 了解如何使用AI工具创建Commerce App Builder应用程序。
 feature: App Builder, Cloud
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
 role: Developer
 level: Intermediate
-source-git-commit: 4e3f593ead4b0e32bdf474498421b20475dcbe52
+source-git-commit: 2c851da1dc521f5309031fc091be88f9ca39cd8f
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2438'
 ht-degree: 0%
 
 ---
@@ -56,10 +56,6 @@ aio commerce extensibility tools-setup
 * [Git](https://github.com/git-guides/install-git)：用于存储库克隆和版本控制
 
 ## 安装
-
->[!NOTE]
->
->如果只想安装文档RAG服务，而不是整个AI编码工具包，请参阅[文档RAG服务](./doc-rag.md)。
 
 1. 全局安装最新的[Adobe I/O CLI](https://github.com/adobe/aio-cli)：
 
@@ -179,8 +175,6 @@ aio auth login
 >[!NOTE]
 >
 >MCP服务器的某些功能无需登录即可工作，但RAG (Retrieval-Enhanced Generation)服务无法工作。 RAG服务让AI编码代理能够实时访问完整的Adobe Commerce文档集，从而使其能够基于当前Commerce开发实践、API和架构模式回答问题并生成代码。
->
->要单独安装RAG服务，请参阅[文档RAG服务](./doc-rag.md)。
 
 ### 光标
 
@@ -340,7 +334,7 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 * [集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [结帐入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce入门套件模板](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入门模板](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder示例应用程序](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 为什么应使用这些资源
