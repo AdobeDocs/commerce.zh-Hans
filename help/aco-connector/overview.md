@@ -2,7 +2,7 @@
 title: Adobe Commerce Optimizer连接器
 description: 了解如何将Commerce云或内部部署项目中的数据连接到Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
 source-git-commit: 380d2c91a17a3e6b84d435774de1b05ada7d3a52
 workflow-type: tm+mt
 source-wordcount: '489'
