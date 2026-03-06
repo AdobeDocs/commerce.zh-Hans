@@ -303,7 +303,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
    您应在开发环境和浏览器中看到以下更改：
 
    * 系统会自动创建产品评级组件。
-   * 组件使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots)集成到PDP中，或者作为独立块，具体取决于选择的体系结构。
+   * 组件使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=zh-Hans)集成到PDP中，或者作为独立块，具体取决于选择的体系结构。
    * 星标以适当的填充比例显示，填充比例基于API中的评级值。
 
    ![产品详细信息页面，显示集成在产品标题下方的星级评分](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
