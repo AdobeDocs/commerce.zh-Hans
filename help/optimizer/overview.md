@@ -1,12 +1,12 @@
 ---
-title: 什么是Adobe Commerce Optimizer？
+title: 什么是 [!DNL Adobe Commerce Optimizer]？
 description: 了解 [!DNL Adobe Commerce Optimizer] 及其主要功能。
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 请观看以下视频，了解[!DNL Adobe Commerce Optimizer]的高级概述：
 
->[!VIDEO](https://video.tv.adobe.com/v/3450473?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## 谁从[!DNL Adobe Commerce Optimizer]中受益最大？
 
