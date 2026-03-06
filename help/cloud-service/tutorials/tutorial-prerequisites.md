@@ -1,12 +1,15 @@
 ---
 title: 教程先决条件
-description: 了解评级扩展实验室的先决条件。
+description: 了解Adobe Commerce as a Cloud Service教程的先决条件和设置步骤，包括扩展和店面开发工具。
+solution: Commerce
 feature: App Builder, Cloud
+feature-set: Commerce
 role: Developer
 level: Intermediate
-source-git-commit: 68e34cecbc1b16194ccc2e0296c2d66f37855b7c
+type: Tutorial
+source-git-commit: 1848c9dda4a1976e1bccb4d1f9d5a2e21540fc0b
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -15,7 +18,30 @@ ht-degree: 0%
 
 此页面列出了[!DNL Adobe Commerce as a Cloud Service]教程的先决条件和设置步骤，如[评级扩展教程](./ratings-extension.md)和[送货方法扩展教程](./shipping-method-extension.md)。
 
-## Adobe Commerce as a Cloud Service先决条件
+## 一般先决条件
+
+在本教程中，扩展和店面开发都需要以下工具。
+
+* [!DNL Node.js] （版本`22.x.x`）和npm （`9.0.0`或更高版本）：使用以下命令验证您的安装：
+
+  ```bash
+  node --version
+  npm --version
+  ```
+
+* 安装[Git](https://git-scm.com) — 验证您的安装：
+
+  ```bash
+  git --version
+  ```
+
+* Bash shell
+   * macOS/Linux：无需安装
+   * Windows：使用[Git Bash](https://git-scm.com/install)或[用于Linux (WSL)的Windows子系统](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+* 下载AI辅助的IDE，如[Cursor](https://cursor.com/download)（推荐）。 其他IDE（如Claude Code、Gemini CLI或Copilot）也受支持，但可能需要修改提示和教程中的其他步骤。
+
+## [!DNL Adobe Commerce as a Cloud Service]先决条件
 
 * 安装[!DNL Adobe I/O CLI]
 
@@ -29,50 +55,56 @@ ht-degree: 0%
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-* 下载AI辅助的IDE，如[Cursor](https://cursor.com/download)（推荐），其他IDE，如Claude Code、Gemini CLI或Copilot也受支持，但可能需要修改提示和教程中的其他步骤。
-
 ### Adobe Developer Console先决条件
+
+在Adobe Developer Console中设置具有所需API和凭据的项目。
 
 1. 导航到[Adobe Developer Console](https://developer.adobe.com/console){target="_blank"}。
 1. 使用您的电子邮件和密码登录。
 
 #### 创建新项目
 
+在Adobe Developer Console中创建一个App Builder项目来托管您的扩展。
+
 1. 导航到[Adobe Developer Console](https://developer.adobe.com/)。
-1. 单击&#x200B;[!UICONTROL **从模板创建项目**]。
-1. 选择&#x200B;[!UICONTROL **App Builder**]&#x200B;模板。
-1. 输入&#x200B;[!UICONTROL **项目标题**]&#x200B;和&#x200B;[!UICONTROL **应用程序名称**]。
+1. 单击&#x200B;**[!UICONTROL Create project from a template]**。
+1. 选择&#x200B;**[!UICONTROL App Builder]**&#x200B;模板。
+1. 输入&#x200B;**[!UICONTROL Project Title]**&#x200B;和&#x200B;**[!UICONTROL App Name]**。
 1. 确保选中&#x200B;**[!UICONTROL Include Runtime]**&#x200B;复选框。
 
    ![已选择Adobe Developer Console模板来创建App Builder项目](../assets/app-builder-template.png){width="600" zoomable="yes"}
 
-1. 单击&#x200B;[!UICONTROL **保存**]。
+1. 单击&#x200B;**[!UICONTROL Save]**。
 
 #### 将API添加到工作区
 
-1. 单击&#x200B;[!UICONTROL **阶段**]&#x200B;工作区，然后对每个API重复以下步骤。
+将所需的API添加到暂存工作区，以进行事件管理和Commerce集成。
+
+1. 单击&#x200B;**[!UICONTROL Stage]**&#x200B;工作区，然后对每个API重复以下步骤。
 
    ![包含API的“添加服务”选项的“暂存”工作区](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
-1. 单击&#x200B;[!UICONTROL **添加服务**]&#x200B;并选择&#x200B;[!UICONTROL **API**]。
+1. 单击&#x200B;**[!UICONTROL Add Service]**&#x200B;并选择&#x200B;**[!UICONTROL API]**。
 
-1. 选择以下API之一。 您需要为下面列出的每个API重复此过程：
+1. 选择以下API之一。 对下面列出的每个API重复此过程：
 
-   * [!UICONTROL **Adobe服务**]&#x200B;筛选器：
-      * [!UICONTROL **I/O管理API**]
-      * [!UICONTROL **I/O事件**] API
-   * [!UICONTROL **Experience Cloud**]&#x200B;筛选器：
-      * 适用于Adobe Commerce的&#x200B;[!UICONTROL **Adobe I/O Events**] API
+   * **[!UICONTROL Adobe Services]**&#x200B;筛选器：
+      * **[!UICONTROL I/O Management API]**
+      * **[!UICONTROL I/O Events]** API
+   * **[!UICONTROL Experience Cloud]**&#x200B;筛选器：
+      * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
 
-1. 单击&#x200B;[!UICONTROL **下一步**]。
+1. 单击&#x200B;**[!UICONTROL Next]**。
 
-1. 单击&#x200B;[!UICONTROL **保存配置的API**]。
+1. 单击&#x200B;**[!UICONTROL Save configured API]**。
 
-1. 重复上述步骤，直到将所有API添加到工作区为止。
+1. 重复上述步骤，直到您将所有API添加到工作区为止。
 
    ![Workspace显示所有必需的API已成功添加](../assets/apis-added.png){width="600" zoomable="yes"}
 
 ### 配置Adobe I/O CLI
+
+将[!DNL Adobe I/O CLI]连接到您的组织、项目和工作区。
 
 1. 清除任何现有配置：
 
@@ -80,7 +112,7 @@ ht-degree: 0%
    aio config clear
    ```
 
-   使用[!DNL Adobe I/O CLI]登录：
+1. 使用[!DNL Adobe I/O CLI]登录：
 
    ```bash
    aio auth login -f
@@ -134,7 +166,7 @@ cp env.dist .env
 
 在文本编辑器中打开`.env`文件并添加以下OAuth凭据：
 
-```shell-session
+```bash
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_TECHNICAL_ACCOUNT_ID=
@@ -142,7 +174,7 @@ OAUTH_TECHNICAL_ACCOUNT_EMAIL=
 OAUTH_ORG_ID=
 ```
 
-您可以通过单击工作区上的&#x200B;**[!UICONTROL Credential details]**&#x200B;选项卡，从[Developer Console](https://developer.adobe.com/)中的&#x200B;**[!UICONTROL OAuth Server-to-Server]**&#x200B;页面复制这些值。
+通过单击工作区上的&#x200B;**[!UICONTROL Credential details]**&#x200B;选项卡，从[Developer Console](https://developer.adobe.com/)中的&#x200B;**[!UICONTROL OAuth Server-to-Server]**&#x200B;页面复制这些值。
 
 Adobe Developer Console中的![OAuth服务器到服务器凭据页面](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
@@ -150,7 +182,7 @@ Adobe Developer Console中的![OAuth服务器到服务器凭据页面](../assets
 
 将以下Commerce实例详细信息添加到您的`.env`文件：
 
-```shell-session
+```bash
 COMMERCE_BASE_URL=
 COMMERCE_GRAPHQL_ENDPOINT=
 ```
@@ -166,7 +198,7 @@ COMMERCE_GRAPHQL_ENDPOINT=
 
 为事件前缀设置临时值：
 
-```shell-session
+```bash
 EVENT_PREFIX=test
 ```
 
@@ -235,142 +267,43 @@ aio app use --merge
 
    ![终端显示AI可扩展性工具设置，已选择签出启动工具包](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
 
-<!--
-## Storefront prerequisites
+## 店面先决条件
 
-The following items are required to complete the [storefront](./ratings-extension.md#connect-to-the-storefront) section of [this tutorial](./ratings-extension.md) and see the product ratings in your store.
+要完成[评级扩展教程](./ratings-extension.md#connect-to-the-storefront)的[storefront](./ratings-extension.md)部分并在您的商店中显示产品评级，需要以下项目。
 
-* Install [!DNL Node.js] (version `22.x.x`) and npm (`9.0.0` or higher). Verify your installation:
+* [Google Chrome](https://www.google.com/chrome/) — 测试店面所需
 
-   ```bash
-   node --version
-   npm --version
-   ```
+* 店面项目已连接到您的[!DNL Commerce]实例。 如果您没有店面项目，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}中的步骤操作，包括[将存储库链接到商务数据](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}部分。
 
-* Install [Git](https://git-scm.com) (Optional) - Required only if [cloning the repository directly](#option-a-clone-the-repository-recommended)(recommended), not needed if you [download the zip file](#option-b-download-the-zip-file). Verify your installation:
+### 克隆店面存储库
 
-  ```bash
-  git --version
-  ```
-
-* Bash shell
-  * macOS/Linux: No installation required
-  * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
-
-* [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
-
-### Get the project files
-
-You can obtain the project files using one of the following methods:
-
-#### Option A: Clone the repository (recommended)
-
-If you have [!DNL Git] installed, open your terminal and clone the repository:
+打开终端并克隆存储库：
 
 ```bash
 git clone --branch agentic-dev https://github.com/hlxsites/aem-boilerplate-commerce.git storefront
 cd storefront
 ```
 
-#### Option B: Download the zip file
+### 安装依赖项
 
-If you do not have [!DNL Git] installed:
-
-1. Download the project zip file from: [https://github.com/hlxsites/aem-boilerplate-commerce/archive/refs/heads/agentic-dev.zip](https://github.com/hlxsites/aem-boilerplate-commerce/archive/refs/heads/agentic-dev.zip)
-1. Extract the zip file to a folder on your machine.
-1. Open your terminal and navigate into the unzipped folder:
-
-   ```bash
-   cd path/to/aem-boilerplate-commerce-agentic-dev
-   ```
-
-### Install root dependencies
-
-Install the main project dependencies:
+安装项目依赖项：
 
 ```bash
 npm install
 ```
 
-This will install all the necessary packages for the storefront application.
+### 安装店面人工智能工具
 
-### Install MCP server dependencies
-
-Navigate to the MCP server directory and install its dependencies:
+在`storefront`文件夹中设置AI辅助开发工具。 从样板项目的根目录运行以下命令：
 
 ```bash
-cd mcp-server
-npm install
-cd ..
+aio commerce extensibility tools-setup
 ```
 
-### Configure environment variables
+该命令将引导您完成两个提示：
 
-The MCP server requires certain environment variables to connect to the RAG service.
+1. **选择入门工具包** — 选择&#x200B;**AEM样板Commerce**。
 
-Create an `.env` file in the `mcp-server` directory:
+1. **选择编码代理** — 从支持的代理列表中选择代理。
 
-```bash
-cd mcp-server
-cp env.example .env
-```
-
-Edit the `.env` file and add the following values:
-
-```env
-RAG_MODE=worker
-WORKER_RAG_URL=
-```
-
-### Enable MCP in Cursor
-
-The Model Context Protocol (MCP) server provides AI agents with access to [!DNL Adobe Commerce] Storefront documentation.
-
-#### Open Cursor MCP settings
-
-![Open Cursor MCP Settings](../assets/cursor-mcp-settings.png){width="600" zoomable="yes"}
-
-1. Open [!DNL Cursor].
-1. Navigate to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**.
-
-#### Enable and configure MCP features
-
-The project includes an MCP configuration file at `.cursor/mcp.json`. This file should already be configured to use the local MCP server.
-
-Verify the MCP configuration:
-
-1. Ensure the "commerce-documentation-rag" server is listed and enabled
-
-The configuration should look similar to this:
-
-![MCP Configuration](../assets/mcp-configuration.png){width="600" zoomable="yes"}
-
->[!NOTE]
->
->The `start-mcp.sh` script will automatically load the environment variables from your `.env` file in the `mcp-server` directory.
-
-#### Restart Cursor
-
-After enabling MCP and configuring the server:
-
-1. Quit [!DNL Cursor] completely.
-1. Reopen [!DNL Cursor] and open the `aem-boilerplate-commerce` project.
-
-#### Verify MCP connection
-
-Check that the MCP server is running correctly:
-
-1. Open a new chat in [!DNL Cursor].
-1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
-1. Try entering a prompt like the following:
-
-   ```shell-session
-   Search the storefront docs for information about slots
-   ```
-
-If the MCP server is working, you should see relevant documentation results.
-
-![MCP Connection Verified](../assets/mcp-connection-verified.png){width="600" zoomable="yes"}
-
-If this works, you are ready to continue with the [tutorial](./ratings-extension.md).
- -->
+该命令将`@adobe-commerce/commerce-extensibility-tools`包作为开发依赖项安装，将技能文件复制到代理的技能目录中，并配置MCP（模型上下文协议），以便代理可以访问Commerce文档搜索工具。
