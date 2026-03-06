@@ -1,17 +1,18 @@
 ---
 title: 《促销规则》 Workspace
 description: 了解如何在促销规则工作区中开展工作。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 33a0903986cf581ece48616dad877db9516d9350
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+exl-id: 3deac529-731d-44b9-87f3-3c9cb36e28e7
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '954'
+ht-degree: 0%
 
 ---
 
 # 《促销规则》 Workspace
 
-*促销规则*&#x200B;工作区列出了当前选择的规则及其状态，并提供了对创建和管理规则所需工具的访问权限。 从工作区中，您可以：
+*促销规则*&#x200B;工作区列出了当前选择的规则及其状态，并提供了对创建和管理规则所需工具的访问权限。 您可以将规则范围设置为所有[目录视图](../../setup/catalog-view.md) （全局）或单个目录视图。 请参阅[选择目录视图](#select-catalog-view)，了解如何按目录视图进行筛选和为每个目录视图创建规则。 从工作区中，您可以：
 
 - 搜索规则
 - 查看规则详细信息
@@ -71,6 +72,7 @@ ht-degree: 1%
 | 控件 | 描述 |
 |--- |--- |
 | 添加规则 | 打开[规则编辑器](add.md)。 |
+| 目录视图 | 将表筛选为适用于所选目录视图的规则。 还可在您[创建规则](add.md)时设置范围。 选项： *所有视图*&#x200B;或特定的[目录视图](../../setup/catalog-view.md)。 请参阅[选择目录视图](#select-catalog-view)。 |
 | 状态 | 按状态筛选规则列表。 选项：“全部”、“活动”、“不活动”、“已计划” |
 | ![列选择器](../../assets/btn-show-hide-columns.png) | 指定在网格中可见的列。 选项：上次更新时间、开始日期、结束日期、状态 |
 | Search | 按全名或部分匹配项搜索规则。 |
@@ -87,3 +89,41 @@ ht-degree: 1%
 | 描述 | 规则的简要说明。 |
 | 上次更新时间 | 上次更新规则的日期和时间。 |
 | 已启用 | 更改规则状态的控件。 选项：已启用/已禁用 |
+
+## 选择目录视图
+
+>[!IMPORTANT]
+>
+>此功能当前处于测试阶段。
+
+“促销规则”页面上的&#x200B;**[!UICONTROL Catalog view]**&#x200B;选择器执行两项操作：
+
+1. **筛选表** — 仅显示应用于所选目录视图的规则（及其详细信息）。
+1. **设置新规则的范围** — 当您[创建规则时](add.md)，选定的目录视图将用作规则的范围。 选项为&#x200B;*所有视图*&#x200B;或特定的[目录视图](../../setup/catalog-view.md)。
+
+   - **所有视图** — 该规则应用于所有目录视图。 在使用目录的每个店面中，搜索和排名行为相同。
+   - **目录视图** — 该规则仅适用于选定的目录视图（例如，一个店面、区域、经销商或品牌）。 当不同的目录视图需要不同的促销逻辑时，请使用此选项。
+
+有关创建规则并设置其范围的详细信息，请参阅[创建和管理规则](add.md)。
+
+### 为何为每个目录视图创建规则？
+
+当不同的店面、区域或品牌需要不同的搜索和排名行为时，为每个目录视图创建规则。 示例：
+
+- **经销商或分销商网络** — 每个经销商都有自己的目录视图；您希望每个经销商拥有不同的固定、提升或隐藏的产品。
+- **多区域** — 欧盟、美国或具有特定于区域的促销规则的其他区域的单独目录视图。
+- **多品牌** — 每个品牌都有自己的目录视图，您需要品牌特定的规则（例如，每个品牌不同的默认排名或促销产品）。
+
+默认情况下，将按目录视图计算支持[智能排名](add.md#intelligent-ranking)的行为数据（例如，查看次数最多、购买次数最多、趋势最高）。 因此，使用智能排名的规则反映该目录视图的购物者行为。 当您的帐户具有大量目录视图时，系统可能会全局聚合行为数据以保持性能；在这种情况下，排名可能会受到高流量目录视图的影响更大，并且可能会降低低流量视图的相关性。 有关当前限制，请参阅[限制和边界](../../boundaries-limits.md)。
+
+### 如何为每个目录视图设置规则
+
+1. 在&#x200B;*促销规则*&#x200B;工作区中，使用&#x200B;**[!UICONTROL Catalog view]**&#x200B;下拉菜单选择应用规则的目录视图。
+1. 单击&#x200B;**[!UICONTROL Create rule]**。
+
+   您创建的规则将作用域限定在选定的目录视图中。
+1. 在[规则编辑器](add.md)中生成您的规则。
+
+   在编辑器中，定义条件、事件和详细信息。 该规则仅适用于该目录视图中的搜索结果。
+
+创建规则后，无法更改规则的目录视图（范围）。 要将类似的逻辑应用于其他目录视图，请先创建新规则并选择该目录视图，然后再创建。

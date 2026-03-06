@@ -1,11 +1,11 @@
 ---
 title: 推荐性能
 description: 推荐性能页面可向insight提供产品推荐的性能信息。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,15 @@ ht-degree: 0%
 
 ## 查看报表
 
-1. 选择应用推荐的&#x200B;**目录源**，如`en-US`。
+1. 选择应用您推荐的&#x200B;**目录视图**，如&#x200B;*所有视图*。
+
+   在推荐中了解有关[目录视图](#select-catalog-view)的更多信息。
 
 1. 单击&#x200B;**[!UICONTROL Date Range]**&#x200B;并选择以下范围之一：
 
    ![推荐日期范围](../assets/rec-perf-date-range.png)
 
-   推荐表将更新以显示该日期范围的量度。
+   推荐表将更新以显示该日期范围和目录视图的量度。
 
 ## 自定义表
 
@@ -60,6 +62,7 @@ ht-degree: 0%
 | ![日期范围](../assets/rec-perf-date-range.png) | 确定用于量度计算的时间范围。 |
 | ![列选择器](../assets/icon-show-hide-columns.png) | 确定“推荐”表中显示的列。 |
 | 创建推荐 | 打开[新建推荐](../merchandising/recommendations/create.md)页面。 |
+| [目录视图](#select-catalog-view) | 选择目录视图可筛选表以仅显示适用于所选目录视图的那些推荐。 当您[创建](../merchandising/recommendations/create.md)新推荐时，此选择也用作目录视图。 选项为&#x200B;*所有视图*&#x200B;或特定的[目录视图](../setup/catalog-view.md)。 |
 
 ## 列描述
 
@@ -80,3 +83,34 @@ ht-degree: 0%
 | 可见性 | 注册查看的推荐单元的百分比。 |
 | CTR | （点进率）注册一次点击的推荐的单位展示次数百分比。 CTR会计算所有展示，即使设备未进入购物者的视图。 如果未查看推荐单元，则不太可能单击该单元。 但是，这些不可见的展示计为CTR分数，并降低了总体CTR百分比。 |
 | vCTR | （可视点进率）仅根据可视展示（实际出现在购物者屏幕可视部分的推荐）来测量点击次数，从而更准确地衡量购物者参与度。 |
+
+## 选择目录视图
+
+>[!IMPORTANT]
+>
+>此功能当前处于测试阶段。
+
+**[!UICONTROL Catalog view]**&#x200B;推荐&#x200B;**页面上的**&#x200B;选择器执行两项操作：
+
+1. **筛选表** — 仅显示适用于所选目录视图的推荐（及其量度）。
+1. **设置新推荐的范围** — 当您[创建](../merchandising/recommendations/create.md)推荐时，所选目录视图将用作单位的范围。 选项为&#x200B;*所有视图*&#x200B;或特定的[目录视图](../setup/catalog-view.md)。
+
+   - **所有视图** — 推荐适用于所有目录视图（产品可用性仍按视图进行过滤）。
+   - **目录视图** — 推荐仅适用于选定的目录视图（例如，一个店面、语言或品牌）。
+
+通过为每个建议案指定目录视图，您可以：
+
+- 为所有目录视图（全局）或一个目录视图配置推荐。
+- 在[创建](../merchandising/recommendations/create.md)推荐页面上按目录视图预览和筛选产品。
+- 仅显示每个店面可用的产品。
+- 查看每个目录视图的量度和店面行为。
+
+### 目录视图如何过滤产品
+
+产品可用性是按目录视图强制实施的，即使对于&#x200B;**所有视图**&#x200B;选择下的推荐单位也是如此。 除了您在推荐单元上设置的任何[包含或排除过滤器](../merchandising/recommendations/filters.md)之外，此功能也有效。
+
+**示例：在所有视图选择下具有包含过滤器的推荐**
+
+- **所有视图**&#x200B;推荐包括SKU：SKU_ABC、SKU_CDE、SKU_XYZ。
+- **目录视图： Kingsbluff**&#x200B;无法销售SKU_ABC或SKU_CDE。 **显示的：** SKU_XYZ以及对Kingsbluff有效的任何其他SKU。
+- **目录视图： Arkbridge**&#x200B;无法销售任何包含的SKU。 **显示：**&#x200B;仅Arkbridge允许的SKU。 如果没有可用的推荐单元，则该店面不会显示推荐单元。

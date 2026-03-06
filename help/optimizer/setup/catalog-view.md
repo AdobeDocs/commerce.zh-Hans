@@ -3,11 +3,11 @@ title: 目录视图
 description: 了解目录视图是什么以及如何创建它们以按业务结构、策略和定价整理产品目录。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 769aafeb261d978623e68c466888924c92632883
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Merchanding Services的目录视图
 
-目录视图是Adobe Commerce Optimizer促销服务的基础，它使您能够按业务结构、策略和定价整理产品目录。 此灵活的数据模型支持多品牌、多业务单元和多语言方案，同时保持运营效率。
+目录视图是[!DNL Adobe Commerce Optimizer]促销服务的基础，使您能够按业务结构、策略和定价组织产品目录。 此灵活的数据模型支持多品牌、多业务单元和多语言方案，同时保持运营效率。
 
 ## 什么是目录视图？
 
@@ -31,6 +31,16 @@ ht-degree: 0%
 - 经销商目录视图可能只显示对该特定经销商可用的产品
 - 区域目录视图可能会显示特定于某个地理区域的产品和定价
 - 品牌目录视图可能只显示特定品牌的产品
+
+### 目录视图与目录源
+
+下面说明了目录视图和目录源之间的区别：
+
+- **目录视图** — 针对特定业务需求配置的目录视图。 创建目录视图时，选择要使用的目录源（或区域设置），然后添加[策略](policies.md)以筛选可见的产品，并链接[价格手册](pricebooks.md)以控制定价。 单个目录源可以为多个目录视图提供支持（例如，一个`en-US`源具有不同的品牌或区域的单独目录视图）。 将目录视图视为&#x200B;*如何*&#x200B;向店面、渠道或受众公开该数据。
+
+- **目录源** — 提供产品信息的基础数据上下文。 目录源通常是区域设置（例如，`en-US`、`fr-CA`）或外部系统，如PIM或ERP。 [!DNL Adobe Commerce Optimizer]将产品数据从一个或多个目录源摄取到统一的基本目录中。 将目录源视为&#x200B;*其中*&#x200B;原始目录数据来自。
+
+总而言之，**目录源**&#x200B;是您从中提取的数据上下文；而&#x200B;**目录视图**&#x200B;是您向购物者或渠道呈现的经过筛选、定价和组织化的上下文。
 
 ## 创建目录视图
 
@@ -66,6 +76,14 @@ ht-degree: 0%
 目录视图页面将更新以显示新的目录视图&#x200B;。
 
 完成这些步骤后，目录视图现在配置为根据您选择的来源和策略显示产品和定价。
+
+### 指定推荐和产品发现规则的目录视图
+
+>[!IMPORTANT]
+>
+>此功能当前处于测试阶段。
+
+您可以在[创建推荐单位](../merchandising/recommendations/create.md)或[促销规则](../merchandising/rules/add.md)时指定目录视图。
 
 ## 目录层
 

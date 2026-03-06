@@ -1,11 +1,11 @@
 ---
 title: 创建和管理规则
 description: 了解如何创建和管理促销规则。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2219'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,13 @@ ht-degree: 0%
 ## 创建规则
 
 1. 在左边栏中，转到&#x200B;_促销_ > **促销规则**。
-1. 单击&#x200B;**创建规则**&#x200B;以启动规则编辑器。
+1. （可选）使用&#x200B;**目录视图**&#x200B;下拉列表选择应用规则的目录视图。 您创建的规则将作用域限定于选定的视图（如果选择&#x200B;**所有视图**，则限定于所有目录视图）。 请参阅[选择目录视图](workspace.md#select-catalog-view)，了解目录视图作用域的工作方式。
+
+   >[!IMPORTANT]
+   >
+   >此功能当前处于测试阶段。
+
+1. 单击&#x200B;**[!UICONTROL Create rule]**&#x200B;启动规则编辑器。
 
 ![创建规则](../../assets/create-rule.png)
 
@@ -165,7 +171,7 @@ ht-degree: 0%
 
 ## 编辑、查看和删除规则
 
-按照以下说明更新现有规则的属性。
+按照以下说明更新现有规则的属性。 创建规则后，不能更改该规则的目录视图（范围）；创建规则时会设置范围。 请参阅[选择目录视图](workspace.md#select-catalog-view)。
 
 ### 编辑规则
 

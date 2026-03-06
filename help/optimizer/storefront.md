@@ -2,11 +2,11 @@
 title: 设置您的店面
 description: 了解如何设置 [!DNL Adobe Commerce Optimizer] 店面。
 role: Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
+source-git-commit: c41134938f7408d062899ecaf3f63d37e1bdbca3
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 1. **[创建店面项目](#create-your-storefront-project)** — 使用[站点创建者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)创建一个新的店面项目，该项目包含样板代码、示例内容和配置文件。
 
-1. **[自定义店面配置](#customize-the-storefront-configuration)** — 更新存储库中的`config.json`文件以连接到[!DNL Adobe Commerce Optimizer]实例。
+1. **[自定义店面配置](#configure-your-storefront)** — 更新存储库中的`config.json`文件以连接到[!DNL Adobe Commerce Optimizer]实例。
 
 1. **[验证您的设置](#verify-your-setup)** （10分钟）
    * 预览您的店面网站
@@ -57,7 +57,7 @@ ht-degree: 0%
 * **站点**：包含样板内容的店面登陆页面
 * **代码**：包含样板源文件的存储库
 * **内容**：包含站点内容文件的文档创作环境
-* **Commerce配置**：实例特定配置的`config.json`文件
+* **Commerce配置**：[Commerce店面配置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}用于实例特定的配置
 
 ### 步骤1：生成项目
 
@@ -123,7 +123,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >要查找价格手册ID，请检查Adobe Commerce Optimizer中的[目录视图配置详细信息](./setup/catalog-view.md)，以查看分配的价格手册。 如果未分配任何价格手册，则可以从配置文件中删除此标头。 将价格手册分配给目录视图后，将其添加回来。
+   >要查找价格手册ID，请检查[中的](./setup/catalog-view.md)目录视图配置详细信息[!DNL Adobe Commerce Optimizer]以查看分配的价格手册。 如果未分配任何价格手册，则可以从配置文件中删除此标头。 将价格手册分配给目录视图后，将其添加回来。
 
 1. 保存配置文件。
 
@@ -200,8 +200,8 @@ ht-degree: 0%
 |-------|----------|----------|
 | **代码同步安装失败** | 无法完成代码同步设置 | <ul><li>确保您拥有GitHub组织的管理员访问权限。</li><li>尝试使用个人存储库而不是组织。</li><li>请检查GitHub权限并重试。</li></ul> |
 | **站点未加载** | 404或连接错误 | <ul><li>验证您的网站URL格式： `https://main--{SITE}--{ORG}.aem.live`</li><li>检查代码同步应用程序是否已正确安装。</li><li>确保存储库为公共或已正确配置。</li></ul> |
-| **未显示产品数据** | 产品页面显示占位符或错误 | <ul><li>验证`config.json`中的配置值</li><li>在[!DNL Adobe Commerce Optimizer]实例中，检查“数据同步”页面以验证是否已加载样例产品。 如果没有可用的产品，请使用[数据摄取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request)重新加载示例数据或添加产品。 请等待几分钟，以便配置更改能够传播。</li><li>尝试使用在[文件中配置的相同标头，通过Merchandising Service &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details)products查询`config.json`检索产品详细信息。 如果可以检索数据，则可能是目录视图配置存在问题或索引错误。</li></ul> |
-| **搜索未返回任何结果** | 搜索结果页面为空 | <ul><li>验证您是否可以使用[文件中配置的相同标头，通过Merchandising Services &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search)productSearch查询`config.json`检索产品搜索结果。 如果可以检索数据，则可能是目录视图配置存在问题或索引错误。</li><li>确认`config.json`文件中的目录视图ID与[!DNL Adobe Commerce Optimizer]中的目录视图ID匹配。</li><li>在Adobe Commerce Optimizer中，验证您在店面页眉配置中使用的策略、区域设置和价格手册的配置。</li><li>验证是否已正确设置用于搜索的[属性元数据设置](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)。</li></ul> |
+| **未显示产品数据** | 产品页面显示占位符或错误 | <ul><li>验证`config.json`中的配置值</li><li>在[!DNL Adobe Commerce Optimizer]实例中，检查“数据同步”页面以验证是否已加载样例产品。 如果没有可用的产品，请使用[数据摄取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request)重新加载示例数据或添加产品。 请等待几分钟，以便配置更改能够传播。</li><li>尝试使用[Commerce店面配置](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details)中配置的相同标头，使用促销服务[产品查询](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}检索产品详细信息。 如果可以检索数据，则可能是目录视图配置存在问题或索引错误。</li></ul> |
+| **搜索未返回任何结果** | 搜索结果页面为空 | <ul><li>验证您是否可以使用在[Commerce店面配置](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search)中配置的相同标头，通过Merchandising Services [productSearch查询](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}检索产品搜索结果。 如果可以检索数据，则可能是目录视图配置存在问题或索引错误。</li><li>确认[Commerce店面配置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}中的目录视图ID与[!DNL Adobe Commerce Optimizer]中的目录视图ID匹配。</li><li>在[!DNL Adobe Commerce Optimizer]中，验证您在店面页眉配置中使用的策略、区域设置和价格手册的配置。</li><li>验证是否已正确设置用于搜索的[属性元数据设置](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)。</li></ul> |
 
 ### 验证核对清单
 
@@ -218,28 +218,28 @@ ht-degree: 0%
 
 如果问题仍然存在：
 
-* 查看[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-* 查看[Adobe Commerce Optimizer开发人员指南](https://developer.adobe.com/commerce/services/optimizer/)
-* 访问[Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)
+* 查看[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* 查看[[!DNL Adobe Commerce Optimizer] 开发人员指南](https://developer.adobe.com/commerce/services/optimizer/)
+* 访问[Adobe Commerce支持资源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
 
 ## 后续步骤
 
 设置并验证店面后，您可以：
 
-1. **[安装Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans#install-and-configure-sidekick)**-Browser扩展，以便直接从您的网站编辑、预览和发布内容。
+1. **[安装Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)**-Browser扩展，以便直接从您的网站编辑、预览和发布内容。
 
-2. **[设置本地开发环境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans#set-up-local-environment)** — 创建本地环境以自定义店面代码和内容。
+2. **[设置本地开发环境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** — 创建本地环境以自定义店面代码和内容。
 
 ### 学习和探索
 
 * **[完成端到端用例](./use-case/admin-use-case.md)** — 了解有关使用[!DNL Adobe Commerce Optimizer]的店面设置和目录管理的更多信息。
 
-* **[探索店面自定义](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=zh-Hans)** — 了解高级设置和配置选项。
+* **[探索店面自定义](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)** — 了解高级设置和配置选项。
 
-* **[使用Commerce下拉列表自定义店面体验](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hans)** — 添加预建组件以增强您的店面体验。
+* **[使用Commerce下拉列表自定义店面体验](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)** — 添加预建组件以增强您的店面体验。
 
 * **迁移到Storefront Configuration Service** — 创建初始店面后，您可以迁移配置以使用支持高级用例（如重写配置和叠加）的配置服务。 有关详细信息，请参阅Adobe Experience Manager中的[配置服务](https://www.aem.live/docs/config-service-setup)文档。
 
 >[!MORELIKETHIS]
 >
-> 请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)，了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。
+> 请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)，了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。

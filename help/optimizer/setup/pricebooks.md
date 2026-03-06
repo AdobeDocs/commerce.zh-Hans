@@ -3,11 +3,11 @@ title: 价格手册
 description: 了解如何在 [!DNL Adobe Commerce Optimizer]中管理价格手册。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 1c720bc3ba755639eff2f17912fb3a3446e367f6
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 基本价格手册定义了它本身及其所有子价格手册的币种。 子价格帐簿将继承此币种，并且无法覆盖它。
 
-## 向Commerce Optimizer添加价格手册
+## 将价格手册添加到[!DNL Adobe Commerce Optimizer]
 
-您可以使用价格手册API将价格手册添加到Commerce Optimizer。 请参阅[开发人员文档](https://developer.adobe.com/commerce/services/reference/rest/)以了解如何创建、更新和删除[!DNL Adobe Commerce Optimizer]的价格手册。
+您使用价格手册API将价格手册添加到[!DNL Adobe Commerce Optimizer]。 请参阅[开发人员文档](https://developer.adobe.com/commerce/services/reference/rest/)以了解如何创建、更新和删除[!DNL Adobe Commerce Optimizer]的价格手册。
 
-## 在Commerce Optimizer中查看价格手册
+## 在[!DNL Adobe Commerce Optimizer]中查看价格手册
 
-将价格手册摄取到Commerce Optimizer后，您可以在&#x200B;**目录视图**&#x200B;页面上看到价格手册的列表及其对应的ID。
+在将价格手册摄取到[!DNL Adobe Commerce Optimizer]中后，您可以在&#x200B;**目录视图**&#x200B;页面上看到价格手册的列表及其对应的ID。
 
 1. 转到&#x200B;_存储设置_，然后单击&#x200B;**[!UICONTROL Catalog views]**。
 

@@ -1,10 +1,11 @@
 ---
 title: Recommendations最佳实践
 description: 了解可在网站上各个页面上放置推荐的位置，以及针对每种推荐类型的常用标签的建议。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+exl-id: 08d7aeff-8b86-4fa3-93e6-4b72dc1ab117
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ Adobe建议在使用推荐时遵循以下准则：
 
 - 如果您的商店销售服装，则`More like this`推荐可能会建议与正在查看的产品的性别不匹配的特定于性别的产品。 考虑仅对非服装类别使用此推荐类型。
 
-## 投放位置
+## 投放
 
 有这么多推荐类型可供选择，您应在每个页面上使用哪些？ 如果不确定从何处开始，请尝试以下操作：
 

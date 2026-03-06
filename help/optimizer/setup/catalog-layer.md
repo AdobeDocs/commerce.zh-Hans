@@ -3,10 +3,10 @@ title: 目录层
 description: 了解目录层如何允许您修改产品数据而不更改原始源数据，以便您可以安全地自定义并随时恢复更改。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->对于批量层操作，请使用上面描述的数据摄取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
+>对于批量层操作，请使用上面描述的数据摄取API方法[](#add-a-catalog-layer-via-data-ingestion)。
 
 **创建手动图层：**
 

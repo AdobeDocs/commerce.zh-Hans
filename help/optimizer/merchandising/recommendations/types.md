@@ -1,18 +1,18 @@
 ---
 title: 推荐类型
 description: 了解您可以部署到网站上各个页面的建议。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
-source-git-commit: 6fed7dd049019918646a9b871147c2d6ae27ed36
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1605'
 ht-degree: 0%
 
 ---
 
 # 推荐类型
 
-Adobe Commerce Optimizer提供了一大批推荐，您可以将这些推荐部署到网站上的各个页面。 所有推荐类型都是数据驱动的。 它们由行为数据、产品属性数据和量度提供支持。 为便于参考，建议类型按如下方式分组：
+[!DNL Adobe Commerce Optimizer]提供了一大批推荐，您可以将这些推荐部署到您网站上的各个页面。 所有推荐类型都是数据驱动的。 它们由行为数据、产品属性数据和量度提供支持。 为便于参考，建议类型按如下方式分组：
 
 - [个性化](#personalized)
 - [交叉销售和追加销售](#crossup)
