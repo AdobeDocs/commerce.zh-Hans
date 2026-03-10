@@ -17,4 +17,4 @@ ht-degree: 7%
 - 管理您的应用程序 {#manage-app}
    - [管理您的应用程序](manage-app.md)
    - [故障排除](troubleshooting.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)
