@@ -2,9 +2,9 @@
 title: 为Commerce Optimizer配置AEM Assets
 description: 了解如何为 [!DNL Adobe Commerce Optimizer]配置AEM Assets集成。
 feature: CMS, Media, Configuration, Integration
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+source-git-commit: 7f0970648663331fea2af19b981c4fd3b3aedcaa
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 入门
 
-要载入与[!DNL Commerce Optimizer]的AEM Assets集成，您必须[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+要载入与[!DNL Commerce Optimizer]的AEM Assets集成，您必须[创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 Adobe支持使用您票证中的信息来向Assets集成服务注册您的租户，并配置集成。
 
@@ -61,8 +61,6 @@ Adobe支持处理您的票证后，配置集成，并且您的租户向Assets集
 载入完成后：
 
 1. **向Assets集成服务注册**：您的[!DNL Commerce Optimizer]租户已使用[!DNL Adobe Commerce Optimizer]租户ID、Assets项目ID、AEM环境ID和租户向AEM集成服务注册。
-
-1. **身份验证设置**： IMS服务令牌身份验证在[!DNL Commerce Optimizer]和Assets集成服务之间配置，用于安全通信。
 
 1. **事件订阅**： Assets集成服务订阅了：
 
@@ -115,7 +113,7 @@ Adobe支持处理您的票证后，配置集成，并且您的租户向Assets集
 
 >[!CAUTION]
 >
-> 将`AEM-Assets`图层分配给您的[目录视图](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view)。 如果未指定图层，产品图像数据可能会意外被覆盖。
+> 将`AEM-Assets`图层分配给您的[目录视图](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view)。 如果未指定图层，产品图像数据可能会意外被覆盖。
 
 ## 同步
 
