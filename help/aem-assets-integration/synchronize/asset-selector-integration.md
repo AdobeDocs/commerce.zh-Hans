@@ -3,7 +3,7 @@ title: 手动选择资源
 description: 了解集成在Commerce Admin中的AEM资产选择器如何帮助营销人员和促销人员轻松地将图像从AEM Assets添加到Adobe Commerce，从而简化资产管理。
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-source-git-commit: 08f2fab39b4dcd46986f43598cdf2637b0bba5a7
+source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -19,12 +19,12 @@ ht-degree: 0%
 配置&#x200B;**AEM Asset Selector**&#x200B;集成后，营销人员和商家可以：
 
 * 轻松管理类别图像，确保它们符合品牌和活动准则。
-* [!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce(Adobe管理的PaaS基础架构)。"}在页面生成器中直接分配资产，以实现视觉效果丰富的内容。
-* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"}直接在由Assets提供支持的Commerce店面中分配Edge Delivery Services，以便通过视觉方式丰富内容。
+* [!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}在页面生成器中直接分配资产，以实现视觉效果丰富的内容。
+* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}在Commerce店面中直接分配Assets（由Edge Delivery Services提供支持），以查看丰富的视觉内容。
 
 >[!NOTE]
 >
-> AEM资源选择器是一个AEM资源前端组件，用于将AEM Assets与创作应用程序集成。 有关此组件的详细信息，请参阅[AEM as a Cloud Service用户指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}中的&#x200B;*微前端资产选择器*。
+> AEM资源选择器是一个AEM资源前端组件，用于将AEM Assets与创作应用程序集成。 有关此组件的详细信息，请参阅[AEM as a Cloud Service用户指南](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}中的&#x200B;*微前端资产选择器*。
 
 ## 主要优点
 
