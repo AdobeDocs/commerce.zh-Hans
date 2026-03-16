@@ -30,7 +30,7 @@ ht-degree: 0%
 
 观看本视频，了解如何将应用程序与Commerce实例关联并配置设置。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478944)
+>[!VIDEO](https://video.tv.adobe.com/v/3478965?captions=chi_hans)
 
 ## 关联应用程序
 
