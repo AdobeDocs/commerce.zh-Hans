@@ -2,7 +2,7 @@
 title: 管理您的应用程序
 description: 关联、配置和取消关联App Builder应用程序与您的Commerce实例。
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 应用程序管理器将App Builder应用程序与其Commerce实例关联。 配置表单会根据应用程序的架构动态呈现，因此无需自定义管理员UI开发。 应用程序管理器通过Commerce自动生成的表单来配置设置。
 
-![应用管理](assets/app-management-ui.png){width="500" zoomable="yes"}
+![应用管理](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## 先决条件
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 观看本视频，了解如何将应用程序与Commerce实例关联并配置设置。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478965?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## 关联应用程序
 
