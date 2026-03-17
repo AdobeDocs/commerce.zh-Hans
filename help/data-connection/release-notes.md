@@ -3,9 +3,9 @@ title: 发行说明
 description: 来自Adobe Commerce的 [!DNL Data Connection] 扩展的最新发行信息。
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 75d4ed88411e6f81d2c4ff8aa5e8db9dfdc6e954
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1307'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 1%
 
 有关[!DNL Data Connection]扩展使用的扩展的功能更改和修复，请参阅&#x200B;**支持的服务更新**。
 
-请参阅[即将发布的版本](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/planning/schedule)，了解版本计划和支持。
+请参阅[即将发布的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，了解版本计划和支持。
 
-请参阅开发人员文档，以[了解哪些Commerce版本支持此模块](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/product-availability)。
+请参阅开发人员文档，以[了解哪些Commerce版本支持此模块](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 支持的服务更新
 
@@ -81,6 +81,14 @@ _2022年10月12日_
 ![新](../assets/new.svg) — 已添加对[AEM店面](overview.md#aem-support)的支持。
 
 +++
+
+## 3.5.0
+
+_2026年3月17日_
+
+[!BADGE 兼容性]{type=Informative tooltip="兼容性"} Adobe Commerce版本2.4.4及更高版本
+
+![新](../assets/new.svg)添加了PHP 8.5支持。
 
 ## 3.4.0
 
