@@ -3,9 +3,9 @@ title: 手动选择资源
 description: 了解集成在Commerce Admin中的AEM资产选择器如何帮助营销人员和促销人员轻松地将图像从AEM Assets添加到Adobe Commerce，从而简化资产管理。
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 通过&#x200B;**AEM资产选择器**，营销人员和促销人员可以轻松地将图像从AEM Assets添加到Adobe Commerce，从而简化资产管理流程。 此方法通过将资产选择限制在[!DNL DAM (Digital Asset Management system)]中审核和批准的那些资产来确保品牌一致性和合规性。
 
-在AEM管理员中配置了AEM Assets项目的IMS客户端ID后，**Commerce资源选择器**&#x200B;可用。 请参阅[配置AEM资源选择器](#configure-the-aem-asset-selector-in-adobe-commerce)。
+当已在AEM管理员中配置了AEM Assets项目的IMS客户端ID，并且用户具有所需的&#x200B;**权限和IMS身份验证**&#x200B;时，[Commerce资产选择器](../get-started/permissions.md)可用。 请参阅[配置AEM资源选择器](#configure-the-aem-asset-selector-in-adobe-commerce)。
 
 配置&#x200B;**AEM Asset Selector**&#x200B;集成后，营销人员和商家可以：
 
 * 轻松管理类别图像，确保它们符合品牌和活动准则。
 * [!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}在页面生成器中直接分配资产，以实现视觉效果丰富的内容。
-* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}在Commerce店面中直接分配Assets（由Edge Delivery Services提供支持），以查看丰富的视觉内容。
+* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}在Commerce店面中直接分配Assets（由Edge Delivery Services提供支持），以查看丰富的视觉内容。
 
 >[!NOTE]
 >
-> AEM资源选择器是一个AEM资源前端组件，用于将AEM Assets与创作应用程序集成。 有关此组件的详细信息，请参阅[AEM as a Cloud Service用户指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}中的&#x200B;*微前端资产选择器*。
+> AEM资源选择器是一个AEM资源前端组件，用于将AEM Assets与创作应用程序集成。 有关此组件的详细信息，请参阅[AEM as a Cloud Service用户指南](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}中的&#x200B;*微前端资产选择器*。
 
 ## 主要优点
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 1. 在Commerce管理员中，导航到&#x200B;**[!UICONTROL Store]** >配置> **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
-1. 填写&#x200B;**[!UICONTROL IMS Client ID]**&#x200B;字段。
+1. 填写&#x200B;**[!UICONTROL IMS Client ID]**&#x200B;字段。 有关所需的权限以及如何获取此ID，请参阅[用户权限和IMS](../get-started/permissions.md)。
 
 1. **保存**&#x200B;配置。
 
