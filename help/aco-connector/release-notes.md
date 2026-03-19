@@ -2,9 +2,9 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]发行说明'
 description: Adobe Commerce的 [!DNL Adobe Commerce Optimizer Connector] 的最新发行信息。
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 1509c55bf4611ce82e46c357fd77bbefa055927d
+source-git-commit: dc5bd916b93789b4a25f0bc16a40fdfc6604c6ea
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,20 @@ ht-degree: 0%
 ![新](../assets/new.svg)新功能
 ![已修复问题](../assets/fix.svg)修复和改进
 ![已知问题](../assets/bug.svg)已知问题
+
+
+## v1.0.11
+
+_2026年3月10日_
+
+![修复了问题](../assets/fix.svg)修复了当在Commerce实例上安装Commerce连接器时，阻止从Commerce管理系统和配置菜单访问Adobe Commerce Optimizer服务连接器配置页面的兼容性问题。  现在，您可以在安装了两个扩展后访问“Commerce服务连接器配置”页面。<!--MDEE-1322-->
+
+
+## v1.0.10
+
+_2026年3月9日_
+
+![修复](../assets/fix.svg)如果在完成连接器配置之前访问数据馈送同步状态页面，则现在会自动将您重定向到连接器配置页面。 此引导式流程可确保连接器设置完成，并有助于防止因缺少配置设置而导致状态项失败或不完整的错误。<!--MDEE-1296-->
 
 ## v1.0.9
 
