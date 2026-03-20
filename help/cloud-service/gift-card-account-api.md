@@ -3,7 +3,7 @@ title: 礼品卡帐户REST端点
 description: 了解如何使用礼品卡帐户REST API在 [!DNL Adobe Commerce as a Cloud Service]中以编程方式创建、更新、删除和查询礼品卡帐户。
 role: Admin, Developer
 level: Experienced
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 source-git-commit: 160180d9d779514f6faee3c7de46531ebf191c7d
 workflow-type: tm+mt
 source-wordcount: '807'

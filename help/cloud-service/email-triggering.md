@@ -3,7 +3,7 @@ title: 通过REST触发的电子邮件
 description: 了解如何使用REST API按需触发事务性电子邮件，方法是为 [!DNL Adobe Commerce as a Cloud Service]指定模板ID、收件人电子邮件和模板变量。
 role: Admin
 level: Experienced
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 source-git-commit: 9661e368f7a0dc85edcd3e52a67ae2a98355d8b5
 workflow-type: tm+mt
 source-wordcount: '523'

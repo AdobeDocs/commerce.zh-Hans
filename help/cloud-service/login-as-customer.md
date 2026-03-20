@@ -3,7 +3,7 @@ title: 以客户身份登录并具有一次性代码
 description: 了解如何使用“作为客户OTC登录”功能为 [!DNL Adobe Commerce as a Cloud Service]中的客户身份验证生成一次性代码。
 role: Admin
 level: Intermediate
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 source-git-commit: 160180d9d779514f6faee3c7de46531ebf191c7d
 workflow-type: tm+mt
 source-wordcount: '860'
