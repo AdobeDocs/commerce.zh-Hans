@@ -264,7 +264,7 @@ Admin Console中的![开发人员和管理员选项卡选项](./assets/tab-selec
    >
    >有关这些权限对您访问[!DNL AEM Assets]有何影响的更多信息，请参阅[Cloud Manager产品配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}。
 
-   对于Commerce Admin中的资产选择器和自动填充的配置字段（项目ID、环境ID、域映射），用户还需要&#x200B;**AEM Assets DM OpenAPI用户 — 投放**&#x200B;产品配置文件。 有关详细信息，请参阅[用户权限和IMS](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"}。
+   对于Commerce Admin中的资产选择器和自动填充的配置字段（项目ID、环境ID、域映射），用户还需要&#x200B;**AEM Assets DM OpenAPI用户 — 投放**&#x200B;产品配置文件。 有关详细信息，请参阅[用户权限和IMS](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"}。
 
 1. 单击&#x200B;[!UICONTROL **应用**]。
 
