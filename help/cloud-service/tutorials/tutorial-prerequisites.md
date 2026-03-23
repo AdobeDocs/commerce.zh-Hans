@@ -398,7 +398,7 @@ aio app use --merge
 
 * [Google Chrome](https://www.google.com/chrome/) — 测试店面所需
 
-* 店面项目已连接到您的[!DNL Commerce]实例。 如果您没有店面项目，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}中的步骤操作，包括[将存储库链接到商务数据](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}部分。
+* 店面项目已连接到您的[!DNL Commerce]实例。 如果您没有店面项目，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans){target="_blank"}中的步骤操作，包括[将存储库链接到商务数据](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans#link-repo-to-commerce-data){target="_blank"}部分。
 
 ### 克隆店面存储库
 
