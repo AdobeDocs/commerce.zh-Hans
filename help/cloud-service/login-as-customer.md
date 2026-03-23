@@ -3,10 +3,10 @@ title: 以客户身份登录并具有一次性代码
 description: 了解如何使用“作为客户OTC登录”功能为 [!DNL Adobe Commerce as a Cloud Service]中的客户身份验证生成一次性代码。
 role: Admin
 level: Intermediate
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
-source-git-commit: 160180d9d779514f6faee3c7de46531ebf191c7d
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+source-git-commit: 2de1006ad3cee936d114bcf1b9a98b43a54d8c76
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->默认情况下，生成的一次性代码OTC的有效期为30秒，并且在一次使用后失效。 可以使用`customer/otp/ttl_seconds`设置通过CPS配置TTL。
+>默认情况下，生成的一次性代码OTC的有效期为30秒，并且在一次使用后失效。 可以通过提交[支持票证](https://experienceleague.adobe.com/home?support-tab=home#support)来配置TTL。
 
 生成一次性代码后，您可以通过导航到店面并使用以下凭据登录来使用该代码：
 
