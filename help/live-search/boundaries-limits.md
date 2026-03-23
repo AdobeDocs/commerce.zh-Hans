@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 常规
 
-- 从[ 4.0.0开始，搜索适配器已](release-notes.md#live-search-400)弃用[!DNL Live Search]。产品列表页面(PLP)小组件是所有[!DNL Live Search]实施都支持的解决方案。 搜索适配器将仅接收安全相关更新。 有关迁移到PLP小组件的信息，请参阅[迁移指南](migrate-to-plp.md)。
+- 从[&#x200B; 4.0.0开始，搜索适配器已](release-notes.md#live-search-400)弃用[!DNL Live Search]。产品列表页面(PLP)小组件是所有[!DNL Live Search]实施都支持的解决方案。 搜索适配器将仅接收安全相关更新。 有关迁移到PLP小组件的信息，请参阅[迁移指南](migrate-to-plp.md)。
 - 安装[后，](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)高级搜索[!DNL Live Search]模块被禁用，店面页脚中的高级搜索链接被删除。
 - [层定价](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)在[!DNL Live Search]字段和产品列表页小部件中不受支持。
 - 产品价格包含增值税(VAT)，但[!DNL Live Search]不能将增值税显示为单独的值。
