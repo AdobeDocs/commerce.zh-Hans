@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: 本指南提供了有关使用 [!DNL Adobe Commerce as a Cloud Service]的详细说明。
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 3cbb166833ea8aacbdb15bdce469eff3930ef741
+source-git-commit: 5c84464a463672d48544031bb365f3484065acf4
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '97'
 ht-degree: 5%
 
 ---
@@ -26,9 +26,9 @@ ht-degree: 5%
       - [批量数据迁移工具](migration/bulk-data.md)
       - [编码工具](migration/coding-tools.md)
    - [文档RAG服务](migration/doc-rag.md)
-- [客户登录](login-as-customer.md)
-- [礼品卡帐户API](gift-card-account-api.md)
-- [电子邮件触发](email-triggering.md)
+- [以客户身份登录](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [礼品卡帐户REST端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
+- 通过REST触发[电子邮件](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - 教程 {#tutorials}
    - [教程先决条件](tutorials/tutorial-prerequisites.md)
    - [评级扩展教程](tutorials/ratings-extension.md)
@@ -39,6 +39,6 @@ ht-degree: 5%
 - 架构 {#schemas}
    - [GraphQL架构](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST API架构](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [视频教程](https://experienceleague.adobe.com/zh-hans/playlists/accs-getting-started-product-overview){target="_blank"}
+- [视频教程](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
