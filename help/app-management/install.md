@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 安装App Builder应用程序
 
-如果您需要从Adobe Exchange安装App Builder应用程序（例如，预建的集成或市场应用程序），请参阅[从Adobe Exchange安装App Builder应用程序](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以了解分步说明。
+如果您需要从Adobe Exchange安装App Builder应用程序（例如，预建的集成或市场应用程序），请参阅[从Adobe Exchange安装App Builder应用程序](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以了解分步说明。
 
 安装并部署应用程序后，使用[!DNL App Management]将其与您的Commerce实例[关联并配置其设置。](manage-app.md#associate-an-app)
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 某些App Builder应用程序使用[Adobe Commerce webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)，以便当某些事件发生时（例如，在保存产品后），Commerce可以通过HTTP调用您的应用程序。 Webhook端点和订阅逻辑由&#x200B;**应用程序开发人员**&#x200B;在生成和部署应用程序时定义；商店管理员不会在应用程序管理中单独配置Webhook。
 
-在您[将应用程序](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app)与您的Commerce实例关联并完成应用程序的任何设置指令后，webhook行为将遵循应用程序的实施。
+在您[将应用程序](https://experienceleague.adobe.com/zh-hans/docs/commerce/app-management/manage-app/manage-app)与您的Commerce实例关联并完成应用程序的任何设置指令后，webhook行为将遵循应用程序的实施。
 
 如果[!DNL App Management]无法触发应用程序的验证终结点（例如，无法访问URL或响应不符合要求），则您可能会在[!DNL App Management]仪表板中看到类似以下内容的错误：
 
