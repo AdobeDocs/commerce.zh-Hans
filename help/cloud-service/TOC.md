@@ -28,7 +28,7 @@ ht-degree: 5%
    - [文档RAG服务](migration/doc-rag.md)
 - [以客户身份登录](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [礼品卡帐户REST端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
-- 通过REST触发[电子邮件](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
+- [通过REST触发电子邮件](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - 教程 {#tutorials}
    - [教程先决条件](tutorials/tutorial-prerequisites.md)
    - [评级扩展教程](tutorials/ratings-extension.md)
