@@ -26,7 +26,7 @@ ht-degree: 5%
       - [批量数据迁移工具](migration/bulk-data.md)
       - [编码工具](migration/coding-tools.md)
    - [文档RAG服务](migration/doc-rag.md)
-- [以客户身份登录](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [以客户身份登录](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [礼品卡帐户REST端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [通过REST触发电子邮件](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - 教程 {#tutorials}
@@ -39,6 +39,6 @@ ht-degree: 5%
 - 架构 {#schemas}
    - [GraphQL架构](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST API架构](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [视频教程](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+- [视频教程](https://experienceleague.adobe.com/zh-hans/playlists/accs-getting-started-product-overview){target="_blank"}
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)
