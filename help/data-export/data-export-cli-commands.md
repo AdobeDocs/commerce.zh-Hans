@@ -16,7 +16,7 @@ ht-degree: 0%
 Adobe不建议定期使用`saas:resync`命令。 使用该命令的典型情况包括：
 
 - 初始同步
-- 更改[SaaS数据空间ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)后，将数据同步到新数据空间
+- 更改[SaaS数据空间ID](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/services/saas)后，将数据同步到新数据空间
 - 故障排除
 
 监视`var/log/saas-export.log`文件中的同步操作。
