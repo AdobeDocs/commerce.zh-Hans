@@ -1,19 +1,19 @@
 ---
 title: 报表
-description: 使用事务报表可以查看事务授权率和事务趋势。
+description: 使用Admin中的 [!DNL Payment Services] 事务报表可查看Adobe Commerce云、内部部署和SaaS部署中的授权率、事务结果、响应代码和趋势。
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 4482c1f93a424c73497b88c707d0ab93a694c957
+source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
 
 # 报表
 
-[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]为您提供全面的报告，以便您能够清楚地查看存储交易、订单和付款。
+[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]为您提供全面的报告，以便您能够清楚地查看存储交易、订单和付款。
 
 ![事务报表](assets/transactions-report.png){width="700" zoomable="yes"}
 
@@ -27,15 +27,27 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您尚未为[!DNL Payment Services]载入并激活实时模式[，则无法查看财务报表。](production.md#enable-live-payments)
+> 如果您尚未为[载入并激活实时模式](production.md#enable-live-payments)，则无法查看财务报表。[!DNL Payment Services]
 
 ## 交易报表视图
 
 “事务处理”报表视图在“付款服务”的“事务处理”视图中可用。 它包括有关您商店交易的所有可用信息。
 
-在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;以查看详细的表格化交易报告视图。
+在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**以查看详细的表格化交易报告视图。 从&#x200B;**[!UICONTROL Home]**中，您还可以选择&#x200B;**[!UICONTROL View Report]**和&#x200B;**[!UICONTROL Transactions]**中[!DNL Adobe Commerce as a Cloud Service]下的[!DNL Adobe Commerce Optimizer]。
+
+>[!BEGINTABS]
+
+>云和内部部署上的[!TAB Adobe Commerce]
 
 ![事务报表视图](assets/transactions-report-view.png){width="800" zoomable="yes"}
+
+>[!TAB Adobe Commerce as a Cloud Service和Commerce Optimizer]
+
+相同的报告功能同样适用于SaaS部署。 痕迹导航显示&#x200B;**[!UICONTROL Home]** > **[!UICONTROL Transactions]**，并且网格包含&#x200B;**[!UICONTROL Order ID]**、**[!UICONTROL PayPal Transaction ID]**、**[!UICONTROL Customer ID]**、**[!UICONTROL Transaction Date]**、**[!UICONTROL Payment Method]**、**[!UICONTROL Payment Detail]**、**[!UICONTROL Card Last Four]**、**[!UICONTROL Result]**&#x200B;和&#x200B;**[!UICONTROL Response Code]**&#x200B;等列。
+
+![SaaS上的事务报告视图](assets/transactions-report-view-saas.png){width="800" zoomable="yes"}
+
+>[!ENDTABS]
 
 您可以根据本主题中的部分对此视图进行配置，以便最好地呈现您希望查看的数据。
 
@@ -55,7 +67,7 @@ ht-degree: 0%
 
 ![数据源选择](assets/datasource.png){width="300" zoomable="yes"}
 
-如果&#x200B;_[!UICONTROL Live]_&#x200B;是选定的数据源，则可以查看在生产模式下使用[!DNL Payment Services]的商店的报告信息。 如果&#x200B;_[!UICONTROL Sandbox]_&#x200B;是选定的数据源，则可以查看沙盒模式的报表信息。
+如果&#x200B;_[!UICONTROL Live]_是选定的数据源，则可以查看在生产模式下使用[!DNL Payment Services]的商店的报告信息。 如果_[!UICONTROL Sandbox]_&#x200B;是选定的数据源，则可以查看沙盒模式的报表信息。
 
 数据源选择的工作方式如下所示：
 
@@ -85,14 +97,14 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**。
 1. 单击&#x200B;**[!UICONTROL Filter]**&#x200B;选择器。
-1. 切换&#x200B;_[!UICONTROL Transaction Result]_&#x200B;选项以仅查看选定订单交易记录的报表结果。
-1. 切换&#x200B;_[!UICONTROL Payment Method]_&#x200B;选项以查看用于交易的付款类型的报告结果。
-1. 切换&#x200B;_[!UICONTROL Payment Detail]_&#x200B;选项以查看使用的付款类型的附加信息（如果可用）。
+1. 切换&#x200B;_[!UICONTROL Transaction Result]_选项以仅查看选定订单交易记录的报表结果。
+1. 切换&#x200B;_[!UICONTROL Payment Method]_选项以查看用于交易的付款类型的报告结果。
+1. 切换&#x200B;_[!UICONTROL Payment Detail]_选项以查看使用的付款类型的附加信息（如果可用）。
 1. 输入&#x200B;_最小订单金额_&#x200B;或&#x200B;_最大订单金额_&#x200B;以查看该订单金额范围内的报表结果。
-1. 输入&#x200B;_[!UICONTROL Order ID]_&#x200B;以搜索特定事务。
-1. 介绍&#x200B;_[!UICONTROL Card Last Four]_&#x200B;以搜索特定的信用卡或借记卡。
-1. 输入&#x200B;_[!UICONTROL Customer ID]_&#x200B;以显示特定客户的所有交易记录。
-1. 输入&#x200B;_[!UICONTROL Customer Email]_&#x200B;以筛选该电子邮件的事务。
+1. 输入&#x200B;_[!UICONTROL Order ID]_以搜索特定事务。
+1. 介绍&#x200B;_[!UICONTROL Card Last Four]_以搜索特定的信用卡或借记卡。
+1. 输入&#x200B;_[!UICONTROL Customer ID]_以显示特定客户的所有交易记录。
+1. 输入&#x200B;_[!UICONTROL Customer Email]_以筛选该电子邮件的事务。
 1. 单击&#x200B;**[!UICONTROL Hide filters]**&#x200B;以隐藏筛选器。
 
 ### 显示和隐藏列
@@ -107,7 +119,7 @@ ht-degree: 0%
 
 ### 更新报表数据
 
-事务报表视图显示一个&#x200B;_[!UICONTROL Last updated]_&#x200B;时间戳，该时间戳显示上次更新报表信息的时间。 默认情况下，事务报表数据每三小时自动刷新一次。
+事务报表视图显示一个&#x200B;_[!UICONTROL Last updated]_时间戳，该时间戳显示上次更新报表信息的时间。 默认情况下，事务报表数据每三小时自动刷新一次。
 
 您还可以手动强制刷新报表数据以查看最新的报表信息。
 
@@ -132,9 +144,9 @@ ht-degree: 0%
 
 | 列 | 描述 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce订单ID（仅包含成功交易的值，对于拒绝的交易为空）<br> <br>要查看相关的[订单信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，请单击ID。 |
+| [!UICONTROL Order ID] | Commerce订单ID（仅包含成功交易的值，对于拒绝的交易为空）<br> <br>要查看相关的[订单信息](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，请单击ID。 |
 | [!UICONTROL PayPal Transaction ID] | 由付款提供商提供的交易ID；仅包含成功交易的值，并包含拒绝交易的短划线。 您可以单击此ID以访问PayPal交易详细信息页面。 |
-| [!UICONTROL Customer ID] | 订单的Commerce客户ID<br> <br>有关详细信息，请参阅[客户信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}主题。 |
+| [!UICONTROL Customer ID] | 订单的Commerce客户ID<br> <br>有关详细信息，请参阅[客户信息](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}主题。 |
 | [!UICONTROL Transaction Date] | 交易日期时间戳 |
 | [!UICONTROL Payment Method] | 用于交易的付款类型，其中包含有关品牌和卡类型的信息。 有关详细信息，请参阅[卡类型](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type)；适用于Payment Services 1.6.0及更高版本 |
 | [!UICONTROL Payment Detail] | 提供有关用于交易的付款类型的附加信息（如果可用）。 |
@@ -145,7 +157,7 @@ ht-degree: 0%
 | [!UICONTROL CVV Code] | 信用卡和借记卡的卡验证值代码；有关详细信息，请参阅[可能的代码和说明列表](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response)。 |
 | [!UICONTROL Amount] | 交易记录的订单金额 |
 | [!UICONTROL Currency] | 交易记录中用于订单的货币 |
-| [!UICONTROL Type] | [交易的`Authorize`或`Authorize and Capture`付款操作](../payment-services/production.md#set-payment-services-as-payment-method) |
+| [!UICONTROL Type] | [交易的](../payment-services/production.md#set-payment-services-as-payment-method)或`Authorize`付款操作`Authorize and Capture` |
 
 ### 错误响应代码
 

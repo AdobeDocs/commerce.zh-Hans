@@ -1,13 +1,13 @@
 ---
 title: 载入 [!DNL Payment Services] 流程
-description: 完成几个入门步骤，将您的实例与 [!DNL Payment Services] 功能连接起来。
+description: 通过完成您的Adobe Commerce部署的入门，以及PaaS、本地和SaaS的沙盒和生产步骤，将您的实例连接到 [!DNL Payment Services] 。
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
+source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 0%
 
 **版本v2.4.7+第1部分：沙盒**&#x200B;的载入步骤
 
-1. [将您的实例](connect.md#configure-commerce-services)连接到Commerce服务。 每个Commerce实例只能完成一次此连接。 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce(Adobe管理的PaaS基础架构)。"}
-1. [使用测试的PayPal付款处理帐户](sandbox.md#enable-sandbox-testing)设置沙盒服务（或者，如果已在其他环境中测试过功能，请转到[启用实时付款](sandbox.md#enable-live-payments)）。
+1. [将您的实例](connect.md#configure-commerce-services)连接到Commerce服务。 每个Commerce实例只能完成一次此连接。 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}
+1. [设置沙盒服务](sandbox.md#enable-sandbox-testing)
 1. 在[沙盒](sandbox.md#test-in-sandbox-environment)环境中测试付款。
 
-[![了解更多](assets/learn-more-button.svg)](https://helpx.adobe.com/cn/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![了解更多](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB 生产]
 
@@ -56,14 +56,14 @@ ht-degree: 0%
 1. [请求支付权利](production.md#request-payments-entitlement-from-adobe)以启用实时上线。
 1. [完成商家入门](production.md#complete-merchant-onboarding)以启用您的Commerce网站的实时付款。
 1. [获取您的 [!DNL Payment Services] 商家ID](production.md#configure-pricing-tier)并将其交给销售人员以配置正确的定价层。
-1. [在实时模式下启用 [!DNL Payment Services] &#x200B;](production.md#enable-live-payments)以开始处理实时付款。
+1. [在实时模式下启用 [!DNL Payment Services] ](production.md#enable-live-payments)以开始处理实时付款。
 1. 在[沙盒](sandbox.md#test-in-sandbox-environment)和[生产](production.md#test-in-production)环境中测试付款。
 
 [![了解详情](assets/learn-more-button.svg)](production.md)
 
 >[!ENDTABS]
 
-### Adobe Commerce或Magento Open Source | v2.4.0-2.4.6 [!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce(Adobe管理的PaaS基础架构)。"}
+### Adobe Commerce或Magento Open Source | v2.4.0-2.4.6 [!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}
 
 这些流程图显示了使用Adobe Commerce或Magento Open Source版本2.4.0到2.4.6载入[!DNL Payment Services]的一般过程。需要下载并安装[!DNL Payment Services]才能开始载入。
 
@@ -80,10 +80,10 @@ ht-degree: 0%
 1. 如有必要，请[安装 [!DNL Payment Services] 扩展](install.md#get-payment-services)。
 1. [获取API凭据](connect.md#obtain-api-credentials)。
 1. [将您的实例](connect.md#configure-commerce-services)连接到Commerce服务。 每个Commerce实例只能完成一次此连接。
-1. [使用测试的PayPal付款处理帐户](sandbox.md#enable-sandbox-testing)设置沙盒服务（或者，如果已在其他环境中测试过功能，请转到[启用实时付款](sandbox.md#enable-live-payments)）。
+1. [设置沙盒服务](sandbox.md#enable-sandbox-testing)
 1. 在[沙盒](sandbox.md#test-in-sandbox-environment)环境中测试付款。
 
-[![了解更多](assets/learn-more-button.svg)](https://helpx.adobe.com/cn/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![了解更多](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB 生产]
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 1. [请求支付权利](production.md#request-payments-entitlement-from-adobe)以启用实时上线。
 1. [完成商家入门](production.md#complete-merchant-onboarding)以启用您的Commerce网站的实时付款。
 1. [获取您的 [!DNL Payment Services] 商家ID](production.md#configure-pricing-tier)并将其交给销售人员以配置正确的定价层。
-1. [在实时模式下启用 [!DNL Payment Services] &#x200B;](production.md#enable-live-payments)以开始处理实时付款。
+1. [在实时模式下启用 [!DNL Payment Services] ](production.md#enable-live-payments)以开始处理实时付款。
 1. 在[沙盒](sandbox.md#test-in-sandbox-environment)和[生产](production.md#test-in-production)环境中测试付款。
 
 [![了解详情](assets/learn-more-button.svg)](onboard.md)
@@ -110,8 +110,8 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> * [疑难解答 [!DNL Payment Services] 安装](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=zh-Hans)
-> * [PayPal沙盒帐户未验证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=zh-Hans)
-> * [延迟 [!DNL Payment Services] 报告数据](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=zh-Hans)
-> * 在Sandbox环境中处理付款时，[在PayPal中测试信用卡失败](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=zh-Hans)
-> * [禁用 [!DNL Payment Services] 扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
+> * [疑难解答 [!DNL Payment Services] 安装](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+> * [PayPal沙盒帐户未验证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+> * [延迟 [!DNL Payment Services] 报告数据](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+> * 在Sandbox环境中处理付款时，[在PayPal中测试信用卡失败](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
+> * [禁用 [!DNL Payment Services] 扩展](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
