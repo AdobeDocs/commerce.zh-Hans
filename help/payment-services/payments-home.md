@@ -20,7 +20,7 @@ ht-degree: 1%
 
 >[!BEGINTABS]
 
->云和内部部署上的[!TAB Adobe Commerce]
+>[!TAB 云和内部部署上的 Adobe Commerce]
 
 ![主页视图](assets/home-view.png){width="700" zoomable="yes"}
 

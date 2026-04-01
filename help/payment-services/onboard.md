@@ -56,7 +56,7 @@ ht-degree: 0%
 1. [请求支付权利](production.md#request-payments-entitlement-from-adobe)以启用实时上线。
 1. [完成商家入门](production.md#complete-merchant-onboarding)以启用您的Commerce网站的实时付款。
 1. [获取您的 [!DNL Payment Services] 商家ID](production.md#configure-pricing-tier)并将其交给销售人员以配置正确的定价层。
-1. [在实时模式下启用 [!DNL Payment Services] ](production.md#enable-live-payments)以开始处理实时付款。
+1. [在实时模式下启用 [!DNL Payment Services] &#x200B;](production.md#enable-live-payments)以开始处理实时付款。
 1. 在[沙盒](sandbox.md#test-in-sandbox-environment)和[生产](production.md#test-in-production)环境中测试付款。
 
 [![了解详情](assets/learn-more-button.svg)](production.md)
@@ -97,7 +97,7 @@ ht-degree: 0%
 1. [请求支付权利](production.md#request-payments-entitlement-from-adobe)以启用实时上线。
 1. [完成商家入门](production.md#complete-merchant-onboarding)以启用您的Commerce网站的实时付款。
 1. [获取您的 [!DNL Payment Services] 商家ID](production.md#configure-pricing-tier)并将其交给销售人员以配置正确的定价层。
-1. [在实时模式下启用 [!DNL Payment Services] ](production.md#enable-live-payments)以开始处理实时付款。
+1. [在实时模式下启用 [!DNL Payment Services] &#x200B;](production.md#enable-live-payments)以开始处理实时付款。
 1. 在[沙盒](sandbox.md#test-in-sandbox-environment)和[生产](production.md#test-in-production)环境中测试付款。
 
 [![了解详情](assets/learn-more-button.svg)](onboard.md)
