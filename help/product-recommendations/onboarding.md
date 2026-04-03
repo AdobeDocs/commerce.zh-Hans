@@ -2,14 +2,20 @@
 title: 入门
 description: 了解 [!DNL Product Recommendations]中的要求和支持平台。
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
-source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
+source-git-commit: 8f421bd4421b9599ad52aa68c5caaee6592ccb43
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
 
 # 入门
+
+>[!IMPORTANT]
+>
+>**产品推荐不是HIPAA就绪的服务。**&#x200B;请勿在使用HIPAA就绪的产品或以其他方式处理受保护的健康信息(PHI)的任何Adobe Commerce实施中启用或使用产品推荐。 “产品推荐”是当前分类为不符合HIPAA要求的Commerce SaaS服务的一部分。
+>
+>有关哪些Adobe Commerce功能支持HIPAA以及哪些服务不能与PHI一起使用的详细信息，请参阅Adobe Commerce上的[HIPAA准备工作](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)和[操作](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)。
 
 [!DNL Product Recommendations]的载入流程需要访问服务器的命令行，该流程包含以下步骤。 如果您不熟悉如何使用命令行，请向开发人员或系统集成商寻求帮助。
 
@@ -22,7 +28,7 @@ ht-degree: 0%
 ## 要求
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1、8.2
+- PHP 8.1、8.2、8.3或8.4
 - 作曲者2
 
 ### 支持的平台
@@ -46,7 +52,7 @@ ht-degree: 0%
 
 ### B2B支持 {#b2bsupport}
 
-B2B店面通常需要复杂的逻辑，这些逻辑指示每个购物者或客户组的产品可见性和定价。 [!DNL Product Recommendations]现在[支持](release-notes.md)此功能通过遵守[类别权限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=zh-Hans)、[共享目录](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=zh-Hans)和[特定于客户组的定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=zh-Hans)来实现。 例如，如果您在零售客户区段中隐藏了某些类别，则该区段中的购物者不会显示这些类别中的产品推荐。 此外，在为特定客户组和公司定义共享目录时，这些购物者只会看到他们能够访问的产品推荐。 所有推荐产品均反映根据每位购物者的客户组确定的正确客户组特定价格。
+B2B店面通常需要复杂的逻辑，这些逻辑指示每个购物者或客户组的产品可见性和定价。 [!DNL Product Recommendations]现在[支持](release-notes.md)此功能通过遵守[类别权限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)、[共享目录](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)和[特定于客户组的定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)来实现。 例如，如果您在零售客户区段中隐藏了某些类别，则该区段中的购物者不会显示这些类别中的产品推荐。 此外，在为特定客户组和公司定义共享目录时，这些购物者只会看到他们能够访问的产品推荐。 所有推荐产品均反映根据每位购物者的客户组确定的正确客户组特定价格。
 
 >[!NOTE]
 >
