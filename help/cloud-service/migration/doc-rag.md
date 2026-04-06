@@ -127,7 +127,7 @@ RAG服务是[Commerce可扩展性工具](https://developer.adobe.com/commerce/ex
 
 ## 使用情况
 
-安装后，您可以自动调用索引[](#automatic-index-selection-recommended)或[显式调用](#explicit-index-selection)。 您还可以使用[`/search-commerce-docs`命令](#command-based-search)。
+安装后，您可以自动调用索引[&#128279;](#automatic-index-selection-recommended)或[显式调用](#explicit-index-selection)。 您还可以使用[`/search-commerce-docs`命令](#command-based-search)。
 
 >[!NOTE]
 >
