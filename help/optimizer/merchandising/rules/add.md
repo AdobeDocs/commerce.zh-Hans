@@ -1,11 +1,11 @@
 ---
 title: 创建和管理规则
 description: 了解如何创建和管理促销规则。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
+source-git-commit: 0df932ab95666438baf1210b6fe913e4ae8e28b9
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2239'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >此功能当前处于测试阶段。
+   >此功能当前处于[测试版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta)中。 Beta参与者需要重新创建任何现有的促销规则，以利用新的目录视图范围。
 
 1. 单击&#x200B;**[!UICONTROL Create rule]**&#x200B;启动规则编辑器。
 
