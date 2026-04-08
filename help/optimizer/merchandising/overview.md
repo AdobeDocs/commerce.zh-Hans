@@ -2,11 +2,11 @@
 title: 促销概述
 description: 了解 [!DNL Adobe Commerce Optimizer]中的促销功能。
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 通过产品发现，您可以：
 
-* **配置[方面](./facets/overview.md)、[促销规则](./rules/overview.md)和[同义词](./synonyms/overview.md)**，以引导购物者以最小的摩擦购买最相关的产品。
+* **配置[方面](./facets/overview.md)、[促销搜索和类别规则](./rules/overview.md)和[同义词](./synonyms/overview.md)**，以引导购物者以最小的摩擦购买最相关的产品。
 * **创建直观、以目标为导向的搜索体验**，以反映您的促销策略和季节性优先级。
 * **使用AI驱动的动态分面和结果重新排名**&#x200B;根据购物者行为实时调整搜索结果 — 提高参与度和销售量。
 * **确保促销和高优先级项目有效地呈现**，使搜索结果与业务目标保持一致。
