@@ -119,15 +119,15 @@ ht-degree: 0%
 
 确认在您的主机商务系统上运行的集成（不在[!DNL Adobe Commerce Optimizer]中）。
 
-▢ **支付：**支付网关已上线并经过测试（Stripe、PayPal、Adyen等）。
-▢ **送货：**送货API连接工作（UPS、FedEx等）。
-已连接并测试▢ **配送：**履行平台（例如，ShipStation）。
-▢ **税：**已验证税计算集成（Avalara、TaxJar等）。
-▢ **税费：**会计软件同步工作（QuickBooks等）。
+▢ **支付：**&#x200B;支付网关已上线并经过测试（Stripe、PayPal、Adyen等）。
+▢ **送货：**&#x200B;送货API连接工作（UPS、FedEx等）。
+已连接并测试▢ **配送：**&#x200B;履行平台（例如，ShipStation）。
+▢ **税：**&#x200B;已验证税计算集成（Avalara、TaxJar等）。
+▢ **税费：**&#x200B;会计软件同步工作（QuickBooks等）。
 ▢ **清单：** PIM、ERP或清单管理集成已测试并同步。
 ▢ **架构：**&#x200B;主机商务系统处理付款、运费、税收和库存（非[!DNL Adobe Commerce Optimizer]）。
 ▢ **架构：** API Mesh和App Builder在主机商务系统与[!DNL Adobe Commerce Optimizer]之间保持同步。
-▢ **电子邮件：**事务性电子邮件投放的工作方式（订单确认、送货等）。
+▢ **电子邮件：**&#x200B;事务性电子邮件投放的工作方式（订单确认、送货等）。
 ▢ **电子邮件：**&#x200B;电子邮件模板与您的品牌匹配并使用正确的链接。
 
 ## 验证App Builder和API网格 {#app-builder-mesh}
@@ -206,7 +206,7 @@ ht-degree: 0%
 
 确认权限和密钥。
 
-▢为DA内容和EDS站点配置了适当的权限。 查看[DA.live权限](https://da.live/docs/administration/permissions)和创作身份验证设置[](https://www.aem.live/docs/authentication-setup-authoring)。
+▢为DA内容和EDS站点配置了适当的权限。 查看[DA.live权限](https://da.live/docs/administration/permissions)和创作身份验证设置[&#128279;](https://www.aem.live/docs/authentication-setup-authoring)。
 ▢已配置产品可视化集成。 请参阅[AEM Cloud Service访问概述](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#)。
 电子邮件模板中的▢密码重置链接与您的Edge Delivery Services设置相匹配。 查看店面常见问题解答：[如果迁移到Edge Delivery Services或Helix后我的电子邮件模板链接损坏，我应该怎么做？](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}。
 适用于集成和付款提供商的▢生产密钥已准备就绪。
@@ -230,14 +230,14 @@ ht-degree: 0%
 
 确认安全状态和合规性任务。
 
-▢ **SSL：**已安装受信任的SSL/TLS证书。
+▢ **SSL：**&#x200B;已安装受信任的SSL/TLS证书。
 ▢ **SSL：** HTTPS已在站点范围内强制执行。
 ▢ **访问：**&#x200B;默认&#x200B;*管理员*&#x200B;密码已更改并且已设置强密码策略。 查看[!DNL Adobe Commerce Optimizer] [用户和身份管理](../user-management.md)。
 ▢ **访问：** *管理员* URL不是默认URL。
 ▢ **访问：**&#x200B;已为所有&#x200B;*管理员*用户启用双重身份验证。
-▢ **访问：**没有非活动或未使用的管理员用户与项目相关联。
+▢ **访问：**&#x200B;没有非活动或未使用的管理员用户与项目相关联。
 ▢ **防火墙：** Web应用程序防火墙(WAF)已配置并验证。
-▢ **PCI：**生产（PCI范围）上的安全渗透测试已完成。
+▢ **PCI：**&#x200B;生产（PCI范围）上的安全渗透测试已完成。
 ▢ **扫描：** Adobe安全扫描工具已注册，初始扫描已完成。
 ▢ **访问：** CORS仅允许批准的源。
 ▢ **合规性：** [的](../shared-responsibility.md)责任分担模型[!DNL Adobe Commerce Optimizer]是最新的，并清楚地定义了Adobe与客户责任的对比。
@@ -247,31 +247,31 @@ ht-degree: 0%
 
 确认度量和基线。
 
-▢ **RUM：**实际用户监控(RUM)已检测前后比较。
+▢ **RUM：**&#x200B;实际用户监控(RUM)已检测前后比较。
 ▢ **Analytics：** Adobe Experience Platform数据收集已配置（如果适用）。
-▢ **Analytics：**已验证MarTech标记是否在生产主机名上触发。
-▢ **分析：**已记录基线分析；预计在启动后会出现波动（页面查看次数、跳出率等）。
+▢ **Analytics：**&#x200B;已验证MarTech标记是否在生产主机名上触发。
+▢ **分析：**&#x200B;已记录基线分析；预计在启动后会出现波动（页面查看次数、跳出率等）。
 ▢ **事件：**&#x200B;转化跟踪工作端对端进行（添加到购物车→结帐→确认）。
 
 ## 测试 {#testing}
 
 在启动之前和之后确认质量。
 
-▢ **功能：**核心流工作端对端：浏览→搜索→筛选器→添加到购物车→结帐→帐户创建。
-▢ **功能：**付款网关接受真实交易和测试交易。
-▢ **功能：**订单投放、确认电子邮件和订单跟踪工作。
-▢ **功能：**配送选项和税额计算是准确的。
-▢ **功能：**优惠券、折扣和忠诚度计划按预期运行。
-▢ **UAT：**用户验收测试已在暂存和生产环境中完成。
-▢ **性能：**负载和压力测试已完成，并且Adobe CTA或CSE具有结果。
-▢ **性能：**桌面和移动设备上的页面加载时间少于三秒。
+▢ **功能：**&#x200B;核心流工作端对端：浏览→搜索→筛选器→添加到购物车→结帐→帐户创建。
+▢ **功能：**&#x200B;付款网关接受真实交易和测试交易。
+▢ **功能：**&#x200B;订单投放、确认电子邮件和订单跟踪工作。
+▢ **功能：**&#x200B;配送选项和税额计算是准确的。
+▢ **功能：**&#x200B;优惠券、折扣和忠诚度计划按预期运行。
+▢ **UAT：**&#x200B;用户验收测试已在暂存和生产环境中完成。
+▢ **性能：**&#x200B;负载和压力测试已完成，并且Adobe CTA或CSE具有结果。
+▢ **性能：**&#x200B;桌面和移动设备上的页面加载时间少于三秒。
 ▢ **性能：** Lighthouse分数在关键页面上达到目标（例如，通过PageSpeed Insights）。
-已优化▢ **性能：**映像、脚本和资产。
+已优化▢ **性能：**&#x200B;映像、脚本和资产。
 ▢ **兼容性：** Chrome、Firefox、Safari和Edge按预期运行。
-▢ **兼容性：**响应布局适用于移动设备、平板电脑和桌面。
-▢ **兼容性：**性能在3G、4G和Wi-Fi上可接受。
-▢ **辅助功能：**辅助功能审核已完成（WCAG、屏幕阅读器、键盘导航）。
-▢ **功能：**已制定启动后404监视计划。
+▢ **兼容性：**&#x200B;响应布局适用于移动设备、平板电脑和桌面。
+▢ **兼容性：**&#x200B;性能在3G、4G和Wi-Fi上可接受。
+▢ **辅助功能：**&#x200B;辅助功能审核已完成（WCAG、屏幕阅读器、键盘导航）。
+▢ **功能：**&#x200B;已制定启动后404监视计划。
 ▢ **UAT：**&#x200B;存在回滚计划，如果发生启动问题，则会通过测试。
 
 ## 启动日期和启动后 {#launch-post-launch}
@@ -279,12 +279,12 @@ ht-degree: 0%
 确认通信、支持和后续任务。
 
 ▢ **启动协作：** Adobe已确定启动日期；已通过电子邮件通知CTA。
-▢ **支持：**已记录P1热线号码：美国(+1) 800-497-0335，然后按6以访问Commerce。
+▢ **支持：**&#x200B;已记录P1热线号码：美国(+1) 800-497-0335，然后按6以访问Commerce。
 ▢ **支持：**&#x200B;您的团队已接受培训，可在调用P1热线之前&#x200B;**打开支持票证**。
-▢ **启动后：**验证生产域上的Lighthouse分数。
-▢ **启动后：**监视Google搜索控制台以编制索引并抓取错误。
-▢ **启动后：**监视404报告，并为高流量旧版URL添加重定向。
-▢ **发布后：**确认MarTech和分析生产数据。
-▢ **启动后：**请让您的CTA、CSE或AM启用高SLA监控。
+▢ **启动后：**&#x200B;验证生产域上的Lighthouse分数。
+▢ **启动后：**&#x200B;监视Google搜索控制台以编制索引并抓取错误。
+▢ **启动后：**&#x200B;监视404报告，并为高流量旧版URL添加重定向。
+▢ **发布后：**&#x200B;确认MarTech和分析生产数据。
+▢ **启动后：**&#x200B;请让您的CTA、CSE或AM启用高SLA监控。
 ▢灾难恢复计划存在并通过测试。
 ▢已制定流程来跟踪和升级样板和扩展包到当前版本。
