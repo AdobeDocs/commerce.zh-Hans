@@ -3,7 +3,7 @@ title: 发行说明
 description: ' [!DNL Adobe Commerce Optimizer]的最新发行信息。'
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 source-git-commit: d0967674d05018f13dc6c8a562005d65d44e42ab
 workflow-type: tm+mt
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 | 可扩展性 | 店面 |
 | --- | --- |
-| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) |
 
 >[!ENDSHADEBOX]
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 | 可扩展性 | 店面 |
 | --- | --- |
-| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) |
 
 >[!ENDSHADEBOX]
 
@@ -78,7 +78,7 @@ AI支持的站点优化建议现在可通过[Adobe Sites Optimizer集成](./mana
 
 | 可扩展性 | 店面 |
 | --- | --- |
-| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) |
 
 >[!ENDSHADEBOX]
 
@@ -117,7 +117,7 @@ AI支持的站点优化建议现在可通过[Adobe Sites Optimizer集成](./mana
 
 | 可扩展性 | 店面 |
 | --- | --- |
-| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) |
 
 >[!ENDSHADEBOX]
 
@@ -144,6 +144,6 @@ AI支持的站点优化建议现在可通过[Adobe Sites Optimizer集成](./mana
 
 | 可扩展性 | 店面 |
 | --- | --- |
-| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) |
 
 >[!ENDSHADEBOX]
