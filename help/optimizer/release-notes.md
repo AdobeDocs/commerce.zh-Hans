@@ -3,12 +3,12 @@ title: 发行说明
 description: ' [!DNL Adobe Commerce Optimizer]的最新发行信息。'
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
-source-git-commit: d0967674d05018f13dc6c8a562005d65d44e42ab
+source-git-commit: a42f6b3348eed476095c6d9777ac9486579fe6ea
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 0%
+source-wordcount: '461'
+ht-degree: 1%
 
 ---
 
@@ -22,21 +22,15 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-### 目录规则
+### 目录规则（测试版）
 
 销售规则现在包含[类别规则](./merchandising/rules/add.md)，因此您可以使用与搜索相同的智能排名和手动操作（固定、提升、嵌入）来定位一个或多个类别并控制类别页面上的产品订单。
 
-### 价格筛选器
+### 价格过滤器(Beta)
 
 推荐筛选器现在支持[价格筛选器](./merchandising/recommendations/filters.md#price)，您可以使用该筛选器设置产品的最低和最高价格范围。
 
-### 其他发行说明
-
-[!DNL Adobe Commerce Optimizer]使用最新版本的AEM Assets集成、Commerce Optimizer连接器和[!DNL Adobe Commerce Storefront]。 请使用以下链接查看每个区域的发行说明：
-
-| 可扩展性 | 店面 |
-| --- | --- |
-| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
 
@@ -46,15 +40,11 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
+### 促销规则和推荐的目录视图（测试版）
+
 添加了在[创建推荐单位](./merchandising/recommendations/create.md)或[促销规则](./merchandising/rules/add.md)时指定目录视图的功能。
 
-### 其他发行说明
-
-[!DNL Adobe Commerce Optimizer]使用最新版本的AEM Assets集成、Commerce Optimizer连接器和[!DNL Adobe Commerce Storefront]。 请使用以下链接查看每个区域的发行说明：
-
-| 可扩展性 | 店面 |
-| --- | --- |
-| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
 
@@ -72,13 +62,7 @@ AI支持的站点优化建议现在可通过[Adobe Sites Optimizer集成](./mana
 
 添加了[目录层](./setup/catalog-layer.md)，以便您可以在不更改源数据的情况下修改产品数据，包括层优先级管理以及与Adobe Sites Optimizer自动修复功能的集成。
 
-### 其他发行说明
-
-[!DNL Adobe Commerce Optimizer]使用最新版本的AEM Assets集成、Commerce Optimizer连接器和[!DNL Adobe Commerce Storefront]。 请使用以下链接查看每个区域的发行说明：
-
-| 可扩展性 | 店面 |
-| --- | --- |
-| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
 
@@ -111,13 +95,7 @@ AI支持的站点优化建议现在可通过[Adobe Sites Optimizer集成](./mana
 
 新的类别REST API现已可用，它允许管理员和开发人员以编程方式创建、更新和管理多个类别树，以便导航和产品分组。 该API支持全局和特定于渠道的配置，并且设计为具有高可扩展性，支持多达10,000个类别树和每个类别树500个类别。 有关详细信息，请参阅[Merchandising Services开发人员指南](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#categories)._中的_&#x200B;类别<!--DCAT-2649-->
 
-### 其他发行说明
-
-[!DNL Adobe Commerce Optimizer]使用最新版本的AEM Assets集成、Commerce Optimizer连接器和[!DNL Adobe Commerce Storefront]。 请使用以下链接查看每个区域的发行说明：
-
-| 可扩展性 | 店面 |
-| --- | --- |
-| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
 
@@ -138,12 +116,6 @@ AI支持的站点优化建议现在可通过[Adobe Sites Optimizer集成](./mana
 
 ![创建实例](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
 
-### 其他发行说明
-
-[!DNL Adobe Commerce Optimizer]使用最新版本的AEM Assets集成、Commerce Optimizer连接器和[!DNL Adobe Commerce Storefront]。 请使用以下链接查看每个区域的发行说明：
-
-| 可扩展性 | 店面 |
-| --- | --- |
-| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
