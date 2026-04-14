@@ -2,9 +2,9 @@
 title: Salesforce Commerce Connector
 description: 了解 [!DNL Commerce Optimizer SFCC Connector] ，它提供了一个起点，用于将Salesforce Commerce B2C与 [!DNL Adobe Commerce Optimizer] 集成以同步目录数据并实施和自定义连接器来支持业务操作。
 role: Admin, Developer
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 0afa51c00ee52a9ff2f81d61cbbbf29378ab7ab3
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,11 @@ ht-degree: 0%
 
 该连接器开箱即用地提供可靠的数据同步功能，并灵活地自定义工作流程以满足您的业务需求。
 
-有关端到端视频教程系列，请参阅[了解Salesforce Commerce云入门工具包](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
+有关端到端视频教程系列，请参阅[了解Salesforce Commerce云入门工具包](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
+
+>[!NOTE]
+>
+>有关Adobe Commerce Optimizer可用的其他集成的概述，请参阅[集成](../integrations/integrations-overview.md)。
 
 ## 主要功能
 

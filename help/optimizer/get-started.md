@@ -3,11 +3,11 @@ title: 快速入门
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: aac6efa53d7a8b2907fcbe8d3b97cc38e7178aa5
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 0%
 | 任务 | 描述 | 链接 |
 |---|---|---|
 | **访问Developer Console** | 创建项目并生成凭据 | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **摄取目录数据** | 从现有系统导入产品数据 | [数据摄取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) |
+| **摄取目录数据** | 从现有系统导入产品数据 | 若要将数据直接摄取到Adobe Commerce Optimizer，请参阅[数据摄取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}。<br><br>要在云上或本地环境或其他第三方系统中从Commerce摄取数据，请参阅[集成](./integrations/integrations-overview.md){target="_blank"}主题。 |
 | **设置店面** | 配置Edge Delivery Services店面 | [店面设置](./storefront.md) |
 
 ### 促销员任务
@@ -217,6 +217,6 @@ Adobe提供了一个GitHub存储库，其中包含示例数据和工具，以帮
 ### 获取帮助
 
 - **开发人员资源**： [开发人员文档](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-- **教程**： [Commerce Optimizer教程](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)
+- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **教程**： [Commerce Optimizer教程](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
