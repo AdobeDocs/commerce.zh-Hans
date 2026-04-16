@@ -3,9 +3,9 @@ title: 什么是 [!DNL Live Search]？
 description: Adobe Commerce 的 [!DNL Live Search] 可提供快速、相关和直观的搜索体验。
 recommendations: noCatalog
 exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
-source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
+source-git-commit: 1ae6b0f6786375ca4e7bb7620e164008a08f8965
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1014'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,13 @@ ht-degree: 1%
 
 由于侧重于速度、相关性和易用性，[!DNL Live Search]对购物者和商家来说都是一个游戏规则的改变者。 请观看以下视频，然后从店面快速浏览[!DNL Live Search]。
 
->[!VIDEO](https://video.tv.adobe.com/v/3452579?captions=chi_hans&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-有关使用和配置Live Search的更深入视频，请参阅[关于 [!DNL Live Search]](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)的完整演示主题。
+有关使用和配置Live Search的更深入视频，请参阅[关于 [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)的完整演示主题。
 
 ### 按键入内容搜索
 
-当购物者在[!DNL Live Search]搜索[框中键入查询时，](storefront-popover.md)在[弹出框](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search)中回复建议的产品和排名最前的搜索结果的缩略图图像。 当购物者单击建议或精选产品时，将显示[产品详细信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/storefront/storefront)页面。 弹出框页脚中的&#x200B;_查看所有_&#x200B;链接显示搜索结果页面。
+当购物者在[!DNL Live Search]搜索[框中键入查询时，](storefront-popover.md)在[弹出框](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)中回复建议的产品和排名最前的搜索结果的缩略图图像。 当购物者单击建议或精选产品时，将显示[产品详细信息](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront)页面。 弹出框页脚中的&#x200B;_查看所有_&#x200B;链接显示搜索结果页面。
 
 对于包含两个或更多字符的查询，[!DNL Live Search]返回“键入时搜索”结果。 对于部分匹配，每个单词的最大字符数为20。 查询中的字符数无法配置。 弹出框包括`name`、`sku`和`category_ids`字段。
 
@@ -97,4 +97,12 @@ ht-degree: 1%
 
 如果您连续90天没有在测试环境中提交目录数据的搜索查询，则目录数据将设置为休眠模式，并且任何搜索查询都不会返回任何数据。 此策略不会影响生产环境中的目录数据。
 
-要在测试环境中重新激活目录数据，请[提交标题为“重新激活](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)”的支持请求[!DNL Live Search]并包含环境ID。 测试环境中的目录数据应在几小时内恢复。
+### 不活动的测试环境
+
+要在测试环境中重新激活目录数据，请[提交标题为“重新激活](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)”的支持请求[!DNL Live Search]并包含环境ID。 测试环境中的目录数据应在几小时内恢复。
+
+### 清空目录
+
+如果您的环境在创建后45天内有一个空目录，则目录数据将设置为休眠模式，并且任何搜索查询都不会返回任何数据。 这包括生产和测试环境。
+
+要在您的环境中重新激活目录数据，请[提交标题为“重新激活](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)”的支持请求[!DNL Live Search]并包含环境ID。 您环境中的目录数据应会在几小时内恢复。
