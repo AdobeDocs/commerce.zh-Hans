@@ -3,9 +3,9 @@ title: 查看日志并排除故障
 description: 了解如何使用data-export和saas-export日志排除 [!DNL data export] 错误。
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: a1afed7b635a2b05c5c0e0d1c9bf4a07fc5eef31
+source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # 查看日志并排除故障
 
 [!DNL data export]扩展提供日志以跟踪数据收集和同步过程。
+
+>[!NOTE]
+>
+>您还可以从管理员中的[数据馈送同步状态仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)跟踪产品和类别数据的数据导出馈送的运行状况和性能。
 
 ## 日志
 
@@ -53,10 +57,10 @@ ht-degree: 0%
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 完全同步 | 收集给定馈送的所有数据并将这些数据发送到SaaS。 | `bin/magento saas:resync --feed=products` |
 | 部分重索引 | 收集给定馈送中仅已更新实体的数据，并将其发送到SaaS。 仅当存在更新的实体时，此日志才存在。 | `bin/magento cron:run --group=index` |
-| 重试失败的项目 | 如果上一个同步操作因Commerce应用程序或服务器错误而失败，则将给定馈送的项目重新发送到SaaS。 仅当存在失败项目时，此日志才存在。 | `bin/magento cron:run --group=saas_data_exporter` (任何“*_data_exporter”cron组) |
+| 重试失败的项目 | 如果上一个同步操作因Commerce应用程序或服务器错误而失败，则将给定馈送的项目重新发送到SaaS。 仅当存在失败项目时，此日志才存在。 | `bin/magento cron:run --group=saas_data_exporter` （任何“*_data_exporter”cron组） |
 | 完全同步（旧版） | 在旧版导出模式下，收集给定馈送的所有数据并将这些数据发送到SaaS。 | `bin/magento saas:resync --feed=categories` |
 | 部分重新索引（旧版） | 在旧版导出模式下，为给定的馈送将更新的实体发送到SaaS。 仅当存在更新的实体时，此日志才存在。 | `bin/magento cron:run --group=index` |
-| 部分同步（旧版） | 在旧版导出模式下，为给定的馈送将更新的实体发送到SaaS。 仅当存在更新的实体时，此日志才存在。 | `bin/magento cron:run --group=saas_data_exporter` (任何“*_data_exporter”cron组) |
+| 部分同步（旧版） | 在旧版导出模式下，为给定的馈送将更新的实体发送到SaaS。 仅当存在更新的实体时，此日志才存在。 | `bin/magento cron:run --group=saas_data_exporter` （任何“*_data_exporter”cron组） |
 
 
 ### 日志记录示例
@@ -129,7 +133,7 @@ Price feed full resync:
 - 数据导出错误日志(`commerce-data-export-errors.log`)捕获收集阶段发生的错误。
 - SaaS导出错误日志(`saas-export-errors.log`)捕获传输阶段发生的错误。
 
-如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
 
 ### 解决目录同步问题 {#resolvesync}
 
@@ -140,15 +144,15 @@ Price feed full resync:
 1. 在搜索结果中显示相关产品的详细视图。
 1. 复制JSON输出，并验证内容是否与您在[!DNL Commerce]目录中的内容匹配。
 1. 如果内容不匹配，请对目录中的产品进行细微更改，例如添加空格或句点。
-1. 等待重新同步或[触发手动重新同步](#resync)。
+1. 等待重新同步，或从CLI或管理功能板触发手动重新同步。
 
 #### 同步未运行
 
-如果同步未按计划运行或未同步任何内容，请参阅此[知识库](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
+如果同步未按计划运行或未同步任何内容，请参阅此[知识库](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
 
 #### 同步失败
 
-如果目录同步的状态为&#x200B;**失败**，请提交[支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+如果目录同步的状态为&#x200B;**失败**，请提交[支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 ## 扩展日志记录
 

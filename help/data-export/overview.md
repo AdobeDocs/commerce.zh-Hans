@@ -3,9 +3,9 @@ title: '[!DNL SaaS Data Export Guide]'
 description: 了解如何为Adobe Commerce SaaS服务使用 [!DNL data export] 扩展，在Adobe Commerce和连接的Commerce服务之间同步数据。
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
-source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
+source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,19 @@ SaaS数据导出是作为PHP扩展提供的。 它支持多种方法来启动和
 
 - **从Admin或命令行手动同步**
 
-   - Commerce管理员中的[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供了同步状态的图形视图。 您可以使用仪表板对所有源执行完全重新同步（_完全同步_）。 但是，Adobe建议仅在首次将Adobe Commerce连接到Commerce服务时执行完全同步。 请参阅[同步进程](data-synchronization.md)。
+   - Commerce Admin中的[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供了同步状态的图形视图，其中显示产品数据已成功同步到商务服务。 您可以使用仪表板对所有源执行完全重新同步（_完全同步_）。 但是，Adobe建议仅在首次将Adobe Commerce连接到Commerce服务时执行完全同步。 请参阅[同步进程](data-synchronization.md)。
 
-   - [Adobe Commerce命令行工具](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供了同步特定馈送的命令，并包含用于自定义馈送处理的其他选项。
+     {{aco-data-sync-verification}}
+
+   - [数据馈送同步状态](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面提供数据导出馈送的运行状况和性能的实时分析，该数据导出馈送将产品和类别数据从Commerce传输到外部服务，例如产品推荐、实时搜索和目录服务或Adobe Commerce Optimizer。
+
+   - [Adobe Commerce命令行工具](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供了同步特定馈送的命令，并包含用于自定义馈送处理的其他选项。
 
 - **与cron作业的自动同步**
 
-   - [部分数据同步](data-synchronization.md#partial-synchronization-with-cron-jobs) — 当Commerce管理员用户更新实体时，Cron作业会触发部分数据同步。 数据导出过程只将这些更新发送到连接的Commerce服务。 部分同步过程基于MView机制，不需要管理员用户或系统集成商执行任何操作。
+   - [部分数据同步](data-synchronization.md#partial-sync) — 当Commerce管理员用户更新实体时，Cron作业会触发部分数据同步。 数据导出过程只将这些更新发送到连接的Commerce服务。 部分同步过程基于MView机制，不需要管理员用户或系统集成商执行任何操作。
 
-   - [同步错误的自动重试](data-synchronization.md#failed-items-sync-for-error-recovery) — 在数据同步过程中发生错误时，Cron作业会触发同步过程的自动重试。
+   - [同步错误的自动重试](data-synchronization.md#retry-failed-items-sync) — 在数据同步过程中发生错误时，Cron作业会触发同步过程的自动重试。
 
 - **导出计划和性能**
 
