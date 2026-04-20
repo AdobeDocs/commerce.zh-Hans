@@ -3,7 +3,7 @@ title: 数据同步
 description: 查看正在从Commerce数据源同步到 [!DNL Adobe Commerce Optimizer]中的目录数据。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 source-git-commit: 2cb17424a0f063a585ddd861b7057d9851467fbc
 workflow-type: tm+mt
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## 监视数据同步状态
 
-对于通过Adobe Commerce Connector将Commerce Optimizer用作上游数据源的项目，您可以从Commerce Admin的[数据馈送同步状态页面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)监视数据导出过程并启动重新同步操作。
+对于通过Adobe Commerce Connector将Commerce Optimizer用作上游数据源的项目，您可以从Commerce Admin的[数据馈送同步状态页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)监视数据导出过程并启动重新同步操作。
 
 ## 相关主题
 
