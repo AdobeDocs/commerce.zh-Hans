@@ -3,7 +3,7 @@ title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1728'
 ht-degree: 0%
@@ -31,11 +31,11 @@ ht-degree: 0%
 
 [!DNL Payment Services]提供&#x200B;**高级**（完全支持）和&#x200B;**标准**（快速结帐）付款选项和登录流程，具体取决于您运营的国家/地区。
 
-* **高级** — 所有可用的[付款选项](../payment-services/payments-options.md)都适用于当前[完全支持的国家/地区](../payment-services/introduction.md#availability)。 在新用户引导以启用实时支付时，选择[高级用户引导选项](../payment-services/production.md#advanced-onboarding)。
+* **高级** — 所有可用的[付款选项](../payment-services/payments-options.md)都适用于当前[完全支持的国家/地区](compatibility.md#standard-vs-advanced-payment-services-experience)。 在新用户引导以启用实时支付时，选择[高级用户引导选项](../payment-services/production.md#advanced-onboarding)。
 
 * **Standard** — 付款选项（快速结帐）（PayPal信用卡和借记卡）的子集适用于其他受支持的国家/地区。 [信用卡字段](#credit-card-fields)和[Apple Pay](#apple-pay-button)不适用于此入门培训选项。 在新用户引导以启用实时支付时，选择[标准新用户引导选项](../payment-services/production.md#standard-onboarding)。
 
-有关完成Advanced和Standard入门的信息，请参阅[为生产启用 [!DNL Payment Services] &#x200B;](../payment-services/production.md#complete-merchant-onboarding)。
+有关完成Advanced和Standard入门的信息，请参阅[为生产启用 [!DNL Payment Services] ](../payment-services/production.md#complete-merchant-onboarding)。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -127,11 +127,11 @@ ht-degree: 0%
 
 请参阅PayPal开发人员文档中有关[稍后付款优惠](https://developer.paypal.com/docs/checkout/pay-later/us/)的信息。 使用&#x200B;**国家或地区**&#x200B;下拉菜单选择感兴趣的地区。
 
-了解如何通过更新[!DNL Pay Later]设置[配置来禁用或启用](configure-admin.md#pay-later-button)消息传送。
+了解如何通过更新[!DNL Pay Later]设置[配置来禁用或启用](configure-admin.md#paypal-payment-buttons)消息传送。
 
 ##### 可选。 配置稍后付费消息
 
-**为**&#x200B;稍后付款[配置消息传送](configure-admin.md#pay-later-button)允许商家修改此付款选项的默认样式。 如果您在&#x200B;**[!UICONTROL Display Pay Later Message]**&#x200B;设置`Yes`配置中将[设置为](configure-admin.md#pay-later-button)，则会显示&#x200B;**[!UICONTROL Configure Messaging]**&#x200B;模式按钮，以便您为&#x200B;**[!UICONTROL PayPal Pay Later messaging]**&#x200B;设置样式。
+**为**&#x200B;稍后付款[配置消息传送](configure-admin.md#paypal-payment-buttons)允许商家修改此付款选项的默认样式。 如果您在&#x200B;**[!UICONTROL Display Pay Later Message]**&#x200B;设置`Yes`配置中将[设置为](configure-admin.md#paypal-payment-buttons)，则会显示&#x200B;**[!UICONTROL Configure Messaging]**&#x200B;模式按钮，以便您为&#x200B;**[!UICONTROL PayPal Pay Later messaging]**&#x200B;设置样式。
 
 ![稍后付费消息](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
@@ -157,16 +157,16 @@ PayPal、Pay Later和Venmo付款方法使用[服务器端送货回拨](https://d
 
 要&#x200B;**仅使用&#x200B;_捕获付款_ PayPal付款按钮（_不是_ PayPal信用卡付款选项）**：
 
-1. 请确保您的存储在生产模式[中为](configure-admin.md#enable-payment-services)。
-1. 在“设置”中[配置所需的PayPal付款按钮](configure-admin.md#payment-buttons)。
-1. 关闭&#x200B;_部分中的_&#x200B;选项&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)**&#x200B;关闭&#x200B;_[!UICONTROL Payment buttons]_。
+1. 请确保您的存储在生产模式[中为](configure-admin.md#general-configuration)。
+1. 在“设置”中[配置所需的PayPal付款按钮](configure-admin.md#paypal-payment-buttons)。
+1. 关闭&#x200B;_部分中的_&#x200B;选项&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;关闭&#x200B;_[!UICONTROL Payment buttons]_。
 
 要&#x200B;**使用现有信用卡提供商&#x200B;_和_ PayPal付款按钮**&#x200B;捕获付款：
 
-1. 请确保您的存储在生产模式[中为](configure-admin.md#enable-payment-services)。
-1. [配置所需的PayPal付款按钮](configure-admin.md#payment-buttons)。
-1. 关闭&#x200B;_部分中的_&#x200B;选项&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**&#x200B;关闭&#x200B;_[!UICONTROL Payment buttons]_。
-1. 关闭&#x200B;_部分中的_&#x200B;关闭&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_&#x200B;选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=zh-Hans#payments)。
+1. 请确保您的存储在生产模式[中为](configure-admin.md#general-configuration)。
+1. [配置所需的PayPal付款按钮](configure-admin.md#paypal-payment-buttons)。
+1. 关闭&#x200B;_部分中的_&#x200B;选项&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;关闭&#x200B;_[!UICONTROL Payment buttons]_。
+1. 关闭&#x200B;_部分中的_&#x200B;关闭&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)。
 
 ## 本地支付方式
 

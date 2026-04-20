@@ -1,7 +1,8 @@
 ---
 title: 索引
 description: 了解 [!DNL Live Search] 如何索引产品属性属性。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 01cbbf56-2e12-4ad0-a56d-de0fe13df50f
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 属性元数据的范围是`website/store/store view`。
 
-[!DNL Live Search] API允许客户端按Adobe Commerce管理员中将[storefront属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search`设置为`Yes`的任何产品属性进行排序。 启用后，可以为属性设置`Search Weight`。
+[!DNL Live Search] API允许客户端按Adobe Commerce管理员中将[storefront属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search`设置为`Yes`的任何产品属性进行排序。 启用后，可以为属性设置`Search Weight`。
 
 [!DNL Live Search]不为已删除的产品或设置为`Not Visible Individually`的产品编制索引。
 
@@ -32,7 +33,7 @@ ht-degree: 0%
 
 客户端从店面调用搜索服务以检索（可筛选、可排序）索引元数据。 搜索服务只能调用可搜索的产品属性，该属性的&#x200B;*用于分层导航*&#x200B;属性设置为`Filterable (with results)`，*用于产品列表排序*&#x200B;设置为`Yes`。
 
-要构造动态查询，搜索服务需要知道哪些属性是可搜索的，以及它们的[权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results)。 [!DNL Live Search]遵循Adobe Commerce搜索权重（1-10，其中10是最高优先级）。 可以在架构中找到同步并与目录服务共享的数据列表，架构定义于：
+要构造动态查询，搜索服务需要知道哪些属性是可搜索的，以及它们的[权重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)。 [!DNL Live Search]遵循Adobe Commerce搜索权重（1-10，其中10是最高优先级）。 可以在架构中找到同步并与目录服务共享的数据列表，架构定义于：
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -49,10 +50,10 @@ ht-degree: 0%
 
 以下事件会触发完全同步和索引生成：
 
-* 正在载入[目录数据同步](install.md#synchronize-catalog-data)
+* 正在载入[目录数据同步](install.md#sync)
 * 属性元数据的更改
 
-例如，将`color`属性的`Use in Search`属性从`No`更改为`Yes`将属性元数据更改为`searchable=true`，并触发完全同步和重新索引。 更改时，以下属性元数据会触发完全同步和重新索引：
+例如，将`Use in Search`属性的`color`属性从`No`更改为`Yes`将属性元数据更改为`searchable=true`，并触发完全同步和重新索引。 更改时，以下属性元数据会触发完全同步和重新索引：
 
 * `filterableInSearch`
 * `searchable`
@@ -61,7 +62,7 @@ ht-degree: 0%
 
 ### 流式产品更新
 
-在[上线](install.md#synchronize-catalog-data)期间生成初始索引后，将持续同步并重新编制以下增量产品更新的索引：
+在[上线](install.md#sync)期间生成初始索引后，将持续同步并重新编制以下增量产品更新的索引：
 
 * 添加到目录的新产品
 * 产品属性值的更改
@@ -89,7 +90,7 @@ ht-degree: 0%
 
 ## 客户端搜索
 
-[!DNL Live Search] API允许客户端通过将[storefront属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes)、*产品列表*&#x200B;中用于排序的`Yes`来按任何可排序的产品属性进行排序。 根据主题，此设置会导致属性作为选项包含在目录页面上的[排序方式](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/navigation/navigation)分页控件中。 [!DNL Live Search]最多可以为200个产品属性编制索引，其中[storefront属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes)可搜索和过滤。
+[!DNL Live Search] API允许客户端通过将[storefront属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)、*产品列表*&#x200B;中用于排序的`Yes`来按任何可排序的产品属性进行排序。 根据主题，此设置会导致属性作为选项包含在目录页面上的[排序方式](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation)分页控件中。 [!DNL Live Search]最多可以为200个产品属性编制索引，其中[storefront属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)可搜索和过滤。
 
 索引元数据存储在索引管道中，可供搜索服务访问。
 

@@ -2,7 +2,7 @@
 title: 添加规则
 description: 了解如何创建搜索促销规则。
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 085eb0fa1a278701cc889d219db7e8571327a632
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 添加规则
 
 1. 在管理员中，转到&#x200B;**营销** > SEO和搜索> **[!DNL Live Search]**。
-1. 设置&#x200B;**范围**&#x200B;以标识应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)。
+1. 设置&#x200B;**范围**&#x200B;以标识应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 1. 单击&#x200B;**搜索促销**&#x200B;工作区。
 1. 单击&#x200B;**添加规则**&#x200B;以启动规则编辑器。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 1. 若要测试其他查询，请更改&#x200B;*测试您的规则*&#x200B;搜索框中的查询文本，然后按&#x200B;**返回**。
 最初，测试窗格从“条件”搜索框中呈现查询。 但现在，它从测试查询框呈现查询。 测试窗格一次只呈现一个查询。
 1. 如果您喜欢该结果，请更新&#x200B;*条件*&#x200B;搜索框中的文本。 然后，单击页面上的任意位置以更新测试窗格中的结果。
-1. 要构建具有一个条件的简单规则，请转到步骤3： [添加事件](#events)。
+1. 要构建具有一个条件的简单规则，请转到步骤3： [添加事件](#manual-ranking)。
 
 ### 多个条件
 

@@ -1,8 +1,8 @@
 ---
 title: 机会
 description: 通过与Adobe Sites Optimizer集成以实现智能的数据驱动型网站改进，发现增加流量、参与度和转化率的机会。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于 [!DNL Adobe Commerce Optimizer] 个项目(Adobe管理的SaaS基础结构)。"
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于 [!DNL Adobe Commerce Optimizer] 个项目（Adobe管理的SaaS基础结构）。"
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 什么是机会？
 
-[机会](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支持的推荐，可帮助商家识别并解决影响其商业网站性能的问题。 这些建议由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/home)提供支持，这是一项基于云的服务，可分析和改进网站性能。
+[机会](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支持的推荐，可帮助商家识别并解决影响其商业网站性能的问题。 这些建议由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)提供支持，这是一项基于云的服务，可分析和改进网站性能。
 
 ## 主要功能
 
@@ -146,7 +146,7 @@ ht-degree: 0%
 
 ### 目录层如何使用自动修复
 
-如果目录视图中不存在Adobe Sites Optimizer层，则自动修复会自动创建一个图层，并为其分配顺序1（最高优先级）。 如果删除此图层，则会在下次自动修复运行时重新创建此图层，并将现有图层移至更低顺序编号。 如果Adobe Sites Optimizer Layer在其他订单号中已存在，则自动修复不会更改其优先级。 如果要保留自动修复层，但不立即使用它，则可以禁用该层。 了解有关如何管理[目录层](../setup/catalog-layer.md#activate-or-deactivate-layers)的详细信息。
+如果目录视图中不存在Adobe Sites Optimizer层，则自动修复会自动创建一个图层，并为其分配顺序1（最高优先级）。 如果删除此图层，则会在下次自动修复运行时重新创建此图层，并将现有图层移至更低顺序编号。 如果Adobe Sites Optimizer Layer在其他订单号中已存在，则自动修复不会更改其优先级。 如果要保留自动修复层，但不立即使用它，则可以禁用该层。 了解有关如何管理[目录层](../setup/catalog-layer.md#activate-deactivate-or-delete-layers)的详细信息。
 
 ![目录层](../assets/catalog-layers.png)
 
@@ -176,7 +176,7 @@ ht-degree: 0%
 
 ## 了解有关Sites Optimizer的更多信息
 
-有关Sites Optimizer功能和特征的详细信息，请参阅[Adobe Experience Manager Sites Optimizer文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/home)。
+有关Sites Optimizer功能和特征的详细信息，请参阅[Adobe Experience Manager Sites Optimizer文档](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)。
 
 其他资源：
 

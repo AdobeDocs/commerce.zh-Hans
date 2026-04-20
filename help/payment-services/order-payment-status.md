@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 订单付款状态报表
 
-[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]为您提供综合报告，以便您能够清楚地查看存储的[交易](reporting.md)、订单和付款。
+[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]为您提供综合报告，以便您能够清楚地查看存储的[交易](reporting.md)、订单和付款。
 
 有两个可用的“订单付款状态”报告视图，使您可以快速查看订单的付款状态：
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您尚未为[!DNL Payment Services]载入并激活实时模式[，则无法查看财务报表。](production.md#enable-live-payments)
+>如果您尚未为[载入并激活实时模式](production.md#enable-live-payments)，则无法查看财务报表。[!DNL Payment Services]
 
 ## 订单支付状态数据可视化视图
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 在Payment Services的“主页”视图中可以使用“订单付款状态”报表视图。 它包括所有交易的详细状态 — 付款、已开票、已发运、退款、争议等。
 
-在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;以查看详细的表格形式订单付款状态报告视图。
+在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**以查看详细的表格形式订单付款状态报告视图。
 
 ![管理员中的订单付款状态交易记录](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此表中显示的数据默认使用`TRANS DATE`按降序排序(`DESC`)。 `TRANS DATE`是事务启动的日期和时间。
+>此表中显示的数据默认使用`DESC`按降序排序(`TRANS DATE`)。 `TRANS DATE`是事务启动的日期和时间。
 
 ### 付款状态更新
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 为确保此流程按预期运行，商家必须配置新的cron作业。 一旦作业配置为自动运行，就不需要商家进行其他干预。
 
-请参阅[配置cron作业](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=zh-Hans)。 配置完毕后，新作业每30分钟运行一次，以获取处于`Payment Review`状态的订单的更新。
+请参阅[配置cron作业](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)。 配置完毕后，新作业每30分钟运行一次，以获取处于`Payment Review`状态的订单的更新。
 
 商家可以通过“订单付款状态”报表视图检查更新的付款状态。
 
@@ -114,11 +114,11 @@ ht-degree: 0%
 
 [!DNL Payment Services]使用订单数据，并将其与其他来源（包括PayPal）的汇总付款数据相结合，以提供有意义且非常有用的报告。
 
-订单数据将导出并保留在支付服务中。 当您[更改或添加订单状态](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status)或[编辑商店视图](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[商店](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/store-details#store-information)或网站名称时，该数据将与付款数据相结合，并且订单付款状态报表将填充该组合信息。
+订单数据将导出并保留在支付服务中。 当您[更改或添加订单状态](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status)或[编辑商店视图](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[商店](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information)或网站名称时，该数据将与付款数据相结合，并且订单付款状态报表将填充该组合信息。
 
 此过程包括两个步骤：
 
-1. 索引更改了数据`ON SAVE` （每次更改订单信息或存储信息时）或`BY SCHEDULE` （在预配置的cron计划上），具体取决于它在管理员的[索引管理](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management)中的配置方式。
+1. 索引更改了数据`ON SAVE` （每次更改订单信息或存储信息时）或`BY SCHEDULE` （在预配置的cron计划上），具体取决于它在管理员的[索引管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)中的配置方式。
 
    默认情况下，数据索引发生`ON SAVE`，这意味着每当订单、订单状态、商店视图、商店或网站中的某些内容发生更改时，索引过程都会立即发生。
 
@@ -128,13 +128,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此表中显示的数据默认使用`ORDER DATE`按降序排序(`DESC`)。 `ORDER DATE`是创建订单的日期时间戳。
+>此表中显示的数据默认使用`DESC`按降序排序(`ORDER DATE`)。 `ORDER DATE`是创建订单的日期时间戳。
 
 #### 配置数据导出
 
 即使默认情况下在`ON SAVE`模式下进行重新索引，仍建议您在`BY SCHEDULE`模式下进行索引。 `BY SCHEDULE`索引按一分钟的cron计划运行，任何更改的数据会在任何数据更改后的两分钟内显示在订单状态报表中。 此计划的重新索引可帮助您减少存储空间上的任何压力，尤其是在您有大量传入订单的情况下，因为它按计划进行（而不是在每次下订单时）。
 
-您可以在管理员[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)中更改索引模式 — `ON SAVE`或`BY SCHEDULE`—。
+您可以在管理员`ON SAVE`中更改索引模式 — `BY SCHEDULE`或[—](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)。
 
 要了解如何配置数据导出，请参阅[命令行配置](configure-cli.md#configure-data-export)。
 
@@ -144,7 +144,7 @@ ht-degree: 0%
 
 ![数据源选择](assets/datasource.png){width="300" zoomable="yes"}
 
-如果&#x200B;_[!UICONTROL Live]_&#x200B;是选定的数据源，则可以查看在生产模式下使用[!DNL Payment Services]的商店的报告信息。 如果&#x200B;_[!UICONTROL Sandbox]_&#x200B;是选定的数据源，则可以查看沙盒模式的报表信息。
+如果&#x200B;_[!UICONTROL Live]_是选定的数据源，则可以查看在生产模式下使用[!DNL Payment Services]的商店的报告信息。 如果_[!UICONTROL Sandbox]_&#x200B;是选定的数据源，则可以查看沙盒模式的报表信息。
 
 数据源选择的工作方式如下所示：
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 要为[!UICONTROL Order Payment Status]报表选择数据源：
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**。
-1. 单击&#x200B;_[!UICONTROL Data source]_&#x200B;选择器筛选器并选择&#x200B;**[!UICONTROL Live]**&#x200B;或&#x200B;**[!UICONTROL Sandbox]**。
+1. 单击&#x200B;_[!UICONTROL Data source]_选择器筛选器并选择&#x200B;**[!UICONTROL Live]**或&#x200B;**[!UICONTROL Sandbox]**。
 
    报表结果会根据所选数据源重新生成。
 
@@ -164,7 +164,7 @@ ht-degree: 0%
 从“订单付款状态”报表视图中，您可以通过选择特定日期，自定义要查看的状态结果的时间范围。 默认情况下，网格中显示30天的订单付款状态。
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**。
-1. 单击&#x200B;_[!UICONTROL Order dates]_&#x200B;日历选择器筛选器。
+1. 单击&#x200B;_[!UICONTROL Order dates]_日历选择器筛选器。
 1. 选择适用的日期范围。
 1. 在网格中查看指定日期的订单付款状态。
 
@@ -175,7 +175,7 @@ ht-degree: 0%
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**。
 1. 单击&#x200B;**[!UICONTROL Filter]**&#x200B;选择器。
 1. 切换&#x200B;_支付状态_&#x200B;选项，以便仅查看选定订单支付状态的报表结果。
-1. 通过输入&#x200B;_[!UICONTROL Min Order Amount]_&#x200B;或_[!UICONTROL Max Order Amount_]查看订单金额范围内的报表结果。
+1. 通过输入&#x200B;_[!UICONTROL Min Order Amount]_或_[!UICONTROL Max Order Amount_]查看订单金额范围内的报表结果。
 1. 单击&#x200B;**[!UICONTROL Hide filters]**&#x200B;以隐藏筛选器。
 
 ### 显示和隐藏列
@@ -208,7 +208,7 @@ ht-degree: 0%
 
 ### 更新报表数据
 
-订单付款状态报表视图显示&#x200B;_[!UICONTROL Last updated]_&#x200B;时间戳，该时间戳显示上次更新报表信息的时间。 默认情况下，订单付款状态报表数据每三小时自动刷新一次。
+订单付款状态报表视图显示&#x200B;_[!UICONTROL Last updated]_时间戳，该时间戳显示上次更新报表信息的时间。 默认情况下，订单付款状态报表数据每三小时自动刷新一次。
 
 您也可以手动强制刷新订单付款状态报表数据，以查看最新的报表信息。
 
@@ -223,8 +223,8 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**。
 1. 导航到&#x200B;**[!UICONTROL Disputes column]**。
-1. 查看特定订单的任何争议并查看[争议状态](#order-payment-status-information)。
-1. 通过单击以&#x200B;_PP-D-_&#x200B;开头的争议ID链接，从[PayPal解决中心](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246)查看争议详细信息。
+1. 查看特定订单的任何争议并查看[争议状态](#statuses-information)。
+1. 通过单击以[PP-D-](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246)开头的争议ID链接，从&#x200B;_PayPal解决中心_&#x200B;查看争议详细信息。
 1. 根据需要，对争议采取适当行动。
 
    要按状态对订单争议进行排序，请单击[!UICONTROL Disputes]列标题。
@@ -234,7 +234,7 @@ ht-degree: 0%
 您可以下载.csv文件，该文件的所有状态均显示在“订单付款”状态视图网格中，无论您查看的是默认的30天状态还是自定义的时间范围。
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**。
-1. 如果要查看过去30天以外的时间范围的状态，请[自定义状态的日期范围时间范围](#customize-dates-timeframe)。
+1. 如果要查看过去30天以外的时间范围的状态，请[自定义状态的日期范围时间范围](#customize-order-dates-timeframe)。
 1. 单击&#x200B;_下载_ （![下载图标](assets/icon-download.png){width="20" zoomable="yes"}）图标。
 
 您的订单付款状态将以.csv格式下载。
@@ -245,10 +245,10 @@ ht-degree: 0%
 
 | 列 | 描述 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce订单ID<br> <br>要查看相关的[订单信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，请单击ID。 |
+| [!UICONTROL Order ID] | Commerce订单ID<br> <br>要查看相关的[订单信息](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，请单击ID。 |
 | [!UICONTROL Order Date] | 订单日期时间戳 |
 | [!UICONTROL Authorized Date] | 付款授权的日期时间戳 |
-| [!UICONTROL Order Status] | 当前Commerce [订单状态](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | 当前Commerce [订单状态](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | 订单的发票状态 — *[!UICONTROL No]*、*[!UICONTROL Partial]*&#x200B;或&#x200B;*[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | 订单的配送状态 — *[!UICONTROL No]*、*[!UICONTROL Partial]*&#x200B;或&#x200B;*[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | 订单的总金额 |

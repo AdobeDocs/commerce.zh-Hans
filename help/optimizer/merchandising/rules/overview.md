@@ -1,9 +1,9 @@
 ---
 title: 促销规则
 description: '[!DNL Adobe Commerce Optimizer]推销规则将逻辑与操作结合使用，以塑造搜索结果、默认产品列表和类别页面。'
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
-source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ## 多个规则的优先顺序
 
-以下内容适用于&#x200B;**搜索规则**&#x200B;以及它们如何与给定搜索进行交互。 **类别规则**&#x200B;适用于每个类别；请参阅[创建和管理规则](add.md#category-rules)，了解它们如何与搜索和默认规则一起使用。
+以下内容适用于&#x200B;**搜索规则**&#x200B;以及它们如何与给定搜索进行交互。 **类别规则**&#x200B;适用于每个类别；请参阅[创建和管理规则](add.md)，了解它们如何与搜索和默认规则一起使用。
 
 在任何时候，只对一个搜索词应用一个搜索规则。
 如果发现多个规则适用于搜索短语，则会应用所有这些规则。 如果两个规则（`rule 1`提升SKU1但`rule 2`隐藏同一SKU）之间存在冲突，则优先使用最近应用的规则(`rule 2`)。

@@ -5,8 +5,8 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
-source-git-commit: d22ea53810e2e62337f9bd5fd633b0ed40a52b2d
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 作为合并的组，系统管理员、商家和开发人员需要执行以下重要步骤来启动和运行Commerce实例：
 
 1. **所有用户**： [创建实例](#create-an-instance)
-1. **系统管理员**： [添加用户和分配角色](user-management.md#add-users-and-admins)
+1. **系统管理员**： [添加用户和分配角色](user-management.md#add-users)
 1. **商家**： [访问Commerce管理员](#access-an-instance)并[导入您的目录](#import-your-catalog)
 1. **开发人员**： [设置您的店面](storefront.md)并探索[开发人员平台](overview.md#developer-platform)
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!TAB 系统管理员和商家工作流]
 
-此图表提供了系统管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/cn/enterprise/admin-guide.html)。
+此图表提供了系统管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/enterprise/admin-guide.html)。
 
 ![Adobe Commerce as a Cloud Service的系统管理员和商家工作流程图](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -130,7 +130,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在创建实例之前，贵组织的产品管理员或系统管理员必须将您添加为[!DNL Adobe Commerce as a Cloud Service]产品的用户。 有关详细信息，请参阅[添加用户和管理员](./user-management.md#add-users-and-admins)。
+>在创建实例之前，贵组织的产品管理员或系统管理员必须将您添加为[!DNL Adobe Commerce as a Cloud Service]产品的用户。 有关详细信息，请参阅[添加用户和管理员](./user-management.md#add-users)。
 
 [!DNL Adobe Commerce as a Cloud Service]实例使用基于信用的系统。 您可以创建多个实例，但每个实例都需要可用的积分。 您最初拥有的积分数取决于您的订购。
 
@@ -211,7 +211,7 @@ ht-degree: 0%
 
 有两种方法可以将您的目录导入[!DNL Adobe Commerce as a Cloud Service]：
 
-* [**Commerce管理员**](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/import/data-import) — 一个用户友好的界面，允许您通过单击几下导入目录数据。
+* [**Commerce管理员**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) — 一个用户友好的界面，允许您通过单击几下导入目录数据。
 * [**导入JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) — 一个REST API，允许您以编程方式导入目录数据。
 
 ### 设置店面
@@ -222,4 +222,4 @@ ht-degree: 0%
 
 * [发行说明](release-notes.md)
 * [迁移指南](migration/overview.md)
-* [Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
+* [Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)

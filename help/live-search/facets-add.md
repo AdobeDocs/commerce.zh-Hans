@@ -2,7 +2,7 @@
 title: 添加Facet
 description: 了解如何将可筛选的产品属性添加为 [!DNL Live Search] Facet。
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 15afc6fcd1e6783640dc3980ee06290e017abf37
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 出现提示时，刷新缓存。
 
-   下次将目录与[!DNL Live Search]同步时，Facet将在店面中变得可用。 如果Facet在两个小时后不可用，请参阅[同步目录数据](install.md#synchronize-catalog-data)。
+   下次将目录与[!DNL Live Search]同步时，Facet将在店面中变得可用。 如果Facet在两个小时后不可用，请参阅[同步目录数据](install.md#sync)。
 
 ## 步骤2：编辑Facet属性（可选）
 
@@ -57,7 +57,8 @@ ht-degree: 0%
 
 1. Facet完成后，单击&#x200B;**发布更改**。
 1. 等待Facet出现在商店中。
-如果Facet在两个小时后不可用，请参阅安装说明中的[验证导出](install.md#synchronize-catalog-data)。
+
+   如果Facet在两个小时后不可用，请参阅安装说明中的[验证导出](install.md#sync)。
 
 ## 字段描述
 

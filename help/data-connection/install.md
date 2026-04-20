@@ -3,7 +3,8 @@ title: 安装 [!DNL Data Connection]
 description: 了解如何从Adobe Commerce安装、更新和卸载 [!DNL Data Connection] 扩展。
 role: Admin, Developer
 feature: Install
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -12,11 +13,11 @@ ht-degree: 0%
 
 # 安装[!DNL Data Connection]
 
-在安装扩展之前，[查看先决条件](overview.md#prereqs)。
+在安装扩展之前，[查看先决条件](overview.md#prerequisites)。
 
 ## 安装扩展
 
-[!DNL Data Connection]扩展可从[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)获得。 从服务器的命令行安装此扩展时，它将作为[服务](../landing/saas.md)连接到Adobe Commerce安装。 该过程完成后，**[!DNL Data Connection]**&#x200B;和&#x200B;**Commerce Services Connector**&#x200B;将出现在Commerce _管理员_&#x200B;的&#x200B;**服务**&#x200B;下的&#x200B;**系统**&#x200B;菜单中。
+[!DNL Data Connection]扩展可从[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)获得。 从服务器的命令行安装此扩展时，它将作为[服务](../landing/saas.md)连接到Adobe Commerce安装。 该过程完成后，**[!DNL Data Connection]**&#x200B;和&#x200B;**Commerce Services Connector**&#x200B;将出现在Commerce **管理员**&#x200B;的&#x200B;**服务**&#x200B;下的&#x200B;_系统_&#x200B;菜单中。
 
 ![[!DNL Data Connection]扩展管理员视图](assets/epc-adminui.png)
 
@@ -76,7 +77,7 @@ ht-degree: 0%
 
 #### 在云基础架构上
 
-在云基础架构上的Adobe Commerce中，在`.magento.env.yaml`中启用`ENABLE_EVENTING`全局变量。 [了解更多](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=zh-Hans#enable_eventing)。
+在云基础架构上的Adobe Commerce中，在`ENABLE_EVENTING`中启用`.magento.env.yaml`全局变量。 [了解详情](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing)。
 
 ```bash
 stage:
@@ -164,4 +165,4 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 ## 卸载[!DNL Data Connection]扩展 {#uninstall}
 
-要卸载[!DNL Data Connection]扩展，请参阅[卸载模块](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=zh-Hans)。
+要卸载[!DNL Data Connection]扩展，请参阅[卸载模块](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html)。

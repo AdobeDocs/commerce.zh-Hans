@@ -2,7 +2,7 @@
 title: 为Commerce Optimizer配置AEM Assets
 description: 了解如何为 [!DNL Adobe Commerce Optimizer]配置AEM Assets集成。
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 7f0970648663331fea2af19b981c4fd3b3aedcaa
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 入门
 
-要载入与[!DNL Commerce Optimizer]的AEM Assets集成，您必须[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+要载入与[!DNL Commerce Optimizer]的AEM Assets集成，您必须[创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 Adobe支持使用您票证中的信息来向Assets集成服务注册您的租户，并配置集成。
 
@@ -85,7 +85,7 @@ Adobe支持处理您的票证后，配置集成，并且您的租户向Assets集
 
 确保您的AEM Assets环境已准备就绪：
 
-1. **AEM Assets配置**：配置Commerce元数据配置文件。 请参阅[配置元数据配置文件](configure-aem.md#configure-a-metadata-profile)。
+1. **AEM Assets配置**：配置Commerce元数据配置文件。 请参阅[配置元数据配置文件](configure-aem.md#step-2-optional-configure-a-metadata-profile)。
 
 1. **Dynamic Media启用**：验证是否在AEM Assets环境中启用了具有OpenAPI功能的Dynamic Media。
 
@@ -113,7 +113,7 @@ Adobe支持处理您的票证后，配置集成，并且您的租户向Assets集
 
 >[!CAUTION]
 >
-> 将`AEM-Assets`图层分配给您的[目录视图](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view)。 如果未指定图层，产品图像数据可能会意外被覆盖。
+> 将`AEM-Assets`图层分配给您的[目录视图](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view)。 如果未指定图层，产品图像数据可能会意外被覆盖。
 
 ## 同步
 
@@ -135,7 +135,7 @@ Adobe支持处理您的票证后，配置集成，并且您的租户向Assets集
 
 1. Assets集成服务将产品映像映射发送到[!DNL Commerce Optimizer]。 [!DNL Commerce Optimizer]中的产品已使用资产中的图像更新。
 
-1. 验证图像是否可见。 留出时间让同步完成（通常在几分钟内），然后检查[!DNL Commerce Optimizer] UI中的产品（例如，数据同步或目录视图），或查询店面API(目录服务、实时搜索、店面GraphQL API)以确认图像已返回。
+1. 验证图像是否可见。 留出时间让同步完成（通常在几分钟内），然后检查[!DNL Commerce Optimizer] UI中的产品（例如，数据同步或目录视图），或查询店面API（目录服务、实时搜索、店面GraphQL API）以确认图像已返回。
 
 ## 图像角色处理
 
