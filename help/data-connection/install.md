@@ -77,7 +77,7 @@ ht-degree: 0%
 
 #### 在云基础架构上
 
-在云基础架构上的Adobe Commerce中，在`ENABLE_EVENTING`中启用`.magento.env.yaml`全局变量。 [了解详情](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing)。
+在云基础架构上的Adobe Commerce中，在`ENABLE_EVENTING`中启用`.magento.env.yaml`全局变量。 [了解详情](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=zh-Hans#enable_eventing)。
 
 ```bash
 stage:
@@ -165,4 +165,4 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 ## 卸载[!DNL Data Connection]扩展 {#uninstall}
 
-要卸载[!DNL Data Connection]扩展，请参阅[卸载模块](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html)。
+要卸载[!DNL Data Connection]扩展，请参阅[卸载模块](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=zh-Hans)。

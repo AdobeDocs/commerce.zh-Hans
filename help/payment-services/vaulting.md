@@ -32,7 +32,7 @@ ht-degree: 0%
 
 1. 在左侧导航中导航到&#x200B;**[!UICONTROL Stored Payment Methods]**&#x200B;以查看其所有存储的付款方法。
 
-   有关详细信息，请参阅[存储的付款方式](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods)。
+   有关详细信息，请参阅[存储的付款方式](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/payments/stored-payment-methods)。
 
 1. 客户单击&#x200B;**[!UICONTROL Add New Card]**&#x200B;以存储新卡。
 
@@ -73,10 +73,10 @@ Commerce存储一个令牌，通过获取客户保存的信用卡信息来帮助
 
 要在“管理员”中使用保险存储信用卡为客户创建订单，请执行以下操作：
 
-1. [创建订单并添加产品](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html)。
+1. [创建订单并添加产品](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=zh-Hans)。
 1. 在&#x200B;_[!UICONTROL Payment & Shipping Information]_&#x200B;中，选择&#x200B;**[!UICONTROL Stored Cards]**&#x200B;作为付款方式。
 1. 选择所需的保险存储信用卡支付方式。
-1. 完成订单的任何其他必要步骤后，[提交订单](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order)。
+1. 完成订单的任何其他必要步骤后，[提交订单](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=zh-Hans#step-3%3A-submit-the-order)。
 
    ![在Admin中为客户使用保险存储信用卡](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

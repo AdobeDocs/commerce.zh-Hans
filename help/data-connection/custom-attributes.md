@@ -349,7 +349,7 @@ ComponentRegistrar::register(
 
 要确保Experience Platform中的[!DNL Commerce]架构能够摄取新的自定义订单属性，您需要扩展架构以包含这些自定义字段。
 
-要了解如何扩展现有XDM架构以包含这些自定义字段，请参阅Experience Platform文档中的[在UI中创建和编辑架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)一文。 租户ID字段是动态生成的；但是，字段结构应类似于Experience Platform文档中提供的示例。
+要了解如何扩展现有XDM架构以包含这些自定义字段，请参阅Experience Platform文档中的[在UI中创建和编辑架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)一文。 租户ID字段是动态生成的；但是，字段结构应类似于Experience Platform文档中提供的示例。
 
 >[!IMPORTANT]
 >

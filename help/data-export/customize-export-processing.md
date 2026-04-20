@@ -64,7 +64,7 @@ bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 
 要使用多线程处理所有数据导出操作，系统集成商或开发人员可以在Commerce应用程序配置中修改每个馈送的线程数和批量大小。
 
-可以通过将自定义值添加到配置文件[的](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)系统节`app/etc/config.php`来应用这些更改。
+可以通过将自定义值添加到配置文件[的](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)系统节`app/etc/config.php`来应用这些更改。
 
 **示例：为产品和价格配置多线程**
 

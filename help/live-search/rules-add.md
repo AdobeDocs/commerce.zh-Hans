@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 添加规则
 
 1. 在管理员中，转到&#x200B;**营销** > SEO和搜索> **[!DNL Live Search]**。
-1. 设置&#x200B;**范围**&#x200B;以标识应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
+1. 设置&#x200B;**范围**&#x200B;以标识应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)。
 1. 单击&#x200B;**搜索促销**&#x200B;工作区。
 1. 单击&#x200B;**添加规则**&#x200B;以启动规则编辑器。
 
