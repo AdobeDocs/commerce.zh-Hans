@@ -3,9 +3,9 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: Adobe Commerce的 [!DNL Catalog Service] 的最新发行信息。
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: 16fb13c2c98288e1ea0e441425efc2faba58ef8a
+source-git-commit: eb7e3e86426abb71b8b5e6d17936d26cb088edb3
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2472'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,14 @@ ht-degree: 0%
 支持最新版本。 旧版本的发行说明包括在内，以供参考。
 
 ## 店面目录服务
+
+### v1.51发布
+
+_2026年4月17日_
+
+![新](../assets/new.svg)添加了一个新的`searchCategory` GraphQL查询，该查询使客户端能够按名称搜索具有分页结果的类别。 查询接受必需的`searchTerm`（至少3个字符）以及可选的`family`、`pageSize`和`currentPage`参数。 结果包括与具有完整类别元数据的`CategoryTreeView`对象、`totalCount`和分页`pageInfo`匹配。<!--COMOPT-1819-->
+
+此查询仅适用于使用Adobe Commerce Optimizer促销服务的客户。 请参阅[searchCategory](https://developer.adobe.com/commerce/services/reference/graphql/)。
 
 ### v1.50发布
 
@@ -117,7 +125,7 @@ _2025年11月3日_
 - 使用图层蒙版控制字段级覆盖
 - 支持针对高级、季节和移动设备优化的内容层
 
-  使用现有`products`查询检索图层，从请求标头在服务器端应用，无需更改架构。 请参阅[Adobe Commerce Optimizer指南](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-layer)中的&#x200B;_目录层_。
+  使用现有`products`查询检索图层，从请求标头在服务器端应用，无需更改架构。 请参阅[Adobe Commerce Optimizer指南](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer)中的&#x200B;_目录层_。
 
 ![修复](../assets/fix.svg)当父产品无定价时，现在可以查询分组产品；子产品返回其自己的可见性角色。<!--DATA-6779-->
 
@@ -228,7 +236,7 @@ _2025年7月15日_
 
 _2025年6月20日_
 
-![新](../assets/new.svg) **分层价格手册配置** — 父 — 子价格手册的准确价格范围。 计算会遵循层次结构和继承的规则；在链接多个价格手册时可减少定价错误。 仅限Adobe Commerce Optimizer。 查看[价格手册](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/pricebooks)。
+![新](../assets/new.svg) **分层价格手册配置** — 父 — 子价格手册的准确价格范围。 计算会遵循层次结构和继承的规则；在链接多个价格手册时可减少定价错误。 仅限Adobe Commerce Optimizer。 查看[价格手册](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks)。
 
 ![新](../assets/new.svg) **不区分大小写的键** — 查询中的键查找现在不区分大小写，减少了键大小写错误。<!--DATA-6494, DCAT-2495-->
 
@@ -357,7 +365,7 @@ _2024年5月23日_
 
 ![修复](../assets/fix.svg) <!--DATA-5033-->选项值的`InStock`标记现在遵循产品变体的作用域`enabled`状态。
 
-![修复](../assets/fix.svg) <!--DATA-5888-->添加了对产品价格的支持，最高可支持16位和4位小数。 从[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以应用更新。
+![修复](../assets/fix.svg) <!--DATA-5888-->添加了对产品价格的支持，最高可支持16位和4位小数。 从[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以应用更新。
 
 #### 已知限制
 
@@ -391,7 +399,7 @@ _2024年2月22日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hans)现在可用于数据流（产品推荐、实时搜索、目录服务）。 需要`catalog-service`个中继包v3.1.0+。
+![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)现在可用于数据流（产品推荐、实时搜索、目录服务）。 需要`catalog-service`个中继包v3.1.0+。
 
 ### v1.16发布
 
