@@ -537,7 +537,7 @@ Produce a spec called STOREFRONT_API_SPEC that I can use in the storefront works
 在开始店面集成之前，请验证您是否具备以下条件：
 
 - 店面项目已连接到您的[!DNL Commerce]实例
-- 使用CLI安装的Commerce storefront AI工具[](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+- 使用CLI安装的Commerce storefront AI工具[&#128279;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 - 已将`STOREFRONT_API_SPEC.md`文件复制到店面项目的`docs/`文件夹中
 
 ### 步骤1：验证环境

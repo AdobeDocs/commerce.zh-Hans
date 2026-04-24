@@ -16,8 +16,8 @@ ht-degree: 2%
 # Commerce的[!DNL Payment Services] {#payment-services}
 
 - [指南概述](guide-overview.md)
-- [ [!DNL Payment Services]简介](introduction.md)
-- [ [!DNL Payment Services]的兼容性](compatibility.md)
+- [&#x200B; [!DNL Payment Services]简介](introduction.md)
+- [&#x200B; [!DNL Payment Services]的兼容性](compatibility.md)
 - [发行说明](release-notes.md)
 - 载入[!DNL Payment Services] {#get-started}
    - [载入概述](onboard.md)
@@ -35,7 +35,7 @@ ht-degree: 2%
    - [信用卡保险存储](vaulting.md)
    - [签出 [!DNL Payment Services]](checkout.md)
    - 管理付款 {#manage}
-      - [ [!DNL Payment Services]的行项目](line-items.md)
+      - [&#x200B; [!DNL Payment Services]的行项目](line-items.md)
       - [退款](refunds.md)
       - [空洞](voids.md)
    - [在管理员中创建订单](create-order.md)

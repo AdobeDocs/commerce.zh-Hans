@@ -281,7 +281,7 @@ Create an API service contract for the Out of Stock notification service and its
 在开始店面集成之前，请验证您是否具备以下条件：
 
 - 店面项目已连接到您的[!DNL Commerce]实例
-- 使用CLI安装的Commerce storefront AI工具[](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+- 使用CLI安装的Commerce storefront AI工具[&#128279;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 - `OUT_OF_STOCK_NOTIFICATION_CONTRACT.md`文件已复制到您的店面项目中
 
 ### 步骤1：验证环境
