@@ -1,11 +1,11 @@
 ---
 title: 推荐过滤器
 description: 了解如何使用筛选器来控制哪些产品出现在 [!DNL Adobe Commerce Optimizer] 推荐中。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
-source-git-commit: e15624322fabb89d0b618f9d6c689445a7c448df
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ### 产品
 
-产品筛选器按&#x200B;**SKU**&#x200B;定位单个目录项。 添加一个或多个SKU以仅允许这些产品（**排除项**）或阻止这些产品（**排除项**），使用与&#x200B;**[!UICONTROL Filter products]**&#x200B;价格筛选器[相同的](#price)页面。 您不能在推荐单元中显示已禁用的产品或无法单独显示的产品；无论使用什么过滤器，这些产品都不会出现在店面上。
+产品筛选器按&#x200B;**SKU**&#x200B;定位单个目录项。 添加一个或多个SKU以仅允许这些产品（**排除项**）或阻止这些产品（**排除项**），使用与[价格筛选器](#price)相同的&#x200B;**[!UICONTROL Filter products]**&#x200B;页面。 您不能在推荐单元中显示已禁用的产品或无法单独显示的产品；无论使用什么过滤器，这些产品都不会出现在店面上。
 
 #### 设置产品过滤器
 
@@ -98,6 +98,8 @@ ht-degree: 0%
 >
 >可配置产品的子产品不显示在推荐单元中，因为这些子产品具有&#x200B;_不可见_&#x200B;的可见性。
 
-<!--### Attribute
+<!--
+### Attribute
 
-You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.-->
+You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.
+-->

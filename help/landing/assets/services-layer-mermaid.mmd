@@ -1,26 +1,33 @@
+---
+source-git-commit: fd3857e93dbaaf7ffce97715b77ee63e8460af16
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 0%
+
+---
 graph LR
-    subgraph CF["<b>Commerce Foundation</b>"]
-        direction TB
-        CS(["Storefront"])
-        CB(["Backend"])
+子图CF[“<b>Commerce Foundation</b>”]
+方向Tb
+CS（[&quot;店面&quot;]）
+CB（[&quot;后端&quot;]）
+结束
+
+    SC（[“服务连接器”]）
+    
+    子图形SaaS[“&lt;b>SaaS&lt;/b>”]
+    方向TB
+    服务（[“&lt;b>服务&lt;/b>&lt;br/>实时搜索&lt;br/>产品推荐&lt;br/>目录服务&lt;br/>支付服务”]）
+    集成（[“&lt;b>集成&lt;/b>&lt;br/>数据连接&lt;br/>AEM Assets”]）
     end
     
-    SC(["Services Connector"])
+    CF &lt;—> SC &lt;—> SaaS
     
-    subgraph SaaS["<b>SaaS</b>"]
-        direction TB
-        Services(["<b>Services</b><br/>Live Search<br/>Product Recommendations<br/>Catalog Service<br/>Payment Services"])
-        Integrations(["<b>Integrations</b><br/>Data Connection<br/>AEM Assets"])
-    end
-    
-    CF <--> SC <--> SaaS
-    
-    classDef foundationStyle fill:#FFF9E6,stroke:#C7B88A,stroke-width:3px,color:#000000,rx:15,ry:15,font-family:Adobe Clean
-    classDef saasStyle fill:#FFE6F0,stroke:#D4A6B8,stroke-width:3px,color:#000000,rx:15,ry:15,font-family:Adobe Clean
-    classDef boxStyle fill:#FFFFFF,stroke:#000000,stroke-width:2px,color:#000000,rx:15,ry:15,font-family:Adobe Clean
-    classDef connectorStyle fill:#4A4A4A,stroke:#4A4A4A,stroke-width:2px,color:#FFFFFF,rx:15,ry:15,font-family:Adobe Clean
+    classDef foundationStyle填充：#FFF9E6，描边：#C7B88A，描边 — 宽度：3px，颜色：#000000，rx：15，ry：15，font-family：Adobe Clean
+    classDef saasStyle填充：#FFE6F0，描边：#D4A6B8，描边 — 宽度：3px，颜色：#000000，rx：15，ry：15，font-family：Adobe&lt;ph id=&#39;525/>classDef boxStyle填充：#FFFFFF，描边：#000000，描边宽度：2px，颜色：#000000，rx：15，ry：15，font-family：Adobe Clean
+    classDef connectorStyle填充：#4A4A4A，描边：#4A4A4A，描边宽度：2px，颜色：#FFFFFF，rx：15，ry：15，font-family：Adobe Clean
     
     class CF foundationStyle
-    class SaaS saasStyle
-    class CS,CB,Services,Integrations boxStyle
-    class SC connectorStyle
+    class
+    类CS，CB，服务，集成boxStyle
+    类SC connectorStyle
+    

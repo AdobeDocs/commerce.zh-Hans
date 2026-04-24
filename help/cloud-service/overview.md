@@ -5,10 +5,10 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1444'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 请观看以下视频，了解[!DNL Adobe Commerce as a Cloud Service]架构的简介。 视频下方提供了说明体系结构的图。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443277?captions=chi_hans&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 此图说明了[!DNL Adobe Commerce as a Cloud Service]和所有Adobe Experience Cloud解决方案之间的数据流。
 
@@ -67,13 +67,13 @@ ht-degree: 0%
 
 ## Commerce店面
 
-使用由[[!DNL Commerce Storefront]提供支持的Adobe &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront?lang=zh-Hans) [!DNL Edge Delivery Services]，通过[!DNL Storefront Builder]的基于文档的简单创作或可视化编辑在几分钟内创建丰富体验。
+使用由[!DNL Edge Delivery Services]提供支持的Adobe [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront)，通过[!DNL Storefront Builder]的基于文档的简单创作或可视化编辑在几分钟内创建丰富体验。
 
 [!DNL Commerce Storefront]是完全无头的，具有分离架构，通过GraphQL API层提供所有促销服务和数据。 此架构允许团队独立于Commerce Foundation开发其前台，从而提供使用新兴技术构建和测试新接触点的灵活性。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]不支持Luma店面。 如果您是从Adobe Commerce在云中或内部部署迁移，请参阅[现有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hans#existing-storefronts)以获取有关过渡的指导。
+>[!DNL Adobe Commerce as a Cloud Service]不支持Luma店面。 如果您是从Adobe Commerce在云中或内部部署迁移，请参阅[现有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts)以获取有关过渡的指导。
 
 ## 商品推销服务和支付服务
 
@@ -196,11 +196,13 @@ Adobe Commerce on Cloud的典型升级过程包括创建备份、克隆实例、
 
 开发人员可以使用全面的[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/)和[REST API](https://developer.adobe.com/commerce/webapi/rest/)将[!DNL Commerce Foundation]与第三方系统集成并扩展Commerce功能。
 
-<!-- ## Experience Cloud integration
+<!-- 
+## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
-[Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
+[Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
+-->
 
 ## 优点
 
@@ -218,4 +220,4 @@ Adobe Commerce on Cloud的典型升级过程包括创建备份、克隆实例、
 - **快速配置**：在几分钟内快速开始自助配置。 所有服务都已预先配置为无缝协作，以便更快地启动。 根据需要为开发人员实验配置沙盒。
 - **拥有成本低**：不再升级始终保持最新的服务。 使用自动为您应用的最新安全补丁程序，确保安全和合规性。 自动扩展以满足最苛刻的工作负载。
 - **高性能店面**：使用简单的基于文档的创作或可视化编辑器，在几分钟内创建丰富的体验。 使用AI支持的促销服务来提高转化。 店面中内置原生实验。
-- **更快的创新**：将资源从繁琐的维护中释放出来，集中精力构建提供业务价值的新功能。 使用全面的可扩展性和基于标准的技术(JavaScript、HTML、CSS和低代码工具)来构建差异化的体验。 通过单击安装第三方应用程序，以将新功能添加到您的Commerce平台。
+- **更快的创新**：将资源从繁琐的维护中释放出来，集中精力构建提供业务价值的新功能。 使用全面的可扩展性和基于标准的技术（JavaScript、HTML、CSS和低代码工具）来构建差异化的体验。 通过单击安装第三方应用程序，以将新功能添加到您的Commerce平台。

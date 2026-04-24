@@ -1,13 +1,13 @@
 ---
 user-guide-title: '[!DNL Payment Services] 指南'
-user-guide-description: 本指南提供有关为 [!DNL Payment Services] 或 [!DNL Adobe Commerce] 存储安装和配置 [!DNL Magento Open Source] 的详细信息。
+user-guide-description: 本指南提供有关为 [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] 存储安装和配置 [!DNL Payment Services] 的详细信息。
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '110'
 ht-degree: 2%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 2%
 # Commerce的[!DNL Payment Services] {#payment-services}
 
 - [指南概述](guide-overview.md)
-- [&#x200B; [!DNL Payment Services]简介](introduction.md)
-- [&#x200B; [!DNL Payment Services]的兼容性](compatibility.md)
+- [ [!DNL Payment Services]简介](introduction.md)
+- [ [!DNL Payment Services]的兼容性](compatibility.md)
 - [发行说明](release-notes.md)
 - 载入[!DNL Payment Services] {#get-started}
    - [载入概述](onboard.md)
@@ -35,7 +35,7 @@ ht-degree: 2%
    - [信用卡保险存储](vaulting.md)
    - [签出 [!DNL Payment Services]](checkout.md)
    - 管理付款 {#manage}
-      - [&#x200B; [!DNL Payment Services]的行项目](line-items.md)
+      - [ [!DNL Payment Services]的行项目](line-items.md)
       - [退款](refunds.md)
       - [空洞](voids.md)
    - [在管理员中创建订单](create-order.md)
@@ -49,4 +49,4 @@ ht-degree: 2%
 - 安全性和合规性 {#security-compliance}
    - [安全性](security.md)
    - [有效保护欺诈行为](fraud-protection.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=zh-Hans)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

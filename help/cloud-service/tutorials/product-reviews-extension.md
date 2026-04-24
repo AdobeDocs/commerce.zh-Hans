@@ -9,16 +9,16 @@ level: Intermediate
 type: Tutorial
 hide: true
 hidefromtoc: true
-source-git-commit: 9c76bae29c05909406a40ca03a2b3d242db05f3f
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2533'
 ht-degree: 0%
 
 ---
 
 # 产品审核扩展教程
 
-本教程将指导您完成构建一个扩展，该扩展允许客户使用[!DNL Adobe Commerce as a Cloud Service]和AI辅助开发工具为具有[!DNL Adobe App Builder]后端的店面提交产品审查和问答(Q&amp;A)内容。 该扩展为购物者提供了REST API端点，用于查看和提交产品审查和问答(Q&amp;A)内容，并将其显示在产品详细信息页面(PDP)上。
+本教程将指导您完成构建一个扩展，该扩展允许客户使用[!DNL Adobe App Builder]和AI辅助开发工具为具有[!DNL Adobe Commerce as a Cloud Service]后端的店面提交产品审查和问答(Q&amp;A)内容。 该扩展为购物者提供了REST API端点，用于查看和提交产品审查和问答(Q&amp;A)内容，并将其显示在产品详细信息页面(PDP)上。
 
 您可以构建两个部分：
 
@@ -53,8 +53,8 @@ bash --version
 
 此外，请验证以下各项：
 
-- 您有一个包含产品数据的[!DNL Adobe Commerce as a Cloud Service]实例。 查看[Commerce Cloud服务实例](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/overview){target="_blank"}。
-- 您有一个店面项目连接到您的[!DNL Commerce]实例。 如果没有店面，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans){target="_blank"}中的步骤操作。
+- 您有一个包含产品数据的[!DNL Adobe Commerce as a Cloud Service]实例。 查看[Commerce Cloud服务实例](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}。
+- 您有一个店面项目连接到您的[!DNL Commerce]实例。 如果没有店面，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}中的步骤操作。
 - 已安装`aem` CLI：
 
   ```bash
@@ -156,7 +156,7 @@ STOP and ask me any clarifying questions you have about the requirements before 
 代理程序会生成需求和体系结构文档供您审查。 验证要求与您提供的答案是否匹配，以及体系结构是否涵盖：
 
 - 四个Web操作：`reviews-get`、`reviews-post`、`qa-get`、`qa-post`
-- 使用键符合允许模式（`aio-lib-state` — 无冒号）的`[a-zA-Z0-9-_.]`的持久性
+- 使用键符合允许模式（`[a-zA-Z0-9-_.]` — 无冒号）的`aio-lib-state`的持久性
 - 以JSON字符串形式存储的状态值（不是原始对象或数组）
 - 自包含包 — `product-reviews`包内的共享代码（util、常量），而不是通过转义包的`../../`路径进行
 
@@ -309,7 +309,7 @@ Create a service contract for the Product Review and Q&A application that define
 在开始店面集成之前，请验证您是否具备以下条件：
 
 - 店面项目已连接到您的[!DNL Commerce]实例
-- 使用CLI安装的Commerce storefront AI工具[&#128279;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+- 使用CLI安装的Commerce storefront AI工具[](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 - `PRODUCT_REVIEW_QA_CONTRACT.md`文件已复制到您的店面项目中
 
 ### 步骤1：验证环境

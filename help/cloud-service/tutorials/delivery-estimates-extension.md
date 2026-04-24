@@ -9,16 +9,16 @@ level: Intermediate
 type: Tutorial
 hide: true
 hidefromtoc: true
-source-git-commit: 3fc8982613df7b1155cdfb08ac4b56de6d1ce4f6
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3398'
 ht-degree: 0%
 
 ---
 
 # 投放估计扩展教程
 
-本教程将指导您使用[!DNL Adobe Commerce as a Cloud Service]、[!DNL Adobe App Builder]和AI辅助开发工具为[!DNL Edge Delivery Services]构建投放日期估计扩展。 该扩展从外部API获取配送时间和配送日期估计值，并在店面中显示它们。
+本教程将指导您使用[!DNL Adobe App Builder]、[!DNL Edge Delivery Services]和AI辅助开发工具为[!DNL Adobe Commerce as a Cloud Service]构建投放日期估计扩展。 该扩展从外部API获取配送时间和配送日期估计值，并在店面中显示它们。
 
 您可以构建两个部分：
 
@@ -53,8 +53,8 @@ bash --version
 
 此外，请验证以下各项：
 
-- 您有一个包含产品数据的[!DNL Adobe Commerce as a Cloud Service]实例。 查看[Commerce Cloud服务实例](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/overview){target="_blank"}。
-- 您有一个店面项目连接到您的[!DNL Commerce]实例。 如果没有店面，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans){target="_blank"}中的步骤操作。
+- 您有一个包含产品数据的[!DNL Adobe Commerce as a Cloud Service]实例。 查看[Commerce Cloud服务实例](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}。
+- 您有一个店面项目连接到您的[!DNL Commerce]实例。 如果没有店面，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}中的步骤操作。
 - 已安装`aem` CLI：
 
   ```bash
@@ -288,7 +288,7 @@ Add a new runtime action to this project that implements the API in @docs/PIPEDR
 https://<namespace>.adobeioruntime.net/api/v1/web/mock-delivery-api/delivery-estimate
 ```
 
-已针对`MOCK_API_KEY`中的`.env`环境变量验证身份验证。
+已针对`.env`中的`MOCK_API_KEY`环境变量验证身份验证。
 
 >[!ENDTABS]
 
@@ -459,7 +459,7 @@ npm run subscribe-webhook
 
 1. 单击&#x200B;**[!UICONTROL Refresh registrations]**。
 
-1. 在&#x200B;**[!UICONTROL Apps]**&#x200B;侧边栏中导航到&#x200B;**[!UICONTROL Delivery Estimates]** > [!DNL Admin]。
+1. 在[!DNL Admin]侧边栏中导航到&#x200B;**[!UICONTROL Apps]** > **[!UICONTROL Delivery Estimates]**。
 
 1. 通过启用该功能并指定所需的设置（包括API URL和API密钥、源地址、默认运营商、缓存TTL以及运营商代码映射）来完成配置。
 
@@ -537,7 +537,7 @@ Produce a spec called STOREFRONT_API_SPEC that I can use in the storefront works
 在开始店面集成之前，请验证您是否具备以下条件：
 
 - 店面项目已连接到您的[!DNL Commerce]实例
-- 使用CLI安装的Commerce storefront AI工具[&#128279;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+- 使用CLI安装的Commerce storefront AI工具[](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 - 已将`STOREFRONT_API_SPEC.md`文件复制到店面项目的`docs/`文件夹中
 
 ### 步骤1：验证环境
@@ -701,7 +701,7 @@ Run complete browser testing using the following product page 'http://localhost:
 | 症状 | 原因 | 修复 |
 |---------|-------|-----|
 | 管理员UI配置操作返回了`400 Bad Request`和“请求定义了不允许的参数（保留的属性）” | 前端挂接正在请求正文中发送`__ow_method`。 以`__ow_`为前缀的属性由OpenWhisk保留，当操作具有`final: true`时拒绝。 | 发送自定义`method`属性而不是`__ow_method`。 后端操作首先读取`params.method`，然后回退到`params.__ow_method`（运行时自动提供）。 |
-| `aio app deploy`失败，“productDependencies中需要maxVersion” | CLI验证需要`minVersion`产品依赖项中的`maxVersion`和`app.config.yaml`。 | 向`maxVersion`中的每个`productDependencies`条目添加一个`app.config.yaml`值。 |
+| `aio app deploy`失败，“productDependencies中需要maxVersion” | CLI验证需要`app.config.yaml`产品依赖项中的`minVersion`和`maxVersion`。 | 向`app.config.yaml`中的每个`productDependencies`条目添加一个`maxVersion`值。 |
 | 部署命令失败 | 未在部署之前配置凭据。 必须先进行`.env`、工作区选择和OAuth同步。 | 请遵循正确的顺序： `cp env.dist .env` > `aio app use --merge` > `npm run sync-oauth-credentials` > `aio app deploy`。 |
 
 {style="table-layout:auto"}
@@ -712,9 +712,9 @@ Run complete browser testing using the following product page 'http://localhost:
 |---------|-------|-----|
 | 登录购物者未出现PDP投放估计 | PDP块未初始化`account`放置项，因此`getCustomerAddress()`静默失败，并且未获取任何估计值。 | 直接使用`CORE_FETCH_GRAPHQL.fetchGraphQl()`查询购物者地址，而不是依赖帐户放置区API。 这适用于任何页面。 |
 | 修复GraphQL后PDP仍不显示 | 使用了方法名称`CORE_FETCH_GRAPHQL.fetch()`中的拼写错误而不是`CORE_FETCH_GRAPHQL.fetchGraphQl()`。 | 使用正确的方法名称： `fetchGraphQl` （大写Q，小写l）。 |
-| 首次加载时未显示签出投放日期 | `checkout/updated`事件侦听器在`checkout/initialized`触发后注册，因此缺少初始数据。 | 添加具有`checkout/initialized`的`{ eager: true }`侦听器，以捕获注册之前发出的事件。 保留`checkout/updated`侦听器以进行后续更改。 |
+| 首次加载时未显示签出投放日期 | `checkout/updated`事件侦听器在`checkout/initialized`触发后注册，因此缺少初始数据。 | 添加具有`{ eager: true }`的`checkout/initialized`侦听器，以捕获注册之前发出的事件。 保留`checkout/updated`侦听器以进行后续更改。 |
 | 未显示购物车投放评估 | `block.appendChild(fragment)`将所有子项移出片段，因此`fragment.querySelector('.cart__delivery-estimate')`返回null。 | 在附加操作后从`block`而不是`fragment`进行查询。 |
-| 统一费率配送在结账时未显示交货日期 | 按设计 — `CARRIER_MAP`仅将DPS映射到标准，并将Fedex映射到表示。 统一速率在外部API中没有对应的载体。 | 不是错误。 要添加其他运营商的估计值，请扩展`CARRIER_MAP`中的`scripts/delivery-estimates.js`并在后端扩展中配置该运营商。 |
+| 统一费率配送在结账时未显示交货日期 | 按设计 — `CARRIER_MAP`仅将DPS映射到标准，并将Fedex映射到表示。 统一速率在外部API中没有对应的载体。 | 不是错误。 要添加其他运营商的估计值，请扩展`scripts/delivery-estimates.js`中的`CARRIER_MAP`并在后端扩展中配置该运营商。 |
 
 {style="table-layout:auto"}
 
