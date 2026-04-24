@@ -54,7 +54,7 @@ ht-degree: 0%
 
 * 修复了导入文件验证可能失败的问题。<!-- CCSAAS-4364 -->
 
-* 已从&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**中的&#x200B;**[!UICONTROL Catalog]**部分删除&#x200B;**[!UICONTROL Recently Viewed/Compared Products]**配置，因为它在[!DNL Adobe Commerce as a Cloud Service]管理员中不受支持。<!-- ACCS-793 -->
+* 已从&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;中的&#x200B;**[!UICONTROL Catalog]**&#x200B;部分删除&#x200B;**[!UICONTROL Recently Viewed/Compared Products]**&#x200B;配置，因为它在[!DNL Adobe Commerce as a Cloud Service]管理员中不受支持。<!-- ACCS-793 -->
 
 {{accs-release}}
 
@@ -372,7 +372,7 @@ mutation {
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]中不可用的报告仅标记为PaaS （[!BADGE 仅PaaS ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}）。
+>[!DNL Adobe Commerce as a Cloud Service]中不可用的报告仅标记为PaaS （[!BADGE 仅PaaS &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}）。
 
 ### 通过REST API捕获自定义发票金额
 
