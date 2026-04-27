@@ -2,9 +2,9 @@
 title: 管理您的应用程序
 description: 关联、配置和取消关联App Builder应用程序与您的Commerce实例。
 feature: App Builder, Extensibility, Integration
-source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,22 @@ ht-degree: 0%
 应用程序管理器将App Builder应用程序与其Commerce实例关联。 配置表单会根据应用程序的架构动态呈现，因此无需自定义管理员UI开发。 应用程序管理器通过Commerce自动生成的表单来配置设置。
 
 ![应用管理](assets/app-management-view.png){width="500" zoomable="yes"}
+
+## 在管理员中查找应用程序
+
+在&#x200B;**[!UICONTROL Apps]** > **[!UICONTROL App Management]**&#x200B;下，每个应用程序都显示为卡片。 该列表可包含与所选Adobe IMS组织的Adobe Commerce实例关联的每个应用程序。 使用信息卡上方的控件来缩小结果范围：
+
+| 控件 | 描述 |
+| --- | --- |
+| **按应用程序筛选……** | 按应用程序名称搜索。 |
+| **状态** | 按生命周期状态限制卡片。 **所有状态**&#x200B;显示每个应用；其他值包括&#x200B;**关联**、**已安装**、**已部分安装**&#x200B;和&#x200B;**未关联**。 每张信息卡上的状态与列表中的彩色指示器匹配。 |
+| **可扩展性模式** | 根据应用程序使用的功能限制信息卡。 **所有可扩展性模式**&#x200B;显示每个应用程序；其他值与每个卡上的徽章一致，如&#x200B;**业务配置**、**管理UI SDK**、**Webhooks**&#x200B;和&#x200B;**活动**。 |
+
+搜索文本和两个下拉列表同时应用（逻辑AND）。 若要再次显示完整列表，请将&#x200B;**状态**&#x200B;和&#x200B;**可扩展性模式**&#x200B;设置回它们的&#x200B;**所有……**&#x200B;选项，并清除搜索字段。
+
+## 获取应用程序
+
+**[!UICONTROL Acquire App]**&#x200B;打开[Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}的新浏览器选项卡（或单独的浏览器视图），您可以在其中发现与Commerce相关的市场列表并将应用程序添加到您的Adobe IMS组织。 获取、批准和部署应用程序后，应用程序将在[!DNL App Management]中显示为[关联和安装](#associate-an-app)。
 
 ## 先决条件
 
@@ -30,7 +46,7 @@ ht-degree: 0%
 
 观看本视频，了解如何将应用程序与Commerce实例关联并配置设置。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478965?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## 关联应用程序
 
