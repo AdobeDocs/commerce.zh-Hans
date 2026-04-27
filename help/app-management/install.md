@@ -68,7 +68,7 @@ ht-degree: 0%
 
 如果您需要从Adobe Exchange安装App Builder应用程序（例如，预建的集成或市场应用程序），请参阅[从Adobe Exchange安装App Builder应用程序](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以了解分步说明。
 
-安装并部署应用程序后，使用[!DNL App Management]将其与您的Commerce实例](manage-app.md#associate-an-app)关联并配置其设置。[
+安装并部署应用程序后，使用[!DNL App Management]将其与您的Commerce实例[&#128279;](manage-app.md#associate-an-app)关联并配置其设置。
 
 ## Commerce webhook和应用程序
 
