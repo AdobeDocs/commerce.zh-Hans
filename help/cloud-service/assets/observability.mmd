@@ -1,0 +1,48 @@
+---
+source-git-commit: 65c2720f8e21089e45948a2a5fe3828ca28f0dbd
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
+
+---
+%%{ init： { &quot;flowchart&quot;： { &quot;curve&quot;： &quot;linear&quot; } } }%%
+
+图形BT
+子图形commerce[&quot;Adobe Commerce&quot;]
+event_mod[“事件\n模块”]
+webhook_mod[&quot;Webhook \n模块&quot;]
+admin_sdk[“管理员UI \n SDK”]
+结束
+
+    subgraph appbuilder[&quot;App Builder&quot;]
+    int_sk[&quot;集成\n入门工具包&quot;]
+    checkout_sk[&quot;签出\n入门工具包&quot;]
+    generic_app[&quot;通用\n应用程序&quot;]
+    end
+    
+    subgraph apimesh[&quot;API网格&quot;]
+    api_mesh_log[&quot;API网格\n日志记录&quot;]
+    end
+    
+    subgraph storefront[&quot;Storefront&quot;]
+    cdn_rum[&quot;CDN / Real User \n监视”]
+    op_tel[“操作\n遥测”]
+    end
+    
+    commerce —> obs_mod[“可观察性\n模块”]
+    appbuilder —> aio_tel[“AIO库\n遥测”]
+    
+    obs_mod —> OTel[“OpenTelemetry”]
+    aio_tel —> OTel
+    
+    OTel —>后端[“第三方可观察性”\n（例如： Grafana， New Relic splunk）”]
+    api_mesh_log —>后端
+    cdn_rum —>后端
+    op_tel —>后端
+    
+    样式商务填充：#cc0000，颜色：#fff，描边：#cc0000
+    样式appbuilder填充：#cc0000，颜色：#fff，描边：#cc0000
+    样式模板填充：#cc0000，颜色：#fff，描边：#cc0000
+    样式店面填充：#cc0000，颜色：#fff，描边：#cc0000
+    样式后端填充：#f0f0f0，颜色：#333，描边：#999
+    样式OTEL填充颜色：#fff #333 #333
