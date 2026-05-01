@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4f4b7471b09b4d6276ed4962124f8380453fdb5a
+source-git-commit: 4b38ce9b1585fa7414e323b08bf8d09d6da46a6c
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1439'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年4月30日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>扩展了<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer连接器概述</a>，其中包含的主要优势、端到端架构（新图表）、更清晰的范围映射、典型的设置和同步工作流、支持的方案以及先决条件或职责，因此团队可以更轻松地评估和运营集成。</p>
+</td>
+      <td>
+        反馈、重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年4月27日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>为Adobe Commerce as a Cloud Service添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview">可观察性</a>页面。</p>
+</td>
+      <td>
+        反馈，新主题
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf83f213d1774845c4c99f3b154e9fb3220c3cd1">提交</a></td>
+    </tr>
+    <tr>
+      <td><p>更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app">管理您的应用程序</a>，介绍如何在“管理员”（“搜索”、“状态”和“可扩展性模式”筛选器）和“获取应用程序”路径中查找应用程序以访问Adobe Exchange，其中包含<a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/overview">应用程序管理概述</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/install">安装和访问应用程序管理</a>中的链接。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/780cef7af3574cd846fd7ee82d7814f2ebe9d6cc">提交</a></td>
+    </tr>
+    <tr>
+      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41035e75111d370e5dc40c17607337ae75f11fa0">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年4月24日
 
@@ -23,7 +83,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -45,7 +105,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>阐明了监视SaaS数据导出和同步的位置 — <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">数据管理仪表板</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">数据馈送同步状态</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/data-sync">Commerce Optimizer数据同步</a>。</p>
+      <td><p>阐明了监视SaaS数据导出和同步的位置 — <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">数据管理仪表板</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">数据馈送同步状态</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Commerce Optimizer数据同步</a>。</p>
 </td>
       <td>
         反馈，技术
@@ -67,7 +127,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes#latest">release notes</a> for the second April Production release for Adobe Commerce as a Cloud Service.</p>
+      <td><p>为Adobe Commerce as a Cloud Service的4月第二版生产版本更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -77,7 +137,7 @@ ht-degree: 1%
   </tbody>
 </table>
 
-### April 14, 2026
+### 2026年4月14日
 
 <table style="table-layout:auto;">
   <thead>
@@ -89,15 +149,15 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/integrations-overview">[!DNL Adobe Commerce Optimizer] integrations Overview</a> topic describing how each available integration—Adobe Commerce Optimizer Connector, AEM Assets, AEM Sites Optimizer, and Salesforce Commerce Connector—fits within Adobe Commerce Optimizer, with links to setup and configuration guides.</p>
+      <td><p>添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/integrations-overview">[!DNL Adobe Commerce Optimizer]集成概述</a>主题，介绍每个可用的集成（Adobe Commerce Optimizer Connector、AEM Assets、AEM Sites Optimizer和Salesforce Commerce Connector）如何在Adobe Commerce Optimizer中集成，并提供指向设置和配置指南的链接。</p>
 </td>
       <td>
-        Feedback, new topic
+        反馈，新主题
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41c8bfe8f15b1988f574fe589ba6e27bb1839ba8">提交</a></td>
     </tr>
     <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -105,17 +165,17 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8f2cc1e79ede56192a8ab03194b0f69854f89f7b">提交</a></td>
     </tr>
     <tr>
-      <td><p>Documented <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/release-notes">AEM Assets Integration v1.3.5</a> and corrected <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/synchronize/custom-match">Custom automatic matching</a> API request fields (<code class="language-plaintext highlighter-rouge">eventData</code>, <code class="language-plaintext highlighter-rouge">productSku</code>).</p>
+      <td><p>记录了<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets集成v1.3.5</a>并更正了<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">自定义自动匹配</a> API请求字段(<code class="language-plaintext highlighter-rouge">eventData</code>， <code class="language-plaintext highlighter-rouge">productSku</code>)。</p>
 </td>
       <td>
-        New topic
+        新主题
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/cd7a332dd09840aabcc0efae081ba0a713506897">提交</a></td>
     </tr>
   </tbody>
 </table>
 
-### April 9, 2026
+### 2026年4月9日
 
 <table style="table-layout:auto;">
   <thead>
@@ -127,7 +187,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/launch/launch-checklist">启动项核对清单</a>，作为启动前验证生产[!DNL Adobe Commerce Optimizer]设置、店面上线、SEO、CDN、集成、安全性、分析和测试的参考。</p>
+      <td><p>添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist">启动项核对清单</a>，作为启动前验证生产[!DNL Adobe Commerce Optimizer]设置、店面上线、SEO、CDN、集成、安全性、分析和测试的参考。</p>
 </td>
       <td>
         反馈，新主题
@@ -149,7 +209,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>为Adobe Commerce Optimizer添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add">类别推销</a>：将类别规则与智能排名和类别页面上的手动操作结合使用。</p>
+      <td><p>为Adobe Commerce Optimizer添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add">类别推销</a>：将类别规则与智能排名和类别页面上的手动操作结合使用。</p>
 </td>
       <td>
         新主题
@@ -171,7 +231,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>在Adobe Commerce as a Cloud Service中添加了有关<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/product-files">将文件添加到产品</a>的指南。</p>
+      <td><p>在Adobe Commerce as a Cloud Service中添加了有关<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/product-files">将文件添加到产品</a>的指南。</p>
 </td>
       <td>
         重大更新
@@ -193,7 +253,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/recommendations/filters">推荐筛选器</a>，其中包含价格和产品筛选器过程、用于筛选和显示价格的基于价格手册的最终价格行为，以及筛选器产品UI的新屏幕截图。</p>
+      <td><p>更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters">推荐筛选器</a>，其中包含价格和产品筛选器过程、用于筛选和显示价格的基于价格手册的最终价格行为，以及筛选器产品UI的新屏幕截图。</p>
 </td>
       <td>
         重大更新
@@ -215,7 +275,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/configure/payments-home">Payment Services主页</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/financial-reports/reporting">报表</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/get-started/onboard">载入概述</a>，其中包含SaaS/ACCS屏幕截图和UI指南（载入横幅、以交易为中心的主页、交易网格）。</p>
+      <td><p>更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/payments-home">Payment Services主页</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/financial-reports/reporting">报表</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/onboard">载入概述</a>，其中包含SaaS/ACCS屏幕截图和UI指南（载入横幅、以交易为中心的主页、交易网格）。</p>
 </td>
       <td>
         重大更新
@@ -223,7 +283,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/79c71b55e463d7e9570fe67b664b4e77a0d741f7">提交</a></td>
     </tr>
     <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了4月生产<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>为Adobe Commerce as a Cloud Service添加了4月生产<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -245,7 +305,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>使用最新的沙盒部署更新Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>使用最新的沙盒部署更新Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -267,7 +327,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已使用最新的沙盒发行信息更新Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>已使用最新的沙盒发行信息更新Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -289,7 +349,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/app-management/install">安装和访问应用程序管理</a>，其中包含Commerce Webhook部分，以及应用程序管理仪表板中Webhook验证错误的屏幕截图。</p>
+      <td><p>更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/install">安装和访问应用程序管理</a>，其中包含Commerce Webhook部分，以及应用程序管理仪表板中Webhook验证错误的屏幕截图。</p>
 </td>
       <td>
         技术
@@ -297,7 +357,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/86c0945bbb0a562de1b66d420dec2a05d4d81e5f">提交</a></td>
     </tr>
     <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes#latest">发行说明</a>以将3月版本# 2移至生产环境。</p>
+      <td><p>更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">发行说明</a>以将3月版本# 2移至生产环境。</p>
 </td>
       <td>
         重大更新
@@ -319,7 +379,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Added a new automated installation for the <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">Tutorial Prerequisites</a>.</p>
+      <td><p>添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">教程先决条件</a>的全新自动安装。</p>
 </td>
       <td>
         重大更新
@@ -341,7 +401,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Added new topics:<br />- <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer">Login as a Customer</a> for Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/">Gift Card Account REST Endpoints</a> for Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/">Email Triggering through REST</a> for Adobe Commerce as a Cloud Service.<br />Updated <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">Release Notes</a> with March 2026 - release # 2 release information.</p>
+      <td><p>添加了新主题：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer">作为客户登录</a> for Adobe Commerce as a Cloud Service。<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/">Adobe Commerce as a Cloud Service的礼品卡帐户REST端点</a>。<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/">Adobe Commerce as a Cloud Service通过REST触发的电子邮件</a>。<br />通过2026年3月更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a> — 发行编号2发行信息。</p>
 </td>
       <td>
         新主题
@@ -363,7 +423,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/permissions">Configure IMS user permissions for the AEM Assets Integration</a> to explain how to configure IMS and delivery-tier permissions to enable the Asset Selector and auto-populated configuration fields (Program ID, Environment ID, Domain mapping) in the Admin.</p>
+      <td><p>添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions">为AEM Assets集成配置IMS用户权限</a>，以说明如何配置IMS和交付层权限以启用“资产选择器”和在“管理”中自动填充的配置字段（程序ID、环境ID、域映射）。</p>
 </td>
       <td>
         新主题
@@ -385,7 +445,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/manage-assets">管理Commerce媒体资源</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/synchronize/default-match">默认的自动匹配</a>，为在AEM Assets中配置产品资源的用户提供了更清晰的导航指南。</p>
+      <td><p>更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/manage-assets">管理Commerce媒体资源</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/default-match">默认的自动匹配</a>，为在AEM Assets中配置产品资源的用户提供了更清晰的导航指南。</p>
 </td>
       <td>
         技术
@@ -407,7 +467,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/release-notes">AEM Assets集成发行说明</a>的v1.3.4：支持Adobe Commerce 2.4.9-beta1和PHP 8.5，以及在配置UI中支持域映射自动填充。</p>
+      <td><p>更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets集成发行说明</a>的v1.3.4：支持Adobe Commerce 2.4.9-beta1和PHP 8.5，以及在配置UI中支持域映射自动填充。</p>
 </td>
       <td>
         技术
@@ -429,7 +489,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>使用生产环境的最新版本更新了Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>使用生产环境的最新版本更新了Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -437,7 +497,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd9b660729f7c8616347d3222fdfb3b83a774e56">提交</a></td>
     </tr>
     <tr>
-      <td><p>Added new <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/app-management/overview">App Management</a> documentation guide to introduce App Management and how to associate, configure, and manage App Builder applications with your Commerce instance.</p>
+      <td><p>添加了新的<a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/overview">应用程序管理</a>文档指南，以介绍应用程序管理以及如何将App Builder应用程序与Commerce实例相关联、配置和管理。</p>
 </td>
       <td>
         新主题
@@ -459,12 +519,12 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Added storefront integration to the <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/tutorials/ratings-extension">Ratings tutorial</a>.</p>
+      <td><p>已将storefront集成添加到<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension">评级教程</a>。</p>
 </td>
       <td>
         重大更新
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.zh-Hans/pull/15">拉取请求</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/pull/15">拉取请求</a></td>
     </tr>
   </tbody>
 </table>
@@ -481,132 +541,20 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Published the <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector v1.0.9 documentation</a> for the general availability release.</p>
+      <td><p>发布了<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector v1.0.9文档</a>，了解正式发布情况。</p>
 </td>
       <td>
-        Major update, new topic, technical
+        重大更新、新主题、技术
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/216958e287993d1a212fb59fdaa8e2ba3e931b97">提交</a></td>
     </tr>
     <tr>
-      <td><p>Updated the Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">release notes</a> with the latest Sandbox release.</p>
+      <td><p>已使用最新沙盒版本更新Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6fc1fbd8b70459e6473b48fdc4bb6fc75f6dc559">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月2日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/best-practice#leverage-product-metadata">Live Search Best Practices</a> with comprehensive guidance on choosing searchable attributes, including three real-world examples of common configuration issues and a troubleshooting checklist to improve search relevance.</p>
-</td>
-      <td>
-        反馈
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/f55cbabdc50af4e38b57ece217e5133d1f3fada8">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>Added instructions for deleting an API key to the <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/integration-services/saas#delapikey">Commerce Services Connector</a> documentation.</p>
-</td>
-      <td>
-        反馈
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a12a0bca1d4a7f3b9350c704275a9e3128fa2b37">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>Added a new topic about the <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/configure-aco">integration of AEM Assets with Adobe Commerce Optimizer</a>.</p>
-</td>
-      <td>
-        新主题
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf1d88ef7daec25872678bb27bce0bb7c97fd296">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年2月26日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion">Bulk data migration tool</a> with an important note that Catalog configuration is not imported automatically.</p>
-</td>
-      <td>
-        反馈
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1ac84e8f10f61a6b8f995f348d4872773d2890e8">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/release-notes">Payment Services</a>的v2.14.0发行文档，包括适用于欧洲市场的替代支付方式(APM)、快速结帐按钮和买方所在国家/地区沙盒配置。</p>
-</td>
-      <td>
-        重大更新，新主题
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6727102c54e0ac81df289ecd66ec61156662b8b9">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年2月25日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>现在提供了Adobe Commerce App Builder的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/migration/coding-tools">AI编码开发人员工具</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/tutorials/ratings-extension">Ratings扩展教程</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/tutorials/shipping-method-extension">Shipping方法扩展教程</a>以及<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">教程先决条件</a>页面。</p>
-</td>
-      <td>
-        新主题
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/508a6b330b240b1038d2a9705a017d540816cc95">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年2月24日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>使用生产环境的最新版本更新了Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a0c13760783ee8d492eed6e2c989153ded5afa47">提交</a></td>
     </tr>
   </tbody>
 </table>
