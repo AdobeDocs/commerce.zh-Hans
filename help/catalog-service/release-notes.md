@@ -3,9 +3,9 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: Adobe Commerce的 [!DNL Catalog Service] 的最新发行信息。
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: eb7e3e86426abb71b8b5e6d17936d26cb088edb3
+source-git-commit: a7a48e0150d817d29c147c504353245f12d2089c
 workflow-type: tm+mt
-source-wordcount: '2472'
+source-wordcount: '2873'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,19 @@ ht-degree: 0%
 
 ## 店面目录服务
 
+### v1.53发布
+
+_2026年5月4日_
+
+![修复](../assets/fix.svg)店面产品价格现在显示所有产品类型的正确货币代码（例如，USD）。 以前，某些产品显示`NONE`而不是预期的货币，从而导致缺少价格。 此更新确保在整个店面一致且准确地呈现价格。<!--DATA-7115-->
+
+### v1.52发布
+
+_2026年4月29日_
+
+![新](../assets/new.svg)已强制限制Adobe Commerce Optimizer和Adobe Commerce as a Cloud Service的每个请求最多100个SKU
+根据[记录的限制和边界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)的客户端。<!--DATA-7156-->
+
 ### v1.51发布
 
 _2026年4月17日_
@@ -45,19 +58,25 @@ _2026年4月17日_
 
 _2026年4月7日_
 
-![新](../assets/new.svg) `categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)`查询现在将系列输入参数作为可选参数。 这允许通过概要访问，而不依赖于特定的族参数，从而允许更灵活的类别检索。 此查询仅适用于[Adobe Commerce Optimizer促销服务](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)。
+![新](../assets/new.svg) [categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查询现在将系列输入参数作为可选参数。 这允许通过概要访问，而不依赖于特定的族参数，从而允许更灵活的类别检索。 此查询仅适用于[Adobe Commerce Optimizer促销服务](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)。
+
+### v1.49发布
+
+_2026年3月24日_
+
+![新](../assets/new.svg)添加了对计算并返回动态捆绑包价格范围的支持。<!--DATA-7014-->
 
 ### v1.48发布
 
 _2026年2月19日_
 
-![新建](../assets/new.svg) GraphQL API中的`categoryTree`查询现在返回类别描述、图像和SEO元标记。 此更新提供了店面开发人员显示类别图像所需的数据，并通过适当的元标题、描述和关键词改进了搜索引擎优化。 仅在使用用于Headless店面&lt;[的](https://developer.adobe.com/commerce/services/optimizer/)可组合目录数据模型<!--DATA-6933-->的Commerce实施上受支持
+![新建](../assets/new.svg) GraphQL API中的`categoryTree`查询现在返回类别描述、图像和SEO元标记。 此更新提供了店面开发人员显示类别图像所需的数据，并通过适当的元标题、描述和关键词改进了搜索引擎优化。 仅在使用用于Headless店面&lt;<!--DATA-6933-->的[可组合目录数据模型](https://developer.adobe.com/commerce/services/optimizer/)的Commerce实施上受支持
 
 ### v1.47发布
 
 _2026年2月12日_
 
-![新](../assets/new.svg) API服务现在支持`CategoryProductView`类型，支持按类别对产品进行增强的视图和查询。 此更新使开发人员能够根据类别高效地检索和筛选产品数据，从而提高类别驱动用例的灵活性和性能。 有关详细信息，请参阅[在店面上实施类别](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)。 仅在Commerce实施上支持使用[针对Headless店面](https://developer.adobe.com/commerce/services/optimizer/)的可组合目录数据模型<!--DATA-6949-->
+![新](../assets/new.svg) API服务现在支持`CategoryProductView`类型，支持按类别对产品进行增强的视图和查询。 此更新使开发人员能够根据类别高效地检索和筛选产品数据，从而提高类别驱动用例的灵活性和性能。 有关详细信息，请参阅[在店面上实施类别](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)。 仅在Commerce实施上支持使用[针对Headless店面<!--DATA-6949-->的可组合目录数据模型](https://developer.adobe.com/commerce/services/optimizer/)
 
 ### v1.46发布
 
@@ -69,7 +88,7 @@ _2025年12月11日_
 
 _2025年11月17日_
 
-![新](../assets/new.svg) **按名称筛选属性**- `productSearch` GraphQL查询现在支持使用`names`字段筛选产品属性。 <!--DATA-6831-->使用此筛选器，您可以：
+![新](../assets/new.svg) **按名称筛选属性**- `productSearch` GraphQL查询现在支持使用`names`字段筛选产品属性。<!--DATA-6831--> 通过此过滤器，您可以：
 
 - 通过仅请求特定属性减小响应有效负载大小
 - 与现有`roles`筛选器结合，按可见性角色和属性名称缩小
@@ -125,7 +144,7 @@ _2025年11月3日_
 - 使用图层蒙版控制字段级覆盖
 - 支持针对高级、季节和移动设备优化的内容层
 
-  使用现有`products`查询检索图层，从请求标头在服务器端应用，无需更改架构。 请参阅[Adobe Commerce Optimizer指南](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-layer)中的&#x200B;_目录层_。
+  使用现有`products`查询检索图层，从请求标头在服务器端应用，无需更改架构。 请参阅&#x200B;_Adobe Commerce Optimizer指南_&#x200B;中的[目录层](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer)。
 
 ![修复](../assets/fix.svg)当父产品无定价时，现在可以查询分组产品；子产品返回其自己的可见性角色。<!--DATA-6779-->
 
@@ -236,7 +255,7 @@ _2025年7月15日_
 
 _2025年6月20日_
 
-![新](../assets/new.svg) **分层价格手册配置** — 父 — 子价格手册的准确价格范围。 计算会遵循层次结构和继承的规则；在链接多个价格手册时可减少定价错误。 仅限Adobe Commerce Optimizer。 查看[价格手册](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/pricebooks)。
+![新](../assets/new.svg) **分层价格手册配置** — 父 — 子价格手册的准确价格范围。 计算会遵循层次结构和继承的规则；在链接多个价格手册时可减少定价错误。 仅限Adobe Commerce Optimizer。 查看[价格手册](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks)。
 
 ![新](../assets/new.svg) **不区分大小写的键** — 查询中的键查找现在不区分大小写，减少了键大小写错误。<!--DATA-6494, DCAT-2495-->
 
@@ -365,7 +384,7 @@ _2024年5月23日_
 
 ![修复](../assets/fix.svg) <!--DATA-5033-->选项值的`InStock`标记现在遵循产品变体的作用域`enabled`状态。
 
-![修复](../assets/fix.svg) <!--DATA-5888-->添加了对产品价格的支持，最高可支持16位和4位小数。 从[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以应用更新。
+![修复](../assets/fix.svg) <!--DATA-5888-->添加了对产品价格的支持，最高可支持16位和4位小数。 从[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以应用更新。
 
 #### 已知限制
 
@@ -399,7 +418,7 @@ _2024年2月22日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hans)现在可用于数据流（产品推荐、实时搜索、目录服务）。 需要`catalog-service`个中继包v3.1.0+。
+![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)现在可用于数据流（产品推荐、实时搜索、目录服务）。 需要`catalog-service`个中继包v3.1.0+。
 
 ### v1.16发布
 
@@ -474,7 +493,7 @@ _2023年3月28日_
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![新](../assets/new.svg)已将样本添加到[`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)查询。
-![新](../assets/new.svg)已添加使用`entityId`API Mesh[获取](mesh.md)的功能。
+![新](../assets/new.svg)已添加使用[API Mesh](mesh.md)获取`entityId`的功能。
 
 ### v1.5发布
 
@@ -567,7 +586,7 @@ _2025年10月14日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) **数据服务升级**—`magento/data-services`依赖关系已更新为^8.0.0。在升级之前，验证环境和自定义数据服务API的使用情况以实现8.x兼容性。
+![新](../assets/new.svg) **数据服务升级**—`magento/data-services`依赖关系已更新为^8.0.0。 在升级之前，验证环境和自定义数据服务API的使用情况以实现8.x兼容性。
 
 ![新](../assets/new.svg)更新了3.3.0版本的版本和元数据。
 
@@ -577,7 +596,7 @@ _2024年4月12日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-已为3.2.0更新![新](../assets/new.svg)版本和元数据。没有其他依赖关系更改。
+已为3.2.0更新![新](../assets/new.svg)版本和元数据。 没有其他依赖关系更改。
 
 ### v3.1.0发布
 
@@ -598,7 +617,7 @@ _2024年1月26日_
 
 - 对于&#x200B;**Adobe Commerce as a Cloud Service**&#x200B;客户，您的环境中安装了最新安装程序版本。
 
-- 对于云基础架构上的&#x200B;**Adobe Commerce**&#x200B;或&#x200B;**内部部署**，使安装程序与[目录服务中间包](#catalog-service-metapackage)保持一致：每次升级`magento/catalog-service-installer`或当这些发行说明描述所需的更改（例如支持新的PHP版本）时，请使用编辑器升级`magento/catalog-service`。 这样，您的安装工具就会与您运行的目录服务版本保持兼容。
+- 对于云基础架构上的&#x200B;**Adobe Commerce**&#x200B;或&#x200B;**内部部署**，使安装程序与[目录服务中间包](#catalog-service-metapackage)保持一致：每次升级`magento/catalog-service`或当这些发行说明描述所需的更改（例如支持新的PHP版本）时，请使用编辑器升级`magento/catalog-service-installer`。 这样，您的安装工具就会与您运行的目录服务版本保持兼容。
 
 ### v1.0.6发布
 
@@ -611,13 +630,13 @@ _2026年3月25日_
 - 对于在**Adobe Commerce on cloud、内部部署或Adobe Commerce as a Cloud Service上部署的项目，请参阅以下文档：
 
    - [目录服务指南](overview.md)
-   - [目录服务GraphQL API引用](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
+   - [目录服务GraphQL API参考](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
    - [Adobe Commerce管理指南](https://experienceleague.adobe.com/en/docs/commerce-admin/)
    - [Adobe Commerce as a Cloud Service指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
-   - 云指南上的[Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
+   - [Adobe Commerce on Cloud指南](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
 
 - 对于使用&#x200B;**Adobe Commerce Optimizer**&#x200B;或&#x200B;**Adobe Commerce Optimizer Connector**&#x200B;的项目，请参阅以下文档：
 
    - [Merchandising Services开发人员指南](https://developer.adobe.com/commerce/services/optimizer/)
-   - [推销GraphQL API引用](https://developer.adobe.com/commerce/services/reference/graphql/)
+   - [促销GraphQL API参考](https://developer.adobe.com/commerce/services/reference/graphql/)
    - [Adobe Commerce Optimizer指南](../optimizer/overview.md)
