@@ -76,7 +76,7 @@ _2026年2月19日_
 
 _2026年2月12日_
 
-![新](../assets/new.svg) API服务现在支持`CategoryProductView`类型，支持按类别对产品进行增强的视图和查询。 此更新使开发人员能够根据类别高效地检索和筛选产品数据，从而提高类别驱动用例的灵活性和性能。 有关详细信息，请参阅[在店面上实施类别](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)。 仅在Commerce实施上支持使用[针对Headless店面<!--DATA-6949-->的可组合目录数据模型](https://developer.adobe.com/commerce/services/optimizer/)
+![新](../assets/new.svg) API服务现在支持`CategoryProductView`类型，支持按类别对产品进行增强的视图和查询。 此更新使开发人员能够根据类别高效地检索和筛选产品数据，从而提高类别驱动用例的灵活性和性能。 有关详细信息，请参阅[在店面上实施类别](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)。 仅在Commerce实施上支持使用&lbrack;针对Headless店面<!--DATA-6949-->的可组合目录数据模型&rbrack;(https://developer.adobe.com/commerce/services/optimizer/)
 
 ### v1.46发布
 
