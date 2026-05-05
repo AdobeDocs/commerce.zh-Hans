@@ -49,7 +49,7 @@ Adobe Commerce [!DNL Live Search]和[[!DNL Catalog Service]](../catalog-service/
 >
 >如果您正在将Adobe Commerce与HIPAA-Ready扩展和Healthcare加载项一起使用，请不要通过LiveSearch处理任何受保护的健康信息(PHI)> 实时搜索不是HIPAA就绪的服务。
 >
->有关详细信息，请参阅Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)上的[HIPAA准备就绪](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations)指南和[操作指南，其中列出了未准备好HIPAA的Commerce服务中的实时搜索。
+>有关详细信息，请参阅Adobe Commerce[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)上的[HIPAA准备就绪](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations)指南和操作指南，其中列出了未准备好HIPAA的Commerce服务中的实时搜索。
 
 ## 工作流概述
 
