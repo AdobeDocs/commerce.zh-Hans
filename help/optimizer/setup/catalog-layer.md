@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## AEM-Assets layer
 
-当您启用[产品可视化图表](product-visuals.md)时，AEM Assets集成会自动创建和管理专门用于AEM Assets内容的目录层。 默认图层名称为`AEM-Assets`，但是您可以在AEM Assets集成](../../aem-assets-integration/get-started/configure-aco.md)的[新用户引导期间指定自定义名称。
+当您启用[产品可视化图表](product-visuals.md)时，AEM Assets集成会自动创建和管理专门用于AEM Assets内容的目录层。 默认图层名称为`AEM-Assets`，但是您可以在AEM Assets集成[&#128279;](../../aem-assets-integration/get-started/configure-aco.md)的新用户引导期间指定自定义名称。
 
 此层包含与AEM Assets同步的产品图像。 与其他目录层一样，它是通过[产品层API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}填充的。 Assets集成服务将AEM资源元数据和交付URL转换为API格式，并在AEM Assets中批准资源时自动发送数据。
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->对于批量层操作，请使用上面描述的数据摄取API方法[](#add-a-catalog-layer-via-data-ingestion)。
+>对于批量层操作，请使用上面描述的数据摄取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
 
 **创建手动图层：**
 
