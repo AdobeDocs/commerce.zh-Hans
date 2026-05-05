@@ -3,10 +3,10 @@ title: 目录层
 description: 了解目录层如何允许您修改产品数据而不更改原始源数据，以便您可以安全地自定义并随时恢复更改。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
    * **覆盖字段** — 名称、说明和元标题等文本字段将替换为图层中定义的值，优先级较高的图层优先。
    * **合并字段** — 图像、链接和属性等数组字段由多个图层组合而成，可提供统一的响应。
 
-1. **优先级分辨率** — 顺序字段确定优先的层。 当多个层修改同一个字段时，顺序数较低的层具有更高的优先级（例如，顺序为1的层最高）。
+1. **优先级分辨率** — 顺序字段确定优先的层。 当多个层修改同一个字段时，顺序数较高的层具有更高的优先级（例如，顺序为10的层最高）。
 
 ## 目录层用例
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## AEM-Assets layer
 
-当您启用[产品可视化图表](product-visuals.md)时，AEM Assets集成会自动创建和管理专门用于AEM Assets内容的目录层。 默认图层名称为`AEM-Assets`，但是您可以在AEM Assets集成[的](../../aem-assets-integration/get-started/configure-aco.md)新用户引导期间指定自定义名称。
+当您启用[产品可视化图表](product-visuals.md)时，AEM Assets集成会自动创建和管理专门用于AEM Assets内容的目录层。 默认图层名称为`AEM-Assets`，但是您可以在AEM Assets集成](../../aem-assets-integration/get-started/configure-aco.md)的[新用户引导期间指定自定义名称。
 
 此层包含与AEM Assets同步的产品图像。 与其他目录层一样，它是通过[产品层API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}填充的。 Assets集成服务将AEM资源元数据和交付URL转换为API格式，并在AEM Assets中批准资源时自动发送数据。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以应用更改。
 
-分配后，店面API(目录服务、实时搜索、产品推荐和店面GraphQL API)会返回产品的基本目录图像和AEM Assets图像。
+分配后，店面API（目录服务、实时搜索、产品推荐和店面GraphQL API）会返回产品的基本目录图像和AEM Assets图像。
 
 有关配置产品视觉效果的更多信息，请参阅[使用AEM Assets的产品视觉效果](product-visuals.md)。
 
@@ -114,11 +114,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果目录视图中不存在Sites Optimizer图层，则Sites Optimizer中的自动修复功能会自动创建一个图层，并为其指定顺序1（最高优先级）。 如果删除此图层，则下次运行Sites Optimizer中的自动修复功能时将重新创建此图层，并将现有图层转换为较低顺序编号。 如果Sites Optimizer层的订单号不同，则自动修复功能不会更改其优先级。
+>如果目录视图中不存在Sites Optimizer图层，则Sites Optimizer中的自动修复功能会自动创建一个图层，并为其分配最高优先级（最高编号）。 如果删除此图层，则下次运行Sites Optimizer中的自动修复功能时将重新创建此图层，并将现有图层转换为较低顺序编号。 如果Sites Optimizer层的订单号不同，则自动修复功能不会更改其优先级。
 
 >[!TIP]
 >
->对于批量层操作，请使用上面描述的数据摄取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
+>对于批量层操作，请使用上面描述的数据摄取API方法[](#add-a-catalog-layer-via-data-ingestion)。
 
 **创建手动图层：**
 
@@ -189,8 +189,8 @@ ht-degree: 0%
 **了解优先级顺序：**
 
 * 每个层都分配有一个序号（1、2、3等）
-* 顺序1具有最高优先级并覆盖所有其他层
-* 当多个层修改同一个字段时，顺序编号较低的层优先
+* 数字越大，表示优先级越高，并覆盖所有其他层
+* 当多个层修改同一个字段时，顺序号较高的层优先
 * 优先级仅适用于覆盖字段（名称、描述、元标记）
 * 合并字段（图像、链接、属性）组合来自所有图层的数据
 

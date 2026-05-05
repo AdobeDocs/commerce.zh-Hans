@@ -1,10 +1,10 @@
 ---
 title: 机会
 description: 通过与Adobe Sites Optimizer集成以实现智能的数据驱动型网站改进，发现增加流量、参与度和转化率的机会。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于 [!DNL Adobe Commerce Optimizer] 个项目（Adobe管理的SaaS基础结构）。"
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于 [!DNL Adobe Commerce Optimizer] 个项目（Adobe管理的SaaS基础结构）。"
+source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1445'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 什么是机会？
 
-[机会](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支持的推荐，可帮助商家识别并解决影响其商业网站性能的问题。 这些建议由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/home)提供支持，这是一项基于云的服务，可分析和改进网站性能。
+[机会](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支持的推荐，可帮助商家识别并解决影响其商业网站性能的问题。 这些建议由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)提供支持，这是一项基于云的服务，可分析和改进网站性能。
 
 ## 主要功能
 
@@ -128,7 +128,7 @@ ht-degree: 0%
 
    - 为产品创建新的目录层（如果尚不存在）。
    - 根据AI推荐更新相关属性（例如元标题、描述或H1）。
-   - 将新图层指定为目录视图中的最高优先级（顺序1）。
+   - 将新图层指定为目录视图中的最高优先级（较高的数字）。
    - 通过目录店面服务验证更改。
 
 1. 监视部署状态。 验证完成后，系统会自动更新建议状态。
@@ -146,7 +146,7 @@ ht-degree: 0%
 
 ### 目录层如何使用自动修复
 
-如果目录视图中不存在Adobe Sites Optimizer层，则自动修复会自动创建一个图层，并为其分配顺序1（最高优先级）。 如果删除此图层，则会在下次自动修复运行时重新创建此图层，并将现有图层移至更低顺序编号。 如果Adobe Sites Optimizer Layer在其他订单号中已存在，则自动修复不会更改其优先级。 如果要保留自动修复层，但不立即使用它，则可以禁用该层。 了解有关如何管理[目录层](../setup/catalog-layer.md#activate-deactivate-or-delete-layers)的详细信息。
+如果目录视图中不存在Adobe Sites Optimizer层，则自动修复会自动创建一个图层，并将其指定为最高优先级（最高编号）。 如果删除此图层，则会在下次自动修复运行时重新创建此图层，并将现有图层移至更低顺序编号。 如果Adobe Sites Optimizer Layer在其他订单号中已存在，则自动修复不会更改其优先级。 如果要保留自动修复层，但不立即使用它，则可以禁用该层。 了解有关如何管理[目录层](../setup/catalog-layer.md#activate-deactivate-or-delete-layers)的详细信息。
 
 ![目录层](../assets/catalog-layers.png)
 
@@ -166,9 +166,9 @@ ht-degree: 0%
 
 1. 检查&#x200B;**已优化（完成）**&#x200B;选项卡中的状态指示器。
 1. 如果看到警告图标，请验证目录层优先级设置。
-1. 确保在目录视图中将优化层设置为顺序1（最高优先级）。
+1. 确保将优化层设置为目录视图中的最高优先级（最高编号）。
 1. 确认目录数据同步处于活动状态且是最新的。
-1. 留出时间让更改传播。 即使在订单1上有正确配置的层，更改也可能需要一段时间才能显示在店面上，类似于发布新产品时的延迟。
+1. 留出时间让更改传播。 即使正确配置了最高订购数量的图层，更改也可能需要一段时间才能显示在店面上，类似于发布新产品时的延迟。
 
 ## Sites Optimizer和成功量度如何协作
 
@@ -176,7 +176,7 @@ ht-degree: 0%
 
 ## 了解有关Sites Optimizer的更多信息
 
-有关Sites Optimizer功能和特征的详细信息，请参阅[Adobe Experience Manager Sites Optimizer文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/home)。
+有关Sites Optimizer功能和特征的详细信息，请参阅[Adobe Experience Manager Sites Optimizer文档](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)。
 
 其他资源：
 
