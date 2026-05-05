@@ -3,9 +3,9 @@ title: '[!DNL SaaS Data Export Guide]'
 description: 了解如何为Adobe Commerce SaaS服务使用 [!DNL data export] 扩展，在Adobe Commerce和连接的Commerce服务之间同步数据。
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+source-git-commit: 803e270c5b3119681a6e8c005728a00b3b7875f7
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # [!DNL SaaS Data Export] 指南
 
 [!DNL SaaS data export]在Adobe Commerce实例和连接的Commerce服务之间同步数据。 将Live Search、产品推荐或目录服务添加到Adobe Commerce安装时，将自动安装[!DNL Data export]扩展。
+
+>[!NOTE]
+>
+>如果安装Adobe Commerce Optimizer Connector，则会使用相同的Data Export扩展，通过可组合目录数据模型(Composable Catalog Data Model， CCDM)将目录和定价馈送发送到Adobe Commerce Optimizer。 有关架构和配置详细信息，请参阅[Adobe Commerce Optimizer连接器指南](../aco-connector/overview.md)。
 
 SaaS数据导出收集和导出各种类型的数据，称为&#x200B;_馈送_，用于聚合特定类型的信息。 根据安装的Commerce服务，SaaS数据导出源包括：
 
@@ -25,13 +29,13 @@ SaaS数据导出是作为PHP扩展提供的。 它支持多种方法来启动和
 
 - **从Admin或命令行手动同步**
 
-   - Commerce Admin中的[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供了同步状态的图形视图，其中显示产品数据已成功同步到商务服务。 您可以使用仪表板对所有源执行完全重新同步（_完全同步_）。 但是，Adobe建议仅在首次将Adobe Commerce连接到Commerce服务时执行完全同步。 请参阅[同步进程](data-synchronization.md)。
+   - Commerce Admin中的[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供了同步状态的图形视图，其中显示产品数据已成功同步到商务服务。 您可以使用仪表板对所有源执行完全重新同步（_完全同步_）。 但是，Adobe建议仅在首次将Adobe Commerce连接到Commerce服务时执行完全同步。 请参阅[同步进程](data-synchronization.md)。
 
-  {{aco-data-sync-verification}}
+     {{aco-data-sync-verification}}
 
-   - [数据馈送同步状态](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面提供数据导出馈送的运行状况和性能的实时分析，该数据导出馈送将产品和类别数据从Commerce传输到外部服务，例如产品推荐、实时搜索和目录服务或Adobe Commerce Optimizer。
+   - [数据馈送同步状态](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面提供数据导出馈送的运行状况和性能的实时分析，该数据导出馈送将产品和类别数据从Commerce传输到外部服务，例如产品推荐、实时搜索和目录服务或Adobe Commerce Optimizer。
 
-   - [Adobe Commerce命令行工具](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供了同步特定馈送的命令，并包含用于自定义馈送处理的其他选项。
+   - [Adobe Commerce命令行工具](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供了同步特定馈送的命令，并包含用于自定义馈送处理的其他选项。
 
 - **与cron作业的自动同步**
 
