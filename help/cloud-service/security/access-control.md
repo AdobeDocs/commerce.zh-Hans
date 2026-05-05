@@ -2,7 +2,7 @@
 title: 身份和访问管理
 description: 了解Adobe Commerce as a Cloud Service的标识和访问管理功能。
 role: Admin, Architect, Leader
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 source-git-commit: 283e9c8b9dd0812bb19640681d1fdf86f0f7fce1
 workflow-type: tm+mt
 source-wordcount: '419'
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service]利用Adobe的企业级身份基础结构确保所有环境中的安全、可扩展和集中的访问控制。 [!DNL Adobe Commerce as a Cloud Service]中的身份和访问管理(IAM)旨在简化用户设置、强制最低权限访问并支持符合全局安全标准。
 
-- **[!DNL Adobe Identity Management Services (IMS)]**： [!DNL Adobe Commerce as a Cloud Service]使用[Adobe Identity Management Services (IMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview)对用户进行身份验证并管理权限。 这包括支持联合身份提供程序和[基于角色的访问控制](../user-management.md)。
+- **[!DNL Adobe Identity Management Services (IMS)]**： [!DNL Adobe Commerce as a Cloud Service]使用[Adobe Identity Management Services (IMS)](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview)对用户进行身份验证并管理权限。 这包括支持联合身份提供程序和[基于角色的访问控制](../user-management.md)。
 
 - **Admin Console管理**：管理员通过[!DNL Adobe Admin Console]管理对店面和后端的访问。 权限可以将范围限定为特定功能和角色，以确保最低权限访问。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 - **产品配置文件**：为不同的环境（如暂存环境和生产环境）定义访问范围。
 - **委托管理**：系统管理员和产品管理员可以管理用户访问权限，而无需IT部门的介入。
 
-有关详细信息，请参阅[用户管理](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)。
+有关详细信息，请参阅[用户管理](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management)。
 
 ## API身份验证和集成安全性
 
