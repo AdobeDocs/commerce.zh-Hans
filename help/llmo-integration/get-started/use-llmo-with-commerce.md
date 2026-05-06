@@ -3,7 +3,7 @@ title: 将 [!DNL Adobe LLM Optimizer] 与 [!DNL Adobe Commerce]一起使用
 description: 在LLM Optimizer中导航Commerce机会，查看PDP和目录扩充，将更新部署到 [!DNL Adobe Commerce]，在管理员和店面中进行验证，并了解如何覆盖和摄取标记机会已过时。
 role: Admin, User
 recommendations: noCatalog
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '1175'

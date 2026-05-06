@@ -3,7 +3,7 @@ title: 集成限制和边界
 description: 了解使用Commerce的LLM Optimizer的第三方目录的范围限制、自动修复覆盖范围、抓取先决条件、企业规模注意事项以及受限制的测试版访问限制。
 role: Admin, User, Leader
 recommendations: noCatalog
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '258'

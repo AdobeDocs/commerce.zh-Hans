@@ -3,7 +3,7 @@ title: 连接 [!DNL Adobe Commerce] 到 [!DNL Adobe LLM Optimizer]
 description: 在查看机会或部署更新之前，启用所需的Commerce服务、配置LLM Optimizer连接、验证目录访问权限并确认租户准备工作。
 role: Admin, User
 recommendations: noCatalog
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '543'
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本文侧重于集成的Commerce方面。 有关LLM Optimizer的一般信息，请参阅[LLM Optimizer产品文档](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/home)。
+>本文侧重于集成的Commerce方面。 有关LLM Optimizer的一般信息，请参阅[LLM Optimizer产品文档](https://experienceleague.adobe.com/zh-hans/docs/llm-optimizer/using/home)。
 
 ## 启用所需的Commerce服务 {#enable-commerce-services}
 
