@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Live Search] 指南'
 user-guide-description: 本指南提供了使用Adobe Commerce中的 [!DNL Live Search] 的详细说明。
 role: Admin
 feature: Services, Search
-source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
+source-git-commit: d6228861f479efd92886f8c8d70a785aee164c9e
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 9%
+source-wordcount: '98'
+ht-degree: 8%
 
 ---
 
@@ -42,8 +42,9 @@ ht-degree: 9%
       - [添加规则](rules-add.md)
       - [管理规则](rules-manage.md)
    - [类别促销](category-merch.md)
+   - [管理缺货产品](manage-out-of-stock-products.md)
    - [索引](indexing.md)
    - [GraphQL](graphql.md)
    - [设置](settings.md)
 - [开发人员指南](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

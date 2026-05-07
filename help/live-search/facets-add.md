@@ -2,18 +2,22 @@
 title: 添加Facet
 description: 了解如何将可筛选的产品属性添加为 [!DNL Live Search] Facet。
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 3c6ca2398cf80649e2dbe127b1835b0a057d3534
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
 
 # 添加Facet
 
-任何可过滤的产品属性都可以用作Facet。 *添加Facet*&#x200B;面板列出了当前的Facet，并可轻松地将其他产品属性分配为Facet。 在此三步流程中，选择某个属性作为Facet，根据需要编辑属性，并将更改发布到店面。
+除库存状态(`quantity_and_stock_status`)外，任何可筛选的产品属性都可以用作Facet。 *[!UICONTROL Add facets]*&#x200B;面板列出了当前的Facet，并使将其他产品属性分配为Facet变得更轻松。 在此三步流程中，选择某个属性作为Facet，根据需要编辑属性，并将更改发布到店面。
 
 ![添加Facet](assets/facets-add.png)
+
+>[!NOTE]
+>
+>有关按库存状态管理产品显示的信息，请参阅[管理缺货产品](manage-out-of-stock-products.md)。
 
 ## 步骤1：添加方面
 

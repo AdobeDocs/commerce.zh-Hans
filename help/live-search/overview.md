@@ -3,9 +3,9 @@ title: 什么是 [!DNL Live Search]？
 description: Adobe Commerce 的 [!DNL Live Search] 可提供快速、相关和直观的搜索体验。
 recommendations: noCatalog
 exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
-source-git-commit: 1ae6b0f6786375ca4e7bb7620e164008a08f8965
+source-git-commit: 3c6ca2398cf80649e2dbe127b1835b0a057d3534
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1180'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,13 @@ ht-degree: 1%
 
 由于侧重于速度、相关性和易用性，[!DNL Live Search]对购物者和商家来说都是一个游戏规则的改变者。 请观看以下视频，然后从店面快速浏览[!DNL Live Search]。
 
->[!VIDEO](https://video.tv.adobe.com/v/3452579?captions=chi_hans&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-有关使用和配置Live Search的更深入视频，请参阅[关于 [!DNL Live Search]](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)的完整演示主题。
+有关使用和配置Live Search的更深入视频，请参阅[关于 [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)的完整演示主题。
 
 ### 按键入内容搜索
 
-当购物者在[!DNL Live Search]搜索[框中键入查询时，](storefront-popover.md)在[弹出框](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search)中回复建议的产品和排名最前的搜索结果的缩略图图像。 当购物者单击建议或精选产品时，将显示[产品详细信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/storefront/storefront)页面。 弹出框页脚中的&#x200B;_查看所有_&#x200B;链接显示搜索结果页面。
+当购物者在[搜索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)框中键入查询时，[!DNL Live Search]在[弹出框](storefront-popover.md)中回复建议的产品和排名最前的搜索结果的缩略图图像。 当购物者单击建议或精选产品时，将显示[产品详细信息](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront)页面。 弹出框页脚中的&#x200B;_查看所有_&#x200B;链接显示搜索结果页面。
 
 对于包含两个或更多字符的查询，[!DNL Live Search]返回“键入时搜索”结果。 对于部分匹配，每个单词的最大字符数为20。 查询中的字符数无法配置。 弹出框包括`name`、`sku`和`category_ids`字段。
 
@@ -65,6 +65,15 @@ ht-degree: 1%
 
 除了模糊搜索逻辑外，还考虑转置，即交换一个单词中两个相邻的字符，例如“teh”而不是“the”。 请注意，这些编辑限制是逐字的，而不是整个短语。
 
+### 过滤器与Facet
+
+[!DNL Live Search]可以按任何索引为可过滤的属性过滤结果。 Facet只是一个可过滤属性，已配置为在店面中显示为面向购物者的过滤器（例如，品牌、颜色、价格）。
+
+某些内部字段（如`inStock`）可过滤，但不可多面：
+
+- 它们可以在API过滤器中使用（例如，隐藏缺货的产品）。
+- 它们未出现在[!UICONTROL Add Facet]对话框中，并且无法显示为面向购物者的Facet。
+
 ### 带有Facet的过滤搜索
 
 筛选搜索使用属性值的多个维度或[方面](facets.md)作为搜索条件。 过滤器的选择由商家定义，并根据返回的产品而发生更改，最常用的方面将固定到列表顶部。
@@ -83,7 +92,7 @@ ht-degree: 1%
 
 - [!DNL Live Search] [弹出窗口小组件](storefront-popover.md)是在包含搜索结果的搜索字段下打开的框。
 - [产品列表页小组件](plp-styling.md) (PLP)提供了一个支持方面和同义词的可搜索产品列表页。 构件在Live Search 4.0.0+中安装和启用，并替换搜索适配器。
-- （**已弃用**）搜索适配器是PLP小部件的前身，且随Live Search &lt; 4.0.0安装。如果您使用的是低于4.0.0的Live Search版本，Commerce建议您进行升级，以便享受PLP构件功能和未来改进带来的好处。 今后，将仅更新搜索适配器以解决安全问题。 有关迁移到PLP小组件的详细信息，请参阅[迁移指南](migrate-to-plp.md)。
+- （**已弃用**）搜索适配器是PLP小部件的前身，且随Live Search &lt; 4.0.0安装。 如果您使用的是低于4.0.0的Live Search版本，Commerce建议您进行升级，以便享受PLP构件功能和未来改进带来的好处。 今后，将仅更新搜索适配器以解决安全问题。 有关迁移到PLP小组件的详细信息，请参阅[迁移指南](migrate-to-plp.md)。
 
 ## [!DNL Live Search]工作区
 
@@ -99,10 +108,10 @@ ht-degree: 1%
 
 ### 不活动的测试环境
 
-要在测试环境中重新激活目录数据，请[提交标题为“重新激活](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)”的支持请求[!DNL Live Search]并包含环境ID。 测试环境中的目录数据应在几小时内恢复。
+要在测试环境中重新激活目录数据，请[提交标题为“重新激活[!DNL Live Search]”的支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)并包含环境ID。 测试环境中的目录数据应在几小时内恢复。
 
 ### 清空目录
 
 如果您的环境在创建后45天内有一个空目录，则目录数据将设置为休眠模式，并且任何搜索查询都不会返回任何数据。 这包括生产和测试环境。
 
-要在您的环境中重新激活目录数据，请[提交标题为“重新激活](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)”的支持请求[!DNL Live Search]并包含环境ID。 您环境中的目录数据应会在几小时内恢复。
+要在您的环境中重新激活目录数据，请[提交标题为“重新激活[!DNL Live Search]”的支持请求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)并包含环境ID。 您环境中的目录数据应会在几小时内恢复。
