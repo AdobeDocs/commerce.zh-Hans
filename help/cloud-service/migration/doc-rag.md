@@ -1,11 +1,10 @@
 ---
 title: 文档RAG服务
 description: 了解如何使用AI支持的文档搜索服务进行Adobe Commerce开发。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 role: Developer
 hide: true
-hidefromtoc: true
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 0%
@@ -30,9 +29,9 @@ RAG服务是[Commerce可扩展性工具](https://developer.adobe.com/commerce/ex
 
 | 类别 | 索引 | 包含的内容 | 关键字 |
 |-------|---------|---------|------------------------|
-| [店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans) | commerce-storefront-docs | Edge Delivery Services、插件、店面组件 | 店面、插件、EDS、产品列表、结账 |
+| [店面](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services、插件、店面组件 | 店面、插件、EDS、产品列表、结账 |
 | [可扩展性](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook、活动、扩展、集成 | webhook，事件，扩展， API网格， GraphQL |
-| [Commerce](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/overview) | commerce-core-docs | 核心Commerce（目录、客户、订单） | 目录，产品，客户，订单，库存 |
+| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | 核心Commerce（目录、客户、订单） | 目录，产品，客户，订单，库存 |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder，运行时操作， UI扩展 | app Builder，运行时操作， React Spectrum |
 
 有关索引选择的详细信息，请参阅[自动索引选择](#automatic-index-selection-recommended)和[显式索引选择](#explicit-index-selection)。
@@ -127,7 +126,7 @@ RAG服务是[Commerce可扩展性工具](https://developer.adobe.com/commerce/ex
 
 ## 使用情况
 
-安装后，您可以自动调用索引[&#128279;](#automatic-index-selection-recommended)或[显式调用](#explicit-index-selection)。 您还可以使用[`/search-commerce-docs`命令](#command-based-search)。
+安装后，您可以自动调用索引[](#automatic-index-selection-recommended)或[显式调用](#explicit-index-selection)。 您还可以使用[`/search-commerce-docs`命令](#command-based-search)。
 
 >[!NOTE]
 >

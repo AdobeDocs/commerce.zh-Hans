@@ -8,8 +8,7 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-hidefromtoc: true
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '3398'
 ht-degree: 0%
@@ -53,8 +52,8 @@ bash --version
 
 此外，请验证以下各项：
 
-- 您有一个包含产品数据的[!DNL Adobe Commerce as a Cloud Service]实例。 查看[Commerce Cloud服务实例](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/overview){target="_blank"}。
-- 您有一个店面项目连接到您的[!DNL Commerce]实例。 如果没有店面，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans){target="_blank"}中的步骤操作。
+- 您有一个包含产品数据的[!DNL Adobe Commerce as a Cloud Service]实例。 查看[Commerce Cloud服务实例](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}。
+- 您有一个店面项目连接到您的[!DNL Commerce]实例。 如果没有店面，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}中的步骤操作。
 - 已安装`aem` CLI：
 
   ```bash
@@ -537,7 +536,7 @@ Produce a spec called STOREFRONT_API_SPEC that I can use in the storefront works
 在开始店面集成之前，请验证您是否具备以下条件：
 
 - 店面项目已连接到您的[!DNL Commerce]实例
-- 使用CLI安装的Commerce storefront AI工具[&#128279;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+- 使用CLI安装的Commerce storefront AI工具[](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 - 已将`STOREFRONT_API_SPEC.md`文件复制到店面项目的`docs/`文件夹中
 
 ### 步骤1：验证环境

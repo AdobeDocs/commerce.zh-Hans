@@ -1,9 +1,9 @@
 ---
 title: 法规遵从性和认证
 description: 了解Adobe Commerce as a Cloud Service的合规性和认证。
-role: Admin, Architect, Leader
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
-source-git-commit: 89c4d174d982d55c111b9fa4e6b87e70cb566ca1
+role: Admin, Developer, Leader
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+source-git-commit: feb48068137c6a63e6594167fe969c3aa4b044c4
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -31,4 +31,4 @@ Adobe为支持[!DNL Adobe Commerce as a Cloud Service]的基础架构和服务�
 
 ## 从业者认证
 
-Adobe还为使用[!DNL Adobe Commerce]的开发人员、架构师和商务从业人员提供了基于角色的认证。 这些认证可验证在安全实施和平台治理方面的专业知识。 有关详细信息，请参阅[Adobe认证门户](https://experienceleague.adobe.com/zh-hans/docs/certification/program/technical-certifications/ac/ac-overview){target="_blank"}。
+Adobe还为使用[!DNL Adobe Commerce]的开发人员、架构师和商务从业人员提供了基于角色的认证。 这些认证可验证在安全实施和平台治理方面的专业知识。 有关详细信息，请参阅[Adobe认证门户](https://experienceleague.adobe.com/en/docs/certification/program/technical-certifications/ac/ac-overview){target="_blank"}。
