@@ -1,8 +1,8 @@
 ---
 source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 5%
+source-wordcount: '506'
+ht-degree: 0%
 
 ---
 # Adobe Commerce技术文档
@@ -11,7 +11,7 @@ ht-degree: 5%
 
 ## Adobe Open Source行为准则
 
-本项目已采用 [Adobe 开源行为准则](code-of-conduct.md)或 [.NET Foundation 行为准则](https://dotnetfoundation.org/code-of-conduct)。有关更多信息，请参阅[贡献](contributing.md)文章。
+该项目采用了[Adobe Open Source行为准则](code-of-conduct.md)或[.NET Foundation行为准则](https://dotnetfoundation.org/code-of-conduct)。 有关详细信息，请参阅[参与](contributing.md)一文。
 
 ## 关于您对Adobe内容的投稿
 
@@ -43,7 +43,7 @@ ht-degree: 5%
 
 此存储库中的所有文章都使用GitHub风格的标记。 如果您不熟悉Markdown，请参阅：
 
-- [标记基础知识](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+- [Markdown基础](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 - [可打印的Markdown速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## 用于图像优化的预提交挂接

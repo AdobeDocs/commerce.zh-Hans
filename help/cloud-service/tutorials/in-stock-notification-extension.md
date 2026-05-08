@@ -8,8 +8,7 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-hidefromtoc: true
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '2693'
 ht-degree: 0%
@@ -135,62 +134,62 @@ STOP and ask me any clarifying questions you have about the requirements before 
 - 用于订阅CRUD（创建、读取、更新和删除）的REST API操作
 - 由Commerce库存事件触发的事件驱动型缺货处理程序
 - 作为回退的计划支票库存操作
-- Persistence using `aio-lib-state`
+- 使用`aio-lib-state`的持久性
 
 >[!NOTE]
 >
->AI代理是不确定的，其行为因模型和IDE而异。 您可能会收到一组不同的问题，这些问题会产生一组不同的要求和体系结构。 If so, try to steer the agent in a direction such that the implementation closely matches what is presented in this tutorial before proceeding.
+>AI代理是不确定的，其行为因模型和IDE而异。 您可能会收到一组不同的问题，这些问题会产生一组不同的要求和体系结构。 如果是这样的话，在继续之前，请尝试将代理引导到某个方向，以便该实施与本教程中介绍的内容非常匹配。
 
 ### 步骤4：选择实施计划
 
-The agent gives you the option to create a detailed implementation plan, or to complete a direct implementation.
+该代理为您提供了创建详细实施计划或完成直接实施的选项。
 
 - 如果希望可复查计划能够以更多控制分阶段执行，请选择第一个选项。
 - 如果您希望代理以最小的干预完成整个实施，请选择第二个选项。
 
-### Step 5: Deploy, onboard, and subscribe to events
+### 步骤5：部署、载入和订阅事件
 
-After the agent completes the implementation, it provides next steps to deploy the app, onboard the Commerce instance, and subscribe to events using the following commands:
+代理完成实施后，它会提供以下步骤：部署应用程序、载入Commerce实例，以及使用以下命令订阅事件：
 
-1. Deploy the extension:
+1. 部署扩展：
 
    ```bash
    aio app deploy
    ```
 
-1. Run the onboarding script to register the event provider with Commerce:
+1. 运行载入脚本以在Commerce中注册事件提供程序：
 
    ```bash
    npm run onboard
    ```
 
-1. Subscribe to Commerce events:
+1. 订阅Commerce活动：
 
    ```bash
    npm run commerce-event-subscribe
    ```
 
-1. Validate the event subscription.
+1. 验证事件订阅。
 
-   Navigate to your Commerce instance and open **[!UICONTROL System]** > **[!UICONTROL Event Subscriptions]**.
+   导航到您的Commerce实例并打开&#x200B;**[!UICONTROL System]** > **[!UICONTROL Event Subscriptions]**。
 
-   You should see a table of event records.
+   您应该会看到一个事件记录表。
 
-   ![Commerce Admin menu highlighting Event Subscription section](../assets/in-stock-event-subscriptions.png){width="600" zoomable="yes"}
+   ![Commerce管理菜单突出显示事件订阅部分](../assets/in-stock-event-subscriptions.png){width="600" zoomable="yes"}
 
-   ![Event subscription table with registered event entries](../assets/in-stock-event-table.png){width="600" zoomable="yes"}
+   ![具有已注册事件条目的事件订阅表](../assets/in-stock-event-table.png){width="600" zoomable="yes"}
 
-### Step 6: Test the extension
+### 第6步：测试扩展
 
-Ask the agent to provide testing steps. Since this is an API service, you can request command-line instructions:
+要求代理提供测试步骤。 由于这是一项API服务，因此您可以请求命令行指令：
 
 ```shell-session
 Give me step by step instructions to test the API service from the command line.
 ```
 
-Follow the steps the agent provides. 以下示例显示了典型的测试命令。
+按照代理提供的步骤操作。 以下示例显示了典型的测试命令。
 
-**Subscribe to a SKU:**
+**订阅SKU：**
 
 ```bash
 API_URL="https://<your-runtime-url>/api/v1/web/notify-out-of-stock/api"; curl -X POST "$API_URL" \
@@ -198,7 +197,7 @@ API_URL="https://<your-runtime-url>/api/v1/web/notify-out-of-stock/api"; curl -X
   -d '{"email":"test@example.com","sku":"ADB153"}'
 ```
 
-The response looks similar to::
+响应类似于：
 
 ```json
 {

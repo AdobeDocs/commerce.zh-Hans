@@ -1,9 +1,9 @@
 ---
 title: 身份和访问管理
 description: 了解Adobe Commerce as a Cloud Service的标识和访问管理功能。
-role: Admin, Architect, Leader
+role: Admin, Developer, Leader
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
-source-git-commit: 283e9c8b9dd0812bb19640681d1fdf86f0f7fce1
+source-git-commit: feb48068137c6a63e6594167fe969c3aa4b044c4
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

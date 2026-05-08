@@ -1,9 +1,9 @@
 ---
 title: 法规遵从性和认证
 description: 了解Adobe Commerce as a Cloud Service的合规性和认证。
-role: Admin, Architect, Leader
+role: Admin, Developer, Leader
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
-source-git-commit: 89c4d174d982d55c111b9fa4e6b87e70cb566ca1
+source-git-commit: feb48068137c6a63e6594167fe969c3aa4b044c4
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
