@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b38ce9b1585fa7414e323b08bf8d09d6da46a6c
+source-git-commit: feb450ecd425d7e3ce7f8e354aeb294bb7d5d1ce
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1333'
 ht-degree: 1%
 
 ---
@@ -503,58 +503,6 @@ ht-degree: 1%
         新主题
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月6日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已将storefront集成添加到<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/tutorials/ratings-extension">评级教程</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.zh-Hans/pull/15">拉取请求</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月3日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>发布了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector v1.0.9文档</a>，了解正式发布情况。</p>
-</td>
-      <td>
-        重大更新、新主题、技术
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/216958e287993d1a212fb59fdaa8e2ba3e931b97">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>已使用最新沙盒版本更新Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6fc1fbd8b70459e6473b48fdc4bb6fc75f6dc559">提交</a></td>
     </tr>
   </tbody>
 </table>
