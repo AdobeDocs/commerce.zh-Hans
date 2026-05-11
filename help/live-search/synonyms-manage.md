@@ -1,9 +1,13 @@
 ---
 title: 管理同义词
 description: 了解如何管理现有 [!DNL Live Search] 同义词。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 648e5fec-acc5-4244-aa26-8120c62abe6a
+TQID: https://experienceleague.adobe.com/-B-ixlItkljDDCrau969-DPOvxPxhWM6NWRSG-TFcak
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: 222
 ht-degree: 0%
 
 ---
@@ -26,7 +30,7 @@ ht-degree: 0%
 
 ## 编辑同义词
 
-1. 查找要编辑的同义词，然后单击&#x200B;**更多** (...)选项。
+1. 查找要编辑的同义词，然后单击&#x200B;**更多** (...) 选项。
 
 1. 单击&#x200B;**编辑**。
 关键字是列表中的第一个术语，每个术语用逗号分隔。 关键字和扩展词可以更新，但同义词的类型不能更改。
@@ -36,7 +40,7 @@ ht-degree: 0%
 
 ## 删除同义词
 
-1. 在列表中查找要删除的同义词，然后单击&#x200B;**更多** (...)选项。
+1. 在列表中查找要删除的同义词，然后单击&#x200B;**更多** (...) 选项。
 1. 单击&#x200B;**删除**。
 1. 出现提示时，单击&#x200B;**删除同义词**&#x200B;进行确认。
 

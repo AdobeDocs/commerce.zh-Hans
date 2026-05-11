@@ -1,11 +1,16 @@
 ---
 title: 成功量度
 description: 成功量度可将insight纳入 [!DNL Adobe Commerce Optimizer] 存储的关键性能量度。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/Z1Ntq9O5Pde8B2N8UCarCf-V5NZw-YiCx78ortu5PwY
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2594'
+source-wordcount: 2627
 ht-degree: 0%
 
 ---
@@ -131,7 +136,7 @@ ht-degree: 0%
 
 **它衡量的内容：**&#x200B;所选时段内你的商店产生的总收入。
 
-**计算方式：**&#x200B;收入是报告期间销售的所有产品的所有已完成订单(基本价格×数量)的总和。 该计算使用从您的店面捕获的`place-order`事件的数据。
+**计算方式：**&#x200B;收入是报告期间销售的所有产品的所有已完成订单（基本价格×数量）的总和。 该计算使用从您的店面捕获的`place-order`事件的数据。
 
 >[!IMPORTANT]
 >
@@ -189,8 +194,8 @@ Conversion Rate = (Total Number of Orders ÷ Total Unique Visitors) × 100
 
 **工作方式：**
 
-- 在访客查看产品页面（使用&#x200B;**个事件）时，将跟踪**&#x200B;产品查看次数`product-view`。
-- 在订单完成（使用&#x200B;**个事件）时跟踪**&#x200B;购买`place-order`。
+- 在访客查看产品页面（使用`product-view`个事件）时，将跟踪&#x200B;**产品查看次数**。
+- 在订单完成（使用`place-order`个事件）时跟踪&#x200B;**购买**。
 - 该计算会将查看特定产品的用户与购买这些产品的用户进行匹配。
 
 **重要说明：**
@@ -342,7 +347,7 @@ Bounce Rate = (Number of Bounced Sessions ÷ Total Sessions) × 100
 - 比较不同页面类型和流量源的跳出率，以识别问题区域。
 - 跳出率突然上升通常表明存在技术问题或营销活动定位不佳。
 
-**跳出率是多少？**&#x200B;这因行业和页面类型而异，但通常情况下：
+**跳出率是多少？** 具体情况因行业和页面类型而异，但通常情况下：
 
 - 40-60%：电子商务网站的平均值。
 - 低于40%：出色的参与度。

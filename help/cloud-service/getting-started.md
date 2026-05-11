@@ -5,10 +5,16 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
-source-git-commit: e5d472336617ad687c91bb458da0004fbab21c12
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+TQID: https://experienceleague.adobe.com/z4XIMJorh5DwVEnfRZtGC0yMz7HFzXI7049mcNIlt-8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: 1343
 ht-degree: 0%
 
 ---
@@ -60,7 +66,7 @@ ht-degree: 0%
 
 >[!TAB 系统管理员和商家工作流]
 
-此图表提供了系统管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/cn/enterprise/admin-guide.html)。
+此图表提供了系统管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/enterprise/admin-guide.html)。
 
 ![Adobe Commerce as a Cloud Service的系统管理员和商家工作流程图](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -211,7 +217,7 @@ ht-degree: 0%
 
 有两种方法可以将您的目录导入[!DNL Adobe Commerce as a Cloud Service]：
 
-* [**Commerce管理员**](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/import/data-import) — 一个用户友好的界面，允许您通过单击几下导入目录数据。
+* [**Commerce管理员**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) — 一个用户友好的界面，允许您通过单击几下导入目录数据。
 * [**导入JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) — 一个REST API，允许您以编程方式导入目录数据。
 
 ### 设置店面
@@ -222,4 +228,4 @@ ht-degree: 0%
 
 * [发行说明](release-notes.md)
 * [迁移指南](migration/overview.md)
-* [Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
+* [Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)

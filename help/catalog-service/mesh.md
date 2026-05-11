@@ -4,16 +4,20 @@ description: 适用于Adobe Commerce的[!DNL API Mesh]提供了一种通过公�
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+TQID: https://experienceleague.adobe.com/FPo8tOFgizn4m-6DFo0ayRf6ct-Oepl6kczu3kZSaVg
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: 324
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-适用于Adobe Developer App Builder[的](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)API Mesh使开发人员能够使用Adobe I/O Runtime将私有或第三方API和其他接口与Adobe产品集成。
+适用于Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)的[API Mesh使开发人员能够使用Adobe I/O Runtime将私有或第三方API和其他接口与Adobe产品集成。
 
 ![目录体系结构图](assets/catalog-service-architecture-mesh.png)
 
@@ -21,7 +25,7 @@ ht-degree: 0%
 
 ## 连接并配置API网格。
 
-1. 按照[API Mesh Developer Guide](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)中&#x200B;_创建Mesh_&#x200B;的说明将API Mesh连接到您的Adobe Commerce实例。
+1. 按照&#x200B;_API Mesh Developer Guide_&#x200B;中[创建Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)的说明将API Mesh连接到您的Adobe Commerce实例。
 
    如果这是您第一次使用API Mesh，请先完成[入门流程](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)，然后再创建网格。
 
@@ -33,7 +37,7 @@ ht-degree: 0%
    }
    ```
 
-1. 使用`CommerceCatalogServiceGraph`Adobe I/O可扩展CLI[将](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli)源添加到您的网格。
+1. 使用[Adobe I/O可扩展CLI](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli)将`CommerceCatalogServiceGraph`源添加到您的网格。
 
    ```bash
    aio api-mesh source install "CommerceCatalogServiceGraph" -f variables.json

@@ -1,16 +1,21 @@
 ---
 title: 从搜索适配器迁移到PLP小组件
 description: 了解如何从已弃用的搜索适配器迁移到 [!DNL Live Search] 产品列表页面小组件。
-source-git-commit: 8811f0f271928fbc827e5a0164542da473c57224
+TQID: https://experienceleague.adobe.com/YAwhAbTVeYpGYKh4dTe1umcfgoRUOg8QPZNIiGFjKVo
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: 2121
 ht-degree: 0%
 
 ---
 
 # 从搜索适配器迁移到PLP小组件
 
-搜索适配器自[&#x200B; 4.0.0起已](release-notes.md#live-search-400)弃用[!DNL Live Search]，将仅接收安全更新。 [产品列表页面(PLP)小组件](plp-styling.md)是所有[!DNL Live Search]实施都支持的解决方案。 本指南可帮助您了解何时可以直接迁移以及何时需要执行其他工作。
+搜索适配器自[!DNL Live Search] 4.0.0起已[弃用](release-notes.md#live-search-400)，将仅接收安全更新。 [产品列表页面(PLP)小组件](plp-styling.md)是所有[!DNL Live Search]实施都支持的解决方案。 本指南可帮助您了解何时可以直接迁移以及何时需要执行其他工作。
 
 ## 先决条件
 
@@ -97,7 +102,7 @@ ht-degree: 0%
 
 **Headless或PWA实施**：
 
-- 使用Headless架构(例如，PWA Studio、Vue Storefront)。
+- 使用Headless架构（例如，PWA Studio、Vue Storefront）。
 - 自定义前端框架(React、Vue、Angular)。
 - 专门将GraphQL用于目录查询。
 - 自定义店面事件实施。
@@ -319,7 +324,7 @@ ht-degree: 0%
 
 **选项3：将GTM替换为Adobe Analytics**
 
-- 考虑迁移到[Adobe Analytics](https://business.adobe.com/cn/products/adobe-analytics.html)（如果适用）。
+- 考虑迁移到[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html)（如果适用）。
 - 请联系客户工程部门以获取指导。
 
 **联系对象**：提交支持票证以获取GTM兼容性更新或客户工程部门帮助。
@@ -444,7 +449,7 @@ ht-degree: 0%
 - Headless或PWA实施
 - 自定义事件跟踪
 
-要联系Adobe支持，请参阅[帮助中心用户指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+要联系Adobe支持，请参阅[帮助中心用户指南](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
 
 ## 常见问题解答
 

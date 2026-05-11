@@ -1,11 +1,15 @@
 ---
 title: 同义词类型
 description: 了解 [!DNL Adobe Commerce Optimizer]中不同类型的同义词。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: a74e48ea-e069-4ccc-a67f-2f85be251fb5
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/23kmFWLruZeFMxIjKZJKbs0y9q10DDtbFG8ioLC5U-o
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: 393
 ht-degree: 0%
 
 ---
@@ -30,10 +34,10 @@ ht-degree: 0%
 
 ## 多词同义词行为
 
-对于多词同义词，[!DNL Adobe Commerce Optimizer]将该同义词视为短语。 例如，如果您创建一个双向同义词&#x200B;**餐桌** ![双向选择器](../../assets/two-way.png) **餐桌** ![双向选择器](../../assets/two-way.png) **餐桌**，则会在所有设置为可搜索的字段中搜索[!DNL Adobe Commerce Optimizer]餐桌&#x200B;**或**&#x200B;餐桌&#x200B;**或**&#x200B;餐桌&#x200B;**的出现情况。**
+对于多词同义词，[!DNL Adobe Commerce Optimizer]将该同义词视为短语。 例如，如果您创建一个双向同义词&#x200B;**餐桌** ![双向选择器](../../assets/two-way.png) **餐桌** ![双向选择器](../../assets/two-way.png) **餐桌**，则会在所有设置为可搜索的字段中搜索&#x200B;**餐桌**&#x200B;或&#x200B;**餐桌**&#x200B;或&#x200B;**餐桌**&#x200B;的出现情况。[!DNL Adobe Commerce Optimizer]
 
 如果未创建同义词，并且购物者搜索&#x200B;**kitchen table**，则[!DNL Adobe Commerce Optimizer]会在可搜索的字段中的任何位置查找术语，甚至跨不同的字段查找术语，例如，名称字段中的&#x200B;**table**&#x200B;和元关键字中的&#x200B;**kitchen**。
 
 创建同义词后，搜索行为将更改为查找确切短语&#x200B;**厨房表**。 这可能会减少结果的数量，因为只会显示包含精确短语的产品。
 
-如果您希望与以前一样单独搜索术语，您可以[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 如果有足够的需求，[!DNL Adobe Commerce Optimizer]将考虑在将来的版本中将此功能添加到产品中。
+如果您希望与以前一样单独搜索术语，您可以[创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 如果有足够的需求，[!DNL Adobe Commerce Optimizer]将考虑在将来的版本中将此功能添加到产品中。

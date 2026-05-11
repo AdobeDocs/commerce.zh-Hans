@@ -2,13 +2,18 @@
 title: 配置您的店面
 description: 了解如何将Edge Delivery Services店面连接到AEM Assets集成。
 feature: CMS, Media, Integration
-source-git-commit: d426c7878f7a66fe1047673be7c5bf65ae1949a7
+TQID: https://experienceleague.adobe.com/gl0Y2UNs3sYkXE9QYwLtAltyX1dxE699y23ey-y0KUU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: 137
 ht-degree: 0%
 
 ---
-
 
 # 配置您的店面
 
@@ -28,4 +33,4 @@ AEM Assets集成显示在AEM Assets中管理的产品图像，而不是使用在
 
 Commerce下拉列表会自动检测`commerce-assets-enabled`配置并相应地调整图像处理。
 
-有关如何将AEM Assets与由Edge Delivery Services提供支持的Commerce店面结合使用的更多信息，请完成[AEM Assets店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hans)文档中的&#x200B;*Adobe Commerce集成*&#x200B;主题中所述的店面配置。
+有关如何将AEM Assets与由Edge Delivery Services提供支持的Commerce店面结合使用的更多信息，请完成&#x200B;*AEM Assets店面*&#x200B;文档中的[Adobe Commerce集成](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/)主题中所述的店面配置。

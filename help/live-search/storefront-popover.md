@@ -2,16 +2,21 @@
 title: '[!DNL Storefront Popover]'
 description: ' [!DNL Live Search storefront popover] 动态返回建议的产品和缩略图。'
 exl-id: 240a5333-15e9-4178-ba3c-ae6c62c2238c
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/nGvwmtPuwoiFgCxrK9shUPS-FSKr-ZxWNUf-qDWjOdQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: 479
 ht-degree: 0%
 
 ---
 
 # [!DNL Storefront Popover]
 
-当[!DNL Live Search]为[已安装](install.md)时，购物者在[!DNL popover]搜索[框中键入内容时，店面中会出现](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=zh-Hans#quick-search)。 键入每个字符后，[!DNL popover]将更新为排名最前的搜索结果的建议产品和缩略图图像。
+当[!DNL Live Search]为[已安装](install.md)时，购物者在[搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search)框中键入内容时，店面中会出现[!DNL popover]。 键入每个字符后，[!DNL popover]将更新为排名最前的搜索结果的建议产品和缩略图图像。
 
 [!DNL Live Search]返回两个或更多字符的查询结果。 对于部分匹配，每个单词的最大字符数为20。 “键入时搜索”查询中的字符数无法配置。
 
@@ -23,7 +28,7 @@ ht-degree: 0%
 
 ## [!DNL Popover]页面大小
 
-[!DNL popover]的页面大小决定了可以返回多少行自动完成产品。 在Live Search安装过程中，`page_size`值更改为[目录搜索](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html?lang=zh-Hans) - `Autocomplete Limit`设置的当前值。
+[!DNL popover]的页面大小决定了可以返回多少行自动完成产品。 在Live Search安装过程中，`page_size`值更改为[目录搜索](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit`设置的当前值。
 
 默认情况下，“目录搜索 — 自动完成限制”值设置为八行。 要更改[!DNL popover]的页面大小，请执行以下操作：
 
@@ -51,14 +56,14 @@ ht-degree: 0%
 
 ## 容器可见性
 
-`.livesearch.popover-container`的父组件是`.search-autocomplete`。  `.active`类指示容器的可见性。 在`.active`打开时有条件地添加[!DNL popover]类。
+`.livesearch.popover-container`的父组件是`.search-autocomplete`。  `.active`类指示容器的可见性。 在[!DNL popover]打开时有条件地添加`.active`类。
 
 ```css
 .search-autocomplete.active   /* visible */
 .search-autocomplete          /* not visible */
 ```
 
-有关设置店面元素样式的详细信息，请参阅[Frontend Developer Guide](https://developer.adobe.com/commerce/frontend-core/guide/css/)中的[层叠样式表(CSS)](https://developer.adobe.com/commerce/frontend-core/guide/)。
+有关设置店面元素样式的详细信息，请参阅[Frontend Developer Guide](https://developer.adobe.com/commerce/frontend-core/guide/)中的[层叠样式表(CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/)。
 
 ## 类选择器
 
@@ -105,7 +110,7 @@ ht-degree: 0%
 
 ## 使用修改的主题 {#working-with-modified-theme}
 
-您可以将[!DNL storefront popover]与自定义[主题](https://developer.adobe.com/commerce/frontend-core/guide/themes/)一起使用，该主题会继承来自&#x200B;*Luma*&#x200B;的必需文件。 不得修改`top.search`模块的`header-wrapper`中的`Magento_Search`块。
+您可以将[!DNL storefront popover]与自定义[主题](https://developer.adobe.com/commerce/frontend-core/guide/themes/)一起使用，该主题会继承来自&#x200B;*Luma*&#x200B;的必需文件。 不得修改`Magento_Search`模块的`header-wrapper`中的`top.search`块。
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -119,7 +124,7 @@ ht-degree: 0%
 
 ## 正在禁用[!DNL popover]
 
-要禁用[!DNL popover]并恢复标准[快速搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=zh-Hans#quick-search)功能，请输入以下命令：
+要禁用[!DNL popover]并恢复标准[快速搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search)功能，请输入以下命令：
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover
@@ -127,4 +132,4 @@ bin/magento module:disable Magento_LiveSearchStorefrontPopover
 
 ## Headless实施
 
-对于具有Headless实施的客户，您可以使用[!DNL Live Search popover]npm包[安装](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils)。
+对于具有Headless实施的客户，您可以使用[npm包](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils)安装[!DNL Live Search popover]。

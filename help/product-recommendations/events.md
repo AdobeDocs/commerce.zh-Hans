@@ -3,9 +3,14 @@ title: 收集数据
 description: 了解事件如何收集 [!DNL Product Recommendations]的数据。
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/efHRMj3u3w-xvUgMnEYDpX0D-BDCUyjhhrkMaa3n-xg
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: 1019
 ht-degree: 0%
 
 ---
@@ -22,7 +27,7 @@ ht-degree: 0%
 
 ## 医疗保健客户
 
-如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Product Recommendations]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Product Recommendations]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/general/general#data-services)。
+如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Product Recommendations]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Product Recommendations]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)。
 
 ## 数据类型和事件
 
@@ -50,7 +55,7 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 |---|---|---|
 | 基于热门程度(`Most viewed`， `Most purchased`， `Most added to cart`) | 不同 | 取决于事件数量 — 查看次数最常见，因此学习速度更快；然后添加到购物车，再购买 |
 | `Viewed this, viewed that` | 需要更多培训 | 产品查看量非常大 |
-| `Viewed this, bought that`，`Bought this, bought that` | 需要最多的培训 | 购买事件是商业网站上最罕见的事件，尤其是与产品查看次数相比 |
+| `Viewed this, bought that`, `Bought this, bought that` | 需要最多的培训 | 购买事件是商业网站上最罕见的事件，尤其是与产品查看次数相比 |
 | `Trending` | 需要三天的数据来建立热门程度基线 | 趋势是衡量产品受欢迎程度与其自身受欢迎程度基线相比的近期动向。 产品的趋势分数是使用前景集（过去24小时内的最近热门程度）和背景集（过去72小时内的热门程度基线）计算的。 如果某个项目的热门程度与其基线热门程度相比，在24小时内显着增加，则它将获得高趋势得分。 每个产品都有此分数，而任何时候得分最高的产品都包含最热门的产品集。 |
 
 可能影响培训所需时间的其他变量：
@@ -87,4 +92,4 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 
 >[!NOTE]
 >
->如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hans)，则在购物者同意使用Cookie之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，Adobe Commerce会默认收集行为数据。
+>如果启用了[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，则在购物者同意使用Cookie之前，Adobe Commerce不会收集行为数据。 如果“Cookie限制模式”被禁用，Adobe Commerce会默认收集行为数据。

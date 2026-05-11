@@ -2,16 +2,20 @@
 title: Facet
 description: '[!DNL Live Search]个Facet使用属性值的多个维度作为搜索条件。'
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: 86484d49aa4b79bfe64455dba18b84bcd9073736
+TQID: https://experienceleague.adobe.com/bTE-Ow8xEDfK-saxGxotnvkgHZI4QThno1dCqRbjvCc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: 452
 ht-degree: 0%
 
 ---
 
 # Facet
 
-分面是一种高性能筛选方法，它使用多个属性值的维度作为搜索条件。 分面搜索类似，但比标准[分层导航](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=zh-Hans)更“智能”。 可用筛选器的列表由搜索结果中返回的产品的[可筛选属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=zh-Hans#filterable-attributes)确定。
+分面是一种高性能筛选方法，它使用多个属性值的维度作为搜索条件。 分面搜索类似，但比标准[分层导航](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html)更“智能”。 可用筛选器的列表由搜索结果中返回的产品的[可筛选属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes)确定。
 
 [!DNL Live Search]使用`productSearch`查询，该查询返回刻面和[!DNL Live Search]特有的其他数据。 有关代码示例，请参阅开发人员文档中的[`productSearch`查询](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)。
 
@@ -37,8 +41,8 @@ ht-degree: 0%
 
 | 设置 | 描述 |
 |--- |--- |
-| [类别显示设置](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=zh-Hans) | 锚点 — `Yes` |
-| [属性属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hans) | [目录输入类型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=zh-Hans) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch`（仅限构件）、`Text swatch`（仅限构件） |
+| [类别显示设置](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | 锚点 — `Yes` |
+| [属性属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [目录输入类型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch`（仅限构件）、`Text swatch`（仅限构件） |
 | 属性店面属性 | 在搜索结果分层导航中使用 — `Yes` |
 
 ## Facet聚合

@@ -3,9 +3,14 @@ title: 将数据与SaaS数据导出同步
 description: 了解 [!DNL SaaS Data Export] 如何在Adobe Commerce实例和连接的SaaS服务之间收集并同步数据。
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
-source-git-commit: 966daee60fa8945a68424fca8bda4fe4b9599872
+TQID: https://experienceleague.adobe.com/wM71qxvduDr77EW6Y8mSNfBXlqkloC-PGOOBOl-mZQM
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: 1037
 ht-degree: 0%
 
 ---
@@ -66,7 +71,7 @@ SaaS数据导出支持三种同步类型：完全同步、部分同步和重试�
 
 为了使部分同步正常工作，Commerce应用程序需要以下配置：
 
-- [已通过cron作业启用任务计划](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=zh-Hans)
+- [通过cron作业启用任务计划](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 
 - 所有SaaS数据导出索引器均在`Update by Schedule`模式下配置。
 
@@ -83,11 +88,11 @@ SaaS数据导出支持三种同步类型：完全同步、部分同步和重试�
 
 大多数同步活动是根据应用程序配置自动处理的。 但是，SaaS数据导出还提供了用于监视和管理该过程的工具。
 
-- [!BADGE 仅限PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"} **[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 管理员用户可以查看和跟踪同步到Commerce服务并且可供店面服务使用的数据。 此仪表板显示同步到Commerce服务的产品。
+- [!BADGE 仅限PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"} **[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 管理员用户可以查看和跟踪同步到Commerce服务并且可供店面服务使用的数据。 此仪表板显示同步到Commerce服务的产品。
 
   {{aco-data-sync-verification}}
 
-- [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="适用于与Adobe Commerce Optimizer集成的Adobe Commerce项目（Adobe管理的SaaS基础架构）。"} **[数据同步馈送同步状态页面](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/data-sync)** — 对于使用[!DNL Adobe Commerce Optimizer]的Commerce项目，请从Adobe Commerce Optimizer的数据馈送同步状态页面检查店面的目录数据可用性。 此仪表板显示数据导出馈送的同步状态。
+- [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="适用于与Adobe Commerce Optimizer集成的Adobe Commerce项目（Adobe管理的SaaS基础架构）。"} **[数据同步馈送同步状态页面](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)** — 对于使用[!DNL Adobe Commerce Optimizer]的Commerce项目，请从Adobe Commerce Optimizer的数据馈送同步状态页面检查店面的目录数据可用性。 此仪表板显示数据导出馈送的同步状态。
 
 >[!NOTE]
 >
@@ -97,11 +102,11 @@ SaaS数据导出支持三种同步类型：完全同步、部分同步和重试�
 
 仅当Commerce实例配置正确时，“部分同步”和“重试失败的项”同步才能正常工作。 通常，在设置Commerce服务时完成配置。 如果数据导出无法正常工作，请检查以下配置。
 
-- [确认cron作业正在运行](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
+- [确认cron作业正在运行](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
 
-- 验证索引器是从[Admin](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management)运行，还是使用Commerce CLI命令`bin/magento indexer:info`运行。
+- 验证索引器是从[Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)运行，还是使用Commerce CLI命令`bin/magento indexer:info`运行。
 
-- 验证以下源的索引器是否设置为`Update by Schedule`：目录属性、产品、产品覆盖和产品变体。 您可以在管理员中或使用CLI ([)从](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management)索引管理`bin/magento indexer:show-mode | grep -i feed`检查索引器。
+- 验证以下源的索引器是否设置为`Update by Schedule`：目录属性、产品、产品覆盖和产品变体。 您可以在管理员中或使用CLI (`bin/magento indexer:show-mode | grep -i feed`)从[索引管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)检查索引器。
 
 ### 数据传输日志记录的事件管理器通知
 

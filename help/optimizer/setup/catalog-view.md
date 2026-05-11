@@ -3,15 +3,19 @@ title: 目录视图
 description: 了解目录视图是什么以及如何创建它们以按业务结构、策略和定价整理产品目录。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: 1384
 ht-degree: 0%
 
 ---
-
 
 # Merchanding Services的目录视图
 
@@ -56,14 +60,14 @@ ht-degree: 0%
 
 1. 从左侧菜单中，转到&#x200B;_商店设置_，然后单击&#x200B;**[!UICONTROL Catalog views]**。
 
-1. 单击&#x200B;**[!UICONTROL Create catalog view]**&#x200B;。
+1. 单击&#x200B;**[!UICONTROL Create catalog view]**。  
 
 1. 配置目录视图详细信息：
 
-   - **名称** — 输入目录视图的名称，例如`Celport`&#x200B;。
+   - **名称** — 输入目录视图的名称，例如`Celport`。  
    - **目录源** — 选择目录源（区域设置），例如`en-US`。
    - **编录图层** — 审阅摄取的图层和优先级。
-   - **策略** — 使用下拉菜单选择相关策略。 例如，“品牌”、“型号”。&#x200B;AEM确保您已[创建策略](policies.md)。
+   - **策略** — 使用下拉菜单选择相关策略。 例如，“品牌”、“型号”。 请&#x200B;确保您已[创建策略](policies.md)。
 
 1. 选择要链接到目录视图的价格手册。
 
@@ -147,13 +151,13 @@ ht-degree: 0%
 **1. 数据摄取**
 来自PIM、ERP和其他系统的目录数据被引入到Merchandising Services框架。 每个SKU都包含映射到目录视图、策略和区域设置的区域设置信息和产品属性。 有关数据摄取的更多信息，请参阅[开发人员文档](https://developer.adobe.com/commerce/services/optimizer/)。
 
-**2。 统一的基本目录**
+**2. 统一的基本目录**
 引入的数据在目录服务数据管道中创建统一的基本目录。 此单一来源可消除跨业务部门的数据重复。
 
-**3。 目录视图**
+**3. 目录视图**
 多个目录视图代表不同的业务单位（例如，“Texas Retail”、“Texas Retail Secondural”）。 可以在目录视图之间共享区域设置、策略和价格手册，以实现灵活性。
 
-**4。 多渠道投放**
+**4. 多渠道交付**
 过滤的目录数据会传送到各种目标，包括Edge Delivery Services店面、市场、广告平台和自定义微型店面。 有关目录数据投放的详细信息，请参阅[开发人员文档](https://developer.adobe.com/commerce/services/optimizer/)。
 
 ### 关键组件
@@ -190,13 +194,13 @@ ht-degree: 0%
 
 ### 汽车零部件经销商
 
-**挑战**： 3,000个产品相同但定价不同的经销商<br>
+**挑战**： 3,000个具有相同产品但不同定价的经销商<br>
 **解决方案**：一个目录，其中包含经销商特定的目录视图和价格手册
 
 ### 多位置retailer
 
 **挑战**：每个位置的定价和库存不同<br>
-**解决方案**：基于位置的目录视图和特定于区域的策略
+**解决方案**：基于位置的目录视图以及特定于区域的策略
 
 >[!INFO]
 >

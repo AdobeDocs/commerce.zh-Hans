@@ -3,9 +3,14 @@ title: 配置文件记录
 description: 了解配置文件记录捕获的数据。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: aaa30886-d9c0-4909-81ee-fad3407cac43
+TQID: https://experienceleague.adobe.com/bHKuzUSApLQNW-M8NY1xb6-WZtjACmRRZ0TtsPM55rU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: 499
 ht-degree: 0%
 
 ---
@@ -24,7 +29,7 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |---|---|
-| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/namespaces)。 |
+| `channel` | 包含有关数据源的信息。 `_id`和`_type`都包含[命名空间值](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces)。 |
 | `channel._id` | 渠道的唯一标识符，如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 标识渠道数据的来源，如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `person` | 包含有关客户的信息。 |
@@ -59,6 +64,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->每个配置文件记录还包含[`identityMap`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/profile/identitymap)字段，其中包括系统生成的Commerce客户ID作为配置文件的主要标识符，以及用作辅助标识符的电子邮件ID。
+>每个配置文件记录还包含[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)字段，其中包括系统生成的Commerce客户ID作为配置文件的主要标识符，以及用作辅助标识符的电子邮件ID。
 
 了解如何[创建配置文件记录特定的架构](profile-data.md)，该架构可以从您的配置文件记录中摄取数据。

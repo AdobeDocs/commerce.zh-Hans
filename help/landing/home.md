@@ -5,9 +5,15 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 3af8b09fac4b60105ac046fca2db7afe701ed1f2
+TQID: https://experienceleague.adobe.com/zKL5fNTECsNOKZfEl7OUSYHTo-wrh81z3-C7wB1SoWM
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: da3860b0-d637-47df-bef0-273751180266id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: 1291
 ht-degree: 0%
 
 ---
@@ -193,11 +199,11 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="监控数据同步" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>数据管理仪表板</strong>
          </a>
       </div>
@@ -223,7 +229,7 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
 | 创建全渠道个性化体验 | 您的商业数据处于孤立状态，使您无法跨渠道提供个性化体验。 | 使用[Data Connection](../data-connection/overview.md)将行为、事务性和用户档案数据发送到Adobe Experience Platform。 构建复杂的客户区段，创建放弃的购物车促销活动，定位相似受众，并分析整个客户历程中的季节性趋势。 |
 | 简化数字资产管理 | 跨多个系统管理产品映像和富媒体非常耗时且容易出错。 | [AEM Assets集成](../aem-assets-integration/overview.md)通过将Adobe Commerce连接到Adobe Experience Manager Assets项目、简化工作流并确保在所有接触点上提供一致的品牌体验，提供了集中式资产管理。 |
 | 优化支付处理 | 支付选项有限和支付体验缺佳损害了客户满意度和转化率。 | [付款服务](../payment-services/guide-overview.md)提供多种付款方式，包括免息分期付款，并有一个统一的信息板来管理付款、订单和发票。 |
-| 大规模管理数据同步 | 资源密集型索引正在减慢网站速度，并且您无法轻松跟踪数据同步问题。 | [SaaS数据导出](../data-export/overview.md)、[SaaS价格索引器](../price-index/price-indexing.md)和[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)自动同步目录、订单和库存数据，将价格计算卸载到Adobe的云基础架构，并实时查看同步状态。 |
+| 大规模管理数据同步 | 资源密集型索引正在减慢网站速度，并且您无法轻松跟踪数据同步问题。 | [SaaS数据导出](../data-export/overview.md)、[SaaS价格索引器](../price-index/price-indexing.md)和[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)自动同步目录、订单和库存数据，将价格计算卸载到Adobe的云基础架构，并实时查看同步状态。 |
 | 挽回失去的客户并减少回报 | 高客户流失率和产品回报率正在影响盈利能力。 | 将[Data Connection](../data-connection/overview.md)与Adobe Journey Optimizer和Real-Time CDP结合使用，以识别返回模式、创建回馈促销活动、按行为划分客户区段，以及通过电子邮件和短信发送个性化的重新参与促销活动。 |
 | 制定数据驱动型促销决策 | 您不确定要促销哪些产品或者何时运行促销活动。 | [实时搜索](../live-search/overview.md)提供搜索性能洞察和促销工具，用于访问关键量度、分析搜索词以及使用智能促销规则来根据真实的客户行为和业务目标提升或隐藏产品。 |
 | 维护对敏感数据的合规性 | 您需要处理敏感的客户数据，同时保持HIPAA合规性。 | [Data Connection](../data-connection/overview.md)支持HIPAA，允许您与Experience Platform共享后台数据，同时保持合规性并系统地处理隐私请求。 |

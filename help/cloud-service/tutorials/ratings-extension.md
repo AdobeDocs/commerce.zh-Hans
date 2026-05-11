@@ -7,16 +7,22 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-source-git-commit: 33ba97fd6766c9d11baea74170a7119d72e06379
+TQID: https://experienceleague.adobe.com/FozTiUWpL6Ab2eqbbf3nhL-faFHdwBIFOgAkvGe5jXQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: 1738
 ht-degree: 0%
 
 ---
 
 # 评级扩展教程
 
-本教程将指导您使用[!DNL Adobe Commerce as a Cloud Service]和AI辅助开发工具为[!DNL Adobe App Builder]构建产品评级扩展。
+本教程将指导您使用[!DNL Adobe App Builder]和AI辅助开发工具为[!DNL Adobe Commerce as a Cloud Service]构建产品评级扩展。
 
 在开始之前，请完成[先决条件](./tutorial-prerequisites.md)。
 
@@ -171,7 +177,7 @@ curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=T
 
 ### 与Edge Delivery Services集成
 
-要将评级API与由[!DNL Adobe Commerce]提供支持的[!DNL Edge Delivery Services]店面集成，请要求代理创建具有评级API要求的服务合同：
+要将评级API与由[!DNL Edge Delivery Services]提供支持的[!DNL Adobe Commerce]店面集成，请要求代理创建具有评级API要求的服务合同：
 
 ```shell-session
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
@@ -204,7 +210,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
 在开始店面集成之前，请验证您是否具备以下条件：
 
 * 店面项目已连接到您的[!DNL Commerce]实例
-* 使用CLI安装的Commerce storefront AI工具[&#128279;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+* 使用CLI安装的Commerce storefront AI工具[](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 
 ### 设置店面工作区
 
@@ -303,7 +309,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
    您应在开发环境和浏览器中看到以下更改：
 
    * 系统会自动创建产品评级组件。
-   * 组件使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=zh-Hans)集成到PDP中，或者作为独立块，具体取决于选择的体系结构。
+   * 组件使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots)集成到PDP中，或者作为独立块，具体取决于选择的体系结构。
    * 星标以适当的填充比例显示，填充比例基于API中的评级值。
 
    ![产品详细信息页面，显示集成在产品标题下方的星级评分](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

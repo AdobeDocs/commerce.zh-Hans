@@ -4,10 +4,15 @@ description: 了解如何使用 [!DNL Data Connection] 扩展与Experience Platf
 role: Admin, Leader
 feature: Security, Compliance
 exl-id: 8851e6d2-c466-4d8e-bfa4-20d0ad6522b5
-source-git-commit: 290e3310bd7940c4ccd11317d273b75cc974223b
+TQID: https://experienceleague.adobe.com/PxrtL1nHtJsRJuAehDVKRk0ZuJz0ta7i84j1K6An1QU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 0%
+source-wordcount: 601
+ht-degree: 1%
 
 ---
 
@@ -27,11 +32,11 @@ ht-degree: 0%
 
 ## 安装
 
-如果您购买了Adobe [!DNL Commerce]的医疗保健加载项，则很可能已安装[HIPAA就绪扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation)。 要确保您的[!DNL Commerce]后台事件数据为HIPAA就绪，您还需要安装[!DNL Data Connection]扩展和附加的&#x200B;**数据服务HIPAA**&#x200B;扩展。 **数据服务HIPAA**&#x200B;扩展可确保您发送到Experience Platform的任何后台数据都支持HIPAA。 了解[如何安装扩展](install.md#install-the-data-services-hipaa-extension)。
+如果您购买了Adobe [!DNL Commerce]的医疗保健加载项，则很可能已安装[HIPAA就绪扩展](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation)。 要确保您的[!DNL Commerce]后台事件数据为HIPAA就绪，您还需要安装[!DNL Data Connection]扩展和附加的&#x200B;**数据服务HIPAA**&#x200B;扩展。 **数据服务HIPAA**&#x200B;扩展可确保您发送到Experience Platform的任何后台数据都支持HIPAA。 了解[如何安装扩展](install.md#install-the-data-services-hipaa-extension)。
 
 >[!IMPORTANT]
 >
->安装&#x200B;**数据服务HIPAA**&#x200B;扩展时，将不再捕获实时搜索和产品推荐使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为这些服务重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/general/general#data-services)。
+>安装&#x200B;**数据服务HIPAA**&#x200B;扩展时，将不再捕获实时搜索和产品推荐使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为这些服务重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)。
 
 ## 如何确保发送到Experience Platform的数据已为HIPAA就绪
 
@@ -41,11 +46,11 @@ ht-degree: 0%
 
 ### 将数据使用标签应用于[!DNL Commerce]字段
 
-按照[管理架构的数据使用标签](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/labels)教程中的步骤操作，了解如何将标签应用于[!DNL Commerce]架构。
+按照[管理架构的数据使用标签](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels)教程中的步骤操作，了解如何将标签应用于[!DNL Commerce]架构。
 
-查看[敏感标签词汇表](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/labels/reference#sensitive)，了解可用于[!DNL Commerce]架构中字段的可用标签。 例如，标签`RHD`标识Protected Health Information (PHI)或Adobe按照合同规定允许您上传的病人的相关信息。
+查看[敏感标签词汇表](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive)，了解可用于[!DNL Commerce]架构中字段的可用标签。 例如，标签`RHD`标识Protected Health Information (PHI)或Adobe按照合同规定允许您上传的病人的相关信息。
 
-当您的[!DNL Commerce]数据标记为敏感时，您可以强制实施策略以防止构成策略违规的数据操作。 了解有关Experience Platform中[策略实施](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-governance/enforcement/overview)的更多信息。
+当您的[!DNL Commerce]数据标记为敏感时，您可以强制实施策略以防止构成策略违规的数据操作。 了解有关Experience Platform中[策略实施](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)的更多信息。
 
 ## Commerce中的数据加密
 
@@ -57,7 +62,7 @@ Adobe [!DNL Commerce]使用块级加密。 对于存储，[!DNL Commerce]使用A
 
 ### Experience Platform中的数据加密
 
-当商家将其数据发送到Experience Platform时，将使用HTTPS TLS v1.2发送该数据。详细了解[Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/governance-privacy-security/encryption)如何加密数据。
+当商家将其数据发送到Experience Platform时，将使用HTTPS TLS v1.2发送该数据。 详细了解[Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption)如何加密数据。
 
 ## [!DNL Commerce]如何处理隐私请求
 

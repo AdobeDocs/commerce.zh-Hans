@@ -5,9 +5,14 @@ seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 feature: Services, Recommendations
 exl-id: 8df3ef2e-b00e-42d8-b92b-4fbdaaed9f8f
-source-git-commit: 8e3e71c7de56b367a73ab048fa13ba2cdeb55f41
+TQID: https://experienceleague.adobe.com/6XeFQMGG-2vEfCQlv-zlKBqELdN-rOKhulVS8IgmpYg
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: 236
 ht-degree: 0%
 
 ---
@@ -24,7 +29,7 @@ ht-degree: 0%
 本指南涵盖：
 
 * 所有在管理员中完成的特定于[!DNL Product Recommendations]的任务。
-* 使用[!DNL Product Recommendations]命令行完成的所有[!DNL Commerce]特定任务
+* 使用[!DNL Commerce]命令行完成的所有[!DNL Product Recommendations]特定任务
 
 本指南不涉及Adobe Commerce和Magento Open Source的核心功能。
 
@@ -32,12 +37,12 @@ ht-degree: 0%
 
 | 指南 | 描述 |
 |------ | ----------- |
-| [Adobe Commerce 2.4用户指南](https://experienceleague.adobe.com/docs/commerce.html?lang=zh-Hans) | Adobe Commerce和Magento Open Source的以商家为中心的文档 |
+| [Adobe Commerce 2.4用户指南](https://experienceleague.adobe.com/docs/commerce.html) | Adobe Commerce和Magento Open Source的以商家为中心的文档 |
 | [Adobe Commerce 2.4开发人员指南](https://developer.adobe.com/commerce/docs) | 用于构建和自定义Adobe Commerce或Magento Open Source的以开发人员为中心的文档 |
 
 ## 支持
 
 如果您需要本指南中未涉及的信息或问题，请使用以下资源：
 
-* [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#submit-tickets){target="_blank"} — 查看与[!DNL Product Recommendations]相关的故障排除文章。
-* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。
+* [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"} — 查看与[!DNL Product Recommendations]相关的故障排除文章。
+* [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — 提交票证以接收其他帮助。

@@ -5,9 +5,14 @@ role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
 exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
-source-git-commit: c532d72cb4aa7c920af790d345cce3ae6cbd2281
+TQID: https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: 454
 ht-degree: 0%
 
 ---
@@ -26,7 +31,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   > 有关更多信息，请参阅我们的[Adobe Commerce服务连接器](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)教程视频。
+   > 有关更多信息，请参阅我们的[Adobe Commerce服务连接器](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)教程视频。
 
 1. 如果您已连接实例，请导航到[入门](onboard.md)页面以了解后续步骤。
 
@@ -40,13 +45,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> [!DNL Payment Services]在入门培训期间为其他[可用国家/地区提供](../payment-services/payments-options.md)快速签出功能[（付款选项的子集）](../payment-services/production.md#complete-merchant-onboarding)。
+> [!DNL Payment Services]在入门培训期间为其他[可用国家/地区提供[快速签出功能](../payment-services/payments-options.md)（付款选项的子集）](../payment-services/production.md#complete-merchant-onboarding)。
 
 ### 哪个[!DNL Payment Services]选项适合您？
 
->[!VIDEO](https://video.tv.adobe.com/v/3447928?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
 
-有关设置[扩展的更多信息，请参阅](connect.md)连接[!DNL Payment Services]。
+有关设置[!DNL Payment Services]扩展的更多信息，请参阅[连接](connect.md)。
 
 >[!BEGINTABS]
 
@@ -96,13 +101,13 @@ ht-degree: 0%
 
 >[!ENDTABS]
 
-有关特定于发行版和版本的详细信息，请参阅[生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=zh-Hans)和[[!DNL Payment Services] 发行说明](release-notes.md)页面。
+有关特定于发行版和版本的详细信息，请参阅[生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)和[[!DNL Payment Services] 发行说明](release-notes.md)页面。
 
 要获取完整说明并开始入门流程，请参阅[开始使用 [!DNL Payment Services]](onboard.md)。
 
 ### 接受的信用卡和货币
 
-[!DNL Payment Services]接受可用国家的货币。 有关设置货币汇率的详细信息，请参阅[货币配置](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=zh-Hans)。
+[!DNL Payment Services]接受可用国家的货币。 有关设置货币汇率的详细信息，请参阅[货币配置](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html)。
 
 有关PayPal产品和服务可用的货币和支付方法的更多信息，请参阅以下页面：
 

@@ -2,9 +2,12 @@
 title: 设置
 description: 配置 [!DNL Live Search] 服务的设置。
 exl-id: 6387a365-7e23-4023-95ac-27908164d81c
-source-git-commit: 70ff444afbe7ddf41e966e479e03975a02f4e10f
+TQID: https://experienceleague.adobe.com/Dn4x8Boo-1F5RQgMXVx6Dpt7iYWFIlqOlO5QwhJrjVU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: 467
 ht-degree: 0%
 
 ---
@@ -24,7 +27,7 @@ ht-degree: 0%
 您可以指定价格范围组的数量以及价格值在它们之间的分配方式。 每个价格范围与上一组价目表各一重叠。 例如，间隔为20的五个组将创建以下价格范围：0-20、20-40、40-60、60-80和>80。 如果目录中没有足够的产品来填满所有定义的范围，则会相应地调整可用组的显示。 例如：0-20、60-80、>80。
 
 1. 在管理员中，转到&#x200B;**营销** > *SEO和搜索* > **[!DNL Live Search]**。
-1. 在&#x200B;**价格分面**&#x200B;下的&#x200B;*设置*&#x200B;工作区上，执行以下操作：
+1. 在&#x200B;*价格分面*&#x200B;下的&#x200B;**设置**&#x200B;工作区上，执行以下操作：
    * 输入&#x200B;**选择的数量**&#x200B;或可用的价格分组。 使用[!DNL Live Search] 4.4.0，您最多可以定义100个价格分组。 早期版本允许50个价格分组。
    * 输入每个组的&#x200B;**间隔值**&#x200B;或价格范围。 最大值为40,000,000。
 1. 单击&#x200B;**保存**。

@@ -3,11 +3,17 @@ title: 店面和目录管理员的端到端用例
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer] 使用目录视图和策略管理您的目录，以及如何根据您的目录配置设置店面。
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+TQID: https://experienceleague.adobe.com/sqz0syCSh3ls8F-WIbuzPyqeRguyXdsPw-7OerOnDes
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: 2205
 ht-degree: 0%
 
 ---
@@ -55,7 +61,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 通过查看Adobe Commerce Storefront文档中的[探索样板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=zh-Hans)主题来了解店面配置文件。
+> 通过查看Adobe Commerce Storefront文档中的[探索样板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/)主题来了解店面配置文件。
 
 ### 关‌键要点
 
@@ -157,7 +163,7 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 1. 为Celport创建一个名为&#x200B;*Celport部件类别*&#x200B;的新策略，以便仅销售制动和悬架部件。
 1. 为Celport店面创建新的目录视图。
 
-   此目录视图使用您新创建的策略&#x200B;*Celport部件类别*&#x200B;和现有的&#x200B;*East Coast Inc品牌*，以确保Celport在与East Coast Inc签署的协议中只能销售Bolt和Cruz品牌。Celport目录视图使用`east_coast_inc`价格手册来支持与品牌许可协议一致的产品定价计划。
+   此目录视图使用您新创建的策略&#x200B;*Celport部件类别*&#x200B;和现有的&#x200B;*East Coast Inc品牌*，以确保Celport在与East Coast Inc签署的协议中只能销售Bolt和Cruz品牌。Celport目录视图使用`east_coast_inc`价格手册来支持与品牌许可协议相符的产品定价计划。
 1. 更新商务店面配置以使用来自您创建的Celport目录视图的数据。
 
 在本节末尾， Celport将启动并运行，准备销售Carvelo的产品。
@@ -449,4 +455,4 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 - 了解[高级策略配置](../setup/policies.md)
 - 为其他经销商设置[其他目录视图](../setup/catalog-view.md)
 - 查看[API文档](https://developer.adobe.com/commerce/services/optimizer/)以进行程序化目录管理
-- 了解如何为您的Edge Delivery Services店面配置下拉组件，以创建自定义店面体验，用于产品发现、推荐和其他店面功能。 请参阅[Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hans)
+- 了解如何为您的Edge Delivery Services店面配置下拉组件，以创建自定义店面体验，用于产品发现、推荐和其他店面功能。 请参阅[Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

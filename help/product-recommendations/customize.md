@@ -1,9 +1,14 @@
 ---
 title: 自定义
 description: 了解如何自定义您的产品推荐。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b59932e1-748a-432d-b65b-13cf1c287fb2
+TQID: https://experienceleague.adobe.com/-49Lqkuhnrn5GCQtHLO-9gr1nHwMjEQeEVDRR4cDk5Y
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -112,7 +117,7 @@ ht-degree: 0%
 
 ![添加徽章](assets/unit-custom.png)
 
-若要确保在页面上呈现推荐单元时自定义产品属性可用，请在Admin的[产品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hans)页面中将`Used in Product Listing`属性设置为`Yes`。
+若要确保在页面上呈现推荐单元时自定义产品属性可用，请在Admin的[产品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html)页面中将`Used in Product Listing`属性设置为`Yes`。
 
 设置此属性后，JSON有效负载将包含一个包含属性代码和值的数组的`attributes`对象。 然后，您可以根据这些属性值应用自定义店面样式，例如添加特殊的可视化处理或徽章，如前所述。
 

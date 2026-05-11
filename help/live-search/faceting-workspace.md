@@ -1,9 +1,15 @@
 ---
 title: 彩块化Workspace
 description: 了解如何在 [!DNL Live Search] 彩块化工作区中运行。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7108e41b-44a7-4943-b20f-6ee544d099e9
+TQID: https://experienceleague.adobe.com/LsVM4inUqk2EozfVN--FH1Ukggt8A8QBIQXW-SmnxZs
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: 229
 ht-degree: 0%
 
 ---
@@ -16,7 +22,7 @@ ht-degree: 0%
 
 ## 设置范围
 
-如果您的Adobe Commerce安装包含多个商店视图，请将&#x200B;**范围**&#x200B;设置为应用您的方面设置的[商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)。
+如果您的Adobe Commerce安装包含多个商店视图，请将&#x200B;**范围**&#x200B;设置为应用您的方面设置的[商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 
 ## 筛选列表
 

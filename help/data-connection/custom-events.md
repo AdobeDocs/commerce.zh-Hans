@@ -4,9 +4,14 @@ description: 了解如何创建自定义事件以将您的Adobe Commerce数据�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 4e8cf0ad3f8f94d4f59bc8d78a44f4b3e86cbc3e
+TQID: https://experienceleague.adobe.com/D1fAIJRYegeZakCdJLB6F1HME4rUQaeoUjMFNgmqpzs
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: 371
 ht-degree: 0%
 
 ---
@@ -21,8 +26,8 @@ ht-degree: 0%
 
 对于任何`custom`事件，收集器：
 
-- 添加以`identityMap`作为主标识的`ECID`
-- 将`email`作为辅助标识`identityMap`包含在&#x200B;_中，如果在事件中设置了_ `personalEmail.address`
+- 添加以`ECID`作为主标识的`identityMap`
+- 将`email`作为辅助标识&#x200B;_包含在`identityMap`中，如果在事件中设置了_ `personalEmail.address`
 - 在转发到Edge之前，将`xdm`对象中的完整事件打包
 
 示例：
@@ -137,7 +142,7 @@ mse.publish.productPageView();
 
 此示例在发布者中设置自定义上下文，并覆盖之前在Adobe客户端数据层中设置的自定义上下文。
 
-在此示例中，`pageView`事件在&#x200B;**字段中将具有**&#x200B;自定义页面名称2`web.webPageDetails.name`。
+在此示例中，`pageView`事件在`web.webPageDetails.name`字段中将具有&#x200B;**自定义页面名称2**。
 
 ```javascript
 const mse = window.magentoStorefrontEvents;

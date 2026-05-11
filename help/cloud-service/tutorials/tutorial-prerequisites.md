@@ -7,9 +7,14 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-source-git-commit: 0ece7b58bdafd664297cbdee809c53ef2389fb12
+TQID: https://experienceleague.adobe.com/UvtVXuUjbanuVWqNG3-bYQh6IzY1OuDjGYpojtXHMHY
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: 1291
 ht-degree: 0%
 
 ---
@@ -293,7 +298,7 @@ OAUTH_TECHNICAL_ACCOUNT_EMAIL=
 OAUTH_ORG_ID=
 ```
 
-通过单击工作区上的&#x200B;**[!UICONTROL Credential details]**&#x200B;选项卡，从[Developer Console](https://developer.adobe.com/)中的&#x200B;**[!UICONTROL OAuth Server-to-Server]**&#x200B;页面复制这些值。
+通过单击工作区上的&#x200B;**[!UICONTROL OAuth Server-to-Server]**&#x200B;选项卡，从[Developer Console](https://developer.adobe.com/)中的&#x200B;**[!UICONTROL Credential details]**&#x200B;页面复制这些值。
 
 Adobe Developer Console中的![OAuth服务器到服务器凭据页面](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
@@ -382,7 +387,7 @@ aio app use --merge
 
    >[!NOTE]
    >
-   >如果您看到一则警告，指出未找到入门工具包的技能，则说明出现了问题，这通常是因为安装程序在克隆入门工具包以外的文件夹中运行。 从`aio commerce extensibility tools-setup`文件夹（入门套件项目根）运行`extension`并在出现提示时选择相应的入门套件。
+   >如果您看到一则警告，指出未找到入门工具包的技能，则说明出现了问题，这通常是因为安装程序在克隆入门工具包以外的文件夹中运行。 从`extension`文件夹（入门套件项目根）运行`aio commerce extensibility tools-setup`并在出现提示时选择相应的入门套件。
 
    ![终端显示AI可扩展性工具设置，已选择签出启动工具包](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
 
@@ -390,15 +395,15 @@ aio app use --merge
 
 本节介绍如何为[Ratings扩展教程](./ratings-extension.md)和其他店面教程手动配置店面。
 
-要自动配置店面，请运行`app-setup`自动设置[部分中描述的](#automated-setup)命令，然后选择[!DNL AEM Boilerplate Commerce]入门工具包。
+要自动配置店面，请运行[自动设置](#automated-setup)部分中描述的`app-setup`命令，然后选择[!DNL AEM Boilerplate Commerce]入门工具包。
 
 ### 先决条件
 
-要完成[评级扩展教程](./ratings-extension.md#connect-to-the-storefront)的[storefront](./ratings-extension.md)部分并在您的商店中显示产品评级，需要以下项目。
+要完成[评级扩展教程](./ratings-extension.md)的[storefront](./ratings-extension.md#connect-to-the-storefront)部分并在您的商店中显示产品评级，需要以下项目。
 
 * [Google Chrome](https://www.google.com/chrome/) — 测试店面所需
 
-* 店面项目已连接到您的[!DNL Commerce]实例。 如果您没有店面项目，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans){target="_blank"}中的步骤操作，包括[将存储库链接到商务数据](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans#link-repo-to-commerce-data){target="_blank"}部分。
+* 店面项目已连接到您的[!DNL Commerce]实例。 如果您没有店面项目，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}中的步骤操作，包括[将存储库链接到商务数据](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}部分。
 
 ### 克隆店面存储库
 

@@ -2,9 +2,14 @@
 title: 添加规则
 description: 了解如何创建搜索促销规则。
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: 2085
 ht-degree: 0%
 
 ---
@@ -16,7 +21,7 @@ ht-degree: 0%
 ## 添加规则
 
 1. 在管理员中，转到&#x200B;**营销** > SEO和搜索> **[!DNL Live Search]**。
-1. 设置&#x200B;**范围**&#x200B;以标识应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)。
+1. 设置&#x200B;**范围**&#x200B;以标识应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 1. 单击&#x200B;**搜索促销**&#x200B;工作区。
 1. 单击&#x200B;**添加规则**&#x200B;以启动规则编辑器。
 
@@ -46,7 +51,7 @@ ht-degree: 0%
    * 搜索查询开头为 — 输入必须在购物者查询开头的字符或文本字符串。
    * 搜索查询结尾为 — 输入必须在购物者查询末尾的字符或文本字符串。
 
-   结果会立即显示在&#x200B;*测试您的规则*&#x200B;窗格中，并按优先级进行编号。 您可以使用上方的每行&#x200B;*个结果*&#x200B;滑块    用于更改每行的产品数量。
+   结果会立即显示在&#x200B;*测试您的规则*&#x200B;窗格中，并按优先级进行编号。 您可以使用右上角的&#x200B;*每行结果*&#x200B;滑块来更改每行的产品数。
 
    ![规则 — 简单](assets/rule-simple-test.png)
 

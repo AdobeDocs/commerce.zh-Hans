@@ -2,11 +2,15 @@
 title: 支持
 description: 了解如何在 [!DNL Adobe Commerce Optimizer]中创建和管理策略。
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: 917
 ht-degree: 0%
 
 ---
@@ -15,7 +19,7 @@ ht-degree: 0%
 
 策略是目录视图中包含的数据访问过滤器，用于进一步优化交付给每个目录视图的数据。 策略可确保将正确的内容发送到正确的目标。 例如，销售点实体商店、市场、广告管道(Google、Facebook、Instagram)。
 
-策略基于产品属性（如品牌、模型或部件类别），并用于定制目录数据以满足特定的业务要求。&#x200B;AEM
+策略基于产品属性（如品牌、模型或部件类别），并用于定制目录数据以满足特定的业务要求。  
 
 ## 过滤器
 
@@ -28,7 +32,7 @@ ht-degree: 0%
 | 部分 | 描述 | 示例 |
 |---|---|---|
 | **属性** | 用于筛选的产品属性。 | `part_category` |
-| **操作员** | 应用于属性的条件。 | `IN`，`EQUALS`，`CONTAINS` |
+| **操作员** | 应用于属性的条件。 | `IN`, `EQUALS`, `CONTAINS` |
 | **值源** | 指定值是`STATIC`还是`TRIGGER`。 | `STATIC` [了解更多](#value-source-types) |
 | **值** | 满足条件的特定值。 | `brakes, suspension` |
 
@@ -63,7 +67,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Add Policy]**&#x200B;按钮。
 
-   此时将打开一个新页面，供您填写策略详细信息。&#x200B;AEM
+   此时将打开一个新页面，供您填写策略详细信息。  
 
 1. 输入策略的名称，例如“Celport部件类别”。
 
@@ -74,22 +78,22 @@ ht-degree: 0%
 1. 添加筛选器详细信息。 例如：
 
    1. **属性** — 输入目录中的属性。 例如，“part_category”。 此名称必须与目录中属性的名称完全匹配。
-   1. **运算符** — 选择运算符。 例如，**IN**&#x200B;。
-   1. **值Source** — 选择&#x200B;**STATIC**&#x200B;。
+   1. **运算符** — 选择运算符。 例如，**IN**。  
+   1. **值Source** — 选择&#x200B;**STATIC**。  
    1. **值** — 输入您之前指定的属性定义中的值。 例如，输入“制动器”为制动部件创建过滤器。
    1. 要保存该值，请按&#x200B;**Enter**。
 
       如果策略设计为按多个值过滤，请分别输入每个值。
 
-1. 单击筛选器详细信息对话框中的&#x200B;**[!UICONTROL Save]**&#x200B;按钮。&#x200B;AEM
+1. 单击筛选器详细信息对话框中的&#x200B;**[!UICONTROL Save]**&#x200B;按钮。  
 
-1. 单击您创建的筛选器旁边的操作点(...)，然后选择&#x200B;**启用**。 在此处，您还可以&#x200B;**编辑**、**禁用**&#x200B;或&#x200B;**删除**&#x200B;筛选器。
+1. 单击操作点(...) 在您创建的筛选器旁边，选择&#x200B;**启用**。 在此处，您还可以&#x200B;**编辑**、**禁用**&#x200B;或&#x200B;**删除**&#x200B;筛选器。
 
    **状态**&#x200B;列显示绿色图标和单词“已启用”。
 
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮以保存新策略&#x200B;。 如果该按钮未处于活动状态，请确保通过单击&#x200B;**新建策略**&#x200B;旁边的铅笔图标来添加策略名称。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮保存新策略。&#x200B;如果该按钮未处于活动状态，请通过单击&#x200B;**新策略**&#x200B;旁边的铅笔图标来确保已添加策略名称。
 
-1. 要验证新策略，请单击“上一步”箭头返回策略列表。&#x200B;AEM您将会看到新策略被列出。
+1. 要验证新策略，请单击“上一步”箭头返回策略列表。 您&#x200B;将看到新策略已列出。
 
 ### 创建TRIGGER策略
 
@@ -97,7 +101,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Add Policy]**&#x200B;按钮。
 
-   此时将打开一个新页面，供您填写策略详细信息。&#x200B;AEM
+   此时将打开一个新页面，供您填写策略详细信息。  
 
 1. 输入策略的名称，例如“Celport部件类别”。
 
@@ -118,18 +122,18 @@ ht-degree: 0%
 1. 添加筛选器详细信息。 例如：
 
    1. **属性** — 输入目录中的属性。 例如，“part_category”。 此名称必须与目录中属性的名称完全匹配。
-   1. **运算符** — 选择运算符。 例如，**IN**&#x200B;。
-   1. **值Source** — 选择&#x200B;**TRIGGER**&#x200B;。
+   1. **运算符** — 选择运算符。 例如，**IN**。  
+   1. **值Source** — 选择&#x200B;**触发器**。  
    1. **值** — 输入您之前创建的触发器名称(**AC-Policy-Brand**)。
 
-1. 单击筛选器详细信息对话框中的&#x200B;**[!UICONTROL Save]**&#x200B;按钮。&#x200B;AEM
+1. 单击筛选器详细信息对话框中的&#x200B;**[!UICONTROL Save]**&#x200B;按钮。  
 
-1. 单击您创建的筛选器旁边的操作点(...)，然后选择&#x200B;**启用**。 在此处，您还可以&#x200B;**编辑**、**禁用**&#x200B;或&#x200B;**删除**&#x200B;筛选器。
+1. 单击操作点(...) 在您创建的筛选器旁边，选择&#x200B;**启用**。 在此处，您还可以&#x200B;**编辑**、**禁用**&#x200B;或&#x200B;**删除**&#x200B;筛选器。
 
    **状态**&#x200B;列显示绿色图标和单词“已启用”。
 
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮以保存新策略&#x200B;。 如果该按钮未处于活动状态，请确保通过单击&#x200B;**新建策略**&#x200B;旁边的铅笔图标来添加策略名称。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;按钮保存新策略。&#x200B;如果该按钮未处于活动状态，请通过单击&#x200B;**新策略**&#x200B;旁边的铅笔图标来确保已添加策略名称。
 
-1. 要验证新策略，请单击“上一步”箭头返回策略列表。&#x200B;AEM您将会看到新策略被列出。
+1. 要验证新策略，请单击“上一步”箭头返回策略列表。 您&#x200B;将看到新策略已列出。
 
 按照这些步骤，将创建策略并准备好链接到目录视图以控制产品可见性。

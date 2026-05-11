@@ -3,9 +3,14 @@ title: 添加税分类、属性集和库存属性
 description: 了解如何扩展产品信息源数据，以包含税分类、属性集和高级库存设置的属性
 role: Admin, Developer
 badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/
-source-git-commit: dd8f518028c9f2025606e6620fc20156fceac9ce
+TQID: https://experienceleague.adobe.com/AWc-yAn-TyiBXQONoF2ZG9SFjj2u92CKbKvAY8mEVEE
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: 812
 ht-degree: 0%
 
 ---
@@ -14,9 +19,9 @@ ht-degree: 0%
 
 Adobe Commerce额外产品属性模块可扩展产品数据馈送。 它包括Adobe Commerce产品配置中的其他产品属性：
 
-* [税分类](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
-* [属性集](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
-* [库存](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
+* [税分类](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
+* [属性集](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
+* [库存](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
 安装后，模块将自动运行。 它会在产品同步期间捕获并导出其他属性。 无需其他配置。
 
@@ -35,7 +40,7 @@ Adobe Commerce额外产品属性模块可扩展产品数据馈送。 它包括Ad
 * `ac_attribute_set`
 * `ac_inventory`
 
-### 1.税种信息(`ac_tax_class`)
+### &#x200B;1. 税分类信息(`ac_tax_class`)
 
 **用途**：提供每个产品的税务分类信息
 
@@ -62,7 +67,7 @@ Adobe Commerce额外产品属性模块可扩展产品数据馈送。 它包括Ad
 * 与外部税务计算服务集成
 * 会计系统的产品分类
 
-### 2.属性集信息(`ac_attribute_set`)
+### &#x200B;2. 属性集信息(`ac_attribute_set`)
 
 **用途**：标识分配给每个产品的属性集
 
@@ -91,7 +96,7 @@ Adobe Commerce额外产品属性模块可扩展产品数据馈送。 它包括Ad
 * 目录管理和组织
 * 需要属性集上下文的第三方系统集成
 
-### 3.高级清单数据(`ac_inventory`)
+### &#x200B;3. 高级清单数据(`ac_inventory`)
 
 **用途**：为每个产品提供库存管理设置
 
@@ -158,7 +163,7 @@ Adobe Commerce额外产品属性模块可扩展产品数据馈送。 它包括Ad
 * [Adobe Commerce数据导出扩展](manage-extension.md#update-a-module-to-a-specific-version)，版本103.4.11或更高版本
 * 访问[repo.magento.com](https://repo.magento.com)
 
-  若要生成密钥并获取必要的权限，请参阅[获取您的身份验证密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。 有关云安装，请参阅[Commerce on Cloud Infrastructure指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/authentication-keys)。
+  若要生成密钥并获取必要的权限，请参阅[获取您的身份验证密钥](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。 有关云安装，请参阅[Commerce on Cloud Infrastructure指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)。
 * 访问Adobe Commerce应用程序服务器的命令行。
 
 ### 安装步骤
@@ -171,8 +176,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 有关详细的安装步骤，请参阅以下指南：
 
-* 在云基础架构上的Adobe Commerce上[安装扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [在本地安装Adobe Commerce扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/extensions)
+* [在云基础架构上的Adobe Commerce上安装扩展](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [在内部部署中安装Adobe Commerce扩展](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## 同步产品数据
 
@@ -200,9 +205,9 @@ bin/magento saas:resync --feed=productAttributes
 
 * 验证是否在“管理员”中正确配置了清单设置
 * 检查网站特定的清单覆盖
-* 验证[Inventory management模块](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/guide-overview)是否正常工作
+* 验证[Inventory management模块](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview)是否正常工作
 
-有关详细信息，请参阅[Inventory management商家文档](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/guide-overview)中的&#x200B;*Adobe Commerce指南*。
+有关详细信息，请参阅&#x200B;*Inventory management商家文档*&#x200B;中的[Adobe Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview)。
 
 **性能问题：**
 
