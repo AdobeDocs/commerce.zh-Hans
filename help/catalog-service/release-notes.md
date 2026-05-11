@@ -3,9 +3,9 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: Adobe Commerce的 [!DNL Catalog Service] 的最新发行信息。
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: a7a48e0150d817d29c147c504353245f12d2089c
+source-git-commit: ba78e2dd6ae6e075579b045b57cdcf98798aa983
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
@@ -14,14 +14,24 @@ ht-degree: 0%
 
 以下发行说明涵盖最新的Commerce目录服务更新，包括：
 
-- **店面目录服务版本**
+- **[店面目录服务版本](#storefront-catalog-service)**
 
-   - 目录服务API架构增强，改进了数据检索。
+   - 增强了目录服务API架构以改进数据检索
    - 目录服务API和底层基础架构的安全性、性能和可靠性改进。
 
-- **目录服务中继包版本**
+  有关这些API的更多信息，请参阅Commerce开发人员文档中的[Storefront Services架构](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/)。
+
+- **[目录服务中继包版本](#catalog-service-metapackage)**
 
    - 更新了依赖关系，以提高性能、稳定性和与其他Adobe Commerce组件的兼容性。
+
+- **[目录服务安装程序版本](#catalog-service-installer)**
+
+   - 更新了依赖关系，以维护目录服务与Commerce栈栈之间的兼容性。
+
+>[!NOTE]
+>
+>如果您的Commerce项目使用Adobe Commerce Optimizer将目录数据提交到Commerce Edge Delivery服务或Headless店面，请参阅[Adobe Commerce Optimizer发行说明](../optimizer/release-notes.md)以了解最新的API更新。
 
 更新按类型分类：
 
@@ -33,60 +43,48 @@ ht-degree: 0%
 
 ## 店面目录服务
 
-### v1.53发布
+### 2026年5月
 
-_2026年5月4日_
+**发行日期**： 2026年5月4日
+<!-- v1.53 -->
 
-![修复](../assets/fix.svg)店面产品价格现在显示所有产品类型的正确货币代码（例如，USD）。 以前，某些产品显示`NONE`而不是预期的货币，从而导致缺少价格。 此更新确保在整个店面一致且准确地呈现价格。<!--DATA-7115-->
+![修复](../assets/fix.svg)店面产品价格现在显示所有产品类型的正确货币代码（例如，美元）。 以前，某些产品显示`NONE`而不是预期的货币，从而导致缺少价格。 此更新确保在整个店面一致且准确地呈现价格。<!--DATA-7115-->
 
-### v1.52发布
+### 2026年4月
 
-_2026年4月29日_
+**发行日期**：2026年4月29日
+<!--v1.52-->
 
 ![新](../assets/new.svg)已强制限制Adobe Commerce Optimizer和Adobe Commerce as a Cloud Service的每个请求最多100个SKU
-根据[记录的限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits)的客户端。<!--DATA-7156-->
+根据[记录的限制和边界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)的客户端。<!--DATA-7156-->
 
-### v1.51发布
-
-_2026年4月17日_
+**发行日期**：2026年4月17日
+<!--v1.51-->
 
 ![新](../assets/new.svg)添加了一个新的`searchCategory` GraphQL查询，该查询使客户端能够按名称搜索具有分页结果的类别。 查询接受必需的`searchTerm`（至少3个字符）以及可选的`family`、`pageSize`和`currentPage`参数。 结果包括与具有完整类别元数据的`CategoryTreeView`对象、`totalCount`和分页`pageInfo`匹配。<!--COMOPT-1819-->
 
 此查询仅适用于使用Adobe Commerce Optimizer促销服务的客户。 请参阅[searchCategory](https://developer.adobe.com/commerce/services/reference/graphql/)。
 
-### v1.50发布
+### 2026年3月
 
-_2026年4月7日_
+**发行日期**：2026年3月24日
+<!--v1.49-->
 
-![新](../assets/new.svg) [categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查询现在将系列输入参数作为可选参数。 这允许通过概要访问，而不依赖于特定的族参数，从而允许更灵活的类别检索。 此查询仅适用于[Adobe Commerce Optimizer促销服务](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)。
+![新](../assets/new.svg)添加了对计算并返回动态捆绑包价格范围的支持。
+<!--DATA-7115-->
 
-### v1.49发布
+### 2025年12月
 
-_2026年3月24日_
+**发行日期**：2025年12月11日
+<!-- v1.46 -->
 
-![新](../assets/new.svg)添加了对计算并返回动态捆绑包价格范围的支持。<!--DATA-7014-->
+![修复](../assets/fix.svg)系统级和基础架构改进以提高性能和稳定性。
+<!--DATA-6852, DATA-6864-->
 
-### v1.48发布
+### 2025年11
 
-_2026年2月19日_
-
-![新建](../assets/new.svg) GraphQL API中的`categoryTree`查询现在返回类别描述、图像和SEO元标记。 此更新提供了店面开发人员显示类别图像所需的数据，并通过适当的元标题、描述和关键词改进了搜索引擎优化。 仅在使用用于Headless店面&lt;<!--DATA-6933-->的[可组合目录数据模型](https://developer.adobe.com/commerce/services/optimizer/)的Commerce实施上受支持
-
-### v1.47发布
-
-_2026年2月12日_
-
-![新](../assets/new.svg) API服务现在支持`CategoryProductView`类型，支持按类别对产品进行增强的视图和查询。 此更新使开发人员能够根据类别高效地检索和筛选产品数据，从而提高类别驱动用例的灵活性和性能。 有关详细信息，请参阅[在店面上实施类别](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)。 仅在Commerce实施上支持使用&lbrack;针对Headless店面<!--DATA-6949-->的可组合目录数据模型&rbrack;(https://developer.adobe.com/commerce/services/optimizer/)
-
-### v1.46发布
-
-_2025年12月11日_
-
-![修复](../assets/fix.svg)系统级和基础架构改进以提高性能和稳定性。<!--DATA-6852, DATA-6864-->
-
-### v1.45发布
-
-_2025年11月17日_
+**发行日期**： 2025年11月17日
+<!-- v1.45 -->
 
 ![新](../assets/new.svg) **按名称筛选属性**- `productSearch` GraphQL查询现在支持使用`names`字段筛选产品属性。<!--DATA-6831--> 通过此过滤器，您可以：
 
@@ -127,32 +125,19 @@ _2025年11月17日_
 >
 >要在不进行筛选的情况下检索所有属性，请省略`names`参数或提供空数组。
 
-### v1.44发布
-
-_2025年11月6日_
+**发行日期**：2025年11月6日
+<!-- v1.44 -->
 
 ![修复](../assets/fix.svg)系统级和基础架构改进以提高性能和稳定性。<!--DATA-6852, DATA-6864-->
-
-### v1.43发布
-
-_2025年11月3日_
-
-![新](../assets/new.svg) **多维产品自定义的产品层** — 为Adobe Commerce Optimizer实施添加了对特定于渠道的区域设置感知内容交付的支持。<!--DATA-6632-->
-
-- 为不同的客户群提供不同的产品内容
-- 应用特定于区域设置的自定义项而不复制基础数据
-- 使用图层蒙版控制字段级覆盖
-- 支持针对高级、季节和移动设备优化的内容层
-
-  使用现有`products`查询检索图层，从请求标头在服务器端应用，无需更改架构。 请参阅&#x200B;_Adobe Commerce Optimizer指南_&#x200B;中的[目录层](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-layer)。
 
 ![修复](../assets/fix.svg)当父产品无定价时，现在可以查询分组产品；子产品返回其自己的可见性角色。<!--DATA-6779-->
 
 ![修复](../assets/fix.svg)系统级和基础架构改进以提高性能和稳定性。<!--DATA-6721, DATA-6864-->
 
-### v1.42发布
+### 2025年9月
 
-_2025年9月8日_
+**发行日期**：2025年9月8日
+<!-- v1.42 -->
 
 ![新](../assets/new.svg) **已添加层定价支持**&#x200B;以查询卷定价：<!--DATA-6643-->
 
@@ -193,23 +178,22 @@ API现在仅返回折扣价格低于产品最低最终价格&#x200B;**的层。*
 - **简单产品**： `price.tiers`仅包含具有`tier.amount.value` &lt; `price.final.amount.value` （最小最终值）的层。
 - **复杂产品**： `priceRange.minimum.tiers`和`priceRange.maximum.tiers`在生成价格范围时使用相同的规则。
 
-### v1.41发布
-
-_2025年9月2日_
+**发行日期**：2025年9月2日
+<!-- v1.41 -->
 
 ![修复](../assets/fix.svg) **改进了对缺少价格信息的错误处理** — 当尚未收到价格数据时，API将返回价格字段的`null`而不是引发错误，从而允许客户端正常处理缺少的数据。<!--DATA-6612-->
 
 ![修复](../assets/fix.svg)系统级和基础架构改进以增强性能和稳定性。<!--DATA-6671-->
 
-### v1.40发布
+### 2025年7月
 
-_2025年7月30日_
+**发行日期**：2025年7月30日
+<!-- v1.40 -->
 
 ![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。<!--DATA-6619-->
 
-### v1.39发布
-
-_2025年7月24日_
+**发行日期**： 2025年7月24日
+<!-- v1.39 -->
 
 ![新](../assets/new.svg) **按单位ID检索推荐单位** — 新GraphQL终结点`recommendationsByUnitIds`按单位的唯一ID检索推荐单位，以实现更灵活、更有针对性的访问。
 
@@ -244,24 +228,24 @@ _2025年7月24日_
 
 ![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。<!--DATA-6316-->
 
-### v1.38发布
-
-_2025年7月15日_
+**发行日期**： 2025年7月15日
+<!-- v1.38 -->
 
 ![新](../assets/new.svg) **礼品卡产品类型** — 目录店面服务现在支持将产品属性作为JSON对象或数组，从而灵活管理复杂类型，如礼品卡。<!--DATA-6573-->
 
++++先前版本
 
-### v1.37发布
+### 2025年6月
 
-_2025年6月20日_
+**发行日期**： 2025年6月20日
+<!-- v1.37 -->
 
-![新](../assets/new.svg) **分层价格手册配置** — 父 — 子价格手册的准确价格范围。 计算会遵循层次结构和继承的规则；在链接多个价格手册时可减少定价错误。 仅限Adobe Commerce Optimizer。 查看[价格手册](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/pricebooks)。
+![新](../assets/new.svg) **分层价格手册配置** — 父 — 子价格手册的准确价格范围。 计算会遵循层次结构和继承的规则；在链接多个价格手册时可减少定价错误。 仅限Adobe Commerce Optimizer。 查看[价格手册](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks)。
 
 ![新](../assets/new.svg) **不区分大小写的键** — 查询中的键查找现在不区分大小写，减少了键大小写错误。<!--DATA-6494, DCAT-2495-->
 
-### v1.36发布
-
-_2025年6月20日_
+**发行日期**： 2025年6月20日
+<!-- v1.36 -->
 
 ![新建](../assets/new.svg) **目录店面的公共IO事件** — 添加了用于实时集成和可观察性（CSS和EDS）的公共IO事件。<!--DATA-6329-->
 
@@ -273,11 +257,8 @@ _2025年6月20日_
 
 ![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。<!--DATA-6404, DATA-6410, -->
 
-+++ 先前版本
-
-## v1.35发布
-
-_2025年6月13日_
+**发行日期**： 2025年6月13日
+<!-- v1.35 -->
 
 ![新建](../assets/new.svg) **检索未缓存数据** — 启用`Magento-Is-Preview`标头以将未缓存数据从目录终结点传递到Search Service。<!--DATA-6345-->
 
@@ -289,35 +270,37 @@ _2025年6月13日_
 
 ![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。<!--DATA-6273, DATA-6485, -->
 
-## v1.34发布
+### 2025年4月
 
-_2025年3月23日_
+**发行日期**：2025年4月8日
+<!-- v1.34 -->
 
 ![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。<!--DATA-5732-->
 
-## v1.33发布
+<!-- v1.33 -->
+![Fix](../assets/fix.svg)基础架构现在支持非常大的目录（最多约4.4亿SKU），而不影响现有工作负载。
 
-_2025年4月29日_
+### 2025年3月
 
-![修复](../assets/fix.svg)系统级和基础架构改进。 基础架构现在支持非常大的目录（最多达4.4亿SKU），而不影响现有工作负载。
-
-### v1.32发布
-
-_2025年3月28日_
+**发行日期**： 2025年3月28日
+<!-- v1.32 -->
 
 ![修复](../assets/fix.svg)对于可组合目录，没有角色的属性在默认情况下不再编制索引，从而缩短索引时间并减小存储空间。 可以通过功能标记重新启用旧版行为。
 
-![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。<!--DATA-6348, DATA-6440, DATA-6446, DATA-6641-->
+![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。
+<!--DATA-6348, DATA-6440, DATA-6446, DATA-6641-->
 
-### v1.31发布
+### 2025年2月
 
-_2025年2月18日_
+**发行日期**： 2025年2月18日
+<!-- v1.31 -->
 
 ![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。<!--DATA-6389, DATA-6367, DATA-6373-->
 
-### v1.30发布
+### 2024年12月
 
-_2024年12月9日_
+**发行日期**： 2024年12月9日
+<!-- v1.30 -->
 
 主要版本：用于Headless店面、标题管理和产品数据处理的[可组合目录数据模型](https://developer.adobe.com/commerce/services/optimizer/)。
 
@@ -333,58 +316,69 @@ _2024年12月9日_
 
 ![修复](../assets/fix.svg)捆绑包产品选项现在仅显示启用的产品。<!--DATA-6347-->
 
-### v1.29发布
-
-_2024年12月9日_
+**发行日期**： 2024年12月9日
+<!-- v1.29 -->
 
 ![新](../assets/new.svg) **产品查询中的图像排序**—GraphQL `images`字段中的产品图像现在遵循目录导出`sortOrder`，以便店面和API行为一致。<!--DATA-6258-->
 
 ![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。<!--DATA-6619-->
 
-### v1.28发布
+**发行日期**：2024年12月
+<!-- v1.28 -->
 
-![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。<!--DATA-6180, DATA-6230, DATA-6254, DATA-6257-->
+![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。
+<!--DATA-6180, DATA-6230, DATA-6254, DATA-6257-->
 
-### v1.27发布
+### 2024年10
 
-_2024年9月26日_
-
-![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。<!--DATA-6243-->
-
-### v1.26发布
-
-_2024年10月22日_
+**发行日期**：2024年10月22日
+<!-- v1.26 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) GraphQL架构现在在产品信息中包含`lastModifiedAt`，以便获得准确的站点地图和搜索引擎重新索引（例如，Google）。<!--DATA-6209-->
+![新](../assets/new.svg) GraphQL架构现在在产品信息中包含`lastModifiedAt`，以便获得准确的站点地图和搜索引擎重新索引（例如，Google）。
+<!--DATA-6209-->
 
-### v1.23发布
+### 2024年9月
 
-_2024年8月22日_
+**发行日期**： 2024年9月26日
+<!-- v1.27 -->
 
-[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
+![修复](../assets/fix.svg)系统级和基础架构改进以增强安全性、性能和稳定性。
+<!--DATA-6243-->
 
-![修复](../assets/fix.svg)现在无需产品覆盖（价格）数据即可检索产品信息。 以前，这些查询返回： `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
+### 2024年8月
 
-### v1.22发布
-
-_2024年8月13日_
-
-[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
-
-![新](../assets/new.svg)添加了对按产品SKU检索所有变体的支持。 查看[目录服务API引用](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)。<!--DATA-6067-->
-
-### v1.19发布
-
-_2024年5月23日_
+**发行日期**： 2024年8月22日
+<!-- v1.23 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
+![修复](../assets/fix.svg)现在无需产品覆盖（价格）数据即可检索产品信息。 以前，这些查询返回： `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.`
+<!--DATA-6121-->
 
-![修复](../assets/fix.svg) <!--DATA-5033-->选项值的`InStock`标记现在遵循产品变体的作用域`enabled`状态。
+**发行日期**： 2024年8月13日
+<!-- v1.22 -->
 
-![修复](../assets/fix.svg) <!--DATA-5888-->添加了对产品价格的支持，最高可支持16位和4位小数。 从[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以应用更新。
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
+
+![新](../assets/new.svg)添加了对按产品SKU检索所有变体的支持。 请参阅[目录服务API引用](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)。
+<!--DATA-6067-->
+
+### 2024年5月
+
+**发行日期**： 2024年5月23日
+<!-- v1.19 -->
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
+
+
+![修复](../assets/fix.svg)选项值的`InStock`标记现在遵循产品变体的作用域`enabled`状态。
+
+<!--DATA-5033-->
+
+![Fix](../assets/fix.svg)添加了对产品价格的支持，最高可支持16位和4位小数。 从[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以应用更新。
+<!--DATA-5033-->
 
 #### 已知限制
 
@@ -402,9 +396,10 @@ _2024年5月23日_
 
 有关详细信息和示例，请参阅[目录服务和API网格](mesh.md)。
 
-### v1.18发布
+### 2024年4月
 
-_2024年4月11日_
+**发行日期**： 2024年4月11日
+<!-- v1.18 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
@@ -412,17 +407,17 @@ _2024年4月11日_
 
 ![新](../assets/new.svg) [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)和[`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)查询现在返回简单和复杂产品的可自定义选项数据。<!--DATA-5538-->
 
-### v1.17发布
+### 2024年2月
 
-_2024年2月22日_
+**发行日期**： 2024年2月22日
+<!-- v1.17 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hans)现在可用于数据流（产品推荐、实时搜索、目录服务）。 需要`catalog-service`个中继包v3.1.0+。
+![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)现在可用于数据流（产品推荐、实时搜索、目录服务）。 需要`catalog-service`个中继包v3.1.0+。
 
-### v1.16发布
-
-_2024年2月13日_
+**发行日期**： 2024年2月13日
+<!-- v1.16 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
@@ -442,9 +437,10 @@ _2024年2月13日_
 - 最低广告价格
 - [分层定价](mesh.md)
 
-### v1.13发布
+### 2023年10
 
-_2023年10月12日_
+**发行日期**：2023年10月12日
+<!-- v1.13 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
@@ -452,70 +448,76 @@ _2023年10月12日_
 ![新](../assets/new.svg) `urlKey`和`externalId`字段已添加到GraphQL架构中。
 现在支持![新](../assets/new.svg)可下载的产品和礼品卡。
 
-### v1.12发布
+### 2023年9月
 
-_2023年9月19日_
+**发行日期**： 2023年9月19日
+<!-- v1.12 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![新](../assets/new.svg)目录服务现在使用[SaaS价格索引](../price-index/price-indexing.md)。
 ![修复](../assets/fix.svg)此版本包含服务端的错误修复和改进。
 
-### v1.11发布
+### 2023年7月
 
-_2023年7月18日_
+**发行日期**： 2023年7月18日
+<!-- v1.11 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![新](../assets/new.svg)目录服务现在支持产品推荐的[`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL查询。
 
-### v1.10发布
+### 2023年6月
 
-_2023年6月27日_
+**发行日期**： 2023年6月27日
+<!-- v1.10 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![新](../assets/new.svg)目录服务API现在支持`related products`。
 
-### v1.7发布
+### 2023年4月
 
-_2023年4月12日_
+**发行日期**： 2023年4月12日
+<!-- v1.7 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![新](../assets/new.svg)目录服务现在正在清理已删除的产品变体。
 ![修复](../assets/fix.svg)基础架构可扩展性和性能改进。
 
-### v1.6发布
+### 2023年3月
 
-_2023年3月28日_
+**发行日期**： 2023年3月28日
+<!-- v1.6 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![新](../assets/new.svg)已将样本添加到[`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)查询。
 ![新](../assets/new.svg)已添加使用[API Mesh](mesh.md)获取`entityId`的功能。
 
-### v1.5发布
-
-_2023年3月6日_
+**发行日期**： 2023年3月6日
+<!-- v1.5 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
 ![新](../assets/new.svg)添加了[`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/)个GraphQL功能。
 ![修复](../assets/fix.svg)改进了性能和API可扩展性。
 
-### v1.4发布
+### 2023年2月
 
-_2023年2月7日_
+**发行日期**： 2023年2月7日
+<!-- v1.4 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![新建](../assets/new.svg)已发布的目录服务中继包以简化安装步骤。
 ![修复](../assets/fix.svg) API可扩展性和性能改进。
 
-### v1.3发布
+### 2023年1月
 
-_2023年1月17日_
+**发行日期**： 2023年1月17日
+<!-- v1.3 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
@@ -524,18 +526,20 @@ _2023年1月17日_
 已为虚拟产品添加![新](../assets/new.svg)支持。
 ![修复](../assets/fix.svg) API可扩展性和性能改进。
 
-### v1.1发布
+### 2022年11
 
-_2022年11月18日_
+**发行日期**： 2022年11月18日
+<!-- v1.1 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![新](../assets/new.svg)目录服务现在支持Adobe的[API网格](https://developer.adobe.com/graphql-mesh-gateway/)。
 ![修复](../assets/fix.svg)改进了API可扩展性和整体性能。
 
-### v1.0发布
+### 2022年10
 
-_2022年10月4日_
+**发行日期**： 2022年10月4日
+<!-- v1.0 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
@@ -543,9 +547,10 @@ _2022年10月4日_
 ![新](../assets/new.svg)添加了B2B可见性覆盖。 产品现在可供搜索，并可添加到特定客户组的购物车中。
 ![Fix](../assets/fix.svg)服务现在更稳定，性能也有所提高。
 
-### 0.3版本 — Beta+
+### 2022年9月
 
-_2022年9月12日_
+**发行日期**： 2022年9月12日
+<!-- v0.3 -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
@@ -554,9 +559,10 @@ _2022年9月12日_
 ![修复](../assets/fix.svg)提高了服务的稳定性和性能。
 从目录中删除产品时收到![个新](../assets/new.svg)更新。
 
-### Beta版本
+### 2022年8月
 
-_2022年8月9日_
+**发行日期**： 2022年8月9日
+<!-- Beta -->
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
@@ -578,11 +584,11 @@ _2022年8月9日_
 
 - 对于Adobe Commerce as a Cloud Service客户，您的环境中安装了最新版本。
 
-- 对于云内部部署的Adobe Commerce，Adobe建议使用编辑器升级云环境中的目录服务中继（最新版本）。
+- 对于云上或内部部署的Adobe Commerce，Adobe建议使用编辑器升级云环境中的目录服务中继（最新版本）。
 
 ### v3.3.0发布
 
-_2025年10月14日_
+**发行日期**：2025年10月14日
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
@@ -592,7 +598,7 @@ _2025年10月14日_
 
 ### v3.2.0发布
 
-_2024年4月12日_
+**发行日期**： 2024年4月12日
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
@@ -600,7 +606,7 @@ _2024年4月12日_
 
 ### v3.1.0发布
 
-_2024年1月26日_
+**发行日期**： 2024年1月26日
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
@@ -617,11 +623,13 @@ _2024年1月26日_
 
 - 对于&#x200B;**Adobe Commerce as a Cloud Service**&#x200B;客户，您的环境中安装了最新安装程序版本。
 
-- 对于云基础架构上的&#x200B;**Adobe Commerce**&#x200B;或&#x200B;**内部部署**，使安装程序与[目录服务中间包](#catalog-service-metapackage)保持一致：每次升级`magento/catalog-service`或当这些发行说明描述所需的更改（例如支持新的PHP版本）时，请使用编辑器升级`magento/catalog-service-installer`。 这样，您的安装工具就会与您运行的目录服务版本保持兼容。
+- 对于云基础架构上的&#x200B;**Adobe Commerce**&#x200B;或&#x200B;**内部部署**，使安装程序与[目录服务中间包](#catalog-service-metapackage)保持一致。
+
+无论何时使用编辑器升级`magento/catalog-service`，安装程序包都会自动更新为最新版本。 当这些发行说明描述所需的更改（例如，支持新的PHP版本）时，您也可以使用Composer单独升级`magento/catalog-service-installer`。 这样，您的安装工具就会与您运行的目录服务版本保持兼容。
 
 ### v1.0.6发布
 
-_2026年3月25日_
+**发行日期**：2026年3月25日
 
 ![New](../assets/new.svg) **PHP 8.5** — 确保目录服务在PHP 8.5上运行时兼容。
 
