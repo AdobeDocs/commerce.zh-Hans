@@ -4,10 +4,18 @@ description: 了解如何创建和管理推荐。
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 TQID: https://experienceleague.adobe.com/4w6G-IgBjgmYYnnEpbK0HML9pSi3quLDxJfuCp9tV84
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1615
@@ -24,7 +32,7 @@ _推荐单元_
 
 激活推荐单元后，Adobe Commerce将开始[收集数据](../../manage-results/recommendation-performance.md)以测量展示次数、查看次数、点击次数等。 “推荐”表显示每个推荐单位的量度，以帮助您做出明智的业务决策。
 
-1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_侧边栏上，转到_&#x200B;促销&#x200B;_>**推荐**以显示_&#x200B;推荐&#x200B;_工作区。
+1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_&#x200B;侧边栏上，转到_&#x200B;促销&#x200B;_>**推荐**&#x200B;以显示_&#x200B;推荐&#x200B;_工作区。
 
 1. 在&#x200B;**目录视图**&#x200B;字段中，选择要提供推荐的目录视图。 了解有关[使用推荐](../../manage-results/recommendation-performance.md#select-catalog-view)的目录视图的详细信息。
 
@@ -108,7 +116,7 @@ _推荐的产品预览_&#x200B;面板始终随示例产品选择提供，这些�
 
 您可以编辑、停用或删除现有推荐。
 
-1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_侧边栏上，转到_&#x200B;促销&#x200B;_>**推荐**。
+1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_&#x200B;侧边栏上，转到_&#x200B;促销&#x200B;_>**推荐**。
 
 1. 选择要修改的推荐。
 

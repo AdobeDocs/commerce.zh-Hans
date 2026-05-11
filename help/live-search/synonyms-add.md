@@ -3,9 +3,12 @@ title: 添加同义词
 description: 添加 [!DNL Live Search] 同义词以改进对搜索请求的响应。
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
 TQID: https://experienceleague.adobe.com/eGBxKnn3lLD5VQel52jyrt7EB8rcrhGOi-DDwhW7wzc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 410
@@ -37,7 +40,7 @@ ht-degree: 0%
    ![添加双向同义词](assets/synonym-add-two-way.png)
 
 1. 输入要匹配的&#x200B;**关键字**&#x200B;词或短语。
-1. 输入要作为关键字的同义词添加的&#x200B;**扩展**术语。 用逗号分隔多个术语。
+1. 输入要作为关键字的同义词添加的&#x200B;**扩展**&#x200B;术语。 用逗号分隔多个术语。
 在此示例中，要匹配的关键字是“pants”，而扩展术语集是“trousers， slacks”。
 
    ![双向同义词示例](assets/synonym-add-two-way-example.png)

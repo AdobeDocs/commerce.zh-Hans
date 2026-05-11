@@ -5,10 +5,14 @@ gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
 badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1131

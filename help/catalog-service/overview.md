@@ -5,10 +5,18 @@ role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
 TQID: https://experienceleague.adobe.com/CEbJ8-hkc0AGQ4RnRNMDXA6mMijvhPGAfsxyC4eT39Y
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1398
@@ -84,7 +92,7 @@ Adobe Commerce提供两种用途不同的GraphQL系统：
 
 GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的URL访问每个系统，并且调用需要不同的标头信息。 这两个GraphQL系统旨在共同使用。 [!DNL Catalog Service] GraphQL系统增强了核心系统，使产品店面体验更快。
 
-您可以选择实施适用于Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)的[API Mesh，以便使用Adobe Developer将两个Adobe Commerce GraphQL系统与私有和第三方API以及其他软件接口集成。 可以配置网格以确保路由到每个端点的调用在标头中包含正确的授权信息。
+您可以选择实施适用于Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/)的API Mesh，以便使用Adobe Developer将两个Adobe Commerce GraphQL系统与私有和第三方API以及其他软件接口集成。 可以配置网格以确保路由到每个端点的调用在标头中包含正确的授权信息。
 
 ## 体系结构详细信息
 

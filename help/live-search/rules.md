@@ -3,9 +3,12 @@ title: 搜索促销
 description: '[!DNL Live Search]促销规则将逻辑与操作结合起来以塑造购物体验。'
 exl-id: 9894bf2b-8556-4057-aa23-ebdcb1599914
 TQID: https://experienceleague.adobe.com/WP92dt45BJo8-pJDaWY-9ocDd4GdJVWcOqzVLfjnEkI
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 695
