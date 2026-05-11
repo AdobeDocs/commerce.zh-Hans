@@ -66,7 +66,7 @@ ht-degree: 0%
 <!--v1.52-->
 
 ![新](../assets/new.svg)已强制限制Adobe Commerce Optimizer和Adobe Commerce as a Cloud Service的每个请求最多100个SKU
-根据[记录的限制和边界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)的客户端。<!--DATA-7156-->
+根据[记录的限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits)的客户端。<!--DATA-7156-->
 
 **发行日期**：2026年4月17日
 <!--v1.51-->
@@ -250,7 +250,7 @@ API现在仅返回折扣价格低于产品最低最终价格&#x200B;**的层。*
 **发行日期**： 2025年6月20日
 <!-- v1.37 -->
 
-![新](../assets/new.svg) **分层价格手册配置** — 父 — 子价格手册的准确价格范围。 计算会遵循层次结构和继承的规则；在链接多个价格手册时可减少定价错误。 仅限Adobe Commerce Optimizer。 查看[价格手册](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks)。
+![新](../assets/new.svg) **分层价格手册配置** — 父 — 子价格手册的准确价格范围。 计算会遵循层次结构和继承的规则；在链接多个价格手册时可减少定价错误。 仅限Adobe Commerce Optimizer。 查看[价格手册](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/pricebooks)。
 
 ![新](../assets/new.svg) **不区分大小写的键** — 查询中的键查找现在不区分大小写，减少了键大小写错误。<!--DATA-6494, DCAT-2495-->
 
@@ -424,7 +424,7 @@ API现在仅返回折扣价格低于产品最低最终价格&#x200B;**的层。*
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)现在可用于数据流（产品推荐、实时搜索、目录服务）。 需要`catalog-service`个中继包v3.1.0+。
+![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hans)现在可用于数据流（产品推荐、实时搜索、目录服务）。 需要`catalog-service`个中继包v3.1.0+。
 
 **发行日期**： 2024年2月13日
 <!-- v1.16 -->

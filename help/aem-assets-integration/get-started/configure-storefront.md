@@ -39,4 +39,4 @@ AEM Assets集成显示在AEM Assets中管理的产品图像，而不是使用在
 
 Commerce下拉列表会自动检测`commerce-assets-enabled`配置并相应地调整图像处理。
 
-有关如何将AEM Assets与由Edge Delivery Services提供支持的Commerce店面结合使用的更多信息，请完成&#x200B;*AEM Assets店面*&#x200B;文档中的[Adobe Commerce集成](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/)主题中所述的店面配置。
+有关如何将AEM Assets与由Edge Delivery Services提供支持的Commerce店面结合使用的更多信息，请完成&#x200B;*AEM Assets店面*&#x200B;文档中的[Adobe Commerce集成](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hans)主题中所述的店面配置。

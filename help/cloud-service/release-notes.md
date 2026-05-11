@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ### 跳过reCAPTCHA进行程序化OTP身份验证
 
-新的配置选项允许您跳过[`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) GraphQL突变的reCAPTCHA验证。 这支持了B2B打包工作流，其中以编程方式启动一次性密码(OTP)交换而无需输入表单，从而不需要reCAPTCHA验证。 此功能以2026年3月版本中引入的[一次性代码登录](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}功能为基础。 为客户登录启用reCAPTCHA时，默认情况下，`exchangeOtpForCustomerToken`突变仍需要reCAPTCHA。 请联系您的Adobe Commerce客户成功经理以启用此选项。<!-- ACCS-850 -->
+新的配置选项允许您跳过[`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) GraphQL突变的reCAPTCHA验证。 这支持了B2B打包工作流，其中以编程方式启动一次性密码(OTP)交换而无需输入表单，从而不需要reCAPTCHA验证。 此功能以2026年3月版本中引入的[一次性代码登录](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}功能为基础。 为客户登录启用reCAPTCHA时，默认情况下，`exchangeOtpForCustomerToken`突变仍需要reCAPTCHA。 请联系您的Adobe Commerce客户成功经理以启用此选项。<!-- ACCS-850 -->
 
 ### 编辑已部分开票的订单
 
@@ -136,7 +136,7 @@ ht-degree: 0%
 >
 >此功能属于实验性质，必须通过联系您的Adobe Commerce客户成功经理或创建支持票证来启用。
 
-[电子邮件提醒规则](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules#rule-repeatability)现在支持可选的规则重用性设置，该设置允许在原始触发条件不再应用后，将同一规则重新应用于客户。
+[电子邮件提醒规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules#rule-repeatability)现在支持可选的规则重用性设置，该设置允许在原始触发条件不再应用后，将同一规则重新应用于客户。
 
 例如，如果客户放弃购物车，完成购买，然后放弃新购物车，则规则可能会再次触发。 如果不进行此设置，则清除原始触发器的客户将被永久从将来匹配同一规则的操作中排除。
 
@@ -206,7 +206,7 @@ ht-degree: 0%
 
 ### 使用一次性代码以客户身份登录
 
-管理员现在可以通过[!DNL Commerce Admin]和REST API生成客户模拟的[一次性代码](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)。 可以通过`generateCustomerToken`或`exchangeOtpForCustomerToken`GraphQL突变为客户访问令牌交换一次性代码，从而支持无密码的“以客户身份登录”流程用于卖方辅助购物方案。<!-- ACCS-404 -->
+管理员现在可以通过[!DNL Commerce Admin]和REST API生成客户模拟的[一次性代码](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)。 可以通过`generateCustomerToken`或`exchangeOtpForCustomerToken`GraphQL突变为客户访问令牌交换一次性代码，从而支持无密码的“以客户身份登录”流程用于卖方辅助购物方案。<!-- ACCS-404 -->
 
 有关使用API实施此功能的指导，请参阅[REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/)和[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/)文档。
 
@@ -422,7 +422,7 @@ mutation {
 
 * 增强了进程外[送货webhook负载](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload)以包含送货地址自定义属性。 这项更改使商家能够实施自定义配送方式。<!-- ACCS-235 -->
 
-* 已添加对管理员报告的访问权限，这些报告包括[客户](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports)、[营销](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports)、[产品](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports)和[销售](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports)的报告。<!-- CCSAAS-3085 -->
+* 已添加对管理员报告的访问权限，这些报告包括[客户](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports)、[营销](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports)、[产品](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/reporting/product-reports)和[销售](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports)的报告。<!-- CCSAAS-3085 -->
 
 >[!NOTE]
 >
@@ -479,14 +479,14 @@ mutation {
 * 发布了B2B店面兼容包。 此包增强了[!DNL Adobe Commerce] B2B GraphQL架构，以帮助改进B2B系统上的开发。
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=zh-Hans). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
 
 * Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
 -->
 
 ### 指向外部配送跟踪器的可点击链接
 
-通过[启用自定义跟踪URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls)，将购物者电子邮件中包含的装运跟踪编号从纯文本转换为可点击链接。 USPS、UPS、FedEx和DHL支持此功能。<!-- See PR #716 in commerce-admin -->
+通过[启用自定义跟踪URL](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls)，将购物者电子邮件中包含的装运跟踪编号从纯文本转换为可点击链接。 USPS、UPS、FedEx和DHL支持此功能。<!-- See PR #716 in commerce-admin -->
 
 ### Google reCAPTCHA企业支持
 

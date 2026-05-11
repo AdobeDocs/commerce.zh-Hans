@@ -107,7 +107,7 @@ Adobe Commerce将Page Builder作为&#x200B;**内容管理系统(CMS)**&#x200B;�
 
 >[!TIP]
 >
-> [DA.live （文档创作）](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank}还提供了一个资产选择器以扩充数据。
+> [DA.live （文档创作）](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=zh-Hans#dalive-document-authoring){target=_blank}还提供了一个资产选择器以扩充数据。
 
 ## 产品视频
 
@@ -177,7 +177,7 @@ Adobe Commerce使商家能够将图像与产品类别相关联，从而帮助创
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;并继续。
 
-   有关创建类别的详细信息，请参阅&#x200B;**Commerce Catalog Management Guide**&#x200B;中的[完成类别内容](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)。
+   有关创建类别的详细信息，请参阅&#x200B;**Commerce Catalog Management Guide**&#x200B;中的[完成类别内容](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)。
 
 ## 更新资产
 
@@ -187,6 +187,6 @@ Adobe Commerce使商家能够将图像与产品类别相关联，从而帮助创
 
 有关AEM Assets过程，请参阅以下文档：
 
-* [重新处理数字资产](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [重新处理数字资产](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [批准资产](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [批准资产](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
