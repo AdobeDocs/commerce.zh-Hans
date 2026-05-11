@@ -2,9 +2,20 @@
 title: 创建新推荐
 description: 了解如何创建产品推荐单元。
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
+TQID: https://experienceleague.adobe.com/K3cKFg-m22bUzlupyhsHgDVxaJka7xhOvFnOt8wDdII
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -13,7 +24,7 @@ ht-degree: 0%
 
 在创建推荐时，您创建了一个包含推荐产品&#x200B;_项_&#x200B;的&#x200B;_推荐单元_，或构件。
 
-![推荐单元](assets/unit.png)
+![推荐单位](assets/unit.png)
 _推荐单元_
 
 激活推荐单元后，Adobe Commerce将开始[收集数据](workspace.md)以测量展示次数、查看次数、点击次数等。 [!DNL Product Recommendations]表显示每个推荐单位的量度，以帮助您做出明智的业务决策。

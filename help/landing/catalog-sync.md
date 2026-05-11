@@ -3,9 +3,22 @@ title: 目录同步
 description: 了解如何将产品数据从 [!DNL Commerce] 服务器导出到 [!DNL Commerce Services]。
 feature: Catalog Management, Data Import/Export, Catalog Service
 exl-id: 99f96b93-b036-490c-8c57-40463a0de365
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/-X5W4TJNW6pduPsWH-SLuAXrfP7iReCpaVg5qeu2odA
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: 567
 ht-degree: 0%
 
 ---
@@ -18,7 +31,7 @@ ht-degree: 0%
 
 Adobe Commerce使用索引器将目录数据编译到表中。 该进程由[事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=zh-Hans#events-that-trigger-full-reindexing)自动触发，例如产品价格或库存级别的更改。
 
-目录同步服务会持续将产品数据从[!DNL Adobe Commerce]实例移动到[!DNL Commerce Services]平台，以使数据保持最新。 例如，[[!DNL Product Recommendations]](/help/product-recommendations/overview.md)需要当前目录信息才能准确返回具有正确名称、定价和可用性的推荐。 使用&#x200B;_目录同步_&#x200B;仪表板观察和管理同步过程或命令行界面以触发目录同步并重新索引产品数据以供[!DNL Commerce Services]使用。 请参阅[SaaS数据导出](../data-export/data-export-cli-commands.md)指南中的&#x200B;_命令行接口引用_。
+目录同步服务会持续将产品数据从[!DNL Adobe Commerce]实例移动到[!DNL Commerce Services]平台，以使数据保持最新。 例如，[[!DNL Product Recommendations]](/help/product-recommendations/overview.md)需要当前目录信息才能准确返回具有正确名称、定价和可用性的推荐。 使用&#x200B;_目录同步_&#x200B;仪表板观察和管理同步过程或命令行界面以触发目录同步并重新索引产品数据以供[!DNL Commerce Services]使用。 请参阅&#x200B;_SaaS数据导出_&#x200B;指南中的[命令行接口引用](../data-export/data-export-cli-commands.md)。
 
 ## 访问目录同步仪表板
 
@@ -80,4 +93,4 @@ Adobe Commerce使用索引器将目录数据编译到表中。 该进程由[事�
 
 ## 解决目录同步问题 {#resolvesync}
 
-请参阅[SaaS数据导出指南](../data-export/troubleshooting-logging.md#troubleshooting)中的&#x200B;_日志和疑难解答_。
+请参阅&#x200B;_SaaS数据导出指南_&#x200B;中的[日志和疑难解答](../data-export/troubleshooting-logging.md#troubleshooting)。

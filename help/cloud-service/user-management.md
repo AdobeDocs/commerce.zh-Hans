@@ -6,9 +6,21 @@ role: Admin
 level: Intermediate
 exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
-source-git-commit: cdb15907871faec9a94b2671a44ac2d6ce8f51c5
+TQID: https://experienceleague.adobe.com/8cIklZrl3rmXMD4Hf6oTU5bBuseh3ianLw2IMujps-E
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: 1787
 ht-degree: 0%
 
 ---
@@ -29,7 +41,7 @@ ht-degree: 0%
 
 以下角色可用于[!DNL Adobe Commerce as a Cloud Service]。 要查看或编辑这些角色，请在Commerce管理员中导航到&#x200B;[!UICONTROL **系统**] > [!UICONTROL **权限**] > [!UICONTROL **用户角色**]。
 
-* **用户** — 用户具有Commerce管理员的管理员访问权限，但在Admin Console中无法管理产品级别的访问权限。 用户还可以使用积分在[中](./getting-started.md#create-an-instance)创建实例[!DNL Commerce Cloud Manager]。
+* **用户** — 用户具有Commerce管理员的管理员访问权限，但在Admin Console中无法管理产品级别的访问权限。 用户还可以使用积分在[!DNL Commerce Cloud Manager]中[创建实例](./getting-started.md#create-an-instance)。
 
   >[!NOTE]
   >
@@ -43,7 +55,7 @@ ht-degree: 0%
 
 * 管理员 — 管理员分为三种类型：
    * [系统管理员](https://helpx.adobe.com/cn/enterprise/using/admin-roles.html){target="_blank"} — 系统管理员可以通过Admin Console访问组织中的所有产品和产品配置文件。
-   * [产品管理员](#add-a-product-admin) — 产品管理员可以在[中](#add-users)管理产品的用户、角色和权限[!DNL Adobe Admin Console]，在Commerce管理员中[管理用户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
+   * [产品管理员](#add-a-product-admin) — 产品管理员可以在[!DNL Adobe Admin Console]中[管理产品的用户、角色和权限](#add-users)，在Commerce管理员中[管理用户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
    * [产品配置文件管理员](#add-developers-and-product-profile-admins) — 产品配置文件管理员无权访问Adobe Commerce管理员，但可以在[!DNL Adobe Admin Console]中管理产品的用户。
 
 有关授予Adobe Commerce中每个角色的权限的详细信息，请参阅[角色资源](#role-resources)。
@@ -276,7 +288,7 @@ Admin Console中的![开发人员和管理员选项卡选项](./assets/tab-selec
 
 ## 访问Experience Manager界面
 
-将用户添加到[!DNL AEM Assets]后，他们可以通过导航到[!DNL Experience Manager]https://experience.adobe.com/[来访问](https://experience.adobe.com/){target="_blank"}界面。
+将用户添加到[!DNL AEM Assets]后，他们可以通过导航到[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}来访问[!DNL Experience Manager]界面。
 
 1. 在&#x200B;[!UICONTROL **快速访问**]&#x200B;部分中，单击&#x200B;[!UICONTROL **Experience Manager**]，如果没有看到&#x200B;[!UICONTROL **Experience Manager**]，请单击&#x200B;[!UICONTROL **查看全部**]。 然后单击&#x200B;[!UICONTROL **Cloud Manager**]&#x200B;或直接导航到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。
 

@@ -4,16 +4,32 @@ description: 使用Admin中的 [!DNL Payment Services] 事务报表可查看Adob
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
+TQID: https://experienceleague.adobe.com/G4EOSDBdBepDJG0HyuCcQlq3-megOqpOGzSbEEnT1jc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: 1391
 ht-degree: 0%
 
 ---
 
 # 报表
 
-[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]为您提供全面的报告，以便您能够清楚地查看存储交易、订单和付款。
+[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]为您提供全面的报告，以便您能够清楚地查看存储交易、订单和付款。
 
 ![事务报表](assets/transactions-report.png){width="700" zoomable="yes"}
 
@@ -27,13 +43,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 如果您尚未为[载入并激活实时模式](production.md#enable-live-payments)，则无法查看财务报表。[!DNL Payment Services]
+> 如果您尚未为[!DNL Payment Services]载入并激活实时模式[，则无法查看财务报表。](production.md#enable-live-payments)
 
 ## 交易报表视图
 
 “事务处理”报表视图在“付款服务”的“事务处理”视图中可用。 它包括有关您商店交易的所有可用信息。
 
-在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;以查看详细的表格化交易报告视图。 从&#x200B;**[!UICONTROL Home]**&#x200B;中，您还可以选择&#x200B;**[!UICONTROL View Report]**&#x200B;和&#x200B;**[!UICONTROL Transactions]**&#x200B;中[!DNL Adobe Commerce as a Cloud Service]下的[!DNL Adobe Commerce Optimizer]。
+在&#x200B;_管理员_&#x200B;侧边栏中，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;以查看详细的表格化交易报告视图。 从&#x200B;**[!UICONTROL Home]**&#x200B;中，您还可以选择[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]中&#x200B;**[!UICONTROL Transactions]**&#x200B;下的&#x200B;**[!UICONTROL View Report]**。
 
 >[!BEGINTABS]
 
@@ -157,7 +173,7 @@ ht-degree: 0%
 | [!UICONTROL CVV Code] | 信用卡和借记卡的卡验证值代码；有关详细信息，请参阅[可能的代码和说明列表](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response)。 |
 | [!UICONTROL Amount] | 交易记录的订单金额 |
 | [!UICONTROL Currency] | 交易记录中用于订单的货币 |
-| [!UICONTROL Type] | [交易的](../payment-services/production.md#set-payment-services-as-payment-method)或`Authorize`付款操作`Authorize and Capture` |
+| [!UICONTROL Type] | [交易的`Authorize`或`Authorize and Capture`付款操作](../payment-services/production.md#set-payment-services-as-payment-method) |
 
 ### 错误响应代码
 

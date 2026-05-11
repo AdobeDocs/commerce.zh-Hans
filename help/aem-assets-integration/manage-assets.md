@@ -3,9 +3,23 @@ title: 管理资源
 description: 使用适用于Commerce的AEM Assets集成来管理店面的媒体资源。
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
+TQID: https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: 1072
 ht-degree: 0%
 
 ---
@@ -71,7 +85,7 @@ Adobe Commerce将Page Builder作为&#x200B;**内容管理系统(CMS)**&#x200B;�
 
 [!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}要使用&#x200B;**AEM资产选择器**&#x200B;嵌入图像，请确保用户具有所需的[权限和IMS身份验证](get-started/permissions.md)。
 
-1. 使用&#x200B;**页面生成器**&#x200B;导航到`content enrichment`Adobe Commerce Admin **中支持**&#x200B;的任何部分。
+1. 使用&#x200B;**页面生成器**&#x200B;导航到&#x200B;**Adobe Commerce Admin**&#x200B;中支持`content enrichment`的任何部分。
 
 1. 打开[页面生成器](https://developer.adobe.com/commerce/frontend-core/page-builder/){target=_blank}。
 
@@ -147,7 +161,7 @@ Adobe Commerce使商家能够将图像与产品类别相关联，从而帮助创
 
 1. 选择要更新的类别。
 
-1. 展开![部分中的](../assets/icon-display-expand.png)扩展选择器&#x200B;**[!UICONTROL Content]**。
+1. 展开&#x200B;**[!UICONTROL Content]**&#x200B;部分中的![扩展选择器](../assets/icon-display-expand.png)。
 
 1. 在&#x200B;**[!UICONTROL Content]**&#x200B;部分中，找到与类别关联的&#x200B;*图像字段*。
 
@@ -163,7 +177,7 @@ Adobe Commerce使商家能够将图像与产品类别相关联，从而帮助创
 
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;并继续。
 
-   有关创建类别的详细信息，请参阅[Commerce Catalog Management Guide](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)中的&#x200B;**完成类别内容**。
+   有关创建类别的详细信息，请参阅&#x200B;**Commerce Catalog Management Guide**&#x200B;中的[完成类别内容](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)。
 
 ## 更新资产
 
@@ -173,6 +187,6 @@ Adobe Commerce使商家能够将图像与产品类别相关联，从而帮助创
 
 有关AEM Assets过程，请参阅以下文档：
 
-* [正在重新处理数字资产](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [重新处理数字资产](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
 * [批准资产](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

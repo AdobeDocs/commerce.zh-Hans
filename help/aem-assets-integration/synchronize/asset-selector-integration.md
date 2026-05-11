@@ -3,9 +3,20 @@ title: 手动选择资源
 description: 了解集成在Commerce Admin中的AEM资产选择器如何帮助营销人员和促销人员轻松地将图像从AEM Assets添加到Adobe Commerce，从而简化资产管理。
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
+TQID: https://experienceleague.adobe.com/3fYabUvRiY8KTxQX1YiTBbLxABpQqfZLu0a6IBDsM3E
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: 396
 ht-degree: 0%
 
 ---
@@ -14,7 +25,7 @@ ht-degree: 0%
 
 通过&#x200B;**AEM资产选择器**，营销人员和促销人员可以轻松地将图像从AEM Assets添加到Adobe Commerce，从而简化资产管理流程。 此方法通过将资产选择限制在[!DNL DAM (Digital Asset Management system)]中审核和批准的那些资产来确保品牌一致性和合规性。
 
-当已在AEM管理员中配置了AEM Assets项目的IMS客户端ID，并且用户具有所需的&#x200B;**权限和IMS身份验证**&#x200B;时，[Commerce资产选择器](../get-started/permissions.md)可用。 请参阅[配置AEM资源选择器](#configure-the-aem-asset-selector-in-adobe-commerce)。
+当已在AEM管理员中配置了AEM Assets项目的IMS客户端ID，并且用户具有所需的[权限和IMS身份验证](../get-started/permissions.md)时，**Commerce资产选择器**&#x200B;可用。 请参阅[配置AEM资源选择器](#configure-the-aem-asset-selector-in-adobe-commerce)。
 
 配置&#x200B;**AEM Asset Selector**&#x200B;集成后，营销人员和商家可以：
 
@@ -24,7 +35,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> AEM资源选择器是一个AEM资源前端组件，用于将AEM Assets与创作应用程序集成。 有关此组件的详细信息，请参阅[AEM as a Cloud Service用户指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}中的&#x200B;*微前端资产选择器*。
+> AEM资源选择器是一个AEM资源前端组件，用于将AEM Assets与创作应用程序集成。 有关此组件的详细信息，请参阅&#x200B;*AEM as a Cloud Service用户指南*&#x200B;中的[微前端资产选择器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}。
 
 ## 主要优点
 

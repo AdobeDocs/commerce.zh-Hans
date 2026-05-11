@@ -3,9 +3,21 @@ title: '[!DNL Live Search]最佳实践'
 description: 了解在商店中实施 [!DNL Live Search] 的最佳实践。
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: c3d431a6536c3c5528b9aee45f03b0b94b4ea64e
+TQID: https://experienceleague.adobe.com/X9zgHooEzDJe-zzmLLXHdVVVFUHVX4be47dOUaJyUXU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: 2966
 ht-degree: 0%
 
 ---
@@ -23,7 +35,7 @@ ht-degree: 0%
 - 搜索规则至关重要，因为它们可以根据热门程度、新到达次数、促销标准或任何其他促销策略来提高某些产品的可见性，以满足您的业务需求。
 - 多面向导航让购物者能够优化搜索并快速获得相关结果。
 
-要管理[!DNL Live Search]，请在Adobe **管理员中转到**&#x200B;营销&#x200B;*>* SEO和搜索&#x200B;**[!DNL Live Search]** > [!DNL Commerce]。 
+要管理[!DNL Live Search]，请在Adobe [!DNL Commerce]管理员中转到&#x200B;**营销** > *SEO和搜索* > **[!DNL Live Search]**。 
 
 ## 优化搜索功能
 
@@ -123,7 +135,7 @@ ht-degree: 0%
    - [创建](rules-add.md)
    - [编辑、查看、删除](rules-manage.md)
 - 数据收集
-   - [[!DNL Live Search] 个事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
+   - [[!DNL Live Search]个事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
    - [Adobe Commerce事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
    - [GitHub Commerce事件](https://github.com/adobe/commerce-events/tree/main/examples) 
 

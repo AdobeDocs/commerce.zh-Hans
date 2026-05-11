@@ -3,16 +3,25 @@ title: 默认自动匹配
 description: 了解默认的自动匹配规则如何实现Adobe Commerce与AEM Assets集成之间的无缝同步，确保资产自动链接到正确的促销实体。
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
-source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: 317
 ht-degree: 0%
 
 ---
 
 # 默认自动匹配
 
-Commerce的AEM Assets集成提供了基于&#x200B;**[!UICONTROL Match by product SKU]** AEM Assets **元数据配置的默认自动匹配机制(**)。 此规则可实现&#x200B;**Adobe Commerce**&#x200B;和&#x200B;**AEM Assets**&#x200B;之间的无缝同步，从而确保资产自动链接到正确的促销实体。
+Commerce的AEM Assets集成提供了基于&#x200B;**AEM Assets**&#x200B;元数据配置的默认自动匹配机制(**[!UICONTROL Match by product SKU]**)。 此规则可实现&#x200B;**Adobe Commerce**&#x200B;和&#x200B;**AEM Assets**&#x200B;之间的无缝同步，从而确保资产自动链接到正确的促销实体。
 
 ## 配置自动匹配机制
 

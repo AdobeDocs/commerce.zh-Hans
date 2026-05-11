@@ -4,16 +4,26 @@ description: 了解如何创建架构、数据集和数据流，以收集和发�
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: c933a1bc-3d6f-4f80-944f-8c3e212aaeb6
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/8u3lSBPoreIZuu107QbR7FNvVx6Lw3TJsKUU6LCQ1Gs
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: 1019
 ht-degree: 0%
 
 ---
 
 # 更新Commerce数据摄取的时间序列事件架构
 
-使用[扩展的](overview.md#onboarding-steps)载入步骤[!DNL Data Connection]之一是访问数据流工作区并[创建特定于Adobe Commerce的数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans)。 在创建该数据流时，还必须选择描述您计划摄取的数据的架构。 该架构必须包含特定于商务的字段组。
+使用[!DNL Data Connection]扩展的[载入步骤](overview.md#onboarding-steps)之一是访问数据流工作区并[创建特定于Adobe Commerce的数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans)。 在创建该数据流时，还必须选择描述您计划摄取的数据的架构。 该架构必须包含特定于商务的字段组。
 
 本文为您提供了架构必须包含的字段组，以便成功收集由Adobe Commerce事件提供的以下时间序列数据：
 
@@ -71,9 +81,9 @@ ht-degree: 0%
 
 时间序列配置文件事件数据由以下事件生成：
 
-- [&#39;帐户已创建&#39;](events-backoffice.md#accountcreated)
-- [&#39;帐户已更新&#39;](events-backoffice.md#accountupdated)
-- [&#39;帐户已删除&#39;](events-backoffice.md#accountdeleted)
+- [`accountCreated`](events-backoffice.md#accountcreated)
+- [`accountUpdated`](events-backoffice.md#accountupdated)
+- [`accountDeleted`](events-backoffice.md#accountdeleted)
 
 如果要将客户的配置文件事件数据摄取到Experience Platform，您可以更新现有的Commerce架构并使用已配置的相同数据流，也可以创建特定于配置文件的数据流和架构。 该决策基于贵公司的数据治理。 下面两个部分将介绍这两种情况。
 

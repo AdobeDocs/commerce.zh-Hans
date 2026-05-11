@@ -2,9 +2,20 @@
 title: 推荐类型
 description: 了解您可以部署到网站上各个页面的建议。
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
-source-git-commit: ee773b29fae84141dbb383d0a4cb6c09c49fbe70
+TQID: https://experienceleague.adobe.com/d2V9aHGQO8jnPXAIlae-GklfACARMrVEttryLOY3Zr8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: 1901
 ht-degree: 0%
 
 ---
@@ -148,7 +159,7 @@ Adobe AI使用AI处理和分析目录中的图像，并构建用于确定视觉�
 
 1. 完成后，单击&#x200B;**保存更改**。
 
-   当页面类型为[产品详细信息](create.md)时，**新建推荐**&#x200B;页面现在将&#x200B;**视觉相似度**&#x200B;显示为可选推荐类型。
+   当页面类型为&#x200B;**产品详细信息**&#x200B;时，[新建推荐](create.md)页面现在将&#x200B;**视觉相似度**&#x200B;显示为可选推荐类型。
 
 启用可视化推荐后，Adobe AI将启动图像处理。 所需时间取决于目录的大小。
 

@@ -4,9 +4,25 @@ description: 了解如何设置 [!DNL Adobe Commerce Optimizer] 店面。
 role: Developer
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: b6f7286f223c6253ab9edbead63a4bc4a9baddfe
+TQID: https://experienceleague.adobe.com/Jcj-3qVJPXr-t0X8-Y9GVziGj57ksUdWDhCO6pt-94A
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: 1562
 ht-degree: 0%
 
 ---
@@ -123,7 +139,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >要查找价格手册ID，请检查[中的](./setup/catalog-view.md)目录视图配置详细信息[!DNL Adobe Commerce Optimizer]以查看分配的价格手册。 如果未分配任何价格手册，则可以从配置文件中删除此标头。 将价格手册分配给目录视图后，将其添加回来。
+   >要查找价格手册ID，请检查[!DNL Adobe Commerce Optimizer]中的[目录视图配置详细信息](./setup/catalog-view.md)以查看分配的价格手册。 如果未分配任何价格手册，则可以从配置文件中删除此标头。 将价格手册分配给目录视图后，将其添加回来。
 
 1. 保存配置文件。
 
@@ -159,7 +175,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   >从[实例中的](./setup/data-sync.md)数据同步[!DNL Adobe Commerce Optimizer]页面查看可用的SKU。
+   >从[!DNL Adobe Commerce Optimizer]实例中的[数据同步](./setup/data-sync.md)页面查看可用的SKU。
 
 1. **成功标准**：页面应显示：
    * 产品名称、说明和定价
@@ -200,15 +216,15 @@ ht-degree: 0%
 |-------|----------|----------|
 | **代码同步安装失败** | 无法完成代码同步设置 | <ul><li>确保您拥有GitHub组织的管理员访问权限。</li><li>尝试使用个人存储库而不是组织。</li><li>请检查GitHub权限并重试。</li></ul> |
 | **站点未加载** | 404或连接错误 | <ul><li>验证您的网站URL格式： `https://main--{SITE}--{ORG}.aem.live`</li><li>检查代码同步应用程序是否已正确安装。</li><li>确保存储库为公共或已正确配置。</li></ul> |
-| **未显示产品数据** | 产品页面显示占位符或错误 | <ul><li>验证`config.json`中的配置值</li><li>在[!DNL Adobe Commerce Optimizer]实例中，检查“数据同步”页面以验证是否已加载样例产品。 如果没有可用的产品，请使用[数据摄取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request){target="_blank"}重新加载示例数据或添加产品。 请等待几分钟，以便配置更改能够传播。</li><li>尝试使用在[文件中配置的相同标头，通过Merchandising Service &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details){target="_blank"}products查询`config.json`检索产品详细信息。 如果可以检索数据，则可能是目录视图配置存在问题或索引错误。</li></ul> |
-| **搜索未返回任何结果** | 搜索结果页面为空 | <ul><li>验证您是否可以使用[文件中配置的相同标头，通过Merchandising Services &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search){target="_blank"}productSearch查询`config.json`检索产品搜索结果。 如果可以检索数据，则可能是目录视图配置存在问题或索引错误。</li><li>确认`config.json`文件中的目录视图ID与[!DNL Adobe Commerce Optimizer]中的目录视图ID匹配。</li><li>在Adobe Commerce Optimizer中，验证您在店面页眉配置中使用的策略、区域设置和价格手册的配置。</li><li>验证是否已正确设置用于搜索的[属性元数据设置](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata){target="_blank"}。</li></ul> |
+| **未显示产品数据** | 产品页面显示占位符或错误 | <ul><li>验证`config.json`中的配置值</li><li>在[!DNL Adobe Commerce Optimizer]实例中，检查“数据同步”页面以验证是否已加载样例产品。 如果没有可用的产品，请使用[数据摄取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request){target="_blank"}重新加载示例数据或添加产品。 请等待几分钟，以便配置更改能够传播。</li><li>尝试使用在`config.json`文件中配置的相同标头，通过Merchandising Service [products查询](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details){target="_blank"}检索产品详细信息。 如果可以检索数据，则可能是目录视图配置存在问题或索引错误。</li></ul> |
+| **搜索未返回任何结果** | 搜索结果页面为空 | <ul><li>验证您是否可以使用`config.json`文件中配置的相同标头，通过Merchandising Services [productSearch查询](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search){target="_blank"}检索产品搜索结果。 如果可以检索数据，则可能是目录视图配置存在问题或索引错误。</li><li>确认`config.json`文件中的目录视图ID与[!DNL Adobe Commerce Optimizer]中的目录视图ID匹配。</li><li>在Adobe Commerce Optimizer中，验证您在店面页眉配置中使用的策略、区域设置和价格手册的配置。</li><li>验证是否已正确设置用于搜索的[属性元数据设置](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata){target="_blank"}。</li></ul> |
 
 ### 验证核对清单
 
 在继续后续步骤之前，请验证以下各项，确保您的店面运行正常：
 
 ![清单](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)配置值与您的实例设置匹配<br>
-![检查清单](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)店面主页加载无错误<br>
+![清单](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)店面主页加载无错误<br>
 ![清单](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)至少一个产品详细信息页面显示完整信息<br>
 ![清单](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)搜索功能返回相关结果<br>
 ![清单](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)产品图像正在正确加载<br>

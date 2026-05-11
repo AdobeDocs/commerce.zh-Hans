@@ -3,9 +3,22 @@ title: 创建和管理规则
 description: 了解如何为搜索、默认产品列表和类别页面创建和管理促销规则。
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: 0d1ebaddada8be82645164368ebfbb6dd0a569cd
+TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: 2760
 ht-degree: 0%
 
 ---
@@ -208,7 +221,7 @@ ht-degree: 0%
 
 ### 编辑规则
 
-1. 在&#x200B;*促销规则*&#x200B;工作区上，在网格中查找要编辑的规则，然后单击&#x200B;**更多** (...)选项。
+1. 在&#x200B;*促销规则*&#x200B;工作区上，在网格中查找要编辑的规则，然后单击&#x200B;**更多** (...) 选项。
 1. 单击&#x200B;**编辑**&#x200B;以访问规则编辑器。
 1. 根据需要更新条件、运算符和事件。
 1. 根据需要更新名称、开始和结束日期以及说明字段。 所有规则名称必须唯一。
@@ -220,13 +233,13 @@ ht-degree: 0%
 
 此选项提供了一种快速查看所有规则参数的方法，同时保留在&#x200B;*规则*&#x200B;表中。
 
-1. 在&#x200B;*促销规则*&#x200B;工作区中，在网格中找到要编辑的规则，然后单击&#x200B;**更多** (...)选项。
+1. 在&#x200B;*促销规则*&#x200B;工作区中，在网格中查找要编辑的规则，然后单击&#x200B;**更多** (...) 选项。
 1. 单击&#x200B;**查看详细信息**&#x200B;以查看规则参数。
 1. 选择&#x200B;**编辑**&#x200B;或&#x200B;**删除**，或单击X关闭面板。
 
 ### 删除规则
 
-1. 在&#x200B;*规则*&#x200B;工作区上，在网格中查找要编辑的规则，然后单击&#x200B;**更多** (...)选项。
+1. 在&#x200B;*规则*&#x200B;工作区上，在网格中查找要编辑的规则，然后单击&#x200B;**更多** (...) 选项。
 1. 单击&#x200B;**删除**。
 
 ## 字段描述 {#field-descriptions}

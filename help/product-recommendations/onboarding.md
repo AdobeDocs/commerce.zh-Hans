@@ -2,9 +2,18 @@
 title: 入门
 description: 了解 [!DNL Product Recommendations]中的要求和支持平台。
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
-source-git-commit: 8f421bd4421b9599ad52aa68c5caaee6592ccb43
+TQID: https://experienceleague.adobe.com/FLrOFe-Lwe7i3dOwCISflVGEv2MIkXmmE-NqTvpaY-0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: 418
 ht-degree: 0%
 
 ---
@@ -13,7 +22,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->**产品推荐不是HIPAA就绪的服务。**&#x200B;请勿在使用HIPAA就绪的产品或以其他方式处理受保护的健康信息(PHI)的任何Adobe Commerce实施中启用或使用产品推荐。 “产品推荐”是当前分类为不符合HIPAA要求的Commerce SaaS服务的一部分。
+>**产品推荐不是HIPAA就绪的服务。** 请勿在使用HIPAA就绪产品或以其他方式处理受保护的健康信息(PHI)的任何Adobe Commerce实施中启用或使用产品推荐。 “产品推荐”是当前分类为不符合HIPAA要求的Commerce SaaS服务的一部分。
 >
 >有关哪些Adobe Commerce功能支持HIPAA以及哪些服务不能与PHI一起使用的详细信息，请参阅Adobe Commerce上的[HIPAA准备工作](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)和[操作](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)。
 
@@ -44,7 +53,7 @@ ht-degree: 0%
 
 [!DNL Product Recommendations]可以作为页面生成器内容类型添加到页面中。 要向产品推荐添加页面生成器支持，请参阅[安装和配置](install-configure.md)。
 
-有关如何将[[!DNL Page Builder] 添加到](page-builder.md)内容的说明，请参阅[!DNL Product Recommendations]集成[!DNL Page Builder]。
+有关如何将[!DNL Product Recommendations]添加到[!DNL Page Builder]内容的说明，请参阅[[!DNL Page Builder] 集成](page-builder.md)。
 
 ### SaaS价格索引
 

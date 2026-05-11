@@ -3,9 +3,20 @@ title: 动态添加产品属性
 description: 了解如何在数据同步过程中动态地将自定义产品属性添加到数据导出馈送。
 role: Admin, Developer
 exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
-source-git-commit: 37d5699315e34f1504602090fae5201ee51cf470
+TQID: https://experienceleague.adobe.com/SZWtLSvxb-w-968f4wqWrPTBn1c9IEuthvhIv86Pvss
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: 297
 ht-degree: 0%
 
 ---
@@ -105,7 +116,7 @@ ht-degree: 0%
 
 1. 创建指向以下提供程序`\Magento\CatalogDataExporter\Model\Provider\ProductMetadata`的插件。
 
-   检查`ProductAttributeMetadata`中的`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`以了解必填字段。
+   检查`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`中的`ProductAttributeMetadata`以了解必填字段。
 
    ```php
     <?php

@@ -5,10 +5,26 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+TQID: https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: 1464
 ht-degree: 0%
 
 ---
@@ -63,7 +79,7 @@ ht-degree: 0%
 
 1. 输入所需的联系人详细信息和送货信息。 您可以为此订单使用虚构的信息。
 
-1. 要结帐，请选择&#x200B;[!UICONTROL **支票/汇票**]。 如果要使用信用卡，请使用Paypal[提供的](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)测试卡之一。 您可以将其与任何将来的到期日期和任何CVC一起使用。
+1. 要结帐，请选择&#x200B;[!UICONTROL **支票/汇票**]。 如果要使用信用卡，请使用Paypal[&#128279;](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的测试卡之一。 您可以将其与任何将来的到期日期和任何CVC一起使用。
 
    ![包含联系人和送货信息字段的签出表单](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -115,7 +131,7 @@ ht-degree: 0%
 
 1. 在主文件夹下创建一个&#x200B;[!UICONTROL **试验**]&#x200B;文件夹，方法是单击&#x200B;[!UICONTROL **新建**]&#x200B;按钮并选择&#x200B;[!UICONTROL **文件夹**]。
 
-1. 在&#x200B;**试验**&#x200B;文件夹中创建名为&#x200B;[!UICONTROL **1234**]&#x200B;的文件夹。
+1. 在&#x200B;[!UICONTROL **试验**]&#x200B;文件夹中创建名为&#x200B;**1234**&#x200B;的文件夹。
 
 1. 将索引页的两个副本粘贴到&#x200B;**1234**&#x200B;文件夹中。
 
@@ -158,13 +174,13 @@ ht-degree: 0%
 
 1. 打开您在先决条件中创建的[店面](./storefront.md)，然后导航到要更改的项目。 记下SKU或产品代码项。
 
-1. 通过在[!DNL AEM Assets]Adobe Experience Cloud[中选择打开](https://experience.adobe.com/#/home)。
+1. 通过在[Adobe Experience Cloud](https://experience.adobe.com/#/home)中选择打开[!DNL AEM Assets]。
 
-   显示![[!DNL AEM Assets]接口的[!DNL Adobe Experience Cloud]选择器](./assets/select-aem-assets.png){width="600" zoomable="yes"}
+   显示[!DNL Adobe Experience Cloud]接口的![[!DNL AEM Assets]选择器](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
 1. 单击&#x200B;[!UICONTROL **Assets**]。
 
-   ![界面中的[!DNL AEM Assets]Assets导航选项](./assets/click-assets.png){width="600" zoomable="yes"}
+   [!DNL AEM Assets]界面中的![Assets导航选项](./assets/click-assets.png){width="600" zoomable="yes"}
 
 1. 按&#x200B;**SKU**&#x200B;或&#x200B;**产品代码**&#x200B;搜索该项目。
 
@@ -200,19 +216,19 @@ ht-degree: 0%
 
 #### 将图像添加到[!DNL Commerce AEM Assets]
 
-1. 从[的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)导航面板[!DNL AEM as a Cloud Service]中，选择&#x200B;[!UICONTROL **Assets**] > [!UICONTROL **文件**] > [!UICONTROL **Commerce**]，然后单击在上一节中创建的资源。
+1. 从[!DNL AEM as a Cloud Service]的[导航面板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)中，选择&#x200B;[!UICONTROL **Assets**] > [!UICONTROL **文件**] > [!UICONTROL **Commerce**]，然后单击在上一节中创建的资源。
 
-   ![中的[!DNL AEM Assets]Commerce文件夹包含产品图像](./assets/commerce-folder.png){width="600" zoomable="yes"}
+   [!DNL AEM Assets]中的![Commerce文件夹包含产品图像](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
 1. 单击&#x200B;[!UICONTROL **属性**]。
 
-   ![工具栏中的[!DNL AEM Assets]属性按钮](./assets/properties.png){width="600" zoomable="yes"}
+   [!DNL AEM Assets]工具栏中的![属性按钮](./assets/properties.png){width="600" zoomable="yes"}
 
 1. 选择&#x200B;[!UICONTROL **Commerce**]&#x200B;选项卡。
 
    资源属性面板中的![Commerce选项卡](./assets/commerce-tab.png){width="600" zoomable="yes"}
 
-1. 确保Adobe Commerce中是否存在&#x200B;[!UICONTROL **？**]&#x200B;字段设置为&#x200B;[!UICONTROL **是**]。
+1. 确保Adobe Commerce中是否存在&#x200B;[!UICONTROL **？**] 字段设置为&#x200B;[!UICONTROL **是**]。
 
 1. 单击&#x200B;[!UICONTROL **添加**]，然后输入要将该资产添加到的产品SKU。
 
@@ -250,7 +266,7 @@ ht-degree: 0%
 
 ### 生成文本
 
-1. 使用[通用编辑器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)打开您的店面站点。
+1. 使用[通用编辑器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)打开您的店面站点。
 
 1. 选择要编辑的文本块。
 
@@ -264,13 +280,13 @@ ht-degree: 0%
 
 ### 生成内容和图像
 
-1. 打开[[!DNL Generate Variations]](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. 打开[[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. 选择&#x200B;[!UICONTROL **主页横幅**]&#x200B;模板。
 
 1. 在&#x200B;[!UICONTROL **解释用户交互**]&#x200B;文本框中，输入：“Adobe员工和合作伙伴购买Adobe品牌齿轮的Experience！”。
 
-1. 在域知识&#x200B;[!UICONTROL **的**] URL中，输入&#x200B;**www.adobestore.com**。
+1. 在域知识&#x200B;**的** URL中，输入&#x200B;**www.adobestore.com**。
 
 1. 单击&#x200B;[!UICONTROL **生成**]。
 

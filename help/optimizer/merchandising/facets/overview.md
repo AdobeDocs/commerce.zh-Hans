@@ -1,11 +1,24 @@
 ---
 title: Facet概述
 description: 了解 [!DNL Adobe Commerce Optimizer] 中的Facet以及它们如何改进搜索结果。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/-LxTEulpf87FieM4mQCsoIkbPfGKDOzceX2fg9z5cSg
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: 966
 ht-degree: 0%
 
 ---
@@ -48,7 +61,7 @@ Facet是一种高性能筛选方法，它使用属性值的多个维度作为搜
 - 使购物者能够在搜索结果中进行搜索。
 - 在分层搜索的第二层中使用`startsWith`和`contains`搜索索引来进一步优化结果。
 
-高级搜索功能是使用特定运算符通过`filter`查询[`productSearch`中的](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)参数实现的：
+高级搜索功能是使用特定运算符通过[`productSearch`查询](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)中的`filter`参数实现的：
 
 - **分层搜索** — 在另一个搜索上下文中搜索 — 使用此功能，您最多可以为搜索查询执行两层搜索。 例如：
 
@@ -77,7 +90,7 @@ Facet是一种高性能筛选方法，它使用属性值的多个维度作为搜
 
 1. 指定该属性的搜索功能，如&#x200B;**Contains**（默认值）或&#x200B;**Starts with**。 您可以为&#x200B;**Contains**&#x200B;指定最多六个要启用的属性，为&#x200B;**Starts with**&#x200B;指定六个要启用的属性。 此外，对于&#x200B;**Contains**&#x200B;索引，字符串长度限制为50个字符或更少。
 
-1. 有关如何使用新的[和](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)搜索功能更新[!DNL Commerce Optimizer] API调用的示例，请参阅`contains`开发人员文档`startsWith`。
+1. 有关如何使用新的`contains`和`startsWith`搜索功能更新[!DNL Commerce Optimizer] API调用的示例，请参阅[开发人员文档](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)。
 
    您可以在搜索结果页面上实施这些新条件。 例如，您可以在页面上添加新部分，购物者可以进一步细化其搜索结果。 您可以允许购物者选择特定的产品属性，如“制造商”、“部件号”和“说明”。 从该位置，他们使用`contains`或`startsWith`条件在这些属性中搜索。
 

@@ -2,16 +2,28 @@
 title: 产品Recommendations管理员开发
 description: “产品推荐”体系结构和开发功能的概述。
 exl-id: 5967259e-c531-4fc7-9abd-cc18433fab33
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/DtPYY7DaB-A7-VyTeXkjL9Y2My-WOQx-9CD-TgrcTmk
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: 319
 ht-degree: 0%
 
 ---
 
 # 产品Recommendations管理员开发
 
-产品推荐是一个强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。 产品推荐以单元的形式出现在店面上，如“查看了这个产品的客户也查看了”、“购买了这个产品的客户也购买了”、“为您推荐”等。 Adobe Commerce产品推荐由[Adobe AI](https://business.adobe.com/cn/ai.html)提供支持，它使用人工智能和机器学习算法对汇总的购物者数据进行深入分析。 此数据与Commerce目录结合使用后，可为购物者提供引人入胜、相关且个性化的体验。
+产品推荐是一个强大的营销工具，可用于提高转化率、增加收入和刺激购物者参与。 产品推荐以单元的形式出现在店面上，如“查看了这个产品的客户也查看了”、“购买了这个产品的客户也购买了”、“为您推荐”等。 Adobe Commerce产品推荐由[Adobe AI](https://business.adobe.com/cn/ai.html)提供支持，它使用人工智能和机器学习算法来对汇总的购物者数据进行深入分析。 此数据与Commerce目录结合使用后，可为购物者提供引人入胜、相关且个性化的体验。
 
 >[!NOTE]
 >
@@ -19,7 +31,7 @@ ht-degree: 0%
 
 ## 架构概述
 
-从较高层面来看，Commerce产品推荐部署为SaaS。 Commerce端包括店面（其中包含事件收集器和推荐布局模板）和后端（其中包含数据服务、SaaS导出模块和管理UI）。 Adobe AI智能服务在SaaS端利用。
+从较高层面来看，Commerce产品推荐部署为SaaS。 Commerce端包括店面（其中包含事件收集器和推荐布局模板）和后端（其中包含数据服务、SaaS导出模块和管理UI）。 Adobe AI情报服务在SaaS方面得到利用。
 
 ![产品推荐体系结构图](assets/arch-diag-sensei.svg)
 

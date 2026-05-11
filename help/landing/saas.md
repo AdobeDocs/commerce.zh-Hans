@@ -5,9 +5,25 @@ feature: Services, Saas
 role: Admin, User
 exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
 badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
-source-git-commit: 6e107238b8eae31f35f43524aee5690c0fe0e03d
+TQID: https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: 1662
 ht-degree: 0%
 
 ---
@@ -20,7 +36,7 @@ ht-degree: 0%
 
 ## 可用服务 {#availableservices}
 
-下面列出了可通过[!DNL Commerce]访问的[!DNL Commerce Services Connector]功能：
+下面列出了可通过[!DNL Commerce Services Connector]访问的[!DNL Commerce]功能：
 
 | 服务 | 可用性 |
 | --- | --- |
@@ -40,7 +56,7 @@ ht-degree: 0%
 
 ## 凭据 {#apikey}
 
-生产和沙盒API密钥从[!DNL Commerce]许可证所有者[的](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/start/onboarding)帐户生成。 Commerce帐户由唯一的[!DNL Commerce] ID (MageID)标识。 商户组织的许可证所有者可以为产品推荐或实时搜索等服务生成API密钥，前提是帐户处于良好状态。
+生产和沙盒API密钥从[许可证所有者](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帐户生成。 Commerce帐户由唯一的[!DNL Commerce] ID (MageID)标识。 商户组织的许可证所有者可以为产品推荐或实时搜索等服务生成API密钥，前提是帐户处于良好状态。
 
 这些密钥可在“需要知道”的基础上与系统集成商或代表许可证持有人管理项目和环境的开发团队共享。 已被许可证所有者授予[!DNL Shared Access]的开发人员无法代表许可证所有者生成密钥，即使商户的组织位于其帐户的[!DNL Switch Accounts]下拉列表中。
 
@@ -52,7 +68,7 @@ ht-degree: 0%
 
 ### 生成生产和沙盒API密钥 {#genapikey}
 
-1. 在[!DNL Commerce]https://account.magento.com[登录到您的](https://account.magento.com/customer/account/login){:target="_blank"}帐户。
+1. 在[https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"}登录到您的[!DNL Commerce]帐户。
 
 1. 在&#x200B;**Magento**&#x200B;选项卡下，在侧栏中选择&#x200B;**API门户**。
 
@@ -80,7 +96,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> 仅对生产&#x200B;**安装使用**&#x200B;生产SaaS数据空间[!DNL Commerce]。 在非生产环境中使用此数据可以混合测试和实时数据（例如，暂存URL或测试目录数据）。 如果发生这种情况，[提交支持请求](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)以请求数据清理。
+> 仅对生产[!DNL Commerce]安装使用&#x200B;**生产SaaS数据空间**。 在非生产环境中使用此数据可以混合测试和实时数据（例如，暂存URL或测试目录数据）。 如果发生这种情况，[提交支持请求](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)以请求数据清理。
 
 如果您在管理员中找不到Live Search配置字段，请验证您为所选数据空间输入的API密钥对是否正确（生产数据空间使用生产密钥；测试数据空间使用沙盒密钥）。 如果配置错误的键，则SaaS服务（如Live Search）在该Adobe Commerce环境中不可用。
 
@@ -118,7 +134,7 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**系统** >服务> **Commerce服务连接器**。
 
-   如果未看到&#x200B;**[!UICONTROL Commerce Services Connector]**&#x200B;部分，请为所需的[!DNL Commerce]服务[[!DNL Commerce] 安装](#availableservices)模块并确保已安装`magento/module-services-id`包。
+   如果未看到&#x200B;**[!UICONTROL Commerce Services Connector]**&#x200B;部分，请为所需的[[!DNL Commerce] 服务](#availableservices)安装[!DNL Commerce]模块并确保已安装`magento/module-services-id`包。
 
 1. 在&#x200B;_[!UICONTROL Sandbox API Keys]_&#x200B;和_[!UICONTROL Production API Keys]_&#x200B;部分中，粘贴您的键值。
 
@@ -135,7 +151,7 @@ ht-degree: 0%
 
    为避免混淆，请勿使用特定的Commerce服务作为项目的名称（例如，*实时搜索*、*产品推荐*&#x200B;或&#x200B;*数据连接*）。 除非已为多个SaaS项目配置了您的许可证，否则您可以为多个服务使用同一SaaS项目。
 
-1. 选择要用于&#x200B;**存储当前配置的**&#x200B;数据空间[!DNL Commerce]。
+1. 选择要用于[!DNL Commerce]存储当前配置的&#x200B;**数据空间**。
 
    如果您有单独的实例要与Commerce服务集成，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，以便为每个额外的实例请求新的SaaS项目。 支持团队创建SaaS项目后，使用相同的API密钥&#x200B;**为实例**&#x200B;配置Commerce Services连接器，并选择新的SaaS项目和数据空间。
 

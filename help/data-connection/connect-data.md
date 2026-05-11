@@ -3,16 +3,37 @@ title: 将Commerce数据连接到Adobe Experience Platform
 description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 feature: Personalization, Integration, Configuration
 exl-id: 8ba33277-38a5-45af-86e0-906cfb3b998d
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/Hof7ftSKKkdMzoJ7eXLr9D2jv-U1LfFnMiFuGwzJpYE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: 3071
 ht-degree: 0%
 
 ---
 
 # 将Commerce数据连接到Adobe Experience Platform
 
-安装[!DNL Data Connection]扩展时，在Commerce **管理员**&#x200B;的&#x200B;**服务**&#x200B;下的&#x200B;_系统_&#x200B;菜单中会显示两个新的配置页面。
+安装[!DNL Data Connection]扩展时，在Commerce _管理员_&#x200B;的&#x200B;**服务**&#x200B;下的&#x200B;**系统**&#x200B;菜单中会显示两个新的配置页面。
 
 - Commerce服务连接器
 - [!DNL Data Connection]
@@ -111,7 +132,7 @@ ht-degree: 0%
    >
    >如果选择&#x200B;**后台事件**，则所有后台数据都会发送到Experience Platform Edge。 如果购物者选择退出数据收集，您必须在Experience Platform中明确设置购物者的隐私偏好设置。 这与店面事件不同，店面事件收集器已根据购物者偏好处理同意。 了解[更多](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=zh-Hans)有关在Experience Platform中设置购物者的隐私首选项的信息。
 
-1. （如果您使用自己的AEP Web SDK，请跳过此步骤。）[在Adobe Experience Platform中创建](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hans#create)数据流，或选择要用于收集的现有数据流。 在&#x200B;**数据流ID**&#x200B;字段中输入该数据流ID。
+1. （如果您使用自己的AEP Web SDK，请跳过此步骤。） [在Adobe Experience Platform中创建](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hans#create)数据流或选择要用于收集的现有数据流。 在&#x200B;**数据流ID**&#x200B;字段中输入该数据流ID。
 
 1. 输入要包含Commerce数据的&#x200B;**数据集ID**。 要查找数据集ID，请执行以下操作：
 
@@ -209,7 +230,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
    >
    >已为Commerce版本2.4.7及更高版本设置了RabbitMQ，但您必须启用消费者。
 
-1. 使用`.magento.env.yaml`环境变量在`CRON_CONSUMERS_RUNNER`中通过cron作业启用消息队列使用者。
+1. 使用`CRON_CONSUMERS_RUNNER`环境变量在`.magento.env.yaml`中通过cron作业启用消息队列使用者。
 
    ```yaml
       stage:
@@ -258,7 +279,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 >[!IMPORTANT]
 >
->确保您在[数据收集](#data-collection)选项卡上指定的&#x200B;**数据流ID**&#x200B;与链接到架构的ID匹配，以便摄取自定义属性。
+>确保您在&#x200B;**数据收集**&#x200B;选项卡上指定的[数据流ID](#data-collection)与链接到架构的ID匹配，以便摄取自定义属性。
 
 为订单创建自定义属性并将它们发送到Experience Platform时，Commerce中的属性名称必须与Experience Platform上[!DNL Commerce]架构中的属性名称匹配。 如果两者不匹配，则可能很难识别差异。 如果您的名称不匹配，**自定义订单属性**&#x200B;表可以帮助解决此问题。
 
@@ -266,7 +287,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 如果在表中的自定义属性名称旁边没有出现绿色复选标记，则表示源中的属性名称不匹配。 在一个源中更正属性名称，将出现绿色复选标记，指示名称现在匹配。
 
-- 如果在Experience Platform的架构中更新了属性名称，则必须在&#x200B;**数据自定义**&#x200B;选项卡上保存配置以触发Experience Platform架构更改。 单击&#x200B;**按钮时，此更改将反映在**&#x200B;自定义订单属性&#x200B;**[!UICONTROL Refresh]**&#x200B;表中。
+- 如果在Experience Platform的架构中更新了属性名称，则必须在&#x200B;**数据自定义**&#x200B;选项卡上保存配置以触发Experience Platform架构更改。 单击&#x200B;**[!UICONTROL Refresh]**&#x200B;按钮时，此更改将反映在&#x200B;**自定义订单属性**&#x200B;表中。
 - 如果属性名称在[!DNL Commerce]中更新，则必须生成订单事件以更新&#x200B;**自定义订单属性**&#x200B;表中的名称。 此更改将在大约60分钟后反映出来。
 
 详细了解如何[设置自定义属性](custom-attributes.md)。
@@ -282,7 +303,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 ## 确认已收集事件数据
 
-要确认正在从Commerce存储中收集数据，请使用[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=zh-Hans)来检查您的Commerce网站。 确认正在收集数据后，通过运行返回来自您创建的[数据集的数据](overview.md#prerequisites)的查询，可以验证店面和后台事件数据是否显示在边缘。
+要确认正在从Commerce存储中收集数据，请使用[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html)来检查您的Commerce网站。 确认正在收集数据后，通过运行返回来自您创建的[数据集的数据](overview.md#prerequisites)的查询，可以验证店面和后台事件数据是否显示在边缘。
 
 1. 在Experience Platform的左侧导航中选择&#x200B;**查询**，然后单击[!UICONTROL Create Query]。
 

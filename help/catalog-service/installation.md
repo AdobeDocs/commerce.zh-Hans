@@ -3,9 +3,19 @@ title: 安装
 description: 了解如何安装 [!DNL Catalog Service]
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
 badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
-source-git-commit: 4b6cd45737fa6c3917670d6b66e6849aece39a25
+TQID: https://experienceleague.adobe.com/qVI-zFFljrUZzjSMmBxs5jRCsKbxfivQV1xzzpBS2uw
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: 972
 ht-degree: 0%
 
 ---
@@ -18,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您的Commerce实例使用实时搜索或产品推荐，则当您载入或升级这些服务时，会自动安装或更新目录服务。 有关详细信息，请参阅[实时搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/install)和[产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce/product-recommendations/getting-started/install-configure)的安装说明。
+>如果您的Commerce实例使用实时搜索或产品推荐，则当您载入或升级这些服务时，会自动安装或更新目录服务。 有关详细信息，请参阅[实时搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/install)和[产品推荐](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure)的安装说明。
 >
 >如果您使用的是Adobe Commerce as a Cloud Service，则您的环境中提供了最新版本的中继包。 要开始使用这些服务，请参阅[目录服务入门](get-started.md)。
 >
@@ -81,7 +91,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关在本地管理Commerce项目环境的信息，请参阅《云基础架构用户指南》[上的](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/cli-branches)Adobe Commerce中的&#x200B;_使用CLI管理分支_。
+   >有关在本地管理Commerce项目环境的信息，请参阅《云基础架构用户指南》_上的_ Adobe Commerce中的[使用CLI管理分支](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/cli-branches)。
 
 1. 查看要使用Adobe Commerce Cloud CLI更新的环境分支。
 
@@ -159,7 +169,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >您还可以使用Commerce CLI从命令行启动初始同步。 请参阅[SaaS数据导出指南](../data-export/data-export-cli-commands.md#initial-sync)中的&#x200B;_初始同步_。
+   >您还可以使用Commerce CLI从命令行启动初始同步。 请参阅&#x200B;_SaaS数据导出指南_&#x200B;中的[初始同步](../data-export/data-export-cli-commands.md#initial-sync)。
 
 要确保正确运行目录导出，请执行以下操作：
 

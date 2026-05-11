@@ -3,9 +3,18 @@ title: 自定义自动匹配
 description: 了解自定义自动匹配对于具有复杂匹配逻辑或依赖第三方系统且无法将元数据填充到AEM Assets中的商户特别有用。
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
+TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: 603
 ht-degree: 0%
 
 ---
@@ -26,7 +35,7 @@ ht-degree: 0%
 
 **[!UICONTROL Adobe I/O Workspace Configuration]**&#x200B;字段通过导入App Builder `workspace.json`配置文件提供了一种配置自定义匹配器的简化方法。
 
-您可以从`workspace.json`Adobe Developer Console[下载](https://developer.adobe.com/console)文件。 该文件包含App Builder工作区的所有凭据和配置详细信息。
+您可以从[Adobe Developer Console](https://developer.adobe.com/console)下载`workspace.json`文件。 该文件包含App Builder工作区的所有凭据和配置详细信息。
 
 +++示例`workspace.json`
 
