@@ -1,7 +1,7 @@
 ---
-source-git-commit: 156ed7a480de9239843c96b6b6bc252585f498d6
+source-git-commit: aaefe284749df25953c2581f000af2989bcc8fb2
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >如果您已安装[Adobe Commerce Optimizer Connector](../aco-connector/overview.md)以将目录数据导出到Adobe Commerce Optimizer，请使用Commerce Optimizer Studio中的[数据馈送同步状态页面](../optimizer/setup/data-sync.md)来检查是否已成功同步到Adobe Commerce Optimizer的数据，而不是数据管理功能板。
+
+## 用于API更新的ACO下拉注释 {#aco-api-updates-and-dropins}
+
+>[!NOTE]
+>
+>[!DNL Commerce Storefront on Edge Delivery Services]的[放置组件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hans)自动获取最新的GraphQL更改（新字段、限制和查询行为）。
 
 ## ACCS早期访问 {#accs-early-access}
 

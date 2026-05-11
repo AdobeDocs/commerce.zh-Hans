@@ -1,20 +1,46 @@
 ---
-title: 发行说明
-description: ' [!DNL Adobe Commerce Optimizer]的最新发行信息。'
+title: Adobe Commerce Optimizer发行说明
+description: ' [!DNL Adobe Commerce Optimizer]的每月发行信息，包括用于店面目录数据检索的数据摄取REST API和GraphQL API的更新。'
+feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
-source-git-commit: a42f6b3348eed476095c6d9777ac9486579fe6ea
+source-git-commit: 744a85738ab77cb7d1844a353dacab26f30aec5b
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 1%
+source-wordcount: '1047'
+ht-degree: 0%
 
 ---
 
 # 发行说明
 
-以下发行说明包含[!DNL Adobe Commerce Optimizer]的更新。
+以下发行说明包含[!DNL Adobe Commerce Optimizer]的更新，包括：
+
+* [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)的新增功能和改进。
+* 更新了用于storefront目录数据检索的[数据摄取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和[GraphQL API](https://developer.adobe.com/commerce/services/reference/graphql/)。
+
+  {{aco-api-updates-and-dropins}}
+
+## 2026年5月
+
+目前本月没有[[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)版本。 请参阅下面的API更新。
+
+>[!BEGINSHADEBOX]
+
+### API更新
+
+_2026年5月4日_
+
+<!--v1.53-->
+
+店面产品价格现在显示所有产品类型的正确货币代码（例如，美元）。 以前，某些产品显示`NONE`而不是预期的货币，从而导致缺少价格。
+
+<!--DATA-7115-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## 2026年4月
 
@@ -24,11 +50,49 @@ ht-degree: 1%
 
 ### 目录规则（测试版）
 
-销售规则现在包含[类别规则](./merchandising/rules/add.md)，因此您可以使用与搜索相同的智能排名和手动操作（固定、提升、嵌入）来定位一个或多个类别并控制类别页面上的产品订单。
+[类别规则](./merchandising/rules/add.md)扩展了促销规则，以便您可以定位类别并在类别页面上控制产品订单，这些类别页面上的排名和操作（固定、提升、嵌入）与搜索相同。
 
 ### 价格过滤器(Beta)
 
-推荐筛选器现在支持[价格筛选器](./merchandising/recommendations/filters.md#price)，您可以使用该筛选器设置产品的最低和最高价格范围。
+推荐筛选器现在包括[价格范围筛选器](./merchandising/recommendations/filters.md#price)（最小值和最大值）。
+
+### API更新
+
+_2026年4月29日_
+
+<!--v1.52 release-->
+
+**需要批量处理请求** — 现在，当您检索目录数据时，GraphQL API为每个请求最多强制执行100个SKU。 查看[记录的限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits#product-discovery)。
+
+<!--DATA-7156-->
+
+_2026年4月17日_
+
+<!--v1.51 release-->
+
+**使用GraphQL按名称查找类别** — 新的[`searchCategory`](https://developer.adobe.com/commerce/services/reference/graphql/)查询返回匹配类别，并对店面和集成进行分页。 请参阅API引用，以了解参数和响应字段。<!--COMOPT-1819-->
+
+_2026年4月7日_
+
+<!--v1.50 release-->
+
+**更简单的类别查找** — [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查询将`family`视为可选的，因此您可以通过Slug解析类别，而无需提供系列。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年3月
+
+本月没有[[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)版本。 请参阅下面的API更新。
+
+>[!BEGINSHADEBOX]
+
+### API更新
+
+_2026年3月24日_
+
+动态捆绑包现在会返回计算出的价格范围。<!--DATA-7014-->
 
 {{aco-release}}
 
@@ -42,7 +106,37 @@ ht-degree: 1%
 
 ### 促销规则和推荐的目录视图（测试版）
 
-添加了在[创建推荐单位](./merchandising/recommendations/create.md)或[促销规则](./merchandising/rules/add.md)时指定目录视图的功能。
+现在，您可以在[创建推荐单位](./merchandising/recommendations/create.md)或[促销规则](./merchandising/rules/add.md)时指定目录视图。
+
+### API更新
+
+_2026年2月19日_
+
+<!--v1.48-->
+
+**店面更丰富的类别内容** — [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查询现在返回描述、图像和SEO元标记，因此店面可以呈现更丰富的类别页面。<!--DATA-6933-->
+
+_2026年2月12日_
+
+<!--v1.49-->
+
+**按类别增强了产品数据** — GraphQL API添加了[`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"}类型，以便您可以按类别查询和筛选往返次数较少的产品。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年1月
+
+本月没有[[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)版本。 请参阅下面的API更新。
+
+>[!BEGINSHADEBOX]
+
+### API更新
+
+_2026年1月19日_
+
+* REST API支持&#x200B;**更丰富的类别** — [类别API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories)操作现在除了`families`之外还接受可选的`metaTags`、`images`和`description`值，因此您可以为类别提供更丰富的促销和SEO详细信息。
 
 {{aco-release}}
 
@@ -56,11 +150,40 @@ ht-degree: 1%
 
 ### 机会
 
-AI支持的站点优化建议现在可通过[Adobe Sites Optimizer集成](./manage-results/opportunities.md)使用。 此功能通过自动检测和智能推荐，帮助商家识别并解决影响商业网站性能的问题。
+商家现在可以通过[Adobe Sites Optimizer](./manage-results/opportunities.md)获取AI支持的推荐，以检测站点问题并提供性能修复建议。
 
 ### 目录层
 
-添加了[目录层](./setup/catalog-layer.md)，以便您可以在不更改源数据的情况下修改产品数据，包括层优先级管理以及与Adobe Sites Optimizer自动修复功能的集成。
+现在，商家可以使用[目录层](./setup/catalog-layer.md)覆盖产品数据，而无需编辑源目录、管理层优先级以及使用Adobe Sites Optimizer自动修复。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## 2025年11
+
+本月没有[[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)版本。 请参阅下面的API更新。
+
+>[!BEGINSHADEBOX]
+
+### API更新
+
+_2025年11月21日_
+
+**更新了数据摄取REST API的身份验证说明** — 这些说明现在引用了数据摄取服务的OAuth访问令牌和正确的Developer Console凭据范围。 如果您的凭据范围已过期，请重新生成它们以保留访问权限。
+
+_2025年11月3日_
+
+<!-- v1.43 -->
+
+**GraphQL中的分层本地化产品内容** — 您现在可以从[!DNL Adobe Commerce Optimizer]提供特定于渠道的区域设置感知产品内容。
+
+* 按客户区段定制产品内容
+* 应用区域设置特定的覆盖而不复制基本目录数据
+* 使用图层蒙版控制字段级覆盖
+* 使用针对高级、季节和移动设备优化的内容层
+
+未更改GraphQL API架构：通过现有`products`查询和请求标头应用层。 请参阅[目录层](./setup/catalog-layer.md)。
 
 {{aco-release}}
 
@@ -74,26 +197,52 @@ AI支持的站点优化建议现在可通过[Adobe Sites Optimizer集成](./mana
 
 ### Commerce Optimizer Salesforce Commerce连接器
 
-[!DNL Commerce Optimizer Salesforce Commerce Connector]是一个新的App Builder集成入门工具包，它使Commerce管理员和开发人员能够将Salesforce B2C Commerce目录数据与[!DNL Commerce Optimizer]无缝连接。<!--COMOPT-536-->
+[!DNL Commerce Optimizer Salesforce Commerce Connector]是一个新的App Builder入门工具包，用于将Salesforce B2C Commerce目录数据同步到[!DNL Commerce Optimizer].<!--COMOPT-536-->
 
 管理员的&#x200B;**：**
 
-* Salesforce中的目录更新（产品、价格、元数据、价格手册）会自动与Commerce Optimizer同步，无需手动干预。
-* 该集成独立于Adobe Commerce运行，降低了复杂性和潜在的故障点。
-* 管理员可以依赖计划的定期计划更新，以确保Commerce Optimizer中的目录数据准确无误，从而改进推介和产品推荐。
+* Salesforce目录更改（产品、价格、元数据、价格手册）会自动同步到[!DNL Commerce Optimizer]。
+* 在[!DNL Adobe Commerce]之外运行，集成接触点较少。
+* 计划的更新使[!DNL Commerce Optimizer]数据保持为最新的推销和推荐。
 
 面向开发人员的&#x200B;**：**
 
-* 入门套件提供了一个简单的、可扩展的框架，用于将Salesforce目录数据摄取到SaaS促销服务中。
-* 提供了参考实施、设计文档和代码示例以加速自定义集成或疑难解答。<!--COMOPT-536-->
+* 用于将Salesforce目录摄取到SaaS促销服务中的可扩展框架。
+* 参考实施、设计文档和代码示例，以加快构建和疑难解答速度。
 
 ### 分层搜索
 
-* 下列高级搜索功能的GA版本：使用`startsWith`和`contains`的分层搜索。 [了解详情](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#layered-search-and-expansion-of-search-types)。
+* **分层搜索(GA)** — 产品搜索现在支持`startsWith`和`contains`匹配。 请参阅[分层搜索和扩展搜索类型](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#layered-search-and-expansion-of-search-types)。
 
-### 类别API
+### API更新
 
-新的类别REST API现已可用，它允许管理员和开发人员以编程方式创建、更新和管理多个类别树，以便导航和产品分组。 该API支持全局和特定于渠道的配置，并且设计为具有高可扩展性，支持多达10,000个类别树和每个类别树500个类别。 有关详细信息，请参阅[Merchandising Services开发人员指南](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#categories)._中的_&#x200B;类别<!--DCAT-2649-->
+* _2025年10月17日_
+
+  **添加REST API支持以摄取产品层** — 使用[目录层API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers)自定义和覆盖特定上下文、区域设置或业务要求的基本产品数据。 创建图层后，您可以从[Adobe Commerce Optimizer Studio](./setup/catalog-layer.md).<!--DATA-6632-->应用和管理图层
+
+* _2025年10月14日_
+
+  **程序化类别树** — 创建、更新和管理通过REST（全局或特定于渠道）进行导航和分组的类别树，规模可达10,000个树和每个树500个类别。 查看&#x200B;_目录数据摄取REST API引用_&#x200B;中的[类别](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="blank"}。<!--DCAT-2649-->
+
+* _2025年10月8日_
+
+  **更清晰的数据摄取的类别映射** — 新指南说明了类别概要格式和层次结构规则，并明确说明产品`routes.path`值必须与现有的类别概要（例如，`men/clothing`）匹配。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## 2025年9月
+
+本月没有[[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)版本。 请参阅下面的API更新。
+
+>[!BEGINSHADEBOX]
+
+### API更新
+
+_2025年9月23日_
+
+* **使用REST API管理类别** — 使用[类别API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories)创建和管理类别。 类别将产品组织到逻辑组中，并通过基于概要文件的路径支持嵌套层次结构。 将类别分配给产品后，使用GraphQL `[navigation](https://developer.adobe.com/commerce/services/reference/graphql/#navigation)`和`[categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)`查询检索这些类别，以呈现店面菜单和类别树。<!--DCAT-2626-->
 
 {{aco-release}}
 
@@ -107,14 +256,14 @@ AI支持的站点优化建议现在可通过[Adobe Sites Optimizer集成](./mana
 
 ### 欧盟地区现已推出
 
-欧盟地区(eu1)对客户IMS组织的支持现已可用。 在Cloud Manager中&#x200B;**添加Commerce Optimizer实例**&#x200B;时，您现在可以选择&#x200B;**欧盟**&#x200B;作为[地区](./get-started.md#step-1-create-an-instance)。 欧盟区域仅适用于生产环境。
+EU生产区域(**eu1**)可用于IMS组织。 当您在Cloud Manager中[添加 [!DNL Commerce Optimizer] 实例](./get-started.md#step-1-create-an-instance)时，请选择&#x200B;**[!UICONTROL European Union]**&#x200B;作为&#x200B;**[!UICONTROL Region]**（仅限生产）。
 
 欧盟区域的基本生产URL包括：
 
 * 管理员： `https://eu1.admin.commerce.adobe.com`
 * REST和GraphQL： `https://eu1.api.commerce.adobe.com`
 
-![创建实例](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
+![Cloud Manager创建实例对话框，带有区域字段](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
 
 {{aco-release}}
 
