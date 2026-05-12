@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c3e995d46b7cfca3186b7599e22b825f0efa80f1
 workflow-type: tm+mt
-source-wordcount: 2996
+source-wordcount: 3052
 ht-degree: 1%
 
 ---
@@ -117,6 +117,15 @@ _2024年5月31日_
 _2023年10月27日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] PLP小组件现在支持色板。
+
+
+## [!DNL Live Search] 4.7.1
+
+_2026年5月12日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
+
+![修复](../assets/fix.svg)修复了在受限模式下配置CSP并禁用内联脚本时，[!DNL Live Search]店面弹出窗口脚本导致内容安全策略(CSP)错误的问题。 该扩展现在为这些脚本使用安全渲染，因此页面加载不会违反CSP脚本src。
 
 ## [!DNL Live Search] 4.7.0
 
