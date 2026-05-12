@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 118e2865ce9d4903b9a82254e0f56fc76c9fdadf
 workflow-type: tm+mt
-source-wordcount: 1787
+source-wordcount: 1822
 ht-degree: 0%
 
 ---
@@ -53,10 +53,15 @@ ht-degree: 0%
 
 * [**开发人员**](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} — 开发人员具有用户权限，并且作为开发人员用户添加到Commerce实例。 他们可以使用[[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[配置事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[创建Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
 
-* 管理员 — 管理员分为三种类型：
+* 管理员 — 有不同类型的管理员角色：
    * [系统管理员](https://helpx.adobe.com/cn/enterprise/using/admin-roles.html){target="_blank"} — 系统管理员可以通过Admin Console访问组织中的所有产品和产品配置文件。
    * [产品管理员](#add-a-product-admin) — 产品管理员可以在[!DNL Adobe Admin Console]中[管理产品的用户、角色和权限](#add-users)，在Commerce管理员中[管理用户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
    * [产品配置文件管理员](#add-developers-and-product-profile-admins) — 产品配置文件管理员无权访问Adobe Commerce管理员，但可以在[!DNL Adobe Admin Console]中管理产品的用户。
+   * 支持管理员 — 支持管理员可以创建和管理支持工单。
+
+>[!NOTE]
+>
+>如果您希望用户能够创建支持票证，则必须为他们分配Admin Console中的&#x200B;**支持管理员**&#x200B;角色。
 
 有关授予Adobe Commerce中每个角色的权限的详细信息，请参阅[角色资源](#role-resources)。
 
