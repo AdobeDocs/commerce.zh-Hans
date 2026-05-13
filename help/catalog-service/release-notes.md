@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 22f44afb7221c735785b6e9a38fb70c733cf0942
 workflow-type: tm+mt
-source-wordcount: 2709
+source-wordcount: 2742
 ht-degree: 0%
 
 ---
@@ -54,6 +54,12 @@ ht-degree: 0%
 ## 店面目录服务
 
 ### 2026年5月
+
+**发行日期**： 2026年5月13日
+<!--v1.54-->
+
+![新建](../assets/new.svg) **GraphQL中的类别排序顺序** — `CategoryView` GraphQL类型现在包含职位字段，因此店面可以显示目录层次结构中商家配置的订单中的类别。
+<!--DATA-7166-->
 
 **发行日期**： 2026年5月4日
 <!-- v1.53 -->
@@ -387,7 +393,7 @@ API现在仅返回折扣价格低于产品最低最终价格&#x200B;**的层。*
 
 <!--DATA-5033-->
 
-![Fix](../assets/fix.svg)添加了对产品价格的支持，最高可支持16位和4位小数。 从[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以应用更新。
+![Fix](../assets/fix.svg)添加了对产品价格的支持，最高可支持16位和4位小数。 从[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以应用更新。
 <!--DATA-5033-->
 
 #### 已知限制
