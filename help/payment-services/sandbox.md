@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
+source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -61,11 +61,11 @@ PayPal沙盒帐户允许您在测试模式下使用[!DNL Payment Services]。 Pa
 
 >[!IMPORTANT]
 >
->如果您撤销了对[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]的同意，以处理您的付款（在您的PayPal帐户设置中），则[!DNL Payment Services]无法处理您商店中的订单。 在您的Payment Services主页上，会显示有关撤销同意的警报。 要关闭警报，请单击&#x200B;**[!UICONTROL Do not show again]**。
+>如果您撤销了对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]的同意，以处理您的付款（在您的PayPal帐户设置中），则[!DNL Payment Services]无法处理您商店中的订单。 在您的Payment Services主页上，会显示有关撤销同意的警报。 要关闭警报，请单击&#x200B;**[!UICONTROL Do not show again]**。
 
 ### 重置沙盒帐户
 
-如果您在沙盒PayPal新用户引导过程中创建了PayPal沙盒帐户，则必须重置新用户引导沙盒，因为或者您无法验证电子邮件。
+如果您在沙盒PayPal新用户引导过程中创建了PayPal沙盒帐户，则必须重置新用户引导沙盒，因为您无法验证电子邮件。
 
 要重置沙盒帐户：
 
@@ -106,7 +106,7 @@ PayPal沙盒帐户允许您在测试模式下使用[!DNL Payment Services]。 Pa
 
 >[!NOTE]
 >
->仅当该方法设置为&#x200B;**[!UICONTROL Buyer's country]**&#x200B;时，`Sandbox`设置才会显示。 这不会影响生产环境。
+>仅当该方法设置为`Sandbox`时，**[!UICONTROL Buyer's country]**&#x200B;设置才会显示。 这不会影响生产环境。
 
 ## 在沙盒环境中测试
 
