@@ -3,7 +3,8 @@ user-guide-title: '[!DNL Product Recommendations] 指南'
 user-guide-description: 本指南提供了使用Adobe Commerce中的 [!DNL Product Recommendations] 的详细说明。
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 2b1186d83718347149516de469c31cdfeaa72b4a
+nudge: true
+source-git-commit: f5a75403fd7187a6441ad16f3778bfddbc05c1c2
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 10%
