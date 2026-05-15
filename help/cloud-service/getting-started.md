@@ -23,7 +23,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: 1343
 ht-degree: 0%
@@ -79,13 +79,13 @@ ht-degree: 0%
 
 此图表提供了系统管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/cn/enterprise/admin-guide.html)。
 
-![Adobe Commerce as a Cloud Service的系统管理员和商家工作流程图](./assets/merchant-flow.svg){zoomable="yes"}
+![Adobe Commerce as a Cloud Service的系统管理员和商家工作流程图](./assets/merchant-flow.png){zoomable="yes"}
 
 >[!TAB 开发人员工作流程]
 
 此图提供了开发人员如何使用App Builder为[!DNL Adobe Commerce as a Cloud Service]创建集成的简要概述。 有关详细信息，请参阅[API文档](https://developer.adobe.com/commerce/webapi/rest/)。
 
-![用于创建与Adobe Commerce as a Cloud Service集成的开发人员工作流程图](./assets/developer-flow.svg){zoomable="yes"}
+![用于创建与Adobe Commerce as a Cloud Service集成的开发人员工作流程图](./assets/developer-flow.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -239,4 +239,4 @@ ht-degree: 0%
 
 * [发行说明](release-notes.md)
 * [迁移指南](migration/overview.md)
-* [Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* [Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
