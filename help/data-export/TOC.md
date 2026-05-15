@@ -1,9 +1,10 @@
 ---
 user-guide-title: SaaS服务的[!DNL Data Export]指南
+breadcrumb-title: '[!DNL Data Export]'
 user-guide-description: 本指南提供了有关Adobe Commerce SaaS服务使用 [!DNL Data Export] 扩展的详细信息。
 role: Admin
 feature: Services
-source-git-commit: 15e11d76532fa98dc6a432480ab1110a0fbcd781
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 4%
@@ -27,4 +28,4 @@ ht-degree: 4%
    - [动态添加产品属性](add-attribute-dynamically.md)
    - [添加税分类、属性集和库存元数据](add-tax-attribute-set-inventory-attributes.md)
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

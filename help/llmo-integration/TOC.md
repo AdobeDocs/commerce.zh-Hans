@@ -1,12 +1,13 @@
 ---
 user-guide-title: '[!DNL Adobe Commerce]和 [!DNL Adobe LLM Optimizer] 集成'
+breadcrumb-title: '[!DNL LLM Optimizer]集成'
 user-guide-description: 将您的Adobe Commerce目录连接到Adobe LLM Optimizer，审查机会，以及部署目录优化。
 role: Admin, User, Leader
 feature: Integration, Personalization
 recommendations: noDisplay
-source-git-commit: f5d0f7effd7126c980106e5e1a1981b2b3d68d86
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '38'
 ht-degree: 5%
 
 ---
