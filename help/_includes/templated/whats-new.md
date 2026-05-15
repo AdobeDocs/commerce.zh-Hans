@@ -1,7 +1,7 @@
 ---
-source-git-commit: feb450ecd425d7e3ce7f8e354aeb294bb7d5d1ce
+source-git-commit: c435c7751fca8c46077cbab3534bd9f47cd03b2b
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
@@ -429,80 +429,6 @@ ht-degree: 1%
         新主题
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0fd98bf86555c914f7a5b1e177c31c37764dbf84">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月12日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/manage-assets">管理Commerce媒体资源</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/synchronize/default-match">默认的自动匹配</a>，为在AEM Assets中配置产品资源的用户提供了更清晰的导航指南。</p>
-</td>
-      <td>
-        技术
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a0eaaf0de53962b37c7b52f3e7e13aac4c62e372">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月11日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/release-notes">AEM Assets集成发行说明</a>的v1.3.4：支持Adobe Commerce 2.4.9-beta1和PHP 8.5，以及在配置UI中支持域映射自动填充。</p>
-</td>
-      <td>
-        技术
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/85579e3f2f8fc49f46f9201f31908602ee5d3259">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月10日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>使用生产环境的最新版本更新了Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd9b660729f7c8616347d3222fdfb3b83a774e56">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>添加了新的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/app-management/overview">应用程序管理</a>文档指南，以介绍应用程序管理以及如何将App Builder应用程序与Commerce实例相关联、配置和管理。</p>
-</td>
-      <td>
-        新主题
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">提交</a></td>
     </tr>
   </tbody>
 </table>
