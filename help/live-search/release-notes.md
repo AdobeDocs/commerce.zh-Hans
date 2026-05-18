@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: c3e995d46b7cfca3186b7599e22b825f0efa80f1
+source-git-commit: bf3acd889f099a2ee9aed2665b86c37347d10a46
 workflow-type: tm+mt
-source-wordcount: 3052
+source-wordcount: 3073
 ht-degree: 1%
 
 ---
@@ -118,6 +118,13 @@ _2023年10月27日_
 
 ![新建](../assets/new.svg) [!DNL Live Search] PLP小组件现在支持色板。
 
+## [!DNL Live Search] 4.7.2
+
+_2026年5月18日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
+
+![修复](../assets/fix.svg)更新了数据同步仪表板的依赖关系。
 
 ## [!DNL Live Search] 4.7.1
 
