@@ -5,22 +5,13 @@ feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 8f424228d96072636ac24a2d50dd58e5c8d655da
 workflow-type: tm+mt
-source-wordcount: 2840
+source-wordcount: 2868
 ht-degree: 0%
 
 ---
@@ -40,6 +31,12 @@ ht-degree: 0%
 >SaaS数据导出扩展是随“实时搜索”、“产品推荐”和“目录服务”一起自动安装的模块的集合。 您可以使用编辑器检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 2026版
+
+### 103.4.25发行版
+
+_2026年5月19日_
+
+![修复](../assets/fix.svg) **已优化过时馈送数据的清理** — 已删除实体留下的馈送记录现已更有效地删除，从而减少了数据库存储使用。<!--MDEE-1355-->
 
 ### 103.4.24发行版
 
@@ -80,7 +77,7 @@ _2026年4月13日_
 - 修复了在删除期间导出服务不可用时，无法从连接的Commerce服务中正确删除已删除产品的问题。 现在，重试和重新同步操作可确保SaaS中正确反映已删除的产品。<!--MDEE-1319-->
 - 目录实体（产品和类别）现在可以导出到连接的Commerce服务，即使管理员商店视图缺少属性值也是如此。 这提高了与第三方扩展的兼容性，并减少了因缺少默认值导致的导出错误。<!--MDEE-1333-->
 
-![修复](../assets/fix.svg)解决了“数据馈送同步状态”页面上的错误，该错误可能会在馈送记录包含意外数据或缺少数据时发生。 系统现在可以顺利处理此类情况，从而提高稳定性并防止崩溃。 如果您使用Adobe Commerce Optimizer Connector将数据从Adobe Commerce同步到Adobe Commerce Optimizer，请更新到[ACO Connector版本1.0.11](https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/release-notes)或更高版本，以便进行修复。<!--MDEE-1327-->
+![修复](../assets/fix.svg)解决了“数据馈送同步状态”页面上的错误，该错误可能会在馈送记录包含意外数据或缺少数据时发生。 系统现在可以顺利处理此类情况，从而提高稳定性并防止崩溃。 如果您使用Adobe Commerce Optimizer Connector将数据从Adobe Commerce同步到Adobe Commerce Optimizer，请更新到[ACO Connector版本1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes)或更高版本，以便进行修复。<!--MDEE-1327-->
 
 ### 103.4.21发行版
 
@@ -106,7 +103,7 @@ _2026年2月6日_
 
 _2026年2月2日_
 
-![修复](../assets/fix.svg)修复了在更新期间项批次可能超过允许的限制，从而导致将数据同步到[Commerce服务](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)或[Adobe Commerce Optimizer](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/data-sync)时出现`items_limit_exceeded`错误的问题。<!--MDEE-1264-->
+![修复](../assets/fix.svg)修复了在更新期间项批次可能超过允许的限制，从而导致将数据同步到[Commerce服务](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)或[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)时出现`items_limit_exceeded`错误的问题。<!--MDEE-1264-->
 
 ![修复](../assets/fix.svg)通过在捆绑产品选项收集期间添加逻辑以注册失败的项目，提高了产品数据导出的可靠性。<!--CCSAAS-4458-->
 
@@ -134,7 +131,7 @@ _2025年11月24日_
 
 _2025年10月22日_
 
-![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，可用于监视和排除从Adobe Commerce到连接的服务（目录服务、实时搜索和产品推荐）的数据传输。 有关安装和使用此扩展的详细信息，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[数据馈送同步状态监控](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=zh-Hans)。<!--MDEE-954-->
+![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，可用于监视和排除从Adobe Commerce到连接的服务（目录服务、实时搜索和产品推荐）的数据传输。 有关安装和使用此扩展的详细信息，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[数据馈送同步状态监控](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html)。<!--MDEE-954-->
 
 ### 103.4.14发行版
 
@@ -160,7 +157,7 @@ _2025年9月18日_
 
 _2025年8月29日_
 
-仅![新](../assets/new.svg) [!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
+仅![新](../assets/new.svg) [!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
 为其他产品属性（包括产品信息源中Commerce产品配置的税类、属性集和库存数据）添加支持。 如果客户希望在产品导出信息源中包含这些属性，则必须将额外产品属性模块添加到其Adobe Commerce项目。 请参阅[添加税类、属性集和库存属性](add-tax-attribute-set-inventory-attributes.md)。<!--MDEE-1135-->
 
 ![修复](../assets/fix.svg)解决了在完整产品索引期间发生错误时，导致已删除产品更新的同步不正确的问题。 现在，即使索引过程中发生错误，所有产品删除仍会正确同步。<!--MDEE-1144-->
