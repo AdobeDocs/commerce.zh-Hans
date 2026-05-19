@@ -4,19 +4,13 @@ description: 通过添加集成所需的元数据，启用Adobe Commerce和AEM A
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: da3860b0-d637-47df-bef0-273751180266
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
 workflow-type: tm+mt
-source-wordcount: 1450
+source-wordcount: 1708
 ht-degree: 1%
 
 ---
@@ -47,6 +41,8 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
    * 自定义元数据类型`commerce:roles`和`commerce:positions`属性，用于显示如何在Commerce中显示该资源。
 
+   * 替换文本多字段(_[!UICONTROL Alt texts]_)元数据，以便编辑人员可以输入由Commerce商店视图代码键入的替换文本。 这不会更改在目录中为产品图像分配或设定范围的方式。 查看AEM Assets元数据中的[替换文本](#localized-alt-text-in-aem-assets-metadata)。
+
 * 具有Commerce选项卡的元数据架构表单，包括用于标记Commerce资源的`Eligible for Commerce`和`Product Data`字段。 该表单还提供了在AEM Assets UI中显示或隐藏`roles`和`position`字段的选项。
 
   AEM Assets元数据架构表单的![Commerce选项卡](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
@@ -57,25 +53,52 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 >
 > 有关&#x200B;**AEM Commerce包代码**&#x200B;的更多信息，请参阅[自述文件](https://github.com/ankumalh/assets-commerce)页。
 
+## AEM Assets元数据中的替换文本
+
+编辑符合条件的图像时，_[!UICONTROL Alt texts]_多字段在AEM Assets资源元数据编辑器的&#x200B;**[!UICONTROL Commerce]**选项卡上可用。
+
+>[!IMPORTANT]
+>
+> 每次存储查看行为仅适用于替换文本。 AEM Assets集成不会同步每个Adobe Commerce商店视图中的其他产品图像。 AEM中的产品图像将继续同步到Commerce中，其库分配行为与此版本之前相同。
+
+多字段在每个Commerce商店视图中包含一行。 每一行有两个输入：
+
+* **[!UICONTROL Store View Code]** — 存储视图标识符（例如`default`或`en_US`）。
+
+* **[!UICONTROL Alt Text]** — 该商店视图的替换文本，限制为255个字符。
+
+选择&#x200B;**[!UICONTROL Add]**&#x200B;为其他存储视图添加更多行。 要删除某行，请选择该行上的&#x200B;**[!UICONTROL Delete]**&#x200B;图标以将其删除。
+
+![Alt文本包含存储视图代码和Alt文本输入的多字段](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
+
+保存时，如果任何行具有空的&#x200B;_[!UICONTROL Store View Code]_或如果两行使用相同的存储视图代码（不区分大小写），则客户端验证会阻止提交。
+
+替代文本条目作为两个索引对齐的`String[]`属性保留在JCR资产元数据中：
+
+* `commerce:altTextStoreViews`：存储每行的视图代码。
+* `commerce:altTextValues`：在与`commerce:altTextStoreViews`中的每个条目相同的索引处匹配替换文本。
+
+当这些资源同步到Adobe Commerce时，每个商店视图替换文本将写入产品媒体集，以获得匹配的商店视图代码。 底层图像映射保持不变。
+
 ## 先决条件
 
 您需要以下资源和权限才能将`assets-commerce`包代码部署到AEM Assets as a Cloud Service AEM环境：
 
-* [使用计划和部署管理员角色访问AEM Assets Cloud Manager计划和环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)。
+* [使用计划和部署管理员角色访问AEM Assets Cloud Manager计划和环境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)。
 
-* [本地AEM开发环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)，熟悉AEM本地开发过程。
+* [本地AEM开发环境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)，熟悉AEM本地开发过程。
 
 * 了解[AEM项目结构](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)以及如何使用Cloud Manager部署自定义内容包。
 
 * Commerce实例的&#x200B;**IMS组织ID**。 您的Commerce实例和AEM Assets创作环境必须位于同一个IMS组织中。
 
-* 要启用具有OpenAPI功能的[Dynamic Media](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis)：
+* 要启用具有OpenAPI功能的[Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis)：
 
 >[!BEGINTABS]
 
 >[!TAB 产品视觉效果]
 
-[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}具有OpenAPI功能的Dynamic Media是AEM Assets支持的产品可视化自助服务。
+[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}具有OpenAPI功能的Dynamic Media是AEM Assets支持的产品可视化自助服务。
 
 1. 导航到您的Cloud Manager。
 
@@ -104,15 +127,15 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 ## 步骤1：安装assets-commerce包
 
-1. 导航到AEM Cloud Manager，选择一个项目，然后[创建要与Adobe Commerce集成的生产和暂存环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)。
+1. 导航到AEM Cloud Manager，选择一个项目，然后[创建要与Adobe Commerce集成的生产和暂存环境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)。
 
-1. 配置[部署管道](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline)，或验证您的管道是否可以将更改部署到所选环境。
+1. 配置[部署管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline)，或验证您的管道是否可以将更改部署到所选环境。
 
-1. [克隆所选程序的Adobe托管的Git存储库](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)。
+1. [克隆所选程序的Adobe托管的Git存储库](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)。
 
 1. 从GitHub中，从[AEM Assets Commerce存储库](https://github.com/ankumalh/assets-commerce)下载包代码。
 
-1. 从您的[本地AEM开发环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)中，手动将下载的代码复制到现有的Adobe托管存储库中。
+1. 从您的[本地AEM开发环境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)中，手动将下载的代码复制到现有的Adobe托管存储库中。
 
 1. 在您的项目的`filter.xml`和`pom.xml files`中，将所有出现的`<my-app>`替换为您的应用程序名称。
 
@@ -146,7 +169,7 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 1. 将&#x200B;**checkbox**&#x200B;组件拖放到&#x200B;**Commerce**&#x200B;选项卡中，并将其映射到属性`commerce:isCommerce`。 将&#x200B;**是**&#x200B;和&#x200B;**否**&#x200B;定义为选项。
 
-如果您遇到任何其他问题，请创建[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#submit-ticket)或联系您的AEM Assets集成销售代表寻求帮助。
+如果您遇到任何其他问题，请创建[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)或联系您的AEM Assets集成销售代表寻求帮助。
 
 ## 步骤2：可选。 配置元数据配置文件
 
@@ -204,13 +227,13 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. 可选。 要在已批准的Commerce资源上传到AEM Assets环境时自动对其进行同步，请将`Basic`选项卡上&#x200B;_[!UICONTROL Review Status]_&#x200B;字段的默认值设置为`approved`。
+1. 可选。 要在已批准的Commerce资源上传到AEM Assets环境时自动对其进行同步，请将`Basic`选项卡上&#x200B;_[!UICONTROL Review Status]_字段的默认值设置为`approved`。
 
 1. 保存更新。
 
 ### 将元数据配置文件应用到Commerce资源源文件夹
 
-1. 从[!UICONTROL &#x200B; Metadata Profiles]页面中，选择Commerce集成配置文件。
+1. 从[!UICONTROL  Metadata Profiles]页面中，选择Commerce集成配置文件。
 
 1. 从操作菜单中选择&#x200B;**[!UICONTROL Apply Metadata Profiles to Folders]**。
 
@@ -224,4 +247,4 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 * 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"} [安装Adobe Commerce包](configure-commerce.md)。
 
-* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} [从Commerce管理员配置集成](setup-synchronization.md)。
+* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} [从Commerce管理员配置集成](setup-synchronization.md)。
