@@ -8,28 +8,14 @@ level: Beginner
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 TQID: https://experienceleague.adobe.com/MmwdYWe5Et9m0BvtrVYNK2jiJ3fZBnUe2K6xMdIbMUk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
 workflow-type: tm+mt
-source-wordcount: 3633
+source-wordcount: 4032
 ht-degree: 0%
 
 ---
@@ -42,11 +28,51 @@ ht-degree: 0%
 >
 >如果您正在本地使用Adobe Commerce或在云基础架构上使用Adobe Commerce，请参阅[Adobe Commerce发行说明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)。
 
-## 2026年5月 — 发行说#1 {#latest}
+## 2026年5月 — 发行说#2 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+
+以下项目将于2026年5月21日发布到生产环境。
+
+>[!BEGINSHADEBOX]
+
+### 使用默认承运人和自定义承运人跟踪发运
+
+现在，订单跟踪对于[!DNL Commerce Admin]中的默认和自定义装运承运人是可靠的，可帮助商家提供一致的购买后跟踪体验。 以前，选择UPS或FedEx等运营商并应用跟踪ID可能会阻止显示跟踪链接 — 无需商家采取行动来恢复此行为。 使用[!DNL App Builder Integration Starter Kit]创建的[自定义运营商](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/)也支持跟踪链接。<!-- ACCS-891 -->
+
+### 在“产品属性”网格中查看属性输入类型
+
+现在，在（[!UICONTROL **商店**] > _[!UICONTROL Attributes]_>[!UICONTROL **产品**]）的“产品属性”网格中会显示新的&#x200B;[!UICONTROL **属性类型**]列，该列显示每个产品属性的输入类型（如文本字段、下拉列表或yes/no），其中包括扩展所贡献的类型。 这样在使用大型属性集时，可以更轻松地识别和管理属性。<!-- ACCS-925 -->
+
+### 增强功能和错误修复
+
+此版本中包含以下选定的增强功能、优化和错误修复：
+
+* 修复了POST `V1/async/custom-email/send` REST终结点返回`UnstructuredArray`验证错误的问题。 异步终结点现在与同步POST `V1/custom-email/send`终结点一致工作。<!-- ACCS-921 -->
+
+* 修复了在通过REST更新实体（未在有效负载中包含自定义属性）时，无意中清除诸如公司之类的实体上的自定义可序列化属性的问题。 现在，如果未提供，将保留自定义属性。<!-- ACCS-946 -->
+
+* 解决了当请求中存在`X-Adobe-Company`标头时，可能会阻止来宾GraphQL登录的“消费者未授权”错误。<!-- ACCS-949 -->
+
+* 修复了在通过PUT `V1/customers/companies` REST端点将客户分配给公司后，在[!DNL Commerce Admin]中编辑或删除公司可能会失败并出现“没有此类实体”错误的问题。<!-- ACCS-856 -->
+
+* 解决了销售订单网格状态过期的问题。<!-- CCSAAS-4915 -->
+
+* 修复了[!DNL Commerce Admin]中的一个问题：当从产品编辑页面访问时，作为可下载产品上的示例和链接附加的文件会返回`404`错误。<!-- CCSAAS-4394 -->
+
+* 修复了在为包含可配置产品的订单创建发运时可能发生的“未定义数组键‘simple_sku’”错误。<!-- CCSAAS-4877 -->
+
+* 现在，使用格式错误的令牌调用`guestOrderByToken` GraphQL查询时，会返回一条信息更丰富的错误消息，而不是内部服务器错误。<!-- CCSAAS-4921 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年5月 — 发行说#1
 
 [!BADGE 生产]{type=Neutral tooltip="列出的项目当前在生产环境中可用。"}
-
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
 以下项目已于2026年5月7日发布到生产环境。
 
@@ -54,7 +80,7 @@ ht-degree: 0%
 
 ### 跳过reCAPTCHA进行程序化OTP身份验证
 
-新的配置选项允许您跳过[`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) GraphQL突变的reCAPTCHA验证。 这支持了B2B打包工作流，其中以编程方式启动一次性密码(OTP)交换而无需输入表单，从而不需要reCAPTCHA验证。 此功能以2026年3月版本中引入的[一次性代码登录](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}功能为基础。 为客户登录启用reCAPTCHA时，默认情况下，`exchangeOtpForCustomerToken`突变仍需要reCAPTCHA。 请联系您的Adobe Commerce客户成功经理以启用此选项。<!-- ACCS-850 -->
+新的配置选项允许您跳过[`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) GraphQL突变的reCAPTCHA验证。 这支持了B2B打包工作流，其中以编程方式启动一次性密码(OTP)交换而无需输入表单，从而不需要reCAPTCHA验证。 此功能以2026年3月版本中引入的[一次性代码登录](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}功能为基础。 为客户登录启用reCAPTCHA时，默认情况下，`exchangeOtpForCustomerToken`突变仍需要reCAPTCHA。 请联系您的Adobe Commerce客户成功经理以启用此选项。<!-- ACCS-850 -->
 
 ### 编辑已部分开票的订单
 
@@ -112,7 +138,7 @@ ht-degree: 0%
 
 * 修复了导入文件验证可能失败的问题。<!-- CCSAAS-4364 -->
 
-* 已从&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;中的&#x200B;**[!UICONTROL Catalog]**&#x200B;部分删除&#x200B;**[!UICONTROL Recently Viewed/Compared Products]**&#x200B;配置，因为它在[!DNL Adobe Commerce as a Cloud Service]管理员中不受支持。<!-- ACCS-793 -->
+* 已从&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**中的&#x200B;**[!UICONTROL Catalog]**部分删除&#x200B;**[!UICONTROL Recently Viewed/Compared Products]**配置，因为它在[!DNL Adobe Commerce as a Cloud Service]管理员中不受支持。<!-- ACCS-793 -->
 
 >[!ENDSHADEBOX]
 
@@ -136,7 +162,7 @@ ht-degree: 0%
 >
 >此功能属于实验性质，必须通过联系您的Adobe Commerce客户成功经理或创建支持票证来启用。
 
-[电子邮件提醒规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules#rule-repeatability)现在支持可选的规则重用性设置，该设置允许在原始触发条件不再应用后，将同一规则重新应用于客户。
+[电子邮件提醒规则](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules#rule-repeatability)现在支持可选的规则重用性设置，该设置允许在原始触发条件不再应用后，将同一规则重新应用于客户。
 
 例如，如果客户放弃购物车，完成购买，然后放弃新购物车，则规则可能会再次触发。 如果不进行此设置，则清除原始触发器的客户将被永久从将来匹配同一规则的操作中排除。
 
@@ -206,7 +232,7 @@ ht-degree: 0%
 
 ### 使用一次性代码以客户身份登录
 
-管理员现在可以通过[!DNL Commerce Admin]和REST API生成客户模拟的[一次性代码](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)。 可以通过`generateCustomerToken`或`exchangeOtpForCustomerToken`GraphQL突变为客户访问令牌交换一次性代码，从而支持无密码的“以客户身份登录”流程用于卖方辅助购物方案。<!-- ACCS-404 -->
+管理员现在可以通过[!DNL Commerce Admin]和REST API生成客户模拟的[一次性代码](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)。 可以通过`generateCustomerToken`或`exchangeOtpForCustomerToken`GraphQL突变为客户访问令牌交换一次性代码，从而支持无密码的“以客户身份登录”流程用于卖方辅助购物方案。<!-- ACCS-404 -->
 
 有关使用API实施此功能的指导，请参阅[REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/)和[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/)文档。
 
@@ -422,11 +448,11 @@ mutation {
 
 * 增强了进程外[送货webhook负载](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload)以包含送货地址自定义属性。 这项更改使商家能够实施自定义配送方式。<!-- ACCS-235 -->
 
-* 已添加对管理员报告的访问权限，这些报告包括[客户](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports)、[营销](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports)、[产品](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/reporting/product-reports)和[销售](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports)的报告。<!-- CCSAAS-3085 -->
+* 已添加对管理员报告的访问权限，这些报告包括[客户](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports)、[营销](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports)、[产品](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports)和[销售](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports)的报告。<!-- CCSAAS-3085 -->
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]中不可用的报告仅标记为PaaS （[!BADGE 仅PaaS &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}）。
+>[!DNL Adobe Commerce as a Cloud Service]中不可用的报告仅标记为PaaS （[!BADGE 仅PaaS ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}）。
 
 ### 通过REST API捕获自定义发票金额
 
@@ -479,14 +505,14 @@ mutation {
 * 发布了B2B店面兼容包。 此包增强了[!DNL Adobe Commerce] B2B GraphQL架构，以帮助改进B2B系统上的开发。
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=zh-Hans). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
 
 * Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
 -->
 
 ### 指向外部配送跟踪器的可点击链接
 
-通过[启用自定义跟踪URL](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls)，将购物者电子邮件中包含的装运跟踪编号从纯文本转换为可点击链接。 USPS、UPS、FedEx和DHL支持此功能。<!-- See PR #716 in commerce-admin -->
+通过[启用自定义跟踪URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls)，将购物者电子邮件中包含的装运跟踪编号从纯文本转换为可点击链接。 USPS、UPS、FedEx和DHL支持此功能。<!-- See PR #716 in commerce-admin -->
 
 ### Google reCAPTCHA企业支持
 
