@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
 workflow-type: tm+mt
-source-wordcount: 1450
+source-wordcount: 1708
 ht-degree: 1%
 
 ---
@@ -47,6 +47,8 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
    * 自定义元数据类型`commerce:roles`和`commerce:positions`属性，用于显示如何在Commerce中显示该资源。
 
+   * 替换文本多字段(_[!UICONTROL Alt texts]_)元数据，以便编辑人员可以输入由Commerce商店视图代码键入的替换文本。 这不会更改在目录中为产品图像分配或设定范围的方式。 查看AEM Assets元数据中的[替换文本](#localized-alt-text-in-aem-assets-metadata)。
+
 * 具有Commerce选项卡的元数据架构表单，包括用于标记Commerce资源的`Eligible for Commerce`和`Product Data`字段。 该表单还提供了在AEM Assets UI中显示或隐藏`roles`和`position`字段的选项。
 
   AEM Assets元数据架构表单的![Commerce选项卡](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
@@ -56,6 +58,33 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 >[!NOTE]
 >
 > 有关&#x200B;**AEM Commerce包代码**&#x200B;的更多信息，请参阅[自述文件](https://github.com/ankumalh/assets-commerce)页。
+
+## AEM Assets元数据中的替换文本
+
+编辑符合条件的图像时，_[!UICONTROL Alt texts]_&#x200B;多字段在AEM Assets资源元数据编辑器的&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡上可用。
+
+>[!IMPORTANT]
+>
+> 每次存储查看行为仅适用于替换文本。 AEM Assets集成不会同步每个Adobe Commerce商店视图中的其他产品图像。 AEM中的产品图像将继续同步到Commerce中，其库分配行为与此版本之前相同。
+
+多字段在每个Commerce商店视图中包含一行。 每一行有两个输入：
+
+* **[!UICONTROL Store View Code]** — 存储视图标识符（例如`default`或`en_US`）。
+
+* **[!UICONTROL Alt Text]** — 该商店视图的替换文本，限制为255个字符。
+
+选择&#x200B;**[!UICONTROL Add]**&#x200B;为其他存储视图添加更多行。 要删除某行，请选择该行上的&#x200B;**[!UICONTROL Delete]**&#x200B;图标以将其删除。
+
+![Alt文本包含存储视图代码和Alt文本输入的多字段](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
+
+保存时，如果任何行具有空的&#x200B;_[!UICONTROL Store View Code]_&#x200B;或如果两行使用相同的存储视图代码（不区分大小写），则客户端验证会阻止提交。
+
+替代文本条目作为两个索引对齐的`String[]`属性保留在JCR资产元数据中：
+
+* `commerce:altTextStoreViews`：存储每行的视图代码。
+* `commerce:altTextValues`：在与`commerce:altTextStoreViews`中的每个条目相同的索引处匹配替换文本。
+
+当这些资源同步到Adobe Commerce时，每个商店视图替换文本将写入产品媒体集，以获得匹配的商店视图代码。 底层图像映射保持不变。
 
 ## 先决条件
 

@@ -3,9 +3,9 @@ title: AEM Assets集成发行说明
 description: 有关所有AEM Assets集成版本的信息，请参阅发行说明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
+source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,21 @@ ht-degree: 0%
 
 _2025年9月11日_
 
-![新问题](../assets/new.svg)已更新具有新[属性的](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}自定义自动匹配`asset_matches`端点。
+![新问题](../assets/new.svg)已更新具有新`asset_matches`属性的[自定义自动匹配](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}端点。
 
 _2025年2月11日_
 
 ![新问题](../assets/new.svg)现在，商家可以同步产品和类别的图像。
 
 +++
+
+## v1.3.6
+
+_2026年5月14日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![新问题](../assets/new.svg)<!-- Issue ACAP-1268 -->在将图像或资源从AEM导入到Commerce产品媒体集时，替代文本现在将作为同步的一部分传递。 可以在AEM Assets中为每个商店视图设置替换文本。 查看AEM Assets元数据中的[替换文本](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}。
 
 ## v1.3.5
 
@@ -160,7 +168,7 @@ _2025年8月7日_
 
 ![新问题](../assets/new.svg)<!-- Issue ACAP-1018 -->现在，商家可以通过在管理员中配置Assets集成时选择[可视化所有者](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank}来选择图像和媒体资源的源。
 
-![新问题](../assets/new.svg)<!-- Issue ACAP-1078 -->已更新具有新[属性的](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}自定义自动匹配`asset_matches`端点。 此更改允许您实施自己的匹配逻辑以返回与特定`productSku`关联的所有资产。
+![新问题](../assets/new.svg)<!-- Issue ACAP-1078 -->已更新具有新`asset_matches`属性的[自定义自动匹配](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}端点。 此更改允许您实施自己的匹配逻辑以返回与特定`productSku`关联的所有资产。
 
 ## v1.1.2
 
