@@ -16,16 +16,16 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 2121
+source-wordcount: 2102
 ht-degree: 0%
 
 ---
 
 # 从搜索适配器迁移到PLP小组件
 
-搜索适配器自[!DNL Live Search] 4.0.0起已[弃用](release-notes.md#live-search-400)，将仅接收安全更新。 [产品列表页面(PLP)小组件](plp-styling.md)是所有[!DNL Live Search]实施都支持的解决方案。 本指南可帮助您了解何时可以直接迁移以及何时需要执行其他工作。
+从[!DNL Live Search] 4.0.0开始，搜索适配器已[弃用](release-notes.md#live-search-400)。 [产品列表页面(PLP)小组件](plp-styling.md)是所有[!DNL Live Search]实施都支持的解决方案。 本指南可帮助您了解何时可以直接迁移以及何时需要执行其他工作。
 
 ## 先决条件
 
@@ -312,7 +312,6 @@ ht-degree: 0%
 **选项1：继续使用搜索适配器（仅限临时）**
 
 - 如果GTM对业务至关重要，请保持搜索适配器处于启用状态。
-- 了解您只会收到安全更新。
 - 计划在解决GTM兼容性时进行迁移。
 - 有关GTM兼容性的更新，请联系Adobe支持部门。
 
@@ -467,7 +466,7 @@ ht-degree: 0%
 
 **问：搜索适配器是否会收到错误修复或功能更新？**
 
-答：不行。 搜索适配器已弃用，将只接收安全更新。 错误修复、性能改进和新功能仅在PLP构件中可用。 如果您遇到搜索适配器问题，建议迁移至PLP构件。
+答：不行。 已弃用搜索适配器。 错误修复、性能改进和新功能仅在PLP构件中可用。 如果您遇到搜索适配器问题，建议迁移至PLP构件。
 
 **问：迁移是否会破坏我的店面？**
 

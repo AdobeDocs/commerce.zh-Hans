@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bf3acd889f099a2ee9aed2665b86c37347d10a46
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 3073
+source-wordcount: 3060
 ht-degree: 1%
 
 ---
@@ -279,7 +279,7 @@ _2023年11月13日_
 ### 更新
 
 ![修复](../assets/fix.svg)对于新安装，现在默认启用[!DNL Live Search] PLP小组件。
-![修复](../assets/fix.svg)已弃用搜索适配器。 今后，将仅更新搜索适配器以解决安全问题。
+![修复](../assets/fix.svg)已弃用搜索适配器。
 ![修复](../assets/fix.svg)重新配置的CSS样式以更好地隔离构件类。
 ![修复](../assets/fix.svg)小错误修复
 

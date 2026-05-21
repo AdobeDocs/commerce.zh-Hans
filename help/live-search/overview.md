@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 1180
+source-wordcount: 1167
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 1%
 
 - [!DNL Live Search] [弹出窗口小组件](storefront-popover.md)是在包含搜索结果的搜索字段下打开的框。
 - [产品列表页小组件](plp-styling.md) (PLP)提供了一个支持方面和同义词的可搜索产品列表页。 构件在Live Search 4.0.0+中安装和启用，并替换搜索适配器。
-- （**已弃用**）搜索适配器是PLP小部件的前身，且随Live Search &lt; 4.0.0安装。 如果您使用的是低于4.0.0的Live Search版本，Commerce建议您进行升级，以便享受PLP构件功能和未来改进带来的好处。 今后，将仅更新搜索适配器以解决安全问题。 有关迁移到PLP小组件的详细信息，请参阅[迁移指南](migrate-to-plp.md)。
+- （**已弃用**）搜索适配器是PLP小部件的前身，且随Live Search &lt; 4.0.0安装。 如果您使用的是低于4.0.0的Live Search版本，Commerce建议您进行升级，以便享受PLP构件功能和未来改进带来的好处。 有关迁移到PLP小组件的详细信息，请参阅[迁移指南](migrate-to-plp.md)。
 
 ## [!DNL Live Search]工作区
 
