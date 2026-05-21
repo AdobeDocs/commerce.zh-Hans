@@ -2,30 +2,20 @@
 title: 从搜索适配器迁移到PLP小组件
 description: 了解如何从已弃用的搜索适配器迁移到 [!DNL Live Search] 产品列表页面小组件。
 TQID: https://experienceleague.adobe.com/YAwhAbTVeYpGYKh4dTe1umcfgoRUOg8QPZNIiGFjKVo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 2121
+source-wordcount: 2102
 ht-degree: 0%
 
 ---
 
 # 从搜索适配器迁移到PLP小组件
 
-搜索适配器自[!DNL Live Search] 4.0.0起已[弃用](release-notes.md#live-search-400)，将仅接收安全更新。 [产品列表页面(PLP)小组件](plp-styling.md)是所有[!DNL Live Search]实施都支持的解决方案。 本指南可帮助您了解何时可以直接迁移以及何时需要执行其他工作。
+从[!DNL Live Search] 4.0.0开始，搜索适配器已[弃用](release-notes.md#live-search-400)。 [产品列表页面(PLP)小组件](plp-styling.md)是所有[!DNL Live Search]实施都支持的解决方案。 本指南可帮助您了解何时可以直接迁移以及何时需要执行其他工作。
 
 ## 先决条件
 
@@ -312,7 +302,6 @@ ht-degree: 0%
 **选项1：继续使用搜索适配器（仅限临时）**
 
 - 如果GTM对业务至关重要，请保持搜索适配器处于启用状态。
-- 了解您只会收到安全更新。
 - 计划在解决GTM兼容性时进行迁移。
 - 有关GTM兼容性的更新，请联系Adobe支持部门。
 
@@ -334,7 +323,7 @@ ht-degree: 0%
 
 **选项3：将GTM替换为Adobe Analytics**
 
-- 考虑迁移到[Adobe Analytics](https://business.adobe.com/cn/products/adobe-analytics.html)（如果适用）。
+- 考虑迁移到[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html)（如果适用）。
 - 请联系客户工程部门以获取指导。
 
 **联系对象**：提交支持票证以获取GTM兼容性更新或客户工程部门帮助。
@@ -459,7 +448,7 @@ ht-degree: 0%
 - Headless或PWA实施
 - 自定义事件跟踪
 
-要联系Adobe支持，请参阅[帮助中心用户指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+要联系Adobe支持，请参阅[帮助中心用户指南](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
 
 ## 常见问题解答
 
@@ -467,7 +456,7 @@ ht-degree: 0%
 
 **问：搜索适配器是否会收到错误修复或功能更新？**
 
-答：不行。 搜索适配器已弃用，将只接收安全更新。 错误修复、性能改进和新功能仅在PLP构件中可用。 如果您遇到搜索适配器问题，建议迁移至PLP构件。
+答：不行。 已弃用搜索适配器。 错误修复、性能改进和新功能仅在PLP构件中可用。 如果您遇到搜索适配器问题，建议迁移至PLP构件。
 
 **问：迁移是否会破坏我的店面？**
 
