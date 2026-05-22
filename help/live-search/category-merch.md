@@ -3,19 +3,15 @@ title: 类别促销
 description: 使用 [!DNL Live Search] 类别促销以获得更快的购物体验。
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 1131
+source-wordcount: 1171
 ht-degree: 0%
 
 ---
@@ -26,7 +22,7 @@ ht-degree: 0%
 
 本视频介绍了类别推销。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448861?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 可在管理员中访问该功能，其地址为： **营销** > SEO和搜索> **[!DNL Live Search]** > **类别促销**。
 
@@ -34,7 +30,7 @@ ht-degree: 0%
 >
 >类别促销可用于[!DNL Live Search] [3.0.0或更高版本](release-notes.md)。 如果您看到类别促销工作区，但它未填充数据，请更新[!DNL Live Search]模块。
 
-![类别促销](assets/category_workspace.png)
+![类别促销工作区](assets/category_workspace.png)
 
 “类别促销”视图显示定义的类别规则，其中包含以下列：
 
@@ -51,7 +47,7 @@ ht-degree: 0%
 类别促销使用与[单个产品](rules-workspace.md)相同的排名类型。
 排名有两种类型：智能和手动。
 
-**智能排名**&#x200B;利用[Adobe AI](https://business.adobe.com/cn/ai.html)的店面行为数据分析，通过特定算法对选定类别中的所有产品进行排序。 在选择智能排名后，由于Adobe AI会持续重新分析基础数据，因此预计产品的特定订单会随着时间的推移而发生变化。 例如，随着购物者偏好变化，热门趋势产品会自动随着时间的推移而改变。
+**智能排名**&#x200B;利用[Adobe AI](https://business.adobe.com/ai.html)的店面行为数据分析，通过特定算法对选定类别中的所有产品进行排序。 在选择智能排名后，由于Adobe AI会持续重新分析基础数据，因此预计产品的特定订单会随着时间的推移而发生变化。 例如，随着购物者偏好变化，热门趋势产品会自动随着时间的推移而改变。
 智能排名方法有：
 
 * 购买次数最多：按购物者过去7天购买产品的频率对产品进行排名。
@@ -60,6 +56,9 @@ ht-degree: 0%
 * 为您推荐：根据每位购物者之前和当前在网站上的行为，按购物者与每位购物者交互的可能性对产品进行排名。
 * 趋势：根据查看次数对产品进行排名，按最近受欢迎程度的上升进行排名。
 * 无：按默认顺序对产品进行排名。
+
+
+对于除&#x200B;**None**&#x200B;之外的任何智能排名方法，您可以在规则编辑器中设置&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;以调整行为信号对产品订单的影响程度。 有关默认值、限制、预览行为以及提升与&#x200B;**手动排名**&#x200B;的比较方式的详细信息，请参阅[智能排名提升](rules-add.md#intelligent-ranking-boost)。
 
 **手动排名**&#x200B;允许用户通过定义手动pin、提升、隐藏和隐藏规则来覆盖自动产品排序顺序。
 
@@ -104,7 +103,7 @@ ht-degree: 0%
    ![选择类别](assets/category_select.png)
 
 1. 在&#x200B;_添加类别规则_视图中，选择要应用于类别的智能排名方法。
-类别预览页面使用您的实时搜索数据显示所选排名的实际结果。
+类别预览页面使用您的[!DNL Live Search]数据显示所选排名的实际结果。
 1. 单击&#x200B;**保存并发布**&#x200B;以保存规则。
 
 ![选择智能排名方法](assets/category_ranking.png)
