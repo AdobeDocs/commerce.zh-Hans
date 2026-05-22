@@ -1,19 +1,19 @@
 ---
-title: 限制和边界
-description: 了解 [!DNL Adobe Commerce Optimizer] 限制和边界以规划容量并防止性能问题。
+title: Adobe Commerce Optimizer限制和边界
+description: 了解Adobe Commerce Optimizer许可证限制和系统边界。 规划容量、跟踪使用情况，并在超出限制时避免延迟和限制。
 role: Admin, Developer
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
 
 # 限制和边界
 
-[!DNL Adobe Commerce Optimizer]有两种类型的限制：
+[!DNL Adobe Commerce Optimizer]应用&#x200B;**许可证限制**&#x200B;和&#x200B;**系统边界**，它们定义了您的项目可以使用的容量：
 
 - **许可证限制** — 基于您购买容量；可通过购买其他包来扩展。
 - **系统边界** — 固定限制以保护系统资源并确保所有用户的可靠性能。
@@ -42,7 +42,7 @@ ht-degree: 0%
 | **环境** | **描述** | **基础分配** | **可扩展？** |
 | --- | --- | --- | --- |
 | **沙盒环境** | 包含的沙盒环境数 | 每个实例2个 | 是<p>为每个实例添加一个额外的环境许可证</p> |
-| **生产环境** | 包含的生产环境数 | 每个实例1个 | 许可证<p>为每个实例添加一个额外的环境许可证</p> |
+| **生产环境** | 包含的生产环境数 | 每个实例1个 | 是<p>为每个实例添加一个额外的环境许可证</p> |
 
 {style="table-layout:auto"}
 
@@ -68,23 +68,23 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-### 由AEM Assets提供支持的产品视觉效果
+### [!DNL Product Visuals]限制
 
 | **功能** | **描述** | **基础分配** | **可扩展？** |
 | --- | --- | --- | --- |
-| 产品视觉效果高级用户 | 具有完整数字资产管理功能（包括AI工具、Adobe Express/Firefly集成和Content Hub共享）的许可用户，可处理核心DAM任务和高级云原生功能以实现最佳效率。 | 2 | 是<p>升级到AEM Assets许可证</p> |
-| 产品可视化协作者用户 | 通过AEM Commerce集成访问和使用资源，使用Adobe Express和Firefly创建和编辑内容，以及（如果启用）通过Content Hub门户利用批准的资源。 | 2 | 是<p>升级到AEM Assets许可证</p> |
+| 产品视觉效果高级用户 | 具有完整数字资产管理功能（包括AI工具、[!DNL Adobe Express]/[!DNL Firefly]集成和Content Hub共享）的许可用户，可处理核心DAM任务和高级云原生功能以实现最佳效率。 | 2 | 是<p>升级到[!DNL AEM Assets]许可证</p> |
+| 产品可视化协作者用户 | 通过AEM Commerce集成访问和使用资源，使用[!DNL Adobe Express]和[!DNL Firefly]创建和编辑内容，以及（如果启用）通过Content Hub门户利用批准的资源。 | 2 | 是<p>升级到[!DNL AEM Assets]许可证</p> |
 | 产品可视化存储 | 为资产分配的存储空间 | 1 TB存储 | 否 |
-| 动态媒体使用情况 | 拨备动态媒体处理业务，包括：<ul><li>图像投放</li><li>智能成像</li><li>视频交付</li></ul><p>有关详细信息，请参阅下面的&#x200B;*计算Dynamic Media使用情况*。 | 基于GMV<p>最小分配：每月500万次操作</p> | 是<ul><li>购买许可证以进行其他操作</li><li>升级到AEM Assets许可证</li></ul> |
-| 视频交付 | 视频投放或下载的备抵 | 300个视频，每个视频1分钟 | 是<p>升级到AEM Assets许可证</p> |
-| 资源生成 | 访问Adobe Express和Adobe Firefly创作AI以创建图像 | 无 | 单独购买Generative AI积分 |
+| 动态媒体使用情况 | 拨备动态媒体处理业务，包括：<ul><li>图像投放</li><li>智能成像</li><li>视频交付</li></ul><p>有关详细信息，请参阅下面的&#x200B;*计算Dynamic Media使用情况*。 | 基于商品总值<p>最小分配：每月500万次操作</p> | 是<ul><li>购买许可证以进行其他操作</li><li>升级到[!DNL AEM Assets]许可证</li></ul> |
+| 视频交付 | 视频投放或下载的备抵 | 300个视频，每个视频1分钟 | 是<p>升级到[!DNL AEM Assets]许可证</p> |
+| 资源生成 | 访问用于创建图像的[!DNL Adobe Express]和[!DNL Adobe Firefly]创作AI | 无 | 单独购买Generative AI积分 |
 
 {style="table-layout:auto"}
 
 
 >[!NOTE]
 >
->**超级用户**&#x200B;可以直接访问Adobe Express或在[!DNL Adobe Commerce Optimizer]中访问。 **Collaborator用户**&#x200B;可以直接访问Adobe Express应用程序。 使用受[Adobe Express和Firefly产品特定的许可条款](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf)管辖。
+>**超级用户**&#x200B;可以直接访问[!DNL Adobe Express]，也可以在[!DNL Adobe Commerce Optimizer]内访问。 **Collaborator用户**&#x200B;可以直接访问[!DNL Adobe Express]应用程序。 使用受[Adobe Express和Firefly产品特定的许可条款](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf)管辖。
 
 
 >[!BEGINSHADEBOX “计算Dynamic Media使用情况”]
@@ -112,32 +112,34 @@ Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“
 
 ### 目录店面
 
-目录店面功能的基本分配是根据GMV层确定的。 该表指示每个功能的最小分配。
+目录店面功能的基本分配基于GMV（毛商品价值）层确定。 该表指示每个功能的最小分配。
 
 | **功能** | **描述** | **基础分配** | **可扩展？** |
 | --- | --- | --- | --- |
 | 目录检索率 | 系统（店面、交易系统、ERP或其他）每月调用目录API以从目录中检索数据的次数 | 基于GMV层<p>最小分配：1000万/月</p> | 是<p>每月添加100万个许可证包请求</p> |
-| 内容请求 | 请求Commerce Storefront以进行HTML页面查看或JSON API调用。 计为1次页面查看或5次API调用。 | 基于GMV层<p>最小分配：200万/月</p> | 是<p>每月添加100万份许可证包</p> |
+| 内容请求 | 请求店面进行HTML页面查看或JSON API调用。 计为1次页面查看或5次API调用。 | 基于GMV层<p>最小分配：200万/月</p> | 是<p>每月添加100万份许可证包</p> |
 | 店面GenAI变体 | 允许基于文本的内容生成 | 基于GMV层<p>最小分配：1K变量/月</p> | 是<p>单独购买Generative AI积分</p> |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->图像生成需要将Adobe Firefly许可证配置为与[!DNL Adobe Commerce Optimizer]相同的IMS组织。
+>图像生成需要将[!DNL Adobe Firefly]许可证配置为与[!DNL Adobe Commerce Optimizer]相同的IMS组织。
 
 
 ### 产品发现
 
+以下限制适用于storefront产品搜索、列表和促销配置。
+
 | **功能** | **描述** | **基础分配** | **可扩展？** |
 | --- | --- | --- | --- |
-| 每个搜索请求的产品 | 搜索结果中每页返回的最大产品数 | 100 | 否 |
+| 产品检索 | 获取具有`products`、`productSearch`、`refineProduct`和`variants`的产品数据时，每个[!DNL Catalog Service] GraphQL请求的最大SKU数。 将较大的请求拆分为多个调用。 | 100 | 否 |
 | 可过滤属性 | 可为分层导航和Facet启用的产品特征（如颜色、大小、品牌或材料）的数量 | 200 | 否 |
-| 可搜索属性 | 可以配置为与产品目录搜索服务一起使用的产品特征数 | 200 | 否 |
-| 可排序的属性 | 可配置为确定搜索结果值顺序的产品特征数 | 50 | 否 |
-| 搜索分页深度 | 通过分页可访问的最大产品数量（例如，第100页×100个产品/页面） | 1万 | 否 |
+| 可搜索属性 | 可以为目录搜索编制索引的产品特征数 | 200 | 否 |
+| 可排序的属性 | 在搜索和类别页面上可用作排序选项的产品特征数。 | 50 | 否 |
+| 搜索分页深度 | 通过搜索分页可访问的最大产品数（例如，第100页×100个产品/页面） | 1万 | 否 |
 | Facet | 可过滤的产品属性（如品牌、颜色、大小和价格）的数量，可配置这些属性以帮助购物者优化搜索结果和浏览类别 | 100<p>必须是可筛选的属性</p> | 否 |
-| 每个方面的选项 | 购物者可以从列表中选择的可过滤产品属性值（例如“红色”、“蓝色”代表颜色；“小”、“Medium”代表大小）的数量 | 100 | 是<p>可以通过支持请求增加</p> |
+| 每个方面的选项 | 购物者可在Facet中选择的可过滤产品属性值的数量（例如，“红色”、“蓝色”表示颜色，“小”、“Medium”表示大小） | 100 | 是<p>可以通过支持请求增加</p> |
 
 {style="table-layout:auto"}
 
@@ -148,7 +150,7 @@ Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“
 | **功能** | **描述** | **基础分配** | **可扩展？** |
 | --- | --- | --- | --- |
 | 有效的推荐单位 | 店面上实时推荐组件的数量（如“客户也查看了”或“您可能也喜欢”） | 50 | 否 |
-| 类别或属性包含/排除项 | 将产品筛选到符合推荐条件的特定集 | 不支持 | |
+| 类别或属性包含/排除项 | 将产品筛选到符合推荐条件的特定集 | 不支持 | — |
 
 {style="table-layout:auto"}
 
@@ -193,5 +195,5 @@ This approach ensures your solution is accurately sized for your business needs.
 1. **GenAI or Media Needs**
 
    * Need: +10M dynamic media ops/month
-   * Add-On: 10 × dynamic media packs (1M each) 
+   * Add-On: 10 × dynamic media packs (1M each)
 -->

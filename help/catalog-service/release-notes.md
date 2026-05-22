@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 22f44afb7221c735785b6e9a38fb70c733cf0942
+source-git-commit: 4bd744e26afca4519fb1c04edcb7d2a118369ff9
 workflow-type: tm+mt
-source-wordcount: 2742
+source-wordcount: 2782
 ht-degree: 0%
 
 ---
@@ -54,6 +54,12 @@ ht-degree: 0%
 ## 店面目录服务
 
 ### 2026年5月
+
+**发行日期**： 2026年5月20日
+<!-- v1.55 -->
+
+![新](../assets/new.svg)根据[记录的限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits)，对Adobe Commerce和Adobe Commerce as a Cloud Service客户端的每个请求强制限制最多100个SKU。
+<!--DATA-7163-->
 
 **发行日期**： 2026年5月13日
 <!--v1.54-->

@@ -1,6 +1,6 @@
 ---
 title: 配置AEM Assets项目以支持Commerce元数据
-description: 通过添加集成所需的元数据，启用Adobe Commerce和AEM Assets之间的无缝资源同步。
+description: 了解如何通过在Adobe Commerce项目中部署assets-commerce包并配置AEM Assets元数据，在Commerce和AEM之间同步资源。
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
+source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
 workflow-type: tm+mt
-source-wordcount: 1708
+source-wordcount: 1717
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 >[!NOTE]
 >
-> 有关&#x200B;**AEM Commerce包代码**&#x200B;的更多信息，请参阅[自述文件](https://github.com/ankumalh/assets-commerce)页。
+> 有关&#x200B;**AEM Commerce包代码**&#x200B;的更多信息，请参阅GitHub上的[自述文件](https://github.com/ankumalh/assets-commerce)页面。
 
 ## AEM Assets元数据中的替换文本
 
@@ -143,15 +143,15 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 1. 从您的[本地AEM开发环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)中，手动将下载的代码复制到现有的Adobe托管存储库中。
 
-1. 在您的项目的`filter.xml`和`pom.xml files`中，将所有出现的`<my-app>`替换为您的应用程序名称。
+1. 在您的项目的所有`filter.xml`和`pom.xml`文件中，将所有出现的`<my-app>`替换为您的应用程序名称。
 
->[!NOTE]
->
-> 或者，您也可以将自定义代码作为&#x200B;**Maven**&#x200B;包安装到AEM Assets项目配置中。
+   >[!NOTE]
+   >
+   > 或者，您也可以将自定义代码作为&#x200B;**Maven**&#x200B;包安装到AEM Assets项目配置中。
 
 1. 提交更改并将本地开发分支推送到Cloud Manager Git存储库。
 
-1. 在AEM Cloud Manager中，[使用管道更新AEM环境以部署您的代码](https://experienceleague.dobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager)。
+1. 在AEM Cloud Manager中，[使用管道更新AEM环境以部署您的代码](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager)。
 
 1. 转到任何资源并编辑其属性以验证更改：
 
@@ -165,7 +165,7 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 1. 导航到元数据架构编辑器。
 
-1. 单击&#x200B;**编辑**&#x200B;修改默认的元数据架构表单。
+1. 选择&#x200B;**编辑**&#x200B;以修改默认的元数据架构表单。
 
 1. 创建&#x200B;**Commerce**&#x200B;选项卡，然后选择它。
 
@@ -239,7 +239,7 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 ### 将元数据配置文件应用到Commerce资源源文件夹
 
-1. 从[!UICONTROL &#x200B; Metadata Profiles]页面中，选择Commerce集成配置文件。
+1. 从&#x200B;**[!UICONTROL Metadata Profiles]**&#x200B;页面中，选择Commerce集成配置文件。
 
 1. 从操作菜单中选择&#x200B;**[!UICONTROL Apply Metadata Profiles to Folders]**。
 
@@ -247,10 +247,10 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
    创建不存在的Commerce文件夹。
 
-1. 单击&#x200B;**[!UICONTROL Apply]**。
+1. 选择&#x200B;**[!UICONTROL Apply]**。
 
 ## 后续步骤
 
 * 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"} [安装Adobe Commerce包](configure-commerce.md)。
 
-* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} [从Commerce管理员配置集成](setup-synchronization.md)。
+* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} [从管理员配置集成](setup-synchronization.md)。
