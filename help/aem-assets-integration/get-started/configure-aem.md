@@ -4,10 +4,16 @@ description: 了解如何通过在Adobe Commerce项目中部署assets-commerce�
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
 workflow-type: tm+mt
 source-wordcount: 1717
@@ -55,7 +61,7 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 ## AEM Assets元数据中的替换文本
 
-编辑符合条件的图像时，_[!UICONTROL Alt texts]_多字段在AEM Assets资源元数据编辑器的&#x200B;**[!UICONTROL Commerce]**选项卡上可用。
+编辑符合条件的图像时，_[!UICONTROL Alt texts]_&#x200B;多字段在AEM Assets资源元数据编辑器的&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡上可用。
 
 >[!IMPORTANT]
 >
@@ -71,7 +77,7 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 ![Alt文本包含存储视图代码和Alt文本输入的多字段](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
 
-保存时，如果任何行具有空的&#x200B;_[!UICONTROL Store View Code]_或如果两行使用相同的存储视图代码（不区分大小写），则客户端验证会阻止提交。
+保存时，如果任何行具有空的&#x200B;_[!UICONTROL Store View Code]_&#x200B;或如果两行使用相同的存储视图代码（不区分大小写），则客户端验证会阻止提交。
 
 替代文本条目作为两个索引对齐的`String[]`属性保留在JCR资产元数据中：
 
@@ -227,7 +233,7 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. 可选。 要在已批准的Commerce资源上传到AEM Assets环境时自动对其进行同步，请将`Basic`选项卡上&#x200B;_[!UICONTROL Review Status]_字段的默认值设置为`approved`。
+1. 可选。 要在已批准的Commerce资源上传到AEM Assets环境时自动对其进行同步，请将`Basic`选项卡上&#x200B;_[!UICONTROL Review Status]_&#x200B;字段的默认值设置为`approved`。
 
 1. 保存更新。
 
