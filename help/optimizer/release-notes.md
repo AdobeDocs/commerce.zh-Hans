@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
 workflow-type: tm+mt
-source-wordcount: 1047
+source-wordcount: 1104
 ht-degree: 0%
 
 ---
@@ -34,9 +34,11 @@ ht-degree: 0%
 
 ## 2026年5月
 
-目前本月没有[[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)版本。 请参阅下面的API更新。
-
 >[!BEGINSHADEBOX]
+
+### 智能排名提升
+
+搜索的[促销规则](./merchandising/rules/add.md#intelligent-ranking-boost)、默认产品列表和[类别页面](./merchandising/rules/add.md#rule-types)（测试版）现在包含&#x200B;**[!UICONTROL Intelligent Ranking Boost]**。 您可以调整&#x200B;**查看次数最多**&#x200B;或&#x200B;**趋势**&#x200B;等策略对产品订单的影响（相对于搜索中的文本相关性和类别列表上的行为信号）。 规则预览可反映您的设置。 提升在查询时应用，因此当您更改它时，您不需要重新同步目录。
 
 ### API更新
 

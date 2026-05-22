@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
 workflow-type: tm+mt
-source-wordcount: 3060
+source-wordcount: 3098
 ht-degree: 1%
 
 ---
@@ -40,6 +40,10 @@ ht-degree: 1%
 ## 托管服务更新
 
 这些说明描述了在未发布版本控制版本或对托管服务的改进的情况下发布的更新。
+
+_2026年5月22日_
+
+![新](../assets/new.svg)搜索促销规则、默认规则和[类别促销](./category-merch.md)规则现在包含&#x200B;**[!UICONTROL Intelligent Ranking Boost]**，因此您可以调整智能排名策略对相对于文本相关性的结果的影响程度。 规则预览与配置的Boost匹配。 [了解详情](./rules-add.md#intelligent-ranking-boost)。
 
 _2025年10月1日_
 

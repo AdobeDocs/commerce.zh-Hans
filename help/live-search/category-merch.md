@@ -13,9 +13,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 1131
+source-wordcount: 1171
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 >
 >类别促销可用于[!DNL Live Search] [3.0.0或更高版本](release-notes.md)。 如果您看到类别促销工作区，但它未填充数据，请更新[!DNL Live Search]模块。
 
-![类别促销](assets/category_workspace.png)
+![类别促销工作区](assets/category_workspace.png)
 
 “类别促销”视图显示定义的类别规则，其中包含以下列：
 
@@ -60,6 +60,9 @@ ht-degree: 0%
 * 为您推荐：根据每位购物者之前和当前在网站上的行为，按购物者与每位购物者交互的可能性对产品进行排名。
 * 趋势：根据查看次数对产品进行排名，按最近受欢迎程度的上升进行排名。
 * 无：按默认顺序对产品进行排名。
+
+
+对于除&#x200B;**None**&#x200B;之外的任何智能排名方法，您可以在规则编辑器中设置&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;以调整行为信号对产品订单的影响程度。 有关默认值、限制、预览行为以及提升与&#x200B;**手动排名**&#x200B;的比较方式的详细信息，请参阅[智能排名提升](rules-add.md#intelligent-ranking-boost)。
 
 **手动排名**&#x200B;允许用户通过定义手动pin、提升、隐藏和隐藏规则来覆盖自动产品排序顺序。
 
@@ -104,7 +107,7 @@ ht-degree: 0%
    ![选择类别](assets/category_select.png)
 
 1. 在&#x200B;_添加类别规则_视图中，选择要应用于类别的智能排名方法。
-类别预览页面使用您的实时搜索数据显示所选排名的实际结果。
+类别预览页面使用您的[!DNL Live Search]数据显示所选排名的实际结果。
 1. 单击&#x200B;**保存并发布**&#x200B;以保存规则。
 
 ![选择智能排名方法](assets/category_ranking.png)
