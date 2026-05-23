@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您的Commerce实例使用实时搜索或产品推荐，则当您载入或升级这些服务时，会自动安装或更新目录服务。 有关详细信息，请参阅[实时搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/install)和[产品推荐](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure)的安装说明。
+>如果您的Commerce实例使用实时搜索或产品推荐，则当您载入或升级这些服务时，会自动安装或更新目录服务。 有关详细信息，请参阅[实时搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/install)和[产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce/product-recommendations/getting-started/install-configure)的安装说明。
 >
 >如果您使用的是Adobe Commerce as a Cloud Service，则您的环境中提供了最新版本的中继包。 要开始使用这些服务，请参阅[目录服务入门](get-started.md)。
 >
