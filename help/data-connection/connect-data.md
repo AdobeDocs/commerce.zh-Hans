@@ -303,7 +303,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 ## 确认已收集事件数据
 
-要确认正在从Commerce存储中收集数据，请使用[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html)来检查您的Commerce网站。 确认正在收集数据后，通过运行返回来自您创建的[数据集的数据](overview.md#prerequisites)的查询，可以验证店面和后台事件数据是否显示在边缘。
+要确认正在从Commerce存储中收集数据，请使用[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=zh-Hans)来检查您的Commerce网站。 确认正在收集数据后，通过运行返回来自您创建的[数据集的数据](overview.md#prerequisites)的查询，可以验证店面和后台事件数据是否显示在边缘。
 
 1. 在Experience Platform的左侧导航中选择&#x200B;**查询**，然后单击[!UICONTROL Create Query]。
 

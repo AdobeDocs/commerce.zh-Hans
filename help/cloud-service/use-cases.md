@@ -216,7 +216,7 @@ ht-degree: 0%
 
 #### 将图像添加到[!DNL Commerce AEM Assets]
 
-1. 从[!DNL AEM as a Cloud Service]的[导航面板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)中，选择&#x200B;[!UICONTROL **Assets**] > [!UICONTROL **文件**] > [!UICONTROL **Commerce**]，然后单击在上一节中创建的资源。
+1. 从[!DNL AEM as a Cloud Service]的[导航面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)中，选择&#x200B;[!UICONTROL **Assets**] > [!UICONTROL **文件**] > [!UICONTROL **Commerce**]，然后单击在上一节中创建的资源。
 
    [!DNL AEM Assets]中的![Commerce文件夹包含产品图像](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -266,7 +266,7 @@ ht-degree: 0%
 
 ### 生成文本
 
-1. 使用[通用编辑器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)打开您的店面站点。
+1. 使用[通用编辑器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)打开您的店面站点。
 
 1. 选择要编辑的文本块。
 
@@ -280,7 +280,7 @@ ht-degree: 0%
 
 ### 生成内容和图像
 
-1. 打开[[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. 打开[[!DNL Generate Variations]](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. 选择&#x200B;[!UICONTROL **主页横幅**]&#x200B;模板。
 
