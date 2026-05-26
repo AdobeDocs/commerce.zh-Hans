@@ -4,7 +4,8 @@ description: 了解Adobe Commerce Optimizer许可证限制和系统边界。 规
 role: Admin, Developer
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
+nudge: true
+source-git-commit: 6ae571dd77206859e69e57100e80bb01416a36cd
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 0%
