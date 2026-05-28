@@ -97,7 +97,7 @@ ht-degree: 0%
 
 ## 入门
 
-要载入与[!DNL Commerce Optimizer]的AEM Assets集成，您必须[创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+要载入与[!DNL Commerce Optimizer]的AEM Assets集成，您必须[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 Adobe支持使用您票证中的信息来向Assets集成服务注册您的租户，并配置集成。
 
@@ -123,7 +123,7 @@ Adobe支持处理您的票证后，配置集成，并且您的租户向Assets集
    * AEM Assets事件（已批准、更新和删除资产）
    * [!DNL Commerce Optimizer]目录事件（产品已创建、已更新）
 
-配置[目录视图](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view)，以便店面和API显示AEM驱动的图像数据：
+配置[目录视图](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view)，以便店面和API显示AEM驱动的图像数据：
 
 * **目录源（区域设置）** — 选择您在支持票证中指定的相同区域设置（例如&#x200B;**`en-US`**）。 集成为每个租户注册一个区域设置；不匹配，同步的图像无法在预期的目录视图中显示。
 * **目录层** — 将&#x200B;**`AEM-Assets`**&#x200B;层（或票证中的自定义层名称）分配给该目录视图。
