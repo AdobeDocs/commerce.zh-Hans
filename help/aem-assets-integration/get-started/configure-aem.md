@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
+source-git-commit: de02e13e169ab336bac09ebff90c44b3b707efce
 workflow-type: tm+mt
-source-wordcount: 1717
+source-wordcount: 1775
 ht-degree: 1%
 
 ---
@@ -135,21 +135,29 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 1. 导航到AEM Cloud Manager，选择一个项目，然后[创建要与Adobe Commerce集成的生产和暂存环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)。
 
-1. 配置[部署管道](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline)，或验证您的管道是否可以将更改部署到所选环境。
-
 1. [克隆所选程序的Adobe托管的Git存储库](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)。
+
+   ![Cloud Manager存储库凭据和克隆命令](../assets/cloud-manager-repository-info.png){width="600" zoomable="yes"}
+
+   在Cloud Manager **管道**&#x200B;中，选择&#x200B;**[!UICONTROL Access Repo Info]**&#x200B;以打开&#x200B;**[!UICONTROL Repository Info]**。 复制&#x200B;**[!UICONTROL URL]**&#x200B;或&#x200B;**[!UICONTROL Git command line]**&#x200B;值，根据需要生成访问密码，然后使用Git客户端本地克隆。
 
 1. 从GitHub中，从[AEM Assets Commerce存储库](https://github.com/ankumalh/assets-commerce)下载包代码。
 
 1. 从您的[本地AEM开发环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)中，手动将下载的代码复制到现有的Adobe托管存储库中。
 
-1. 在您的项目的所有`filter.xml`和`pom.xml`文件中，将所有出现的`<my-app>`替换为您的应用程序名称。
+1. 在您的项目的所有`filter.xml`和`pom.xml`文件中，将所有出现的&lt;my-app>替换为应用程序名称。
 
    >[!NOTE]
    >
    > 或者，您也可以将自定义代码作为&#x200B;**Maven**&#x200B;包安装到AEM Assets项目配置中。
 
 1. 提交更改并将本地开发分支推送到Cloud Manager Git存储库。
+
+1. 配置[部署管道](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline)，或验证您的管道是否可以将更改部署到所选环境。
+
+   ![Cloud Manager管道](../assets/cloud-manager-pipelines.png){width="600" zoomable="yes"}
+
+   当管道存在时，打开操作菜单(**...**) 到&#x200B;**[!UICONTROL Run]**、**[!UICONTROL Edit]**、**[!UICONTROL View/Edit variables]**&#x200B;或其他操作 — 请参阅上面链接的Cloud Manager管道文档。
 
 1. 在AEM Cloud Manager中，[使用管道更新AEM环境以部署您的代码](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager)。
 
@@ -161,7 +169,7 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 ### Commerce选项卡在资产中不可见
 
-如果&#x200B;**Commerce**&#x200B;选项卡未显示在属性中，则必须在元数据架构编辑器中手动创建一个选项卡。
+如果&#x200B;**Commerce**&#x200B;选项卡未显示在属性中，则必须在元数据架构编辑器中手动完成以下步骤：
 
 1. 导航到元数据架构编辑器。
 

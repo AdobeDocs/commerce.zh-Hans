@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: a6a91fbd6cc6907d070998f67eb0b9c8171dda23
 workflow-type: tm+mt
-source-wordcount: 904
+source-wordcount: 948
 ht-degree: 2%
 
 ---
@@ -63,11 +63,13 @@ ht-degree: 2%
 
 1. 从下拉菜单中选择AEM Assets环境&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**。
 
-   下拉列表会根据用户的IMS会话自动填充。 要使用此功能，请确保您拥有正确的[用户权限和IMS](permissions.md#user-permissions-and-ims)。
+   当Commerce管理员用户满足以下体验的[用户权限和IMS](permissions.md#user-permissions-and-ims)时，就会显示选择器： **Adobe Commerce as a Cloud Service**、**Adobe Commerce Optimizer**&#x200B;和&#x200B;**Adobe Commerce on Cloud Infrastructure**&#x200B;集成可以从您的IMS链接会话中自动填充这些字段，而不是依赖粘贴的ID。
 
-   如果下拉列表不可用，您可以从AEM Cloud Manager URL手动输入ID： `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
+   如果选择器不可用，请从AEM Cloud Manager复制&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**，或从创作URL派生它们： `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/`（将占位符替换为标识符）。
 
-   通过从&#x200B;*[!UICONTROL Use system value]*&#x200B;中删除所选内容来编辑配置值。
+   粘贴前清除任一字段的&#x200B;**[!UICONTROL Use system value]**&#x200B;或手动选择新值。
+
+   ![AEM Assets集成表单，带有项目ID和环境ID选择器](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
 1. [!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}选择[[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment)以在Commerce和资源匹配服务之间验证请求。
 
