@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 6a3bacace012153f6b8f7c87192d19bf349a2446
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 729
 ht-degree: 0%
 
 ---
@@ -52,8 +52,7 @@ ht-degree: 0%
 
 批量数据迁移工具的可用性如下：
 
-- **2026年第1季度**（尚不可用） — 在首次发布批量数据迁移工具后，您可以通过提交支持票证来访问它。
-- **2026年第1季度**（尚不可用） — 在公共发布批量数据迁移工具后，可从此页面访问该工具。
+此工具目前可通过已部署的工程服务获得。 如果您有兴趣使用此工具，请联系您的Adobe代表。
 
 ## 创建目标环境
 
