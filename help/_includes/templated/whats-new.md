@@ -1,7 +1,7 @@
 ---
-source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
+source-git-commit: dcb3300c80fb74d597cee66e981acb426490d34b
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1201'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,30 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年5月28日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><ul>
+  <li>改进了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/configure-aco">为Commerce Optimizer配置AEM Assets</a>载入，因此AEM Assets设置先于租户注册，并且提供有关专用目录层和层相关限制的更明确的指导。<br /> — 更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/configure-aem">为存储库访问和管道部署配置经过重新排序的安装步骤和Cloud Manager屏幕截图</a>。<br /> — 阐明了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/setup-synchronization">配置集成</a>中基于IMS的项目ID和环境ID选择。</li>
+</ul>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年5月22日
 
@@ -23,7 +47,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了有关2026年5月20日版本中<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a>和Commerce <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/release-notes">目录服务</a>的API更新的发行说明，该版本现在在检索产品数据时强制实施记录的每个请求100-SKU限制。 查看<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits">限制和边界</a>。</p>
+      <td><p>添加了有关2026年5月20日版本中<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a>和Commerce <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/release-notes">目录服务</a>的API更新的发行说明，该版本现在在检索产品数据时强制实施记录的每个请求100-SKU限制。</p>
 </td>
       <td>
         技术
