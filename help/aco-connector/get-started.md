@@ -2,7 +2,7 @@
 title: Adobe Commerce Optimizer Connector入门
 description: 了解如何安装和配置连接器、自定义导出配置、连接到Adobe Commerce Optimizer以及监控数据同步状态。
 feature: Personalization, Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 source-git-commit: f041c315da8bf20af7ecc2c869eaf578a767f66d
 workflow-type: tm+mt
 source-wordcount: '1280'
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * 具有已设置的沙盒实例的[!DNL Adobe Commerce Optimizer]许可证。
 
-* [身份验证密钥](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)，用于使用编辑器下载Commerce Connector中继包。
+* [身份验证密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)，用于使用编辑器下载Commerce Connector中继包。
 
 * 管理员访问[Adobe Commerce Optimizer沙盒实例](../optimizer/get-started.md)。
 
@@ -34,9 +34,9 @@ ht-degree: 0%
 
 * Adobe Commerce管理员的管理员访问权限。
 
-* [对Adobe Commerce应用程序服务器的命令行访问权限](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)。
+* [对Adobe Commerce应用程序服务器的命令行访问权限](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/project/user-access)。
 
-* 开发人员对配置了[!DNL Adobe Commerce Optimizer]项目的[IMS组织](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations？)的访问权限。
+* 开发人员对配置了[!DNL Adobe Commerce Optimizer]项目的[IMS组织](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations？)的访问权限。
 
 >[!BEGINSHADEBOX]
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 * Adobe Commerce目录服务(`magento/catalog-service`， `magento/catalog-service-installer`)
 * 数据管理仪表板(`magento-catalog-sync-admin`)
 
-与这些扩展关联的数据仍会在Commerce数据库中可用。 但是，在启用连接器时，它不会导出到[!DNL Adobe Commerce Optimizer]。 要在启用连接器后实施这些扩展提供的搜索和促销功能，请从[[!DNL Adobe Commerce Optimizer] 管理员UI](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour)配置它们。
+与这些扩展关联的数据仍会在Commerce数据库中可用。 但是，在启用连接器时，它不会导出到[!DNL Adobe Commerce Optimizer]。 要在启用连接器后实施这些扩展提供的搜索和促销功能，请从[[!DNL Adobe Commerce Optimizer] 管理员UI](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/overview#quick-tour)配置它们。
 
 >[!IMPORTANT]
 >
@@ -92,9 +92,9 @@ Adobe Commerce Optimizer Connector是作为编辑器中继提供的，适用于�
 >
 >有关详细的扩展安装说明，请参阅以下指南：
 >
->在云基础架构上的Adobe Commerce上[安装扩展](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>在云基础架构上的Adobe Commerce上[安装扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 >
->[在Adobe Commerce内部部署上安装扩展](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
+>[在Adobe Commerce内部部署上安装扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ### 获取所需的连接详细信息
 
@@ -168,7 +168,7 @@ Adobe Commerce Optimizer Connector是作为编辑器中继提供的，适用于�
 
    ![[!DNL Adobe Commerce Optimizer]配置页面](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
-1. 从命令行中，[使用SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)连接到Commerce暂存环境。
+1. 从命令行中，[使用SSH](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/secure-connections)连接到Commerce暂存环境。
 
 1. 运行以下Commerce CLI命令配置集成，将占位符值替换为Commerce Optimizer项目的值：
 
@@ -183,7 +183,7 @@ bin/magento aco:config:init --org_id=your-org --tenant_id=your-tenant --client_i
 ## 验证数据同步是否正常工作
 
 启用集成后，数据同步将自动开始。根据目录大小，初始同步可能需要几分钟到几小时。
-您可以从管理员中提供的[数据馈送同步状态](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面监视和验证同步是否正常工作。
+您可以从管理员中提供的[数据馈送同步状态](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面监视和验证同步是否正常工作。
 
 1. **在Commerce管理员中检查同步状态：**
 
@@ -213,6 +213,6 @@ bin/magento aco:config:init --org_id=your-org --tenant_id=your-tenant --client_i
 
 1. **在Edge Delivery Services上设置Commerce店面**
 
-   按照[Storefront设置文档](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)将您的店面连接到[!DNL Adobe Commerce Optimizer]实例，并开始提供个性化的商务体验。
+   按照[Storefront设置文档](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=zh-Hans)将您的店面连接到[!DNL Adobe Commerce Optimizer]实例，并开始提供个性化的商务体验。
 
 
