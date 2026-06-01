@@ -17,9 +17,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70990a7bb7e8926a171ea6d2148542b7b73f4dba
 workflow-type: tm+mt
-source-wordcount: 1398
+source-wordcount: 1405
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您要将可组合目录与Adobe Commerce Optimizer或Adobe Commerce Optimizer Connector结合使用，请参阅[Adobe Commerce Optimizer指南](../optimizer/overview.md#architecture)和《Merchandising Services开发人员指南》。
+>如果您使用Adobe Commerce Optimizer或Adobe Commerce Optimizer Connector的可组合目录实施您的目录，请参阅[Adobe Commerce Optimizer指南](../optimizer/overview.md#architecture)和[Merchandising Services Developer Guide](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/)。
 
 [!DNL Catalog Service]使用[GraphQL](https://graphql.org/)请求和接收目录数据，包括产品、产品属性、库存和价格。 GraphQL是一种查询语言，前端客户端使用它与在后端（如Adobe Commerce）上定义的应用程序编程接口(API)进行通信。 GraphQL是一种常用的通信方法，因为它非常轻量，允许系统集成商指定每个响应的内容和顺序。
 

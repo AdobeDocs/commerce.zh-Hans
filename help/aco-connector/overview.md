@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
 workflow-type: tm+mt
-source-wordcount: 1233
+source-wordcount: 1177
 ht-degree: 0%
 
 ---
@@ -60,12 +60,6 @@ Commerce保留您的产品、价格和目录结构记录系统。 Commerce Optim
 - 连接器导出目录、价格和类别信息源
 - Commerce Optimizer摄取信息源数据并将其标准化到目录源、价格手册和目录视图中
 - 店面（Edge Delivery上的Commerce店面或自定义Headless内部版本）调用Commerce Optimizer GraphQL API进行发现和建议，并调用Commerce或其他连接的第三方平台进行购物车和结账操作
-
-## 连接器如何使用Adobe Commerce {#how-it-works}
-
-- Commerce Optimizer摄取信息源数据并将其标准化到目录源、价格手册和目录视图中。
-
-- 店面（Edge Delivery上的Commerce店面或自定义Headless内部版本）调用Commerce Optimizer GraphQL API进行发现和建议，并调用Commerce或其他连接的第三方平台进行购物车和结账操作。
 
 ## 连接器如何使用Adobe Commerce
 

@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
 workflow-type: tm+mt
-source-wordcount: 1181
+source-wordcount: 1332
 ht-degree: 0%
 
 ---
@@ -32,6 +32,17 @@ ht-degree: 0%
 # 开始使用
 
 本指南将指导您从头到尾设置[!DNL Adobe Commerce Optimizer]。 虽然本指南涵盖所有角色，但有关特定于开发人员的详细内容，请参阅[开发人员文档](https://developer.adobe.com/commerce/services/optimizer/)。
+
+## 实例类型和环境隔离
+
+Adobe Commerce Optimizer为不同的环境使用单独的实例，如&#x200B;**沙盒**&#x200B;和&#x200B;**生产**。 每个实例都有自己的实例ID和独立的数据，包括目录视图、策略、搜索配置和产品推荐。
+
+与Adobe Commerce as a Cloud Service、第三方商业平台或Edge Delivery Services店面集成时，始终匹配环境：
+
+- 将&#x200B;**沙盒优化器实例**&#x200B;连接到非生产商务和店面环境。
+- 将&#x200B;**生产Optimizer实例**&#x200B;连接到生产商务和店面环境。
+
+将沙盒环境与生产环境混合在一起会导致目录数据不一致、搜索和促销行为异常，以及量度不可靠。 在配置集成时，在Commerce Cloud Manager中使用实例类型和实例ID作为您的真实来源。
 
 ## 先决条件
 
@@ -140,21 +151,23 @@ ht-degree: 0%
 
 使用过滤器和搜索工具按创建日期、区域、创建者、产品类型、环境或状态快速查找特定实例。
 
-### 访问[!DNL Adobe Commerce Optimizer]应用程序
+### 访问[!DNL Adobe Commerce Optimizer Studio]管理界面
 
 应用程序打开后，可在沙盒和生产等环境之间轻松切换以查看每个环境的数据和设置，而无需返回Commerce Cloud Manager。
 
-1. 在Commerce Cloud管理器中，单击实例名称以打开[!DNL Adobe Commerce Optimizer]应用程序。
+1. 在Commerce Cloud管理器中，单击实例名称以打开[!DNL Adobe Commerce Optimizer Studio]。
 
 1. 在不离开应用程序的情况下在[!DNL Adobe Commerce Optimizer]实例之间切换。
 
-   实例下拉列表列出了组织中可用的所有Optimizer实例。 选择要查看的实例。
+   - 单击实例下拉列表可查看组织中可用的所有Optimizer实例。
 
-   用于选择[!DNL Adobe Commerce Optimizer]环境的![实例切换器下拉列表](./assets/context-switcher.png){zoomable="yes"}
+     用于选择[!DNL Adobe Commerce Optimizer]环境的![实例切换器下拉列表](./assets/context-switcher.png){zoomable="yes"}
+
+- 选择要查看的实例。
 
 >[!NOTE]
 >
->如果您需要返回到Commerce Cloud管理器以查看实例详细信息或管理实例，请单击Commerce Optimizer顶部导航左上角的“应用程序”图标![图标以打开Experience Cloud应用程序](./assets/apps-icon.png)。
+>要返回到Commerce Cloud Manager以查看实例详细信息或管理实例，请单击Commerce Optimizer顶部导航左上角的![图标以打开Experience Cloud应用程序](./assets/apps-icon.png) （应用程序）图标。
 
 ### 获取实例详细信息
 
@@ -164,10 +177,10 @@ ht-degree: 0%
 
 请注意以下关键信息：
 
-- **GraphQL端点**，以使用促销API检索Commerce目录数据
-- **目录终结点**，用于使用REST API将目录数据摄取到Commerce Optimizer
-- **Commerce Optimizer URL**&#x200B;以访问[!DNL Adobe Commerce Optimizer]应用程序
-- **实例ID**：标识该实例的唯一ID。 实例ID也称为&#x200B;*tenant_id*。
+- **GraphQL端点** GraphQL端点您的店面使用[促销服务API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=_blank}从此实例查询目录和促销数据
+- **目录端点** REST API端点用于从商业或PIM系统中将产品和价格摄取到Adobe Commerce Optimizer。 查看[数据摄取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
+- **Commerce Optimizer URL**&#x200B;打开[Adobe Commerce Optimizer Studio](overview.md)管理UI以配置和管理目录视图、策略和促销。
+- **实例ID**：此Adobe Commerce Optimizer实例的唯一标识符（租户ID），由店面、API和工具用于连接到正确的环境。
 
 如果您是开发人员，则需要这些详细信息来设置开发环境并连接到[!DNL Adobe Commerce Optimizer] API。
 

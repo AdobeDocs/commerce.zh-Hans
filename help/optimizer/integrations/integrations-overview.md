@@ -7,9 +7,9 @@ role: Developer, Admin
 level: Beginner
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于 [!DNL Adobe Commerce Optimizer] 个项目（Adobe管理的SaaS基础结构）。"
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
-source-git-commit: d8cd6f543353e1b11f3aa14b3b97b02155d23809
+source-git-commit: a404c2ff7cec5e72ce65d3670330b1f3f3c4702d
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -19,12 +19,14 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer]包括的集成允许您在云上或内部部署中从Adobe Commerce同步数据、管理资源、改进店面体验以及连接外部系统。 以下各节将介绍每个集成如何与[!DNL Adobe Commerce Optimizer]配合使用。 按照这些链接进行设置、配置和日常使用。
 
+{{aco-integration-environment-alignment}}
+
 ## Adobe Commerce Optimizer连接器 {#aco-connector}
 
 Adobe Commerce Optimizer Connector是在Adobe Commerce（云或内部部署）和[!DNL Adobe Commerce Optimizer]之间同步目录和定价数据的桥梁。 启用连接器后，Commerce将保留产品数据的记录系统，而[!DNL Adobe Commerce Optimizer]将支持产品发现、推荐、促销规则、分析和Headless店面体验。
 
-- [Adobe Commerce Optimizer连接器概述](../../aco-connector/overview.md){target="_blank"}
-- [开始使用连接器](../../aco-connector/get-started.md){target="_blank"}
+- [Adobe Commerce Optimizer Connector概述](../../aco-connector/overview.md){target="_blank"}
+- [连接器入门](../../aco-connector/get-started.md){target="_blank"}
 
 ## AEM Assets的产品可视化图表 {#product-visuals}
 
