@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
+source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
 workflow-type: tm+mt
-source-wordcount: 4032
+source-wordcount: 4189
 ht-degree: 0%
 
 ---
@@ -42,15 +42,19 @@ ht-degree: 0%
 >
 >如果您正在本地使用Adobe Commerce或在云基础架构上使用Adobe Commerce，请参阅[Adobe Commerce发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/notes/overview)。
 
-## 2026年5月 — 发行说#2 {#latest}
+## 2026年6月 — 发行说#1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
 [!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
 
-以下项目将于2026年5月21日发布到生产环境。
+以下项目将于2026年6月4日发布到生产环境。
 
 >[!BEGINSHADEBOX]
+
+### 在管理员中添加和编辑自定义优惠券代码
+
+商家现在可以直接从手动购物车价格规则上的[!DNL Commerce Admin]创建和编辑自定义优惠券代码。 编辑购物车价格规则时，[!UICONTROL **管理优惠券代码**]&#x200B;部分中有新的&#x200B;[!UICONTROL **添加自定义优惠券**]&#x200B;按钮可用。<!-- CCSAAS-4508 -->
 
 ### 使用默认承运人和自定义承运人跟踪发运
 
@@ -59,6 +63,14 @@ ht-degree: 0%
 ### 在“产品属性”网格中查看属性输入类型
 
 现在，在（[!UICONTROL **商店**] > _[!UICONTROL Attributes]_>[!UICONTROL **产品**]）的“产品属性”网格中会显示新的&#x200B;[!UICONTROL **属性类型**]列，该列显示每个产品属性的输入类型（如文本字段、下拉列表或yes/no），其中包括扩展所贡献的类型。 这样在使用大型属性集时，可以更轻松地识别和管理属性。<!-- ACCS-925 -->
+
+### 自定义电子邮件的回复标头
+
+商家现在可以配置由[POST /rest/V1/custom-email/send](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)端点使用的&#x200B;[!UICONTROL **回复**]&#x200B;标头，因此可以将客户的回复路由到与发件人不同的地址。<!-- ACCS-1037 -->
+
+### 在大型共享目录环境中的产品编辑页面上查看层价格
+
+拥有大量共享目录的商户现在可以访问[!DNL Commerce Admin]中产品编辑页面上的只读&#x200B;[!UICONTROL **层价格**]&#x200B;选项卡。<!-- CCSAAS-4922 -->
 
 ### 增强功能和错误修复
 
@@ -70,7 +82,7 @@ ht-degree: 0%
 
 * 解决了当请求中存在`X-Adobe-Company`标头时，可能会阻止来宾GraphQL登录的“消费者未授权”错误。<!-- ACCS-949 -->
 
-* 修复了在通过PUT `V1/customers/companies` REST端点将客户分配给公司后，在[!DNL Commerce Admin]中编辑或删除公司可能会失败并出现“没有此类实体”错误的问题。<!-- ACCS-856 -->
+* 修复了在通过PUT `V1/customers/companies` REST端点将客户分配给公司后，在[!DNL Commerce Admin]中编辑或删除公司可能失败并出现“没有此类实体”错误的问题。<!-- ACCS-856 -->
 
 * 解决了销售订单网格状态过期的问题。<!-- CCSAAS-4915 -->
 
@@ -79,6 +91,10 @@ ht-degree: 0%
 * 修复了在为包含可配置产品的订单创建发运时可能发生的“未定义数组键‘simple_sku’”错误。<!-- CCSAAS-4877 -->
 
 * 现在，使用格式错误的令牌调用`guestOrderByToken` GraphQL查询时，会返回一条信息更丰富的错误消息，而不是内部服务器错误。<!-- CCSAAS-4921 -->
+
+* 现在，当无法加载客户订单时，`customer` GraphQL查询会返回一条信息更丰富的错误消息。<!-- ACCS-867 -->
+
+* GET `V1/customers/{customerId}` REST终结点现在返回`assistance_allowed`配置字段。<!-- USF-4132 -->
 
 {{accs-release}}
 
