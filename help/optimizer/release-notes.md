@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
+source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
 workflow-type: tm+mt
-source-wordcount: 1104
+source-wordcount: 1191
 ht-degree: 0%
 
 ---
@@ -42,11 +42,24 @@ ht-degree: 0%
 
 ### API更新
 
+_2026年5月28日_
+
+<!-- v1.2 -->
+
+![修复](../assets/fix.svg) **完整的导航树** — 当路径中存在未标记的中间节点时，已标记的后代类别现在正确地包含在系列筛选的`navigation`树中。此修复程序可确保购物者在导航中看到所有相关类别，从而更轻松地浏览和发现商品。
+<!--DATA-7183-->
+
+![修复](../assets/fix.svg) **在`categoryTree`请求中处理空概要** — 修复了[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查询在`slugs`参数包含空字符串时返回内部服务器错误的问题。现在会忽略空概要，因此存储前端和集成可以继续解析类别数据，而不会请求失败。
+<!--DATA-7184-->
+
+![Fix](../assets/fix.svg) **`searchCategory`请求返回不区分大小写、按字母顺序排列的结果**— `searchCategory`查询现在按字母顺序排列搜索结果，不区分大小写，确保排序一致且可预测。如果名称在其他方面相同，则前缀较短的类别首先出现。
+<!--COMOPT-2142-->
+
 _2026年5月4日_
 
 <!--v1.53-->
 
-店面产品价格现在显示所有产品类型的正确货币代码（例如，美元）。 以前，某些产品显示`NONE`而不是预期的货币，从而导致缺少价格。
+**正确的货币显示** — 店面产品价格现在显示所有产品类型的正确货币代码（例如，USD）。 以前，某些产品显示`NONE`而不是预期的货币，从而导致缺少价格。
 
 <!--DATA-7115-->
 
