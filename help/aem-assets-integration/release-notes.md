@@ -3,9 +3,9 @@ title: AEM Assets集成发行说明
 description: 有关所有AEM Assets集成版本的信息，请参阅发行说明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
+source-git-commit: cf623b835d5590b32f1425c4aab25efa52b50498
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,14 @@ _2025年2月11日_
 ![新问题](../assets/new.svg)现在，商家可以同步产品和类别的图像。
 
 +++
+
+## v1.3.7
+
+_2026年6月2日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![新问题](../assets/new.svg)<!-- Issue ACAP-1246 --> Commerce管理员包括一个以资产为中心的[!UICONTROL Sync Status]列表，用于按资产属性而不是产品关联来搜索、筛选、排序和查看同步的AEM Assets。 查看[查看AEM Assets同步状态](get-started/sync-status.md){target=_blank}。
 
 ## v1.3.6
 
