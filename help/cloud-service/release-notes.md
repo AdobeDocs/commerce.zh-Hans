@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
+source-git-commit: 9e4bf260a145815f97a69251005309edb480ae11
 workflow-type: tm+mt
-source-wordcount: 4189
+source-wordcount: 4182
 ht-degree: 0%
 
 ---
@@ -44,17 +44,17 @@ ht-degree: 0%
 
 ## 2026年6月 — 发行说#1 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生产]{type=Neutral tooltip="列出的项目当前在生产环境中可用。"}
 
-[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-以下项目将于2026年6月4日发布到生产环境。
+以下项目已于2026年6月4日发布到生产环境。
 
 >[!BEGINSHADEBOX]
 
 ### 在管理员中添加和编辑自定义优惠券代码
 
-商家现在可以直接从手动购物车价格规则上的[!DNL Commerce Admin]创建和编辑自定义优惠券代码。 编辑购物车价格规则时，[!UICONTROL **管理优惠券代码**]&#x200B;部分中有新的&#x200B;[!UICONTROL **添加自定义优惠券**]&#x200B;按钮可用。<!-- CCSAAS-4508 -->
+商家现在可以直接从[!DNL Commerce Admin]手动购物车价格规则上[创建和编辑自定义优惠券代码](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon#method-3-custom-coupon-codes)。 编辑购物车价格规则时，[!UICONTROL **管理优惠券代码**]&#x200B;部分中有新的&#x200B;[!UICONTROL **添加自定义优惠券**]&#x200B;按钮可用。<!-- CCSAAS-4508 -->
 
 ### 使用默认承运人和自定义承运人跟踪发运
 
