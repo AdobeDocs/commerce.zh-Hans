@@ -4,10 +4,10 @@ breadcrumb-title: '[!DNL Data Export]'
 user-guide-description: 本指南提供了有关Adobe Commerce SaaS服务使用 [!DNL Data Export] 扩展的详细信息。
 role: Admin
 feature: Services
-source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
+source-git-commit: 0a6f579740176399f66686472ed28db10c390615
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 4%
+source-wordcount: '96'
+ht-degree: 2%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 4%
 
 - [指南概述](overview.md)
 - [数据同步](data-synchronization.md)
+- [馈电锁定机构](feed-lock-mechanism.md)
 - 导出计划和性能 {#performance}
    - [估计数据量及传输时间](estimate-data-volume-sync-time.md)
    - [提高导出性能](customize-export-processing.md)
@@ -28,4 +29,4 @@ ht-degree: 4%
    - [动态添加产品属性](add-attribute-dynamically.md)
    - [添加税分类、属性集和库存元数据](add-tax-attribute-set-inventory-attributes.md)
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
