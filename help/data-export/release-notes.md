@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d35a3ad39c504c5c6eb1073737babae252a3127d
+source-git-commit: f472cadb124207b04b158b410b7fe1db8f5a9f7d
 workflow-type: tm+mt
-source-wordcount: 2818
+source-wordcount: 2855
 ht-degree: 0%
 
 ---
@@ -40,6 +40,13 @@ ht-degree: 0%
 >SaaS数据导出扩展是随“实时搜索”、“产品推荐”和“目录服务”一起自动安装的模块的集合。 您可以使用编辑器检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 2026版
+
+### 103.4.27发行版
+
+_2026年6月4日_
+
+![修复](../assets/fix.svg) **并行目录更新后捆绑产品保持可见** — 修复了在同时更新可配置和捆绑产品时捆绑产品未出现在店面的问题。将`magento/module-data-exporter`升级到版本103.4.27后，将自动计划重新同步产品馈送，以更正[!DNL Catalog Service]、[!DNL Live Search]和其他连接的Commerce服务中现有的捆绑包数据不一致。
+<!--MDEE-1379-->
 
 ### 103.4.26发行版
 
