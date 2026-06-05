@@ -1,7 +1,7 @@
 ---
-source-git-commit: dcb3300c80fb74d597cee66e981acb426490d34b
+source-git-commit: 61e34c6fb4a004789bffa43c5b9356ad4edc685e
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1182'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,80 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年6月3日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">提交</a></td>
+    </tr>
+    <tr>
+      <td><p>为SaaS数据导出添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/feed-lock-mechanism">信息源锁定机制</a>，以说明信息源锁定如何防止并发同步冲突，以及如何解释Commerce数据导出日志(<code>commerce-data-export.log</code>)中包含的正常跳过消息。</p>
+</td>
+      <td>
+        新主题
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/cb045b490482649a65bac9d763062700a90e9ecd">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年6月2日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Commerce管理员添加了一个以资产为中心的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/sync-status">同步状态</a>列表，用于按资产属性搜索、筛选和排除已同步的AEM Assets。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1cb3a063d9c4595220ca431356d34e6cbe8ea33">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年6月1日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/3e5f1a5366cb57cbdd1ed3f5721a82cd0c5c5271">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年5月28日
 
@@ -321,80 +395,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7845129c055619e09fbf7c5f860795be6bf81533">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月2日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/recommendations/filters">推荐筛选器</a>，其中包含价格和产品筛选器过程、用于筛选和显示价格的基于价格手册的最终价格行为，以及筛选器产品UI的新屏幕截图。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d67df3c05f1202e361d0c8972d6f1bf7a5b8854">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月1日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/configure/payments-home">Payment Services主页</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/financial-reports/reporting">报表</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/get-started/onboard">载入概述</a>，其中包含SaaS/ACCS屏幕截图和UI指南（载入横幅、以交易为中心的主页、交易网格）。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/79c71b55e463d7e9570fe67b664b4e77a0d741f7">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了4月生产<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a28d4b467dc51f70509ab19dbdbaf2cd3f59a208">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月31日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>使用最新的沙盒部署更新Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4a60783dbed189475bcd0090c949cd76b0566f54">提交</a></td>
     </tr>
   </tbody>
 </table>
