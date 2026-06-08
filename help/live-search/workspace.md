@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 2317
+source-wordcount: 2318
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
 | [搜索促销](rules.md) | 使用触发计划操作的逻辑规则塑造搜索体验。 提升、隐藏、固定或隐藏产品以校准搜索结果来支持您的业务目标。 |
 | [类别促销](category-merch.md) | 在类别级别应用规则和智能促销。 |
 | [GraphQL](graphql.md) | 登录到商店管理员的开发人员可以使用实际目录数据编写和测试查询。 要了解更多信息，请转到[!DNL Live Search]开发人员文档中的[GraphQL概述](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)。 |
-| [设置](settings.md) | 确定如何在店面中按价格范围对价格方面值进行分组并设置索引语言。 |
+| [设置](settings.md) | 管理语义搜索（默认情况下为[!DNL Adobe Commerce as a Cloud Service]启用），为店面配置价格方面分组，并设置索引语言。 |
 
 ## 将属性设置为可搜索
 

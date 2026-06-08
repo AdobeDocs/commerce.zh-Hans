@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 1332
+source-wordcount: 1349
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Adobe Commerce Optimizer为不同的环境使用单独的实例，如&#x200B;**�
 | 任务 | 描述 | 链接 |
 |---|---|---|
 | **产品发现** | 配置搜索和筛选 | [促销概述](./merchandising/overview.md) |
+| **搜索设置** | 管理语义搜索（默认启用）和可选调整 | [设置 — 高级搜索](./settings.md#advanced-search)和[语义搜索](./setup/semantic-search.md) |
 | **推荐** | 设置AI支持的产品推荐 | [产品推荐](./merchandising/recommendations/overview.md) |
 | **性能跟踪** | 监测成功量度 | [成功量度](./manage-results/success-metrics.md) |
 

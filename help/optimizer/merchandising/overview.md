@@ -18,9 +18,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 264
+source-wordcount: 237
 ht-degree: 0%
 
 ---
@@ -35,10 +35,8 @@ ht-degree: 0%
 
 通过产品发现，您可以：
 
+* **使用[语义搜索](../setup/semantic-search.md)** — 默认情况下在[设置](../settings.md#advanced-search)中启用，以改善自然语言查询和基于意图的查询的相关性。 无需属性设置或店面变更。
 * **配置[方面](./facets/overview.md)、[促销搜索和类别规则](./rules/overview.md)和[同义词](./synonyms/overview.md)**，以引导购物者以最小的摩擦购买最相关的产品。
-* **创建直观、以目标为导向的搜索体验**，以反映您的促销策略和季节性优先级。
-* **使用AI驱动的动态分面和结果重新排名**&#x200B;根据购物者行为实时调整搜索结果 — 提高参与度和销售量。
-* **确保促销和高优先级项目有效地呈现**，使搜索结果与业务目标保持一致。
 
 ## Recommendations
 
