@@ -3,19 +3,13 @@ title: 设置Live Search
 description: ' [!DNL Live Search] 工作区用于配置、管理和监视搜索性能。'
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
 TQID: https://experienceleague.adobe.com/RQ6BKo7AknERkwrXylYHNAuD-FDxLvG74nU1YvuVgwE
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 2317
+source-wordcount: 2318
 ht-degree: 0%
 
 ---
@@ -41,11 +35,11 @@ ht-degree: 0%
 
 ### 医疗保健客户
 
-如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Live Search]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Live Search]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/general/general#data-services)。
+如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Live Search]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Live Search]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)。
 
 ## 设置范围
 
-最初，所有[!DNL Live Search]设置的[作用域](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)设置为`Default Store View`。 如果[!DNL Commerce]安装包含多个商店视图，请将&#x200B;**范围**&#x200B;设置为应用Facet设置的[商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans)。
+最初，所有[!DNL Live Search]设置的[作用域](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)设置为`Default Store View`。 如果[!DNL Commerce]安装包含多个商店视图，请将&#x200B;**范围**&#x200B;设置为应用Facet设置的[商店视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)。
 
 ## 菜单选项
 
@@ -57,11 +51,11 @@ ht-degree: 0%
 | [搜索促销](rules.md) | 使用触发计划操作的逻辑规则塑造搜索体验。 提升、隐藏、固定或隐藏产品以校准搜索结果来支持您的业务目标。 |
 | [类别促销](category-merch.md) | 在类别级别应用规则和智能促销。 |
 | [GraphQL](graphql.md) | 登录到商店管理员的开发人员可以使用实际目录数据编写和测试查询。 要了解更多信息，请转到[!DNL Live Search]开发人员文档中的[GraphQL概述](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)。 |
-| [设置](settings.md) | 确定如何在店面中按价格范围对价格方面值进行分组并设置索引语言。 |
+| [设置](settings.md) | 管理语义搜索（默认情况下为[!DNL Adobe Commerce as a Cloud Service]启用），为店面配置价格方面分组，并设置索引语言。 |
 
 ## 将属性设置为可搜索
 
-要生成目标明确的结果，请查看[可搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hans) (`searchable=true`)产品属性集。 为确保相关性，请仅在属性包含含义清晰而简洁的内容时才允许搜索属性。 避免使用包含不太精确、长度较长的文本的属性，例如`description`，虽然默认情况下启用了搜索，但可能会降低搜索结果的精度。 例如，如果人员搜索“短裤”，并且有描述包含“短袖”一词的衬衫，则衬衫将包含在搜索结果中。
+要生成目标明确的结果，请查看[可搜索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`)产品属性集。 为确保相关性，请仅在属性包含含义清晰而简洁的内容时才允许搜索属性。 避免使用包含不太精确、长度较长的文本的属性，例如`description`，虽然默认情况下启用了搜索，但可能会降低搜索结果的精度。 例如，如果人员搜索“短裤”，并且有描述包含“短袖”一词的衬衫，则衬衫将包含在搜索结果中。
 
 要允许搜索属性，请完成以下步骤：
 
@@ -69,7 +63,7 @@ ht-degree: 0%
 1. 选择要可搜索的属性，如`color`。
 1. 选择&#x200B;**店面属性**&#x200B;并将&#x200B;**在搜索中使用**&#x200B;设置为`yes`。
 
-[!DNL Live Search]还遵循在Adobe Commerce中设置的产品属性的[权重](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=zh-Hans#weighted-search)。 权重较高的属性在搜索结果中的显示位置将较高。
+[!DNL Live Search]还遵循在Adobe Commerce中设置的产品属性的[权重](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search)。 权重较高的属性在搜索结果中的显示位置将较高。
 
 以下属性始终可搜索：
 
@@ -124,9 +118,9 @@ ht-degree: 0%
 
 #### 实现
 
-1. 在管理员中，[将产品属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)设置为可搜索。
+1. 在管理员中，[将产品属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)设置为可搜索。
 
-   查看可搜索的[属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/attributes-input-types)的列表。
+   查看可搜索的[属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)的列表。
 
 1. 指定该属性的搜索功能，如&#x200B;**Contains**（默认值）或&#x200B;**Starts with**。 您最多可以为&#x200B;**Contains**&#x200B;指定6个要启用的属性，为&#x200B;**Starts with**&#x200B;指定6个要启用的属性。 此外，对于&#x200B;**Contains**&#x200B;索引，字符串长度限制为50个字符或更少。
 
@@ -203,7 +197,7 @@ ht-degree: 0%
 
 ## 默认属性值
 
-以下产品属性具有[店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hans)，这些属性由[!DNL Live Search]使用并默认启用。
+以下产品属性具有[店面属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)，这些属性由[!DNL Live Search]使用并默认启用。
 
 | 属性 | 店面属性 | 属性 |
 |---|---|---|

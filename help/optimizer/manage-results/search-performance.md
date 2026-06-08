@@ -1,23 +1,15 @@
 ---
 title: 搜索性能
 description: “搜索性能”页面可让insight了解购物者使用的搜索词。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
 TQID: https://experienceleague.adobe.com/dbCSRGA-jOSM37O-6THv0ArNZBD0Jsy4ml-1hSiY7YQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 1863
+source-wordcount: 1905
 ht-degree: 0%
 
 ---
@@ -64,6 +56,7 @@ ht-degree: 0%
 有几个关键因素决定了搜索结果的关联性和有效性：
 
 - 结构良好的产品数据确保搜索算法能够有效地将产品与查询相匹配。 低质量的产品数据会导致搜索结果相关性降低。 要直接影响促销策略的成功，请执行以下操作：
+   - 为自然语言和基于意图的匹配配置[语义搜索](../setup/semantic-search.md)。
    - 将正确的[属性设置为可搜索](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)及其相应权重。
    - 确保这些属性中的数据相关。
 - 设计良好的搜索体验与客户建立了信任，并让他们相信自己会找到所需的内容。
@@ -92,6 +85,7 @@ ht-degree: 0%
 
   要降低零结果率，您可以：
 
+   - 确认在“设置”中的&#x200B;**[高级搜索](../settings.md#advanced-search)**&#x200B;选项卡上启用了[语义搜索](../setup/semantic-search.md)。 默认情况下为[!DNL Adobe Commerce Optimizer]客户启用了语义搜索；无需更改店面或开发人员。 索引完成后，结果会更新。
    - 提供替代或相关搜索词，例如[同义词](../merchandising/synonyms/overview.md)，但找不到完全匹配的搜索词。
    - 定期查看零结果查询以确定模式并对产品目录和搜索设置进行必要的调整。
 

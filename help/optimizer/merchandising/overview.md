@@ -2,25 +2,16 @@
 title: 促销概述
 description: 了解 [!DNL Adobe Commerce Optimizer]中的促销功能。
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
 TQID: https://experienceleague.adobe.com/GJ7017EEKg4wd4Wjom5-FrEcfrPbmvwEAJw0AFgGc64
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 264
+source-wordcount: 237
 ht-degree: 0%
 
 ---
@@ -35,10 +26,8 @@ ht-degree: 0%
 
 通过产品发现，您可以：
 
+* **使用[语义搜索](../setup/semantic-search.md)** — 默认情况下在[设置](../settings.md#advanced-search)中启用，以改善自然语言查询和基于意图的查询的相关性。 无需属性设置或店面变更。
 * **配置[方面](./facets/overview.md)、[促销搜索和类别规则](./rules/overview.md)和[同义词](./synonyms/overview.md)**，以引导购物者以最小的摩擦购买最相关的产品。
-* **创建直观、以目标为导向的搜索体验**，以反映您的促销策略和季节性优先级。
-* **使用AI驱动的动态分面和结果重新排名**&#x200B;根据购物者行为实时调整搜索结果 — 提高参与度和销售量。
-* **确保促销和高优先级项目有效地呈现**，使搜索结果与业务目标保持一致。
 
 ## Recommendations
 
