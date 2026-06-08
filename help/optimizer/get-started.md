@@ -6,11 +6,22 @@ recommendations: noCatalog
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 TQID: https://experienceleague.adobe.com/1dcKMjOut1GtiOevvGJECsaU7URFmYg-mQ-m9wi7n4Y
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: dba482e5-29a8-4127-afa2-c4b913512ef8id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: dba482e5-29a8-4127-afa2-c4b913512ef8
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
 source-wordcount: 1349
@@ -167,7 +178,7 @@ Adobe Commerce Optimizer为不同的环境使用单独的实例，如&#x200B;**�
 
 请注意以下关键信息：
 
-- **GraphQL端点** GraphQL端点您的店面使用[促销服务API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=&quot;_blank}从此实例查询目录和促销数据
+- **GraphQL端点** GraphQL端点您的店面使用[促销服务API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=_blank}从此实例查询目录和促销数据
 - **目录端点** REST API端点用于从商业或PIM系统中将产品和价格摄取到Adobe Commerce Optimizer。 查看[数据摄取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
 - **Commerce Optimizer URL**&#x200B;打开[Adobe Commerce Optimizer Studio](overview.md)管理UI以配置和管理目录视图、策略和促销。
 - **实例ID**：此Adobe Commerce Optimizer实例的唯一标识符（租户ID），由店面、API和工具用于连接到正确的环境。
