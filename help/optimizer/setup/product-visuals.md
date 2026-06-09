@@ -52,7 +52,7 @@ AEM Assets中的图像将作为目录层摄取，并采用以下源配置：
 
 ## 先决条件
 
-在启用产品可视化图表之前，请确保您满足Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)的[先决条件。
+在启用产品可视化图表之前，请确保您满足Commerce Optimizer[&#128279;](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)的先决条件。
 
 ## 设置
 

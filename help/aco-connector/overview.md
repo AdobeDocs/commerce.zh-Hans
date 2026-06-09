@@ -4,11 +4,23 @@ description: 了解如何将Commerce云或内部部署项目中的数据连接�
 feature: Personalization, Integration, Configuration
 badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 TQID: https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: b954ce1acf338978acad4fbb2ec5e01db174bbf9
 workflow-type: tm+mt
 source-wordcount: 1167
@@ -96,7 +108,7 @@ Commerce Optimizer摄取数据后，您可以配置：
 
 - 针对初始迁移或大型结构更改的&#x200B;**完整目录同步**
 - 当产品或价格发生变化时，为持续更新进行&#x200B;**增量同步**
-- 针对目标馈送重新同步命令&#x200B;****
+- 针对目标馈送重新同步命令&#x200B;**&#x200B;**
 
 Adobe Commerce Optimizer Connector提供以下源：
 
