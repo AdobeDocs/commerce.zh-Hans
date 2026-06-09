@@ -3,10 +3,10 @@ title: AEM Assets的产品可视化图表
 description: 了解如何将AEM Assets用于 [!DNL Adobe Commerce Optimizer]中的产品图像。
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目(Adobe管理的SaaS基础架构)。"
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 * **从AEM Assets**：批准、拒绝或删除资源时，事件将通过Adobe管道传输到Assets集成服务。 该服务使用`match-by-SKU`或自定义匹配器策略将资产与产品匹配，然后将`product-asset`映射发送到[!DNL Commerce Optimizer]，在产品中，这些映射存储为产品层。
 
-* **从ACO**：在[!DNL Commerce Optimizer]中更新产品时，事件将通过Adobe管道传输到Assets集成服务。 该服务会将任何匹配的资产映射同步回ACO。
+* **从[!DNL Commerce Optimizer]**：在[!DNL Commerce Optimizer]中更新产品时，事件将通过Adobe管道传输到Assets集成服务。 该服务将任何匹配的资产映射同步回[!DNL Commerce Optimizer]。
 
 更新的图像可通过店面API（目录服务、实时搜索、产品推荐）获得。
 
@@ -52,11 +52,11 @@ AEM Assets中的图像将作为目录层摄取，并采用以下源配置：
 
 ## 先决条件
 
-在启用产品可视化图表之前，请确保您满足Commerce Optimizer[的](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)先决条件。
+在启用产品可视化图表之前，请确保您满足Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)的[先决条件。
 
 ## 设置
 
-要启用集成，请[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，其中包含您的[!DNL Commerce Optimizer]和AEM Assets详细信息。 Adobe支持配置集成并在Assets集成服务中注册您的租户。
+要启用集成，请[创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，其中包含您的[!DNL Commerce Optimizer]和AEM Assets详细信息。 Adobe支持配置集成并在Assets集成服务中注册您的租户。
 
 有关入门信息，请参阅[为Commerce Optimizer配置AEM Assets](../../aem-assets-integration/get-started/configure-aco.md)。
 

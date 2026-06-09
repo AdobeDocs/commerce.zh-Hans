@@ -2,9 +2,9 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]发行说明'
 description: Adobe Commerce的 [!DNL Adobe Commerce Optimizer Connector] 的最新发行信息。
 feature: Services, Catalog Service, Release Notes
-source-git-commit: e0f7b9b860f8dce18b357d479cbc021f32970c18
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 _2026年5月6日_
 
 ![修复](../assets/fix.svg) **改进的连接器配置说明** — 已更新Commerce管理员中的Commerce Optimizer配置页面，以链接到&#x200B;_Adobe Commerce连接器指南_。 <!--COMOPT-1922-->
-![修复](../assets/fix.svg) **连接器元数据增强** — 现在，ACO连接器在元数据标头中包含其已安装的版本。 此改进使团队能够快速识别在疑难解答或支持服务期间使用的连接器版本。<!--MDEE-1323-->
+![修复](../assets/fix.svg) **连接器元数据增强**-Adobe Commerce Optimizer连接器现在在元数据标头中包含其已安装的版本。 此改进使团队能够快速识别在疑难解答或支持服务期间使用的连接器版本。<!--MDEE-1323-->
 
 ### 1.0.12发行版
 

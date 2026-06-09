@@ -2,28 +2,16 @@
 title: Adobe Commerce Optimizer连接器
 description: 了解如何将Commerce云或内部部署项目中的数据连接到Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 TQID: https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: b954ce1acf338978acad4fbb2ec5e01db174bbf9
 workflow-type: tm+mt
-source-wordcount: 1177
+source-wordcount: 1167
 ht-degree: 0%
 
 ---
@@ -52,7 +40,7 @@ Commerce保留您的产品、价格和目录结构记录系统。 Commerce Optim
 
 下图说明了连接器的端到端架构，从Adobe Commerce到Commerce Optimizer，再到店面和结账系统。
 
-![Commerce Optimizer Connector端到端架构图Commerce](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
+![Adobe Commerce Optimizer Connector端到端架构图](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
 
 在此架构中：
 
@@ -89,31 +77,18 @@ Commerce Optimizer摄取数据后，您可以配置：
 
 ### 初始设置和配置 {#initial-setup}
 
-1. 在Adobe Commerce **中使用编辑器**&#x200B;安装连接器包：
 
-   `composer require adobe-commerce/commerce-data-export-aco-adapter`
+设置和配置的高层步骤：
 
-1. **在Commerce Admin中或通过CLI配置身份验证和环境详细信息**：
+1. 安装适用于Adobe Commerce的连接器软件包。
 
-   ```terminal
-   bin/magento aco:config:init \
-     --org_id=<your-org> \
-     --tenant_id=<your-tenant> \
-     --client_id=<your-client-id> \
-     --client_secret=<your-secret> \
-     --region=na1 \
-     --type=production
-   ```
+1. 配置身份验证和环境详细信息。
 
-1. **将Commerce范围映射到Commerce Optimizer：**
+1. 将Commerce范围映射到Commerce Optimizer。
 
-   - 确认哪些网站和商店视图必须位于范围内
-   - 确保客户组和价格规则按预期建模
+1. 检验连通性。
 
-1. **验证连接：**
-
-   - 运行测试同步并确认Commerce Optimizer中是否显示目录来源、价格手册和初始产品
-   - 使用Commerce中的“数据馈送同步状态”页面和Commerce Optimizer中的“数据同步”仪表板进行验证
+有关详细说明，请参阅&#x200B;_开始使用_&#x200B;指南中的[配置步骤](./get-started.md#configuration-steps)。
 
 ### 正在进行的数据同步 {#ongoing-sync}
 
@@ -121,11 +96,16 @@ Commerce Optimizer摄取数据后，您可以配置：
 
 - 针对初始迁移或大型结构更改的&#x200B;**完整目录同步**
 - 当产品或价格发生变化时，为持续更新进行&#x200B;**增量同步**
-- 针对目标馈送（包括截止到v1.0.12的类别）的&#x200B;**重新同步命令**：
+- 针对目标馈送重新同步命令&#x200B;****
 
-   - `bin/magento saas:resync --feed=products`
-   - `bin/magento saas:resync --feed=prices`
-   - `bin/magento saas:resync --feed=categories`
+Adobe Commerce Optimizer Connector提供以下源：
+
+- `products` — 产品数据
+- `productAttributes` — 产品属性的元数据
+- `priceBooks` — 价格手册
+- `prices` — 产品价格
+- `categories` — 类别数据
+有关使用Commerce命令行界面(CLI)进行重新同步操作的详细信息，请参阅[CLI resync命令](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}。
 
 ### 配置推销和店面 {#merchandising-storefronts}
 
