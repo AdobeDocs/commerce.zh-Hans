@@ -19,7 +19,7 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 816
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**+**&#x200B;添加产品。
 
-1. 选择要将管理员添加到的现有Commerce Optimizer实例。 Commerce Optimizer实例使用以下格式： `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`。
+1. 选择要将管理员添加到的现有Commerce Optimizer实例。 Commerce Optimizer实例使用以下格式： `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`。
 
 1. 选择产品配置文件。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 1. 选择&#x200B;[!UICONTROL **Adobe Commerce**]&#x200B;产品。
 
-1. 如果要将用户添加到Commerce Cloud Manager界面（用户可以在该界面中创建和管理Commerce Optimizer实例），请选择Manager产品，或者选择要将用户添加到的现有Commerce Optimizer实例。 Commerce Optimizer实例使用以下格式： `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`。
+1. 如果要将用户添加到Commerce Cloud Manager界面（用户可以在该界面中创建和管理Commerce Optimizer实例），请选择Manager产品，或者选择要将用户添加到的现有Commerce Optimizer实例。 Commerce Optimizer实例使用以下格式： `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`。
 
 1. 选择&#x200B;[!UICONTROL **用户**]&#x200B;选项卡，然后单击&#x200B;[!UICONTROL **添加用户**]。
 

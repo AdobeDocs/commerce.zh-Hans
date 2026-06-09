@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f472cadb124207b04b158b410b7fe1db8f5a9f7d
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 2855
+source-wordcount: 2857
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ _2026年4月13日_
 - 修复了在删除期间导出服务不可用时，无法从连接的Commerce服务中正确删除已删除产品的问题。 现在，重试和重新同步操作可确保SaaS中正确反映已删除的产品。<!--MDEE-1319-->
 - 目录实体（产品和类别）现在可以导出到连接的Commerce服务，即使管理员商店视图缺少属性值也是如此。 这提高了与第三方扩展的兼容性，并减少了因缺少默认值导致的导出错误。<!--MDEE-1333-->
 
-![修复](../assets/fix.svg)解决了“数据馈送同步状态”页面上的错误，该错误可能会在馈送记录包含意外数据或缺少数据时发生。 系统现在可以顺利处理此类情况，从而提高稳定性并防止崩溃。 如果您使用Adobe Commerce Optimizer Connector将数据从Adobe Commerce同步到Adobe Commerce Optimizer，请更新到[ACO Connector版本1.0.11](https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/release-notes)或更高版本，以便进行修复。<!--MDEE-1327-->
+![修复](../assets/fix.svg)解决了“数据馈送同步状态”页面上的错误，该错误可能会在馈送记录包含意外数据或缺少数据时发生。 系统现在可以顺利处理此类情况，从而提高稳定性并防止崩溃。 如果您使用Adobe Commerce Optimizer Connector将数据从Adobe Commerce同步到Adobe Commerce Optimizer，请更新到[Adobe Commerce Optimizer Connector版本1.0.11](https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/release-notes)或更高版本，以便进行修复。<!--MDEE-1327-->
 
 ### 103.4.21发行版
 

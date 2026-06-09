@@ -22,9 +22,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 1177
+source-wordcount: 1183
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 1. **数据提取** — 对您的Salesforce Commerce B2C实例进行身份验证，并使用自定义SCAPI提取目录数据。
 1. **数据转换** — 转换产品数据以匹配[!DNL Commerce Optimizer]数据模型和架构要求。
-1. **数据摄取** — 使用ACO TypeScript SDK将转换后的数据安全地传输到[!DNL Commerce Optimizer]。
+1. **数据摄取** — 使用Commerce Optimizer TypeScript SDK将转换后的数据安全地传输到[!DNL Commerce Optimizer]。
 1. **店面集成** — 同步数据通过[!DNL Commerce Optimizer]个API可用于店面体验。
 
 下图说明了集成的高级数据流：
@@ -110,7 +110,7 @@ ht-degree: 0%
 
 [!DNL Commerce Optimizer SFCC Connector]包含几个关键组件：
 
-* **ACO SFCC Starter Kit App Builder应用程序** — 提供无服务器功能，用于处理SFCC与[!DNL Adobe Commerce Optimizer]之间的数据同步。
+* **Commerce Optimizer SFCC Starter Kit App Builder应用程序** — 提供无服务器功能，用于处理SFCC与[!DNL Adobe Commerce Optimizer]之间的数据同步。
 * **自定义SFCC墨盒** — 使用数据提取所需的API扩展Salesforce Commerce Cloud实例的所需墨盒。
 * **管理UI** — 用于监视同步状态和管理连接器操作的Web界面。
 
@@ -142,7 +142,7 @@ ht-degree: 0%
 
 ## 监控和管理
 
-安装和配置后，[!DNL Commerce Optimizer SFCC Connector]即可从[!DNL SFCC to ACO Sync Panel]提供全面的监视和管理功能：
+安装和配置后，[!DNL Commerce Optimizer SFCC Connector]即可从[!DNL SFCC to Commerce Optimizer Sync Panel]提供全面的监视和管理功能：
 
 ![Salesforce Commerce Connector管理UI](../assets/sfcc_management_ui.png){width="700" zoomable="yes"}
 
@@ -160,12 +160,12 @@ ht-degree: 0%
 
 [!DNL Commerce Optimizer SFCC Connector]是开源的，可以自定义。 关键存储库包括：
 
-* **[ACO SFCC Starter Kit](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** — 主连接器应用程序和文档。
-* **[ACO SFCC墨盒](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - API集成所需的SFCC墨盒。
-* **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** — 用于[!DNL Adobe Commerce Optimizer]集成的SDK。
+* **[Commerce Optimizer SFCC Starter Kit](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** — 主连接器应用程序和文档。
+* **[Commerce Optimizer SFCC墨盒](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - API集成所需的SFCC墨盒。
+* **[Commerce Optimizer TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** — 用于[!DNL Adobe Commerce Optimizer]集成的SDK。
 
 这些存储库提供了用于实施和自定义连接器的完整源代码、详细文档和示例。
 
 ## 后续步骤
 
-准备好将您的Salesforce Commerce Cloud数据与[!DNL Adobe Commerce Optimizer]集成了吗？ 首先查看[ACO SFCC Starter Kit存储库](https://github.com/adobe-commerce/aco-sfcc-starter-kit)中的详细实施指南，并确保您具备必要的先决条件。
+准备好将您的Salesforce Commerce Cloud数据与[!DNL Adobe Commerce Optimizer]集成了吗？ 首先查看[Commerce Optimizer SFCC Starter Kit存储库](https://github.com/adobe-commerce/aco-sfcc-starter-kit)中的详细实施指南，并确保已具备必要的先决条件。
