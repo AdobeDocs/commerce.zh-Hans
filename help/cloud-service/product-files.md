@@ -4,17 +4,20 @@ description: 了解如何使用 [!DNL Adobe Commerce as a Cloud Service]中的�
 feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+TQID: 'https://experienceleague.adobe.com/fFbsXGO54L1lSuQULqfP7A-BJKSYggdt7cy-GDvaSzU'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: 753
 ht-degree: 0%
 
 ---
 
 # 将文件添加到产品
 
-[!DNL Adobe Commerce as a Cloud Service]支持“文件”[产品属性输入类型](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"}，允许商家将文件（如PDF、手册、证书和数据表）直接附加到产品。 文件存储在Amazon S3媒体存储中，可通过使用GraphQL的店面或通过REST API的集成访问。
+[!DNL Adobe Commerce as a Cloud Service]支持“文件”[产品属性输入类型](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"}，允许商家将文件（如PDF、手册、证书和数据表）直接附加到产品。 文件存储在Amazon S3媒体存储中，可通过使用GraphQL的店面或通过REST API的集成访问。
 
 有三种方法可以将文件上传到产品文件属性：
 
@@ -26,15 +29,15 @@ ht-degree: 0%
 
 在上载文件之前，必须创建一个文件属性并将其分配给属性集。
 
-* [创建文件属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} — 将&#x200B;**[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;设置为&#x200B;**[!UICONTROL File]**。
+* [创建文件属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} — 将&#x200B;**[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;设置为&#x200B;**[!UICONTROL File]**。
 
-* [将属性分配给属性集](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} — 将新的文件属性拖到所需的组中。
+* [将属性分配给属性集](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} — 将新的文件属性拖到所需的组中。
 
-* 在[产品文件属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/catalog/product-file-attributes)配置中配置允许的文件类型和大小。
+* 在[产品文件属性](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes)配置中配置允许的文件类型和大小。
 
 ## 通过管理员上传文件
 
-在您[创建文件属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"}并将其分配给属性集后，可以直接从产品编辑页面上传文件。
+在您[创建文件属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"}并将其分配给属性集后，可以直接从产品编辑页面上传文件。
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Catalog]** > **[!UICONTROL Products]**。
 
@@ -54,14 +57,14 @@ ht-degree: 0%
 
 此过程包括四个步骤：
 
-1. 使用文件名和`POST V1/media/initiate-upload`调用产品文件属性的`media_resource_type`。
+1. 使用文件名和`media_resource_type`调用产品文件属性的`POST V1/media/initiate-upload`。
 1. 使用返回的预签名URL直接`PUT`将文件发送到Amazon S3。
 1. 调用`POST V1/media/finish-upload`确认上传。
 1. 通过`PUT /V1/products/{sku}`将返回的密钥分配给产品的文件属性，并将密钥作为[自定义属性](https://developer.adobe.com/commerce/webapi/rest/modules/custom-attributes/)值传递。
 
 ## 通过产品导入上传
 
-您可以使用[导入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理员导入UI将文件批量附加到产品。 产品文件属性仅支持从外部URL导入，它遵循与产品图像导入[的](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}方法2相同的方法。 Commerce从提供的URL下载文件，并将其保存到S3媒体存储中。
+您可以使用[导入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理员导入UI将文件批量附加到产品。 产品文件属性仅支持从外部URL导入，它遵循与产品图像导入](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的[方法2相同的方法。 Commerce从提供的URL下载文件，并将其保存到S3媒体存储中。
 
 >[!NOTE]
 >
@@ -85,11 +88,11 @@ sku,name,additional_attributes
 ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 ```
 
-在这两种情况下，URL都必须可公开访问，并且文件扩展名和大小必须符合[配置的限制](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}。
+在这两种情况下，URL都必须可公开访问，并且文件扩展名和大小必须符合[配置的限制](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}。
 
 ## 通过GraphQL检索文件
 
-在[!DNL Adobe Commerce as a Cloud Service]中，[目录服务GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"}端点提供产品数据。 文件属性显示在`attributes`的`ProductView`字段中，其中`value`包含文件的完整公共URL：
+在[!DNL Adobe Commerce as a Cloud Service]中，[目录服务GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"}端点提供产品数据。 文件属性显示在`ProductView`的`attributes`字段中，其中`value`包含文件的完整公共URL：
 
 ```graphql
 {

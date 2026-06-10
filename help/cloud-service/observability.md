@@ -4,10 +4,15 @@ description: 了解可用于 [!DNL Adobe Commerce as a Cloud Service]的可观�
 feature: Cloud, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
-source-git-commit: 3c10ecdea3d06295013c9c6e2d6869afd750a0b9
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+autotag-review: '2026-06-09T15:41:54.613Z'
+TQID: 'https://experienceleague.adobe.com/jTPNVSy6cP8v-pV-3pyqgJX-PAzFFhOUf9SjQIMeBns'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: 607
 ht-degree: 0%
 
 ---
@@ -74,11 +79,11 @@ Adobe Commerce通过OpenTelemetry支持以下可观察性工具：
 
 ### CDN和实时用户监控
 
-[代理真实用户监控(RUM)](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=zh-Hans#proxy-rum-through-the-origin-to-avoid-a-tls-handshake)通过您的CDN源收集数据，以消除额外的TLS握手并改进前端性能测量。
+[代理真实用户监控(RUM)](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/#proxy-rum-through-the-origin-to-avoid-a-tls-handshake)通过您的CDN源收集数据，以消除额外的TLS握手并改进前端性能测量。
 
 ## 可观察性视频
 
 以下视频概括介绍了[!DNL Adobe Commerce as a Cloud Service]中的可观察性产品：
 
-* [App Builder可观察性视频](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
-* [API Mesh视频](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}
+* [App Builder可观察性视频](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
+* [API Mesh视频](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}

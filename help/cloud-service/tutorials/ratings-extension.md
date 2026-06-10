@@ -7,19 +7,13 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-TQID: https://experienceleague.adobe.com/FozTiUWpL6Ab2eqbbf3nhL-faFHdwBIFOgAkvGe5jXQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+TQID: 'https://experienceleague.adobe.com/vqVQg6XUHNyrNMh5vJR13SgswBMj9eFXMQ7Cow-FLHU'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: ce44533e-8ec8-4e11-a9e9-78b0fe561832id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
 source-wordcount: 1738
 ht-degree: 0%
@@ -216,7 +210,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
 在开始店面集成之前，请验证您是否具备以下条件：
 
 * 店面项目已连接到您的[!DNL Commerce]实例
-* 使用CLI安装的Commerce storefront AI工具[&#128279;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+* 使用CLI安装的Commerce storefront AI工具[](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 
 ### 设置店面工作区
 
@@ -315,7 +309,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
    您应在开发环境和浏览器中看到以下更改：
 
    * 系统会自动创建产品评级组件。
-   * 组件使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=zh-Hans)集成到PDP中，或者作为独立块，具体取决于选择的体系结构。
+   * 组件使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots)集成到PDP中，或者作为独立块，具体取决于选择的体系结构。
    * 星标以适当的填充比例显示，填充比例基于API中的评级值。
 
    ![产品详细信息页面，显示集成在产品标题下方的星级评分](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
