@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 583
+source-wordcount: 605
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 # 使用Commerce CLI同步馈送
 
 `magento/saas-export`程序包中的`saas:resync`命令允许您管理Adobe Commerce SaaS服务的数据同步。
+
+>[!NOTE]
+>
+>`saas:resync`命令还适用于[!DNL Adobe Commerce Optimizer Connector]源，如`products`、`categories`和`priceBooks`。 有关连接器馈送和索引器名称的完整列表，请参阅[支持的馈送](../aco-connector/reference/connector-reference.md#supported-feeds)。
 
 Adobe不建议定期使用`saas:resync`命令。 使用该命令的典型情况包括：
 

@@ -18,9 +18,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 1037
+source-wordcount: 1104
 ht-degree: 0%
 
 ---
@@ -41,6 +41,10 @@ SaaS数据导出流的主要组件包括：
 - SaaS数据导出模块，用于从Adobe Commerce收集馈送数据、汇编馈送项目、侦听更新并保留馈送状态。
 - SaaS导出模块，用于导出数据、配置路由并将馈送发布到连接的服务。
 - Adobe Commerce服务可管理数据摄取过程，以验证传入馈送并将更新保留到连接的服务。
+
+>[!NOTE]
+>
+>对于[!DNL Adobe Commerce Optimizer Connector]部署，[!DNL SaaS Data Export]处理实体更改检测和馈送程序集。 然后，连接器将馈送映射到[!DNL Catalog Data Ingestion API]格式并提交给[!DNL Adobe Commerce Optimizer]。 有关范围控制、提交和错误处理，请参阅[连接器同步管道](../aco-connector/connector-sync-pipeline.md)。
 
 >[!NOTE]
 >
@@ -79,6 +83,8 @@ SaaS数据导出支持三种同步类型：完全同步、部分同步和重试�
 
 这些作业每分钟运行一次。
 
+为[!DNL Adobe Commerce Optimizer Connector]馈送运行相同的部分同步cron作业。 有关连接器特定的提交和错误处理，请参阅[连接器同步管道](../aco-connector/connector-sync-pipeline.md)。
+
 为了使部分同步正常工作，Commerce应用程序需要以下配置：
 
 - [通过cron作业启用任务计划](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=zh-Hans)
@@ -106,7 +112,7 @@ SaaS数据导出支持三种同步类型：完全同步、部分同步和重试�
 
 >[!NOTE]
 >
->只有安装了Live Search、产品推荐或目录服务，数据管理功能板才可用。 如果您拥有这些服务或安装了[Adobe Commerce Optimizer连接器](../aco-connector/overview.md)，则数据馈送同步状态仪表板可用。
+>只有安装了Live Search、产品推荐或目录服务，数据管理功能板才可用。 如果您拥有这些服务或安装了[Adobe Commerce Optimizer连接器](../aco-connector/overview.md)，则数据馈送同步状态仪表板可用。 有关Optimizer连接器管道行为（包括范围控制和提交错误），请参阅[连接器同步管道](../aco-connector/connector-sync-pipeline.md)。
 
 ### 验证Commerce应用程序配置
 

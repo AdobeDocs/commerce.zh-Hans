@@ -15,20 +15,20 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 569
+source-wordcount: 571
 ht-degree: 0%
 
 ---
 
 # [!DNL SaaS Data Export] 指南
 
-[!DNL SaaS data export]在Adobe Commerce实例和连接的Commerce服务之间同步数据。 将Live Search、产品推荐或目录服务添加到Adobe Commerce安装时，将自动安装[!DNL Data export]扩展。
+[!DNL SaaS data export]在Adobe Commerce实例和连接的Commerce服务之间同步数据。 将Live Search、产品推荐、目录服务或[!DNL Adobe Commerce Optimizer Connector]添加到Adobe Commerce安装时，将自动安装[!DNL Data export]扩展。
 
 >[!NOTE]
 >
->如果安装Adobe Commerce Optimizer Connector，则会使用相同的Data Export扩展，通过可组合目录数据模型(Composable Catalog Data Model， CCDM)将目录和定价馈送发送到Adobe Commerce Optimizer。 有关架构和配置详细信息，请参阅[Adobe Commerce Optimizer连接器指南](../aco-connector/overview.md)。
+>如果您安装[!DNL Adobe Commerce Optimizer Connector]，则同一[!DNL Data Export]扩展将从[!DNL Adobe Commerce]中收集目录和定价源。 然后，连接器使用可组合目录数据模型(CCDM)将这些馈送映射并提交给[!DNL Adobe Commerce Optimizer]。 有关设置和架构，请参阅[[!DNL Adobe Commerce Optimizer Connector] 概述](../aco-connector/overview.md)；有关导出后的同步行为，请参阅[连接器同步管道](../aco-connector/connector-sync-pipeline.md)。
 
 SaaS数据导出收集和导出各种类型的数据，称为&#x200B;_馈送_，用于聚合特定类型的信息。 根据安装的Commerce服务，SaaS数据导出源包括：
 
