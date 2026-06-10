@@ -5,11 +5,25 @@ feature: Integration, Storefront, Configuration
 badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: c32adafa-ed01-4b31-997e-2413013911b0id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56id: dad884f1-e840-49a1-970e-2f965bdbc410
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: e0eb8757-182f-49f3-94a4-1587d16f5094id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+  - id: dad884f1-e840-49a1-970e-2f965bdbc410
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
 workflow-type: tm+mt
 source-wordcount: 1037
@@ -86,7 +100,7 @@ ht-degree: 0%
 
 - 针对初始迁移或大型结构更改的&#x200B;**完整目录同步**
 - 当产品或价格发生变化时，为持续更新进行&#x200B;**增量同步**
-- 针对目标馈送重新同步命令&#x200B;****
+- 针对目标馈送重新同步命令&#x200B;**&#x200B;**
 
 以下源可用于[!DNL Adobe Commerce Optimizer Connector]：
 
@@ -125,7 +139,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关第三方集成的示例，请参阅针对 [!DNL Adobe Commerce Optimizer]](../optimizer/developer/salesforce-connector.md)的[Salesforce Commerce Connector 。
+   >有关第三方集成的示例，请参阅针对 [!DNL Adobe Commerce Optimizer][&#128279;](../optimizer/developer/salesforce-connector.md)的Salesforce Commerce Connector 。
 
 1. **在您的现有平台上维护签出**：
 
