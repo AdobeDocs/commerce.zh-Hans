@@ -4,21 +4,15 @@ description: ' [!DNL Adobe Commerce Optimizer]的每月发行信息，包括用�
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1319
 ht-degree: 0%
 
 ---
@@ -31,6 +25,22 @@ ht-degree: 0%
 * 更新了用于storefront目录数据检索的[数据摄取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和[GraphQL API](https://developer.adobe.com/commerce/services/reference/graphql/)。
 
   {{aco-api-updates-and-dropins}}
+
+## 2026年6月
+
+>[!BEGINSHADEBOX]
+
+### 语义搜索
+
+[!DNL Adobe Commerce Optimizer]现在支持&#x200B;**[!UICONTROL Settings]**&#x200B;中&#x200B;[**高级搜索**](./settings.md#advanced-search)&#x200B;选项卡上的&#x200B;**[语义搜索]**。 语义搜索使用人工智能根据含义和上下文与关键字搜索匹配产品，从而减少用于自然语言查询的空搜索页面。 对于符合条件的英语目录，默认情况下会启用此选项。 您可以选择在同一选项卡上调整&#x200B;**[!UICONTROL Semantic boost]**、**[!UICONTROL Similarity threshold]**&#x200B;和&#x200B;**[!UICONTROL Fuzzy search]**。 无需属性设置或店面变更。 [了解详情](./setup/semantic-search.md)。
+
+### 推荐价格过滤器(Beta)
+
+产品推荐单位现在在&#x200B;**[!UICONTROL Filter products]**&#x200B;步骤中支持&#x200B;[**价格筛选器**](./merchandising/recommendations/filters.md#price)。 在产品详细信息页面上包含或排除使用&#x200B;**静态**&#x200B;最小和最大范围或&#x200B;**动态**&#x200B;规则的候选产品，这些规则会将推荐的产品与店面活动价格手册中当前查看产品的&#x200B;**最终计算价格**&#x200B;进行比较。 价格规则筛选候选集。 它们不会将产品重新排名。 [了解详情](./merchandising/recommendations/filters.md#price)。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## 2026年5月
 
@@ -87,7 +97,7 @@ _2026年4月29日_
 
 <!--v1.52 release-->
 
-**需要批量处理请求** — 现在，当您检索目录数据时，GraphQL API为每个请求最多强制执行100个SKU。 查看[记录的限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits#product-discovery)。
+**需要批量处理请求** — 现在，当您检索目录数据时，GraphQL API为每个请求最多强制执行100个SKU。 查看[记录的限制和边界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery)。
 
 <!--DATA-7156-->
 
