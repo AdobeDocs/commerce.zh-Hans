@@ -8,9 +8,20 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+TQID: 'https://experienceleague.adobe.com/vsy2xSV-3oVjPNc0JUzsunl3ooiWjWrWo1poXHB1TgY'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '2533'
+source-wordcount: 2533
 ht-degree: 0%
 
 ---
@@ -235,7 +246,7 @@ aio app deploy
      -d '{"sku":"ADB153","type":"answer","questionId":"<QUESTION-UUID>","content":"Yes, it comes in blue and red.","user":"seller@example.com"}'
    ```
 
-1. 通过GET请求验证数据：
+1. 使用GET请求验证数据：
 
    ```bash
    curl -s "$API_URL/reviews-get?sku=ADB153"
@@ -437,8 +448,8 @@ Run complete browser testing. Use the following product page 'http://localhost:3
 
 | 症状 | 原因 | 修复 |
 |---------|-------|-----|
-| GET或POST返回500“无法找到模块” | 产品审阅操作使用`require("../../utils")`或`require("../../constants")`，它们将转义包捆绑。 部署包时，这些文件不包括在内。 | 使产品审阅包自包含。 添加`actions/product-reviews/lib/constants.js`和`actions/product-reviews/lib/utils.js`，并从`../lib/...`而不是`../../`更新所需的全部四个操作。 |
-| GET返回500并显示“键必须匹配模式” | 状态键使用冒号（例如，`reviews:ADB153`）。 `aio-lib-state`仅允许`[a-zA-Z0-9-_.]`。 | 将前缀从`reviews:`和`qa:`更改为`reviews.`和`qa.`。 添加可清理SKU的`stateKey(prefix, sku)`帮助程序（将无效字符替换为`_`）。 |
+| GET或POST返回500“找不到模块” | 产品审阅操作使用`require("../../utils")`或`require("../../constants")`，它们将转义包捆绑。 部署包时，这些文件不包括在内。 | 使产品审阅包自包含。 添加`actions/product-reviews/lib/constants.js`和`actions/product-reviews/lib/utils.js`，并从`../lib/...`而不是`../../`更新所需的全部四个操作。 |
+| GET返回500且“键必须匹配模式” | 状态键使用冒号（例如，`reviews:ADB153`）。 `aio-lib-state`仅允许`[a-zA-Z0-9-_.]`。 | 将前缀从`reviews:`和`qa:`更改为`reviews.`和`qa.`。 添加可清理SKU的`stateKey(prefix, sku)`帮助程序（将无效字符替换为`_`）。 |
 | POST返回500并显示“值必须为字符串” | `aio-lib-state`仅接受字符串值。 代码将数组或对象传递给`state.put()`。 | 写入时与`JSON.stringify()`序列化，读取时与`JSON.parse()`序列化。 更新全部四个操作。 |
 
 {style="table-layout:auto"}

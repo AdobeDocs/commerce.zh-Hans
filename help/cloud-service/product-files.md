@@ -5,9 +5,17 @@ feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: 'https://experienceleague.adobe.com/fFbsXGO54L1lSuQULqfP7A-BJKSYggdt7cy-GDvaSzU'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: 753
 ht-degree: 0%
 
 ---
@@ -54,14 +62,14 @@ ht-degree: 0%
 
 此过程包括四个步骤：
 
-1. 使用文件名和`POST V1/media/initiate-upload`调用产品文件属性的`media_resource_type`。
+1. 使用文件名和`media_resource_type`调用产品文件属性的`POST V1/media/initiate-upload`。
 1. 使用返回的预签名URL直接`PUT`将文件发送到Amazon S3。
 1. 调用`POST V1/media/finish-upload`确认上传。
 1. 通过`PUT /V1/products/{sku}`将返回的密钥分配给产品的文件属性，并将密钥作为[自定义属性](https://developer.adobe.com/commerce/webapi/rest/modules/custom-attributes/)值传递。
 
 ## 通过产品导入上传
 
-您可以使用[导入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理员导入UI将文件批量附加到产品。 产品文件属性仅支持从外部URL导入，它遵循与产品图像导入[的](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}方法2相同的方法。 Commerce从提供的URL下载文件，并将其保存到S3媒体存储中。
+您可以使用[导入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理员导入UI将文件批量附加到产品。 产品文件属性仅支持从外部URL导入，它遵循与产品图像导入[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的方法2相同的方法。 Commerce从提供的URL下载文件，并将其保存到S3媒体存储中。
 
 >[!NOTE]
 >
@@ -89,7 +97,7 @@ ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 
 ## 通过GraphQL检索文件
 
-在[!DNL Adobe Commerce as a Cloud Service]中，[目录服务GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"}端点提供产品数据。 文件属性显示在`attributes`的`ProductView`字段中，其中`value`包含文件的完整公共URL：
+在[!DNL Adobe Commerce as a Cloud Service]中，[目录服务GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"}端点提供产品数据。 文件属性显示在`ProductView`的`attributes`字段中，其中`value`包含文件的完整公共URL：
 
 ```graphql
 {

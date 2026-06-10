@@ -4,16 +4,27 @@ description: 了解如何使用App Builder、签出入门工具包和人工智�
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-source-git-commit: e55bc4db196d3d973b981bb2484be950dcd6b7c3
+TQID: 'https://experienceleague.adobe.com/vU71zRP-KEPdrmTW-M1mwkv-FFa0oHOcUJcG4afFo2s'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: 1893
 ht-degree: 0%
 
 ---
 
 # 配送方法扩展教程
 
-本教程将指导您使用[!DNL Adobe Commerce as a Cloud Service]、[!DNL Adobe App Builder]结帐入门工具包[和AI辅助开发工具为](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}构建送货方法扩展。
+本教程将指导您使用[!DNL Adobe App Builder]、[结帐入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}和AI辅助开发工具为[!DNL Adobe Commerce as a Cloud Service]构建送货方法扩展。
 
 该扩展在结账时添加了一种可配置的配送方式，其中运费来自外部模拟运费服务。 商家在管理UI中配置服务URL、API密钥和仓库（发货地址），在结账时，扩展会请求该服务的费率，并向客户显示返回的选项。
 
@@ -132,7 +143,7 @@ bash --version
 
 ## 扩展开发
 
-本节将指导您使用[!DNL Adobe Commerce as a Cloud Service]结帐入门工具包[和AI辅助开发工具为](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}开发送货方法扩展。
+本节将指导您使用[结帐入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}和AI辅助开发工具为[!DNL Adobe Commerce as a Cloud Service]开发送货方法扩展。
 
 1. 导航到编码代理中的MCP设置。 例如，在光标中，转到&#x200B;**[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**。 验证是否已启用`commerce-extensibility`工具集且未出现错误。 如果看到错误，请关闭和打开工具集。
 
@@ -181,7 +192,7 @@ bash --version
 1. 查看`requirements.md`（或等效项）文件并验证计划。 如果一切看起来都正确，请指示代理转移到体系结构规划（或&#x200B;**阶段2**）。 确认：
 
    - **shipping-methods**&#x200B;操作（或等效操作）处理Commerce webhook并调用外部费率API。
-   - **shipping-config**（或等效操作）操作支持GET（读取配置、API密钥被掩盖）和SET（保存服务URL、API密钥、仓库地址），并且配置可以安全地存储，例如在运行时状态。
+   - **shipping-config**（或等效操作）操作支持GET（读取配置，API密钥被掩盖）和SET（保存服务URL、API密钥、仓库地址），并且配置可以安全地存储，例如在运行时状态。
    - 管理员UI包含一个&#x200B;**模拟发货**（或类似选项卡），该选项卡具有用于服务URL、API密钥（密码/掩码）和仓库地址的字段。
 
    ![由AI代理创建的要求文件，带有送货扩展实现详细信息](../assets/requirements-file-shipping.png){width="600" zoomable="yes"}
@@ -192,7 +203,7 @@ bash --version
 
 1. 指示代理继续生成代码。 代理应将一个&#x200B;**模拟**&#x200B;承运人添加到允许Commerce接受返回方法的装运承运人配置中，并使用webhook方法`plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`（webhook类型&#x200B;**after**，必需&#x200B;**可选**）。
 
-   代理会生成必要的代码并提供有关后续步骤(包括安装依赖项、注册模拟运营商、配置Commerce webhook和部署)的详细摘要。
+   代理会生成必要的代码并提供有关后续步骤（包括安装依赖项、注册模拟运营商、配置Commerce webhook和部署）的详细摘要。
 
    ![为装运扩展生成的代码和实施摘要](../assets/code-generation-summary-shipping.png){width="600" zoomable="yes"}
 
@@ -218,7 +229,7 @@ Proceed with Phase 5 cleanup.
    Deploy the app.
    ```
 
-   代理执行部署前准备情况评估(例如，如果使用Admin UI或Commerce API，则检查`.env`、`COMMERCE_WEBHOOKS_PUBLIC_KEY`和OAuth/IMS变量的`COMMERCE_BASE_URL`)。
+   代理执行部署前准备情况评估（例如，如果使用Admin UI或Commerce API，则检查`COMMERCE_WEBHOOKS_PUBLIC_KEY`、`COMMERCE_BASE_URL`和OAuth/IMS变量的`.env`）。
 
    Mock Shipping扩展的![AI代理预部署准备和部署步骤](../assets/pre-deployment-assessment-shipping.png){width="600" zoomable="yes"}
 
