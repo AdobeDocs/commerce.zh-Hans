@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Commerce Optimizer Connector]疑难解答'
 description: 了解如何解决 [!DNL Adobe Commerce] PaaS集成的 [!DNL Adobe Commerce Optimizer Connector] 凭据、目录同步和范围导出问题。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/ei86QuJ3nQ2d-6NRoAeJslgDxjGlZRejD-Nx-6SAVdc'
 product_v2:
@@ -59,4 +59,4 @@ ht-degree: 0%
 
 ## [!DNL SaaS Data Export]诊断
 
-有关较低级别的[!DNL SaaS Data Export]诊断（包括日志位置和馈送重新同步命令），请参阅[[!DNL SaaS Data Export] 疑难解答指南](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging){target="_blank"}。
+有关较低级别的[!DNL SaaS Data Export]诊断（包括日志位置和馈送重新同步命令），请参阅[[!DNL SaaS Data Export] 疑难解答指南](https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging){target="_blank"}。
