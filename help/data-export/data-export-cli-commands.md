@@ -3,17 +3,13 @@ title: 使用Commerce CLI同步馈送
 description: 了解如何使用命令行界面命令来管理Adobe Commerce SaaS服务的 [!DNL data export extension] 的馈送和进程。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
 TQID: https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 583
+source-wordcount: 605
 ht-degree: 0%
 
 ---
@@ -22,10 +18,14 @@ ht-degree: 0%
 
 `magento/saas-export`程序包中的`saas:resync`命令允许您管理Adobe Commerce SaaS服务的数据同步。
 
+>[!NOTE]
+>
+>`saas:resync`命令还适用于[!DNL Adobe Commerce Optimizer Connector]源，如`products`、`categories`和`priceBooks`。 有关连接器馈送和索引器名称的完整列表，请参阅[支持的馈送](../aco-connector/reference/connector-reference.md#supported-feeds)。
+
 Adobe不建议定期使用`saas:resync`命令。 使用该命令的典型情况包括：
 
 - 初始同步
-- 更改[SaaS数据空间ID](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/services/saas)后，将数据同步到新数据空间
+- 更改[SaaS数据空间ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)后，将数据同步到新数据空间
 - 故障排除
 
 监视`var/log/saas-export.log`文件中的同步操作。
