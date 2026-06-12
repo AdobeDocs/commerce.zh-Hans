@@ -12,9 +12,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 787
+source-wordcount: 812
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ ht-degree: 0%
 要构造动态查询，搜索服务需要知道哪些属性是可搜索的，以及它们的[权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results)。 [!DNL Live Search]遵循Adobe Commerce搜索权重（1-10，其中10是最高优先级）。 可以在架构中找到同步并与目录服务共享的数据列表，架构定义于：
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+要了解可搜索属性和权重如何在查询时与&#x200B;**精确**、**附近**、相同字段和跨字段匹配进行交互，请参阅[搜索匹配和排名](search-relevance-matching.md)。
 
 ![[!DNL Live Search]索引客户端搜索关系图](assets/indexing-pipeline.svg)
 

@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: b9b57bb7279354c9d5c2a7efc6e1ba14c1c36598
 workflow-type: tm+mt
-source-wordcount: 1905
+source-wordcount: 1936
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >如果没有看到任何搜索性能量度，请确保正在[收集](../setup/events/overview.md)搜索事件数据。
+
+>[!NOTE]
+>
+>要了解产品发现如何对&#x200B;**精确匹配项和接近匹配项**、相同字段匹配项和更广的匹配项进行排名（以及如何与关键字权重和促销规则进行交互），请参阅[搜索匹配和排名](../search-relevance-matching.md)。
 
 ## 选择&#x200B;**目录视图**
 

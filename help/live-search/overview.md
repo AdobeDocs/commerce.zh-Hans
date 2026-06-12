@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 1167
+source-wordcount: 1195
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 1%
 
 - 创建有意义的搜索体验，帮助购物者和买家尽最大努力找到他们想要的。
 - 利用AI支持的动态分面和响应会话内购物者行为对搜索结果进行重新排名。
+- 优先处理&#x200B;**精确匹配项和接近匹配项**&#x200B;以及相同字段匹配项，以确保高意图查询首先返回最相关的产品。 有关详细信息，请参阅&#x200B;*[搜索匹配和排名](search-relevance-matching.md)*。
 - 使用基于SaaS的轻量级服务，该服务可轻松进行更新并包含在您的许可证中，从而降低了总拥有成本。
 - 通过启用GraphQL API、Headless灵活性、API沙盒环境和超快SaaS来获得技术。
 
