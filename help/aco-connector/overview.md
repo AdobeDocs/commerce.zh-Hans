@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce Optimizer Connector]'
-description: 了解 [!DNL Adobe Commerce] 和 [!DNL Adobe Commerce Optimizer] 之间用于目录同步、搜索和店面交付的 [!DNL Adobe Commerce Optimizer Connector] 集成。
+description: 了解介于 [!DNL Adobe Commerce] 和 [!DNL Adobe Commerce Optimizer]之间的目录同步、搜索和店面投放的 [!DNL Adobe Commerce Optimizer Connector] 。
 feature: Integration, Storefront, Configuration
 badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T19:00:00.000Z'
@@ -24,14 +24,14 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: 23e4f419628a7838357752ecef0c242f1dcdd4c4
 workflow-type: tm+mt
-source-wordcount: 1037
+source-wordcount: 990
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce Optimizer连接器
+# [!DNL Adobe Commerce Optimizer Connector]
 
 [!DNL Adobe Commerce Optimizer Connector]是[!DNL Adobe Commerce]（云或内部部署）和[!DNL Adobe Commerce Optimizer]之间的本机第一方集成。 它将您的[!DNL Adobe Commerce]存储中的目录和定价数据同步到[!DNL Adobe Commerce Optimizer]中，以便您可以：
 
@@ -62,19 +62,19 @@ ht-degree: 0%
 - [!DNL Adobe Commerce] （在云或本地）是记录和馈送制作系统
 - 连接器可导出目录、价格和类别信息源
 - [!DNL Adobe Commerce Optimizer]将信息源数据摄取并标准化到目录源、价格手册和目录视图中
-- 店面（[!DNL Edge Delivery Services]上的Commerce店面或自定义Headless内部版本）调用[!DNL Commerce Optimizer]个GraphQL API以进行发现和推荐，并调用[!DNL Adobe Commerce]或其他连接的第三方平台以进行购物车和结账操作
+- 店面（[!DNL Edge Delivery Services]上的Commerce店面或自定义Headless内部版本）调用[!DNL Adobe Commerce Optimizer]个GraphQL API以进行发现和推荐，并调用[!DNL Adobe Commerce]或其他连接的第三方平台以进行购物车和结账操作
 
-## 连接器如何与[!DNL Adobe Commerce]配合使用
+## 连接器如何与[!DNL Adobe Commerce]配合使用 {#how-the-connector-works-with-adobe-commerce}
 
 [!DNL Adobe Commerce Optimizer Connector]通过使用您现有的Commerce范围（网站和商店视图）和客户分段来填充[!DNL Adobe Commerce Optimizer]目录模型来进行操作：
 
 ![将Commerce数据映射到Adobe Commerce Optimizer](./assets/storeview-to-catalogview-mapping.png){width="750" zoomable="yes"}
 
-- **→目录源存储视图** — 每个存储视图在[!DNL Adobe Commerce Optimizer]中成为单独的目录Source。 该来源包括本地化的产品属性和任何特定于商店视图的数据
-- **网站→价格手册** — 每个[!DNL Adobe Commerce]网站都映射到[!DNL Commerce Optimizer]中的一个或多个价格手册。 网站定价和客户组定价导出为价格手册和价格条目
+- **存储视图→目录源** — 每个存储视图在[!DNL Adobe Commerce Optimizer]中成为单独的目录Source。 该来源包括本地化的产品属性和任何特定于商店视图的数据
+- **网站→价格手册** — 每个[!DNL Adobe Commerce]网站都映射到[!DNL Adobe Commerce Optimizer]中的一个或多个价格手册。 网站定价和客户组定价导出为价格手册和价格条目
 - **客户组→价格变体** — [!DNL Adobe Commerce]客户组定价在相关的价格手册中显示为附加条目
 
-[!DNL Commerce Optimizer]摄取数据后，您可以配置：
+[!DNL Adobe Commerce Optimizer]摄取数据后，您可以配置：
 
 - [!DNL Adobe Commerce Optimizer] Studio中的&#x200B;**目录视图和策略**（用于生成区域、品牌或特定于客户的子集）
 - **产品发现** （搜索、Facet、促销规则）
@@ -84,15 +84,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关配置[!DNL Adobe Commerce Optimizer]的详细信息，请参阅[[!DNL Adobe Commerce Optimizer] 促销工具](../optimizer/overview.md#quick-tour)。
+>有关配置[!DNL Adobe Commerce Optimizer]的详细信息，请参阅[[!DNL Adobe Commerce Optimizer] 促销工具](/help/optimizer/overview.md#quick-tour)。
 
 ## 典型工作流 {#typical-workflows}
 
-这些工作流描述团队如何设置和使用[!DNL Adobe Commerce Optimizer Connector]。 有关如何设置集成和启用这些工作流的详细信息，请参阅[开始使用](get-started.md)。
+这些工作流描述团队如何设置和使用[!DNL Adobe Commerce Optimizer Connector]。 有关如何设置集成和启用这些工作流的详细信息，请参阅[开始使用](/help/aco-connector/get-started.md)。
 
 ### 初始设置和配置 {#initial-setup}
 
-请参阅&#x200B;_开始使用_&#x200B;指南中的[配置步骤](./get-started.md#configuration-steps)。
+请参阅&#x200B;_开始使用_&#x200B;指南中的[配置步骤](/help/aco-connector/get-started.md#configuration-steps)。
 
 ### 正在进行的数据同步 {#ongoing-sync}
 
@@ -112,39 +112,20 @@ ht-degree: 0%
 
 有关其他详细信息，请参阅以下主题：
 
-- 有关[!DNL Adobe Commerce] CLI重新同步操作，请参阅[CLI重新同步命令](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="_blank"}
-- [[!DNL Commerce Optimizer Connector]模块和馈送端点](reference/connector-reference.md)
-- [连接器信息源的字段映射](reference/field-mapping.md)
+- 有关[!DNL Adobe Commerce] CLI重新同步操作，请参阅[CLI重新同步命令](/help/data-export/data-export-cli-commands.md#sync-using-cli-commands){target="_blank"}
+- [[!DNL Adobe Commerce Optimizer Connector]模块和馈送端点](/help/aco-connector/reference/connector-reference.md)
+- [连接器信息源的字段映射](/help/aco-connector/reference/field-mapping.md)
 
 ### 配置推销和店面 {#merchandising-storefronts}
 
-在[!DNL Adobe Commerce Optimizer]中提供[!DNL Adobe Commerce]数据后，请使用[[!DNL Commerce Optimizer] Studio](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/overview#quick-tour)将推销和店面体验连接到您的同步目录。
+在[!DNL Adobe Commerce Optimizer]中提供[!DNL Adobe Commerce]数据后，请使用[[!DNL Adobe Commerce Optimizer] Studio](/help/optimizer/overview.md#quick-tour)将推销和店面体验连接到您的同步目录。 典型的后续步骤包括：
 
-**要在[!DNL Commerce Optimizer] Studio中配置推销和店面：**
+- **目录视图和策略** — 从[!UICONTROL Store setup]菜单定义区域、品牌或客户特定的子集和访问规则
+- **产品发现和推荐** — 在[!UICONTROL Merchandising]菜单中配置搜索、Facet、促销规则、同义词和推荐单位。 在[!DNL Adobe Commerce Optimizer]中管理搜索和推荐行为；[!DNL Adobe Commerce]管理员中的[!DNL Live Search]和[!DNL Product Recommendations]设置不再适用于这些流
+- **店面连接** — 在正确的[!DNL Adobe Commerce Optimizer]租户、目录视图和促销API端点指向[!DNL Edge Delivery Services]上的Commerce店面或第三方Headless内部版本。 有关第三方集成的示例，请参阅针对 [!DNL Adobe Commerce Optimizer][&#128279;](/help/optimizer/developer/salesforce-connector.md)的Salesforce Commerce Connector
+- **结帐** — 将购物车、结帐、订单管理和客户帐户保留在[!DNL Adobe Commerce]或连接的第三方平台上。 必要时使用[!DNL App Builder]和[!DNL API Mesh]进行购物车切换
 
-1. 从[!UICONTROL Store setup]菜单&#x200B;**创建目录视图和策略**。
-
-   - 按品牌、地区、客户区段或渠道过滤目录
-   - 针对每个店面或合作伙伴强制执行数据访问规则
-
-1. 从[!UICONTROL Merchandising]菜单&#x200B;**配置产品发现和推荐**。
-
-   - 创建促销规则、彩块化、同义词和推荐单位
-   - 连接器将所有搜索和推荐配置卸载到[!DNL Commerce Optimizer] （ Commerce管理员中的[!DNL Live Search]规则和[!DNL Product Recommendations]不再适用于这些流）
-
-1. **将店面**&#x200B;连接到[!DNL Commerce Optimizer]：
-
-   - 对于由[!DNL Edge Delivery Services]提供支持的Commerce店面，请将店面配置为使用正确的Optimizer租户和目录视图，并通过促销API调用搜索和推荐端点
-   - 对于第三方店面，使用Optimizer公共API或SDK进行搜索和推荐调用
-
-   >[!NOTE]
-   >
-   >有关第三方集成的示例，请参阅针对 [!DNL Adobe Commerce Optimizer][&#128279;](../optimizer/developer/salesforce-connector.md)的Salesforce Commerce Connector 。
-
-1. **在您的现有平台上维护签出**：
-
-   - 将购物车、结帐、订单管理和客户帐户保留在[!DNL Adobe Commerce]或第三方平台中
-   - 在与外部结帐系统集成时，使用[!DNL App Builder]和[!DNL API Mesh]进行购物车切换
+有关分步配置指南，请参阅[开始使用](/help/aco-connector/get-started.md)和[[!DNL Adobe Commerce Optimizer] 促销工具](/help/optimizer/overview.md#quick-tour)。
 
 ## 支持的方案 {#supported-scenarios}
 
@@ -178,14 +159,14 @@ ht-degree: 0%
 
 **开始之前：**
 
-- 验证[!DNL Adobe Commerce]是否满足最低版本和[!DNL Commerce Optimizer Connector]要求。 有关详细信息，请参阅[开始使用](get-started.md#requirements-to-use-the-integration)。
+- 验证[!DNL Adobe Commerce]是否满足最低版本和[!DNL Adobe Commerce Optimizer Connector]要求。 有关详细信息，请参阅[开始使用](/help/aco-connector/get-started.md#requirements-to-use-the-integration)。
 - 确保您具有IMS组织访问权限、[!DNL Adobe Commerce Optimizer]实例以及必要的凭据和区域详细信息。
 
-## 相关文档 {#related-documentation}
+## 有关此主题的更多帮助 {#more-help-on-this-topic}
 
-- 设置集成并启用关键工作流： [开始使用 [!DNL Commerce Optimizer Connector]](get-started.md)
-- 了解[!DNL Adobe Commerce Optimizer]概念和架构： [什么是 [!DNL Adobe Commerce Optimizer]？](../optimizer/overview.md)
-- 了解同步机制、初始化和错误处理： [连接器同步管道](connector-sync-pipeline.md)
-- 所有馈送的字段级数据映射： [连接器馈送的字段映射](reference/field-mapping.md)
-- 使用GraphQL和捆绑包编码集成Headless店面： [Headless店面集成](headless-storefront.md)
-- 诊断同步和配置问题： [疑难解答](troubleshooting.md)
+- 设置集成并启用关键工作流： [开始使用 [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md)
+- 了解[!DNL Adobe Commerce Optimizer]概念和架构： [什么是 [!DNL Adobe Commerce Optimizer]？](/help/optimizer/overview.md)
+- 了解同步机制、初始化和错误处理： [连接器同步管道](/help/aco-connector/connector-sync-pipeline.md)
+- 所有馈送的字段级数据映射： [连接器馈送的字段映射](/help/aco-connector/reference/field-mapping.md)
+- 使用GraphQL和捆绑包编码集成Headless店面： [Headless店面集成](/help/aco-connector/headless-storefront.md)
+- 诊断同步和配置问题： [疑难解答](/help/aco-connector/troubleshooting.md)

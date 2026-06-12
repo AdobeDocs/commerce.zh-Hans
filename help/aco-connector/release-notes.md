@@ -17,9 +17,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: af45543a52d1c88149574dc22cdef37af01404c8
 workflow-type: tm+mt
-source-wordcount: 267
+source-wordcount: 353
 ht-degree: 0%
 
 ---
@@ -33,6 +33,18 @@ ht-degree: 0%
 ![已知问题](../assets/bug.svg)已知问题
 
 ## 2026版
+
+### 1.0.14版本
+
+_2026年6月11日_
+
+![修复](../assets/fix.svg) **PHP 8.5兼容性** - [!DNL Adobe Commerce Optimizer Connector]现在支持PHP 8.5，因此您可以升级您的[!DNL Adobe Commerce]环境，而不会中断连接器功能或目录同步。<!--MDEE-1388-->
+
+![修复](../assets/fix.svg) **货币更改后价格手册更新** — 货币更改后，更新的价格会自动反映在Adobe Commerce Optimizer中。<!--MDEE-1384-->
+
+![修复](../assets/fix.svg) **导航尊重已禁用或隐藏的父类别** — 来自已禁用或隐藏类别层次结构的产品不再意外出现在导航体验中。<!--MDEE-1385-->
+
+![修复](../assets/fix.svg) **暂存更新后一致的类别URL** — 应用暂存更新后，类别链接和导航保持准确。<!--MDEE-1395-->
 
 ### 1.0.13发行版
 
