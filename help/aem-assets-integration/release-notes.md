@@ -3,9 +3,9 @@ title: AEM Assets集成发行说明
 description: 有关所有AEM Assets集成版本的信息，请参阅发行说明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: cf623b835d5590b32f1425c4aab25efa52b50498
+source-git-commit: e055a3d44eda7e7f082a884c316ad437ea9ac15e
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,24 @@ _2025年2月11日_
 ![新问题](../assets/new.svg)现在，商家可以同步产品和类别的图像。
 
 +++
+
+## v1.4.1
+
+_2026年6月15日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![修复了问题](../assets/fix.svg)修复了在启用AEM Assets集成时，Admin **[!UICONTROL System]**&#x200B;菜单中缺少&#x200B;**[!UICONTROL OBSERVABILITY]**&#x200B;节标头，导致&#x200B;**[!UICONTROL Subscription List]**&#x200B;链接显示无标题的问题。<!--ACAP-1302 -->
+
+![修复了问题](../assets/fix.svg)修复了在未启用Dynamic Media Open API的实例上，保存AEM Assets集成配置时显示原始PHP警告而不是清除消息的问题。 此时会显示一条清晰的常规错误消息。<!-- ACAP-1298 -->
+
+## v1.4.0
+
+_2026年6月12日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![新问题](../assets/new.svg)<!-- Issue ACAP-1101 -->通过批量资产更新调用提高了整体稳定性和事件处理性能。
 
 ## v1.3.7
 
