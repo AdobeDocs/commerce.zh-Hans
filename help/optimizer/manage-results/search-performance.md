@@ -1,23 +1,15 @@
 ---
 title: 搜索性能
 description: “搜索性能”页面可让insight了解购物者使用的搜索词。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
 TQID: https://experienceleague.adobe.com/dbCSRGA-jOSM37O-6THv0ArNZBD0Jsy4ml-1hSiY7YQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: b9b57bb7279354c9d5c2a7efc6e1ba14c1c36598
 workflow-type: tm+mt
-source-wordcount: 1905
+source-wordcount: 1936
 ht-degree: 0%
 
 ---
@@ -37,6 +29,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >如果没有看到任何搜索性能量度，请确保正在[收集](../setup/events/overview.md)搜索事件数据。
+
+>[!NOTE]
+>
+>要了解产品发现如何对&#x200B;**精确匹配项和接近匹配项**、相同字段匹配项和更广的匹配项进行排名（以及如何与关键字权重和促销规则进行交互），请参阅[搜索匹配和排名](../search-relevance-matching.md)。
 
 ## 选择&#x200B;**目录视图**
 
