@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->以下功能位于[私人测试版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)中。
+>以下功能位于[私人测试版](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/beta)中。
 
 [!DNL Live Search]将结果排名，以便购物者能够首先看到最相关的产品。 此服务对目录文本&#x200B;**与购物者类型紧密匹配**&#x200B;的产品提升最强，然后支持查询词以有意义的方式一起出现的匹配，最后包括更广泛的匹配（包括支持自动完成样式匹配的行为）。
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 - 从&#x200B;**精确/近**&#x200B;个短语匹配中提升
 - 当&#x200B;**所有查询词**&#x200B;出现在&#x200B;**相同**&#x200B;字段中时提升
 - **智能排名**（启用时），它将文本相关性与行为信号相结合 — 请参阅[智能排名评分的工作原理](rules-add.md#how-intelligent-ranking-scoring-works)
-- **[搜索每个属性的权重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文本关联性因素（例如，术语出现的频率以及名称或描述长度）。 在[!DNL Adobe Commerce]管理员中，配置&#x200B;**在搜索中使用**&#x200B;和&#x200B;**搜索权重**&#x200B;以获取产品属性。
+- **[搜索每个属性的权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文本关联性因素（例如，术语出现的频率以及名称或描述长度）。 在[!DNL Adobe Commerce]管理员中，配置&#x200B;**在搜索中使用**&#x200B;和&#x200B;**搜索权重**&#x200B;以获取产品属性。
 - **[搜索促销规则](rules.md)**，例如pin、boost和bury
 
 由于这些信号相互作用，仅在最宽级别匹配的产品有时可以排在更紧的短语匹配之上 — 例如，当&#x200B;**搜索权重**&#x200B;或高权重字段中的词频超过其他位置的较弱短语匹配时。
