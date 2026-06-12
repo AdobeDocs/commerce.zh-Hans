@@ -4,9 +4,17 @@ description: 了解 [!DNL Live Search] 如何排定精确匹配和近匹配、�
 role: Admin, Developer
 recommendations: noCatalog
 hide: true
-source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
+autotag-review: '2026-06-12T19:48:33.569Z'
+TQID: 'https://experienceleague.adobe.com/v4T99FG9mFhlgbb-xDqR-C1tVvCmHDry5lxhSDaKg-4'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+subfeature_v2: id: faf75e43-5608-48b8-8169-3f8a9b8a5caf
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: da5950c0f2071f48f163dd02f6c38953804ae152
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: 914
 ht-degree: 0%
 
 ---
@@ -15,7 +23,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->以下功能位于[私人测试版](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/beta)中。
+>以下功能位于[私人测试版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)中。
 
 [!DNL Live Search]将结果排名，以便购物者能够首先看到最相关的产品。 此服务对目录文本&#x200B;**与购物者类型紧密匹配**&#x200B;的产品提升最强，然后支持查询词以有意义的方式一起出现的匹配，最后包括更广泛的匹配（包括支持自动完成样式匹配的行为）。
 
@@ -66,7 +74,7 @@ ht-degree: 0%
 - 从&#x200B;**精确/近**&#x200B;个短语匹配中提升
 - 当&#x200B;**所有查询词**&#x200B;出现在&#x200B;**相同**&#x200B;字段中时提升
 - **智能排名**（启用时），它将文本相关性与行为信号相结合 — 请参阅[智能排名评分的工作原理](rules-add.md#how-intelligent-ranking-scoring-works)
-- **[搜索每个属性的权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文本关联性因素（例如，术语出现的频率以及名称或描述长度）。 在[!DNL Adobe Commerce]管理员中，配置&#x200B;**在搜索中使用**&#x200B;和&#x200B;**搜索权重**&#x200B;以获取产品属性。
+- **[搜索每个属性的权重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文本关联性因素（例如，术语出现的频率以及名称或描述长度）。 在[!DNL Adobe Commerce]管理员中，配置&#x200B;**在搜索中使用**&#x200B;和&#x200B;**搜索权重**&#x200B;以获取产品属性。
 - **[搜索促销规则](rules.md)**，例如pin、boost和bury
 
 由于这些信号相互作用，仅在最宽级别匹配的产品有时可以排在更紧的短语匹配之上 — 例如，当&#x200B;**搜索权重**&#x200B;或高权重字段中的词频超过其他位置的较弱短语匹配时。
