@@ -1,24 +1,16 @@
 ---
 title: 创建和管理规则
 description: 了解如何为搜索、默认产品列表和类别页面创建和管理促销规则。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 3222
+source-wordcount: 3074
 ht-degree: 0%
 
 ---
@@ -32,10 +24,6 @@ ht-degree: 0%
 1. 在左边栏中，转到&#x200B;_促销_ > **促销规则**。
 1. （可选）使用&#x200B;**目录视图**&#x200B;下拉列表选择应用规则的目录视图。 您创建的规则将作用域限定于选定的视图（如果选择&#x200B;**所有视图**，则限定于所有目录视图）。 请参阅[选择目录视图](workspace.md#select-catalog-view)，了解目录视图作用域的工作方式。
 
-   >[!IMPORTANT]
-   >
-   >目录视图当前处于[测试版](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta)中。 Beta参与者需要重新创建任何现有的促销规则，以利用新的目录视图范围。
-
 1. 单击&#x200B;**[!UICONTROL Create rule]**&#x200B;启动规则编辑器。
 
 ![创建规则](../../assets/create-rule.png)
@@ -47,7 +35,7 @@ ht-degree: 0%
 | 规则类型 | 用途 |
 | --- | --- |
 | **所有产品规则** | 当不再应用更具体的搜索或类别规则时，跨产品列表的默认排名和促销。 您只能创建一个此类规则；它不能包含条件。 |
-| **类别规则** (Beta) | 将推销和排名应用于一个或多个选定的类别，从而控制这些类别页面上的产品订单。 |
+| **类别规则** | 将推销和排名应用于一个或多个选定的类别，从而控制这些类别页面上的产品订单。 |
 | **搜索规则** | 当购物者运行与规则的查询条件匹配的搜索时，应用促销和排名。 |
 
 在&#x200B;**构建规则**&#x200B;部分中，您可以定义规则名称、计划、规则是否适用于所有列表或特定搜索条件以及排名类型。
@@ -79,14 +67,14 @@ ht-degree: 0%
    结果会立即显示在&#x200B;*测试您的规则*&#x200B;窗格中，并按优先级进行编号。 您可以使用右上角的&#x200B;*每行结果*&#x200B;滑块来更改每行的产品数。
 
 1. 若要测试其他查询，请更改&#x200B;*测试您的规则*&#x200B;搜索框中的查询文本，然后按&#x200B;**返回**。
-最初，测试窗格从“条件”搜索框中呈现查询。 但现在，它从测试查询框呈现查询。 测试窗格一次只呈现一个查询。
+最初，测试窗格从“条件”搜索框中呈现查询。但现在，它从测试查询框呈现查询。测试窗格一次只呈现一个查询。
 1. 如果您喜欢该结果，请更新&#x200B;*条件*&#x200B;搜索框中的文本。 然后，单击页面上的任意位置以更新测试窗格中的结果。
 1. 设置[智能排名](#intelligent-ranking)和[手动排名](#manual-ranking)，如以下部分所述。 相同的控件适用于类别页面，并标注出任何差异。
 
 **多个条件**
 
 1. 要生成包含多个条件的规则，请单击&#x200B;**添加条件**。
-一个规则最多可以有10个条件。 连接两个条件的逻辑运算符基于当前*匹配*&#x200B;设置。 默认情况下，*匹配*&#x200B;为`All`，逻辑运算符为`AND`。
+一个规则最多可以有10个条件。连接两个条件的逻辑运算符基于当前*Match*&#x200B;设置。默认情况下，*匹配*&#x200B;为`All`，逻辑运算符为`AND`。
 
 1. 选择第二个条件并输入所需的查询文本。
 
@@ -103,10 +91,6 @@ ht-degree: 0%
 1. 设置[智能排名](#intelligent-ranking)和[手动排名](#manual-ranking)，如以下部分所述。 相同的控件适用于类别页面，并标注出任何差异。
 
 >[!TAB 类别规则]
-
->[!IMPORTANT]
->
->类别规则为测试版。
 
 类别规则控制&#x200B;**类别页面**&#x200B;上产品的订购方式。 您可以将&#x200B;**类别规则**&#x200B;与&#x200B;**智能排名**（包括AI驱动的信号）以及&#x200B;**手动**&#x200B;操作（例如pin、boost和bury）结合使用，这样您就可以在不依赖外部工具的情况下策划发现、运行促销活动并将类别页面与策略保持一致。
 
@@ -258,7 +242,7 @@ ht-degree: 0%
 1. 根据需要更新名称、开始和结束日期以及说明字段。 所有规则名称必须唯一。
 1. 测试规则。
 1. 发布更改。
-该规则已添加到*规则*&#x200B;工作区中的列表。 尽管活动规则会立即生效，但刷新店面中的缓存查询结果可能需要15分钟。
+该规则已添加到*规则*&#x200B;工作区中的列表。尽管活动规则会立即生效，但刷新店面中的缓存查询结果可能需要15分钟。
 
 ### 查看详细信息
 

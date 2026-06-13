@@ -2,26 +2,22 @@
 title: 促销规则最佳实践
 description: 了解为搜索、默认列表和类别页面实施促销规则的最佳实践。
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 TQID: https://experienceleague.adobe.com/DrdrBBXeMyqQr16h1LrlSoet3F6ihn57LBmPFBUXmTs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 404
+source-wordcount: 398
 ht-degree: 0%
 
 ---
 
 # 促销规则最佳实践
 
-为了优化转化和收入，请实施有效的&#x200B;**搜索规则**、强大的&#x200B;**默认列表**&#x200B;规则和&#x200B;**[类别规则](add.md#rule-types)**（测试版）。 使用销售数据、库存、促销活动和[智能排名](add.md#intelligent-ranking)调整排名。
+为了优化转化和收入，请实施有效的&#x200B;**搜索规则**、强大的&#x200B;**默认列表**&#x200B;规则和&#x200B;**[类别规则](add.md#rule-types)**。 使用销售数据、库存、促销活动和[智能排名](add.md#intelligent-ranking)调整排名。
 
 建立精心考虑的&#x200B;**默认规则**&#x200B;至关重要。 您的[默认规则](overview.md#default-rule)确定在没有更具体的搜索规则应用时搜索结果的初始排序方式，这提高了发现和购买的可能性。 请定期检查，以使其与购物者需求和促销活动保持同步。
 
@@ -38,10 +34,6 @@ ht-degree: 0%
 - 始终使用“测试规则”面板来预览您的智能排名策略对不同查询的实际搜索结果有何影响。
 
 ## 类别规则的提示
-
->[!IMPORTANT]
->
->类别规则为测试版。
 
 - 在高流量或高利润的&#x200B;**类别页面**&#x200B;上使用[类别规则](add.md#rule-types)，策划的订单与搜索同样重要 — 例如，季节性系列或特色部门。
 - 将&#x200B;**智能排名**（例如，趋势、查看次数最多）与购物者浏览该类别的方式保持一致；类别页面不会像搜索规则那样使用搜索查询文本。 查看[智能排名](add.md#intelligent-ranking)。 对于非&#x200B;**无**&#x200B;的智能方法，请使用&#x200B;**[智能排名提升](add.md#intelligent-ranking-boost)**&#x200B;和类别预览来调整该类别规则的行为强度。
