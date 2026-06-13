@@ -1,7 +1,7 @@
 ---
 title: 《促销规则》 Workspace
 description: 了解如何在促销规则工作区中开展工作。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 3deac529-731d-44b9-87f3-3c9cb36e28e7
 TQID: https://experienceleague.adobe.com/YTwJtajv57YUgirNdUi174VyCkZozV79V3AW1bRktJY
 product_v2:
