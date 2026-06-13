@@ -19,9 +19,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4d08de7974c79dc6fe20366e0164f6078e83be5f
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1216
+source-wordcount: 1210
 ht-degree: 0%
 
 ---
@@ -81,10 +81,6 @@ ht-degree: 0%
 完成这些步骤后，目录视图现在配置为根据您选择的来源和策略显示产品和定价。
 
 ### 指定推荐和产品发现规则的目录视图
-
->[!IMPORTANT]
->
->此功能当前处于测试阶段。
 
 您可以在[创建推荐单位](../merchandising/recommendations/create.md)或[促销规则](../merchandising/rules/add.md)时指定目录视图。
 

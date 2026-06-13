@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1615
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -35,10 +35,6 @@ _推荐单元_
 1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_&#x200B;侧边栏上，转到_&#x200B;促销&#x200B;_>**推荐**&#x200B;以显示_&#x200B;推荐&#x200B;_工作区。
 
 1. 在&#x200B;**目录视图**&#x200B;字段中，选择要提供推荐的目录视图。 了解有关[使用推荐](../../manage-results/recommendation-performance.md#select-catalog-view)的目录视图的详细信息。
-
-   >[!IMPORTANT]
-   >
-   >此功能当前处于[测试版](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta)中。 Beta参与者需要重新创建任何现有的推荐单元，以利用新的目录视图范围。
 
 1. 单击&#x200B;**创建推荐**。
 
