@@ -4,18 +4,11 @@ description: 了解如何为Adobe Commerce SaaS服务使用 [!DNL data export] �
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
 TQID: https://experienceleague.adobe.com/OHE1GBUEd8hHFPwFlO9fJa3Y0wK2xZ0HOYnwUn0-DSk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
 workflow-type: tm+mt
 source-wordcount: 571
 ht-degree: 0%
@@ -41,13 +34,13 @@ SaaS数据导出是作为PHP扩展提供的。 它支持多种方法来启动和
 
 - **从Admin或命令行手动同步**
 
-   - Commerce Admin中的[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供了同步状态的图形视图，其中显示产品数据已成功同步到商务服务。 您可以使用仪表板对所有源执行完全重新同步（_完全同步_）。 但是，Adobe建议仅在首次将Adobe Commerce连接到Commerce服务时执行完全同步。 请参阅[同步进程](data-synchronization.md)。
+   - Commerce Admin中的[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供了同步状态的图形视图，其中显示产品数据已成功同步到商务服务。 您可以使用仪表板对所有源执行完全重新同步（_完全同步_）。 但是，Adobe建议仅在首次将Adobe Commerce连接到Commerce服务时执行完全同步。 请参阅[同步进程](data-synchronization.md)。
 
      {{aco-data-sync-verification}}
 
-   - [数据馈送同步状态](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面提供数据导出馈送的运行状况和性能的实时分析，该数据导出馈送将产品和类别数据从Commerce传输到外部服务，例如产品推荐、实时搜索和目录服务或Adobe Commerce Optimizer。
+   - [数据馈送同步状态](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面提供数据导出馈送的运行状况和性能的实时分析，该数据导出馈送将产品和类别数据从Commerce传输到外部服务，例如产品推荐、实时搜索和目录服务或Adobe Commerce Optimizer。
 
-   - [Adobe Commerce命令行工具](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供了同步特定馈送的命令，并包含用于自定义馈送处理的其他选项。
+   - [Adobe Commerce命令行工具](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供了同步特定馈送的命令，并包含用于自定义馈送处理的其他选项。
 
 - **与cron作业的自动同步**
 
@@ -62,3 +55,4 @@ SaaS数据导出是作为PHP扩展提供的。 它支持多种方法来启动和
    - 在需要更快地执行同步的情况下，SaaS数据导出提供了自定义选项以提高导出处理性能。 请参阅[提高数据导出性能](customize-export-processing.md)。
 
 - **跟踪数据导出活动并排除其故障** — 使用数据导出和saas-export日志在同步和索引过程中查看同步状态和馈送负载。 请参阅[日志记录和疑难解答](troubleshooting-logging.md)。
+

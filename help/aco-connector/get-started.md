@@ -2,28 +2,16 @@
 title: 开始使用 [!DNL Adobe Commerce Optimizer Connector]
 description: 了解如何安装 [!DNL Adobe Commerce Optimizer Connector]、配置作用域导出设置、启用IMS身份验证以及验证目录同步。
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T16:55:50.934Z'
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-subfeature_v2:
-  - id: e126554b-28f9-4290-b58c-10b888b88174
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 7a5ca0f5e76be50481447e6a17fc327562f7c3bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+subfeature_v2: id: e126554b-28f9-4290-b58c-10b888b88174id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
 workflow-type: tm+mt
 source-wordcount: 1184
 ht-degree: 0%
@@ -46,7 +34,7 @@ ht-degree: 0%
 
 * 具有已设置的沙盒实例的[!DNL Adobe Commerce Optimizer]许可证。
 
-* [身份验证密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)以使用编辑器下载连接器中继包。
+* [身份验证密钥](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)以使用编辑器下载连接器中继包。
 
 * 管理员访问[[!DNL Adobe Commerce Optimizer] 沙盒实例](../optimizer/get-started.md)。
 
@@ -54,9 +42,9 @@ ht-degree: 0%
 
 * Commerce管理员的管理员访问权限。
 
-* [对 [!DNL Adobe Commerce] 应用程序服务器](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/project/user-access)的命令行访问权限。
+* [对 [!DNL Adobe Commerce] 应用程序服务器](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)的命令行访问权限。
 
-* 开发人员对配置了[!DNL Adobe Commerce Optimizer]项目的[IMS组织](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations？)的访问权限。
+* 开发人员对配置了[!DNL Adobe Commerce Optimizer]项目的[IMS组织](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations？)的访问权限。
 
 >[!BEGINSHADEBOX]
 
@@ -69,7 +57,7 @@ ht-degree: 0%
 * [!DNL Adobe Commerce Catalog Service] (`magento/catalog-service`, `magento/catalog-service-installer`)
 * 数据管理仪表板(`magento-catalog-sync-admin`)
 
-与这些扩展关联的数据仍会在Commerce数据库中可用。 但是，在启用连接器时，不会将其导出到[!DNL Adobe Commerce Optimizer]。 要在启用连接器后实施这些扩展提供的搜索和促销功能，请从[[!DNL Adobe Commerce Optimizer] 管理员UI](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/overview#quick-tour)配置它们。
+与这些扩展关联的数据仍会在Commerce数据库中可用。 但是，在启用连接器时，不会将其导出到[!DNL Adobe Commerce Optimizer]。 要在启用连接器后实施这些扩展提供的搜索和促销功能，请从[[!DNL Adobe Commerce Optimizer] 管理员UI](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour)配置它们。
 
 >[!IMPORTANT]
 >
@@ -109,9 +97,9 @@ ht-degree: 0%
 >
 >有关详细的扩展安装说明，请参阅以下指南：
 >
->在云基础架构上的 [!DNL Adobe Commerce] 上[安装扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>在云基础架构上的 [!DNL Adobe Commerce] 上[安装扩展](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 >
->[在 [!DNL Adobe Commerce] 内部部署](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/extensions)上安装扩展
+>[在 [!DNL Adobe Commerce] 内部部署](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)上安装扩展
 
 ## 自定义Commerce范围导出配置 {#customize-the-commerce-scopes-export-configuration}
 
@@ -176,13 +164,13 @@ ht-degree: 0%
 
 ### 获取[!DNL Adobe Commerce Optimizer]实例详细信息
 
-从[!DNL Adobe Commerce Optimizer]实例[[!DNL Instance details] 页面](../optimizer/get-started.md#manage-instances)上的&#x200B;_[!DNL Instance Id]_&#x200B;字段或用于访问实例的URL获取_&#x200B;租户ID _。 例如，在`https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`中。
+从[!DNL Adobe Commerce Optimizer]实例[[!DNL Instance details] 页面](../optimizer/get-started.md#manage-instances)上的&#x200B;_[!DNL Instance Id]_字段或用于访问实例的URL获取_&#x200B;租户ID _。 例如，在`https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`中。
 
 1. 从Commerce Admin中，选择&#x200B;**[!UICONTROL Adobe Commerce Optimizer]**&#x200B;以显示包含说明的配置页面。
 
    ![[!DNL Adobe Commerce Optimizer]配置页面](./assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
-1. 从命令行中，[使用SSH](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/secure-connections)连接到[!DNL Adobe Commerce]暂存环境。
+1. 从命令行中，[使用SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)连接到[!DNL Adobe Commerce]暂存环境。
 
 1. 运行以下[!DNL Adobe Commerce] CLI命令配置集成，将占位符值替换为[!DNL Commerce Optimizer]项目的值：
 
@@ -196,7 +184,7 @@ ht-degree: 0%
 
 ## 验证数据同步是否正常工作
 
-您可以从管理员中提供的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面监视和验证同步是否正常工作。
+您可以从管理员中提供的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面监视和验证同步是否正常工作。
 
 1. **在Commerce管理员中检查同步状态：**
 
@@ -226,4 +214,5 @@ ht-degree: 0%
 
 1. **在[!DNL Edge Delivery Services]**&#x200B;上设置Commerce店面
 
-   按照[Storefront设置文档](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=zh-Hans){target="_blank"}将您的店面连接到[!DNL Adobe Commerce Optimizer]实例，并开始提供个性化的商务体验。
+   按照[Storefront设置文档](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}将您的店面连接到[!DNL Adobe Commerce Optimizer]实例，并开始提供个性化的商务体验。
+

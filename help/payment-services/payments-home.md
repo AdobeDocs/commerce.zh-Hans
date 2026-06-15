@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 >[!BEGINTABS]
 
->[!TAB 云和内部部署上的 Adobe Commerce]
+>云和内部部署上的[!TAB Adobe Commerce]
 
 ![主页视图](assets/home-view.png){width="700" zoomable="yes"}
 
@@ -38,16 +38,20 @@ ht-degree: 1%
 
 在此主页视图中，您可以访问&#x200B;_主页_、_了解_&#x200B;有关[!DNL Payment Services]的信息、配置扩展&#x200B;_设置_&#x200B;或获取&#x200B;_帮助_。 使用&#x200B;**[!UICONTROL View Report]** (SaaS)或&#x200B;**[!UICONTROL Orders]**&#x200B;和&#x200B;**[!UICONTROL Payouts]**&#x200B;入口点（云端和内部部署上的Adobe Commerce）打开报告；请参阅[报告](reporting.md)。
 
+>[!NOTE]
+>
+>在[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]中，[!DNL Payment Services] **仪表板**&#x200B;仅公开&#x200B;**选定的**&#x200B;报告：您从&#x200B;**[!UICONTROL Home]**&#x200B;获取[交易](reporting.md)报告（请参阅下面的SaaS表）。 主页上的&#x200B;**[!UICONTROL Orders]**&#x200B;和&#x200B;**[!UICONTROL Payouts]**&#x200B;区域及其图表和链接报表仅适用于Adobe Commerce云中和本地([PaaS](#home))。 有关跨部署的现金流报表的概述，请参阅[财务报告](financial-reporting.md)。
+
 ## 主页
 
-仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
+仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
 
 | 字段 | 描述 |
 |---|---|
 | [!UICONTROL Orders] | 这些报表允许您快速查看订单的付款状态并识别任何潜在问题。 |
 | [!UICONTROL Payouts] | “付款”报表一目了然地显示全面的付款信息，使您可以对付款金额、处理数量以及财务对帐事务处理级别的详细报告实现完全透明。 |
 
-仅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}
+仅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}
 
 | 字段 | 描述 |
 |---|---|

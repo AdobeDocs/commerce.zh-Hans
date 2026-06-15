@@ -3,10 +3,10 @@ title: 安全性和合规性
 description: 查看您站点的安全性和合规性要求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=zh-Hans
-source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: f8c44e088fa66ec506934a0155f1ff819a9db7d4
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce]和[!DNL Magento Open Source]包含对多个安全功能的支持。
 
-请参阅核心用户指南中的[安全性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/security/security){target="_blank"}，以查看安全最佳实践，并了解如何管理管理员会话和凭据、实施验证码以及管理网站限制。
+请参阅核心用户指南中的[安全性](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"}，以查看安全最佳实践，并了解如何管理管理员会话和凭据、实施验证码以及管理网站限制。
 
 ## PCI合规性
 
 支付卡行业(PCI)为通过互联网接受信用卡付款的企业制定了一系列要求。 除了维护安全的环境外，处理客户信用卡信息的商户还需要满足一些标准准则。
 
-有关详细信息，请参阅[PCI合规性指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}。
+有关详细信息，请参阅[PCI合规性指南](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}。
 
 商家可以完成[自我评估问卷(SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}，这是一种自我验证工具，用于评估持卡人数据的安全性。
 
@@ -39,7 +39,9 @@ PCI 3-D Secure (3DS)支持在线购买信用卡时购买者与其信用卡发行
 
 [!UICONTROL Payment Services]提供3DS功能，使商家能够遵守欧盟法规，并保护客户和商家免受其商店中的欺诈活动。
 
-如果您是欧盟或英国境内需要3DS合规性的商家，则必须在`Off`配置管理员[中手动启用3DS（默认为](configure-admin.md#credit-card-fields)）。
+如果您是欧盟或英国境内需要3DS合规性的商家，则必须在[配置管理员](configure-admin.md#credit-card-fields)中手动启用3DS（默认为`Off`）。
+
+**[信用卡字段](configure-admin.md#credit-card-fields)**&#x200B;和&#x200B;**[[!DNL Google Pay]](configure-admin.md#google-pay)**&#x200B;均支持3DS。 每个付款方法在Admin中都有自己的3D安全身份验证设置，可以将其设置为`Always`、`When required`或`Off`。
 
 >[!IMPORTANT]
 >
@@ -49,7 +51,7 @@ PCI 3-D Secure (3DS)支持在线购买信用卡时购买者与其信用卡发行
 
 >[!MORELIKETHIS]
 >
-> * 有关详细信息，请参阅设置[中的](configure-admin.md#3ds)3DS。
+> * 有关详细信息，请参阅设置](configure-admin.md#3ds)中的[3DS。
 > * 有关用于3DS测试的特定信用卡的更多信息，请参阅PayPal开发人员文档中的[测试卡](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/)。
 
 ### 卡保险存储
