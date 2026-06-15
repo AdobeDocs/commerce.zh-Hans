@@ -15,7 +15,7 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b9b57bb7279354c9d5c2a7efc6e1ba14c1c36598
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
 source-wordcount: 1936
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->要了解产品发现如何对&#x200B;**精确匹配项和接近匹配项**、相同字段匹配项和更广的匹配项进行排名（以及如何与关键字权重和促销规则进行交互），请参阅[搜索匹配和排名](../search-relevance-matching.md)。
+>要了解产品发现如何对&#x200B;**精确匹配项和接近匹配项**、相同字段匹配项和更广的匹配项进行排名（以及如何与关键字权重和促销规则进行交互），请参阅[搜索匹配和排名](search-relevance-matching.md)。
 
 ## 选择&#x200B;**目录视图**
 

@@ -20,7 +20,7 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: da5950c0f2071f48f163dd02f6c38953804ae152
+source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
 workflow-type: tm+mt
 source-wordcount: 946
 ht-degree: 0%
@@ -71,7 +71,7 @@ ht-degree: 0%
 - **同一字段中的所有字** — 在&#x200B;**same**&#x200B;可搜索属性中查找&#x200B;**brauseschlauch**&#x200B;和&#x200B;**chrom**，仍然不进行分解（例如，在&#x200B;**name**&#x200B;中同时查找）。
 - 跨不同字段的&#x200B;**字** — 将&#x200B;**Brauseschlauch**&#x200B;分解为&#x200B;**brause**&#x200B;和&#x200B;**schlauch**。 这些令牌必须显示在&#x200B;**same**&#x200B;字段中（不一定是相邻短语）。 **chrom**&#x200B;可以在&#x200B;**不同的**&#x200B;字段中匹配（例如，**name**&#x200B;中的&#x200B;**brause**&#x200B;和&#x200B;**schlauch**，**color**&#x200B;中的&#x200B;**chrom**）。
 
-在[设置](./settings.md)中的[语言](./settings.md#language)选项卡上将&#x200B;**语言**&#x200B;设置为&#x200B;**德语**，以便应用分解规则。 在生产环境中启用更改之前，请验证暂存店面上的高价值德语查询。
+在[设置](../settings.md)中的[语言](../settings.md#language)选项卡上将&#x200B;**语言**&#x200B;设置为&#x200B;**德语**，以便应用分解规则。 在生产环境中启用更改之前，请验证暂存店面上的高价值德语查询。
 
 分解是基于规则的，可以在此层添加边框。 如果字典中缺少子词，则标记化可能不完整，并且返回的匹配范围比您预期的要广，例如，**gaszahler**&#x200B;中缺少&#x200B;**gas**&#x200B;可能只发出&#x200B;**zahl**，或&#x200B;**thermostat**&#x200B;中缺少&#x200B;**stat**。 词干程序还可以生成意外的根（例如，**schrauber**&#x200B;词干到&#x200B;**schraub**，或&#x200B;**schelle**&#x200B;到&#x200B;**schell**）。 对于已识别问题的已知案例，Adobe会更新词典和词干覆盖。
 
@@ -81,9 +81,9 @@ ht-degree: 0%
 
 - 从&#x200B;**精确/近**&#x200B;个短语匹配中提升
 - 当&#x200B;**所有查询词**&#x200B;出现在&#x200B;**相同**&#x200B;字段中时提升
-- **智能排名**（启用时），它将文本相关性与行为信号相结合 — 请参阅[智能排名评分的工作原理](./merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[搜索每个属性的权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文本关联性因素（例如，术语出现的频率以及名称或描述长度）。 在&#x200B;*设置*&#x200B;中，配置哪些属性参与关键词搜索及其相对&#x200B;**[关键词搜索权重](./settings.md)**。
-- **[促销规则](./merchandising/rules/overview.md)**，例如pin、boost和bury
+- **智能排名**（启用时），它将文本相关性与行为信号相结合 — 请参阅[智能排名评分的工作原理](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
+- **[搜索每个属性的权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文本关联性因素（例如，术语出现的频率以及名称或描述长度）。 在&#x200B;*设置*&#x200B;中，配置哪些属性参与关键词搜索及其相对&#x200B;**[关键词搜索权重](../settings.md)**。
+- **[促销规则](../merchandising/rules/overview.md)**，例如pin、boost和bury
 
 由于这些信号相互作用，仅在最宽级别匹配的产品有时可以排在更紧的短语匹配之上 — 例如，当&#x200B;**搜索权重**&#x200B;或高权重字段中的词频超过其他位置的较弱短语匹配时。
 
@@ -97,8 +97,8 @@ ht-degree: 0%
 
 ## 相关主题
 
-- [设置](./settings.md)
-- [搜索性能](./manage-results/search-performance.md)
-- [促销规则概述](./merchandising/rules/overview.md)
-- [添加搜索规则](./merchandising/rules/add.md)
-- [同义词概述](./merchandising/synonyms/overview.md)
+- [设置](../settings.md)
+- [搜索性能](search-performance.md)
+- [促销规则概述](../merchandising/rules/overview.md)
+- [添加搜索规则](../merchandising/rules/add.md)
+- [同义词概述](../merchandising/synonyms/overview.md)
