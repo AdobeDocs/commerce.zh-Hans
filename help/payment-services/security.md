@@ -4,9 +4,9 @@ description: 查看您站点的安全性和合规性要求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=zh-Hans
-source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
+source-git-commit: f8c44e088fa66ec506934a0155f1ff819a9db7d4
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,9 @@ PCI 3-D Secure (3DS)支持在线购买信用卡时购买者与其信用卡发行
 
 [!UICONTROL Payment Services]提供3DS功能，使商家能够遵守欧盟法规，并保护客户和商家免受其商店中的欺诈活动。
 
-如果您是欧盟或英国境内需要3DS合规性的商家，则必须在`Off`配置管理员[中手动启用3DS（默认为](configure-admin.md#credit-card-fields)）。
+如果您是欧盟或英国境内需要3DS合规性的商家，则必须在[配置管理员](configure-admin.md#credit-card-fields)中手动启用3DS（默认为`Off`）。
+
+**[信用卡字段](configure-admin.md#credit-card-fields)**&#x200B;和&#x200B;**[[!DNL Google Pay]](configure-admin.md#google-pay)**&#x200B;均支持3DS。 每个付款方法在Admin中都有自己的3D安全身份验证设置，可以将其设置为`Always`、`When required`或`Off`。
 
 >[!IMPORTANT]
 >
@@ -49,7 +51,7 @@ PCI 3-D Secure (3DS)支持在线购买信用卡时购买者与其信用卡发行
 
 >[!MORELIKETHIS]
 >
-> * 有关详细信息，请参阅设置[中的](configure-admin.md#3ds)3DS。
+> * 有关详细信息，请参阅设置[&#128279;](configure-admin.md#3ds)中的3DS。
 > * 有关用于3DS测试的特定信用卡的更多信息，请参阅PayPal开发人员文档中的[测试卡](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/)。
 
 ### 卡保险存储

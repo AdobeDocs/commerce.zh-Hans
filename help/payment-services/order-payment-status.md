@@ -5,16 +5,20 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2188'
 ht-degree: 0%
 
 ---
 
 # 订单付款状态报表
 
-[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]为您提供综合报告，以便您能够清楚地查看存储的[交易](reporting.md)、订单和付款。
+[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]为您提供综合报告，以便您能够清楚地查看存储的[交易](reporting.md)、订单和付款。
+
+>[!NOTE]
+>
+>以下订单付款状态视图可从Adobe Commerce云和内部部署上的[!DNL Payment Services] **[!UICONTROL Home]**&#x200B;获得。 它们未显示在[!DNL Adobe Commerce as a Cloud Service]或[!DNL Adobe Commerce Optimizer]的[!DNL Payment Services]仪表板中；请参阅[[!DNL Payment Services] 主页](payments-home.md)。
 
 有两个可用的“订单付款状态”报告视图，使您可以快速查看订单的付款状态：
 
@@ -27,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您尚未为[载入并激活实时模式](production.md#enable-live-payments)，则无法查看财务报表。[!DNL Payment Services]
+>如果您尚未为[!DNL Payment Services]载入并激活实时模式[，则无法查看财务报表。](production.md#enable-live-payments)
 
 ## 订单支付状态数据可视化视图
 
@@ -81,7 +85,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此表中显示的数据默认使用`DESC`按降序排序(`TRANS DATE`)。 `TRANS DATE`是事务启动的日期和时间。
+>此表中显示的数据默认使用`TRANS DATE`按降序排序(`DESC`)。 `TRANS DATE`是事务启动的日期和时间。
 
 ### 付款状态更新
 
@@ -128,13 +132,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此表中显示的数据默认使用`DESC`按降序排序(`ORDER DATE`)。 `ORDER DATE`是创建订单的日期时间戳。
+>此表中显示的数据默认使用`ORDER DATE`按降序排序(`DESC`)。 `ORDER DATE`是创建订单的日期时间戳。
 
 #### 配置数据导出
 
 即使默认情况下在`ON SAVE`模式下进行重新索引，仍建议您在`BY SCHEDULE`模式下进行索引。 `BY SCHEDULE`索引按一分钟的cron计划运行，任何更改的数据会在任何数据更改后的两分钟内显示在订单状态报表中。 此计划的重新索引可帮助您减少存储空间上的任何压力，尤其是在您有大量传入订单的情况下，因为它按计划进行（而不是在每次下订单时）。
 
-您可以在管理员`ON SAVE`中更改索引模式 — `BY SCHEDULE`或[—](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)。
+您可以在管理员[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)中更改索引模式 — `ON SAVE`或`BY SCHEDULE`—。
 
 要了解如何配置数据导出，请参阅[命令行配置](configure-cli.md#configure-data-export)。
 
@@ -224,7 +228,7 @@ ht-degree: 0%
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**。
 1. 导航到&#x200B;**[!UICONTROL Disputes column]**。
 1. 查看特定订单的任何争议并查看[争议状态](#statuses-information)。
-1. 通过单击以[PP-D-](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246)开头的争议ID链接，从&#x200B;_PayPal解决中心_&#x200B;查看争议详细信息。
+1. 通过单击以&#x200B;_PP-D-_&#x200B;开头的争议ID链接，从[PayPal解决中心](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246)查看争议详细信息。
 1. 根据需要，对争议采取适当行动。
 
    要按状态对订单争议进行排序，请单击[!UICONTROL Disputes]列标题。
@@ -256,7 +260,7 @@ ht-degree: 0%
 | [!UICONTROL Pay Status] | 特定订单的付款状态 |
 | [!UICONTROL Paid Amt] | 订单已付金额 |
 | [!UICONTROL Cur] | 订单上已付金额的货币类型 |
-| [!UICONTROL Refund Status] | 订单上的退款状态（如退货、RMA和贷项通知单中的信息） —    *[!UICONTROL Requires refund]*、*[!UICONTROL Refund requested]*、*[!UICONTROL Refunded]*、*[!UICONTROL Refund failed]*&#x200B;或&#x200B;*[!UICONTROL Voided]* |
+| [!UICONTROL Refund Status] | 订单上的退款状态（例如退货、RMA和贷项通知单中的信息） — *[!UICONTROL Requires refund]*、*[!UICONTROL Refund requested]*、*[!UICONTROL Refunded]*、*[!UICONTROL Refund failed]*&#x200B;或&#x200B;*[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | 订单的已退款总额 |
 | [!UICONTROL Cur] | 订单退款金额的币种类型 |
 | [!UICONTROL Disputes] | 订单上任何争议的状态（来自争议和拖缺款项的信息） — *[!UICONTROL Open]*、*[!UICONTROL Waiting for buyer response]*、*[!UICONTROL Waiting for seller response]*、*[!UICONTROL Under review]*、*[!UICONTROL Resolved]*&#x200B;或&#x200B;*[!UICONTROL Other]* |

@@ -18,7 +18,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
+source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
 workflow-type: tm+mt
 source-wordcount: 1104
 ht-degree: 0%
@@ -142,3 +142,4 @@ $this->eventManager->dispatch(
 >[!NOTE]
 >
 >有关事件以及如何订阅这些事件的信息，请参阅Adobe Commerce开发人员文档中的[事件和观察者](https://developer.adobe.com/commerce/php/development/components/events-and-observers)。
+

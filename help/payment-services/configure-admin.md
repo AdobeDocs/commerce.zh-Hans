@@ -4,10 +4,10 @@ description: 安装后，您可以在商店配置管理员中配置 [!DNL Paymen
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-feature: Payments, Checkout, Configuration
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+feature: Payments, Checkout, Configuration, Paas, Saas
+source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
 workflow-type: tm+mt
-source-wordcount: '3209'
+source-wordcount: '3710'
 ht-degree: 0%
 
 ---
@@ -16,26 +16,26 @@ ht-degree: 0%
 
 您可以使用“管理员”中有用的配置选项根据您的需求自定义[!DNL Payment Services]。
 
-当您在管理员中为[!DNL Payment Services]和[!DNL Adobe Commerce]配置[!DNL Magento Open Source]时，这些配置仅适用于&#x200B;_[!UICONTROL Method]_&#x200B;的_[!UICONTROL General Configuration]_&#x200B;字段中设置的环境。 您在配置字段中所做的任何更改与切换&#x200B;_[!UICONTROL Method]_&#x200B;选项无关 — 如果切换方法，您的选择不会重置。
+当您在管理员中为[!DNL Adobe Commerce]和[!DNL Magento Open Source]配置[!DNL Payment Services]时，这些配置仅适用于&#x200B;_[!UICONTROL General Configuration]_&#x200B;的_[!UICONTROL Method]_&#x200B;字段中设置的环境。 您在配置字段中所做的任何更改与切换&#x200B;_[!UICONTROL Method]_&#x200B;选项无关 — 如果切换方法，您的选择不会重置。
 
 ## 常规配置
 
-您可以为存储区和[!DNL Payment Services]启用&#x200B;_[!UICONTROL Merchant Location]_，并在&#x200B;_[!UICONTROL General Configuration]_&#x200B;分区中启用沙盒测试或实时付款。
+您可以为存储区和&#x200B;_[!UICONTROL Merchant Location]_&#x200B;启用[!DNL Payment Services]，并在&#x200B;_[!UICONTROL General Configuration]_&#x200B;分区中启用沙盒测试或实时付款。
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左侧面板中，展开&#x200B;**[!UICONTROL Sales]**&#x200B;并选择&#x200B;**[!UICONTROL Payment Methods]**。
-1. 在&#x200B;_[!UICONTROL Merchant Country]_&#x200B;中设置&#x200B;_[!UICONTROL Merchant Location]_&#x200B;字段。 如果未指定&#x200B;_[!UICONTROL Merchant Country]_，则使用常规配置中的&#x200B;_[!UICONTROL Default Country]_。
+1. 在&#x200B;_[!UICONTROL Merchant Location]_&#x200B;中设置&#x200B;_[!UICONTROL Merchant Country]_&#x200B;字段。 如果未指定&#x200B;_[!UICONTROL Merchant Country]_，则使用常规配置中的&#x200B;_[!UICONTROL Default Country]_。
 1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;部分以访问&#x200B;_[!UICONTROL [!DNL Payment Services]]_&#x200B;部分。
 1. 在&#x200B;_[!UICONTROL [!DNL Payment Services]]_&#x200B;部分中，展开&#x200B;_[!UICONTROL General Configuration]_&#x200B;部分。
 1. 对于&#x200B;**启用**，将其设置为`Yes`以启用存储区的[!DNL Payment Services]。
-1. 对于&#x200B;**方法**，如果您仍在为存储测试`Sandbox`，请将其设置为[!DNL Payment Services]；或者，如果您准备好启用实时付款，请将其设置为`Production`。
-1. 在设置&#x200B;**[!UICONTROL Payment Services Sandbox ID]** Commerce服务连接器&#x200B;**[!UICONTROL Payment Services Production ID]**&#x200B;并首次访问[仪表板后，](https://experienceleague.adobe.com/zh-hans/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank}和[!DNL Payment Services]值将自动填充。 这样做以完成沙盒和/或生产环境的入门培训。 这些值将您的SaaS ID关联到[!DNL Payment Services]。
+1. 对于&#x200B;**方法**，如果您仍在为存储测试[!DNL Payment Services]，请将其设置为`Sandbox`；或者，如果您准备好启用实时付款，请将其设置为`Production`。
+1. 在设置[Commerce服务连接器](https://experienceleague.adobe.com/zh-hans/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank}并首次访问[!DNL Payment Services]仪表板后，**[!UICONTROL Payment Services Sandbox ID]**&#x200B;和&#x200B;**[!UICONTROL Payment Services Production ID]**&#x200B;值将自动填充。 这样做以完成沙盒和/或生产环境的入门培训。 这些值将您的SaaS ID关联到[!DNL Payment Services]。
 
    >[!WARNING]
    >
    > 如果您需要在Commerce Services Connector中更改数据空间ID，则需要重置[!DNL Payment Services] ID。 单击&#x200B;**重置付款服务ID**&#x200B;以重置沙盒ID。 如果重置[!DNL Payment Services]沙盒ID，则必须重新载入。
 
-1. 首次访问&#x200B;**[!UICONTROL PayPal Merchant ID]**&#x200B;仪表板后，PayPal会自动提供您的&#x200B;**[!UICONTROL PayPal Merchant Status]**&#x200B;和[!DNL Payment Services]值。
+1. 首次访问[!DNL Payment Services]仪表板后，PayPal会自动提供您的&#x200B;**[!UICONTROL PayPal Merchant ID]**&#x200B;和&#x200B;**[!UICONTROL PayPal Merchant Status]**&#x200B;值。
 1. 对于&#x200B;**Soft Descriptor**（自定义值，显示在客户交易银行对帐单上，以便在商店/品牌/目录之间进行描述），请在文本字段中添加自定义文本（最多22个字符），替换`Soft descriptor`或现有值。
 1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;保存更改。
 1. 导航到&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以刷新所有无效缓存。
@@ -52,6 +52,26 @@ ht-degree: 0%
 | [!UICONTROL PayPal Merchant Status] | 商店视图 | 您的PayPal商家ID的状态。 |
 | [!UICONTROL Soft Descriptor] | 网站或商店视图 | 向您的网站和商店视图添加软描述符，以将信息添加到描述品牌、商店或产品线的客户交易。 |
 
+## 为网站连接其他PayPal帐户
+
+如果您运行具有&#x200B;**多个网站** （和商店视图）的单个Commerce实例，则对于某些网站，您可能需要&#x200B;**其他PayPal商家帐户**。 [!DNL Payment Services]允许您在实例设置并加入&#x200B;**全局**（默认）范围后，在管理员中完成&#x200B;**网站范围**&#x200B;的PayPal加入。
+
+在早期版本中，网站级别的PayPal帐户映射通常要求您[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#Solution)或您的Adobe代表。 满足以下先决条件时，请使用&#x200B;**[!UICONTROL Connect different account for website]**&#x200B;操作。
+
+### 先决条件（全局范围）
+
+**[!UICONTROL Connect different account for website]**&#x200B;控件仅在&#x200B;**网站**&#x200B;作用域上可用并启用，但配置为&#x200B;**默认/全局**&#x200B;的实例的&#x200B;**所有**&#x200B;均为真：
+
+1. [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas)安装已完成。
+
+1. [沙盒和生产](connect.md#configure-commerce-services) API密钥（公用和专用）保存在管理员中。
+
+1. 已在[常规配置](#general-configuration)中填充&#x200B;**[!UICONTROL Payment Services Sandbox ID]**&#x200B;和&#x200B;**[!UICONTROL Payment Services Production ID]**。
+
+1. **全局** PayPal商家帐户已&#x200B;**连接**，您已为该默认范围&#x200B;**完成PayPal载入**（已为[常规配置](#general-configuration)中所述的全局范围填充&#x200B;**[!UICONTROL PayPal Merchant ID]**&#x200B;和相关字段）。
+
+   如果全局载入未完成，请将配置范围切换到&#x200B;**[!UICONTROL Website]**，在&#x200B;**[!UICONTROL Payment Methods]**&#x200B;中打开&#x200B;**[!UICONTROL Payment Services]**，且&#x200B;**[!UICONTROL Connect different account for website]**&#x200B;按钮为&#x200B;**已禁用**；先完成连接器设置和&#x200B;**全局** PayPal载入。
+
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields]付款选项为信用卡或借记卡付款方式提供简单安全的结帐。
@@ -64,7 +84,7 @@ ht-degree: 0%
 1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;部分中，展开&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;部分。
 1. 对于&#x200B;**[!UICONTROL Title]**，输入文本（如果需要）以更改结帐期间显示的付款方式名称。
 1. 要[设置付款操作](production.md#set-payment-services-as-payment-method)，请选择&#x200B;**[!UICONTROL Authorize]**&#x200B;或&#x200B;**授权并捕获**。
-1. 要在结账页面上区分付款方法的优先级，请在`Numeric Only`字段中提供&#x200B;**[!UICONTROL Sort order]**&#x200B;值。
+1. 要在结账页面上区分付款方法的优先级，请在&#x200B;**[!UICONTROL Sort order]**&#x200B;字段中提供`Numeric Only`值。
 1. 对于&#x200B;**[!UICONTROL Show on checkout page]**，选择`Yes`以启用签出页面上的信用卡字段。
 1. 对于&#x200B;**[!UICONTROL Vault Enabled]**，选择`Yes`以启用信用卡保险存储以进行签出。
 1. 对于&#x200B;**[!UICONTROL Vault Enabled in Admin]**，选择`Yes`以允许商家使用其保险存储信用卡为客户创建订单。
@@ -96,7 +116,7 @@ ht-degree: 0%
 1. 在左侧面板中，展开&#x200B;**[!UICONTROL Sales]**&#x200B;并选择&#x200B;**[!UICONTROL Payment Methods]**。
 1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;部分。
 1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;部分中，展开&#x200B;_[!UICONTROL Fastlane]_&#x200B;部分。
-1. 要启用它，请为`Yes`选择&#x200B;**[!UICONTROL Enable Fastlane]** （`No`禁用它）。
+1. 要启用它，请为&#x200B;**[!UICONTROL Enable Fastlane]**&#x200B;选择`Yes` （`No`禁用它）。
 
    >[!NOTE]
    >
@@ -110,8 +130,8 @@ ht-degree: 0%
    >
    > 如果发卡机构需要3D安全身份验证，则无论[!UICONTROL Payment Services]配置如何，都无法绕过此步骤。
 
-1. 要在结账页面上区分付款方法的优先级，请在`Numeric Only`字段中提供&#x200B;**[!UICONTROL Sort order]**&#x200B;值。
-1. 通过将[!UICONTROL Fastlane]字段设置为&#x200B;**[!UICONTROL Enable messaging]**，指定在Adobe Commerce中签出期间是否启用`Yes`品牌。
+1. 要在结账页面上区分付款方法的优先级，请在&#x200B;**[!UICONTROL Sort order]**&#x200B;字段中提供`Numeric Only`值。
+1. 通过将&#x200B;**[!UICONTROL Enable messaging]**&#x200B;字段设置为`Yes`，指定在Adobe Commerce中签出期间是否启用[!UICONTROL Fastlane]品牌。
 1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;保存更改。
 1. 导航到&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以刷新所有无效缓存。
 
@@ -120,7 +140,7 @@ ht-degree: 0%
 | [!UICONTROL Enable Fastlane] | 商店视图 | 在签出页面上启用或禁用[!DNL Fastlane]。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Title] | 商店视图 | 在结帐期间，添加要作为此付款选项的标题显示在“付款方式”视图中的文本。 默认值为`Credit Card (via Fastlane)`。 选项： [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | 网站 | 指定付款方式的[付款操作](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=zh-Hans)。 选项： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-| [!UICONTROL 3D Secure authentication] | 商店视图 | 启用或禁用Fastlane[的](security.md#3ds)3D安全身份验证。 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL 3D Secure authentication] | 商店视图 | 启用或禁用Fastlane[&#128279;](security.md#3ds)的3D安全身份验证。 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Sort order] | 商店视图 | 结账页面上指定付款方式的排序顺序。 `Numeric Only`值 |
 | [!UICONTROL Enable messaging] | 商店视图 | 指定在Adobe Commerce中签出期间是否启用[!UICONTROL Fastlane]品牌。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
@@ -168,7 +188,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Apple Pay]
 
-借助[!DNL Apple Pay]，商家可以在Safari中提供安全、快速且无缝的结账体验 — 每个商家帐户最多支持99个域。 “[!DNL Apple Pay]”按钮会自动填充客户的iOS或macOS设备中的付款、联系和送货信息，从而支持通过一次点按即可快速完成购买操作，这有助于提高转化率。
+借助[!DNL Apple Pay]，商家可以提供安全、快速且无缝的结账体验 — 每个商家帐户最多可支持99个域。 在&#x200B;**Safari**（macOS和iOS）中，“[!DNL Apple Pay]”按钮会在结帐（快速）开始和最终结帐页面上自动填充客户设备中的付款、联系人和送货信息。 在&#x200B;**Chrome、Firefox或Microsoft Edge**&#x200B;中，[!DNL Apple Pay]在&#x200B;**快速结帐**&#x200B;期间以及&#x200B;**最终结帐步骤**&#x200B;均可用；在桌面上，二维码和&#x200B;**iPhone**（iOS 18或更高版本）允许购物者在Apple工资表中完成付款。 确保在要快速签出的位置启用&#x200B;**[!UICONTROL Show Apple Pay on product detail page]**&#x200B;或其他投放位置。
 
 >[!IMPORTANT]
 >
@@ -179,16 +199,16 @@ ht-degree: 0%
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左侧面板中，展开&#x200B;**[!UICONTROL Sales]**&#x200B;并选择&#x200B;**[!UICONTROL Payment Methods]**。
 1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;部分。
-1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;部分中，展开&#x200B;_[!UICONTROL Apple Pay]_&#x200B;部分。
+1. 在&#x200B;_[!UICONTROL [!DNL Payment Services]]_&#x200B;部分中，展开&#x200B;_[!UICONTROL Apple Pay]_&#x200B;部分。
 1. 对于&#x200B;**[!UICONTROL Title]**，输入文本（如果需要）以更改结帐期间显示的付款方式名称。
 1. 要[设置付款操作](production.md#set-payment-services-as-payment-method)，请选择&#x200B;**[!UICONTROL Authorize]**&#x200B;或&#x200B;**[!UICONTROL Authorize and Capture]**。
-1. 根据需要选择以下选项中的[!DNL Apple Pay]，指定在Adobe Commerce中启用`Yes`选项的位置：
+1. 根据需要选择以下选项中的`Yes`，指定在Adobe Commerce中启用[!DNL Apple Pay]选项的位置：
    * **[!UICONTROL Show Apple Pay on checkout page]**
    * **[!UICONTROL Show Apple Pay at start of checkout]**
    * **[!UICONTROL Show Apple Pay on product detail page]**
    * **[!UICONTROL Show Apple Pay in mini cart preview]**
    * **[!UICONTROL Show Apple Pay on cart page]**
-1. 要启用调试模式，请为`Yes`选择&#x200B;**[!UICONTROL Debug Mode]** （`No`禁用它）。
+1. 要启用调试模式，请为&#x200B;**[!UICONTROL Debug Mode]**&#x200B;选择`Yes` （`No`禁用它）。
 1. 要保存更改，请单击&#x200B;**[!UICONTROL Save Config]** 。
 1. 导航到&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以刷新所有无效缓存。
 
@@ -215,18 +235,19 @@ ht-degree: 0%
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左侧面板中，展开&#x200B;**[!UICONTROL Sales]**&#x200B;并选择&#x200B;**[!UICONTROL Payment Methods]**。
 1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;部分。
-1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;部分中，展开&#x200B;_[!UICONTROL Google Pay]_&#x200B;部分。
+1. 在&#x200B;_[!UICONTROL [!DNL Payment Services]]_&#x200B;部分中，展开&#x200B;_[!UICONTROL Google Pay]_&#x200B;部分。
 1. （可选）通过在&#x200B;**[!UICONTROL Title]**&#x200B;字段中输入新名称来更改结账期间显示的付款方法的名称。
-1. [通过选择](production.md#set-payment-services-as-payment-method)或&#x200B;**[!UICONTROL Authorize]**&#x200B;设置付款操作&#x200B;**[!UICONTROL Authorize and Capture]**。
-1. 根据需要选择以下选项中的[!DNL Google Pay]，指定在Adobe Commerce中启用`Yes`选项的位置：
+1. [通过选择&#x200B;**[!UICONTROL Authorize]**&#x200B;或&#x200B;**[!UICONTROL Authorize and Capture]**&#x200B;设置付款操作](production.md#set-payment-services-as-payment-method)。
+1. 根据需要选择以下选项中的`Yes`，指定在Adobe Commerce中启用[!DNL Google Pay]选项的位置：
    * **[!UICONTROL Show Google Pay on checkout page]**
    * **[!UICONTROL Show Google Pay at start of checkout]**
    * **[!UICONTROL Show Google Pay on product detail page]**
    * **[!UICONTROL Show Google Pay in mini cart preview]**
    * **[!UICONTROL Show Google Pay on cart page]**
+1. 若要选择购物者在Google支付表之后是否看到单独的&#x200B;**Google支付审核**&#x200B;页面，请将&#x200B;**[!UICONTROL Skip Review]**&#x200B;设置为`Yes`或`No`。 当设置为`Yes`时，受支持的快速流程会在Google工资单&#x200B;**（客户端送货回调）中显示**&#x200B;送货方法，并且无需额外的审核步骤即可完成。 当设置为`No`时，购物者可以在付款前在审核页面上确认运费和总计。
 1. 要启用&#x200B;**[!UICONTROL 3D Secure authentication]** （`Off`默认为），请选择`Always`或`When required`。
-1. 要启用调试模式，请为`Yes`选择&#x200B;**[!UICONTROL Debug Mode]** （`No`禁用它）。
-1. 根据需要选择&#x200B;_[!UICONTROL Google Pay]_、**[!UICONTROL Button Color]**&#x200B;和&#x200B;**[!UICONTROL Button Type]**，配置&#x200B;**[!UICONTROL Button Style]**&#x200B;按钮的外观。
+1. 要启用调试模式，请为&#x200B;**[!UICONTROL Debug Mode]**&#x200B;选择`Yes` （`No`禁用它）。
+1. 根据需要选择&#x200B;**[!UICONTROL Button Color]**、**[!UICONTROL Button Type]**&#x200B;和&#x200B;**[!UICONTROL Button Style]**，配置&#x200B;_[!UICONTROL Google Pay]_&#x200B;按钮的外观。
 1. 要设置高度，请使用&#x200B;**[!UICONTROL Button Style]**&#x200B;中定义的高度默认值。
 1. 要保存更改，请单击&#x200B;**[!UICONTROL Save Config]** 。
 1. 导航到&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以刷新所有无效缓存。
@@ -243,6 +264,7 @@ ht-degree: 0%
 | [!UICONTROL Show Google Pay on product detail page] | 商店视图 | 在产品详细信息页面上启用或禁用[!DNL Google Pay]。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay in mini cart preview] | 商店视图 | 在迷你购物车预览中启用或禁用[!DNL Google Pay]。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay on cart page] | 商店视图 | 在购物车页面上启用或禁用[!DNL Google Pay]。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Skip Review] | 商店视图 | 当设置为`[!UICONTROL Yes]`时，符合条件的[!DNL Google Pay]快速流程可以在工资单后面省略单独的审核页；配送方式显示在Google工资单中。 当设置为`[!UICONTROL No]`时，购物者将转到审核页面以确认配送和总计。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL 3D Secure authentication] | 商店视图 | 启用或禁用[3D安全身份验证](security.md#3ds)。 选项： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | 网站 | 启用或禁用调试模式。 选项： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | 商店视图 | 定义[!DNL Google Pay]按钮的颜色。 选项： `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
@@ -266,8 +288,8 @@ ht-degree: 0%
 1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;部分中，展开&#x200B;_[!UICONTROL PayPal payment buttons]_&#x200B;部分。
 1. 若要更改结账期间显示的付款方式名称，请编辑&#x200B;_[!UICONTROL Title]_&#x200B;字段。
 1. 要[设置付款操作](production.md#set-payment-services-as-payment-method)，请选择&#x200B;**[!UICONTROL Authorize]**&#x200B;或&#x200B;**[!UICONTROL Authorize and Capture]**。
-1. 要在结账页面上区分付款方法的优先级，请在`Numeric Only`字段中提供&#x200B;**[!UICONTROL Sort order]**&#x200B;值。
-1. 要启用/禁用[稍后付费消息](payments-options.md#pay-later-button)，请为`Yes`选择`No`/**[!UICONTROL Display Pay Later Message]**。
+1. 要在结账页面上区分付款方法的优先级，请在&#x200B;**[!UICONTROL Sort order]**&#x200B;字段中提供`Numeric Only`值。
+1. 要启用/禁用[稍后付费消息](payments-options.md#pay-later-button)，请为&#x200B;**[!UICONTROL Display Pay Later Message]**&#x200B;选择`Yes`/`No`。
 
    * 如果启用[稍后付费消息](payments-options.md#pay-later-button)，则会显示&#x200B;**[!UICONTROL Configure Messaging]**&#x200B;模式按钮，以便您可以设置&#x200B;**[!UICONTROL PayPal Pay Later messaging]**&#x200B;的样式。
 
@@ -277,10 +299,10 @@ ht-degree: 0%
    * **[!UICONTROL Show buttons on product detail page]**
    * **[!UICONTROL Show buttons in mini cart preview]**
    * **[!UICONTROL Show buttons on cart page]**
-1. 要启用Venmo作为付款选项，请为`Yes`选择&#x200B;**[!UICONTROL Venmo Enabled]**。
-1. 要启用信用卡和借记卡作为付款选项（PayPal智能按钮），请为`Yes`选择&#x200B;**[!UICONTROL Credit and Debit Card Enabled]**。
-1. 若要启用/禁用[PayPal稍后支付](payments-options.md#pay-later-button)付款选项，请为`Yes`选择`No`/**[!UICONTROL PayPal Pay Later Enabled]**。
-1. 要启用调试模式，请为`Yes`选择&#x200B;**[!UICONTROL Debug Mode]** （`No`禁用它）。
+1. 要启用Venmo作为付款选项，请为&#x200B;**[!UICONTROL Venmo Enabled]**&#x200B;选择`Yes`。
+1. 要启用信用卡和借记卡作为付款选项（PayPal智能按钮），请为&#x200B;**[!UICONTROL Credit and Debit Card Enabled]**&#x200B;选择`Yes`。
+1. 若要启用/禁用[PayPal稍后支付](payments-options.md#pay-later-button)付款选项，请为&#x200B;**[!UICONTROL PayPal Pay Later Enabled]**&#x200B;选择`Yes`/`No`。
+1. 要启用调试模式，请为&#x200B;**[!UICONTROL Debug Mode]**&#x200B;选择`Yes` （`No`禁用它）。
 1. 要保存更改，请单击&#x200B;**[!UICONTROL Save Config]** 。
 1. 导航到&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以刷新所有无效缓存。
 
@@ -351,12 +373,12 @@ ht-degree: 0%
 1. 在左侧面板中，展开&#x200B;**[!UICONTROL Sales]**&#x200B;并选择&#x200B;**[!UICONTROL Payment Methods]**。
 1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;部分。
 1. 在&#x200B;_[!UICONTROL [!DNL Payment Services]]_&#x200B;部分中，展开&#x200B;_[!UICONTROL PayPal Smart Button Styling]_&#x200B;部分。
-1. 要设置布局，请选择`Vertical`的`Horizontal`或&#x200B;**[!UICONTROL Layout]**
+1. 要设置布局，请选择&#x200B;**[!UICONTROL Layout]**&#x200B;的`Vertical`或`Horizontal`
 1. 要设置颜色，请从&#x200B;**[!UICONTROL Color]**&#x200B;中的可用颜色中选择。
-1. 要设置形状，请选择`Rectangular`的`Pill`或&#x200B;**[!UICONTROL Shape]**。
-1. 若要使用默认高度，请为`Yes`选择`No`或&#x200B;**[!UICONTROL Use Default Height]**。
+1. 要设置形状，请选择&#x200B;**[!UICONTROL Shape]**&#x200B;的`Rectangular`或`Pill`。
+1. 若要使用默认高度，请为&#x200B;**[!UICONTROL Use Default Height]**&#x200B;选择`Yes`或`No`。
 1. 要设置自定义高度，请为&#x200B;**[!UICONTROL Height]**&#x200B;添加所需的像素高度。
-1. 要设置标语，请为`Yes`选择`No`或&#x200B;**[!UICONTROL Tagline]**。
+1. 要设置标语，请为&#x200B;**[!UICONTROL Tagline]**&#x200B;选择`Yes`或`No`。
 1. 要保存更改，请单击&#x200B;**[!UICONTROL Save Config]** 。
 1. 导航到&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以刷新所有无效缓存。
 
@@ -414,7 +436,7 @@ ht-degree: 0%
 
 在[信用卡字段设置](#credit-card-fields)中启用或禁用3DS。
 
-有关详细信息，请参阅安全性[中的](security.md#3ds)3DS。
+有关详细信息，请参阅安全性[&#128279;](security.md#3ds)中的3DS。
 
 ## 使用多个PayPal帐户
 
@@ -422,7 +444,6 @@ ht-degree: 0%
 
 有关网站、商店和商店视图层次结构的详细信息，请参阅[网站、商店和视图范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans)。
 
-有关通过CLI为多个PayPal帐户配置作用域的详细信息，请参阅[命令行配置](configure-cli.md#configure-scope-via-cli)。
+要在&#x200B;**全局** Commerce服务和PayPal登录完成后将&#x200B;**其他PayPal帐户连接到单个网站**，请在&#x200B;**[!UICONTROL Website]**&#x200B;范围中使用&#x200B;**[!UICONTROL Connect different account for website]**。 查看[为网站连接其他PayPal帐户](#connect-a-different-paypal-account-for-a-website)。
 
-您的销售代表可以为您的商家帐户创建新的[范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)，并使用PayPal载入其他网站，以便您配置的任何PayPal按钮都将显示在您的网站上。 联系您的销售人员
-，以获取有关为您的网站使用多个PayPal帐户的帮助。
+有关通过CLI为多个PayPal帐户配置作用域的详细信息，请参阅[命令行配置](configure-cli.md#configure-scope-via-cli)。

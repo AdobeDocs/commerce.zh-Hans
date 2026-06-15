@@ -5,16 +5,20 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: a0f9ddbf3d0f291855cb51fd70a782c48b8efc6c
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
 
 # 支付报表
 
-[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]为您提供全面的报告，以便您能够清楚地查看存储交易、订单和付款。
+[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]为您提供全面的报告，以便您能够清楚地查看存储交易、订单和付款。
+
+>[!NOTE]
+>
+>以下支付视图可从Adobe Commerce云和内部部署上的[!DNL Payment Services] **[!UICONTROL Home]**&#x200B;获得。 它们未显示在[!DNL Adobe Commerce as a Cloud Service]或[!DNL Adobe Commerce Optimizer]的[!DNL Payment Services]仪表板中；请参阅[[!DNL Payment Services] 主页](payments-home.md)。
 
 有两个可用的付款报告视图，使您能够查看有关所有付款的深入信息：
 
@@ -81,7 +85,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此表中显示的数据默认使用`DESC`按降序排序(`TRANS DATE`)。 `TRANS DATE`是事务启动的日期和时间。
+>此表中显示的数据默认使用`TRANS DATE`按降序排序(`DESC`)。 `TRANS DATE`是事务启动的日期和时间。
 
 ### 选择数据源
 
@@ -110,7 +114,7 @@ ht-degree: 0%
 
 搜索中返回的行数，或显示在默认的30天事务处理的行数，显示在付款视图网格的上方，与事务日期日历选择器过滤器一起显示。
 
-向左和向右滚动查看每日报表中每个付款交易[的](#column-descriptions)信息，包括交易日期、参考ID、发票编号和付款方式详细信息。
+向左和向右滚动查看每日报表中每个付款交易[&#128279;](#column-descriptions)的信息，包括交易日期、参考ID、发票编号和付款方式详细信息。
 
 #### 自定义事务时间范围
 
@@ -185,19 +189,19 @@ ht-degree: 0%
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | 为订单在买方和卖方之间转移的资金 |
 | [!UICONTROL AUTH] | 授权和授权撤消交易记录 |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | 拖缺款项费用和拖缺款项费用冲销交易记录 |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | 合作伙伴费用、支付费用和费用冲销交易记录 |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | 从银行或亏损帐户中收回 |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |

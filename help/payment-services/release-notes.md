@@ -1,11 +1,13 @@
 ---
 title: '[!DNL Payment Services]发行说明'
 description: 查看发行说明，了解所有 [!DNL Payment Services] 发行版本的信息。
+role: Admin, User
+level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: e0f8437d1d4592e8bff2f718352977832d64a100
+source-git-commit: 29747e38a2800997c251f24f70b6356aada9fab9
 workflow-type: tm+mt
-source-wordcount: '5019'
+source-wordcount: '5401'
 ht-degree: 0%
 
 ---
@@ -32,6 +34,10 @@ Adobe支持最新发布的支付服务版本。 提供了旧版本的发行说�
 这些发行说明描述了所发生以及发行的功能更改和修复，这些更改和修复超出了托管服务的常规功能发行版本。
 
 +++托管服务更新
+
+_2026年6月8日_
+
+![新问题](../assets/new.svg)<!-- Issue PAY-6510 -->对于[!DNL Adobe Commerce as a Cloud Service]，[!DNL Commerce Admin]中的[!DNL Payment Services]仪表板UI允许商家直接从仪表板打开[交易报表](reporting.md#transactions-report-view)。 此SaaS仪表板仅公开&#x200B;**选定的**&#x200B;报表（不是云中和内部部署的Adobe Commerce上可用的每个报表或主页入口点）；请参阅[[!DNL Payment Services] 主页](payments-home.md)。 有关ACCS发行说明和时间，请参阅[查看Payment Services交易报表](../cloud-service/release-notes.md#view-the-payment-services-transactions-report)。
 
 _2026年1月21日_
 
@@ -77,7 +83,7 @@ _2023年6月9日_
 
 ![修复了问题](../assets/fix.svg)<!-- Issue PAY-4486-->之前，PayPal PayLater按钮未出现在英国商家的结帐中。 该问题已得到解决。
 
-![修复了问题](../assets/fix.svg)<!-- Issue PAY-4485-->当[!DNL Payment Services]被禁用时，[!DNL Payment Services]主页现在将显示报表数据可视化视图。
+![修复了问题](../assets/fix.svg)<!-- Issue PAY-4485-->禁用[!DNL Payment Services]后，[!DNL Payment Services]主页现在将显示报表数据可视化视图。
 
 _2023年1月25日_
 
@@ -110,6 +116,28 @@ _2021年6月28日_
 >[!NOTE]
 >
 > 经常发行版本以根据需要提供新功能和修复。 发布计划未修复。
+
+## v2.15.0
+
+_2026年6月15日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
+
+![新建](../assets/new.svg)<!-- PAY-6564 -->现在，[!DNL Google Pay]快速结帐可以使用客户端送货回拨在Google工资单中显示送货方法，因此购物者可在确认付款之前选择送货。 商家可以使用[Google支付配置](configure-admin.md#google-pay)中的&#x200B;**[!UICONTROL Skip Review]**&#x200B;显示或隐藏单独的Google支付审核步骤。 跳过复查步骤后，当Wallet地址或送货方法更改时，送货选项将保留在工作表中。
+
+![新](../assets/new.svg)<!-- PAY-6565 -->现在，无论是否显示Google支付审核步骤，购物者都可以在[!DNL Google Pay]快速支付表中应用促销代码。 每个工资单只能应用一个代码，即使对于允许每张订单使用多张优惠券的商店，也是如此。 有关详细信息，请参阅[付款选项](payments-options.md#google-pay-button)。
+
+![新](../assets/new.svg)<!-- PAY-6567 -->现在，除了Safari之外，Chrome、Firefox和Microsoft Edge中还提供了[!DNL Apple Pay]快速签出。 在桌面设备上，购物者可以使用运行iOS 18或更高版本的iPhone扫描二维码，以在Apple Pay表中完成支付。 必须在[Apple Pay配置](configure-admin.md#apple-pay)中启用Express投放（例如，在产品详细信息页面上）。
+
+![新](../assets/new.svg)<!-- PAY-6566 -->现在，购物者可以在[!DNL Apple Pay]快速工资单中申请或删除单个折扣代码，并且工资单中的总计会更新。 与往常一样，在管理员中创建并启用购物车价格规则。
+
+![新](../assets/new.svg)<!-- PAY-6151 -->现在，Luma产品详细信息和签出页面上的[!DNL Apple Pay]通过Payments SDK渲染，因此体验与用于快速签出的最新PayPal集成匹配。
+
+![新](../assets/new.svg)<!-- PAY-6611 -->现在，[!DNL Adobe Commerce]订单详细信息页面显示通过[!DNL Payment Services]处理的交易的额外付款详细信息，包括[!DNL PayPal]交易ID、PayPal调试ID、付款人电子邮件、商家保护资格和AVS/CVV验证代码。 有关详细信息，请参阅[3DS](security.md#3ds)。
+
+![修复了问题](../assets/fix.svg)<!-- PAY-6513 -->修复了在尝试付款失败并稍后成功结账后订单成功页面上仍可能显示[!DNL Apple Pay]错误消息的问题。
+
+![修复了问题](../assets/fix.svg)<!-- PAY-6585 -->修复了以下问题：[!DNL Apple Pay]快速工资单对于国家和地区不是必填字段的英国和欧洲地址显示了&#x200B;**[!UICONTROL Please select a state/region]**&#x200B;错误。
 
 ## v2.14.0
 

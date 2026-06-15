@@ -1,11 +1,13 @@
 ---
 title: 付款选项
 description: 设置付款选项以自定义商店客户可用的方法。
+role: Admin, User
+level: Intermediate
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '2326'
 ht-degree: 0%
 
 ---
@@ -63,17 +65,38 @@ ht-degree: 0%
 
 ### [!DNL Apple Pay]按钮
 
-借助[!DNL Apple Pay]，商家可以在Safari中提供安全、简化的结账体验（每个商家帐户最多99个域），从而提高转化率。 “[!DNL Apple Pay]”按钮可自动填写从客户的iOS或macOS设备存储的付款、联系方式和送货详细信息，从而支持快速的一键结账体验。
+通过[!DNL Apple Pay]，商家可以提供安全、简化的结账体验（每个商家帐户最多99个域），从而提高转化率。
+
+* **Safari（macOS和iOS）** — “[!DNL Apple Pay]”按钮在结帐(express)开始和最终结帐页面时，直接从客户的Apple设备自动填写存储的付款、联系人和送货详细信息。
+* **Chrome、Firefox和Microsoft Edge** — 购物者可以在&#x200B;**快速结帐**&#x200B;期间和&#x200B;**最终结帐步骤**&#x200B;使用[!DNL Apple Pay]。 在桌面上显示&#x200B;**QR码**，以便购物者使用Camera应用程序在&#x200B;**iPhone**（iOS 18或更高版本）上的Apple支付表中完成付款以打开Wallet流程。
+
+请参阅[Wallet的新增功能和 [!DNL Apple Pay]](https://developer.apple.com/videos/play/wwdc2024/10108/?time=35){target=_blank} （Apple开发人员，WWDC24），了解Apple对此流程的概述。
 
 迷你卡中的![Apple付款按钮](assets/applepay-button.png){width="500" zoomable="yes"}
 
 启用后，[!DNL Apple Pay]按钮在产品页面、迷你购物车、购物车和结帐视图中可见。 您可以在存储配置或扩展的主目录中配置[!DNL Apple Pay]。
 
+客户可以在[!DNL Apple Pay]快速结帐期间&#x200B;**应用或删除单个购物车价格规则（优惠券）代码**。
+
 >[!NOTE]
 >
->  Apple支付域验证证书已包含在支付服务代码中。 验证路径`/.well-known/apple-developer-merchantid-domain-association`是否返回200响应代码。 有关[Apple Pay域验证](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file)证书的详细信息，请参阅有关与Apple Pay集成的&#x200B;**PayPal开发人员文档**。
+> Apple支付域验证证书已包含在[!DNL Payment Services]代码中。 验证路径`/.well-known/apple-developer-merchantid-domain-association`是否返回200响应代码。 有关&#x200B;**Apple Pay域验证**&#x200B;证书的详细信息，请参阅有关与Apple Pay集成的[PayPal开发人员文档](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file)。
 
 有关详细信息，请参阅[设置](configure-admin.md#apple-pay)。
+
+#### [!DNL Apple Pay] Express的限制
+
+[!DNL Apple Pay]工资单中的&#x200B;**促销代码**
+
+* 在[!DNL Apple Pay]工资单中输入的促销代码仅适用于快速流。 在标准结帐页面上选择[!DNL Apple Pay]时，不会应用这些变量。
+* 每个[!DNL Apple Pay]工资单只能应用&#x200B;**一个**&#x200B;促销代码。
+* 没有[!DNL Apple Pay]审核页面；购物者直接从工资单完成购买。
+* 如果购物者关闭并重新打开[!DNL Apple Pay]工资单，则不会记住之前输入的促销代码 — 只有折扣金额会保留在合计中。
+
+**非Safari浏览器**
+
+* [!DNL Apple Pay]按钮无法在Android设备上的快速或标准签出流中呈现。
+* 对于&#x200B;**虚拟产品**，[!DNL Apple Pay]工资单仍会提示输入送货地址。 该地址用作帐单地址的最佳估计值来计算总计，因为Apple在购物者授权付款之前不提供帐单地址。
 
 ### [!DNL Google Pay]按钮
 
@@ -85,9 +108,28 @@ ht-degree: 0%
 
 启用后，[!DNL Google Pay]按钮在产品页面、迷你购物车、购物车和结帐视图中可见。 有关详细信息，请参阅[设置](configure-admin.md)。
 
+[!DNL Google Pay] **快速**&#x200B;签出可在Google工资单中显示&#x200B;**送货方法**，支持可选的&#x200B;**审核**&#x200B;步骤（配置&#x200B;**[跳过审核](configure-admin.md#google-pay)**），并在签出期间包含&#x200B;**促销代码**&#x200B;字段。
+
 >[!NOTE]
 >
 > [!DNL Google Pay] API只能在安全上下文的网站上使用。 有关详细信息，请参阅[疑难解答](https://developers.google.com/pay/api/web/support/troubleshooting)文档。
+
+#### [!DNL Google Pay] Express的限制
+
+**在工资单中发货**
+
+* 仅当[Google付款配置](configure-admin.md#google-pay)中的&#x200B;**[!UICONTROL Skip Review]**&#x200B;设置为`Yes`时，**工作表内送货**&#x200B;行为（客户端送货回调）才可用。
+
+[!DNL Google Pay]工资单中的&#x200B;**促销代码**
+
+* 在[!DNL Google Pay]工资单中输入的促销代码仅适用于快速流。 在标准结帐页面上选择[!DNL Google Pay]时，不会应用这些变量。
+* 每个[!DNL Google Pay]工资单只能应用&#x200B;**一个**&#x200B;促销代码，即使您的商店允许每张订单使用多张优惠券也是如此。 （标准购物车和结帐中仍支持多个优惠券。）
+* 促销代码不能应用于礼品卡产品。
+* Android设备&#x200B;**不支持促销代码字段**。
+* 在[!DNL Google Pay]工资表中添加的代码只能从工资表中删除，不能从Commerce购物车页面中删除。
+* 在Adobe Commerce 2.4.4-2.4.6上，由于平台限制，[!DNL Google Pay]工资单中的折扣行可能没有显示任何值。
+* 在Adobe Commerce 2.4.7上，由于GraphQL响应中的平台限制，某些产品（主要是可下载的产品）的折扣值可能不会显示在[!DNL Google Pay]工资单中。
+* 如果应用了自动[购物车价格规则](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=zh-Hans)（例如，“在支出超过$200时优惠$50”），则它将与购物者在工资表中应用的任何代码相结合。 因此，[!DNL Google Pay]工资单中显示的总数可能与订单汇总不同。
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -95,7 +137,7 @@ ht-degree: 0%
 
 ![PayPal按钮](assets/paypal-button.png){width="350" zoomable="yes"}
 
-您可以在存储配置或[!UICONTROL PayPal payment buttons]主页中配置[!DNL Payment Services]。
+您可以在存储配置或[!DNL Payment Services]主页中配置[!UICONTROL PayPal payment buttons]。
 
 在PayPal的[付款方法文档](https://developer.paypal.com/docs/checkout/payment-methods/)中了解按国家/地区划分的付款方法可用性。
 
@@ -127,11 +169,11 @@ ht-degree: 0%
 
 请参阅PayPal开发人员文档中有关[稍后付款优惠](https://developer.paypal.com/docs/checkout/pay-later/us/)的信息。 使用&#x200B;**国家或地区**&#x200B;下拉菜单选择感兴趣的地区。
 
-了解如何通过更新[!DNL Pay Later]设置[配置来禁用或启用](configure-admin.md#paypal-payment-buttons)消息传送。
+了解如何通过更新[设置](configure-admin.md#paypal-payment-buttons)配置来禁用或启用[!DNL Pay Later]消息传送。
 
 ##### 可选。 配置稍后付费消息
 
-**为**&#x200B;稍后付款[配置消息传送](configure-admin.md#paypal-payment-buttons)允许商家修改此付款选项的默认样式。 如果您在&#x200B;**[!UICONTROL Display Pay Later Message]**&#x200B;设置`Yes`配置中将[设置为](configure-admin.md#paypal-payment-buttons)，则会显示&#x200B;**[!UICONTROL Configure Messaging]**&#x200B;模式按钮，以便您为&#x200B;**[!UICONTROL PayPal Pay Later messaging]**&#x200B;设置样式。
+**为[稍后付款](configure-admin.md#paypal-payment-buttons)配置消息传送**&#x200B;允许商家修改此付款选项的默认样式。 如果您在[设置](configure-admin.md#paypal-payment-buttons)配置中将&#x200B;**[!UICONTROL Display Pay Later Message]**&#x200B;设置为`Yes`，则会显示&#x200B;**[!UICONTROL Configure Messaging]**&#x200B;模式按钮，以便您为&#x200B;**[!UICONTROL PayPal Pay Later messaging]**&#x200B;设置样式。
 
 ![稍后付费消息](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
@@ -147,7 +189,7 @@ PayPal、Pay Later和Venmo付款方法使用[服务器端送货回拨](https://d
 
 ### 仅使用PayPal付款按钮
 
-若要快速将商店设置为生产模式，您可以仅配置&#x200B;_个_ PayPal付款按钮（Venmo、PayPal等）。 — 而不使用PayPal信用卡支付选项。
+若要将商店快速转入生产模式，您只能配置&#x200B;_仅_&#x200B;个PayPal付款按钮（Venmo、PayPal等），而不能同时使用PayPal信用卡付款选项。
 
 这允许您：
 
@@ -157,16 +199,16 @@ PayPal、Pay Later和Venmo付款方法使用[服务器端送货回拨](https://d
 
 要&#x200B;**仅使用&#x200B;_捕获付款_ PayPal付款按钮（_不是_ PayPal信用卡付款选项）**：
 
-1. 请确保您的存储在生产模式[中为](configure-admin.md#general-configuration)。
+1. 请确保您的存储在生产模式[&#128279;](configure-admin.md#general-configuration)中为。
 1. 在“设置”中[配置所需的PayPal付款按钮](configure-admin.md#paypal-payment-buttons)。
-1. 关闭&#x200B;_部分中的_&#x200B;选项&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;关闭&#x200B;_[!UICONTROL Payment buttons]_。
+1. 关闭&#x200B;_[!UICONTROL Payment buttons]_&#x200B;部分中的&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;选项_&#x200B;关闭&#x200B;_。
 
 要&#x200B;**使用现有信用卡提供商&#x200B;_和_ PayPal付款按钮**&#x200B;捕获付款：
 
-1. 请确保您的存储在生产模式[中为](configure-admin.md#general-configuration)。
+1. 请确保您的存储在生产模式[&#128279;](configure-admin.md#general-configuration)中为。
 1. [配置所需的PayPal付款按钮](configure-admin.md#paypal-payment-buttons)。
-1. 关闭&#x200B;_部分中的_&#x200B;选项&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;关闭&#x200B;_[!UICONTROL Payment buttons]_。
-1. 关闭&#x200B;_部分中的_&#x200B;关闭&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_&#x200B;选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=zh-Hans#payments)。
+1. 关闭&#x200B;_[!UICONTROL Payment buttons]_&#x200B;部分中的&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;选项_&#x200B;关闭&#x200B;_。
+1. 关闭&#x200B;_[!UICONTROL Credit card fields]_&#x200B;部分中的_&#x200B;关闭&#x200B;_&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=zh-Hans#payments)。
 
 ## 本地支付方式
 
@@ -195,11 +237,11 @@ LPM会根据客户的账单地址和网站的基本货币向客户显示。 仅�
 
 要启用快速结帐按钮，请分别配置每种付款方式：
 
-* **PayPal和稍后付款**：在&#x200B;**[!UICONTROL Show buttons at start of checkout]** PayPal付款按钮[设置中启用](configure-admin.md#paypal-payment-buttons)。
+* **PayPal和稍后付款**：在[PayPal付款按钮](configure-admin.md#paypal-payment-buttons)设置中启用&#x200B;**[!UICONTROL Show buttons at start of checkout]**。
 
-* **Apple支付**：在&#x200B;**[!UICONTROL Show Apple Pay at start of checkout]** Apple支付[设置中启用](configure-admin.md#apple-pay)。
+* **Apple支付**：在[Apple支付](configure-admin.md#apple-pay)设置中启用&#x200B;**[!UICONTROL Show Apple Pay at start of checkout]**。
 
-* **Google支付**：在&#x200B;**[!UICONTROL Show Google Pay at start of checkout]** Google支付[设置中启用](configure-admin.md#google-pay)。
+* **Google支付**：在[Google支付](configure-admin.md#google-pay)设置中启用&#x200B;**[!UICONTROL Show Google Pay at start of checkout]**。
 
 >[!NOTE]
 >

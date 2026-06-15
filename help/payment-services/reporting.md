@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d0d0634283493f61faae94bebb9da1c8bd177e55
 workflow-type: tm+mt
-source-wordcount: 1391
+source-wordcount: 1439
 ht-degree: 0%
 
 ---
@@ -59,9 +59,13 @@ ht-degree: 0%
 
 >[!TAB Adobe Commerce as a Cloud Service和Commerce Optimizer]
 
-相同的报告功能同样适用于SaaS部署。 痕迹导航显示&#x200B;**[!UICONTROL Home]** > **[!UICONTROL Transactions]**，并且网格包含&#x200B;**[!UICONTROL Order ID]**、**[!UICONTROL PayPal Transaction ID]**、**[!UICONTROL Customer ID]**、**[!UICONTROL Transaction Date]**、**[!UICONTROL Payment Method]**、**[!UICONTROL Payment Detail]**、**[!UICONTROL Card Last Four]**、**[!UICONTROL Result]**&#x200B;和&#x200B;**[!UICONTROL Response Code]**&#x200B;等列。
+对于这些SaaS部署，仪表板中的表格化事务报告与此主题中描述的功能（过滤器、列、数据源、下载等）匹配。 痕迹导航显示&#x200B;**[!UICONTROL Home]** > **[!UICONTROL Transactions]**，并且网格包含&#x200B;**[!UICONTROL Order ID]**、**[!UICONTROL PayPal Transaction ID]**、**[!UICONTROL Customer ID]**、**[!UICONTROL Transaction Date]**、**[!UICONTROL Payment Method]**、**[!UICONTROL Payment Detail]**、**[!UICONTROL Card Last Four]**、**[!UICONTROL Result]**&#x200B;和&#x200B;**[!UICONTROL Response Code]**&#x200B;等列。
 
 ![SaaS上的事务报告视图](assets/transactions-report-view-saas.png){width="800" zoomable="yes"}
+
+>[!NOTE]
+>
+>SaaS [!DNL Payment Services]仪表板不包括为Adobe Commerce在云中和内部部署显示的每个报表或主页入口点。 请参阅[[!DNL Payment Services] 主页](payments-home.md)以了解每个部署可用的内容。
 
 >[!ENDTABS]
 
