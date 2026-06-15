@@ -1,0 +1,97 @@
+---
+title: 搜索匹配和排名
+description: 了解 [!DNL Adobe Commerce Optimizer] 如何排定精确匹配和近匹配、同字段匹配和跨字段匹配的优先级，以及排名如何与搜索权重、智能排名和促销规则进行交互。
+role: Admin, Leader, User
+recommendations: noCatalog
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+hide: true
+autotag-review: '2026-06-12T19:49:25.241Z'
+TQID: 'https://experienceleague.adobe.com/GBfssL1pTVx4FKjsi45mDsTx2XyCr0aViexH3OpPjVo'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+subfeature_v2: id: faf75e43-5608-48b8-8169-3f8a9b8a5caf
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
+workflow-type: tm+mt
+source-wordcount: 946
+ht-degree: 0%
+
+---
+
+# 搜索匹配和排名
+
+>[!IMPORTANT]
+>
+>以下功能位于[私人测试版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)中。
+
+[!DNL Adobe Commerce Optimizer]将结果排名，以便购物者能够首先看到最相关的产品。 此服务对目录文本&#x200B;**与购物者类型紧密匹配**&#x200B;的产品提升最强，然后支持查询词以有意义的方式一起出现的匹配，最后包括更广泛的匹配（包括支持自动完成样式匹配的行为）。
+
+## 如何区分匹配的优先级
+
+在高级别上，相关性使用三个匹配强度层（除了下面描述的其他评分因素外）：
+
+1. **精确和接近短语匹配** — 完整搜索短语与目录文本匹配，或在规范化后接近匹配，如词干匹配（例如，单形和复形解析为同一个根）。 这些匹配项获得最高的相关性提升。
+
+1. **同一字段中的所有字** — 查询中的每个字都出现在一个可搜索属性中（例如，产品&#x200B;**名称**&#x200B;中的`red`和`pants`）。 该层得到次高的提升。
+
+1. 跨不同字段的&#x200B;**字** — 查询词以不同的可搜索属性出现（例如，**颜色**&#x200B;中的`red`和&#x200B;**名称**&#x200B;中的`pants`）。 这是最广泛的匹配层，获得的相关性提升最低。 它还可以匹配自动完成使用的部分查询 — 例如，当购物者在完成`pants`之前键入`red pan`时。 有关德语目录，请参阅[解组合（德语）](#decompounding-german)。
+
+### 示例
+
+对于诸如`red pants`的查询：
+
+- 带有精确短语&#x200B;**红色裤子** （或相近变体）的产品排在&#x200B;**前**&#x200B;位。
+- **red**&#x200B;和&#x200B;**pants**&#x200B;出现在&#x200B;**相同字段**（例如，**name**）中的产品排名第二。
+- 术语出现在&#x200B;**不同字段**（例如，**颜色**&#x200B;和&#x200B;**名称**）中的产品如下。
+
+### 分解（德语） {#decompounding-german}
+
+德语目录使用许多复合词。 例如，**spulbecken**&#x200B;和&#x200B;**spul becken**&#x200B;可以分解为令牌，如&#x200B;**spul**&#x200B;和&#x200B;**beck**（在词干之后），因此搜索&#x200B;**spul becken**&#x200B;的购物者仍然可以找到&#x200B;**Spulbecken**。 在此层中，复合词中的分解子词必须出现在同一字段中。 其他查询词在不同的字段中可以匹配。
+
+此&#x200B;**AND**&#x200B;要求筛选器与只有一个子词的匹配无关。 例如，当仅部分复合匹配时，对&#x200B;**Brauseschlauch**&#x200B;的搜索不再返回&#x200B;**Schlauchstuck**。 对&#x200B;**spulbecken**&#x200B;的搜索仍然可以与&#x200B;**spulbeckventil**&#x200B;匹配，因为较长的单词包含所有预期的令牌。
+
+>[!NOTE]
+>
+>精确和近义短语匹配以及同字段匹配使用上述规则而不进行分解。
+
+#### 示例
+
+对于诸如`Brauseschlauch chrom`之类的搜索短语：
+
+- **精确和接近短语匹配** — 查找键入的完整短语&#x200B;**brauseschlauch chrom**，不进行分解（词干仍然适用）。
+- **同一字段中的所有字** — 在&#x200B;**same**&#x200B;可搜索属性中查找&#x200B;**brauseschlauch**&#x200B;和&#x200B;**chrom**，仍然不进行分解（例如，在&#x200B;**name**&#x200B;中同时查找）。
+- 跨不同字段的&#x200B;**字** — 将&#x200B;**Brauseschlauch**&#x200B;分解为&#x200B;**brause**&#x200B;和&#x200B;**schlauch**。 这些令牌必须显示在&#x200B;**same**&#x200B;字段中（不一定是相邻短语）。 **chrom**&#x200B;可以在&#x200B;**不同的**&#x200B;字段中匹配（例如，**name**&#x200B;中的&#x200B;**brause**&#x200B;和&#x200B;**schlauch**，**color**&#x200B;中的&#x200B;**chrom**）。
+
+在[设置](../settings.md)中的[语言](../settings.md#language)选项卡上将&#x200B;**语言**&#x200B;设置为&#x200B;**德语**，以便应用分解规则。 在生产环境中启用更改之前，请验证暂存店面上的高价值德语查询。
+
+分解是基于规则的，可以在此层添加边框。 如果字典中缺少子词，则标记化可能不完整，并且返回的匹配范围比您预期的要广，例如，**gaszahler**&#x200B;中缺少&#x200B;**gas**&#x200B;可能只发出&#x200B;**zahl**，或&#x200B;**thermostat**&#x200B;中缺少&#x200B;**stat**。 词干程序还可以生成意外的根（例如，**schrauber**&#x200B;词干到&#x200B;**schraub**，或&#x200B;**schelle**&#x200B;到&#x200B;**schell**）。 对于已识别问题的已知案例，Adobe会更新词典和词干覆盖。
+
+## 还有哪些因素会影响排名
+
+相关性不能仅通过短语匹配来确定。 多个信号相互作用：
+
+- 从&#x200B;**精确/近**&#x200B;个短语匹配中提升
+- 当&#x200B;**所有查询词**&#x200B;出现在&#x200B;**相同**&#x200B;字段中时提升
+- **智能排名**（启用时），它将文本相关性与行为信号相结合 — 请参阅[智能排名评分的工作原理](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
+- **[搜索每个属性的权重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文本关联性因素（例如，术语出现的频率以及名称或描述长度）。 在&#x200B;*设置*&#x200B;中，配置哪些属性参与关键词搜索及其相对&#x200B;**[关键词搜索权重](../settings.md)**。
+- **[促销规则](../merchandising/rules/overview.md)**，例如pin、boost和bury
+
+由于这些信号相互作用，仅在最宽级别匹配的产品有时可以排在更紧的短语匹配之上 — 例如，当&#x200B;**搜索权重**&#x200B;或高权重字段中的词频超过其他位置的较弱短语匹配时。
+
+**示例：**&#x200B;如果&#x200B;**红色裤子**&#x200B;在&#x200B;**描述**&#x200B;中显示为短语，其中&#x200B;**搜索权重= 1**，但&#x200B;**红色裤子**&#x200B;和&#x200B;**裤子**&#x200B;分别出现在&#x200B;**名称**&#x200B;和&#x200B;**颜色**&#x200B;中，其中&#x200B;**搜索权重= 10**，则&#x200B;**描述**&#x200B;中的短语匹配项可能不会超过拆分匹配项，具体取决于整体得分。
+
+手动&#x200B;**pin**&#x200B;和&#x200B;**bury**&#x200B;规则仍然强健；**boost**&#x200B;规则可能需要调整以克服新短语和相同字段的提升。 更改权重或规则后验证重要查询。
+
+### 搜索权重1和组合索引
+
+为特殊匹配模式（例如，包含或开头为）配置了&#x200B;**最小搜索权重** （权重&#x200B;**1**）和&#x200B;**非**&#x200B;的属性，这些属性可在搜索索引中组合为一个内部字段(`defaultSearchField`)，以减少字段映射开销。 将该字段视为&#x200B;**相同字段**&#x200B;匹配的一个可搜索表面：仅登陆到合并的低权重字段中的令牌将一起计算，而不是作为单独的每个属性字段计算。 Adobe可能会随着时间的推移随着匹配的发展而改进此优化。
+
+## 相关主题
+
+- [设置](../settings.md)
+- [搜索性能](search-performance.md)
+- [促销规则概述](../merchandising/rules/overview.md)
+- [添加搜索规则](../merchandising/rules/add.md)
+- [同义词概述](../merchandising/synonyms/overview.md)

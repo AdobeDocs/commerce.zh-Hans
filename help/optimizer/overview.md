@@ -2,9 +2,9 @@
 title: 什么是 [!DNL Adobe Commerce Optimizer]？
 description: 了解 [!DNL Adobe Commerce Optimizer] 及其主要功能。
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: e68d731bbcc168439c9a56a7cb778648a7c473e9
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 0%
@@ -21,12 +21,12 @@ ht-degree: 0%
 - 从任何源引入目录数据。
 - 定义业务目录视图和策略。
 - 使用AI和ML创建个性化搜索和推荐。
-- 通过优先处理&#x200B;**个完全匹配项和接近匹配项**&#x200B;以及相同字段匹配项的排名，改进产品发现的相关性；请参阅[搜索匹配项和排名](search-relevance-matching.md)。
+- 通过优先处理&#x200B;**个完全匹配项和接近匹配项**&#x200B;以及相同字段匹配项的排名，改进产品发现的相关性；请参阅[搜索匹配项和排名](./manage-results/search-relevance-matching.md)。
 - 查看重要的产品数据可用性，包括同步状态和店面事件数据，以便准确实施和故障排除。
 
 请观看以下视频，了解[!DNL Adobe Commerce Optimizer]的高级概述：
 
->[!VIDEO](https://video.tv.adobe.com/v/3450473?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## 谁从[!DNL Adobe Commerce Optimizer]中受益最大？
 
