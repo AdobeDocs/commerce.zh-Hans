@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2254'
 ht-degree: 0%
 
 ---
@@ -108,9 +108,22 @@ ht-degree: 0%
 
 检测挂起捕获事务何时进入`Completed`状态，以便商家可以继续处理受影响的订单。
 
-为确保此流程按预期运行，商家必须配置新的cron作业。 一旦作业配置为自动运行，就不需要商家进行其他干预。
+>[!NOTE]
+>
+>默认情况下，异步监视处于禁用状态。 禁用后，具有`Pending`捕获事务的订单不会自动移至`Payment Review`。 要启用此行为，请按照以下步骤启用异步监视。
 
-请参阅[配置cron作业](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=zh-Hans)。 配置完毕后，新作业每30分钟运行一次，以获取处于`Payment Review`状态的订单的更新。
+启用异步监视：仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
+
+1. 启用`async_status_updates`设置。 由于此设置在Admin中不可用，请从命令行启用它：
+
+   ```bash
+   bin/magento config:set payment/payment_services/async_status_updates 1
+   ```
+
+1. 启用并计划`sync_order_payment_status` cron作业，以便自动获取状态更新。 请参阅[配置cron作业](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=zh-Hans)。
+
+启用设置和cron作业后，cron作业每10分钟运行一次，以获取`Payment Review`状态订单的更新。 安装后，在正常操作下不需要额外的商家操作。
+
 
 商家可以通过“订单付款状态”报表视图检查更新的付款状态。
 
