@@ -15,9 +15,9 @@ feature_v2:
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 62f30cb267191c76f77d077b9ea07022c9cc9abe
+source-git-commit: fcbf661a05f5d7ff33a885e3f86dbb3a551d09df
 workflow-type: tm+mt
-source-wordcount: 2365
+source-wordcount: 2505
 ht-degree: 0%
 
 ---
@@ -25,17 +25,17 @@ ht-degree: 0%
 
 # 迁移评估
 
->[!TIP]
+>[!IMPORTANT]
 >
->请联系您的解决方案客户经理，以请求对您的现有实例进行迁移评估。
+> 迁移评估仅在将[!DNL Adobe Commerce on Cloud Infrastructure]或[!DNL Adobe Commerce on-premises]项目迁移到[!DNL Adobe Commerce as a Cloud Service]时可用。
 
 Commerce迁移评估是对您现有Adobe Commerce实施情况的自动分析。 Adobe的工具会扫描您的Commerce代码库，并生成一个结构化报表，其中清点所有已构建、自定义或修改的内容。 然后，该报告将指示对代码库所做的自定义对迁移到[!DNL Adobe Commerce as a Cloud Service]有何影响。
 
 报告以HTML文件的形式提供，您可以通过任何浏览器打开。 不需要访问生产环境，除非最初共享项目代码库。
 
->[!IMPORTANT]
+>[!TIP]
 >
-> 迁移评估仅在将[!DNL Adobe Commerce on Cloud Infrastructure]或[!DNL Adobe Commerce on-premises]项目迁移到[!DNL Adobe Commerce as a Cloud Service]时可用。
+>请联系您的解决方案客户经理，以请求对您的现有实例进行迁移评估。
 
 **评估提供：**
 
@@ -68,6 +68,8 @@ Commerce迁移评估是对您现有Adobe Commerce实施情况的自动分析。 
 
 **迁移复杂性和复杂性分数**
 
+![迁移复杂性部分显示加权分数、主要风险驱动因素和关键量度](../assets/assessment-migration-complexity.png){width="600" zoomable="yes"}
+
 复杂性分数根据迁移的难度对每个输入进行加权。 得分映射到使用固定阈值的迁移复杂性评级：
 
 | 评级 | 得分范围 | 典型的迁移方法 |
@@ -78,6 +80,8 @@ Commerce迁移评估是对您现有Adobe Commerce实施情况的自动分析。 
 
 **自定义模块比率**
 
+![自定义模块比率量度行显示自定义模块百分比、第三方模块、自定义主题计数、关键挂接、文件总数和PHP代码库大小](../assets/assessment-custom-module-ratio.png){width="600" zoomable="yes"}
+
 专门为您的实施构建的模块的百分比。 更高的比率意味着必须审核和迁移更多的自定义代码。 客户的自定义模块平均比率约为62%。
 
 >[!TIP]
@@ -86,13 +90,19 @@ Commerce迁移评估是对您现有Adobe Commerce实施情况的自动分析。 
 
 **文件类型划分**
 
+![文件类型划分表，列出文件扩展名及文件计数和代码行](../assets/assessment-file-type-breakdown.png){width="600" zoomable="yes"}
+
 代码库中按类型组织的文件数列表。
 
 **影响最大的模块**
 
+![最高影响模块列表，显示模块名称、描述、影响评级和挂接计数](../assets/assessment-highest-impact-modules.png){width="600" zoomable="yes"}
+
 存储中需要最关注迁移的特定模块的策划列表。 这些模块通常是与结账、支付或订单管理交互的模块。 每个高影响力的模块都需要自己的迁移计划。 此列表是与您的技术团队进行对话的最佳起点。
 
 ### 店面复杂性
+
+![店面复杂性部分显示自定义主题命名空间、总块数、布局XML文件、核心句柄覆盖和可操作信号](../assets/assessment-storefront-complexity.png){width="600" zoomable="yes"}
 
 店面复杂性部分介绍了迁移店面的前端展示层所需的工作。 此工作流是与后端代码迁移截然不同的工作流，由前端开发人员解决，通常需要单独的规划对话。
 
@@ -110,8 +120,9 @@ Commerce迁移评估是对您现有Adobe Commerce实施情况的自动分析。 
 | 100-300 | Medium — 计划结构化的前端浪潮 |
 | 超过300 | 高 — 作为专用工作流排定优先级 |
 
-
 ### 迁移驱动因素
+
+![迁移驱动程序部分显示自定义足迹、插件和观察程序，以及具有工作量分级的类首选项卡](../assets/assessment-migration-drivers.png){width="600" zoomable="yes"}
 
 “迁移驱动程序”部分显示驱动复杂性评定的主要因素。
 
@@ -127,6 +138,8 @@ Commerce迁移评估是对您现有Adobe Commerce实施情况的自动分析。 
 
 ### 数据模型
 
+![数据模型部分，显示自定义表、核心表修改和关键EAV属性的计数](../assets/assessment-data-model.png){width="600" zoomable="yes"}
+
 “数据模型”部分显示自定义表的计数、对[!DNL Adobe Commerce]核心数据库表的修改以及关键实体属性值(EAV)属性。
 
 核心表修改是最难迁移的类别，因为它们会创建对特定平台架构版本的依赖关系，并且对于复杂性分数公式影响较大。
@@ -136,6 +149,8 @@ Commerce迁移评估是对您现有Adobe Commerce实施情况的自动分析。 
 >如果您的报表列出了15项以上的核心表修改，请在设定后端模块迁移的范围之前规划一个专用数据迁移工作流。
 
 ## 自定义细分
+
+![自定义细分部分，列出具有计数和影响指示器的所有自定义类别](../assets/assessment-customization-breakdown.png){width="600" zoomable="yes"}
 
 “自定义细分”部分提供了您的商店中每个自定义类别的详细量度。
 
@@ -196,6 +211,8 @@ Commerce迁移评估是对您现有Adobe Commerce实施情况的自动分析。 
 >如果&#x200B;**签出**&#x200B;被列为放入迁移要求，请规划一个专用的签出放入工作流。 此任务是最复杂的、对业务至关重要的店面迁移任务。
 
 ## “模块报表”选项卡
+
+![显示包含影响筛选器和详细模块分析面板的可搜索模块列表的“模块报告”选项卡](../assets/assessment-module-reports-tab.png){width="600" zoomable="yes"}
 
 **[!UICONTROL Module Reports]**&#x200B;选项卡包含商店中每个自定义模块的专用条目。 与您的技术团队共享此信息。
 
@@ -302,4 +319,4 @@ Manages custom shipping rate calculations based on customer account tier and ord
       - [结账入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - 店面开发
    - [概述](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-   - [店面人工智能技能](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=zh-Hans)
+   - [店面人工智能技能](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
