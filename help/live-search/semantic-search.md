@@ -3,9 +3,9 @@ title: 语义搜索
 description: 在“设置”中为 [!DNL Live Search] 启用AI语义搜索。 无需属性设置或店面变更。
 role: Admin
 recommendations: noCatalog
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Adobe Commerce on Cloud和本地商家必须手动启用语义搜索：
 
    索引完成后，搜索结果会更新。 对于中等大小的目录，索引可能最多需要半小时。 对于包含数百万种产品的大型目录，这可能需要几个小时。
 
-### 对于ACCS客户
+### 对于[!DNL Adobe Commerce as a Cloud Service]客户
 
 [!DNL Adobe Commerce as a Cloud Service]客户在[!DNL Live Search]管理员中使用相同的&#x200B;**设置**&#x200B;工作区。 对于符合条件的英文目录，语义搜索默认为&#x200B;**启用**。 确认&#x200B;**[!UICONTROL Semantic search]**&#x200B;已启用，或者如果不想在店面进行语义匹配，请将其禁用。
 
