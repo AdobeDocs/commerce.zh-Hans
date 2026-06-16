@@ -20,9 +20,9 @@ topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: 802
+source-wordcount: 805
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447898?captions=chi_hans)
 
->[!TAB ACCS教程]
+>[!TAB Adobe Commerce as a Cloud Service教程]
 
 了解如何将Adobe Commerce as a Cloud Service与AEM Assets集成一起使用。
 
@@ -113,7 +113,7 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 1. 为您的环境配置集成：
 
-   * 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"} [Adobe Commerce (PaaS/ACCS)](get-started/setup-synchronization.md)
+   * 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"} [Adobe Commerce](get-started/setup-synchronization.md)
    * 仅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} [Adobe Commerce Optimizer](get-started/configure-aco.md)
 
 ## 支持

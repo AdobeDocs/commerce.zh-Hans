@@ -2,9 +2,9 @@
 title: 为AEM Assets集成配置IMS用户权限
 description: 了解IMS身份和Admin Console配置文件如何启用AEM Assets交付访问权限、资产选择器和自动填充的Commerce配置字段。
 feature: CMS, Media, Configuration
-source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ Adobe IMS提供用户标识和组织上下文，而Adobe Admin Console定义它�
 
 仅[!BADGE SaaS]{type=Positive tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}
 
-默认情况下启用IMS身份验证。 将用户添加到&#x200B;**Adobe Admin Console**&#x200B;中的[AEM Assets DM OpenAPI Users - delivery](https://adminconsole.adobe.com/)产品配置文件，或添加到&#x200B;**author**&#x200B;产品配置文件（例如，`<environment-name> - author - <program-id> - <environment-id>`），以作为用户在其Admin Console中没有AEM交付产品配置文件时的后备。
+默认情况下启用IMS身份验证。 将用户添加到[Adobe Admin Console](https://adminconsole.adobe.com/)中的&#x200B;**AEM Assets DM OpenAPI Users - delivery**&#x200B;产品配置文件，或添加到&#x200B;**author**&#x200B;产品配置文件（例如，`<environment-name> - author - <program-id> - <environment-id>`），以作为用户在其Admin Console中没有AEM交付产品配置文件时的后备。
 
 >[!NOTE]
 >
-> 还必须将用户添加到Commerce和AEM Assets。 有关完整设置，请参阅[用户和AEM Assets](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}指南中的&#x200B;_将用户添加到Identity Management或产品可视化图表_。
+> 还必须将用户添加到Commerce和AEM Assets。 有关完整设置，请参阅&#x200B;_用户和AEM Assets_&#x200B;指南中的[将用户添加到Identity Management或产品可视化图表](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}。
 
 用于Admin Console投放的![AEM Assets产品配置文件](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
 
@@ -80,5 +80,5 @@ Paa需要&#x200B;**IMS客户端ID**&#x200B;才能启用资产选择器。 请参
 
 * [为AEM Assets集成配置IMS用户权限](setup-synchronization.md) — 将Commerce连接到AEM Assets并配置匹配规则。
 * [手动资源选择](../synchronize/asset-selector-integration.md) — 将资源选择器用于类别图像和页面生成器。
-* [将用户添加到AEM Assets或产品可视化图表](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} — 对于ACCS，请先将用户添加到Commerce和AEM Cloud Manager（业务负责人、部署管理员）。 **AEM Assets DM OpenAPI Users - delivery**&#x200B;配置文件（或作为回退的&#x200B;**author**&#x200B;配置文件）是Asset Selector和自动填充功能的额外要求。
+* [将用户添加到AEM Assets或产品可视化图表](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} — 对于[!DNL Adobe Commerce as a Cloud Service]，请先将用户添加到Commerce和AEM Cloud Manager（业务负责人、部署管理员）。 **AEM Assets DM OpenAPI Users - delivery**&#x200B;配置文件（或作为回退的&#x200B;**author**&#x200B;配置文件）是Asset Selector和自动填充功能的额外要求。
 * [将团队成员分配给AEM交付层](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}。 有关投放访问权限的AEM文档。

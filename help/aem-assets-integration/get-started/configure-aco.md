@@ -2,9 +2,9 @@
 title: 为Commerce Optimizer配置AEM Assets
 description: 了解如何为 [!DNL Adobe Commerce Optimizer]配置AEM Assets集成。
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 42f0e0cb72c6429eb6f08f1922c4171195a78d2b
+source-git-commit: 2cc7b70a6923687c74fe3f4b88448eaada6d16af
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1453'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 适用于[!DNL Adobe Commerce Optimizer]的AEM Assets集成使商家能够将AEM Assets用作产品图像的集中数字资产管理解决方案。 本指南介绍特定于[!DNL Commerce Optimizer]的配置。
 
-与Adobe Commerce (PaaS)或Adobe Commerce as a Cloud Service (ACCS)不同，[!DNL Commerce Optimizer]没有管理员配置UI。 要启用集成，请使用您的[!DNL Adobe Commerce Optimizer]和AEM Assets详细信息创建支持工单。 Adobe支持配置集成并在Assets集成服务中注册您的租户。
+与Adobe Commerce (PaaS)或[!DNL Adobe Commerce as a Cloud Service]不同，[!DNL Commerce Optimizer]没有管理员配置UI。 要启用集成，请使用您的[!DNL Adobe Commerce Optimizer]和AEM Assets详细信息创建支持工单。 Adobe支持配置集成并在Assets集成服务中注册您的租户。
 
 **在提交票证之前准备AEM Assets。** 租户注册假定AEM端可用于Commerce。 例如，部署AEM Commerce `assets-commerce`包后，元数据和事件将按说明工作。 **在配置AEM之前打开票证可能会延迟上线。**
 

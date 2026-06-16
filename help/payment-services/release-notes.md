@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 29747e38a2800997c251f24f70b6356aada9fab9
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '5401'
+source-wordcount: '5400'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Adobe支持最新发布的支付服务版本。 提供了旧版本的发行说�
 
 _2026年6月8日_
 
-![新问题](../assets/new.svg)<!-- Issue PAY-6510 -->对于[!DNL Adobe Commerce as a Cloud Service]，[!DNL Commerce Admin]中的[!DNL Payment Services]仪表板UI允许商家直接从仪表板打开[交易报表](reporting.md#transactions-report-view)。 此SaaS仪表板仅公开&#x200B;**选定的**&#x200B;报表（不是云中和内部部署的Adobe Commerce上可用的每个报表或主页入口点）；请参阅[[!DNL Payment Services] 主页](payments-home.md)。 有关ACCS发行说明和时间，请参阅[查看Payment Services交易报表](../cloud-service/release-notes.md#view-the-payment-services-transactions-report)。
+![新问题](../assets/new.svg)<!-- Issue PAY-6510 -->对于[!DNL Adobe Commerce as a Cloud Service]，[!DNL Commerce Admin]中的[!DNL Payment Services]仪表板UI允许商家直接从仪表板打开[交易报表](reporting.md#transactions-report-view)。 此SaaS仪表板仅公开&#x200B;**选定的**&#x200B;报表（不是云中和内部部署的Adobe Commerce上可用的每个报表或主页入口点）；请参阅[[!DNL Payment Services] 主页](payments-home.md)。 有关[!DNL Adobe Commerce as a Cloud Service]的发行说明和时间，请参阅[查看支付服务交易报表](../cloud-service/release-notes.md#view-the-payment-services-transactions-report)。
 
 _2026年1月21日_
 
