@@ -314,10 +314,10 @@ Manages custom shipping rate calculations based on customer account tier and ord
       - [技能和提示](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
       - [用例](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
    - [App Builder概述](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-   - [适用于Adobe Commerce的App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
+   - [适用于Adobe Commerce的App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
    - 入门工具包
       - [后端集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
       - [结账入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - 店面开发
-   - [概述](https://experienceleague.adobe.com/developer/commerce/storefront/)
-   - [店面人工智能技能](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
+   - [概述](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
+   - [店面人工智能技能](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=zh-Hans)
