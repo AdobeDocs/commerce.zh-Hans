@@ -32,7 +32,8 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 469111676c7ac8bdf66f8f42bd26745ce7f88928
+nudge: true
+source-git-commit: 48171a525ad5e5f4b02da89753df6ea7e7ff9926
 workflow-type: tm+mt
 source-wordcount: 4489
 ht-degree: 0%
@@ -575,9 +576,9 @@ mutation {
 
    * **[公司管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=zh-Hans)** — 启用Adobe Commerce店面的公司配置文件管理和基于角色的权限。
    * **[公司切换器](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=zh-Hans)** — 为用户提供UI组件，以便在其关联的多个公司之间进行切换。
-   * **[采购订单](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** — 管理B2B交易的采购订单工作流、审批规则和采购订单历史记录。
+   * **[采购订单](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=zh-Hans)** — 管理B2B交易的采购订单工作流、审批规则和采购订单历史记录。
    * **[报价管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=zh-Hans)** — 为具有报价请求、洽谈和批准工作流的B2B客户启用可协商报价。
-   * **[申购单列表](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)** — 提供用于创建和管理重复购买和批量订购的申购单列表的工具。
+   * **[申购单列表](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=zh-Hans)** — 提供用于创建和管理重复购买和批量订购的申购单列表的工具。
 
 * 发布了B2B店面兼容包。 此包增强了[!DNL Adobe Commerce] B2B GraphQL架构，以帮助改进B2B系统上的开发。
 
