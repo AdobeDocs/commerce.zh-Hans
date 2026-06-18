@@ -6,13 +6,11 @@ recommendations: noCatalog
 roles: Admin, Developer
 exl-id: d4dd0288-8853-43fe-9103-1aead8d3b56e
 TQID: https://experienceleague.adobe.com/btPlBYpdRdf-gMfqSv2px6iMfiI3FfXJSN40j61HXOU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: d5e10c1b3014d2b74c323d6a34e5f73a97d494ce
 workflow-type: tm+mt
-source-wordcount: 193
+source-wordcount: 218
 ht-degree: 0%
 
 ---
@@ -33,6 +31,12 @@ ht-degree: 0%
 >[Catalog Adapter扩展](catalog-adapter.md)禁用Adobe Commerce价格索引。 如果已安装，则可以使用编辑器检查系统上安装的版本。 在某些情况下，您可能需要升级系统上的目录适配器扩展以获得修复或新功能，而不更新Commerce服务版本。
 
 ## 当前主要版本
+
+## 1.0.11发行版
+
+_2026年6月18日_
+
+![修复](../assets/fix.svg) **PHP 8.5兼容性** - Adobe Commerce目录适配器现在支持PHP 8.5以便与Adobe Commerce版本2.4.9及更高版本兼容。<!--MDEE-1368-->
 
 ## 1.0.10发行版
 
