@@ -6,9 +6,11 @@ role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
-TQID: 'https://experienceleague.adobe.com/RWF0BsS24AJtkoPNxRtvTNyM971IBEEt-NTbPT5Nub8'
+autotag-review: '2026-06-18T16:02:31.185Z'
+TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
@@ -34,8 +36,7 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+source-git-commit: 55eeb27812ce67a1b26705864ec969b826580452
 workflow-type: tm+mt
 source-wordcount: 1444
 ht-degree: 0%
@@ -91,7 +92,7 @@ ht-degree: 0%
 
 此图说明了[!DNL Adobe Commerce as a Cloud Service]和所有Adobe Experience Cloud解决方案之间的数据流。
 
-![数据流图显示[!DNL Adobe Commerce as a Cloud Service]与[!DNL Adobe Experience Cloud]解决方案的集成](./assets/data-flow.svg){zoomable="yes"}
+![数据流图显示[!DNL Adobe Commerce as a Cloud Service]与[!DNL Adobe Experience Cloud]解决方案的集成](./assets/data-flow.png){zoomable="yes"}
 
 ## Commerce店面
 
