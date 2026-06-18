@@ -8,12 +8,24 @@ exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 autotag-review: '2026-06-18T16:06:00.993Z'
 TQID: 'https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 1464
@@ -71,7 +83,7 @@ ht-degree: 0%
 
 1. 输入所需的联系人详细信息和送货信息。 您可以为此订单使用虚构的信息。
 
-1. 要结帐，请选择&#x200B;[!UICONTROL **支票/汇票**]。 如果要使用信用卡，请使用Paypal](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的[测试卡之一。 您可以将其与任何将来的到期日期和任何CVC一起使用。
+1. 要结帐，请选择&#x200B;[!UICONTROL **支票/汇票**]。 如果要使用信用卡，请使用Paypal[&#128279;](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的测试卡之一。 您可以将其与任何将来的到期日期和任何CVC一起使用。
 
    ![包含联系人和送货信息字段的签出表单](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -278,7 +290,7 @@ ht-degree: 0%
 
 1. 在&#x200B;[!UICONTROL **解释用户交互**]&#x200B;文本框中，输入：“Adobe员工和合作伙伴购买Adobe品牌齿轮的Experience！”。
 
-1. 在域知识&#x200B;**]的[!UICONTROL ** URL中，输入&#x200B;**www.adobestore.com**。
+1. 在域知识&#x200B;**的** URL中，输入&#x200B;**www.adobestore.com**。
 
 1. 单击&#x200B;[!UICONTROL **生成**]。
 
