@@ -1,6 +1,7 @@
 ---
 title: 安装和配置
 description: 了解如何安装、更新和卸载 [!DNL Product Recommendations]。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
 TQID: https://experienceleague.adobe.com/z-ue-sojw9Iewuz-ZToCzkumP3qN-TCWWF3UWdpdIL0
@@ -17,7 +18,7 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 641
 ht-degree: 0%
@@ -79,7 +80,7 @@ composer require magento/module-visual-product-recommendations
 
 ## 监测数据同步并排除其故障
 
-通过Commerce Admin，您可以使用[数据管理功能板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)监视同步过程。 使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和日志管理该进程并对其进行故障排除。
+通过Commerce Admin，您可以使用[数据管理功能板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)监视同步过程。 使用[Commerce CLI](../data-export/data-export-cli-commands.md)和[日志](../data-export/troubleshooting/logging.md)管理该进程并排除其故障。
 
 然后，您可以[验证](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)行为数据是否已发送到店面。
 

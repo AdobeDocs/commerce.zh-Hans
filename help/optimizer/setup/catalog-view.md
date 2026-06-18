@@ -1,6 +1,7 @@
 ---
 title: 目录视图
 description: 了解目录视图是什么以及如何创建它们以按业务结构、策略和定价整理产品目录。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
@@ -19,7 +20,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 1210
 ht-degree: 0%
@@ -37,7 +38,7 @@ ht-degree: 0%
 - 根据业务结构（品牌、地区、经销商）**哪些产品可见**
 - **通过链接的价格手册显示什么定价**
 - **如何使用策略（品牌、模型、类别等属性）过滤产品**
-- **使用什么[目录源](catalog-source.md)**&#x200B;基于区域设置等属性
+- **使用什么[目录源](catalog-sources.md)**&#x200B;基于区域设置等属性
 
 将目录视图视为不同的“镜头”，客户可通过这些镜头查看您的目录。 例如：
 
@@ -64,7 +65,7 @@ ht-degree: 0%
 1. 配置目录视图详细信息：
 
    - **名称** — 输入目录视图的名称，例如`Celport`&#x200B;。
-   - **目录源** — 选择[目录源](catalog-source.md)，例如`en-US`。
+   - **目录源** — 选择[目录源](catalog-sources.md)，例如`en-US`。
    - **编录图层** — 审阅摄取的图层和优先级。
    - **策略** — 使用下拉菜单选择相关策略。 例如，“品牌”、“型号”。 请&#x200B;确保您已[创建策略](policies.md)。
 
@@ -203,7 +204,7 @@ ht-degree: 0%
 
 ## 更多此类内容
 
-- [目录源](catalog-source.md) — 为搜索、筛选和排序行为定义产品、属性和类别的权威范围
+- [目录源](catalog-sources.md) — 为搜索、筛选和排序行为定义产品、属性和类别的权威范围
 - [目录层](catalog-layer.md) — 了解如何在不更改原始源的情况下修改产品数据
 - [策略](policies.md) — 创建策略以筛选目录视图中的产品
 - [价格手册](pricebooks.md) — 管理不同客户区段的定价结构

@@ -1,6 +1,7 @@
 ---
 title: SaaS价格索引
 description: 使用SaaS价格索引提高性能
+autotag-review: '2026-06-17T15:08:59.000Z'
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: d1bf3879-3e86-4665-a55c-494963c87f90
@@ -12,7 +13,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 398
 ht-degree: 0%
@@ -27,7 +30,7 @@ SaaS定价索引通过将资源密集型任务（如索引和价格计算）从C
 
 ![默认数据流](assets/old_way.png)
 
-启用SaaS价格索引后，数据流会发生变化。 使用[Commerce SaaS数据导出](../data-export/data-synchronization.md)执行价格索引。
+启用SaaS价格索引后，数据流会发生变化。 使用[Commerce SaaS数据导出](../data-export/sync-overview.md)执行价格索引。
 
 ![SaaS价格索引数据流](assets/new_way.png)
 

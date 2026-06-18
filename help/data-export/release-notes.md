@@ -1,12 +1,16 @@
 ---
 title: '[!DNL SaaS Data Export Extension]发行说明'
 description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信息。
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -18,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 2903
 ht-degree: 0%
@@ -72,7 +76,7 @@ _2026年5月19日_
 
 _2026年5月5日_
 
-![修复](../assets/fix.svg) **导出日志的疑难解答更简单** — 许多与导出相关的错误和警告现在包含一致的日志代码。这些代码可帮助您在使用支持或文档时更快地跟踪问题。有关详细信息，请参阅日志代码参考。
+![修复](../assets/fix.svg) **导出日志的疑难解答更简单** — 许多与导出相关的错误和警告现在包含一致的日志代码。这些代码可帮助您在使用支持或文档时更快地跟踪问题。有关详细信息，请参阅[日志代码引用](troubleshooting/log-codes-reference.md)。
 <!--MDEE-1276-->
 
 ![修复](../assets/fix.svg) **当属性选项标签更改时自动重新同步** — 商店视图（包括多选属性）的产品属性选项标签更改后，现在会将受影响的产品重新排入队列以供导出，以便Live Search、产品推荐、目录服务和其他连接的Commerce服务在购物者视图中显示更新的Facet和筛选标签。以前，仅标签编辑可能会导致SaaS目录显示过时措辞，直到更广泛的产品更改触发同步为止。
@@ -161,7 +165,7 @@ _2025年11月24日_
 
 _2025年10月22日_
 
-![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，可用于监视和排除从Adobe Commerce到连接的服务（目录服务、实时搜索和产品推荐）的数据传输。 有关安装和使用此扩展的详细信息，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[数据馈送同步状态监控](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=zh-Hans)。<!--MDEE-954-->
+![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，可用于监视和排除从Adobe Commerce到连接的服务（目录服务、实时搜索和产品推荐）的数据传输。 有关安装和使用此扩展的详细信息，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[数据馈送同步状态监控](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html)。<!--MDEE-954-->
 
 ### 103.4.14发行版
 

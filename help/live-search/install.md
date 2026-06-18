@@ -1,6 +1,7 @@
 ---
 title: 开始使用 [!DNL Live Search]
 description: 从Adobe Commerce中了解 [!DNL Live Search] 的系统要求和安装步骤。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
 badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
@@ -24,9 +25,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 2934
+source-wordcount: 2883
 ht-degree: 0%
 
 ---
@@ -67,7 +68,7 @@ Adobe Commerce [!DNL Live Search]和[[!DNL Catalog Service]](../catalog-service/
 >
 > **HIPAA准备就绪**
 >
->如果您正在将Adobe Commerce与HIPAA-Ready扩展和Healthcare加载项一起使用，请不要通过LiveSearch处理任何受保护的健康信息(PHI)> 实时搜索不是HIPAA就绪的服务。
+>如果您正在将Adobe Commerce与HIPAA-Ready扩展和Healthcare加载项一起使用，请不要通过LiveSearch处理任何受保护的健康信息(PHI)> Live Search不提供HIPAA服务。
 >
 >有关详细信息，请参阅Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)上的[HIPAA准备就绪](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/compliance/hipaa-ready-service/operations)指南和操作指南，其中列出了未准备好HIPAA的Commerce服务中的实时搜索。
 
@@ -238,7 +239,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ![数据管理仪表板](assets/data-management-dashboard.png)
 
-您还可以运行sync命令，并使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和数据导出扩展日志对同步过程进行疑难解答。
+您还可以使用[Commerce CLI](../data-export/data-export-cli-commands.md)和[数据导出扩展日志](../data-export/troubleshooting/logging.md)运行同步命令并排除同步过程故障。
 
 #### 将来的产品更新
 
@@ -324,7 +325,7 @@ bin/magento saas:resync --feed categoryPermissions
 您可以根据需要通过定义自定义CSS规则来设置弹出框和PLP小组件的样式。 查看[样式弹出框元素](storefront-popover.md#styling-popover-example)和[产品列表页小组件](plp-styling.md#styling-example)。
 
 如果您希望扩展小组件的功能，则每个小组件的源代码在公共存储库中可用。
-在此方案中，您可以根据自己的需求自定义JavaScript，然后将自定义代码托管在您的CDN上。 此自定义脚本与[!DNL Live Search]服务通信并返回正常结果，从而允许您控制小组件的功能。
+在此方案中，您可以根据自己的需求自定义JavaScript，然后将自定义代码托管在您的CDN上。此自定义脚本与[!DNL Live Search]服务通信并返回正常结果，从而允许您控制小组件的功能。
 
 - [PLP构件存储库](https://github.com/adobe/storefront-product-listing-page)
 - [搜索栏存储库](https://github.com/adobe/storefront-search-as-you-type)

@@ -23,20 +23,20 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+source-git-commit: 94ba07437d532d0d101c166f58114c2aa0bd4be4
 workflow-type: tm+mt
-source-wordcount: 450
+source-wordcount: 446
 ht-degree: 0%
 
 ---
 
 # 目录源
 
-目录源代表产品、属性和类别的权威范围。 目录源通常映射到语言、受众或原始系统边界，并确定搜索、过滤和排序行为。
+目录源代表产品、属性和类别的权威范围。 它们通常映射到语言、受众或原始系统边界，并决定搜索、过滤和排序行为。
 
 ## 目录源与相关概念
 
-了解目录源如何与其他[!DNL Adobe Commerce Optimizer]概念关联，有助于您正确建模数据：
+了解目录源如何与其他[!DNL Adobe Commerce Optimizer]概念相关联，有助于您正确建模数据：
 
 * **目录源** — 提供产品信息的基础数据上下文。 目录源通常是区域设置（例如，`en-US`、`fr-CA`）或外部系统，如PIM或ERP。 产品、属性元数据和类别均按目录源规定作用域。 将目录源视为&#x200B;*其中*&#x200B;原始目录数据来自，以及&#x200B;*它对产品发现（搜索结果、筛选和排序行为）有何影响*。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 规则和限制
 
-* 目录源是通过数据摄取API摄取产品创建的。 有关详细信息，请参阅[开发人员文档 — 数据摄取](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)。
+* 每个目录源都是通过数据摄取API摄取产品创建的。 有关详细信息，请参阅[开发人员文档 — 数据摄取](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)。
 * 产品唯一性由SKU +目录源决定。
 * 购物者不能直接访问目录来源。 目录数据通过[目录视图](catalog-view.md)向店面公开。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 在决定如何构建目录源时，请遵循以下指南：
 
-* 根据不同的目录语言创建单独的目录源。
+* 为每个目录语言创建单独的目录源。
 * 当产品和属性的差异必须影响搜索、筛选或排序行为（例如，同一属性的不同可搜索性、可过滤性或Facet配置）时，请使用单独的目录源。
 * 当产品和属性差异必须仅影响店面显示而非产品发现时，请使用[目录层](catalog-layer.md)。
 

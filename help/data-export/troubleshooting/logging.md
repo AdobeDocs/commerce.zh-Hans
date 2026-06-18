@@ -1,11 +1,15 @@
 ---
 title: 查看日志并排除故障
 description: 了解如何使用data-export和saas-export日志排除 [!DNL data export] 错误。
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -14,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 1155
+source-wordcount: 1007
 ht-degree: 0%
 
 ---
@@ -46,7 +50,7 @@ ht-degree: 0%
 
 每个日志记录具有以下结构。
 
-```
+```text
 [<log record datetime>] report.<log level>:
 {
    "feed": "<feed name>",
@@ -99,7 +103,7 @@ ht-degree: 0%
 
 +++ **示例：价格馈送的完整重新同步日志**
 
-```
+```text
 Price feed full resync:
 
 [2024-03-05T21:00:51.754687+00:00] report.INFO: {"feed":"prices","operation":"full sync","status":"Initialize","elapsed":"383 ms","pid":"14469","caller":"bin\/magento saas:resync --feed=prices"} [] []
@@ -148,22 +152,7 @@ Price feed full resync:
 
 ### 解决目录同步问题 {#resolvesync}
 
-触发数据重新同步时，最多可能需要一小时才能更新数据并反映在UI组件中，例如实时搜索和推荐单元。 如果您仍然看到目录与Commerce店面中的数据之间存在差异，或者如果目录同步失败，请参阅以下内容：
-
-#### 数据差异
-
-1. 在搜索结果中显示相关产品的详细视图。
-1. 复制JSON输出，并验证内容是否与您在[!DNL Commerce]目录中的内容匹配。
-1. 如果内容不匹配，请对目录中的产品进行细微更改，例如添加空格或句点。
-1. 等待重新同步，或从CLI或管理功能板触发手动重新同步。
-
-#### 同步未运行
-
-如果同步未按计划运行或未同步任何内容，请参阅此[知识库](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
-
-#### 同步失败
-
-如果目录同步的状态为&#x200B;**失败**，请提交[支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+有关目录同步问题（包括数据差异、同步未运行以及同步状态失败）的基于问题的疑难解答，请参阅[疑难解答方案](troubleshooting-scenarios.md)。
 
 ## 扩展日志记录
 
@@ -173,7 +162,7 @@ Price feed full resync:
 
 重新同步馈送时，通过添加`EXPORTER_EXTENDED_LOG=1`环境变量将馈送有效负载包含在SaaS导出日志中。
 
-```shell script
+```shell
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 ```
 
@@ -185,7 +174,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 
 不建议在生产环境中保留索引表中的有效负荷数据，但在开发人员环境中可能很有用。 在重新同步馈送时，通过添加`PERSIST_EXPORTED_FEED=1`环境变量在索引中包含馈送有效负载。
 
-```shell script
+```shell
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 ```
 
@@ -195,12 +184,18 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 运行reindex命令时，通过添加`EXPORTER_PROFILER=1`环境变量来运行探查器。
 
-```
+```shell
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 
 Profiler数据按以下格式存储在数据导出日志(`var/log/commerce-data-export.log`)中：
 
-```
+```text
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
+
+>[!MORELIKETHIS]
+>
+> - [方案疑难解答](troubleshooting-scenarios.md) — 解决目录同步问题和数据差异。
+> - [日志代码引用](log-codes-reference.md) — 查找导出日志代码。
+> - [使用Commerce CLI同步馈送](../data-export-cli-commands.md) — 运行目标馈送重新同步。

@@ -1,26 +1,31 @@
 ---
 title: 使用Commerce CLI同步馈送
-description: 了解如何使用命令行界面命令来管理Adobe Commerce SaaS服务的 [!DNL data export extension] 的馈送和进程。
+description: 了解如何使用Commerce CLI命令管理Adobe Commerce SaaS服务中 [!DNL data export extension] 的馈送和同步进程。
+autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-TQID: https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo
+TQID: 'https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 605
+source-wordcount: 670
 ht-degree: 0%
 
 ---
 
 # 使用Commerce CLI同步馈送
 
-`magento/saas-export`程序包中的`saas:resync`命令允许您管理Adobe Commerce SaaS服务的数据同步。
+`magento/saas-export`程序包中的`saas:resync`命令允许您管理[!DNL Adobe Commerce] SaaS服务的数据同步。
 
 >[!NOTE]
 >
@@ -39,24 +44,29 @@ Adobe不建议定期使用`saas:resync`命令。 使用该命令的典型情况�
 >[!NOTE]
 >
 >启用实时搜索或产品推荐后，初始同步会自动运行。 不需要手动命令。
+>
+>对于[!DNL Adobe Commerce Optimizer Connector]部署，`aco:config:init`命令通过使所有连接器馈送索引器失效来计划初始完全同步。 请参阅[启用 [!DNL Commerce Optimizer] 集成](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration)和[管理与 [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md)的同步。
 
 当从命令行触发`saas:resync`时，根据目录大小，数据更新可能需要几分钟到几小时的时间。
 
-对于初始同步，Adobe建议按以下顺序运行命令：
+馈送同步可以按任意顺序运行 — 它们之间没有硬依赖关系。 以下序列首先从范围数据开始，这是一个逻辑起点，因为范围定义了其他馈送引用的存储视图。
 
 ```shell
-bin/magento saas:resync --feed productattributes
-bin/magento saas:resync --feed products
-bin/magento saas:resync --feed scopesCustomerGroup
 bin/magento saas:resync --feed scopesWebsite
-bin/magento saas:resync --feed prices
-bin/magento saas:resync --feed productoverrides
-bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed productAttributes
 bin/magento saas:resync --feed categories
-bin/magento saas:resync --feed categoryPermissions
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed productoverrides
 ```
 
-## 使用CLI命令同步
+>[!NOTE]
+>
+>您的环境可能不包括此序列中的每个馈送。 有关完整信息源列表、CLI信息源名称和模块要求，请参阅[支持的信息源](reference/feed-table-reference.md#supported-feeds)。
+
+## 命令选项
 
 `saas:resync`命令支持各种同步操作：
 
@@ -64,7 +74,7 @@ bin/magento saas:resync --feed categoryPermissions
 - 恢复中断的同步
 - 在不同步的情况下验证数据
 
-查看所有可用选项：
+查看所有命令选项和标志：
 
 ```shell
 bin/magento saas:resync --help
@@ -72,25 +82,39 @@ bin/magento saas:resync --help
 
 有关选项说明和示例，请参阅以下部分。
 
-
 >[!NOTE]
 >
 >有关管理导出处理的高级选项，请参阅[自定义导出处理](customize-export-processing.md)。
+
+## `--feed`
+
+必需。 指定要重新同步的馈送实体。
+
+`bin/magento saas:resync --help`文档命令选项和标志。 它不会列出您环境中可用的每个馈送。 有关包含CLI馈送名称、索引器ID和馈送表的完整馈送列表，请参阅[支持的馈送](reference/feed-table-reference.md#supported-feeds)。
+
+>[!NOTE]
+>
+>已安装的模块决定了可以重新同步哪些馈送。 例如，`productOverrides`需要云、内部部署或Commerce as a Cloud Service上的[!DNL Adobe Commerce]，而`orders`需要销售订单模块。
+
+**示例：**
+
+```shell
+bin/magento saas:resync --feed products
+```
 
 ## `--by-ids`
 
 按其ID部分重新同步特定实体。 支持`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`信息源。
 
-默认情况下，在使用`--by-ids`选项时，您会使用产品SKU值指定值。 要使用产品ID，请添加`--id-type=ProductID`选项。
+默认情况下，在使用`--by-ids`选项时，您会使用产品SKU值指定值。 要使用产品ID，请添加`--id-type=productId`选项。
 
 **示例：**
 
 ```shell
 bin/magento saas:resync --feed products --by-ids='ADB102,ADB111,ADB112'
 
-bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
+bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
 ```
-
 
 ## `--cleanup-feed`
 
@@ -100,7 +124,7 @@ bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 
 >[!WARNING]
 >
->使用带有`cleanup-feed`选项的resync命令会清除本地馈送导出状态，这可能会导致同步不完整。 例如，Adobe Commerce中的实体删除可能不会反映在连接的Commerce服务中，或者即使在Adobe Commerce中删除或更新了旧实体，它们仍可能保留在远程Commerce服务索引中。 此选项仅用于完整环境重建，例如在SaaS数据空间清理后。
+>使用带有`cleanup-feed`选项的resync命令会清除本地馈送导出状态，这可能会导致同步不完整。 例如，[!DNL Adobe Commerce]中的实体删除可能未反映在连接的Commerce Services中，或者即使过时实体在[!DNL Adobe Commerce]中被删除或更新，它们仍可能保留在远程Commerce Services索引中。 此选项仅用于完全环境重建，例如在清理SaaS数据空间之后。
 
 **示例：**
 
@@ -144,44 +168,17 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-i
 
 默认情况下，在`resync --dry-run`操作期间提交的信息源仅包含新项目，或以前无法导出的项目。 要在要处理的信息源中包含所有项，请使用`--cleanup-feed`选项。
 
-**示例**
-
-```shell
-bin/magento saas:resync --feed products --dry-run --cleanup-feed
-```
-
-## `--feed`
-
-必需。 指定要重新同步的馈送实体。
-
-可用信息源：
-
-- `categories`
-- `categoryPermissions`
-- `orders`
-- `prices`
-- `products`
-- `productAttributes`
-- `productOverrides`
-- `scopesWebsite`
-- `scopesCustomerGroup`
-- `variants`
-
->[!NOTE]
->
->根据您的Adobe Commerce环境中安装的模块，环境中可用的信息源可能有所不同。
-
 **示例：**
 
 ```shell
-bin/magento saas:resync --feed products
+bin/magento saas:resync --feed products --dry-run --cleanup-feed
 ```
 
 ## `--no-reindex`
 
 将现有目录数据重新提交到[!DNL Commerce Services]而不重新编制索引。 与产品相关的信息源不支持。
 
-行为因[导出模式](data-synchronization.md#synchronization-modes)而异：
+行为因[导出模式](sync-overview.md#synchronization-modes)而异：
 
 - 旧版模式：重新提交所有数据而不截断。
 - 立即模式：忽略选项，仅同步更新/失败。
@@ -192,16 +189,8 @@ bin/magento saas:resync --feed products
 bin/magento saas:resync --feed productAttributes --no-reindex
 ```
 
-## `--id-type=ProductId`
-
-默认情况下，在将`saas:resync feed`命令与`--by-ids`选项一起使用时指定的实体由产品SKU指定。 使用`--id-type=ProductId`选项，按产品ID指定实体。
-
-```shell
-bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
-```
-
-**示例：**
-
-## 故障排除
-
-如果在连接的Commerce服务中未看到预期的数据，请通过检查数据导出错误日志并使用带有环境变量的`saas:resync`命令查看有效负载和探查器数据来解决问题。 查看[查看日志和疑难解答](troubleshooting-logging.md)。
+>[!MORELIKETHIS]
+>
+> - [查看日志并排除故障](troubleshooting/logging.md) — 诊断数据导出和SaaS导出错误。
+> - [疑难解答方案](troubleshooting/troubleshooting-scenarios.md) — 解决配置错误和意外的同步结果。
+> - [同步的工作方式](sync-overview.md) — 了解同步模式和重试行为。

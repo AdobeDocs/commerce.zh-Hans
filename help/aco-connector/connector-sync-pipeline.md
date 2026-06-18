@@ -7,6 +7,8 @@ autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
   - id: c32adafa-ed01-4b31-997e-2413013911b0
@@ -22,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 625
+source-wordcount: 662
 ht-degree: 1%
 
 ---
@@ -47,26 +49,29 @@ ht-degree: 1%
 
 当目录数据在[!DNL Adobe Commerce]中更改时，同步将经过这些阶段。
 
-1. **实体更改检测** — （每1分钟）Cron作业(`indexer_reindex_all_invalid`)检测[!DNL Adobe Commerce]实体更改并触发[!DNL SaaS Data Export]，该操作将组合馈送项目并跟踪其状态。
+1. **实体更改检测** — （每1分钟）Cron作业(`indexer_reindex_all_invalid`)检测[!DNL Adobe Commerce]实体更改并触发汇编馈送项目的[!DNL SaaS Data Export]。
 1. **转换** — [!DNL Commerce Optimizer Connector]将选取组合馈送，将[!DNL Adobe Commerce]实体和范围映射到[!DNL Commerce Optimizer] API所需的格式，并准备传输的有效负载。
 1. **传输** — 转换后的数据通过HTTP POST (`/v1/catalog/<feed name>`)通过[!DNL Adobe I/O Gateway]到[!DNL Commerce Optimizer]发送，这将验证并保留传入的馈送。
+1. **保留结果** — 将API响应状态保留到[信息源表](reference/connector-reference.md#supported-feeds)。
 1. **失败重试**（每5分钟） — 单独的cron作业(`*_resend_failed_items`)检测到任何失败的馈送项目，并通过同一管道重新提交它们。
 
 ### 计划的cron作业
 
-两个cron组按固定计划自动执行管道。
+以下cron作业按固定计划自动执行管道。
 
-| Cron组 | 用途 | 计划 |
-| ---------- | ------- | -------- |
-| `indexer_reindex_all_invalid` | 侦听实体更新，组合信息源项目，保留信息源状态 | 每1分钟 |
-| `*_resend_failed_items` | 检查失败的信息源项目并将它们重新提交到[!DNL Commerce Optimizer] | 每5分钟 |
+| Cron组 | Cron作业 | 用途 | 计划 |
+|-------------------------------------|-------------------------------|------------------------------------------------------------------------------|----------------|
+| `index` | `indexer_update_all_views` | 侦听实体更新，组合信息源项目，保留信息源状态 | 每1分钟 |
+| `index` | `indexer_reindex_all_invalid` | 对标记为“需要重新索引”的源索引执行完全重新同步 | 每1分钟 |
+| `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | 检查失败的信息源项目并将它们重新提交到[!DNL Commerce Optimizer] | 每5分钟 |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | 清理超过保留期（7天）的同步删除的信息源项目 | 每天凌晨2:00 |
 
 **[!DNL SaaS Data Export]**&#x200B;扩展处理馈送收集和状态跟踪。 连接器层将实体和范围映射到[!DNL Commerce Optimizer] API所需的格式，并通过`POST /v1/catalog/<feed name>`提交它们。
 
 #### 要求
 
 - [Commerce cron必须正在运行](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}。
-- 馈送索引器必须使用&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;模式。 请参阅[验证Commerce应用程序配置](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}。
+- 馈送索引器必须使用&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;模式。 请参阅[部分同步](../data-export/sync-overview.md#partial-sync){target="_blank"}。
 
 ## 基于范围的同步控制
 
@@ -88,7 +93,7 @@ ht-degree: 1%
 | 瞬时故障 | 每5分钟重试一次 |
 | 完全同步或大型目录 | 分钟到小时 |
 
-从Commerce管理员的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面中监视每个馈送的状态。 请参阅[验证数据同步是否正常工作](./get-started.md#verify-that-the-data-sync-is-working)。
+从Commerce管理员的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面中监视每个馈送的状态。 请参阅[验证数据同步是否正常工作](./data-sync-manage.md#verify-that-the-data-sync-is-working)。
 
 ## 馈送提交和错误处理
 
