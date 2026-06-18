@@ -1,22 +1,17 @@
 ---
 title: 估计数据量及传输时间
 description: 了解如何估算 [!DNL data export] 工具在Adobe Commerce和连接的服务之间同步馈送数据所需的数据量和传输时间。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 787d05d6-fc2f-4f23-8ea7-ef54330e1f37
 TQID: https://experienceleague.adobe.com/nhVfGHgrsvqIjUcWfsVDcriEFwUhRQa9D-4xAU-cAnU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 559
+source-wordcount: 585
 ht-degree: 0%
 
 ---
@@ -24,6 +19,10 @@ ht-degree: 0%
 # 估计数据同步的数据量和传输时间
 
 Adobe建议在开始任何数据馈送同步之前估计数据量和同步时间，以确保顺利计划并避免站点操作中断。 在计划初始同步或大规模目录更新（如批量价格更改）时，此估计很重要。
+
+>[!NOTE]
+>
+>对于[!DNL Adobe Commerce Optimizer Connector]部署，请查看[连接器模块和馈送端点](../aco-connector/reference/connector-reference.md#supported-feeds)中特定于连接器的受支持馈送和批次限制。
 
 默认情况下，数据导出工具以单线程模式处理数据，并默认使用批处理大小。 使用默认配置时，信息源提交过程不会并行化。 此外，此组件接受每秒请求(RPS)，这将会转换为以下内容：
 
@@ -57,3 +56,9 @@ Adobe建议在开始任何数据馈送同步之前估计数据量和同步时间
 | 类别权限 | 所有类别权限计数+ 4个回退记录(CP)：10000 | CP = 10000 | 10000/批次大小(100) = 100个请求 | （100个请求*每个请求0.5秒）/60 = 0.8分钟（50秒） |
 | 库存库存状态 | 产品(P)：10000，库存分配给(S)的产品：5（假设每个产品都分配给每个库存） | P * S = 50000 | 50000/批次大小(100) = 500个请求 | （500个请求*每个请求0.5秒）/ 60 = 4.2分钟 |
 | 销售订单 | 所有订单记录（包括发票、发运等）(SO)：10000 | SO = 10000 | 10000/批次大小(100) = 100个请求 | （100个请求*每个请求0.5秒）/60 = 0.8分钟（50秒） |
+
+>[!MORELIKETHIS]
+>
+> - [提高数据导出性能](customize-export-processing.md)
+> - [管理同步](data-sync-manage.md)
+> - [同步的工作方式](sync-overview.md)

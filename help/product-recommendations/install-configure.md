@@ -1,23 +1,15 @@
 ---
 title: 安装和配置
 description: 了解如何安装、更新和卸载 [!DNL Product Recommendations]。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
 TQID: https://experienceleague.adobe.com/z-ue-sojw9Iewuz-ZToCzkumP3qN-TCWWF3UWdpdIL0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 641
 ht-degree: 0%
@@ -55,7 +47,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-通过在页面生成器中启用[!DNL Product Recommendations]，您可以将现有的活动[推荐单元](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)添加到在页面生成器中创建的任何内容，例如页面、块和动态块。
+通过在页面生成器中启用[!DNL Product Recommendations]，您可以将现有的活动[推荐单元](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)添加到在页面生成器中创建的任何内容，例如页面、块和动态块。
 
 有关详细说明，请参阅[将 [!DNL Product Recommendations] 与页面生成器内容一起使用](page-builder.md)。
 
@@ -73,13 +65,13 @@ composer require magento/module-visual-product-recommendations
 
    通过配置此连接，可以实现Commerce实例、目录服务和其他支持服务之间的数据同步和通信。 数据同步由[SaaS Data Export扩展](../data-export/overview.md)处理。
 
-1. 为确保目录导出可以正确运行，请确认[cron](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)作业和[索引器](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/manage-indexers)正在运行，并且`Product Feed`索引器设置为`Update by Schedule`。
+1. 为确保目录导出可以正确运行，请确认[cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)作业和[索引器](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)正在运行，并且`Product Feed`索引器设置为`Update by Schedule`。
 
 成功将Commerce应用程序链接到Commerce Services并指定[SaaS数据空间](../landing/saas.md#saas-configuration)后，将开始目录同步。 然后，您可以[验证](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)行为数据是否已发送到店面。
 
 ## 监测数据同步并排除其故障
 
-通过Commerce Admin，您可以使用[数据管理功能板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)监视同步过程。 使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和日志管理该进程并对其进行故障排除。
+通过Commerce Admin，您可以使用[数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)监视同步过程。 使用[Commerce CLI](../data-export/data-export-cli-commands.md)和[日志](../data-export/troubleshooting/logging.md)管理该进程并排除其故障。
 
 然后，您可以[验证](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)行为数据是否已发送到店面。
 
@@ -133,4 +125,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## 卸载[!DNL Product Recommendations] {#uninstall}
 
-如有必要，您可以[卸载](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)产品推荐模块。
+如有必要，您可以[卸载](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)产品推荐模块。

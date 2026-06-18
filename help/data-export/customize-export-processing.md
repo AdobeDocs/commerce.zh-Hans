@@ -1,17 +1,15 @@
 ---
 title: 提高SaaS数据导出性能
 description: 了解如何使用多线程数据导出模式提高Commerce服务的SaaS数据导出性能。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
 TQID: https://experienceleague.adobe.com/k-gizR-v-zQjQiN5IZm1Mv87J6j9eMsxH8vl-K1Co2M
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 669
 ht-degree: 0%
@@ -27,7 +25,7 @@ ht-degree: 0%
 ## 使用多线程模式的注意事项
 
 使用数据导出服务时，您希望优化性能，同时确保精确的同步。
-Adobe建议使用默认配置进行数据摄取，这通常满足Commerce商家的同步要求。 但是，在某些情况下，自定义可能会加快处理时间。
+Adobe建议使用默认配置进行数据摄取，这通常满足Commerce商家的同步要求。但是，在某些情况下，自定义可能会加快处理时间。
 
 在决定是否自定义数据导出配置时，请考虑以下关键因素：
 
@@ -47,10 +45,14 @@ Adobe建议使用默认配置进行数据摄取，这通常满足Commerce商家�
 
 ## 配置多线程
 
-所有[同步方法](data-synchronization.md#view-and-manage-the-synchronization-process)都支持多线程模式 — 完全同步、部分同步和失败项目同步。 要配置多线程，请指定同步过程中要使用的线程数和批处理大小。
+所有[同步方法](sync-overview.md#synchronization-types)都支持多线程模式 — 完全同步、部分同步和失败项目同步。 要配置多线程，请指定同步过程中要使用的线程数和批处理大小。
 
 - `thread-count`是激活到进程实体的线程数。 默认`thread-count`为`1`。
 - `batch-size`是一个迭代中处理的实体数。 除价格馈送之外，所有馈送的默认`batch-size`是`100`条记录。 对于价格馈送，默认值为`500`条记录。
+
+>[!NOTE]
+>
+>对于[!DNL Adobe Commerce Optimizer Connector]部署，请查看[连接器模块和馈送端点](../aco-connector/reference/connector-reference.md#supported-feeds)中特定于连接器的受支持馈送和批次限制。
 
 您可以在运行resync命令时将多线程配置为临时选项，或者通过将多线程配置添加到Adobe Commerce应用程序配置中来配置多线程。
 
@@ -62,7 +64,7 @@ Adobe建议使用默认配置进行数据摄取，这通常满足Commerce商家�
 
 从命令行运行完整同步命令时，通过将`thread-count`和`batch-size`选项添加到CLI命令来指定多线程处理。
 
-```
+```shell
 bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
@@ -72,7 +74,7 @@ bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 
 要使用多线程处理所有数据导出操作，系统集成商或开发人员可以在Commerce应用程序配置中修改每个馈送的线程数和批量大小。
 
-可以通过将自定义值添加到配置文件`app/etc/config.php`的[系统节](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)来应用这些更改。
+可以通过将自定义值添加到配置文件`app/etc/config.php`的[系统节](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)来应用这些更改。
 
 **示例：为产品和价格配置多线程**
 
@@ -95,3 +97,9 @@ return [
             ],
 //   ...
 ```
+
+>[!MORELIKETHIS]
+>
+> - [估计数据量及传输时间](estimate-data-volume-sync-time.md)
+> - [同步的工作方式](sync-overview.md)
+> - [馈送表架构](reference/feed-table-reference.md)
