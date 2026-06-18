@@ -41,7 +41,7 @@ ht-degree: 0%
 1. 如果锁定为&#x200B;**acquired**，进程会记录其名称和PID以进行诊断，然后运行同步。
 1. 当同步完成或失败时，将无条件释放锁定，以便下一个计划的cron作业可以正常继续。
 
-一次只能有一个同步操作保持馈送锁定，而不管该操作是通过cron启动还是通过CLI启动。 馈送锁定是通过[!DNL Adobe Commerce]的`LockManagerInterface`实现的。 默认后端是MySQL，它使用`GET_LOCK`和`RELEASE_LOCK`函数。 要配置其他锁定提供程序，请参阅[配置锁定提供程序](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}。
+一次只能有一个同步操作保持馈送锁定，而不管该操作是通过cron启动还是通过CLI启动。 馈送锁定是通过[!DNL Adobe Commerce]的`LockManagerInterface`实现的。 默认后端是MySQL，它使用`GET_LOCK`和`RELEASE_LOCK`函数。 要配置其他锁定提供程序，请参阅[配置锁定提供程序](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}。
 
 ## 预期的日志消息
 
@@ -62,4 +62,4 @@ ht-degree: 0%
 > - [将数据与SaaS数据导出同步](sync-overview.md)
 > - [使用Commerce CLI同步源](data-export-cli-commands.md)
 > - [连接器同步管道](../aco-connector/connector-sync-pipeline.md)
-> - [配置锁定提供程序](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
+> - [配置锁定提供程序](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}

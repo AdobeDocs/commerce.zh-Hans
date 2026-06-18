@@ -115,7 +115,7 @@ SaaS数据导出支持三种同步类型：完全同步、部分同步和重试�
 
 除了HTTP级失败之外，应用程序级错误（如本地处理失败或网络中断）也计划由`*_resend_failed_items` cron作业自动重试。
 
-从Commerce管理员的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面中监视每个馈送的状态。
+从Commerce管理员的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面中监视每个馈送的状态。
 
 >[!MORELIKETHIS]
 >

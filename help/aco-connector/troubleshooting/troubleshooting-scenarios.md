@@ -4,7 +4,7 @@ description: 诊断并解决 [!DNL Adobe Commerce Optimizer Connector] 中由于
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677

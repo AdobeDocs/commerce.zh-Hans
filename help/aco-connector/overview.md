@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]'
 description: 了解介于 [!DNL Adobe Commerce] 和 [!DNL Adobe Commerce Optimizer]之间的目录同步、搜索和店面投放的 [!DNL Adobe Commerce Optimizer Connector] 。
 feature: Integration, Storefront, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
 product_v2:

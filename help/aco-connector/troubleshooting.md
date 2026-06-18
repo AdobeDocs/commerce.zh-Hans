@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Commerce Optimizer Connector]疑难解答'
 description: 了解如何解决 [!DNL Adobe Commerce] PaaS集成的 [!DNL Adobe Commerce Optimizer Connector] 凭据、目录同步和范围导出问题。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/ei86QuJ3nQ2d-6NRoAeJslgDxjGlZRejD-Nx-6SAVdc'
 product_v2:

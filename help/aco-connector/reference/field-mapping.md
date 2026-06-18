@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Commerce Optimizer Connector] 馈送的字段映射'
 description: 了解从 [!DNL Adobe Commerce] 目录数据到所有馈送的 [!DNL Adobe Commerce Optimizer] 摄取API格式的 [!DNL Adobe Commerce Optimizer Connector] 字段映射。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
