@@ -208,4 +208,4 @@ ht-degree: 0%
 
 1. **在[!DNL Edge Delivery Services]**&#x200B;上设置Commerce店面
 
-   按照[Storefront设置文档](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}将您的店面连接到[!DNL Commerce Optimizer]实例，并开始提供个性化的商务体验。
+   按照[Storefront设置文档](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=zh-Hans){target="_blank"}将您的店面连接到[!DNL Commerce Optimizer]实例，并开始提供个性化的商务体验。
