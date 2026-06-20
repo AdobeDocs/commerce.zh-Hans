@@ -35,4 +35,4 @@ ht-degree: 2%
    - [管理SaaS数据导出扩展](manage-extension.md)
    - [使用Commerce CLI同步馈送](data-export-cli-commands.md)
    - [馈送表架构](reference/feed-table-reference.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)

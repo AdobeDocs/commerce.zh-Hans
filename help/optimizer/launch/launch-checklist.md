@@ -76,7 +76,7 @@ ht-degree: 0%
 
 确认您的Edge Delivery Services店面网站存在并且访问受限。
 
-▢店面站点存在。请参阅[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/)。
+▢店面站点存在。请参阅[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans)。
 ▢您知道站点名称。
 ▢只有授权人员才有[权限发布](https://tools.aem.live/tools/user-admin/index.html)。
 ▢只有授权人员才有[创作权限](https://docs.da.live/administrators/guides/permissions)。
@@ -116,18 +116,18 @@ ht-degree: 0%
 
 ### 在Adobe Commerce上
 
-▢ Storefront兼容包是[安装的](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/)。
+▢ Storefront兼容包是[安装的](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/?lang=zh-Hans)。
 
 ### 在店面
 
-▢店面`commerce-core-endpoint`设置指向您的[Cloud GraphQL终结点](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/)。
+▢店面`commerce-core-endpoint`设置指向您的[Cloud GraphQL终结点](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hans)。
 ▢如果您使用API Mesh作为Cloud GraphQL的代理，`commerce-core-endpoint`将指向API Mesh端点而不是Cloud GraphQL端点。
 
 ## 验证storefront和Optimizer集成 {#storefront-optimizer-integration}
 
 确认店面配置中的Commerce Optimizer设置。
 
-▢您的店面使用正确的[Commerce Optimizer设置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/)。
+▢您的店面使用正确的[Commerce Optimizer设置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hans)。
 ▢ `adobe-commerce-optimizer`是`true`。
 ▢ `commerce-endpoint`在您使用API网格时指向生产Commerce Optimizer GraphQL端点或API网格端点。
 ▢ `headers.cs.AC-view-ID`包含您生产Commerce Optimizer实例中的目录视图ID。
@@ -188,8 +188,8 @@ ht-degree: 0%
 
 确认元数据、URL和抓取行为。
 
-▢关键页（尤其是PDP和PLP）存在文档标题元数据。请参阅&#x200B;_Adobe Commerce店面_&#x200B;文档中的[SEO元数据](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"}。
-▢个PDP包含[元数据和结构化数据](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"}（例如，JSON-LD）。
+▢关键页（尤其是PDP和PLP）存在文档标题元数据。请参阅&#x200B;_Adobe Commerce店面_&#x200B;文档中的[SEO元数据](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/?lang=zh-Hans){target="_blank"}。
+▢个PDP包含[元数据和结构化数据](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/?lang=zh-Hans){target="_blank"}（例如，JSON-LD）。
 ▢产品URL格式一致（例如，`domain/product-name`）。
 ▢个虚URL重定向到规范URL。
 ▢项目包括`robots.txt`，它允许在适当时进行索引、引用Sitemap并阻止您不希望进行索引的路径（例如，`/drafts`）。
@@ -203,7 +203,7 @@ ht-degree: 0%
 
 确认启用服务器端渲染的位置。
 
-为关键页面启用了▢预呈现。请参阅&#x200B;_AEM店面_&#x200B;文档中的[Adobe Commerce的预呈现](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-prerender/){target="_blank"}。
+为关键页面启用了▢预呈现。请参阅&#x200B;_AEM店面_&#x200B;文档中的[Adobe Commerce的预呈现](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-prerender/?lang=zh-Hans){target="_blank"}。
 ▢个URL使用小写，因此预渲染不会断开链接。
 ▢ HTML源包含确认预呈现工作的元数据和正文内容。
 ▢区域设置显示正确的已翻译页面（如果适用）。
@@ -213,10 +213,10 @@ ht-degree: 0%
 
 确认性能基线和分析布线。
 
-▢您的店面遵循&#x200B;_Adobe Commerce店面_&#x200B;文档中的[性能最佳实践](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/){target="_blank"}。
+▢您的店面遵循&#x200B;_Adobe Commerce店面_&#x200B;文档中的[性能最佳实践](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/?lang=zh-Hans){target="_blank"}。
 ▢（可选）已配置Google Analytics和Google Tag Manager。
 ▢ [Storefront事件](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger)实现有效，并且数据显示在Adobe Commerce *管理员*&#x200B;的[!DNL Live Search]和[!DNL Product Recommendations]仪表板中。
-▢ [Commerce配置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}中的`environment`分析参数在开发期间为`"Testing"`，在上线时为`"Production"`。请参阅[分析检测](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/){target="_blank"}。
+▢ [Commerce配置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hans){target="_blank"}中的`environment`分析参数在开发期间为`"Testing"`，在上线时为`"Production"`。请参阅[分析检测](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=zh-Hans){target="_blank"}。
 鉴于本主题中的指导，▢灯塔分数达到了您的目标（例如，关键页面上的`100`）。
 
 ### 安全性和访问权限
@@ -225,7 +225,7 @@ ht-degree: 0%
 
 ▢为DA内容和EDS站点配置了适当的权限。查看[DA.live权限](https://da.live/docs/administration/permissions)和创作的[身份验证设置](https://www.aem.live/docs/authentication-setup-authoring)。
 ▢已配置产品可视化集成。请参阅[AEM Cloud Service访问概述](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/accessing/overview#)。
-▢电子邮件模板中的密码重置链接与您的Edge Delivery Services设置相匹配。查看店面常见问题解答：[如果迁移到Edge Delivery Services或Helix后我的电子邮件模板链接损坏，我应该怎么做？](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}。
+▢电子邮件模板中的密码重置链接与您的Edge Delivery Services设置相匹配。查看店面常见问题解答：[如果迁移到Edge Delivery Services或Helix后我的电子邮件模板链接损坏，我应该怎么做？](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/?lang=zh-Hans#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}。
 ▢集成和支付提供商的生产密钥已准备就绪。
 ▢域已列入允许列表，后端Webhook工作正常。
 
@@ -235,8 +235,8 @@ ht-degree: 0%
 
 ▢ CDN配置使用Sidekick扩展和脚本（例如，Sitemap生成和图像导入程序）的GraphQL生产端点(`yourproject.com/graphql`)。
 ▢当您使用Adobe Commerce Fastly时，CDN清除令牌可用，[站点配置](https://tools.aem.live/tools/cdn-setup/index.html)包括`authToken`和`serviceId`。
-▢ [CDN配置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/){target="_blank"}验证缓存和无效。
-▢对于[多存储设置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/#multi-store-setups){target="_blank"}，目录服务和[!DNL Live Search]请求包含特定于存储的缓存终结器（例如，查询参数或CDN规则）。
+▢ [CDN配置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=zh-Hans){target="_blank"}验证缓存和无效。
+▢对于[多存储设置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/?lang=zh-Hans#multi-store-setups){target="_blank"}，目录服务和[!DNL Live Search]请求包含特定于存储的缓存终结器（例如，查询参数或CDN规则）。
 ▢推送失效工作可端到端地完成（发布更改，然后在生产域上验证）。
 在直接转换之前，▢个DNS TTL足够低。
 所有域和主机名的▢ DNS A和CNAME记录均正确。

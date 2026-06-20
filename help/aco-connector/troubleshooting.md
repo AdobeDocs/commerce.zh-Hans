@@ -68,4 +68,4 @@ ht-degree: 0%
 
 ## [!DNL SaaS Data Export]诊断
 
-有关较低级别的[!DNL SaaS Data Export]诊断（包括日志位置和馈送重新同步命令），请参阅[[!DNL SaaS Data Export] 疑难解答指南](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}。
+有关较低级别的[!DNL SaaS Data Export]诊断（包括日志位置和馈送重新同步命令），请参阅[[!DNL SaaS Data Export] 疑难解答指南](https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}。
