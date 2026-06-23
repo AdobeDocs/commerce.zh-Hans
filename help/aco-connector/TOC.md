@@ -5,10 +5,10 @@ user-guide-description: 本指南提供了有关使用 [!DNL Adobe Commerce Opti
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
 nudge: false
-source-git-commit: 83218416c513412f2ff6328aa8a23e915cbb8750
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 6%
+source-wordcount: '69'
+ht-degree: 5%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 6%
    - [疑难解答方案](troubleshooting/troubleshooting-scenarios.md)
 - 引用 {#reference}
    - [连接器模块和馈送端点](reference/connector-reference.md)
+   - [馈送表架构参考](reference/feed-table-reference.md)
    - [连接器信息源的字段映射](reference/field-mapping.md)
    - [估计数据量和同步时间](reference/estimate-data-volume-sync-time.md)
 - [发行说明](release-notes.md)

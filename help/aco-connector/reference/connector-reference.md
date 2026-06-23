@@ -2,32 +2,22 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]模块和信息源端点'
 description: 了解 [!DNL Adobe Commerce]的 [!DNL Adobe Commerce Optimizer Connector] 模块、目录馈送API端点、批次限制和core_config_data配置路径。
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: 301
 ht-degree: 1%
 
 ---
 
-# 连接器模块和馈送端点
+# Adobe Commerce Optimizer连接器的连接器模块和馈送端点
 
 此参考列出了`core_config_data`中存储的[!DNL Adobe Commerce Optimizer Connector]模块包、支持的馈送API端点和配置密钥路径。 要了解这些组件在同步期间如何协同工作，请参阅[连接器同步管道](../connector-sync-pipeline.md)。
 
@@ -59,7 +49,7 @@ ht-degree: 1%
 
 `products`、`productAttributes`、`categories`和`prices`馈送重复使用[!DNL SaaS Data Export]索引器收集的数据。 连接器从网站和客户组配置生成`priceBooks`源，并且不依赖于[!DNL SaaS Data Export]索引器。
 
-有关每个馈送的字段级映射详细信息，请参阅 [!DNL Commerce Optimizer Connector] 馈送[&#128279;](field-mapping.md)的字段映射。
+有关每个馈送的字段级映射详细信息，请参阅 [!DNL Commerce Optimizer Connector] 馈送](field-mapping.md)的[字段映射。
 若要根据目录大小估算同步所需的时间，请参阅[估算数据量和同步时间](estimate-data-volume-sync-time.md)。
 
 ## 配置路径
