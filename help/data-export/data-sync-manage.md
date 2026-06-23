@@ -3,23 +3,13 @@ title: 查看和管理同步过程
 description: 了解如何使用“数据管理功能板和数据馈送同步状态”页面查看和管理 [!DNL SaaS Data Export] 同步过程。
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: e7d9c056ef8d565b4a143b05ff4e06d607fbfa8e
 workflow-type: tm+mt
-source-wordcount: 652
+source-wordcount: 544
 ht-degree: 0%
 
 ---
@@ -34,9 +24,9 @@ ht-degree: 0%
 
 对于云上的Adobe Commerce、内部部署或Adobe Commerce as a Cloud Service部署，请从以下Commerce管理资源查看和管理同步过程：
 
-- **[数据馈送同步状态页面](../optimizer/setup/data-sync.md)** — 检查与[!DNL Live Search]、[!DNL Product Recommendations]或[!DNL Catalog Service]连接的部署的信息馈送导出状态。 此仪表板显示每个馈送的信息源导出状态，包括遇到的任何错误。 详细信息视图可显示各个馈送项目的馈送导出状态。
+- **[数据馈送同步状态页面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 检查与[!DNL Live Search]、[!DNL Product Recommendations]或[!DNL Catalog Service]连接的部署的信息馈送导出状态。 此仪表板显示每个馈送的信息源导出状态，包括遇到的任何错误。 详细信息视图可显示各个馈送项目的馈送导出状态。
 
-- **[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 管理员用户可以查看和跟踪已成功导出并同步到连接的Commerce服务的数据。 此仪表板显示同步到Commerce Services的产品数据。
+- **[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 管理员用户可以查看和跟踪已成功导出并同步到连接的Commerce服务的数据。 此仪表板显示同步到Commerce Services的产品数据。
 
 >[!NOTE]
 >
@@ -46,7 +36,7 @@ ht-degree: 0%
 
 对于与[!DNL Commerce Optimizer]集成的Commerce云上部署或内部部署，请使用以下资源查看和管理同步过程：
 
-- **[数据馈送同步状态页面](../optimizer/setup/data-sync.md)** — 对于使用[!DNL Commerce Optimizer]的Commerce项目，请从[!DNL Commerce Optimizer]的数据馈送同步状态页面检查店面的目录数据可用性。 此仪表板显示数据导出馈送的同步状态。
+- **[数据馈送同步状态页面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 从Commerce管理员监视连接器馈送导出状态。 此页面显示是否成功从[!DNL Adobe Commerce]导出目录数据，包括每个信息源以及每个项目的错误详细信息。
 
 - **[数据同步页面](../optimizer/setup/data-sync.md)** — “数据同步”页面概述了从上游目录源到[!DNL Commerce Optimizer]的产品数据的同步状态。
 
@@ -56,29 +46,8 @@ ht-degree: 0%
 
 ## 验证数据同步是否正常工作 {#verify-that-the-data-sync-is-working}
 
-要验证数据同步是否正常工作，请确认已成功从[!DNL Adobe Commerce]导出数据，并且数据已成功传递到连接的Commerce服务。 使用部署中的功能板检查这两个步骤。
 
-从导出开始，然后确认投放。
-
-1. 在Commerce管理员中检查同步状态。
-
-   转到&#x200B;**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**。
-
-   ![带有馈送项状态报告的数据馈送同步状态页面](./assets/data-feed-sync-status.png){width="800" zoomable="yes"}
-
-   同步运行时，馈送数据显示已成功发送的记录。 选择信息源以查看详细信息或解决同步问题。
-
-1. 确认数据已传送到“连接的Commerce服务”。
-
-   从Commerce管理员转到&#x200B;**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**。
-
-   ![数据管理功能板显示连接的Commerce服务中已同步的目录数据](./assets/data-management-dashboard.png){width="700" zoomable="yes"}
-
-   验证是否显示预期的产品、价格和属性。
-
->[!TIP]
->
->如果数据同步有任何问题，请参阅[查看日志和疑难解答](troubleshooting/logging.md)。
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
 ## 手动重新同步数据
 
@@ -100,5 +69,3 @@ ht-degree: 0%
 > - [使用Commerce CLI同步馈送](data-export-cli-commands.md) — 使用`saas:resync`命令进行目标馈送重新同步。
 > - [查看日志并排除故障](troubleshooting/logging.md) — 诊断数据导出和SaaS导出错误。
 > - [管理与 [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md)的同步 — 验证目录数据同步并手动重新同步连接器馈送。
-
-

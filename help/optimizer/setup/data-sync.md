@@ -3,18 +3,13 @@ title: 数据同步
 description: 查看正在从Commerce数据源同步到 [!DNL Adobe Commerce Optimizer]中的目录数据。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 TQID: https://experienceleague.adobe.com/ZTMFkch-YNS-CUgCdadmg1kemA8ORXQ7KGCEkI7d-Yw
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: c7633056caec2fcec318f8ebcc9664cfc7b3b9b4
 workflow-type: tm+mt
 source-wordcount: 484
 ht-degree: 0%
@@ -34,7 +29,7 @@ ht-degree: 0%
 **数据同步**&#x200B;页包含以下字段：
 
 | 字段 | 描述 |
-|--- |--- |
+| --- | --- |
 | 目录源 | 同步数据的特定区域设置。 |
 | [!DNL Catalog Service] | 显示[!DNL Catalog Service]的最新同步更新、收到的产品总数、搜索字段以及同步产品的表。 |
 | 产品发现 | 显示最新的同步更新、收到的产品总数、搜索字段和已同步产品的表以供搜索。 |
@@ -61,12 +56,11 @@ ht-degree: 0%
 >
 >完成同步所需的时间因目录大小和更新的数据量而异。
 
-## 监视数据同步状态
+## 验证数据同步是否正常工作
 
-对于通过Adobe Commerce Connector将Adobe Commerce Optimizer用作上游数据源的项目，您可以从Commerce Admin的[数据馈送同步状态页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)监视数据导出过程并启动重新同步操作。
+对于通过Adobe Commerce Connector将Adobe Commerce Optimizer用作上游数据源的项目，您可以监视数据导出过程，并从数据馈送同步状态页面启动重新同步操作。 有关详细信息，请参阅&#x200B;_Adobe Commerce Optimizer Connector_&#x200B;文档中的[验证数据同步是否正常工作](../../aco-connector/data-sync-manage.md#verify-that-the-data-sync-is-working)。
 
 ## 相关主题
 
 - [Adobe Commerce Optimizer连接器](../../aco-connector/overview.md){target="_blank"}
-
 
