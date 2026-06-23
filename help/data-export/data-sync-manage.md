@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: e7d9c056ef8d565b4a143b05ff4e06d607fbfa8e
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: 557
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 0%
 | 任务 | 选项 | 注释 |
 | --- | --- | --- |
 | 重新同步选定的馈送项目失败或有问题 | **[!UICONTROL Data Feed Sync Status]页** | 从Commerce管理员中监视和重新同步选定的信息源项目。 请参阅[验证数据同步是否正常工作](#verify-that-the-data-sync-is-working)。 |
-| 完全重新同步所有信息源 | **[!UICONTROL Data Management Dashboard]** | 从Commerce管理员对所有信息源执行完全重新同步；Adobe建议主要在您首次连接到Commerce服务时这样做。 请参阅[验证数据同步是否正常工作](#verify-that-the-data-sync-is-working)。 |
+| 完全重新同步所有信息源 | **[!UICONTROL Data Management Dashboard]** | 从Commerce管理员对所有信息源执行完全重新同步；Adobe建议主要在您首次连接到Commerce服务时这样做。 跳过自上次导出以来内容哈希未更改的项目。 请参阅[验证数据同步是否正常工作](#verify-that-the-data-sync-is-working)。 |
 | 具有操作控制的目标馈送重新同步 | **Commerce CLI** | 使用`saas:resync`命令进行目标馈送重新同步。 请参阅[使用Commerce CLI同步源](data-export-cli-commands.md)。 |
 
 >[!MORELIKETHIS]

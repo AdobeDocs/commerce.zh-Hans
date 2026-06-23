@@ -16,9 +16,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
 workflow-type: tm+mt
-source-wordcount: 670
+source-wordcount: 728
 ht-degree: 0%
 
 ---
@@ -96,6 +96,10 @@ bin/magento saas:resync --help
 >
 >已安装的模块决定了可以重新同步哪些馈送。 例如，`productOverrides`需要云、内部部署或Commerce as a Cloud Service上的[!DNL Adobe Commerce]，而`orders`需要销售订单模块。
 
+>[!NOTE]
+>
+>`saas:resync`命令仅传输新项目、更新的项目和以前无法导出的项目。 跳过自上次导出以来内容哈希未更改的项目。
+
 **示例：**
 
 ```shell
@@ -107,6 +111,10 @@ bin/magento saas:resync --feed products
 按其ID部分重新同步特定实体。 支持`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`信息源。
 
 默认情况下，在使用`--by-ids`选项时，您会使用产品SKU值指定值。 要使用产品ID，请添加`--id-type=productId`选项。
+
+>[!NOTE]
+>
+>与标准重新同步不同，`--by-ids`绕过哈希验证并强制将指定的实体提交到连接的Commerce服务，无论其内容在上次导出后是否发生更改。
 
 **示例：**
 

@@ -20,14 +20,14 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: 301
 ht-degree: 1%
 
 ---
 
-# 连接器模块和馈送端点
+# Adobe Commerce Optimizer连接器的连接器模块和馈送端点
 
 此参考列出了`core_config_data`中存储的[!DNL Adobe Commerce Optimizer Connector]模块包、支持的馈送API端点和配置密钥路径。 要了解这些组件在同步期间如何协同工作，请参阅[连接器同步管道](../connector-sync-pipeline.md)。
 
