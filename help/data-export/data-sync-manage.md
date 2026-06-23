@@ -34,9 +34,9 @@ ht-degree: 0%
 
 对于云上的Adobe Commerce、内部部署或Adobe Commerce as a Cloud Service部署，请从以下Commerce管理资源查看和管理同步过程：
 
-- **[数据馈送同步状态页面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 检查与[!DNL Live Search]、[!DNL Product Recommendations]或[!DNL Catalog Service]连接的部署的信息馈送导出状态。 此仪表板显示每个馈送的信息源导出状态，包括遇到的任何错误。 详细信息视图可显示各个馈送项目的馈送导出状态。
+- **[数据馈送同步状态页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 检查与[!DNL Live Search]、[!DNL Product Recommendations]或[!DNL Catalog Service]连接的部署的信息馈送导出状态。 此仪表板显示每个馈送的信息源导出状态，包括遇到的任何错误。 详细信息视图可显示各个馈送项目的馈送导出状态。
 
-- **[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 管理员用户可以查看和跟踪已成功导出并同步到连接的Commerce服务的数据。 此仪表板显示同步到Commerce Services的产品数据。
+- **[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 管理员用户可以查看和跟踪已成功导出并同步到连接的Commerce服务的数据。 此仪表板显示同步到Commerce Services的产品数据。
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 对于与[!DNL Commerce Optimizer]集成的Commerce云上部署或内部部署，请使用以下资源查看和管理同步过程：
 
-- **[数据馈送同步状态页面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 从Commerce管理员监视连接器馈送导出状态。 此页面显示是否成功从[!DNL Adobe Commerce]导出目录数据，包括每个信息源以及每个项目的错误详细信息。
+- **[数据馈送同步状态页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 从Commerce管理员监视连接器馈送导出状态。 此页面显示是否成功从[!DNL Adobe Commerce]导出目录数据，包括每个信息源以及每个项目的错误详细信息。
 
 - **[数据同步页面](../optimizer/setup/data-sync.md)** — “数据同步”页面概述了从上游目录源到[!DNL Commerce Optimizer]的产品数据的同步状态。
 
