@@ -4,8 +4,8 @@ breadcrumb-title: '[!DNL Optimizer Connector]'
 user-guide-description: 本指南提供了有关使用 [!DNL Adobe Commerce Optimizer Connector] 导出目录数据、同步价格以及使用 [!DNL Adobe Commerce Optimizer]交付 [!DNL Edge Delivery Services] 店面的详细说明。
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
-nudge: true
-source-git-commit: 3624bb934c25e04ae2f08b0d78ed4602df89d3eb
+nudge: false
+source-git-commit: 83218416c513412f2ff6328aa8a23e915cbb8750
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 6%
@@ -28,4 +28,4 @@ ht-degree: 6%
    - [连接器信息源的字段映射](reference/field-mapping.md)
    - [估计数据量和同步时间](reference/estimate-data-volume-sync-time.md)
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

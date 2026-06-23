@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 0bfd368c50707692c7a0adda6e70e3776bd9692a
 workflow-type: tm+mt
-source-wordcount: 287
+source-wordcount: 349
 ht-degree: 0%
 
 ---
@@ -54,3 +54,5 @@ ht-degree: 0%
 > - [估算数据量和同步时间](reference/estimate-data-volume-sync-time.md) — 计算预期的同步持续时间
 > - [疑难解答](troubleshooting.md) — 诊断凭据、同步和范围导出问题
 > - [连接器模块和馈送端点](reference/connector-reference.md) — 审核模块、API端点和支持的馈送
+> - [Commerce管理员中的“数据馈送同步状态”页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — 了解有关可用于监视馈送状态的字段和功能的更多信息
+> - [位于 [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"}的数据同步仪表板 — 有关可用于监视目录数据同步的字段和操作的参考文档

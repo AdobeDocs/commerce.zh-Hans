@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 437
 ht-degree: 0%
 
 ---
@@ -81,12 +81,8 @@ https://<region>-<environment>.api.commerce.adobe.com/<tenantId>/graphql
 
 ## 监控数据导出并排除其故障
 
-Commerce管理员提供了用于监控从Commerce导出到所连接服务的数据并对其进行疑难解答的工具：
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-- **[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 监视[!DNL Catalog Service]与Adobe Commerce实例之间的数据同步。 功能板显示整体同步状态并列出所有已同步的产品。
+必要时使用[Commerce CLI](../data-export/data-export-cli-commands.md)手动重新同步馈送。 有关重新同步选项和其他故障排除步骤，请参阅&#x200B;_SaaS Data Export Guide_&#x200B;中的[Manage synchronization](../data-export/data-sync-manage.md)。
 
-- **[数据馈送同步状态页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 跟踪所有数据馈送的导出状态，以确保数据一致性。 此页面会提醒您在导出过程中发生的问题，以便您能够快速解决这些问题。 “成功”状态表示数据已导出，当数据同步过程完成时，可在连接的Commerce服务中使用。
-
->[!NOTE]
->
->如果“数据馈送同步状态”页面在Commerce on Cloud或本地部署的Commerce Admin中不可用，请按照[扩展安装说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)启用它。
+{{install-data-sync-feed-status}}

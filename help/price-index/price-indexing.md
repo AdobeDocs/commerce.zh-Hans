@@ -15,9 +15,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 475
 ht-degree: 0%
 
 ---
@@ -71,7 +71,17 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-### 自定义产品类型的价格
+## 监视器同步进度
+
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+必要时使用[Commerce CLI](../data-export/data-export-cli-commands.md)手动重新同步馈送。 有关重新同步选项和其他故障排除步骤，请参阅&#x200B;_SaaS Data Export Guide_&#x200B;中的[Manage synchronization](../data-export/data-sync-manage.md)。
+
+>[!NOTE]
+>
+>如果“数据馈送同步状态”页面在Commerce on Cloud或本地部署的Commerce Admin中不可用，请按照[扩展安装说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)启用它。
+
+## 自定义产品类型的价格
 
 自定义产品类型（如基本价格、特殊价格、组价格、目录规则价格等）支持价格计算。
 
@@ -102,7 +112,7 @@ bin/magento saas:resync --feed=prices
        */
        public function afterGet(ProductPrice $subject, array $result, array $values) : array
        {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
+           // Override the output $result with your data for the corresponding products (see original method for details)
            return $result;
        }
    }

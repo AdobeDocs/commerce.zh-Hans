@@ -1,11 +1,17 @@
 ---
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
 # Commerce代码片段
+
+## 安装数据馈送同步状态扩展的注释 {#install-data-sync-feed-status}
+
+>[!NOTE]
+>
+>如果“数据馈送同步状态”页面在Commerce on Cloud或本地部署的Commerce Admin中不可用，请按照[扩展安装说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}启用它。
 
 
 ## Adobe Commerce Optimizer集成环境协调 {#aco-integration-environment-alignment}
@@ -25,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您已安装[Adobe Commerce Optimizer Connector](../aco-connector/overview.md)以将目录数据导出到Adobe Commerce Optimizer，请使用Commerce Optimizer Studio中的[数据馈送同步状态页面](../optimizer/setup/data-sync.md)来检查是否已成功同步到Adobe Commerce Optimizer的数据，而不是数据管理功能板。
+>对于使用[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md)将目录数据导出到[!DNL Adobe Commerce Optimizer]的部署，请使用Commerce管理员中的[数据馈送同步状态页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)和[!DNL Adobe Commerce Optimizer Studio]中的[数据同步页面](../optimizer/setup/data-sync.md)，而不是[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)，来验证目录数据同步。
 
 ## 有关API更新的Adobe Commerce Optimizer下拉注释 {#aco-api-updates-and-dropins}
 

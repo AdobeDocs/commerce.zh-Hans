@@ -18,9 +18,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 641
+source-wordcount: 578
 ht-degree: 0%
 
 ---
@@ -80,9 +80,9 @@ composer require magento/module-visual-product-recommendations
 
 ## 监测数据同步并排除其故障
 
-通过Commerce Admin，您可以使用[数据管理功能板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)监视同步过程。 使用[Commerce CLI](../data-export/data-export-cli-commands.md)和[日志](../data-export/troubleshooting/logging.md)管理该进程并排除其故障。
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-然后，您可以[验证](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)行为数据是否已发送到店面。
+{{install-data-sync-feed-status}}
 
 ## 更新[!DNL Product Recommendations]安装 {#update}
 
