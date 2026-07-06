@@ -6,9 +6,9 @@ role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
-source-git-commit: 3624bb934c25e04ae2f08b0d78ed4602df89d3eb
+source-git-commit: 08581e17d291b1900ff8826a36edeaf97a9c0d3c
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '155'
 ht-degree: 12%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 12%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=zh-Hans)
    - [[!DNL App Management]](https://experienceleague.adobe.com/zh-hans/docs/commerce/app-management/overview)
    - [服务连接器](/help/landing/saas.md)
-   - [将 [!DNL Adobe Commerce] 与 [!DNL Adobe LLM Optimizer]集成](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html?lang=zh-Hans)
 - 数据工具 {#data-services}
    - [SaaS数据导出](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=zh-Hans)
    - [SaaS价格索引](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=zh-Hans)
