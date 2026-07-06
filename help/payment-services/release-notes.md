@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
 source-wordcount: '5400'
 ht-degree: 0%
@@ -688,7 +688,7 @@ _2022年3月31日_
 
 ![已修复问题](../assets/fix.svg)<!-- Issue PAY-2561 -->以前删除的产品未出现在&#x200B;_审阅订单_&#x200B;页面的购物车中。
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-2842 -->在沙盒环境中处理付款时，使用PayPal[&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=zh-Hans)测试信用卡交易记录可能失败。
+![已知问题](../assets/bug.svg)<!-- Issue PAY-2842 -->在沙盒环境中处理付款时，使用PayPal[&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html)测试信用卡交易记录可能失败。
 
 ## v1.0.0
 
@@ -717,3 +717,4 @@ _2021年11月29日_
 ![已知问题](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services]报告[不能立即同步](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=zh-Hans)。
 
 ![已知问题](../assets/bug.svg)<!-- Issue PAY-2475 -->如果您在新用户引导期间创建了[!DNL Payment Services]的[PayPal沙盒帐户](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=zh-Hans)，则无法验证该帐户。
+

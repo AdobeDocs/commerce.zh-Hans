@@ -3,7 +3,7 @@ title: 语义搜索
 description: 在“设置”中为 [!DNL Live Search] 启用AI语义搜索。 无需属性设置或店面变更。
 role: Admin
 recommendations: noCatalog
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -106,3 +106,4 @@ Adobe Commerce on Cloud和本地商家必须手动启用语义搜索：
 - [设置](settings.md#semantic-search)
 - [同义词](synonyms.md)
 - [性能](performance.md)
+

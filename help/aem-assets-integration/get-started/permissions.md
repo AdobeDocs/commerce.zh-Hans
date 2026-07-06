@@ -2,7 +2,7 @@
 title: 为AEM Assets集成配置IMS用户权限
 description: 了解IMS身份和Admin Console配置文件如何启用AEM Assets交付访问权限、资产选择器和自动填充的Commerce配置字段。
 feature: CMS, Media, Configuration
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
@@ -82,3 +82,4 @@ Paa需要&#x200B;**IMS客户端ID**&#x200B;才能启用资产选择器。 请参
 * [手动资源选择](../synchronize/asset-selector-integration.md) — 将资源选择器用于类别图像和页面生成器。
 * [将用户添加到AEM Assets或产品可视化图表](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} — 对于[!DNL Adobe Commerce as a Cloud Service]，请先将用户添加到Commerce和AEM Cloud Manager（业务负责人、部署管理员）。 **AEM Assets DM OpenAPI Users - delivery**&#x200B;配置文件（或作为回退的&#x200B;**author**&#x200B;配置文件）是Asset Selector和自动填充功能的额外要求。
 * [将团队成员分配给AEM交付层](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}。 有关投放访问权限的AEM文档。
+
