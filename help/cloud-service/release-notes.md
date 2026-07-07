@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
 workflow-type: tm+mt
-source-wordcount: 4489
+source-wordcount: 4655
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 >
 >如果您正在本地使用Adobe Commerce或在云基础架构上使用Adobe Commerce，请参阅[Adobe Commerce发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/notes/overview)。
 
-## 2026年6月 — 发行说#2 {#latest}
+## 2026年7月 — 发行说#1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
@@ -64,6 +64,27 @@ ht-degree: 0%
 ### 通过API列出自定义电子邮件模板
 
 新的`GET /V1/custom-email/templates` REST API端点返回您的[自定义电子邮件模板](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)，包括每个模板的ID、代码和主题。 集成可以使用返回的模板ID与`POST /V1/custom-email/send`端点，而不是手动查找该ID。<!-- CCSAAS-5089 -->
+
+### 通过REST API管理整个订单链
+
+>[!IMPORTANT]
+>
+>此功能属于实验性质，必须通过联系您的Adobe Commerce客户成功经理或创建支持票证来启用。
+
+新的`orderChain` REST API端点允许集成使用其ID修改订单，并自动解析已编辑订单的完整链：
+
+| 方法 | 端点 | 描述 |
+| --- | --- | --- |
+| `POST` | `/V1/orderChain/{orderId}/invoice` | 为订单创建发票，并在订单链中解析要开票的项目。 |
+| `POST` | `/V1/orderChain/{id}/cancel` | 取消链中的当前订单。 |
+| `POST` | `/V1/orderChain/{id}/hold` | 暂停订单。 |
+| `POST` | `/V1/orderChain/{id}/unhold` | 删除订单中的暂挂。 |
+| `POST` | `/V1/orderChain/{id}/emails` | 发送订单电子邮件通知。 |
+| `POST` | `/V1/orderChain/{id}/comments` | 向订单添加注释。 |
+| `GET` | `/V1/orderChain/{id}/comments` | 检索订单注释。 |
+| `GET` | `/V1/orderChain/{id}/statuses` | 检索当前订单状态。 |
+
+支持对发票、装运、贷项通知单和退货进行筛选的`GET`端点现在支持`order_original_id`的筛选。 按`order_original_id`过滤可返回有关整个订单链的详细信息，而不仅仅是单个订单的详细信息。 支持此功能的端点示例为`GET /V1/invoices`。<!-- ACCS-1004, ACCS-1005 -->
 
 ### 在管理员中查看订单修改历史记录
 
@@ -84,6 +105,10 @@ ht-degree: 0%
 * 现在，管理员更容易管理大型共享目录，从而缩短了加载时间并降低了超时可能性。<!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
 
 * 修复了在为包含可配置产品的订单创建发运时发生的发运创建失败。<!-- ACCS-1095 -->
+
+* 修复了[!DNL Commerce Admin]中左侧导航菜单可能消失的问题。<!-- ACCS-1035 -->
+
+* 提高了在共享目录中分配和取消分配的性能。<!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
 
 {{accs-release}}
 
