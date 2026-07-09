@@ -688,7 +688,7 @@ _2022年3月31日_
 
 ![已修复问题](../assets/fix.svg)<!-- Issue PAY-2561 -->以前删除的产品未出现在&#x200B;_审阅订单_&#x200B;页面的购物车中。
 
-![已知问题](../assets/bug.svg)<!-- Issue PAY-2842 -->在沙盒环境中处理付款时，使用PayPal[&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html)测试信用卡交易记录可能失败。
+![已知问题](../assets/bug.svg)<!-- Issue PAY-2842 -->在沙盒环境中处理付款时，使用PayPal[&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=zh-Hans)测试信用卡交易记录可能失败。
 
 ## v1.0.0
 
