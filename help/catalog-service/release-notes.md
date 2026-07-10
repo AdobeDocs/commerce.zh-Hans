@@ -4,18 +4,13 @@ description: Adobe Commerce的 [!DNL Catalog Service] 的最新发行信息。
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
 TQID: https://experienceleague.adobe.com/-yxW4sTuk7LPjGy5YsQ65phtkBLiByg8SmBaQPHMevM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff5d3ee7f421c8fee9a40a71ea1de366fd5e6d47
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
 workflow-type: tm+mt
-source-wordcount: 2946
+source-wordcount: 3024
 ht-degree: 0%
 
 ---
@@ -64,7 +59,7 @@ ht-degree: 0%
 **发行日期**： 2026年5月20日
 <!-- v1.55 -->
 
-![新](../assets/new.svg)根据[记录的限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits)，对Adobe Commerce和Adobe Commerce as a Cloud Service客户端的每个请求强制限制最多100个SKU。
+![新](../assets/new.svg)根据[记录的限制和边界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)，对Adobe Commerce和Adobe Commerce as a Cloud Service客户端的每个请求强制限制最多100个SKU。
 
 
 **发行日期**： 2026年5月13日
@@ -84,7 +79,7 @@ ht-degree: 0%
 
 
 ![新](../assets/new.svg)已强制限制Adobe Commerce Optimizer和Adobe Commerce as a Cloud Service的每个请求最多100个SKU
-根据[记录的限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits)的客户端。<!--DATA-7156-->
+根据[记录的限制和边界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)的客户端。<!--DATA-7156-->
 
 **发行日期**：2026年4月17日
 
@@ -268,7 +263,7 @@ API现在仅返回折扣价格低于产品最低最终价格&#x200B;**的层。*
 **发行日期**： 2025年6月20日
 <!-- v1.37 -->
 
-![新](../assets/new.svg) **分层价格手册配置** — 父 — 子价格手册的准确价格范围。 计算会遵循层次结构和继承的规则；在链接多个价格手册时可减少定价错误。 仅限Adobe Commerce Optimizer。 查看[价格手册](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/pricebooks)。
+![新](../assets/new.svg) **分层价格手册配置** — 父 — 子价格手册的准确价格范围。 计算会遵循层次结构和继承的规则；在链接多个价格手册时可减少定价错误。 仅限Adobe Commerce Optimizer。 查看[价格手册](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks)。
 
 ![新](../assets/new.svg) **不区分大小写的键** — 查询中的键查找现在不区分大小写，减少了键大小写错误。<!--DATA-6494, DCAT-2495-->
 
@@ -403,7 +398,7 @@ API现在仅返回折扣价格低于产品最低最终价格&#x200B;**的层。*
 
 <!--DATA-5033-->
 
-![Fix](../assets/fix.svg)添加了对产品价格的支持，最高可支持16位和4位小数。 从[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以应用更新。
+![Fix](../assets/fix.svg)添加了对产品价格的支持，最高可支持16位和4位小数。 从[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以应用更新。
 
 #### 已知限制
 
@@ -439,7 +434,7 @@ API现在仅返回折扣价格低于产品最低最终价格&#x200B;**的层。*
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hans)现在可用于数据流（产品推荐、实时搜索、目录服务）。 需要`catalog-service`个中继包v3.1.0+。
+![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)现在可用于数据流（产品推荐、实时搜索、目录服务）。 需要`catalog-service`个中继包v3.1.0+。
 
 **发行日期**： 2024年2月13日
 <!-- v1.16 -->
@@ -594,13 +589,23 @@ API现在仅返回折扣价格低于产品最低最终价格&#x200B;**的层。*
 
 - 对于云上或内部部署的Adobe Commerce，Adobe建议使用编辑器升级云环境中的目录服务中继（最新版本）。
 
+### v3.5.0发布
+
+**发行日期**：2026年7月10日
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
+
+![新建](../assets/new.svg) **暂存类别URL密钥同步** — 已更新目录服务中继包依赖关系，以包括目录暂存数据导出器模块(`magento/module-catalog-staging-data-exporter`)。 当应用暂存类别`url_key`更改时，此模块会重新导出产品馈送，因此暂存目录更改会正确传播到SaaS目录（目录服务、实时搜索和产品推荐）。
+
+![新](../assets/new.svg)更新了依赖关系，以保持目录服务与Commerce栈栈之间的兼容性。
+
 ### v3.4.0发布
 
 **发行日期**： 2026年6月8日
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) **支持数据馈送同步状态监视** — 已更新目录服务中继包依赖项以包括数据导出器状态扩展(`magento/module-data-exporter-status`)。 这将启用Commerce Admin中的[数据馈送同步状态监视](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)，而无需执行任何其他安装或配置步骤
+![新](../assets/new.svg) **支持数据馈送同步状态监视** — 已更新目录服务中继包依赖项以包括数据导出器状态扩展(`magento/module-data-exporter-status`)。 这将启用Commerce Admin中的[数据馈送同步状态监视](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)，而无需执行任何其他安装或配置步骤
 
 ![新](../assets/new.svg)更新了依赖关系，以保持目录服务与Commerce栈栈之间的兼容性。
 
