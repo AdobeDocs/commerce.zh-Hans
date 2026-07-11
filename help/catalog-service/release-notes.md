@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff5d3ee7f421c8fee9a40a71ea1de366fd5e6d47
+source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
 workflow-type: tm+mt
-source-wordcount: 2946
+source-wordcount: 3024
 ht-degree: 0%
 
 ---
@@ -593,6 +593,16 @@ API现在仅返回折扣价格低于产品最低最终价格&#x200B;**的层。*
 - 对于Adobe Commerce as a Cloud Service客户，您的环境中安装了最新版本。
 
 - 对于云上或内部部署的Adobe Commerce，Adobe建议使用编辑器升级云环境中的目录服务中继（最新版本）。
+
+### v3.5.0发布
+
+**发行日期**：2026年7月10日
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
+
+![新建](../assets/new.svg) **暂存类别URL密钥同步** — 已更新目录服务中继包依赖关系，以包括目录暂存数据导出器模块(`magento/module-catalog-staging-data-exporter`)。 当应用暂存类别`url_key`更改时，此模块会重新导出产品馈送，因此暂存目录更改会正确传播到SaaS目录（目录服务、实时搜索和产品推荐）。
+
+![新](../assets/new.svg)更新了依赖关系，以保持目录服务与Commerce栈栈之间的兼容性。
 
 ### v3.4.0发布
 
