@@ -6,25 +6,13 @@ feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
 workflow-type: tm+mt
-source-wordcount: 3115
+source-wordcount: 3256
 ht-degree: 0%
 
 ---
@@ -45,12 +33,19 @@ ht-degree: 0%
 
 ## 2026版
 
+### 103.4.30发行版
+
+_2026年7月10日_
+
+![修复](../assets/fix.svg)在Commerce Admin的“数据馈送同步状态”页面上，修复了按ID筛选馈送状态网格功能，以便在按馈送ID筛选时正确显示匹配的馈送记录。 <!--MDEE-1396-->
+![新](../assets/new.svg)在`bin/magento saas:resync`命令中添加了`--force`选项，以便重新同步所有选定的数据馈送（即使它们已显示为已同步），从而使完全重新同步和恢复方案更容易。<!--MDEE-1334-->
+
 ### 103.4.29发行版
 
 _2026年7月6日_
 
-![修复](../assets/fix.svg)对产品链接进行排序以避免随机同步。 <!--MDEE-1391-->
-![修复](../assets/fix.svg)价格信息源在UTC午夜后发送对UTC为负值的网站的基础价格而不是目录规则价格。<!--MDEE-1401-->
+![修复](../assets/fix.svg)修复了以下问题：产品信息源中的相关、追加销售和交叉销售产品链接的顺序在两次运行之间可能有所不同，从而导致未更改的产品在每`bin/magento saas:resync --feed products`次运行时重新提交。 现在，这些链接会按照一致的顺序导出，因此只有当产品发生实际更改时，才会重新同步这些产品。 <!--MDEE-1391-->
+![修复](../assets/fix.svg)修复了以下问题：在UTC的凌晨时段，价格馈送发送位于UTC之后时区的网站的完整基本价格而不是目录规则价格（例如，美国和加拿大）。 现在，无论网站的时区如何，目录规则定价均可正确交付。<!--MDEE-1401-->
 
 ### 103.4.28发行版
 
@@ -113,7 +108,7 @@ _2026年4月13日_
 - 修复了在删除期间导出服务不可用时，无法从连接的Commerce服务中正确删除已删除产品的问题。 现在，重试和重新同步操作可确保SaaS中正确反映已删除的产品。<!--MDEE-1319-->
 - 目录实体（产品和类别）现在可以导出到连接的Commerce服务，即使管理员商店视图缺少属性值也是如此。 这提高了与第三方扩展的兼容性，并减少了因缺少默认值导致的导出错误。<!--MDEE-1333-->
 
-![修复](../assets/fix.svg)解决了“数据馈送同步状态”页面上的错误，该错误可能会在馈送记录包含意外数据或缺少数据时发生。 系统现在可以顺利处理此类情况，从而提高稳定性并防止崩溃。 如果您使用Adobe Commerce Optimizer Connector将数据从Adobe Commerce同步到Adobe Commerce Optimizer，请更新到[Adobe Commerce Optimizer Connector版本1.0.11](https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/release-notes)或更高版本，以便进行修复。<!--MDEE-1327-->
+![修复](../assets/fix.svg)解决了“数据馈送同步状态”页面上的错误，该错误可能会在馈送记录包含意外数据或缺少数据时发生。 系统现在可以顺利处理此类情况，从而提高稳定性并防止崩溃。 如果您使用Adobe Commerce Optimizer Connector将数据从Adobe Commerce同步到Adobe Commerce Optimizer，请更新到[Adobe Commerce Optimizer Connector版本1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes)或更高版本，以便进行修复。<!--MDEE-1327-->
 
 ### 103.4.21发行版
 
@@ -139,7 +134,7 @@ _2026年2月6日_
 
 _2026年2月2日_
 
-![修复](../assets/fix.svg)修复了在更新期间项批次可能超过允许的限制，从而导致将数据同步到[Commerce服务](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)或[Adobe Commerce Optimizer](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/data-sync)时出现`items_limit_exceeded`错误的问题。<!--MDEE-1264-->
+![修复](../assets/fix.svg)修复了在更新期间项批次可能超过允许的限制，从而导致将数据同步到[Commerce服务](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)或[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)时出现`items_limit_exceeded`错误的问题。<!--MDEE-1264-->
 
 ![修复](../assets/fix.svg)通过在捆绑产品选项收集期间添加逻辑以注册失败的项目，提高了产品数据导出的可靠性。<!--CCSAAS-4458-->
 
@@ -167,7 +162,7 @@ _2025年11月24日_
 
 _2025年10月22日_
 
-![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，可用于监视和排除从Adobe Commerce到连接的服务（目录服务、实时搜索和产品推荐）的数据传输。 有关安装和使用此扩展的详细信息，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[数据馈送同步状态监控](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=zh-Hans)。<!--MDEE-954-->
+![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，可用于监视和排除从Adobe Commerce到连接的服务（目录服务、实时搜索和产品推荐）的数据传输。 有关安装和使用此扩展的详细信息，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[数据馈送同步状态监控](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html)。<!--MDEE-954-->
 
 ### 103.4.14发行版
 
@@ -193,7 +188,7 @@ _2025年9月18日_
 
 _2025年8月29日_
 
-仅![新](../assets/new.svg) [!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
+仅![新](../assets/new.svg) [!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
 为其他产品属性（包括产品信息源中Commerce产品配置的税类、属性集和库存数据）添加支持。 如果客户希望在产品导出信息源中包含这些属性，则必须将额外产品属性模块添加到其Adobe Commerce项目。 请参阅[添加税类、属性集和库存属性](add-tax-attribute-set-inventory-attributes.md)。<!--MDEE-1135-->
 
 ![修复](../assets/fix.svg)解决了在完整产品索引期间发生错误时，导致已删除产品更新的同步不正确的问题。 现在，即使索引过程中发生错误，所有产品删除仍会正确同步。<!--MDEE-1144-->
