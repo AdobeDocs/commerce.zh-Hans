@@ -5,10 +5,18 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
 TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 2684
@@ -67,7 +75,7 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 创建数据元素：
 
-   ![创建新数据元素
+   !&lbrack;创建新数据元素
    _创建新数据元素_
 
 1. 将&#x200B;**Name**&#x200B;设置为`sign out`。
@@ -80,14 +88,14 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 在&#x200B;**用户帐户** > **注销**&#x200B;下，将&#x200B;**访客注销**&#x200B;中的&#x200B;**值**&#x200B;设置为`1`。
 
-   ![更新注销值
+   !&lbrack;更新注销值
    _更新注销值_
 
 1. 选择&#x200B;**保存**。
 
 1. 创建规则：
 
-   ![创建新规则
+   !&lbrack;创建新规则
    _创建新规则_
 
 1. 选择&#x200B;**EVENTS**&#x200B;下的&#x200B;**添加**。
@@ -1343,7 +1351,7 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 使用适用于ECID的自定义代码配置数据元素：
 
-   ![使用自定义代码配置数据元素
+   !&lbrack;使用自定义代码配置数据元素
    _使用自定义代码配置数据元素_
 
 1. 选择[!UICONTROL Open Editor]并添加以下自定义代码：
@@ -1370,12 +1378,12 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 使用设置为ECID的`identityMap`更新XDM架构：
 
-   ![将identityMap设置为ECID
+   !&lbrack;将identityMap设置为ECID
    _将identityMap设置为ECID_
 
 1. 定义检索ECID的规则操作：
 
-   ![检索ECID
+   !&lbrack;检索ECID
    _检索ECID_
 
 ## 在后台事件中设置身份
@@ -1384,7 +1392,7 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 创建身份映射元素。
 
-   ![后台标识映射
+   !&lbrack;后台标识映射
    _创建后台标识映射_
 
 1. 选择[!UICONTROL Open Editor]并添加以下自定义代码：
@@ -1412,7 +1420,7 @@ return IdentityMap;
 
 1. 将此新元素添加到每个`identityMap`字段。
 
-   ![更新每个标识映射
+   !&lbrack;更新每个标识映射
    _更新每个identityMap_
 
 ## 设置同意
@@ -1421,17 +1429,17 @@ return IdentityMap;
 
 1. 为`mg_dnt` Cookie创建&#x200B;**核心自定义代码**&#x200B;数据元素(`%do not track cookie%`)：
 
-   ![创建不跟踪数据元素
+   !&lbrack;创建不跟踪数据元素
    _创建不跟踪数据元素_
 
 1. 创建一个&#x200B;**Core Custom Code**&#x200B;数据元素(`%consent%`)，如果设置了Cookie，则返回`out`，否则返回`in`：
 
-   ![创建同意数据元素
+   !&lbrack;创建同意数据元素
    _创建同意数据元素_
 
 1. 使用`%consent%`数据元素配置Adobe Experience Platform Web SDK扩展：
 
-   ![经同意更新SDK
+   !&lbrack;经同意更新SDK
    _经同意更新SDK_
 
 ## 警告
