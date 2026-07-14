@@ -7,7 +7,7 @@ exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export, Paas, Saas
 source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -79,5 +79,5 @@ PayPal webhook详细信息中的`custom_id`和`invoice_id`：
 
 有关更多信息，请参阅PayPal的REST API文档：
 
-* [`purchase_unit`，其中`custom_id`和`invoice_id`位于](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
+* [`purchase_unit`，其中`custom_id`和`invoice_id`驻留](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [显示订单详细信息](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
