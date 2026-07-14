@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
+source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
 workflow-type: tm+mt
-source-wordcount: 3115
+source-wordcount: 3256
 ht-degree: 0%
 
 ---
@@ -45,12 +45,19 @@ ht-degree: 0%
 
 ## 2026版
 
+### 103.4.30发行版
+
+_2026年7月10日_
+
+![修复](../assets/fix.svg)在Commerce Admin的“数据馈送同步状态”页面上，修复了按ID筛选馈送状态网格功能，以便在按馈送ID筛选时正确显示匹配的馈送记录。 <!--MDEE-1396-->
+![新](../assets/new.svg)在`bin/magento saas:resync`命令中添加了`--force`选项，以便重新同步所有选定的数据馈送（即使它们已显示为已同步），从而使完全重新同步和恢复方案更容易。<!--MDEE-1334-->
+
 ### 103.4.29发行版
 
 _2026年7月6日_
 
-![修复](../assets/fix.svg)对产品链接进行排序以避免随机同步。 <!--MDEE-1391-->
-![修复](../assets/fix.svg)价格信息源在UTC午夜后发送对UTC为负值的网站的基础价格而不是目录规则价格。<!--MDEE-1401-->
+![修复](../assets/fix.svg)修复了以下问题：产品信息源中的相关、追加销售和交叉销售产品链接的顺序在两次运行之间可能有所不同，从而导致未更改的产品在每`bin/magento saas:resync --feed products`次运行时重新提交。 现在，这些链接会按照一致的顺序导出，因此只有当产品发生实际更改时，才会重新同步这些产品。 <!--MDEE-1391-->
+![修复](../assets/fix.svg)修复了以下问题：在UTC的凌晨时段，价格馈送发送位于UTC之后时区的网站的完整基本价格而不是目录规则价格（例如，美国和加拿大）。 现在，无论网站的时区如何，目录规则定价均可正确交付。<!--MDEE-1401-->
 
 ### 103.4.28发行版
 
