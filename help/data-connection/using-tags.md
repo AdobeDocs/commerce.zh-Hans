@@ -5,28 +5,20 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
 TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 2655
+source-wordcount: 2684
 ht-degree: 0%
 
 ---
 
 # 使用Adobe Experience Platform Tags收集Commerce数据
 
-虽然您可以使用[!DNL Data Connection]扩展发布和订阅店面活动，但一些商家可能已经在使用数据收集解决方案，例如[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=zh-Hans)。 对于这些商家，Adobe Commerce在使用Adobe Commerce Event SDK的[!DNL Data Connection]扩展中提供仅发布选项。
+虽然您可以使用[!DNL Data Connection]扩展发布和订阅店面活动，但一些商家可能已经在使用数据收集解决方案，例如[Adobe Experience Platform标记](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html)。 对于这些商家，Adobe Commerce在使用Adobe Commerce Event SDK的[!DNL Data Connection]扩展中提供仅发布选项。
 
 ![[!DNL Data Connection]扩展数据流](assets/tags-data-flow.png)
 _[!DNL Data Connection]带有标记的扩展数据流_
@@ -41,21 +33,21 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
   >[!NOTE]
   >
-  > 请&#x200B;**不** [配置](connect-data.md)组织ID和数据流ID。
+  > 当您使用标记进行收集时，请&#x200B;**不要** [在Commerce管理员中配置](connect-data.md)组织ID和数据流ID。 多网站商家在Tags中按属性或环境配置数据流。 有关Commerce管理范围行为，请参阅[配置范围](connect-data.md#configuration-scope)。
 
 ## 将Commerce店面数据映射到Adobe Experience Platform
 
 要将Commerce店面数据映射到Adobe Experience Platform，请从Adobe Experience Platform标记中配置并安装以下内容：
 
-1. [在Adobe Experience Platform数据收集中设置标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=zh-Hans)。
+1. [在Adobe Experience Platform数据收集中设置标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html)。
 
 1. 在&#x200B;**创作**&#x200B;下，选择&#x200B;**扩展**&#x200B;并安装和配置以下扩展：
 
-   - [Adobe客户端数据层](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html?lang=zh-Hans)
+   - [Adobe客户端数据层](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)
 
-   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=zh-Hans)
+   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
 
-1. [将标记](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans)发布到开发环境。
+1. [将标记](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)发布到开发环境。
 
 1. 按照下面的&#x200B;**事件映射**&#x200B;步骤配置特定事件的数据元素和规则。
 
@@ -75,7 +67,7 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 创建数据元素：
 
-   ![创建新数据元素](assets/create-new-data-elements.png)
+   ![创建新数据元素
    _创建新数据元素_
 
 1. 将&#x200B;**Name**&#x200B;设置为`sign out`。
@@ -88,14 +80,14 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 在&#x200B;**用户帐户** > **注销**&#x200B;下，将&#x200B;**访客注销**&#x200B;中的&#x200B;**值**&#x200B;设置为`1`。
 
-   ![更新注销值](assets/signout-value.png)
+   ![更新注销值
    _更新注销值_
 
 1. 选择&#x200B;**保存**。
 
 1. 创建规则：
 
-   ![创建新规则](assets/create-new-rule.png)
+   ![创建新规则
    _创建新规则_
 
 1. 选择&#x200B;**EVENTS**&#x200B;下的&#x200B;**添加**。
@@ -1351,7 +1343,7 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 使用适用于ECID的自定义代码配置数据元素：
 
-   ![使用自定义代码配置数据元素](assets/set-custom-code-ecid.png)
+   ![使用自定义代码配置数据元素
    _使用自定义代码配置数据元素_
 
 1. 选择[!UICONTROL Open Editor]并添加以下自定义代码：
@@ -1378,12 +1370,12 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 使用设置为ECID的`identityMap`更新XDM架构：
 
-   ![将identityMap设置为ECID](assets/identity-map-data-element.png)
+   ![将identityMap设置为ECID
    _将identityMap设置为ECID_
 
 1. 定义检索ECID的规则操作：
 
-   ![检索ECID](assets/rule-retrieve-ecid.png)
+   ![检索ECID
    _检索ECID_
 
 ## 在后台事件中设置身份
@@ -1392,7 +1384,7 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 创建身份映射元素。
 
-   ![后台标识映射](assets/custom-code-backoffice.png)
+   ![后台标识映射
    _创建后台标识映射_
 
 1. 选择[!UICONTROL Open Editor]并添加以下自定义代码：
@@ -1420,26 +1412,26 @@ return IdentityMap;
 
 1. 将此新元素添加到每个`identityMap`字段。
 
-   ![更新每个标识映射](assets/add-element-back-office.png)
+   ![更新每个标识映射
    _更新每个identityMap_
 
 ## 设置同意
 
-在Adobe Commerce中安装[!DNL Data Connection]扩展时，默认情况下会启用数据收集同意。 选择退出通过[`mg_dnt` Cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hans)进行管理。 如果您选择使用`mg_dnt`管理同意，则可以按照此处列出的步骤操作。 [Adobe Experience Platform Web SDK文档](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=zh-Hans)提供了多个用于管理同意的其他选项。
+在Adobe Commerce中安装[!DNL Data Connection]扩展时，默认情况下会启用数据收集同意。 选择退出通过[`mg_dnt` Cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)进行管理。 如果您选择使用`mg_dnt`管理同意，则可以按照此处列出的步骤操作。 [Adobe Experience Platform Web SDK文档](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html)提供了多个用于管理同意的其他选项。
 
 1. 为`mg_dnt` Cookie创建&#x200B;**核心自定义代码**&#x200B;数据元素(`%do not track cookie%`)：
 
-   ![创建不跟踪数据元素](assets/element-dnt-cookie.png)
+   ![创建不跟踪数据元素
    _创建不跟踪数据元素_
 
 1. 创建一个&#x200B;**Core Custom Code**&#x200B;数据元素(`%consent%`)，如果设置了Cookie，则返回`out`，否则返回`in`：
 
-   ![创建同意数据元素](assets/element-consent-dnt-cookie.png)
+   ![创建同意数据元素
    _创建同意数据元素_
 
 1. 使用`%consent%`数据元素配置Adobe Experience Platform Web SDK扩展：
 
-   ![经同意更新SDK](assets/config-sdk-consent.png)
+   ![经同意更新SDK
    _经同意更新SDK_
 
 ## 警告

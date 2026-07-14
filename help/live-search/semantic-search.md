@@ -3,14 +3,18 @@ title: 语义搜索
 description: 在“设置”中为 [!DNL Live Search] 启用AI语义搜索。 无需属性设置或店面变更。
 role: Admin
 recommendations: noCatalog
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 33d9172b2d0455a061c00781128a9f2fe804af7b
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
 
 # 语义搜索
+
+>[!AVAILABILITY]
+>
+>语义搜索适用于使用Adobe Commerce版本2.4.4及更高版本的商家。
 
 语义搜索使用人工智能来理解购物者的含义，而不仅仅是他们键入的准确单词。 即使您的目录没有使用相关短语，诸如“海滩婚礼的礼服”或“整天穿着舒适的鞋子”之类的查询也可以返回相关产品。
 
