@@ -66,7 +66,7 @@ Adobe IMS提供用户标识和组织上下文，而Adobe Admin Console定义他�
 
 用于Admin Console投放的![AEM Assets产品配置文件](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
 
->云或本地[!TAB Adobe Commerce]
+>[!TAB 云或本地 Adobe Commerce]
 
 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}
 
