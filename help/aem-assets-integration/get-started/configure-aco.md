@@ -56,7 +56,7 @@ ht-degree: 0%
 
 在配置集成之前，请确保您具有：
 
-* 具有&#x200B;**产品可视化图表**&#x200B;权利文件的活动[!DNL Adobe Commerce Optimizer]实例（捆绑Dynamic Media与OpenAPI功能+ [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)），或客户提供的AEM Assets许可证（例如，**AEM Assets Ultimate**）已启用Dynamic Media。
+* 具有&#x200B;**产品可视化图表**&#x200B;权利文件的活动[!DNL Adobe Commerce Optimizer]实例（捆绑Dynamic Media与OpenAPI功能+ [AEM Assets Prime](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-prime)），或客户提供的AEM Assets许可证（例如，**AEM Assets Ultimate**）已启用Dynamic Media。
 * 访问AEM Assets as a Cloud Service环境。
 * 同一Adobe IMS组织中的[!DNL Commerce Optimizer]和AEM Assets。
 * 在您的AEM Assets环境中启用了OpenAPI的Dynamic Media （请参阅[配置AEM Assets项目](configure-aem.md#prerequisites)以了解启用步骤）。
@@ -85,7 +85,7 @@ ht-degree: 0%
 * AEM Assets事件（已批准、更新和删除资产）
 * [!DNL Commerce Optimizer]目录事件（产品已创建、已更新）
 
-要启动此流程，请[创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，该票证包含以下信息：
+要启动此流程，请[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，该票证包含以下信息：
 
 * 在您的[!DNL Commerce Optimizer] URL或Commerce Cloud Manager UI中找到&#x200B;**[!DNL Adobe Commerce Optimizer]租户ID** （实例ID）。
 * 当您[为集成配置了AEM](#configure-aem-assets-first)时，所设置的&#x200B;**AEM Assets项目ID和环境ID**。
