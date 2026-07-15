@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 2655
+source-wordcount: 2684
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
   >[!NOTE]
   >
-  > 请&#x200B;**不** [配置](connect-data.md)组织ID和数据流ID。
+  > 当您使用标记进行收集时，请&#x200B;**不要** [在Commerce管理员中配置](connect-data.md)组织ID和数据流ID。 多网站商家在Tags中按属性或环境配置数据流。 有关Commerce管理范围行为，请参阅[配置范围](connect-data.md#configuration-scope)。
 
 ## 将Commerce店面数据映射到Adobe Experience Platform
 
@@ -75,7 +75,7 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 创建数据元素：
 
-   ![创建新数据元素](assets/create-new-data-elements.png)
+   !&lbrack;创建新数据元素
    _创建新数据元素_
 
 1. 将&#x200B;**Name**&#x200B;设置为`sign out`。
@@ -88,14 +88,14 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 在&#x200B;**用户帐户** > **注销**&#x200B;下，将&#x200B;**访客注销**&#x200B;中的&#x200B;**值**&#x200B;设置为`1`。
 
-   ![更新注销值](assets/signout-value.png)
+   !&lbrack;更新注销值
    _更新注销值_
 
 1. 选择&#x200B;**保存**。
 
 1. 创建规则：
 
-   ![创建新规则](assets/create-new-rule.png)
+   !&lbrack;创建新规则
    _创建新规则_
 
 1. 选择&#x200B;**EVENTS**&#x200B;下的&#x200B;**添加**。
@@ -1351,7 +1351,7 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 使用适用于ECID的自定义代码配置数据元素：
 
-   ![使用自定义代码配置数据元素](assets/set-custom-code-ecid.png)
+   !&lbrack;使用自定义代码配置数据元素
    _使用自定义代码配置数据元素_
 
 1. 选择[!UICONTROL Open Editor]并添加以下自定义代码：
@@ -1378,12 +1378,12 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 使用设置为ECID的`identityMap`更新XDM架构：
 
-   ![将identityMap设置为ECID](assets/identity-map-data-element.png)
+   !&lbrack;将identityMap设置为ECID
    _将identityMap设置为ECID_
 
 1. 定义检索ECID的规则操作：
 
-   ![检索ECID](assets/rule-retrieve-ecid.png)
+   !&lbrack;检索ECID
    _检索ECID_
 
 ## 在后台事件中设置身份
@@ -1392,7 +1392,7 @@ _[!DNL Data Connection]带有标记的扩展数据流_
 
 1. 创建身份映射元素。
 
-   ![后台标识映射](assets/custom-code-backoffice.png)
+   !&lbrack;后台标识映射
    _创建后台标识映射_
 
 1. 选择[!UICONTROL Open Editor]并添加以下自定义代码：
@@ -1420,7 +1420,7 @@ return IdentityMap;
 
 1. 将此新元素添加到每个`identityMap`字段。
 
-   ![更新每个标识映射](assets/add-element-back-office.png)
+   !&lbrack;更新每个标识映射
    _更新每个identityMap_
 
 ## 设置同意
@@ -1429,17 +1429,17 @@ return IdentityMap;
 
 1. 为`mg_dnt` Cookie创建&#x200B;**核心自定义代码**&#x200B;数据元素(`%do not track cookie%`)：
 
-   ![创建不跟踪数据元素](assets/element-dnt-cookie.png)
+   !&lbrack;创建不跟踪数据元素
    _创建不跟踪数据元素_
 
 1. 创建一个&#x200B;**Core Custom Code**&#x200B;数据元素(`%consent%`)，如果设置了Cookie，则返回`out`，否则返回`in`：
 
-   ![创建同意数据元素](assets/element-consent-dnt-cookie.png)
+   !&lbrack;创建同意数据元素
    _创建同意数据元素_
 
 1. 使用`%consent%`数据元素配置Adobe Experience Platform Web SDK扩展：
 
-   ![经同意更新SDK](assets/config-sdk-consent.png)
+   !&lbrack;经同意更新SDK
    _经同意更新SDK_
 
 ## 警告

@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 3071
+source-wordcount: 3511
 ht-degree: 0%
 
 ---
@@ -54,9 +54,36 @@ ht-degree: 0%
 
 在本节中，您将了解如何配置[!DNL Data Connection]扩展。
 
+### 配置范围 {#configuration-scope}
+
+[!DNL Data Connection]设置混合使用全局值和网站范围的值。 全局设置适用于您的整个Adobe Commerce实例。 网站范围的设置允许多品牌和多网站商家将数据路由到每个网站的不同Adobe Experience Platform沙盒和数据集。
+
+在配置店面、后台或配置文件数据收集之前，请将&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡上的&#x200B;**[!UICONTROL Scope]**&#x200B;下拉列表设置为要配置的网站。 对每个需要不同Experience Platform路由的网站重复配置。
+
+| 设置或字段 | 范围 | 注释 |
+| --- | --- | --- |
+| 组织ID | 全局 | 每个Adobe Commerce实例一个组织ID。 已在[Commerce Services连接器](../landing/saas.md#organizationid)中进行配置。 |
+| 服务帐户凭据 | 全局 | 一次输入服务帐户详细信息。 除非您的部署另有要求，否则相同的凭据会对所有网站的Experience Platform API调用进行身份验证。 |
+| 沙盒名称 | 网站 | 在范围中为网站选择Experience Platform沙盒。 [!DNL Data Connection]个后台事件的主要网站范围的设置。 |
+| **[!UICONTROL Test connection]** | 网站 | 验证&#x200B;**作用域**&#x200B;中当前所选网站的服务帐户凭据和沙盒。 |
+| 数据流ID | 网站 | 为所选网站路由行为和后台事件数据。 |
+| 数据集Id | 网站 | 标识存储选定网站的Commerce数据的数据集。 |
+| 店面活动、后台活动、客户档案 | 网站 | 数据收集选项适用于在&#x200B;**范围**&#x200B;中选择的网站。 |
+
+#### 多网站示例 {#multi-website-example}
+
+商家通过一个Adobe Commerce实例运营两个网站：
+
+- **网站A （品牌A）**&#x200B;将店面和后台数据发送到&#x200B;**生产环境** Experience Platform沙盒。
+- **网站B （品牌B）**&#x200B;将数据发送到&#x200B;**开发** Experience Platform沙盒以进行测试。
+
+商家在&#x200B;**[!UICONTROL Service Account/Credential details]**&#x200B;页面上输入一次服务帐户凭据。 在&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡上，商家将&#x200B;**[!UICONTROL Scope]**&#x200B;设置为&#x200B;**网站A**，选择生产沙盒名称并保存。 然后，商家将&#x200B;**[!UICONTROL Scope]**&#x200B;设置为&#x200B;**网站B**，选择开发沙盒名称并保存。 为每个网站运行&#x200B;**[!UICONTROL Test connection]**&#x200B;以确认正确的沙盒和凭据。
+
 ### 添加服务帐户和凭据详细信息
 
 如果您计划收集和发送[历史订单数据](#send-historical-order-data)或[客户配置文件数据](#send-customer-profile-data)，则必须添加服务帐户和凭据详细信息。 此外，如果您正在配置[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=zh-Hans)扩展，则必须完成这些步骤。
+
+服务帐户凭据在&#x200B;**默认配置**&#x200B;范围中配置并全局应用。 有关网站范围的设置（如沙盒名称），请参阅[配置范围](#configuration-scope)。
 
 如果您仅收集和发送店面或后台数据，则可以跳到[常规](#general)部分。
 
@@ -86,9 +113,9 @@ ht-degree: 0%
 
 1. 将`<workspace-name>.json`文件的内容复制到&#x200B;**服务帐户/凭据详细信息**&#x200B;字段，如`"client_id"`、`"client_secrets"`、`"technical_account_email"`、`"technical_account_id"`等。
 
-1. 单击&#x200B;**保存配置**。
+1. 单击&#x200B;**[!UICONTROL Save Config]**。
 
-1. 单击&#x200B;**[!UICONTROL Test connection]**&#x200B;按钮以确保您输入的服务帐户和凭据信息正确。
+   保存后，在&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡上完成网站范围的配置（包括&#x200B;**[!UICONTROL Sandbox name]**&#x200B;和&#x200B;**[!UICONTROL Test connection]**）。 查看[常规](#general)。
 
 ### 常规
 
@@ -96,9 +123,13 @@ ht-degree: 0%
 
    ![[!DNL Data Connection]设置](./assets/epc-settings.png){width="700" zoomable="yes"}
 
-1. 在&#x200B;**常规**&#x200B;下的&#x200B;**设置**&#x200B;选项卡中，验证与您的Adobe Experience Platform帐户关联的ID，该ID已在[Commerce Services Connector](../landing/saas.md#organizationid)中配置。 组织ID是全局的。 每个Adobe Commerce实例只能关联一个组织ID。
+1. 在&#x200B;**[!UICONTROL General]**&#x200B;下的&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡上，验证与您的Adobe Experience Platform帐户关联的ID，如[Commerce Services Connector](../landing/saas.md#organizationid)中所配置。 组织ID是全局的。 每个Adobe Commerce实例只能关联一个组织ID。
 
-1. 在&#x200B;**范围**&#x200B;下拉列表中，将上下文设置为&#x200B;**网站**。
+1. 在&#x200B;**[!UICONTROL Scope]**&#x200B;下拉列表中，将上下文设置为&#x200B;**网站**。 查看设置适用于全局和每个网站的[配置范围](#configuration-scope)。
+
+1. 在范围中输入网站的&#x200B;**[!UICONTROL Sandbox name]**。
+
+1. 单击&#x200B;**[!UICONTROL Test connection]**&#x200B;以验证服务帐户凭据以及当前在&#x200B;**[!UICONTROL Scope]**&#x200B;中选择的网站的沙盒。 对每个使用不同沙盒的网站重复此操作。
 
 1. （可选）如果您已将[AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)部署到您的网站，请启用该复选框并添加AEP Web SDK的名称。 否则，请将这些字段留空，[!DNL Data Connection]扩展将为您部署一个字段。
 
@@ -118,7 +149,7 @@ ht-degree: 0%
 
 要确保Adobe Commerce实例可以开始数据收集，请查看[先决条件](overview.md#prerequisites)。
 
-请参阅活动主题以了解有关[店面](events.md#storefront-events)、[后台](events-backoffice.md)和[配置文件](events-backoffice.md#customer-profile-events)事件的更多信息。
+请参阅活动主题以了解有关[店面](events.md#storefront-events)、[后台](events-backoffice.md)和[配置文件记录](events-profilerecord.md)数据的更多信息。 对于时间序列[配置文件事件](events-backoffice.md#customer-profile-events)，请参阅后台事件参考。
 
 >[!NOTE]
 >
@@ -162,16 +193,18 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |--- |--- |
-| 范围 | 您希望应用配置设置的特定网站。 |
-| 组织ID（全局） | 属于购买Adobe DX产品的组织的ID。 此ID可将您的Adobe Commerce实例链接到Adobe Experience Platform。 |
+| 范围 | 应用网站范围的设置的网站。 切换范围以配置每个网站的沙盒名称、数据流ID、数据集ID和数据收集选项。 |
+| 组织ID（全局） | 属于购买Adobe DX产品的组织的ID。 此ID可将您的Adobe Commerce实例链接到Adobe Experience Platform。 已全局配置；未按网站进行设置。 |
+| 沙盒名称（网站） | Commerce发送选定网站的数据的Experience Platform沙盒的名称。 当多品牌或多网站部署将数据路由到不同的沙盒时，请为每个网站单独配置。 |
 | AEP Web SDK是否已部署到您的站点 | 如果您已将自己的AEP Web SDK部署到网站，请选中此复选框 |
 | AEP Web SDK名称（全局） | 如果您已将Experience Platform Web SDK部署到网站，请在此字段中指定该SDK的名称。 这允许Storefront事件收集器和店面事件SDK使用您的Experience Platform Web SDK，而不是[!DNL Data Connection]扩展部署的版本。 如果您没有将Experience Platform Web SDK部署到您的网站，请将此字段留空，然后[!DNL Data Connection]扩展会为您部署一个扩展。 |
 | 店面活动 | 只要组织ID和数据流ID有效，默认情况下都会选中。 店面活动在购物者浏览您的网站时收集他们的匿名行为数据。 |
 | 后台活动 | 如果选中，则事件有效负荷包含匿名的订单状态信息，例如订单是否已下达、取消、退款或发运。 |
 | 数据流ID（网站） | 允许数据从Adobe Experience Platform流向其他Adobe DX产品的ID。 此ID必须关联到您的特定Adobe Commerce实例中的特定网站。 如果您指定自己的Experience Platform Web SDK，请不要在此字段中指定数据流ID。 [!DNL Data Connection]扩展使用与该SDK关联的数据流ID，并忽略在此字段中指定的任何数据流ID（如果有）。 |
 | 数据集ID（网站） | 包含Commerce数据的数据集的ID。 除非您已取消选中&#x200B;**店面事件**&#x200B;或&#x200B;**后台事件**&#x200B;复选框，否则需要此字段。 此外，如果您使用的是自己的Experience Platform Web SDK，因此没有指定数据流ID，则仍必须添加与数据流关联的数据集ID。 否则，无法保存此表单。 |
+| **[!UICONTROL Test connection]** | 验证&#x200B;**作用域**&#x200B;中当前所选网站的服务帐户凭据和沙盒名称。 在配置凭据以及更改网站的沙盒名称或范围之后运行测试。 |
 
-完成新用户引导后，店面数据开始流入Experience Platform Edge。 后台数据大约需要5分钟才能显示在边缘。 根据cron时间表，可以在Edge看到后续更新。
+配置扩展后，店面数据开始流入Experience Platform Edge。 后台数据大约需要5分钟才能显示在边缘。 根据cron时间表，可以在Edge看到后续更新。
 
 ### 发送客户个人资料数据
 
@@ -301,9 +334,9 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 | Experience Platform | 显示在Experience Platform的[!DNL Commerce]架构中指定的任何自定义属性。 |
 | 刷新 | 从Experience Platform中的[!DNL Commerce]架构检索任何自定义属性名称。 |
 
-## 确认已收集事件数据
+## 确认已收集事件数据 {#confirm-that-event-data-is-collected}
 
-要确认正在从Commerce存储中收集数据，请使用[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=zh-Hans)来检查您的Commerce网站。 确认正在收集数据后，通过运行返回来自您创建的[数据集的数据](overview.md#prerequisites)的查询，可以验证店面和后台事件数据是否显示在边缘。
+要确认正在从Commerce存储中收集数据，请使用[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=zh-Hans)来检查您的Commerce网站。 确认正在收集数据后，可以通过运行查询来验证您的店面和后台事件数据是否显示在边缘，该查询会返回您在配置期间创建的[数据集中的数据](overview.md#enable-extension)。
 
 1. 在Experience Platform的左侧导航中选择&#x200B;**查询**，然后单击[!UICONTROL Create Query]。
 
@@ -329,7 +362,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 ### 验证配置文件数据是否显示在Experience Platform中
 
-如果您未在Experience Platform中看到配置文件数据，请参阅[Commerce知识库](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以获取故障排除建议。
+有关疑难解答建议，请参阅[发送客户配置文件数据](#send-customer-profile-data)中的提示。
 
 ## 后续步骤
 

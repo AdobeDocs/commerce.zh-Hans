@@ -14,21 +14,23 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1028
 ht-degree: 0%
 
 ---
 
 # 更新Commerce数据摄取的时间序列事件架构
 
-使用[!DNL Data Connection]扩展的[载入步骤](overview.md#onboarding-steps)之一是访问数据流工作区并[创建特定于Adobe Commerce的数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans)。 在创建该数据流时，还必须选择描述您计划摄取的数据的架构。 该架构必须包含特定于商务的字段组。
+[启用 [!DNL Data Connection]](overview.md#enable-extension)扩展时的步骤之一是访问数据流工作区并[创建特定于Adobe Commerce的数据流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans)。 在创建该数据流时，还必须选择描述您计划摄取的数据的架构。 该架构必须包含特定于商务的字段组。
 
 本文为您提供了架构必须包含的字段组，以便成功收集由Adobe Commerce事件提供的以下时间序列数据：
 
-- [行为](events.md) — 包括店面、个人资料、搜索和B2B事件。
-- [后台](events-backoffice.md) — 包括订单状态和配置文件事件。
+- [行为](events.md) — 包括店面、搜索和B2B事件。
+- [后台](events-backoffice.md) — 包括订单状态和时间序列[配置文件事件](events-backoffice.md#customer-profile-events)。
+
+有关配置文件&#x200B;*记录*，请参阅[更新配置文件记录架构](profile-data.md)。
 
 了解有关[时间序列数据](data-ingestion.md)的详细信息。
 

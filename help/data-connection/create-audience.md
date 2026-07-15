@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 1132
+source-wordcount: 1107
 ht-degree: 0%
 
 ---
@@ -37,16 +37,7 @@ ht-degree: 0%
 
 ## 其他客户取得了哪些成就？
 
-Adobe [!DNL Commerce]客户通过激活内置于Real-Time CDP中的受众并将它们部署到其[!DNL Commerce]实例中，实现了显着的业务影响。
-
-retailer实现了全球多品牌服装：
-
-- 一个拥有数百万统一客户档案的真实来源
-- 创建了40多个独特的“高意图客户”受众来参与各个渠道
-
-一家全球饮料公司收集到：
-
-- 来自100多个国家/地区的9,800万客户档案
+Adobe [!DNL Commerce]客户通过激活内置于Real-Time CDP中的受众并将它们部署到其[!DNL Commerce]实例中，实现了显着的业务影响。 有关Commerce事件数据中的相关客户结果，请参阅[使用Adobe Journey Optimizer发送放弃的购物车电子邮件](using-ajo.md#what-have-other-customers-achieved)。
 
 ## 让我们开始吧
 
@@ -74,7 +65,7 @@ retailer实现了全球多品牌服装：
 
 要简化此练习，请使用`productPageView`事件中的事件数据。 此事件可捕获有关所查看产品的详细信息，如产品名称、SKU、价格等。
 
-使用此事件数据指定受众包括至少有一个“产品查看”事件的个人，其中SKU（产品标识符）等于网站上的特定产品，并且该事件发生在前一天。  
+使用此事件数据指定受众包括至少有一个“产品查看”事件的个人，其中SKU（产品标识符）等于网站上的特定产品，并且该事件发生在前一天。 &#x200B;
 
 1. 打开Experience Platform并从左侧导航菜单中选择&#x200B;**[!UICONTROL Audiences]**。
 

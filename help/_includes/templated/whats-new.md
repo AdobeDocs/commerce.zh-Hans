@@ -1,8 +1,8 @@
 ---
-source-git-commit: b5e8f023260bd5bfffb76084c175a01cd6a61ff3
+source-git-commit: c99194b2eb7111a593cfe7c4ba1b4917e38589d2
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 0%
+source-wordcount: '1799'
+ht-degree: 1%
 
 ---
 # 新增功能模板
@@ -10,6 +10,50 @@ ht-degree: 0%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年7月7日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/976a43b367be87363307dc27c55f98df18271eb1">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月6日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>删除了LLM Optimizer和Commerce集成文档。 该功能的范围已重新设定并移至<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/catalog-enrichment">Commerce管理员指南</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年6月23日
 
@@ -393,28 +437,6 @@ ht-degree: 0%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月30日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>扩展了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer连接器概述</a>，其中包含的主要优势、端到端架构（新图表）、更清晰的范围映射、典型的设置和同步工作流、支持的方案以及先决条件或职责，因此团队可以更轻松地评估和运营集成。</p>
-</td>
-      <td>
-        反馈、重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33">提交</a></td>
     </tr>
   </tbody>
 </table>

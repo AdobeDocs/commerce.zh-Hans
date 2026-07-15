@@ -21,10 +21,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 1935
-ht-degree: 0%
+source-wordcount: 1373
+ht-degree: 1%
 
 ---
 
@@ -36,6 +36,8 @@ ht-degree: 0%
 
 [!DNL Data Connection]扩展将您的Adobe Commerce Web实例连接到Adobe Experience Platform和Edge Network。 对于移动设备应用程序开发人员，您可以将Adobe Experience Platform Mobile SDK与Commerce结合使用，以捕获Commerce数据并将其发送到Experience Platform。 [了解详情](./mobile-sdk-epc.md)。
 
+多网站商家可以为每个网站配置适用的[!DNL Data Connection]设置，包括Experience Platform沙盒选择。 对于全局与网站范围的字段，请参阅[将Commerce数据连接到Adobe Experience Platform](connect-data.md#configuration-scope)。
+
 您的Commerce商店包含大量数据。 有关您的购物者如何浏览、查看以及最终购买您网站上的产品的信息可能会揭示创造更个性化购物体验的机会。 虽然这些数据可以为本机Commerce功能（如购物车价格规则和动态块）提供信息，但数据仍会孤立在您的Commerce实例中。
 
 Adobe Experience Platform提供了一套技术，当与Commerce商店中的数据结合后，可以将这些数据通过Edge Network分发到其他Adobe DX产品，以解锁关于购物者购买行为的洞察。 借助这些深入的见解，您可以跨所有渠道创建更加个性化的购物体验。
@@ -44,14 +46,7 @@ Adobe Experience Platform提供了一套技术，当与Commerce商店中的数�
 
 ![数据如何流向Experience Platform Edge](assets/commerce-edge.png)
 
-在上图中，您的行为、后台和客户配置文件数据使用SDK、API和源连接器发送到Experience Platform Edge。 您无需完全了解这些部分的工作方式，因为扩展会为您处理数据共享的复杂性。 当事件数据位于边缘时，您可以将该数据提取到其他Experience Platform应用程序中。 例如：
-
-| 应用程序 | 用途 | 用例 |
-|---|---|---|
-| [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hans#) | 用户档案管理和分段服务 | **购买历史记录分段**：商家可以识别在特定时段（每月、每季、每年等）购买商品的客户。 然后，商家可以为这些客户创建区段，针对促销活动、促销活动定位这些客户，并作为订阅服务潜在客户的&#x200B;_顶部_ funnel数据。<br> **基于类别的分段**：商家可以查看已购买的产品的类别。<br> **基于优惠的分段**：商家可以识别始终返回产品的客户。 现在，提供给他们的优惠和折扣会更加明智。 例如，对于始终返回产品的客户，可以移除免运费。<br> **相似对象定位**： _相似对象受众_&#x200B;是商家为促销而采用的一种方法，用于吸引那些可能与现有客户具有相似特征而对其业务感兴趣的新客户。 可以根据行为和事务性数据创建相似区段。<br> **客户倾向**：客户行为的变化可以通过从事务型数据创建的更深入的客户用户档案来识别。 随着更多数据流入到产品退货和产品配置等计算中，倾向分数将具有更高的置信度。<br> **交叉销售**：商家可以从Commerce中捕获的精细信息中识别强大的交叉销售和追加销售机会。 |
-| [客户 [!DNL Journey Analytics]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans) | 对整个Commerce历程的深入分析 | **季节性趋势**：商家可以确定季节性趋势，这有助于他们为特定产品的周期性需求变化做好准备。 此外，商家可以识别任何产品跨年整体受欢迎程度的变化。<br> **转化分析**：通过了解购买产品的时间，以及访问店面展示活动，商家可以生成客户的丰富个人资料以执行转化分析。 |
-| [Adobe [!DNL Analytics]](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html?lang=zh-Hans) | 对客户行为和营销活动绩效的深入分析 | **订单退货**：商家可以识别具有退货模式的客户和较大的客户区段。 这有助于商户改进其商业策略，因为他们了解其客户群行为是什么样的。<br> **订单地址**：根据送货地址，商家可以了解订单是由客户自己下单，还是由其他个人或实体下单。<br> **季节性趋势**：商家可以确定季节性趋势，这有助于他们为特定产品的周期性需求变化做好准备。 此外，商家可以识别任何产品跨年整体受欢迎程度的变化。<br> **转化分析**：通过了解购买产品的时间，以及访问店面展示活动，商家可以生成客户的丰富个人资料以执行转化分析。 **注意** Adobe Analytics仅支持行为（店面）事件数据。 Adobe Analytics不支持事务性(backoffice)事件数据。 |
-| [Adobe [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=zh-Hans) | 跨渠道的活动编排 | **基于行为的历程**：商家可以通过建议购买新型号来定位两年前购买手机的客户。 商家可以为这些客户创建个性化的促销活动和促销活动，并使用电子邮件和短信功能进行联系。 此外，商家可以使用历史顺序和行为数据来识别趋势。 例如，如果客户以前购买过具有特定配置的项目，现在又希望再次购买相同的产品，则可以通过赋予他们可见性和访问相同产品配置的权限来增强其购买历程。<br> **Personalization**：通过访问客户个人资料信息，[!DNL Journey Optimizer]可以解锁高度个性化的历程，从而允许商家通过多个不同渠道联系客户。<br> **已创建新配置文件**：欢迎电子邮件和促销活动可鼓励和影响新客户的购物历程。<br> **已删除个人资料**：商家可以选择停止向已关闭其帐户的客户发送促销电子邮件。 或者，商家也可以建立营销活动以赢回失去的客户。 |
+在上图中，您的行为、后台和客户配置文件数据使用SDK、API和源连接器发送到Experience Platform Edge。 您无需完全了解这些部分的工作方式，因为扩展会为您处理数据共享的复杂性。 当事件数据位于边缘时，您可以在下游Adobe DX产品（如[Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hans#)、[Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=zh-Hans)、[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html?lang=zh-Hans)和[Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=zh-Hans)）中使用它。 有关引导式示例，请参阅[使用Adobe Journey Optimizer发送放弃的购物车电子邮件](using-ajo.md)和[使用Commerce事件数据在Real-Time CDP中创建受众](create-audience.md)。
 
 ## 将Experience Platform数据提取回Commerce
 
@@ -67,7 +62,15 @@ Adobe Experience Platform提供了一套技术，当与Commerce商店中的数�
 
 在这两个系统之间共享数据需要您了解多个概念。
 
-- **数据** — 与Experience Platform共享的数据是从您店面的浏览器事件、服务器上的后台事件以及配置文件记录数据中收集的数据。 店面活动是从购物者在网站上的交互中捕获的，并包括`addToCart`、`pageView`、`createAccount`、`editAccount`、`startCheckout`、`completeCheckout`、`signIn`、`signOut`等事件。 查看[店面活动](events.md#storefront-events)以获取完整的店面活动列表。 服务器端或后台事件包括[订单状态](events-backoffice.md#order-status)信息，如[`orderPlaced`](events-backoffice.md#orderplaced)、[`orderReturned`](events-backoffice.md#orderitemreturncompleted)、[`orderShipped`](events-backoffice.md#ordershipmentcompleted)、[`orderCancelled`](events-backoffice.md#ordercancelled)等。 有关后台事件的完整列表，请参阅[后台事件](events-backoffice.md)。 配置文件记录数据包含创建、更新或删除新配置文件时的信息。 请参阅[个人资料记录数据](events-profilerecord.md)以了解详情。
+- **数据类型** — [!DNL Data Connection]从浏览器收集&#x200B;**行为（店面）**&#x200B;数据、从Commerce服务器收集&#x200B;**后台**&#x200B;数据和&#x200B;**配置文件**&#x200B;数据。 管理员标签店面集合&#x200B;**店面活动**。 有关完整分类，请参阅[Commerce数据的类型](data-ingestion.md)。
+
+- **行为（店面）数据** — 从网站上的购物者交互中捕获，如`addToCart`、`pageView`、`startCheckout`和`completeCheckout`。 查看[店面活动](events.md#storefront-events)。
+
+- **后台数据** — 已在Commerce服务器上捕获，包括[订单状态](events-backoffice.md#order-status)事件，如[`orderPlaced`](events-backoffice.md#orderplaced)和[`orderShipped`](events-backoffice.md#ordershipmentcompleted)。 查看[后台事件](events-backoffice.md)。
+
+- **配置文件记录** — 在Commerce中创建购物者配置文件时发送的快照数据。 查看[配置文件记录](events-profilerecord.md)和[更新配置文件记录架构](profile-data.md)。
+
+- **配置文件事件** — 服务器上配置文件生命周期更改的时间系列事件。 查看[客户个人资料事件](events-backoffice.md#customer-profile-events)。
 
 - **Experience Platform和Edge Network** — 大多数Adobe DX产品的数据仓库。 发送到Experience Platform的数据会通过Experience Platform Edge Network传播到Adobe DX产品中。 例如，您可以启动Journey Optimizer，从边缘检索特定的Commerce事件数据，并在Journey Optimizer中构建一个弃用的购物车电子邮件。 然后，如果Commerce商店中有任何放弃的购物车，Journey Optimizer可以发送该电子邮件。 了解有关[Experience Platform和Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=zh-Hans)的更多信息。
 
@@ -98,7 +101,7 @@ Adobe Experience Platform提供了一套技术，当与Commerce商店中的数�
 
 >[!ENDSHADEBOX]
 
-## 载入步骤
+## 启用扩展 {#enable-extension}
 
 从较高层面来看，启用[!DNL Data Connection]扩展涉及以下步骤：
 

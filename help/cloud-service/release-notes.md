@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
+source-git-commit: eb561a73951ba42542a8b08340a7df9cc30477d3
 workflow-type: tm+mt
-source-wordcount: 4655
+source-wordcount: 4657
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 [!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
 
-以下项目目前仅在沙盒环境中可用，并计划在7月移至生产环境。
+以下项目目前仅在沙盒环境中可用，并计划于2026年7月28日移至生产环境。
 
 >[!BEGINSHADEBOX]
 
