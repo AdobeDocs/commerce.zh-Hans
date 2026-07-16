@@ -26,9 +26,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 4cd054b64c3b95fd50ab9bb682469ace7cc871a3
 workflow-type: tm+mt
-source-wordcount: 2505
+source-wordcount: 2497
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 Commerce迁移评估是对您现有Adobe Commerce实施情况的自动分析。 Adobe的工具会扫描您的Commerce代码库，并生成一个结构化报表，其中清点所有已构建、自定义或修改的内容。 然后，该报告将指示对代码库所做的自定义对迁移到[!DNL Adobe Commerce as a Cloud Service]有何影响。
 
-报告以HTML文件的形式提供，您可以通过任何浏览器打开。 不需要访问生产环境，除非最初共享项目代码库。
+可以在`https://experience.adobe.com/@<ims-org-name>/commerce-migration-assessment/shared-assessments`访问已处理的迁移评估报告。 不需要访问生产环境，除非最初共享项目代码库。
 
 **评估提供：**
 

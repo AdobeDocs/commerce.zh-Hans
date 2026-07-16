@@ -15,7 +15,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 41c5b4267888595926ae1bae48f73c928e6547ad
 workflow-type: tm+mt
 source-wordcount: 1675
 ht-degree: 0%
@@ -246,7 +246,7 @@ AEM Assets集成使用Adobe I/O Events服务在Commerce实例和Experience Cloud
 
 1. 单击&#x200B;**确认身份**&#x200B;以验证您的身份。
 
-   系统会使用您的Adobe ID向Experience Cloud进行身份验证，以验证您的身份。
+   系统将使用您的Adobe ID向Experience Cloud进行身份验证以验证您的身份。
 
 1. 配置API资源。
 

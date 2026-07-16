@@ -3,9 +3,10 @@ user-guide-title: '[!DNL AEM Assets]集成指南'
 breadcrumb-title: '[!DNL AEM Assets]集成'
 user-guide-description: 有关面向Adobe Commerce和AEM Assets管理员以及电子商务营销人员的Magento Open Source集成的综合信息。
 feature: CMS, Page Content
-source-git-commit: 04c1717905367549d2818b1842f05a6a1488ccfd
+nudge: true
+source-git-commit: de2af14a02ba21bfedd4fa6841f0f8b544b013cc
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '102'
 ht-degree: 3%
 
 ---
@@ -15,8 +16,9 @@ ht-degree: 3%
 
 - [AEM Assets集成](overview.md)
 - [发行说明](release-notes.md)
+- [AEM Assets中的Commerce元数据](metadata.md)
 - 快速入门 {#get-started}
-   - [配置AEM Assets项目以支持Commerce元数据](get-started/configure-aem.md)
+   - [配置AEM Assets项目](get-started/configure-aem.md)
    - [安装Adobe Commerce包](get-started/configure-commerce.md)
    - [配置集成](get-started/setup-synchronization.md)
    - [配置IMS用户权限](get-started/permissions.md)

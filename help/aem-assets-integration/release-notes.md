@@ -3,9 +3,9 @@ title: AEM Assets集成发行说明
 description: 有关所有AEM Assets集成版本的信息，请参阅发行说明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e055a3d44eda7e7f082a884c316ad437ea9ac15e
+source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ _2026年5月14日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
 
-![新问题](../assets/new.svg)<!-- Issue ACAP-1268 -->在将图像或资源从AEM导入到Commerce产品媒体集时，替代文本现在将作为同步的一部分传递。 可以在AEM Assets中为每个商店视图设置替换文本。 查看AEM Assets元数据中的[替换文本](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}。
+![新问题](../assets/new.svg)<!-- Issue ACAP-1268 -->在将图像或资源从AEM导入到Commerce产品媒体集时，替代文本现在将作为同步的一部分传递。 可以在AEM Assets中为每个商店视图设置替换文本。 查看AEM Assets元数据中的[本地化的替换文本](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}。
 
 ## v1.3.5
 

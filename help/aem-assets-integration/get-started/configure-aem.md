@@ -1,5 +1,5 @@
 ---
-title: 配置AEM Assets项目以支持Commerce元数据
+title: 配置AEM Assets项目
 description: 了解如何通过在Adobe Commerce项目中部署assets-commerce包并配置AEM Assets元数据，在Commerce和AEM之间同步资源。
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
@@ -14,81 +14,107 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: de02e13e169ab336bac09ebff90c44b3b707efce
+source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
-source-wordcount: 1775
+source-wordcount: 1741
 ht-degree: 1%
 
 ---
 
-# 配置AEM Assets项目以支持Commerce元数据
+# 配置AEM Assets项目
 
-当您使用AEM Assets as a Digital Asset Management System (DAM) for Commerce时，安装`assets-commerce`包允许您从AEM创作环境管理Commerce产品的图像和视频。
+本主题介绍如何配置AEM Assets项目，以便在AEM创作环境中使用Commerce命名空间、元数据架构和[!UICONTROL Commerce]选项卡。 有关这些资源的背景信息，请参阅AEM Assets中的[Commerce元数据](../metadata.md)。
 
-完成以下步骤，使用所需的包代码和元数据配置AEM Assets项目，以便从AEM创作环境管理Commerce资源：
+您可以通过两个选项来配置AEM Assets项目：
 
-1. [了解`assets-commerce`包内容](#aem-commerce-assets-commerce-package-contents)
+* [!BADGE 推荐]{type=Positive} **自助登录** — 在AEM版本`2026.5.26309`及更高版本上，通过设置环境变量并激活具有OpenAPI功能的Dynamic Media来启用Cloud Manager中的集成。 无需自定义代码部署。 请参阅[启用Commerce集成（自助服务）](#enable-aem-commerce-self-service)。
 
-1. [完成安装步骤以配置AEM Assets项目以支持Commerce元数据](#step-1-install-the-assets-commerce-package)
+* **手动配置** — 通过Cloud Manager管道部署`assets-commerce`包。 如果您必须部署自定义包代码，或者您使用的是`2026.5.26309`之前的AEM版本，请按照这些手动步骤操作。 请参阅[手动安装assets-commerce包](#install-the-assets-commerce-package-manually)。
 
-## AEM Commerce assets-commerce包内容
+>[!TIP]
+>
+>您可以从右上角菜单查看当前AEM版本： **[!UICONTROL Help]** > **[!UICONTROL About AEM]**。
 
-Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名空间和元数据架构资源添加到Experience Manager Assets as a Cloud Service环境配置。
+## 启用Commerce集成（自助服务） {#enable-aem-commerce-self-service}
 
-此包代码可将以下资源添加到AEM Assets创作环境：
+[!BADGE 支持]{type=Informative tooltip="支持"} AEM版本`2026.5.26309`及更高版本。
 
-* [自定义命名空间](https://github.com/ankumalh/assets-commerce/blob/main/ui.config/jcr_root/apps/commerce/config/org.apache.sling.jcr.repoinit.RepositoryInitializer~commerce-namespaces.cfg.json)，`Commerce`用于标识与Commerce相关的属性。
+在受支持的AEM版本上，您可以从Cloud Manager启用Commerce集成，而无需部署任何自定义代码。 在Author服务上启用集成时，会自动配置Commerce命名空间、元数据架构和&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡。
 
-   * 带有标签`Eligible for Commerce`的自定义元数据类型`commerce:isCommerce`用于标记与Adobe Commerce项目关联的Commerce资源。
+### 自助服务先决条件
 
-   * 用于添加&#x200B;**[!UICONTROL Product Data]**&#x200B;属性的自定义元数据类型`commerce:skus`和相应的UI组件。 产品数据包含用于将Commerce资源与产品SKU关联的元数据属性。
+* [使用计划和部署管理员角色访问AEM Cloud Manager计划和环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)。
 
-     ![自定义产品数据UI控件](../assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
+* 版本`2026.5.26309`或更高版本上的AEM程序。
 
-   * 自定义元数据类型`commerce:roles`和`commerce:positions`属性，用于显示如何在Commerce中显示该资源。
+* Commerce实例的&#x200B;**IMS组织ID**。
 
-   * 替换文本多字段(_[!UICONTROL Alt texts]_)元数据，以便编辑人员可以输入由Commerce商店视图代码键入的替换文本。 这不会更改在目录中为产品图像分配或设定范围的方式。 查看AEM Assets元数据中的[替换文本](#localized-alt-text-in-aem-assets-metadata)。
+  您的Commerce实例和AEM Assets创作环境必须位于同一个IMS组织中。
 
-* 具有Commerce选项卡的元数据架构表单，包括用于标记Commerce资源的`Eligible for Commerce`和`Product Data`字段。 该表单还提供了在AEM Assets UI中显示或隐藏`roles`和`position`字段的选项。
+### 步骤1：创建项目和环境
 
-  AEM Assets元数据架构表单的![Commerce选项卡](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
+在Cloud Manager中创建项目是一个向导过程 — 项目及其环境通过多个步骤进行配置，并在最后保存在一起。
 
-* [示例已标记并批准Commerce资源](https://github.com/ankumalh/assets-commerce/blob/main/ui.content/src/main/content/jcr_root/content/dam/wknd/en/activities/hiking/equipment_6.jpg/.content.xml) `equipment_6.jpg`以支持初始资源同步。 只有已获批准的Commerce资源才能从AEM Assets同步到Adobe Commerce。
+1. 在Cloud Manager中选择&#x200B;**[!UICONTROL Add Program]**。
+
+1. 选择&#x200B;**[!UICONTROL Set up for production]**，输入项目名称，然后选择&#x200B;**[!UICONTROL Continue]**。
+
+1. 在&#x200B;**[!UICONTROL Solutions & Add-ons]**&#x200B;步骤中，选择项目所需的解决方案和加载项，包括&#x200B;**[!UICONTROL Dynamic Media]**，然后选择&#x200B;**[!UICONTROL Continue]**。
+
+   ![已选择Dynamic Media的Cloud Manager解决方案和加载项步骤](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
+
+1. 在&#x200B;**[!UICONTROL Add Environment]**&#x200B;步骤中，输入&#x200B;**生产**&#x200B;和&#x200B;**暂存**&#x200B;环境的名称，然后选择区域。
+
+   ![Cloud Manager添加环境对话框，其中包含生产和暂存详细信息](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
+
+1. 选择&#x200B;**[!UICONTROL Save]**&#x200B;以创建项目及其环境。
+
+### 步骤2：启用Commerce集成变量
+
+在Cloud Manager中，打开您在步骤1中创建的环境，然后：
+
+1. 选择&#x200B;**[!UICONTROL Configuration]**&#x200B;选项卡。
+
+1. 添加具有以下值的环境变量，然后选择&#x200B;**[!UICONTROL Add]**&#x200B;和&#x200B;**[!UICONTROL Save]**：
+
+   | 字段 | 值 |
+   |---|---|
+   | 名称 | `COMMERCE_INTEGRATION_ENABLED` |
+   | 值 | `true` |
+   | 已应用服务 | 作者 |
+   | 类型 | 变量 |
+
+   ![应用了COMMERCE_INTEGRATION_ENABLED变量的Cloud Manager环境配置](../assets/aem-cloud-manager-commerce-integration-variable.png){width="600" zoomable="yes"}
+
+   环境将更新以应用配置。 等待环境状态返回到&#x200B;**[!UICONTROL Running]**。
+
+### 步骤3：使用OpenAPI功能激活Dynamic Media
+
+1. 在环境&#x200B;**[!UICONTROL General]**&#x200B;选项卡上，找到&#x200B;**[!UICONTROL Dynamic Media]**。
+
+1. 在&#x200B;*旁边有*&#x200B;可用的OpenAPI功能，请选择&#x200B;**[!UICONTROL Click to activate]**。
+
+   ![显示Dynamic Media OpenAPI激活链接的“环境常规”选项卡](../assets/aem-cloud-manager-dynamic-media-activate.png){width="600" zoomable="yes"}
+
+   激活在后台运行。 完成后，环境即为Commerce集成做好准备。
+
+   >[!NOTE]
+   >
+   > 如果&#x200B;**[!UICONTROL Click to activate]**&#x200B;不可用，请打开支持票证以启用具有OpenAPI功能的Dynamic Media。
+
+### 步骤4：验证配置
+
+切换到&#x200B;**AEM Assets创作环境**&#x200B;并打开任何资源。 编辑其属性，并确认默认元数据架构包含&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡，且&#x200B;**[!UICONTROL Product Data]**&#x200B;和&#x200B;**[!UICONTROL Eligible for Commerce]**&#x200B;字段可见。
+
+## 手动安装assets-commerce包
 
 >[!NOTE]
 >
-> 有关&#x200B;**AEM Commerce包代码**&#x200B;的更多信息，请参阅GitHub上的[自述文件](https://github.com/ankumalh/assets-commerce)页面。
+> 使用此手动方法部署自定义包代码，或者如果您使用的是`2026.5.26309`之前的AEM版本。 在支持的版本上，请改用[启用Commerce集成（自助服务）](#enable-aem-commerce-self-service)。
 
-## AEM Assets元数据中的替换文本
+### 先决条件
 
-编辑符合条件的图像时，_[!UICONTROL Alt texts]_&#x200B;多字段在AEM Assets资源元数据编辑器的&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡上可用。
-
->[!IMPORTANT]
->
-> 每次存储查看行为仅适用于替换文本。 AEM Assets集成不会同步每个Adobe Commerce商店视图中的其他产品图像。 AEM中的产品图像将继续同步到Commerce中，其库分配行为与此版本之前相同。
-
-多字段在每个Commerce商店视图中包含一行。 每一行有两个输入：
-
-* **[!UICONTROL Store View Code]** — 存储视图标识符（例如`default`或`en_US`）。
-
-* **[!UICONTROL Alt Text]** — 该商店视图的替换文本，限制为255个字符。
-
-选择&#x200B;**[!UICONTROL Add]**&#x200B;为其他存储视图添加更多行。 要删除某行，请选择该行上的&#x200B;**[!UICONTROL Delete]**&#x200B;图标以将其删除。
-
-![Alt文本包含存储视图代码和Alt文本输入的多字段](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
-
-保存时，如果任何行具有空的&#x200B;_[!UICONTROL Store View Code]_&#x200B;或如果两行使用相同的存储视图代码（不区分大小写），则客户端验证会阻止提交。
-
-替代文本条目作为两个索引对齐的`String[]`属性保留在JCR资产元数据中：
-
-* `commerce:altTextStoreViews`：存储每行的视图代码。
-* `commerce:altTextValues`：在与`commerce:altTextStoreViews`中的每个条目相同的索引处匹配替换文本。
-
-当这些资源同步到Adobe Commerce时，每个商店视图替换文本将写入产品媒体集，以获得匹配的商店视图代码。 底层图像映射保持不变。
-
-## 先决条件
-
-您需要以下资源和权限才能将`assets-commerce`包代码部署到AEM Assets as a Cloud Service AEM环境：
+要将`assets-commerce`包代码部署到AEM Assets as a Cloud Service AEM环境，您需要以下资源和权限：
 
 * [使用计划和部署管理员角色访问AEM Assets Cloud Manager计划和环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)。
 
@@ -116,7 +142,7 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 >[!TAB AEM Assets]
 
-[!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}在AEM as a Cloud Service上，提交包含以下信息的Adobe支持票证：
+[!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}在AEM as a Cloud Service上，提交包含此信息的Adobe支持票证：
 
 * Title：启用Dynamic Media OpenAPI以将Adobe Commerce与AEM Assets完全集成
 
@@ -127,11 +153,11 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
       * **[!UICONTROL AEM Environment ID]**
       * **[!UICONTROL IMS Org ID]**
 
-在提交支持票证后，Adobe会在您的云服务环境中启用具有OpenAPI功能的Dynamic Media，并共享详细信息（如IMS客户端ID），以便您继续集成。
+提交支持工单后，Adobe将在您的Cloud Services环境中启用具有OpenAPI功能的Dynamic Media，并共享详细信息（如IMS客户端ID），以便您继续集成。
 
 >[!ENDTABS]
 
-## 步骤1：安装assets-commerce包
+### 安装步骤
 
 1. 导航到AEM Cloud Manager，选择一个项目，然后[创建要与Adobe Commerce集成的生产和暂存环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)。
 
@@ -183,11 +209,11 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
 
 1. 将&#x200B;**checkbox**&#x200B;组件拖放到&#x200B;**Commerce**&#x200B;选项卡中，并将其映射到属性`commerce:isCommerce`。 将&#x200B;**是**&#x200B;和&#x200B;**否**&#x200B;定义为选项。
 
-如果您遇到任何其他问题，请创建[支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#submit-ticket)或联系您的AEM Assets集成销售代表寻求帮助。
+如果您遇到任何其他问题，请创建[支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)或联系您的AEM Assets集成销售代表寻求帮助。
 
-## 步骤2：可选。 配置元数据配置文件
+## 配置元数据配置文件（可选）
 
-在AEM Assets创作环境中，通过创建元数据配置文件来设置Commerce资源元数据的默认值。 然后，将新配置文件应用到AEM Asset文件夹以自动使用这些默认值。 此配置通过减少手动步骤来简化资产处理。
+在AEM Assets创作环境中，通过创建元数据配置文件来设置Commerce资源元数据的默认值。 要自动使用这些默认值，请将新配置文件应用到AEM Asset文件夹。 此配置通过减少手动步骤来简化资产处理。
 
 配置元数据配置文件时，您只需配置以下组件：
 
@@ -241,7 +267,7 @@ Adobe提供了AEM Commerce包代码`assets-commerce`，用于将Commerce命名�
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. 可选。 要在已批准的Commerce资源上传到AEM Assets环境时自动对其进行同步，请将`Basic`选项卡上&#x200B;_[!UICONTROL Review Status]_&#x200B;字段的默认值设置为`approved`。
+1. 可选。 要在将已批准的Commerce资源上传到AEM Assets环境时自动对其进行同步，请将`Basic`选项卡上&#x200B;_[!UICONTROL Review Status]_&#x200B;字段的默认值设置为`approved`。
 
 1. 保存更新。
 

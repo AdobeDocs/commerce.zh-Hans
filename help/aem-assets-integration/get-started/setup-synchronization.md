@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: a6a91fbd6cc6907d070998f67eb0b9c8171dda23
+source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
-source-wordcount: 948
+source-wordcount: 965
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 * [!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"} [安装Adobe Commerce包](configure-commerce.md)以添加扩展并生成使用该扩展所需的凭据和连接。
 
-* [用户权限和IMS](permissions.md) — 资产选择器和自动填充的配置字段（程序ID、环境ID、域映射）需要。
+* [用户权限和IMS](permissions.md) — 配置资产选择器和自动填充的配置字段（程序ID、环境ID、域映射）所需的权限。
 
 ## 配置连接
 
@@ -63,11 +63,11 @@ ht-degree: 2%
 
 1. 从下拉菜单中选择AEM Assets环境&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**。
 
-   当Commerce管理员用户满足以下体验的[用户权限和IMS](permissions.md#user-permissions-and-ims)时，就会显示选择器： **Adobe Commerce as a Cloud Service**、**Adobe Commerce Optimizer**&#x200B;和&#x200B;**Adobe Commerce on Cloud Infrastructure**&#x200B;集成可以从您的IMS链接会话中自动填充这些字段，而不是依赖粘贴的ID。
+   当您的Commerce管理员用户具有以下[用户权限](permissions.md#user-permissions-and-ims)体验时，即会显示选择器：**Adobe Commerce as a Cloud Service**、**Adobe Commerce Optimizer**&#x200B;和&#x200B;**Adobe Commerce on Cloud Infrastructure**&#x200B;集成可以从您的IMS链接会话中自动填充这些字段，而不是依赖粘贴的ID。
 
    如果选择器不可用，请从AEM Cloud Manager复制&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**，或从创作URL派生它们： `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/`（将占位符替换为标识符）。
 
-   粘贴前清除任一字段的&#x200B;**[!UICONTROL Use system value]**&#x200B;或手动选择新值。
+   您必须清除这两个字段的&#x200B;**[!UICONTROL Use system value]**，然后才能手动粘贴或选择新值。
 
    ![AEM Assets集成表单，带有项目ID和环境ID选择器](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
@@ -90,13 +90,13 @@ ht-degree: 2%
 
 ### 同步SLA
 
-该集成保证了以下同步性能级别：
+集成的service level agreement (SLA)保证了以下同步性能级别：
 
 * `< 5 minutes for 99% of updates`
 
 * `< 30 minutes for 99.9% of updates`
 
-这可确保产品页面始终显示最新的图像，从而保持店面内容的准确且美观。
+这一级别的服务可确保产品页面始终显示最新的图像，使店面内容准确且具有视觉吸引力。
 
 ### 配置可视化图表所有者
 

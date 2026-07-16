@@ -2,9 +2,9 @@
 title: 为Commerce Optimizer配置AEM Assets
 description: 了解如何为 [!DNL Adobe Commerce Optimizer]配置AEM Assets集成。
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 2cc7b70a6923687c74fe3f4b88448eaada6d16af
+source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1244'
 ht-degree: 0%
 
 ---
@@ -16,62 +16,19 @@ ht-degree: 0%
 
 适用于[!DNL Adobe Commerce Optimizer]的AEM Assets集成使商家能够将AEM Assets用作产品图像的集中数字资产管理解决方案。 本指南介绍特定于[!DNL Commerce Optimizer]的配置。
 
-与Adobe Commerce (PaaS)或[!DNL Adobe Commerce as a Cloud Service]不同，[!DNL Commerce Optimizer]没有管理员配置UI。 要启用集成，请使用您的[!DNL Adobe Commerce Optimizer]和AEM Assets详细信息创建支持工单。 Adobe支持配置集成并在Assets集成服务中注册您的租户。
-
-**在提交票证之前准备AEM Assets。** 租户注册假定AEM端可用于Commerce。 例如，部署AEM Commerce `assets-commerce`包后，元数据和事件将按说明工作。 **在配置AEM之前打开票证可能会延迟上线。**
-
 下图是[!DNL Adobe Commerce Optimizer]与AEM Assets集成之间的产品同步概述。
 
 ![AEM Assets到[!DNL Commerce Optimizer]的流](../assets/aco-asset-sync-architecture.png){width="700"}
 
-此集成有两个主要流程：
+此集成具有两个独立的事件流。 两者都使用[Adobe I/O Events](https://developer.adobe.com/events/docs/)将事件传输到Assets集成服务，但每个方向都使用自己的事件提供程序：
 
-* **从AEM Assets**：批准、拒绝或删除资源时，事件将通过Adobe管道传输到Assets集成服务。 该服务使用`match-by-SKU` （元数据驱动）或[自定义匹配器(App Builder)](../synchronize/custom-match.md){target=_blank}将资源与产品匹配，然后将`product-asset`映射发送到Commerce Optimizer，在产品中存储这些映射作为产品层。
+* **从AEM Assets到Assets Integration Service**：批准、拒绝或删除资源时，该事件将交付到Assets Integration Service。 该服务使用`match-by-SKU` （元数据驱动）或[自定义匹配器(App Builder)](../synchronize/custom-match.md){target=_blank}将资源与产品匹配，然后将`product-asset`映射发送到[!DNL Commerce Optimizer]，在产品中存储这些映射作为产品层。
 
-* **从[!DNL Adobe Commerce Optimizer]**：在[!DNL Commerce Optimizer]中更新产品时，事件将通过Adobe管道传输到Assets集成服务。 该服务将任何匹配的资产映射同步回[!DNL Adobe Commerce Optimizer]。
+  >[!NOTE]
+  >
+  >集成使用的`AEM-Assets`目录层是在载入期间自动创建的。 您无需预先创建它。 有关目录层的工作方式以及AEM-Assets层行为方式的背景，请参阅[AEM-Assets层](../../optimizer/setup/catalog-layer.md#aem-assets-layer)。
 
-## 先决条件
-
-在配置集成之前，请确保您具有：
-
-* 具有产品可视化权利或具有Dynamic Media的任何AEM Assets许可证的有效[!DNL Adobe Commerce Optimizer]实例。
-* 访问AEM Assets as a Cloud Service环境。
-* 同一Adobe IMS组织中的[!DNL Commerce Optimizer]和AEM Assets。
-* 在您的AEM Assets环境中启用了OpenAPI的Dynamic Media （请参阅[配置AEM Assets项目](configure-aem.md#prerequisites)以了解启用步骤）。
-
-## 首先配置AEM Assets
-
-在&#x200B;**之前**&#x200B;完成AEM Assets步骤[打开支持票证](#onboarding)以进行租户注册。 安装模式与Adobe Commerce as a Cloud Service匹配 — 请参阅[配置AEM Assets项目以支持Commerce元数据](configure-aem.md)。
-
-### 步骤1：部署AEM Commerce包
-
-在AEM项目中安装和部署`assets-commerce`包，以便Commerce元数据架构、事件和UI可用。
-
-完成[安装`assets-commerce`包](configure-aem.md#step-1-install-the-assets-commerce-package)中的完整过程。 在打开支持工单之前，请执行以下步骤：
-
-1. 克隆Cloud Manager Git存储库，并将[AEM Assets Commerce存储库](https://github.com/ankumalh/assets-commerce)代码复制到项目中。
-
-1. 在您的项目的所有`filter.xml`和`pom.xml`文件中，将所有出现的&lt;my-app>替换为应用程序名称。
-
-1. 提交、推送、运行部署管道，并验证&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡是否显示在资产属性上。
-
-如果缺少&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡，请参阅[安装`assets-commerce`包](configure-aem.md#step-1-install-the-assets-commerce-package)，以了解Cloud Manager屏幕截图、管道步骤和疑难解答。
-
-### 步骤2：使用OpenAPI启用Dynamic Media
-
-必须在您的AEM Assets环境中启用具有OpenAPI功能的Dynamic Media。 自助式路径（例如，用于产品可视化的Cloud Manager）和Adobe支持路径在[配置AEM Assets项目](configure-aem.md#prerequisites)下进行了说明。
-
-### 步骤3：应用Commerce元数据并批准资源
-
-将Commerce元数据添加到AEM Assets中的产品图像 — 有关字段定义，请参阅[AEM Commerce包内容](configure-aem.md#aem-commerce-assets-commerce-package-contents)。
-
-资产必须处于&#x200B;**已批准**&#x200B;状态，数据同步才会触发。 仅保存元数据不会触发事件。
-
-### 步骤4：可选 — 配置Commerce元数据配置文件
-
-如果您选择使用AEM元数据配置文件来简化创作过程，请在&#x200B;**之后**&#x200B;配置这些配置文件，部署包并且您的团队了解必需的Commerce字段 — 与&#x200B;**配置AEM Assets项目**&#x200B;相同的可选模式。
-
-请参阅[配置元数据配置文件](configure-aem.md#step-2-optional-configure-a-metadata-profile)。
+* **从[!DNL Adobe Commerce Optimizer]到Assets集成服务**：在[!DNL Commerce Optimizer]中更新产品时，该事件将交付到Assets集成服务。 该服务将任何匹配的资产映射同步回[!DNL Commerce Optimizer]。
 
 ## 限制
 
@@ -79,13 +36,13 @@ ht-degree: 0%
 
 ### 与图层相关的约束
 
-在&#x200B;**之前**&#x200B;阅读本节，您可以在支持票证中选择目录层名称。 选择或共享没有此上下文的层是造成可预防的支持案例的常见原因。
+* 为AEM Assets内容使用专用层。
 
-**为AEM Assets内容使用专用层。** 从AEM Assets发送的有效负载会填充Commerce Optimizer目录&#x200B;**层**。 提供字段的层&#x200B;**覆盖**&#x200B;基本目录属性中的值。 当集成忽略有效负载中的字段时，该层中的相应值可能会被空值覆盖。 与不相关的Commerce工作流共享层，或者重用已存储非AEM-Assets产品数据的层，可能会导致&#x200B;**意外数据丢失**&#x200B;或混淆覆盖。 在&#x200B;**之前规划图层选择**&#x200B;打开支持票证，并保留该图层名称（例如默认&#x200B;**`AEM-Assets`**）主要用于AEM驱动的产品图像同步。
+  从AEM Assets发送的有效负载会填充Commerce Optimizer目录层。 该层中的值会覆盖提供字段的基本目录属性。 当集成忽略有效负载中的字段时，该层中的相应值可能会被空值覆盖。 与不相关的Commerce工作流共享层，或者重用已存储非AEM-Assets产品数据的层，可能会导致&#x200B;**意外数据丢失**&#x200B;或混淆覆盖。 主要为AEM驱动的产品图像同步保留图层名称（例如默认&#x200B;**`AEM-Assets`**）。
 
->[!IMPORTANT]
->
->集成支持每个租户&#x200B;**一个目录源**：单个区域设置和&#x200B;**一个命名层**。 目前不支持为同一租户配置多个AEM-Assets层或多个区域设置。
+* 该集成支持每个租户一个目录源：单个区域设置和一个命名层。 目前不支持为同一租户配置多个AEM-Assets层或多个区域设置。
+
+* 重用现有层或与不相关的工作流共享层经常导致出现可预防的支持案例。
 
 ### 其他限制
 
@@ -95,40 +52,55 @@ ht-degree: 0%
 * **图像位置/排序**：不支持图像位置和排序。
 * **产品必须存在**：如果[!DNL Commerce Optimizer]中不存在该产品，则不会为该产品 — 资产映射创建层。
 
+## 先决条件
+
+在配置集成之前，请确保您具有：
+
+* 具有&#x200B;**产品可视化图表**&#x200B;权利文件的活动[!DNL Adobe Commerce Optimizer]实例（捆绑Dynamic Media与OpenAPI功能+ [AEM Assets Prime](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-prime)），或客户提供的AEM Assets许可证（例如，**AEM Assets Ultimate**）已启用Dynamic Media。
+* 访问AEM Assets as a Cloud Service环境。
+* 同一Adobe IMS组织中的[!DNL Commerce Optimizer]和AEM Assets。
+* 在您的AEM Assets环境中启用了OpenAPI的Dynamic Media （请参阅[配置AEM Assets项目](configure-aem.md#prerequisites)以了解启用步骤）。
+
+### 首先配置AEM Assets
+
+要支持集成，请在开始将AEM Assets集成与[!DNL Commerce Optimizer]载入的过程之前配置AEM Assets项目和环境。 这包括启用具有OpenAPI功能的Dynamic Media，以及使Commerce元数据架构、事件和UI在您的AEM项目中可用。
+
+* [!BADGE 建议]{type=Positive}在AEM版本`2026.5.26309`及更高版本上，启用来自Cloud Manager的集成，而不部署代码。 请遵循[启用Commerce集成（自助服务）](configure-aem.md#enable-aem-commerce-self-service)。
+
+* 在早期的AEM版本上，手动部署`assets-commerce`包。
+请遵循[手动安装assets-commerce包](configure-aem.md#install-the-assets-commerce-package-manually)。
+
+>[!TIP]
+>
+> 您可以从右上角菜单查看当前AEM版本： **[!UICONTROL Help]** > **[!UICONTROL About AEM]**。
+
 ## 入门
 
-要载入与[!DNL Commerce Optimizer]的AEM Assets集成，您必须[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+>[!IMPORTANT]
+>
+>在提交支持票证以启用与[!DNL Commerce Optimizer]的集成之前，请完成[配置AEM Assets](#configure-aem-assets-first)的过程。 支持需要将AEM Assets环境和项目配置为支持AEM Commerce集成，包括部署`assets-commerce`包（或等效的自助服务）以用于元数据和事件。 在配置AEM之前打开票证可能会延迟上线。
 
-Adobe支持使用您票证中的信息来向Assets集成服务注册您的租户，并配置集成。
+要加入AEM Assets与[!DNL Commerce Optimizer]的集成，Adobe支持部门必须向Assets集成服务注册您的Adobe Commerce Optimizer实例，然后将其订阅至：
 
-确保在提交票证之前先完成[配置AEM Assets](#configure-aem-assets-first)。
+* AEM Assets事件（已批准、更新和删除资产）
+* [!DNL Commerce Optimizer]目录事件（产品已创建、已更新）
 
-在您的支持工单中包含以下信息：
+要启动此流程，请[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，该票证包含以下信息：
 
 * 在您的[!DNL Commerce Optimizer] URL或Commerce Cloud Manager UI中找到&#x200B;**[!DNL Adobe Commerce Optimizer]租户ID** （实例ID）。
-* **AEM项目ID**。
-* **AEM环境ID**。
+* 当您[为集成配置了AEM](#configure-aem-assets-first)时，所设置的&#x200B;**AEM Assets项目ID和环境ID**。
 * **匹配规则**：按SKU或[外部匹配器(App Builder)](../synchronize/custom-match.md){target=_blank}匹配。
 * **层**：要向注册租户的目录层名称（请参阅&#x200B;**与层相关的约束**）。 仅在有意为之时才指定自定义名称；否则使用默认&#x200B;**`AEM-Assets`**。
-* **区域设置**：向注册租户的目录源区域设置（例如，`en-US`）。 这必须符合您在目录视图和产品目录数据中使用的区域设置。
+* **区域设置**：向注册租户的目录源区域设置（例如，`en-US`）。 此区域设置必须与您在目录视图和产品目录数据中使用的区域设置相匹配。
 
-Adobe支持处理您的票证后，配置集成，并且您的租户向Assets集成服务注册。
+### 配置目录视图
 
-载入完成后：
+注册[!DNL Commerce Optimizer]租户后，配置目录视图，使店面和API显示AEM驱动的图像数据：
 
-1. **向Assets集成服务注册**：您的[!DNL Commerce Optimizer]租户已使用票证中提供的[!DNL Adobe Commerce Optimizer]租户ID、AEM项目ID、AEM环境ID、匹配规则、区域设置和层名称向Assets集成服务注册。
+* **选择目录源（区域设置）** — 选择您在支持票证中指定的相同区域设置（例如&#x200B;**`en-US`**）。 集成为每个租户注册一个区域设置；不匹配，同步的图像无法在预期的目录视图中显示。
+* **分配目录层** — 将&#x200B;**`AEM-Assets`**&#x200B;层（或票证中的自定义层名称）分配给该目录视图。
 
-1. **事件订阅**： Assets集成服务订阅了：
-
-   * AEM Assets事件（已批准、更新和删除资产）
-   * [!DNL Commerce Optimizer]目录事件（产品已创建、已更新）
-
-配置[目录视图](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view)，以便店面和API显示AEM驱动的图像数据：
-
-* **目录源（区域设置）** — 选择您在支持票证中指定的相同区域设置（例如&#x200B;**`en-US`**）。 集成为每个租户注册一个区域设置；不匹配，同步的图像无法在预期的目录视图中显示。
-* **目录层** — 将&#x200B;**`AEM-Assets`**&#x200B;层（或票证中的自定义层名称）分配给该目录视图。
-
-如果未正确分配区域设置或图层，则图像数据可能&#x200B;**未出现**&#x200B;或出现意外行为 — 即使在上游同步成功也是如此。
+如果未正确分配区域设置或图层，则图像数据&#x200B;**不会显示**&#x200B;或行为异常 — 即使在上游同步成功也是如此。
 
 ## 同步
 
@@ -150,7 +122,7 @@ Adobe支持处理您的票证后，配置集成，并且您的租户向Assets集
 
 1. Assets集成服务将产品映像映射发送到[!DNL Commerce Optimizer]。 [!DNL Commerce Optimizer]中的产品已使用资产中的图像更新。
 
-1. 验证图像是否可见。 留出时间让同步完成（通常在几分钟内），然后检查[!DNL Commerce Optimizer] UI中的产品（例如，数据同步或目录视图），或查询店面API（目录服务、实时搜索、店面GraphQL API）以确认图像已返回。
+1. 验证图像是否可见。 等待几分钟以完成同步，然后在[!DNL Commerce Optimizer] UI中检查产品或查询店面API以确认图像已返回。
 
 ## 图像角色处理
 
