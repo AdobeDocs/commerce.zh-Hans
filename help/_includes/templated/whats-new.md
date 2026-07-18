@@ -1,7 +1,7 @@
 ---
-source-git-commit: c99194b2eb7111a593cfe7c4ba1b4917e38589d2
+source-git-commit: 26e80644cd94f01e0cd310ff2197dc01de6c6819
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1892'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年7月15日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>在AEM版本<code>2026.5.26309</code>及更高版本上记录了AEM Assets集成的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/configure-aem#enable-aem-commerce-self-service">自助登录</a>，在AEM Assets</a>主题中添加了新的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/metadata">Commerce元数据，并添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/configure-storefront#connect-aem-assets-authoring">通过Da.live将AEM Assets连接到您的店面</a>的指南。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/21d305eaa87cd70d82c530e4ee5a4ea34574d400">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月7日
 
