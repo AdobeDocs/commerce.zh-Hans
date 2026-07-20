@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
 workflow-type: tm+mt
-source-wordcount: 1404
+source-wordcount: 1365
 ht-degree: 0%
 
 ---
@@ -32,6 +32,19 @@ ht-degree: 0%
 
   {{aco-api-updates-and-dropins}}
 
+## 2026年7月
+
+>[!BEGINSHADEBOX]
+
+_2026年7月20日_
+
+![修复](../assets/fix.svg) **类别导航性能** — 将性能优化应用于类别服务，从而提高`CategoryNavigation`查询的吞吐量和降低P99延迟，从而提高在高负载下的服务响应速度和整体用户体验。
+<!--DATA-7131 DATA-7250-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## 2026年6月
 
 >[!BEGINSHADEBOX]
@@ -40,7 +53,8 @@ _2026年6月24日_
 
 <!-- v1.3 -->
 
-![新](../assets/new.svg) **新`canEditQuantity`字段** — 已将`canEditQuantity`添加到目录服务GraphQL中的`ProductViewOptionValueProduct`。 它会公开Commerce管理员中捆绑选择的可选&#x200B;**用户定义**&#x200B;数量设置，以便店面使用者可以确定捆绑选择的数量是否可编辑。
+![新](../assets/new.svg) **新`canEditQuantity`字段** — 已将`canEditQuantity`添加到目录服务GraphQL中的`ProductViewOptionValueProduct`。它会公开Commerce管理员中捆绑选择的可选&#x200B;**用户定义**&#x200B;数量设置，以便店面使用者可以确定捆绑选择的数量是否可编辑。
+<!--COMOPT-2050-->
 
 ### 语义搜索
 
@@ -68,11 +82,14 @@ _2026年5月28日_
 
 <!-- v1.2 -->
 
-![修复](../assets/fix.svg) **完整的导航树** — 当路径中存在未标记的中间节点时，已标记的后代类别现在正确地包含在系列筛选的`navigation`树中。 此修复程序可确保购物者在导航中看到所有相关类别，从而更轻松地浏览和发现商品。
+![修复](../assets/fix.svg) **完整的导航树** — 当路径中存在未标记的中间节点时，已标记的后代类别现在正确地包含在系列筛选的`navigation`树中。此修复程序可确保购物者在导航中看到所有相关类别，从而更轻松地浏览和发现商品。
+<!--DATA-7183-->
 
-![修复](../assets/fix.svg) **在`categoryTree`请求中处理空概要** — 修复了[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查询在`slugs`参数包含空字符串时返回内部服务器错误的问题。 现在会忽略空概要，因此存储前端和集成可以继续解析类别数据，而不会请求失败。
+![修复](../assets/fix.svg) **在`categoryTree`请求中处理空概要** — 修复了[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查询在`slugs`参数包含空字符串时返回内部服务器错误的问题。现在会忽略空概要，因此存储前端和集成可以继续解析类别数据，而不会请求失败。
+<!--DATA-7184-->
 
-![Fix](../assets/fix.svg) **`searchCategory`请求返回不区分大小写、按字母顺序排列的结果**— `searchCategory`查询现在按字母顺序排列搜索结果，不区分大小写，确保排序一致且可预测。 如果名称在其他方面相同，则前缀较短的类别首先出现。
+![Fix](../assets/fix.svg) **`searchCategory`请求返回不区分大小写、按字母顺序排列的结果**— `searchCategory`查询现在按字母顺序排列搜索结果，不区分大小写，确保排序一致且可预测。如果名称在其他方面相同，则前缀较短的类别首先出现。
+<!--COMOPT-2142-->
 
 _2026年5月4日_
 
