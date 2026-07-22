@@ -1,7 +1,7 @@
 ---
-source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
+source-git-commit: bdde436394667a2d5477fbc44eac5b90bd865c68
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## 关于您对Adobe内容的投稿
 
-请参阅[Adobe文档参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
+请参阅[Adobe文档参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 您的参与方式取决于您的身份以及您希望参与的更改类型：
 
 ### 次要更改
 
-如果您要提供较小的更新，请访问文章，然后单击文章底部显示的反馈区域，单击&#x200B;**详细的反馈选项**，然后单击&#x200B;**建议编辑**&#x200B;以转到GitHub上的Markdown源文件。 使用GitHub UI进行更新。 有关详细信息，请参阅常规的[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
+如果您要提供较小的更新，请访问文章，然后单击文章底部显示的反馈区域，单击&#x200B;**详细的反馈选项**，然后单击&#x200B;**建议编辑**&#x200B;以转到GitHub上的Markdown源文件。 使用GitHub UI进行更新。 有关详细信息，请参阅常规的[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 您为此存储库中的文档和代码示例提交的小幅度更正或说明受Adobe使用条款的约束。
 
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 ### Adobe员工做出的主要更改
 
-如果您是来自Adobe Experience Cloud解决方案产品团队的技术文档撰稿人、项目经理或开发人员，并且您的工作就是撰写或创作技术文章，那么您应当使用位于`https://git.corp.adobe.com/AdobeDocs`的专用存储库。
+如果您是产品团队中负责提供Adobe Experience Cloud解决方案的技术作家、项目经理或开发人员，并且您的工作是撰写或创作技术文章，则应使用位于`https://git.corp.adobe.com/AdobeDocs`的专用存储库。
 
 ## 工具和设置
 
 社区参与者可以使用GitHub UI进行基本编辑或创建存储库分支以进行重大更改。
 
-有关详细信息，请参阅[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
+有关详细信息，请参阅[Adobe Docs参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 如何使用Markdown格式化主题
 
@@ -60,10 +60,11 @@ ht-degree: 0%
 
 ### 钩子做什么
 
-- 自动检测暂存的图像文件(PNG、JPG、JPEG、GIF、SVG)
-- 运行`image_optim`以压缩和优化图像
+- 自动检测暂存的图像文件(PNG、JPEG、GIF、SVG)
+- 运行`image_optim`以压缩和优化光栅图像(PNG、JPEG、GIF)
 - 自动重新存放优化的图像
-- 确保所有提交的映像都得到了正确优化
+- 确保所有已提交的光栅图像都已正确优化
+- 根据大小限制检查暂存的SVG，如果任何SVG超过该限制，则中止提交
 
 ### 优点
 
@@ -76,7 +77,9 @@ ht-degree: 0%
 
 ## 可用的Rake任务
 
-此存储库使用`adobe-comdox-exl-rake-tasks` gem提供的Rake任务。 要查看所有可用任务，请运行：
+此存储库使用
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+宝石。要查看所有可用任务，请运行：
 
 ```bash
 cd _jekyll
