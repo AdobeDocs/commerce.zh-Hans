@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: eb561a73951ba42542a8b08340a7df9cc30477d3
+source-git-commit: b05e2183cc0e4b8352a150df9dabfc9dfdb31750
 workflow-type: tm+mt
-source-wordcount: 4657
+source-wordcount: 5265
 ht-degree: 0%
 
 ---
@@ -57,13 +57,42 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
+### 使用REST编辑订单
+
+>[!IMPORTANT]
+>
+>默认情况下，此功能处于禁用状态。 要启用此功能，请联系您的Adobe Commerce客户成功经理或创建支持工单。
+
+新的REST API端点复制[!DNL Commerce Admin] [!UICONTROL **编辑顺序**]&#x200B;功能，该功能允许集成以编程方式编辑顺序：
+
+| 方法 | 端点 | 描述 |
+| --- | --- | --- |
+| `POST` | `/V1/orders/{orderId}/edit/start` | 将订单复制到新的可编辑购物车中并返回购物车ID。 |
+| `POST` | `/V1/orders/{orderId}/edit/submit` | 将修改后的购物车作为新订单提交并取消原始订单。 |
+
+调用`edit/start`后，使用标准购物车REST端点修改返回的购物车，然后调用`edit/submit`。 新订单会继承原始订单的付款方式，除非您通过购物车改写原始订单，并且新订单会创建为已取消原始订单的链接替代订单。 两个端点都需要`Magento_Sales::actions_edit` ACL资源。<!-- ACCS-1284 -->
+
 ### 按公司筛选订单和发票
 
 `GET /V1/orders`和`GET /V1/invoices` REST API端点现在支持按`company_id`和`company_name`进行筛选，从而使B2B集成能够在单个请求中检索特定公司的订单或发票。<!-- ACCS-1111, CCSAAS-5076 -->
 
-### 通过API列出自定义电子邮件模板
+### 每个文件导入更多优惠券代码
 
-新的`GET /V1/custom-email/templates` REST API端点返回您的[自定义电子邮件模板](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)，包括每个模板的ID、代码和主题。 集成可以使用返回的模板ID与`POST /V1/custom-email/send`端点，而不是手动查找该ID。<!-- CCSAAS-5089 -->
+通过联系您的Adobe Commerce客户成功经理或创建支持票证，可以调整每文件批量优惠券导入上限。<!-- CCSAAS-5176 -->
+
+### 通过API管理自定义电子邮件模板
+
+以下新的REST API端点允许集成列出、检索和创建[自定义电子邮件模板](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)：
+
+| 方法 | 端点 | 描述 |
+| --- | --- | --- |
+| `GET` | `/V1/custom-email/templates` | 列出您的自定义电子邮件模板，并返回每个模板的ID、代码、主题和类型。 |
+| `GET` | `/V1/custom-email/templates/{id}` | 检索单个模板，包括其正文和样式。 |
+| `POST` | `/V1/custom-email/templates` | 创建自定义电子邮件模板并返回其服务器分配的ID。 |
+
+将返回的模板ID与`POST /V1/custom-email/send`端点一起使用，而不是手动查找该ID。
+
+所有`custom-email`端点都需要访问`Marketing > Communications > Email template` [角色资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources)。<!-- CCSAAS-5089, CCSAAS-5090 -->
 
 ### 通过REST API管理整个订单链
 
@@ -85,6 +114,26 @@ ht-degree: 0%
 | `GET` | `/V1/orderChain/{id}/statuses` | 检索当前订单状态。 |
 
 支持对发票、装运、贷项通知单和退货进行筛选的`GET`端点现在支持`order_original_id`的筛选。 按`order_original_id`过滤可返回有关整个订单链的详细信息，而不仅仅是单个订单的详细信息。 支持此功能的端点示例为`GET /V1/invoices`。<!-- ACCS-1004, ACCS-1005 -->
+
+### 按自定义属性值搜索顺序网格
+
+>[!IMPORTANT]
+>
+>默认情况下，此功能处于禁用状态。 要启用此功能，请联系您的Adobe Commerce客户成功经理或创建支持工单。
+
+商家现在可以通过按顺序自定义属性存储的值筛选[!DNL Commerce Admin]顺序网格。 订单网格筛选器行中提供了&#x200B;[!UICONTROL **自定义属性**]&#x200B;筛选器。<!-- ACCS-923 -->
+
+### 在购物车项目上设置指派的库存来源
+
+新的`setNominatedSourceOnCartItems` GraphQL突变将特定库存来源分配给购物车项目，支持店内提货(BOPIS)和发货商店等方案。 该变异接受`cart_id`和项列表，每个项均具有`cart_item_uid`和`source_code`，并返回具有结构化错误代码的`rejected_items`： `UNKNOWN_SOURCE`、`SOURCE_DISABLED`、`NOT_ENOUGH_QTY`或`SKU_SOURCE_CONFLICT`。 购物车中的每个SKU解析为单个指派源，传递null或空`source_code`可清除指派。<!-- ACCS-932 -->
+
+### 订阅与提醒规则匹配的购物车事件
+
+电子邮件提醒规则运行其匹配逻辑后，会发出新的`observer.reminder_matched_carts`事件，其中携带有关匹配购物车的信息。 集成可以订阅此事件并将数据转发到外部系统，例如营销平台，而不是依赖本机提醒电子邮件。<!-- CCSAAS-5173 -->
+
+### 按区域或模板禁止事务性电子邮件
+
+新的&#x200B;[!UICONTROL **电子邮件抑制**]&#x200B;配置（[!UICONTROL **商店**] > [!UICONTROL **配置**] > [!UICONTROL **Adobe服务**] > [!UICONTROL **电子邮件抑制**]）允许管理员选择性地停止[!DNL Commerce]发送事务性电子邮件。 您可以按功能区域（如客户帐户、Order Management、退货、结帐、营销或B2B）或模板标识符的精确列表来禁止发送电子邮件。<!-- ACCS-1025 -->
 
 ### 在管理员中查看订单修改历史记录
 
@@ -109,6 +158,28 @@ ht-degree: 0%
 * 修复了[!DNL Commerce Admin]中左侧导航菜单可能消失的问题。<!-- ACCS-1035 -->
 
 * 提高了在共享目录中分配和取消分配的性能。<!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
+
+* 改进了[!DNL AEM Assets]集成性能。<!-- ACAP-1242 -->
+
+* 修复了将简单产品SKU添加到[!DNL Commerce Admin]中的可配置产品时可能发生的错误。<!-- ACCS-1132 -->
+
+* 修复了消息队列在积累过多过期记录时可能停止处理新消息的问题。<!-- ACCS-1292 -->
+
+* 修复了管理员订单创建失败并出现“SKU在共享目录中不可用”错误的问题。<!-- ACCS-1318 -->
+
+* 解决了创建或编辑捆绑产品时发生的崩溃。<!-- CCSAAS-5211 -->
+
+* 修复了以下问题：订单下达未在指定来源为使用店内装货或发货商店的物料预留库存。<!-- ACCS-1374 -->
+
+* 过时的自定义费用现在可从购物车查询响应中清除。<!-- ACCS-1400 -->
+
+* 解决了[!DNL AEM Assets]集成中产品资产角色属性在目录导出期间丢失区域设置数据的问题。<!-- ACCS-1401 -->
+
+* 改进了保存集成时收到的警告，该警告指示未启用[!DNL Dynamic Media]。<!-- ACAP-1298 -->
+
+* 现在，当您订阅事件时，事件名称和别名字段会验证为小写。<!-- CEXT-6164 -->
+
+* 现在，在保存条件webhook时，将验证Webhook正则表达式规则模式。<!-- CEXT-6287 -->
 
 {{accs-release}}
 
@@ -598,11 +669,11 @@ mutation {
 
 * [!DNL Commerce Storefront on Edge Delivery Services]现在包含[B2B放置组件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=zh-Hans)。 以下B2B下拉列表现已可用：
 
-   * **[公司管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=zh-Hans)** — 启用Adobe Commerce店面的公司配置文件管理和基于角色的权限。
-   * **[公司切换器](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=zh-Hans)** — 为用户提供UI组件，以便在其关联的多个公司之间进行切换。
-   * **[采购订单](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=zh-Hans)** — 管理B2B交易的采购订单工作流、审批规则和采购订单历史记录。
-   * **[报价管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=zh-Hans)** — 为具有报价请求、洽谈和批准工作流的B2B客户启用可协商报价。
-   * **[申购单列表](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=zh-Hans)** — 提供用于创建和管理重复购买和批量订购的申购单列表的工具。
+  * **[公司管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=zh-Hans)** — 启用Adobe Commerce店面的公司配置文件管理和基于角色的权限。
+  * **[公司切换器](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=zh-Hans)** — 为用户提供UI组件，以便在其关联的多个公司之间进行切换。
+  * **[采购订单](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=zh-Hans)** — 管理B2B交易的采购订单工作流、审批规则和采购订单历史记录。
+  * **[报价管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=zh-Hans)** — 为具有报价请求、洽谈和批准工作流的B2B客户启用可协商报价。
+  * **[申购单列表](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=zh-Hans)** — 提供用于创建和管理重复购买和批量订购的申购单列表的工具。
 
 * 发布了B2B店面兼容包。 此包增强了[!DNL Adobe Commerce] B2B GraphQL架构，以帮助改进B2B系统上的开发。
 

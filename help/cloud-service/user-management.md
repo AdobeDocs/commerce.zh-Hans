@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 09692e5e2630568a48d14f727930d324c6932ca6
 workflow-type: tm+mt
-source-wordcount: 1822
+source-wordcount: 1816
 ht-degree: 0%
 
 ---
@@ -58,10 +58,10 @@ ht-degree: 0%
 * [**开发人员**](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} — 开发人员具有用户权限，并且作为开发人员用户添加到Commerce实例。 他们可以使用[[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[配置事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[创建Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
 
 * 管理员 — 有不同类型的管理员角色：
-   * [系统管理员](https://helpx.adobe.com/cn/enterprise/using/admin-roles.html){target="_blank"} — 系统管理员可以通过Admin Console访问组织中的所有产品和产品配置文件。
-   * [产品管理员](#add-a-product-admin) — 产品管理员可以在[!DNL Adobe Admin Console]中[管理产品的用户、角色和权限](#add-users)，在Commerce管理员中[管理用户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
-   * [产品配置文件管理员](#add-developers-and-product-profile-admins) — 产品配置文件管理员无权访问Adobe Commerce管理员，但可以在[!DNL Adobe Admin Console]中管理产品的用户。
-   * 支持管理员 — 支持管理员可以创建和管理支持工单。
+  * [系统管理员](https://helpx.adobe.com/cn/enterprise/using/admin-roles.html){target="_blank"} — 系统管理员可以通过Admin Console访问组织中的所有产品和产品配置文件。
+  * [产品管理员](#add-a-product-admin) — 产品管理员可以在[!DNL Adobe Admin Console]中[管理产品的用户、角色和权限](#add-users)，在Commerce管理员中[管理用户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
+  * [产品配置文件管理员](#add-developers-and-product-profile-admins) — 产品配置文件管理员无权访问Adobe Commerce管理员，但可以在[!DNL Adobe Admin Console]中管理产品的用户。
+  * 支持管理员 — 支持管理员可以创建和管理支持工单。
 
 >[!NOTE]
 >
@@ -194,49 +194,49 @@ Admin Console中的![开发人员和管理员选项卡选项](./assets/tab-selec
 **用户**
 
 * 目录
-   * 库存
-      * 产品
-         * 读取产品价格
+  * 库存
+    * 产品
+      * 读取产品价格
 
 **开发人员**
 
 * 目录
-   * 库存
-      * 产品
-         * 读取产品价格
+  * 库存
+    * 产品
+      * 读取产品价格
 * 系统
-   * 数据传输
-      * 导入历史记录
+  * 数据传输
+    * 导入历史记录
 * Adobe IO事件配置
-   * 配置检查
-   * 创建事件提供程序
-   * 配置更新
-   * 同步事件
-   * 获取事件提供程序列表
+  * 配置检查
+  * 创建事件提供程序
+  * 配置更新
+  * 同步事件
+  * 获取事件提供程序列表
 * 事件框架
-   * 事件列表
-   * 测试事件连接
-   * 订阅事件
-   * 取消订阅事件
-   * 事件状态
-   * 用于获取事件订阅的API
-   * 查看事件订阅管理UI
-   * 创建事件订阅管理UI
-   * 请求新的事件管理员UI
+  * 事件列表
+  * 测试事件连接
+  * 订阅事件
+  * 取消订阅事件
+  * 事件状态
+  * 用于获取事件订阅的API
+  * 查看事件订阅管理UI
+  * 创建事件订阅管理UI
+  * 请求新的事件管理员UI
 * Webhooks
-   * Webhooks数字签名
-      * Webhooks数字签名设置
-      * Webhooks数字签名生成密钥
-   * Webhooks管理
-      * Webhooks网格
-      * Webhooks编辑
-      * 测试Webhook
-      * API订阅webhook
-      * 从webhook取消订阅API
-      * Webhooks列表
-      * 请求新Webhook
-      * Webhooks日志
-      * 获取Webhook列表
+  * Webhooks数字签名
+    * Webhooks数字签名设置
+    * Webhooks数字签名生成密钥
+  * Webhooks管理
+    * Webhooks网格
+    * Webhooks编辑
+    * 测试Webhook
+    * API订阅webhook
+    * 从webhook取消订阅API
+    * Webhooks列表
+    * 请求新Webhook
+    * Webhooks日志
+    * 获取Webhook列表
 
 **管理员**
 
@@ -256,13 +256,13 @@ Admin Console中的![开发人员和管理员选项卡选项](./assets/tab-selec
 >
 >要同时添加多个用户，您可以执行[批量CSV上传](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html){target="_blank"}。
 >
->您还可以通过创建[用户组](https://helpx.adobe.com/cn/enterprise/using/user-groups.html){target="_blank"}将多个用户添加到角色。 然后，您可以将&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;产品添加到用户组。
+>您还可以通过创建[用户组](https://helpx.adobe.com/cn/enterprise/using/user-groups.html){target="_blank"}将多个用户添加到角色。 然后，您可以将&#x200B;[!DNL **Adobe Experience Manager as a Cloud Service**]&#x200B;产品添加到用户组。
 
 1. 导航到<https://adminconsole.adobe.com>并使用您的Adobe ID登录。
 
 1. 选择您的组织。
 
-1. 在&#x200B;[!UICONTROL **产品**]&#x200B;选项卡的&#x200B;[!UICONTROL **产品和服务**]&#x200B;下，选择&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;产品。
+1. 在&#x200B;[!UICONTROL **产品**]&#x200B;选项卡的&#x200B;[!UICONTROL **产品和服务**]&#x200B;下，选择&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service**]&#x200B;产品。
 
    Admin Console中的![AEM Cloud Manager产品选择](./assets/backend-aem.png){width="600" zoomable="yes"}
 
@@ -291,7 +291,7 @@ Admin Console中的![开发人员和管理员选项卡选项](./assets/tab-selec
 
 1. 单击&#x200B;[!UICONTROL **保存**]。
 
-要确认用户具有访问权限，请单击用户的名称以打开其配置文件页面。 在&#x200B;[!UICONTROL **Products**]&#x200B;部分中，[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;产品下的&#x200B;[!UICONTROL **Completed**]&#x200B;应该为。 添加用户后，可能需要几秒钟才能看到其配置文件上的状态更新。 刷新页面可查看已更新的状态。
+要确认用户具有访问权限，请单击用户的名称以打开其配置文件页面。 在&#x200B;[!UICONTROL **Products**]&#x200B;部分中，[!UICONTROL **Adobe Experience Manager as a Cloud Service**]&#x200B;产品下的&#x200B;[!UICONTROL **Completed**]&#x200B;应该为。 添加用户后，可能需要几秒钟才能看到其配置文件上的状态更新。 刷新页面可查看已更新的状态。
 
 ![显示已完成产品访问状态的用户配置文件](./assets/product-access.png){width="600" zoomable="yes"}
 
