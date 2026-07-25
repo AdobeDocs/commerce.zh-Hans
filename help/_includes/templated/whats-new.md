@@ -1,7 +1,7 @@
 ---
-source-git-commit: 26e80644cd94f01e0cd310ff2197dc01de6c6819
+source-git-commit: 64d5e1d1ee41241bce36faa31db7c436e018037c
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1665'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年7月23日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新了Adobe Commerce as a Cloud Service的沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月15日
 
@@ -399,66 +421,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月22日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>添加了有关2026年5月20日版本中<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a>和Commerce <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/release-notes">目录服务</a>的API更新的发行说明，该版本现在在检索产品数据时强制实施记录的每个请求100-SKU限制。</p>
-</td>
-      <td>
-        技术
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/342a3015f743e12b7089e4d430a517804a7cd40c">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>在<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost">添加规则</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/best-practice">最佳实践</a>中记录了[!DNL Live Search]的智能排名提升（每个规则可配置的行为权重，默认为5.0），并交叉引用了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/live-search-admin/category-merch">类别促销</a>。 在<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">创建和管理</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/best-practice">促销规则最佳实践</a>中为[!DNL Adobe Commerce Optimizer]添加了相同的指南。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/40b4528d417a4df09ac9ae9fb0d97b0f678b55ac">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月19日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>AEM Assets集成指南介绍了编辑器如何在<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/release-notes">AEM Assets集成v1.3.6 </a>中设置<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">替换文本</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d3dfbc59e72c00c3552af5805b57c69e60b38b4">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">提交</a></td>
     </tr>
   </tbody>
 </table>
