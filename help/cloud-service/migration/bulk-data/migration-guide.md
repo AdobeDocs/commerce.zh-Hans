@@ -54,7 +54,7 @@ ht-degree: 0%
 
 设置批量数据迁移的环境：
 
->[!VIDEO](https://video.tv.adobe.com/v/3496121)
+>[!VIDEO](https://video.tv.adobe.com/v/3496130?captions=chi_hans)
 
 1. 提取`ccsaas-migration-tools.tar.gz`的内容。
 
@@ -97,7 +97,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### 配置源OAuth凭据
 
->[!VIDEO](https://video.tv.adobe.com/v/3496142)
+>[!VIDEO](https://video.tv.adobe.com/v/3496150?captions=chi_hans)
 
 这四个值表示从迁移工具到源存储API的请求。 若要获取它们，请打开源[!UICONTROL Admin]，然后转到&#x200B;[!UICONTROL **系统**] > [!UICONTROL **扩展**] > [!UICONTROL **集成**]。 创建或打开集成，然后将值复制到`.env`：
 
@@ -142,7 +142,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### 配置目标SaaS和IMS凭据
 
->[!VIDEO](https://video.tv.adobe.com/v/3496167)
+>[!VIDEO](https://video.tv.adobe.com/v/3496175?captions=chi_hans)
 
 这些是目标的[!DNL Adobe Commerce as a Cloud Service] IMS和API设置。 您需要环境的租户ID、组织ID、IMS OAuth服务器到服务器凭据以及正确的IMS主机。 与您的Adobe团队协调以访问组织、租户和配置文件。 请勿尝试推断或估计敏感值。
 
@@ -247,7 +247,7 @@ CDMS_PORT=443
 
 ## 配置数据库连接文件
 
->[!VIDEO](https://video.tv.adobe.com/v/3496152)
+>[!VIDEO](https://video.tv.adobe.com/v/3496165?captions=chi_hans)
 
 `.my.cnf`文件为迁移工具的提取端提供[!DNL MySQL]连接设置。 通过将`.my.cnf.example`复制到项目根目录中的`.my.cnf`来创建它。 分区名称必须与`.env`中的`SOURCE_CONNECTION_NAME`匹配。
 
