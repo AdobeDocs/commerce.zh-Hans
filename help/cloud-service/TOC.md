@@ -4,12 +4,10 @@ breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: 本指南提供了有关使用 [!DNL Adobe Commerce as a Cloud Service]的详细说明。
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-source-git-commit: f25630f9c6f118e6dd714757ed068f2d2e6e9e15
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
 workflow-type: tm+mt
-source-wordcount: 188
+source-wordcount: 222
 ht-degree: 4%
 
 ---
@@ -24,34 +22,39 @@ ht-degree: 4%
 - [店面](storefront.md)
 - [用例](use-cases.md)
 - 安全性 {#security}
-   - [概述](security/overview.md)
-   - [分担责任](security/shared-responsibility.md)
-   - [身份和访问管理](security/access-control.md)
-   - [法规遵从性和认证](security/compliance.md)
-   - [安全架构和数据流](security/data-flow.md)
+  - [概述](security/overview.md)
+  - [分担责任](security/shared-responsibility.md)
+  - [身份和访问管理](security/access-control.md)
+  - [法规遵从性和认证](security/compliance.md)
+  - [安全架构和数据流](security/data-flow.md)
 - [将文件添加到产品](product-files.md)
 - [可观测性](observability.md)
 - 迁移 {#migration}
-   - [概述](migration/overview.md)
-   - 迁移工具 {#migration-tools}
-      - [批量数据迁移工具](migration/bulk-data.md)
-      - [迁移评估](migration/assessment.md)
-      - [编码工具](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-   - {hide-from-toc}[文档RAG服务](migration/doc-rag.md)
-- [客户登录](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+  - [概述](migration/overview.md)
+  - 迁移工具 {#migration-tools}
+    - 批量数据迁移工具 {#bulk-data}
+      - [概述](migration/bulk-data/migration-tool.md)
+      - [客户就绪性核对清单](migration/bulk-data/readiness-checklist.md)
+      - [验证迁移服务访问权限](migration/bulk-data/cdms-access.md)
+      - [运行批量数据迁移](migration/bulk-data/migration-guide.md)
+      - [视频演练](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
+    - [迁移评估](migration/assessment.md)
+    - [编码工具](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
+  - {hide-from-toc}[文档RAG服务](migration/doc-rag.md)
+- [客户登录](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [礼品卡帐户REST端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [通过REST触发的电子邮件](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - 教程 {#tutorials}
-   - [教程先决条件](tutorials/tutorial-prerequisites.md)
-   - [评级扩展教程](tutorials/ratings-extension.md)
-   - [配送方法扩展教程](tutorials/shipping-method-extension.md)
-   - {hide-from-toc}[投放评估扩展教程](tutorials/delivery-estimates-extension.md)
-   - {hide-from-toc}[Stock通知扩展教程](tutorials/in-stock-notification-extension.md)
-   - {hide-from-toc}[产品审核扩展教程](tutorials/product-reviews-extension.md)
+  - [教程先决条件](tutorials/tutorial-prerequisites.md)
+  - [评级扩展教程](tutorials/ratings-extension.md)
+  - [配送方法扩展教程](tutorials/shipping-method-extension.md)
+  - {hide-from-toc}[投放评估扩展教程](tutorials/delivery-estimates-extension.md)
+  - {hide-from-toc}[Stock通知扩展教程](tutorials/in-stock-notification-extension.md)
+  - {hide-from-toc}[产品审核扩展教程](tutorials/product-reviews-extension.md)
 - 架构 {#schemas}
-   - [GraphQL架构](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
-   - [REST API架构](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
+  - [GraphQL架构](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
+  - [REST API架构](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [开发人员代理](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [视频教程](https://experienceleague.adobe.com/zh-hans/playlists/accs-getting-started-product-overview){target="_blank"}
+- [视频教程](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
