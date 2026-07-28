@@ -1,7 +1,7 @@
 ---
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -104,3 +104,9 @@ Adobe Commerce身份管理和身份验证由Adobe Identity Management System (IM
 | 服务 | 店面 |
 | --- | --- |
 | [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) |
+
+## 批量数据迁移工具提前访问 {#bulk-data-early-access}
+
+>[!IMPORTANT]
+>
+>批量数据迁移工具当前处于早期访问状态。 只能通过Commerce部署工程(CDE)参与流程提供访问。 有关工具及其资格要求的概述，请参阅[批量数据迁移工具](../cloud-service/migration/bulk-data/migration-tool.md)。
