@@ -2,7 +2,7 @@
 title: 客户准备清单
 description: 了解如何准备将数据批量迁移到Adobe Commerce as a Cloud Service，其中包含一个准备工作清单，涵盖参与、计算机、源和目标。
 feature: Cloud
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:18.443Z'
@@ -64,7 +64,7 @@ ht-degree: 0%
 - **可写工作目录** — 迁移用户必须完全可写用于提取迁移工具的目录。 该工具在执行期间写入日志、缓存、[!DNL Composer]依赖项和生成的文件。
 - **足够的磁盘空间** — 确保有足够的可用磁盘空间用于提取的数据、[!DNL Docker]映像和日志输出。 空间需求因源数据库的大小而异。
 - **本地源：从迁移计算机直接连接数据库** — 对于本地源实例，迁移计算机必须具有对源数据库的直接网络访问权限。 该工具不会自动建立本地数据库连接。 在运行任何迁移命令之前，请确认可从迁移计算机访问主机、端口和凭据。
-- **已安装云CLI并注册了SSH密钥** — 对于[!DNL Adobe Commerce on Cloud]源实例，迁移计算机上必须安装[云CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)。 您还必须在帐户中注册SSH公钥。 有关说明，请参阅[安全连接指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)。
+- **已安装云CLI并注册了SSH密钥** — 对于[!DNL Adobe Commerce on Cloud]源实例，迁移计算机上必须安装[云CLI](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)。 您还必须在帐户中注册SSH公钥。 有关说明，请参阅[安全连接指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/secure-connections)。
 
 ### Source实例
 

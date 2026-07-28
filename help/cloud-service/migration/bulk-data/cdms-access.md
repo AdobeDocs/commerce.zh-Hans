@@ -2,7 +2,7 @@
 title: 验证迁移服务访问权限
 description: 了解如何验证对Commerce数据迁移服务API的端到端访问权限，确认网络可达性、IMS身份验证和租户授权。
 feature: Cloud
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:18:53.554Z'

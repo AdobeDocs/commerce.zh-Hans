@@ -2,7 +2,7 @@
 title: 运行批量数据迁移
 description: 了解如何使用CLI配置并运行从Adobe Commerce PaaS或内部部署实例到Adobe Commerce as a Cloud Service的批量数据迁移。
 feature: Cloud
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
@@ -130,7 +130,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->如果这是您第一次使用Cloud CLI，则还必须将SSH公钥添加到您的帐户。 有关说明，请参阅[安全连接指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)。
+>如果这是您第一次使用Cloud CLI，则还必须将SSH公钥添加到您的帐户。 有关说明，请参阅[安全连接指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/secure-connections)。
 
 ### 调整Commerce管理设置
 
