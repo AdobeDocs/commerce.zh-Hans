@@ -5,16 +5,12 @@ seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
 exl-id: e42101fa-9c30-482c-a649-44dc35376abb
 TQID: https://experienceleague.adobe.com/WnL4dJbZV0acHT5kpEAOyTVjhzW23RjHbQFVdDl4HDk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
 workflow-type: tm+mt
-source-wordcount: 758
+source-wordcount: 775
 ht-degree: 0%
 
 ---
@@ -37,19 +33,19 @@ ht-degree: 0%
 
 ## 要求
 
-- Adobe Commerce 2.4.4+
+- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+。 有关详细信息，请参阅[系统要求](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
 - 您的Adobe Commerce环境必须启用并配置以下任一项Commerce服务：
 
-   - [实时搜索](../live-search/install.md)
-   - [产品推荐](../product-recommendations/install-configure.md)
-   - [目录服务](../catalog-service/installation.md)
+  - [实时搜索](../live-search/install.md)
+  - [产品推荐](../product-recommendations/install-configure.md)
+  - [目录服务](../catalog-service/installation.md)
 
 ## 安装
 
 Catalog Adapter扩展是一个Composer中继，用于安装以下模块：
 
 - **价格索引器禁用** — 此模块禁用Commerce应用程序中的价格索引，以便通过SaaS价格索引来提供价格。 安装SaaS价格索引扩展后，Commerce应用程序中的产品价格索引器无法打开。
-- **价格提供程序** — 此模块提供Adobe Commerce服务产品的价格。 它形成搜索查询并获取前端产品的价格。
+- **价格提供程序** — 此模块提供Adobe Commerce服务产品的价格。 它生成搜索查询并获取前端产品的价格。
 - **目录服务搜索适配器** — 此模块将价格从Adobe Commerce应用程序传输到Adobe Commerce服务，以响应产品搜索请求。
 
 ## 安装步骤
@@ -64,7 +60,7 @@ Catalog Adapter扩展是一个Composer中继，用于安装以下模块：
 
    >[!NOTE]
    >
-   >有关在本地管理Commerce项目环境的信息，请参阅《云基础架构用户指南》_上的_ Adobe Commerce中的[使用CLI管理分支](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/cli-branches)。
+   >有关在本地管理Commerce项目环境的信息，请参阅《云基础架构用户指南》_上的_ Adobe Commerce中的[使用CLI管理分支](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches)。
 
 1. 查看要使用Adobe Commerce Cloud CLI更新的环境分支。
 
@@ -94,7 +90,7 @@ Catalog Adapter扩展是一个Composer中继，用于安装以下模块：
    git push origin <branch-name>
    ```
 
-   将更新推送到云环境会启动[Commerce云部署流程](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/deploy/process)以应用更改。 从[部署日志](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)中检查部署状态。
+   将更新推送到云环境会启动[Commerce云部署流程](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process)以应用更改。 从[部署日志](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)中检查部署状态。
 
 >[!TAB 内部部署]
 
@@ -144,7 +140,7 @@ bin/magento index:reindex catalog_product_price
 
 ## 禁用Headless店面的产品价格索引器方案
 
-如果您有Headless Commerce实例，则可能需要禁用Adobe Commerce产品价格索引器以减少Adobe Commerce实例的负载。 您可以通过安装`magento/module-price-indexer-disabler`模块来完成此任务：
+如果您有Headless Commerce实例，请禁用Adobe Commerce产品价格索引器以减少Adobe Commerce实例的负载。 您可以通过安装`magento/module-price-indexer-disabler`模块来完成此任务：
 
 ```bash
 composer require magento/module-price-indexer-disabler
@@ -171,7 +167,7 @@ composer require magento/module-price-indexer-disabler
 
 ### Headless Commerce实例
 
-- 具有安装了所需服务（实时搜索、产品推荐、目录服务）的Headless Commerce实例的商家
+- 使用安装了所需服务（实时搜索、产品推荐、目录服务）的Headless Commerce实例的商家
 - 不依赖默认的Adobe Commerce产品价格索引器
 
 1. 从[!DNL Catalog Adapter]包安装`magento/module-price-indexer-disabler`模块。

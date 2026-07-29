@@ -4,25 +4,14 @@ description: 了解如何将Adobe Experience Manager Assets与您的 [!DNL Comme
 feature: CMS, Media, Configuration, Integration
 exl-id: f450752a-bef1-419e-ad14-ff8879ab204b
 TQID: https://experienceleague.adobe.com/CTDmM7Ox2rQ-55F1BVTg-C8DPBEuEpzFxXGtWpnjXKs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: da3860b0-d637-47df-bef0-273751180266
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11id: da3860b0-d637-47df-bef0-273751180266id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
 workflow-type: tm+mt
-source-wordcount: 1081
+source-wordcount: 1090
 ht-degree: 1%
 
 ---
@@ -45,29 +34,27 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 ## 使用该集成的要求
 
-若要将此集成与[产品可视化图表或AEM Assets](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets)一起使用，企业必须满足以下要求：
+若要将此集成与[产品可视化图表或AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets)一起使用，企业必须满足以下要求：
 
 >[!BEGINTABS]
 
 >[!TAB 产品视觉效果]
 
-[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}适用于Adobe Commerce、由AEM Assets提供支持的产品可视化以及[AEM Dynamic Media](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效许可证（这些许可证随[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起现成可用）。
+[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}适用于Adobe Commerce、由AEM Assets提供支持的产品可视化以及[AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效许可证（这些许可证随[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起现成可用）。
 
 >[!TAB AEM Assets]
 
-[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}Adobe Commerce、Adobe Experience Manager Assets和[AEM Dynamic Media](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效许可证。
+[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}Adobe Commerce、Adobe Experience Manager Assets和[AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效许可证。
 
 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"} Adobe Commerce 2.4.5+
 
-* PHP 8.1、8.2、8.3和8.4
+* Adobe Commerce 2.4.5+。 有关详细信息，请参阅[系统要求](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
 
-* Composer 2.x
-
-仅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} Adobe Experience Manager已配置[Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/overview)
+仅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} Adobe Experience Manager已配置[Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/overview)
 
 >[!ENDTABS]
 
-配置集成的Adobe Commerce用户必须具有对配置了AEM Assets项目的[IMS组织](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)的访问权限。
+配置集成的Adobe Commerce用户必须具有对配置了AEM Assets项目的[IMS组织](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)的访问权限。
 
 >[!BEGINSHADEBOX]
 
@@ -79,7 +66,7 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 ![检查](assets/icon-check.png) **Adobe托管支持模型** - Adobe直接处理协助和疑难解答，从而提供可靠的支持并简化问题解决方案。
 
-![检查](assets/icon-check.png) **Adobe Storefront Builder功能** — 数字资源管理(DAM)解决方案允许在[Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=zh-Hans#userlabs-commerce-genai-product-visuals)上使用图像、视频和其他媒体等资源。
+![检查](assets/icon-check.png) **Adobe Storefront Builder功能** — 数字资源管理(DAM)解决方案允许在[Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#userlabs-commerce-genai-product-visuals)上使用图像、视频和其他媒体等资源。
 
 >[!ENDSHADEBOX]
 
@@ -89,11 +76,11 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 >[!BEGINTABS]
 
->[!TAB 云或本地教程上的Adobe Commerce]
+>[!TAB 云或本地教程]上的Adobe Commerce
 
 要了解Adobe Commerce和AEM Assets如何协作以简化内容工作流，请观看此视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/3447898?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3447837)
 
 >[!TAB Adobe Commerce as a Cloud Service教程]
 
@@ -107,7 +94,7 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 安装和配置AEM Assets集成的流程取决于您的Adobe Commerce部署。 在所有情况下，您首先要配置AEM Assets，然后将Commerce连接到该网站。
 
-要了解集成添加到AEM Assets环境中的命名空间、元数据架构和&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡，请在开始之前查看AEM Assets[&#128279;](metadata.md)中的Commerce元数据。
+要了解集成添加到AEM Assets环境中的命名空间、元数据架构和&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡，请在开始之前查看AEM Assets](metadata.md)中的[Commerce元数据。
 
 选择您的部署以按照以下顺序执行所需步骤：
 
@@ -159,4 +146,4 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 ## 支持
 
-如果您需要本指南中未涉及的信息或问题，请联系您的AEM Assets集成销售代表或创建[支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)以获取其他帮助。
+如果您需要本指南中未涉及的信息或问题，请联系您的AEM Assets集成销售代表或创建[支持票证](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)以获取其他帮助。
