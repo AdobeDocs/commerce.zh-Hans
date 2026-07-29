@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: b05e2183cc0e4b8352a150df9dabfc9dfdb31750
+source-git-commit: 155703001fc049470266874e0f519ab060248b31
 workflow-type: tm+mt
-source-wordcount: 5265
+source-wordcount: 5259
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ ht-degree: 0%
 
 ## 2026年7月 — 发行说#1 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生产]{type=Neutral tooltip="列出的项目当前在生产环境中可用。"}
 
-[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-以下项目目前仅在沙盒环境中可用，并计划于2026年7月28日移至生产环境。
+以下项目自2026年7月28日起可在生产环境中使用。
 
 >[!BEGINSHADEBOX]
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 >
 >默认情况下，此功能处于禁用状态。 要启用此功能，请联系您的Adobe Commerce客户成功经理或创建支持工单。
 
-新的REST API端点复制[!DNL Commerce Admin] [!UICONTROL **编辑顺序**]&#x200B;功能，该功能允许集成以编程方式编辑顺序：
+新[REST API端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)复制了[!DNL Commerce Admin] [!UICONTROL **编辑顺序**]&#x200B;功能，该功能允许集成以编程方式编辑顺序：
 
 | 方法 | 端点 | 描述 |
 | --- | --- | --- |
@@ -100,7 +100,7 @@ ht-degree: 0%
 >
 >此功能属于实验性质，必须通过联系您的Adobe Commerce客户成功经理或创建支持票证来启用。
 
-新的`orderChain` REST API端点允许集成使用其ID修改订单，并自动解析已编辑订单的完整链：
+新的[`orderChain` REST API端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)允许集成使用其ID修改订单，并自动解析已编辑订单的完整链：
 
 | 方法 | 端点 | 描述 |
 | --- | --- | --- |
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ### 按区域或模板禁止事务性电子邮件
 
-新的&#x200B;[!UICONTROL **电子邮件抑制**]&#x200B;配置（[!UICONTROL **商店**] > [!UICONTROL **配置**] > [!UICONTROL **Adobe服务**] > [!UICONTROL **电子邮件抑制**]）允许管理员选择性地停止[!DNL Commerce]发送事务性电子邮件。 您可以按功能区域（如客户帐户、Order Management、退货、结帐、营销或B2B）或模板标识符的精确列表来禁止发送电子邮件。<!-- ACCS-1025 -->
+新的[电子邮件抑制](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression)配置（[!UICONTROL **商店**] > [!UICONTROL **配置**] > [!UICONTROL **Adobe服务**] > [!UICONTROL **电子邮件抑制**]）允许管理员选择性地停止[!DNL Commerce]发送事务性电子邮件。 您可以按功能区域（如客户帐户、Order Management、退货、结帐、营销或B2B）或模板标识符的精确列表来禁止发送电子邮件。<!-- ACCS-1025 -->
 
 ### 在管理员中查看订单修改历史记录
 
