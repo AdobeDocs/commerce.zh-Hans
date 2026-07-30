@@ -4,10 +4,10 @@ description: 安装Payments Services扩展。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade, Paas
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Composer在初始安装[!DNL Adobe Commerce]期间使用这些密钥，或者在
 
 >[!NOTE]
 >
-> [!DNL Payment Services] 1.6.1与PHP版本7.x兼容。但是，强烈建议更新到最新的[!DNL Payment Services]版本。
+> [!DNL Payment Services] 1.6.1与PHP版本7.x兼容。 但是，强烈建议更新到最新的[!DNL Payment Services]版本。
 
 ## 升级扩展
 

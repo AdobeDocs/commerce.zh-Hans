@@ -5,14 +5,14 @@ exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 feature: Payments, Checkout, Paas, Saas
 source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
 
 # 使用[!DNL Payment Services]创建订单
 
-[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]允许您由商家为其需要帮助的客户直接从管理员完成订单。 **[!UICONTROL Create New Order]**&#x200B;表单包含完成正常结账流程所需的所有信息，包括包含信用卡信息的托管字段。 有关所需步骤的详细信息，请参阅[创建订单](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}。
+[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]允许您由商家为其需要帮助的客户直接从管理员完成订单。 **[!UICONTROL Create New Order]**&#x200B;表单包含完成正常结账流程所需的所有信息，包括包含信用卡信息的托管字段。 有关所需步骤的详细信息，请参阅[创建订单](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}。
 
 ## 托管的信用卡字段
 

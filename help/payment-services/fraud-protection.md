@@ -7,14 +7,14 @@ feature: Payments, Checkout, Configuration, Security, Paas, Saas
 exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
 source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
 # 有效保护欺诈行为
 
-您可以使用[!DNL Payment Services]Signifyd扩展[为](https://commercemarketplace.adobe.com/signifyd-module-connect.html)启用自动欺诈防护。
+您可以使用[Signifyd扩展](https://commercemarketplace.adobe.com/signifyd-module-connect.html)为[!DNL Payment Services]启用自动欺诈防护。
 
 Adobe Commerce支持Signifyd版本5.4.0及更高版本。 [!DNL Payment Services]支持身份验证前和身份验证后签名流程。
 
@@ -33,11 +33,11 @@ Signifyd/[!DNL Payment Services]集成提供信用卡、借记卡、保险存储
 使用Signfyd登录时，您必须：
 
 1. 联系Signid以设置新帐户。
-1. 列入允许列表默认情况下，Signifyd为[&#128279;](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md)，以确保Signifyd不会为其当前不支持的其他付款选项触发。 如果要禁止特定付款方式，则必须进行更改。
+1. 默认情况下，Signifyd为[&#128279;](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md)，以确保Signifyd不会为其当前不支持的其他付款选项触发。 如果要禁止特定付款方式，则必须进行更改。
 1. 通过Signifyd确认贝宝不会拒绝可能由Signifyd批准的订单，具体方式是通过Paypal中的商家欺诈保护设置。
 1. 启用Signifyd扩展以与[!DNL Payment Services]兼容：
-   * 在[!DNL Payment Services]Live _模式下使用_&#x200B;时，Signifyd必须处于“生产”模式。
-   * 在[!DNL Payment Services]沙盒&#x200B;_模式下使用_&#x200B;时，Signifyd必须处于“测试”模式。
+   * 在&#x200B;_Live_&#x200B;模式下使用[!DNL Payment Services]时，Signifyd必须处于“生产”模式。
+   * 在&#x200B;_沙盒_&#x200B;模式下使用[!DNL Payment Services]时，Signifyd必须处于“测试”模式。
 
 ## 配置
 
