@@ -6,17 +6,13 @@ level: Intermediate
 feature: Payments, Checkout, Paas, Saas
 exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
 TQID: https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
 workflow-type: tm+mt
-source-wordcount: 454
+source-wordcount: 506
 ht-degree: 0%
 
 ---
@@ -35,7 +31,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   > 有关更多信息，请参阅我们的[Adobe Commerce服务连接器](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)教程视频。
+   > 有关更多信息，请参阅我们的[Adobe Commerce服务连接器](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)教程视频。
 
 1. 如果您已连接实例，请导航到[入门](onboard.md)页面以了解后续步骤。
 
@@ -49,11 +45,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> [!DNL Payment Services]在入门培训期间为其他[&#128279;](../payment-services/production.md#complete-merchant-onboarding)可用国家/地区提供[快速签出功能](../payment-services/payments-options.md)（付款选项的子集）。
+> [!DNL Payment Services]在入门培训期间为其他[可用国家/地区提供[快速签出功能](../payment-services/payments-options.md)（付款选项的子集）](../payment-services/production.md#complete-merchant-onboarding)。
 
 ### 哪个[!DNL Payment Services]选项适合您？
 
->[!VIDEO](https://video.tv.adobe.com/v/3447928?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
 
 有关设置[!DNL Payment Services]扩展的更多信息，请参阅[连接](connect.md)。
 
@@ -69,7 +65,7 @@ ht-degree: 0%
 
 ![检查](assets/icon-check.png)标准定价
 
-![检查](assets/icon-check.png) **在XX个国家/地区可用**
+![检查](assets/icon-check.png) **在200多个国家/地区可用**
 
 [![了解详情](assets/learn-more-button.svg)](onboard.md)
 
@@ -99,19 +95,19 @@ ht-degree: 0%
 
 ![检查](assets/icon-check.png)（L2/L3定价功能 — 仅限美国）
 
-![check](assets/icon-check.png) **仅适用于美国(US)、加拿大(CA)、澳大利亚(AUS)。 法国(FR)、英国(UK)**
+![check](assets/icon-check.png)在37个国家/地区可用。 澳大利亚、奥地利、比利时、保加利亚、加拿大、中国、塞浦路斯、捷克共和国、丹麦、爱沙尼亚、芬兰、法国、德国、希腊、香港、匈牙利、爱尔兰、意大利、日本、拉脱维亚、列支敦士登、立陶宛、卢森堡、马耳他、墨西哥、荷兰、挪威、波兰、葡萄牙、罗马尼亚、新加坡、斯洛伐克、斯洛文尼亚、西班牙、瑞典、联合王国、美国。 **美国（美国）、加拿大(CA)、澳大利亚(AU)、法国(FR)、英国(GB)、意大利(IT)、荷兰(NL)、德国(DE)的协议费率可用**
 
 [![了解详情](assets/learn-more-button.svg)](onboard.md)
 
 >[!ENDTABS]
 
-有关特定于发行版和版本的详细信息，请参阅[生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=zh-Hans)和[[!DNL Payment Services] 发行说明](release-notes.md)页面。
+有关特定于发行版和版本的详细信息，请参阅[生命周期策略](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)和[[!DNL Payment Services] 发行说明](release-notes.md)页面。
 
 要获取完整说明并开始入门流程，请参阅[开始使用 [!DNL Payment Services]](onboard.md)。
 
 ### 接受的信用卡和货币
 
-[!DNL Payment Services]接受可用国家的货币。 有关设置货币汇率的详细信息，请参阅[货币配置](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=zh-Hans)。
+[!DNL Payment Services]接受可用国家的货币。 有关设置货币汇率的详细信息，请参阅[货币配置](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html)。
 
 有关PayPal产品和服务可用的货币和支付方法的更多信息，请参阅以下页面：
 
