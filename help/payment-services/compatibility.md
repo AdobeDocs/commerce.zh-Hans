@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
 workflow-type: tm+mt
-source-wordcount: 454
+source-wordcount: 506
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 ![检查](assets/icon-check.png)标准定价
 
-![检查](assets/icon-check.png) **在XX个国家/地区可用**
+![检查](assets/icon-check.png) **在200多个国家/地区可用**
 
 [![了解详情](assets/learn-more-button.svg)](onboard.md)
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 ![检查](assets/icon-check.png)（L2/L3定价功能 — 仅限美国）
 
-![check](assets/icon-check.png) **仅适用于美国(US)、加拿大(CA)、澳大利亚(AUS)。 法国(FR)、英国(UK)**
+![check](assets/icon-check.png)在37个国家/地区可用。 澳大利亚、奥地利、比利时、保加利亚、加拿大、中国、塞浦路斯、捷克共和国、丹麦、爱沙尼亚、芬兰、法国、德国、希腊、香港、匈牙利、爱尔兰、意大利、日本、拉脱维亚、列支敦士登、立陶宛、卢森堡、马耳他、墨西哥、荷兰、挪威、波兰、葡萄牙、罗马尼亚、新加坡、斯洛伐克、斯洛文尼亚、西班牙、瑞典、联合王国、美国。 **美国（美国）、加拿大(CA)、澳大利亚(AU)、法国(FR)、英国(GB)、意大利(IT)、荷兰(NL)、德国(DE)的协议费率可用**
 
 [![了解详情](assets/learn-more-button.svg)](onboard.md)
 
