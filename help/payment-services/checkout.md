@@ -5,7 +5,7 @@ feature: Payments, Checkout, Paas, Saas
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
 source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ![签出时出错](assets/user-checkout-error.png "签出时出错"){width="600" zoomable="yes"}
 
-针对特定[订单](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=zh-Hans)，管理员中还会显示有关已取消订单的评论。
+针对特定[订单](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en)，管理员中还会显示有关已取消订单的评论。
 
 ![已取消订单管理员中的订单注释](assets/admin-checkout-error.png "已取消订单管理员中的订单注释"){width="600" zoomable="yes"}
 
