@@ -2,7 +2,7 @@
 title: 开始使用 [!DNL Adobe Commerce Optimizer Connector]
 description: 了解如何安装 [!DNL Adobe Commerce Optimizer Connector]、配置作用域导出设置、启用IMS身份验证以及验证目录同步。
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T16:55:50.934Z'
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
@@ -42,11 +42,11 @@ ht-degree: 0%
 
 ## 使用该集成的要求 {#requirements-to-use-the-integration}
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7+。 有关详细要求，请参阅[系统要求](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)。
+* [Adobe Commerce](https://business.adobe.com/cn/products/magento/magento-commerce.html) 2.4.7+。 有关详细要求，请参阅[系统要求](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/system-requirements)。
 
 * 具有已设置的沙盒实例的[!DNL Commerce Optimizer]许可证。
 
-* [身份验证密钥](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)以使用编辑器下载连接器中继包。
+* [身份验证密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)以使用编辑器下载连接器中继包。
 
 * 管理员访问[[!DNL Commerce Optimizer] 沙盒实例](../optimizer/get-started.md)。
 
@@ -54,9 +54,9 @@ ht-degree: 0%
 
 * Commerce管理员的管理员访问权限。
 
-* [对 [!DNL Adobe Commerce] 应用程序服务器](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)的命令行访问权限。
+* [对 [!DNL Adobe Commerce] 应用程序服务器](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/project/user-access)的命令行访问权限。
 
-* 开发人员对配置了[!DNL Commerce Optimizer]项目的[IMS组织](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations？)的访问权限。
+* 开发人员对配置了[!DNL Commerce Optimizer]项目的[IMS组织](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations？)的访问权限。
 
 >[!BEGINSHADEBOX]
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 * [!DNL Adobe Commerce Catalog Service] (`magento/catalog-service`, `magento/catalog-service-installer`)
 * **[!UICONTROL Data Management Dashboard]** (`magento-catalog-sync-admin`)
 
-与这些扩展关联的数据仍会在Commerce数据库中可用。 但是，在启用连接器时，不会将其导出到[!DNL Commerce Optimizer]。 要在启用连接器后实施这些扩展提供的Adobe Commerce搜索和促销功能，请从[[!DNL Commerce Optimizer] 管理员UI](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour)配置它们。
+与这些扩展关联的数据仍会在Commerce数据库中可用。 但是，在启用连接器时，不会将其导出到[!DNL Commerce Optimizer]。 要在启用连接器后实施这些扩展提供的Adobe Commerce搜索和促销功能，请从[[!DNL Commerce Optimizer] 管理员UI](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/overview#quick-tour)配置它们。
 
 >[!IMPORTANT]
 >
@@ -109,9 +109,9 @@ ht-degree: 0%
 >
 >有关详细的扩展安装说明，请参阅以下指南：
 >
->在云基础架构上的 [!DNL Adobe Commerce] 上[安装扩展](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>在云基础架构上的 [!DNL Adobe Commerce] 上[安装扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 >
->[在 [!DNL Adobe Commerce] 内部部署](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)上安装扩展
+>[在 [!DNL Adobe Commerce] 内部部署](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/extensions)上安装扩展
 
 ## 自定义Commerce范围导出配置 {#customize-the-commerce-scopes-export-configuration}
 
@@ -182,7 +182,7 @@ ht-degree: 0%
 
    ![[!DNL Commerce Optimizer]配置页面](./assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
-1. 从命令行中，[使用SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)连接到[!DNL Adobe Commerce]暂存环境。
+1. 从命令行中，[使用SSH](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/secure-connections)连接到[!DNL Adobe Commerce]暂存环境。
 
 1. 要配置集成，请运行以下[!DNL Adobe Commerce] CLI命令，将占位符值替换为[!DNL Commerce Optimizer]项目的值：
 
@@ -206,4 +206,4 @@ ht-degree: 0%
 
 1. **在[!DNL Edge Delivery Services]**&#x200B;上设置Commerce店面
 
-   要将店面连接到[!DNL Commerce Optimizer]实例并开始提供个性化的商务体验，请按照[店面设置文档](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}操作。
+   要将店面连接到[!DNL Commerce Optimizer]实例并开始提供个性化的商务体验，请按照[店面设置文档](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=zh-Hans){target="_blank"}操作。
