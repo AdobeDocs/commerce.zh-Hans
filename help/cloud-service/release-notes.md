@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ### 按区域或模板禁止事务性电子邮件
 
-新的[电子邮件抑制](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression)配置（[!UICONTROL **商店**] > [!UICONTROL **配置**] > [!UICONTROL **Adobe服务**] > [!UICONTROL **电子邮件抑制**]）允许管理员选择性地停止[!DNL Commerce]发送事务性电子邮件。 您可以按功能区域（如客户帐户、Order Management、退货、结帐、营销或B2B）或模板标识符的精确列表来禁止发送电子邮件。<!-- ACCS-1025 -->
+新的[电子邮件抑制](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/services/email-suppression)配置（[!UICONTROL **商店**] > [!UICONTROL **配置**] > [!UICONTROL **Adobe服务**] > [!UICONTROL **电子邮件抑制**]）允许管理员选择性地停止[!DNL Commerce]发送事务性电子邮件。 您可以按功能区域（如客户帐户、Order Management、退货、结帐、营销或B2B）或模板标识符的精确列表来禁止发送电子邮件。<!-- ACCS-1025 -->
 
 ### 在管理员中查看订单修改历史记录
 

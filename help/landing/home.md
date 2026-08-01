@@ -30,9 +30,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: ee8113dcf4e6d4d91fdf6cc69078d6104315a33f
+last-update: 2026-07-24
+source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
 workflow-type: tm+mt
-source-wordcount: 1314
+source-wordcount: 1221
 ht-degree: 0%
 
 ---
@@ -77,7 +78,7 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
       <div>
          <a href="../catalog-service/overview.md">
          <strong>目录服务</strong>
-         
+         </a>
       </div>
       <p>
          <em>为您的客户提供优化的产品体验，同时提高性能、改进可扩展性和提高转化率。</em>
@@ -103,7 +104,7 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
       <div>
          <a href="../product-recommendations/overview.md">
          <strong>产品推荐</strong>
-         
+         </a>
       </div>
       <p>
          <em>根据购物者行为、流行趋势、产品相似性等添加AI支持的推荐。</em>
@@ -116,7 +117,7 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
       <div>
          <a href="../payment-services/guide-overview.md">
          <strong>付款服务</strong>
-         
+         </a>
       </div>
       <p>
          <em>通过多种付款方式提高客户满意度，包括免息分期付款，以及简化付款处理、订单和发票的查看。</em>
@@ -151,7 +152,7 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
       <div>
           <a href="../aem-assets-integration/overview.md">
          <strong>AEM Assets集成</strong>
-         
+         </a>
       </div>
       <p>
          <em>使用与Adobe Experience Manager集成的系统简化数字资源管理，以便管理富媒体内容。</em>
@@ -164,7 +165,7 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
       <div>
          <a href="../app-management/overview.md">
          <strong>应用程序管理</strong>
-         
+         </a>
       </div>
       <p>
          <em>通过管理UI将App Builder应用程序与您的Commerce实例关联、配置和管理。</em>
@@ -189,7 +190,8 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
          </a>
       </div>
       <p>
-         <em>自动将目录、订单和清单数据从Adobe Commerce同步到连接的服务。 使用Commerce CLI命令或<strong>数据管理功能板</strong>管理同步处理。</em></p>
+         <em>自动将目录、订单和清单数据从Adobe Commerce同步到连接的服务。使用Commerce CLI命令或<strong>数据管理功能板</strong>管理同步处理。</em>
+      </p>
    </td>
    <td valign="top">
       <a href="../price-index/price-indexing.md">
@@ -198,7 +200,7 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
       <div>
           <a href="../price-index/price-indexing.md">
          <strong>SaaS价格索引器</strong>
-         
+         </a>
       </div>
       <p>
          <em>通过从Commerce应用程序向Adobe的云基础架构转移大量占用资源的任务（如索引和价格计算），优化站点性能。</em>
@@ -211,10 +213,11 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
       <div>
           <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>数据管理仪表板</strong>
-         
+         </a>
       </div>
       <p>
-         <em>在Commerce管理员中，轻松地跟踪统一仪表板的Commerce数据同步并触发重新同步。 获取有关数据可用性的宝贵见解，以便及时向购物者显示。</em></p>
+         <em>在Commerce管理员中，轻松地跟踪统一仪表板的Commerce数据同步并触发重新同步。获取有关数据可用性的宝贵见解，以便及时向购物者显示。</em>
+      </p>
    </td>
 </table>
 
