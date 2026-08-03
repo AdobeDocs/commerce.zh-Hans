@@ -26,9 +26,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 04f966aca4d7ce85990b42ad958938a186629af1
 workflow-type: tm+mt
-source-wordcount: 1464
+source-wordcount: 1452
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 1. 在Commerce管理员中，导航到&#x200B;[!UICONTROL **商店**] > [!UICONTROL Settings] > [!UICONTROL **配置**] > [!UICONTROL **付款方式**]。
 
-1. 在&#x200B;[!UICONTROL **常规配置**]&#x200B;部分中，输入您的`Payment Services Sandbox ID`和`Payment Services Sandbox Key`。 您可以按照[沙盒载入](../payment-services/sandbox.md#sandbox-onboarding)中描述的步骤获取这些ID
+1. 在&#x200B;[!UICONTROL **常规配置**]&#x200B;部分中，输入您的`Payment Services Sandbox ID`和`Payment Services Sandbox Key`。 您可以按照[沙盒载入](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}中描述的步骤获取这些ID
 
 1. 将&#x200B;[!UICONTROL **启用**]&#x200B;下拉列表设置为&#x200B;[!UICONTROL **是**]。
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 1. 输入所需的联系人详细信息和送货信息。 您可以为此订单使用虚构的信息。
 
-1. 要结帐，请选择&#x200B;[!UICONTROL **支票/汇票**]。 如果要使用信用卡，请使用Paypal[&#128279;](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的测试卡之一。 您可以将其与任何将来的到期日期和任何CVC一起使用。
+1. 要结帐，请选择&#x200B;[!UICONTROL **支票/汇票**]。 如果要使用信用卡，请使用PayPal[&#128279;](https://developer.paypal.com/credit-card-number-generator#link-teststaticcardnumbers)提供的测试卡之一。 您可以将其与任何将来的到期日期和任何CVC一起使用。
 
    ![包含联系人和送货信息字段的签出表单](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 ## 上下文试验
 
-[!DNL Adobe Commerce]的上下文试验功能允许您在店面中创建和管理试验，以测试不同的内容和配置。
+Adobe的情境式试验功能允许您在店面中创建和管理试验，以测试不同的内容和配置。
 
 ### 先决条件
 
@@ -139,9 +139,9 @@ ht-degree: 0%
 
 1. 将索引页的两个副本粘贴到&#x200B;**1234**&#x200B;文件夹中。
 
-1. 打开每个页面，并将它们重命名为“homev1”和“homev2”。 这些是您的[挑战者](https://www.aem.live/docs/experimentation#create-your-challenger-page)。
+1. 打开每个页面，并将它们重命名为“homev1”和“homev2”。 这些页面是您的[挑战者](https://www.aem.live/docs/experimentation#create-your-challenger-page)。
 
-1. 修改每个页面以包含不同的内容。 例如，更改主页图像或文本。 您需要能够识别每个页面之间的差异。
+1. 要包含不同的内容，请修改每个页面。 例如，更改主页图像或文本。 您需要能够识别每个页面之间的差异。
 
 1. 发布您的每个挑战者页面。
 
@@ -155,8 +155,8 @@ ht-degree: 0%
    * 描述 — 网络商店
    * 试验 — 1234
    * 试验变体
-      * `https://<your-site>.aem.live/experiments/1234/indexv1`
-      * `https://<your-site>.aem.live/experiments/1234/indexv2`
+     * `https://<your-site>.aem.live/experiments/1234/indexv1`
+     * `https://<your-site>.aem.live/experiments/1234/indexv2`
 
    用于上下文试验的![元数据块配置](./assets/metadata-block.png){width="600" zoomable="yes"}
 
@@ -174,9 +174,9 @@ ht-degree: 0%
 
 ### 自定义图像的背景
 
-假设您想快速修改产品图像的背景。 [!DNL Adobe Commerce]、[!DNL AEM Assets]和[!DNL Adobe Express]的组合允许您通过几个简单的步骤完成此更改。
+假设您想快速修改产品图像的背景。 [!DNL Adobe Commerce]、[!DNL AEM Assets]和[!DNL Adobe Express]的组合允许您在几个步骤中完成此更改。
 
-1. 打开您在先决条件中创建的[店面](./storefront.md)，然后导航到要更改的项目。 记下SKU或产品代码项。
+1. 打开您在先决条件中创建的[店面](./storefront.md)，然后导航到要更改的项目。 记下项目的SKU或产品代码。
 
 1. 通过在[Adobe Experience Cloud](https://experience.adobe.com/#/home)中选择打开[!DNL AEM Assets]。
 
@@ -200,7 +200,7 @@ ht-degree: 0%
 
    用于描述要使用AI生成的图像的文本框![](./assets/insert-object-edit.png){width="600" zoomable="yes"}
 
-1. 调整[!UICONTROL Brush size]并绘制要添加生成图像的位置。 在本例中，围绕现有对象绘制以选择背景。
+1. 调整[!UICONTROL Brush size]并绘制要添加生成图像的位置。 要为此示例选择背景，请围绕现有对象绘制。
 
 1. 单击&#x200B;[!UICONTROL **生成**]&#x200B;以查看结果。
 
@@ -284,7 +284,7 @@ ht-degree: 0%
 
 ### 生成内容和图像
 
-1. 打开[[!DNL Generate Variations]](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. 打开[[!DNL Generate Variations]](/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations)
 
 1. 选择&#x200B;[!UICONTROL **主页横幅**]&#x200B;模板。
 
@@ -300,11 +300,11 @@ ht-degree: 0%
 
 1. 从&#x200B;[!UICONTROL **内容类型**]&#x200B;下拉列表中，选择&#x200B;[!UICONTROL **照片**]。
 
-1. 对于&#x200B;[!UICONTROL **样式**]&#x200B;参考图像，选择现有的Adobe商店横幅。
+1. 对于&#x200B;[!UICONTROL **样式**]&#x200B;参考图像，选择现有的Adobe Store横幅。
 
 1. 选择要使用的生成图像，然后单击&#x200B;[!UICONTROL **保存**]。
 
-1. 对其他参考图像重复此过程以生成更多变体。
+1. 要生成更多变体，请对其他参考图像重复此过程。
 
 
 ## 故障排除
@@ -313,35 +313,35 @@ ht-degree: 0%
 
 * 如果您需要有关命令或标志的指导：
 
-   1. 运行`aio --help`以查看所有可用的命令和标志。
-   1. 对于特定命令，请使用`--help`标志。 例如：
-      * `aio console --help`
-      * `aio commerce --help`
+  1. 运行`aio --help`以查看所有可用的命令和标志。
+  1. 对于特定命令，请使用`--help`标志。 例如：
+     * `aio console --help`
+     * `aio commerce --help`
 
 * 如果您遇到无效的登录问题：
 
-   1. 运行`aio config clear`。
-   1. 运行`aio auth login --force`。
-   1. 登录浏览器。
-   1. 选择您的个人资料。
-   1. 切换回终端以继续。
+  1. 运行`aio config clear`。
+  1. 运行`aio auth login --force`。
+  1. 登录到浏览器。
+  1. 选择您的个人资料。
+  1. 切换回终端以继续。
 
 * 如果`init`命令失败：
 
-   1. 运行`aio api-mesh delete`。
-   1. 重新运行`aio commerce init`。
+  1. 运行`aio api-mesh delete`。
+  1. 重新运行`aio commerce init`。
 
 * 如果在运行`init`命令之前选择了错误的组织、项目或工作区：
 
-   1. 运行`aio console org select`。
-   1. 运行`aio console project select`。
-   1. 运行`aio console workspace select`。
+  1. 运行`aio console org select`。
+  1. 运行`aio console project select`。
+  1. 运行`aio console workspace select`。
 
 * 如果您的租户选择无效：
 
-   1. 按&#x200B;**Ctrl-C**&#x200B;取消当前CLI执行。
-   1. 运行`aio commerce init`。
+  1. 按&#x200B;**Ctrl-C**&#x200B;取消当前CLI执行。
+  1. 运行`aio commerce init`。
 
 * 如果您遇到无效的API Mesh安装：
 
-   * 运行`aio api-mesh update mesh-config.json`。
+  * 运行`aio api-mesh update mesh-config.json`。

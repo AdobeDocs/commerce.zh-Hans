@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 55eeb27812ce67a1b26705864ec969b826580452
+source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
 workflow-type: tm+mt
-source-wordcount: 1444
+source-wordcount: 1461
 ht-degree: 0%
 
 ---
@@ -96,22 +96,27 @@ ht-degree: 0%
 
 ## Commerce店面
 
-使用由[!DNL Edge Delivery Services]提供支持的Adobe [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=zh-Hans)，通过[!DNL Storefront Builder]的基于文档的简单创作或可视化编辑在几分钟内创建丰富体验。
+要使用[!DNL Storefront Builder]的基于文档的简单创作或可视化编辑功能在几分钟内创建丰富体验，请使用由[!DNL Edge Delivery Services]提供支持的Adobe的[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)。
 
 [!DNL Commerce Storefront]是完全无头的，具有分离架构，通过GraphQL API层提供所有促销服务和数据。 此架构允许团队独立于Commerce Foundation开发其前台，从而提供使用新兴技术构建和测试新接触点的灵活性。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]不支持Luma店面。 如果您是从Adobe Commerce在云中或内部部署迁移，请参阅[现有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hans#existing-storefronts)以获取有关过渡的指导。
+>[!DNL Adobe Commerce as a Cloud Service]不支持Luma店面。 如果您是从Adobe Commerce在云中或内部部署迁移，请参阅[现有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hans#existing-storefronts)以了解过渡指南。
 
 ## 商品推销服务和支付服务
 
 Adobe提供了一组丰富的智能、可组合的推销服务，帮助您支持关键业务目标。 这些服务还提供了对大规模优化性能至关重要的API。
 
-- [实时搜索](../live-search/overview.md) — 通过此AI支持的搜索工具，为购物者提供更智能、更快速且相关的结果。
-- [产品推荐](../optimizer/merchandising/recommendations/overview.md) — 根据购物者行为、流行趋势、产品相似性等添加AI驱动的推荐。
+- [[!DNL Live Search]](../live-search/overview.md) — 使用此AI支持的搜索工具，为购物者提供更智能、更快速且相关的结果。 有关设置说明，请参阅[设置 [!DNL Live Search]](../live-search/workspace.md)。
+- [[!DNL Product Recommendations]](../product-recommendations/overview.md) — 根据购物者行为、流行趋势、产品相似性等添加AI支持的推荐。 有关配置说明，请参阅[[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md)。
 - [目录服务](../catalog-service/guide-overview.md) — 为客户提供优化的产品体验，同时提高性能、改进可扩展性和提高转化率。
-- [支付服务](../payment-services/guide-overview.md) — 通过提供各种支付方式（包括免息分期付款）和单一付款处理、订单和发票视图，提高客户满意度。
+
+  >[!NOTE]
+  >
+  >目录服务自动包含在[!DNL Live Search]和[!DNL Product Recommendations]中。
+
+- [支付服务](../payment-services/guide-overview.md) — 通过提供各种支付方式（包括免息分期付款）和单一付款处理、订单和发票视图，提高客户满意度。 有关配置说明，请参阅[Payment Services主页](../payment-services/payments-home.md)。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -119,7 +124,7 @@ Adobe提供了一组丰富的智能、可组合的推销服务，帮助您支持
 
 该集成可确保数字资产（如产品图像或营销内容）根据SKU或其他关键属性动态链接到相应的促销实体，包括Adobe Commerce中的产品和类别。
 
-[!DNL Product Visuals]与[!DNL Adobe Commerce as a Cloud Service]一起提供现成可用，可提供[!DNL AEM Assets]中的部分功能。
+[!DNL Product Visuals]与[!DNL Adobe Commerce as a Cloud Service]一起以本机方式可用，提供了[!DNL AEM Assets]中的部分功能。
 
 或者，[!DNL Adobe Commerce as a Cloud Service]中的本机功能提供了用于存储和管理数字资产的基本资产管理工具。
 
@@ -189,7 +194,7 @@ Adobe为开发人员提供了全面的扩展点和工具，用于构建可扩展
 Adobe提供了以下开发人员工具来构建集成和自定义：
 
 - Adobe Developer App Builder的&#x200B;[**API网格**](https://developer.adobe.com/graphql-mesh-gateway/) — 协调多个API、GraphQL、REST和其他源并将其合并到一个可查询的GraphQL端点中。
-- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/) — 构建并部署安全且可扩展的Web应用程序，这些应用程序可扩展Commerce功能并与第三方解决方案集成。
+- [**App Builder**](https://developer.adobe.com/app-builder/docs/intro_and_overview/) — 构建并部署安全且可扩展的Web应用程序，这些应用程序可扩展Commerce功能并与第三方解决方案集成。
 - [**事件**](https://developer.adobe.com/commerce/extensibility/events/) — 使用自定义事件触发器与其他可扩展开发工具交互。
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) — 使用Webhook自动触发Commerce与第三方系统之间的交互。
 - [**管理员UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) — 使用商户的新页面和功能自定义并增强Commerce管理员。
@@ -207,7 +212,7 @@ Adobe提供了以下开发人员工具来构建集成和自定义：
 
 ### 简化的入门
 
-使用[!UICONTROL Commerce Cloud Manager]自助配置门户在几分钟内启动沙盒和生产实例。 您需要的所有功能，包括促销服务、Headless Commerce实例和[!DNL App Builder]，均自动配置并与实例集成。
+使用[!UICONTROL Commerce Cloud Manager]自助配置门户在几分钟内启动沙盒和生产实例。 您需要的所有功能（包括促销服务、Headless Commerce实例和[!DNL App Builder]）均已自动配置并与实例集成。
 
 请参阅[快速入门](getting-started.md)，了解如何创建和管理Commerce实例。
 
