@@ -5,40 +5,18 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f236e2a1-90d4-477d-92e1-5996b5e92bff
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 55eeb27812ce67a1b26705864ec969b826580452
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f236e2a1-90d4-477d-92e1-5996b5e92bffid: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: d095671a-1355-40aa-8b5f-06c33c68080bid: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
 workflow-type: tm+mt
-source-wordcount: 1444
+source-wordcount: 1461
 ht-degree: 0%
 
 ---
@@ -88,7 +66,7 @@ ht-degree: 0%
 
 请观看以下视频，了解[!DNL Adobe Commerce as a Cloud Service]架构的简介。 视频下方提供了说明体系结构的图。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443277?captions=chi_hans&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 此图说明了[!DNL Adobe Commerce as a Cloud Service]和所有Adobe Experience Cloud解决方案之间的数据流。
 
@@ -96,22 +74,27 @@ ht-degree: 0%
 
 ## Commerce店面
 
-使用由[!DNL Edge Delivery Services]提供支持的Adobe [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=zh-Hans)，通过[!DNL Storefront Builder]的基于文档的简单创作或可视化编辑在几分钟内创建丰富体验。
+要使用[!DNL Storefront Builder]的基于文档的简单创作或可视化编辑功能在几分钟内创建丰富体验，请使用由[!DNL Edge Delivery Services]提供支持的Adobe的[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/)。
 
 [!DNL Commerce Storefront]是完全无头的，具有分离架构，通过GraphQL API层提供所有促销服务和数据。 此架构允许团队独立于Commerce Foundation开发其前台，从而提供使用新兴技术构建和测试新接触点的灵活性。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]不支持Luma店面。 如果您是从Adobe Commerce在云中或内部部署迁移，请参阅[现有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hans#existing-storefronts)以获取有关过渡的指导。
+>[!DNL Adobe Commerce as a Cloud Service]不支持Luma店面。 如果您是从Adobe Commerce在云中或内部部署迁移，请参阅[现有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts)以了解过渡指南。
 
 ## 商品推销服务和支付服务
 
 Adobe提供了一组丰富的智能、可组合的推销服务，帮助您支持关键业务目标。 这些服务还提供了对大规模优化性能至关重要的API。
 
-- [实时搜索](../live-search/overview.md) — 通过此AI支持的搜索工具，为购物者提供更智能、更快速且相关的结果。
-- [产品推荐](../optimizer/merchandising/recommendations/overview.md) — 根据购物者行为、流行趋势、产品相似性等添加AI驱动的推荐。
+- [[!DNL Live Search]](../live-search/overview.md) — 使用此AI支持的搜索工具，为购物者提供更智能、更快速且相关的结果。 有关设置说明，请参阅[设置 [!DNL Live Search]](../live-search/workspace.md)。
+- [[!DNL Product Recommendations]](../product-recommendations/overview.md) — 根据购物者行为、流行趋势、产品相似性等添加AI支持的推荐。 有关配置说明，请参阅[[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md)。
 - [目录服务](../catalog-service/guide-overview.md) — 为客户提供优化的产品体验，同时提高性能、改进可扩展性和提高转化率。
-- [支付服务](../payment-services/guide-overview.md) — 通过提供各种支付方式（包括免息分期付款）和单一付款处理、订单和发票视图，提高客户满意度。
+
+  >[!NOTE]
+  >
+  >目录服务自动包含在[!DNL Live Search]和[!DNL Product Recommendations]中。
+
+- [支付服务](../payment-services/guide-overview.md) — 通过提供各种支付方式（包括免息分期付款）和单一付款处理、订单和发票视图，提高客户满意度。 有关配置说明，请参阅[Payment Services主页](../payment-services/payments-home.md)。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -119,7 +102,7 @@ Adobe提供了一组丰富的智能、可组合的推销服务，帮助您支持
 
 该集成可确保数字资产（如产品图像或营销内容）根据SKU或其他关键属性动态链接到相应的促销实体，包括Adobe Commerce中的产品和类别。
 
-[!DNL Product Visuals]与[!DNL Adobe Commerce as a Cloud Service]一起提供现成可用，可提供[!DNL AEM Assets]中的部分功能。
+[!DNL Product Visuals]与[!DNL Adobe Commerce as a Cloud Service]一起以本机方式可用，提供了[!DNL AEM Assets]中的部分功能。
 
 或者，[!DNL Adobe Commerce as a Cloud Service]中的本机功能提供了用于存储和管理数字资产的基本资产管理工具。
 
@@ -189,7 +172,7 @@ Adobe为开发人员提供了全面的扩展点和工具，用于构建可扩展
 Adobe提供了以下开发人员工具来构建集成和自定义：
 
 - Adobe Developer App Builder的&#x200B;[**API网格**](https://developer.adobe.com/graphql-mesh-gateway/) — 协调多个API、GraphQL、REST和其他源并将其合并到一个可查询的GraphQL端点中。
-- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/) — 构建并部署安全且可扩展的Web应用程序，这些应用程序可扩展Commerce功能并与第三方解决方案集成。
+- [**App Builder**](https://developer.adobe.com/app-builder/docs/intro_and_overview/) — 构建并部署安全且可扩展的Web应用程序，这些应用程序可扩展Commerce功能并与第三方解决方案集成。
 - [**事件**](https://developer.adobe.com/commerce/extensibility/events/) — 使用自定义事件触发器与其他可扩展开发工具交互。
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) — 使用Webhook自动触发Commerce与第三方系统之间的交互。
 - [**管理员UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) — 使用商户的新页面和功能自定义并增强Commerce管理员。
@@ -207,7 +190,7 @@ Adobe提供了以下开发人员工具来构建集成和自定义：
 
 ### 简化的入门
 
-使用[!UICONTROL Commerce Cloud Manager]自助配置门户在几分钟内启动沙盒和生产实例。 您需要的所有功能，包括促销服务、Headless Commerce实例和[!DNL App Builder]，均自动配置并与实例集成。
+使用[!UICONTROL Commerce Cloud Manager]自助配置门户在几分钟内启动沙盒和生产实例。 您需要的所有功能（包括促销服务、Headless Commerce实例和[!DNL App Builder]）均已自动配置并与实例集成。
 
 请参阅[快速入门](getting-started.md)，了解如何创建和管理Commerce实例。
 
@@ -228,7 +211,7 @@ Adobe Commerce on Cloud的典型升级过程包括创建备份、克隆实例、
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
