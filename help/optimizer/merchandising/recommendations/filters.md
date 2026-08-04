@@ -1,20 +1,15 @@
 ---
 title: 推荐过滤器
 description: 了解如何使用筛选器来控制哪些产品出现在 [!DNL Adobe Commerce Optimizer] 推荐中。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 116d8bd804df364ddc9cb1175525f08fd32c01bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
 workflow-type: tm+mt
-source-wordcount: 1919
+source-wordcount: 1932
 ht-degree: 0%
 
 ---
@@ -98,7 +93,7 @@ ht-degree: 0%
 
 当推荐相对于产品详细信息页面(PDP)上当前已查看的&#x200B;**产品**&#x200B;应有限制时，请使用&#x200B;**动态**&#x200B;价格筛选器。 筛选器使用该产品的最终价格作为&#x200B;**锚点**，并将推荐的产品与您定义的边界进行比较。
 
-动态运算符仅适用于在产品上下文中运行的[SKU相关推荐类型](types.md)，例如：
+动态运算符仅适用于在产品上下文中运行的[SKU相关推荐类型](types.md)：
 
 - 查看了这个项目，也查看了那个项目
 - 查看了这个项目，购买了那个项目
@@ -106,7 +101,16 @@ ht-degree: 0%
 - 更多此类内容
 - 视觉相似度
 
-这些单位&#x200B;**不**&#x200B;适用于基于热门程度的类型（例如，**查看次数最多**&#x200B;或&#x200B;**购买次数最多**），因为这些单位没有单个当前产品来定位过滤器。
+它们对于基于热门程度的类型&#x200B;**不可用**，因为这些单位没有单个当前产品来定位过滤器：
+
+- 查看次数最多
+- 购买次数最多
+- 添加到购物车的次数最多
+- 趋势
+- 为您推荐
+- 最近查看的项目
+- 查看到购物车的转换
+- 查看以购买转换
 
 在店面，推荐插件从PDP上下文中读取当前产品的价格，并随推荐请求发送该价格。 在评估动态价格规则时，[!DNL Adobe Commerce Optimizer]使用该值作为锚点。 对于可配置产品，锚点为&#x200B;**最低变体**&#x200B;的最终价格(`priceRange.minimum`)。
 
