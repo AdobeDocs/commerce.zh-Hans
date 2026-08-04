@@ -17,9 +17,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 70990a7bb7e8926a171ea6d2148542b7b73f4dba
+source-git-commit: bb09ff54afbba3d0a0e48bfd1a0392cba435ea9a
 workflow-type: tm+mt
-source-wordcount: 1405
+source-wordcount: 1493
 ht-degree: 0%
 
 ---
@@ -30,23 +30,24 @@ ht-degree: 0%
 
 [!DNL Catalog Service]提供的丰富视图模型数据包括产品详细信息、属性、库存和价格，支持快速呈现与产品相关的店面体验，例如：
 
-- 产品详细信息页面
-- 产品列表和类别页面
-- 搜索结果页面
-- 产品轮播
-- 产品比较页面
-- 渲染产品数据的任何其他页面，如购物车、订单和愿望清单页面
+* 产品详细信息页面
+* 产品列表和类别页面
+* 搜索结果页面
+* 产品轮播
+* 产品比较页面
+* 渲染产品数据的任何其他页面，如购物车、订单和愿望清单页面
 
 ## 主要优势和功能
 
-- **页面加载速度更快**：优化查询，目录数据检索速度比核心GraphQL系统快10倍
-- **转化率提高**：加载时间越短，用户体验越好
-- **简化的产品类型**：基于简单和复杂产品类型的统一架构降低了开发人员的复杂性
-- **增强的价格精确度**：支持包含4位小数的16位值
-- **分离的架构**：目录数据的独立GraphQL系统可确保高性能，而不会影响Commerce的核心操作
-- **实时数据同步**：目录服务通过SaaS数据导出扩展与Adobe Commerce应用程序保持同步，确保查询返回最新的目录数据
-- **数据管理功能板**：从Adobe Commerce管理界面监视和管理数据同步操作
-- **API Mesh集成**：选择性地与Adobe Developer App Builder的[API Mesh集成](https://developer.adobe.com/graphql-mesh-gateway/)，以将Adobe Commerce GraphQL系统与其他内部和第三方API相结合，以扩展Catalog Service GraphQL架构并添加自定义数据或功能
+* **页面加载速度更快**：优化查询，目录数据检索速度比核心GraphQL系统快10倍
+* **转化率提高**：加载时间越短，用户体验越好
+* **简化的产品类型**：基于简单和复杂产品类型的统一架构降低了开发人员的复杂性
+* **增强的价格精确度**：支持包含4位小数的16位值
+* **分离的架构**：目录数据的独立GraphQL系统可确保高性能，而不会影响Commerce的核心操作
+* **实时数据同步**：目录服务通过SaaS数据导出扩展与Adobe Commerce应用程序保持同步，确保查询返回最新的目录数据
+* **目录事件**：通过[!DNL Adobe I/O Events]发布目录更改通知，以便集成无需轮询GraphQL即可对产品、类别和价格更新做出反应
+* **数据管理功能板**：从Adobe Commerce管理界面监视和管理数据同步操作
+* **API Mesh集成**：选择性地与Adobe Developer App Builder的[API Mesh集成](https://developer.adobe.com/graphql-mesh-gateway/)，以将Adobe Commerce GraphQL系统与其他内部和第三方API相结合，以扩展Catalog Service GraphQL架构并添加自定义数据或功能
 
 ## 架构概述
 
@@ -60,19 +61,21 @@ Adobe Commerce提供两种用途不同的GraphQL系统：
 
 ### 核心GraphQL System
 
-- **用途**：适用于所有Commerce操作的全功能API
-- **功能**：针对产品、客户、购物车、结账等的查询（读取）和变动（写入）
-- **限制**：产品查询未针对速度进行优化
-- **用例**：一般Commerce操作和写入操作
+* **用途**：适用于所有Commerce操作的全功能API
+* **功能**：针对产品、客户、购物车、结账等的查询（读取）和变动（写入）
+* **限制**：产品查询未针对速度进行优化
+* **用例**：一般Commerce操作和写入操作
 
 ### 目录服务GraphQL System
 
-- **用途**：仅高性能产品目录查询
-- **功能**：产品、属性、库存和价格的只读查询
-- **优势**：比产品数据的核心系统快很多
-- **用例**：速度至关重要的店面产品体验
+* **用途**：仅高性能产品目录查询
+* **功能**：产品、属性、库存和价格的只读查询
+* **优势**：比产品数据的核心系统快很多
+* **用例**：速度至关重要的店面产品体验
 
 目录服务可用的数据由SaaS数据导出扩展提供。 此扩展在Commerce应用程序与连接的Commerce服务之间同步数据，以确保对服务GraphQL API端点的查询返回最新的目录数据。 有关管理和排查SaaS数据导出操作问题的信息，请参阅[SaaS Data Export Guide](../data-export/overview.md)。
+
+当[!DNL Catalog Service]中的目录数据更改时，目录事件通过[!DNL Adobe I/O Events]通知订阅的用户。 使用这些事件可使缓存失效、更新搜索索引或同步外部系统，而无需轮询GraphQL API。 有关事件类型、投放保证和设置，请参阅[目录事件和Adobe I/O集成指南](catalog-events-guide.md)。
 
 [!DNL Catalog Service]客户可以使用[SaaS价格索引器](../price-index/price-indexing.md)，这提供了更快的价格更新和同步时间。
 
@@ -106,15 +109,15 @@ GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的
 
 架构将产品类型的多样性减少为两个用例：
 
-- **简单产品** — 目录服务将Adobe Commerce简单、虚拟、可下载和礼品卡产品类型映射到`simpleProductViews`。 此类型具有：
-   - 单一、固定的价格和数量
-   - 常规价格（折扣前）和最终价格（折扣后）
-   - 支持产品属性，如颜色、大小和其他特征
+* **简单产品** — 目录服务将Adobe Commerce简单、虚拟、可下载和礼品卡产品类型映射到`simpleProductViews`。 此类型具有：
+  * 单一、固定的价格和数量
+  * 常规价格（折扣前）和最终价格（折扣后）
+  * 支持产品属性，如颜色、大小和其他特征
 
-- **复杂产品** — 目录服务将Adobe Commerce可配置、捆绑包和分组产品类型映射到`complexProductViews`。 复杂产品是多个简单产品的集合，这些产品可以配置或捆绑在一起。
-   - 每个部件简单产品可以有自己的价格。
-   - 购物者可以指定单个组件产品的数量。
-   - 产品选项（如大小、颜色、材质）是统一的，无论产品类型如何，均以相同的方式工作。 每个选项选择都指向一个特定的简单产品，该产品具有自己的属性和价格。 在购物者选择所有必需选项之前，最终产品将保持未定义状态。
+* **复杂产品** — 目录服务将Adobe Commerce可配置、捆绑包和分组产品类型映射到`complexProductViews`。 复杂产品是多个简单产品的集合，这些产品可以配置或捆绑在一起。
+  * 每个部件简单产品可以有自己的价格。
+  * 购物者可以指定单个组件产品的数量。
+  * 产品选项（如大小、颜色、材质）是统一的，无论产品类型如何，均以相同的方式工作。 每个选项选择都指向一个特定的简单产品，该产品具有自己的属性和价格。 在购物者选择所有必需选项之前，最终产品将保持未定义状态。
 
 #### 产品视图属性
 
@@ -141,6 +144,7 @@ GraphQL的核心系统和服务不会直接相互通信。 您可以从不同的
 实施过程涉及：
 
 1. [!BADGE 仅限PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"} **[安装和配置目录服务](installation.md)** — 安装和配置目录服务扩展并使用[!DNL Commerce Services Connector]设置SaaS连接。
-2. **更新店面代码**：将目录服务GraphQL查询集成到您的店面。
-3. **路由查询**：所有目录服务查询都通过GraphQL网关（载入期间提供的URL）
-4. **监视数据同步并排除其故障**：验证改进的性能并监视结果
+1. **更新店面代码**：将目录服务GraphQL查询集成到您的店面。
+1. **路由查询**：所有目录服务查询都通过GraphQL网关（载入期间提供的URL）
+1. **监视数据同步并排除其故障**：验证改进的性能并监视结果
+1. **（可选） [设置目录事件](catalog-events-guide.md)** — 配置[!DNL Adobe I/O Events]订阅以接收缓存失效、搜索索引或外部系统同步的目录更改通知。

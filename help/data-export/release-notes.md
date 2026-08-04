@@ -22,14 +22,14 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
+source-git-commit: 06cf519b8588e19f870e851558fa7fe7f0602b17
 workflow-type: tm+mt
-source-wordcount: 3256
+source-wordcount: 3237
 ht-degree: 0%
 
 ---
 
-# [!DNL SaaS Data Export]扩展发行说明
+# [!DNL SaaS Data Export Extension]发行说明
 
 以下发行说明介绍了[!DNL SaaS data export]扩展的最新版本。 为当前的主要发行版本提供支持。 提供了旧版本的发行说明以供参考。
 
@@ -41,9 +41,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->SaaS数据导出扩展是随“实时搜索”、“产品推荐”和“目录服务”一起自动安装的模块的集合。 您可以使用编辑器检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
+>[!DNL SaaS data export]扩展是随[!DNL Live Search]、[!DNL Product Recommendations]和[!DNL Catalog Service]一起自动安装的模块集合。 您可以使用[!DNL Composer]检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
-## 2026版
+## 2026版 {#release-notes-2026}
 
 ### 103.4.30发行版
 
@@ -70,6 +70,7 @@ _2026年6月11日_
 _2026年6月4日_
 
 ![修复](../assets/fix.svg) **并行目录更新后捆绑产品保持可见** — 修复了在同时更新可配置和捆绑产品时捆绑产品未出现在店面的问题。 将`magento/module-data-exporter`升级到版本103.4.27后，将自动计划重新同步产品馈送，以更正[!DNL Catalog Service]、[!DNL Live Search]和其他连接的Commerce服务中现有的捆绑包数据不一致。
+<!--MDEE-1379-->
 
 ### 103.4.26发行版
 
@@ -90,8 +91,10 @@ _2026年5月19日_
 _2026年5月5日_
 
 ![修复](../assets/fix.svg) **导出日志的疑难解答更简单** — 许多与导出相关的错误和警告现在包含一致的日志代码。 这些代码可帮助您在使用支持或文档时更快地跟踪问题。 有关详细信息，请参阅[日志代码引用](troubleshooting/log-codes-reference.md)。
+<!--MDEE-1276-->
 
 ![修复](../assets/fix.svg) **当属性选项标签更改时自动重新同步** — 商店视图（包括多选属性）的产品属性选项标签更改后，现在会将受影响的产品重新排入队列以供导出，以便Live Search、产品推荐、目录服务和其他连接的Commerce服务在购物者视图中显示更新的Facet和筛选标签。 以前，仅标签编辑可能会导致SaaS目录显示过时措辞，直到更广泛的产品更改触发同步为止。
+<!--MDEE-1337-->
 
 ![修复](../assets/fix.svg) **缺少默认范围数据时的可靠状态和可见性** — 产品导出处理默认管理范围上的间隙，以便连接的服务能够正确启用、禁用和可见性行为。 您设置的特定于存储的值仍优先。
 
@@ -108,8 +111,10 @@ _2026年5月5日_
 
 _2026年4月20日_
 
-![修复](../assets/fix.svg) **解决了删除静态EAV属性时的SQL错误** — 删除静态EAV属性时，ProductAttributeDelete插件不再生成SQL错误，从而确保更平稳的属性管理并提高系统可靠性。 <!--MDEE-1336-->
-![修复](../assets/fix.svg) **类别移动后的固定类别路径导出** — 确保当类别移动到其他父类别时，类别信息源正确更新`url_path`，防止连接的Commerce服务中缺少或过时的类别路径。![修复](../assets/fix.svg) **已改进相关产品的计划类别更新** — 类别URL的计划更新现在仅影响目标类别，从而保留数据完整性并防止对相关产品进行意外更改。 现在，计划的类别URL更改正确反映在导出的数据中，使店面导航和链接的服务与当前目录保持一致。
+![修复](../assets/fix.svg) **解决了删除静态EAV属性时的SQL错误**-ProductAttributeDelete插件在删除静态EAV属性时不再生成SQL错误，从而确保更平稳的属性管理并提高系统可靠性。 <!--MDEE-1336-->
+![修复](../assets/fix.svg) **类别移动后的固定类别路径导出** — 确保当类别移动到其他父类别时，类别信息源正确更新`url_path`，防止连接的Commerce服务中缺少或过时的类别路径。<!--MDEE-1331-->
+![修复](../assets/fix.svg) **已改进相关产品的计划类别更新** — 类别URL的计划更新现在仅影响目标类别，从而保留数据完整性并防止对相关产品进行意外更改。 现在，计划的类别URL更改正确反映在导出的数据中，使店面导航和链接的服务与当前目录保持一致。
+<!--MDEE-1321-->
 
 ### 103.4.22发行版
 
@@ -174,7 +179,7 @@ _2025年11月24日_
 
 _2025年10月22日_
 
-![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，可用于监视和排除从Adobe Commerce到连接的服务（目录服务、实时搜索和产品推荐）的数据传输。 有关安装和使用此扩展的详细信息，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[数据馈送同步状态监控](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=zh-Hans)。<!--MDEE-954-->
+![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，以便监视和排除从[!DNL Adobe Commerce]到连接的服务（[!DNL Catalog Service]、[!DNL Live Search]和[!DNL Product Recommendations]）的数据传输。 有关安装和使用此扩展的详细信息，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[数据馈送同步状态监控](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=zh-Hans)。<!--MDEE-954-->
 
 ### 103.4.14发行版
 
@@ -300,7 +305,7 @@ _2025年3月11日_
 ![新](../assets/new.svg)添加了基于指定的产品SKU列表部分同步`products`、`productOverrides`和`productAttributes`馈送的功能。 通过将`--by-ids`选项添加到resync CLI命令来使用新功能： <!--MDEE-606-->
 
 ```shell
-bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>'
 ```
 
 ![修复](../assets/fix.svg)通过解决已弃用的功能，减少了与PHP 8.4的潜在兼容性问题。<!--MDEE-1002-->
@@ -468,12 +473,12 @@ _2024年4月30日_
 
 - 信息源表（和索引器视图ID）：
 
-   - `catalog_data_exporter_products` -> `cde_products_feed`
-   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
-   - `catalog_data_exporter_categories` -> `cde_categories_feed`
-   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
-   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
-   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+  - `catalog_data_exporter_products` -> `cde_products_feed`
+  - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+  - `catalog_data_exporter_categories` -> `cde_categories_feed`
+  - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+  - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+  - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
 
 - 更改日志表名称 — 遵循与信息源表相同的命名模式，但更改日志表名称会添加`_cl`后缀。 例如`catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
 
