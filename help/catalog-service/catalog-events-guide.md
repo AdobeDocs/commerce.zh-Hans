@@ -157,7 +157,7 @@ ht-degree: 0%
 >* [已为Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/configure-commerce)配置 [!DNL Adobe I/O] 连接。
 >* 在配置了Commerce环境的同一IMS组织中访问[!DNL Adobe Developer Console]。
 >* 若要验证是否同步到Commerce SaaS服务，请在“管理员”中使用&#x200B;**[!UICONTROL Data Management Dashboard]**。
->* 仪表板验证需要产品推荐v6.0、[!DNL Live Search] v4.1.0+或[!DNL Catalog Service] v1.17+。 Adobe建议将您的Commerce项目更新到这些服务的最新支持版本。 对于较早的服务版本，请使用[目录同步](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)进行同步验证。
+>* 仪表板验证需要产品推荐v6.0、[!DNL Live Search] v4.1.0+或[!DNL Catalog Service] v1.17+。 Adobe建议将您的Commerce项目更新到这些服务的最新支持版本。 对于较早的服务版本，请使用[目录同步](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/data-services/catalog-sync)进行同步验证。
 
 
 >[!NOTE]
@@ -172,11 +172,11 @@ ht-degree: 0%
 
 1. 确认从Commerce **成功导出**&#x200B;信息源。
 
-   从[!DNL Adobe Commerce]管理员中，打开[数据馈送同步状态](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面(**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**)，并确认每个[!DNL Catalog Service]馈送的上次导出状态都成功。
+   从[!DNL Adobe Commerce]管理员中，打开[数据馈送同步状态](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面(**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**)，并确认每个[!DNL Catalog Service]馈送的上次导出状态都成功。
 
 1. 确认从[!DNL Adobe Commerce]管理员成功&#x200B;**同步到连接的Commerce服务**。
 
-   从[!DNL Adobe Commerce]管理员中，打开[数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**)，并验证同步的产品数据是否包含预期的产品。
+   从[!DNL Adobe Commerce]管理员中，打开[数据管理功能板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**)，并验证同步的产品数据是否包含预期的产品。
 
 ### 注册并订阅[!DNL Adobe I/O Events] {#register-events}
 
@@ -295,9 +295,9 @@ ht-degree: 0%
 
    目录事件需要[!DNL Catalog Service]中的当前数据。 确认导出路径的两个阶段：
 
-   * 从Commerce导出&#x200B;**信息源** — 在[数据信息源同步状态](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面或`var/log/saas-export.log`中，确认已成功从[!DNL Commerce]导出[!DNL Catalog Service]信息源。
+   * 从Commerce导出&#x200B;**信息源** — 在[数据信息源同步状态](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面或`var/log/saas-export.log`中，确认已成功从[!DNL Commerce]导出[!DNL Catalog Service]信息源。
 
-   * **同步到连接的Commerce SaaS服务** — 在[数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)、[目录同步](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)或导出日志中，确认数据已成功同步到[!DNL Catalog Service]。
+   * **同步到连接的Commerce SaaS服务** — 在[数据管理功能板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)、[目录同步](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/data-services/catalog-sync)或导出日志中，确认数据已成功同步到[!DNL Catalog Service]。
 
    有关导出和同步作业的疑难解答，请参阅[将数据与SaaS数据导出同步](../data-export/data-sync-manage.md)和[日志记录和疑难解答](../data-export/troubleshooting/logging.md)。
 
@@ -319,7 +319,7 @@ ht-degree: 0%
    * [!DNL Adobe I/O Events]订阅详细信息。
    * 缺失事件的近似时间和描述。
 
-   有关其他帮助，请参阅[支持票证](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)。
+   有关其他帮助，请参阅[支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)。
 
 >[!MORELIKETHIS]
 >
