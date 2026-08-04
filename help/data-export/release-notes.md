@@ -6,30 +6,18 @@ feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 06cf519b8588e19f870e851558fa7fe7f0602b17
 workflow-type: tm+mt
-source-wordcount: 3256
+source-wordcount: 3237
 ht-degree: 0%
 
 ---
 
-# [!DNL SaaS Data Export]扩展发行说明
+# [!DNL SaaS Data Export Extension]发行说明
 
 以下发行说明介绍了[!DNL SaaS data export]扩展的最新版本。 为当前的主要发行版本提供支持。 提供了旧版本的发行说明以供参考。
 
@@ -41,9 +29,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->SaaS数据导出扩展是随“实时搜索”、“产品推荐”和“目录服务”一起自动安装的模块的集合。 您可以使用编辑器检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
+>[!DNL SaaS data export]扩展是随[!DNL Live Search]、[!DNL Product Recommendations]和[!DNL Catalog Service]一起自动安装的模块集合。 您可以使用[!DNL Composer]检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
-## 2026版
+## 2026版 {#release-notes-2026}
 
 ### 103.4.30发行版
 
@@ -70,6 +58,7 @@ _2026年6月11日_
 _2026年6月4日_
 
 ![修复](../assets/fix.svg) **并行目录更新后捆绑产品保持可见** — 修复了在同时更新可配置和捆绑产品时捆绑产品未出现在店面的问题。 将`magento/module-data-exporter`升级到版本103.4.27后，将自动计划重新同步产品馈送，以更正[!DNL Catalog Service]、[!DNL Live Search]和其他连接的Commerce服务中现有的捆绑包数据不一致。
+<!--MDEE-1379-->
 
 ### 103.4.26发行版
 
@@ -90,8 +79,10 @@ _2026年5月19日_
 _2026年5月5日_
 
 ![修复](../assets/fix.svg) **导出日志的疑难解答更简单** — 许多与导出相关的错误和警告现在包含一致的日志代码。 这些代码可帮助您在使用支持或文档时更快地跟踪问题。 有关详细信息，请参阅[日志代码引用](troubleshooting/log-codes-reference.md)。
+<!--MDEE-1276-->
 
 ![修复](../assets/fix.svg) **当属性选项标签更改时自动重新同步** — 商店视图（包括多选属性）的产品属性选项标签更改后，现在会将受影响的产品重新排入队列以供导出，以便Live Search、产品推荐、目录服务和其他连接的Commerce服务在购物者视图中显示更新的Facet和筛选标签。 以前，仅标签编辑可能会导致SaaS目录显示过时措辞，直到更广泛的产品更改触发同步为止。
+<!--MDEE-1337-->
 
 ![修复](../assets/fix.svg) **缺少默认范围数据时的可靠状态和可见性** — 产品导出处理默认管理范围上的间隙，以便连接的服务能够正确启用、禁用和可见性行为。 您设置的特定于存储的值仍优先。
 
@@ -108,8 +99,10 @@ _2026年5月5日_
 
 _2026年4月20日_
 
-![修复](../assets/fix.svg) **解决了删除静态EAV属性时的SQL错误** — 删除静态EAV属性时，ProductAttributeDelete插件不再生成SQL错误，从而确保更平稳的属性管理并提高系统可靠性。 <!--MDEE-1336-->
-![修复](../assets/fix.svg) **类别移动后的固定类别路径导出** — 确保当类别移动到其他父类别时，类别信息源正确更新`url_path`，防止连接的Commerce服务中缺少或过时的类别路径。![修复](../assets/fix.svg) **已改进相关产品的计划类别更新** — 类别URL的计划更新现在仅影响目标类别，从而保留数据完整性并防止对相关产品进行意外更改。 现在，计划的类别URL更改正确反映在导出的数据中，使店面导航和链接的服务与当前目录保持一致。
+![修复](../assets/fix.svg) **解决了删除静态EAV属性时的SQL错误**-ProductAttributeDelete插件在删除静态EAV属性时不再生成SQL错误，从而确保更平稳的属性管理并提高系统可靠性。 <!--MDEE-1336-->
+![修复](../assets/fix.svg) **类别移动后的固定类别路径导出** — 确保当类别移动到其他父类别时，类别信息源正确更新`url_path`，防止连接的Commerce服务中缺少或过时的类别路径。<!--MDEE-1331-->
+![修复](../assets/fix.svg) **已改进相关产品的计划类别更新** — 类别URL的计划更新现在仅影响目标类别，从而保留数据完整性并防止对相关产品进行意外更改。 现在，计划的类别URL更改正确反映在导出的数据中，使店面导航和链接的服务与当前目录保持一致。
+<!--MDEE-1321-->
 
 ### 103.4.22发行版
 
@@ -120,7 +113,7 @@ _2026年4月13日_
 - 修复了在删除期间导出服务不可用时，无法从连接的Commerce服务中正确删除已删除产品的问题。 现在，重试和重新同步操作可确保SaaS中正确反映已删除的产品。<!--MDEE-1319-->
 - 目录实体（产品和类别）现在可以导出到连接的Commerce服务，即使管理员商店视图缺少属性值也是如此。 这提高了与第三方扩展的兼容性，并减少了因缺少默认值导致的导出错误。<!--MDEE-1333-->
 
-![修复](../assets/fix.svg)解决了“数据馈送同步状态”页面上的错误，该错误可能会在馈送记录包含意外数据或缺少数据时发生。 系统现在可以顺利处理此类情况，从而提高稳定性并防止崩溃。 如果您使用Adobe Commerce Optimizer Connector将数据从Adobe Commerce同步到Adobe Commerce Optimizer，请更新到[Adobe Commerce Optimizer Connector版本1.0.11](https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/release-notes)或更高版本，以便进行修复。<!--MDEE-1327-->
+![修复](../assets/fix.svg)解决了“数据馈送同步状态”页面上的错误，该错误可能会在馈送记录包含意外数据或缺少数据时发生。 系统现在可以顺利处理此类情况，从而提高稳定性并防止崩溃。 如果您使用Adobe Commerce Optimizer Connector将数据从Adobe Commerce同步到Adobe Commerce Optimizer，请更新到[Adobe Commerce Optimizer Connector版本1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes)或更高版本，以便进行修复。<!--MDEE-1327-->
 
 ### 103.4.21发行版
 
@@ -146,7 +139,7 @@ _2026年2月6日_
 
 _2026年2月2日_
 
-![修复](../assets/fix.svg)修复了在更新期间项批次可能超过允许的限制，从而导致将数据同步到[Commerce服务](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)或[Adobe Commerce Optimizer](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/data-sync)时出现`items_limit_exceeded`错误的问题。<!--MDEE-1264-->
+![修复](../assets/fix.svg)修复了在更新期间项批次可能超过允许的限制，从而导致将数据同步到[Commerce服务](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)或[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)时出现`items_limit_exceeded`错误的问题。<!--MDEE-1264-->
 
 ![修复](../assets/fix.svg)通过在捆绑产品选项收集期间添加逻辑以注册失败的项目，提高了产品数据导出的可靠性。<!--CCSAAS-4458-->
 
@@ -174,7 +167,7 @@ _2025年11月24日_
 
 _2025年10月22日_
 
-![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，可用于监视和排除从Adobe Commerce到连接的服务（目录服务、实时搜索和产品推荐）的数据传输。 有关安装和使用此扩展的详细信息，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[数据馈送同步状态监控](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=zh-Hans)。<!--MDEE-954-->
+![新](../assets/new.svg)添加了对数据馈送同步状态扩展的支持，以便监视和排除从[!DNL Adobe Commerce]到连接的服务（[!DNL Catalog Service]、[!DNL Live Search]和[!DNL Product Recommendations]）的数据传输。 有关安装和使用此扩展的详细信息，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[数据馈送同步状态监控](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html)。<!--MDEE-954-->
 
 ### 103.4.14发行版
 
@@ -200,7 +193,7 @@ _2025年9月18日_
 
 _2025年8月29日_
 
-仅![新](../assets/new.svg) [!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
+仅![新](../assets/new.svg) [!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
 为其他产品属性（包括产品信息源中Commerce产品配置的税类、属性集和库存数据）添加支持。 如果客户希望在产品导出信息源中包含这些属性，则必须将额外产品属性模块添加到其Adobe Commerce项目。 请参阅[添加税类、属性集和库存属性](add-tax-attribute-set-inventory-attributes.md)。<!--MDEE-1135-->
 
 ![修复](../assets/fix.svg)解决了在完整产品索引期间发生错误时，导致已删除产品更新的同步不正确的问题。 现在，即使索引过程中发生错误，所有产品删除仍会正确同步。<!--MDEE-1144-->
@@ -300,7 +293,7 @@ _2025年3月11日_
 ![新](../assets/new.svg)添加了基于指定的产品SKU列表部分同步`products`、`productOverrides`和`productAttributes`馈送的功能。 通过将`--by-ids`选项添加到resync CLI命令来使用新功能： <!--MDEE-606-->
 
 ```shell
-bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>'
 ```
 
 ![修复](../assets/fix.svg)通过解决已弃用的功能，减少了与PHP 8.4的潜在兼容性问题。<!--MDEE-1002-->
@@ -468,12 +461,12 @@ _2024年4月30日_
 
 - 信息源表（和索引器视图ID）：
 
-   - `catalog_data_exporter_products` -> `cde_products_feed`
-   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
-   - `catalog_data_exporter_categories` -> `cde_categories_feed`
-   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
-   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
-   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+  - `catalog_data_exporter_products` -> `cde_products_feed`
+  - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+  - `catalog_data_exporter_categories` -> `cde_categories_feed`
+  - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+  - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+  - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
 
 - 更改日志表名称 — 遵循与信息源表相同的命名模式，但更改日志表名称会添加`_cl`后缀。 例如`catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
 
