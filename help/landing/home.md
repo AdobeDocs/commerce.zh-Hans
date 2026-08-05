@@ -33,8 +33,8 @@ topic_v2:
 last-update: 2026-07-24
 source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
 workflow-type: tm+mt
-source-wordcount: 1221
-ht-degree: 0%
+source-wordcount: 1335
+ht-degree: 1%
 
 ---
 
@@ -190,7 +190,7 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
          </a>
       </div>
       <p>
-         <em>自动将目录、订单和清单数据从Adobe Commerce同步到连接的服务。使用Commerce CLI命令或<strong>数据管理功能板</strong>管理同步处理。</em>
+         <em>自动将目录、订单和清单数据从Adobe Commerce同步到连接的服务。 使用Commerce CLI命令或<strong>数据管理功能板</strong>管理同步处理。</em>
       </p>
    </td>
    <td valign="top">
@@ -216,7 +216,7 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
          </a>
       </div>
       <p>
-         <em>在Commerce管理员中，轻松地跟踪统一仪表板的Commerce数据同步并触发重新同步。获取有关数据可用性的宝贵见解，以便及时向购物者显示。</em>
+         <em>在Commerce管理员中，轻松地跟踪统一仪表板的Commerce数据同步并触发重新同步。 获取有关数据可用性的宝贵见解，以便及时向购物者显示。</em>
       </p>
    </td>
 </table>
