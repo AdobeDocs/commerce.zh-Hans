@@ -35,266 +35,284 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2e43a6abbca117cef5dc559a9f6881980d2d934c
+source-git-commit: e03840ea9e0e43a005f385914e8599804383e79d
 workflow-type: tm+mt
-source-wordcount: 3153
+source-wordcount: 3305
 ht-degree: 0%
 
 ---
 
 # 迁移到[!DNL Adobe Commerce as a Cloud Service]
 
-[!DNL Adobe Commerce as a Cloud Service]为开发人员提供了从现有Adobe Commerce PaaS实施过渡到新Adobe Commerce as a Cloud Service (SaaS)产品的全面指南。 Adobe Commerce as a Cloud Service代表着向完全托管、无版本SaaS模型的重大转变，提供了增强的性能、可扩展性、简化的操作，以及与更广的[!DNL Adobe Experience Cloud]的更紧密集成。
+本指南帮助开发人员从[!DNL Adobe Commerce on Cloud]或内部部署迁移到[!DNL Adobe Commerce as a Cloud Service] (SaaS)。 此SaaS模型提供了增强的性能、可扩展性以及与[!DNL Adobe Experience Cloud]的集成。
 
 >[!NOTE]
 >
 >有关迁移工具的详细信息，请参阅[批量数据迁移工具](./bulk-data/migration-tool.md)。
 
-## 了解这一转变 — 比较PaaS和SaaS
+## 概述
+
+将已建立的[!DNL Adobe Commerce]存储迁移到[!DNL Adobe Commerce as a Cloud Service]不仅仅是移动数据。 真正的迁移跨以下区域：
+
+- 应用程序 — 为[!DNL Adobe Commerce on Cloud]或内部安装构建的自定义项和扩展
+- 数据 — 目录、订单、客户和配置
+- 店面
+- 与外部系统集成
+
+[!DNL Adobe Commerce as a Cloud Service]是一个无版本的SaaS平台，这意味着这些区域都不能在不调整它们的情况下进行迁移。 自定义已现代化到[!DNL App Builder]应用程序中，在Edge Delivery Services (EDS)上重建了店面，数据迁移到了新的[!DNL Adobe Commerce as a Cloud Service]租户，并且使用SaaS模式重新建立了集成。
+
+Adobe提供了围绕[三个迁移工具](#migration-tools-workflow)构建的集成迁移工作流，而不是将迁移视为单个整体项目。
+
+此共享工作流可整合发现、协调工程团队和交付团队，并提供一致的迁移计划。
+
+![迁移流程图](../assets/migration-flow.png)
+
+### PaaS和SaaS比较
+
+[!DNL Adobe Commerce on Cloud]或内部部署(PaaS)和[!DNL Adobe Commerce as a Cloud Service] (SaaS)的管理方式以及商家与平台的交互方式有所不同。
 
 **主要差异**
 
-* 仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"} **PaaS（当前）**：商家在Adobe的托管环境中管理应用程序代码、升级、修补和基础架构配置。 [共享责任模型](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/security-and-compliance/shared-responsibility)，适用于服务（MySQL、Elasticsearch等）。
-* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} **SaaS（新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe完全管理核心应用程序、基础架构和更新。 商家专注于通过可扩展性点(API、App Builder、UI SDK)进行自定义。 核心应用程序代码已锁定。
+- 仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
+- **[!DNL Adobe Commerce on Cloud Infrastructure]**：商家管理应用程序代码、升级、修补和基础结构配置。
+- **[!DNL Adobe Commerce]本地**：商家在Adobe的托管环境中管理应用程序代码、升级、修补和基础架构配置。
+
+  >[!NOTE]
+  >
+  >[共享责任模型](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/security-and-compliance/shared-responsibility)，适用于服务（MySQL、Elasticsearch等）。
+
+- [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} **SaaS（新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe完全管理核心应用程序、基础架构和更新。 商家专注于通过可扩展性点(API、App Builder、UI SDK)进行自定义。 核心应用程序代码已锁定。
 
 **架构影响**
 
-* **无版本平台**：持续更新意味着核心不再进行主要版本升级。
-* **微服务和API优先**：更加依赖于API来实现可扩展性和集成。
-* **默认为Headless（可选）**：对分离店面的强大支持（例如，由Edge Delivery Services提供支持的Commerce Storefront）。
-* **Edge Delivery Services**：对前端性能和部署的影响。
+- **无版本平台**：持续更新意味着核心不再进行主要版本升级。
+- **微服务和API优先**：更加依赖于API来实现可扩展性和集成。
+- **默认为Headless（可选）**：对分离店面的强大支持（例如，由Edge Delivery Services提供支持的Commerce Storefront）。
+- **Edge Delivery Services**：对前端性能和部署的影响。
 
 **新工具和概念**
 
-* Adobe Developer App Builder的[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)和[API Mesh](https://developer.adobe.com/graphql-mesh-gateway)
-* [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-* 使用[Commerce Cloud Manager](../getting-started.md#create-an-instance)进行自助配置
+- Adobe Developer App Builder的[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)和[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)
+- [Commerce Optimizer](../../optimizer/overview.md)
+- [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
+- 使用[Commerce Cloud Manager](../getting-started.md#create-an-instance)进行自助配置
 
-## 迁移路径
+### 迁移历程
 
-[!DNL Adobe Commerce as a Cloud Service]支持多个迁移路径，具体取决于您的时间线、店面和自定义设置。
+迁移将经历以下阶段：
 
-作为完整迁移的替代方法，[!DNL Adobe Commerce as a Cloud Service]支持使用Commerce Optimizer或增量方法执行分阶段迁移。
+- **评估** — 分析现有实施并考虑以下内容：库存自定义、集成、店面特征和数据结构。 分析之后，创建包含迁移建议、复杂性评分和工作量估计的路线图。
+- **使应用程序现代化并迁移数据** — 将业务数据迁移到[!DNL Adobe Commerce as a Cloud Service]时，重新生成自定义项作为[!DNL App Builder]应用程序。
+- **使店面现代化** — 在Edge Delivery Services (EDS)上为Commerce重建店面。
+- **切换并运行** — 将流量切换到[!DNL Adobe Commerce as a Cloud Service]，停用旧系统，并转换为正在进行的操作。
 
-* **增量迁移** — 此方法包括分阶段迁移您的数据、自定义项和集成。 这种方法非常适用于具有许多自定义项的大型商家，这些商家希望按照自己的步调将其复杂的自定义项和数据逐步过渡到[!DNL Adobe Commerce as a Cloud Service]。
+迁移通常是迭代的，而不是线性的。 组织可以评估多个环境、验证推荐、逐步实现现代化并在最终生产转换之前优化实施计划。
 
-![增量迁移](../assets/incremental.png){width="600" zoomable="yes"}
+### 迁移工具工作流程
 
-* **Commerce Optimizer** — 此方法允许您循环迁移，方法是使用Commerce Optimizer作为过渡阶段，按照自己的步调将复杂的自定义项和数据移动到[!DNL Adobe Commerce as a Cloud Service]。 Commerce Optimizer提供对由目录视图和策略提供支持的促销服务、由Edge Delivery提供支持的Commerce Storefront以及[!DNL Product Visuals powered by AEM Assets]的访问权限。
+以下每个工作流都有自己的工具。 将这两个功能结合使用来完成迁移，迁移评估将用作整个迁移过程中使用的通用蓝图。
 
-![迭代迁移](../assets/optimizer.png){width="600" zoomable="yes"}
+| 工作流 | 工具 | 描述 |
+| --- | --- | --- |
+| [评估](#migration-assessment-tool) | **迁移评估工具** | AI驱动的现有实施评估，其中清点自定义模块、第三方扩展、集成、店面观察、数据库模式、自定义表、迁移建议、复杂性评分和现代化工作估计值。 |
+| [应用程序和店面现代化](#code-and-storefront-migration-commerce-developer-mcp) | **Commerce开发人员MCP** | 人工智能辅助的Commerce应用程序现代化，加快将自定义项迁移到[!DNL App Builder]，支持店面迁移到Edge Delivery Services (EDS)，并通过由工程团队审查和验证的实施指导开发人员完成更广泛的应用程序现代化历程。 |
+| [数据迁移](#data-migration-commerce-data-migration-service) | **Commerce数据迁移服务** | 将目录、客户和订单数据的提取、加载和完整性验证到[!DNL Adobe Commerce as a Cloud Service]。 |
 
-* **完全迁移** — 此方法包括同时迁移所有数据、自定义项和集成。 这种方法非常适用于那些自定义项很少且想要快速过渡到[!DNL Adobe Commerce as a Cloud Service]的小型商家。
+这些磁道不是独立的。 以正确的顺序一起使用它们可最大程度地减少重复工作。
 
-下表概述了不同存储前端和配置的迁移过程：
+- **首先运行评估** — 运行评估首先会识别不支持的自定义项、估计迁移工作量、公开数据迁移注意事项，并在实施开始之前突出显示集成依赖项。 评估将成为应用程序现代化工作流程和数据迁移工作流使用的迁移蓝图。
+- **应用程序现代化** - Commerce开发人员MCP使用迁移评估来确定哪些自定义项要现代化以及如何现代化。 然后，MCP生成相应的[!DNL App Builder]应用程序和店面组件。
+- **数据迁移** — 数据迁移范围界定调查表捕获评估所显示的范围、卷和自定义表。
+- **自定义数据和第三方数据** — 评估期间识别了第三方扩展保存在自定义表中的数据，但标准数据迁移无法处理这些数据，因此需要[!DNL App Builder]自定义。
 
-|                    | LUMA店面 | PWA店面 | 由Edge Delivery提供支持的Commerce店面 | Headless |
-|--------------------|----------------------------------------|----------------------------------------|------------------------------------------------------|----------------------------------------|
-| 数据迁移 | 必填 | 必填 | 必填 | 必填 |
-| 店面 | 迁移到由Edge Delivery提供支持的Commerce Storefront | 迁移到由Edge Delivery提供支持的Commerce Storefront或进行维护 | 无影响 | 无影响 |
-| API网格 | 构建新网格 | 构建新网格或重新配置现有网格 | 构建新网格或重新配置现有网格 | 构建新网格或重新配置现有网格 |
-| 集成 | 利用集成入门工具包 | 利用集成入门工具包 | 利用集成入门工具包 | 利用集成入门工具包 |
-| 自定义 | 移动到App Builder和API Mesh | 移动到App Builder和API Mesh | 移动到App Builder和API Mesh | 移动到App Builder和API Mesh |
-| Assets管理 | 使用OOTB时需要迁移 | 使用OOTB时需要迁移 | 使用OOTB时需要迁移 | 使用OOTB时需要迁移 |
-| 扩展 | 迁移到App Builder | 迁移到App Builder | 迁移到App Builder | 迁移到App Builder |
+店面现代化不只是UI迁移。 除了迁移业务功能外，您还需要考虑体验架构、可重用组件现代化、性能优化和Edge Delivery Services模式的采用。
 
-如表所示，每次迁移的缓解措施将包括：
+集成将作为迁移评估的一部分进行评估，但其实施因方案而异。 集成可利用[!DNL App Builder]、[!DNL API Mesh]、Adobe I/O Events和[!DNL Adobe Commerce as a Cloud Service] API。
 
-* **数据迁移** — 使用提供的[迁移工具](./bulk-data/migration-tool.md)将数据从现有实例迁移到[!DNL Adobe Commerce as a Cloud Service]。
-* **店面** — 由Edge Delivery提供支持的现有Commerce店面和headless店面不需要缓解问题，但Luma店面需要迁移到由Edge Delivery提供支持的Commerce店面。 PWA Studio店面可以迁移到由Edge Delivery提供支持的Commerce店面，也可以保持其当前状态。 Adobe将提供加速器以帮助店面迁移。
-* **[API网格](https://developer.adobe.com/graphql-mesh-gateway)** — 创建新网格或修改现有网格。 Adobe将提供预配置的网格以帮助完成此过程。
-* **集成** — 所有集成都需要利用[集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)或[[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/)。
-* **自定义项** — 所有自定义项都必须移至App Builder和API网格。
-* **Assets管理** — 所有资源管理都需要迁移。 如果您已在使用[!DNL AEM Assets]，则无需迁移。
-* **扩展** — 任何进程内扩展都需要重新创建为进程外扩展。 到2025年底，Adobe将提供对我们最受欢迎的扩展的访问，以最大程度地缩短构建时间。
+这些迁移工具将继续扩展和维护以迁移评估为中心的统一迁移工作流。
 
-## 迁移阶段
+### 后续步骤
 
-以下阶段描述了迁移到[!DNL Adobe Commerce as a Cloud Service]的必要步骤和注意事项。
+准备好迁移后，从创建评估开始。 迁移评估将制定迁移后的计划。
 
-### 迁移前评估和规划
+迁移评估工具和Commerce开发人员MCP使用AI帮助您发现、规划和实施。 与任何工程工作流一样，作为标准架构、测试和质量保证流程的一部分，您的团队应该仔细审查和验证AI生成的建议和实施。
 
-此阶段对于最大限度地降低风险、建立明确的迁移路径并在问题出现之前发现问题至关重要。
+## 迁移评估工具
 
-**发现和审核当前环境**
+在开始开发或迁移之前，您必须考虑迁移的大小并确定需要开发的项目。 [!DNL Adobe Commerce on Cloud]或内部部署上的[!DNL Adobe Commerce]存储可能具有自定义模块、集成、店面自定义和数据结构，在有人分析实施之前，这些内容可能并不明显。 迁移评估工具会自动扫描您的代码库，以识别这些要开发的项目。
 
-**代码库分析：**
+### 评估概述
 
-* 识别所有自定义模块、主题和覆盖。
-* 分析核心代码修改，并确定哪些修改需要在迁移过程中进行重构。
-* 评估第三方扩展并确定与[!DNL Adobe Commerce as a Cloud Service]的兼容性。 是否有与SaaS兼容的替代方案，或者您是否需要创建自定义API集成或App Builder应用程序？
-* 识别任何不会迁移的已弃用代码或功能。
+迁移评估工具对现有实施执行AI评估，并生成结构化现代化评估和[!DNL Adobe Commerce as a Cloud Service]迁移路线图。 它还通过评估应用程序自定义、集成、数据结构、店面特征以及影响现代化的其他实施详细信息，构建迁移的综合视图。 它将发现变成一个快速、可重复的过程，允许您在作出承诺之前评估工作量、风险和排序。
 
-**数据审核：**
+迁移评估工具产生的评估不仅仅是一份报告。 评估将成为共享迁移对象，在整个迁移生命周期内为规划、实施和验证提供信息。 作为迁移历程的第一阶段，其调查结果将同时涵盖应用程序现代化以及随后的数据迁移工作。
 
-* 评估数据库的大小和复杂性。
-* 识别未使用的数据或表以进行清理。
-* 审查现有数据导入/导出流程。
+有关迁移评估报告中包含的内容及其使用方法的详细信息，请参阅[迁移评估](./assessment.md)。
 
-**集成审核：**
+### 评估阶段
 
-* 列出与Adobe Commerce集成的所有外部系统（ERP、CRM、PIM、支付网关、航运提供商、OMS和任何其他系统）。
-* 评估集成方法（API、自定义脚本和其他方法）。
-* 评估与[!DNL Adobe Commerce as a Cloud Service]的API优先方法和App Builder的兼容性。
+评估将针对现有实施运行，并经历一系列自动化阶段：
 
-**性能指标评测：**
+- **库存** — 将实施编目。 包括：自定义模块、编辑器依赖项、第三方扩展、配置、店面组件（如果适用）、文件、扩展性点、事件、插件、API、cron作业、队列、数据库模式和自定义数据库表。
+- **分析** — 执行静态分析以识别存储自定义项、与标准[!DNL Adobe Commerce]安装之间的差异，以及这些自定义项如何在应用程序中交互。
+- **分类** — 使用AI解释每个自定义项，汇总自定义项的用途，分组相关功能，识别实施模式，并提供上下文迁移建议。
+- **映射和推荐** — 将每个功能映射到其[!DNL Adobe Commerce as a Cloud Service]等效功能，包括：默认功能、[!DNL App Builder]应用程序或Adobe服务。 然后，评估会推荐现代化路径，并评估复杂性、依赖性和实施工作。
+- **报告** — 生成用于规划迁移执行的可导出路线图，该路线图允许您向利益相关者传达风险。 它还确定了优先事项、依赖项、技术债务和实施风险。
 
-* 记录当前的Lighthouse分数、页面加载时间和关键绩效指标(KPI)，这为衡量迁移后的改进情况提供了一个基准。
+### 评估值
 
-**安全配置审查：**
+评估的价值在于您在承诺提供开发细节之前可以拥有的信心程度。 评估不是通过常规的范围设定做法来估计迁移，而是提供对实施情况的基于证据的了解。 这包括哪些自定义项易于迁移、需要重新设计以及可以完全停用。 评估会定期显示过时或未使用的功能，从而让您减少技术债务。
 
-* 评估任何自定义WAF规则、IP允许列表和任何其他安全配置。
+每个建议都包含支持性证据以及返回到底层实施的引文，这允许架构师和工程师在规划期间进行验证。 由于每项评估都遵循相同的方法，因此您可以使用一致的评分和规划框架来比较多种开发需求。
 
-**定义迁移范围和策略：**
+评估不仅仅是一个起点。 下游迁移工具使用评估结果来加快实施并维护与批准的迁移计划的一致性。 自定义分析成为应用程序现代化的蓝图，而数据评估通过分析数据库大小、实体清单和自定义表来限定数据迁移工作。
 
-* **分阶段迁移与一次性迁移：**&#x200B;评估每种方法的优劣。
-* **确定核心业务流程：**&#x200B;优先处理必须首先迁移的功能，例如：
-  * 复杂的定价规则
-  * 在正式下达或处理订单之前应用的自定义业务规则
-  * 复杂的税费计算
-  * 地址验证
-  * 下达订单后触发的自定义逻辑
-* **Headless与整体式店面：**&#x200B;新店面开发或调整现有店面的决策点。
-* **集成策略：**&#x200B;确定如何重新规划现有集成（API网格、App Builder、直接API）。
-* **数据迁移策略：**&#x200B;确定您打算使用完整历史数据、部分数据还是未迁移的数据进行迁移。
+### 评估范围
 
-**团队准备和培训：**
+迁移评估工具侧重于了解完整的迁移环境。 它分析自定义模块、插件、事件、API、cron作业、队列、与外部系统的集成、店面特征以及这些自定义所依赖的数据库模式。 此评估将其发现的内容映射到可用的[!DNL Adobe Commerce as a Cloud Service]功能，并确定应使用[!DNL App Builder]使功能现代化或针对SaaS架构重新设计的位置。
 
-* 熟悉[!DNL Adobe Commerce as a Cloud Service]概念、开发工作流和新工具。
-* 参加Adobe App Builder、Edge Delivery Services和[!DNL Adobe Commerce as a Cloud Service]部署管道的实践培训。
+评估与其说是一种执行工具，不如说是一种规划工具。 它可确定应现代化的内容，估计实施的复杂性，并提供建议。 实施决策和架构验证仍是Adobe、合作伙伴和客户工程团队之间的协作活动。
 
-**环境设置和设置：**
+由第三方扩展存储在自定义表中的数据显示为迁移注意事项。 标准数据迁移不会自动迁移此数据。 可能需要自定义[!DNL App Builder]应用程序才能支持这些方案。 有关详细信息，请参阅[数据迁移指南](#data-migration-commerce-data-migration-service)。
 
-* 使用Commerce Cloud Manager配置您的[!DNL Adobe Commerce as a Cloud Service]沙盒和开发环境。
+该评估将对店面自定义和数据迁移工作流进行分析：
 
-### 增量迁移阶段
+- 代码和店面迁移 — 评估的应用程序分析成为Commerce开发人员MCP的蓝图
+- 数据迁移 — 评估的实体清单、数据库特征分析和自定义表分析确立了Commerce数据迁移服务的范围。
 
-**策略重构和外部化**
+您还可以随着应用程序的演变重新运行评估。 这使您的团队能够验证修正工作、衡量现代化进度，并在整个项目中不断优化迁移计划。
 
-此阶段包含迁移的核心，侧重于使代码库适应[!DNL Adobe Commerce as a Cloud Service]云原生范式。 这包括从战略上采用新的Adobe服务和将自定义逻辑移出核心Commerce平台。
+### 后续步骤
 
-#### &#x200B;1. 将“处理中”自定义项和扩展迁移到App Builder
+每个[!DNL Adobe Commerce as a Cloud Service]迁移都应该从评估开始。 这是一种在开始实施前确定范围、减少不确定性和创建共享迁移蓝图的低成本方法。
 
-这是实现“锁定核心”和面向未来的解决方案的关键阶段，是[!DNL Adobe Commerce as a Cloud Service]架构理念的核心。
+有关评估工具和下游开发人员工作流的详细信息，请参阅[Adobe Commerce开发人员MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/)。
 
-* **将复杂逻辑外部化到App Builder**：分析PaaS代码库中的现有自定义模块和第三方扩展。 对于复杂的业务逻辑、定制集成或微服务，它们不需要直接、在进程中操作核心Commerce数据模型，请在Adobe Developer App Builder中将它们重构并重新平台为无服务器应用程序。
-* **利用API Mesh**：对于需要来自多个后端系统（例如，您的PaaS Commerce后端、ERP、CRM和自定义App Builder微服务）的数据的情况，请在App Builder中实施API Mesh层。 这会将不同的API整合到单个高性能的GraphQL端点中，供您的新店面或其他服务使用，从而简化复杂的数据提取。
-* **事件驱动型架构**：利用Adobe I/O Events根据PaaS实例中发生的事件（例如，产品更新、客户注册、订单状态更改）或其他连接系统中发生的事件，触发App Builder操作。 这促进了异步通信，降低了紧密耦合，并增强了系统恢复能力。
+## 代码和店面迁移（Commerce开发人员MCP）
 
-**好处**：此步骤可显着减少与深度嵌入的自定义项相关的技术债务，显着加快将Commerce实例过渡到[!DNL Adobe Commerce as a Cloud Service]的速度，增强自定义逻辑的可扩展性和独立部署能力，并加快扩展的开发周期。
+在[!DNL Adobe Commerce on Cloud]中或本地自定义可以使用进程内PHP — 在应用程序中运行的模块、插件和事件观察程序。 [!DNL Adobe Commerce as a Cloud Service]是一个无版本的SaaS平台，该模型不再适用。 自定义项作为进程外的[!DNL Adobe Developer App Builder]应用程序运行，这些应用程序通过事件和API与Commerce集成。 使存储区对此体系结构的自定义实现现代化通常是[!DNL Adobe Commerce as a Cloud Service]迁移中最重大的工程工作。
 
-#### &#x200B;2. 采用基于SaaS的Adobe Commerce促销服务并集成目录数据
+### 代码迁移概述
 
-这是一个关键的初始集成点，它有两个关于目录数据管理的选项：
+从迁移评估开始，Commerce开发人员MCP提供了一个对话式IDE体验，用于将旧版PHP自定义更新到[!DNL App Builder]应用程序中。 它还为Edge Delivery Services (EDS)上的店面重建提供援助。 通过直接使用迁移评估工具的调查结果，Commerce开发人员MCP通过减少手动解释、维护可跟踪性和确保整个过程的一致性，使实施与批准的迁移路线图保持一致。
 
->[!BEGINTABS]
+虽然迁移是主要用例，但Commerce开发人员MCP被设计为[!DNL Adobe Commerce]的综合AI开发代理。 MCP支持现代化、新开发、操作工作流以及对[!DNL Adobe Commerce as a Cloud Service]的所有更新。 这种灵活性级别允许团队在迁移后很长时间继续构建和扩展Commerce应用程序。
 
->[!TAB 选项1 — 现有目录SaaS服务]
+### Commerce开发人员MCP
 
-**利用与PaaS后端集成的现有目录SaaS服务**
+利用[迁移评估](#migration-assessment-tool)中的调查结果，Commerce Developer MCP通过迭代开发工作流将已识别的自定义项转换为[!DNL App Builder]个应用程序。 使用这些工具进行开发时，请考虑以下准则：
 
-此选项用作过渡步骤，以现有集成为基础，在该集成中，PaaS后端使用[目录服务](../../catalog-service/guide-overview.md)、[实时搜索](../../live-search/overview.md)和[产品推荐](../../product-recommendations/overview.md)中的数据填充Adobe Commerce SaaS服务的现有实例。
+- **从Blueprint开始** - Commerce开发人员MCP使用迁移评估，使用其标识的自定义项、建议和迁移优先级作为实施计划的基础。
 
-* **目录数据同步**：确保您的Adobe Commerce PaaS实例继续将产品和目录数据同步到您现有的Adobe Commerce目录SaaS服务。 这通常依赖于PaaS实例中已建立的连接器或模块。 目录SaaS服务仍然是搜索和促销功能的权威来源，其数据来自PaaS后端。
-* 用于优化的&#x200B;**API网格**：虽然Headless店面（在Edge Delivery Services上）和其他服务可以直接使用目录SaaS服务中的数据，但Adobe强烈建议使用API网格（在App Builder内）。 API网格可以将目录SaaS服务中的API与PaaS后端中的其他必要API（例如，来自事务性数据库的实时清单检查或未完全复制到目录SaaS服务的自定义产品属性）统一到单个高性能GraphQL端点中。 这还可以实现集中式缓存、身份验证和响应转换。
-* **集成实时搜索和产品推荐**：将实时搜索和产品推荐SaaS服务配置为直接从现有Adobe Commerce目录SaaS服务[摄取目录数据](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/install#configure-the-data)，而您的目录SaaS服务又由PaaS后端填充。
+- **计划每个自定义** — 对于每个自定义，Commerce Developer MCP都会制定一个规范，该规范描述推荐的[!DNL Adobe Commerce as a Cloud Service]架构、所需的集成模式以及过渡到进程外应用程序所需的任何重新设计。
 
-**优势**：通过利用现有的可操作目录SaaS服务及其与PaaS后端的集成管道，这可以更快地通向Headless店面和高级SaaS促销功能。 但是，它保留了对主目录数据源的PaaS后端的依赖关系，并且不提供新的可组合目录数据模型中固有的多源聚合功能。 此选项是实现更完整可组合架构的有效基础。
+- **协作构建** - Commerce开发人员MCP不会最初生成代码，而是通过规划实施、讨论架构、生成和优化代码、验证建议的模式以及提供部署指导，在整个开发生命周期中为您提供帮助。 开发人员可以通过自然语言反复地优化生成的实施，使项目详细信息在整个现代化工作中共同演进。
 
->[!TAB 选项2 — 可组合的目录数据模型]
+  - 生成的实施旨在加快交付，同时让工程团队保持完全可查看、可测试和可扩展。
 
-**采用新的可组合目录数据模型(CCDM)**
+- **集成和部署** - Commerce开发人员MCP通过适当的集成模式将应用程序连接到Commerce，协助部署工作流，并在部署之前根据建议的架构模式验证实施，从而提高一致性并减少重复工作。
 
-这是经得起未来考验的战略性方法来利用Adobe Commerce Optimizer。 CCDM提供了灵活、可扩展且统一的目录服务，专为多源数据聚合和动态促销而设计。
+  - Commerce开发人员MCP包含[!DNL Adobe Commerce App Builder] MCP，它直接在您的开发工作流中提供域知识、实现模式、架构指导、上下文产品专业知识和经验证的编码实践。 无论开发人员是直接与Adobe开发人员MCP合作，还是与其他代理（如Claude、Cursor或Copilot）结合，这都可以确保MCP建议与Commerce的最佳实践保持一致。
 
-* **数据摄取和统一**
-  * 首先，将现有Adobe Commerce PaaS实例（和/或其他PIM/ERP系统）中的产品和目录数据引入新的可组合目录数据模型(CCDM)。
-  * 将现有的产品属性映射到CCDM的灵活架构。 优先考虑关键产品数据以进行初始摄取。
-  * 为连续同步建立可靠的数据管道。 这可能包括：
-    * **事件驱动**（通过App Builder）：利用PaaS实例中的Adobe I/O Events触发公开可用或自定义Adobe App Builder应用程序。 这些应用程序通过其API转换数据更改（创建、更新和删除）并将其推送到CCDM。
-    * **批量摄取**：对于大型初始加载或定期批量更新，请使用安全文件传输（例如CSV或JSON）到临时区域，由Adobe Experience Platform (AEP)摄取服务处理到CCDM。
-    * **直接API集成**（与App Builder编排）：对于更复杂的场景，App Builder可以充当编排层，对您的PaaS后端进行直接API调用，转换数据，并将其推送到CCDM。
-* **目录视图和策略定义**：在CCDM中配置目录视图（用于唯一目录呈现的逻辑分组，例如商店视图、区域和B2B/B2C区段）并定义策略（用于产品呈现、筛选和促销的规则集）。 这样可以动态控制每个目录视图的产品分类和显示逻辑。
-* **集成实时搜索和产品推荐**：一旦目录数据出现在CCDM中，就集成Adobe基于SaaS的实时搜索和产品推荐服务。 这些模型利用Adobe AI AI和机器学习模型实现卓越的搜索相关性和个性化推荐，直接从CCDM使用数据。
+### 店面现代化
 
-**优势**：通过将目录管理和发现抽象到CCDM和相关的SaaS服务中，您可以提高性能，获得AI驱动的促销功能，显着减轻旧式后端读取操作的负载，并实现funnel顶级体验的强大“剥离”。
+在前端，Commerce开发人员MCP使用Adobe Commerce样板、放置组件和EDS块在Commerce的Edge Delivery Services (EDS)上实现[店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)的现代化。
 
->[!ENDTABS]
+Commerce开发人员MCP根据Commerce样板加载现有店面项目。 它通过以下方式使您的店面现代化：
 
-#### &#x200B;3. 在Edge Delivery Services上建立您的店面
+- 生成响应EDS块
+- 生成Commerce感知页面数据（主页、PLP、PDP、购物车、结账、帐户）
+- 构成和扩展下拉组件
+- 将设计转换为EDS实施
+- 将旧式整体式店面转换为可组合的EDS块体系结构
 
-随着建立促销数据管道和将自定义项外部化，焦点将转移到构建高性能的前端。
+MCP还协助：
 
-* **初始设置**：使用Edge Delivery Services的Adobe Commerce店面模板设置项目。 这为基于现代Web技术构建的Headless前端提供了基础。
-* **连接到目录服务和API Mesh**：您的Commerce店面将主要通过GraphQL API使用数据：
-  * **选项1**：从现有的目录SaaS服务（通过API Mesh）获取产品信息和促销规则。
-  * **选项2**：从CCDM获取产品信息和促销规则。
-  * 从API Mesh获取旧版后端（PaaS实例）或自定义App Builder服务中的任何编排数据（例如，显示实时库存、自定义产品属性和忠诚度点数）。
-* **内容迁移（AEM服务）**：将您现有的静态内容（例如，“关于我们”页面、博客文章和营销横幅）迁移到支持Commerce店面的AEM服务。 利用AEM的内容创作功能并确保针对Edge Delivery Services优化资产。
-* **开发核心UI组件**：使用Edge Delivery Services插件组件和自定义React/Vue组件为产品详细信息页面(PDP)、产品列表页面(PLP)和常规内容页面构建关键用户界面组件。 确定核心商务流的优先级。
-* **与现有购物车/结帐集成**：最初，Edge Delivery Services店面将协调您向现有Adobe Commerce PaaS（或其他第三方平台）的切换，以进行购物车管理和结帐。 这通常涉及：
-  * **重定向**：将用户重定向到旧版平台的本机购物车和结帐URL，并传递必要的会话和购物车标识符。
-  * **直接API交互**（使用App Builder编排）：在Edge Delivery Services中构建直接与PaaS后端的购物车和结帐API交互的自定义购物车和结帐UI组件。 这通常涉及将App Builder作为前端后端(BFF)来编排对多个后端服务（例如，PaaS cart、支付网关和配送计算器）的调用。
+- 组件现代化
+- 可重用块组合
+- 体验优化
+- 与当前Edge Delivery Services最佳实践保持一致
 
-**优势**：提供超快、SEO优化和高度灵活的店面体验。 此阶段直接有助于提供卓越的客户体验，并为未来前端创新奠定基础。
+### 开发人员MCP值
 
-#### &#x200B;4. 数据迁移（分阶段流程）
+从进程中的PHP自定义移动到可组合的[!DNL App Builder]应用程序代表着体系结构上的重大转变。 Commerce开发人员MCP通过将[!DNL Adobe Commerce]知识、[!DNL App Builder]实施模式和产品最佳实践直接嵌入开发工作流来填补这一空白。
 
-数据迁移是一个关键的、多方面的过程，它与重构和店面开发同时运行，从而确保数据一致性和完整性。
+包含此上下文可提高交付速度和工程质量的一致性。 团队可以更快地实现应用程序的现代化，同时按照一致的架构指导制定实施。
 
-* **清理和优化现有数据**：在任何大规模迁移之前，对现有PaaS数据库执行全面的数据清理、重复数据消除和验证。 此主动步骤对于最大限度地减少旧数据问题的传输并确保新环境中的数据质量至关重要。
+通过嵌入推荐的实施模式，Commerce开发人员MCP降低了对个人专业知识的依赖，并帮助组织跨项目以一致的方式扩大现代化工作。
 
-**批量数据迁移**
+迁移过程也是改进现有实施的一个机会。 团队可以简化旧版自定义设置、淘汰过时的功能、采用SaaS功能以及使应用程序体系结构现代化，而不是继续承担历史性的技术债务。
 
-批量数据迁移包括从Adobe Commerce PaaS实例中获取完整数据转储，转换整个数据集，并将其导入Adobe Commerce as a Cloud Service中，所有这些操作都可以同时完成。 此方法通常用于初始数据群体。
+由于Commerce开发人员MCP直接使用迁移评估，因此所有现代化工作都可追溯到最初的评估，确保实施与批准的迁移路线图保持一致。
 
-* **工具可用性**：用于客户第一方Commerce批量数据迁移的专用[批量数据迁移工具](./bulk-data/migration-tool.md)正在提前访问。 计划的正式发布日期为2027年第一季度。 如果客户在批量数据迁移之前需要帮助，Adobe可以代表他们根据请求促进数据传输。
+Commerce开发人员MCP还通过鼓励模块化[!DNL App Builder]应用程序来促进可组合应用程序设计，这些应用程序可以随着业务需求的变化而独立地发展。
 
-* **进程**：
-  * **完整数据导出**：从Adobe Commerce PaaS实例中提取完整的数据集（例如，产品、类别、客户帐户、历史订单数据、静态块和页面内容）。
-  * **数据转换**：应用必要的转换以使提取的数据符合新Adobe Commerce as a Cloud Service组件的架构要求，包括可组合目录数据模型(CCDM)（如果采用）以及任何其他相关Adobe服务或数据库。 这可能涉及自定义脚本或专门的数据映射工具。
-  * **初始导入**：将转换后的完整数据集导入Adobe Commerce as a Cloud Service的相应组件中。 对于产品和类别数据，这将填充所选的目录服务（CCDM或现有的目录SaaS）。 对于客户和订单数据，这将填充事务型后端或关联的服务。
-  * **验证**：严格验证导入的数据，以确保所有新系统的完整性、准确性和一致性。
+### 开发人员MCP范围
 
-**迭代数据迁移**
+在后端，Commerce开发人员MCP通过将PHP模块、插件和事件观察程序转换为[!DNL App Builder]应用程序来使自定义和集成层现代化，并建立集成模式以将其与Adobe Commerce连接。 它还加快了结账、支付和管理UI之间的开发。
 
-迭代数据迁移侧重于将增量更改和删除从源PaaS实例同步到新的Cloud Service组件，确保数据在转换之前和之后保持新鲜。
+在前端，Commerce开发人员MCP [在Edge Delivery Services上使Commerce店面](#storefront-modernization)现代化。
 
-* **工具可用性**：专门为迭代数据迁移设计的工具将在2026年提供。
+MCP不处理数据迁移。 通过[Commerce数据迁移服务](#data-migration-commerce-data-migration-service)迁移业务数据。 当业务逻辑或自定义表需要应用程序现代化时，MCP支持所需的[!DNL App Builder]应用程序。
 
-* **进程**：
-  * **增量标识**：建立机制以标识自上次同步以来PaaS环境中关键数据集中的更改（创建、更新和删除）。 这可能涉及更改数据捕获(CDC)、时间戳比较或基于事件的触发器。
-  * **连续同步**：为从PaaS环境到新Cloud Service组件（例如，CCDM和事务性后端）的连续、增量数据同步实施可靠的机制。 这对于保持数据新鲜度以及在转换期间最大程度地减少停机时间至关重要。
-  * **利用事件**：尽可能利用Adobe I/O Events触发App Builder操作，以便从您的PaaS实例实时或近乎实时地更新新服务。 例如，PaaS中的产品更新可能会触发一个事件，该事件会更新CCDM中的相应条目。
-  * **API驱动更新**：对于非事件驱动的数据，使用计划的API调用（通过App Builder或其他集成平台）从PaaS中提取更改并将它们推送到新系统。
-  * **错误处理和监控**：对所有迭代数据管道实施可靠的错误处理、日志记录和监控，以确保在整个过程中保持数据完整性。
+### 后续步骤
 
-### 迁移后和日常操作
+一旦迁移评估工具路线图确定了迁移范围和优先级，代码和店面现代化就会开始。
 
-**DNS直接转换并上线：**
+有关如何安装和使用MCP的更多信息，请参阅[Commerce开发人员MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/)文档。
 
-* 仔细规划DNS切换，最大限度地减少停机时间。
-* 启动后立即监控站点运行状况和性能。
+## 数据迁移（Commerce数据迁移服务）
 
-**启动后操作：**
+迁移到[!DNL Adobe Commerce as a Cloud Service]可能需要迁移多年的数据，包括：目录、订单、客户和配置。
 
-**正在停用PaaS环境：**
+Commerce数据迁移服务将手动迁移替换为单个、可重复且自动化的过程。 它使复杂的数据库迁移更可预测、更有效。
 
-* 在验证期过后，安全地存档或删除旧的PaaS实例和数据。
+### Commerce数据迁移服务
 
-**正在进行的开发工作流：**
+迁移使用引导式工作流，由Docker命令行工具(`./bin/console migration`)驱动。 系统集成商或操作员针对源存储运行此工作流。
 
-* 接受[!DNL Adobe Commerce as a Cloud Service]的无版本特性，它具有连续的小部署而不是大型升级。
-* 利用Cloud Manager管理环境和部署。
-* 利用App Builder扩展功能而不影响核心。
+核心数据迁移是自动化的，但大多数迁移都涉及非标准架构、扩展和边缘案例，因此所有迁移都从对源存储进行[评估](#migration-assessment-tool)开始。 在验证凭据和连接、注册迁移并建立验证基线后，您可以继续数据迁移。
 
-**监控、性能和安全性：**
+迁移服务工具执行以下数据管理步骤：
 
-* 持续监控站点性能、错误和安全日志。
-* 利用Adobe的内置安全功能并遵循最佳实践。
+1. **提取和转换** — 从源中并行提取所有相关数据并为[!DNL Adobe Commerce as a Cloud Service]重新设置其形状。 系统会过滤掉不兼容的数据，并重新映射自定义属性和其他结构。
+1. **加载** — 将提取的数据传输到Commerce数据迁移服务。 该服务将数据加载到[!DNL Adobe Commerce as a Cloud Service]中，然后重新构建索引并摄取目录。
+1. **验证** — 比较数据库级别的源数据和目标数据。 然后，该服务通过店面GraphQL和管理员REST API验证一个实时记录示例以验证数据。
+1. **报告** — 将每个步骤的结果合并到最终迁移报告中。
 
-**培训和文档：**
+这些数据移动阶段需要一个维护窗口，但在准备阶段，存储可保持正常运行，将停机时间降至最低。
 
-* 针对[!DNL Adobe Commerce as a Cloud Service]平台和工作流程培训新开发人员和业务用户。
-* 维护自定义集成和流程的最新内部文档。
+### 迁移服务价值
+
+Commerce数据迁移服务通过使用证据来保持数据完整性。 通过比较源数据和目标数据，并通过API验证实时记录样本来验证每次迁移。 提取期间会自动过滤并重新映射未完全映射到[!DNL Adobe Commerce as a Cloud Service]的数据（如自定义属性）。
+
+迁移服务针对企业规模数据库而设计。 数据迁移是异步分区和处理的，允许可靠地迁移大型目录和大量订单历史记录。 随着管道的增长，多个迁移可以并行运行。 如果迁移中断，则从上一个已完成的阶段继续，并自动检测和重试停止的作业。
+
+可通过以下方式将停机时间降至最低：
+
+- 大部分工作会在存储保持活动状态时执行，这意味着只有最终转换需要维护时段。
+- 数据迁移使用高效的直接SQL读取和写入，并跳过不需要迁移的表和记录。
+
+由于迁移涉及通过Adobe基础架构移动生产数据，因此整个路径是安全的：
+
+- 在到达目标之前，将扫描所有上传中的恶意软件
+- 引入层验证文件类型并阻止不安全的数据库操作
+- 每个请求都使用Adobe IMS和网关签名验证进行身份验证
+
+Commerce数据迁移服务在全球范围内处于生产状态，并且已经提供了多个企业级迁移。
+
+### 自定义数据和第三方数据
+
+迁移服务仅支持第一方核心商务数据。 迁移服务不处理自定义的第三方实体。
+
+第三方数据可以按案例迁移，这要求对Docker提取工具进行相应的自定义。 创建自定义工具后，可以从源中提取数据并将其写入[!DNL App Builder]或第三方数据库。
+
+由于每个扩展对其数据的建模方式不同，因此只能在确定源和目标存储的架构和位置之后设计第三方数据的迁移路径。 应尽早确定第三方数据迁移，以便有时间确定范围。
+
+### 后续步骤
+
+准备迁移时，请完成[数据迁移范围调查表](../assets/data-migration-scoping-questionnaire.xlsx)，该调查表需要源拓扑、实体范围、卷、合规性约束、直接转换机制以及规划迁移所需的任何[自定义表](#custom-and-third-party-data)。 完成此调查表可让Adobe评估您的环境并规划迁移时段。
+
+查看[批量数据迁移工具指南](bulk-data/migration-tool.md)文档，了解有关工作流、支持的数据和验证的更多信息。
+
+准备源环境的系统集成商还可以使用标准[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)和[Adobe Developer Console](https://developer.adobe.com)作为IMS凭据。

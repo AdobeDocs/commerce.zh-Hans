@@ -1,10 +1,9 @@
 ---
-title: 迁移评估
+title: 迁移评估工具
 description: 了解如何阅读Adobe Commerce PaaS迁移评估报告、解释店面和后端复杂性信号，以及使用Adobe AI开发人员工具开始构建Adobe Commerce as a Cloud Service的扩展。
 feature: Cloud, Migration
 role: Developer, Admin
 level: Intermediate
-nudge: true1
 autotag-review: '2026-06-18T16:09:41.112Z'
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
 product_v2:
@@ -26,15 +25,15 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4cd054b64c3b95fd50ab9bb682469ace7cc871a3
+source-git-commit: 43d5571c6a1a3c5152d3b389b73887fd4739fa7f
 workflow-type: tm+mt
-source-wordcount: 2497
+source-wordcount: 2499
 ht-degree: 0%
 
 ---
 
 
-# 迁移评估
+# 迁移评估工具
 
 >[!IMPORTANT]
 >
@@ -308,25 +307,25 @@ Manages custom shipping rate calculations based on customer account tier and ord
 ## 资源
 
 - [!DNL Adobe Commerce as a Cloud Service]
-   - [概述](../overview.md)
-   - [迁移概述](./overview.md)
-   - [评级扩展教程](../tutorials/ratings-extension.md)
-   - [配送方法教程](../tutorials/shipping-method-extension.md)
+  - [概述](../overview.md)
+  - [迁移概述](./overview.md)
+  - [评级扩展教程](../tutorials/ratings-extension.md)
+  - [配送方法教程](../tutorials/shipping-method-extension.md)
 - 可扩展性
-   - [概述](https://developer.adobe.com/commerce/extensibility/)
-   - [AI开发人员工具](https://developer.adobe.com/commerce/extensibility/developer-agent/)
-      - [最佳实践](https://developer.adobe.com/commerce/extensibility/developer-agent/best-practices)
-      - [设置](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)
-      - [技能和提示](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
-      - [用例](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
-   - [App Builder概述](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-   - [适用于Adobe Commerce的App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
-   - 入门工具包
-      - [后端集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
-      - [结账入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
+  - [概述](https://developer.adobe.com/commerce/extensibility/)
+  - [AI开发人员工具](https://developer.adobe.com/commerce/extensibility/developer-agent/)
+    - [最佳实践](https://developer.adobe.com/commerce/extensibility/developer-agent/best-practices)
+    - [设置](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)
+    - [技能和提示](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
+    - [用例](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
+  - [App Builder概述](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
+  - [适用于Adobe Commerce的App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
+  - 入门工具包
+    - [后端集成入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
+    - [结账入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - 店面开发
-   - [概述](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
-   - [店面人工智能技能](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=zh-Hans)
+  - [概述](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
+  - [店面人工智能技能](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=zh-Hans)
 
 >[!TIP]
 >
