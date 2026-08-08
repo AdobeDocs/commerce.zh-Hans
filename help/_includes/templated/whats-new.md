@@ -1,7 +1,7 @@
 ---
-source-git-commit: 16a200892f2d116a38ebde370a79d333f65e4c8a
+source-git-commit: 06d8280f848fa6fc390194ebdd05a5dba1bfac94
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1539'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年8月7日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c88ec8730e24220b6dfd32da406d1ba3fd3a2ef2">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年8月5日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>使用迁移评估工具、Commerce开发人员MCP和Commerce数据迁移服务更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/migration/overview">迁移概述</a>以及更新的迁移流程。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2a0d741c141a4d122b0a068f3a1e7c435d86fd75">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年8月4日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/catalog-service/integration/catalog-events-guide">目录事件和Adobe I/O集成指南</a>介绍了如何启用目录事件、验证SaaS数据导出信息源导出和同步，以及与Adobe I/O Events集成。</p>
+</td>
+      <td>
+        重大更新，新主题
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/719b6661370f1e639fafb2a89bc1a906a20df37b">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月30日
 
@@ -357,38 +423,6 @@ ht-degree: 1%
         反馈、重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bccb739bbbfcc7e3bfa645c2a0245933014b934f">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月8日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>添加了一个新的参考页面，以提供更详细的信息，介绍Adobe Commerce Optimizer <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-sources">目录源</a>及其创建方式。</p>
-</td>
-      <td>
-        反馈、新主题、技术
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8b4d08af43cbff9aaf9fc8f417ddab12185f5565">提交</a></td>
-    </tr>
-    <tr>
-      <td><ul>
-  <li>为[!DNL Live Search]添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/live-search-admin/semantic-search">语义搜索</a>，包括启用步骤、最佳实践和英语目录限制。<br /> — 为[!DNL Adobe Commerce Optimizer]添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/semantic-search">语义搜索</a>并更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/settings">设置 — 高级搜索</a>，简化了启用程序和可选优化控件。</li>
-</ul>
-</td>
-      <td>
-        重大更新，新主题
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/475c99e18380c961e400a75de1c06cd8cdb929d1">提交</a></td>
     </tr>
   </tbody>
 </table>
