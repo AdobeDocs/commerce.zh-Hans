@@ -2,33 +2,17 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]'
 description: 了解介于 [!DNL Adobe Commerce] 和 [!DNL Adobe Commerce Optimizer]之间的目录同步、搜索和店面投放的 [!DNL Adobe Commerce Optimizer Connector] 。
 feature: Integration, Storefront, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-  - id: dad884f1-e840-49a1-970e-2f965bdbc410
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: c32adafa-ed01-4b31-997e-2413013911b0id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56id: dad884f1-e840-49a1-970e-2f965bdbc410
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: e0eb8757-182f-49f3-94a4-1587d16f5094id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 1075
+source-wordcount: 1087
 ht-degree: 0%
 
 ---
@@ -104,7 +88,7 @@ ht-degree: 0%
 
 - 针对初始迁移或大型结构更改的&#x200B;**完整目录同步**
 - 当产品或价格发生变化时，为持续更新进行&#x200B;**增量同步**
-- 针对目标馈送重新同步命令&#x200B;**&#x200B;**
+- 针对目标馈送重新同步命令&#x200B;****
 
 有关自动同步行为、cron计划和错误处理，请参阅[连接器同步管道](/help/aco-connector/connector-sync-pipeline.md)。 在完全目录同步或大型更新之前，请使用[估计数据量和同步时间](/help/aco-connector/reference/estimate-data-volume-sync-time.md)来计划时间并避免站点中断。
 
@@ -127,9 +111,9 @@ ht-degree: 0%
 
 在[!DNL Adobe Commerce Optimizer]中提供[!DNL Adobe Commerce]数据后，请使用[[!DNL Adobe Commerce Optimizer] Studio](/help/optimizer/overview.md#quick-tour)将推销和店面体验连接到您的同步目录。 典型的后续步骤包括：
 
-- **目录视图和策略** — 从[!UICONTROL Store setup]菜单定义区域、品牌或客户特定的子集和访问规则
+- **目录视图和策略** — 从[!UICONTROL Store setup]菜单定义区域、品牌或客户特定的子集和访问规则。 要限制可以查询目录视图的人员，请参阅[私有目录视图](/help/optimizer/setup/private-catalog-view.md)
 - **产品发现和推荐** — 在[!UICONTROL Merchandising]菜单中配置搜索、Facet、促销规则、同义词和推荐单位。 在[!DNL Adobe Commerce Optimizer]中管理搜索和推荐行为；[!DNL Adobe Commerce]管理员中的[!DNL Live Search]和[!DNL Product Recommendations]设置不再适用于这些流
-- **店面连接** — 在正确的[!DNL Adobe Commerce Optimizer]租户、目录视图和促销API端点指向[!DNL Edge Delivery Services]上的Commerce店面或第三方Headless内部版本。 有关自定义Headless集成，请参阅[Headless店面集成](/help/aco-connector/headless-storefront.md)。 有关第三方集成的示例，请参阅针对 [!DNL Adobe Commerce Optimizer][&#128279;](/help/optimizer/developer/salesforce-connector.md)的Salesforce Commerce Connector
+- **店面连接** — 在正确的[!DNL Adobe Commerce Optimizer]租户、目录视图和促销API端点指向[!DNL Edge Delivery Services]上的Commerce店面或第三方Headless内部版本。 有关自定义Headless集成，请参阅[Headless店面集成](/help/aco-connector/headless-storefront.md)。 有关第三方集成的示例，请参阅针对 [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)的[Salesforce Commerce Connector
 - **结帐** — 将购物车、结帐、订单管理和客户帐户保留在[!DNL Adobe Commerce]或连接的第三方平台上。 必要时使用[!DNL App Builder]和[!DNL API Mesh]进行购物车切换
 
 有关分步配置指南，请参阅[开始使用](/help/aco-connector/get-started.md)和[[!DNL Adobe Commerce Optimizer] 促销工具](/help/optimizer/overview.md#quick-tour)。

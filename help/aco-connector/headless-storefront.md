@@ -2,27 +2,17 @@
 title: '[!DNL Adobe Commerce Optimizer Connector] Headless Storefront集成'
 description: 了解如何将Headless店面与 [!DNL Adobe Commerce Optimizer Connector] GraphQL API、价格手册ID和捆绑包添加到购物车编码集成。
 feature: Storefront, Integration, GraphQL
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T16:27:30.102Z'
 TQID: 'https://experienceleague.adobe.com/Orif1rROglTQ-3ZkRj5LMF90Y-AdpfTnOgPmJXQjYgc'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: 263
 ht-degree: 0%
 
 ---
@@ -65,6 +55,10 @@ Headless店面调用`commerceOptimizer` GraphQL查询来检索当前客户会话
 | 已登录的客户 | `websiteCode::sha1(customerGroupId)` |
 
 `Store`请求标头确定了网站范围，因此决定了`websiteCode`组件。 `sha1(customerGroupId)`组件与数据同步期间使用的价格簿ID公式匹配。 查看[价格手册](reference/field-mapping.md#price-books)。
+
+>[!NOTE]
+>
+>如果目标目录视图启用了[!UICONTROL Catalog Protection]，请在促销API请求中与`AC-View-ID`和`AC-Price-Book-ID`一起包含签名的`AC-Catalog-View-Access-Token`标头，或者请求被拒绝。 查看[专用目录视图](../optimizer/setup/private-catalog-view.md)。
 
 ## 捆绑产品：添加到购物车格式 {#bundle-products-add-to-cart-format}
 

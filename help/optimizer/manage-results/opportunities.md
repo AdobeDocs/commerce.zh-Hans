@@ -1,29 +1,13 @@
 ---
 title: 机会
 description: 通过与Adobe Sites Optimizer集成以实现智能的数据驱动型网站改进，发现增加流量、参与度和转化率的机会。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于 [!DNL Adobe Commerce Optimizer] 个项目（Adobe管理的SaaS基础结构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于 [!DNL Adobe Commerce Optimizer] 个项目（Adobe管理的SaaS基础结构）。"
 TQID: https://experienceleague.adobe.com/KQb7XtqY-4Qrt4B9fwn9w6u8yBjwsj4owArk53v6VHo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
 source-wordcount: 1445
 ht-degree: 0%
@@ -38,7 +22,7 @@ ht-degree: 0%
 
 ## 什么是机会？
 
-[机会](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支持的推荐，可帮助商家识别并解决影响其商业网站性能的问题。 这些建议由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/home)提供支持，这是一项基于云的服务，可分析和改进网站性能。
+[机会](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支持的推荐，可帮助商家识别并解决影响其商业网站性能的问题。 这些建议由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)提供支持，这是一项基于云的服务，可分析和改进网站性能。
 
 ## 主要功能
 
@@ -167,7 +151,7 @@ ht-degree: 0%
 
 ### 目录层如何使用自动修复
 
-如果目录视图中不存在Adobe Sites Optimizer层，则自动修复会自动创建一个图层，并将其指定为最高优先级（最高编号）。 如果删除此图层，则会在下次自动修复运行时重新创建此图层，并将现有图层移至更低顺序编号。 如果Adobe Sites Optimizer Layer在其他订单号中已存在，则自动修复不会更改其优先级。 如果要保留自动修复层，但不立即使用它，则可以禁用该层。 了解有关如何管理[目录层](../setup/catalog-layer.md#activate-deactivate-or-delete-layers)的详细信息。
+如果目录视图中不存在Adobe Sites Optimizer层，则自动修复会自动创建一个图层，并将其指定为最高优先级（最高编号）。 如果删除此图层，则会在下次自动修复运行时重新创建此图层，并将现有图层移至更低顺序编号。 如果Adobe Sites Optimizer Layer在其他订单号中已存在，则自动修复不会更改其优先级。 如果要保留自动修复层，但不立即使用它，则可以禁用该层。 了解有关如何管理[目录层](../setup/catalog-layer.md#manage-layer-activation-and-deletion)的详细信息。
 
 ![目录层](../assets/catalog-layers.png)
 
@@ -197,7 +181,7 @@ ht-degree: 0%
 
 ## 了解有关Sites Optimizer的更多信息
 
-有关Sites Optimizer功能和特征的详细信息，请参阅[Adobe Experience Manager Sites Optimizer文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/home)。
+有关Sites Optimizer功能和特征的详细信息，请参阅[Adobe Experience Manager Sites Optimizer文档](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)。
 
 其他资源：
 

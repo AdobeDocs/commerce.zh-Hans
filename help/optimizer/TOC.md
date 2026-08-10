@@ -6,10 +6,10 @@ role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
 nudge: true
-source-git-commit: de2af14a02ba21bfedd4fa6841f0f8b544b013cc
+source-git-commit: de75e0c9be95ff421af438dd6dc491732e2effb5
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 11%
+source-wordcount: '128'
+ht-degree: 10%
 
 ---
 
@@ -22,53 +22,55 @@ ht-degree: 11%
 - [分担责任](shared-responsibility.md)
 - [限制和边界](boundaries-limits.md)
 - 管理结果 {#manage-results}
-   - [机会](./manage-results/opportunities.md)
-   - [成功量度](./manage-results/success-metrics.md)
-   - [搜索性能](./manage-results/search-performance.md)
-   - {hide-from-toc}[搜索匹配和排名](./manage-results/search-relevance-matching.md)
-   - [推荐性能](./manage-results/recommendation-performance.md)
+  - [机会](./manage-results/opportunities.md)
+  - [成功量度](./manage-results/success-metrics.md)
+  - [搜索性能](./manage-results/search-performance.md)
+  - {hide-from-toc}[搜索匹配和排名](./manage-results/search-relevance-matching.md)
+  - [推荐性能](./manage-results/recommendation-performance.md)
 - 促销 {#merchandising}
-   - [概述](./merchandising/overview.md)
-   - Recommendations {#recommendations}
-      - [概述](./merchandising/recommendations/overview.md)
-      - [创建和管理](./merchandising/recommendations/create.md)
-      - [过滤器](./merchandising/recommendations/filters.md)
-      - [类型](./merchandising/recommendations/types.md)
-      - [最佳实践](./merchandising/recommendations/best-practice.md)
-   - 促销规则 {#rules}
-      - [概述](./merchandising/rules/overview.md)
-      - [Workspace](./merchandising/rules/workspace.md)
-      - [创建和管理](./merchandising/rules/add.md)
-      - [最佳实践](./merchandising/rules/best-practice.md)
-   - Facet {#facets}
-      - [概述](./merchandising/facets/overview.md)
-      - [Workspace](./merchandising/facets/workspace.md)
-      - [创建和管理](./merchandising/facets/add.md)
-      - [类型](./merchandising/facets/type.md)
-      - [最佳实践](./merchandising/facets/best-practice.md)
-   - 同义词 {#synonyms}
-      - [概述](./merchandising/synonyms/overview.md)
-      - [创建和管理](./merchandising/synonyms/add.md)
-      - [类型](./merchandising/synonyms/type.md)
-      - [最佳实践](./merchandising/synonyms/best-practice.md)
+  - [概述](./merchandising/overview.md)
+  - Recommendations {#recommendations}
+    - [概述](./merchandising/recommendations/overview.md)
+    - [创建和管理](./merchandising/recommendations/create.md)
+    - [过滤器](./merchandising/recommendations/filters.md)
+    - [类型](./merchandising/recommendations/types.md)
+    - [最佳实践](./merchandising/recommendations/best-practice.md)
+  - 促销规则 {#rules}
+    - [概述](./merchandising/rules/overview.md)
+    - [Workspace](./merchandising/rules/workspace.md)
+    - [创建和管理](./merchandising/rules/add.md)
+    - [最佳实践](./merchandising/rules/best-practice.md)
+  - Facet {#facets}
+    - [概述](./merchandising/facets/overview.md)
+    - [Workspace](./merchandising/facets/workspace.md)
+    - [创建和管理](./merchandising/facets/add.md)
+    - [类型](./merchandising/facets/type.md)
+    - [最佳实践](./merchandising/facets/best-practice.md)
+  - 同义词 {#synonyms}
+    - [概述](./merchandising/synonyms/overview.md)
+    - [创建和管理](./merchandising/synonyms/add.md)
+    - [类型](./merchandising/synonyms/type.md)
+    - [最佳实践](./merchandising/synonyms/best-practice.md)
 - 商店设置 {#setup}
-   - [目录源](./setup/catalog-sources.md)
-   - [目录视图](./setup/catalog-view.md)
-   - [目录层](./setup/catalog-layer.md)
-   - [支持](./setup/policies.md)
-   - [价格手册](./setup/pricebooks.md)
-   - [产品视觉效果](./setup/product-visuals.md)
-   - [数据同步](./setup/data-sync.md)
-   - [语义搜索](./setup/semantic-search.md)
-   - 活动 {#events}
-      - [概述](./setup/events/overview.md)
+  - [目录源](./setup/catalog-sources.md)
+  - [目录视图](./setup/catalog-view.md)
+  - [专用目录视图](./setup/private-catalog-view.md)
+  - [受限访问密钥](./setup/restricted-access-keys.md)
+  - [目录层](./setup/catalog-layer.md)
+  - [支持](./setup/policies.md)
+  - [价格手册](./setup/pricebooks.md)
+  - [产品视觉效果](./setup/product-visuals.md)
+  - [数据同步](./setup/data-sync.md)
+  - [语义搜索](./setup/semantic-search.md)
+  - 活动 {#events}
+    - [概述](./setup/events/overview.md)
 - [店面](storefront.md)
 - [设置](settings.md)
 - 用例 {#use-case}
-   - [店面和目录管理员端到端用例](./use-case/admin-use-case.md)
+  - [店面和目录管理员端到端用例](./use-case/admin-use-case.md)
 - 启动站点 {#launch}
-   - [启动项核对清单](./launch/launch-checklist.md)
+  - [启动项核对清单](./launch/launch-checklist.md)
 - 开发人员资源 {#developer}
-   - [开发人员指南和API参考](https://developer.adobe.com/commerce/services/optimizer/)
-   - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
+  - [开发人员指南和API参考](https://developer.adobe.com/commerce/services/optimizer/)
+  - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
 - [发行说明](release-notes.md)

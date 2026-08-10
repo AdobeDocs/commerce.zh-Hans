@@ -2,12 +2,12 @@
 title: Adobe Commerce Optimizer限制和边界
 description: 了解Adobe Commerce Optimizer许可证限制和系统边界。 规划容量、跟踪使用情况，并在超出限制时避免延迟和限制。
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
-source-git-commit: 172fcbd659f4fe8868059d29ed335a5136af8d33
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1494'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 通过购买[许可证限制和系统边界](#license-limits-and-system-boundaries)部分中描述的许可证包，或通过就独特用例协商自定义许可证，可以增加许可证限制。 请联系您的Adobe客户代表以讨论您的要求。
 
-有关系统边界的问题，请联系[Adobe支持](https://experienceleague.adobe.com/home?lang=zh-Hans#support)。
+有关系统边界的问题，请联系[Adobe支持](https://experienceleague.adobe.com/home?lang=en#support)。
 
 ## 防止出现性能问题
 
@@ -93,8 +93,8 @@ ht-degree: 0%
 Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“产品可视化图表”组件的API请求，以促进以下操作之一：
 
 - **对于以下情况的每次发生，图像投放都会占用一个Dynamic Media操作**：
-   - 数字资源的&#x200B;**基本图像转换**，例如调整大小、缩放、格式转换、压缩或裁切操作。
-   - **静态图像投放或下载**&#x200B;所述数字资源或数字资源演绎版（视频除外）
+  - 数字资源的&#x200B;**基本图像转换**，例如调整大小、缩放、格式转换、压缩或裁切操作。
+  - **静态图像投放或下载**&#x200B;所述数字资源或数字资源演绎版（视频除外）
 - **智能图像投放每次针对单个数字资产进行优化投放都将使用20个Dynamic Media操作**，具体方法是自动为最终用户设备和浏览器生成最合适的图像演绎版。
 - **视频交付占用20个Dynamic Media操作**，用于单个交付或下载视频或视频的转换变体。
 
@@ -111,6 +111,10 @@ Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“
 | 目录视图 | 主目录的可配置子集的数量 | 基于[目录变体](#catalog)的数量 | 是<br>增加目录变体 |
 | 每个目录视图的策略 | 允许的数据过滤器数量 | 10 | 否 |
 | 策略中的属性值 | 可配置为进行筛选的产品特征数 | 100 | 否 |
+| [受限访问密钥分配](setup/private-catalog-view.md) | 可分配给单个目录视图的受限制访问键数 | 3 | 否 |
+| [受限访问密钥](setup/restricted-access-keys.md) | 每个环境的密钥数 | 最大100 | 否 |
+| RSA密钥大小（受限访问密钥） | 受限制访问密钥可接受的最小和最大密钥强度 | 最小2048位，最大8192位 | 否 |
+| 受限访问密钥 | 密钥吊销传播延迟 | 由于缓存，最长为5分钟。 延迟过后，由已删除的密钥签名的令牌会被拒绝。 | 不适用 |
 
 {style="table-layout:auto"}
 
@@ -162,7 +166,7 @@ Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“
 
 | **功能** | **描述** | **基础分配** | **可扩展？** | **备注** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | 构建云原生扩展和集成的能力 | 基于GMV层<p>最小分配：1包/年</p> | 是<p>添加其他包</p> | 有关每个包定义的限制，请参阅：<ul><li>针对每个包定义的限制，[App Builder产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder运行时指南*&#x200B;中的[系统设置和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder存储要求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | 构建云原生扩展和集成的能力 | 基于GMV层<p>最小分配：1包/年</p> | 是<p>添加其他包</p> | 有关每个包定义的限制，请参阅：<ul><li>针对每个包定义的限制，[App Builder产品描述](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder运行时指南*&#x200B;中的[系统设置和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder存储要求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 

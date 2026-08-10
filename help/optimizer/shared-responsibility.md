@@ -2,23 +2,16 @@
 title: 分担责任
 description: 了解 [!DNL Adobe Commerce Optimizer] 项目中涉及的每一方的安全责任。
 role: Admin, Developer, Leader
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 9e09790f-832d-43ab-b2df-6389ad52b43d
 TQID: https://experienceleague.adobe.com/lOn0WJYdUi5qMX7OlRKeNAIc-TA29OFWWSqN3yQzt30
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 278
+source-wordcount: 290
 ht-degree: 0%
 
 ---
@@ -63,6 +56,7 @@ ht-degree: 0%
 | 执行PCI ASV扫描 | RA | I |
 | 正在修复[!DNL Adobe Commerce Optimizer]基础架构PCI扫描 | R | |
 | 管理操作系统和平台密钥 | RA | |
+| 生成、旋转和撤消[受限访问密钥](setup/restricted-access-keys.md)以及[!UICONTROL Catalog Protection]的签名令牌 | | RA |
 | 监控后端安全日志 | RA | |
 | 控制客户支持和访问 | A | R |
 | Adobe灾难恢复计划以及备份和恢复的年度测试和文档记录 | RA | |
