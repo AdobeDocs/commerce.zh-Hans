@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 278
+source-wordcount: 290
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 0%
 | 执行PCI ASV扫描 | RA | I |
 | 正在修复[!DNL Adobe Commerce Optimizer]基础架构PCI扫描 | R | |
 | 管理操作系统和平台密钥 | RA | |
+| 生成、旋转和撤消[受限访问密钥](setup/restricted-access-keys.md)以及[!UICONTROL Catalog Protection]的签名令牌 | | RA |
 | 监控后端安全日志 | RA | |
 | 控制客户支持和访问 | A | R |
 | Adobe灾难恢复计划以及备份和恢复的年度测试和文档记录 | RA | |

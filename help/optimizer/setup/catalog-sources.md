@@ -23,9 +23,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 94ba07437d532d0d101c166f58114c2aa0bd4be4
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 446
+source-wordcount: 457
 ht-degree: 0%
 
 ---
@@ -64,4 +64,5 @@ ht-degree: 0%
 > * [目录层](catalog-layer.md) — 修改产品演示文稿，而不更改源数据
 > * [策略](policies.md) — 为目录视图创建基于属性的筛选器
 > * [价格手册](pricebooks.md) — 管理不同客户区段的定价结构
+> * [受限访问密钥](restricted-access-keys.md) — 使用签名令牌身份验证保护目录视图
 

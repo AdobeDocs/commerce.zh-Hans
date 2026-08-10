@@ -23,7 +23,7 @@ topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
 source-wordcount: 1445
 ht-degree: 0%
@@ -167,7 +167,7 @@ ht-degree: 0%
 
 ### 目录层如何使用自动修复
 
-如果目录视图中不存在Adobe Sites Optimizer层，则自动修复会自动创建一个图层，并将其指定为最高优先级（最高编号）。 如果删除此图层，则会在下次自动修复运行时重新创建此图层，并将现有图层移至更低顺序编号。 如果Adobe Sites Optimizer Layer在其他订单号中已存在，则自动修复不会更改其优先级。 如果要保留自动修复层，但不立即使用它，则可以禁用该层。 了解有关如何管理[目录层](../setup/catalog-layer.md#activate-deactivate-or-delete-layers)的详细信息。
+如果目录视图中不存在Adobe Sites Optimizer层，则自动修复会自动创建一个图层，并将其指定为最高优先级（最高编号）。 如果删除此图层，则会在下次自动修复运行时重新创建此图层，并将现有图层移至更低顺序编号。 如果Adobe Sites Optimizer Layer在其他订单号中已存在，则自动修复不会更改其优先级。 如果要保留自动修复层，但不立即使用它，则可以禁用该层。 了解有关如何管理[目录层](../setup/catalog-layer.md#manage-layer-activation-and-deletion)的详细信息。
 
 ![目录层](../assets/catalog-layers.png)
 

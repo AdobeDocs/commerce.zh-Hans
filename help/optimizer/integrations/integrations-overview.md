@@ -7,9 +7,9 @@ role: Developer, Admin
 level: Beginner
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于 [!DNL Adobe Commerce Optimizer] 个项目（Adobe管理的SaaS基础结构）。"
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
-source-git-commit: a404c2ff7cec5e72ce65d3670330b1f3f3c4702d
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Adobe Commerce Optimizer连接器 {#aco-connector}
 
-Adobe Commerce Optimizer Connector是在Adobe Commerce（云或内部部署）和[!DNL Adobe Commerce Optimizer]之间同步目录和定价数据的桥梁。 启用连接器后，Commerce将保留产品数据的记录系统，而[!DNL Adobe Commerce Optimizer]将支持产品发现、推荐、促销规则、分析和Headless店面体验。
+Adobe Commerce Optimizer Connector是在Adobe Commerce（云或内部部署）和[!DNL Adobe Commerce Optimizer]之间同步目录和定价数据的桥梁。 启用连接器后，Commerce将保留产品数据的记录系统，而[!DNL Adobe Commerce Optimizer]将支持产品发现、推荐、促销规则、分析和Headless店面体验。 要限制可以查询同步目录视图的人员，请参阅[私有目录视图](../setup/private-catalog-view.md)。
 
 - [Adobe Commerce Optimizer Connector概述](../../aco-connector/overview.md){target="_blank"}
 - [连接器入门](../../aco-connector/get-started.md){target="_blank"}

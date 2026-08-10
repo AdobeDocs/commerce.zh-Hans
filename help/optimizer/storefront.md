@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 1562
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -37,20 +37,20 @@ ht-degree: 0%
 
 * 可以创建存储库并配置为本地开发的&#x200B;**GitHub帐户** (github.com)
 * **[!DNL Adobe Commerce Optimizer]实例**&#x200B;包含示例数据以及配置的目录视图和策略
-   * 有关安装说明，请参阅[添加示例数据](get-started.md#add-sample-data)。
+  * 有关安装说明，请参阅[添加示例数据](get-started.md#add-sample-data)。
 
 ### 所需的实例数据
 
 在开始之前，请从[!DNL Adobe Commerce Optimizer]实例收集以下信息：
 
 * **租户ID** （也称为实例ID）
-   * 可从[实例详细信息页面](get-started.md#manage-instances)获得
+  * 可从[实例详细信息页面](get-started.md#manage-instances)获得
 * 您实例的&#x200B;**GraphQL端点**
-   * 可从[实例详细信息页面](get-started.md#manage-instances)获得
+  * 可从[实例详细信息页面](get-started.md#manage-instances)获得
 * 全局目录视图的&#x200B;**目录视图ID**
-   * 可从[目录详细信息页面](./setup/catalog-view.md#manage-catalog-view)获得
+  * 可从[目录详细信息页面](./setup/catalog-view.md#manage-catalog-views)获得
 * 目录视图的&#x200B;**Source区域设置**
-   * 样本数据的默认值为`en-US`
+  * 样本数据的默认值为`en-US`
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ ht-degree: 0%
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-1. 选择&#x200B;**创建新站点（代码和内容）**。
+1. 选择&#x200B;**[!UICONTROL Create New Site (Code & Content)]**。
 
 1. 完成站点配置：
 
@@ -89,7 +89,7 @@ ht-degree: 0%
    * **网站名称**：为您的店面选择一个描述性名称
    * **Commerce GraphQL端点（可选）**：输入[!DNL Adobe Commerce Optimizer]实例的GraphQL端点
 
-1. 单击&#x200B;**创建站点**&#x200B;以使用店面样板代码创建GitHub存储库。
+1. 单击&#x200B;**[!UICONTROL Create Site]**&#x200B;以使用店面模板代码创建GitHub存储库。
 
    创建存储库后，站点创建者会更新并提示您安装代码同步应用程序。
 
@@ -103,7 +103,7 @@ ht-degree: 0%
    * 单击&#x200B;**[!UICONTROL Select repositories]**&#x200B;菜单，然后选择您创建的店面代码存储库。
    * 单击&#x200B;**[!UICONTROL Save]**&#x200B;注册存储库。
 
-1. 返回打开站点创建器的浏览器窗口，然后单击&#x200B;**创建站点**。
+1. 返回打开站点创建器的浏览器窗口，然后单击&#x200B;**[!UICONTROL Create Site]**。
 
    站点创建者将店面样板内容复制到文档创作环境。 此过程需要1-2分钟。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
    使用这些链接管理您的店面代码、内容和配置。
 
-1. 复制并保存这些链接以供将来引用：单击**[!UICONTROL Copy]。
+1. 复制并保存这些链接以供将来引用：单击&#x200B;**[!UICONTROL Copy]**。
 
 ## 配置您的店面
 
@@ -140,6 +140,10 @@ ht-degree: 0%
    >[!NOTE]
    >
    >要查找价格手册ID，请检查[!DNL Adobe Commerce Optimizer]中的[目录视图配置详细信息](./setup/catalog-view.md)以查看分配的价格手册。 如果未分配任何价格手册，则可以从配置文件中删除此标头。 将价格手册分配给目录视图后，将其添加回来。
+
+   >[!NOTE]
+   >
+   >如果目录视图启用了[!UICONTROL Catalog Protection]，请添加一个携带有效签名令牌的`AC-Catalog-View-Access-Token`标头，或拒绝对该目录视图的店面请求。 查看[专用目录视图](./setup/private-catalog-view.md)。
 
 1. 保存配置文件。
 
@@ -228,7 +232,7 @@ ht-degree: 0%
 ![清单](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)至少一个产品详细信息页面显示完整信息<br>
 ![清单](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)搜索功能返回相关结果<br>
 ![清单](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)产品图像正在正确加载<br>
-![清单](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)配置值与您的实例设置匹配<br>
+<br>
 
 ### 获取帮助
 

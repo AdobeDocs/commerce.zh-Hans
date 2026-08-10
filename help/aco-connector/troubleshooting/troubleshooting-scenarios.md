@@ -23,9 +23,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -69,6 +69,17 @@ ht-degree: 0%
 
 - 验证是否将该网站配置为在连接器的导出配置中进行同步。 请参阅[自定义数据导出配置](../get-started.md#customize-the-commerce-scopes-export-configuration)。
 - 确认用于执行产品查询的[目录视图](../../optimizer/setup/catalog-view.md){target="_blank"}配置中存在[!DNL Commerce Optimizer]中使用的价格簿ID。
+
+## Storefront请求返回访问被拒绝的错误或目录数据完全消失
+
+**问题：**&#x200B;以前返回数据的目录视图的促销API请求现在失败，出现`access-key-invalid`错误，或者正在工作的店面停止显示目录数据。
+
+**原因：**&#x200B;目录视图启用了[目录保护](../../optimizer/setup/private-catalog-view.md)，并且请求缺少所需的`AC-Catalog-View-Access-Token`标头或分配给该视图的所有受限访问密钥已过期。 [!DNL Adobe Commerce Optimizer Connector]不会自动创建、分配或旋转受限访问密钥，密钥管理完全由您的客户端应用程序处理。
+
+**解决方案：**
+
+- 确认目录视图仍至少分配了一个未过期的[受限访问密钥](../../optimizer/setup/restricted-access-keys.md)，并根据需要旋转或添加密钥。
+- 验证店面或客户端是否随每个请求发送有效的签名`AC-Catalog-View-Access-Token`标头。 查看[专用目录视图](../../optimizer/setup/private-catalog-view.md)。
 
 ## 同步后[!DNL Adobe Commerce Optimizer]中的数据被覆盖或意外修改
 

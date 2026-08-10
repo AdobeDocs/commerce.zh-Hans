@@ -4,9 +4,9 @@ description: 了解 [!DNL Adobe Commerce Optimizer] 及其主要功能。
 recommendations: noCatalog
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 - 从任何源引入目录数据。
 - 定义业务目录视图和策略。
 - 使用AI和ML创建个性化搜索和推荐。
-- 通过优先处理&#x200B;**个完全匹配项和接近匹配项**&#x200B;以及相同字段匹配项的排名，改进产品发现的相关性；请参阅[搜索匹配项和排名](./manage-results/search-relevance-matching.md)。
+- 通过优先处理&#x200B;**个完全匹配项和接近匹配项**&#x200B;以及相同字段匹配项的排名，提高产品发现的相关性。 请参阅[搜索匹配和排名](./manage-results/search-relevance-matching.md)。
 - 查看重要的产品数据可用性，包括同步状态和店面事件数据，以便准确实施和故障排除。
 
 请观看以下视频，了解[!DNL Adobe Commerce Optimizer]的高级概述：
@@ -72,6 +72,7 @@ ht-degree: 0%
 - **目录视图** — 帮助您将零售结构定义成有意义的业务组。 例如，汽车行业的经销商、面向多品牌集团企业的子公司或面向供应商的制造地点。
 - **目录层** — 修改产品数据而不更改源数据。 将AEM Assets用于产品图像时，AEM-Assets层通过[产品可视化图表](setup/product-visuals.md)应用。 有关详细信息，请参阅[目录层](setup/catalog-layer.md)。
 - **策略** — 存储在目录视图中的数据访问筛选器。 策略有助于确保将正确的内容发送到正确的目标。 例如，销售点实体商店、市场、广告管道(Google、Facebook、Instagram)。
+- **私有目录视图** — 限制目录视图，以便只有携带有效签名令牌的请求才能检索其数据。 有关安装程序，请参阅[专用目录视图](setup/private-catalog-view.md)。
 - **数据同步** — 显示从数据源（PIM、ERP等）传输到[!DNL Adobe Commerce Optimizer]的产品数据的同步状态概览。 该产品数据显示在&#x200B;**[!UICONTROL Catalog Service]**、**[!UICONTROL Search]**&#x200B;和&#x200B;**[!UICONTROL Recommendations]**&#x200B;选项卡中。
 - **事件** — 显示支持产品发现和推荐的店面事件数据。 通过&#x200B;**事件**&#x200B;页面，商家可以验证是否已正确实施店面事件，以及是否成功捕获了事件。 商家可以使用此页面识别潜在问题，并采取措施解决任何问题。
 

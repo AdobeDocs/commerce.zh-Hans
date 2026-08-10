@@ -1,5 +1,5 @@
 ---
-title: 快速入门
+title: 开始使用
 description: 了解如何使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
@@ -22,14 +22,14 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 1349
+source-wordcount: 1368
 ht-degree: 0%
 
 ---
 
-# 开始使用
+# 快速入门
 
 本指南将指导您从头到尾设置[!DNL Adobe Commerce Optimizer]。 虽然本指南涵盖所有角色，但有关特定于开发人员的详细内容，请参阅[开发人员文档](https://developer.adobe.com/commerce/services/optimizer/)。
 
@@ -60,8 +60,8 @@ Adobe Commerce Optimizer为不同的环境使用单独的实例，如&#x200B;**�
 ### 步骤1. 创建实例
 
 1. 登录到[Adobe Experience Cloud](https://experience.adobe.com/)。
-1. 导航到&#x200B;**Commerce** > **Commerce Cloud Manager**。
-1. 单击&#x200B;**添加实例** > **Commerce Optimizer**。
+1. 导航到&#x200B;**[!UICONTROL Commerce]** > **[!UICONTROL Commerce Cloud Manager]**。
+1. 单击&#x200B;**[!UICONTROL Add Instance]** > **[!UICONTROL Commerce Optimizer]**。
 
    用于创建Commerce Optimizer环境的![Adobe Commerce Cloud Manager添加实例屏幕](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
@@ -71,7 +71,7 @@ Adobe Commerce Optimizer为不同的环境使用单独的实例，如&#x200B;**�
    - **环境类型**：从用于测试的&#x200B;**沙盒**&#x200B;环境开始
    - **地区**：选择您的首选地区
 
-1. 单击&#x200B;**添加实例**。
+1. 单击&#x200B;**[!UICONTROL Add Instance]**。
 
    Cloud Manager将更新以包含您的新实例。 有关访问和管理实例的详细信息，请参阅[管理实例](#manage-instances)。
 
@@ -105,7 +105,7 @@ Adobe Commerce Optimizer为不同的环境使用单独的实例，如&#x200B;**�
 | **管理用户** | 添加用户、开发人员和管理员 | [用户管理](./user-management.md) |
 | **创建实例** | 设置沙盒和生产环境 | [创建实例](#step-1-create-an-instance) |
 | **管理实例** | 检查状态，更新实例名称和描述，并获取用于应用程序和API访问的密钥URL | [管理实例](#manage-instances) |
-| **配置访问** | 设置目录视图和策略 | [目录视图](./setup/catalog-view.md) |
+| **配置访问** | 设置目录视图和策略，并（可选）创建[私有目录视图](./setup/private-catalog-view.md)以限制访问 | [目录视图](./setup/catalog-view.md) |
 
 ### 开发人员任务
 
@@ -140,7 +140,7 @@ Adobe Commerce Optimizer为不同的环境使用单独的实例，如&#x200B;**�
 
 1. 打开Commerce Cloud Manager：
 
-   - 在&#x200B;**快速访问**&#x200B;下，单击&#x200B;**Commerce**。
+   - 在&#x200B;**[!UICONTROL Quick access]**&#x200B;下，单击&#x200B;**[!UICONTROL Commerce]**。
    - 查看可用的实例。
 
 ### 搜索和筛选实例
@@ -178,7 +178,7 @@ Adobe Commerce Optimizer为不同的环境使用单独的实例，如&#x200B;**�
 
 请注意以下关键信息：
 
-- **GraphQL端点** GraphQL端点您的店面使用[促销服务API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=_blank}从此实例查询目录和促销数据
+- **GraphQL端点** GraphQL端点您的店面使用[促销服务API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target="_blank"}从此实例查询目录和促销数据
 - **目录端点** REST API端点用于从商业或PIM系统中将产品和价格摄取到Adobe Commerce Optimizer。 查看[数据摄取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
 - **Commerce Optimizer URL**&#x200B;打开[Adobe Commerce Optimizer Studio](overview.md)管理UI以配置和管理目录视图、策略和促销。
 - **实例ID**：此Adobe Commerce Optimizer实例的唯一标识符（租户ID），由店面、API和工具用于连接到正确的环境。
@@ -193,9 +193,9 @@ Adobe Commerce Optimizer为不同的环境使用单独的实例，如&#x200B;**�
 
 根据需要更新实例名称和描述。
 
-1. 单击实例名称旁边的&#x200B;**编辑**&#x200B;图标。
-1. 根据需要更新&#x200B;**实例名称**&#x200B;和&#x200B;**描述**。
-1. 单击&#x200B;**保存**。
+1. 单击实例名称旁边的&#x200B;**[!UICONTROL Edit]**&#x200B;图标。
+1. 根据需要更新&#x200B;**[!UICONTROL Instance name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
+1. 单击&#x200B;**[!UICONTROL Save]**。
 
 ## 添加示例数据
 

@@ -266,10 +266,10 @@ Proceed with Phase 5 cleanup.
 
    - 转到&#x200B;**商店** >设置> **配置** > **Adobe服务** > **Commerce Webhook**。
    - 添加webhook：
-      - **Webhook方法：** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
-      - **Webhook类型：** **晚于**
-      - **URL：**&#x200B;已部署的&#x200B;**shipping-methods** Web操作URL（来自部署输出或[!DNL Adobe Developer Console]）。
-      - **必需：** **可选** — 如果外部API未返回任何费率，这将允许签出仍然有效。
+     - **Webhook方法：** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
+     - **Webhook类型：** **晚于**
+     - **URL：**&#x200B;已部署的&#x200B;**shipping-methods** Web操作URL（来自部署输出或[!DNL Adobe Developer Console]）。
+     - **必需：** **可选** — 如果外部API未返回任何费率，这将允许签出仍然有效。
 
    模拟运费的![Commerce Admin webhook配置](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
 
@@ -287,9 +287,9 @@ Proceed with Phase 5 cleanup.
    - 打开&#x200B;**应用**&#x200B;并选择您的应用。
    - 打开&#x200B;**Mock Shipping**&#x200B;选项卡（或等效选项卡）。
    - 输入以下详细信息：
-      - **服务URL：**&#x200B;您复制的Pipedream工作流URL（例如`https://123456.m.pipedream.net`）。
-      - **API密钥：**&#x200B;模拟的任何非空值，例如`tutorial-key`。
-      - **仓库（发货方）地址：**&#x200B;姓名、电话、街道、城市、州/省、邮政编码、国家/地区。
+     - **服务URL：**&#x200B;您复制的Pipedream工作流URL（例如`https://123456.m.pipedream.net`）。
+     - **API密钥：**&#x200B;模拟的任何非空值，例如`tutorial-key`。
+     - **仓库（发货方）地址：**&#x200B;姓名、电话、街道、城市、州/省、邮政编码、国家/地区。
    - 单击&#x200B;**保存**。 该配置存储在Runtime State中，并由shipping-methods操作使用。
 
    ![带有服务URL、API密钥和仓库地址的模拟装运配置表单](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}

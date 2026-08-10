@@ -26,10 +26,10 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: fb025e5232902ba9fea7e858085ea85abeb11720
 workflow-type: tm+mt
-source-wordcount: 1059
-ht-degree: 0%
+source-wordcount: 1106
+ht-degree: 3%
 
 ---
 
@@ -202,7 +202,7 @@ ht-degree: 0%
 
 1. **配置[!DNL Commerce Optimizer]目录视图和策略**
 
-   在[!DNL Commerce Optimizer]用户界面中创建目录视图和策略。 请注意，价格手册是从[!DNL Adobe Commerce]客户组自动创建的。 有关说明，请参阅&#x200B;*[!DNL Commerce Optimizer]用户指南*&#x200B;中的[目录视图](../optimizer/setup/catalog-view.md)和[策略](../optimizer/setup/policies.md)文档。
+   在[!DNL Commerce Optimizer]用户界面中创建目录视图和策略。 请注意，价格手册是从[!DNL Adobe Commerce]客户组自动创建的。 有关说明，请参阅&#x200B;*[!DNL Commerce Optimizer]用户指南*&#x200B;中的[目录视图](../optimizer/setup/catalog-view.md)和[策略](../optimizer/setup/policies.md)文档。 要限制对目录视图的访问，请参阅[私有目录视图](../optimizer/setup/private-catalog-view.md)。
 
 1. **在[!DNL Edge Delivery Services]**&#x200B;上设置Commerce店面
 

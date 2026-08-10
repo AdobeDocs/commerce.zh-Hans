@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 06cf519b8588e19f870e851558fa7fe7f0602b17
+source-git-commit: 0c38384dc0b8c9c964402cd3d363ff784d7a0cf5
 workflow-type: tm+mt
-source-wordcount: 3237
+source-wordcount: 3270
 ht-degree: 0%
 
 ---
@@ -44,6 +44,13 @@ ht-degree: 0%
 >[!DNL SaaS data export]扩展是随[!DNL Live Search]、[!DNL Product Recommendations]和[!DNL Catalog Service]一起自动安装的模块集合。 您可以使用[!DNL Composer]检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 2026版 {#release-notes-2026}
+
+### 103.4.31发行版
+
+_2026年8月7日_
+
+![修复](../assets/fix.svg) **减少不必要的处理** — 如果未配置Commerce Services Connector，SaaS Data Export扩展现在将跳过索引以减少不必要的处理。 <!--MDEE-1413-->
+![修复](../assets/fix.svg)不使用row_id。<!--MDEE-830-->
 
 ### 103.4.30发行版
 

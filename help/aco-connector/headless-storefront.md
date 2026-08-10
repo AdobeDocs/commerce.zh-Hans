@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: 263
 ht-degree: 0%
 
 ---
@@ -65,6 +65,10 @@ Headless店面调用`commerceOptimizer` GraphQL查询来检索当前客户会话
 | 已登录的客户 | `websiteCode::sha1(customerGroupId)` |
 
 `Store`请求标头确定了网站范围，因此决定了`websiteCode`组件。 `sha1(customerGroupId)`组件与数据同步期间使用的价格簿ID公式匹配。 查看[价格手册](reference/field-mapping.md#price-books)。
+
+>[!NOTE]
+>
+>如果目标目录视图启用了[!UICONTROL Catalog Protection]，请在促销API请求中与`AC-View-ID`和`AC-Price-Book-ID`一起包含签名的`AC-Catalog-View-Access-Token`标头，或者请求被拒绝。 查看[专用目录视图](../optimizer/setup/private-catalog-view.md)。
 
 ## 捆绑产品：添加到购物车格式 {#bundle-products-add-to-cart-format}
 
