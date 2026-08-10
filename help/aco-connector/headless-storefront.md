@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce Optimizer Connector] Headless Storefront集成'
 description: 了解如何将Headless店面与 [!DNL Adobe Commerce Optimizer Connector] GraphQL API、价格手册ID和捆绑包添加到购物车编码集成。
 feature: Storefront, Integration, GraphQL
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T16:27:30.102Z'
 TQID: 'https://experienceleague.adobe.com/Orif1rROglTQ-3ZkRj5LMF90Y-AdpfTnOgPmJXQjYgc'
 product_v2:
