@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4eb33526927e1c5a81612aab0de0ce4bc7746368
+source-git-commit: 1d14f7827de3274564941765fd2943ecefac5fad
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: 460
 ht-degree: 0%
 
 ---
@@ -39,6 +39,14 @@ ht-degree: 0%
 ![已知问题](../assets/bug.svg)已知问题
 
 ## 2026版
+
+### 1.0.16发行版
+
+_2026年8月7日_
+
+![修复](../assets/fix.svg) **目录同步在无效配置上不再停止** — 修复了如果[!DNL Adobe Commerce Optimizer Connector]配置缺失或无效，目录同步可能会无限期运行的问题。 同步现在完成并记录警告，而不是继续运行。 <!--MDEE-1413-->
+![修复](../assets/fix.svg) **更可靠的[!DNL Adobe Commerce Optimizer]管理员请求** — 修复了[!DNL Adobe Commerce Optimizer Connector]可能为[!DNL Adobe Commerce Optimizer]管理员请求使用不正确URL的问题，此问题可能导致这些请求失败。 <!--COMOPT-2288-->
+![修复](../assets/fix.svg) **更可靠的刷新和修补操作** — 修复了刷新和修补操作可能针对错误环境的问题，该问题可能导致请求失败。<!--COMOPT-2288-->
 
 ### 1.0.15发行版
 
@@ -63,7 +71,7 @@ _2026年6月11日_
 _2026年5月6日_
 
 ![修复](../assets/fix.svg) **改进了[!DNL Adobe Commerce Optimizer Connector]配置说明** — 更新了Commerce管理员中的[!DNL Adobe Commerce Optimizer]配置页面，以链接到&#x200B;_[!DNL Adobe Commerce Optimizer Connector]集成指南_。
-
+<!--COMOPT-1922-->
 
 ![修复](../assets/fix.svg) **[!DNL Adobe Commerce Optimizer Connector]元数据增强** - [!DNL Adobe Commerce Optimizer Connector]现在在元数据标头中包含其已安装的版本。 此改进使团队能够快速识别在疑难解答或支持服务期间使用的连接器版本。<!--MDEE-1323-->
 

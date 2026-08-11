@@ -1,5 +1,5 @@
 ---
-title: Catalog和Adobe I/O Events集成指南
+title: Catalog Events设置和集成指南
 description: 了解如何验证目录数据、为Adobe Commerce配置 [!DNL Adobe I/O Events] 、订阅目录事件类型以及验证使用者的交付。
 level: Intermediate
 recommendations: noCatalog
@@ -16,14 +16,14 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d8e9d612392967d19d0da56e81337362f9006c2c
+source-git-commit: 818efacb8dbf63e48cdc83506d228c665d7a8b22
 workflow-type: tm+mt
-source-wordcount: 1566
+source-wordcount: 1568
 ht-degree: 0%
 
 ---
 
-# 目录事件和[!DNL Adobe I/O Events]集成指南
+# 使用Adobe I/O启用和配置目录事件
 
 目录事件是计算机生成的通知，用于描述通过[!DNL Catalog Service]提供的支持的目录更改。 它们支持事件驱动的工作流，例如：
 
