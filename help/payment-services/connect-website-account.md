@@ -5,8 +5,12 @@ role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Paas, Saas
 TQID: 'https://experienceleague.adobe.com/U1zGAU6vYKjk2tc2KXnvyqnYdbA2HKTCNZSKhHdS0Vw'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 source-git-commit: d754c71e287d7d9ff297dd7d95efbaaae7ffc2fc
 workflow-type: tm+mt
 source-wordcount: 393
