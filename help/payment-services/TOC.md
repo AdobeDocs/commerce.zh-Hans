@@ -7,9 +7,9 @@ role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
 nudge: true
-source-git-commit: 22c2fa72c3603e28b5ab55a34a908c10c02457fe
+source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '118'
 ht-degree: 2%
 
 ---
@@ -18,37 +18,38 @@ ht-degree: 2%
 # Commerce的[!DNL Payment Services] {#payment-services}
 
 - [指南概述](guide-overview.md)
-- [&#x200B; [!DNL Payment Services]简介](introduction.md)
-- [&#x200B; [!DNL Payment Services]的兼容性](compatibility.md)
+- [ [!DNL Payment Services]简介](introduction.md)
+- [ [!DNL Payment Services]的兼容性](compatibility.md)
 - [发行说明](release-notes.md)
 - 载入[!DNL Payment Services] {#get-started}
-   - [载入概述](onboard.md)
-   - [安装 [!DNL Payment Services] 扩展](install.md)
-   - [连接实例](connect.md)
-   - [设置测试沙盒](sandbox.md)
-   - [为生产启用](production.md)
+  - [载入概述](onboard.md)
+  - [安装 [!DNL Payment Services] 扩展](install.md)
+  - [连接实例](connect.md)
+  - [设置测试沙盒](sandbox.md)
+  - [为生产启用](production.md)
 - 配置[!DNL Payment Services] {#configure}
-   - [[!DNL Payment Services]主页](payments-home.md)
-   - [[!DNL Payment Services]配置](configure-admin.md)
-   - [命令行配置](configure-cli.md)
-   - [测试和验证](test-validate.md)
+  - [[!DNL Payment Services]主页](payments-home.md)
+  - [[!DNL Payment Services]配置](configure-admin.md)
+  - [为网站连接其他PayPal帐户](connect-website-account.md)
+  - [命令行配置](configure-cli.md)
+  - [测试和验证](test-validate.md)
 - 支付和结账 {#payments-checkout}
-   - [付款选项](payments-options.md)
-   - [信用卡保险存储](vaulting.md)
-   - [签出 [!DNL Payment Services]](checkout.md)
-   - 管理付款 {#manage}
-      - [&#x200B; [!DNL Payment Services]的行项目](line-items.md)
-      - [退款](refunds.md)
-      - [空洞](voids.md)
-   - [在管理员中创建订单](create-order.md)
-   - [在 [!DNL Payment Services]中跟踪您的装运](track-shipment.md)
+  - [付款选项](payments-options.md)
+  - [信用卡保险存储](vaulting.md)
+  - [签出 [!DNL Payment Services]](checkout.md)
+  - 管理付款 {#manage}
+    - [ [!DNL Payment Services]的行项目](line-items.md)
+    - [退款](refunds.md)
+    - [空洞](voids.md)
+  - [在管理员中创建订单](create-order.md)
+  - [在 [!DNL Payment Services]中跟踪您的装运](track-shipment.md)
 - 财务报告 {#financial-reports}
-   - [报表](reporting.md)
-   - [订单付款状态报表](order-payment-status.md)
-   - [支付报表](payouts.md)
-   - [可用数据](data.md)
-   - [2级和3级处理](levels-card-payment-transactions.md)
+  - [报表](reporting.md)
+  - [订单付款状态报表](order-payment-status.md)
+  - [支付报表](payouts.md)
+  - [可用数据](data.md)
+  - [2级和3级处理](levels-card-payment-transactions.md)
 - 安全性和合规性 {#security-compliance}
-   - [安全性](security.md)
-   - [有效保护欺诈行为](fraud-protection.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=zh-Hans)
+  - [安全性](security.md)
+  - [有效保护欺诈行为](fraud-protection.md)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
