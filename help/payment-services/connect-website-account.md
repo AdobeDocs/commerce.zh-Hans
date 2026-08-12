@@ -30,7 +30,7 @@ ht-degree: 0%
 
 只有当您的商店满足以下要求时，网站级别的载入才可用：
 
-- [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)安装已完成。
+- [Commerce Services Connector](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/integration-services/saas)安装已完成。
 - PayPal帐户已连接到全局（默认配置）范围。
 
 您可以通过检查默认范围中是否填充了以下字段来确认这一点：
