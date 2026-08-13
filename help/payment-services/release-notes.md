@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
 workflow-type: tm+mt
-source-wordcount: '5400'
+source-wordcount: '5483'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,19 @@ _2021年6月28日_
 >[!NOTE]
 >
 > 经常发行版本以根据需要提供新功能和修复。 发布计划未修复。
+
+
+## v2.16.1
+
+_2026年8月10日_
+
+![修复了问题](../assets/fix.svg)<!-- PAY-6769 -->修复了使用PayPal智能按钮的EDS店面中导致某些付款方法在结账页面上不可用的间歇性问题。
+
+## v2.16.0
+
+_2026年7月27日_
+
+![新问题](../assets/new.svg)<!-- Issue PAY-6510 -->商家现在可以直接从[!DNL Commerce Admin]自助服务网站范围内的其他PayPal帐户入门。[!DNL Payment Services] 主页现在包含一个&#x200B;**[!UICONTROL Connect a different PayPal account for a website]**&#x200B;按钮，该按钮重定向到付款方法的管理员配置页面。 有关详细信息，请参阅[为网站连接其他PayPal帐户](connect-website-account.md)。
 
 ## v2.15.0
 

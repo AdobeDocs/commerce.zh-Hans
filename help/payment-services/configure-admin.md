@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
+source-git-commit: 882a39a5b0eeb616c7ca1d9e64c3fae76760afad
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3778'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 您可以使用“管理员”中有用的配置选项根据您的需求自定义[!DNL Payment Services]。
 
 当您在管理员中为[!DNL Adobe Commerce]和[!DNL Magento Open Source]配置[!DNL Payment Services]时，这些配置仅适用于&#x200B;_[!UICONTROL General Configuration]_&#x200B;的_[!UICONTROL Method]_&#x200B;字段中设置的环境。 您在配置字段中所做的任何更改与切换&#x200B;_[!UICONTROL Method]_&#x200B;选项无关 — 如果切换方法，您的选择不会重置。
+
+如果您运行具有&#x200B;**多个网站** （和商店视图）的单个Commerce实例，则对于某些网站，您可能需要&#x200B;**其他PayPal商家帐户**。 [!DNL Payment Services]允许您在实例设置并加入&#x200B;**全局**（默认）范围后，在管理员中完成&#x200B;**网站范围**&#x200B;的PayPal加入。 请参阅[为网站连接其他PayPal帐户](connect-website-account.md)以了解先决条件和载入网站范围内的PayPal帐户的完整步骤。
 
 ## 常规配置
 
@@ -56,11 +58,11 @@ ht-degree: 0%
 
 如果您运行具有&#x200B;**多个网站** （和商店视图）的单个Commerce实例，则对于某些网站，您可能需要&#x200B;**其他PayPal商家帐户**。 [!DNL Payment Services]允许您在实例设置并加入&#x200B;**全局**（默认）范围后，在管理员中完成&#x200B;**网站范围**&#x200B;的PayPal加入。
 
-在早期版本中，网站级别的PayPal帐户映射通常要求您[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#Solution)或您的Adobe代表。 满足以下先决条件时，请使用&#x200B;**[!UICONTROL Connect different account for website]**&#x200B;操作。
+在早期版本中，网站级别的PayPal帐户映射通常要求您[联系支持人员](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#Solution)或您的Adobe代表。 满足以下先决条件时，请使用&#x200B;**[!UICONTROL Connect different account]**&#x200B;操作。
 
 ### 先决条件（全局范围）
 
-**[!UICONTROL Connect different account for website]**&#x200B;控件仅在&#x200B;**网站**&#x200B;作用域上可用并启用，但配置为&#x200B;**默认/全局**&#x200B;的实例的&#x200B;**所有**&#x200B;均为真：
+**[!UICONTROL Connect different account]**&#x200B;控件仅在&#x200B;**网站**&#x200B;作用域上可用并启用，但配置为&#x200B;**默认/全局**&#x200B;的实例的&#x200B;**所有**&#x200B;均为真：
 
 1. [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas)安装已完成。
 
@@ -70,7 +72,7 @@ ht-degree: 0%
 
 1. **全局** PayPal商家帐户已&#x200B;**连接**，您已为该默认范围&#x200B;**完成PayPal载入**（已为[常规配置](#general-configuration)中所述的全局范围填充&#x200B;**[!UICONTROL PayPal Merchant ID]**&#x200B;和相关字段）。
 
-   如果全局载入未完成，请将配置范围切换到&#x200B;**[!UICONTROL Website]**，在&#x200B;**[!UICONTROL Payment Methods]**&#x200B;中打开&#x200B;**[!UICONTROL Payment Services]**，且&#x200B;**[!UICONTROL Connect different account for website]**&#x200B;按钮为&#x200B;**已禁用**；先完成连接器设置和&#x200B;**全局** PayPal载入。
+   如果全局载入未完成，请将配置范围切换到&#x200B;**[!UICONTROL Website]**，在&#x200B;**[!UICONTROL Payment Methods]**&#x200B;中打开&#x200B;**[!UICONTROL Payment Services]**，且&#x200B;**[!UICONTROL Connect different account]**&#x200B;按钮为&#x200B;**已禁用**；先完成连接器设置和&#x200B;**全局** PayPal载入。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -444,6 +446,6 @@ ht-degree: 0%
 
 有关网站、商店和商店视图层次结构的详细信息，请参阅[网站、商店和视图范围](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans)。
 
-要在&#x200B;**全局** Commerce服务和PayPal登录完成后将&#x200B;**其他PayPal帐户连接到单个网站**，请在&#x200B;**[!UICONTROL Website]**&#x200B;范围中使用&#x200B;**[!UICONTROL Connect different account for website]**。 查看[为网站连接其他PayPal帐户](#connect-a-different-paypal-account-for-a-website)。
+要在&#x200B;**全局** Commerce服务和PayPal登录完成后将&#x200B;**其他PayPal帐户连接到单个网站**，请在&#x200B;**[!UICONTROL Website]**&#x200B;范围中使用&#x200B;**[!UICONTROL Connect different account]**。 查看[为网站连接其他PayPal帐户](#connect-a-different-paypal-account-for-a-website)。
 
 有关通过CLI为多个PayPal帐户配置作用域的详细信息，请参阅[命令行配置](configure-cli.md#configure-scope-via-cli)。
