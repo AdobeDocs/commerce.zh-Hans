@@ -3,9 +3,9 @@ title: AEM Assets集成发行说明
 description: 有关所有AEM Assets集成版本的信息，请参阅发行说明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
+source-git-commit: afef108e512c69047a0420566a498dab164c207e
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 有关在常规功能发布版本之外发布的功能更改和修复，请查看&#x200B;_托管服务更新_&#x200B;部分。
 
-有关即将发行的版本、产品支持以及哪些Adobe Commerce版本支持AEM Assets集成扩展的详细信息，请参阅Adobe Commerce [发行计划](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/planning/schedule)和[产品可用性](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/product-availability)主题。
+有关即将发行的版本、产品支持以及哪些Adobe Commerce版本支持AEM Assets集成扩展的详细信息，请参阅Adobe Commerce [发行计划](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)和[产品可用性](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)主题。
 
 ## 托管服务更新
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 _2025年9月11日_
 
-![新问题](../assets/new.svg)已更新具有新`asset_matches`属性的[自定义自动匹配](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}端点。
+![新问题](../assets/new.svg)已更新具有新`asset_matches`属性的[自定义自动匹配](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}端点。
 
 _2025年2月11日_
 
@@ -38,13 +38,29 @@ _2025年2月11日_
 
 +++
 
+## v1.4.4
+
+_2026年7月30日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![新问题](../assets/new.svg)现在，商家可以隐藏AEM资源的特定商店视图。 当AEM Assets将某个图像标记为一个或多个商店视图的隐藏时，Commerce会从这些商店视图的店面中排除该图像。 管理员产品媒体集现在包含一个&#x200B;**[!UICONTROL Store View Visibility]**&#x200B;字段，该字段显示隐藏图像的商店视图。<!-- Issue ACAP-1308 -->
+
+## v1.4.2
+
+_2026年7月10日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![修复了问题](../assets/fix.svg)修复了资产角色属性（图像、小图像、缩略图和样本图像）可能会累计空的存储视图级别值，从而导致非默认存储视图上缺少图像的问题。 现在，这些属性在范围中为全局属性，并且删除了现有的空存储视图行，以便图像从默认存储视图正确继承。<!-- Issue ACCS-1401 -->
+
 ## v1.4.1
 
 _2026年6月15日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
 
-![修复了问题](../assets/fix.svg)修复了在启用AEM Assets集成时，Admin **[!UICONTROL System]**&#x200B;菜单中缺少&#x200B;**[!UICONTROL OBSERVABILITY]**&#x200B;节标头，导致&#x200B;**[!UICONTROL Subscription List]**&#x200B;链接显示无标题的问题。<!--ACAP-1302 -->
+![修复了问题](../assets/fix.svg)修复了在启用AEM Assets集成时，Admin **[!UICONTROL System]**&#x200B;菜单中缺少&#x200B;**[!UICONTROL OBSERVABILITY]**&#x200B;节标头，导致&#x200B;**[!UICONTROL Subscription List]**&#x200B;链接显示无标题的问题。<!-- Issue ACAP-1302 -->
 
 ![修复了问题](../assets/fix.svg)修复了在未启用Dynamic Media Open API的实例上，保存AEM Assets集成配置时显示原始PHP警告而不是清除消息的问题。 此时会显示一条清晰的常规错误消息。<!-- ACAP-1298 -->
 
@@ -90,7 +106,7 @@ _2026年3月11日_
 
 ![新问题](../assets/new.svg)<!-- Issue PAY-1041 -->添加了对Adobe Commerce 2.4.9-beta1和PHP 8.5的支持。
 
-![新问题](../assets/new.svg)<!-- Issue ACCS-169 --> **[!UICONTROL Program ID]**、**[!UICONTROL Environment ID]**&#x200B;和&#x200B;[**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank}字段现在会根据[用户的IMS会话](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank}自动填充为下拉列表。
+![新问题](../assets/new.svg)<!-- Issue ACCS-169 --> **[!UICONTROL Program ID]**、**[!UICONTROL Environment ID]**&#x200B;和&#x200B;[**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank}字段现在会根据[用户的IMS会话](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank}自动填充为下拉列表。
 
 ## v1.2.14
 
@@ -98,7 +114,7 @@ _2026年2月13日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
 
-![修复了问题](../assets/fix.svg)<!-- Issue ACCS-171 -->修复了[自定义匹配器](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/synchronize/custom-match)的问题，该问题导致运行时操作下拉菜单在页面重新加载后显示未保存的工作区数据。
+![修复了问题](../assets/fix.svg)<!-- Issue ACCS-171 -->修复了[自定义匹配器](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match)的问题，该问题导致运行时操作下拉菜单在页面重新加载后显示未保存的工作区数据。
 
 ## v1.2.13
 
@@ -106,7 +122,7 @@ _2026年2月10日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
 
-![新问题](../assets/new.svg)<!-- Issue ACCS-171 -->添加了&#x200B;**[!UICONTROL Adobe I/O Workspace Configuration]**&#x200B;字段，该字段简化了[自定义匹配](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}设置。 商家现在可以上传其App Builder `workspace.json`文件以自动填充OAuth凭据和运行时操作端点。
+![新问题](../assets/new.svg)<!-- Issue ACCS-171 -->添加了&#x200B;**[!UICONTROL Adobe I/O Workspace Configuration]**&#x200B;字段，该字段简化了[自定义匹配](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}设置。 商家现在可以上传其App Builder `workspace.json`文件以自动填充OAuth凭据和运行时操作端点。
 
 ## v1.2.12
 
@@ -168,7 +184,7 @@ _2025年10月17日_
 
 ![修复了问题](../assets/fix.svg)<!-- Issue ACAP-1155 -->改进了自定义属性的整体稳定性。 使用异步API时，自定义属性现在可以正确更新。
 
-![修复了问题](../assets/fix.svg)<!-- Issue ACAP-1074 -->现在，定义基本链接URL时，[product-asset同步](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/site-store/store-urls#configure-the-base-url){target=_blank}不会失败。
+![修复了问题](../assets/fix.svg)<!-- Issue ACAP-1074 -->现在，定义基本链接URL时，[product-asset同步](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#configure-the-base-url){target=_blank}不会失败。
 
 ## v1.2.3
 
@@ -192,9 +208,9 @@ _2025年8月7日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
 
-![新问题](../assets/new.svg)<!-- Issue ACAP-1018 -->现在，商家可以通过在管理员中配置Assets集成时选择[可视化所有者](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank}来选择图像和媒体资源的源。
+![新问题](../assets/new.svg)<!-- Issue ACAP-1018 -->现在，商家可以通过在管理员中配置Assets集成时选择[可视化所有者](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank}来选择图像和媒体资源的源。
 
-![新问题](../assets/new.svg)<!-- Issue ACAP-1078 -->已更新具有新`asset_matches`属性的[自定义自动匹配](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}端点。 此更改允许您实施自己的匹配逻辑以返回与特定`productSku`关联的所有资产。
+![新问题](../assets/new.svg)<!-- Issue ACAP-1078 -->已更新具有新`asset_matches`属性的[自定义自动匹配](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}端点。 此更改允许您实施自己的匹配逻辑以返回与特定`productSku`关联的所有资产。
 
 ## v1.1.2
 
@@ -210,7 +226,7 @@ _2025年4月23日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
 
-![新问题](../assets/new.svg)<!-- Issue ACAP-955 -->现在，可以使用[自定义域URL](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url)而不是AEM投放URL。 如果商家在其AEM功能板中设置了&#x200B;**自定义域名**，则需要在Commerce中添加此&#x200B;**自定义域URL**。
+![新问题](../assets/new.svg)<!-- Issue ACAP-955 -->现在，可以使用[自定义域URL](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url)而不是AEM投放URL。 如果商家在其AEM功能板中设置了&#x200B;**自定义域名**，则需要在Commerce中添加此&#x200B;**自定义域URL**。
 
 ![修复了问题](../assets/fix.svg)<!-- Issue ACAP-987 -->改进了AEM Assets同步过程的整体日志。
 
@@ -220,7 +236,7 @@ _2025年3月12日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
 
-![新问题](../assets/new.svg)<!-- Issue ACAP-xx -->现在，Assets选择器需要[Assets选择器IMS客户端ID](https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/setup-synchronization)，才能将AEM Assets图像映射到产品类别和页面生成器生成的内容。
+![新问题](../assets/new.svg)<!-- Issue ACAP-xx -->现在，Assets选择器需要[Assets选择器IMS客户端ID](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)，才能将AEM Assets图像映射到产品类别和页面生成器生成的内容。
 
 ## v1.0.20
 
