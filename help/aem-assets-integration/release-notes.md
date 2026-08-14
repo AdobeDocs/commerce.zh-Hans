@@ -3,9 +3,9 @@ title: AEM Assets集成发行说明
 description: 有关所有AEM Assets集成版本的信息，请参阅发行说明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
+source-git-commit: afef108e512c69047a0420566a498dab164c207e
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,29 @@ _2025年2月11日_
 
 +++
 
+## v1.4.4
+
+_2026年7月30日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![新问题](../assets/new.svg)现在，商家可以隐藏AEM资源的特定商店视图。 当AEM Assets将某个图像标记为一个或多个商店视图的隐藏时，Commerce会从这些商店视图的店面中排除该图像。 管理员产品媒体集现在包含一个&#x200B;**[!UICONTROL Store View Visibility]**&#x200B;字段，该字段显示隐藏图像的商店视图。<!-- Issue ACAP-1308 -->
+
+## v1.4.2
+
+_2026年7月10日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![修复了问题](../assets/fix.svg)修复了资产角色属性（图像、小图像、缩略图和样本图像）可能会累计空的存储视图级别值，从而导致非默认存储视图上缺少图像的问题。 现在，这些属性在范围中为全局属性，并且删除了现有的空存储视图行，以便图像从默认存储视图正确继承。<!-- Issue ACCS-1401 -->
+
 ## v1.4.1
 
 _2026年6月15日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
 
-![修复了问题](../assets/fix.svg)修复了在启用AEM Assets集成时，Admin **[!UICONTROL System]**&#x200B;菜单中缺少&#x200B;**[!UICONTROL OBSERVABILITY]**&#x200B;节标头，导致&#x200B;**[!UICONTROL Subscription List]**&#x200B;链接显示无标题的问题。<!--ACAP-1302 -->
+![修复了问题](../assets/fix.svg)修复了在启用AEM Assets集成时，Admin **[!UICONTROL System]**&#x200B;菜单中缺少&#x200B;**[!UICONTROL OBSERVABILITY]**&#x200B;节标头，导致&#x200B;**[!UICONTROL Subscription List]**&#x200B;链接显示无标题的问题。<!-- Issue ACAP-1302 -->
 
 ![修复了问题](../assets/fix.svg)修复了在未启用Dynamic Media Open API的实例上，保存AEM Assets集成配置时显示原始PHP警告而不是清除消息的问题。 此时会显示一条清晰的常规错误消息。<!-- ACAP-1298 -->
 
