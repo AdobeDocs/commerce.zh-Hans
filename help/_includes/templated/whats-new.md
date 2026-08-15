@@ -1,7 +1,7 @@
 ---
-source-git-commit: 06d8280f848fa6fc390194ebdd05a5dba1bfac94
+source-git-commit: 4ecab54255029c3e9e84ba9f6de96888157d8fea
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1355'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年8月12日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">提交</a></td>
+    </tr>
+    <tr>
+      <td><p>商家现在可以直接从Commerce管理员在网站范围自助服务其他PayPal帐户登录。 有关详细信息，请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/configure/connect-website-account">为网站连接其他PayPal帐户</a>。</p>
+</td>
+      <td>
+        新主题
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年8月10日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新了Adobe Commerce Optimizer设置指南，其中包含有关启用和配置私有目录视图以限制使用签名令牌访问目录数据的说明，并更新了相关主题以引用新功能：<br /> — 添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/private-catalog-view">私有目录视图</a>，其中介绍了如何启用目录保护，以便只有使用有效签名令牌的请求才能检索目录视图的数据。<br /> — 添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/restricted-access-keys">受限访问密钥</a>，其中说明了如何创建、分配和旋转用于签名令牌以进行目录保护的密钥。<br /> — 更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view">目录视图</a>，<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/overview">Adobe Commerce Optimizer是什么？</a>，<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/get-started">开始使用</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits">限制和边界</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/launch/launch-checklist">启动清单</a>以及<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector指南</a>，以引用新的私有目录视图和受限访问密钥主题。</p>
+</td>
+      <td>
+        重大更新，新主题
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de0de805f8ecd4f329ce3afc90e28197186856c2">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年8月7日
 
@@ -309,120 +361,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7be26764bc3f3878c3c78a881ad8912038c7f07f">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月15日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/release-notes">适用于v2.15.0的Payment Services发行说明</a>（Google Pay和Apple Pay Express更新，跳过审核）；已将<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/payments-checkout/payments-options">付款选项</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/configure/configure-admin">Payment Services配置</a>与新行为保持一致。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b0eb472bfcb3fb568d4e8a70e63356d60873b641">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月12日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>记录了<a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching">搜索匹配和排名（实时搜索）</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/manage-results/search-relevance-matching">搜索匹配和排名(Adobe Commerce Optimizer)</a>中的搜索匹配优先顺序（精确/近语、相同字段、跨字段）和排名权衡，以及来自概述、索引、最佳实践和搜索性能主题的链接。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6f9744e6a0b3390b9e29a1d973fa44456db1612c">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>已使用v1.3.8更新<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/release-notes">AEM Assets集成发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8937c04dcb4da5f19bce017ef0da8a48bd61c3a6">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月10日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>扩展了Adobe Commerce Optimizer Connector集成指南，包含新的技术和操作主题：<br />- <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/connector-sync-pipeline">连接器同步管道</a> — cron作业、初始化、馈送提交和错误处理<br />- <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/headless-storefront">Headless店面集成</a> — GraphQL <code>commerceOptimizer</code>查询和捆绑包产品编码<br />- <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting">故障排除</a> — 凭据、同步和范围配置问题<br />- <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/reference/connector-reference">连接器引用</a> — 模块、馈送端点、批次限制和配置路径<br />- <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/reference/field-mapping">字段映射</a> — Commerce到优化器字段映射，适用于所有馈送</p>
-</td>
-      <td>
-        重大更新，新主题
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2973937a78f4ea425da7876ac006eb2023a35bb3">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>为迁移到[!DNL Adobe Commerce as a Cloud Service]的用户添加了有关<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/overview">迁移评估</a>的页面。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8f260d114983890872281115f74b1f98b32e524d">提交</a></td>
-    </tr>
-    <tr>
-      <td><ul>
-  <li>在<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/release-notes#hosted-service-updates">Live Search发行说明</a>中添加了2026年6月8日的用于语义搜索的托管服务更新，包括Adobe Commerce as a Cloud Service的默认行为、手动启用PaaS以及英文目录支持。<br /> — 在<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/release-notes#june-2026">Adobe Commerce Optimizer发行说明</a>中添加了2026年6月的部分，用于语义搜索和推荐价格过滤器（测试版）。</li>
-</ul>
-</td>
-      <td>
-        重大更新，新主题
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4c5b282a83b75c07d82dc34b5500916f22e08a44">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月9日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>记录了[!DNL Adobe Commerce Optimizer]推荐的动态和静态<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/recommendations/filters#price">价格过滤器</a>，包括PDP相对运算符、偏移语义以及SKU相关推荐类型的设置指导。</p>
-</td>
-      <td>
-        反馈、重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bccb739bbbfcc7e3bfa645c2a0245933014b934f">提交</a></td>
     </tr>
   </tbody>
 </table>
