@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
+source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
 workflow-type: tm+mt
-source-wordcount: 3024
+source-wordcount: 3063
 ht-degree: 0%
 
 ---
@@ -53,7 +53,13 @@ ht-degree: 0%
 
 ## 店面目录服务
 
-## 2026年6月
+### 2026年8月
+
+**发行日期**：2026年8月7日
+
+![修复](../assets/fix.svg)修复了`products` GraphQL查询的问题，该问题导致可自定义选项（`inputOptions`和`options`）的`title`字段在选项的`sku`字段为空或未编制索引时错误地返回`null`，而不是该选项自己的标题。<!--DATA-7304-->
+
+### 2026年7月
 
 **发行日期**：2026年7月1日
 

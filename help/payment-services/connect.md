@@ -3,10 +3,10 @@ title: 连接实例
 description: 使用API密钥和私钥连接您的Commerce实例，并在配置中指定数据空间。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目(Adobe管理的PaaS基础架构)和内部部署项目上的Adobe Commerce 。"
-source-git-commit: 0f2e9c3a7d990a46bafc5f3b8a083436d42643b5
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 获取API凭据
 
-要使用Commerce SaaS服务，您必须对沙盒和生产环境使用实例的API密钥(Commerce公共API密钥和私钥)，这些API密钥在[我的帐户信息板](https://account.magento.com/customer/account/login)中创建和管理。 [可以为Commerce帐户创建密钥对](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/services/saas)，一个用于沙盒，一个用于生产，但一次只能活动使用一对密钥。
+要使用Commerce SaaS服务，您必须对沙盒和生产环境使用实例的API密钥（Commerce公共API密钥和私钥），这些API密钥在[我的帐户信息板](https://account.magento.com/customer/account/login)中创建和管理。 [可以为Commerce帐户创建密钥对](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/services/saas)，一个用于沙盒，一个用于生产，但一次只能活动使用一对密钥。
 
 >[!NOTE]
 >
