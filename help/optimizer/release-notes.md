@@ -4,21 +4,15 @@ description: ' [!DNL Adobe Commerce Optimizer]的每月发行信息，包括用�
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
 workflow-type: tm+mt
-source-wordcount: 1365
+source-wordcount: 1522
 ht-degree: 0%
 
 ---
@@ -31,6 +25,22 @@ ht-degree: 0%
 * 更新了用于storefront目录数据检索的[数据摄取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和[GraphQL API](https://developer.adobe.com/commerce/services/reference/graphql/)。
 
   {{aco-api-updates-and-dropins}}
+
+## 2026年8月
+
+>[!BEGINSHADEBOX]
+
+_2026年8月7日_
+
+![新](../assets/new.svg) **新`externalIds`字段** — 已将`externalIds`添加到目录服务GraphQL，公开与产品关联的外部数据源，以便店面和集成使用者可以识别原始数据源。 查看[返回产品的externalId](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+<!--DATA-7307-->
+
+![修复](../assets/fix.svg) **更正可配置产品的`refineProduct`响应** — 修复了`refineProduct`查询返回特定可配置产品的`priceRange: null`和`roles: ["hidden"]`的问题，从而确保店面消费者可获得准确的定价和可见性信息。
+<!--COMOPT-2367-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## 2026年7月
 
@@ -53,7 +63,7 @@ _2026年6月24日_
 
 <!-- v1.3 -->
 
-![新](../assets/new.svg) **新`canEditQuantity`字段** — 已将`canEditQuantity`添加到目录服务GraphQL中的`ProductViewOptionValueProduct`。它会公开Commerce管理员中捆绑选择的可选&#x200B;**用户定义**&#x200B;数量设置，以便店面使用者可以确定捆绑选择的数量是否可编辑。
+![新](../assets/new.svg) **新`canEditQuantity`字段** — 已将`canEditQuantity`添加到目录服务GraphQL中的`ProductViewOptionValueProduct`。 它会公开Commerce管理员中捆绑选择的可选&#x200B;**用户定义**数量设置，以便店面使用者可以确定捆绑选择的数量是否可编辑。
 <!--COMOPT-2050-->
 
 ### 语义搜索
@@ -82,13 +92,13 @@ _2026年5月28日_
 
 <!-- v1.2 -->
 
-![修复](../assets/fix.svg) **完整的导航树** — 当路径中存在未标记的中间节点时，已标记的后代类别现在正确地包含在系列筛选的`navigation`树中。此修复程序可确保购物者在导航中看到所有相关类别，从而更轻松地浏览和发现商品。
+![修复](../assets/fix.svg) **完整的导航树** — 当路径中存在未标记的中间节点时，已标记的后代类别现在正确地包含在系列筛选的`navigation`树中。 此修复程序可确保购物者在导航中看到所有相关类别，从而更轻松地浏览和发现商品。
 <!--DATA-7183-->
 
-![修复](../assets/fix.svg) **在`categoryTree`请求中处理空概要** — 修复了[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查询在`slugs`参数包含空字符串时返回内部服务器错误的问题。现在会忽略空概要，因此存储前端和集成可以继续解析类别数据，而不会请求失败。
+![修复](../assets/fix.svg) **在`categoryTree`请求中处理空概要** — 修复了[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查询在`slugs`参数包含空字符串时返回内部服务器错误的问题。 现在会忽略空概要，因此存储前端和集成可以继续解析类别数据，而不会请求失败。
 <!--DATA-7184-->
 
-![Fix](../assets/fix.svg) **`searchCategory`请求返回不区分大小写、按字母顺序排列的结果**— `searchCategory`查询现在按字母顺序排列搜索结果，不区分大小写，确保排序一致且可预测。如果名称在其他方面相同，则前缀较短的类别首先出现。
+![Fix](../assets/fix.svg) **`searchCategory`请求返回不区分大小写、按字母顺序排列的结果**— `searchCategory`查询现在按字母顺序排列搜索结果，不区分大小写，确保排序一致且可预测。 如果名称在其他方面相同，则前缀较短的类别首先出现。
 <!--COMOPT-2142-->
 
 _2026年5月4日_
@@ -123,7 +133,7 @@ _2026年4月29日_
 
 <!--v1.52 release-->
 
-**需要批量处理请求** — 现在，当您检索目录数据时，GraphQL API为每个请求最多强制执行100个SKU。 查看[记录的限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits#product-discovery)。
+**需要批量处理请求** — 现在，当您检索目录数据时，GraphQL API为每个请求最多强制执行100个SKU。 查看[记录的限制和边界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery)。
 
 <!--DATA-7156-->
 
