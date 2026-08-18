@@ -4,7 +4,7 @@ description: 使用API密钥和私钥连接您的Commerce实例，并在配置�
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
 badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
-source-git-commit: 'null'
+source-git-commit: 0f2e9c3a7d990a46bafc5f3b8a083436d42643b5
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
