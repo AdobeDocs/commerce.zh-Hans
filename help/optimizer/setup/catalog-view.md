@@ -21,9 +21,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 1276
+source-wordcount: 1317
 ht-degree: 0%
 
 ---
@@ -78,6 +78,7 @@ ht-degree: 0%
 
    - **使用所有可用的价格手册** — 此选项从所有可用的价格手册中提取定价数据。
    - **仅允许所选价格手册** — 此选项显示&#x200B;**添加允许的价格手册**&#x200B;对话框。 使用此对话框选择要用于目录视图的特定价格手册。
+   - **仅限单一价格手册** — 如果只有一个价格手册，请选择此选项。 如果要配置只能引用一个价格手册的专用目录视图，则必须使用此选项。 查看私有目录视图的[价格簿限制](private-catalog-view.md#price-book-restriction-on-private-catalog-views)。
    - **禁用定价** — 此选项目前不可用。
 
    >[!NOTE]

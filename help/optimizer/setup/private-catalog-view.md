@@ -17,9 +17,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 16e3405e1500dfd39603b1e300f4625e5a57cf02
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: 642
 ht-degree: 0%
 
 ---
@@ -28,15 +28,30 @@ ht-degree: 0%
 
 默认情况下，[目录视图](catalog-view.md)是公用的。 在目录视图上启用目录保护以限制对包含有效签名令牌的请求的访问。
 
-目录保护仅适用于选定的目录视图。 它不会更改视图的政策、图层或价格手册。
+目录保护仅适用于选定的目录视图。 它不会更改视图的策略或层。 它确实将视图限制为单个价格手册 — 请参阅[私有目录视图的价格手册限制](#price-book-restriction-on-private-catalog-views)。
 
 有关何时保护目录视图的示例，请参阅[受限访问密钥用例](restricted-access-keys.md#restricted-access-key-use-cases)。
 
 ## 了解保护边界
 
-目录保护仅适用于启用了目录保护的目录视图。 它保护目录和搜索请求，但不更改视图的策略或价格手册，保护其他目录视图，或保护购物车、结账或订单操作。
+目录保护仅适用于启用了目录保护的目录视图。 它保护目录和搜索请求，但不更改视图的策略或层，保护其他目录视图，也不保护购物车、结账或订单操作。
 
 连接的商务后端必须独立强制实施购买资格。
+
+## 私有目录视图的价格手册限制
+
+专用目录视图只能引用一个价格手册。 这与公共目录视图不同，公共目录视图可以使用多个价格簿。
+
+启用[!UICONTROL Catalog Protection]后，目录视图表单上的价格手册选择器将从多选控件切换到单选（单选按钮）控件。
+
+![私有目录查看价格手册限制](../assets/catalog-view-private-pricebook-restrictions.png)
+
+- 如果在分配了多个价格手册的目录视图上启用[!UICONTROL Catalog Protection]，则在删除除一个价格手册外的所有价格手册之前，您将无法保存该视图。
+- 如果您之前保存了一个私有目录视图，该视图具有在此限制存在之前的多个价格手册分配，则不会自动更改目录视图配置。 但是，下次编辑视图时，您必须先删除除一个价格手册之外的所有价格手册，然后才能保存更新。
+
+在每种情况下，[!DNL Adobe Commerce Optimizer]都显示以下验证消息：`A protected catalog view can use only one price book. Select 'Single price book only' to continue.`
+
+公共目录视图不受此限制的影响，并且可以继续引用多个价格手册。
 
 ## 保护目录视图
 

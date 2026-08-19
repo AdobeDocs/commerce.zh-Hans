@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 384
+source-wordcount: 405
 ht-degree: 0%
 
 ---
@@ -36,9 +36,13 @@ ht-degree: 0%
 
 在将价格手册摄取到[!DNL Adobe Commerce Optimizer]中后，您可以在&#x200B;**目录视图**&#x200B;页面上看到价格手册的列表及其对应的ID。
 
+>[!NOTE]
+>
+>专用目录视图（启用了[!UICONTROL Catalog Protection]的视图）只能引用一个价格手册。 查看私有目录视图的[价格簿限制](private-catalog-view.md#price-book-restriction-on-private-catalog-views)。
+
 1. 转到&#x200B;_存储设置_，然后单击&#x200B;**[!UICONTROL Catalog views]**。
 
-1. 单击&#x200B;**[!UICONTROL Create catalog view]**。  
+1. 单击&#x200B;**[!UICONTROL Create catalog view]**。 &#x200B;
 
    在配置目录视图详细信息中，选择一个可用的价格手册。
 
