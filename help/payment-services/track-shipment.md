@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services]允许商家在其PayPal商家信息板中查看装运的跟踪信息。
 
-有关Adobe Commerce的装运网格的详细信息，请参阅[装运](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}主题。
+有关Adobe Commerce的装运网格的详细信息，请参阅[装运](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}主题。
 
 ## 如何跟踪您的装运
 
