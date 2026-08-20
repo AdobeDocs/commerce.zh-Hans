@@ -7,28 +7,15 @@ level: Intermediate
 exl-id: c8c9a0b4-f47c-46ec-bc9d-39dee9641f59
 autotag-review: '2026-06-18T16:00:51.353Z'
 TQID: 'https://experienceleague.adobe.com/6Iui3BCjT7GqaD0lC5hyw-xSrDs8SVwIB4PazXx8mGU'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: d095671a-1355-40aa-8b5f-06c33c68080bid: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1076
 ht-degree: 0%
 
 ---
@@ -37,9 +24,9 @@ ht-degree: 0%
 
 Adobe Commerce提供三种部署模型：
 
-- 仅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
-- 仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"} [云端上的Adobe Commerce](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/overview) (PaaS)
-- [Adobe Commerce](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/overview)（内部部署）
+- 仅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
+- 仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"} [云端上的Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
+- [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)（内部部署）
 
 此比较侧重于软件即服务(SaaS)和平台即服务(PaaS)模型之间的差异。 这些模型提供了不同级别的自定义、可扩展性以及对Commerce实施的控制。
 
@@ -49,7 +36,7 @@ Adobe Commerce提供三种部署模型：
 
 ## 商店管理功能
 
-[Commerce管理UI](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/guide-overview)是访问功能的主要界面，这些功能用于管理后端商店操作、库存、定价、促销和客户交互。 但是，[!DNL Adobe Commerce as a Cloud Service]提供了独特的解决方案，这些解决方案取代了[!DNL Adobe Commerce on Cloud]和内部部署项目中提供的某些已知功能。
+[Commerce管理UI](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview)是访问功能的主要界面，这些功能用于管理后端商店操作、库存、定价、促销和客户交互。 但是，[!DNL Adobe Commerce as a Cloud Service]提供了独特的解决方案，这些解决方案取代了[!DNL Adobe Commerce on Cloud]和内部部署项目中提供的某些已知功能。
 
 下表介绍了[!DNL Adobe Commerce as a Cloud Service]中可用的功能和替换解决方案：
 
@@ -57,29 +44,29 @@ Adobe Commerce提供三种部署模型：
     <thead>
         <tr>
             <th>功能</th>
-            <th>PaaS模型[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目的Adobe Commerce。"}</th>
-            <th>SaaS模型[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}</th>
+            <th>PaaS模型[！BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目的Adobe Commerce。"}</th>
+            <th>SaaS模型[！BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>数字资产管理</td>
-            <td><a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">媒体集</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">媒体集</a></td>
             <td><a href="../aem-assets-integration/overview.md">产品视觉效果</a></td>
         </tr>
         <tr>
             <td>内容管理</td>
-            <td><a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/content-design/guide-overview">内容管理系统(CMS)</a>，<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/guide-overview">页面生成器</a>，<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL重写</a></td>
-            <td><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/?lang=zh-Hans">店面建置器</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview">内容管理系统(CMS)</a>，<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">页面生成器</a>，<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL重写</a></td>
+            <td><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/">店面建置器</a></td>
         </tr>
         <tr>
             <td>目录促销</td>
-            <td><a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/content-design/staging/content-staging">内容暂存</a>，<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">可视化促销器</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging">内容暂存</a>，<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">可视化促销器</a></td>
             <td><a href="../catalog-service/overview.md">目录服务</a></td>
         </tr>
         <tr>
             <td>支付</td>
-            <td><a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/payments/payments">支付解决方案</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments">支付解决方案</a></td>
             <td><a href="../payment-services/guide-overview.md">支付服务</a></td>
         </tr>
         <tr>
@@ -96,7 +83,7 @@ Adobe Commerce提供三种部署模型：
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup>核心<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/guide-overview">B2B功能</a>（如公司管理和报价）在SaaS中现成可用。但是，特定于行业的自定义可能需要其他实施注意事项。
+                <sup>1</sup>核心<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2B功能</a>（如公司管理和报价）在SaaS中现成可用。 但是，特定于行业的自定义可能需要其他实施注意事项。
             </td>
         </tr>
     </tfoot>
@@ -110,8 +97,8 @@ Adobe Commerce提供三种部署模型：
     <thead>
         <tr>
             <th>功能</th>
-            <th>PaaS模型[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目的Adobe Commerce。"}</th>
-            <th>SaaS模型[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}</th>
+            <th>PaaS模型[！BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目的Adobe Commerce。"}</th>
+            <th>SaaS模型[！BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}</th>
         </tr>
     </thead>
     <tbody>
@@ -216,9 +203,9 @@ Adobe Commerce提供三种部署模型：
     <tfoot>
         <tr>
             <td colspan="3">
-                SaaS中的<sup>1</sup>数据模型可扩展性支持<a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/">将核心实体</a>扩展到产品和客户之外，包括B2B实体。但是，行业特定的数据模型（例如，经销商特定的属性）可能需要额外的体系结构考虑。
+                SaaS中的<sup>1</sup>数据模型可扩展性支持<a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/">将核心实体</a>扩展到产品和客户之外，包括B2B实体。 但是，行业特定的数据模型（例如，经销商特定的属性）可能需要额外的体系结构考虑。
                 <br><br>
-                <sup>2</sup> Adobe正在积极工作Document DB集成，以满足SaaS的永久存储需求。目前，需要长期数据存储的实施可能需要调配和维护额外的基础架构。
+                <sup>2</sup> Adobe正在积极工作Document DB集成，以满足SaaS的永久存储需求。 目前，需要长期数据存储的实施可能需要调配和维护额外的基础架构。
             </td>
         </tr>
     </tfoot>
@@ -229,7 +216,7 @@ Adobe Commerce提供三种部署模型：
 >在考虑迁移到SaaS时，Adobe建议您：
 >
 >- 尽可能将适当的功能移到进程外可扩展性。
->- 减小需要过渡的曲面面积。
+>- 缩小需要转换的范围。
 >- 考虑[!DNL API Mesh]以扩展API功能。
 >- 监控Adobe的持续平台演变和新功能发布。
 >- 根据可用的可扩展性选项评估特定于行业的数据模型要求。

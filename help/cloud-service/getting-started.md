@@ -5,40 +5,25 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 autotag-review: '2026-06-18T16:01:44.084Z'
 TQID: 'https://experienceleague.adobe.com/fGnz7X-DD5KzHhVtS0VR2NpVVEpwMQjzD2l0KO97-r4'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1343
+source-wordcount: 1337
 ht-degree: 0%
 
 ---
 
 # 快速入门
 
-[!DNL Adobe Commerce as a Cloud Service]提供大部分现成的配置。 完成几个基本设置过程后，您的存储即已启动并立即运行。 本指南将指导您逐步创建和使用实例，并帮助您设置组织以取得成功。 它确保您的团队能够正确访问[!DNL Adobe Commerce as a Cloud Service]以及开始使用所需的工具。
+默认情况下，[!DNL Adobe Commerce as a Cloud Service]提供大部分配置。 完成几个基本设置过程后，您的存储即已启动并立即运行。 本指南将指导您逐步创建和使用实例，并帮助您设置组织以取得成功。 它确保您的团队能够正确访问[!DNL Adobe Commerce as a Cloud Service]以及开始使用所需的工具。
 
 [!DNL Adobe Commerce as a Cloud Service]是一个云原生商务平台，为交付数字商务体验提供了灵活性、可扩展性和效率。 此SaaS产品是一个完全受管、无版本的平台，它提供了无缝升级体验，无需手动干预。
 
@@ -47,7 +32,7 @@ ht-degree: 0%
 [!DNL Adobe Commerce as a Cloud Service]包含以下组件：
 
 * **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)** — 您位于[experience.adobe.com](https://experience.adobe.com/)的所有[!DNL Adobe Commerce]产品的中心入口点
-   * 单击&#x200B;[!UICONTROL **快速访问**]&#x200B;下的&#x200B;[!UICONTROL **Commerce**]&#x200B;以打开Commerce Cloud管理器
+  * 单击&#x200B;[!UICONTROL **快速访问**]&#x200B;下的&#x200B;[!UICONTROL **Commerce**]&#x200B;以打开Commerce Cloud管理器
 * **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)** — 创建和管理实例，访问API URL和您的Commerce管理员
 * **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** — 管理用户和角色
 * **Commerce管理员** — 管理产品、订单、客户和商店配置
@@ -83,7 +68,7 @@ ht-degree: 0%
 
 >[!TAB 系统管理员和商家工作流]
 
-此图表提供了系统管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/cn/enterprise/admin-guide.html)。
+此图表提供了系统管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/business/enterprise.html)。
 
 ![Adobe Commerce as a Cloud Service的系统管理员和商家工作流程图](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -143,7 +128,7 @@ ht-degree: 0%
 
 * **系统管理员**：查看[分担的责任](./security/shared-responsibility.md)指南
 * **商家**：探索[用例](use-cases.md)以了解常见的业务方案
-* **开发人员**：查看[Adobe Commerce开发人员文档](https://developer.adobe.com/commerce/docs)
+* **开发人员**：查看[Adobe Commerce开发人员文档](https://developer.adobe.com/commerce/docs/)
 
 ## Adobe Commerce as a Cloud Service基础知识
 
@@ -173,7 +158,7 @@ ht-degree: 0%
 
 1. 为您的实例选择&#x200B;[!UICONTROL **环境类型**]。 您可以选择以下选项：
 
-   * [!UICONTROL **沙盒**] — 仅用于设计和测试目的。 您应该使用沙盒环境开始[!DNL Adobe Commerce as a Cloud Service]历程。
+   * [!UICONTROL **沙盒**] — 仅用于设计和测试目的。 Adobe建议使用沙盒环境开始[!DNL Adobe Commerce as a Cloud Service]历程。
 
    >[!NOTE]
    >
@@ -215,18 +200,18 @@ ht-degree: 0%
 
 >[!TIP]
 >
->要查看有关实例的信息（包括REST和GraphQL端点以及管理员URL），请单击实例名称旁边的信息图标。
+>要查看实例信息，包括REST和GraphQL端点以及管理员URL，请单击实例名称旁边的信息图标。
 
 管理员和端点的基本URL因地区和环境而异，使用以下模式：
 
 * 管理员
-   * 北美生产管理员： `https://na1.admin.commerce.adobe.com`
-   * 北美沙盒管理员： `https://na1-sandbox.admin.commerce.adobe.com`
-   * 欧洲生产管理员： `https://eu1.admin.commerce.adobe.com`
+  * 北美生产管理员： `https://na1.admin.commerce.adobe.com`
+  * 北美沙盒管理员： `https://na1-sandbox.admin.commerce.adobe.com`
+  * 欧洲生产管理员： `https://eu1.admin.commerce.adobe.com`
 * REST和GraphQL
-   * 北美生产GraphQL： `https://na1.api.commerce.adobe.com`
-   * 北美沙盒GraphQL： `https://na1-sandbox.api.commerce.adobe.com`
-   * 欧洲生产GraphQL： `https://eu1.api.commerce.adobe.com`
+  * 北美生产GraphQL： `https://na1.api.commerce.adobe.com`
+  * 北美沙盒GraphQL： `https://na1-sandbox.api.commerce.adobe.com`
+  * 欧洲生产GraphQL： `https://eu1.api.commerce.adobe.com`
 
 ### 导入您的目录
 
@@ -234,7 +219,7 @@ ht-degree: 0%
 
 有两种方法可以将您的目录导入[!DNL Adobe Commerce as a Cloud Service]：
 
-* [**Commerce管理员**](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/import/data-import) — 一个用户友好的界面，允许您通过单击几下导入目录数据。
+* [**Commerce管理员**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) — 一个用户友好的界面，允许您通过单击几下导入目录数据。
 * [**导入JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) — 一个REST API，允许您以编程方式导入目录数据。
 
 ### 设置店面
@@ -245,4 +230,4 @@ ht-degree: 0%
 
 * [发行说明](release-notes.md)
 * [迁移指南](migration/overview.md)
-* [Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
+* [Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/)

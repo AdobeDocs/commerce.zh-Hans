@@ -9,26 +9,15 @@ level: Intermediate
 type: Tutorial
 autotag-review: '2026-06-18T16:21:35.357Z'
 TQID: 'https://experienceleague.adobe.com/aF6iiuFf5sCDyT0gmYmh8h94ZhMWr0DbIKrG1pI0G6I'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: e7840a7b-a94f-4256-aed0-4e94b08e157b
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1289
 ht-degree: 0%
 
 ---
@@ -55,8 +44,8 @@ ht-degree: 0%
   ```
 
 * Bash shell
-   * macOS/Linux：无需安装
-   * Windows：使用[Git Bash](https://git-scm.com/install)或[用于Linux (WSL)的Windows子系统](https://learn.microsoft.com/en-us/windows/wsl/install)
+  * macOS/Linux：无需安装
+  * Windows：使用[Git Bash](https://git-scm.com/install)或[用于Linux (WSL)的Windows子系统](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 * 下载AI辅助的IDE，如[Cursor](https://cursor.com/download)（推荐）。 其他IDE（如Claude Code、Gemini CLI或Copilot）也受支持，但可能需要修改提示和教程中的其他步骤。
 
@@ -74,7 +63,7 @@ ht-degree: 0%
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-安装[!DNL Adobe I/O CLI]和所需的插件后，设置可扩展性工作区。 Adobe建议使用自动设置以获得最快的体验。
+安装[!DNL Adobe I/O CLI]和所需的插件后，设置可扩展性工作区。 Adobe建议使用自动设置以获得最有效的体验。
 
 * **[自动设置](#automated-setup) （推荐）** — 运行单个命令以自动配置工作区。
 * **[手动设置](#manual-setup)** — 按照分步说明单独配置每个组件。
@@ -202,7 +191,7 @@ Next steps:
 
 #### 创建新项目
 
-在Adobe Developer Console中创建一个App Builder项目来托管您的扩展。
+要托管您的扩展，请在Adobe Developer Console中创建一个[!DNL App Builder]项目。
 
 1. 导航到[Adobe Developer Console](https://developer.adobe.com/)。
 1. 单击&#x200B;**[!UICONTROL Create project from a template]**。
@@ -227,10 +216,10 @@ Next steps:
 1. 选择以下API之一。 对下面列出的每个API重复此过程：
 
    * **[!UICONTROL Adobe Services]**&#x200B;筛选器：
-      * **[!UICONTROL I/O Management API]**
-      * **[!UICONTROL I/O Events]** API
+     * **[!UICONTROL I/O Management API]**
+     * **[!UICONTROL I/O Events]** API
    * **[!UICONTROL Experience Cloud]**&#x200B;筛选器：
-      * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
+     * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
 
 1. 单击&#x200B;**[!UICONTROL Next]**。
 
@@ -342,7 +331,7 @@ EVENT_PREFIX=test
 
 ### 下载工作区配置
 
-运行以下命令下载工作区配置文件：
+要下载工作区配置文件，请运行以下命令：
 
 ```bash
 aio console workspace download workspace.json
@@ -417,7 +406,7 @@ aio app use --merge
 
 * [Google Chrome](https://www.google.com/chrome/) — 测试店面所需
 
-* 店面项目已连接到您的[!DNL Commerce]实例。 如果您没有店面项目，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans){target="_blank"}中的步骤操作，包括[将存储库链接到商务数据](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans#link-repo-to-commerce-data){target="_blank"}部分。
+* 店面项目已连接到您的[!DNL Commerce]实例。 如果您没有店面项目，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}中的步骤操作，包括[将存储库链接到商务数据](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}部分。
 
 ### 克隆店面存储库
 

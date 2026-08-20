@@ -9,22 +9,15 @@ level: Intermediate
 type: Tutorial
 autotag-review: '2026-06-18T16:24:27.547Z'
 TQID: 'https://experienceleague.adobe.com/FozTiUWpL6Ab2eqbbf3nhL-faFHdwBIFOgAkvGe5jXQ'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
 workflow-type: tm+mt
-source-wordcount: 1738
+source-wordcount: 1737
 ht-degree: 0%
 
 ---
@@ -120,7 +113,7 @@ bash --version
 
 1. 查看`requirements.md`文件并验证计划。
 
-   如果一切看起来都正确，请指示代理移至&#x200B;**阶段2 — 架构计划**。
+   如果一切看起来都正确，请指示代理移至&#x200B;**阶段2 — 体系结构规划**。
 
 1. 查看体系结构计划。
 
@@ -219,7 +212,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
 在开始店面集成之前，请验证您是否具备以下条件：
 
 * 店面项目已连接到您的[!DNL Commerce]实例
-* 使用CLI安装的Commerce storefront AI工具[&#128279;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+* 使用CLI安装的Commerce storefront AI工具[](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 
 ### 设置店面工作区
 
@@ -233,7 +226,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
 
 1. 在新的“光标”窗口中打开店面文件夹。
 
-   或者，如果您安装了[Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands)，请在终端中使用以下命令打开该窗口：
+   或者，如果您安装了[Cursor CLI](https://cursor.com/help/customization/keyboard-shortcuts#installing-cli-commands)，请在终端中使用以下命令打开该窗口：
 
    ```bash
    cursor .
@@ -266,8 +259,8 @@ cp RATINGS_API_CONTRACT.md ../storefront
 1. 座席会评估任务的复杂性并调用分阶段的工作流。 在&#x200B;**阶段1（要求收集）**&#x200B;期间，代理会创建一个要求文档，并询问澄清以下问题：
 
    * PDP上的哪个位置应该显示评级？
-   * 这应该是一个新的独立块，还是现有PDP插入组件中的插槽自定义？
-   * 如果API不可用或未返回任何数据，则应该进行何种回退？
+   * 这是新的独立块，还是现有PDP插入组件中的插槽定制？
+   * 如果API不可用或未返回任何数据，回退会是什么？
    * 评级应该同时出现在PLP（产品列表）上，还是仅出现在PDP上？
    * 有没有设计规格或模型？
 
@@ -318,7 +311,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
    您应在开发环境和浏览器中看到以下更改：
 
    * 系统会自动创建产品评级组件。
-   * 组件使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=zh-Hans)集成到PDP中，或者作为独立块，具体取决于选择的体系结构。
+   * 组件使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/)集成到PDP中，或者作为独立块，具体取决于选择的体系结构。
    * 星标以适当的填充比例显示，填充比例基于API中的评级值。
 
    ![产品详细信息页面，显示集成在产品标题下方的星级评分](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
