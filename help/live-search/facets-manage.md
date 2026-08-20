@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 481
+source-wordcount: 482
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. 要编辑多面标签，请执行下列操作之一：
 
-   * 对于[!DNL Commerce]店面，编辑[属性标签](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hans)。
+   * 对于[!DNL Commerce]店面，编辑[属性标签](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes)。
    * 对于Headless实施，请单击第一列中的值，然后根据需要编辑文本。
 
    ![编辑标签](assets/facet-edit-label.png)

@@ -4,9 +4,9 @@ description: 使用API密钥和私钥连接您的Commerce实例，并在配置�
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
 badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
-source-git-commit: 0f2e9c3a7d990a46bafc5f3b8a083436d42643b5
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 # 连接实例
 
-您使用API密钥和私钥连接Commerce实例，并使用[Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html?lang=zh-Hans)指定配置中的数据空间。 **您只设置一次此连接。**
+您使用API密钥和私钥连接Commerce实例，并使用[Commerce Services Connector](../landing/saas.md)指定配置中的数据空间。 **您只设置一次此连接。**
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447835)
 
 >[!INFO]
 >
-> 有关其他信息，请参阅我们的[[!DNL Adobe Commerce] 服务连接器](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=zh-Hans)视频。
+> 有关其他信息，请参阅我们的[[!DNL Adobe Commerce] 服务连接器](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)视频。
 
-* 如果您&#x200B;*已连接您的实例*，通过获取并使用API凭据并配置Commerce服务，您可以继续[设置测试沙盒](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html?lang=zh-Hans)。
+* 如果您&#x200B;*已连接您的实例*，通过获取并使用API凭据并配置Commerce服务，您可以继续[设置测试沙盒](sandbox.md)。
 * 如果您仍&#x200B;*需要连接实例*，请参阅本主题中有关[获取API凭据](#obtain-api-credentials)和[配置Commerce服务](#configure-commerce-services)的信息。
 * 如果您&#x200B;*不确定实例是否已连接*，请导航到&#x200B;**系统** >服务> **Commerce服务连接器**，并查看[!UICONTROL Sandbox Keys]和[!UICONTROL Production Keys]部分中的公共和私有API密钥值，以及[!UICONTROL SaaS Identifier]部分中的&#x200B;*项目*&#x200B;和&#x200B;*数据空间*&#x200B;字段。 如果这些值存在，则表示您的实例已连接。
 
@@ -42,11 +42,11 @@ ht-degree: 0%
 
 给定的API密钥对对适用于环境中的所有Commerce服务，因此，如果您已经为您的实例配置了Commerce服务，则Commerce Services Connector中已存在您的API密钥对。
 
-如果您的API密钥丢失，则必须生成一个新的API密钥对[&#128279;](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html?lang=zh-Hans#configure-saas-project)并应用[到Admin中的Commerce Services Connector配置](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html?lang=zh-Hans#generate-an-api-key-and-private-key)和。 如果配置的密钥有误或配置中不存在任何密钥，则付款服务中将显示帐户验证错误对话框，通知您未验证帐户。
+如果您的API密钥丢失，则必须生成一个新的API密钥对[&#128279;](../landing/saas.md#createsaasenv)并应用[到Admin中的Commerce Services Connector配置](../landing/saas.md#genapikey)和。 如果配置的密钥有误或配置中不存在任何密钥，则付款服务中将显示帐户验证错误对话框，通知您未验证帐户。
 
-查看使用API[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices)的可用Commerce服务的列表。
+查看使用API[&#128279;](../landing/saas.md#availableservices)的可用Commerce服务的列表。
 
-要了解如何为沙盒或生产环境生成API密钥，请参阅[凭据](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html?lang=zh-Hans#apikey)。
+要了解如何为沙盒或生产环境生成API密钥，请参阅[凭据](../landing/saas.md#apikey)。
 
 >[!IMPORTANT]
 >
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## 配置Commerce服务
 
-可以跨实例使用相同的API密钥，但每个实例必须具有自己的[SaaS数据空间](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html?lang=zh-Hans#saasenv)。
+可以跨实例使用相同的API密钥，但每个实例必须具有自己的[SaaS数据空间](../landing/saas.md#saasenv)。
 
 >[!NOTE]
 >
@@ -69,15 +69,15 @@ ht-degree: 0%
 
    您将被定向到管理员&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**&#x200B;中的配置区域，以配置您的Commerce服务连接器。
 
-1. 要配置Commerce服务，请按照[SaaS配置](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=zh-Hans#saasenv)中所述的步骤操作。
+1. 要配置Commerce服务，请按照[SaaS配置](../landing/saas.md#saasenv)中所述的步骤操作。
 
    >[!INFO]
    >
-   > 有关其他信息，请参阅我们的[[!DNL Adobe Commerce] 服务连接器](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=zh-Hans#configuration-faqs)视频。
+   > 有关其他信息，请参阅我们的[[!DNL Adobe Commerce] 服务连接器](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)视频。
 
 ## 端点
 
-[!DNL Payment Services]使用[Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html?lang=zh-Hans)连接到Commerce Services并部署为SaaS。 此[!DNL Commerce Services Connector]通过以下位置的终结点进行通信：
+[!DNL Payment Services]使用[Commerce Services Connector](../landing/saas.md)连接到Commerce Services并部署为SaaS。 此[!DNL Commerce Services Connector]通过以下位置的终结点进行通信：
 
 * 沙盒环境的`commerce-beta.adobe.io`。
 * `commerce.adobe.io for`用于实时环境。

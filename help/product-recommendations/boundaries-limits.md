@@ -2,9 +2,9 @@
 title: 边界和限制
 description: 了解 [!DNL Product Recommendations] 的界限和限制，以确保它满足您的业务需求。
 role: Admin, Developer
-source-git-commit: 66830c9d950a27269aca1bda0dcc7d0d86f05647
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## B2B
 
-- 产品推荐遵循[类别权限](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions.html)、[共享目录](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)和特定于客户组的定价。 购物者只能根据自己的区段和目录分配看到他们能够访问的产品的推荐。 请参阅[入门](onboarding.md)。
+- 产品推荐遵循[类别权限](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/categories/category-permissions)、[共享目录](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/shared-catalogs/catalog-shared)和特定于客户组的定价。 购物者只能根据自己的区段和目录分配看到他们能够访问的产品的推荐。 请参阅[入门](onboarding.md)。
 
 ## 数据和就绪性
 
@@ -63,4 +63,4 @@ ht-degree: 0%
 
 ## 故障排除
 
-有关目录同步、建议未显示或其他常见问题的帮助，请搜索[Commerce知识库](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)或联系[支持部门](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+有关目录同步、建议未显示或其他常见问题的帮助，请搜索[Commerce知识库](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)或联系[支持部门](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

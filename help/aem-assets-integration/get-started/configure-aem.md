@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1741
+source-wordcount: 1744
 ht-degree: 1%
 
 ---
@@ -146,12 +146,12 @@ ht-degree: 1%
 
 * Title：启用Dynamic Media OpenAPI以将Adobe Commerce与AEM Assets完全集成
 
-   * 支持票证的内容：
+  * 支持票证的内容：
 
-      * **[!UICONTROL AEM Program ID]**
-      * **[!UICONTROL Adobe Commerce URL]**
-      * **[!UICONTROL AEM Environment ID]**
-      * **[!UICONTROL IMS Org ID]**
+    * **[!UICONTROL AEM Program ID]**
+    * **[!UICONTROL Adobe Commerce URL]**
+    * **[!UICONTROL AEM Environment ID]**
+    * **[!UICONTROL IMS Org ID]**
 
 提交支持工单后，Adobe将在您的Cloud Services环境中启用具有OpenAPI功能的Dynamic Media，并共享详细信息（如IMS客户端ID），以便您继续集成。
 
@@ -209,7 +209,7 @@ ht-degree: 1%
 
 1. 将&#x200B;**checkbox**&#x200B;组件拖放到&#x200B;**Commerce**&#x200B;选项卡中，并将其映射到属性`commerce:isCommerce`。 将&#x200B;**是**&#x200B;和&#x200B;**否**&#x200B;定义为选项。
 
-如果您遇到任何其他问题，请创建[支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)或联系您的AEM Assets集成销售代表寻求帮助。
+如果您遇到任何其他问题，请创建[支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)或联系您的AEM Assets集成销售代表寻求帮助。
 
 ## 配置元数据配置文件（可选）
 

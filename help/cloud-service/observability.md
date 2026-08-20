@@ -20,7 +20,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 607
 ht-degree: 0%
@@ -83,7 +83,7 @@ Adobe Commerce通过OpenTelemetry支持以下可观察性工具：
 
 ### API Mesh记录
 
-[API Mesh日志记录](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging/)允许您使用射线ID监视和调试流经您的网格的请求。 批量导出日志或将日志转发到类似[!DNL New Relic]的平台以进行集中分析。
+[API Mesh日志记录](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging)允许您使用射线ID监视和调试流经您的网格的请求。 批量导出日志或将日志转发到类似[!DNL New Relic]的平台以进行集中分析。
 
 ## 店面
 

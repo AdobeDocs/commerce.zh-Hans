@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 662
+source-wordcount: 673
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 #### 要求
 
-- [Commerce cron必须正在运行](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}。
+- [Commerce cron必须正在运行](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}。
 - 馈送索引器必须使用&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;模式。 请参阅[部分同步](../data-export/sync-overview.md#partial-sync){target="_blank"}。
 
 ## 基于范围的同步控制

@@ -19,9 +19,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 437
+source-wordcount: 436
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ https://<region>-<environment>.api.commerce.adobe.com/<tenantId>/graphql
 
 ## 目录服务和API网格
 
-适用于Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)的API Mesh使开发人员能够使用Adobe IO将专用或第三方API以及其他接口与Adobe产品集成。
+适用于Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/mesh/)的API Mesh使开发人员能够使用Adobe IO将专用或第三方API以及其他接口与Adobe产品集成。
 
 有关安装和配置详细信息，请参阅[[!DNL Catalog Service] 和API Mesh](mesh.md)主题。
 

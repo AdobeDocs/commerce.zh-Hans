@@ -24,9 +24,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 581
+source-wordcount: 577
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 [!DNL API Mesh]的CDN层终止TLS，以Worker身份运行GraphQL网关，提供全局边缘缓存和自动DDoS/WAF，并将`edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io`公开为公共网状端点；客户可以在前端添加自己的CDN，但[!DNL API Mesh]的CDN由Adobe修复和管理，客户无法配置自己的WAF规则。
 
-有关[!DNL API Mesh]安全功能的详细信息，请参阅[API Mesh文档](https://developer.adobe.com/graphql-mesh-gateway/mesh/security/){target="_blank"}。
+有关[!DNL API Mesh]安全功能的详细信息，请参阅[API Mesh文档](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}。
 
 ### 后端CDN
 
@@ -87,6 +87,6 @@ WAF和CDN由[!DNL Adobe Commerce as a Cloud Service]平台管理，客户无法�
 
 如果数据存储在[!DNL App Builder]中，则商家可以引用[!DNL App Builder] [存储选项](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)。 [!DNL App Builder]强制租户隔离，并且访问这些服务中存储的数据被限制为执行操作的运行时命名空间。 存储中没有数据加密。
 
-使用[!DNL API Mesh]时，密钥应存储在网格配置的`secrets.yaml`文件中。 [!DNL API Mesh]使用AES-256加密([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/))加密这些密钥。
+使用[!DNL API Mesh]时，密钥应存储在网格配置的`secrets.yaml`文件中。 [!DNL API Mesh]使用AES-256加密对这些密钥进行加密（请参阅[API Mesh文档](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}）。
 
 存储在[!DNL Adobe Commerce as a Cloud Service]中的任何数据都使用AES 256位加密进行静态加密，所有数据都使用TLS 1.2或更高版本通过HTTPS进行传输加密。

@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: 429
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ ht-degree: 0%
 
 为[!DNL Commerce]店面呈现的Facet由搜索适配器处理，该适配器路由请求并在店面中呈现结果。 所有[!DNL Commerce]店面彩块化均使用单选选项按字母顺序排序，而不管分配给相应属性的输入类型如何。 店面中可用的Facet将根据当前主题进行渲染，并反映对分层导航的呈现所做的任何自定义设置。
 
-相反，[headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/)实现由API处理并支持其他选项。 Headless Facet可以按字母顺序或计数排序，并且可以具有单选或多选选项。
+相反，[headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api)实现由API处理并支持其他选项。 Headless Facet可以按字母顺序或计数排序，并且可以具有单选或多选选项。
 
 ### Facet标签
 
-对于[!DNL Commerce]店面，Facet标签由&#x200B;[*属性属性*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hans)确定。 对于具有多个视图的存储，可在&#x200B;*管理标签*&#x200B;下定义其他标签。 对于Headless实施，从[彩块化工作区](faceting-workspace.md)编辑标签。
+对于[!DNL Commerce]店面，Facet标签由&#x200B;[*属性属性*](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)确定。 对于具有多个视图的存储，可在&#x200B;*管理标签*&#x200B;下定义其他标签。 对于Headless实施，从[彩块化工作区](faceting-workspace.md)编辑标签。
 
 ### 排序类型
 

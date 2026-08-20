@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 1010
+source-wordcount: 994
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Adobe Commerce和Adobe Experience Manager (AEM)均提供内置功能，以简化
 | **所需的访问和权限** | <ul><li>AEM Assets as a Cloud Service的管理员访问权限</li><li>访问存储介质文件的源系统（Adobe Commerce或外部系统）</li><li>访问云存储服务的适当权限</li></ul> |
 | **云存储帐户** | <ul><li>AWS S3或Azure Blob Storage帐户</li><li>专用容器/存储段配置</li><li>身份验证凭据</li></ul> |
 | **Source内容** | <ul><li>准备好迁移的有组织的媒体文件</li><li>AEM Assets</a>支持的<a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">格式的图像和视频文件。</li><li>干净的重复资源</li></li> |
-| **元数据准备** | <ul><li>为AEM Assets资源配置的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">Commerce元数据配置文件</a></li><li>每个资源的映射元数据值</li><li>CSV文件编辑器（例如Microsoft Excel）</li></ul> |
+| **元数据准备** | <ul><li>为AEM Assets资源配置的<a href="configure-aem.md">Commerce元数据配置文件</a></li><li>每个资源的映射元数据值</li><li>CSV文件编辑器（例如Microsoft Excel）</li></ul> |
 
 ## 迁移最佳实践
 

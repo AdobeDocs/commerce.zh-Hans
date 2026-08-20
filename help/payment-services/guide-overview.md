@@ -1,14 +1,14 @@
 ---
 title: '[!DNL Payment Services]指南'
-description: ' [!DNL Payment Services] 文档的这些 [!DNL Adobe Commerce] 目标受众。'
+description: ' [!DNL Adobe Commerce] 文档的这些 [!DNL Payment Services] 目标受众。'
 seo-title: Adobe Commerce Payments Services Audience
 seo-description: Describes contents of the [!DNL Payment Services] for Adobe Commerce documentation
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 feature: Payments, Checkout, Paas, Saas
 recommendations: noCatalog
-source-git-commit: b75cad4fd71b5ab9c0199ca47800c36cbd1ae76c
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # [!DNL Payment Services]指南
 
-适用于Adobe Commerce和Magento Open Source的[!DNL Payment Services]是一个完全集成的支付解决方案，允许您在一个位置(即Commerce仪表板)高效地监督来自所有店面的支付和订单数据。
+适用于Adobe Commerce和Magento Open Source的[!DNL Payment Services]是一个完全集成的支付解决方案，允许您在一个位置（即Commerce仪表板）高效地监督来自所有店面的支付和订单数据。
 
 通过简单的部署、自动更新和直观的界面，支付管理变得前所未有的轻松。  这一简化的系统不仅降低了操作复杂性，而且还通过提供快速、可靠和安全支付选项改善了客户体验。 通过利用[!DNL Payment Services]，商家可以专注于发展业务，同时为客户提供流畅且可靠的结账体验。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
    <div>
       <a href="introduction.md">
       <img alt="支付服务" src="assets/benefits.jpg">
-      <strong >主要优点</strong>
+      <strong >主要优势</strong>
       </a>
    </div>
    <p>
@@ -113,11 +113,11 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4用户指南](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=zh-Hans) — 针对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的以商家为中心的文档
-> * [[!DNL Adobe Commerce] 2.4用户指南](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=zh-Hans) — 用于生成和自定义[!DNL Adobe Commerce]或[!DNL Magento Open Source]的以开发人员为中心的文档
+> * [[!DNL Adobe Commerce] 2.4用户指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/user-guides/home) — 针对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的以商家为中心的文档
+> * [[!DNL Adobe Commerce] 2.4用户指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/user-guides/home) — 用于生成和自定义[!DNL Adobe Commerce]或[!DNL Magento Open Source]的以开发人员为中心的文档
 > * [发行说明](release-notes.md) — 了解有关即将发行的版本、产品详细信息以及哪些Adobe Commerce版本支持[!DNL Payment Services]扩展的更多信息
-> * [帮助中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=zh-Hans) — 在知识库中搜索与[!DNL Payment Services]相关的故障排除文章
-> * [支持票证](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hans#submit-ticket)—Commerce客户可以提交票证以接收其他帮助
+> * [帮助中心](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview) — 在知识库中搜索与[!DNL Payment Services]相关的故障排除文章
+> * [支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)—Commerce客户可以提交票证以接收其他帮助
 
 ## 支持
 
@@ -125,4 +125,4 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448237?captions=chi_hans)
 
-查看[哪个 [!DNL Payment Services] 选项适合您？](compatibility.md#which-payment-services-option-is-right-for-you)主题以检查哪个[!DNL Payment Services]选项最适合您。
+查看[哪个 [!DNL Payment Services] 选项适合您？](compatibility.md#which-payment-services-option-is-right-for-you) 要检查哪个[!DNL Payment Services]选项最适合您的主题。

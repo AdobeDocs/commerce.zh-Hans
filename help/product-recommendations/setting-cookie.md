@@ -15,16 +15,16 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 454
+source-wordcount: 455
 ht-degree: 0%
 
 ---
 
 # 处理Cookie限制
 
-Adobe Commerce和Magento Open Source都会在数据存储在浏览器Cookie中之前请求同意。 有关详细信息，请参阅[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hans)。
+Adobe Commerce和Magento Open Source都会在数据存储在浏览器Cookie中之前请求同意。 有关详细信息，请参阅[Cookie限制模式](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)。
 
 ## 产品推荐如何处理Cookie限制
 

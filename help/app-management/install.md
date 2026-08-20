@@ -2,9 +2,9 @@
 title: 安装和访问 [!DNL App Management]
 description: 使用Adobe Commerce [!DNL App Management]的先决条件和访问要求
 feature: App Builder, Extensibility, Integration
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 安装App Builder应用程序
 
-如果您需要从Adobe Exchange安装App Builder应用程序（例如，预建的集成或市场应用程序），请参阅[从Adobe Exchange安装App Builder应用程序](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以了解分步说明。
+如果您需要从Adobe Exchange安装App Builder应用程序（例如，预建的集成或市场应用程序），请参阅[从Adobe Exchange安装App Builder应用程序](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以了解分步说明。
 
 安装并部署应用程序后，使用[!DNL App Management]将其与您的Commerce实例[&#128279;](manage-app.md#associate-an-app)关联并配置其设置。
 

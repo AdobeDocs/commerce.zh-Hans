@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 965
+source-wordcount: 966
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 2%
 1. 从&#x200B;**[!UICONTROL Asset matching rule]**&#x200B;下拉列表中选择一个资源匹配规则以进行资源同步。
 
    * 为[默认自动匹配](../synchronize/default-match.md)选择&#x200B;**[!UICONTROL Match by SKU]**，
-   * 为[自定义自动匹配](../synchronize/custom-match.md)选择&#x200B;**[!UICONTROL Custom match]**（需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)。）
+   * 为[自定义自动匹配](../synchronize/custom-match.md)选择&#x200B;**[!UICONTROL Custom match]**（需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。）
 
 1. 将为AEM Assets产品SKU定义的[Commerce元数据字段名称](configure-aem.md#define-the-metadata-profile)添加到&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;字段`commerce:skus`中（默认情况下）。
 

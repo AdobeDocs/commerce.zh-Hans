@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1395
+source-wordcount: 1404
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ retailer实现了全球多品牌服装：
 
 ### 什么是Adobe Journey Optimizer？
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=zh-Hans)帮助您为购物者打造个性化的商业体验。 例如，您可以使用Journey Optimizer创建和投放计划的营销活动，如零售商店的每周促销活动，或者，如果客户将产品添加到购物车，但未完成结账过程，则生成放弃的购物车电子邮件。
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/get-started/essentials/get-started)帮助您为购物者打造个性化的商业体验。 例如，您可以使用Journey Optimizer创建和投放计划的营销活动，如零售商店的每周促销活动，或者，如果客户将产品添加到购物车，但未完成结账过程，则生成放弃的购物车电子邮件。
 
 在本主题中，您将学习如何通过侦听从您的[!DNL Commerce]实例生成的`checkout`事件并在Journey Optimizer中响应该事件来构建放弃的购物车电子邮件。
 
@@ -96,7 +96,7 @@ retailer实现了全球多品牌服装：
 
 在您的[!DNL Commerce]沙盒环境中，通过查看产品页面、将项目添加到购物车以及完成购物者将执行的各种其他活动来触发店面上的事件。 然后，确认这些事件正在流入Journey Optimizer。
 
-1. 启动[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=zh-Hans)。
+1. 启动[Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/get-started/work-efficiently/user-interface)。
 1. 选择&#x200B;**[!UICONTROL Profiles]**。
 1. 将&#x200B;**[!UICONTROL Identity namespace]**&#x200B;设置为`Email`。
 1. 将&#x200B;**[!UICONTROL Identity value]**&#x200B;设置为您的电子邮件地址。
@@ -125,7 +125,7 @@ retailer实现了全球多品牌服装：
 
 ### 创建监听程序事件
 
-1. 启动[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=zh-Hans)。
+1. 启动[Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/get-started/work-efficiently/user-interface)。
 
 1. 单击左窗格&#x200B;**[!UICONTROL Administration]**&#x200B;部分下的&#x200B;**[!UICONTROL Configurations]**。
 
@@ -198,7 +198,7 @@ retailer实现了全球多品牌服装：
 
 1. 在上面创建的历程中，双击画布上的&#x200B;**[!UICONTROL Email]**&#x200B;图标。
 
-1. 按照Journey Optimizer指南中的[步骤](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=zh-Hans#configure-email)创建放弃的购物车电子邮件。
+1. 按照Journey Optimizer指南中的[步骤](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions#configure-email)创建放弃的购物车电子邮件。
 
 现在，您在Journey Optimizer中有一个历程，该历程侦听来自您的[!DNL Commerce]商店的`commerce.checkouts`事件，以及一个在一段时间后发送的已放弃购物车电子邮件。 下一部分将向您展示如何测试旅程。
 

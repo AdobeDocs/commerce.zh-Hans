@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 3063
+source-wordcount: 3064
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
 **发行日期**： 2026年5月4日
 <!-- v1.53 -->
 
-![修复](../assets/fix.svg)店面产品价格现在显示所有产品类型的正确货币代码（例如，美元）。 以前，某些产品显示`NONE`而不是预期的货币，从而导致缺少价格。 此更新确保在整个店面一致且准确地呈现价格。<!--DATA-7115-->
+![修复](../assets/fix.svg)店面产品价格现在显示所有产品类型的正确货币代码（例如，USD）。 以前，某些产品显示`NONE`而不是预期的货币，从而导致缺少价格。 此更新确保在整个店面一致且准确地呈现价格。<!--DATA-7115-->
 
 ### 2026年4月
 
@@ -449,7 +449,7 @@ API现在仅返回折扣价格低于产品最低最终价格&#x200B;**的层。*
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hans)现在可用于数据流（产品推荐、实时搜索、目录服务）。 需要`catalog-service`个中继包v3.1.0+。
+![新](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)现在可用于数据流（产品推荐、实时搜索、目录服务）。 需要`catalog-service`个中继包v3.1.0+。
 
 **发行日期**： 2024年2月13日
 <!-- v1.16 -->
@@ -694,9 +694,9 @@ API现在仅返回折扣价格低于产品最低最终价格&#x200B;**的层。*
 
   - [目录服务指南](overview.md)
   - [目录服务GraphQL API参考](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
-  - [Adobe Commerce管理指南](https://experienceleague.adobe.com/en/docs/commerce-admin/)
-  - [Adobe Commerce as a Cloud Service指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
-  - [Adobe Commerce on Cloud指南](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
+  - [Adobe Commerce管理指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/user-guides/home)
+  - [Adobe Commerce as a Cloud Service指南](../cloud-service/overview.md)
+  - [Adobe Commerce on Cloud指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/overview)
 
 - 对于使用&#x200B;**Adobe Commerce Optimizer**&#x200B;或&#x200B;**Adobe Commerce Optimizer Connector**&#x200B;的项目，请参阅以下文档：
 

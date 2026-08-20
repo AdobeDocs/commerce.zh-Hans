@@ -19,7 +19,7 @@ topic_v2:
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
 source-wordcount: 312
 ht-degree: 0%
@@ -59,7 +59,7 @@ bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCa
    composer require magento/module-data-exporter:103.0.4 --with-all-dependencies
    ```
 
-如果将Commerce实例部署在云基础架构上，请从云项目目录更新扩展。 请参阅&#x200B;_云基础架构上的Adobe Commerce指南_&#x200B;中的[升级扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
+如果将Commerce实例部署在云基础架构上，请从云项目目录更新扩展。 请参阅&#x200B;_云基础架构上的Adobe Commerce指南_&#x200B;中的[升级扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure-store/extensions#upgrade-an-extension)。
 
 >[!MORELIKETHIS]
 >

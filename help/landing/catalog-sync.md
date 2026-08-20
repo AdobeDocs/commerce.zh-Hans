@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 565
+source-wordcount: 567
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> “目录同步”功能板现在是“数据管理功能板”。 此改版后的仪表板现在支持[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+、[[!DNL Live Search]](../live-search/overview.md) v4.1.0+和[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+。 客户可以通过更新到其中一项服务的最新版本来获取数据管理功能板。 请在[数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hans)文档中阅读更多相关信息。 对于尚未升级但仍拥有目录同步功能板的用户，此当前主题仍然适用。
+> “目录同步”功能板现在是“数据管理功能板”。 此改版后的仪表板现在支持[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+、[[!DNL Live Search]](../live-search/overview.md) v4.1.0+和[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+。 客户可以通过更新到其中一项服务的最新版本来获取数据管理功能板。 请在[数据管理功能板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)文档中阅读更多相关信息。 对于尚未升级但仍拥有目录同步功能板的用户，此当前主题仍然适用。
 
-Adobe Commerce使用索引器将目录数据编译到表中。 该进程由[事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=zh-Hans#events-that-trigger-full-reindexing)自动触发，例如产品价格或库存级别的更改。
+Adobe Commerce使用索引器将目录数据编译到表中。 该进程由[事件](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management#events-that-trigger-full-reindexing)自动触发，例如产品价格或库存级别的更改。
 
 目录同步服务会持续将产品数据从[!DNL Adobe Commerce]实例移动到[!DNL Commerce Services]平台，以使数据保持最新。 例如，[[!DNL Product Recommendations]](/help/product-recommendations/overview.md)需要当前目录信息才能准确返回具有正确名称、定价和可用性的推荐。 使用&#x200B;_目录同步_&#x200B;仪表板观察和管理同步过程或命令行界面以触发目录同步并重新索引产品数据以供[!DNL Commerce Services]使用。 请参阅&#x200B;_SaaS数据导出_&#x200B;指南中的[命令行接口引用](../data-export/data-export-cli-commands.md)。
 

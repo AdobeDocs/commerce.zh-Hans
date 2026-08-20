@@ -21,10 +21,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1411
-ht-degree: 0%
+source-wordcount: 1568
+ht-degree: 10%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## 健全性检查
 
-**健全性检查**&#x200B;选项卡提供每个行为事件的运行状况分析，从而确保准确的数据收集和功能。  
+**健全性检查**&#x200B;选项卡提供每个行为事件的运行状况分析，从而确保准确的数据收集和功能。 &#x200B;
 
 ![健全性检查](../../assets/sanity-check.png){zoomable="yes"}
 
@@ -191,4 +191,4 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于推
 
 ## 支持
 
-如果您发现任何数据差异，或者如果推荐和搜索结果未按预期工作，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果您发现任何数据差异，或者如果推荐和搜索结果未按预期工作，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

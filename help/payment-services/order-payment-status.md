@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2255'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ ht-degree: 0%
    bin/magento config:set payment/payment_services/async_status_updates 1
    ```
 
-1. 启用并计划`sync_order_payment_status` cron作业，以便自动获取状态更新。 请参阅[配置cron作业](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=zh-Hans)。
+1. 启用并计划`sync_order_payment_status` cron作业，以便自动获取状态更新。 请参阅[配置cron作业](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)。
 
 启用设置和cron作业后，cron作业每10分钟运行一次，以获取`Payment Review`状态订单的更新。 安装后，在正常操作下不需要额外的商家操作。
 

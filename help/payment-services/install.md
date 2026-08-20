@@ -5,9 +5,9 @@ exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade, Paas
 badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 下载扩展
 
-必须先从[Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html?lang=zh-Hans)下载该扩展，然后才能安装它。
+必须先从[Commerce Marketplace](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/resources/commerce-marketplace)下载该扩展，然后才能安装它。
 
 1. 导航到Commerce Marketplace[&#128279;](https://commercemarketplace.adobe.com/magento-payment-services.html)中的Payment Services扩展。
 1. 要选择版本和版本，请将&#x200B;**[!UICONTROL Edition]**&#x200B;和&#x200B;**[!UICONTROL Your store version]**&#x200B;切换到您的首选选项。
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 安装扩展
 
-您可以在云基础架构和本地实例上为[!DNL Adobe Commerce]安装[!DNL Payment Services]扩展，这些实例已链接到注册过程中提供的Commerce帐户[mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys)。
+您可以在云基础架构和本地实例上为[!DNL Adobe Commerce]安装[!DNL Payment Services]扩展，这些实例已链接到注册过程中提供的Commerce帐户[mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information#access-keys)。
 [!DNL Magento Open Source]客户使用本地说明。
 
 Composer在初始安装[!DNL Adobe Commerce]期间使用这些密钥，或者在以前未将Composer密钥保存到`auth.json`文件的情况下使用这些密钥。
@@ -166,7 +166,7 @@ Could not find a matching version of package magento/payment-services. Check the
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-在`php.ini`中增加环境上PHP的内存限制[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit)。
+在`php.ini`中增加环境上PHP的内存限制[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure/app/php-settings#increase-php-memory-limit)。
 
 或者，也可以使用此命令指定内存限制： `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`。
 

@@ -15,9 +15,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 372
+source-wordcount: 363
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 自定义和Headless集成商应该参考这些Luma和PWA说明作为建议的实施。 可通过多种方法将产品推荐实施到Headless解决方案中，本文档并未涵盖所有场景。 集成商必须为其实施提供事件、设计和测试服务。
 
-[!DNL Product Recommendations]需要[行为和目录数据](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=zh-Hans)才能运行。 在Headless实施中，目录数据同步过程保持不变，但行为数据收集需要更改。
+[!DNL Product Recommendations]需要[行为和目录数据](development-overview.md)才能运行。 在Headless实施中，目录数据同步过程保持不变，但行为数据收集需要更改。
 
 >[!NOTE]
 >

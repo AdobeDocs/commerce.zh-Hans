@@ -22,7 +22,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 1183
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 该连接器开箱即用地提供可靠的数据同步功能，并灵活地自定义工作流程以满足您的业务需求。
 
-有关端到端视频教程系列，请参阅[了解Salesforce Commerce云入门工具包](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
+有关端到端视频教程系列，请参阅[了解Salesforce Commerce云入门工具包](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
 
 >[!NOTE]
 >
@@ -48,13 +48,13 @@ ht-degree: 0%
 * **支持多种数据类型：**&#x200B;同步产品、定价和目录结构，以反映复杂的促销配置。
 
 * **灵活同步工作流**
-   * **计划的同步：**&#x200B;使用cron作业计划自动进行更新，无需手动操作。
-   * **按需更新：**&#x200B;即时触发SKU级别的更新，以进行紧急更改、更正或产品发布。
+  * **计划的同步：**&#x200B;使用cron作业计划自动进行更新，无需手动操作。
+  * **按需更新：**&#x200B;即时触发SKU级别的更新，以进行紧急更改、更正或产品发布。
 
 * **为可扩展性构建**
-   * 使用自定义[Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI)端点以实现兼容性并轻松适应独特或高级用例。
-   * 通过目录和价格同步随业务启动进行扩展，然后扩展工作流以支持其他集成或业务逻辑。
-   * 在不重建核心集成的情况下配置和改进工作流。
+  * 使用自定义[Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI)端点以实现兼容性并轻松适应独特或高级用例。
+  * 通过目录和价格同步随业务启动进行扩展，然后扩展工作流以支持其他集成或业务逻辑。
+  * 在不重建核心集成的情况下配置和改进工作流。
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ ht-degree: 0%
 利用Salesforce Commerce B2C本地化功能：
 
 * 针对不同的区域设置，同步Salesforce Commerce B2C中的本地化版本产品文本字段（名称、描述）。
-* 将Salesforce区域设置概念1:1映射到[!DNL Commerce Optimizer]区域设置。
+* 将Salesforce区域设置概念与[!DNL Commerce Optimizer]区域设置映射为1:1。
 * 针对不同的本地化支持多个产品摄取周期。
 * 保持全球产品目录的一致性。
 

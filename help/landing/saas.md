@@ -21,9 +21,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 1662
+source-wordcount: 1665
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ## 凭据 {#apikey}
 
-生产和沙盒API密钥从[许可证所有者](https://experienceleague.adobe.com/zh-hans/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帐户生成。 Commerce帐户由唯一的[!DNL Commerce] ID (MageID)标识。 商户组织的许可证所有者可以为产品推荐或实时搜索等服务生成API密钥，前提是帐户处于良好状态。
+生产和沙盒API密钥从[许可证所有者](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/start/onboarding)的[!DNL Commerce]帐户生成。 Commerce帐户由唯一的[!DNL Commerce] ID (MageID)标识。 商户组织的许可证所有者可以为产品推荐或实时搜索等服务生成API密钥，前提是帐户处于良好状态。
 
 这些密钥可在“需要知道”的基础上与系统集成商或代表许可证持有人管理项目和环境的开发团队共享。 已被许可证所有者授予[!DNL Shared Access]的开发人员无法代表许可证所有者生成密钥，即使商户的组织位于其帐户的[!DNL Switch Accounts]下拉列表中。
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 
 1. 选择要用于[!DNL Commerce]存储当前配置的&#x200B;**数据空间**。
 
-   如果您有单独的实例要与Commerce服务集成，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，以便为每个额外的实例请求新的SaaS项目。 支持团队创建SaaS项目后，使用相同的API密钥&#x200B;**为实例**&#x200B;配置Commerce Services连接器，并选择新的SaaS项目和数据空间。
+   如果您有单独的实例要与Commerce服务集成，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)，以便为每个额外的实例请求新的SaaS项目。 支持团队创建SaaS项目后，使用相同的API密钥&#x200B;**为实例**&#x200B;配置Commerce Services连接器，并选择新的SaaS项目和数据空间。
 
 >[!WARNING]
 >

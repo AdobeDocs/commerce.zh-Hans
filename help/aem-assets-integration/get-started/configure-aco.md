@@ -2,9 +2,9 @@
 title: 为Commerce Optimizer配置AEM Assets
 description: 了解如何为 [!DNL Adobe Commerce Optimizer]配置AEM Assets集成。
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 0%
 * AEM Assets事件（已批准、更新和删除资产）
 * [!DNL Commerce Optimizer]目录事件（产品已创建、已更新）
 
-要启动此流程，请[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，该票证包含以下信息：
+要启动此流程，请[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)，该票证包含以下信息：
 
 * 在您的[!DNL Commerce Optimizer] URL或Commerce Cloud Manager UI中找到&#x200B;**[!DNL Adobe Commerce Optimizer]租户ID** （实例ID）。
 * 当您[为集成配置了AEM](#configure-aem-assets-first)时，所设置的&#x200B;**AEM Assets项目ID和环境ID**。

@@ -12,9 +12,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 491
+source-wordcount: 493
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 #### 在云基础架构上
 
-在云基础架构上的Adobe Commerce中，在`.magento.env.yaml`中启用`ENABLE_EVENTING`全局变量。 [了解详情](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=zh-Hans#enable_eventing)。
+在云基础架构上的Adobe Commerce中，在`.magento.env.yaml`中启用`ENABLE_EVENTING`全局变量。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-global#enable_eventing)。
 
 ```bash
 stage:
@@ -177,4 +177,4 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 ## 卸载[!DNL Data Connection]扩展 {#uninstall}
 
-要卸载[!DNL Data Connection]扩展，请参阅[卸载模块](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=zh-Hans)。
+要卸载[!DNL Data Connection]扩展，请参阅[卸载模块](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。

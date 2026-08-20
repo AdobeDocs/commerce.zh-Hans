@@ -10,9 +10,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 645
+source-wordcount: 646
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-有关修改模板文件的详细信息，请参阅《前端开发人员指南》中的[模板自定义](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/)。
+有关修改模板文件的详细信息，请参阅《前端开发人员指南》中的[模板自定义](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough)。
 
 如果修改`recommendations.html`文件，则必须在文件中保留以下标记，以确保Adobe Commerce可以从店面收集推荐量度：
 
@@ -121,7 +121,7 @@ ht-degree: 0%
 
 ![添加徽章](assets/unit-custom.png)
 
-若要确保在页面上呈现推荐单元时自定义产品属性可用，请在Admin的[产品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hans)页面中将`Used in Product Listing`属性设置为`Yes`。
+若要确保在页面上呈现推荐单元时自定义产品属性可用，请在Admin的[产品属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)页面中将`Used in Product Listing`属性设置为`Yes`。
 
 设置此属性后，JSON有效负载将包含一个包含属性代码和值的数组的`attributes`对象。 然后，您可以根据这些属性值应用自定义店面样式，例如添加特殊的可视化处理或徽章，如前所述。
 

@@ -13,16 +13,16 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 324
+source-wordcount: 329
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-适用于Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)的API Mesh使开发人员能够使用Adobe I/O Runtime将私有或第三方API和其他接口与Adobe产品集成。
+适用于Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/mesh/)的API Mesh使开发人员能够使用Adobe I/O Runtime将私有或第三方API和其他接口与Adobe产品集成。
 
 ![目录体系结构图](assets/catalog-service-architecture-mesh.png)
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 连接并配置API网格。
 
-1. 按照&#x200B;_API Mesh Developer Guide_&#x200B;中[创建Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)的说明将API Mesh连接到您的Adobe Commerce实例。
+1. 按照&#x200B;_API Mesh Developer Guide_&#x200B;中[创建Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)的说明将API Mesh连接到您的Adobe Commerce实例。
 
    如果这是您第一次使用API Mesh，请先完成[入门流程](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)，然后再创建网格。
 

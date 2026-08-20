@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1522
+source-wordcount: 1506
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ _2026年5月28日_
 ![修复](../assets/fix.svg) **完整的导航树** — 当路径中存在未标记的中间节点时，已标记的后代类别现在正确地包含在系列筛选的`navigation`树中。 此修复程序可确保购物者在导航中看到所有相关类别，从而更轻松地浏览和发现商品。
 <!--DATA-7183-->
 
-![修复](../assets/fix.svg) **在`categoryTree`请求中处理空概要** — 修复了[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查询在`slugs`参数包含空字符串时返回内部服务器错误的问题。 现在会忽略空概要，因此存储前端和集成可以继续解析类别数据，而不会请求失败。
+![修复](../assets/fix.svg) **在`categoryTree`请求中处理空概要** — 修复了[`categoryTree`](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)查询在`slugs`参数包含空字符串时返回内部服务器错误的问题。 现在会忽略空概要，因此存储前端和集成可以继续解析类别数据，而不会请求失败。
 <!--DATA-7184-->
 
 ![Fix](../assets/fix.svg) **`searchCategory`请求返回不区分大小写、按字母顺序排列的结果**— `searchCategory`查询现在按字母顺序排列搜索结果，不区分大小写，确保排序一致且可预测。 如果名称在其他方面相同，则前缀较短的类别首先出现。
@@ -153,7 +153,7 @@ _2026年4月7日_
 
 <!--v1.50 release-->
 
-**更简单的类别查找** — [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查询将`family`视为可选的，因此您可以通过Slug解析类别，而无需提供系列。
+**更简单的类别查找** — [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)查询将`family`视为可选的，因此您可以通过Slug解析类别，而无需提供系列。
 
 {{aco-release}}
 
@@ -191,13 +191,13 @@ _2026年2月19日_
 
 <!--v1.48-->
 
-**店面更丰富的类别内容** — [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查询现在返回描述、图像和SEO元标记，因此店面可以呈现更丰富的类别页面。<!--DATA-6933-->
+**店面更丰富的类别内容** — [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)查询现在返回描述、图像和SEO元标记，因此店面可以呈现更丰富的类别页面。<!--DATA-6933-->
 
 _2026年2月12日_
 
 <!--v1.49-->
 
-**按类别增强了产品数据** — GraphQL API添加了[`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"}类型，以便您可以按类别查询和筛选往返次数较少的产品。
+**按类别增强了产品数据** — GraphQL API添加了[`CategoryProductView`](https://developer.adobe.com/commerce/services/reference/graphql/#categoryproductview){target="blank"}类型，以便您可以按类别查询和筛选往返次数较少的产品。
 
 {{aco-release}}
 

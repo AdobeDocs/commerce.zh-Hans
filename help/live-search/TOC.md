@@ -4,9 +4,9 @@ breadcrumb-title: '[!DNL Live Search]'
 user-guide-description: 本指南提供了使用Adobe Commerce中的 [!DNL Live Search] 的详细说明。
 role: Admin
 feature: Services, Search
-source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '105'
 ht-degree: 7%
 
 ---
@@ -20,34 +20,34 @@ ht-degree: 7%
 - [最佳实践](best-practice.md)
 - [发行说明](release-notes.md)
 - 店面 {#live-search-storefront}
-   - [店面小组件](storefront-widgets.md)
-   - [产品列表页面](plp-styling.md)
-   - [店面 [!DNL Popover]](storefront-popover.md)
-   - [迁移到PLP小组件](migrate-to-plp.md)
+  - [店面小组件](storefront-widgets.md)
+  - [产品列表页面](plp-styling.md)
+  - [店面 [!DNL Popover]](storefront-popover.md)
+  - [迁移到PLP小组件](migrate-to-plp.md)
 - 管理员 {#live-search-admin}
-   - [性能](performance.md)
-   - Facet {#facets}
-      - [概述](facets.md)
-      - [Workspace](faceting-workspace.md)
-      - [彩块化的类型](facets-type.md)
-      - [添加Facet](facets-add.md)
-      - [管理Facet](facets-manage.md)
-   - 同义词 {#synonyms}
-      - [概述](synonyms.md)
-      - [同义词的类型](synonyms-type.md)
-      - [添加同义词](synonyms-add.md)
-      - [管理同义词](synonyms-manage.md)
-   - 搜索促销 {#rules}
-      - [概述](rules.md)
-      - [Workspace](rules-workspace.md)
-      - [添加规则](rules-add.md)
-      - [管理规则](rules-manage.md)
-   - [类别促销](category-merch.md)
-   - [管理缺货产品](manage-out-of-stock-products.md)
-   - [索引](indexing.md)
-   - {hide-from-toc}[搜索匹配和排名](search-relevance-matching.md)
-   - [GraphQL](graphql.md)
-   - [设置](settings.md)
-   - [语义搜索](semantic-search.md)
+  - [性能](performance.md)
+  - Facet {#facets}
+    - [概述](facets.md)
+    - [Workspace](faceting-workspace.md)
+    - [彩块化的类型](facets-type.md)
+    - [添加Facet](facets-add.md)
+    - [管理Facet](facets-manage.md)
+  - 同义词 {#synonyms}
+    - [概述](synonyms.md)
+    - [同义词的类型](synonyms-type.md)
+    - [添加同义词](synonyms-add.md)
+    - [管理同义词](synonyms-manage.md)
+  - 搜索促销 {#rules}
+    - [概述](rules.md)
+    - [Workspace](rules-workspace.md)
+    - [添加规则](rules-add.md)
+    - [管理规则](rules-manage.md)
+  - [类别促销](category-merch.md)
+  - [管理缺货产品](manage-out-of-stock-products.md)
+  - [索引](indexing.md)
+  - {hide-from-toc}[搜索匹配和排名](search-relevance-matching.md)
+  - [GraphQL](graphql.md)
+  - [设置](settings.md)
+  - [语义搜索](semantic-search.md)
 - [开发人员指南](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)

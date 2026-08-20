@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 09692e5e2630568a48d14f727930d324c6932ca6
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1816
+source-wordcount: 1817
 ht-degree: 0%
 
 ---
@@ -250,7 +250,7 @@ Admin Console中的![开发人员和管理员选项卡选项](./assets/tab-selec
 
 >[!NOTE]
 >
->没有适当资产权限的用户将无法访问[!DNL AEM Assets]的高级功能，例如[AI图像生成](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}、[生成的变量](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"}等。
+>没有适当资产权限的用户将无法访问[!DNL AEM Assets]的高级功能，例如[AI图像生成](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/overview){target="_blank"}、[生成的变量](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations-integrated-editor){target="_blank"}等。
 
 >[!TIP]
 >

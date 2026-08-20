@@ -3,9 +3,9 @@ title: '为生产启用 [!DNL Payment Services] '
 description: 通过启用 [!DNL Payment Services] 以进行生产，完成载入流程。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1081'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
    您被定向到“主页”视图中的设置区域，相关选项已展开(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在其中启用[!DNL Payment Services]选项作为[付款方式](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
 
 1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;中，将&#x200B;**[!UICONTROL Enable]**&#x200B;设置为`Yes`。
-1. 将&#x200B;**[!UICONTROL Payment Action]**&#x200B;和&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;的_[!UICONTROL PayPal payment buttons]_&#x200B;设置为以下任一项：
+1. 将&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;和_[!UICONTROL PayPal payment buttons]_&#x200B;的&#x200B;**[!UICONTROL Payment Action]**&#x200B;设置为以下任一项：
 
    | 设置 | 描述 |
    |---|---|
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Save]**。
 1. 单击&#x200B;**[!UICONTROL Go to Payment Services]**&#x200B;以定向回[!DNL Payment Services]主页。
-1. [清除您的缓存](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=zh-Hans)。
+1. [清除您的缓存](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/cache-management)。
 
    应在每次配置更改后进行清除。
 
@@ -117,14 +117,14 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >如果您撤销了对[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]的同意，以处理您的付款（在您的PayPal帐户设置中），则[!DNL Payment Services]无法处理您商店中的订单。 在您的Payment Services主页上，会显示有关撤销同意的警报。
+   >如果您撤销了对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]的同意，以处理您的付款（在您的PayPal帐户设置中），则[!DNL Payment Services]无法处理您商店中的订单。 在您的Payment Services主页上，会显示有关撤销同意的警报。
 
 ## 从Adobe请求付款权利
 
 要启用您的商店，请从Adobe请求付款权利（仅适用于[高级入门](#advanced-onboarding)）：
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
-1. 单击&#x200B;**[!UICONTROL Get Live Payments]**&#x200B;主页中的[!DNL Payment Services]。
+1. 单击[!DNL Payment Services]主页中的&#x200B;**[!UICONTROL Get Live Payments]**。
 
    ![请求授权](assets/request-entitlements.png){width="500" zoomable="yes"}
 

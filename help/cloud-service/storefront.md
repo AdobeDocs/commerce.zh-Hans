@@ -22,7 +22,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 300
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL Commerce GraphQL Endpoint (optional)]**&#x200B;字段中，输入您的[!DNL Adobe Commerce as a Cloud Service] (SaaS) GraphQL端点，在[创建实例](./getting-started.md#create-an-instance)后，您可以在Commerce Cloud Manager中访问该端点。
 
-   或者，如果您使用的是[[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic)，请在&#x200B;**[!UICONTROL Commerce GraphQL Endpoint (optional)]**&#x200B;字段中输入您的[!DNL API Mesh] GraphQL端点。 有关详细信息，请参阅[创建网格](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)。
+   或者，如果您使用的是[[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)，请在&#x200B;**[!UICONTROL Commerce GraphQL Endpoint (optional)]**&#x200B;字段中输入您的[!DNL API Mesh] GraphQL端点。 有关详细信息，请参阅[创建网格](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)。
 
 1. 单击&#x200B;**[!UICONTROL Create Site]**。 按照屏幕上的说明授权访问GitHub存储库。
 

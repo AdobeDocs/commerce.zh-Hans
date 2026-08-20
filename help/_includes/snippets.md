@@ -1,5 +1,5 @@
 ---
-source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Adobe Commerce身份管理和身份验证由Adobe Identity Management System (IM
 
 | 服务 | 可扩展性 | 店面 |
 | --- | --- | --- |
-| <ul><li>[目录服务](../catalog-service/release-notes.md)</li><li>[实时搜索](../live-search/release-notes.md)</li><li>[付款服务](../payment-services/release-notes.md)</li><li>[产品推荐](../product-recommendations/release-notes.md)</li><li>[SaaS数据导出](../data-export/release-notes.md)</li></ul> | <ul><li>[管理员UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API网格](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[个事件](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)</li><li>[更改日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans)</li></ul> |
+| <ul><li>[目录服务](../catalog-service/release-notes.md)</li><li>[实时搜索](../live-search/release-notes.md)</li><li>[付款服务](../payment-services/release-notes.md)</li><li>[产品推荐](../product-recommendations/release-notes.md)</li><li>[SaaS数据导出](../data-export/release-notes.md)</li></ul> | <ul><li>[管理员UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API网格](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[个事件](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)</li><li>[更改日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans)</li></ul> |
 
 ## Adobe Commerce Optimizer服务发行说明 {#aco-release}
 

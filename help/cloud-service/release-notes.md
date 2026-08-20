@@ -33,7 +33,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: ecaeba0d36376bf7f9ac864135cbf225c7fd8634
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 5345
 ht-degree: 0%
@@ -88,7 +88,7 @@ ht-degree: 0%
 >
 >默认情况下，此功能处于禁用状态。 要启用此功能，请联系您的Adobe Commerce客户成功经理或创建支持工单。
 
-新[REST API端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)复制了[!DNL Commerce Admin] [!UICONTROL **编辑顺序**]&#x200B;功能，该功能允许集成以编程方式编辑顺序：
+新[REST API端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/)复制了[!DNL Commerce Admin] [!UICONTROL **编辑顺序**]&#x200B;功能，该功能允许集成以编程方式编辑顺序：
 
 | 方法 | 端点 | 描述 |
 | --- | --- | --- |
@@ -125,7 +125,7 @@ ht-degree: 0%
 >
 >此功能属于实验性质，必须通过联系您的Adobe Commerce客户成功经理或创建支持票证来启用。
 
-新的[`orderChain` REST API端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)允许集成使用其ID修改订单，并自动解析已编辑订单的完整链：
+新的[`orderChain` REST API端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/)允许集成使用其ID修改订单，并自动解析已编辑订单的完整链：
 
 | 方法 | 端点 | 描述 |
 | --- | --- | --- |

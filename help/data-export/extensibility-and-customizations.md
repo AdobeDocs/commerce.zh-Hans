@@ -18,7 +18,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 815
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 产品信息源包括产品处理所需的或消费者常用的默认系统属性。 通过将其他系统属性添加到产品信息源，您可以在产品信息源中包含这些属性。
 
-要完成此任务，请更新`magento/catalog-data-exporter`模块以将其他系统属性添加到[依赖项注入配置文件](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`)。
+要完成此任务，请更新`magento/catalog-data-exporter`模块以将其他系统属性添加到[依赖项注入配置文件](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`)。
 
 将属性添加到产品属性查询(`Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery`)。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 - **`user_defined`=`1`** — 在数据同步期间将属性导出到storefront services
 - **`used_in_product_listing`=`1`** — 使属性可在产品列表数据库查询中访问
 
-有关创建数据修补程序的信息，请参阅&#x200B;*PHP Developer Guide*&#x200B;中的[开发数据和架构修补程序](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/)。
+有关创建数据修补程序的信息，请参阅&#x200B;*PHP Developer Guide*&#x200B;中的[开发数据和架构修补程序](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches)。
 
 ### 动态添加产品属性
 
@@ -163,7 +163,7 @@ class DataSentOutsideObserver implements ObserverInterface
 </event>
 ```
 
-有关活动和观察者的一般信息，请参阅Adobe Commerce开发人员文档中的[活动和观察者](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"}。
+有关活动和观察者的一般信息，请参阅Adobe Commerce开发人员文档中的[活动和观察者](https://developer.adobe.com/commerce/php/development/components/events-and-observers/){target="_blank"}。
 
 ## 提交前筛选数据
 

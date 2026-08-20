@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->付款报表仅显示捕获的订单（付款操作设置为[`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=zh-Hans#set-payment-services-as-payment-method)），或[标记为`Invoiced`](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
+>付款报表仅显示捕获的订单（付款操作设置为[`Authorize and Capture`](production.md#set-payment-services-as-payment-method)），或[标记为`Invoiced`](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
 
 ## 支付数据可视化视图
 

@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -98,8 +98,8 @@ ht-degree: 0%
 - **`"Progress 2/5"`**&#x200B;表示已完成5次迭代中的2次。 迭代次数取决于导出的图元数。
 - **`"processed: 200"`**&#x200B;表示已处理200个项目。
 - **`"synced: 100"`**&#x200B;表示已向SaaS发送100个项目。 `"synced"`应不等于`"processed"`。 示例如下：
-   - **`"synced" < "processed"`**&#x200B;表示与先前同步的版本相比，信息源表未检测到项中的任何更改。 在同步操作过程中将忽略此类项目。
-   - **`"synced" > "processed"`**&#x200B;同一实体ID（例如，`Product ID`）可以在不同的范围中具有多个值。 例如，一个产品可以分配给五个网站。 在这种情况下，您可能具有“1个已处理”项目和“5个已同步”项目。
+  - **`"synced" < "processed"`**&#x200B;表示与先前同步的版本相比，信息源表未检测到项中的任何更改。 在同步操作过程中将忽略此类项目。
+  - **`"synced" > "processed"`**&#x200B;同一实体ID（例如，`Product ID`）可以在不同的范围中具有多个值。 例如，一个产品可以分配给五个网站。 在这种情况下，您可能具有“1个已处理”项目和“5个已同步”项目。
 
 +++ **示例：价格馈送的完整重新同步日志**
 
@@ -148,7 +148,7 @@ Price feed full resync:
 - 数据导出错误日志(`commerce-data-export-errors.log`)捕获收集阶段发生的错误。
 - SaaS导出错误日志(`saas-export-errors.log`)捕获传输阶段发生的错误。
 
-如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 ### 解决目录同步问题 {#resolvesync}
 

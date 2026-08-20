@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 334
+source-wordcount: 335
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 1. **自定义结账流程** — 在商务历程的各个阶段提供结账选项，以减少购买过程中的摩擦并提高转化率。
 
-1. **[与GraphQL的Headless兼容性](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)** — 商家可以替代REST和SOAP Web API进行前端开发。
+1. **[与GraphQL的Headless兼容性](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/)** — 商家可以替代REST和SOAP Web API进行前端开发。
 
 1. **Financial Reporting** — 将[付款详细信息](order-payment-status.md)与订单同步，以完全透明地显示已处理的金额、付款余额、[付款](payouts.md)和详细的[交易级别报告](reporting.md)，以实现财务对帐，并最大限度地提高交易可见性。
 

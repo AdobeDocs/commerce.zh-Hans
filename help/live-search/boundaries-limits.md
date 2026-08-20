@@ -18,9 +18,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1415
+source-wordcount: 1421
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ ht-degree: 0%
 ## 索引
 
 - [!DNL Live Search] [索引](indexing.md)每个商店视图最多包含450个产品属性。 其分布情况如下：
-   - 50个可排序的属性
-   - 200个可过滤属性
-   - 200个可搜索属性
+  - 50个可排序的属性
+  - 200个可过滤属性
+  - 200个可搜索属性
 - [!DNL Live Search]仅对Adobe Commerce数据库中的产品编制索引。
 - CMS页面未编制索引。
 - 默认情况下，SKU、名称和类别属性可搜索，并且无法从搜索中排除。 如果类别中没有预期的产品，请确保从这些类别中取消分配这些产品。
@@ -59,7 +59,7 @@ ht-degree: 0%
 ## Facet
 
 - 从定义的可过滤属性集中，最多可以将100个属性配置为Facet。
-- 在一个Facet中，最多可返回100个分段。 如果您需要返回100个以上的分段，请[创建一个支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)，以便Adobe分析性能影响并确定为您的环境提高此限制是否可行。
+- 在一个Facet中，最多可返回100个分段。 如果您需要返回100个以上的分段，请[创建一个支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)，以便Adobe分析性能影响并确定为您的环境提高此限制是否可行。
 - 动态Facet会导致大型索引和高序度索引的性能问题。 如果您已创建动态Facet，并且发现任何性能下降或页面未加载但存在超时错误，请尝试将您的Facet更改为Pinded以确定这是否解决了您的性能问题。
 - Stock状态(`quantity_and_stock_status`)不支持作为Facet。 在管理员中，您可以设置[!UICONTROL Display Out of Stock Products] = [!UICONTROL No]以筛选缺货产品。 `[PLP Widget](plp-styling.md)`模块中现成支持此功能。 有关详细信息，请参阅[管理缺货的产品](manage-out-of-stock-products.md)。
 - 不支持将日期类型属性作为Facet。
@@ -100,9 +100,9 @@ ht-degree: 0%
 
 - 如果产品未添加到默认共享目录，则不会显示产品。
 - 使用[类别权限](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/categories/category-permissions)限制客户组：
-   - 必须将产品分配给根类别。 (**注意：**&#x200B;您可以通过将SaaS Data Export扩展更新到103.4.0+版来移除此限制。 请参阅[管理数据导出扩展](../data-export/manage-extension.md)。
-   - 必须向“未登录”客户组提供“允许”浏览权限。
-   - 要将产品限制为“未登录”客户组，请转到每个类别并为每个[客户组](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)设置权限。
+  - 必须将产品分配给根类别。 (**注意：**&#x200B;您可以通过将SaaS Data Export扩展更新到103.4.0+版来移除此限制。 请参阅[管理数据导出扩展](../data-export/manage-extension.md)。
+  - 必须向“未登录”客户组提供“允许”浏览权限。
+  - 要将产品限制为“未登录”客户组，请转到每个类别并为每个[客户组](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)设置权限。
 - 目前不支持在PWA Studio中使用PLP小组件对B2B提供开箱即用支持。 但是，您可以[使用API](install.md#pwa-support)来实施此功能。
 - [!DNL Live Search]中的类别Facet可能显示无法显示给特定[客户组](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)的类别。
 - [!DNL Live Search]最多可支持1,000个客户组。
@@ -123,4 +123,4 @@ ht-degree: 0%
 - [[!DNL Live Search] 功能板和搜索结果排名不正确](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) — 解决实时搜索功能板中显示的搜索结果或性能量度未按预期显示的问题。 本文介绍如何解决排名差异和数据仪表板数据不一致的问题。
 - [[!DNL Live Search] Facet未按字母顺序排序](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) — 解决了Facet值按意外顺序而非按字母顺序显示的问题。 本文提供了配置和更正店面彩块化排序行为的步骤。
 
-如果您需要其他帮助，请联系[支持](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果您需要其他帮助，请联系[支持](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

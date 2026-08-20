@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 738
+source-wordcount: 744
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 [!DNL Product Recommendations]的数据收集不包括任何个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 若要了解更多信息，请参阅[Adobe隐私政策](https://www.adobe.com/privacy/policy.html)。
 
-有关数据同步的详细信息，请参阅[数据管理功能板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hans)。
+有关数据同步的详细信息，请参阅[数据管理功能板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)。
 
 ## 显示推荐的位置
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## 产品推荐与产品关系
 
-鉴于在线购物不断变化的复杂性，最适合您店面的往往是多种关键技术的组合。 同时使用[!DNL Product Recommendations]和[产品关系](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html?lang=zh-Hans)可让您在促销产品时拥有更大的灵活性。 您可以利用由Adobe AI提供支持的[!DNL Product Recommendations]，大规模智能地自动执行您的推荐。 然后，在必须手动干预并确保向目标购物者区段提供特定推荐时，或者在必须满足某些业务目标时，您可以利用[相关产品规则](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html?lang=zh-Hans)。
+鉴于在线购物不断变化的复杂性，最适合您店面的往往是多种关键技术的组合。 同时使用[!DNL Product Recommendations]和[产品关系](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)可让您在促销产品时拥有更大的灵活性。 您可以利用由Adobe AI提供支持的[!DNL Product Recommendations]，大规模智能地自动执行您的推荐。 然后，在必须手动干预并确保向目标购物者区段提供特定推荐时，或者在必须满足某些业务目标时，您可以利用[相关产品规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)。
 
 通过产品推荐，您可以：
 
@@ -82,4 +82,4 @@ ht-degree: 0%
 
 ### 重新激活目录数据
 
-要在休眠后还原目录数据，请[提交标题为“重新激活[!DNL Product Recommendations]”的支持请求](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)并包含环境ID。 目录数据应会在几小时内恢复。
+要在休眠后还原目录数据，请[提交标题为“重新激活[!DNL Product Recommendations]”的支持请求](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)并包含环境ID。 目录数据应会在几小时内恢复。

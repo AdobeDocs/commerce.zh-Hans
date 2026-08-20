@@ -24,9 +24,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 991
+source-wordcount: 983
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 0%
 1. 如果内容不匹配，请在目录中对产品进行细微编辑，如添加空格或句点，以强制检测更改。
 1. 等待重新同步或触发从CLI或Admin中的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面手动重新同步。
 
-有关[!DNL Product Recommendations]中目录数据的其他疑难解答，请参阅Commerce知识库中的[产品推荐模块疑难解答](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)。
+有关[!DNL Product Recommendations]中目录数据的其他疑难解答，请参阅Commerce知识库中的[产品推荐模块疑难解答](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-40095)。
 
 ## 数据同步未按计划运行 {#sync-not-on-schedule}
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 **解决方案：**
 
-- [确认cron作业正在运行](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
+- [确认cron作业正在运行](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-39832)。
 - 验证以下源的索引器是否设置为&#x200B;**[!UICONTROL Update by Schedule]**：目录属性、产品、产品覆盖和产品变体。 在Commerce管理员中或使用CLI从[[!UICONTROL Index Management]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/index-management)检查： `bin/magento indexer:show-mode | grep -i feed`。
 
 ## 目录同步的状态为失败 {#catalog-sync-failed}
@@ -110,7 +110,7 @@ ht-degree: 0%
 1. 查看数据导出错误日志，了解有关失败的详细信息。 有关日志格式和扩展日志记录选项，请参阅[查看日志和疑难解答](logging.md)：
    - 数据收集期间出现`var/log/commerce-data-export-errors.log`错误。
    - `var/log/saas-export-errors.log`数据提交过程中出现错误。
-1. 如果错误与配置或第三方扩展无关，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)以及相关日志条目。
+1. 如果错误与配置或第三方扩展无关，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)以及相关日志条目。
 
 ## 日志显示“操作已跳过 — 进程已锁定”消息 {#process-locked}
 

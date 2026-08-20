@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: f35d602bd25d2b5192a289c444c1bc0a93a91945
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 447
+source-wordcount: 449
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ### B2B支持 {#b2bsupport}
 
-B2B店面通常需要复杂的逻辑，这些逻辑指示每个购物者或客户组的产品可见性和定价。 [!DNL Product Recommendations]现在[支持](release-notes.md)此功能通过遵守[类别权限](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/categories/category-permissions)、[共享目录](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=zh-Hans)和[特定于客户组的定价](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=zh-Hans)来实现。 例如，如果您在零售客户区段中隐藏了某些类别，则该区段中的购物者不会显示这些类别中的产品推荐。 此外，在为特定客户组和公司定义共享目录时，这些购物者只会看到他们能够访问的产品推荐。 所有推荐产品均反映了根据每位购物者的客户群确定的正确客户群特定价格。
+B2B店面通常需要复杂的逻辑，这些逻辑指示每个购物者或客户组的产品可见性和定价。 [!DNL Product Recommendations]现在[支持](release-notes.md)此功能通过遵守[类别权限](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/categories/category-permissions)、[共享目录](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/shared-catalogs/catalog-shared)和[特定于客户组的定价](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/pricing/pricing-advanced)来实现。 例如，如果您在零售客户区段中隐藏了某些类别，则该区段中的购物者不会显示这些类别中的产品推荐。 此外，在为特定客户组和公司定义共享目录时，这些购物者只会看到他们能够访问的产品推荐。 所有推荐产品均反映了根据每位购物者的客户群确定的正确客户群特定价格。
 
 >[!NOTE]
 >
