@@ -27,7 +27,7 @@ ht-degree: 0%
 
    如果您尚未将[!DNL Payment Services]配置为一个或多个网站的付款方式，则此选项可见。
 
-   您被定向到“主页”视图中的设置区域，相关选项已展开(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在其中启用[!DNL Payment Services]选项作为[付款方式](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
+   您被定向到“主页”视图中的设置区域，相关选项已展开(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在其中启用[!DNL Payment Services]选项作为[付款方式](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
 
 1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;中，将&#x200B;**[!UICONTROL Enable]**&#x200B;设置为`Yes`。
 1. 将&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;和_[!UICONTROL PayPal payment buttons]_&#x200B;的&#x200B;**[!UICONTROL Payment Action]**&#x200B;设置为以下任一项：
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Save]**。
 1. 单击&#x200B;**[!UICONTROL Go to Payment Services]**&#x200B;以定向回[!DNL Payment Services]主页。
-1. [清除您的缓存](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)。
+1. [清除您的缓存](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/cache-management)。
 
    应在每次配置更改后进行清除。
 
@@ -131,7 +131,7 @@ ht-degree: 0%
 1. 完成表单。
 1. 销售团队的成员将与您联系。
 
-或者，您可以通过[business.adobe.com](https://business.adobe.com/resources/payment-services.html)向Adobe请求付款权利。
+或者，您可以通过[business.adobe.com](https://business.adobe.com/cn/resources/payment-services.html)向Adobe请求付款权利。
 
 >[!IMPORTANT]
 >
@@ -157,7 +157,7 @@ _生产商家ID_&#x200B;是自动生成的，并在[配置](configure-admin.md)�
 1. 在主页上，单击页面右上角的&#x200B;**[!UICONTROL Settings]**。 有关详细信息，请参阅[主页](payments-home.md)。
 1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;分区中，将&#x200B;**[!UICONTROL Payment mode]**&#x200B;设置为`Production`。
 1. 单击&#x200B;**[!UICONTROL Save]**。
-1. [清除您的缓存](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
+1. [清除您的缓存](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
 
    >[!IMPORTANT]
    >

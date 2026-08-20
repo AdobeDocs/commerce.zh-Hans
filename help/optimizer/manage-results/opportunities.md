@@ -1,7 +1,7 @@
 ---
 title: 机会
 description: 通过与Adobe Sites Optimizer集成以实现智能的数据驱动型网站改进，发现增加流量、参与度和转化率的机会。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于 [!DNL Adobe Commerce Optimizer] 个项目（Adobe管理的SaaS基础结构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于 [!DNL Adobe Commerce Optimizer] 个项目（Adobe管理的SaaS基础结构）。"
 TQID: https://experienceleague.adobe.com/KQb7XtqY-4Qrt4B9fwn9w6u8yBjwsj4owArk53v6VHo
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 什么是机会？
 
-[机会](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支持的推荐，可帮助商家识别并解决影响其商业网站性能的问题。 这些建议由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)提供支持，这是一项基于云的服务，可分析和改进网站性能。
+[机会](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支持的推荐，可帮助商家识别并解决影响其商业网站性能的问题。 这些建议由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/home)提供支持，这是一项基于云的服务，可分析和改进网站性能。
 
 ## 主要功能
 
@@ -197,12 +197,12 @@ ht-degree: 0%
 
 ## 了解有关Sites Optimizer的更多信息
 
-有关Sites Optimizer功能和特征的详细信息，请参阅[Adobe Experience Manager Sites Optimizer文档](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)。
+有关Sites Optimizer功能和特征的详细信息，请参阅[Adobe Experience Manager Sites Optimizer文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/home)。
 
 其他资源：
 
-- [机会类型](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) — 了解可用的优化机会。
-- [Sites Optimizer功能](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/basics) — 探索Sites Optimizer的功能。
+- [机会类型](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) — 了解可用的优化机会。
+- [Sites Optimizer功能](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-sites-optimizer/content/documentation/basics) — 探索Sites Optimizer的功能。
 
 ## 更多此类内容
 

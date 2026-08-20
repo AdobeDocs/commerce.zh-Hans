@@ -29,4 +29,4 @@ ht-degree: 5%
   - [连接器信息源的字段映射](reference/field-mapping.md)
   - [估计数据量和同步时间](reference/estimate-data-volume-sync-time.md)
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)

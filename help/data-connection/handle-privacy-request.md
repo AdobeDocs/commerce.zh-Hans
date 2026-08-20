@@ -34,21 +34,21 @@ Adobe Experience Platform Privacy Service提供RESTful API和用户界面，帮�
 
 有关Privacy Service以及如何创建和管理隐私请求的更多信息，请参阅Adobe Experience Platform文档：
 
-* [Privacy Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home)
-* [在Privacy Service UI中管理隐私作业](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide)
+* [Privacy Service概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/privacy/home)
+* [在Privacy Service UI中管理隐私作业](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/privacy/ui/user-guide)
 
 ## 管理个人数据隐私请求
 
 您可以通过两种方式提交单个请求以从[!DNL Commerce]访问和删除使用者数据：
 
-* 通过&#x200B;**Privacy Service UI**。 请参阅文档[此处](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide){target="_blank"}。
+* 通过&#x200B;**Privacy Service UI**。 请参阅文档[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/privacy/ui/user-guide){target="_blank"}。
 * 通过&#x200B;**Privacy Service API**。 请参阅文档[此处](https://developer.adobe.com/experience-platform-apis/references/privacy-service){target="_blank"}和API信息[此处](https://developer.adobe.com/experience-platform-apis/){target="_blank"}。
 
 Privacy Service支持两种类型的请求：**数据访问**&#x200B;和&#x200B;**数据删除**。
 
 >[!NOTE]
 >
->本文重点介绍[!DNL Commerce]的隐私请求。 如果您计划为[Platform Data Lake](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy)、[Real-Time Customer Profile](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy)或[Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy)提出隐私请求，请参阅其各自的用户指南。 请注意，删除和访问请求必须单独向每个系统发出，因为向Commerce发出的隐私请求不会删除所有这些系统中的数据。
+>本文重点介绍[!DNL Commerce]的隐私请求。 如果您计划为[Platform Data Lake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/privacy)、[Real-Time Customer Profile](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/privacy)或[Identity Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/privacy)提出隐私请求，请参阅其各自的用户指南。 请注意，删除和访问请求必须单独向每个系统发出，因为向Commerce发出的隐私请求不会删除所有这些系统中的数据。
 
 ## 数据访问
 
@@ -56,7 +56,7 @@ Privacy Service支持两种类型的请求：**数据访问**&#x200B;和&#x200B;
 
 ## 数据删除
 
-对于删除请求，Privacy Service出于营销目的删除存储在Commerce SaaS服务中的[!DNL Commerce]数据，这意味着数据主体的配置文件和订单不再发送到Adobe营销应用程序以用于营销活动和客户历程。 但是，Privacy Service不会删除[!DNL Commerce]应用程序中的数据，因为商家事务型需求可能需要这些数据。 商家负责[!DNL Commerce]应用程序中的任何数据删除/访问请求。 请参阅[共享责任安全和运营模型](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)以了解详情。
+对于删除请求，Privacy Service出于营销目的删除存储在Commerce SaaS服务中的[!DNL Commerce]数据，这意味着数据主体的配置文件和订单不再发送到Adobe营销应用程序以用于营销活动和客户历程。 但是，Privacy Service不会删除[!DNL Commerce]应用程序中的数据，因为商家事务型需求可能需要这些数据。 商家负责[!DNL Commerce]应用程序中的任何数据删除/访问请求。 请参阅[共享责任安全和运营模型](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/security-and-compliance/shared-responsibility)以了解详情。
 
 [!DNL Commerce]将通过向商家发送请求删除特定数据的数据主体的信息来通知他们有关删除请求的信息。
 
@@ -81,8 +81,8 @@ Privacy Service支持两种类型的请求：**数据访问**&#x200B;和&#x200B;
 
 要通过隐私API发送访问和删除请求，您必须对Privacy Service的权限进行身份验证和管理：
 
-* [身份验证和访问Privacy Service API](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/getting-started)
-* [管理Privacy Service的权限](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/permissions)
+* [身份验证和访问Privacy Service API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/privacy/api/getting-started)
+* [管理Privacy Service的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/privacy/permissions)
 
 **必需的标头**
 

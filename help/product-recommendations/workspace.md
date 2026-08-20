@@ -48,7 +48,7 @@ _推荐Workspace_
 
 ## 设置范围
 
-最初，所有推荐设置的[范围](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)设置为`Default Store View`。 如果您的Commerce安装包含多个存储视图，请将&#x200B;**范围**&#x200B;设置为您的建议适用的[存储视图](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
+最初，所有推荐设置的[范围](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/websites-stores-views)设置为`Default Store View`。 如果您的Commerce安装包含多个存储视图，请将&#x200B;**范围**&#x200B;设置为您的建议适用的[存储视图](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
 
 ## 设置量度日期范围
 

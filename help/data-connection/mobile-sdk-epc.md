@@ -30,7 +30,7 @@ ht-degree: 0%
 
 将[Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)与Commerce Mobile应用程序集成后，商家可以将Commerce [事件数据](events.md)发送到Experience Platform Edge。
 
-当Commerce事件数据在边缘可用时，其他Adobe Experience Cloud应用程序即可访问该数据。 例如，您可以使用此数据在Real-Time CDP中构建受众，然后[使用这些受众](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation)个性化您的Commerce移动应用程序。
+当Commerce事件数据在边缘可用时，其他Adobe Experience Cloud应用程序即可访问该数据。 例如，您可以使用此数据在Real-Time CDP中构建受众，然后[使用这些受众](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/audience-activation)个性化您的Commerce移动应用程序。
 
 ## 配置
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ### Experience Platform
 
-1. 通过查看移动设备应用程序教程[&#128279;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview)中的Adobe Experience Cloud了解移动设备应用程序功能。
+1. 通过查看移动设备应用程序教程[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/overview)中的Adobe Experience Cloud了解移动设备应用程序功能。
 
 1. [在Experience Platform中安装和配置](https://developer.adobe.com/client-sdks/home/getting-started/)SDK。
 
@@ -174,4 +174,4 @@ ht-degree: 0%
 
 ## 后续步骤
 
-要了解如何从移动Real-Time CDP应用程序中检索Commerce受众以告知购物车价格规则、动态块和相关产品规则，请参阅[Audience Activation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)。
+要了解如何从移动Real-Time CDP应用程序中检索Commerce受众以告知购物车价格规则、动态块和相关产品规则，请参阅[Audience Activation](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/audience-activation#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)。

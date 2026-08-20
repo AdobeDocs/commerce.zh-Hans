@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ![性能](assets/performance-unique-searches.png)
 
-您还可以参考[数据管理功能板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)，了解有关数据同步的更多数据。
+您还可以参考[数据管理功能板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)，了解有关数据同步的更多数据。
 
 >[!NOTE]
 >

@@ -2,7 +2,7 @@
 title: 目录同步管道
 description: 了解 [!DNL Adobe Commerce Optimizer Connector] 同步管道的工作原理，包括馈送转换、cron计划、范围控制和错误处理。
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
 product_v2:
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 # 连接器同步管道
 
-**[!DNL Adobe Commerce Optimizer Connector]**&#x200B;基于[[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview)构建，将[!DNL SaaS Data Export]索引器收集的数据映射到[!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]所需的格式，并处理身份验证、批量提交和基于范围的同步控制。 以下各节将介绍该同步的工作方式。
+**[!DNL Adobe Commerce Optimizer Connector]**&#x200B;基于[[!DNL SaaS Data Export]](https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/overview)构建，将[!DNL SaaS Data Export]索引器收集的数据映射到[!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]所需的格式，并处理身份验证、批量提交和基于范围的同步控制。 以下各节将介绍该同步的工作方式。
 
 相关上下文：
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 #### 要求
 
-- [Commerce cron必须正在运行](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}。
+- [Commerce cron必须正在运行](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}。
 - 馈送索引器必须使用&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;模式。 请参阅[部分同步](../data-export/sync-overview.md#partial-sync){target="_blank"}。
 
 ## 基于范围的同步控制
@@ -93,7 +93,7 @@ ht-degree: 1%
 | 瞬时故障 | 每5分钟重试一次 |
 | 完全同步或大型目录 | 分钟到小时 |
 
-从Commerce管理员的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面中监视每个馈送的状态。 请参阅[验证数据同步是否正常工作](./data-sync-manage.md#verify-that-the-data-sync-is-working)。
+从Commerce管理员的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面中监视每个馈送的状态。 请参阅[验证数据同步是否正常工作](./data-sync-manage.md#verify-that-the-data-sync-is-working)。
 
 ## 馈送提交和错误处理
 

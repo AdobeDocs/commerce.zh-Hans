@@ -38,4 +38,4 @@ ht-degree: 10%
   - [收集数据](events.md)
   - [自定义](customize.md)
   - [处理Cookie限制](setting-cookie.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)

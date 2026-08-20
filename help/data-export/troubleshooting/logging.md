@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您还可以从管理员中的[数据馈送同步状态仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)跟踪产品和类别数据的数据导出馈送的运行状况和性能。
+>您还可以从管理员中的[数据馈送同步状态仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)跟踪产品和类别数据的数据导出馈送的运行状况和性能。
 
 ## 日志
 
@@ -148,7 +148,7 @@ Price feed full resync:
 - 数据导出错误日志(`commerce-data-export-errors.log`)捕获收集阶段发生的错误。
 - SaaS导出错误日志(`saas-export-errors.log`)捕获传输阶段发生的错误。
 
-如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 ### 解决目录同步问题 {#resolvesync}
 

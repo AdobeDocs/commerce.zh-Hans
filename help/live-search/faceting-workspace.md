@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 设置范围
 
-如果您的Adobe Commerce安装包含多个商店视图，请将&#x200B;**范围**&#x200B;设置为应用您的方面设置的[商店视图](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
+如果您的Adobe Commerce安装包含多个商店视图，请将&#x200B;**范围**&#x200B;设置为应用您的方面设置的[商店视图](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
 
 ## 筛选列表
 

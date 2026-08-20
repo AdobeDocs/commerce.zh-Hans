@@ -50,4 +50,4 @@ ht-degree: 7%
   - [设置](settings.md)
   - [语义搜索](semantic-search.md)
 - [开发人员指南](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)

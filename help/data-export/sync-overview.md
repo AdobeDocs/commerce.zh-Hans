@@ -86,7 +86,7 @@ SaaS数据导出支持三种同步类型：完全同步、部分同步和重试�
 通过部分同步，SaaS数据导出会自动将Commerce应用程序中的更新（例如产品名称更改或价格更新）发送到连接的商务服务。
 为了使部分同步正常工作，Commerce应用程序需要以下配置：
 
-- [通过cron作业启用任务计划](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration)
+- [通过cron作业启用任务计划](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/next-steps/configuration)
 - 所有SaaS数据导出索引器均在`Update by Schedule`模式下配置。
 
 ### 重试失败的项目同步 {#retry-failed-items-sync}
@@ -119,7 +119,7 @@ SaaS数据导出支持三种同步类型：完全同步、部分同步和重试�
 
 除了HTTP级失败之外，应用程序级错误（如本地处理失败或网络中断）也计划由`*_resend_failed_items` cron作业自动重试。
 
-从Commerce管理员的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面中监视每个馈送的状态。
+从Commerce管理员的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面中监视每个馈送的状态。
 
 >[!MORELIKETHIS]
 >
