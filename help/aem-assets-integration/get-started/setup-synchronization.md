@@ -4,21 +4,14 @@ description: 了解如何将Adobe Commerce项目与Experience Manager Assets项�
 feature: CMS, Media
 exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
 TQID: https://experienceleague.adobe.com/MM-neGrH-N8xBcCwLgnsaIrIjhbX6uYL5kS41QdV79I
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 965
+source-wordcount: 966
 ht-degree: 2%
 
 ---
@@ -29,7 +22,7 @@ ht-degree: 2%
 
 识别AEM Assets项目后，选择用于在Adobe Commerce和AEM Assets之间同步资产的匹配规则。
 
-* **[!UICONTROL Match by product SKU]** — 将资源元数据中的SKU与[Commerce产品SKU](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/implementation-playbook/glossary#sku)匹配的默认规则，以确保资源与正确的产品关联。
+* **[!UICONTROL Match by product SKU]** — 将资源元数据中的SKU与[Commerce产品SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)匹配的默认规则，以确保资源与正确的产品关联。
 
 * **[!UICONTROL Custom match]** — 匹配规则，用于需要自定义匹配逻辑的更复杂方案或特定业务要求。 实施自定义匹配需要在Adobe Developer App Builder中开发自定义代码以定义资源与产品的匹配方式。 更多详细信息即将推出……
 
@@ -80,7 +73,7 @@ ht-degree: 2%
 1. 从&#x200B;**[!UICONTROL Asset matching rule]**&#x200B;下拉列表中选择一个资源匹配规则以进行资源同步。
 
    * 为[默认自动匹配](../synchronize/default-match.md)选择&#x200B;**[!UICONTROL Match by SKU]**，
-   * 为[自定义自动匹配](../synchronize/custom-match.md)选择&#x200B;**[!UICONTROL Custom match]**（需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)。）
+   * 为[自定义自动匹配](../synchronize/custom-match.md)选择&#x200B;**[!UICONTROL Custom match]**（需要[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。）
 
 1. 将为AEM Assets产品SKU定义的[Commerce元数据字段名称](configure-aem.md#define-the-metadata-profile)添加到&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;字段`commerce:skus`中（默认情况下）。
 
@@ -108,7 +101,7 @@ ht-degree: 2%
 
 管理员显示该所有者的可用图像，而其余图像则呈灰显状态，并带有&#x200B;**hidden**&#x200B;标签。
 
-有关图像显示行为的详细信息，请参阅[设置图像详细信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主题。
+有关图像显示行为的详细信息，请参阅[设置图像详细信息](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主题。
 
 >[!TIP]
 >
@@ -136,7 +129,7 @@ ht-degree: 2%
 
 ## 下一步
 
-* **配置您的Commerce店面** — 要将AEM Assets与由Edge Delivery Services提供支持的Commerce店面一起使用，请完成&#x200B;*Adobe Commerce店面文档*&#x200B;的[AEM Assets集成](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hans)主题中所述的店面配置。
+* **配置您的Commerce店面** — 要将AEM Assets与由Edge Delivery Services提供支持的Commerce店面一起使用，请完成&#x200B;*Adobe Commerce店面文档*&#x200B;的[AEM Assets集成](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/)主题中所述的店面配置。
 
 * 在Adobe Commerce与AEM Assets集成之间设置[匹配规则](../synchronize/default-match.md)。
 

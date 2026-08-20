@@ -3,17 +3,13 @@ title: 投放位置和标签
 description: 了解可在网站上各个页面上放置推荐的位置，以及针对每种推荐类型的常用标签的建议。
 exl-id: 0576add8-50dd-4aac-91f5-38b7d85b751f
 TQID: https://experienceleague.adobe.com/Bu5SbZHmj-PfJ3-KnVTu6sc4emkmRJeWTusmQHYz1aU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 500
+source-wordcount: 501
 ht-degree: 0%
 
 ---
@@ -68,4 +64,4 @@ _位于搜索结果顶部的推荐_
 | 产品详细信息 | 在主内容的底部（默认） | 查看次数最多<br>购买次数最多<br>添加到购物车的人数最多<br>查看了此项目，查看了哪些项目<br>查看了此项目，购买了哪些项目<br>购买了此项目，购买了哪些项目<br>更多此类项目<br>趋势<br>视觉相似度 |
 | 购物车 | 在主内容的底部（默认） | 查看次数最多<br>购买次数最多<br>添加到购物车的人数最多<br>查看了此项目，查看了哪些项目<br>查看了此项目，购买了哪些项目<br>购买了此项目，购买了哪些项目<br>更多此类项目<br>趋势 |
 | 确认 | 在主内容的底部（默认） | 查看次数最多<br>购买次数最多<br>添加到购物车的人数最多<br>查看了此项目，查看了哪些项目<br>查看了此项目，购买了哪些项目<br>购买了此项目，购买了哪些项目<br>更多此类项目<br>趋势 |
-| 页面生成器 | [拖放](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=zh-Hans)以定位内容类型 | 查看次数最多<br>购买次数最多<br>添加到购物车的人数最多<br>为您推荐的趋势<br>趋势 |
+| 页面生成器 | [拖放](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)以定位内容类型 | 查看次数最多<br>购买次数最多<br>添加到购物车的人数最多<br>为您推荐的趋势<br>趋势 |

@@ -3,19 +3,13 @@ title: 彩块化的类型
 description: '[!DNL Live Search]个Facet是动态的，并在相关时显示在筛选器列表中。'
 exl-id: cd05c0c5-1028-4d66-951d-0b61c1ecc440
 TQID: https://experienceleague.adobe.com/8cO5HLAkJLHHqyL-cYb3USCk4E9q1KSRJQ1fOGK0HB4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: 429
 ht-degree: 0%
 
 ---
@@ -25,7 +19,7 @@ ht-degree: 0%
 [!DNL Live Search]使用各种Facet类型，只有在相关时它们才会出现在&#x200B;*筛选器*&#x200B;列表中。 可用Facet的列表会根据返回的产品而发生更改。 以下特征会影响其呈现方式和行为：
 
 * 固定Facet — 最常用的Facet可以固定到列表顶部。 其余Facet在固定的Facet之后以&#x200B;*排序类型*&#x200B;顺序列出。
-* 动态Facet - [Adobe AI](https://business.adobe.com/cn/ai.html)发现与产品集和查询最相关的产品属性。 该计算会考虑整个目录的属性元数据，并在查询时确定与查询最相关的Facet。
+* 动态Facet - [Adobe AI](https://business.adobe.com/ai.html)发现与产品集和查询最相关的产品属性。 该计算会考虑整个目录的属性元数据，并在查询时确定与查询最相关的Facet。
 
   >[!NOTE]
   >
@@ -42,11 +36,11 @@ ht-degree: 0%
 
 为[!DNL Commerce]店面呈现的Facet由搜索适配器处理，该适配器路由请求并在店面中呈现结果。 所有[!DNL Commerce]店面彩块化均使用单选选项按字母顺序排序，而不管分配给相应属性的输入类型如何。 店面中可用的Facet将根据当前主题进行渲染，并反映对分层导航的呈现所做的任何自定义设置。
 
-相反，[headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/)实现由API处理并支持其他选项。 Headless Facet可以按字母顺序或计数排序，并且可以具有单选或多选选项。
+相反，[headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api)实现由API处理并支持其他选项。 Headless Facet可以按字母顺序或计数排序，并且可以具有单选或多选选项。
 
 ### Facet标签
 
-对于[!DNL Commerce]店面，Facet标签由&#x200B;[*属性属性*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hans)确定。 对于具有多个视图的存储，可在&#x200B;*管理标签*&#x200B;下定义其他标签。 对于Headless实施，从[彩块化工作区](faceting-workspace.md)编辑标签。
+对于[!DNL Commerce]店面，Facet标签由&#x200B;[*属性属性*](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)确定。 对于具有多个视图的存储，可在&#x200B;*管理标签*&#x200B;下定义其他标签。 对于Headless实施，从[彩块化工作区](faceting-workspace.md)编辑标签。
 
 ### 排序类型
 

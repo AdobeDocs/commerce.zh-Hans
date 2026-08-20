@@ -2,31 +2,18 @@
 title: 安全性概述
 description: 了解Adobe Commerce as a Cloud Service的安全功能。
 role: Admin, Developer, Leader
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 autotag-review: '2026-06-18T16:18:52.695Z'
 TQID: 'https://experienceleague.adobe.com/AmkzZgLeOa9zJkPE8kWM6lFcFNtBAAOmJeULI-y4gOw'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 581
+source-wordcount: 577
 ht-degree: 0%
 
 ---
@@ -58,7 +45,7 @@ ht-degree: 0%
 
 [!DNL API Mesh]的CDN层终止TLS，以Worker身份运行GraphQL网关，提供全局边缘缓存和自动DDoS/WAF，并将`edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io`公开为公共网状端点；客户可以在前端添加自己的CDN，但[!DNL API Mesh]的CDN由Adobe修复和管理，客户无法配置自己的WAF规则。
 
-有关[!DNL API Mesh]安全功能的详细信息，请参阅[API Mesh文档](https://developer.adobe.com/graphql-mesh-gateway/mesh/security/){target="_blank"}。
+有关[!DNL API Mesh]安全功能的详细信息，请参阅[API Mesh文档](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}。
 
 ### 后端CDN
 
@@ -87,6 +74,6 @@ WAF和CDN由[!DNL Adobe Commerce as a Cloud Service]平台管理，客户无法�
 
 如果数据存储在[!DNL App Builder]中，则商家可以引用[!DNL App Builder] [存储选项](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)。 [!DNL App Builder]强制租户隔离，并且访问这些服务中存储的数据被限制为执行操作的运行时命名空间。 存储中没有数据加密。
 
-使用[!DNL API Mesh]时，密钥应存储在网格配置的`secrets.yaml`文件中。 [!DNL API Mesh]使用AES-256加密([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/))加密这些密钥。
+使用[!DNL API Mesh]时，密钥应存储在网格配置的`secrets.yaml`文件中。 [!DNL API Mesh]使用AES-256加密对这些密钥进行加密（请参阅[API Mesh文档](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}）。
 
 存储在[!DNL Adobe Commerce as a Cloud Service]中的任何数据都使用AES 256位加密进行静态加密，所有数据都使用TLS 1.2或更高版本通过HTTPS进行传输加密。

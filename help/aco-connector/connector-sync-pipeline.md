@@ -2,38 +2,24 @@
 title: 目录同步管道
 description: 了解 [!DNL Adobe Commerce Optimizer Connector] 同步管道的工作原理，包括馈送转换、cron计划、范围控制和错误处理。
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: cc250cf1-34eb-4863-80d0-d170d45ea067id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 662
+source-wordcount: 673
 ht-degree: 1%
 
 ---
 
 # 连接器同步管道
 
-**[!DNL Adobe Commerce Optimizer Connector]**&#x200B;基于[[!DNL SaaS Data Export]](https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/overview)构建，将[!DNL SaaS Data Export]索引器收集的数据映射到[!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]所需的格式，并处理身份验证、批量提交和基于范围的同步控制。 以下各节将介绍该同步的工作方式。
+**[!DNL Adobe Commerce Optimizer Connector]**&#x200B;基于[[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview)构建，将[!DNL SaaS Data Export]索引器收集的数据映射到[!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]所需的格式，并处理身份验证、批量提交和基于范围的同步控制。 以下各节将介绍该同步的工作方式。
 
 相关上下文：
 
@@ -70,7 +56,7 @@ ht-degree: 1%
 
 #### 要求
 
-- [Commerce cron必须正在运行](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}。
+- [Commerce cron必须正在运行](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}。
 - 馈送索引器必须使用&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;模式。 请参阅[部分同步](../data-export/sync-overview.md#partial-sync){target="_blank"}。
 
 ## 基于范围的同步控制
@@ -93,7 +79,7 @@ ht-degree: 1%
 | 瞬时故障 | 每5分钟重试一次 |
 | 完全同步或大型目录 | 分钟到小时 |
 
-从Commerce管理员的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面中监视每个馈送的状态。 请参阅[验证数据同步是否正常工作](./data-sync-manage.md#verify-that-the-data-sync-is-working)。
+从Commerce管理员的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)页面中监视每个馈送的状态。 请参阅[验证数据同步是否正常工作](./data-sync-manage.md#verify-that-the-data-sync-is-working)。
 
 ## 馈送提交和错误处理
 

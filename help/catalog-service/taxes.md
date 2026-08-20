@@ -5,23 +5,19 @@ role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
 TQID: https://experienceleague.adobe.com/mK-o11X-G7WZgCL9BmVnDMfTDBg3lDemTNkxqkhyMZM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 292
+source-wordcount: 289
 ht-degree: 0%
 
 ---
 
 # 使用Adobe Developer App Builder的API Mesh显示计税价格
 
-[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)使开发人员能够使用Adobe I/O Runtime将私有或第三方API和其他接口与Adobe产品集成。
+[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/)使开发人员能够使用Adobe I/O Runtime将私有或第三方API和其他接口与Adobe产品集成。
 
 在本主题中，API网格用于在产品详细信息页面上显示产品价格，并包含税费。
 
@@ -29,8 +25,8 @@ ht-degree: 0%
 
 您必须为其配置税才能在产品详细信息页面上显示。
 
-1. [设置税率](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=zh-Hans)。
-1. 使税在目录[&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=zh-Hans#step-1%3A-configure-catalog-prices-display-settings)中显示为，并将其设置为`Including and Excluding Tax`或`Including Tax`。
+1. [设置税率](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules)。
+1. 使税在目录](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings)中显示为[，并将其设置为`Including and Excluding Tax`或`Including Tax`。
 
 通过检查产品详细信息页面，验证目录服务是否正常工作。
 
@@ -38,7 +34,7 @@ ht-degree: 0%
 
 ## 配置API网格
 
-如果尚未这样做，请将API网格与目录服务连接到您的实例。 请参阅API Mesh开发人员指南的[快速入门](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/)主题中的详细说明。
+如果尚未这样做，请将API网格与目录服务连接到您的实例。 请参阅API Mesh开发人员指南的[快速入门](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)主题中的详细说明。
 
 在`mesh.json`文件中，替换`name`、`endpoint`和`x-api-key`值。
 
@@ -119,7 +115,7 @@ ht-degree: 0%
 * 使用名为`priceWithTaxes`的新字段扩展`ComplexProductView`和`SimpleProductView`类型。
 * 为新字段添加自定义解析程序。
 
-使用[创建命令](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1)和`mesh.json`文件创建网格。
+使用[创建命令](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)和`mesh.json`文件创建网格。
 
 ### GraphQL查询
 

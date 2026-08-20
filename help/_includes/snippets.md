@@ -1,5 +1,5 @@
 ---
-source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果“数据馈送同步状态”页面在Commerce on Cloud或本地部署的Commerce Admin中不可用，请按照[扩展安装说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}启用它。
+>如果“数据馈送同步状态”页面在Commerce on Cloud或本地部署的Commerce Admin中不可用，请按照[扩展安装说明](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}启用它。
 
 
 ## Adobe Commerce Optimizer集成环境协调 {#aco-integration-environment-alignment}
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->对于使用[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md)将目录数据导出到[!DNL Adobe Commerce Optimizer]的部署，请使用Commerce管理员中的[数据馈送同步状态页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)和[!DNL Adobe Commerce Optimizer Studio]中的[数据同步页面](../optimizer/setup/data-sync.md)，而不是[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)，来验证目录数据同步。
+>对于使用[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md)将目录数据导出到[!DNL Adobe Commerce Optimizer]的部署，请使用Commerce管理员中的[数据馈送同步状态页面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)和[!DNL Adobe Commerce Optimizer Studio]中的[数据同步页面](../optimizer/setup/data-sync.md)，而不是[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)，来验证目录数据同步。
 
 ## 有关API更新的Adobe Commerce Optimizer下拉注释 {#aco-api-updates-and-dropins}
 
 >[!NOTE]
 >
->[!DNL Commerce Storefront on Edge Delivery Services]的[放置组件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hans)自动获取最新的GraphQL更改（新字段、限制和查询行为）。
+>[!DNL Commerce Storefront on Edge Delivery Services]的[放置组件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)自动获取最新的GraphQL更改（新字段、限制和查询行为）。
 
 ## ACCS早期访问 {#accs-early-access}
 
@@ -53,10 +53,10 @@ ht-degree: 0%
 <table style="table-layout:fixed">
   <tr>
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/?lang=zh-Hans"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 Adobe Commerce身份管理和身份验证由Adobe Identity Management System (IMS)通过Adobe Admin Console管理。
 
-有关身份配置选项（包括Adobe ID、Enterprise ID和Federated ID）的信息，以及有关配置单点登录(SSO)以安全访问Adobe应用的说明，请参阅&#x200B;*企业Admin Console*&#x200B;文档中的[设置身份和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)。
+有关身份配置选项（包括Adobe ID、Enterprise ID和Federated ID）的信息，以及有关配置单点登录(SSO)以安全访问Adobe应用的说明，请参阅&#x200B;*企业Admin Console*&#x200B;文档中的[设置身份和单点登录](https://helpx.adobe.com/enterprise/using/set-up-identity.html)。
 
 ## ACCS服务和可扩展性发行说明 {#accs-release}
 
@@ -93,7 +93,7 @@ Adobe Commerce身份管理和身份验证由Adobe Identity Management System (IM
 
 | 服务 | 可扩展性 | 店面 |
 | --- | --- | --- |
-| <ul><li>[目录服务](../catalog-service/release-notes.md)</li><li>[实时搜索](../live-search/release-notes.md)</li><li>[付款服务](../payment-services/release-notes.md)</li><li>[产品推荐](../product-recommendations/release-notes.md)</li><li>[SaaS数据导出](../data-export/release-notes.md)</li></ul> | <ul><li>[管理员UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API网格](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[个事件](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)</li><li>[更改日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans)</li></ul> |
+| <ul><li>[目录服务](../catalog-service/release-notes.md)</li><li>[实时搜索](../live-search/release-notes.md)</li><li>[付款服务](../payment-services/release-notes.md)</li><li>[产品推荐](../product-recommendations/release-notes.md)</li><li>[SaaS数据导出](../data-export/release-notes.md)</li></ul> | <ul><li>[管理员UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API网格](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[个事件](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[更改日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
 
 ## Adobe Commerce Optimizer服务发行说明 {#aco-release}
 
@@ -103,7 +103,7 @@ Adobe Commerce身份管理和身份验证由Adobe Identity Management System (IM
 
 | 服务 | 店面 |
 | --- | --- |
-| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hans)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) |
+| [AEM Assets集成](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer连接器](../aco-connector/release-notes.md) | [店面版本信息](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[店面变更日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
 
 ## 批量数据迁移工具提前访问 {#bulk-data-early-access}
 

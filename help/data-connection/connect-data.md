@@ -4,29 +4,13 @@ description: 了解如何将Commerce数据连接到Adobe Experience Platform。
 feature: Personalization, Integration, Configuration
 exl-id: 8ba33277-38a5-45af-86e0-906cfb3b998d
 TQID: https://experienceleague.adobe.com/Hof7ftSKKkdMzoJ7eXLr9D2jv-U1LfFnMiFuGwzJpYE
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 3511
+source-wordcount: 3527
 ht-degree: 0%
 
 ---
@@ -81,7 +65,7 @@ ht-degree: 0%
 
 ### 添加服务帐户和凭据详细信息
 
-如果您计划收集和发送[历史订单数据](#send-historical-order-data)或[客户配置文件数据](#send-customer-profile-data)，则必须添加服务帐户和凭据详细信息。 此外，如果您正在配置[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=zh-Hans)扩展，则必须完成这些步骤。
+如果您计划收集和发送[历史订单数据](#send-historical-order-data)或[客户配置文件数据](#send-customer-profile-data)，则必须添加服务帐户和凭据详细信息。 此外，如果您正在配置[Audience Activation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation)扩展，则必须完成这些步骤。
 
 服务帐户凭据在&#x200B;**默认配置**&#x200B;范围中配置并全局应用。 有关网站范围的设置（如沙盒名称），请参阅[配置范围](#configuration-scope)。
 
@@ -91,12 +75,12 @@ ht-degree: 0%
 
 在Adobe Developer Console中创建一个验证Commerce的项目，以便它能进行Experience Platform API调用。
 
-要创建项目，请按照[身份验证和访问Experience Platform API](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=zh-Hans)教程中所述的步骤进行操作。
+要创建项目，请按照[身份验证和访问Experience Platform API](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication)教程中所述的步骤进行操作。
 
 在学习本教程时，请确保您的项目具备以下条件：
 
-- 访问以下[产品配置文件](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=zh-Hans#select-product-profiles)： **默认的生产所有访问**&#x200B;和&#x200B;**AEP默认所有访问**。
-- 已配置正确的[角色和权限](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=zh-Hans#assign-api-to-a-role)。
+- 访问以下[产品配置文件](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#select-product-profiles)： **默认的生产所有访问**&#x200B;和&#x200B;**AEP默认所有访问**。
+- 已配置正确的[角色和权限](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)。
 - 如果您决定使用JSON Web令牌(JWT)作为服务器到服务器的身份验证方法，则还必须上传私钥。
 
 此步骤的结果将创建一个配置文件，供您在下一步中使用。
@@ -131,7 +115,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Test connection]**&#x200B;以验证服务帐户凭据以及当前在&#x200B;**[!UICONTROL Scope]**&#x200B;中选择的网站的沙盒。 对每个使用不同沙盒的网站重复此操作。
 
-1. （可选）如果您已将[AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)部署到您的网站，请启用该复选框并添加AEP Web SDK的名称。 否则，请将这些字段留空，[!DNL Data Connection]扩展将为您部署一个字段。
+1. （可选）如果您已将[AEP Web SDK (alloy)](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)部署到您的网站，请启用该复选框并添加AEP Web SDK的名称。 否则，请将这些字段留空，[!DNL Data Connection]扩展将为您部署一个字段。
 
    >[!NOTE]
    >
@@ -161,9 +145,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果选择&#x200B;**后台事件**，则所有后台数据都会发送到Experience Platform Edge。 如果购物者选择退出数据收集，您必须在Experience Platform中明确设置购物者的隐私偏好设置。 这与店面事件不同，店面事件收集器已根据购物者偏好处理同意。 了解[更多](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=zh-Hans)有关在Experience Platform中设置购物者的隐私首选项的信息。
+   >如果选择&#x200B;**后台事件**，则所有后台数据都会发送到Experience Platform Edge。 如果购物者选择退出数据收集，您必须在Experience Platform中明确设置购物者的隐私偏好设置。 这与店面事件不同，店面事件收集器已根据购物者偏好处理同意。 了解[更多](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset)有关在Experience Platform中设置购物者的隐私首选项的信息。
 
-1. （如果您使用自己的AEP Web SDK，请跳过此步骤。） [在Adobe Experience Platform中创建](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hans#create)数据流或选择要用于收集的现有数据流。 在&#x200B;**数据流ID**&#x200B;字段中输入该数据流ID。
+1. （如果您使用自己的AEP Web SDK，请跳过此步骤。） [在Adobe Experience Platform中创建](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#create)数据流或选择要用于收集的现有数据流。 在&#x200B;**数据流ID**&#x200B;字段中输入该数据流ID。
 
 1. 输入要包含Commerce数据的&#x200B;**数据集ID**。 要查找数据集ID，请执行以下操作：
 
@@ -171,7 +155,7 @@ ht-degree: 0%
    1. 打开与数据流关联的数据集。
    1. 在右侧窗格中，查看有关数据集的详细信息。 复制数据集ID。
 
-1. 若要确保根据[cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=zh-Hans)作业按计划更新后台事件数据，必须将`Sales Orders Feed`索引更改为`Update by Schedule`。
+1. 若要确保根据[cron](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron)作业按计划更新后台事件数据，必须将`Sales Orders Feed`索引更改为`Update by Schedule`。
 
    1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**。
 
@@ -179,7 +163,7 @@ ht-degree: 0%
 
    1. 将&#x200B;**[!UICONTROL Actions]**&#x200B;设置为`Update by Schedule`。
 
-   1. 如果您是首次启用后台数据，请运行以下命令来重新索引并触发重新同步。 只要[cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=zh-Hans)作业设置正确，后续的重新同步就会自动进行。
+   1. 如果您是首次启用后台数据，请运行以下命令来重新索引并触发重新同步。 只要[cron](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron)作业设置正确，后续的重新同步就会自动进行。
 
       ```bash
       bin/magento index:reindex sales_order_data_exporter_v2
@@ -210,7 +194,7 @@ ht-degree: 0%
 
 有两种类型的配置文件数据可发送到Experience Platform：配置文件记录和时间序列配置文件事件。
 
-配置文件记录包含购物者在Commerce实例中创建配置文件时保存的数据，例如购物者的姓名。 如果您的架构和数据集配置正确[&#128279;](profile-data.md)，则会将配置文件记录发送到Experience Platform并转发到Adobe的配置文件管理和分段服务： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hans#)。
+配置文件记录包含购物者在Commerce实例中创建配置文件时保存的数据，例如购物者的姓名。 如果您的架构和数据集配置正确[](profile-data.md)，则会将配置文件记录发送到Experience Platform并转发到Adobe的配置文件管理和分段服务： [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview)。
 
 时间序列配置文件事件包含有关购物者配置文件信息的数据，例如，购物者在您的网站上创建、编辑或删除帐户的情况。 将配置文件事件数据发送到Experience Platform时，该数据会位于可供其他DX产品使用的数据集中。
 
@@ -230,7 +214,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您未在Experience Platform中看到配置文件数据，请参阅[Commerce知识库](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以获取故障排除建议。
+>如果您未在Experience Platform中看到配置文件数据，请参阅[Commerce知识库](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以获取故障排除建议。
 
 #### 字段描述
 
@@ -249,7 +233,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 观看本视频，了解有关历史订单的更多信息，然后完成以下步骤来实施历史订单收集。
 
->[!VIDEO](https://video.tv.adobe.com/v/3450237?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 #### 设置订单同步服务
 
@@ -257,7 +241,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 1. 确保您已[提供](#add-service-account-and-credential-details)服务帐户和凭据详细信息。
 
-1. [启用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html?lang=zh-Hans) RabbitMQ。
+1. [启用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) RabbitMQ。
 
    >[!NOTE]
    >
@@ -274,7 +258,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
    >[!NOTE]
    >
-   >请参阅[部署变量文档](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hans#cron_consumers_runner)以了解所有可用的配置选项。
+   >请参阅[部署变量文档](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner)以了解所有可用的配置选项。
 
 启用订单同步服务后，您可以在&#x200B;**[!UICONTROL [!DNL Data Connection]]**&#x200B;页面中指定历史订单日期范围。
 
@@ -336,7 +320,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 ## 确认已收集事件数据 {#confirm-that-event-data-is-collected}
 
-要确认正在从Commerce存储中收集数据，请使用[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=zh-Hans)来检查您的Commerce网站。 确认正在收集数据后，可以通过运行查询来验证您的店面和后台事件数据是否显示在边缘，该查询会返回您在配置期间创建的[数据集中的数据](overview.md#enable-extension)。
+要确认正在从Commerce存储中收集数据，请使用[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)来检查您的Commerce网站。 确认正在收集数据后，可以通过运行查询来验证您的店面和后台事件数据是否显示在边缘，该查询会返回您在配置期间创建的[数据集中的数据](overview.md#enable-extension)。
 
 1. 在Experience Platform的左侧导航中选择&#x200B;**查询**，然后单击[!UICONTROL Create Query]。
 
@@ -358,7 +342,7 @@ Adobe Commerce最多收集5年的[历史订单数据和状态](events-backoffice
 
 在此示例中，您看到来自`commerce.productListAdds`、`commerce.productViews`、`web.webpagedetails.pageViews`等的事件数据。 通过此视图，可验证您的Commerce数据是否已到达边缘。
 
-如果结果不符合预期，请打开您的数据集并查找任何失败的批量导入。 了解有关[批处理导入疑难解答的详细信息](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html?lang=zh-Hans)。
+如果结果不符合预期，请打开您的数据集并查找任何失败的批量导入。 了解有关[批处理导入疑难解答的详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting)。
 
 ### 验证配置文件数据是否显示在Experience Platform中
 

@@ -5,20 +5,11 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
 TQID: https://experienceleague.adobe.com/T71zNl7WOrqzEsz4H8A8arx--q6w1B0h33CF2Q0VI4A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 815
 ht-degree: 0%
@@ -39,7 +30,7 @@ ht-degree: 0%
 
 产品信息源包括产品处理所需的或消费者常用的默认系统属性。 通过将其他系统属性添加到产品信息源，您可以在产品信息源中包含这些属性。
 
-要完成此任务，请更新`magento/catalog-data-exporter`模块以将其他系统属性添加到[依赖项注入配置文件](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`)。
+要完成此任务，请更新`magento/catalog-data-exporter`模块以将其他系统属性添加到[依赖项注入配置文件](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`)。
 
 将属性添加到产品属性查询(`Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery`)。
 
@@ -74,7 +65,7 @@ ht-degree: 0%
 
 1. 根据需要将属性添加到属性集。
 
-请参阅&#x200B;*Adobe Commerce管理指南*&#x200B;中的[创建产品属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
+请参阅&#x200B;*Adobe Commerce管理指南*&#x200B;中的[创建产品属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
 
 #### 以编程方式创建产品属性
 
@@ -85,7 +76,7 @@ ht-degree: 0%
 - **`user_defined`=`1`** — 在数据同步期间将属性导出到storefront services
 - **`used_in_product_listing`=`1`** — 使属性可在产品列表数据库查询中访问
 
-有关创建数据修补程序的信息，请参阅&#x200B;*PHP Developer Guide*&#x200B;中的[开发数据和架构修补程序](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/)。
+有关创建数据修补程序的信息，请参阅&#x200B;*PHP Developer Guide*&#x200B;中的[开发数据和架构修补程序](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches)。
 
 ### 动态添加产品属性
 
@@ -163,7 +154,7 @@ class DataSentOutsideObserver implements ObserverInterface
 </event>
 ```
 
-有关活动和观察者的一般信息，请参阅Adobe Commerce开发人员文档中的[活动和观察者](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"}。
+有关活动和观察者的一般信息，请参阅Adobe Commerce开发人员文档中的[活动和观察者](https://developer.adobe.com/commerce/php/development/components/events-and-observers/){target="_blank"}。
 
 ## 提交前筛选数据
 

@@ -5,18 +5,13 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
 TQID: https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 3714
+source-wordcount: 3716
 ht-degree: 0%
 
 ---
@@ -25,13 +20,13 @@ ht-degree: 0%
 
 下面列出了安装[!DNL Data Connection]扩展时可用的Commerce后台事件。 这些事件收集的数据将发送到Adobe Experience Platform。 您还可以创建[自定义事件](custom-events.md)以收集未开箱即用的其他数据。
 
-除了以下事件收集的数据之外，您还会获得由Adobe Experience Platform Web SDK提供的[其他数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=zh-Hans)。
+除了以下事件收集的数据之外，您还会获得由Adobe Experience Platform Web SDK提供的[其他数据](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)。
 
 后台事件包含服务器端数据。 此数据包含[订单状态](#order-status)信息，例如订单是否已下达、取消、退款、已发运或已完成。 服务器端数据还包含[客户配置文件事件](#customer-profile-events)信息，例如帐户是否已创建、更新或删除。
 
 >[!NOTE]
 >
->所有后台事件都包含[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=zh-Hans)字段，其中包括购物者的电子邮件地址（如果可用）和ECID。
+>所有后台事件都包含[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)字段，其中包括购物者的电子邮件地址（如果可用）和ECID。
 
 ## 订单状态
 
@@ -418,7 +413,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->每个客户个人资料事件还包括[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=zh-Hans)字段，其中包括系统生成的Commerce客户ID作为个人资料的主要标识符，以及用作辅助标识符的电子邮件ID。 [了解](custom-identities.md)如何创建自定义身份属性以增强客户配置文件识别。
+>每个客户个人资料事件还包括[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)字段，其中包括系统生成的Commerce客户ID作为个人资料的主要标识符，以及用作辅助标识符的电子邮件ID。 [了解](custom-identities.md)如何创建自定义身份属性以增强客户配置文件识别。
 
 ### 帐户已创建
 

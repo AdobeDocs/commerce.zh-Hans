@@ -4,19 +4,13 @@ description: 了解集成在Commerce Admin中的AEM资产选择器如何帮助�
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
 TQID: https://experienceleague.adobe.com/3fYabUvRiY8KTxQX1YiTBbLxABpQqfZLu0a6IBDsM3E
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 396
+source-wordcount: 397
 ht-degree: 0%
 
 ---
@@ -31,11 +25,11 @@ ht-degree: 0%
 
 * 轻松管理类别图像，确保它们符合品牌和活动准则。
 * [!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}在页面生成器中直接分配资产，以实现视觉效果丰富的内容。
-* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}在Commerce店面中直接分配Assets（由Edge Delivery Services提供支持），以查看丰富的视觉内容。
+* [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}在Commerce店面中直接分配Assets（由Edge Delivery Services提供支持），以查看丰富的视觉内容。
 
 >[!NOTE]
 >
-> AEM资源选择器是一个AEM资源前端组件，用于将AEM Assets与创作应用程序集成。 有关此组件的详细信息，请参阅&#x200B;*AEM as a Cloud Service用户指南*&#x200B;中的[微前端资产选择器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}。
+> AEM资源选择器是一个AEM资源前端组件，用于将AEM Assets与创作应用程序集成。 有关此组件的详细信息，请参阅&#x200B;*AEM as a Cloud Service用户指南*&#x200B;中的[微前端资产选择器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank}。
 
 ## 主要优点
 

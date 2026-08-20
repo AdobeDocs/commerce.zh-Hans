@@ -3,15 +3,12 @@ title: 筛选产品
 description: 定义包括或排除用作推荐的产品条件。
 exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
 TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 775
+source-wordcount: 778
 ht-degree: 0%
 
 ---
@@ -55,7 +52,7 @@ Adobe Commerce会自动将不可配置的默认过滤器应用于推荐单元。
 
 >[!NOTE]
 >
->对于B2B商家，类别过滤器会遵循您配置的任何[客户特定的产品类别](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=zh-Hans)。
+>对于B2B商家，类别过滤器会遵循您配置的任何[客户特定的产品类别](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)。
 
 当您将推荐部署到页面类型时，Adobe Commerce建议您使用以下类别过滤器配置：
 
@@ -85,11 +82,11 @@ Adobe Commerce会自动将不可配置的默认过滤器应用于推荐单元。
 
 ### 价格
 
-基于产品价格的过滤器使用最终价格来执行比较。 最终价格包括匿名购物者可享受的任何折扣。 对于B2B商家，显示的价格反映了您配置的[客户特定的组价格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=zh-Hans)。
+基于产品价格的过滤器使用最终价格来执行比较。 最终价格包括匿名购物者可享受的任何折扣。 对于B2B商家，显示的价格反映了您配置的[客户特定的组价格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced)。
 
 ### 库存状态
 
 以下排除过滤器可用于根据库存状态筛选产品：
 
 - 缺货 — （仅排除）不包括缺货产品。
-- 库存低 — （仅排除）不包括库存低的产品。 低库存状态基于[库存配置](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=zh-Hans)中的&#x200B;_仅X剩余阈值_&#x200B;值。
+- 库存低 — （仅排除）不包括库存低的产品。 低库存状态基于[库存配置](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory)中的&#x200B;_仅X剩余阈值_&#x200B;值。

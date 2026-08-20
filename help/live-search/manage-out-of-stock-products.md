@@ -4,9 +4,9 @@ description: 了解如何在 [!DNL Live Search] 中为Adobe Commerce管理缺货
 feature: Services, Search
 role: Admin, Developer
 level: Intermediate
-source-git-commit: bc8f35434c9f01f1a920745fe42617df2003ca60
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ query productSearchInStockOnly {
 为了在结果集中保留缺货产品，但在按相关性排序时始终在缺货产品之后保留，Adobe可以为您的环境启用内部功能标记。
 
 - 此功能标志未在[!DNL Live Search]管理员UI中公开。
-- 若要请求该功能，请[联系Adobe支持](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}，并引用该功能以将缺货产品移动到搜索结果的结尾。
+- 若要请求该功能，请[联系Adobe支持](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}，并引用该功能以将缺货产品移动到搜索结果的结尾。
 
 >[!NOTE]
 >
@@ -87,4 +87,4 @@ query productSearchInStockOnly {
 >[!MORELIKETHIS]
 >
 > - [搜索促销规则](rules.md)
-> - [配置Inventory management全局选项](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/configuration/configuration)
+> - [配置Inventory management全局选项](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)

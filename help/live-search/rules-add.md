@@ -3,18 +3,13 @@ title: 添加规则
 description: 了解如何创建搜索促销规则。
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
 TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 657c4b3123407580dfeb2c021a5a1ba515e82115
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 2547
+source-wordcount: 2561
 ht-degree: 0%
 
 ---
@@ -26,7 +21,7 @@ ht-degree: 0%
 ## 添加规则
 
 1. 在管理员中，转到&#x200B;**营销** > SEO和搜索> **[!DNL Live Search]**。
-1. 设置&#x200B;**范围**&#x200B;以标识应用规则的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)。
+1. 设置&#x200B;**范围**&#x200B;以标识应用规则的[存储视图](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
 1. 单击&#x200B;**搜索促销**&#x200B;工作区。
 1. 单击&#x200B;**添加规则**&#x200B;以启动规则编辑器。
 
@@ -136,8 +131,8 @@ ht-degree: 0%
 
 * **文本相关性**：得分中的主导因素。 这会测量产品名称、描述和属性与搜索查询的匹配程度。 文本相关性得分是无界的（没有特定的上限），并且受以下因素影响：
 
-   * 匹配单词出现的频率。
-   * 产品名称/说明的长度（以字为单位）。
+  * 匹配单词出现的频率。
+  * 产品名称/说明的长度（以字为单位）。
 
 * **行为信号**：在文本相关性得分之上应用的有界提升。 当您选择“查看次数最多”或“购买次数最多”等智能排名策略时，具有更高行为信号的产品会获得更大的相对权重。 该重量的强度由&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;控制（请参阅[智能排名提升](#intelligent-ranking-boost)）；提升仍为有界状态，但您可以增加其改变顺序的量。
 
@@ -164,11 +159,11 @@ ht-degree: 0%
 * 查询中的撇号和引号可能会导致某些语言中的排名和相关性出现一些小问题。
 * 为确保智能排名正常工作，请确保用于搜索或筛选(Facet)的任何产品属性的&#x200B;**搜索权重**&#x200B;为`5`或更小。 要在[!DNL Commerce]管理员中查找此设置，请执行以下操作：
 
-   1. 选择&#x200B;**商店** > _属性_ > **产品**。
-   1. 搜索属性，如“name”。
-   1. 在&#x200B;**属性信息** > **店面属性**&#x200B;页面中，将搜索权重设置为小于或等于`5`。
+  1. 选择&#x200B;**商店** > _属性_ > **产品**。
+  1. 搜索属性，如“name”。
+  1. 在&#x200B;**属性信息** > **店面属性**&#x200B;页面中，将搜索权重设置为小于或等于`5`。
 
-      ![产品 — 搜索权重](assets/set-search-weight.png)
+     ![产品 — 搜索权重](assets/set-search-weight.png)
 
 >[!NOTE]
 >

@@ -2,23 +2,13 @@
 title: 从搜索适配器迁移到PLP小组件
 description: 了解如何从已弃用的搜索适配器迁移到 [!DNL Live Search] 产品列表页面小组件。
 TQID: https://experienceleague.adobe.com/YAwhAbTVeYpGYKh4dTe1umcfgoRUOg8QPZNIiGFjKVo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 2102
+source-wordcount: 2105
 ht-degree: 0%
 
 ---
@@ -333,7 +323,7 @@ ht-degree: 0%
 
 **选项3：将GTM替换为Adobe Analytics**
 
-- 考虑迁移到[Adobe Analytics](https://business.adobe.com/cn/products/adobe-analytics.html)（如果适用）。
+- 考虑迁移到[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html)（如果适用）。
 - 请联系客户工程部门以获取指导。
 
 **联系对象**：提交支持票证以获取GTM兼容性更新或客户工程部门帮助。
@@ -358,11 +348,11 @@ ht-degree: 0%
 1. **实施事件集合**：
    - 查看[店面活动文档](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)。
    - 实施所需事件：
-      - `search-request-sent`
-      - `search-response-received`
-      - `search-results-view`
-      - `product-page-view`
-      - `add-to-cart`
+     - `search-request-sent`
+     - `search-response-received`
+     - `search-results-view`
+     - `product-page-view`
+     - `add-to-cart`
    - 测试事件数据流向Adobe Commerce。
 
 1. **配置Facet排序**：
@@ -458,7 +448,7 @@ ht-degree: 0%
 - Headless或PWA实施
 - 自定义事件跟踪
 
-要联系Adobe支持，请参阅[帮助中心用户指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+要联系Adobe支持，请参阅[帮助中心用户指南](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 ## 常见问题解答
 

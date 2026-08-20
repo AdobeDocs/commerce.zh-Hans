@@ -5,17 +5,13 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 6354963c-f27f-4e69-9ecb-acb4befb7c2a
 TQID: https://experienceleague.adobe.com/LXMqOhHAZpUHaCeeU5ioKKXVrkLftospQEPDd9H-MD8
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 339
-ht-degree: 2%
+source-wordcount: 342
+ht-degree: 0%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 2%
 
 [Data Connection扩展](overview.md)将您的Commerce数据连接到Experience Platform。 要在Experience Platform中使用的数据将分组为两种行为类型：属于&#x200B;**Experience Event**&#x200B;类的时间系列数据和属于&#x200B;**个人资料**&#x200B;类的记录数据。
 
-了解有关Experience Platform中[数据行为](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans#data-behaviors)和[类](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans#class)的更多信息。
+了解有关Experience Platform中[数据行为](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#data-behaviors)和[类](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#class)的更多信息。
 
 ## 时间序列数据
 
@@ -39,7 +35,7 @@ ht-degree: 2%
 
 ## 记录数据
 
-记录数据提供有关主题属性的信息。 主体可以是组织，也可以是个人。 例如，您网站上的购物者创建一个帐户并生成记录数据。 此数据是使用类设置为&#x200B;**个人资料**&#x200B;的架构摄取到Experience Platform中的。 您可以将该记录数据发送到Adobe的配置文件管理和分段服务：[Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hans#)。
+记录数据提供有关主题属性的信息。 主体可以是组织，也可以是个人。 例如，您网站上的购物者创建一个帐户并生成记录数据。 此数据是使用类设置为&#x200B;**个人资料**&#x200B;的架构摄取到Experience Platform中的。 您可以将该记录数据发送到Adobe的配置文件管理和分段服务：[Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview)。
 
 ### 捕获的配置文件记录数据
 

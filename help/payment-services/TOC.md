@@ -7,9 +7,9 @@ role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
 nudge: true
-source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '117'
 ht-degree: 2%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 2%
 # Commerce的[!DNL Payment Services] {#payment-services}
 
 - [指南概述](guide-overview.md)
-- [&#x200B; [!DNL Payment Services]简介](introduction.md)
-- [&#x200B; [!DNL Payment Services]的兼容性](compatibility.md)
+- [ [!DNL Payment Services]简介](introduction.md)
+- [ [!DNL Payment Services]的兼容性](compatibility.md)
 - [发行说明](release-notes.md)
 - 载入[!DNL Payment Services] {#get-started}
   - [载入概述](onboard.md)
@@ -38,7 +38,7 @@ ht-degree: 2%
   - [信用卡保险存储](vaulting.md)
   - [签出 [!DNL Payment Services]](checkout.md)
   - 管理付款 {#manage}
-    - [&#x200B; [!DNL Payment Services]的行项目](line-items.md)
+    - [ [!DNL Payment Services]的行项目](line-items.md)
     - [退款](refunds.md)
     - [空洞](voids.md)
   - [在管理员中创建订单](create-order.md)
@@ -52,4 +52,4 @@ ht-degree: 2%
 - 安全性和合规性 {#security-compliance}
   - [安全性](security.md)
   - [有效保护欺诈行为](fraud-protection.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=zh-Hans)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

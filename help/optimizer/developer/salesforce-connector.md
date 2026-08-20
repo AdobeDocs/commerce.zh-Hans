@@ -3,26 +3,12 @@ title: Salesforce Commerce Connector
 description: 了解 [!DNL Commerce Optimizer SFCC Connector] ，它提供了一个起点，用于将Salesforce Commerce B2C与 [!DNL Adobe Commerce Optimizer] 集成以同步目录数据并实施和自定义连接器来支持业务操作。
 role: Admin, Developer
 TQID: https://experienceleague.adobe.com/pbzScjaJ7FybdPP06QIhKlowmMbkDHTxUSJUw6eG6JY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 1183
 ht-degree: 0%
@@ -35,7 +21,7 @@ ht-degree: 0%
 
 该连接器开箱即用地提供可靠的数据同步功能，并灵活地自定义工作流程以满足您的业务需求。
 
-有关端到端视频教程系列，请参阅[了解Salesforce Commerce云入门工具包](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
+有关端到端视频教程系列，请参阅[了解Salesforce Commerce云入门工具包](https://experienceleague.adobe.com/en/docs/commerce-learn/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
 
 >[!NOTE]
 >
@@ -48,13 +34,13 @@ ht-degree: 0%
 * **支持多种数据类型：**&#x200B;同步产品、定价和目录结构，以反映复杂的促销配置。
 
 * **灵活同步工作流**
-   * **计划的同步：**&#x200B;使用cron作业计划自动进行更新，无需手动操作。
-   * **按需更新：**&#x200B;即时触发SKU级别的更新，以进行紧急更改、更正或产品发布。
+  * **计划的同步：**&#x200B;使用cron作业计划自动进行更新，无需手动操作。
+  * **按需更新：**&#x200B;即时触发SKU级别的更新，以进行紧急更改、更正或产品发布。
 
 * **为可扩展性构建**
-   * 使用自定义[Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI)端点以实现兼容性并轻松适应独特或高级用例。
-   * 通过目录和价格同步随业务启动进行扩展，然后扩展工作流以支持其他集成或业务逻辑。
-   * 在不重建核心集成的情况下配置和改进工作流。
+  * 使用自定义[Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI)端点以实现兼容性并轻松适应独特或高级用例。
+  * 通过目录和价格同步随业务启动进行扩展，然后扩展工作流以支持其他集成或业务逻辑。
+  * 在不重建核心集成的情况下配置和改进工作流。
 
 >[!NOTE]
 >
@@ -89,7 +75,7 @@ ht-degree: 0%
 利用Salesforce Commerce B2C本地化功能：
 
 * 针对不同的区域设置，同步Salesforce Commerce B2C中的本地化版本产品文本字段（名称、描述）。
-* 将Salesforce区域设置概念1:1映射到[!DNL Commerce Optimizer]区域设置。
+* 将Salesforce区域设置概念与[!DNL Commerce Optimizer]区域设置映射为1:1。
 * 针对不同的本地化支持多个产品摄取周期。
 * 保持全球产品目录的一致性。
 

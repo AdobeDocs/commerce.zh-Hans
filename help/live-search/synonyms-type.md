@@ -3,13 +3,11 @@ title: 同义词的类型
 description: 单向 [!DNL Live Search] 和双向同义词扩展了关键字的定义。
 exl-id: f5522428-c7cc-4627-a09b-d9148918c127
 TQID: https://experienceleague.adobe.com/n0ON02CVlSTTOdRCPFRGVIVPWbGRltq4B0INC-U3ldo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 617
+source-wordcount: 620
 ht-degree: 0%
 
 ---
@@ -60,4 +58,4 @@ a、an、and、are、as、at、be、but、by、for、if、in、into、is、it、
 
 创建同义词后，搜索行为将更改为查找确切短语&#x200B;**厨房表**。 这可能会减少结果的数量，因为只会显示包含精确短语的产品。
 
-如果您希望与以前一样单独搜索术语，您可以[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 如果需求充足，Commerce将考虑在将来的版本中向产品添加此功能。
+如果您希望与以前一样单独搜索术语，您可以[创建支持票证](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。 如果需求充足，Commerce将考虑在将来的版本中向产品添加此功能。

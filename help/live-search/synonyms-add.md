@@ -3,15 +3,12 @@ title: 添加同义词
 description: 添加 [!DNL Live Search] 同义词以改进对搜索请求的响应。
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
 TQID: https://experienceleague.adobe.com/eGBxKnn3lLD5VQel52jyrt7EB8rcrhGOi-DDwhW7wzc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 410
+source-wordcount: 434
 ht-degree: 0%
 
 ---
@@ -25,7 +22,7 @@ ht-degree: 0%
 ## 步骤1：添加同义词
 
 1. 在管理员中，转到&#x200B;**营销** > SEO和搜索> **[!DNL Live Search]**。
-1. 对于多个存储，将&#x200B;**作用域**&#x200B;设置为应用同义词设置的[存储视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans#scope-settings)。
+1. 对于多个存储，将&#x200B;**作用域**&#x200B;设置为应用同义词设置的[存储视图](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
 1. 单击&#x200B;**同义词**&#x200B;选项卡。
 1. 单击&#x200B;**添加同义词**&#x200B;按钮。
 
@@ -40,7 +37,7 @@ ht-degree: 0%
    ![添加双向同义词](assets/synonym-add-two-way.png)
 
 1. 输入要匹配的&#x200B;**关键字**&#x200B;词或短语。
-1. 输入要作为关键字的同义词添加的&#x200B;**扩展**&#x200B;术语。 用逗号分隔多个术语。
+1. 输入要作为关键字的同义词添加的&#x200B;**扩展**术语。 用逗号分隔多个术语。
 在此示例中，要匹配的关键字是“pants”，而扩展术语集是“trousers， slacks”。
 
    ![双向同义词示例](assets/synonym-add-two-way-example.png)

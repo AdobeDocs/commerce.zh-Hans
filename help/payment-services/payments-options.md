@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '2326'
+source-wordcount: '2328'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 * **Standard** — 付款选项（快速结帐）（PayPal信用卡和借记卡）的子集适用于其他受支持的国家/地区。 [信用卡字段](#credit-card-fields)和[Apple Pay](#apple-pay-button)不适用于此入门培训选项。 在新用户引导以启用实时支付时，选择[标准新用户引导选项](../payment-services/production.md#standard-onboarding)。
 
-有关完成Advanced和Standard入门的信息，请参阅[为生产启用 [!DNL Payment Services] &#x200B;](../payment-services/production.md#complete-merchant-onboarding)。
+有关完成Advanced和Standard入门的信息，请参阅[为生产启用 [!DNL Payment Services] ](../payment-services/production.md#complete-merchant-onboarding)。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -129,7 +129,7 @@ ht-degree: 0%
 * 在[!DNL Google Pay]工资表中添加的代码只能从工资表中删除，不能从Commerce购物车页面中删除。
 * 在Adobe Commerce 2.4.4-2.4.6上，由于平台限制，[!DNL Google Pay]工资单中的折扣行可能没有显示任何值。
 * 在Adobe Commerce 2.4.7上，由于GraphQL响应中的平台限制，某些产品（主要是可下载的产品）的折扣值可能不会显示在[!DNL Google Pay]工资单中。
-* 如果应用了自动[购物车价格规则](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=zh-Hans)（例如，“在支出超过$200时优惠$50”），则它将与购物者在工资表中应用的任何代码相结合。 因此，[!DNL Google Pay]工资单中显示的总数可能与订单汇总不同。
+* 如果应用了自动[购物车价格规则](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart)（例如，“在支出超过$200时优惠$50”），则它将与购物者在工资表中应用的任何代码相结合。 因此，[!DNL Google Pay]工资单中显示的总数可能与订单汇总不同。
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -199,16 +199,16 @@ PayPal、Pay Later和Venmo付款方法使用[服务器端送货回拨](https://d
 
 要&#x200B;**仅使用&#x200B;_捕获付款_ PayPal付款按钮（_不是_ PayPal信用卡付款选项）**：
 
-1. 请确保您的存储在生产模式[&#128279;](configure-admin.md#general-configuration)中为。
+1. 请确保您的存储在生产模式](configure-admin.md#general-configuration)中为[。
 1. 在“设置”中[配置所需的PayPal付款按钮](configure-admin.md#paypal-payment-buttons)。
-1. 关闭&#x200B;_[!UICONTROL Payment buttons]_&#x200B;部分中的&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;选项_&#x200B;关闭&#x200B;_。
+1. 关闭&#x200B;_[!UICONTROL Payment buttons]_部分中的&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**选项_&#x200B;关闭&#x200B;_。
 
 要&#x200B;**使用现有信用卡提供商&#x200B;_和_ PayPal付款按钮**&#x200B;捕获付款：
 
-1. 请确保您的存储在生产模式[&#128279;](configure-admin.md#general-configuration)中为。
+1. 请确保您的存储在生产模式](configure-admin.md#general-configuration)中为[。
 1. [配置所需的PayPal付款按钮](configure-admin.md#paypal-payment-buttons)。
-1. 关闭&#x200B;_[!UICONTROL Payment buttons]_&#x200B;部分中的&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;选项_&#x200B;关闭&#x200B;_。
-1. 关闭&#x200B;_[!UICONTROL Credit card fields]_&#x200B;部分中的_&#x200B;关闭&#x200B;_&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=zh-Hans#payments)。
+1. 关闭&#x200B;_[!UICONTROL Payment buttons]_部分中的&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**选项_&#x200B;关闭&#x200B;_。
+1. 关闭&#x200B;_[!UICONTROL Credit card fields]_部分中的_&#x200B;关闭&#x200B;_**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments#payments)。
 
 ## 本地支付方式
 

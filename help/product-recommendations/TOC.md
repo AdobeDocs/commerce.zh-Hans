@@ -5,9 +5,9 @@ user-guide-description: 本指南提供了使用Adobe Commerce中的 [!DNL Produ
 role: Admin
 feature: Services, Recommendations
 nudge: true
-source-git-commit: 22c2fa72c3603e28b5ab55a34a908c10c02457fe
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '64'
+source-wordcount: '65'
 ht-degree: 10%
 
 ---
@@ -19,23 +19,23 @@ ht-degree: 10%
 - [发行说明](release-notes.md)
 - [边界和限制](boundaries-limits.md)
 - 开始使用 {#getting-started}
-   - [入门](onboarding.md)
-   - [实施工作流](implementation-workflow.md)
-   - [Headless](headless.md)
-   - [安装](install-configure.md)
-   - [设置](settings.md)
-   - [暂存环境](staging-environment.md)
-   - [Page Builder集成](page-builder.md)
+  - [入门](onboarding.md)
+  - [实施工作流](implementation-workflow.md)
+  - [Headless](headless.md)
+  - [安装](install-configure.md)
+  - [设置](settings.md)
+  - [暂存环境](staging-environment.md)
+  - [Page Builder集成](page-builder.md)
 - [!DNL Product Recommendations]管理员 {#admin}
-   - [Workspace](workspace.md)
-   - [创建](create.md)
-   - [编辑](edit.md)
-   - [推荐类型](type.md)
-   - [过滤器](filters.md)
-   - [投放位置和标签](placement.md)
+  - [Workspace](workspace.md)
+  - [创建](create.md)
+  - [编辑](edit.md)
+  - [推荐类型](type.md)
+  - [过滤器](filters.md)
+  - [投放位置和标签](placement.md)
 - [!DNL Product Recommendations]开发人员 {#developer}
-   - [概述](development-overview.md)
-   - [收集数据](events.md)
-   - [自定义](customize.md)
-   - [处理Cookie限制](setting-cookie.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hans)
+  - [概述](development-overview.md)
+  - [收集数据](events.md)
+  - [自定义](customize.md)
+  - [处理Cookie限制](setting-cookie.md)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

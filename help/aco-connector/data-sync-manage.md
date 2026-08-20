@@ -4,29 +4,17 @@ description: 了解如何验证 [!DNL Adobe Commerce] 和 [!DNL Adobe Commerce O
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-subfeature_v2:
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+subfeature_v2: id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 349
+source-wordcount: 348
 ht-degree: 0%
 
 ---
@@ -55,5 +43,5 @@ ht-degree: 0%
 > - [估算数据量和同步时间](reference/estimate-data-volume-sync-time.md) — 计算预期的同步持续时间
 > - [疑难解答](troubleshooting.md) — 诊断凭据、同步和范围导出问题
 > - [连接器模块和馈送端点](reference/connector-reference.md) — 审核模块、API端点和支持的馈送
-> - [Commerce管理员中的“数据馈送同步状态”页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — 了解有关可用于监视馈送状态的字段和功能的更多信息
-> - [位于 [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"}的数据同步仪表板 — 有关可用于监视目录数据同步的字段和操作的参考文档
+> - [Commerce管理员中的“数据馈送同步状态”页面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — 了解有关可用于监视馈送状态的字段和功能的更多信息
+> - [位于 [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync){target="_blank"}的数据同步仪表板 — 有关可用于监视目录数据同步的字段和操作的参考文档
