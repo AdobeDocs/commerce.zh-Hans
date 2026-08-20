@@ -3,10 +3,19 @@ title: 实施工作流
 description: 了解在您的店面成功实施 [!DNL Product Recommendations] 的步骤。
 exl-id: 4a784d04-8be6-473f-afb3-264af06c850a
 TQID: https://experienceleague.adobe.com/-nvORlxBNwoCcZb6s-OvaX8TtIh28Q-fjeUxsDXpe9E
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
 source-wordcount: 546
@@ -34,7 +43,7 @@ ht-degree: 0%
 
    部署[!DNL Product Recommendations]需要两个主要[数据源](type.md)：目录和行为。 由于生产是捕获和分析购物者行为的唯一环境，因此请尽早在生产上开始收集数据。 [了解](events.md)Adobe AI如何训练机器学习模型，以获取更高质量的推荐。 作为一项附加好处，当您开始收集生产上的行为数据时，可以在非生产环境中操作时基于此生产数据[获取推荐](staging-environment.md#fetch-recommendations-from-production-environment-recommended)。 然后，您可以测试和试验根据在生产过程中收集的实际购物者数据计算的各种推荐。
 
-   要将数据收集部署到生产环境，您必须[通过提供[API密钥](../landing/saas.md)来安装和配置](install-configure.md) [!DNL Product Recommendations]模块。
+   要将数据收集部署到生产环境，您必须[&#128279;](install-configure.md)通过提供[API密钥](../landing/saas.md)来安装和配置 [!DNL Product Recommendations]模块。
 
    >[!TIP]
    >
