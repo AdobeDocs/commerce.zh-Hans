@@ -26,9 +26,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1076
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Adobe Commerce提供三种部署模型：
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup>核心<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/guide-overview">B2B功能</a>（如公司管理和报价）在SaaS中现成可用。但是，特定于行业的自定义可能需要其他实施注意事项。
+                <sup>1</sup>核心<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/guide-overview">B2B功能</a>（如公司管理和报价）在SaaS中现成可用。 但是，特定于行业的自定义可能需要其他实施注意事项。
             </td>
         </tr>
     </tfoot>
@@ -216,9 +216,9 @@ Adobe Commerce提供三种部署模型：
     <tfoot>
         <tr>
             <td colspan="3">
-                SaaS中的<sup>1</sup>数据模型可扩展性支持<a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/">将核心实体</a>扩展到产品和客户之外，包括B2B实体。但是，行业特定的数据模型（例如，经销商特定的属性）可能需要额外的体系结构考虑。
+                SaaS中的<sup>1</sup>数据模型可扩展性支持<a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/">将核心实体</a>扩展到产品和客户之外，包括B2B实体。 但是，行业特定的数据模型（例如，经销商特定的属性）可能需要额外的体系结构考虑。
                 <br><br>
-                <sup>2</sup> Adobe正在积极工作Document DB集成，以满足SaaS的永久存储需求。目前，需要长期数据存储的实施可能需要调配和维护额外的基础架构。
+                <sup>2</sup> Adobe正在积极工作Document DB集成，以满足SaaS的永久存储需求。 目前，需要长期数据存储的实施可能需要调配和维护额外的基础架构。
             </td>
         </tr>
     </tfoot>
@@ -229,7 +229,7 @@ Adobe Commerce提供三种部署模型：
 >在考虑迁移到SaaS时，Adobe建议您：
 >
 >- 尽可能将适当的功能移到进程外可扩展性。
->- 减小需要过渡的曲面面积。
+>- 缩小需要转换的范围。
 >- 考虑[!DNL API Mesh]以扩展API功能。
 >- 监控Adobe的持续平台演变和新功能发布。
 >- 根据可用的可扩展性选项评估特定于行业的数据模型要求。

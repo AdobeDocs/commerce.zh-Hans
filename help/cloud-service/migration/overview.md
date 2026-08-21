@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: e03840ea9e0e43a005f385914e8599804383e79d
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 3305
+source-wordcount: 3302
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ Adobe提供了围绕[三个迁移工具](#migration-tools-workflow)构建的集�
 | [应用程序和店面现代化](#code-and-storefront-migration-commerce-developer-mcp) | **Commerce开发人员MCP** | 人工智能辅助的Commerce应用程序现代化，加快将自定义项迁移到[!DNL App Builder]，支持店面迁移到Edge Delivery Services (EDS)，并通过由工程团队审查和验证的实施指导开发人员完成更广泛的应用程序现代化历程。 |
 | [数据迁移](#data-migration-commerce-data-migration-service) | **Commerce数据迁移服务** | 将目录、客户和订单数据的提取、加载和完整性验证到[!DNL Adobe Commerce as a Cloud Service]。 |
 
-这些磁道不是独立的。 以正确的顺序一起使用它们可最大程度地减少重复工作。
+这些磁道不是独立的。 按正确的顺序一起使用它们可最大程度地减少重复工作。
 
 - **首先运行评估** — 运行评估首先会识别不支持的自定义项、估计迁移工作量、公开数据迁移注意事项，并在实施开始之前突出显示集成依赖项。 评估将成为应用程序现代化工作流程和数据迁移工作流使用的迁移蓝图。
 - **应用程序现代化** - Commerce开发人员MCP使用迁移评估来确定哪些自定义项要现代化以及如何现代化。 然后，MCP生成相应的[!DNL App Builder]应用程序和店面组件。
@@ -169,7 +169,7 @@ Adobe提供了围绕[三个迁移工具](#migration-tools-workflow)构建的集�
 
 ### 评估范围
 
-迁移评估工具侧重于了解完整的迁移环境。 它分析自定义模块、插件、事件、API、cron作业、队列、与外部系统的集成、店面特征以及这些自定义所依赖的数据库模式。 此评估将其发现的内容映射到可用的[!DNL Adobe Commerce as a Cloud Service]功能，并确定应使用[!DNL App Builder]使功能现代化或针对SaaS架构重新设计的位置。
+迁移评估工具侧重于了解完整的迁移环境。 它分析自定义模块、插件、事件、API、cron作业、队列、与外部系统的集成、店面特征以及这些自定义所依赖的数据库模式。 此评估将其发现的内容映射到可用的[!DNL Adobe Commerce as a Cloud Service]功能，并确定您应在何处重新设计SaaS体系结构或使用[!DNL App Builder]使功能现代化。
 
 评估与其说是一种执行工具，不如说是一种规划工具。 它可确定应现代化的内容，估计实施的复杂性，并提供建议。 实施决策和架构验证仍是Adobe、合作伙伴和客户工程团队之间的协作活动。
 
@@ -184,7 +184,7 @@ Adobe提供了围绕[三个迁移工具](#migration-tools-workflow)构建的集�
 
 ### 后续步骤
 
-每个[!DNL Adobe Commerce as a Cloud Service]迁移都应该从评估开始。 这是一种在开始实施前确定范围、减少不确定性和创建共享迁移蓝图的低成本方法。
+每次[!DNL Adobe Commerce as a Cloud Service]迁移都从评估开始。 这是一种经济高效的方法，可在实施开始之前确定范围、减少不确定性和创建共享迁移蓝图。
 
 有关评估工具和下游开发人员工作流的详细信息，请参阅[Adobe Commerce开发人员MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/)。
 
@@ -263,7 +263,7 @@ MCP不处理数据迁移。 通过[Commerce数据迁移服务](#data-migration-c
 
 ## 数据迁移（Commerce数据迁移服务）
 
-迁移到[!DNL Adobe Commerce as a Cloud Service]可能需要迁移多年的数据，包括：目录、订单、客户和配置。
+迁移到[!DNL Adobe Commerce as a Cloud Service]需要迁移多年的数据，包括目录、订单、客户和配置。
 
 Commerce数据迁移服务将手动迁移替换为单个、可重复且自动化的过程。 它使复杂的数据库迁移更可预测、更有效。
 

@@ -33,7 +33,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 8f993feaea79eaca19f6ebd3dc5195e287fc4a36
 workflow-type: tm+mt
 source-wordcount: 5345
 ht-degree: 0%
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 所有`custom-email`端点都需要访问`Marketing > Communications > Email template` [角色资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources)。<!-- CCSAAS-5089, CCSAAS-5090 -->
 
-### 通过REST API管理整个订单链
+### 通过REST API管理整个订单序列
 
 >[!IMPORTANT]
 >
@@ -158,11 +158,11 @@ ht-degree: 0%
 
 ### 按区域或模板禁止事务性电子邮件
 
-新的[电子邮件抑制](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/services/email-suppression)配置（[!UICONTROL **商店**] > [!UICONTROL **配置**] > [!UICONTROL **Adobe服务**] > [!UICONTROL **电子邮件抑制**]）允许管理员选择性地停止[!DNL Commerce]发送事务性电子邮件。 您可以按功能区域（如客户帐户、Order Management、退货、结帐、营销或B2B）或模板标识符的精确列表来禁止发送电子邮件。<!-- ACCS-1025 -->
+新的[电子邮件抑制](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/services/email-suppression)配置（[!UICONTROL **商店**] > [!UICONTROL **配置**] > [!UICONTROL **Adobe服务**] > [!UICONTROL **电子邮件抑制**]）允许管理员选择性地停止[!DNL Commerce]发送事务性电子邮件。 您可以按功能区域（客户帐户、Order Management、退货、结帐、营销或B2B）或模板标识符的精确列表来禁止发送电子邮件。<!-- ACCS-1025 -->
 
 ### 在管理员中查看订单修改历史记录
 
-现在，[!DNL Commerce Admin]订单详细信息页面会显示订单的完整修改链，其中包括原始订单以及通过后续编辑创建的所有子订单。 商家可以在订单之间导航，切换已取消订单的可见性，并从链视图中访问所有关联的发票、发运、贷项通知单和订单备注。<!-- ACCS-968 -->
+现在，[!DNL Commerce Admin]订单详细信息页面会显示订单的完整修改序列，其中包括原始订单以及通过后续编辑创建的所有子订单。 商家可以在订单之间导航，切换已取消订单的可见性，并从序列视图中访问所有关联的发票、发运、贷项通知单和订单备注。<!-- ACCS-968 -->
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ ht-degree: 0%
 
 ### 使用默认承运人和自定义承运人跟踪发运
 
-现在，订单跟踪对于[!DNL Commerce Admin]中的默认和自定义装运承运人是可靠的，可帮助商家提供一致的购买后跟踪体验。 以前，选择UPS或FedEx等运营商并应用跟踪ID可能会阻止显示跟踪链接 — 无需商家采取行动来恢复此行为。 使用[!DNL App Builder Integration Starter Kit]创建的[自定义运营商](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/)也支持跟踪链接。<!-- ACCS-891 -->
+现在，订单跟踪对于[!DNL Commerce Admin]中的默认和自定义装运承运人是可靠的，可帮助商家提供一致的购买后跟踪体验。 以前，选择UPS或FedEx等运营商并应用跟踪ID可能会阻止显示跟踪链接 — 无需商家采取行动来恢复此行为。 使用[!DNL App Builder Integration Starter Kit]创建的[自定义运营商](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference)也支持跟踪链接。<!-- ACCS-891 -->
 
 ### 在“产品属性”网格中查看属性输入类型
 
@@ -268,7 +268,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## 2026年5月 — 发行说#1
+## 2026年5月发行说#1
 
 [!BADGE 生产]{type=Neutral tooltip="列出的项目当前在生产环境中可用。"}
 
@@ -278,7 +278,7 @@ ht-degree: 0%
 
 ### 跳过reCAPTCHA进行程序化OTP身份验证
 
-新的配置选项允许您跳过[`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) GraphQL突变的reCAPTCHA验证。 这支持了B2B打包工作流，其中以编程方式启动一次性密码(OTP)交换而无需输入表单，从而不需要reCAPTCHA验证。 此功能以2026年3月版本中引入的[一次性代码登录](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}功能为基础。 为客户登录启用reCAPTCHA时，默认情况下，`exchangeOtpForCustomerToken`突变仍需要reCAPTCHA。 请联系您的Adobe Commerce客户成功经理以启用此选项。<!-- ACCS-850 -->
+新的配置选项允许您跳过[`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token) GraphQL突变的reCAPTCHA验证。 这将启用B2B打卡工作流。 一次性密码(OTP)交换是通过编程方式启动的，无需输入表单，因此无需进行reCAPTCHA验证。 此功能以2026年3月版本中引入的[一次性代码登录](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}功能为基础。 为客户登录启用reCAPTCHA时，默认情况下，`exchangeOtpForCustomerToken`突变仍需要reCAPTCHA。 请联系您的Adobe Commerce客户成功经理以启用此选项。<!-- ACCS-850 -->
 
 ### 编辑已部分开票的订单
 
@@ -392,7 +392,7 @@ ht-degree: 0%
 
 ### 通过GraphQL检查价格和股票提醒订阅状态
 
-新的GraphQL查询[`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock/){target="_blank"}和[`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price/){target="_blank"}让店面确定购物者是否已订阅产品的库存或价格警报。<!-- ACCS-334 -->
+新的GraphQL查询[`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock){target="_blank"}和[`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price){target="_blank"}让店面确定购物者是否已订阅产品的库存或价格警报。<!-- ACCS-334 -->
 
 ### 创建支持负值的数字产品属性
 
@@ -400,11 +400,11 @@ ht-degree: 0%
 
 ### 在一个GraphQL请求中查询多个表单的reCAPTCHA配置
 
-[`recaptchaFormConfigs`查询](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/)可以在单个请求中返回多个表单类型的配置详细信息。<!-- ACCS-628 -->
+[`recaptchaFormConfigs`查询](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs)可以在单个请求中返回多个表单类型的配置详细信息。<!-- ACCS-628 -->
 
 ### 查看具有新B2B权限的所有公司订单
 
-新的`view_all_company_orders` [公司角色](https://developer.adobe.com/commerce/webapi/rest/b2b/roles/)允许B2B公司客户查看其公司内的所有订单，包括管理员用户创建的历史订单。<!-- ACCS-675 -->
+新的`view_all_company_orders` [公司角色](https://developer.adobe.com/commerce/webapi/rest/b2b/roles)允许B2B公司客户查看其公司内的所有订单，包括管理员用户创建的历史订单。<!-- ACCS-675 -->
 
 ### 增强功能和错误修复
 
@@ -432,7 +432,7 @@ ht-degree: 0%
 
 管理员现在可以通过[!DNL Commerce Admin]和REST API生成客户模拟的[一次性代码](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)。 可以通过`generateCustomerToken`或`exchangeOtpForCustomerToken`GraphQL突变为客户访问令牌交换一次性代码，从而支持无密码的“以客户身份登录”流程用于卖方辅助购物方案。<!-- ACCS-404 -->
 
-有关使用API实施此功能的指导，请参阅[REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/)和[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/)文档。
+有关使用API实施此功能的指导，请参阅[REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/)和[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token)文档。
 
 ### 通过REST API管理礼品卡帐户
 
@@ -444,7 +444,7 @@ ht-degree: 0%
 
 ### 订阅进程外送货获取费率webhook
 
-`plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook现在可在[!DNL Adobe Commerce as a Cloud Service]的Admin Webhook列表中使用。 使用它实施[自定义送货方法](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#shipping-methods)。<!-- ACCS-478 -->
+`plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook现在可在[!DNL Adobe Commerce as a Cloud Service]的Admin Webhook列表中使用。 使用它实施[自定义送货方法](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#shipping-methods)。<!-- ACCS-478 -->
 
 ### 通过产品属性上传PDF和其他文件
 
@@ -580,11 +580,11 @@ mutation {
 
 ### 使用结构化错误代码自定义店面身份验证消息
 
-[`generateCustomerToken` GraphQL突变](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"}现在会随错误消息一起返回键入的错误代码，使店面能够按失败原因显示特定的UI消息。 可用的错误代码包括： `CUSTOMER_MISSING_EMAIL`、`CUSTOMER_MISSING_PASSWORD`、`CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`、`CUSTOMER_ACCOUNT_NOT_CONFIRMED`和`CUSTOMER_GENERIC_ERROR`。<!-- ACCS-301 -->
+[`generateCustomerToken` GraphQL突变](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token){target="_blank"}现在会随错误消息一起返回键入的错误代码，使店面能够按失败原因显示特定的UI消息。 可用的错误代码包括： `CUSTOMER_MISSING_EMAIL`、`CUSTOMER_MISSING_PASSWORD`、`CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`、`CUSTOMER_ACCOUNT_NOT_CONFIRMED`和`CUSTOMER_GENERIC_ERROR`。<!-- ACCS-301 -->
 
 ### 发送有关购物车和愿望清单不活动的自动电子邮件提醒
 
-[电子邮件提醒模块](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`)现在在[!DNL Adobe Commerce as a Cloud Service]中处于活动状态，允许商家创建自动提醒规则，以根据购物车和愿望清单非活动状态触发发送给客户的电子邮件。<!-- CCSAAS-4597 -->
+[电子邮件提醒模块](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`)现在在[!DNL Adobe Commerce as a Cloud Service]中处于活动状态。 它允许商家创建自动提醒规则，根据购物车和愿望清单非活动状态触发发送给客户的电子邮件。<!-- CCSAAS-4597 -->
 
 ### 订阅类别删除事件webhook
 
@@ -592,7 +592,7 @@ mutation {
 
 ### 跟踪在注册电子邮件中下单的访客订单
 
-新的可选商店级别配置允许客户[跟踪他们发出的访客订单](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails)（如果订单的电子邮件地址与已注册的客户帐户匹配）。<!-- ACCS-289 -->
+新的可选商店级别配置允许客户[跟踪他们发出的访客订单](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails)。 如果订单使用的电子邮件地址与注册的客户帐户匹配，则适用这种情况。<!-- ACCS-289 -->
 
 ### 增强功能和错误修复
 
@@ -616,7 +616,7 @@ mutation {
 
 ### 使用商务事件发送上下文字段
 
-[!DNL Adobe Commerce as a Cloud Service]现在在事件负载中支持[上下文字段](https://developer.adobe.com/commerce/extensibility/events/context-fields/)，从而允许您包含默认情况下不属于事件的数据。<!-- CEXT-5713 -->
+[!DNL Adobe Commerce as a Cloud Service]现在在事件负载中支持[上下文字段](https://developer.adobe.com/commerce/extensibility/events/context-fields)，从而允许您包含默认情况下不属于事件的数据。<!-- CEXT-5713 -->
 
 ### 使用新的webhook订阅报价项保存事件
 
@@ -644,7 +644,7 @@ mutation {
 
 对[!DNL Commerce Admin]进行了以下增强：
 
-* 增强了进程外[送货webhook负载](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload)以包含送货地址自定义属性。 这项更改使商家能够实施自定义配送方式。<!-- ACCS-235 -->
+* 增强了进程外[送货webhook负载](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#payload)以包含送货地址自定义属性。 这项更改使商家能够实施自定义配送方式。<!-- ACCS-235 -->
 
 * 已添加对管理员报告的访问权限，这些报告包括[客户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/reporting/customer-reports)、[营销](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/reporting/marketing-reports)、[产品](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/reporting/product-reports)和[销售](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/reporting/sales-reports)的报告。<!-- CCSAAS-3085 -->
 
@@ -745,7 +745,7 @@ mutation {
 
 * 修复了单击管理员仪表板上的&#x200B;[!UICONTROL **重新加载数据**]&#x200B;按钮时发生的`404`错误。<!-- CCSAAS-4468 -->
 
-* 解决了启用[!DNL AEM Assets integration]且产品具有图像时，无法通过REST API更新产品自定义属性的问题。<!-- ACAP-1178 -->
+* 解决了启用[!DNL AEM Assets integration]且产品具有图像时，未通过REST API更新产品自定义属性的问题。<!-- ACAP-1178 -->
 
 * 各种性能和优化改进。
 <!-- CCSAAS-4255 -->
@@ -766,11 +766,11 @@ mutation {
 
 * [用户管理](./user-management.md) — 更改了Admin Console中的&#x200B;**产品管理员**&#x200B;角色以自动更新用户对Commerce管理员的访问权限。<!-- CCSAAS-3012 -->
 
-* 添加了使用[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads)和[REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads)中的预签名URL将可协商的报价附件以及与客户和客户地址关联的文件和图像上传和检索到Amazon S3的功能。 使用REST，您还可以上传类别图像。<!-- CCSAAS-3250 -->
+* 添加了使用[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/)和[REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads/)中的预签名URL将可协商的报价附件以及与客户和客户地址关联的文件和图像上传和检索到Amazon S3的功能。 使用REST，您还可以上传类别图像。<!-- CCSAAS-3250 -->
 
 * 已将`POST /V1/customers`和`PUT /V1/customers/{customerId}`端点添加到[REST API](https://developer.adobe.com/commerce/webapi/rest/reference/)以创建和更新客户。 这些端点需要IMS授权。<!-- CCSAAS-3112 -->
 
-* 添加了需要购物者的电子邮件地址和一次性密码(OTP)的[`exchangeOtpForCustomerToken`突变](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/)，并接收客户令牌以交换。 此突变通常用于客户需要使用发送到其电子邮件或电话的OTP进行身份验证的情况。
+* 添加了需要购物者的电子邮件地址和一次性密码(OTP)的[`exchangeOtpForCustomerToken`突变](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token)，并接收客户令牌以交换。 此突变通常用于客户需要使用发送到其电子邮件或电话的OTP进行身份验证的情况。
 
 * 如果在Admin的&#x200B;[!UICONTROL **存储电子邮件地址**]&#x200B;配置屏幕中定义的某个地址包含以`example.com`结尾的值，则Commerce不会向此地址发送电子邮件。 相反，系统会记录未发送电子邮件。 <!-- CCSAAS-3533 -->
 

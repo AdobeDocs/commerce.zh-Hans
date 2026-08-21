@@ -22,9 +22,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 28102ad0dba698e37a69bbae90e3e9cec364ca81
 workflow-type: tm+mt
-source-wordcount: 300
+source-wordcount: 332
 ht-degree: 0%
 
 ---
@@ -65,3 +65,4 @@ ht-degree: 0%
 * [生成变体](./use-cases.md#generate-variations) — 使用创作AI自动生成高质量的内容。
 * [Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans) — 获取有关更新网站内容以及与Commerce前端组件和后端数据集成的详细信息。
 * [配置服务](https://www.aem.live/docs/config-service-setup) — 了解如何从`config.json`迁移店面配置以使用配置服务，该服务支持高级用例，如重写配置和覆盖。
+* [店面B2B功能](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/?lang=zh-Hans#major-features) — 了解Storefront兼容性包中提供的B2B功能，该包自动为所有[!DNL Adobe Commerce as a Cloud Service]实例安装。

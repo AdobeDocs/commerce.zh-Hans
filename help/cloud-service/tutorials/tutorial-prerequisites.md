@@ -26,9 +26,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1289
 ht-degree: 0%
 
 ---
@@ -55,8 +55,8 @@ ht-degree: 0%
   ```
 
 * Bash shell
-   * macOS/Linux：无需安装
-   * Windows：使用[Git Bash](https://git-scm.com/install)或[用于Linux (WSL)的Windows子系统](https://learn.microsoft.com/en-us/windows/wsl/install)
+  * macOS/Linux：无需安装
+  * Windows：使用[Git Bash](https://git-scm.com/install)或[用于Linux (WSL)的Windows子系统](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 * 下载AI辅助的IDE，如[Cursor](https://cursor.com/download)（推荐）。 其他IDE（如Claude Code、Gemini CLI或Copilot）也受支持，但可能需要修改提示和教程中的其他步骤。
 
@@ -74,7 +74,7 @@ ht-degree: 0%
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-安装[!DNL Adobe I/O CLI]和所需的插件后，设置可扩展性工作区。 Adobe建议使用自动设置以获得最快的体验。
+安装[!DNL Adobe I/O CLI]和所需的插件后，设置可扩展性工作区。 Adobe建议使用自动设置以获得最有效的体验。
 
 * **[自动设置](#automated-setup) （推荐）** — 运行单个命令以自动配置工作区。
 * **[手动设置](#manual-setup)** — 按照分步说明单独配置每个组件。
@@ -202,7 +202,7 @@ Next steps:
 
 #### 创建新项目
 
-在Adobe Developer Console中创建一个App Builder项目来托管您的扩展。
+要托管您的扩展，请在Adobe Developer Console中创建一个[!DNL App Builder]项目。
 
 1. 导航到[Adobe Developer Console](https://developer.adobe.com/)。
 1. 单击&#x200B;**[!UICONTROL Create project from a template]**。
@@ -227,10 +227,10 @@ Next steps:
 1. 选择以下API之一。 对下面列出的每个API重复此过程：
 
    * **[!UICONTROL Adobe Services]**&#x200B;筛选器：
-      * **[!UICONTROL I/O Management API]**
-      * **[!UICONTROL I/O Events]** API
+     * **[!UICONTROL I/O Management API]**
+     * **[!UICONTROL I/O Events]** API
    * **[!UICONTROL Experience Cloud]**&#x200B;筛选器：
-      * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
+     * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
 
 1. 单击&#x200B;**[!UICONTROL Next]**。
 
@@ -342,7 +342,7 @@ EVENT_PREFIX=test
 
 ### 下载工作区配置
 
-运行以下命令下载工作区配置文件：
+要下载工作区配置文件，请运行以下命令：
 
 ```bash
 aio console workspace download workspace.json

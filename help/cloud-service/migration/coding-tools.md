@@ -20,9 +20,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 2635
+source-wordcount: 2611
 ht-degree: 0%
 
 ---
@@ -52,22 +52,22 @@ AI编码工具具有以下优势：
 aio commerce extensibility tools-setup
 ```
 
-这会将工具更新到最新版本。
+此命令会将工具更新到最新版本。
 
 ## 先决条件
 
 * 任何支持[代理技能](https://agentskills.io/home#adoption)的编码代理，例如：
 
   * [光标](https://cursor.com/download)
-  * [Claude码](https://www.claude.com/product/claude-code)
+  * [Claude码](https://claude.com/product/claude-code)
   * [GitHub Copilot](https://github.com/features/copilot)
-  * [温德surf](https://windsurf.com)
+  * [Devin桌面](https://devin.ai/desktop)
   * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
   * [OpenAI代码](https://openai.com/index/introducing-codex/)
   * [斜面](https://cline.bot)
 
 * [Node.js](https://nodejs.org/en/download)： LTS版本
-* 包管理器： [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)或[yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
+* 包管理器： [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)或[yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git)：用于存储库克隆和版本控制
 
 ## 安装
@@ -114,7 +114,7 @@ aio commerce extensibility tools-setup
    aio commerce extensibility tools-setup
    ```
 
-   安装过程会提示您配置选项。 按照提示完成安装。 工具将安装在所选目录中。
+   安装过程会提示您配置选项。 要完成安装，请按照提示操作。 工具安装在所选目录中。
 
    * 选择要用于项目的入门工具包。
 
@@ -138,7 +138,7 @@ aio commerce extensibility tools-setup
         ...
      ```
 
-   * 安装程序将检测您是否安装了NPM或Yarn，并自动进行相应的选择。 但是，如果您尚未安装这两个软件，则会提示您选择包管理器，Adobe建议使用`npm`来保持一致性：
+   * 安装程序会检测是否安装了NPM或Yarn，并自动进行相应的选择。 但是，如果您尚未安装这两个软件，则会提示您选择包管理器；Adobe建议使用`npm`来保持一致性：
 
      ```shell-session
      ? Which package manager would you like to use?
@@ -156,13 +156,13 @@ aio commerce extensibility tools-setup
 
 >[!NOTE]
 >
->在部署项目之前，您需要完成以下配置任务：
+>在部署项目之前，请完成以下配置任务：
 >
 >* 使用Adobe I/O CLI登录到[Adobe Developer Console](https://developer.adobe.com/console)。
 >* 创建App Builder项目（请参阅[项目设置](https://developer.adobe.com/commerce/extensibility/events/project-setup)）。
 >* 在`.env`文件中设置环境变量。
 >
->您可以手动完成这些配置步骤，或利用AI编码工具引导您完成该过程。 有关详细的配置说明，请参阅[创建集成](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/)。
+>您可以手动完成这些配置任务，或利用AI编码工具引导您完成该过程。 有关详细的配置说明，请参阅[创建集成](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)。
 
 ## 安装后配置
 
@@ -189,7 +189,7 @@ aio auth login
 
 >[!NOTE]
 >
->MCP服务器的某些功能无需登录即可工作，但RAG (Retrieval-Enhanced Generation)服务无法工作。 RAG服务让AI编码代理能够实时访问完整的Adobe Commerce文档集，从而使其能够基于当前Commerce开发实践、API和架构模式回答问题并生成代码。
+>MCP服务器的某些功能无需登录即可工作，但RAG (Retrieval-Enhanced Generation)服务不起作用。 RAG服务让AI编码代理能够实时访问完整的Adobe Commerce文档集，从而使其能够基于当前Commerce开发实践、API和架构模式回答问题并生成代码。
 
 ### 光标
 
@@ -204,7 +204,7 @@ aio auth login
    * 在列表中找到&#x200B;**commerce-extensibility MCP服务器**
    * 切换服务器&#x200B;**ON**&#x200B;以启用编码工具
 
-1. 验证服务器状态 — Commerce可扩展性MCP服务器应显示为：
+1. 验证服务器状态 — Commerce可扩展性MCP服务器显示为：
 
    ```shell-session
    Status: Connected/Active
@@ -226,12 +226,12 @@ aio auth login
 
 1. 启用MCP服务器：
 
-   * 单击左侧边栏活动栏中的&#x200B;**Extensions**&#x200B;图标，或者使用&#x200B;**Cmd+Shift+X** (macOs)或&#x200B;**Ctrl+Shift+X** （Windows和Linux）打开“扩展”面板。
+   * 单击左侧边栏活动栏中的&#x200B;**Extensions**&#x200B;图标，或者使用&#x200B;**Cmd+Shift+X** (macOS)或&#x200B;**Ctrl+Shift+X** （Windows和Linux）打开“扩展”面板。
    * 单击&#x200B;[!UICONTROL **MCP服务器 — 已安装**]。
    * 单击&#x200B;[!UICONTROL **commerce-extensibility MCP服务器**]&#x200B;旁边的齿轮图标，然后选择&#x200B;[!UICONTROL **启动服务器**]（如果服务器已停止）。
    * 再次单击齿轮图标，然后选择&#x200B;[!UICONTROL **显示输出**]。
 
-1. 验证服务器状态。 `MCP:commerce-extensibility`输出应匹配以下内容：
+1. 验证服务器状态。 `MCP:commerce-extensibility`输出与以下内容匹配：
 
    ```shell-session
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
@@ -287,7 +287,7 @@ The extension should:
 
 ## 技能
 
-虽然当您与编码代理聊天时，会自动调用技能，但您也可以使用以下命令手动调用这些技能：
+当您与编码代理聊天时，会自动调用技能，您也可以使用以下命令手动调用这些技能：
 
 * `/architect` — 使用[!DNL App Builder]和选定的入门套件设计Adobe Commerce扩展的架构。 在规划集成、选择事件、设计数据流或做出体系结构决策时使用。
 * `/developer` — 按照[!DNL App Builder]模式和文件结构实现Adobe Commerce扩展。 在生成代码、更新配置文件或实施运行时操作时使用。
@@ -303,11 +303,11 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 
 ### 计划模式
 
-与编码代理聊天时，您应该选择&#x200B;**计划**&#x200B;模式以创建项目的详细实施计划。
+与编码代理聊天时，选择&#x200B;**计划**&#x200B;模式以创建项目的详细实施计划。
 
 选择&#x200B;**计划**&#x200B;模式的方法因您使用的代理而异。 有关说明，请参阅代理的文档。 例如：
 
-* [光标](https://cursor.com/docs/agent/modes)
+* [光标](https://cursor.com/docs/agent/plan-mode)
 * [Claude码](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
 * [Gemini CLI](https://geminicli.com/docs/cli/plan-mode/)
 
@@ -340,7 +340,7 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 
 ### 工作流
 
-使用AI编码工具进行开发时，请从示例代码或基架项目开始。 此方法可确保您基于坚实的基础进行构建，而不是从零开始，同时还可优化您的AI开发工作流。
+使用AI编码工具进行开发时，请从示例代码或基架项目开始。 此方法可确保您以坚实的基础为基础（而不是从零开始），同时还可优化您的AI开发工作流。
 
 这还允许您利用Adobe的模板并基于经验证的模式和体系结构进行构建，同时保留已建立的目录结构和约定。
 
@@ -350,9 +350,9 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 * [结账入门工具包](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce入门套件模板](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
 * [Adobe I/O Events入门模板](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
-* [App Builder示例应用程序](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
+* [App Builder示例应用程序](https://developer.adobe.com/app-builder/docs/resources/sample_apps/)
 
-#### 为什么应使用这些资源
+#### 为何使用这些资源
 
 * **经验证的模式**：入门套件体现了Adobe的最佳实践和体系结构决策
 * **加快开发**：减少花在样板和配置上的时间
@@ -365,7 +365,7 @@ Adobe建议在使用人工智能编码工具时遵循以下最佳实践：
 
 ### 协议
 
-已安装的技能会自动强制执行以下四阶段协议。 在开发应用程序时，工具应自动遵循此协议：
+安装的技能会自动强制执行以下四阶段协议。 在开发应用程序时，这些工具会自动遵循此协议：
 
 * 第1阶段：需求分析和说明
   * 当被问及澄清问题时，请提供完整的答案。
@@ -435,7 +435,7 @@ Verify if simpler solutions exist
 完成实施计划中的功能开发后，请立即对其进行测试。 早期测试可避免复合问题，并使调试更容易。
 
 * 不要等到所有功能都完成
-* 增量测试以及早发现问题
+* 要及早发现问题，请逐步进行测试。
 * 在移到下一个功能之前验证功能
 
 #### 首先在本地测试
@@ -522,7 +522,7 @@ Help me debug why this action is returning 500 errors
 
 ### 调试
 
-停止并评估何时出现问题。 如果您遇到问题：
+停止并在出现错误时进行评估。 如果您遇到问题：
 
 * 停止并评估 — 不要在中断状态下继续
 * 检查日志 — 使用激活日志识别问题
@@ -602,7 +602,7 @@ Remove the orphaned actions that are no longer part of the current implementatio
 
 希望针对AI编码工具提供反馈的开发者可以使用`/feedback`命令。
 
-此命令允许您提供文本反馈并将日志发送到Adobe。 您发送的任何日志都将经过清理，以删除任何私人或个人信息。
+此命令允许您提供文本反馈并将日志发送到Adobe。 您发送的任何日志都会经过清理，以删除个人或个人信息。
 
 >[!TIP]
 >
@@ -624,4 +624,4 @@ Remove the orphaned actions that are no longer part of the current implementatio
 
 >[!NOTE]
 >
->如果未看到`/feedback`命令，则可能需要将[更新到最新版本](#updating-to-the-latest-version)。
+>如果未看到`/feedback`命令，[请更新到最新版本](#updating-to-the-latest-version)。

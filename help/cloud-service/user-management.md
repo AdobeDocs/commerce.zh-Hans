@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1817
+source-wordcount: 1841
 ht-degree: 0%
 
 ---
@@ -37,9 +37,9 @@ ht-degree: 0%
 
 >[!TIP]
 >
->要同时添加多个用户，您可以执行[批量CSV上传](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html){target="_blank"}。
+>要同时添加多个用户，您可以执行[批量CSV上传](https://helpx.adobe.com/cn/business/enterprise/users/users-and-groups/bulk-upload-users.html){target="_blank"}。
 >
-> 您还可以通过创建[用户组](https://helpx.adobe.com/cn/enterprise/using/user-groups.html){target="_blank"}将多个用户添加到角色。 然后，您可以将相应的产品添加到用户组。
+> 您还可以通过创建[用户组](https://helpx.adobe.com/cn/business/enterprise/users/users-and-groups/user-groups.html){target="_blank"}将多个用户添加到角色。 然后，您可以将相应的产品添加到用户组。
 
 ## 了解角色
 
@@ -53,12 +53,12 @@ ht-degree: 0%
 
   >[!TIP]
   >
-  >如果要通过IP地址限制对Commerce管理员的访问，请参阅[通过IP地址限制产品访问](https://helpx.adobe.com/cn/enterprise/using/ip-based-access.html){target="_blank"}。
+  >如果要通过IP地址限制对Commerce管理员的访问，请参阅[通过IP地址限制产品访问](https://helpx.adobe.com/cn/business/enterprise/identity-sso/set-up-identity/restrict-product-access-by-ip-address.html){target="_blank"}。
 
-* [**开发人员**](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} — 开发人员具有用户权限，并且作为开发人员用户添加到Commerce实例。 他们可以使用[[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[配置事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[创建Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
+* [**开发人员**](https://helpx.adobe.com/cn/business/enterprise/users/users-and-groups/manage-developers.html#Adddevelopers){target="_blank"} — 开发人员具有用户权限，并且作为开发人员用户添加到Commerce实例。 他们可以使用[[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[配置事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[创建Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
 
 * 管理员 — 有不同类型的管理员角色：
-  * [系统管理员](https://helpx.adobe.com/cn/enterprise/using/admin-roles.html){target="_blank"} — 系统管理员可以通过Admin Console访问组织中的所有产品和产品配置文件。
+  * [系统管理员](https://helpx.adobe.com/cn/business/enterprise/users/manage-admins/admin-roles-hierarchy.html){target="_blank"} — 系统管理员可以通过Admin Console访问组织中的所有产品和产品配置文件。
   * [产品管理员](#add-a-product-admin) — 产品管理员可以在[!DNL Adobe Admin Console]中[管理产品的用户、角色和权限](#add-users)，在Commerce管理员中[管理用户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
   * [产品配置文件管理员](#add-developers-and-product-profile-admins) — 产品配置文件管理员无权访问Adobe Commerce管理员，但可以在[!DNL Adobe Admin Console]中管理产品的用户。
   * 支持管理员 — 支持管理员可以创建和管理支持工单。
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 1. 选择您的组织。
 
-1. 在&#x200B;[!UICONTROL **产品**]&#x200B;选项卡的&#x200B;[!UICONTROL **产品和服务**]&#x200B;下，选择&#x200B;[!UICONTROL **Adobe Commerce - Commerce Cloud Manager**]&#x200B;产品。
+1. 在&#x200B;[!UICONTROL **产品**]&#x200B;选项卡的&#x200B;[!UICONTROL **产品和服务**]&#x200B;下，选择&#x200B;[!UICONTROL **Adobe Commerce — Commerce Cloud Manager**]&#x200B;产品。
 
    Admin Console中的![产品选择显示Adobe Commerce Cloud Manager](./assets/backend.png){width="600" zoomable="yes"}
 
@@ -161,7 +161,7 @@ ht-degree: 0%
 
 1. 选择您的组织。
 
-1. 在&#x200B;[!UICONTROL **产品**]&#x200B;选项卡的&#x200B;[!UICONTROL **产品和服务**]&#x200B;下，选择&#x200B;[!UICONTROL **Adobe Commerce - Commerce Cloud Manager**]&#x200B;产品。
+1. 在&#x200B;[!UICONTROL **产品**]&#x200B;选项卡的&#x200B;[!UICONTROL **产品和服务**]&#x200B;下，选择&#x200B;[!UICONTROL **Adobe Commerce — Commerce Cloud Manager**]&#x200B;产品。
 
    Admin Console中的![Adobe Commerce Cloud Manager产品](./assets/backend.png){width="600" zoomable="yes"}
 
@@ -250,13 +250,13 @@ Admin Console中的![开发人员和管理员选项卡选项](./assets/tab-selec
 
 >[!NOTE]
 >
->没有适当资产权限的用户将无法访问[!DNL AEM Assets]的高级功能，例如[AI图像生成](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/overview){target="_blank"}、[生成的变量](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations-integrated-editor){target="_blank"}等。
+>没有适当资产权限的用户无法访问[!DNL AEM Assets]的高级功能，如[AI图像生成](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/overview){target="_blank"}、[生成的变量](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations-integrated-editor){target="_blank"}等。
 
 >[!TIP]
 >
->要同时添加多个用户，您可以执行[批量CSV上传](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html){target="_blank"}。
+>要同时添加多个用户，您可以执行[批量CSV上传](https://helpx.adobe.com/cn/business/enterprise/users/users-and-groups/bulk-upload-users.html){target="_blank"}。
 >
->您还可以通过创建[用户组](https://helpx.adobe.com/cn/enterprise/using/user-groups.html){target="_blank"}将多个用户添加到角色。 然后，您可以将&#x200B;[!DNL **Adobe Experience Manager as a Cloud Service**]&#x200B;产品添加到用户组。
+>您还可以通过创建[用户组](https://helpx.adobe.com/cn/business/enterprise/users/users-and-groups/user-groups.html){target="_blank"}将多个用户添加到角色。 然后，您可以将&#x200B;[!DNL **Adobe Experience Manager as a Cloud Service**]&#x200B;产品添加到用户组。
 
 1. 导航到<https://adminconsole.adobe.com>并使用您的Adobe ID登录。
 
@@ -291,7 +291,7 @@ Admin Console中的![开发人员和管理员选项卡选项](./assets/tab-selec
 
 1. 单击&#x200B;[!UICONTROL **保存**]。
 
-要确认用户具有访问权限，请单击用户的名称以打开其配置文件页面。 在&#x200B;[!UICONTROL **Products**]&#x200B;部分中，[!UICONTROL **Adobe Experience Manager as a Cloud Service**]&#x200B;产品下的&#x200B;[!UICONTROL **Completed**]&#x200B;应该为。 添加用户后，可能需要几秒钟才能看到其配置文件上的状态更新。 刷新页面可查看已更新的状态。
+要确认用户具有访问权限，请单击用户的名称以打开其配置文件页面。 在&#x200B;[!UICONTROL **产品**]&#x200B;部分中，[!UICONTROL **已完成的**]&#x200B;显示在&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service**]&#x200B;产品下。 添加用户后，需要几秒钟才能看到其配置文件上的状态更新。 刷新页面可查看已更新的状态。
 
 ![显示已完成产品访问状态的用户配置文件](./assets/product-access.png){width="600" zoomable="yes"}
 
@@ -305,7 +305,7 @@ Admin Console中的![开发人员和管理员选项卡选项](./assets/tab-selec
 
 1. [创建新程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}。
 
-1. [创建新环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}。
+1. [创建新环境](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}。
 
 1. 创建环境后，返回到[Admin Console](https://adminconsole.adobe.com){target="_blank"}并选择&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service**]。
 

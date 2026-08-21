@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1461
+source-wordcount: 1456
 ht-degree: 0%
 
 ---
@@ -98,13 +98,13 @@ ht-degree: 0%
 
 要使用[!DNL Storefront Builder]的基于文档的简单创作或可视化编辑功能在几分钟内创建丰富体验，请使用由[!DNL Edge Delivery Services]提供支持的Adobe的[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)。
 
-[!DNL Commerce Storefront]是完全无头的，具有分离架构，通过GraphQL API层提供所有促销服务和数据。 此架构允许团队独立于Commerce Foundation开发其前台，从而提供使用新兴技术构建和测试新接触点的灵活性。
+[!DNL Commerce Storefront]是完全无头的，具有分离架构，通过GraphQL API层提供所有Adobe Merchandising服务和数据。 此架构允许团队独立于Commerce Foundation开发其前台，从而提供使用新兴技术构建和测试新接触点的灵活性。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]不支持Luma店面。 如果您是从Adobe Commerce在云中或内部部署迁移，请参阅[现有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hans#existing-storefronts)以了解过渡指南。
+>[!DNL Adobe Commerce as a Cloud Service]不支持Luma店面。 如果您是从[!DNL Adobe Commerce on Cloud]或内部部署迁移，请参阅[现有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hans#existing-storefronts)以了解过渡指南。
 
-## 商品推销服务和支付服务
+## Adobe Merchandising服务和支付服务
 
 Adobe提供了一组丰富的智能、可组合的推销服务，帮助您支持关键业务目标。 这些服务还提供了对大规模优化性能至关重要的API。
 
@@ -116,7 +116,7 @@ Adobe提供了一组丰富的智能、可组合的推销服务，帮助您支持
   >
   >目录服务自动包含在[!DNL Live Search]和[!DNL Product Recommendations]中。
 
-- [支付服务](../payment-services/guide-overview.md) — 通过提供各种支付方式（包括免息分期付款）和单一付款处理、订单和发票视图，提高客户满意度。 有关配置说明，请参阅[Payment Services主页](../payment-services/payments-home.md)。
+- [支付服务](../payment-services/guide-overview.md) — 通过提供各种支付方式（包括免息分期付款）以及单一处理、订单和发票视图，提高客户满意度。 有关配置说明，请参阅[Payment Services主页](../payment-services/payments-home.md)。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -224,7 +224,7 @@ Adobe Commerce on Cloud的典型升级过程包括创建备份、克隆实例、
 
 >[!NOTE]
 >
->Adobe保证所有更新的向后兼容性。 这意味着应用更新时，不会破坏符合[API优先可扩展性](https://developer.adobe.com/commerce/extensibility/)模型的现有功能或自定义设置。
+>Adobe保证所有更新的向后兼容性。 这意味着应用更新时，它们不会破坏符合[API优先可扩展性](https://developer.adobe.com/commerce/extensibility/)模型的现有功能或自定义设置。
 
 ### 第三方集成
 
@@ -245,13 +245,13 @@ Adobe Commerce on Cloud的典型升级过程包括创建备份、克隆实例、
 ### 商业领袖
 
 - **增加收入**：使用可提升SEO的高性能店面提高自然流量。 创建个性化体验，使用丰富数据推动转化。
-- **扩展运营**：自动扩展服务以99.9%的可用性满足您业务的高峰需求。 转出多个品牌和区域，并从单个实例中支持B2B和B2C。 通过灵活的数据建模支持大型和复杂的产品目录。
+- **扩展运营**：自动扩展服务以99.9%的可用性满足您业务的高峰需求。 推出多个品牌和区域，并从单个实例支持B2B和B2C。 通过灵活的数据建模支持大型和复杂的产品目录。
 - **提高推销员的工作效率**：使用AI支持的推销服务提高转化率。 直接在店面进行原生试验。 通过简单的基于文档的创作或可视编辑器管理店面体验，在几分钟内创建丰富的体验。
-- **降低总拥有成本(TCO)并加快创新**：始终保持最新的服务让您能够立即访问新功能。 通过轻松地从市场安装应用程序来激活新功能。 将资源从繁琐的维护中释放出来，集中精力构建新功能。
+- **降低总拥有成本(TCO)并加快创新**：始终保持最新的服务让您能够立即访问新功能。 通过轻松地从市场安装应用程序来激活新功能。 从例行维护中重新分配资源，将重点放在构建新功能上。
 
 ### 信息技术(IT)领导者
 
 - **快速配置**：在几分钟内快速开始自助配置。 所有服务都已预先配置为无缝协作，以便更快地启动。 根据需要为开发人员实验配置沙盒。
 - **拥有成本低**：不再升级始终保持最新的服务。 使用自动为您应用的最新安全补丁程序，确保安全和合规性。 自动扩展以满足最苛刻的工作负载。
 - **高性能店面**：使用简单的基于文档的创作或可视化编辑器，在几分钟内创建丰富的体验。 使用AI支持的促销服务来提高转化。 店面中内置原生实验。
-- **更快的创新**：将资源从繁琐的维护中释放出来，集中精力构建提供业务价值的新功能。 使用全面的可扩展性和基于标准的技术（JavaScript、HTML、CSS和低代码工具）来构建差异化的体验。 通过单击安装第三方应用程序，以将新功能添加到您的Commerce平台。
+- **更快的创新**：重新分配日常维护资源，以专注于构建提供业务价值的新功能。 使用全面的可扩展性和基于标准的技术（JavaScript、HTML、CSS和低代码工具）来构建差异化的体验。 通过单击安装第三方应用程序，以将新功能添加到您的Commerce平台。
