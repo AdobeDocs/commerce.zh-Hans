@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4ecab54255029c3e9e84ba9f6de96888157d8fea
+source-git-commit: a2126f6cc24cc3a17c31e0d8dd095f7d7df26354
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '916'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,36 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年8月18日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
+</td>
+      <td>
+        技术
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1291cadbeca63d454eabab31c415b2d037d280ba">提交</a></td>
+    </tr>
+    <tr>
+      <td><p>Adobe Commerce Optimizer现在将私有目录查看限制为单个价格手册。 在<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">私有目录视图</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view">目录视图</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/pricebooks">价格手册</a>中了解详情。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年8月12日
 
@@ -279,88 +309,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月23日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新了跨Commerce服务文档的目录数据同步验证指南。 服务安装和配置主题现在使用一致的两步工作流程：在<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">数据馈送同步状态页面</a>上确认导出，然后在<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">数据管理仪表板</a>上确认投放，更新说明位于<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/catalog-service/get-started#monitor-and-troubleshoot-data-export">目录服务快速入门</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/install#monitor-sync-progress">实时搜索安装</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/product-recommendations/getting-started/install-configure#monitor-and-troubleshoot-data-synchronization">产品推荐安装</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/data-synchronization/data-sync-manage#verify-that-the-data-sync-is-working">SaaS数据导出指南</em>中的<em>管理同步</a>。</p>
-</td>
-      <td>
-        反馈
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/82bdfd342d2d745721ed2b35f2dbfd8fa394ab5a">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>添加了新的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/reference/feed-table-reference">Adobe Commerce Optimizer连接器信息源表架构引用</a>并更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/data-synchronization/sync-overview">SaaS数据导出同步</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">手动同步管理</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/reference/data-export-cli-commands">Commerce CLI重新同步命令</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/reference/feed-table-reference">信息源表架构</a>指南。</p>
-</td>
-      <td>
-        重大更新，新主题
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/601d02435f388096d59ce7f8e2a9e3e7c8bec65b">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月17日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新了用于管理Adobe Commerce与连接的Commerce服务之间的目录数据同步的文档。<br /> — 在<em>SaaS数据导出指南</em>中添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">查看和管理同步过程</a>主题，以监视Commerce服务和Adobe Commerce Optimizer集成的导出状态、确认数据交付和手动重新同步馈送。<br /> — 在<em>SaaS数据导出指南</em>中添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/troubleshooting/troubleshooting-scenarios">故障排除方案</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/reference/manage-extension">馈送表架构引用</a>以及其他故障排除和引用信息。<br /> — 更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/get-started">Adobe Commerce Optimizer入门连接器</a>并添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/data-sync-manage">管理与Commerce Optimizer的同步</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting">Adobe Commerce Optimizer连接器疑难解答</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/reference/connector-reference">连接器模块和馈送端点</a>，以及有关估计数据量和与<em>Adobe Commerce Optimizer连接器指南</em>同步时间的说明。</p>
-</td>
-      <td>
-        重大更新，新主题
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/66d9db3ab63102a0fd639f274a4131bf69ac868a">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月16日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0321b64a787b37a95af0568473bfcfc5e5d4189e">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/financial-reports/order-payment-status#asynchronous-monitoring-of-pending-capture-transactions">订单付款状态报告</a>，以阐明默认情况下禁用了对待处理捕获事务的异步监视，并记录启用该操作的步骤。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7be26764bc3f3878c3c78a881ad8912038c7f07f">提交</a></td>
     </tr>
   </tbody>
 </table>
