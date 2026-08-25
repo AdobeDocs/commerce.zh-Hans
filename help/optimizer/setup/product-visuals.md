@@ -3,10 +3,10 @@ title: AEM Assets的产品可视化图表
 description: 了解如何将AEM Assets用于 [!DNL Adobe Commerce Optimizer]中的产品图像。
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
-source-git-commit: 264658bee09a22cfd55828c6960153cc1239d3fb
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+source-git-commit: bf87cbdc38a17ea3f5ad339cb7b4f4f030317450
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**产品可视化图表**&#x200B;是随[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起提供的包的名称。 它结合了[Dynamic Media与OpenAPI功能](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)和[AEM Assets Prime](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-prime)。
+>**产品可视化图表**&#x200B;是随[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起提供的包的名称。 它结合了[Dynamic Media与OpenAPI功能](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)和[AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)。
 >
 >拥有其他AEM Assets许可证（例如，**AEM Assets Ultimate**）的客户可以使用相同的集成；只有AEM版本会影响载入步骤，而不会影响许可证类型。
 
@@ -58,11 +58,11 @@ AEM Assets中的图像将作为目录层摄取，并采用以下源配置：
 
 ## 先决条件
 
-在启用产品可视化图表之前，请确保您满足Commerce Optimizer[&#128279;](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)的先决条件。
+在启用产品可视化图表之前，请确保您满足Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)的[先决条件。
 
 ## 设置
 
-要启用集成，请[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)，其中包含您的[!DNL Commerce Optimizer]和AEM Assets详细信息。 Adobe支持配置集成并在Assets集成服务中注册您的租户。
+要启用集成，请[创建支持票证](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)，其中包含您的[!DNL Commerce Optimizer]和AEM Assets详细信息。 Adobe支持配置集成并在Assets集成服务中注册您的租户。
 
 有关入门信息，请参阅[为Commerce Optimizer配置AEM Assets](../../aem-assets-integration/get-started/configure-aco.md)。
 
@@ -103,3 +103,4 @@ AEM Assets中的图像将作为目录层摄取，并采用以下源配置：
 * [目录层](catalog-layer.md)
 * [目录视图](catalog-view.md)
 * [AEM Assets集成指南](../../aem-assets-integration/overview.md)
+* [产品可视化限制和边界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
