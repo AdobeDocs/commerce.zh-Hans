@@ -1,32 +1,16 @@
 ---
 title: 成功量度
 description: 成功量度可将insight纳入 [!DNL Adobe Commerce Optimizer] 存储的关键性能量度。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 TQID: https://experienceleague.adobe.com/Z1Ntq9O5Pde8B2N8UCarCf-V5NZw-YiCx78ortu5PwY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 2cb4bac8e36ce8b945eabf31e562a5e7fd097c2a
 workflow-type: tm+mt
-source-wordcount: 2627
+source-wordcount: 2835
 ht-degree: 0%
 
 ---
@@ -70,6 +54,26 @@ ht-degree: 0%
    **热门亮点**、**收入**、**转化**、**参与度**、**客户获取**&#x200B;和&#x200B;**跳出率**&#x200B;都基于您的报表配置进行更新。
 
 1. 单击&#x200B;**[!UICONTROL Export]**&#x200B;以将报表另存为PDF。
+
+## 导出报表中的C2PA元数据 {#c2pa-metadata-on-exported-reports}
+
+成功量度报表包含使用创作AI的亮点和摘要。 在将报表导出到PDF时，Adobe会自动将C2PA元数据附加到导出的文件。
+
+C2PA元数据是基于[C2PA开放标准](https://c2pa.org/)的、易于篡改的计算机可读元数据。 元数据记录创作AI用于生成报告中的内容，以及所使用的AI系统、内容是使用创作AI生成或编辑还是使用时间戳等信息。
+
+>[!NOTE]
+>
+>自动附加C2PA元数据。 无需执行其他操作，并且此行为无法关闭。 C2PA元数据不会更改报表的外观。 它们是PDF中携带的不可见元数据。
+
+**这对您导出的报告意味着什么**
+
+- 将成功量度报表导出到PDF时，导出的文件包含C2PA元数据。
+- 当您共享或下载C2PA元数据时，该元数据会随PDF一起传输。 支持C2PA元数据的第三方平台可以读取此元数据并向查看者显示透明度信息。
+- 您可以通过将附加到任何文件的C2PA元数据上载到[Inspect](https://contentauthenticity.adobe.com/inspect)来验证它。
+
+![检查样本](../assets/inspect-sample.png)
+
+了解有关[生成AI内容透明度](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)的更多信息。
 
 ## 将成功量度和Sites Optimizer结合使用
 
