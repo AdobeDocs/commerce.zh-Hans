@@ -4,9 +4,9 @@ description: 了解如何将AEM Assets用于 [!DNL Adobe Commerce Optimizer]中�
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
-source-git-commit: 264658bee09a22cfd55828c6960153cc1239d3fb
+source-git-commit: bf87cbdc38a17ea3f5ad339cb7b4f4f030317450
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -103,3 +103,4 @@ AEM Assets中的图像将作为目录层摄取，并采用以下源配置：
 * [目录层](catalog-layer.md)
 * [目录视图](catalog-view.md)
 * [AEM Assets集成指南](../../aem-assets-integration/overview.md)
+* [产品可视化限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)

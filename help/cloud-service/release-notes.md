@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 8f993feaea79eaca19f6ebd3dc5195e287fc4a36
+source-git-commit: 9d128fd11c1b83276f8a2158f1f2fb98a49bf6c5
 workflow-type: tm+mt
-source-wordcount: 5345
+source-wordcount: 6100
 ht-degree: 0%
 
 ---
@@ -48,7 +48,127 @@ ht-degree: 0%
 >
 >如果您正在本地使用Adobe Commerce或在云基础架构上使用Adobe Commerce，请参阅[Adobe Commerce发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/notes/overview)。
 
-## 2026年8月 — 发行说#1 {#latest}
+## 2026年9月 — 发行说#1 {#latest}
+
+[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下项目将于2026年9月1日发布到生产环境。
+
+>[!BEGINSHADEBOX]
+
+### Adobe Commerce as a Cloud Service已更新至2.4.9
+
+[!DNL Adobe Commerce as a Cloud Service]现在包含来自[!DNL Adobe Commerce]版本2.4.9的所有更改。
+
+有关详细信息，请参阅[Adobe Commerce 2.4.9发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)。
+
+### 通过REST API同步沙盒和生产配置
+
+新的`GET`和`PUT /V1/system/config` REST API端点允许集成读取和更新Commerce系统配置值，包括：
+
+* 存储信息
+* 运费和税费设置
+* 付款方式设置
+* B2B和公司设置
+
+这些端点允许管理员以编程方式跨环境同步配置，而不是手动重新配置[!DNL Commerce Admin]。 在沙盒环境中运行`GET /V1/system/config`，然后使用以前检索到的沙盒配置运行`PUT /V1/system/config`，允许您将配置更改从沙盒同步到生产。<!-- ACCS-607, CCSAAS-5346 -->
+
+### 通过GraphQL查询库存可用性
+
+新的`sourceAvailability` GraphQL查询返回一个或多个SKU的按来源库存可用性，因此产品和类别页面等店面可以显示每个库存来源的准确库存信息。<!-- ACCS-933 -->
+
+### 通过GraphQL读取永久愿望清单和帐户共享设置
+
+`storeConfig` GraphQL查询现在返回`persistent_enabled`、`persistent_shopping_cart`、`persistent_options_wishlist`和`share_customer_accounts_scope`配置值，因此店面无需联系支持人员即可访问商户永久购物车和愿望清单设置。<!-- USF-4051 -->
+
+### 按产品、SKU或订单ID搜索客户订单
+
+`CustomerOrdersFilterInput` GraphQL输入现在支持与订单编号、项目SKU或项目名称匹配的可选`search`字段，以及您提供的任何其他过滤器。<!-- USF-4290 -->
+
+### 通过API更新和删除自定义电子邮件模板
+
+新的`PUT`和`DELETE` [自定义电子邮件](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)模板端点允许集成更新和删除自定义电子邮件模板。<!-- CCSAAS-5091 -->
+
+### 通过REST API查看产品选项组和标识符
+
+`GET /V1/products/:sku/options` REST调用现在为每个选项返回`group`和`option_uids`字段，这些字段与GraphQL中已有的标识符匹配。<!-- ACCS-1370 -->
+
+### 新建共享目录事件
+
+以下共享目录事件现在可以使用[!DNL Adobe I/O Events]订阅：<!-- ACCS-1532 -->
+
+* 类别分配(`observer.shared_catalog_assign_categories`)
+* 类别取消分配(`observer.shared_catalog_unassign_categories`)
+* 公司分配(`plugin.magento.shared_catalog.api.company_management.assign_companies`)
+* 公司取消分配(`plugin.magento.shared_catalog.api.company_management.unassign_companies`)
+* 公司取消分配 — 全部(`plugin.magento.shared_catalog.api.company_management.unassign_all_companies`)
+* 共享目录保存(`plugin.magento.shared_catalog.api.shared_catalog_repository.save`)
+* 共享目录删除(`plugin.magento.shared_catalog.api.shared_catalog_repository.delete`)
+
+### 跨采购订单、报价和退货使用公司地址
+
+公司通讯簿现在与其他B2B工作流集成。 使用共享通讯簿的公司可以在以下各项中查看一致的公司范围地址：
+
+* 采购订单
+* 即时购买
+* 礼品注册表
+* 重新排序
+* 退货和RMA
+* 发票
+* 装运
+* 贷项通知单
+* 可协商的引号
+* 报价模板
+
+有关详细信息（包括GraphQL突变和REST端点），请参阅[店面兼容性B2B包更改日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans)，并查看&#x200B;**店面兼容性B2B包v1.0.24**&#x200B;部分。
+
+<!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
+
+### 在[!DNL AEM Assets]中隐藏商店视图中的图像
+
+[!DNL AEM Assets]集成现在支持`hiddenStoreViews`参数，因此导入的图像可在特定存储视图上将作用域设置为隐藏。 这使您能够向不同的区域或人口统计店面显示不同的产品图像。<!-- ACAP-1308 -->
+
+### 在网站范围载入PayPal帐户
+
+商家现在可以直接从[!DNL Commerce Admin]自助服务在网站范围载入其他PayPal帐户。 Payment Services主页现在包括&#x200B;**为网站连接其他PayPal帐户**&#x200B;按钮，该按钮将重定向到付款方法的管理员配置页面。 有关详细信息，请参阅[为网站连接其他PayPal帐户](https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/configure/connect-website-account)。<!-- PAY-6961 -->
+
+### 免费礼品车价格规则
+
+**免费赠品**&#x200B;购物车价格规则现在可在[!DNL Commerce Admin]中用于店面。<!-- AC-17678 -->
+
+此规则允许您在满足规则条件时将免费礼品添加到购物车。
+
+<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+
+### 增强功能和错误修复
+
+此版本中包含以下选定的增强功能、优化和错误修复：
+
+* 修复了使用注册客户的电子邮件下访客订单时可能发生的问题。<!-- CCSAAS-5313 -->
+
+* 修复了重复的数据导出运行可能会导致资源问题的问题。<!-- CCSAAS-5275 -->
+
+* 修复了[!DNL AEM Assets]集成中GraphQL媒体集标签的回退问题。<!-- ACAP-1308 -->
+
+* 修复了[!DNL PayPal]个SDK参数可能影响签出渲染的问题。<!-- PAY-6961 -->
+
+* 修复了在结账时可能出现不支持的[!DNL Payment Services]付款方法的问题。<!-- PAY-6976 -->
+
+* 修复了以下问题：具有数组值字段的事件负载（例如共享目录类别和公司分配事件）可能包含空对象，而不是预期数据。<!-- CEXT-6554 -->
+
+* 修复了配置多个可搜索的客户或客户地址属性可能会导致显示错误的问题。 现在，当您达到限制时，客户网格会通知您。<!-- CCSAAS-5303 -->
+
+* 修复了类别数据导出信息源中的类别图像URL损坏的问题。<!-- ACCS-1571 -->
+
+* 修复了同时在不同共享目录间分配或取消分配产品时可能间歇性失败的问题。<!-- CCSAAS-5287 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年8月 — 发行说#1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -67,8 +187,6 @@ ht-degree: 0%
 此版本中包含以下选定的增强功能、优化和错误修复：
 
 * 修复了通过GraphQL获取客户分配的公司的速度可能较慢的问题。<!-- ACCS-1425 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
@@ -206,8 +324,6 @@ ht-degree: 0%
 
 * 现在，在保存条件webhook时，将验证Webhook正则表达式规则模式。<!-- CEXT-6287 -->
 
-{{accs-release}}
-
 >[!ENDSHADEBOX]
 
 ## 2026年6月 — 发行说#1
@@ -264,8 +380,6 @@ ht-degree: 0%
 
 * GET `V1/customers/{customerId}` REST终结点现在返回`assistance_allowed`配置字段。<!-- USF-4132 -->
 
-{{accs-release}}
-
 >[!ENDSHADEBOX]
 
 ## 2026年5月发行说#1
@@ -301,8 +415,6 @@ ht-degree: 0%
 * 修复了在[!DNL Commerce Admin]中提交订单后可能发生的页面加载问题。<!-- CCSAAS-4413 -->
 
 * 修复了具有相同时间戳的订单可能会在销售订单网格中显示过时的订单状态信息的问题。<!-- CCSAAS-4890 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 

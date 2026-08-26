@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 5964358bb4370fa4fb0c2f4c447bacb3603d0f5e
 workflow-type: tm+mt
-source-wordcount: 3271
+source-wordcount: 3356
 ht-degree: 0%
 
 ---
@@ -44,6 +44,14 @@ ht-degree: 0%
 >[!DNL SaaS data export]扩展是随[!DNL Live Search]、[!DNL Product Recommendations]和[!DNL Catalog Service]一起自动安装的模块集合。 您可以使用[!DNL Composer]检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 2026版 {#release-notes-2026}
+
+### 103.4.32发行版
+
+_2026年8月25日_
+
+![新](../assets/new.svg) **产品信息源中包含的可自定义选项** — 产品可自定义选项（如颜色色板、大小选择或个性化字段）现在导出为`customizable_options`产品属性。 属性包括每个选项的标题、是否需要它及其可用值，因此，连接的Commerce服务可以在店面上显示准确的可自定义选项数据。<!--MDEE-1029-->
+
+![修复](../assets/fix.svg) **可靠的类别权限同步** — 修复了类别权限馈送无法完全重新同步缺少网站ID的配置，从而导致同步错误的问题。<!--MDEE-1411-->
 
 ### 103.4.31发行版
 
