@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2cb4bac8e36ce8b945eabf31e562a5e7fd097c2a
 workflow-type: tm+mt
-source-wordcount: 2627
+source-wordcount: 2835
 ht-degree: 0%
 
 ---
@@ -70,6 +70,26 @@ ht-degree: 0%
    **热门亮点**、**收入**、**转化**、**参与度**、**客户获取**&#x200B;和&#x200B;**跳出率**&#x200B;都基于您的报表配置进行更新。
 
 1. 单击&#x200B;**[!UICONTROL Export]**&#x200B;以将报表另存为PDF。
+
+## 导出报表中的C2PA元数据 {#c2pa-metadata-on-exported-reports}
+
+成功量度报表包含使用创作AI的亮点和摘要。 在将报表导出到PDF时，Adobe会自动将C2PA元数据附加到导出的文件。
+
+C2PA元数据是基于[C2PA开放标准](https://c2pa.org/)的、易于篡改的计算机可读元数据。 元数据记录创作AI用于生成报告中的内容，以及所使用的AI系统、内容是使用创作AI生成或编辑还是使用时间戳等信息。
+
+>[!NOTE]
+>
+>自动附加C2PA元数据。 无需执行其他操作，并且此行为无法关闭。 C2PA元数据不会更改报表的外观。 它们是PDF中携带的不可见元数据。
+
+**这对您导出的报告意味着什么**
+
+- 将成功量度报表导出到PDF时，导出的文件包含C2PA元数据。
+- 当您共享或下载C2PA元数据时，该元数据会随PDF一起传输。 支持C2PA元数据的第三方平台可以读取此元数据并向查看者显示透明度信息。
+- 您可以通过将附加到任何文件的C2PA元数据上载到[Inspect](https://contentauthenticity.adobe.com/inspect)来验证它。
+
+![检查样本](../assets/inspect-sample.png)
+
+了解有关[生成AI内容透明度](https://experienceleague.adobe.com/zh-hans/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)的更多信息。
 
 ## 将成功量度和Sites Optimizer结合使用
 

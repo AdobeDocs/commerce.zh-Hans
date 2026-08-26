@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 9fce350099392041ec9f648ae2d67a459ff53d91
 workflow-type: tm+mt
-source-wordcount: 1744
+source-wordcount: 1784
 ht-degree: 1%
 
 ---
@@ -34,6 +34,10 @@ ht-degree: 1%
 >[!TIP]
 >
 >您可以从右上角菜单查看当前AEM版本： **[!UICONTROL Help]** > **[!UICONTROL About AEM]**。
+
+>[!IMPORTANT]
+>
+>无论您使用哪个选项，[在AEM元数据架构编辑器中配置元数据架构以供资源审批](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration)，以便您能够审批Commerce资源。
 
 ## 启用Commerce集成（自助服务） {#enable-aem-commerce-self-service}
 
@@ -53,7 +57,7 @@ ht-degree: 1%
 
 ### 步骤1：创建项目和环境
 
-在Cloud Manager中创建项目是一个向导过程 — 项目及其环境通过多个步骤进行配置，并在最后保存在一起。
+在Cloud Manager中创建项目是一个多步骤的过程 — 项目及其环境可通过多个步骤配置并一起保存。
 
 1. 在Cloud Manager中选择&#x200B;**[!UICONTROL Add Program]**。
 
@@ -231,7 +235,7 @@ ht-degree: 1%
 
    ![AEM Assets创作](../assets/aem-assets-authoring.png){width="600" zoomable="yes"}
 
-1. 通过选择锤子图标打开管理员工具。
+1. 通过选择锤子图标打开管理工具。
 
    ![AEM作者管理员管理元数据配置文件](../assets/aem-manage-metadata-profiles.png){width="600" zoomable="yes"}
 
@@ -267,17 +271,17 @@ ht-degree: 1%
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. 可选。 要在将已批准的Commerce资源上传到AEM Assets环境时自动对其进行同步，请将`Basic`选项卡上&#x200B;_[!UICONTROL Review Status]_&#x200B;字段的默认值设置为`approved`。
+1. 可选。 要在将已批准的Commerce Assets上传到AEM Assets环境时自动对其进行同步，请将`Basic`选项卡上&#x200B;_[!UICONTROL Review Status]_&#x200B;字段的默认值设置为`approved`。
 
 1. 保存更新。
 
-### 将元数据配置文件应用到Commerce资源源文件夹
+### 将元数据配置文件应用到Commerce Assets源文件夹
 
 1. 从&#x200B;**[!UICONTROL Metadata Profiles]**&#x200B;页面中，选择Commerce集成配置文件。
 
 1. 从操作菜单中选择&#x200B;**[!UICONTROL Apply Metadata Profiles to Folders]**。
 
-1. 选择包含Commerce资源的文件夹。
+1. 选择包含Commerce Assets的文件夹。
 
    创建不存在的Commerce文件夹。
 
