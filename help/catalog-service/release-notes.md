@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
 workflow-type: tm+mt
-source-wordcount: 3064
+source-wordcount: 3099
 ht-degree: 0%
 
 ---
@@ -55,6 +55,10 @@ ht-degree: 0%
 
 ### 2026年8月
 
+**版本数据**：2026年8月24日
+
+![新](../assets/new.svg) **在Adobe Commerce as a Cloud Service**&#x200B;上支持`categoryTree`查询 — `categoryTree` GraphQL查询现在可用于[!DNL Adobe Commerce as a Cloud Service]，因此店面可以按概要文件解析类别并呈现类别树。<!-- DATA-7299 -->
+
 **发行日期**：2026年8月7日
 
 ![修复](../assets/fix.svg)修复了`products` GraphQL查询的问题，该问题导致可自定义选项（`inputOptions`和`options`）的`title`字段在选项的`sku`字段为空或未编制索引时错误地返回`null`，而不是该选项自己的标题。<!--DATA-7304-->
@@ -83,7 +87,7 @@ ht-degree: 0%
 **发行日期**： 2026年5月4日
 <!-- v1.53 -->
 
-![修复](../assets/fix.svg)店面产品价格现在显示所有产品类型的正确货币代码（例如，USD）。 以前，某些产品显示`NONE`而不是预期的货币，从而导致缺少价格。 此更新确保在整个店面一致且准确地呈现价格。<!--DATA-7115-->
+![修复](../assets/fix.svg)店面产品价格现在显示所有产品类型的正确货币代码（例如，美元）。 以前，某些产品显示`NONE`而不是预期的货币，从而导致缺少价格。 此更新确保在整个店面一致且准确地呈现价格。<!--DATA-7115-->
 
 ### 2026年4月
 
