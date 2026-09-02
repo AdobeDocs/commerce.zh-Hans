@@ -18,9 +18,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1028
+source-wordcount: 937
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 安装和配置[[!DNL Product Recommendations]](install-configure.md)时，模块会将行为数据收集部署到您的店面。 此机制从购物者那里收集匿名行为数据并支持[!DNL Product Recommendations]。 例如，`view`事件用于计算`Viewed this, viewed that`推荐类型，`place-order`事件用于计算`Bought this, bought that`推荐类型。
 
-请参阅[开发人员文档](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)以了解有关[!DNL Product Recommendations]事件收集的行为数据的更多信息。
+要了解有关[!DNL Product Recommendations]事件收集的行为数据的更多信息，请参阅[开发人员文档](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)。
 
 >[!NOTE]
 >
@@ -37,7 +37,9 @@ ht-degree: 0%
 
 ## 医疗保健客户
 
-如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Product Recommendations]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Product Recommendations]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/general/general#data-services)。
+如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（该扩展包含在[数据连接](../data-connection/overview.md)扩展中），则[!DNL Product Recommendations]将停止收集店面事件数据，因为它是在客户端生成的。
+
+要继续收集和发送店面事件数据，请为[!DNL Product Recommendations]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/general/general#data-services)。
 
 ## 数据类型和事件
 
@@ -48,16 +50,16 @@ ht-degree: 0%
 
 安装`magento/product-recommendations`模块时，Adobe AI会聚合行为和目录数据，并为每种推荐类型创建产品推荐。 然后，产品推荐服务以包含推荐的产品&#x200B;_项_&#x200B;的小组件的形式将这些推荐部署到您的店面。
 
-某些推荐类型使用购物者的行为数据来训练机器学习模型，以构建个性化推荐。 其他推荐类型仅使用目录数据，不使用任何行为数据。 如果您想快速开始使用网站上的产品推荐，则可以使用以下仅目录推荐类型：
+某些推荐类型使用购物者的行为数据来训练机器学习模型并生成个性化推荐。 其他则仅依赖目录数据。 要快速开始使用产品推荐，请从以下仅目录推荐类型中进行选择：
 
 - `More like this`
 - `Visual similarity`
 
 ### 冷启动
 
-何时可以开始使用使用使用行为数据的推荐类型？ 视情况而定。 这称为&#x200B;_冷启动_&#x200B;问题。
+何时可以开始使用使用使用行为数据的推荐类型？ 视情况而定。 此情况称为&#x200B;_冷启动_&#x200B;问题。
 
-_冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产品推荐，这意味着在网站上部署推荐单元之前，需要等待Adobe AI收集足够的数据来训练其机器学习模型。 模型拥有的数据越多，推荐就越准确和有用。 由于数据收集是在实时网站上进行的，因此最好通过安装和设置`magento/production-recommendations`模块来提前启动此过程。
+_冷启动_&#x200B;问题是机器学习模型训练所需的时间，之后才能生成有效的推荐。 对于产品推荐，Adobe AI必须收集足够的数据来训练其模型，然后才能部署推荐单元。 更多数据通常会提高推荐的准确性和实用性。 由于数据收集是在您的实时网站上进行的，因此请通过安装和配置`magento/product-recommendations`模块提前启动此过程。
 
 下表针对为每种推荐类型收集足够数据所花费的时间提供了一般性指导：
 
@@ -76,15 +78,15 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 
 为了帮助您可视化每个推荐类型的培训进度，[创建推荐](create.md#readiness-indicators)页面会显示就绪指示器。
 
-在实时网站上收集数据并训练机器学习模型时，您可以完成设置推荐所需的其他测试和配置任务。 当您完成此工作后，模型将有足够的数据来创建有用的推荐，从而允许您将其部署到店面。
+当您的实时网站收集数据并训练机器学习模型时，请完成剩余的测试和配置任务。 一旦模型拥有足够的数据来生成有用的推荐，请将推荐单元部署到您的店面。
 
-如果您的网站没有获得大多数产品SKU的足够流量（查看次数、购买次数、趋势），则可能没有足够的数据来完成学习过程。 这会使管理员中的就绪指示器看起来卡住。 就绪指示器旨在为商家提供另一个数据点，以便选择哪种推荐类型更适合他们的商店。 这些数字可作为指引，可能永远不会达到100%。 [了解关于就绪指示器的更多信息](create.md#readiness-indicators)。
+如果您的网站未收到与大多数产品SKU匹配的足够流量（查看次数、购买次数或趋势），则学习过程可能无法完成，从而导致管理员中的就绪指示器显示为卡住。 就绪指示器可帮助商家为其商店选择最佳推荐类型，但它们只是一个指南，并且可能永远不会达到100%。 详细了解就绪指示器。 [了解关于就绪指示器的更多信息](create.md#readiness-indicators)。
 
 ### 备用建议 {#backuprecs}
 
-如果输入数据不足以在一个单元中提供所有请求的推荐项，Adobe Commerce将提供备用推荐以填充推荐单元。 例如，如果您将`Recommended for you`推荐类型部署到主页，则您网站上的首次购物者未生成足够的行为数据来准确推荐个性化产品。 在这种情况下，Adobe Commerce会根据`Most viewed`推荐类型向此购物者显示项目。
+当输入数据不足导致推荐单元无法返回所有请求的项目时，Adobe Commerce会使用备用推荐填充该单元。 例如，在主页上部署`Recommended for you`推荐类型后，首次购物者可能没有为个性化推荐生成足够的行为数据。 在这种情况下，Adobe Commerce根据`Most viewed `推荐类型显示项目。
 
-在输入数据收集不足的情况下，以下推荐类型回退到`Most viewed`推荐类型：
+如果输入数据收集不足，则以下推荐类型回退到`Most viewed`推荐类型：
 
 - `Recommended for you`
 - `Viewed this, viewed that`
@@ -96,9 +98,9 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于产
 
 #### 注意事项
 
-- 广告拦截器和隐私设置可能会阻止捕获事件，并可能导致参与和收入[量度](workspace.md#column-descriptions)少报。 此外，由于购物者离开页面或网络问题，某些事件可能无法发送。
+- 广告拦截器和隐私设置可能会阻止捕获事件，并可能导致参与和收入[量度](workspace.md#column-descriptions)少报。 此外，由于购物者离开页面或网络问题，某些事件未发送。
 - [Headless实施](headless.md)必须实施事件以支持“产品推荐”仪表板。
-- 对于可配置产品，“产品推荐”会使用推荐单元中的父产品的图像。 如果可配置产品未指定图像，则该特定产品的推荐单元将为空。
+- 对于可配置产品，“产品推荐”使用父产品的图像。 如果父产品没有图像，则该产品不会出现在推荐单位中。
 
 >[!NOTE]
 >

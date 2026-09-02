@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 08c4badb4cae27a2cefb9fcb8eb5589bc8264467
 workflow-type: tm+mt
-source-wordcount: 1201
+source-wordcount: 1170
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->在网站搜索方面，Adobe Commerce会为您提供各种选项。 在实施之前，请查看[边界和限制](boundaries-limits.md)信息以确保[!DNL Live Search]适合您的业务需求。
+>为确保[!DNL Live Search]适合您的业务需求，请在实施之前查看[边界和限制](boundaries-limits.md)信息。
 
 ## 架构
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ## 快速导览
 
-由于侧重于速度、相关性和易用性，[!DNL Live Search]对购物者和商家来说都是一个游戏规则的改变者。 请观看以下视频，然后从店面快速浏览[!DNL Live Search]。
+由于侧重于速度、相关性和易用性，[!DNL Live Search]对购物者和商家来说都是一项重大改进。 请观看以下视频，然后从店面快速浏览[!DNL Live Search]。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452579?captions=chi_hans&learn=on)
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 ### 过滤器与Facet
 
-[!DNL Live Search]可以按任何索引为可过滤的属性过滤结果。 Facet只是一个可过滤属性，已配置为在店面中显示为面向购物者的过滤器（例如，品牌、颜色、价格）。
+[!DNL Live Search]可以按任何索引为可过滤的属性过滤结果。 Facet是可过滤属性，已配置为在店面中显示为面向购物者的过滤器（例如，品牌、颜色、价格）。
 
 某些内部字段（如`inStock`）可过滤，但不可多面：
 
@@ -89,13 +89,13 @@ ht-degree: 1%
 
 ### 带有Facet的过滤搜索
 
-筛选搜索使用属性值的多个维度或[方面](facets.md)作为搜索条件。 过滤器的选择由商家定义，并根据返回的产品而发生更改，最常用的方面将固定到列表顶部。
+筛选搜索使用属性值的多个维度或[方面](facets.md)作为搜索条件。 商家可以定义筛选条件的选择，筛选条件会根据返回的产品而变化，最常用的方面将固定到列表顶部。
 
-将Facet用作URL参数： `http://yourwebsite.com?color=red`，Live Search将根据这些属性值筛选结果。
+将Facet用作URL参数： `https://www.mywebsite.com/?color=red`，Live Search将根据这些属性值筛选结果。
 
 ### 同义词
 
-[同义词](synonyms.md)通过包含购物者可能使用的与目录中的词不同的词来扩展查询范围并突出查询重点。 您可以微调同义词词典，让购物者保持参与和购买路径。
+[同义词](synonyms.md)通过包含购物者使用的与目录中的词不同的词来扩展查询范围并突出查询的焦点。 为了让购物者保持参与度，并在购买途中，请微调同义词词典。
 
 ### 促销规则
 
@@ -117,14 +117,14 @@ ht-degree: 1%
 
 ## 目录数据保留策略
 
-如果您连续90天没有在测试环境中提交目录数据的搜索查询，则目录数据将设置为休眠模式，并且任何搜索查询都不会返回任何数据。 此策略不会影响生产环境中的目录数据。
+如果您在90天内未提交测试环境的搜索查询，则目录数据将进入休眠模式并且不返回任何结果。 此策略不会影响生产环境中的目录数据。
 
 ### 不活动的测试环境
 
-要在测试环境中重新激活目录数据，请[提交标题为“重新激活[!DNL Live Search]”的支持请求](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)并包含环境ID。 测试环境中的目录数据应在几小时内恢复。
+要在测试环境中重新激活目录数据，请[提交标题为“重新激活[!DNL Live Search]”的支持请求](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)并包含环境ID。 测试环境中的目录数据应在2小时内恢复。
 
 ### 清空目录
 
 如果您的环境在创建后45天内有一个空目录，则目录数据将设置为休眠模式，并且任何搜索查询都不会返回任何数据。 这包括生产和测试环境。
 
-要在您的环境中重新激活目录数据，请[提交标题为“重新激活[!DNL Live Search]”的支持请求](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)并包含环境ID。 您环境中的目录数据应会在几小时内恢复。
+要在您的环境中重新激活目录数据，请[提交标题为“重新激活[!DNL Live Search]”的支持请求](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)并包含环境ID。 您环境中的目录数据应在2小时内恢复。

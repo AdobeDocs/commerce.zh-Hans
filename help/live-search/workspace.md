@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 127067a1ef47c7d9e51c5792e03b568dd818fe8e
 workflow-type: tm+mt
-source-wordcount: 2323
+source-wordcount: 2360
 ht-degree: 0%
 
 ---
@@ -30,18 +30,18 @@ ht-degree: 0%
 
 要确保工作区上的每个功能区域都包含正确的数据，您需要根据选定的店面实施配置数据收集：
 
-1. Luma — 数据收集现成可用。
+1. Luma — 默认情况下，数据收集可用。
 1. Headless — 根据店面实施，必须手动配置数据收集。
 
-如果您使用的是Headless店面，请参阅以下文档以获得有关需要添加的事件的更多信息：
+要获取有关Headless店面需要添加的事件的更多信息，请参阅以下文档：
 
 - 实时搜索仪表板的[必需事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)。
-- 需要添加为先决条件的[店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
+- 需要添加为先决条件的[店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)。
 - 事件结构的[示例](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ### 医疗保健客户
 
-如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[数据连接](../data-connection/overview.md)扩展的一部分），则不再捕获[!DNL Live Search]使用的店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Live Search]重新启用事件收集。 有关详细信息，请参阅[常规配置](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/general/general#data-services)。
+如果您是医疗保健客户，并且安装了[数据服务HIPAA扩展](../data-connection/hipaa-readiness.md#installation)（它是[Data Connection](../data-connection/overview.md)扩展的一部分），则[!DNL Live Search]不再捕获店面事件数据。 这是因为店面事件数据是在客户端生成的。 要继续捕获和发送店面事件数据，请为[!DNL Live Search]重新启用事件收集。 若要了解详细信息，请参阅[常规配置](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/general/general#data-services)。
 
 ## 设置范围
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 将属性设置为可搜索
 
-要生成目标明确的结果，请查看[可搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`)产品属性集。 为确保相关性，请仅在属性包含含义清晰而简洁的内容时才允许搜索属性。 避免使用包含不太精确、长度较长的文本的属性，例如`description`，虽然默认情况下启用了搜索，但可能会降低搜索结果的精度。 例如，如果人员搜索“短裤”，并且有描述包含“短袖”一词的衬衫，则衬衫将包含在搜索结果中。
+要生成目标明确的结果，请查看[可搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`)产品属性集。 为确保相关性，请仅在属性包含含义清晰而简洁的内容时才允许搜索属性。 避免使用包含不太精确、长度较长的文本的属性，例如`description`，虽然默认情况下启用了搜索，但可能会降低搜索结果的精度。 例如，如果人员搜索“短袖”，并且有描述包含“短袖”一词的衬衫，则衬衫会出现在搜索结果中。
 
 要允许搜索属性，请完成以下步骤：
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 1. 选择要可搜索的属性，如`color`。
 1. 选择&#x200B;**店面属性**&#x200B;并将&#x200B;**在搜索中使用**&#x200B;设置为`yes`。
 
-[!DNL Live Search]还遵循在Adobe Commerce中设置的产品属性的[权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)。 权重较高的属性在搜索结果中的显示位置将较高。
+[!DNL Live Search]还遵循在Adobe Commerce中设置的产品属性的[权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)。 权重较高的属性在搜索结果中显示得越高。
 
 以下属性始终可搜索：
 
@@ -79,13 +79,15 @@ ht-degree: 0%
 
 >[!TIP]
 >
->选择哪些属性使其成为可搜索属性对搜索质量有很大影响。 有关选择可搜索属性和避免常见配置问题的详细指导，请参阅“最佳实践”指南中的[利用产品元数据](best-practice.md#leverage-product-metadata)。
+>选择要使其成为可搜索的属性对搜索质量有重大影响。 有关选择可搜索属性和避免常见配置问题的详细指导，请参阅&#x200B;_最佳实践指南_&#x200B;中的[利用产品元数据](best-practice.md#leverage-product-metadata)。
 
 ### 复杂产品中的属性行为
 
 对于复杂的产品类型（可配置、捆绑和分组产品），[!DNL Live Search]将索引来自父产品和子产品的属性值，从而允许父产品与同一属性的多个值相关联。 这将启用基于变体的筛选；例如，当按“蓝色”筛选时，如果任何变体为蓝色，即使父产品没有颜色集，也会显示可配置的衬衫。
 
-这适用于颜色和大小等属性，但可能会导致诸如`new_arrival`、`product_ranking`、`promotion_label`或自定义价格属性出现意外结果。 例如，如果可配置产品(SKU-001)具有`new_arrival = true`，但其子变体(SKU-001-01)具有`new_arrival = false`，则父产品SKU-001将同时使用值（`true`和`false`）编制索引，以使其显示在任一条件的搜索结果中。
+此行为适用于颜色和大小等属性，但可能会对描述整个产品的属性（如`new_arrival`、`product_ranking`、`promotion_label`和自定义价格）产生意外结果。
+
+例如，假设可配置产品(SKU-001)具有`new_arrival = true`，而它的子变体SKU-001-01具有`new_arrival = false`。 为父产品聚合变量值时，SKU-001将与`new_arrival = true`和`new_arrival = false`一起编制索引。 因此，每个值的搜索结果中都会显示父产品，即使每个值都适用于不同的变体也是如此。
 
 ### 分层搜索和搜索类型扩展
 
@@ -98,9 +100,9 @@ ht-degree: 0%
 通过分层搜索，您可以：
 
 - 使购物者能够在搜索结果中进行搜索。
-- 在分层搜索的第二层中使用`startsWith`和`contains`搜索索引来进一步优化结果。
+- 要进一步优化结果，请在分层搜索的第二层中使用`startsWith`和`contains`搜索索引。
 
-高级搜索功能是使用特定运算符通过[`productSearch`查询](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)中的`filter`参数实现的：
+高级搜索功能是使用特定运算符通过[`productSearch`查询](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search)中的`filter`参数实现的：
 
 - **分层搜索** — 在另一个搜索上下文中搜索 — 使用此功能，您最多可以为搜索查询执行两层搜索。 例如：
 
@@ -118,13 +120,15 @@ ht-degree: 0%
 
   - 在较大的字符串中搜索查询。 例如，如果购物者搜索字符串“HAPE-123”中的产品编号“PE-123”。
 
-    - 注意：此搜索类型不同于现有的[短语搜索](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase)，后者执行自动完成搜索。 例如，如果您的产品属性值为“outdoor pants”，则短语搜索会返回“out pan”的响应，但不会返回“oor ants”的响应。 但是，包含搜索会返回“或蚂蚁”的响应。
+    >[!NOTE]
+    >
+    >此搜索类型与现有的[短语搜索](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#phrase)不同，后者通过匹配单词的开头支持自动完成。 例如，如果产品属性值为“outdoor pants”，则短语搜索会返回“out pan”的结果，因为“out”和“pan”匹配值中单词的开头。 它不会返回“或ants”的结果，因为这些字符串出现在单词中。 包含搜索可匹配单词中任意位置的文本，因此可返回“或蚂蚁”的结果。
 
 这些新条件增强了搜索查询过滤机制以细化搜索结果。 这些新条件不会影响主搜索查询。
 
 #### 实现
 
-1. 在管理员中，[将产品属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)设置为可搜索。
+1. 若要使产品属性可搜索，请转到“管理员”并[设置产品属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)。
 
    查看可搜索的[属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/attributes-input-types)的列表。
 
@@ -132,7 +136,7 @@ ht-degree: 0%
 
    ![指定搜索功能](./assets/search-filters-admin.png)
 
-1. 有关如何使用新的`contains`和`startsWith`搜索功能更新[!DNL Live Search] API调用的示例，请参阅[开发人员文档](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)。
+1. 有关如何使用新的`contains`和`startsWith`搜索功能更新[!DNL Live Search] API调用的示例，请参阅[开发人员文档](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#filtering-using-search-capability)。
 
    您可以在搜索结果页面上实施这些新条件。 例如，您可以在页面上添加新部分，购物者可以进一步细化其搜索结果。 您可以允许购物者选择特定的产品属性，如“制造商”、“部件号”和“说明”。 从该位置，他们使用`contains`或`startsWith`条件在这些属性中搜索。
 
@@ -160,15 +164,15 @@ ht-degree: 0%
 
 ## Facet和同义词
 
-刻面和同义词是另一种增强购物者搜索体验的方式。
+刻面和同义词是另一种提升购物者搜索体验的方式。
 
 [Facet](facets.md)是[!DNL Live Search]中定义的可筛选的产品属性。 您可以在[!DNL Live Search]中将任何可筛选的属性设置为Facet，但您一次可以搜索的Facet数量存在[限制](boundaries-limits.md)。
 
 >[!NOTE]
 >
->仅当产品属性配置具有必需的属性时，才能筛选产品属性： *在搜索中使用=是*、*在搜索结果中使用分层导航=是*&#x200B;和&#x200B;*在分层导航中使用=可筛选（包含结果）*。 如果这些属性缺失或未正确设置，则该属性在Facet配置中不可见。 有关配置说明，请参阅[添加方面](facets-add.md#step-1-add-a-facet)。
+>仅当产品属性具有下列必需的属性时才可筛选：*在搜索中使用=是*、*在搜索结果中使用分层导航=是*&#x200B;和&#x200B;*在分层导航中使用=可筛选（包含结果）*。 如果这些属性缺失或未正确设置，则该属性在Facet配置中不可见。 有关配置说明，请参阅[添加方面](facets-add.md#step-1-add-a-facet)。
 
-[同义词](synonyms.md)是可以定义的术语，可帮助引导用户使用正确的产品。 寻找裤子的用户可能会输入“裤子”或“长裤”。 您可以设置同义词，以便这些搜索词将用户引进“裤子”结果。
+[同义词](synonyms.md)是可以定义的术语，可帮助引导用户使用正确的产品。 寻找裤子的用户可能会输入“裤子”或“长裤”。 您可以设置同义词，以便这些搜索词使用户看到“裤子”结果。
 
 ## Commerce配置设置
 
@@ -178,7 +182,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->强烈建议您使用在Live Search 4.0.0中默认启用的产品列表小组件。 这些小组件旨在完全取代未来版本中的适配器实施。 请参阅[启用产品列表小组件](install.md#enable-product-listing-widgets)以了解详情。
+>Adobe建议您使用在Live Search 4.0.0中默认启用的产品列表小组件。 这些小组件将在未来版本中取代适配器实施。 若要了解详细信息，请参阅[启用产品列表小组件](install.md#enable-product-listing-widgets)。
 
 | Commerce配置设置 | 描述 | 受Popover支持 | 适配器支持 |
 |---|---|---|---|
@@ -203,7 +207,7 @@ ht-degree: 0%
 
 ## 默认属性值
 
-以下产品属性具有[店面属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes)，这些属性由[!DNL Live Search]使用并默认启用。
+以下产品属性具有[店面属性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes)，默认情况下由[!DNL Live Search]使用和启用。
 
 | 属性 | 店面属性 | 属性 |
 |---|---|---|
@@ -213,7 +217,7 @@ ht-degree: 0%
 
 ## 默认的非系统属性属性
 
-下表显示了非系统属性的默认搜索和可过滤属性，包括那些特定于Luma示例数据的属性。 将&#x200B;*Use in Search*&#x200B;属性属性设置为`Yes`可使该属性在[!DNL Live Search]和本机Adobe Commerce中均可搜索。
+下表显示了非系统属性的默认搜索和可过滤属性，包括那些特定于Luma示例数据的属性。 若要使属性在[!DNL Live Search]和本机Adobe Commerce中均可搜索，请将&#x200B;*Use in Search*&#x200B;属性属性设置为`Yes`。
 
 | 属性代码 | 可搜索 | 在分层导航中使用 |
 |--- |--- |--- |

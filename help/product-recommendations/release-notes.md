@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 2233
+source-wordcount: 2260
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Adobe支持最新发布的产品推荐版本。 提供了旧版本的发行说�
 ![修复](../assets/fix.svg)修复和改进
 ![错误](../assets/bug.svg)已知问题
 
-请参阅开发人员文档，以[了解产品支持](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/product-availability)。
+[了解有关产品支持的更多信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/product-availability)。
 
 ## 托管服务更新
 
@@ -52,7 +52,7 @@ _2026年4月28日_
 
 _2026年2月19日_
 
-![修复](../assets/fix.svg)修复了在达到推荐单元的产品限制时，_最近查看的_&#x200B;推荐类型中显示的产品以意外顺序删除的问题。 产品现在按查看产品的先进先出(FIFO)顺序删除。
+![修复](../assets/fix.svg)修复了在达到推荐单元的产品限制时，_最近查看的_&#x200B;推荐类型中显示的产品以意外顺序删除的问题。 产品现在按照先入先出(FIFO)顺序删除，即会查看这些产品。
 
 _2025年11月19日_
 
@@ -73,7 +73,7 @@ _2024年6月28日_
 
 _2023年7月18日_
 
-![新](../assets/new.svg) [!DNL Product Recommendations]现在具有GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/)查询。
+![新](../assets/new.svg) [!DNL Product Recommendations]现在具有GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations)查询。
 
 _2023年4月25日_
 
@@ -194,7 +194,7 @@ _2023年9月15日_
 
 ![新](../assets/new.svg)已添加新模块以支持[Saas价格索引器](../price-index/price-indexing.md)。
 ![新](../assets/new.svg)添加了新的数据导出模块，以支持导出更多产品类型，包括捆绑产品和礼品卡。
-![修复](../assets/fix.svg)产品和价格馈送的表大小已大大减少。 表`catalog_data_exporter_products`和`catalog_data_exporter_product_prices`应该会看到大小的大幅减少。
+![修复](../assets/fix.svg)产品和价格馈送的表大小已大大减少。 表`catalog_data_exporter_products`和`catalog_data_exporter_product_prices`的大小明显减少。
 
 #### 已知限制
 
@@ -208,13 +208,13 @@ _2023年3月20日_
 
 ![新](../assets/new.svg)已更新[!DNL Product Recommendations]以支持Adobe Commerce 2.4.6。
 ![新建](../assets/new.svg)这是一个主要版本版本。 [编辑](install-configure.md#update)项目的根`composer.json`文件。
-![新](../assets/new.svg) [!DNL Product Recommendations]现在支持Commerce中的完整[Inventory management](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/introduction)功能（以前称为“多Source清单”或MSI）。 要启用完全支持，您必须[将](install-configure.md#update)依赖项模块`commerce-data-export`更新为版本102.2.0+。
+![新](../assets/new.svg) [!DNL Product Recommendations]现在支持Commerce中的完整[Inventory management](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/introduction)功能（以前称为多Source清单或MSI）。 要启用完全支持，您必须[将](install-configure.md#update)依赖项模块`commerce-data-export`更新为版本102.2.0+。
 
 ### magento/product-recommendations的4.0.1
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![修复](../assets/fix.svg)以前，[!DNL Product Recommendations]在将显示货币转换为非默认货币时会显示错误。 现在可以正常切换货币。
+![修复](../assets/fix.svg)以前，[!DNL Product Recommendations]在将显示货币转换为非默认货币时显示错误。 现在可以正常切换货币。
 
 ### magento/product-recommendations的4.0.0
 
@@ -252,9 +252,9 @@ _2023年3月20日_
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![新](../assets/new.svg)已添加新的[推荐类型](type.md)：“转化”（查看购物车）、“转化”（查看购买）和“最近查看”。 这些新推荐类型在`magento/product-recommendations`模块3.2.2及更高版本中可用。
-![修复](../assets/fix.svg)修复了Fastly的Web应用程序防火墙(WAF)错误地阻止Cookie的问题
-![修复](../assets/fix.svg)修复了在为该特定商店视图创建推荐时，分配给非默认商店视图的产品未显示在&#x200B;_推荐产品预览_面板中的问题
-![修复](../assets/fix.svg)修复了页面生成器中的某些推荐单元名称阻止推荐单元显示在店面的问题
+![修复](../assets/fix.svg)修复了Fastly的Web应用程序防火墙(WAF)错误地阻止Cookie的问题。
+![修复](../assets/fix.svg)修复了在为该特定商店视图创建推荐时，分配给非默认商店视图的产品未显示在&#x200B;_推荐产品预览_面板中的问题。
+![修复](../assets/fix.svg)修复了页面生成器中的某些推荐单元名称导致推荐单元无法在店面中显示的问题。
 
 ### 3.3.2的magento/product-recommendations
 
@@ -272,7 +272,7 @@ _2023年3月20日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
-![新](../assets/new.svg)添加了对Adobe客户端数据层的支持，以便跨Adobe Commerce功能和服务标准化行为数据收集。 请参阅[自述文件](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md)以了解详情。
+![新](../assets/new.svg)添加了对Adobe客户端数据层的支持，以便跨Adobe Commerce功能和服务标准化行为数据收集。 要了解更多信息，请参阅[自述文件](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md)。
 
 ### 3.2.6的magento/product-recommendations
 
@@ -297,15 +297,15 @@ _2023年3月20日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
-![修复](../assets/fix.svg)修复了目录同步期间的“无法检索可配置产品选项数据”错误
-![修复](../assets/fix.svg)修复了在启用“将存储代码添加到URL”配置时存储代码设置不正确的问题
-![修复](../assets/fix.svg)改进了对Admin Panel配置更改的检测以确保这些更改反映在目录同步数据中
+![修复](../assets/fix.svg)修复了目录同步期间的“无法检索可配置产品选项数据”错误。
+![修复](../assets/fix.svg)修复了在启用“将存储代码添加到URL”配置时存储代码设置不正确的问题。
+![修复](../assets/fix.svg)改进了对Admin Panel配置更改的检测以确保这些更改反映在目录同步数据中。
 
 ### 3.2.2的magento/product-recommendations
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
-![新](../assets/new.svg)添加了在创建时[预览推荐结果](create.md)的功能。 这可能需要您将模块更新到最新版本。
+![新](../assets/new.svg)添加了在创建时[预览推荐结果](create.md)的功能。 此更新要求您将模块更新到最新版本。
 ![新](../assets/new.svg)添加了[从管理员](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/data-services/catalog-sync)监视和管理目录同步进程的功能。
 ![新](../assets/new.svg)添加了[筛选器](filters.md)以控制推荐中显示的产品。
 ![New](../assets/new.svg)已添加[视觉相似度](type.md#visualsim)推荐类型。
@@ -346,7 +346,7 @@ _2023年3月20日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
-![修复](../assets/fix.svg)修复了在目录导出期间可能发生的“无法检索产品选项数据”错误。
+![修复](../assets/fix.svg)修复了目录导出期间发生的“无法检索产品选项数据”错误。
 ![修复](../assets/fix.svg) _[!DNL Product Recommendations]_&#x200B;仪表板上_ Revenue _列中的货币符号现在正确反映了配置的基本货币。
 
 ### 3.0.4的magento/product-recommendations

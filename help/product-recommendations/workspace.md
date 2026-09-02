@@ -15,7 +15,7 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
 source-wordcount: 921
 ht-degree: 0%
@@ -37,13 +37,13 @@ _推荐Workspace_
 
 要确保工作区上的每个功能区域都包含正确的数据，您需要根据选定的店面实施配置数据收集：
 
-1. Luma — 数据收集现成可用。
+1. Luma — 默认情况下，数据收集可用。
 1. Headless — 根据店面实施，必须手动配置数据收集。
 
-如果您使用的是Headless店面，请参阅以下文档以获得有关需要添加的事件的更多信息：
+要获取有关在使用Headless店面时需要添加的事件的更多信息，请参阅以下文档：
 
 - 产品推荐仪表板的[必需事件](events.md)。
-- 需要添加为先决条件的[店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
+- 需要添加为先决条件的[店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework)。
 - 事件结构的[示例](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ## 设置范围

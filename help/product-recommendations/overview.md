@@ -17,16 +17,16 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 744
+source-wordcount: 737
 ht-degree: 0%
 
 ---
 
 # 什么是[!DNL Product Recommendations]？
 
-[!DNL Product Recommendations]可帮助您使用[Adobe AI](https://business.adobe.com/cn/ai.html)在Adobe Commerce店面上显示个性化产品推荐，并使用机器学习了解汇总购物者行为和您的目录。 此概述涵盖了服务限制（包括HIPAA）、数据和隐私（推荐单元出现的位置）、店面实施路径、推荐如何补充产品关系以及目录数据保留。
+[!DNL Product Recommendations]使用[Adobe AI](https://business.adobe.com/cn/ai.html)以及接受过购物者汇总行为和目录数据培训的机器学习功能，在Adobe Commerce店面中提供个性化推荐。 此概述涵盖了服务约束（包括HIPAA）、数据隐私、推荐单元放置、店面实施选项、产品关系集成和目录数据保留。
 
 >[!IMPORTANT]
 >
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## 产品推荐与产品关系
 
-鉴于在线购物不断变化的复杂性，最适合您店面的往往是多种关键技术的组合。 同时使用[!DNL Product Recommendations]和[产品关系](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)可让您在促销产品时拥有更大的灵活性。 您可以利用由Adobe AI提供支持的[!DNL Product Recommendations]，大规模智能地自动执行您的推荐。 然后，在必须手动干预并确保向目标购物者区段提供特定推荐时，或者在必须满足某些业务目标时，您可以利用[相关产品规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)。
+鉴于在线购物不断变化的复杂性，最适合您店面的往往是多种关键技术的组合。 同时使用[!DNL Product Recommendations]和[产品关系](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)可让您在促销产品时拥有更大的灵活性。 要大规模自动化您的推荐，您可以利用由Adobe AI提供支持的[!DNL Product Recommendations]。 然后，在必须手动干预并确保向目标购物者区段提供特定推荐时，或者在必须满足某些业务目标时，您可以利用[相关产品规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)。
 
 通过产品推荐，您可以：
 
@@ -68,18 +68,18 @@ ht-degree: 0%
 
 ## 产品推荐演示
 
-观看此视频以了解[!DNL Product Recommendations]：
+要了解[!DNL Product Recommendations]，请观看此视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
 
 ## 目录数据保留策略
 
-[!DNL Product Recommendations]服务依赖于与您的Adobe Commerce环境保持同步的目录数据。 停止查询数据的非活动目录或环境可以进入休眠，这会影响在您重新激活之前服务返回的内容。
+[!DNL Product Recommendations]服务依赖于与您的Adobe Commerce环境保持同步的目录数据。 停止查询数据的非活动目录或环境可能会变为非活动状态，这影响该服务在您重新激活之前返回的内容。
 
-如果您连续90天未在&#x200B;**测试**&#x200B;环境中提交对目录数据的查询，则目录数据将设置为休眠模式，并且任何查询都不会返回任何数据。 **生产**&#x200B;环境中的目录数据不受90天规则的影响。
+如果您连续90天未在&#x200B;**测试**&#x200B;环境中提交对目录数据的查询，则目录数据将设置为非活动模式，并且任何查询都不会返回任何数据。 90天规则不影响&#x200B;**生产**&#x200B;环境中的目录数据。
 
-如果您的环境在创建45天后有&#x200B;**空目录**，则目录数据将设置为休眠模式，并且不会为任何查询返回任何数据。 这同时适用于生产和测试环境。
+如果您的环境在创建45天后有&#x200B;**空目录**，则目录数据将设置为非活动模式，并且不会为任何查询返回任何数据。 这同时适用于生产和测试环境。
 
 ### 重新激活目录数据
 
-要在休眠后还原目录数据，请[提交标题为“重新激活[!DNL Product Recommendations]”的支持请求](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)并包含环境ID。 目录数据应会在几小时内恢复。
+要在目录数据处于非活动状态后还原该数据，请[提交标题为“重新激活[!DNL Product Recommendations]”的支持请求](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)并包含环境ID。 目录数据应在2小时内恢复。

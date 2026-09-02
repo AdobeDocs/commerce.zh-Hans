@@ -18,16 +18,16 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 1421
+source-wordcount: 1409
 ht-degree: 0%
 
 ---
 
 # 边界和限制
 
-在网站搜索方面，Adobe Commerce会为您提供各种选项。 查看以下边界和限制以确保[!DNL Live Search]和[!DNL Catalog Service]满足您的业务需求。 如果您需要高级搜索功能，例如内容搜索、自带算法(BYOA)或基于属性的促销，请考虑使用第三方搜索解决方案。
+在网站搜索方面，Adobe Commerce会为您提供各种选项。 为了确保[!DNL Live Search]和[!DNL Catalog Service]满足您的业务需求，请查看以下边界和限制。 如果您需要高级搜索功能，例如内容搜索、自带算法(BYOA)或基于属性的促销，请考虑使用第三方搜索解决方案。
 
 ## 常规
 
@@ -40,15 +40,15 @@ ht-degree: 0%
 - 每个属性（包括描述和自定义属性）硬限制为1MB。
 - 搜索适配器不支持使用自定义源模型创建并用作彩块化的产品属性。 若要支持此功能，您必须使用[产品列表页小组件](plp-styling.md)。
 - 不支持自定义产品类型。
-- 不支持用`"is_user_defined": false`编程创建的自定义属性。
-- 您可以使用“开头为”或“包含”条件筛选结果，但存在一些限制，如[开发人员文档](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations)中所述。
+- 不支持使用`"is_user_defined": false`以编程方式创建的自定义属性。
+- 您可以使用“开头为”或“包含”条件筛选结果，但存在一些限制，如[开发人员文档](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#limitations)中所述。
 - 您只能跟踪去年内的绩效指标。
 - 如果搜索查询包含多个单词，则单词之间的空格会导致将它们视为单独的搜索词。 如果要考虑多词搜索查询，请使用[同义词](./synonyms.md)。
 - [!DNL Live Search]不支持本地的[搜索词重定向](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-terms)。 通过使用Fastly或其他自定义配置实施重定向。
 
 ## 索引
 
-- [!DNL Live Search] [索引](indexing.md)每个商店视图最多包含450个产品属性。 其分布情况如下：
+- [!DNL Live Search] [索引](indexing.md)每个商店视图最多包含450个产品属性。 这些属性的分布如下所示：
   - 50个可排序的属性
   - 200个可过滤属性
   - 200个可搜索属性
@@ -61,28 +61,28 @@ ht-degree: 0%
 - 从定义的可过滤属性集中，最多可以将100个属性配置为Facet。
 - 在一个Facet中，最多可返回100个分段。 如果您需要返回100个以上的分段，请[创建一个支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)，以便Adobe分析性能影响并确定为您的环境提高此限制是否可行。
 - 动态Facet会导致大型索引和高序度索引的性能问题。 如果您已创建动态Facet，并且发现任何性能下降或页面未加载但存在超时错误，请尝试将您的Facet更改为Pinded以确定这是否解决了您的性能问题。
-- Stock状态(`quantity_and_stock_status`)不支持作为Facet。 在管理员中，您可以设置[!UICONTROL Display Out of Stock Products] = [!UICONTROL No]以筛选缺货产品。 `[PLP Widget](plp-styling.md)`模块中现成支持此功能。 有关详细信息，请参阅[管理缺货的产品](manage-out-of-stock-products.md)。
+- Stock状态(`quantity_and_stock_status`)不支持作为Facet。 在管理员中，您可以设置[!UICONTROL Display Out of Stock Products] = [!UICONTROL No]以筛选缺货产品。 `[PLP Widget](plp-styling.md)`模块本机支持此功能。 有关详细信息，请参阅[管理缺货的产品](manage-out-of-stock-products.md)。
 - 不支持将日期类型属性作为Facet。
 - 将属性添加为Facet后，对该属性元数据所做的任何更改都不会反映在Facet中。
 - 您最多可以有50个可排序属性和200个可搜索属性。
 
 ## 查询
 
-- [!DNL Live Search]对查询使用唯一的[GraphQL端点](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)以支持动态彩块化和按类型搜索等功能。 尽管与[GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)类似，但存在一些差异，并且某些字段可能不完全兼容。
+- [!DNL Live Search]对查询使用唯一的[GraphQL端点](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)以支持动态彩块化和按类型搜索等功能。 尽管与[GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)类似，但存在一些差异，并且某些字段不完全兼容。
 - 搜索查询中可返回的最大结果数为10,000。
 - 每页结果的最大数量为100。
 - 无法使用日期类型属性筛选结果。
 
 >[!NOTE]
 >
->按位置排序需要有效的`categoryPath`或`categoryIds`筛选器处于活动状态。 [了解详情](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#error-handling-for-categorypath-and-categoryids)。
+>按位置排序需要有效的`categoryPath`或`categoryIds`筛选器处于活动状态。 [了解详情](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#error-handling-for-categorypath-and-categoryids)。
 
 ## 搜索促销
 
 - 每个存储视图的最大搜索推销[规则](rules.md)数为50。
 - 每个规则的最大条件数为10。
 - 每个规则的最大事件数为25。
-- 当选择默认排序顺序“排序依据：最相关”时，规则和手动排名产品将应用于搜索结果。 如果购物者将排序顺序更改为诸如按名称或价格排序，则规则和手动排名不再有效。
+- 当选择默认排序顺序“排序依据：最相关”时，规则和手动排名产品将应用于搜索结果。 如果购物者更改排序顺序，则规则和手动排名不再有效。
 - 为了避免分页响应产生不可预测的结果，固定产品的数量不应超过请求的页面大小。
 
 ## 同义词
@@ -94,7 +94,7 @@ ht-degree: 0%
 - 您可以为每个商店视图为每个类别创建一个规则。
 - 每个规则的最大条件数为10。
 - 每个规则的最大事件数为25。
-- 当在店面中打开特定类别并且存在该类别的规则时，将应用规则。 对于类别促销规则，默认排序顺序为“排序依据：位置”。 如果购物者更改排序顺序，则所有隐藏、固定和隐藏的产品将不再排序。
+- 当在店面中打开特定类别并且存在该类别的规则时，将应用规则。 对于类别促销规则，默认排序顺序为“排序依据：职位”。 如果购物者更改排序顺序，则所有隐藏、固定和隐藏的产品将不再排序。
 
 ## B2B和类别权限
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 ## [!DNL Storefront popover]
 
-- [[!DNL popover]](storefront-popover.md)仅适用于使用&#x200B;*Luma*&#x200B;主题或基于&#x200B;*Luma*&#x200B;的自定义主题的商店。 搜索结果页面上的痕迹导航将没有&#x200B;*Luma*&#x200B;样式。
+- [[!DNL popover]](storefront-popover.md)仅适用于使用&#x200B;*Luma*&#x200B;主题或基于&#x200B;*Luma*&#x200B;的自定义主题的商店。 搜索结果页面上的痕迹导航缺少&#x200B;*Luma*&#x200B;样式。
 - [!DNL popover]不支持&#x200B;*Blank*&#x200B;主题。
 - 快速订购单不支持[!DNL popover]。
 - 不支持愿望清单和产品比较。
