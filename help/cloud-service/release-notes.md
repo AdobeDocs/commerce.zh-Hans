@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 9d128fd11c1b83276f8a2158f1f2fb98a49bf6c5
+source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
 workflow-type: tm+mt
-source-wordcount: 6100
+source-wordcount: 6271
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-以下项目将于2026年9月1日发布到生产环境。
+以下项目将于2026年9月8日发布到生产环境。
 
 >[!BEGINSHADEBOX]
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 * 可协商的引号
 * 报价模板
 
-有关详细信息（包括GraphQL突变和REST端点），请参阅[店面兼容性B2B包更改日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans)，并查看&#x200B;**店面兼容性B2B包v1.0.24**&#x200B;部分。
+有关详细信息，包括GraphQL突变和REST端点，请参阅[店面兼容性B2B包更改日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans#storefront-compatibility-b2b-package-v1-0-24-2026-07-20)。
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -141,6 +141,24 @@ ht-degree: 0%
 此规则允许您在满足规则条件时将免费礼品添加到购物车。
 
 <!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+
+### 按日期和时间计划购物车价格规则
+
+您现在可以设置希望[购物车价格规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)在[!DNL Commerce Admin]中开始或结束的时间。 购物车价格规则网格显示计划时间，并且REST API遵循在`from_date`和`to_date`上提交的时间，而不是将规则设置为午夜。<!-- ACCS-970 -->
+
+<!-- commenting this out until the B2B compatibility package version is live. -->
+
+<!-- ### Use a temporary shipping address at B2B checkout -->
+
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+
+### 在订单历史记录中记录订单编辑
+
+>[!IMPORTANT]
+>
+>默认情况下，此功能处于禁用状态。 要启用此功能，请联系您的Adobe Commerce客户成功经理或创建支持工单。
+
+编辑订单后，Commerce现在可以向新订单的历史记录添加易于用户识别的注释，该注释概述了相对于所替换订单的更改情况。<!-- ACCS-1157 -->
 
 ### 增强功能和错误修复
 
@@ -163,6 +181,12 @@ ht-degree: 0%
 * 修复了类别数据导出信息源中的类别图像URL损坏的问题。<!-- ACCS-1571 -->
 
 * 修复了同时在不同共享目录间分配或取消分配产品时可能间歇性失败的问题。<!-- CCSAAS-5287 -->
+
+* 将&#x200B;**Use in Search Options**&#x200B;设置为“否”，可保持该属性作为网格列可见，但不会计入16列限制。<!-- CCSAAS-5370 -->
+
+* 解决了可能影响管理员导航的问题。<!-- CCSAAS-5232 -->
+
+* 修复了空购物车可能报告非零总数的问题。<!-- ACCS-1730 -->
 
 {{accs-release}}
 
@@ -676,7 +700,7 @@ mutation {
 
 ### App Builder AI编码工具和教程
 
-您现在可以使用[AI编码开发人员工具](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}创建新的[!DNL App Builder]应用程序并将现有[!DNL Adobe Commerce] PHP扩展转换为[!DNL App Builder]应用程序。 以下教程将演示这些工具的使用方法：
+您现在可以使用[AI编码开发人员工具](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"}创建新的[!DNL App Builder]应用程序并将现有[!DNL Adobe Commerce] PHP扩展转换为[!DNL App Builder]应用程序。 以下教程将演示这些工具的使用方法：
 
 * [教程先决条件](./tutorials/tutorial-prerequisites.md)
 * [评级扩展教程](./tutorials/ratings-extension.md)

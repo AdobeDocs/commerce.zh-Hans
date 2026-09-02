@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
+source-git-commit: 695f349ce38a3127beccab83f63f4157cc05e549
 workflow-type: tm+mt
-source-wordcount: 3099
+source-wordcount: 3190
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 0%
 **发行日期**： 2026年5月4日
 <!-- v1.53 -->
 
-![修复](../assets/fix.svg)店面产品价格现在显示所有产品类型的正确货币代码（例如，美元）。 以前，某些产品显示`NONE`而不是预期的货币，从而导致缺少价格。 此更新确保在整个店面一致且准确地呈现价格。<!--DATA-7115-->
+![修复](../assets/fix.svg)店面产品价格现在显示所有产品类型的正确货币代码（例如，USD）。 以前，某些产品显示`NONE`而不是预期的货币，从而导致缺少价格。 此更新确保在整个店面一致且准确地呈现价格。<!--DATA-7115-->
 
 ### 2026年4月
 
@@ -624,6 +624,16 @@ API现在仅返回折扣价格低于产品最低最终价格&#x200B;**的层。*
 - 对于Adobe Commerce as a Cloud Service客户，您的环境中安装了最新版本。
 
 - 对于云上或内部部署的Adobe Commerce，Adobe建议使用编辑器升级云环境中的目录服务中继（最新版本）。
+
+### v3.6.0发布
+
+**发行日期**：2026年8月31日
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
+
+![新建](../assets/new.svg) **可自定义选项导出** — 已更新目录服务元包依赖关系，以包括可自定义选项数据导出器模块(`magento/module-customizable-options-data-exporter`)。 此模块可导出产品的Adobe Commerce可自定义选项，包括可选选项（下拉列表、单选按钮、复选框、多选）和购物者输入选项（文本字段、文本区域、文件、日期、日期和时间、时间），以便它们传播到目录服务所使用的SaaS目录。<!--DATA-7366-->
+
+![新](../assets/new.svg)更新了依赖关系，以保持目录服务与Commerce栈栈之间的兼容性。
 
 ### v3.5.0发布
 

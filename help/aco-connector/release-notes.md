@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 1d14f7827de3274564941765fd2943ecefac5fad
+source-git-commit: 355b319def41c3763bc0dddbe6b32707891bb811
 workflow-type: tm+mt
-source-wordcount: 460
+source-wordcount: 514
 ht-degree: 0%
 
 ---
@@ -40,12 +40,20 @@ ht-degree: 0%
 
 ## 2026版
 
+### 1.0.17版本
+
+_2026年9月1日_
+
+![修复](../assets/fix.svg) **对于具有多个商店视图的商店加快目录同步速度** — 现在，[!DNL Adobe Commerce Optimizer Connector]在提取馈送数据之前，将按商店视图筛选产品和类别，而不是提取每个商店视图并在以后放弃不相关的结果。 此更新显着缩短了具有许多商店视图的目录的同步和重新同步时间。<!--MDEE-1441-->
+
 ### 1.0.16发行版
 
 _2026年8月7日_
 
-![修复](../assets/fix.svg) **目录同步在无效配置上不再停止** — 修复了如果[!DNL Adobe Commerce Optimizer Connector]配置缺失或无效，目录同步可能会无限期运行的问题。 同步现在完成并记录警告，而不是继续运行。 <!--MDEE-1413-->
-![修复](../assets/fix.svg) **更可靠的[!DNL Adobe Commerce Optimizer]管理员请求** — 修复了[!DNL Adobe Commerce Optimizer Connector]可能为[!DNL Adobe Commerce Optimizer]管理员请求使用不正确URL的问题，此问题可能导致这些请求失败。 <!--COMOPT-2288-->
+![修复](../assets/fix.svg) **目录同步在无效配置上不再停止** — 修复了如果[!DNL Adobe Commerce Optimizer Connector]配置缺失或无效，目录同步可能会无限期运行的问题。 同步现在完成并记录警告，而不是继续运行。<!--MDEE-1413-->
+
+![修复](../assets/fix.svg) **更可靠的[!DNL Adobe Commerce Optimizer]管理员请求** — 修复了[!DNL Adobe Commerce Optimizer Connector]可能为[!DNL Adobe Commerce Optimizer]管理员请求使用不正确URL的问题，该问题可能导致这些请求失败。<!--COMOPT-2288-->
+
 ![修复](../assets/fix.svg) **更可靠的刷新和修补操作** — 修复了刷新和修补操作可能针对错误环境的问题，该问题可能导致请求失败。<!--COMOPT-2288-->
 
 ### 1.0.15发行版
