@@ -2,23 +2,13 @@
 title: 从搜索适配器迁移到PLP小组件
 description: 了解如何从已弃用的搜索适配器迁移到 [!DNL Live Search] 产品列表页面小组件。
 TQID: https://experienceleague.adobe.com/YAwhAbTVeYpGYKh4dTe1umcfgoRUOg8QPZNIiGFjKVo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2105
+source-wordcount: 2114
 ht-degree: 0%
 
 ---
@@ -45,9 +35,9 @@ ht-degree: 0%
 
 1. 备份数据库和代码。
 1. 记录当前的自定义项。
-1. 查看[边界和限制](boundaries-limits.md)以确保PLP构件满足您的需求。
+1. 要确保PLP构件满足您的需求，请查看[边界和限制](boundaries-limits.md)。
 1. 在低流量期间安排迁移。
-1. 通知利益相关者店面行为可能发生更改。
+1. 要准备利益相关者，请通知他们店面行为可能发生变化。
 
 **查看当前实施**：
 
@@ -95,7 +85,7 @@ ht-degree: 0%
 - 覆盖Luma模板的自定义PLP布局。
 - 用于定位搜索适配器特定元素的自定义CSS或JavaScript。
 - PLP或相关文件的自定义模板修改。
-- 主题不会从Luma继承（例如，从头开始自定义主题）。
+- 主题不会继承自Luma（例如，自定义主题是独立创建的）。
 
 **自定义产品属性**：
 
@@ -131,7 +121,7 @@ ht-degree: 0%
 
 ### 步骤1：升级[!DNL Live Search]
 
-将您的[!DNL Live Search]扩展升级到版本4.0或更高版本，以访问PLP构件。
+要访问PLP小组件，请将您的[!DNL Live Search]扩展升级到4.0或更高版本。
 
 **角色**：商家或合作伙伴
 
@@ -147,7 +137,7 @@ ht-degree: 0%
    bin/magento module:enable Magento_AdvancedSearch
    ```
 
-1. 更新`composer.json`以要求[!DNL Live Search] 4.0或更高版本：
+1. 若要要求[!DNL Live Search] 4.0或更高版本，请更新`composer.json`：
 
    ```json
    "require": {
@@ -180,7 +170,7 @@ ht-degree: 0%
 
 **角色**：商家
 
-对于[!DNL Live Search] 4.0.0+的新安装，默认启用PLP小组件。 如果从早期版本升级：
+对于新安装，[!DNL Live Search] 4.0.0+在默认情况下启用PLP构件。 如果从早期版本升级：
 
 1. 转到&#x200B;**[!UICONTROL Stores]** >设置> **[!UICONTROL Configuration]**。
 1. 导航到&#x200B;**[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**。
@@ -280,7 +270,7 @@ ht-degree: 0%
 
 ### 具有自定义源模型的产品属性
 
-在此方案中，您的方面将产品属性与自定义源模型结合使用，而搜索适配器不支持这些自定义源模型，但PLP构件也支持这些自定义源模型。
+在此方案中，彩块化基于具有自定义源模型的产品属性。 尽管搜索适配器不支持这些源型号，但PLP小组件支持。
 
 **角色**：贸易商（管理员配置）
 
@@ -333,7 +323,7 @@ ht-degree: 0%
 
 **选项3：将GTM替换为Adobe Analytics**
 
-- 考虑迁移到[Adobe Analytics](https://business.adobe.com/cn/products/adobe-analytics.html)（如果适用）。
+- 考虑迁移到[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html)（如果适用）。
 - 请联系客户工程部门以获取指导。
 
 **联系对象**：提交支持票证以获取GTM兼容性更新或客户工程部门帮助。
@@ -366,7 +356,7 @@ ht-degree: 0%
    - 测试事件数据流向Adobe Commerce。
 
 1. **配置Facet排序**：
-   - 对于Headless实施，Facet可以按计数排序。
+   - 对于Headless实施，您可以按计数对Facet进行排序。
    - 在&#x200B;**[!UICONTROL Live Search]** > **[!UICONTROL Facets]**&#x200B;工作区中进行配置。
    - 将&#x200B;**[!UICONTROL Sort Type]**&#x200B;设置为&#x200B;**Count**&#x200B;以获得更好的UX。
 
@@ -423,20 +413,20 @@ ht-degree: 0%
 **与搜索适配器的功能差异**：
 
 - **颜色样本**： `color`属性的拼写必须与`color`完全相同（不是“颜色”或自定义名称），样本才能正常工作。
-- **主题样式**：自定义主题类不由构件继承；必须定位特定于构件的CSS类。
+- **主题样式**：构件不继承自定义主题类。 您必须定位特定于构件的CSS类。
 - **自定义产品类型**：小部件中不支持。
 
 **性能注意事项**：
 
-- 大型目录（50,000多种产品）的初始页面加载时间可能会较长。
+- 大型目录（50,000多种产品）的初始页面加载时间较长。
 - 具有许多值的多个Facet可能会影响性能。
-- 移动设备性能可能会因目录大小而异。
+- 移动设备性能因目录大小而异。
 
 **兼容性问题**：
 
 - Google Tag Manager兼容性问题（请参阅[GTM方案](#google-tag-manager-gtm-integration)）。
-- 某些第三方扩展可能会与PLP构件冲突。
-- 自定义签出扩展可能需要更新。
+- 某些第三方扩展与PLP构件冲突。
+- 自定义签出扩展需要更新。
 
 ## 获取帮助
 
@@ -458,7 +448,7 @@ ht-degree: 0%
 - Headless或PWA实施
 - 自定义事件跟踪
 
-要联系Adobe支持，请参阅[帮助中心用户指南](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+要联系Adobe支持，请参阅[Adobe帮助中心用户指南](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 ## 常见问题解答
 
@@ -482,7 +472,7 @@ ht-degree: 0%
 
 **问：是否需要重新配置我的Facet？**
 
-答：通常不会，但是如果您受限于带有搜索适配器的自定义源模型属性，那么现在可以将它们与PLP构件一起使用。
+答：不行。 您可以继续使用现有Facet配置。 但是，如果搜索适配器以前限制您在自定义源模型中使用产品属性，您现在可以将这些属性与PLP构件一起使用。
 
 **问：我的自定义CSS呢？**
 

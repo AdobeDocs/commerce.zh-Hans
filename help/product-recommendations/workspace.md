@@ -3,19 +3,11 @@ title: '[!DNL Product Recommendations] Workspace'
 description: 了解如何配置、管理和监控产品推荐性能。
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
 TQID: https://experienceleague.adobe.com/1dnLBQhNwu1rP0FtnvUGMGpdbKveACW9SNMBIHYzmAg
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
 source-wordcount: 921
 ht-degree: 0%
@@ -37,18 +29,18 @@ _推荐Workspace_
 
 要确保工作区上的每个功能区域都包含正确的数据，您需要根据选定的店面实施配置数据收集：
 
-1. Luma — 数据收集现成可用。
+1. Luma — 默认情况下，数据收集可用。
 1. Headless — 根据店面实施，必须手动配置数据收集。
 
-如果您使用的是Headless店面，请参阅以下文档以获得有关需要添加的事件的更多信息：
+要获取有关在使用Headless店面时需要添加的事件的更多信息，请参阅以下文档：
 
 - 产品推荐仪表板的[必需事件](events.md)。
-- 需要添加为先决条件的[店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
+- 需要添加为先决条件的[店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework)。
 - 事件结构的[示例](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ## 设置范围
 
-最初，所有推荐设置的[范围](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/websites-stores-views)设置为`Default Store View`。 如果您的Commerce安装包含多个存储视图，请将&#x200B;**范围**&#x200B;设置为您的建议适用的[存储视图](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
+最初，所有推荐设置的[范围](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)设置为`Default Store View`。 如果您的Commerce安装包含多个存储视图，请将&#x200B;**范围**&#x200B;设置为您的建议适用的[存储视图](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
 
 ## 设置量度日期范围
 

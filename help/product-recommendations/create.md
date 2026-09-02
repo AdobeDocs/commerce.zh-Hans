@@ -3,19 +3,13 @@ title: 创建新推荐
 description: 了解如何创建产品推荐单元。
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
 TQID: https://experienceleague.adobe.com/K3cKFg-m22bUzlupyhsHgDVxaJka7xhOvFnOt8wDdII
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1491
 ht-degree: 0%
 
 ---
@@ -35,11 +29,11 @@ _推荐单元_
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**营销** > _促销活动_ > **产品推荐**&#x200B;以显示&#x200B;_产品推荐_&#x200B;工作区。
 
-1. 指定要显示推荐的[存储视图](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/websites-stores-views)。
+1. 指定要显示推荐的[存储视图](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)。
 
    >[!NOTE]
    >
-   > 必须在默认的存储区视图中创建Page Builder推荐单元，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅[添加内容 — 产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)。
+   > 必须在默认的存储区视图中创建Page Builder推荐单元，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅[添加内容 — 产品推荐](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)。
 
 1. 单击&#x200B;**创建推荐**。
 
@@ -49,14 +43,14 @@ _推荐单元_
 
    >[!NOTE]
    >
-   > 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面上不支持产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
+   > 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面上不支持产品推荐](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
 
    * 主页
    * 类别
    * 产品详细信息
    * 购物车
    * 确认
-   * [页面生成器](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [页面生成器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    您最多可以为每种页面类型创建50个有效的推荐单位。 当达到限制时，页面类型将灰显。
 
@@ -83,7 +77,7 @@ _推荐单元_
    ![推荐顺序](assets/create-recommendation-select-placement.png)
    _页面上的推荐顺序_
 
-1. （可选）在&#x200B;_筛选器_&#x200B;部分中，[应用筛选器](filters.md)以控制推荐单元中显示的产品。
+1. （可选）若要控制推荐单元中显示的产品，请在&#x200B;_筛选器_&#x200B;部分中[应用筛选器](filters.md)。
 
    ![推荐筛选器](assets/create-recommendation-filter-products.png)
    _推荐产品筛选器_
@@ -100,23 +94,23 @@ _推荐单元_
 
 ## 就绪指示器
 
-就绪指示器根据可用的目录和行为数据显示哪些推荐类型将表现最佳。 您还可以使用就绪指示器来确定您的[事件](events.md)是否存在问题，或者您是否有足够的流量来填充推荐类型。
+就绪指示器显示哪些推荐类型对您的可用目录和行为数据表现最佳。 使用它们可以识别事件问题或流量不足以填充推荐类型。
 
-就绪指示器可分为[基于静态的](#static-based)或[基于动态的](#dynamic-based)。 基于静态的仅使用目录数据；而基于动态的则使用来自购物者的行为数据。 该行为数据用于[训练机器学习模型](events.md)以构建个性化推荐并计算其准备程度分数。
+就绪指示器分为两类：[基于静态的](#static-based)和[基于动态的](#dynamic-based)。 基于静态的推荐仅使用目录数据。 基于动态的推荐使用购物者的行为数据来训练机器学习模型，生成个性化推荐，并计算每个推荐的就绪性分数。
 
 ### 就绪指示器的计算方式
 
 准备情况指示指示指示对模型进行多少培训。 指标取决于所收集的事件类型、与之交互的产品宽度和目录大小。
 
-就绪指示器百分比的计算方法可指明根据推荐类型可推荐的产品数量。 产品统计是根据目录的总体大小、交互数量（例如查看次数、点击次数、添加到购物车的次数）以及在特定时间范围内注册这些事件的SKU的百分比来应用的。 例如，在节假日流量高峰期，就绪指示器显示的值可能高于正常流量时的值。
+就绪性指标百分比用于估计可能针对给定推荐类型推荐的产品比例。 它是使用目录大小、交互数量以及在定义的时间范围内记录相关事件的SKU的百分比来计算的。 例如，在假日流量高峰期间，就绪指示器可能比正常流量期间更高。
 
-由于这些变量，就绪指示器百分比可能会波动。 这解释了为何您可能会看到推荐类型进出“准备部署”。
+由于这些变量，就绪指示器百分比可能会波动。 这解释了为何推荐类型在“准备部署”之间波动。
 
 就绪指标的计算基于两个因素：
 
 * 足够的结果集大小：在大多数情况下返回的结果是否足够以避免使用[备份建议](events.md#backuprecs)？
 
-* 充分的结果集多样性：返回的产品是否代表您目录中的各种产品？ 此因素的目标是避免少数产品成为整个站点中唯一推荐的项目。
+* 返回的产品是否代表您目录中的各种产品？ 此因素有助于确保整个网站中的推荐不限于一小部分产品。
 
 基于上述因素，就绪值计算并显示如下：
 
@@ -168,7 +162,7 @@ _推荐类型_
 >
 >指标可能永远不会达到100%。
 
-依赖目录数据的推荐类型的就绪指示器百分比变化不大，因为商人的目录变化不频繁。 但是，基于购物者行为数据的推荐类型的就绪指示器百分比可能会经常更改，具体取决于购物者的日常活动。
+基于目录的推荐类型的就绪性百分比通常变化不大，因为目录相对稳定。 相反，基于购物者行为数据的推荐类型的就绪百分比可能会随着购物者日常活动而频繁变化。
 
 #### 如果就绪指示器百分比很低，该怎么办
 
@@ -180,16 +174,16 @@ _推荐类型_
 
 下面列出了常见低就绪分数的可能原因和解决方案：
 
-* **基于静态** — 这些指示器的百分比较低可能是由于缺少可显示产品的目录数据所致。 如果它们低于预期值，则完全同步可以修复此问题。
-* **基于动态** — 基于动态的指示器的低百分比可能是由以下原因造成的：
+* **基于静态的** — 可显示产品缺少目录数据导致这些指示器的百分比较低。 如果它们低于预期值，则完全同步可以修复此问题。
+* **基于动态** — 以下因素导致基于动态的指标所占百分比较低：
 
-   * 在必需的[storefront事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)中缺少相应推荐类型（requestId、产品上下文等）的字段。
-   * 存储区上的低流量，因此我们收到的行为事件量很低。
-   * 您商店中不同产品的店面行为事件多样性很低。 例如，如果在大多数情况下仅查看或购买了10%的产品，则相应的就绪指示器将会较低。
+  * 在必需的[storefront事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)中缺少相应推荐类型（requestId、产品上下文等）的字段。
+  * 存储区上的低流量，因此我们收到的行为事件量很低。
+  * 您商店中不同产品的店面行为事件多样性很低。 例如，如果在大多数情况下仅查看或购买了10%的产品，则相应的就绪指示器将会较低。
 
 ## 预览推荐 {#preview}
 
-_推荐的产品预览_&#x200B;面板始终随示例产品选择提供，这些产品在部署到店面时可能会出现在推荐单元中。
+将&#x200B;_推荐的产品预览_&#x200B;面板部署到店面时，该面板始终随推荐单元中显示的示例产品选项一起提供。
 
 要在非生产环境中工作时测试推荐，您可以从[不同的源](settings.md)获取推荐数据。 这允许商家在部署到生产环境之前试验规则并预览推荐。
 
@@ -200,9 +194,9 @@ _推荐的产品预览_&#x200B;面板始终随示例产品选择提供，这些�
 | 价格 | 产品的价格。 |
 | 结果类型 | 主要 — 表明收集的训练数据足以显示推荐。<br />备份 — 表明收集的训练数据不足，因此使用备份推荐来填充插槽。 转到[行为数据](events.md)了解有关机器学习模型和备份推荐的更多信息。 |
 
-在创建推荐单元时，请尝试使用页面类型、推荐类型和过滤器，以立即实时获取有关将包含的产品的反馈。 当您开始了解要显示哪些产品时，可以配置推荐单元以满足您的业务需求。
+要实时查看推荐单元包含哪些产品，请在创建推荐单元时试验页面类型、推荐类型和过滤器。 然后，根据返回的产品配置设备以满足您的业务需求。
 
-Adobe Commerce [筛选器](filters.md)建议，以避免在单个页面上部署多个推荐单元时显示重复的产品。 因此，预览面板中显示的产品可能与店面中显示的产品不同。
+在同一页面上部署多个推荐单元时，Adobe Commerce使用[筛选器](#filters.md)从显示的推荐中删除重复的产品。 因此，预览面板可能显示与店面不同的产品集。
 
 >[!NOTE]
 >

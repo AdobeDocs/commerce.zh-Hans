@@ -3,33 +3,30 @@ title: 产品列表页面小组件
 description: 正在启用和设置 [!DNL Live Search Product Listing Page Widget]的样式
 exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
 TQID: https://experienceleague.adobe.com/rEQBfgR9CqVBTFtBtq21QFZ6L5ZvoWJ02VI2xiWqAcw
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 539
+source-wordcount: 524
 ht-degree: 0%
 
 ---
 
 # 产品列表页面小组件
 
-[!DNL Live Search Product Listing Page Widget] (PLP)使用Commerce Services平台提供高性能、可搜索且可彩块化的产品列表页面。 本主题介绍如何启用和设置PLP小组件的样式。
+[!DNL Live Search Product Listing Page Widget] (PLP)使用Commerce Services平台提供高性能、可搜索且可面向的产品列表页面。 本主题介绍如何启用和设置PLP小组件的样式。
 
 ## 启用PLP小组件
 
 安装[!DNL Live Search]服务后，默认搜索功能会自动转换为[!DNL Live Search]。
 
-默认情况下，新安装已启用[!DNL Live Search] PLP小组件。
+新安装默认启用[!DNL Live Search] PLP小组件。
 
-如果您正在升级[!DNL Live Search]，并且PLP构件已关闭，则它仍将处于关闭状态。
+如果在PLP小部件被禁用时升级[!DNL Live Search]，则它在升级后仍保持禁用状态。
+
+
 
 >[!NOTE]
 >
@@ -50,15 +47,15 @@ ht-degree: 0%
 
 ## 构件功能
 
-PLP小组件提供以下开箱即用的功能：
+PLP小组件提供以下标准功能：
 
 - 添加到购物车按钮 — 仅适用于简单产品。
 - 每个产品有多个图像 — 为可配置产品选择不同颜色时，图像可能会发生更改。
-- 支持颜色样本 — 请注意，color属性的拼写必须为`color`才能正确验证代码。
+- 支持颜色样本 — 请注意，颜色属性的拼写必须为`color`，代码才能正确验证。
 
 ### 自定义构件
 
-除了PLP小组件的现成功能外，您还可以进一步自定义该小组件以包含以下功能：
+除了PLP小组件的标准功能外，您还可以进一步自定义该小组件以包含以下功能：
 
 - 按属性筛选
 - 多语言支持
@@ -72,11 +69,11 @@ PLP小组件提供以下开箱即用的功能：
 
 ## 样式设置示例
 
-您可以使用[CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/)自定义PLP小组件的外观，以匹配您的网站。
+您可以使用[CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/)自定义PLP小部件的外观以匹配您的网站。
 
 >[!NOTE]
 >
->不会继承Adobe Commerce主题中自定义类的元素。 这些元素必须由其特定类定位以匹配自定义类；主操作类不适用于构件按钮。 CSS中的常规目标元素是继承的；`button`适用于构件按钮。
+>不会继承Adobe Commerce主题中自定义类的元素。 按元素的特定类定位这些元素以匹配自定义类；主操作类在小组件按钮上无效。 CSS中的常规目标元素是继承的；`button`适用于构件按钮。
 
 高亮显示的div包含目标类`ds-sdk-product-item__product-name`。
 
@@ -196,10 +193,10 @@ PLP小组件提供以下开箱即用的功能：
 - `.ds-sdk-product-item__product-name`
 - `.ds-sdk-product-item__product-options`
 - `.ds-sdk-product-price`
-   - `.ds-sdk-product-price--no-discount`
-   - `.ds-sdk-product-price--grouped`
-   - `.ds-sdk-product-price--bundle`
-   - `.ds-sdk-product-price--discount`
+  - `.ds-sdk-product-price--no-discount`
+  - `.ds-sdk-product-price--grouped`
+  - `.ds-sdk-product-price--bundle`
+  - `.ds-sdk-product-price--discount`
 
 ![产品](assets/plp-css-product.png)
 
