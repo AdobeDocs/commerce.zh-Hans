@@ -4,10 +4,19 @@ description: Adobe Commerce中 [!DNL Product Recommendations] 的最新发行信
 feature: Services, Recommendations, Release Notes
 exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
 TQID: https://experienceleague.adobe.com/cr5tBPTFRNlSTqtFNfUWS6p1LdhSrir28x3N1WC4Zw8
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
 workflow-type: tm+mt
 source-wordcount: 2322
@@ -245,7 +254,7 @@ _2023年3月20日_
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![新](../assets/new.svg)已添加对[B2B的支持](onboarding.md#b2bsupport) [!DNL Product Recommendations]
-![新](../assets/new.svg)已通过命令行将目录数据](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)同步到Commerce服务的新馈送添加到[
+![新](../assets/new.svg)已通过命令行将目录数据[&#128279;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)同步到Commerce服务的新馈送添加到
 
 ### 3.3.3的magento/product-recommendations
 
@@ -347,7 +356,7 @@ _2023年3月20日_
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.x及更高版本
 
 ![修复](../assets/fix.svg)修复了目录导出期间发生的“无法检索产品选项数据”错误。
-![修复](../assets/fix.svg) _[!DNL Product Recommendations]_仪表板上_ Revenue _列中的货币符号现在正确反映了配置的基本货币。
+![修复](../assets/fix.svg) _[!DNL Product Recommendations]_&#x200B;仪表板上_ Revenue _列中的货币符号现在正确反映了配置的基本货币。
 
 ### 3.0.4的magento/product-recommendations
 
