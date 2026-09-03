@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 355b319def41c3763bc0dddbe6b32707891bb811
+source-git-commit: 4a3bb899f05e489cbd5b5c46909085e204751dc5
 workflow-type: tm+mt
-source-wordcount: 514
+source-wordcount: 544
 ht-degree: 0%
 
 ---
@@ -39,6 +39,12 @@ ht-degree: 0%
 ![已知问题](../assets/bug.svg)已知问题
 
 ## 2026版
+
+### 1.1.0发行版
+
+_2026年9月2日_
+
+![新](../assets/new.svg) **目录同步中现在包含的类别属性**- [!DNL Adobe Commerce Optimizer Connector]现在将类别属性及其元数据同步到[!DNL Adobe Commerce Optimizer]，因此自定义类别属性可用于促销。<!--MDEE-1373-->
 
 ### 1.0.17版本
 
