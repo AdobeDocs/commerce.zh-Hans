@@ -3,41 +3,20 @@ title: 迁移到 [!DNL Adobe Commerce as a Cloud Service]
 description: 了解如何迁移到 [!DNL Adobe Commerce as a Cloud Service]。
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f56d26ed-050b-4fb7-b29b-8e6e994e80a2id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: eb30f47f-d87a-400f-8f78-63ce7979ff56id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
 workflow-type: tm+mt
-source-wordcount: 3302
+source-wordcount: 3372
 ht-degree: 0%
 
 ---
@@ -67,21 +46,17 @@ Adobe提供了围绕[三个迁移工具](#migration-tools-workflow)构建的集�
 
 ![迁移流程图](../assets/migration-flow.png)
 
-### PaaS和SaaS比较
+### SaaS和PaaS比较
 
-[!DNL Adobe Commerce on Cloud]或内部部署(PaaS)和[!DNL Adobe Commerce as a Cloud Service] (SaaS)的管理方式以及商家与平台的交互方式有所不同。
+Adobe Commerce在不同的部署模型中可用。 主要区别在于基础架构管理、应用程序控制、定制和升级职责的级别。
 
-**主要差异**
+[!DNL Adobe Commerce as a Cloud Service]、[!DNL Adobe Commerce on Cloud]和[!DNL Adobe Commerce on-premises]的管理方式以及商家与平台的交互方式有所不同。
 
-- 仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
-- **[!DNL Adobe Commerce on Cloud Infrastructure]**：商家管理应用程序代码、升级、修补和基础结构配置。
-- **[!DNL Adobe Commerce]本地**：商家在Adobe的托管环境中管理应用程序代码、升级、修补和基础架构配置。
-
-  >[!NOTE]
-  >
-  >[共享责任模型](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/security-and-compliance/shared-responsibility)，适用于服务（MySQL、Elasticsearch等）。
-
-- [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} **SaaS（新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe完全管理核心应用程序、基础架构和更新。 商家专注于通过可扩展性点(API、App Builder、UI SDK)进行自定义。 核心应用程序代码已锁定。
+| Adobe Commerce产品 | 托管模型 | 负责服务和更新 |
+|---|---|---|
+| **[!DNL Adobe Commerce as a Cloud Service]** | SaaS —Adobe托管 | Adobe管理核心Commerce应用程序、基础架构和更新。 商家通过受支持的API和可扩展性服务(API、[!DNL Adobe Developer App Builder]、UI SDK)扩展平台。 商家无法修改核心应用程序代码。 |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — 由Adobe管理 | [分担责任](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)： Adobe管理托管的平台。 商家管理应用程序级别的修补程序、自定义代码、配置并将扩展和平台服务更新到支持的版本，包括：数据库、缓存、搜索、PHP运行时、Web服务器和消息队列。 |
+| **[!DNL Adobe Commerce on-premises]** | 由商家或托管提供商托管 | [商家责任](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview#merchant-responsibilities)：商家或其托管提供商管理基础架构和所有平台服务。 |
 
 **架构影响**
 
@@ -94,7 +69,7 @@ Adobe提供了围绕[三个迁移工具](#migration-tools-workflow)构建的集�
 
 - Adobe Developer App Builder的[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)和[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
+- [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
 - 使用[Commerce Cloud Manager](../getting-started.md#create-an-instance)进行自助配置
 
 ### 迁移历程
@@ -186,7 +161,9 @@ Adobe提供了围绕[三个迁移工具](#migration-tools-workflow)构建的集�
 
 每次[!DNL Adobe Commerce as a Cloud Service]迁移都从评估开始。 这是一种经济高效的方法，可在实施开始之前确定范围、减少不确定性和创建共享迁移蓝图。
 
-有关评估工具和下游开发人员工作流的详细信息，请参阅[Adobe Commerce开发人员MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/)。
+有关评估工具和下游开发人员工作流的详细信息，请参阅[Adobe Commerce开发人员MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)。
+
+有关与迁移评估工具集成的Commerce开发人员代理的更多信息，请参阅[Commerce开发人员代理](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
 ## 代码和店面迁移（Commerce开发人员MCP）
 
@@ -216,7 +193,7 @@ Adobe提供了围绕[三个迁移工具](#migration-tools-workflow)构建的集�
 
 ### 店面现代化
 
-在前端，Commerce开发人员MCP使用Adobe Commerce样板、放置组件和EDS块在Commerce的Edge Delivery Services (EDS)上实现[店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)的现代化。
+在前端，Commerce开发人员MCP使用Adobe Commerce样板、放置组件和EDS块在Commerce的Edge Delivery Services (EDS)上实现[店面](https://experienceleague.adobe.com/developer/commerce/storefront/)的现代化。
 
 Commerce开发人员MCP根据Commerce样板加载现有店面项目。 它通过以下方式使您的店面现代化：
 
@@ -259,7 +236,9 @@ MCP不处理数据迁移。 通过[Commerce数据迁移服务](#data-migration-c
 
 一旦迁移评估工具路线图确定了迁移范围和优先级，代码和店面现代化就会开始。
 
-有关如何安装和使用MCP的更多信息，请参阅[Commerce开发人员MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/)文档。
+有关如何安装和使用MCP的更多信息，请参阅[Commerce开发人员MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)文档。
+
+有关与迁移评估工具集成的Commerce开发人员代理的更多信息，请参阅[Commerce开发人员代理](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
 ## 数据迁移（Commerce数据迁移服务）
 
@@ -315,4 +294,4 @@ Commerce数据迁移服务在全球范围内处于生产状态，并且已经提
 
 查看[批量数据迁移工具指南](bulk-data/migration-tool.md)文档，了解有关工作流、支持的数据和验证的更多信息。
 
-准备源环境的系统集成商还可以使用标准[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)和[Adobe Developer Console](https://developer.adobe.com)作为IMS凭据。
+准备源环境的系统集成商还可以使用标准[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)和[Adobe Developer Console](https://developer.adobe.com)作为IMS凭据。
