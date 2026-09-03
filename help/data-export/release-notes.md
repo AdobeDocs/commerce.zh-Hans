@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5964358bb4370fa4fb0c2f4c447bacb3603d0f5e
+source-git-commit: c08c9248b26b6e3a0271032e869753bece96a8bd
 workflow-type: tm+mt
-source-wordcount: 3356
+source-wordcount: 3412
 ht-degree: 0%
 
 ---
@@ -44,6 +44,12 @@ ht-degree: 0%
 >[!DNL SaaS data export]扩展是随[!DNL Live Search]、[!DNL Product Recommendations]和[!DNL Catalog Service]一起自动安装的模块集合。 您可以使用[!DNL Composer]检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 2026版 {#release-notes-2026}
+
+### 103.4.33发行版
+
+_2026年9月1日_
+
+![修复](../assets/fix.svg) **加快多商店视图目录的重新同步** — 产品和类别馈送现在在提取数据之前按商店视图进行过滤，而不是提取每个商店视图并在以后放弃不相关结果。 此更新显着提高了具有许多存储视图的目录的重新同步性能，尤其是在使用Adobe Commerce Optimizer时。<!--MDEE-1441-->
 
 ### 103.4.32发行版
 
