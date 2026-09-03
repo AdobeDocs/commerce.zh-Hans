@@ -5,23 +5,14 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
 TQID: https://experienceleague.adobe.com/z-ue-sojw9Iewuz-ZToCzkumP3qN-TCWWF3UWdpdIL0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-09-02
-source-git-commit: 299da83bd0a9b776ad6b13482b65af61bffe15fa
+source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
 workflow-type: tm+mt
-source-wordcount: 554
+source-wordcount: 600
 ht-degree: 0%
 
 ---
@@ -57,16 +48,24 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-通过在页面生成器中启用[!DNL Product Recommendations]，您可以将现有的活动[推荐单元](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)添加到在页面生成器中创建的任何内容，例如页面、块和动态块。
+通过在页面生成器中启用[!DNL Product Recommendations]，您可以将现有的活动[推荐单元](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)添加到在页面生成器中创建的任何内容，例如页面、块和动态块。
 
 有关详细说明，请参阅[将 [!DNL Product Recommendations] 与页面生成器内容一起使用](page-builder.md)。
 
 ### 添加视觉相似性推荐类型 {#vissimsupport}
 
-_视觉相似度_&#x200B;推荐类型显示的产品与在产品详细信息页面上查看的产品视觉上相似[&#128279;](type.md#visualsim)。 当产品图像和外观对于购物体验很重要时，它最有用。 要安装此软件，请运行以下命令：
+_视觉相似度_&#x200B;推荐类型显示的产品与在产品详细信息页面上查看的产品视觉上相似[](type.md#visualsim)。 当产品图像和外观对于购物体验很重要时，它最有用。 要安装此软件，请运行以下命令：
 
 ```bash
 composer require magento/module-visual-product-recommendations
+```
+
+### 添加Fastly图像优化支持 {#fastlysupport}
+
+对[!DNL Product Recommendations]的Fastly图像优化支持是一个可选模块，是单独安装的。 此模块将[Fastly图像优化](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)参数应用于[!DNL Product Recommendations]图像URL。 要安装此软件，请运行以下命令：
+
+```bash
+composer require magento/module-fastly-recommendations
 ```
 
 ## 配置[!DNL Product Recommendations] {#configure}
@@ -75,7 +74,7 @@ composer require magento/module-visual-product-recommendations
 
    通过配置此连接，可以实现Commerce实例、目录服务和其他支持服务之间的数据同步和通信。 [SaaS数据导出扩展](../data-export/overview.md)处理数据同步。
 
-1. 为确保目录导出可以正确运行，请确认[cron](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)作业和[索引器](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/configuration-guide/cli/manage-indexers)正在运行，并且`Product Feed`索引器设置为`Update by Schedule`。
+1. 为确保目录导出可以正确运行，请确认[cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)作业和[索引器](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)正在运行，并且`Product Feed`索引器设置为`Update by Schedule`。
 
 成功将Commerce应用程序链接到Commerce Services并指定[SaaS数据空间](../landing/saas.md#saas-configuration)后，将开始目录同步。 然后，您可以[验证](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify)行为数据是否已发送到店面。
 
@@ -135,4 +134,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## 卸载[!DNL Product Recommendations] {#uninstall}
 
-如有必要，您可以[卸载](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)产品推荐模块。
+如有必要，您可以[卸载](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)产品推荐模块。

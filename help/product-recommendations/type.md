@@ -3,19 +3,13 @@ title: 推荐类型
 description: 了解您可以部署到网站上各个页面的建议。
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
 TQID: https://experienceleague.adobe.com/d2V9aHGQO8jnPXAIlae-GklfACARMrVEttryLOY3Zr8
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: beb7a3c1-66ab-4786-b879-7621375b3c40id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 0802d0e53a1ed6701318647b7bf78435082ad5f3
 workflow-type: tm+mt
-source-wordcount: 2001
+source-wordcount: 2026
 ht-degree: 0%
 
 ---
@@ -132,6 +126,10 @@ Adobe Commerce提供了一大批推荐，您可以将这些推荐部署到网站
 
 _视觉相似度_&#x200B;推荐类型建议外观与正在查看的产品相似。 当产品的图像和视觉方面是购物体验的重要部分时，此推荐类型最有用。
 
+>[!NOTE]
+>
+>由于此推荐类型不适用于大多数目录，因此默认情况下，系统不会启用它。 明确[启用此推荐类型](#enable-visual-similarity-recommendation-type)。
+
 ### 工作原理
 
 _视觉相似度_&#x200B;推荐类型为您的目录中与当前正在查看的图像具有视觉相似度的其他产品提供推荐。 视觉相似性包括如下几个方面：
@@ -145,15 +143,11 @@ _视觉相似度_&#x200B;推荐类型为您的目录中与当前正在查看的�
 
 Adobe AI使用AI处理和分析目录中的图像，并构建用于确定视觉相似性的属性。
 
->[!NOTE]
->
-> 如果您在非生产环境中测试此推荐类型，请确保您的图像URL可公开访问。
+#### 特殊注意事项
 
->[!NOTE]
->
-> 目前，产品映像的大小必须等于或小于10 MB。
-
-由于此推荐类型不适用于大多数目录，因此默认情况下，系统不会启用它。 明确启用此推荐类型。
+- 如果您在非生产环境中测试此推荐类型，请确保您的图像URL可公开访问。
+- 目前，产品映像的大小必须等于或小于10 MB。
+- 可选的[Fastly图像优化](install-configure.md#fastlysupport)模块可以将Fastly图像优化参数应用于[!DNL Product Recommendations]图像URL。 有关详细信息，请参阅[添加Fastly图像优化支持](install-configure.md#fastlysupport)。
 
 ### 启用视觉相似性推荐类型
 
