@@ -1,7 +1,7 @@
 ---
 title: 创建和管理规则
 description: 了解如何为搜索、默认产品列表和类别页面创建和管理促销规则。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
@@ -265,7 +265,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->此功能处于[测试版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
+>此功能处于[测试版](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
 
 **属性排名**&#x200B;自动将&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;操作应用于符合一个或多个属性条件的每个产品，而无需您选择单个SKU。 属性排名与[智能排名](#intelligent-ranking)和[手动排名](#manual-ranking)一起显示在规则编辑器中，可用于&#x200B;**所有产品规则**、**搜索规则**&#x200B;和&#x200B;**类别规则**。 使用它来扩展大型目录中的商品促销，例如，增加给定品牌的所有产品，或将每个产品隐藏在停产的颜色中。
 
