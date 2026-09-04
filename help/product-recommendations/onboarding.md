@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 0802d0e53a1ed6701318647b7bf78435082ad5f3
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: 477
 ht-degree: 0%
 
 ---
@@ -54,6 +54,10 @@ ht-degree: 0%
 [!DNL Product Recommendations]可以作为页面生成器内容类型添加到页面中。 要向产品推荐添加页面生成器支持，请参阅[安装和配置](install-configure.md)。
 
 有关如何将[!DNL Product Recommendations]添加到[!DNL Page Builder]内容的说明，请参阅[[!DNL Page Builder] 集成](page-builder.md)。
+
+### Fastly图像优化
+
+[!DNL Product Recommendations]支持可选的[Fastly图像优化](install-configure.md#fastlysupport)模块，该模块将Fastly图像优化参数应用于[!DNL Product Recommendations]图像URL。 要添加此支持，请参阅[安装和配置](install-configure.md#fastlysupport)。
 
 ### SaaS价格索引
 

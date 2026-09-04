@@ -1,7 +1,7 @@
 ---
-source-git-commit: a2126f6cc24cc3a17c31e0d8dd095f7d7df26354
+source-git-commit: 73cfc898b25e731238b049419fe0e964e29e92b6
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年8月28日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>将<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/release-notes">Live Search扩展</a>更新为4.7.3，以解决在某些情况下，产品列表页面上的“添加到购物车”功能无法与PLP构件配合使用的问题。</p>
+</td>
+      <td>
+        反馈
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/01028c8645f0d8ef868aacbaf14e34595bc5ccc1">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年8月26日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
+</td>
+      <td>
+        技术
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e91727732882ce6a990068bf2bd3c4dc9fc69370">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年8月25日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/452a47d6769d90449ece9fe171a01a36df45324d">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年8月18日
 

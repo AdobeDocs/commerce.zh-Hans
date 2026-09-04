@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-09-02
-source-git-commit: 299da83bd0a9b776ad6b13482b65af61bffe15fa
+source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
 workflow-type: tm+mt
-source-wordcount: 554
+source-wordcount: 600
 ht-degree: 0%
 
 ---
@@ -67,6 +67,14 @@ _视觉相似度_&#x200B;推荐类型显示的产品与在产品详细信息页�
 
 ```bash
 composer require magento/module-visual-product-recommendations
+```
+
+### 添加Fastly图像优化支持 {#fastlysupport}
+
+对[!DNL Product Recommendations]的Fastly图像优化支持是一个可选模块，是单独安装的。 此模块将[Fastly图像优化](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/cdn/fastly)参数应用于[!DNL Product Recommendations]图像URL。 要安装此软件，请运行以下命令：
+
+```bash
+composer require magento/module-fastly-recommendations
 ```
 
 ## 配置[!DNL Product Recommendations] {#configure}
