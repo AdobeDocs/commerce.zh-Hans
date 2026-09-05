@@ -1,7 +1,7 @@
 ---
-source-git-commit: 73cfc898b25e731238b049419fe0e964e29e92b6
+source-git-commit: 4a68ab79a6ddbd39efe5825fcbe2137ddf83f471
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1056'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年9月2日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/insights/overview">Commerce Insights</a>指南，这是Adobe Commerce产品管理和工程部门用于战略实施和安全指导的新主页。</p>
+</td>
+      <td>
+        新主题
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7c82665f7696cab156f6559ade451df937faa3e5">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年8月28日
 
@@ -353,28 +375,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/976a43b367be87363307dc27c55f98df18271eb1">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月6日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>删除了LLM Optimizer和Commerce集成文档。 该功能的范围已重新设定并移至<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/catalog-enrichment">Commerce管理员指南</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">提交</a></td>
     </tr>
   </tbody>
 </table>
