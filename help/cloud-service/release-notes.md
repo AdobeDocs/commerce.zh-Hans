@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
+source-git-commit: 050a2bf3dd5b0815d3f62c9f676f5049583e6265
 workflow-type: tm+mt
-source-wordcount: 6271
+source-wordcount: 6358
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ ht-degree: 0%
 
 ## 2026年9月 — 发行说#1 {#latest}
 
-[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生产]{type=Neutral tooltip="列出的项目当前在生产环境中可用。"}
 
-以下项目将于2026年9月8日发布到生产环境。
+以下项目已于2026年9月8日发布到生产环境。
 
 >[!BEGINSHADEBOX]
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ### 通过REST API同步沙盒和生产配置
 
-新的`GET`和`PUT /V1/system/config` REST API端点允许集成读取和更新Commerce系统配置值，包括：
+新的[`GET`和`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API端点允许集成读取和更新Commerce系统配置值，包括：
 
 * 存储信息
 * 运费和税费设置
@@ -77,15 +77,17 @@ ht-degree: 0%
 
 ### 通过GraphQL查询库存可用性
 
-新的`sourceAvailability` GraphQL查询返回一个或多个SKU的按来源库存可用性，因此产品和类别页面等店面可以显示每个库存来源的准确库存信息。<!-- ACCS-933 -->
+新的[`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL查询返回一个或多个SKU的每个源库存可用性，因此产品和类别页面等店面可以显示每个库存源的准确库存信息。
+
+[启用**每Source可用性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/configuration/global-options)。<!-- ACCS-933 -->
 
 ### 通过GraphQL读取永久愿望清单和帐户共享设置
 
-`storeConfig` GraphQL查询现在返回`persistent_enabled`、`persistent_shopping_cart`、`persistent_options_wishlist`和`share_customer_accounts_scope`配置值，因此店面无需联系支持人员即可访问商户永久购物车和愿望清单设置。<!-- USF-4051 -->
+[`storeConfig`](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/store-config/#query-a-stores-persistent-cart-and-account-sharing-configuration) GraphQL查询现在返回`persistent_enabled`、`persistent_shopping_cart`、`persistent_options_wishlist`和`share_customer_accounts_scope`配置值，因此店面无需联系支持人员即可访问商户永久购物车和愿望清单设置。<!-- USF-4051 -->
 
 ### 按产品、SKU或订单ID搜索客户订单
 
-`CustomerOrdersFilterInput` GraphQL输入现在支持与订单编号、项目SKU或项目名称匹配的可选`search`字段，以及您提供的任何其他过滤器。<!-- USF-4290 -->
+[`CustomerOrdersFilterInput`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer) GraphQL输入现在支持与订单编号、项目SKU或项目名称匹配的可选`search`字段，以及您提供的任何其他过滤器。<!-- USF-4290 -->
 
 ### 通过API更新和删除自定义电子邮件模板
 
@@ -136,15 +138,14 @@ ht-degree: 0%
 
 ### 免费礼品车价格规则
 
-**免费赠品**&#x200B;购物车价格规则现在可在[!DNL Commerce Admin]中用于店面。<!-- AC-17678 -->
+[**免费赠品**&#x200B;购物车价格规则](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift)现在可在[!DNL Commerce Admin]中用于店面。
+<!-- AC-17678 -->
 
-此规则允许您在满足规则条件时将免费礼品添加到购物车。
-
-<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+此规则允许您在满足规则条件时将免费礼品添加到购物车。 当规则需要选择时，购物者可以使用新的[`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift) GraphQL突变选择礼品SKU，该突变支持可配置和捆绑礼品产品。
 
 ### 按日期和时间计划购物车价格规则
 
-您现在可以设置希望[购物车价格规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)在[!DNL Commerce Admin]中开始或结束的时间。 购物车价格规则网格显示计划时间，并且REST API遵循在`from_date`和`to_date`上提交的时间，而不是将规则设置为午夜。<!-- ACCS-970 -->
+您现在可以设置希望[购物车价格规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#rule-information)在[!DNL Commerce Admin]中开始或结束的时间。 购物车价格规则网格显示计划时间，并且REST API遵循在`from_date`和`to_date`上提交的时间，而不是将规则设置为午夜。<!-- ACCS-970 -->
 
 <!-- commenting this out until the B2B compatibility package version is live. -->
 
