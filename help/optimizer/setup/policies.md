@@ -2,20 +2,15 @@
 title: 支持
 description: 了解如何在 [!DNL Adobe Commerce Optimizer]中创建和管理策略。
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
 TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4a9bb6c6473680ee7059d1844be5fee718a9ed68
 workflow-type: tm+mt
-source-wordcount: 917
+source-wordcount: 1054
 ht-degree: 0%
 
 ---
@@ -24,7 +19,7 @@ ht-degree: 0%
 
 策略是目录视图中包含的数据访问过滤器，用于进一步优化交付给每个目录视图的数据。 策略可确保将正确的内容发送到正确的目标。 例如，销售点实体商店、市场、广告管道(Google、Facebook、Instagram)。
 
-策略基于产品属性（如品牌、模型或部件类别），并用于定制目录数据以满足特定的业务要求。  
+策略基于产品属性（如品牌、模型或部件类别），并用于定制目录数据以满足特定的业务要求。 &#x200B;
 
 ## 过滤器
 
@@ -62,6 +57,28 @@ ht-degree: 0%
 
 如果购物者单击&#x200B;**品牌**&#x200B;下拉列表，则API调用的标头将包含`AC-Policy-Brand`，该标头配置为仅显示特定于`AC-Policy-Brand`策略的产品。
 
+### 多值HTTP标头触发器 {#multi-value-http-header-triggers}
+
+使用`HTTP_HEADER`传输类型的触发器策略可以在单个标头中接收多个值。 值必须以逗号分隔，并且筛选器运算符必须为`IN`。 每个值都被视为可接受的匹配项。 值使用`OR`语义进行计算。
+
+例如，策略过滤器使用`IN`和以下标头：
+
+```
+AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
+```
+
+匹配`vehicle`属性为`UNIVERSAL`或`veh-bolt-mammoth-limited-2025`的产品。
+
+而筛选运算符`EQUALS`、`GREATER_THAN_EQUAL`或`LESS_THAN_EQUAL`因验证错误而被拒绝。
+
+#### 语法说明
+
+- 标头名称与您配置的触发器名称匹配，例如`AC-Policy-Vehicle`。
+- 用逗号分隔标头中的各个值。 当同一`AC-Policy-_Name_`标头出现多次时，其值将组合为一个以逗号分隔的标头值
+- 筛选器运算符为`IN`。
+- **值源**&#x200B;设置为`TRIGGER`的策略筛选器。
+- **传输类型**&#x200B;为`HTTP_HEADER`的触发器。
+
 ## 创建策略
 
 在此部分中，您将创建一个新策略。 策略可以是&#x200B;**STATIC**&#x200B;或&#x200B;**TRIGGER**。
@@ -72,7 +89,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Add Policy]**&#x200B;按钮。
 
-   此时将打开一个新页面，供您填写策略详细信息。  
+   此时将打开一个新页面，供您填写策略详细信息。 &#x200B;
 
 1. 输入策略的名称，例如“Celport部件类别”。
 
@@ -83,14 +100,14 @@ ht-degree: 0%
 1. 添加筛选器详细信息。 例如：
 
    1. **属性** — 输入目录中的属性。 例如，“part_category”。 此名称必须与目录中属性的名称完全匹配。
-   1. **运算符** — 选择运算符。 例如，**IN**。  
-   1. **值Source** — 选择&#x200B;**STATIC**。  
+   1. **运算符** — 选择运算符。 例如，**IN**。 &#x200B;
+   1. **值Source** — 选择&#x200B;**STATIC**。 &#x200B;
    1. **值** — 输入您之前指定的属性定义中的值。 例如，输入“制动器”为制动部件创建过滤器。
    1. 要保存该值，请按&#x200B;**Enter**。
 
       如果策略设计为按多个值过滤，请分别输入每个值。
 
-1. 单击筛选器详细信息对话框中的&#x200B;**[!UICONTROL Save]**&#x200B;按钮。  
+1. 单击筛选器详细信息对话框中的&#x200B;**[!UICONTROL Save]**&#x200B;按钮。 &#x200B;
 
 1. 单击操作点(...) 在您创建的筛选器旁边，选择&#x200B;**启用**。 在此处，您还可以&#x200B;**编辑**、**禁用**&#x200B;或&#x200B;**删除**&#x200B;筛选器。
 
@@ -106,7 +123,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Add Policy]**&#x200B;按钮。
 
-   此时将打开一个新页面，供您填写策略详细信息。  
+   此时将打开一个新页面，供您填写策略详细信息。 &#x200B;
 
 1. 输入策略的名称，例如“Celport部件类别”。
 
@@ -127,11 +144,11 @@ ht-degree: 0%
 1. 添加筛选器详细信息。 例如：
 
    1. **属性** — 输入目录中的属性。 例如，“part_category”。 此名称必须与目录中属性的名称完全匹配。
-   1. **运算符** — 选择运算符。 例如，**IN**。  
-   1. **值Source** — 选择&#x200B;**触发器**。  
+   1. **运算符** — 选择运算符。 例如，**IN**。 &#x200B;
+   1. **值Source** — 选择&#x200B;**触发器**。 &#x200B;
    1. **值** — 输入您之前创建的触发器名称(**AC-Policy-Brand**)。
 
-1. 单击筛选器详细信息对话框中的&#x200B;**[!UICONTROL Save]**&#x200B;按钮。  
+1. 单击筛选器详细信息对话框中的&#x200B;**[!UICONTROL Save]**&#x200B;按钮。 &#x200B;
 
 1. 单击操作点(...) 在您创建的筛选器旁边，选择&#x200B;**启用**。 在此处，您还可以&#x200B;**编辑**、**禁用**&#x200B;或&#x200B;**删除**&#x200B;筛选器。
 

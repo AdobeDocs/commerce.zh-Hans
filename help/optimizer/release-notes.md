@@ -4,21 +4,15 @@ description: ' [!DNL Adobe Commerce Optimizer]的每月发行信息，包括用�
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 631126cc8d9b69c41aed19e30bf1503dd950d7e9
 workflow-type: tm+mt
-source-wordcount: 1561
+source-wordcount: 1626
 ht-degree: 0%
 
 ---
@@ -49,6 +43,11 @@ _2026年9月3日_
 ## 2026年8月
 
 >[!BEGINSHADEBOX]
+
+_2026年9月9日_
+
+![新建](../assets/new.svg) **多值HTTP标头触发器策略** — 使用`HTTP_HEADER`传输类型的触发器策略现在可以在单个标头中接收多个逗号分隔值（例如，`AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`）。 使用`IN`的策略筛选器使用`OR`语义评估值。 使用`EQUALS`、`GREATER_THAN_EQUAL`或`LESS_THAN_EQUAL`的筛选器在标头包含多个值时拒绝请求并出现验证错误。 此行为仅适用于使用`HTTP_HEADER`传输触发策略。 [了解详情](./setup/policies.md#multi-value-http-header-triggers)。
+<!--COMOPT-2439-->
 
 _2026年8月7日_
 
@@ -83,7 +82,7 @@ _2026年6月24日_
 
 <!-- v1.3 -->
 
-![新](../assets/new.svg) **新`canEditQuantity`字段** — 已将`canEditQuantity`添加到目录服务GraphQL中的`ProductViewOptionValueProduct`。 它会公开Commerce管理员中捆绑选择的可选&#x200B;**用户定义**&#x200B;数量设置，以便店面使用者可以确定捆绑选择的数量是否可编辑。
+![新](../assets/new.svg) **新`canEditQuantity`字段** — 已将`canEditQuantity`添加到目录服务GraphQL中的`ProductViewOptionValueProduct`。 它会公开Commerce管理员中捆绑选择的可选&#x200B;**用户定义**数量设置，以便店面使用者可以确定捆绑选择的数量是否可编辑。
 <!--COMOPT-2050-->
 
 ### 语义搜索
@@ -153,7 +152,7 @@ _2026年4月29日_
 
 <!--v1.52 release-->
 
-**需要批量处理请求** — 现在，当您检索目录数据时，GraphQL API为每个请求最多强制执行100个SKU。 查看[记录的限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits#product-discovery)。
+**需要批量处理请求** — 现在，当您检索目录数据时，GraphQL API为每个请求最多强制执行100个SKU。 查看[记录的限制和边界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery)。
 
 <!--DATA-7156-->
 
