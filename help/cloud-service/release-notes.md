@@ -33,7 +33,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 050a2bf3dd5b0815d3f62c9f676f5049583e6265
+source-git-commit: 8fdfd3ebfa088fd219c65c86ce99cae838ff5d54
 workflow-type: tm+mt
 source-wordcount: 6358
 ht-degree: 0%
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 新的[`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL查询返回一个或多个SKU的每个源库存可用性，因此产品和类别页面等店面可以显示每个库存源的准确库存信息。
 
-[启用**每Source可用性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/configuration/global-options)。<!-- ACCS-933 -->
+[启用&#x200B;**每个Source的可用性**](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/configuration/global-options)。<!-- ACCS-933 -->
 
 ### 通过GraphQL读取永久愿望清单和帐户共享设置
 
@@ -138,7 +138,7 @@ ht-degree: 0%
 
 ### 免费礼品车价格规则
 
-[**免费赠品**&#x200B;购物车价格规则](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift)现在可在[!DNL Commerce Admin]中用于店面。
+[**免费赠品**&#x200B;购物车价格规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift)现在可在[!DNL Commerce Admin]中用于店面。
 <!-- AC-17678 -->
 
 此规则允许您在满足规则条件时将免费礼品添加到购物车。 当规则需要选择时，购物者可以使用新的[`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift) GraphQL突变选择礼品SKU，该突变支持可配置和捆绑礼品产品。
