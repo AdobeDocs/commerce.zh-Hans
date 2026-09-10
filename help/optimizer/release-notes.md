@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+source-git-commit: 631126cc8d9b69c41aed19e30bf1503dd950d7e9
 workflow-type: tm+mt
-source-wordcount: 1561
+source-wordcount: 1626
 ht-degree: 0%
 
 ---
@@ -49,6 +49,11 @@ _2026年9月3日_
 ## 2026年8月
 
 >[!BEGINSHADEBOX]
+
+_2026年9月9日_
+
+![新建](../assets/new.svg) **多值HTTP标头触发器策略** — 使用`HTTP_HEADER`传输类型的触发器策略现在可以在单个标头中接收多个逗号分隔值（例如，`AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`）。 使用`IN`的策略筛选器使用`OR`语义评估值。 使用`EQUALS`、`GREATER_THAN_EQUAL`或`LESS_THAN_EQUAL`的筛选器在标头包含多个值时拒绝请求并出现验证错误。 此行为仅适用于使用`HTTP_HEADER`传输触发策略。 [了解详情](./setup/policies.md#multi-value-http-header-triggers)。
+<!--COMOPT-2439-->
 
 _2026年8月7日_
 

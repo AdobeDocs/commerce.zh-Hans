@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: c08c9248b26b6e3a0271032e869753bece96a8bd
+source-git-commit: 1c8d6d2d0460df4aa18de4d7d9750b9dda4f6bc5
 workflow-type: tm+mt
-source-wordcount: 3412
+source-wordcount: 3429
 ht-degree: 0%
 
 ---
@@ -44,6 +44,12 @@ ht-degree: 0%
 >[!DNL SaaS data export]扩展是随[!DNL Live Search]、[!DNL Product Recommendations]和[!DNL Catalog Service]一起自动安装的模块集合。 您可以使用[!DNL Composer]检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 2026版 {#release-notes-2026}
+
+### 103.4.34发行版
+
+_2026年9月2日_
+
+![修复](../assets/fix.svg)更新以支持Adobe Commerce Optimizer与Adobe Commerce的集成。<!--MDEE-1417-->
 
 ### 103.4.33发行版
 
