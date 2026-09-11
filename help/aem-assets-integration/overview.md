@@ -20,9 +20,9 @@ topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1090
+source-wordcount: 1091
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 ![检查](assets/icon-check.png) **Adobe托管支持模型** - Adobe直接处理协助和疑难解答，从而提供可靠的支持并简化问题解决方案。
 
-![检查](assets/icon-check.png) **Adobe Storefront Builder功能** — 数字资源管理(DAM)解决方案允许在[Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=zh-Hans#userlabs-commerce-genai-product-visuals)上使用图像、视频和其他媒体等资源。
+![检查](assets/icon-check.png) **Adobe Storefront Builder功能** — 数字资源管理(DAM)解决方案允许在[Storefront Builder](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/storefront-builder/#userlabs-commerce-genai-product-visuals)上使用图像、视频和其他媒体等资源。
 
 >[!ENDSHADEBOX]
 

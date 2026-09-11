@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 966
+source-wordcount: 967
 ht-degree: 2%
 
 ---
@@ -136,7 +136,7 @@ ht-degree: 2%
 
 ## 下一步
 
-* **配置您的Commerce店面** — 要将AEM Assets与由Edge Delivery Services提供支持的Commerce店面一起使用，请完成&#x200B;*Adobe Commerce店面文档*&#x200B;的[AEM Assets集成](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hans)主题中所述的店面配置。
+* **配置您的Commerce店面** — 要将AEM Assets与由Edge Delivery Services提供支持的Commerce店面一起使用，请完成&#x200B;*Adobe Commerce店面文档*&#x200B;的[AEM Assets集成](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)主题中所述的店面配置。
 
 * 在Adobe Commerce与AEM Assets集成之间设置[匹配规则](../synchronize/default-match.md)。
 

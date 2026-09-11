@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 8fdfd3ebfa088fd219c65c86ce99cae838ff5d54
+source-git-commit: d8c738212373283ccf45b16cf91dbafc7a7bd0f8
 workflow-type: tm+mt
-source-wordcount: 6358
+source-wordcount: 6365
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 0%
 * 可协商的引号
 * 报价模板
 
-有关详细信息，包括GraphQL突变和REST端点，请参阅[店面兼容性B2B包更改日志](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans#storefront-compatibility-b2b-package-v1-0-24-2026-07-20)。
+有关详细信息，包括GraphQL突变和REST端点，请参阅[店面兼容性B2B包更改日志](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/#storefront-compatibility-b2b-package-v1-0-24-2026-07-20)。
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 <!-- ### Use a temporary shipping address at B2B checkout -->
 
-<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hans) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
 
 ### 在订单历史记录中记录订单编辑
 
@@ -829,20 +829,20 @@ mutation {
 
 对B2B放置组件进行了以下更改：
 
-* [!DNL Commerce Storefront on Edge Delivery Services]现在包含[B2B放置组件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=zh-Hans)。 以下B2B下拉列表现已可用：
+* [!DNL Commerce Storefront on Edge Delivery Services]现在包含[B2B放置组件](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/)。 以下B2B下拉列表现已可用：
 
-  * **[公司管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=zh-Hans)** — 启用Adobe Commerce店面的公司配置文件管理和基于角色的权限。
-  * **[公司切换器](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=zh-Hans)** — 为用户提供UI组件，以便在其关联的多个公司之间进行切换。
-  * **[采购订单](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=zh-Hans)** — 管理B2B交易的采购订单工作流、审批规则和采购订单历史记录。
-  * **[报价管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=zh-Hans)** — 为具有报价请求、洽谈和批准工作流的B2B客户启用可协商报价。
-  * **[申购单列表](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=zh-Hans)** — 提供用于创建和管理重复购买和批量订购的申购单列表的工具。
+  * **[公司管理](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/company-management/)** — 启用Adobe Commerce店面的公司配置文件管理和基于角色的权限。
+  * **[公司切换器](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/company-switcher/)** — 为用户提供UI组件，以便在其关联的多个公司之间进行切换。
+  * **[采购订单](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/purchase-order/)** — 管理B2B交易的采购订单工作流、审批规则和采购订单历史记录。
+  * **[报价管理](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/quote-management/)** — 为具有报价请求、洽谈和批准工作流的B2B客户启用可协商报价。
+  * **[申购单列表](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/requisition-list/)** — 提供用于创建和管理重复购买和批量订购的申购单列表的工具。
 
 * 发布了B2B店面兼容包。 此包增强了[!DNL Adobe Commerce] B2B GraphQL架构，以帮助改进B2B系统上的开发。
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=zh-Hans). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/?lang=zh-Hans). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
 -->
 
 ### 指向外部配送跟踪器的可点击链接

@@ -22,10 +22,10 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 2205
-ht-degree: 0%
+source-wordcount: 2232
+ht-degree: 1%
 
 ---
 
@@ -44,23 +44,23 @@ ht-degree: 0%
 在开始本教程之前，请确保已满足以下先决条件：
 
 - **[!DNL Adobe Commerce Optimizer]实例**
-   - 访问Cloud Manager中的测试实例
-   - 有关安装说明，请参阅[开始使用](../get-started.md)
+  - 访问Cloud Manager中的测试实例
+  - 有关安装说明，请参阅[开始使用](../get-started.md)
 
 - **用户权限**
-   - 管理员访问Adobe Admin Console
-   - 有关帐户设置，请参阅[用户管理](../user-management.md)
-   - 如果您没有访问权限，请联系您的Adobe客户代表。
+  - 管理员访问Adobe Admin Console
+  - 有关帐户设置，请参阅[用户管理](../user-management.md)
+  - 如果您没有访问权限，请联系您的Adobe客户代表。
 
 - **示例数据**
-   - 已将Carvelo汽车目录数据加载到实例中
-   - 按照[示例目录数据摄取存储库](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)中的说明操作
-   - 您可以使用包含的`reset.js`脚本在完成之后删除示例数据
+  - 已将Carvelo汽车目录数据加载到实例中
+  - 按照[示例目录数据摄取存储库](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)中的说明操作
+  - 您可以使用包含的`reset.js`脚本在完成之后删除示例数据
 
 - **店面环境**
-   - 使用Node.js的本地开发环境
-   - 克隆和配置的店面样板项目
-   - 有关详细说明，请参阅[店面设置](../storefront.md)
+  - 使用Node.js的本地开发环境
+  - 克隆和配置的店面样板项目
+  - 有关详细说明，请参阅[店面设置](../storefront.md)
 
 ## 让我们开始吧
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 通过查看Adobe Commerce Storefront文档中的[探索样板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=zh-Hans)主题来了解店面配置文件。
+> 通过查看Adobe Commerce Storefront文档中的[探索样板](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/boilerplate-project/)主题来了解店面配置文件。
 
 ### 关‌键要点
 
@@ -249,7 +249,7 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
    - **名称** = *Celport*
    - **目录源** = *en-US*
    - **策略** （使用下拉列表） = *East Coast Inc品牌*；*Celport部件类别*；*品牌*；*型号*
-                         
+                              
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建目录视图。
 
    目录视图页面将更新以显示新的目录视图。
@@ -466,4 +466,4 @@ Carvelo的商务经理需要为属于&#x200B;*East Coast Inc*&#x200B;公司的�
 - 了解[高级策略配置](../setup/policies.md)
 - 为其他经销商设置[其他目录视图](../setup/catalog-view.md)
 - 查看[API文档](https://developer.adobe.com/commerce/services/optimizer/)以进行程序化目录管理
-- 了解如何为您的Edge Delivery Services店面配置下拉组件，以创建自定义店面体验，用于产品发现、推荐和其他店面功能。 请参阅[Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hans)
+- 了解如何为您的Edge Delivery Services店面配置下拉组件，以创建自定义店面体验，用于产品发现、推荐和其他店面功能。 请参阅[Storefront文档](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/)

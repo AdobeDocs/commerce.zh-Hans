@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1574
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ _推荐的产品预览_&#x200B;面板始终随示例产品选择提供，这些�
 
 1. 在&#x200B;**推荐ID**&#x200B;部分中，复制ID。
 
-1. 使用此ID在您的Edge Delivery Services店面中配置[推荐放置区](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=zh-Hans)。
+1. 使用此ID在您的Edge Delivery Services店面中配置[推荐放置区](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/)。
 
 ## 管理现有推荐
 
@@ -212,6 +212,6 @@ _推荐类型_
 - **基于静态** — 这些指示器的百分比较低可能是由于缺少可显示产品的目录数据所致。 如果它们低于预期值，则完全同步可以修复此问题。
 - **基于动态** — 基于动态的指示器的低百分比可能是由以下原因造成的：
 
-   - 在必需的[storefront事件](../../setup/events/overview.md)中缺少相应推荐类型（requestId、产品上下文等）的字段。
-   - 到存储区的低流量，因此接收的行为事件量很低。
-   - 您商店中不同产品的店面行为事件多样性很低。 例如，如果在大多数情况下仅查看或购买了10%的产品，则相应的就绪指示器较低。
+  - 在必需的[storefront事件](../../setup/events/overview.md)中缺少相应推荐类型（requestId、产品上下文等）的字段。
+  - 到存储区的低流量，因此接收的行为事件量很低。
+  - 您商店中不同产品的店面行为事件多样性很低。 例如，如果在大多数情况下仅查看或购买了10%的产品，则相应的就绪指示器较低。

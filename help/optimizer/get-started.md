@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1367
+source-wordcount: 1368
 ht-degree: 0%
 
 ---
@@ -252,6 +252,6 @@ Adobe提供了一个GitHub存储库，其中包含示例数据和工具，以帮
 ### 获取帮助
 
 - **开发人员资源**： [开发人员文档](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
+- **店面资源**： [Commerce店面文档](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
 - **教程**： [Commerce Optimizer教程](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/adobe-commerce-optimizer/overview)
 - **支持**： [Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)

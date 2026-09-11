@@ -22,9 +22,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 28102ad0dba698e37a69bbae90e3e9cec364ca81
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 332
+source-wordcount: 335
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 要为[!DNL Adobe Commerce as a Cloud Service] (SaaS)设置由[!DNL Edge Delivery Services]提供支持的[!DNL Adobe Commerce Storefront]，请完成以下步骤。
 
-有关更可自定义的详细演练，请参阅[店面文档](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hans)。
+有关更可自定义的详细演练，请参阅[店面文档](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/)。
 
 1. 打开[站点创建者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)。
 
@@ -63,6 +63,6 @@ ht-degree: 0%
 * [更新店面内容](./use-cases.md#update-storefront-content) — 管理和显示店面上的内容和数据。
 * [情境实验](./use-cases.md#contextual-experimentation) — 在店面中创建和管理实验。
 * [生成变体](./use-cases.md#generate-variations) — 使用创作AI自动生成高质量的内容。
-* [Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans) — 获取有关更新网站内容以及与Commerce前端组件和后端数据集成的详细信息。
+* [Adobe Commerce Storefront文档](https://experienceleague.adobe.com/en/tools/commerce-storefront/) — 获取有关更新网站内容以及与Commerce前端组件和后端数据集成的详细信息。
 * [配置服务](https://www.aem.live/docs/config-service-setup) — 了解如何从`config.json`迁移店面配置以使用配置服务，该服务支持高级用例，如重写配置和覆盖。
-* [店面B2B功能](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/?lang=zh-Hans#major-features) — 了解Storefront兼容性包中提供的B2B功能，该包自动为所有[!DNL Adobe Commerce as a Cloud Service]实例安装。
+* [店面B2B功能](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility/b2b/#major-features) — 了解Storefront兼容性包中提供的B2B功能，该包自动为所有[!DNL Adobe Commerce as a Cloud Service]实例安装。

@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1737
+source-wordcount: 1738
 ht-degree: 0%
 
 ---
@@ -318,7 +318,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
    您应在开发环境和浏览器中看到以下更改：
 
    * 系统会自动创建产品评级组件。
-   * 组件使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=zh-Hans)集成到PDP中，或者作为独立块，具体取决于选择的体系结构。
+   * 组件使用[插入式插槽](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/customize/slots/)集成到PDP中，或者作为独立块，具体取决于选择的体系结构。
    * 星标以适当的填充比例显示，填充比例基于API中的评级值。
 
    ![产品详细信息页面，显示集成在产品标题下方的星级评分](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

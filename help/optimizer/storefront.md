@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1580
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 0%
 * **站点**：包含样板内容的店面登陆页面
 * **代码**：包含样板源文件的存储库
 * **内容**：包含站点内容文件的文档创作环境
-* **Commerce配置**：[Commerce店面配置](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hans){target="_blank"}用于实例特定的配置
+* **Commerce配置**：[Commerce店面配置](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/){target="_blank"}用于实例特定的配置
 
 ### 步骤1：生成项目
 
@@ -238,25 +238,25 @@ ht-degree: 0%
 
 如果问题仍然存在：
 
-* 查看[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans){target="_blank"}
+* 查看[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/en/tools/commerce-storefront/){target="_blank"}
 * 查看[Adobe Commerce Optimizer开发人员指南](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 * 访问[Adobe Commerce支持资源](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## 后续步骤
 
-* **[设置本地开发环境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans#set-up-local-environment){target="_blank"}** — 创建本地环境以自定义店面代码和内容。
-* **[启用通用编辑器](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/?lang=zh-Hans){target="_blank"}** — 通用编辑器允许您在渲染页面的上下文中编辑店面内容。 然后，该内容会保存到您的文档创作(DA.live)项目中，您可以在其中使用大多数内容编排应用程序，如本地化、批量发布、快照等。
+* **[设置本地开发环境](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}** — 创建本地环境以自定义店面代码和内容。
+* **[启用通用编辑器](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/universal-editor/){target="_blank"}** — 通用编辑器允许您在渲染页面的上下文中编辑店面内容。 然后，该内容会保存到您的文档创作(DA.live)项目中，您可以在其中使用大多数内容编排应用程序，如本地化、批量发布、快照等。
 
 ### 学习和探索
 
 * **[完成端到端用例](./use-case/admin-use-case.md)** — 了解有关使用[!DNL Adobe Commerce Optimizer]的店面设置和目录管理的更多信息。
 
-* **[探索店面自定义](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=zh-Hans){target="_blank"}** — 了解高级设置和配置选项。
+* **[探索店面自定义](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/){target="_blank"}** — 了解高级设置和配置选项。
 
-* **[使用Commerce下拉列表自定义店面体验](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hans){target="_blank"}** — 添加预建组件以增强您的店面体验。
+* **[使用Commerce下拉列表自定义店面体验](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/){target="_blank"}** — 添加预建组件以增强您的店面体验。
 
 * **迁移到Storefront Configuration Service** — 创建初始店面后，您可以迁移配置以使用支持高级用例（如重写配置和叠加）的配置服务。 有关详细信息，请参阅Adobe Experience Manager中的[配置服务](https://www.aem.live/docs/config-service-setup){target="_blank"}文档。
 
 >[!MORELIKETHIS]
 >
-> 请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans){target="_blank"}，了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。
+> 请参阅[Adobe Commerce Storefront文档](https://experienceleague.adobe.com/en/tools/commerce-storefront/){target="_blank"}，了解有关更新网站内容以及与Commerce前端组件和后端数据集成的更多信息。

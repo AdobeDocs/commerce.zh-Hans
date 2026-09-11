@@ -26,9 +26,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1289
+source-wordcount: 1291
 ht-degree: 0%
 
 ---
@@ -417,7 +417,7 @@ aio app use --merge
 
 * [Google Chrome](https://www.google.com/chrome/) — 测试店面所需
 
-* 店面项目已连接到您的[!DNL Commerce]实例。 如果您没有店面项目，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans){target="_blank"}中的步骤操作，包括[将存储库链接到商务数据](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans#link-repo-to-commerce-data){target="_blank"}部分。
+* 店面项目已连接到您的[!DNL Commerce]实例。 如果您没有店面项目，请按照[创建店面](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/){target="_blank"}中的步骤操作，包括[将存储库链接到商务数据](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}部分。
 
 ### 克隆店面存储库
 

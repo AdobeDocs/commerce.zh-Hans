@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 3372
+source-wordcount: 3374
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Adobe Commerce在不同的部署模型中可用。 主要区别在于基础架�
 
 - Adobe Developer App Builder的[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)和[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)
+- [Edge Delivery Services](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
 - 使用[Commerce Cloud Manager](../getting-started.md#create-an-instance)进行自助配置
 
 ### 迁移历程
@@ -214,7 +214,7 @@ Adobe Commerce在不同的部署模型中可用。 主要区别在于基础架�
 
 ### 店面现代化
 
-在前端，Commerce开发人员MCP使用Adobe Commerce样板、放置组件和EDS块在Commerce的Edge Delivery Services (EDS)上实现[店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hans)的现代化。
+在前端，Commerce开发人员MCP使用Adobe Commerce样板、放置组件和EDS块在Commerce的Edge Delivery Services (EDS)上实现[店面](https://experienceleague.adobe.com/en/tools/commerce-storefront/)的现代化。
 
 Commerce开发人员MCP根据Commerce样板加载现有店面项目。 它通过以下方式使您的店面现代化：
 

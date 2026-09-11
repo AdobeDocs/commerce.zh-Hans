@@ -31,9 +31,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 3398
+source-wordcount: 3399
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ bash --version
 此外，请验证以下各项：
 
 - 您有一个包含产品数据的[!DNL Adobe Commerce as a Cloud Service]实例。 查看[Commerce Cloud服务实例](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/overview){target="_blank"}。
-- 您有一个店面项目连接到您的[!DNL Commerce]实例。 如果没有店面，请按照[创建店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hans){target="_blank"}中的步骤操作。
+- 您有一个店面项目连接到您的[!DNL Commerce]实例。 如果没有店面，请按照[创建店面](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/){target="_blank"}中的步骤操作。
 - 已安装`aem` CLI：
 
   ```bash
