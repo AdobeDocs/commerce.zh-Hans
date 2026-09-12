@@ -1,5 +1,5 @@
 ---
-source-git-commit: 4a68ab79a6ddbd39efe5825fcbe2137ddf83f471
+source-git-commit: b0fb96805f314ea8e0b89c9e9bd30d5de3501de4
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 1%
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年9月8日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bd99dda50f68395eb23c62a1e8061a7198678a65">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年9月2日
 
@@ -353,28 +375,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/21d305eaa87cd70d82c530e4ee5a4ea34574d400">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月7日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/976a43b367be87363307dc27c55f98df18271eb1">提交</a></td>
     </tr>
   </tbody>
 </table>
