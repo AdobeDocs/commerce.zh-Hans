@@ -1,31 +1,38 @@
 ---
-title: 开始使用 [!DNL Catalog Service]
-description: 了解如何访问 [!DNL Catalog Service] 并与前端应用程序和第三方服务集成。
+title: 开始使用[!DNL Catalog Service]
+description: 了解如何访问[!DNL Catalog Service]并与前端应用程序和第三方服务集成。
 role: Admin, Developer
 exl-id: ee178e67-519d-4283-8de8-2634ae1f347a
 TQID: https://experienceleague.adobe.com/KBdWesEoKJu-qWsY-Ny1Om-msUkyUPfUTQWftEqSg1g
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-last-update: 2026-08-20
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Data management
+last-update: 2026-09-11
+source-git-commit: 6b784df469162bd536cfa764268a7180f94cc1c7
 workflow-type: tm+mt
-source-wordcount: 437
+source-wordcount: '438'
 ht-degree: 0%
-
 ---
-
 # 开始使用[!DNL Catalog Service]
 
 启用[!DNL Catalog Service]后，您可以访问该服务，并使用它从Adobe Commerce实例中检索目录数据，如产品和类别信息。 该服务作为GraphQL API提供，您可以从Commerce管理员或从支持GraphQL查询的任何前端应用程序访问该服务。
@@ -36,14 +43,14 @@ ht-degree: 0%
 
 [!DNL Catalog Service]可用作GraphQL API，您可以从Commerce管理员或任何支持GraphQL查询的前端应用程序访问它。 该服务在SaaS和PaaS环境中均可用。
 
-仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
+仅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}
 
 | 环境 | 端点 |
 | ------------ | ----------: |
 | **正在测试** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **生产** | `https://catalog-service.adobe.io/graphql` |
 
-仅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}
+仅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}
 
 | 环境 | 端点 |
 | ----------- | --------:|
@@ -76,7 +83,7 @@ https://<region>-<environment>.api.commerce.adobe.com/<tenantId>/graphql
 
 ## 目录服务和API网格
 
-适用于Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/mesh/)的API Mesh使开发人员能够使用Adobe IO将专用或第三方API以及其他接口与Adobe产品集成。
+适用于Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/)的[API Mesh使开发人员能够使用Adobe IO将专用或第三方API以及其他接口与Adobe产品集成。
 
 有关安装和配置详细信息，请参阅[[!DNL Catalog Service] 和API Mesh](mesh.md)主题。
 
