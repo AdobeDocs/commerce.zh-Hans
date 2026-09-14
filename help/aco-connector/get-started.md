@@ -189,7 +189,7 @@ ht-degree: 3%
 
 ### 获取[!DNL Commerce Optimizer]实例详细信息
 
-从[!DNL Commerce Optimizer]实例[[!DNL Instance details] 页面](../optimizer/get-started.md#manage-instances)上的&#x200B;_[!DNL Instance Id]_字段或用于访问实例的URL获取_&#x200B;租户ID _。 例如，在`https://experience.adobe.com/#/@&lt;your organization&gt;/in:&lt;tenant ID&gt;/commerce-optimizer-studio/home`中。
+从[!DNL Commerce Optimizer]实例[[!DNL Instance details] 页面](../optimizer/get-started.md#manage-instances)上的&#x200B;_[!DNL Instance Id]_&#x200B;字段或用于访问实例的URL获取_&#x200B;租户ID _。 例如，在`https://experience.adobe.com/#/@&lt;your organization&gt;/in:&lt;tenant ID&gt;/commerce-optimizer-studio/home`中。
 
 1. 从Commerce Admin中，选择&#x200B;**[!UICONTROL Adobe Commerce Optimizer]**&#x200B;以显示包含说明的配置页面。
 
