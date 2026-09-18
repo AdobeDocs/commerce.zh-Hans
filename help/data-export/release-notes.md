@@ -1,6 +1,6 @@
 ---
 title: '[!DNL SaaS Data Export Extension]发行说明'
-description: Adobe Commerce的 [!DNL Data Export Extension] 的最新发行信息。
+description: Adobe Commerce的[!DNL Data Export Extension]的最新发行信息。
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services, Release Notes
 recommendations: noCatalog
@@ -8,27 +8,37 @@ exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 1c8d6d2d0460df4aa18de4d7d9750b9dda4f6bc5
+    internal-label: Data collection
+source-git-commit: c878b0f46e20fbdcd9771dae36430a814371e0c2
 workflow-type: tm+mt
-source-wordcount: 3429
+source-wordcount: '3464'
 ht-degree: 0%
-
 ---
-
 # [!DNL SaaS Data Export Extension]发行说明
 
 以下发行说明介绍了[!DNL SaaS data export]扩展的最新版本。 为当前的主要发行版本提供支持。 提供了旧版本的发行说明以供参考。
@@ -44,6 +54,12 @@ ht-degree: 0%
 >[!DNL SaaS data export]扩展是随[!DNL Live Search]、[!DNL Product Recommendations]和[!DNL Catalog Service]一起自动安装的模块集合。 您可以使用[!DNL Composer]检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 2026版 {#release-notes-2026}
+
+### 103.4.35发行版
+
+_2026年9月17日_
+
+![修复](../assets/fix.svg) **属性选项标签同步错误** — 修复了无效的属性后端表在标签重新同步期间可能导致馈送导出失败的问题，从而确保属性标签更新可靠同步。<!--MDEE-1464-->
 
 ### 103.4.34发行版
 
