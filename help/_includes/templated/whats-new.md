@@ -1,15 +1,36 @@
 ---
-source-git-commit: b0fb96805f314ea8e0b89c9e9bd30d5de3501de4
+source-git-commit: 4b9ab9e256edced9a508d08dfcae3589bd27f304
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '998'
 ht-degree: 1%
-
 ---
 # 新增功能模板
 
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年9月17日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7f70bbf40218de2cec3482e1bc4d135d1a9022ae">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年9月8日
 
@@ -353,28 +374,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月15日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>在AEM版本<code>2026.5.26309</code>及更高版本上记录了AEM Assets集成的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/configure-aem#enable-aem-commerce-self-service">自助登录</a>，在AEM Assets</a>主题中添加了新的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/metadata">Commerce元数据，并添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/configure-storefront#connect-aem-assets-authoring">通过Da.live将AEM Assets连接到您的店面</a>的指南。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/21d305eaa87cd70d82c530e4ee5a4ea34574d400">提交</a></td>
     </tr>
   </tbody>
 </table>
