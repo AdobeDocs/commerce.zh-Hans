@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: c878b0f46e20fbdcd9771dae36430a814371e0c2
+source-git-commit: 42e7ecca6c058ebc4e80b601c6d46b84f601e454
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3447'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension]发行说明
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 _2026年9月17日_
 
-![修复](../assets/fix.svg) **属性选项标签同步错误** — 修复了无效的属性后端表在标签重新同步期间可能导致馈送导出失败的问题，从而确保属性标签更新可靠同步。<!--MDEE-1464-->
+![修复](../assets/fix.svg)更新以支持Adobe Commerce Optimizer与Adobe Commerce的集成。<!--MDEE-1464-->
 
 ### 103.4.34发行版
 
