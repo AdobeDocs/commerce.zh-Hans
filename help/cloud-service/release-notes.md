@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 04f2eddef8abc6843ced0d00368ea19f3626adce
+source-git-commit: 9cc9b3270d808102f293609a606ff32a781d084c
 workflow-type: tm+mt
-source-wordcount: '6842'
+source-wordcount: '6869'
 ht-degree: 0%
 ---
 # 发行说明
@@ -64,21 +64,21 @@ ht-degree: 0%
 
 ## 2026年9月 — 发行说#2 {#latest}
 
-[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生产]{type=Neutral tooltip="列出的项目当前在生产环境中可用。"}
 
-以下项目将于2026年9月22日在生产环境中可用。
+以下项目已于2026年9月22日添加到生产环境。
 
 >[!BEGINSHADEBOX]
 
 ### 附加文件和图像以返回请求
 
-通过店面`requestReturn` GraphQL突变提交退货请求时，客户现在可以上传文件和图像。<!-- CCSAAS-5410 -->
+通过店面[`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL突变提交退货请求时，客户现在可以上传文件和图像。 使用[`initiateUpload`和`finishUpload`变动](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/)上载文件，然后将返回的键分配给返回项自定义属性。<!-- CCSAAS-5410 -->
 
 ### 控制库存来源外观
 
-现在，每个库存来源都包含一个&#x200B;[!UICONTROL **在店面中可见**]&#x200B;的切换开关，该开关位于[!DNL Commerce Admin] （[!UICONTROL **商店**] > [!UICONTROL **库存**] > [!UICONTROL **来源**]）的来源编辑页面上。 [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL查询仅返回您标记为可见的源的库存信息。 默认情况下，源处于隐藏状态。<!-- ACCS-1645 -->
+现在，每个库存源都包含一个&#x200B;[!UICONTROL **在店面中可见**]&#x200B;切换开关，该切换开关位于[!DNL Commerce Admin] （[!UICONTROL **商店**] > [!UICONTROL **库存**] > [!UICONTROL **源**]）中的[源编辑页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/inventory/sources/sources-add)。 [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL查询仅返回您标记为可见的源的库存信息。 默认情况下，源处于隐藏状态。<!-- ACCS-1645 -->
 
 ### 指导多源发运
 
