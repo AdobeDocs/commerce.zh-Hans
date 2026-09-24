@@ -1,6 +1,6 @@
 ---
-title: 迁移到 [!DNL Adobe Commerce as a Cloud Service]
-description: 了解如何迁移到 [!DNL Adobe Commerce as a Cloud Service]。
+title: 迁移到[!DNL Adobe Commerce as a Cloud Service]
+description: 了解如何迁移到[!DNL Adobe Commerce as a Cloud Service]。
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
 badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
@@ -10,38 +10,57 @@ autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
   - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
+    internal-label: Data pipelines
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Data management
+source-git-commit: 464b0d7298bd2a5569b12d0956a84667709e4c3a
 workflow-type: tm+mt
-source-wordcount: 3374
+source-wordcount: '3682'
 ht-degree: 0%
-
 ---
-
 # 迁移到[!DNL Adobe Commerce as a Cloud Service]
 
 本指南帮助开发人员从[!DNL Adobe Commerce on Cloud]或内部部署迁移到[!DNL Adobe Commerce as a Cloud Service] (SaaS)。 此SaaS模型提供了增强的性能、可扩展性以及与[!DNL Adobe Experience Cloud]的集成。
@@ -111,13 +130,13 @@ Adobe Commerce在不同的部署模型中可用。 主要区别在于基础架�
 | 工作流 | 工具 | 描述 |
 | --- | --- | --- |
 | [评估](#migration-assessment-tool) | **迁移评估工具** | AI驱动的现有实施评估，其中清点自定义模块、第三方扩展、集成、店面观察、数据库模式、自定义表、迁移建议、复杂性评分和现代化工作估计值。 |
-| [应用程序和店面现代化](#code-and-storefront-migration-commerce-developer-mcp) | **Commerce开发人员MCP** | 人工智能辅助的Commerce应用程序现代化，加快将自定义项迁移到[!DNL App Builder]，支持店面迁移到Edge Delivery Services (EDS)，并通过由工程团队审查和验证的实施指导开发人员完成更广泛的应用程序现代化历程。 |
+| [应用程序和店面现代化](#code-and-storefront-migration-commerce-developer-agent) | **Commerce开发人员代理和Commerce开发人员MCP** | 人工智能辅助的Commerce应用程序现代化，加快将自定义项迁移到[!DNL App Builder]，支持店面迁移到Edge Delivery Services (EDS)，并通过由工程团队审查和验证的实施指导开发人员完成更广泛的应用程序现代化历程。 |
 | [数据迁移](#data-migration-commerce-data-migration-service) | **Commerce数据迁移服务** | 将目录、客户和订单数据的提取、加载和完整性验证到[!DNL Adobe Commerce as a Cloud Service]。 |
 
 这些磁道不是独立的。 按正确的顺序一起使用它们可最大程度地减少重复工作。
 
 - **首先运行评估** — 运行评估首先会识别不支持的自定义项、估计迁移工作量、公开数据迁移注意事项，并在实施开始之前突出显示集成依赖项。 评估将成为应用程序现代化工作流程和数据迁移工作流使用的迁移蓝图。
-- **应用程序现代化** - Commerce开发人员MCP使用迁移评估来确定哪些自定义项要现代化以及如何现代化。 然后，MCP生成相应的[!DNL App Builder]应用程序和店面组件。
+- **应用程序现代化** - Commerce Developer Agent和Commerce Developer MCP使用迁移评估来确定哪些自定义项要现代化以及如何现代化。 然后，Commerce Developer Agent或Commerce Developer MCP生成相应的[!DNL App Builder]应用程序和店面组件。
 - **数据迁移** — 数据迁移范围界定调查表捕获评估所显示的范围、卷和自定义表。
 - **自定义数据和第三方数据** — 评估期间识别了第三方扩展保存在自定义表中的数据，但标准数据迁移无法处理这些数据，因此需要[!DNL App Builder]自定义。
 
@@ -182,23 +201,54 @@ Adobe Commerce在不同的部署模型中可用。 主要区别在于基础架�
 
 每次[!DNL Adobe Commerce as a Cloud Service]迁移都从评估开始。 这是一种经济高效的方法，可在实施开始之前确定范围、减少不确定性和创建共享迁移蓝图。
 
-有关评估工具和下游开发人员工作流的详细信息，请参阅[Adobe Commerce开发人员MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)。
+有关评估工具和下游开发人员工作流的详细信息，请参阅[Adobe Commerce开发人员MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)。
 
 有关与迁移评估工具集成的Commerce开发人员代理的更多信息，请参阅[Commerce开发人员代理](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
-## 代码和店面迁移（Commerce开发人员MCP）
+## 代码和店面迁移(Commerce Developer Agent)
 
 在[!DNL Adobe Commerce on Cloud]中或本地自定义可以使用进程内PHP — 在应用程序中运行的模块、插件和事件观察程序。 [!DNL Adobe Commerce as a Cloud Service]是一个无版本的SaaS平台，该模型不再适用。 自定义项作为进程外的[!DNL Adobe Developer App Builder]应用程序运行，这些应用程序通过事件和API与Commerce集成。 使存储区对此体系结构的自定义实现现代化通常是[!DNL Adobe Commerce as a Cloud Service]迁移中最重大的工程工作。
 
+Adobe为此工作提供两种人工智能辅助路径：
+
+- **Commerce开发人员代理** — 引导式、基于浏览器的体验，以及大多数迁移的建议起点。
+- **Commerce开发人员MCP** — 为希望在其现有开发环境中工作或需要在Edge Delivery Services (EDS)上实现店面现代化的团队提供对话式IDE体验。
+
 ### 代码迁移概述
 
-从迁移评估开始，Commerce开发人员MCP提供了一个对话式IDE体验，用于将旧版PHP自定义更新到[!DNL App Builder]应用程序中。 它还为Edge Delivery Services (EDS)上的店面重建提供援助。 通过直接使用迁移评估工具的调查结果，Commerce开发人员MCP通过减少手动解释、维护可跟踪性和确保整个过程的一致性，使实施与批准的迁移路线图保持一致。
+从迁移评估开始，Commerce Developer Agent为在[!DNL App Builder]应用程序中实现旧版PHP自定义项现代化提供了对话式代理体验。 通过直接使用迁移评估工具的调查结果，Commerce Developer Agent通过减少手动解释、维护可跟踪性和确保整个过程的一致性，使实施与批准的迁移路线图保持一致。
 
-虽然迁移是主要用例，但Commerce开发人员MCP被设计为[!DNL Adobe Commerce]的综合AI开发代理。 MCP支持现代化、新开发、操作工作流以及对[!DNL Adobe Commerce as a Cloud Service]的所有更新。 这种灵活性级别允许团队在迁移后很长时间继续构建和扩展Commerce应用程序。
+虽然迁移是主要用例，但Commerce Developer Agent被设计为[!DNL Adobe Commerce]的综合AI开发代理。 Commerce Developer Agent支持[!DNL App Builder]的现代化、新开发、操作工作流和所有更新。 这种灵活性级别允许团队在迁移后很长时间继续构建和扩展Commerce应用程序。
 
-### Commerce开发人员MCP
+### Commerce Developer Agent
 
-利用[迁移评估](#migration-assessment-tool)中的调查结果，Commerce Developer MCP通过迭代开发工作流将已识别的自定义项转换为[!DNL App Builder]个应用程序。 使用这些工具进行开发时，请考虑以下准则：
+Commerce Developer Agent使用[迁移评估](#migration-assessment-tool)中的调查结果，通过迭代开发工作流将已识别的自定义项转换为[!DNL App Builder]个应用程序。 使用这些工具进行开发时，请考虑以下准则：
+
+- **从Blueprint开始：** Commerce开发人员代理使用迁移评估并生成结构化Blueprint。 这是一个分阶段迁移计划，它标记风险并映射依赖项以供您查看。
+
+- **审核和批准：**&#x200B;不会自动生成任何内容。 在开始生成任何代码之前，Blueprint需要您的明确批准，您可以跨多个版本以对话方式优化它。
+
+- **生成App Builder基架：**&#x200B;获得批准后，代理将生成基架[!DNL App Builder]Commerce扩展，包括：
+
+  - 事件和webhook基础架构
+  - 商家可配置的设置
+  - 持久性模式
+
+  生成基架后，代理会对输出运行验证检查。
+
+- **优化并直接导出或部署到[!DNL App Builder]：**&#x200B;您可以在“开发”阶段中请求后续更改并下载生成的扩展代码的ZIP文件，也可以从Commerce Developer Agent直接部署到[!DNL App Builder]。 项目上下文和决策会在会话之间保留。
+
+有关详细信息，请参阅[Commerce开发人员代理](https://developer.adobe.com/commerce/extensibility/developer-agent/)和[快速入门](https://developer.adobe.com/commerce/extensibility/developer-agent/getting-started)。
+
+### Commerce开发人员MCP（本地开发）
+
+>[!NOTE]
+>
+>Commerce开发人员MCP设计为可在IDE中工作。
+
+喜欢在现有IDE中工作或需要在Edge Delivery Services (EDS)上实现店面现代化的团队可以使用Commerce开发人员MCP。 与Commerce Developer Agent一样，它直接使用迁移评估，使实施与批准的迁移路线图保持一致，并减少手动解释。
+
+使用这些工具进行开发时，请考虑以下准则：
 
 - **从Blueprint开始** - Commerce开发人员MCP使用迁移评估，使用其标识的自定义项、建议和迁移优先级作为实施计划的基础。
 
@@ -231,19 +281,19 @@ MCP还协助：
 - 体验优化
 - 与当前Edge Delivery Services最佳实践保持一致
 
-### 开发人员MCP值
+### Commerce开发人员代理和开发人员MCP值
 
-从进程中的PHP自定义移动到可组合的[!DNL App Builder]应用程序代表着体系结构上的重大转变。 Commerce开发人员MCP通过将[!DNL Adobe Commerce]知识、[!DNL App Builder]实施模式和产品最佳实践直接嵌入开发工作流来填补这一空白。
+从进程中的PHP自定义移动到可组合的[!DNL App Builder]应用程序代表着体系结构上的重大转变。 Commerce开发人员代理和开发人员MCP通过将[!DNL Adobe Commerce]知识、[!DNL App Builder]实施模式和产品最佳实践直接嵌入开发工作流来弥补这一差距。
 
 包含此上下文可提高交付速度和工程质量的一致性。 团队可以更快地实现应用程序的现代化，同时按照一致的架构指导制定实施。
 
-通过嵌入推荐的实施模式，Commerce开发人员MCP降低了对个人专业知识的依赖，并帮助组织跨项目以一致的方式扩大现代化工作。
+通过嵌入推荐的实施模式，Commerce开发人员代理和开发人员MCP减少了对个人专业知识的依赖，并帮助组织跨项目以一致的方式扩大现代化工作。
 
 迁移过程也是改进现有实施的一个机会。 团队可以简化旧版自定义设置、淘汰过时的功能、采用SaaS功能以及使应用程序体系结构现代化，而不是继续承担历史性的技术债务。
 
-由于Commerce开发人员MCP直接使用迁移评估，因此所有现代化工作都可追溯到最初的评估，确保实施与批准的迁移路线图保持一致。
+由于Commerce Developer Agent直接使用迁移评估，因此每项现代化工作都可以保持对原始评估的可跟踪性，确保实施与批准的迁移路线图保持一致。
 
-Commerce开发人员MCP还通过鼓励模块化[!DNL App Builder]应用程序来促进可组合应用程序设计，这些应用程序可以随着业务需求的变化而独立地发展。
+Commerce Developer Agent和Developer MCP还通过鼓励随着业务需求变化而独立发展的模块化[!DNL App Builder]应用程序来促进可组合应用程序设计。
 
 ### 开发人员MCP范围
 
@@ -257,9 +307,9 @@ MCP不处理数据迁移。 通过[Commerce数据迁移服务](#data-migration-c
 
 一旦迁移评估工具路线图确定了迁移范围和优先级，代码和店面现代化就会开始。
 
-有关如何安装和使用MCP的更多信息，请参阅[Commerce开发人员MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)文档。
-
 有关与迁移评估工具集成的Commerce开发人员代理的更多信息，请参阅[Commerce开发人员代理](https://developer.adobe.com/commerce/extensibility/developer-agent/)
+
+有关如何安装和使用MCP的更多信息，请参阅[Commerce开发人员MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)文档。
 
 ## 数据迁移（Commerce数据迁移服务）
 
