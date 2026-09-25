@@ -1,21 +1,18 @@
 ---
 title: 边界和限制
-description: 了解 [!DNL Product Recommendations] 的界限和限制，以确保它满足您的业务需求。
+description: 了解[!DNL Product Recommendations]的界限和限制，以确保其满足您的业务需求。
 role: Admin, Developer
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '893'
 ht-degree: 0%
-
 ---
-
 # 边界和限制
 
 查看以下边界和限制以确保[!DNL Product Recommendations]满足您的业务需求。 了解这些限制有助于您规划实施、配置过滤器并避免常见问题。
 
 ## 常规
 
-- **产品类型** — 支持的产品类型包括&#x200B;_简单_、_可配置_、_虚拟_、_可下载_&#x200B;和&#x200B;_礼品卡_。 不支持&#x200B;_捆绑包_、_分组_&#x200B;和自定义产品类型。 如果您的目录包含大量不受支持的产品类型，则[就绪性分数](create.md#readiness-indicators)可能较低。 请参阅[按产品类型筛选](filters.md#type)。
 - **包含空格的SKU** — 包含空格的SKU可能会降低推荐相关性，应尽可能避免使用。
 - **购物车页面** — 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面不支持产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。 请参阅[创建推荐](create.md)。
 - **子产品** — 可配置产品的子产品（可见性&#x200B;_不可见_）未显示在推荐单元中。 只能显示可配置（父）产品。 查看[筛选产品](filters.md#product)。

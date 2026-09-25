@@ -1,28 +1,34 @@
 ---
 title: 创建和管理规则
 description: 了解如何为搜索、默认产品列表和类别页面创建和管理促销规则。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+    internal-label: Personalization
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 4183
+source-wordcount: '4182'
 ht-degree: 0%
-
 ---
-
 # 创建和管理规则
 
 要构建和发布规则，请执行以下操作：
@@ -47,7 +53,7 @@ ht-degree: 0%
 | 规则类型 | 用途 |
 | --- | --- |
 | **所有产品列表** | 当不再应用更具体的搜索或类别规则时，跨产品列表的默认排名和促销。 您只能创建一个此类规则；它不能包含条件。 |
-| **类别规则** | 将推销和排名应用于一个或多个选定的类别，从而控制这些类别页面上的产品订单。 |
+| **类别规则** | 将商品推销和排名应用于单个类别，从而控制该类别页面上的产品订单。 |
 | **搜索规则** | 当购物者运行与规则的查询条件匹配的搜索时，应用促销和排名。 |
 
 在&#x200B;**构建规则**&#x200B;部分中，您可以定义规则名称、计划、规则是否适用于所有列表或特定搜索条件以及排名类型。

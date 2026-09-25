@@ -5,17 +5,18 @@ exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
 TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Admin
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 778
+source-wordcount: '759'
 ht-degree: 0%
-
 ---
-
 # 筛选产品
 
 Adobe Commerce会自动将不可配置的默认过滤器应用于推荐单元。 如果您将多个推荐单元部署到页面，则Adobe Commerce会过滤掉这些单元中重复的所有产品。 仅使用对重复产品的第一次引用，以便为推荐其他产品腾出空间。 Adobe Commerce还会过滤掉任何之前购买过的产品和购物车中的产品。
@@ -77,7 +78,7 @@ Adobe Commerce会自动将不可配置的默认过滤器应用于推荐单元。
 
 ### 类型
 
-基于产品类型的筛选器包括或排除特定类型的所有产品。 支持的类型包括&#x200B;_简单_、_可配置_、_虚拟_、_可下载_&#x200B;或&#x200B;_礼品卡_。 不支持&#x200B;_捆绑包_、_分组_&#x200B;和自定义产品类型。
+基于产品类型的筛选器包括或排除特定类型的所有产品。
 
 ### 可见性
 
