@@ -38,7 +38,7 @@ _推荐单元_
 
 激活推荐单元后，Adobe Commerce将开始[收集数据](../../manage-results/recommendation-performance.md)以测量展示次数、查看次数、点击次数等。 “推荐”表显示每个推荐单位的量度，以帮助您做出明智的业务决策。
 
-1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_侧边栏上，转到_&#x200B;促销&#x200B;_>**推荐**以显示_&#x200B;推荐&#x200B;_工作区。
+1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_&#x200B;侧边栏上，转到_&#x200B;促销&#x200B;_>**推荐**&#x200B;以显示_&#x200B;推荐&#x200B;_工作区。
 
 1. 在&#x200B;**目录视图**&#x200B;字段中，选择要提供推荐的目录视图。 了解有关[使用推荐](../../manage-results/recommendation-performance.md#select-catalog-view)的目录视图的详细信息。
 
@@ -118,7 +118,7 @@ _推荐的产品预览_&#x200B;面板始终随示例产品选择提供，这些�
 
 您可以编辑、停用或删除现有推荐。
 
-1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_侧边栏上，转到_&#x200B;促销&#x200B;_>**推荐**。
+1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_&#x200B;侧边栏上，转到_&#x200B;促销&#x200B;_>**推荐**。
 
 1. 选择要修改的推荐。
 
