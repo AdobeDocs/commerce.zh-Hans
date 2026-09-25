@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b9ab9e256edced9a508d08dfcae3589bd27f304
+source-git-commit: b4bbb596143bdcbb8c55a26386db7a36e2961db9
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1093'
 ht-degree: 1%
 ---
 # 新增功能模板
@@ -9,6 +9,72 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年9月25日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>修复了<a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits">PaaS</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create">Commerce Optimizer</a>的产品推荐文档，该文档错误地指出不支持捆绑的产品和分组的产品。</p>
+</td>
+      <td>
+        反馈
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/55b17947196acfa459934e4ee373469b84e16ea1">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年9月24日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview">迁移概述</a>，以说明Commerce Developer Agent如何协助迁移过程。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年9月23日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年9月17日
 
@@ -22,7 +88,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -44,7 +110,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -66,7 +132,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/insights/overview">Commerce Insights</a>指南，这是Adobe Commerce产品管理和工程部门用于战略实施和安全指导的新主页。</p>
+      <td><p>添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/insights/overview">Commerce Insights</a>指南，这是Adobe Commerce产品管理和工程部门用于战略实施和安全指导的新主页。</p>
 </td>
       <td>
         新主题
@@ -88,7 +154,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>将<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/release-notes">Live Search扩展</a>更新为4.7.3，以解决在某些情况下，产品列表页面上的“添加到购物车”功能无法与PLP构件配合使用的问题。</p>
+      <td><p>将<a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Live Search扩展</a>更新为4.7.3，以解决在某些情况下，产品列表页面上的“添加到购物车”功能无法与PLP构件配合使用的问题。</p>
 </td>
       <td>
         反馈
@@ -110,7 +176,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
+      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
 </td>
       <td>
         技术
@@ -132,7 +198,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -154,7 +220,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
+      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
 </td>
       <td>
         技术
@@ -162,7 +228,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1291cadbeca63d454eabab31c415b2d037d280ba">提交</a></td>
     </tr>
     <tr>
-      <td><p>Adobe Commerce Optimizer现在将私有目录查看限制为单个价格手册。 在<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">私有目录视图</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view">目录视图</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/pricebooks">价格手册</a>中了解详情。</p>
+      <td><p>Adobe Commerce Optimizer现在将私有目录查看限制为单个价格手册。 在<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">私有目录视图</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view">目录视图</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks">价格手册</a>中了解详情。</p>
 </td>
       <td>
         重大更新
@@ -184,7 +250,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -192,7 +258,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">提交</a></td>
     </tr>
     <tr>
-      <td><p>商家现在可以直接从Commerce管理员在网站范围自助服务其他PayPal帐户登录。 有关详细信息，请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/configure/connect-website-account">为网站连接其他PayPal帐户</a>。</p>
+      <td><p>商家现在可以直接从Commerce管理员在网站范围自助服务其他PayPal帐户登录。 有关详细信息，请参阅<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/connect-website-account">为网站连接其他PayPal帐户</a>。</p>
 </td>
       <td>
         新主题
@@ -214,7 +280,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了Adobe Commerce Optimizer设置指南，其中包含有关启用和配置私有目录视图以限制使用签名令牌访问目录数据的说明，并更新了相关主题以引用新功能：<br /> — 添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/private-catalog-view">私有目录视图</a>，其中介绍了如何启用目录保护，以便只有使用有效签名令牌的请求才能检索目录视图的数据。<br /> — 添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/restricted-access-keys">受限访问密钥</a>，其中说明了如何创建、分配和旋转用于签名令牌以进行目录保护的密钥。<br /> — 更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view">目录视图</a>，<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/overview">Adobe Commerce Optimizer是什么？</a>，<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/get-started">开始使用</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits">限制和边界</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/launch/launch-checklist">启动清单</a>以及<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector指南</a>，以引用新的私有目录视图和受限访问密钥主题。</p>
+      <td><p>更新了Adobe Commerce Optimizer设置指南，其中包含有关启用和配置私有目录视图以限制使用签名令牌访问目录数据的说明，并更新了相关主题以引用新功能：<br /> — 添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view">私有目录视图</a>，其中介绍了如何启用目录保护，以便只有使用有效签名令牌的请求才能检索目录视图的数据。<br /> — 添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/restricted-access-keys">受限访问密钥</a>，其中说明了如何创建、分配和旋转用于签名令牌以进行目录保护的密钥。<br /> — 更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view">目录视图</a>，<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview">Adobe Commerce Optimizer是什么？</a>，<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started">开始使用</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">限制和边界</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist">启动清单</a>以及<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector指南</a>，以引用新的私有目录视图和受限访问密钥主题。</p>
 </td>
       <td>
         重大更新，新主题
@@ -236,7 +302,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -258,7 +324,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>使用迁移评估工具、Commerce开发人员MCP和Commerce数据迁移服务更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/migration/overview">迁移概述</a>以及更新的迁移流程。</p>
+      <td><p>使用迁移评估工具、Commerce开发人员MCP和Commerce数据迁移服务更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview">迁移概述</a>以及更新的迁移流程。</p>
 </td>
       <td>
         重大更新
@@ -280,7 +346,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/catalog-service/integration/catalog-events-guide">目录事件和Adobe I/O集成指南</a>介绍了如何启用目录事件、验证SaaS数据导出信息源导出和同步，以及与Adobe I/O Events集成。</p>
+      <td><p>新的<a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/integration/catalog-events-guide">目录事件和Adobe I/O集成指南</a>介绍了如何启用目录事件、验证SaaS数据导出信息源导出和同步，以及与Adobe I/O Events集成。</p>
 </td>
       <td>
         重大更新，新主题
@@ -302,7 +368,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了Standard services的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience">Payment Services兼容性表</a>，以反映更广泛的地理可用性并扩展高级产品的受支持国家/地区详细信息。</p>
+      <td><p>更新了Standard services的<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience">Payment Services兼容性表</a>，以反映更广泛的地理可用性并扩展高级产品的受支持国家/地区详细信息。</p>
 </td>
       <td>
         反馈
@@ -324,7 +390,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已将Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>更新到生产环境。</p>
+      <td><p>已将Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>更新到生产环境。</p>
 </td>
       <td>
         重大更新
@@ -346,34 +412,12 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool">批量数据迁移工具</a>文档，其中包含有关迁移过程的更多信息。</p>
+      <td><p>更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool">批量数据迁移工具</a>文档，其中包含有关迁移过程的更多信息。</p>
 </td>
       <td>
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c8cab2404d47a6cb4a0418a59b533bf11e082b0b">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月23日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新了Adobe Commerce as a Cloud Service的沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">提交</a></td>
     </tr>
   </tbody>
 </table>
