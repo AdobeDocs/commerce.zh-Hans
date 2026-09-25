@@ -5,21 +5,25 @@ exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
 TQID: https://experienceleague.adobe.com/K3cKFg-m22bUzlupyhsHgDVxaJka7xhOvFnOt8wDdII
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
+    internal-label: Machine learning
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 1491
+source-wordcount: '1463'
 ht-degree: 0%
-
 ---
-
 # 创建新推荐
 
 在创建推荐时，您创建了一个包含推荐产品&#x200B;_项_&#x200B;的&#x200B;_推荐单元_，或构件。
@@ -35,11 +39,11 @@ _推荐单元_
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**营销** > _促销活动_ > **产品推荐**&#x200B;以显示&#x200B;_产品推荐_&#x200B;工作区。
 
-1. 指定要显示推荐的[存储视图](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/websites-stores-views)。
+1. 指定要显示推荐的[存储视图](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)。
 
    >[!NOTE]
    >
-   > 必须在默认的存储区视图中创建Page Builder推荐单元，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅[添加内容 — 产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)。
+   > 必须在默认的存储区视图中创建Page Builder推荐单元，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅[添加内容 — 产品推荐](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)。
 
 1. 单击&#x200B;**创建推荐**。
 
@@ -49,14 +53,14 @@ _推荐单元_
 
    >[!NOTE]
    >
-   > 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面上不支持产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
+   > 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面上不支持产品推荐](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
 
    * 主页
    * 类别
    * 产品详细信息
    * 购物车
    * 确认
-   * [页面生成器](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [页面生成器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    您最多可以为每种页面类型创建50个有效的推荐单位。 当达到限制时，页面类型将灰显。
 
@@ -176,7 +180,7 @@ _推荐类型_
 
 >[!IMPORTANT]
 >
->不支持&#x200B;_捆绑包_、_分组_&#x200B;和自定义产品类型。 如果您的目录包含大量此类产品类型，则就绪性得分可能较低。 此外，任何包含空格的SKU都可能会降低推荐的相关性，应避免使用。
+>任何包含空格的SKU都可以降低推荐相关性，应当避免。
 
 下面列出了常见低就绪分数的可能原因和解决方案：
 
