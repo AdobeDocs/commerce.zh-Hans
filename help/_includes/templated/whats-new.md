@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b9ab9e256edced9a508d08dfcae3589bd27f304
+source-git-commit: b4bbb596143bdcbb8c55a26386db7a36e2961db9
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1093'
 ht-degree: 1%
 ---
 # 新增功能模板
@@ -9,6 +9,72 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年9月25日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>修复了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/product-recommendations/boundaries-limits">PaaS</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/recommendations/create">Commerce Optimizer</a>的产品推荐文档，该文档错误地指出不支持捆绑的产品和分组的产品。</p>
+</td>
+      <td>
+        反馈
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/55b17947196acfa459934e4ee373469b84e16ea1">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年9月24日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/migration/overview">迁移概述</a>，以说明Commerce Developer Agent如何协助迁移过程。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年9月23日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年9月17日
 
@@ -352,28 +418,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c8cab2404d47a6cb4a0418a59b533bf11e082b0b">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月23日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新了Adobe Commerce as a Cloud Service的沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">提交</a></td>
     </tr>
   </tbody>
 </table>
