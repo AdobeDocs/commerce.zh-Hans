@@ -6,21 +6,25 @@ exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 9fce350099392041ec9f648ae2d67a459ff53d91
+    internal-label: Administration
+source-git-commit: 4c27d94eca656c48dd50ba8dc69a905ea141c6fd
 workflow-type: tm+mt
-source-wordcount: 1784
+source-wordcount: '1839'
 ht-degree: 1%
-
 ---
-
 # 配置AEM Assets项目
 
 本主题介绍如何配置AEM Assets项目，以便在AEM创作环境中使用Commerce命名空间、元数据架构和[!UICONTROL Commerce]选项卡。 有关这些资源的背景信息，请参阅AEM Assets中的[Commerce元数据](../metadata.md)。
@@ -68,6 +72,10 @@ ht-degree: 1%
    ![已选择Dynamic Media的Cloud Manager解决方案和加载项步骤](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
 
 1. 在&#x200B;**[!UICONTROL Add Environment]**&#x200B;步骤中，输入&#x200B;**生产**&#x200B;和&#x200B;**暂存**&#x200B;环境的名称，然后选择区域。
+
+   >[!IMPORTANT]
+   >
+   >[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}为此集成创建AEM Assets环境时，请选择地理位置靠近Adobe Commerce as a Cloud Service单元格的受支持AEM部署区域。
 
    ![Cloud Manager添加环境对话框，其中包含生产和暂存详细信息](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
 
