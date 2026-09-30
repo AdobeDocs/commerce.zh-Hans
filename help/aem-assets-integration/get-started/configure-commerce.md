@@ -2,26 +2,30 @@
 title: 安装Adobe Commerce包
 description: 了解如何在Adobe Commerce实例上安装适用于Adobe Commerce的AEM Assets集成。 要将AEM Assets与Adobe Commerce结合使用，需要此扩展。
 feature: CMS, Media
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
 TQID: https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+    internal-label: Metadata
+source-git-commit: 555a9c9aff3f4d5f60f13374a9f23a70e2111b3b
 workflow-type: tm+mt
-source-wordcount: 1675
+source-wordcount: '1824'
 ht-degree: 0%
-
 ---
-
 # 安装Adobe Commerce包
 
 Commerce的这一集成支持在Adobe Commerce和Adobe Experience Manager Assets (AEM Assets)之间同步资源。 扩展提供了一系列工具和服务，用于跨两个平台管理产品图像、视频和其他媒体资产。
@@ -32,17 +36,17 @@ Commerce的这一集成支持在Adobe Commerce和Adobe Experience Manager Assets
 
 您需要以下角色和权限来启用Commerce与AEM Assets的集成。
 
-- [Commerce cloud项目管理员](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/project/user-access) — 安装所需的扩展，并通过管理员或命令行配置Commerce应用程序服务器。
+- [Commerce cloud项目管理员](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) — 安装所需的扩展，并通过管理员或命令行配置Commerce应用程序服务器。
 
   - 访问[repo.magento.com](https://repo.magento.com/admin/dashboard)以安装扩展。
 
-    有关密钥生成和获取必要的权限，请参阅[获取您的身份验证密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。 有关云安装，请参阅[云基础架构上的Commerce指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
+    有关密钥生成和获取必要的权限，请参阅[获取您的身份验证密钥](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。 有关云安装，请参阅[云基础架构上的Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
 
-- [Commerce管理员](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/guide-overview) — 更新商店配置并管理Commerce用户帐户。
+- [Commerce管理员](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview) — 更新商店配置并管理Commerce用户帐户。
 
 >[!TIP]
 >
-> Adobe Commerce可以配置为使用[Adobe IMS身份验证](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/admin/ims/adobe-ims-config)。
+> Adobe Commerce可以配置为使用[Adobe IMS身份验证](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config)。
 
 ## 安装和配置工作流
 
@@ -60,6 +64,12 @@ Commerce的这一集成支持在Adobe Commerce和Adobe Experience Manager Assets
 
 在版本为Adobe Commerce 2.4.5+的AEM Assets实例上安装最新版本的Adobe Commerce集成扩展(`aem-assets-integration`)。 该扩展是作为[repo.magento.com](https://repo.magento.com/admin/dashboard)存储库中的编辑器中继包提供的。
 
+默认情况下，`composer require magento/aem-assets-integration`安装最新的可用版本。 要固定确切的版本（例如，将多个环境保留在同一个经过验证的版本上），请使用确切的约束，如`"magento/aem-assets-integration": "1.4.7"`；仅当需要兼容的1.x范围时才使用`^1.4.7`。
+
+>[!NOTE]
+>
+>如果您从1.4.6之前的版本升级，Adobe建议直接升级到1.4.7或更高版本。 版本1.4.6引入了自定义图像角色和扩展更新检查器。 版本1.4.7修复了在启用Commerce异步配置保存时，用于[自定义自动匹配](../synchronize/custom-match.md)的`workspace.json`文件未正确保留的问题。 如果您使用启用了异步配置保存的自定义匹配器，请在升级后重新上传`workspace.json`文件。 请参阅[异步配置保存](../synchronize/custom-match.md#async-config-save)。
+
 >[!BEGINTABS]
 
 >[!TAB 云基础架构]
@@ -70,7 +80,7 @@ Commerce的这一集成支持在Adobe Commerce和Adobe Experience Manager Assets
 
    >[!NOTE]
    >
-   >有关在本地管理Commerce项目环境的信息，请参阅《云基础架构用户指南》_上的_ Adobe Commerce中的[使用CLI管理分支](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/cli-branches)。
+   >有关在本地管理Commerce项目环境的信息，请参阅《云基础架构用户指南》_上的_ Adobe Commerce中的[使用CLI管理分支](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/cli-branches)。
 
 1. 查看要使用Adobe Commerce Cloud CLI更新的环境分支。
 
@@ -78,10 +88,10 @@ Commerce的这一集成支持在Adobe Commerce和Adobe Experience Manager Assets
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. 添加适用于Commerce的AEM Assets集成扩展。
+1. 添加适用于Commerce的AEM Assets集成扩展。 忽略版本限制以安装最新可用版本，或固定特定版本，如下所示。
 
    ```shell
-   composer require "magento/aem-assets-integration" "<version-tbd>" --no-update
+   composer require "magento/aem-assets-integration" "^1.4.7" --no-update
    ```
 
 1. 更新包依赖关系。
@@ -100,13 +110,13 @@ Commerce的这一集成支持在Adobe Commerce和Adobe Experience Manager Assets
    git push origin <branch-name>
    ```
 
-   推送更新将启动[Commerce云部署流程](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/deploy/process)以应用更改。 从[部署日志](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)中检查部署状态。
+   推送更新将启动[Commerce云部署流程](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process)以应用更改。 从[部署日志](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)中检查部署状态。
 
 >[!TAB 内部部署]
 
 使用此方法为内部部署实例安装[!DNL AEM Assets Integration]扩展。
 
-1. 使用编辑器将AEM Assets Integration for Commerce扩展添加到您的项目中：
+1. 使用编辑器将AEM Assets Integration for Commerce扩展添加到您的项目中。 忽略版本约束以安装最新的可用版本，或固定特定版本，如`"^1.4.7"`。
 
    ```shell
    composer require "magento/aem-assets-integration" --no-update
@@ -140,7 +150,7 @@ Commerce的这一集成支持在Adobe Commerce和Adobe Experience Manager Assets
 
 >[!NOTE]
 >
-> Commerce服务连接器设置是使用[Adobe Commerce SaaS服务](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/integration-services/saas#availableservices)所需的一次性进程。 如果您已经为其他服务配置了连接器，则可以通过选择&#x200B;**[!UICONTROL Systems]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**&#x200B;从Commerce管理员中查看现有配置。
+> Commerce服务连接器设置是使用[Adobe Commerce SaaS服务](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices)所需的一次性进程。 如果您已经为其他服务配置了连接器，则可以通过选择&#x200B;**[!UICONTROL Systems]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**&#x200B;从Commerce管理员中查看现有配置。
 
 要在您的Adobe Commerce实例与启用AEM Assets集成的服务之间传输数据，请从管理员(**[!UICONTROL System]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**)配置Commerce服务连接器。
 
@@ -152,7 +162,7 @@ AEM Assets集成的![SaaS项目和数据空间ID](../assets/aem-saas-project-con
 - 安全云存储的数据空间名称（SaaS标识符）
 - 配置Commerce和AEM Assets环境的IMS组织ID
 
-有关详细说明，请观看[Commerce服务连接器配置视频](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)，共[Commerce服务连接器](../../landing/saas.md#organizationid)文档。
+有关详细说明，请观看[Commerce服务连接器配置视频](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)，共[Commerce服务连接器](../../landing/saas.md#organizationid)文档。
 
 在保存配置时，系统会为您的环境生成SaaS项目和数据库ID。 在Adobe Commerce和AEM Assets之间启用资源同步时需要这些值。
 
@@ -163,8 +173,8 @@ AEM Assets集成使用Adobe I/O Events服务在Commerce实例和Experience Cloud
 在配置Adobe I/O Events之前，请验证您的Commerce项目的RabbitMQ和cron作业配置：
 
 - 确保已启用RabbitMQ并侦听事件。
-  - [本地Adobe Commerce的RabbitMQ设置](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)
-  - [云基础架构上Adobe Commerce的RabbitMQ设置](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)
+  - [本地Adobe Commerce的RabbitMQ设置](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)
+  - [云基础架构上Adobe Commerce的RabbitMQ设置](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)
   - 验证是否已启用[cron作业](https://developer.adobe.com/commerce/extensibility/events/configure-commerce/#check-cron-and-message-queue-configuration)。 AEM Assets集成的通信和工作流需要Cron作业。
 
 >[!NOTE]
@@ -224,7 +234,7 @@ AEM Assets集成使用Adobe I/O Events服务在Commerce实例和Experience Cloud
 
 - `content`：要运行的VCL代码片段，用于检查客户端IP地址。 如果IP位于Edge ACL中，则会阻止其访问，并显示整个网站的`405 Not allowed`错误。 允许访问所有其他客户端IP地址。
 
-有关使用VCL代码段阻止传入请求的详细信息，请参阅&#x200B;_Commerce on Cloud Infrastructure指南_&#x200B;中的[用于阻止请求的自定义VCL](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)。
+有关使用VCL代码段阻止传入请求的详细信息，请参阅&#x200B;_Commerce on Cloud Infrastructure指南_&#x200B;中的[用于阻止请求的自定义VCL](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)。
 
 >[!ENDSHADEBOX]
 

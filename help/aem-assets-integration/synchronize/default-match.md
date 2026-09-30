@@ -6,19 +6,21 @@ exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
 TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Metadata
+source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
 workflow-type: tm+mt
-source-wordcount: 317
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # 默认自动匹配
 
 Commerce的AEM Assets集成提供了基于&#x200B;**AEM Assets**&#x200B;元数据配置的默认自动匹配机制(**[!UICONTROL Match by product SKU]**)。 此规则可实现&#x200B;**Adobe Commerce**&#x200B;和&#x200B;**AEM Assets**&#x200B;之间的无缝同步，从而确保资产自动链接到正确的促销实体。
@@ -51,11 +53,13 @@ Commerce的AEM Assets集成提供了基于&#x200B;**AEM Assets**&#x200B;元数�
 
 1. 配置元数据（[!UICONTROL SKU]、[!UICONTROL position]和[!UICONTROL role]）以将资产链接到关联的产品SKU。
 
+   四个标准角色是`image`、`small_image`、`thumbnail`和`swatch_image`。 使用AEM Assets集成扩展版本1.4.6及更高版本，您还可以输入自定义图像角色，如`hero`或`custom_role_1`。 有关详细信息，请参阅[自定义自动匹配](custom-match.md)。
+
    >[!NOTE]
    >
    > 如果资产用于多个产品，请为每个关联的SKU配置元数据。
 
-1. 在`Basic`选项卡中，将&#x200B;_[!UICONTROL Review Status]_&#x200B;字段的默认值设置为`approved`。
+1. 在`Basic`选项卡中，将&#x200B;_[!UICONTROL Review Status]_字段的默认值设置为`approved`。
 
    ![示例元数据](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 

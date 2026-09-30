@@ -6,30 +6,35 @@ exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
 TQID: https://experienceleague.adobe.com/MM-neGrH-N8xBcCwLgnsaIrIjhbX6uYL5kS41QdV79I
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Implementation
+source-git-commit: 47b9ea797cbe18bd866159311486ba1b588ffcd3
 workflow-type: tm+mt
-source-wordcount: 967
-ht-degree: 2%
-
+source-wordcount: '1058'
+ht-degree: 1%
 ---
-
 # 配置集成
 
 通过将Commerce连接到AEM Assets实例并选择资源同步的匹配策略来配置集成。
 
 识别AEM Assets项目后，选择用于在Adobe Commerce和AEM Assets之间同步资产的匹配规则。
 
-* **[!UICONTROL Match by product SKU]** — 将资源元数据中的SKU与[Commerce产品SKU](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/implementation-playbook/glossary#sku)匹配的默认规则，以确保资源与正确的产品关联。
+* **[!UICONTROL Match by product SKU]** — 将资源元数据中的SKU与[Commerce产品SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)匹配的默认规则，以确保资源与正确的产品关联。
 
 * **[!UICONTROL Custom match]** — 匹配规则，用于需要自定义匹配逻辑的更复杂方案或特定业务要求。 实施自定义匹配需要在Adobe Developer App Builder中开发自定义代码以定义资源与产品的匹配方式。 更多详细信息即将推出……
 
@@ -80,7 +85,7 @@ ht-degree: 2%
 1. 从&#x200B;**[!UICONTROL Asset matching rule]**&#x200B;下拉列表中选择一个资源匹配规则以进行资源同步。
 
    * 为[默认自动匹配](../synchronize/default-match.md)选择&#x200B;**[!UICONTROL Match by SKU]**，
-   * 为[自定义自动匹配](../synchronize/custom-match.md)选择&#x200B;**[!UICONTROL Custom match]**（需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。）
+   * 为[自定义自动匹配](../synchronize/custom-match.md)选择&#x200B;**[!UICONTROL Custom match]**（需要[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。）
 
 1. 将为AEM Assets产品SKU定义的[Commerce元数据字段名称](configure-aem.md#define-the-metadata-profile)添加到&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;字段`commerce:skus`中（默认情况下）。
 
@@ -98,6 +103,22 @@ ht-degree: 2%
 
 这一级别的服务可确保产品页面始终显示最新的图像，使店面内容准确且具有视觉吸引力。
 
+## 同步本地化的替换文本
+
+本地化的替换文本使用现有的资源同步过程。 您不需要新的事件类型或单独的同步配置。
+
+1. 在AEM资源的&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡中添加一个或多个存储视图替换文本行。
+
+1. 将资产与Commerce产品SKU关联。
+
+1. 在AEM Assets中批准资源。
+
+1. 等待资产事件和同步过程完成。
+
+1. 验证Commerce管理员和店面响应中的本地化值。
+
+有关字段名称、验证规则和Commerce结果，请参阅AEM Assets中的[Commerce元数据](../metadata.md)。
+
 ### 配置可视化图表所有者
 
 **可视化所有者**&#x200B;设置确定在集成中提供产品图像的系统：
@@ -108,7 +129,7 @@ ht-degree: 2%
 
 管理员显示该所有者的可用图像，而其余图像则呈灰显状态，并带有&#x200B;**hidden**&#x200B;标签。
 
-有关图像显示行为的详细信息，请参阅[设置图像详细信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主题。
+有关图像显示行为的详细信息，请参阅[设置图像详细信息](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主题。
 
 >[!TIP]
 >

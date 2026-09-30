@@ -6,22 +6,24 @@ exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
 TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Metadata
+source-git-commit: 7ecedcc7c17abdeb64507d8f74ec6fc103b361cc
 workflow-type: tm+mt
-source-wordcount: 605
+source-wordcount: '927'
 ht-degree: 0%
-
 ---
-
 # 自定义自动匹配
 
-如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或者处理来自无法将元数据填充到AEM Assets中的第三方系统的资源。
+如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或者处理来自无法将元数据填充到AEM Assets中的第三方系统的资源。
 
 ## 配置自定义自动匹配
 
@@ -121,9 +123,45 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Save Config]**。
 
+## 异步配置保存
+
+如果您的Commerce实例启用了[异步配置保存](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)选项，则配置更改将排入队列并由异步使用者应用，而不是立即保存在同一请求中。 要在此模式下上载自定义自动匹配的`workspace.json`文件，请依次完成以下步骤：
+
+1. 确认Commerce异步配置保存已[启用](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)。
+
+1. 从管理员转到&#x200B;**[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**。
+
+1. 上传当前的App Builder `workspace.json`文件。
+
+1. 保存配置。
+
+1. 等待异步配置使用者完成保存处理。
+
+1. 验证OAuth值和依赖的集成配置。
+
+1. 验证外部匹配程序注册是否反映了更新。
+
+>[!NOTE]
+>
+>如果禁用了异步配置保存，则会应用正常的同步保存行为，并且您不需要等待队列使用者。
+
+### 异步配置保存疑难解答
+
+| 症状 | 要做什么 |
+| --- | --- |
+| 保存后，OAuth值保持不变 | 确认您正在运行AEM Assets集成扩展版本1.4.7或更高版本，上传新的`workspace.json`文件，并等待队列处理完成，然后再次检查值。 |
+| 上传无效后，保存失败 | 验证文件是否为格式正确的`workspace.json`文件并包含预期的App Builder凭据。 |
+| 未上传任何文件 | 现有的存储配置保持不变。 |
+| 外部匹配程序注册不会更新 | 检查队列使用者是否已完成处理，查看Commerce日志，并确认外部匹配程序注册状态。 |
+| 已禁用异步配置保存 | 常规的同步保存行为适用；此故障排除部分不适用。 |
+
+>[!NOTE]
+>
+>如果您开发了AEM Assets集成的配置观察器，请不要依赖于原始HTTP请求参数。 异步配置保存和其他程序化配置保存可以在没有管理员请求上下文的情况下执行观察程序。
+
 ## 自定义匹配器API端点
 
-当您使用[App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}生成自定义匹配程序应用程序时，该应用程序必须公开以下端点：
+当您使用[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}生成自定义匹配程序应用程序时，该应用程序必须公开以下端点：
 
 * **App Builder资源到产品URL**&#x200B;端点
 * **App Builder产品到资源URL**&#x200B;端点
@@ -292,7 +330,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | 属性 | 数据类型 | 描述 |
 | --- | --- | --- |
 | `asset_id` | 字符串 | 资产ID。 |
-| `asset_roles` | 数组 | 资产角色。 使用支持的[Commerce资源角色](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，如`thumbnail`、`image`、`small_image`和`swatch_image`。 |
+| `asset_roles` | 数组 | 资产角色。 使用支持的[Commerce资源角色](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，如`thumbnail`、`image`、`small_image`和`swatch_image`。 使用AEM Assets集成扩展1.4.6及更高版本时，也可以使用自定义图像角色（如`hero`或`custom_role_1`）。 |
 | `asset_format` | 字符串 | 资源格式。 可能的值为`image`和`video`。 |
 | `asset_position` | 数字 | 资产在产品库中的位置。 |
 
