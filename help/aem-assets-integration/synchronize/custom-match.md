@@ -23,7 +23,7 @@ ht-degree: 0%
 ---
 # 自定义自动匹配
 
-如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或者处理来自无法将元数据填充到AEM Assets中的第三方系统的资源。
+如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或者处理来自无法将元数据填充到AEM Assets中的第三方系统的资源。
 
 ## 配置自定义自动匹配
 
@@ -125,9 +125,9 @@ ht-degree: 0%
 
 ## 异步配置保存
 
-如果您的Commerce实例启用了[异步配置保存](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)选项，则配置更改将排入队列并由异步使用者应用，而不是立即保存在同一请求中。 要在此模式下上载自定义自动匹配的`workspace.json`文件，请依次完成以下步骤：
+如果您的Commerce实例启用了[异步配置保存](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)选项，则配置更改将排入队列并由异步使用者应用，而不是立即保存在同一请求中。 要在此模式下上载自定义自动匹配的`workspace.json`文件，请依次完成以下步骤：
 
-1. 确认Commerce异步配置保存已[启用](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)。
+1. 确认Commerce异步配置保存已[启用](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)。
 
 1. 从管理员转到&#x200B;**[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**。
 
@@ -161,7 +161,7 @@ ht-degree: 0%
 
 ## 自定义匹配器API端点
 
-当您使用[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}生成自定义匹配程序应用程序时，该应用程序必须公开以下端点：
+当您使用[App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}生成自定义匹配程序应用程序时，该应用程序必须公开以下端点：
 
 * **App Builder资源到产品URL**&#x200B;端点
 * **App Builder产品到资源URL**&#x200B;端点
@@ -330,7 +330,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | 属性 | 数据类型 | 描述 |
 | --- | --- | --- |
 | `asset_id` | 字符串 | 资产ID。 |
-| `asset_roles` | 数组 | 资产角色。 使用支持的[Commerce资源角色](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，如`thumbnail`、`image`、`small_image`和`swatch_image`。 使用AEM Assets集成扩展1.4.6及更高版本时，也可以使用自定义图像角色（如`hero`或`custom_role_1`）。 |
+| `asset_roles` | 数组 | 资产角色。 使用支持的[Commerce资源角色](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，如`thumbnail`、`image`、`small_image`和`swatch_image`。 使用AEM Assets集成扩展1.4.6及更高版本时，也可以使用自定义图像角色（如`hero`或`custom_role_1`）。 |
 | `asset_format` | 字符串 | 资源格式。 可能的值为`image`和`video`。 |
 | `asset_position` | 数字 | 资产在产品库中的位置。 |
 
