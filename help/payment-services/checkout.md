@@ -1,15 +1,13 @@
 ---
-title: 签出 [!DNL Payment Services]
-description: 自定义 [!DNL Payment Services] 结帐以符合客户的需求。
+title: 在[!DNL Payment Services]中签出
+description: 自定义[!DNL Payment Services]签出以符合客户的需求。
 feature: Payments, Checkout, Paas, Saas
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '343'
 ht-degree: 0%
-
 ---
-
 
 # 在[!DNL Payment Services]中签出
 
@@ -23,7 +21,7 @@ ht-degree: 0%
 
 ![签出时出错](assets/user-checkout-error.png "签出时出错"){width="600" zoomable="yes"}
 
-针对特定[订单](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en)，管理员中还会显示有关已取消订单的评论。
+针对特定[订单](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en)，管理员中还会显示有关已取消订单的评论。
 
 ![已取消订单管理员中的订单注释](assets/admin-checkout-error.png "已取消订单管理员中的订单注释"){width="600" zoomable="yes"}
 
