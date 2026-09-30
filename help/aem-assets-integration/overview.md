@@ -104,7 +104,7 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 >[!BEGINTABS]
 
->[!TAB 云或本地教程]上的Adobe Commerce
+>[!TAB 云或本地教程上的Adobe Commerce]
 
 要了解Adobe Commerce和AEM Assets如何协作以简化内容工作流，请观看此视频：
 
@@ -122,7 +122,7 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 安装和配置AEM Assets集成的流程取决于您的Adobe Commerce部署。 在所有情况下，您首先要配置AEM Assets，然后将Commerce连接到该网站。
 
-要了解集成添加到AEM Assets环境中的命名空间、元数据架构和&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡，请在开始之前查看AEM Assets](metadata.md)中的[Commerce元数据。
+要了解集成添加到AEM Assets环境中的命名空间、元数据架构和&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡，请在开始之前查看AEM Assets[&#128279;](metadata.md)中的Commerce元数据。
 
 有关本地化的图像替换文本，请参阅AEM Assets元数据中的[本地化的替换文本](metadata.md#localized-alt-text-in-aem-assets-metadata)。 有关设置和同步说明，请参阅[配置AEM Assets项目](get-started/configure-aem.md)和[配置集成](get-started/setup-synchronization.md)。
 

@@ -31,7 +31,7 @@ Commerce元数据支持以下功能：
 * **通过`commerce:skus`字段将资产与一个或多个产品SKU关联**。
 * **通过`commerce:roles`和`commerce:positions`字段定义资源在Commerce**&#x200B;中的显示方式。
 * **添加通过`commerce:altTextStoreViews`和`commerce:altTextValues`字段由商店视图**&#x200B;键入的特定于Commerce的alt文本。
-* **通过&#x200B;**[!UICONTROL Commerce]**选项卡和架构表单在AEM Assets属性UI**&#x200B;中公开这些字段。
+* **通过&#x200B;**&#x200B;[!UICONTROL Commerce]&#x200B;**选项卡和架构表单在AEM Assets属性UI**&#x200B;中公开这些字段。
 
 要在AEM项目中配置这些资源，请参阅[配置AEM Assets项目](get-started/configure-aem.md)。 本主题的其余部分介绍如何提供元数据。
 
@@ -74,7 +74,7 @@ Adobe提供了`assets-commerce` AEM Commerce代码包，用于将Commerce命名�
 
 ## AEM Assets元数据中的本地化替换文本
 
-编辑符合条件的图像时，_[!UICONTROL Alt texts]_多字段在AEM Assets资源元数据编辑器的&#x200B;**[!UICONTROL Commerce]**选项卡上可用。
+编辑符合条件的图像时，_[!UICONTROL Alt texts]_&#x200B;多字段在AEM Assets资源元数据编辑器的&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡上可用。
 
 >[!IMPORTANT]
 >
@@ -90,7 +90,7 @@ Adobe提供了`assets-commerce` AEM Commerce代码包，用于将Commerce命名�
 
 ![Alt文本包含存储视图代码和Alt文本输入的多字段](assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
-保存时，如果任何行具有空的&#x200B;_[!UICONTROL Store View Code]_或如果两行使用相同的存储视图代码（不区分大小写），则客户端验证会阻止提交。
+保存时，如果任何行具有空的&#x200B;_[!UICONTROL Store View Code]_&#x200B;或如果两行使用相同的存储视图代码（不区分大小写），则客户端验证会阻止提交。
 
 替代文本条目作为两个索引对齐的`String[]`属性保留在JCR资产元数据中：
 
