@@ -20,9 +20,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4c27d94eca656c48dd50ba8dc69a905ea141c6fd
+source-git-commit: fda6fa7c9ae80a594f0eb05624030cd6b13f0da2
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1861'
 ht-degree: 1%
 ---
 # 配置AEM Assets项目
@@ -205,6 +205,8 @@ ht-degree: 1%
 
    * 产品SKU和`Eligible for Commerce`字段可见。
 
+   * **[!UICONTROL Alt texts]**&#x200B;多字段可用于&#x200B;**[!UICONTROL Store View Code]**&#x200B;和&#x200B;**[!UICONTROL Alt Text]**&#x200B;输入。
+
 ### Commerce选项卡在资产中不可见
 
 如果&#x200B;**Commerce**&#x200B;选项卡未显示在属性中，则必须在元数据架构编辑器中手动完成以下步骤：
@@ -220,6 +222,8 @@ ht-degree: 1%
 1. 选中&#x200B;**显示角色**&#x200B;和&#x200B;**显示顺序**&#x200B;的复选框。
 
 1. 将&#x200B;**checkbox**&#x200B;组件拖放到&#x200B;**Commerce**&#x200B;选项卡中，并将其映射到属性`commerce:isCommerce`。 将&#x200B;**是**&#x200B;和&#x200B;**否**&#x200B;定义为选项。
+
+1. 将&#x200B;**[!UICONTROL Alt texts]**&#x200B;多字段添加到&#x200B;**Commerce**&#x200B;选项卡。 将其两个索引对齐属性配置为`commerce:altTextStoreViews`和`commerce:altTextValues`。
 
 如果您遇到任何其他问题，请创建[支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)或联系您的AEM Assets集成销售代表寻求帮助。
 

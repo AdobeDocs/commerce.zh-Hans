@@ -1,17 +1,15 @@
 ---
 title: 设置测试沙盒
-description: 使用PayPal沙盒帐户和管理员登录在实时支付前以测试模式运行 [!DNL Payment Services] （云上的Adobe Commerce、内部部署和SaaS）。
+description: 使用PayPal沙盒帐户和管理员登录在实时支付前以测试模式运行[!DNL Payment Services]（云上的Adobe Commerce、内部部署和SaaS）。
 role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '778'
 ht-degree: 0%
-
 ---
-
 # 设置测试沙盒
 
 在开始沙盒载入之前，您必须注册一个免费的PayPal开发人员帐户，并创建商家（用于入门）和购物者帐户（用于测试您的结帐）。 如果需要，您可以创建多个开发人员帐户。
@@ -57,11 +55,11 @@ PayPal沙盒帐户允许您在测试模式下使用[!DNL Payment Services]。 Pa
 
    **[!UICONTROL Sandbox onboarding]**&#x200B;按钮不再可见，并且您看到“沙盒付款待处理”文本。
 
-当您的PayPal沙盒载入获得批准时，您应该看到一条通知，表明您的支付系统当前处于沙盒模式并且不处理实时支付。
+   当您的PayPal沙盒载入获得批准时，您应该看到一条通知，表明您的支付系统当前处于沙盒模式并且不处理实时支付。
 
->[!IMPORTANT]
->
->如果您撤销了对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]的同意，以处理您的付款（在您的PayPal帐户设置中），则[!DNL Payment Services]无法处理您商店中的订单。 在您的Payment Services主页上，会显示有关撤销同意的警报。 要关闭警报，请单击&#x200B;**[!UICONTROL Do not show again]**。
+   >[!IMPORTANT]
+   >
+   >如果您撤销了对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]的同意，以处理您的付款（在您的PayPal帐户设置中），则[!DNL Payment Services]无法处理您商店中的订单。 在您的Payment Services主页上，会显示有关撤销同意的警报。 要关闭警报，请单击&#x200B;**[!UICONTROL Do not show again]**。
 
 ### 重置沙盒帐户
 

@@ -4,13 +4,11 @@ breadcrumb-title: '[!DNL AEM Assets]集成'
 user-guide-description: 有关面向Adobe Commerce和AEM Assets管理员以及电子商务营销人员的Magento Open Source集成的综合信息。
 feature: CMS, Page Content
 nudge: true
-source-git-commit: de2af14a02ba21bfedd4fa6841f0f8b544b013cc
+source-git-commit: 7db47b2b78642d47b0f38c3933bd87a0a2b6e127
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '106'
 ht-degree: 3%
-
 ---
-
 
 # AEM Assets集成 {#aem-assets-integration}
 
@@ -18,19 +16,20 @@ ht-degree: 3%
 - [发行说明](release-notes.md)
 - [AEM Assets中的Commerce元数据](metadata.md)
 - 快速入门 {#get-started}
-   - [配置AEM Assets项目](get-started/configure-aem.md)
-   - [安装Adobe Commerce包](get-started/configure-commerce.md)
-   - [配置集成](get-started/setup-synchronization.md)
-   - [配置IMS用户权限](get-started/permissions.md)
-   - [配置Commerce Optimizer](get-started/configure-aco.md)
-   - [配置您的店面](get-started/configure-storefront.md)
-   - [查看和管理日志](get-started/logs.md)
-   - [查看AEM Assets同步状态](get-started/sync-status.md)
-   - [迁移数据](get-started/migrate-data.md)
+  - [配置AEM Assets项目](get-started/configure-aem.md)
+  - [安装Adobe Commerce包](get-started/configure-commerce.md)
+  - [检查扩展更新](get-started/check-for-updates.md)
+  - [配置集成](get-started/setup-synchronization.md)
+  - [配置IMS用户权限](get-started/permissions.md)
+  - [配置Commerce Optimizer](get-started/configure-aco.md)
+  - [配置您的店面](get-started/configure-storefront.md)
+  - [查看和管理日志](get-started/logs.md)
+  - [查看AEM Assets同步状态](get-started/sync-status.md)
+  - [迁移数据](get-started/migrate-data.md)
 - 同步机制 {#synchronize}
-   - [维护准确和相关的内容](synchronize/commerce-content.md)
-   - [默认自动匹配](synchronize/default-match.md)
-   - [自定义自动匹配](synchronize/custom-match.md)
-   - [手动选择资源](synchronize/asset-selector-integration.md)
+  - [维护准确和相关的内容](synchronize/commerce-content.md)
+  - [默认自动匹配](synchronize/default-match.md)
+  - [自定义自动匹配](synchronize/custom-match.md)
+  - [手动选择资源](synchronize/asset-selector-integration.md)
 - [管理Commerce Media资源](manage-assets.md)
 - [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)

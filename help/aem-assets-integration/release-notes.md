@@ -3,13 +3,11 @@ title: AEM Assets集成发行说明
 description: 有关所有AEM Assets集成版本的信息，请参阅发行说明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: afef108e512c69047a0420566a498dab164c207e
+source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1784'
 ht-degree: 0%
-
 ---
-
 # AEM Assets集成发行说明
 
 以下发行说明介绍了AEM Assets集成的所有版本，其中包括：
@@ -38,6 +36,36 @@ _2025年2月11日_
 
 +++
 
+## v1.4.7
+
+_2026年9月18日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![修复了问题](../assets/fix.svg)<!-- Issue ACAP-1317 -->修复了在启用Commerce异步配置保存后，为[自定义自动匹配](synchronize/custom-match.md)上传的`workspace.json`文件未正确保留的问题。 以前，管理员请求仅对上载元数据而不是文件内容进行排队，因此当异步配置使用者处理保存时，无法再读取临时上载文件。 因此，在App Builder OAuth值保持不变，配置似乎已成功保存。 上传的App Builder凭据现在可以在队列边界中保留，并且可以由异步使用者正确处理。
+
+>[!IMPORTANT]
+>
+>如果您使用启用了异步配置保存选项的自定义匹配器，请在升级到此版本后重新上传`workspace.json`文件。 有关上载说明，请参阅[异步配置保存](synchronize/custom-match.md#async-config-save)。
+
+## v1.4.6
+
+_2026年9月8日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![新问题](../assets/new.svg)<!-- Issue ACAP-1272 -->自定义AEM图像角色现在在同步期间保留。 除了四个标准角色（`image`、`small_image`、`thumbnail`和`swatch_image`）之外，AEM `commerce:roles`元数据字段中的自定义值还被摄取并映射到Commerce产品媒体集数据。 有关详细信息，请参阅[自定义自动匹配](synchronize/custom-match.md)。
+
+![新问题](../assets/new.svg)<!-- Issue ACAP-1272 --> Adobe Commerce现在可以异步检查AEM Assets集成扩展更新，并在有新版本可用时通知管理员。 管理员还可以使用`bin/magento aem:assets:check-update`运行手动检查。 有关详细信息，请参阅[检查扩展更新](get-started/check-for-updates.md)。
+
+## v1.4.5
+
+_2026年8月3日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![修复了问题](../assets/fix.svg)<!-- Issue ACAP-1321 -->修复了商店视图资源可见性的向后兼容问题。 未指定隐藏存储视图的现有资源同步请求将继续工作，而不会进行更改。
+
 ## v1.4.4
 
 _2026年7月30日_
@@ -45,6 +73,8 @@ _2026年7月30日_
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
 
 ![新问题](../assets/new.svg)现在，商家可以隐藏AEM资源的特定商店视图。 当AEM Assets将某个图像标记为一个或多个商店视图的隐藏时，Commerce会从这些商店视图的店面中排除该图像。 管理员产品媒体集现在包含一个&#x200B;**[!UICONTROL Store View Visibility]**&#x200B;字段，该字段显示隐藏图像的商店视图。<!-- Issue ACAP-1308 -->
+
+![修复了问题](../assets/fix.svg)修复了Page Builder集成包错误地要求`magento/module-page-builder`包的问题，从而阻止单独安装包。
 
 ## v1.4.2
 

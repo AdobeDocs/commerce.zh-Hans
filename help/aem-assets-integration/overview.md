@@ -1,32 +1,41 @@
 ---
 title: 适用于Commerce的AEM Assets集成
-description: 了解如何将Adobe Experience Manager Assets与您的 [!DNL Commerce] 实例集成，以创建和管理Commerce店面的媒体文件。
+description: 了解如何将Adobe Experience Manager Assets与您的[!DNL Commerce]实例集成，以创建和管理Commerce店面的媒体文件。
 feature: CMS, Media, Configuration, Integration
 exl-id: f450752a-bef1-419e-ad14-ff8879ab204b
 TQID: https://experienceleague.adobe.com/CTDmM7Ox2rQ-55F1BVTg-C8DPBEuEpzFxXGtWpnjXKs
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Administration
+source-git-commit: 9ac4dbfe281f683adce98fc3693295e0f5364fca
 workflow-type: tm+mt
-source-wordcount: 1091
+source-wordcount: '1236'
 ht-degree: 1%
-
 ---
-
 # 适用于Commerce的AEM Assets集成
 
 在营销预算面临压力的同时，对个性化内容的需求也在迅速增长。 受地区、季节和特定区段要求的驱动，零售商和品牌正在努力跟上对产品图像变化日益增长的需求。
@@ -42,6 +51,14 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 * **动态资源更新** — 产品图像和营销资源会自动反映AEM Assets中的最新更改，从而保持店面准确和相关性。
 
 * **简化的目录管理** — 自动进行资产刷新和清理，最大程度地减少手动操作，并确保产品目录一致、维护良好。
+
+* **本地化的图像alt文本** — 商家可以为每个Commerce商店视图创作alt文本。 集成将该值同步到Commerce的标准图像&#x200B;**[!UICONTROL Label]**&#x200B;字段。
+
+* **自定义图像角色** — 使用AEM Assets Integration扩展版本1.4.6或更高版本，在同步过程中，除了四个标准角色之外，还将保留AEM Assets中配置的自定义图像角色。 请参阅[自定义自动匹配](synchronize/custom-match.md)。
+
+* **扩展更新通知** — 使用AEM Assets Integration扩展版本1.4.6或更高版本，Commerce将检查新的扩展版本，并通知管理员中的管理员。 请参阅[检查扩展更新](get-started/check-for-updates.md)。
+
+替换文本本地化不会更改产品图像分配或库映射。 存储视图资源可用性是一个单独的功能，替代文本工作流不包含该功能。
 
 ## 使用该集成的要求
 
@@ -106,6 +123,8 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 安装和配置AEM Assets集成的流程取决于您的Adobe Commerce部署。 在所有情况下，您首先要配置AEM Assets，然后将Commerce连接到该网站。
 
 要了解集成添加到AEM Assets环境中的命名空间、元数据架构和&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡，请在开始之前查看AEM Assets[&#128279;](metadata.md)中的Commerce元数据。
+
+有关本地化的图像替换文本，请参阅AEM Assets元数据中的[本地化的替换文本](metadata.md#localized-alt-text-in-aem-assets-metadata)。 有关设置和同步说明，请参阅[配置AEM Assets项目](get-started/configure-aem.md)和[配置集成](get-started/setup-synchronization.md)。
 
 选择您的部署以按照以下顺序执行所需步骤：
 
