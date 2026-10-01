@@ -12,7 +12,7 @@ ht-degree: 0%
 
    ![[!DNL Commerce Optimizer]配置页面](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
-1. 从命令行中，[使用SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)连接到[!DNL Adobe Commerce]暂存环境。
+1. 从命令行中，[使用SSH](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/secure-connections)连接到[!DNL Adobe Commerce]暂存环境。
 
 1. 要配置集成，请运行以下[!DNL Adobe Commerce] CLI命令，将占位符值替换为[!DNL Commerce Optimizer]项目的值：
 
