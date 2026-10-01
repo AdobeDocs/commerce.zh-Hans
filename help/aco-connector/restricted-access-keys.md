@@ -99,7 +99,7 @@ Commerce会生成一个新的密钥对并保留私钥。 “受限访问密钥�
 
 1. 在公司的[!UICONTROL Action]列中，选择[!UICONTROL Edit]。
 
-1. 要查看从分配给公司的共享目录投影的目录视图列表，请展开&#x200B;_[!UICONTROL Catalog Views]_部分。
+1. 要查看从分配给公司的共享目录投影的目录视图列表，请展开&#x200B;_[!UICONTROL Catalog Views]_&#x200B;部分。
 
 选项卡列出了从共享目录投影的目录视图，包括其分配的键值。
 

@@ -77,7 +77,7 @@ B2B投影将同步的目录内容和定价与共享目录分类和公司分配�
 
 店面会随每个促销API请求发送目录视图ID、价格手册ID和签名令牌。 [!DNL Adobe Commerce Optimizer]根据分配给目录视图的受限制访问密钥验证JWT的RS256签名。 仅当令牌和密钥有效且未过期时，才会返回目录数据。
 
-从购物者通过店面和Commerce后端到[!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-runtime-authorization.svg){width="700"}的B2B目录请求的运行时授权流![
+从购物者通过店面和Commerce后端到[!DNL Adobe Commerce Optimizer]![&#128279;](./assets/b2b-catalog-runtime-authorization.svg){width="700"}的B2B目录请求的运行时授权流
 
 对于私有目录请求，发送以下标头：
 
