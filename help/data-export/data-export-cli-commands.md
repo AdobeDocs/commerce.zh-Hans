@@ -24,7 +24,7 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 658401a83acf5bab669f0734100eef99af98c908
+source-git-commit: 1009ae28286a8503511c85726bf44922c7c2575e
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 Adobe不建议定期使用`saas:resync`命令。 使用该命令的典型情况包括：
 
 - 初始同步
-- 更改[SaaS数据空间ID](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/services/saas)后，将数据同步到新数据空间
+- 更改[SaaS数据空间ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)后，将数据同步到新数据空间
 - 故障排除
 
 监视`var/log/saas-export.log`文件中的同步操作。
@@ -51,7 +51,7 @@ Adobe不建议定期使用`saas:resync`命令。 使用该命令的典型情况�
 >
 >启用实时搜索或产品推荐后，初始同步会自动运行。 不需要手动命令。
 >
->对于[!DNL Adobe Commerce Optimizer Connector]部署，`aco:config:init`命令通过使所有连接器馈送索引器失效来计划初始完全同步。 请参阅[启用 [!DNL Commerce Optimizer] 集成](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration)和[管理与 [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md)的同步。
+>对于[!DNL Adobe Commerce Optimizer Connector]部署，`aco:config:init`命令通过使所有连接器馈送索引器失效来计划初始完全同步。 请参阅[启用 [!DNL Commerce Optimizer] 集成](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration)和[管理与 [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md)的同步。
 
 当从命令行触发`saas:resync`时，根据目录大小，数据更新可能需要几分钟到几小时的时间。
 

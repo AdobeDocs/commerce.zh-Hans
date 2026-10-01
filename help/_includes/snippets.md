@@ -1,9 +1,8 @@
 ---
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '708'
 ht-degree: 0%
-
 ---
 # Commerce代码片段
 
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果“数据馈送同步状态”页面在Commerce on Cloud或本地部署的Commerce Admin中不可用，请按照[扩展安装说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}启用它。
+>如果“数据馈送同步状态”页面在Commerce on Cloud或本地部署的Commerce Admin中不可用，请按照[扩展安装说明](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}启用它。
 
 
 ## Adobe Commerce Optimizer集成环境协调 {#aco-integration-environment-alignment}
@@ -20,6 +19,11 @@ ht-degree: 0%
 >
 >始终将沙盒Optimizer实例连接到非生产环境，将生产实例连接到生产环境。 不匹配的环境会导致目录数据、搜索结果和推荐不一致。
 
+## Adobe Commerce Optimizer数据同步处理说明 {#aco-data-sync-processing-note}
+
+>[!IMPORTANT]
+>
+>完成配置后，数据同步处理会立即在后台启动。 根据目录的大小，数据同步过程可能需要几分钟到几小时。
 
 ## Optimizer的促销服务 {#aco-merchandising-services}
 
@@ -31,7 +35,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->对于使用[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md)将目录数据导出到[!DNL Adobe Commerce Optimizer]的部署，请使用Commerce管理员中的[数据馈送同步状态页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)和[!DNL Adobe Commerce Optimizer Studio]中的[数据同步页面](../optimizer/setup/data-sync.md)，而不是[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)，来验证目录数据同步。
+>对于使用[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md)将目录数据导出到[!DNL Adobe Commerce Optimizer]的部署，请使用Commerce管理员中的[数据馈送同步状态页面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)和[!DNL Adobe Commerce Optimizer Studio]中的[数据同步页面](../optimizer/setup/data-sync.md)，而不是[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)，来验证目录数据同步。
 
 ## 有关API更新的Adobe Commerce Optimizer下拉注释 {#aco-api-updates-and-dropins}
 
@@ -55,7 +59,7 @@ ht-degree: 0%
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
@@ -83,7 +87,7 @@ ht-degree: 0%
 
 Adobe Commerce身份管理和身份验证由Adobe Identity Management System (IMS)通过Adobe Admin Console管理。
 
-有关身份配置选项（包括Adobe ID、Enterprise ID和Federated ID）的信息，以及有关配置单点登录(SSO)以安全访问Adobe应用的说明，请参阅&#x200B;*企业Admin Console*&#x200B;文档中的[设置身份和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)。
+有关身份配置选项（包括Adobe ID、Enterprise ID和Federated ID）的信息，以及有关配置单点登录(SSO)以安全访问Adobe应用的说明，请参阅&#x200B;*企业Admin Console*&#x200B;文档中的[设置身份和单点登录](https://helpx.adobe.com/enterprise/using/set-up-identity.html)。
 
 ## ACCS服务和可扩展性发行说明 {#accs-release}
 
@@ -110,3 +114,13 @@ Adobe Commerce身份管理和身份验证由Adobe Identity Management System (IM
 >[!IMPORTANT]
 >
 >批量数据迁移工具当前处于早期访问状态。 只能通过Commerce部署工程(CDE)参与流程提供访问。 有关工具及其资格要求的概述，请参阅[批量数据迁移工具](../cloud-service/migration/bulk-data/migration-tool.md)。
+
+## 安装扩展链接 {#install-extension-links}
+
+>[!NOTE]
+>
+>有关详细的扩展安装说明，请参阅以下指南：
+>
+>在云基础架构上的 [!DNL Adobe Commerce] 上[安装扩展](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>
+>[在 [!DNL Adobe Commerce] 内部部署](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)上安装扩展

@@ -1,26 +1,29 @@
 ---
 title: 数据同步
-description: 查看正在从Commerce数据源同步到 [!DNL Adobe Commerce Optimizer]中的目录数据。
+description: 查看正在从Commerce数据源同步到[!DNL Adobe Commerce Optimizer]中的目录数据。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 TQID: https://experienceleague.adobe.com/ZTMFkch-YNS-CUgCdadmg1kemA8ORXQ7KGCEkI7d-Yw
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c7633056caec2fcec318f8ebcc9664cfc7b3b9b4
+    internal-label: Insights
+source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: '485'
 ht-degree: 0%
-
 ---
-
 # 数据同步
 
 “**数据同步**”页显示从数据源(现有Commerce目录、产品信息管理(PIM)系统、企业资源规划(ERP)系统等)传输到[!DNL Adobe Commerce Optimizer]的产品数据的同步状态概览。
@@ -63,7 +66,7 @@ ht-degree: 0%
 
 ## 验证数据同步是否正常工作
 
-对于通过Adobe Commerce Connector将Adobe Commerce Optimizer用作上游数据源的项目，您可以监视数据导出过程，并从数据馈送同步状态页面启动重新同步操作。 有关详细信息，请参阅&#x200B;_Adobe Commerce Optimizer Connector_&#x200B;文档中的[验证数据同步是否正常工作](../../aco-connector/data-sync-manage.md#verify-that-the-data-sync-is-working)。
+对于通过Adobe Commerce Connector将Adobe Commerce Optimizer用作上游数据源的项目，您可以监视数据导出过程，并从数据馈送同步状态页面启动重新同步操作。 有关详细信息，请参阅&#x200B;_Adobe Commerce Optimizer Connector_&#x200B;文档中的[验证数据同步是否正常工作](../../aco-connector/data-sync-status.md#verify-that-the-data-sync-is-working)。
 
 ## 相关主题
 

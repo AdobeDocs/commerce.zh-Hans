@@ -1,36 +1,47 @@
 ---
-title: ' [!DNL Adobe Commerce Optimizer Connector] 馈送的字段映射'
-description: 了解从 [!DNL Adobe Commerce] 目录数据到所有馈送的 [!DNL Adobe Commerce Optimizer] 摄取API格式的 [!DNL Adobe Commerce Optimizer Connector] 字段映射。
+title: '[!DNL Adobe Commerce Optimizer Connector]馈送的字段映射'
+description: 了解从[!DNL Adobe Commerce]目录数据到所有馈送的[!DNL Adobe Commerce Optimizer]摄取API格式的[!DNL Adobe Commerce Optimizer Connector]字段映射。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+    internal-label: Data modeling
+source-git-commit: 9c2d0f1c3342d87b1e95a789b905f4a383bc8f5f
 workflow-type: tm+mt
-source-wordcount: 665
-ht-degree: 0%
-
+source-wordcount: '731'
+ht-degree: 3%
 ---
-
 
 # 连接器信息源的字段映射
 
@@ -56,6 +67,7 @@ ht-degree: 0%
 | `metaKeyword` | `metaTags/keywords` | 新行分隔的字符串拆分为数组 |
 | `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | JSON编码对象`{inStock, lowStock, weight, weightType}`；始终作为第一个属性条目存在 |
 | `attributes[]` | `attributes[]` | 已排除映射到`{code, values[], variantReferenceId}`；`inStock`、`lowStock`、`weight`、`weightType`的每个条目（它们进入`aco_ac_attributes`） |
+| `(synthesized)` | `attributes[].code = "ac_assortments"` | 产品所属的自定义共享目录的数组ID，这些ID进行了重复数据删除和排序。 只有公共目录中的产品没有此属性。 [!DNL Commerce Optimizer]策略筛选此属性以强制专用目录视图分类。 |
 | `images[]` | `images[]` | `url`，`label`；映射的标准角色： `image`→`BASE`，`small_image`→`SMALL`，`thumbnail`→`THUMBNAIL`，`swatch_image`→`SWATCH`；非标准角色转至`customRoles[]` |
 | `categoryData[].categoryPath` | `routes[].path` | |
 | `categoryData[].productPosition` | `routes[].position` | |
