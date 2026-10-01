@@ -1,36 +1,47 @@
 ---
 title: 专用目录视图
-description: 了解如何通过启用目录保护来创建专用目录视图，以便只有具有有效签名令牌的请求才能检索其产品和定价数据。
+description: 了解专用目录视图如何限制目录数据访问，此类访问是为B2B共享目录自动创建的，还是使用目录保护手动配置的。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 16e3405e1500dfd39603b1e300f4625e5a57cf02
+    internal-label: Personalization
+source-git-commit: f93bd673624c58050696da772ce733874ce594e5
 workflow-type: tm+mt
-source-wordcount: 642
+source-wordcount: '903'
 ht-degree: 0%
-
 ---
-
 # 专用目录视图
 
-默认情况下，[目录视图](catalog-view.md)是公用的。 在目录视图上启用目录保护以限制对包含有效签名令牌的请求的访问。
+默认情况下，[目录视图](catalog-view.md)是公用的。 限制对目录视图的访问，以便只有具有有效签名令牌的请求才能检索其数据。
+
+目录视图通过以下两种方式之一变为专用：
+
+- [!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B扩展，该扩展当前为私有Beta版。"} **自动，对于B2B共享目录** — 对于使用与B2B扩展的[!DNL Adobe Commerce Optimizer Connector]集成的Commerce部署，将根据[!DNL Adobe Commerce]中的共享目录配置自动为您创建和配置专用目录视图。 查看B2B共享目录的[自动专用目录视图](#automatic-private-catalog-views-for-b2b-shared-catalogs)。
+
+- **对于任何目录视图**，请手动执行[保护目录视图](#protect-a-catalog-view)中的步骤，以限制对在其他情况下为公共的目录视图（包括B2C目录视图）的访问。 有关合作伙伴门户和预发布预览等示例，请参阅[受限访问密钥用例](restricted-access-keys.md#restricted-access-key-use-cases)。
 
 目录保护仅适用于选定的目录视图。 它不会更改视图的策略或层。 它确实将视图限制为单个价格手册 — 请参阅[私有目录视图的价格手册限制](#price-book-restriction-on-private-catalog-views)。
-
-有关何时保护目录视图的示例，请参阅[受限访问密钥用例](restricted-access-keys.md#restricted-access-key-use-cases)。
 
 ## 了解保护边界
 
@@ -53,7 +64,19 @@ ht-degree: 0%
 
 公共目录视图不受此限制的影响，并且可以继续引用多个价格手册。
 
+## B2B共享目录的自动专用目录视图
+
+[!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B扩展，该扩展当前为私有Beta版。"}
+
+对于与[!DNL Adobe Commerce Optimizer Connector for B2B]集成以支持共享目录的部署，扩展会根据[!DNL Adobe Commerce]中的共享目录配置自动创建和配置专用目录视图。 此配置包括目录视图、策略、初始受限访问密钥和价格手册引用。 使用此配置，您可以从Commerce管理员&#x200B;**受限访问密钥**&#x200B;页面（**系统** > **数据传输**）管理受限访问密钥。 有关详细信息，请参阅&#x200B;*[!DNL Adobe Commerce Optimizer Connector]集成指南*&#x200B;中的[B2B共享目录更改](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes)。
+
+如果您未使用B2B共享目录，例如，要保护合作伙伴门户的目录视图或预发行版预览，请使用[保护目录视图](#protect-a-catalog-view)中的说明手动配置一个目录。
+
 ## 保护目录视图
+
+>[!NOTE]
+>
+>对于与[!DNL Adobe Commerce Optimizer Connector for B2B]管理的B2B共享目录关联的目录视图，跳过此过程。 查看B2B共享目录的[自动专用目录视图](#automatic-private-catalog-views-for-b2b-shared-catalogs)。
 
 开始之前，请从客户端应用程序生成的公共密钥[创建一个受限访问密钥](restricted-access-keys.md)。
 
@@ -98,11 +121,11 @@ ht-degree: 0%
 
 ## 管理受限制的访问密钥
 
-如果[!UICONTROL Catalog Protection]已启用，并且所有分配的键都已过期，则目录视图将变得不可访问 — 依赖此目录视图的店面无法从中提供数据。 分配新的未过期密钥以恢复访问权限。 有关说明，请参阅[旋转键](restricted-access-keys.md#rotate-a-key)。
+如果启用了[!UICONTROL Catalog Protection]并且所有分配的键过期，则目录视图将变为不可访问。 依赖此目录视图的店面无法从它提供数据。 分配新的未过期密钥以恢复访问权限。 有关说明，请参阅[旋转键](restricted-access-keys.md#rotate-a-key)。
 
->[!IMPORTANT]
+>[!NOTE]
 >
->通过Adobe Commerce和Adobe Commerce Optimizer Connector自动创建和管理密钥的功能尚不可用。
+>对于与[!DNL Adobe Commerce Optimizer Connector for B2B]扩展集成的部署，您可以从Commerce管理员&#x200B;**受限访问密钥**&#x200B;页面（**系统** > **数据传输**）管理访问密钥。 有关详细信息，请参阅&#x200B;*[!DNL Adobe Commerce Optimizer Connector]集成指南*&#x200B;中的[受限访问密钥管理](../../aco-connector/restricted-access-keys.md)。
 
 ## 更多此类内容
 

@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -57,9 +57,9 @@ PayPal沙盒帐户允许您在测试模式下使用[!DNL Payment Services]。 Pa
 
    当您的PayPal沙盒载入获得批准时，您应该看到一条通知，表明您的支付系统当前处于沙盒模式并且不处理实时支付。
 
-   >[!IMPORTANT]
-   >
-   >如果您撤销了对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]的同意，以处理您的付款（在您的PayPal帐户设置中），则[!DNL Payment Services]无法处理您商店中的订单。 在您的Payment Services主页上，会显示有关撤销同意的警报。 要关闭警报，请单击&#x200B;**[!UICONTROL Do not show again]**。
+>[!IMPORTANT]
+>
+>如果您撤销了对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]的同意，以处理您的付款（在您的PayPal帐户设置中），则[!DNL Payment Services]无法处理您商店中的订单。 在您的Payment Services主页上，会显示有关撤销同意的警报。 要关闭警报，请单击&#x200B;**[!UICONTROL Do not show again]**。
 
 ### 重置沙盒帐户
 
@@ -102,9 +102,9 @@ PayPal沙盒帐户允许您在测试模式下使用[!DNL Payment Services]。 Pa
 
 1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;保存更改。
 
->[!NOTE]
->
->仅当该方法设置为`Sandbox`时，**[!UICONTROL Buyer's country]**&#x200B;设置才会显示。 这不会影响生产环境。
+   >[!NOTE]
+   >
+   >仅当该方法设置为`Sandbox`时，**[!UICONTROL Buyer's country]**&#x200B;设置才会显示。 这不会影响生产环境。
 
 ## 在沙盒环境中测试
 

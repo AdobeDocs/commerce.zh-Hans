@@ -1,30 +1,38 @@
 ---
 title: 查看和管理同步过程
-description: 了解如何使用“数据管理功能板和数据馈送同步状态”页面查看和管理 [!DNL SaaS Data Export] 同步过程。
+description: 了解如何使用“数据管理功能板和数据馈送同步状态”页面查看和管理[!DNL SaaS Data Export]同步过程。
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
 workflow-type: tm+mt
-source-wordcount: 557
+source-wordcount: '558'
 ht-degree: 0%
-
 ---
-
 # 查看和管理同步过程
 
 大多数同步活动都使用完全同步、部分同步或重试失败的项目同步自动处理。 有关每个类型运行时间的详细信息，请参阅[同步类型](sync-overview.md#synchronization-types)。 [!DNL SaaS Data Export]还提供了用于监视、管理和排除进程故障的工具。 您可以使用用于部署的仪表板查看同步状态并管理数据同步过程。
@@ -51,7 +59,7 @@ ht-degree: 0%
 
 - **[数据同步页面](../optimizer/setup/data-sync.md)** — “数据同步”页面概述了从上游目录源到[!DNL Commerce Optimizer]的产品数据的同步状态。
 
-有关如何使用这些仪表板验证数据同步是否工作以及手动重新同步数据的详细信息，请参阅&#x200B;_Adobe Commerce Optimizer Connector指南_&#x200B;中的[管理同步](../aco-connector/data-sync-manage.md)。
+有关如何使用这些仪表板验证数据同步是否工作以及手动重新同步数据的详细信息，请参阅&#x200B;_Adobe Commerce Optimizer Connector指南_&#x200B;中的[管理同步](../aco-connector/data-sync-status.md)。
 
 >[!ENDTABS]
 
@@ -79,4 +87,4 @@ ht-degree: 0%
 > - [同步的工作方式](sync-overview.md) — 了解同步模式、完全同步、部分同步和重试失败的项。
 > - [使用Commerce CLI同步馈送](data-export-cli-commands.md) — 使用`saas:resync`命令进行目标馈送重新同步。
 > - [查看日志并排除故障](troubleshooting/logging.md) — 诊断数据导出和SaaS导出错误。
-> - [管理与 [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md)的同步 — 验证目录数据同步并手动重新同步连接器馈送。
+> - [管理与 [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md)的同步 — 验证目录数据同步并手动重新同步连接器馈送。

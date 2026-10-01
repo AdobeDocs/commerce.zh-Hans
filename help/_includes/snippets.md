@@ -1,9 +1,8 @@
 ---
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '708'
 ht-degree: 0%
-
 ---
 # Commerce代码片段
 
@@ -20,6 +19,11 @@ ht-degree: 0%
 >
 >始终将沙盒Optimizer实例连接到非生产环境，将生产实例连接到生产环境。 不匹配的环境会导致目录数据、搜索结果和推荐不一致。
 
+## Adobe Commerce Optimizer数据同步处理说明 {#aco-data-sync-processing-note}
+
+>[!IMPORTANT]
+>
+>完成配置后，数据同步处理会立即在后台启动。 根据目录的大小，数据同步过程可能需要几分钟到几小时。
 
 ## Optimizer的促销服务 {#aco-merchandising-services}
 
@@ -110,3 +114,13 @@ Adobe Commerce身份管理和身份验证由Adobe Identity Management System (IM
 >[!IMPORTANT]
 >
 >批量数据迁移工具当前处于早期访问状态。 只能通过Commerce部署工程(CDE)参与流程提供访问。 有关工具及其资格要求的概述，请参阅[批量数据迁移工具](../cloud-service/migration/bulk-data/migration-tool.md)。
+
+## 安装扩展链接 {#install-extension-links}
+
+>[!NOTE]
+>
+>有关详细的扩展安装说明，请参阅以下指南：
+>
+>在云基础架构上的 [!DNL Adobe Commerce] 上[安装扩展](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>
+>[在 [!DNL Adobe Commerce] 内部部署](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/extensions)上安装扩展
