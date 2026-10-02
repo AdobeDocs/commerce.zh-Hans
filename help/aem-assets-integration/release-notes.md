@@ -3,9 +3,9 @@ title: AEM Assets集成发行说明
 description: 有关所有AEM Assets集成版本的信息，请参阅发行说明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
+source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1738'
 ht-degree: 0%
 ---
 # AEM Assets集成发行说明
@@ -42,11 +42,11 @@ _2026年9月18日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
 
-![修复了问题](../assets/fix.svg)<!-- Issue ACAP-1317 -->修复了在启用Commerce异步配置保存后，为[自定义自动匹配](synchronize/custom-match.md)上传的`workspace.json`文件未正确保留的问题。 以前，管理员请求仅对上载元数据而不是文件内容进行排队，因此当异步配置使用者处理保存时，无法再读取临时上载文件。 因此，在App Builder OAuth值保持不变，配置似乎已成功保存。 上传的App Builder凭据现在可以在队列边界中保留，并且可以由异步使用者正确处理。
+![修复了问题](../assets/fix.svg)<!-- Issue ACAP-1317 -->修复了在启用`Commerce Async Config Save`（在Adobe Commerce 2.4.7中引入）的情况下保存&#x200B;**[!UICONTROL AEM Assets Integration]**&#x200B;配置（包括其`workspace.json`上传）时无法通过ARES注册或更新租户的问题。 配置似乎已成功保存，但App Builder OAuth值保持不变。 现在，异步使用者可以正确处理上传的凭据。
 
 >[!IMPORTANT]
 >
->如果您使用启用了异步配置保存选项的自定义匹配器，请在升级到此版本后重新上传`workspace.json`文件。 有关上载说明，请参阅[异步配置保存](synchronize/custom-match.md#async-config-save)。
+>如果您使用启用了异步配置保存的自定义匹配器，请在升级后重新上传`workspace.json`文件。 有关说明，请参阅[异步配置保存](synchronize/custom-match.md#async-config-save)。
 
 ## v1.4.6
 
