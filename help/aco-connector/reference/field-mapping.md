@@ -3,7 +3,7 @@ title: '[!DNL Adobe Commerce Optimizer Connector]馈送的字段映射'
 description: 了解从[!DNL Adobe Commerce]目录数据到所有馈送的[!DNL Adobe Commerce Optimizer]摄取API格式的[!DNL Adobe Commerce Optimizer Connector]字段映射。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 9c2d0f1c3342d87b1e95a789b905f4a383bc8f5f
+source-git-commit: 1e34df4f07f9043675104fce55c58e0617463b33
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 3%
+source-wordcount: '1023'
+ht-degree: 2%
 ---
 
 # 连接器信息源的字段映射
@@ -51,46 +51,42 @@ ht-degree: 3%
 
 `products`馈送将数据发送到[Products终结点](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}。
 
-| [!DNL Adobe Commerce]字段 | [!DNL Commerce Optimizer] API字段 | 注释 |
+| [!DNL Adobe Commerce]字段 | [!DNL Commerce Optimizer] API字段 | 映射详细信息 |
 | ----------------------------------------------- | -------------- | ------- |
 | `sku` | `sku` | |
 | `storeViewCode` | `source/locale` | |
 | `name` | `name` | |
 | `urlKey` | `slug` | |
-| `productId` | `externalIds[0].id` | `origin`已修复到`"AdobeCommerce"` |
-| `status` | `status` | 大写；对于未分配子项的复合产品，设置为`DISABLED` |
-| `description` | `description` | |
-| `shortDescription` | `shortDescription` | |
-| `visibility` | `visibleIn` | 以逗号分隔的值拆分并映射： `Catalog`→`CATALOG`， `Search`→`SEARCH`；已丢弃未映射的值 |
+| `productId` | `externalIds[0].id` | 将`origin`设置为`"AdobeCommerce"` |
+| `status` | `status` | 将状态转换为大写。 如果状态缺失，或可配置或捆绑产品没有选项值，则使用`DISABLED`。 |
+| `description` | `description` | 如果缺少描述，则使用空字符串。 |
+| `shortDescription` | `shortDescription` | 如果缺少简短描述，则使用空字符串。 |
+| `visibility` | `visibleIn` | 拆分逗号分隔值并将`Catalog`映射到`CATALOG`并将`Search`映射到`SEARCH`。 删除其他值。 |
 | `metaTitle` | `metaTags/title` | |
 | `metaDescription` | `metaTags/description` | |
-| `metaKeyword` | `metaTags/keywords` | 新行分隔的字符串拆分为数组 |
-| `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | JSON编码对象`{inStock, lowStock, weight, weightType}`；始终作为第一个属性条目存在 |
-| `attributes[]` | `attributes[]` | 已排除映射到`{code, values[], variantReferenceId}`；`inStock`、`lowStock`、`weight`、`weightType`的每个条目（它们进入`aco_ac_attributes`） |
-| `(synthesized)` | `attributes[].code = "ac_assortments"` | 产品所属的自定义共享目录的数组ID，这些ID进行了重复数据删除和排序。 只有公共目录中的产品没有此属性。 [!DNL Commerce Optimizer]策略筛选此属性以强制专用目录视图分类。 |
-| `images[]` | `images[]` | `url`，`label`；映射的标准角色： `image`→`BASE`，`small_image`→`SMALL`，`thumbnail`→`THUMBNAIL`，`swatch_image`→`SWATCH`；非标准角色转至`customRoles[]` |
-| `categoryData[].categoryPath` | `routes[].path` | |
-| `categoryData[].productPosition` | `routes[].position` | |
+| `metaKeyword` | `metaTags/keywords` | 将换行分隔的关键字拆分为数组，并修剪空格。 |
+| `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | 始终添加`aco_ac_attributes`条目作为第一个属性。 其JSON值包含`inStock`和`lowStock`作为字符串。 当值可用时，它包含`weight`和`weightType`。 |
+| `attributes[]` | `attributes[]` | 将每个条目映射到其属性代码、字符串值和匹配的变量引用ID（如果可用）。 跳过`inStock`、`lowStock`、`categories`、`weight`和`weightType`。 与库存相关的值包含在`aco_ac_attributes`中。 类别将导出为路由。 |
+| `images[]` | `images[]` | 跳过没有URL的图像。<br>导出`url`、`label` （如果缺少则为空）和`sortOrder` （整数，默认为`0`）。<br>按`sortOrder`升序对图像进行排序。<br>将标准角色：`image`映射到`BASE`，`small_image`映射到`SMALL`，`thumbnail`映射到`THUMBNAIL`，`swatch_image`映射到`SWATCH`。 将其他角色导出为`customRoles[]`。 |
+| `categoryData[].categoryPath` | `routes[].path` | 跳过类别路径为空的条目。 |
+| `categoryData[].productPosition` | `routes[].position` | 如果缺少产品位置，则使用`0`。 |
 | `links[].type` + `links[].sku` | `links[]` | `type`大写；已丢弃不含`sku`的条目 |
-| `parents[].productType` + `parents[].sku` | `links[]` | 映射的类型： `configurable`→`VARIANT_OF`，`bundle`/`bundle_fixed`→`IN_BUNDLE` |
-| `configurable options` | `configurations[]` | `id`→`attributeCode`，`label`；设置`swatchType`时选项类型`SWATCH`，否则`CONFIGURABLE`；默认变体来自`isDefault`；值包括`variantReferenceId`，`label`，`colorHex`，`imageUrl` |
-| `bundle options` | `bundles[]` | `label`→`group`；`required`；`renderType` `checkbox`/`multi`→`multiSelect: true`；来自`isDefault`的默认SKU；项目包括`sku`、`qty`、`userDefinedQty` (`qtyMutability`) |
+| `parents[].productType` + `parents[].sku` | `links[]` | 将`configurable`映射到`VARIANT_OF`，并将`bundle`或`bundle_fixed`映射到`IN_BUNDLE`。 将其他产品类型转换为大写。 跳过没有SKU的父母。 |
+| `configurable options` | `configurations[]` | 导出具有ID和至少一个值的选项。<br>将`id`映射到`attributeCode`。 在`swatchType`存在时将`type`设置为`SWATCH`，否则设置为`CONFIGURABLE`。<br>使用默认值的ID作为`defaultVariantReferenceId`。<br>将每个值映射到`variantReferenceId`、`label`、`colorHex`和`imageUrl`。 |
+| `bundle options` | `bundles[]` | 导出至少包含一个项目的选项。<br>使用选项标签作为`group`，如果标签为空，则使用`Bundle group`。 将`required`复制到输出。<br>将`checkbox`和`multi`渲染类型的`multiSelect`设置为`true`。<br>列出`defaultItemSkus`中的默认SKU。 每个项目包括`sku`、`qty`（默认为`0`）和`userDefinedQty`（从`qtyMutability`，默认为`false`）。 |
 
 ## 产品属性元数据
 
 `productAttributes`馈送将数据发送到[元数据终结点](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}。
 
-
-| [!DNL Adobe Commerce]字段 | [!DNL Commerce Optimizer] API字段 | 注释 |
+| [!DNL Adobe Commerce]字段 | [!DNL Commerce Optimizer] API字段 | 映射详细信息 |
 | --------------- | -------------- | ------- |
 | `attributeCode` | `code` | |
 | `storeViewCode` | `source/locale` | |
 | `label` | `label` | |
 | `dataType` + `frontendInput` | `dataType` | 请参阅下面的转化表 |
-| `visible` | `visibleIn: "PRODUCT_DETAIL"` | `true`时添加到数组 |
-| `visibleInSearch` | `visibleIn: "SEARCH_RESULTS"` | `true`时添加到数组 |
-| `visibleInListing` | `visibleIn: "PRODUCT_LISTING"` | `true`时添加到数组 |
-| `visibleInCompareList` | `visibleIn: "PRODUCT_COMPARE"` | `true`时添加到数组 |
+| `dataType`和`frontendInput` | `dataType` | 使用以下转化规则。 |
+| `visible`, `visibleInSearch`, `visibleInListing`, `visibleInCompareList` | `visibleIn[]` | 当标志为`true`时，将其对应的值添加：<br>`visible` → `PRODUCT_DETAIL`<br>`visibleInSearch` → `SEARCH_RESULTS`<br>`visibleInListing` → `PRODUCT_LISTING`<br>`visibleInCompareList` → `PRODUCT_COMPARE` |
 | `filterable` | `filterable` | |
 | `sortable` | `sortable` | |
 | `searchable` | `searchable` | |
@@ -99,21 +95,21 @@ ht-degree: 3%
 
 ### 数据类型转换
 
-连接器从上述映射表中的Commerce `dataType`和`frontendInput`字段派生API `dataType`。 下表显示了连接器应用的转换规则。
+当`dataType`为`int`时，连接器检查`frontendInput`。 对于其他数据类型，`frontendInput`不会影响转换。
 
-| [!DNL Adobe Commerce] `dataType` | [!DNL Adobe Commerce] `frontendInput` | [!DNL Commerce Optimizer] API `dataType` |
-| -------------------- | -------------------------- | ------------------- |
+| 输入`dataType` | 输入`frontendInput` | 输出`dataType` |
+| ---------------- | --------------------- | ----------------- |
 | `int` | `boolean` | `BOOLEAN` |
 | `int` | `text`或`select` | `TEXT` |
-| `int` | 任何其他 | `INTEGER` |
-| `decimal` | - | `DECIMAL` |
-| `text`, `varchar`, `static`, `datetime` | - | `TEXT` |
-| `OBJECT` | - | `OBJECT` |
-| 任何其他 | - | `TEXT` |
+| `int` | 任何其他值，包括缺少的值 | `INTEGER` |
+| `decimal` | 未使用 | `DECIMAL` |
+| `text`, `varchar`, `static`, `datetime` | 未使用 | `TEXT` |
+| `OBJECT` | 未使用 | `OBJECT` |
+| 任何其他值 | 未使用 | `TEXT` |
 
 >[!NOTE]
 >
->当属性的`dataType`设置为`OBJECT`时，[products API](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"}将该属性值视为结构化对象而不是纯字符串。 在查询时，API尝试将存储的值解析为JSON。 如果解析成功，则结果将作为响应中的嵌套对象返回。 **当您动态提供自定义属性时（例如，用于承载不能表示为标量值的结构化或多字段数据），此行为特别有用**。 有关说明，请参阅[动态添加产品属性](../../data-export/add-attribute-dynamically.md)。
+>当属性使用`OBJECT`数据类型时，[产品API](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"}尝试将其存储值解析为JSON。 如果解析成功，则API将返回值作为嵌套对象。 对于不能表示为单个值的结构化属性数据，请使用`OBJECT`。 有关说明，请参阅[动态添加产品属性](../../data-export/add-attribute-dynamically.md)。
 
 ## 价格手册
 
@@ -121,51 +117,58 @@ ht-degree: 3%
 
 与其他连接器馈送不同，[!DNL Adobe Commerce]中的[!DNL SaaS Data Export]索引器不收集`priceBooks`馈送。 连接器从管理员的网站和客户组配置生成此信息源。
 
-每个网站创建一个&#x200B;**基本价格手册**，另外每个网站 — 客户组对创建一个&#x200B;**子价格手册**。
+对于每个网站，连接器会为每个客户组创建一个基本价格手册和一个子价格手册。
 
-**价格簿ID公式：**
+对`priceBookId`使用这些公式：
 
-- **基数**（正常价格）： `priceBookId = websiteCode`
-- **子**（客户组或共享目录）： `priceBookId = websiteCode::sha1(customerGroupId)`，其中`sha1(customerGroupId)`是客户组的整数ID的SHA-1十六进制摘要
+- 常规价格的基础价格手册： `priceBookId = websiteCode`。
+- 客户组的子价格手册： `priceBookId = websiteCode::sha1(customerGroupId)`，其中`sha1(customerGroupId)`是客户组的整数ID的SHA-1十六进制摘要。
 
-在解决价格条目所属的价格手册时，价格馈送使用相同的公式。 有关店面如何为客户会话解析`priceBookId`，请参阅[Headless店面集成](../headless-storefront.md#graphql-commerceoptimizer-query)。
+价格信息源使用相同的公式将每个价格条目分配给价格手册。 有关店面如何为客户会话解析`priceBookId`的信息，请参阅[Headless店面集成](../headless-storefront.md#graphql-commerceoptimizer-query)。
 
-| 生成的字段 | [!DNL Commerce Optimizer] API字段 | 注释 |
+
+| Source字段或值 | [!DNL Commerce Optimizer] API字段 | 映射详细信息 |
 | ---------------- | -------------- | ------- |
-| `websiteCode`, `customerGroupId` | `priceBookId` | |
-| 网站名称 | `name` | 基本价格手册：网站名称。 子项： `"Group Name (Website Name)"` |
+| `websiteCode` | `parentId` | 将此字段添加到子价格手册。 其值标识基本价格手册。 |
+| 网站名称 | `name` | 使用基本价格手册的网站名称。 将`Customer group name (Website name)`用于子价格簿。 |
 | `websiteCode` | `parentId` | 仅显示在子价格手册中；指向基本价格手册 |
-| 网站基础货币 | `currency` | 仅存在于基础价格手册中；由子代继承 |
+| 网站基础货币 | `currency` | 仅包括基本价格手册上的此字段。 儿童价格手册省略了它。 |
 
 ## 价格
 
-`prices`信息源向[Prices终结点](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}发送数据。
+`prices`信息源将[!DNL Adobe Commerce]数据发送到[Prices终结点](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}。
 
-| [!DNL Adobe Commerce]字段 | [!DNL Commerce Optimizer] API字段 | 注释 |
+| 馈送输入字段 | [!DNL Commerce Optimizer] API字段 | 映射详细信息 |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
-| `sku` | `sku` | |
-| `websiteCode`, `customerGroupId` | `priceBookId` | |
-| `regular` | `regular` | |
-| `discounts[]` | `discounts[]` | 折扣示例：特殊价格、目录规则价格、共享目录价格 |
-| `tierPrices[]` | `tierPrices[]` | |
+| `sku` | `sku` | 以不变方式传递SKU。 |
+| `websiteCode`, `customerGroupCode` | `priceBookId` | 将`websiteCode`与`customerGroupCode`中客户组ID的SHA-1哈希合并。 如果`customerGroupCode`是`0`，则仅使用`websiteCode`。 |
+| `regular` | `regular` | 以不变方式传递常规价格。 |
+| `discounts[]` | `discounts[]` | 如果源值为`null`，则导出空数组。<br>对于将`code`设置为`special_price`并且值为`percentage`的条目，当值介于`0`和`100`之间时，将`percentage`设置为`100 - percentage`。 将该值设置为该范围内的`0`或该范围之外的值。<br>通过其他条目（包括基于价格的特殊价格），而不更改。 |
+| `tierPrices[]` | `tierPrices[]` | 如果缺少源值或`null`，则使用空数组。 |
 
 ## 类别
 
-`categories`馈送将数据发送到[类别终结点](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}。
+`categories`源将[!DNL Adobe Commerce]数据发送到[类别终结点](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}。
 
 将跳过具有空`urlPath`的项目（逻辑根类别），并且从不提交这些项目。
 
-| [!DNL Adobe Commerce]字段 | [!DNL Commerce Optimizer] API字段 | 注释 |
+| [!DNL Adobe Commerce]字段 | [!DNL Commerce Optimizer] API字段 | 映射详细信息 |
 | --------------- | -------------- | ------- |
 | `storeViewCode` | `source/locale` | |
 | `name` | `name` | |
 | `urlPath` | `slug` | |
 | `description` | `description` | |
+| `position` | `position` | 导出类别位置（如果存在）。 当字段缺失时，忽略该字段。 |
 | `metaTitle` | `metaTags/title` | |
 | `metaDescription` | `metaTags/description` | |
 | `metaKeywords` | `metaTags/keywords` | 新行分隔的字符串拆分为数组 |
 | `image` | `images[].url` | 单元素数组；`roles: ["BASE"]` |
 | `isActive` + `includeInMenu` | `families` | `["top_menu"]`，若两者均为`true`，否则`[]` |
+
+| `metaKeywords` | `metaTags/keywords` |将换行分隔的关键字拆分到数组中并修剪空格。 |
+| `image` | `images[].url` |当存在`image`时，将导出一个角色为`BASE`的图像。 在图像为空或缺少图像时导出空数组。 |
+| `isActive` + `includeInMenu` | `families` |仅当两个值均为`true`时才添加`top_menu`。 否则，将导出空数组。 |
+| `attributes[]` | `attributes[]` |将具有非空`attributeCode`的条目导出为`{code, values[]}`。 将值转换为字符串。 不存在符合条件的条目时省略`attributes`。 |
 
 >[!MORELIKETHIS]
 >
