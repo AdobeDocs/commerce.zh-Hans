@@ -1,35 +1,46 @@
 ---
 title: '[!DNL Adobe Commerce Optimizer Connector]发行说明'
-description: 了解 [!DNL Adobe Commerce Optimizer Connector] 发行说明，包括目录同步和导出的新功能、错误修复和已知问题。
+description: 了解[!DNL Adobe Commerce Optimizer Connector]发行说明，包括目录同步和导出的新功能、错误修复和已知问题。
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/6NeLAfThvIWIyV4Y6OWtL8V9mC7lPy7UH-Zli8E-WEk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
 subfeature_v2:
   - id: dad884f1-e840-49a1-970e-2f965bdbc410
+    internal-label: Extensions
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
+    internal-label: Data Transfer
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4a3bb899f05e489cbd5b5c46909085e204751dc5
+    internal-label: Implementation
+source-git-commit: 99fcfc714cbffa5ffc72c15b24acf9e22fc1b7de
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: '579'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce Optimizer Connector发行说明
 
 这些发行说明介绍了[!DNL Adobe Commerce Optimizer Connector]的所有版本，包括：
@@ -39,6 +50,12 @@ ht-degree: 0%
 ![已知问题](../assets/bug.svg)已知问题
 
 ## 2026版
+
+### 1.1.1版本
+
+_2026年9月30日_
+
+![修复](../assets/fix.svg)在商务体验中保留产品图像顺序 — [!DNL Adobe Commerce Optimizer Connector]现在将每个产品图像的排序顺序同步到Adobe Commerce Optimizer，以便产品图像按预期顺序显示。<!--MDEE-1468-->
 
 ### 1.1.0发行版
 
