@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关此页上的字段的引用，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[受限访问密钥管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"}。—>
+>有关此页上的字段的引用，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[受限访问密钥管理](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"}。—>
 
 ## 当您需要自动键以外的其他键时 {#when-you-need-more-than-the-automatic-key}
 
@@ -159,7 +159,7 @@ Commerce会生成一个新的密钥对并保留私钥。 “受限访问密钥�
 
 >[!MORELIKETHIS]
 >
-> - [管理受限访问密钥](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — 在&#x200B;*Commerce管理指南*&#x200B;中，此页面的完整字段引用 — >
+> - [管理受限访问密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — 在&#x200B;*Commerce管理指南*&#x200B;中，此页面的完整字段引用 — >
 > - [监视目录视图同步](catalog-view-sync-status.md) — 监视这些密钥保护的目录视图
 > - [私有目录视图](/help/optimizer/setup/private-catalog-view.md) — 了解什么是连接器管理的私有目录视图
 > - [受限访问密钥](/help/optimizer/setup/restricted-access-keys.md) — 了解基于ACO Studio的手动密钥流如何用于非B2B用例
