@@ -40,7 +40,7 @@ ht-degree: 0%
 
 受限访问密钥通过以下两种方式之一进行设置：
 
-- [!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B扩展，该扩展当前为私有Beta版。"} **自动，对于B2B共享目录** — 对于与[!DNL Adobe Commerce Optimizer Connector for B2B]集成的部署，连接器配置并分配初始密钥。 然后，您可以通过Commerce管理员管理密钥和密钥分配。 请参阅&#x200B;*Commerce管理指南**中的[目录视图身份验证](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。
+- [!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B扩展，该扩展当前为私有Beta版。"} **自动，对于B2B共享目录** — 对于与[!DNL Adobe Commerce Optimizer Connector for B2B]集成的部署，连接器配置并分配初始密钥。 然后，您可以通过Commerce管理员管理密钥和密钥分配。 请参阅&#x200B;*Commerce管理指南**中的[目录视图身份验证](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。
 
 - **手动，对于任何目录视图** — 要自行保护目录视图，例如，对于合作伙伴门户或预发布预览，请执行本主题中从[创建受限访问密钥](#create-a-restricted-access-key)开始的步骤。
 
@@ -116,7 +116,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 受限制访问密钥的管理方式为以下两种方式之一，具体取决于您使用目录保护的方式：
 
-- **自动，对于B2B共享目录**—[!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B扩展，该扩展当前为私有Beta版。"}对于与[!DNL Adobe Commerce Optimizer Connector for B2B]集成的部署，服务会在创建目录视图时自动生成并分配第一个受限访问密钥。 每个目录视图都有自己的键。 之后，您可以从共享目录或公司帐户页面管理每个密钥。 您还可以从Commerce管理员&#x200B;**受限访问密钥**&#x200B;页面（**系统** > **数据传输**）查看和管理密钥。 请参阅[管理目录视图配置](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。
+- **自动，对于B2B共享目录**—[!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B扩展，该扩展当前为私有Beta版。"}对于与[!DNL Adobe Commerce Optimizer Connector for B2B]集成的部署，服务会在创建目录视图时自动生成并分配第一个受限访问密钥。 每个目录视图都有自己的键。 之后，您可以从共享目录或公司帐户页面管理每个密钥。 您还可以从Commerce管理员&#x200B;**受限访问密钥**&#x200B;页面（**系统** > **数据传输**）查看和管理密钥。 请参阅[管理目录视图配置](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。
 
   共享目录及其分配到的商店视图的每个组合都将显示为单独的目录视图。 投影是连接器针对该组合导出到[!DNL Adobe Commerce Optimizer]的目录视图、策略、价格手册引用和受限访问密钥配置数据。 因此，分配给多个商店视图的共享目录将生成多个目录视图，每个视图都具有自己的键。 编辑或旋转一个目录视图的键而不影响其他目录视图。
 
