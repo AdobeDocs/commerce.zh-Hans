@@ -3,9 +3,9 @@ title: AEM Assets集成发行说明
 description: 有关所有AEM Assets集成版本的信息，请参阅发行说明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
+source-git-commit: 36e6db0c76b0946c28d1a76d5649757c7f244058
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1847'
 ht-degree: 0%
 ---
 # AEM Assets集成发行说明
@@ -35,6 +35,22 @@ _2025年2月11日_
 ![新问题](../assets/new.svg)现在，商家可以同步产品和类别的图像。
 
 +++
+
+## v1.4.9
+
+_2026年10月7日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![修复了问题](../assets/fix.svg)<!-- Issue CCSAAS-5562 -->修复了在管理员中创建类别时显示`Deprecated Functionality`错误（因为`null`已用作数组偏移）的间歇性问题。 现在，在没有弃用通知的情况下加载&#x200B;**新类别**&#x200B;表单，并且类别可以成功创建。
+
+## v1.4.8
+
+_2026年10月5日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.5及更高版本。
+
+![修复了问题](../assets/fix.svg)<!-- Issue ACAP-1339 -->修复了当AEM Assets是可视化图表所有者时，GraphQL中的类别图像未导出到目录或在AEM Assets响应中返回的问题。 要导出图像，请在应用修复程序后将AEM资源重新分配给类别。
 
 ## v1.4.7
 

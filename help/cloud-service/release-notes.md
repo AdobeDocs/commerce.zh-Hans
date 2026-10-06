@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
+source-git-commit: 324e848e9d7e4811b67e00b4f9484233d5350f04
 workflow-type: tm+mt
-source-wordcount: '7581'
+source-wordcount: '8012'
 ht-degree: 0%
 ---
 # 发行说明
@@ -129,6 +129,46 @@ ht-degree: 0%
 
 使用`POST /V1/carts/:cartId/shipping-discount`设置折扣。 使用此端点需要管理员或集成级别的访问权限。<!-- ACCS-1156 -->
 
+### 按自定义价格添加购物车项目
+
+您现在可以通过将`custom_price`扩展属性添加到标准添加或更新购物车项目REST端点（`POST /V1/carts/:cartId/items`和`PUT /V1/carts/:cartId/items/:itemId`）来设置购物车项目的自定义价格。 您必须提供管理员或集成令牌以设置自定义价格。 以负价格或不受支持的产品类型（例如具有动态定价的捆绑产品）发送的请求会被拒绝。<!-- ACCS-1155 -->
+
+```json
+{
+  "cartItem": {
+    "sku": "t-shirt",
+    "qty": 1,
+    "quote_id": 17,
+    "extension_attributes": { "custom_price": 15.00 }
+  }
+}
+```
+
+`GET /V1/carts/:cartId`和`GET /V1/carts/:cartId/items`端点也返回`custom_price`值。
+
+### 将管理员创建的购物车与店面购物车隔离
+
+默认禁用的选择加入功能将管理员和集成可以通过REST API创建的购物车与客户的活动店面购物车隔离。 启用后，`POST /V1/customers/:customerId/carts`将始终创建新的非活动购物车，管理员和集成呼叫者可以通过购物车REST端点管理该购物车，而无需更改购物者的店面购物车。<!-- ACCS-1153 -->
+
+要启用它，请使用[`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API终结点将`features/admin_quote_isolation/enabled`配置标志设置为`1`：
+
+```json
+{
+  "config": {
+    "features/admin_quote_isolation/enabled": "1"
+  }
+}
+```
+
+### 通过第三方平台发送事务性电子邮件
+
+新事件允许您通过[!DNL App Builder]从第三方电子邮件平台（如[!DNL Salesforce Marketing Cloud]）发送事务性电子邮件。 通过[!DNL Adobe I/O Events]订阅以下事件： <!-- ACCS-1929 -->
+
+* `observer.customer_balance_save_after` — 已保存商店贷方余额。 添加`notify_by_email`等于`1`的订阅规则，以接收每个商店信用通知电子邮件中的一个事件。
+* `observer.giftcard_item_email_send_after` — 为订单项目发送了礼品卡电子邮件。 有效负荷包含物料的所有礼品卡代码。
+* `plugin.customer.api.account_management.activate` — 客户确认其帐户。
+* `plugin.negotiable_quote.api.negotiable_quote_management.decline` — 可协商的报价被拒绝。
+
 ### 增强功能和错误修复
 
 此版本中包含以下选定的增强功能、优化和错误修复：
@@ -152,6 +192,22 @@ ht-degree: 0%
 * 修复了在购物车包含缺货商品时，请求购物车价格或总数可能返回错误的问题。<!-- CEXT-6776 -->
 
 * 解决了在尝试查找缺失的SKU时，清单使用者可能压倒消息队列的问题。<!-- ACCS-1976 -->
+
+* `customerDownloadableProducts` GraphQL查询现在返回使用外部URL配置的可下载产品的文件元数据，因此店面可以确定文件类型以及打开还是下载资源。<!-- ACCS-1735 -->
+
+* `sourceAvailability` GraphQL查询现在应用B2B共享目录和类别权限，因此购物者仅会收到他们有权查看的产品的每个源库存。<!-- ACCS-1888 -->
+
+* 修复了以下问题：客户无法从欢迎电子邮件链接设置密码，并且新创建的客户未显示在[!DNL Commerce Admin]客户网格中。<!-- ACCS-1979 -->
+
+* 修复了通过订单编辑REST API编辑的订单可能会保存价格不正确的项目的问题。<!-- ACCS-1982 -->
+
+* 修复了从公司共享目录中删除的产品在店面中仍然可见并从购物车中静默删除的问题。<!-- CCSAAS-5544 -->
+
+* 修复了类别中被客户组拒绝的共享目录产品显示在店面上，但无法添加到购物车的问题。 类别拒绝权限现在优先于共享目录成员资格。<!-- CCSAAS-5549 -->
+
+* 修复了通过GraphQL下订单时，当运输税项目没有标题时可能返回错误的问题。<!-- CCSAAS-5552 -->
+
+* 修复了`GET /V1/customers/:customerId/companyRoles` REST端点返回公司管理员空权限的问题。<!-- ACCS-1998 -->
 
 {{accs-release}}
 
