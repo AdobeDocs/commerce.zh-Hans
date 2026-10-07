@@ -1,24 +1,27 @@
 ---
 title: 推荐过滤器
-description: 了解如何使用筛选器来控制哪些产品出现在 [!DNL Adobe Commerce Optimizer] 推荐中。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+description: 了解如何使用筛选器来控制哪些产品出现在[!DNL Adobe Commerce Optimizer]推荐中。
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
+    internal-label: Personalization
+source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
 workflow-type: tm+mt
-source-wordcount: 1932
+source-wordcount: '2334'
 ht-degree: 0%
-
 ---
-
 # 筛选产品
 
 [!DNL Adobe Commerce Optimizer]自动将不可配置的默认筛选器应用于推荐单元。 如果您将多个推荐单元部署到页面，则[!DNL Adobe Commerce Optimizer]会过滤掉这些单元中重复的所有产品。 仅使用对重复产品的第一次引用，以便为推荐其他产品腾出空间。 [!DNL Adobe Commerce Optimizer]还会过滤掉任何以前购买过的产品和购物车中的产品。
@@ -207,8 +210,73 @@ ht-degree: 0%
 >
 >可配置产品的子产品不显示在推荐单元中，因为这些子产品具有&#x200B;_不可见_&#x200B;的可见性。
 
-<!--
-### Attribute
+### 属性 {#attributes}
 
-You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.
+>[!NOTE]
+>
+>属性过滤为测试版。
+
+属性筛选器允许您使用与[价格](#price)和[产品](#product)筛选器相同的&#x200B;**[!UICONTROL Filter products]**&#x200B;页面，根据产品属性值包含或排除产品。
+
+#### 关于属性过滤器
+
+属性过滤器与[产品过滤器](#product)的不同之处在于，它通过共享属性值而不是单个SKU来定位产品。 例如，您可以创建一个与分配给某个类别的所有产品相匹配的属性过滤器，而不是列出分配给该类别的每个SKU。
+
+#### 设置属性过滤器
+
+使用以下步骤可将属性包含或排除规则添加到推荐单元。
+
+1. 在[创建或编辑](create.md)推荐单元时，转到&#x200B;**[!UICONTROL Filter products]**。
+1. 选择&#x200B;**[!UICONTROL Inclusions]**&#x200B;或&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡。 每个选项卡上的徽章会显示已启用该类型过滤器的数量。
+1. 在左侧的列表中，选择&#x200B;**[!UICONTROL Attributes]**。
+1. 从选择器中选择一个属性，例如&#x200B;**类别**。
+1. 在&#x200B;**[!UICONTROL Value]**&#x200B;中，输入属性的值，如&#x200B;**pants**。
+1. 按&#x200B;**Enter**&#x200B;或单击&#x200B;**[!UICONTROL Add inclusion filter]**（或等效的排除控件）添加属性筛选器。
+1. 完成推荐单元配置，并像往常一样保存或发布，以使过滤器生效。
+
+![属性筛选器](../../assets/filter-attribute.png)
+
+>[!NOTE]
+>
+>当您选择其元数据集`number`到`true`的属性（如&#x200B;**大小**）时，**值**&#x200B;字段显示范围输入而非单个文本值。
+
+#### 使用包含和排除条件
+
+仅允许推荐匹配包含过滤器的产品。 不建议使用与任何排除过滤器匹配的产品。
+
+#### 合并条件
+
+当属性过滤器包含多个值或与其他条件组合时，将应用以下逻辑。
+
+- 如果为同一属性选择了多个值，则这些值将与`OR`组合。
+- 不同属性（例如，颜色和大小）的条件与`AND`组合 — 产品必须匹配所有条件。 如果将同一属性作为单独的条件添加，而不是在一个条件中输入多个值，则这些条件也将与`AND`（而不是`OR`）组合。
+- 如果有多个排除条件，则当产品与任何排除条件匹配时，将删除该产品。
+- 如果同时使用包含和排除筛选器，请参阅[逻辑运算符](#logical-operators)。
+
+<!--
+#### Availability by recommendation type
+
+Hiding this for now as we need better clarification on what "limited" means.
+
+Attribute filter support varies by recommendation type.
+
+| Recommendation type | Inclusion support | Exclusion support |
+| --- | --- | --- |
+| Most viewed | Yes | Yes |
+| Most purchased | Yes | Yes |
+| Trending | Yes | Yes |
+| Recommended for you | Limited | Yes |
+| Viewed this, viewed that | Limited | Yes |
+| Viewed this, bought that | Limited | Yes |
+| Bought this, bought that | Limited | Yes |
+| More like this | Limited | Yes |
+| Visual similarity | No | Yes |
+| Recently viewed | No | Limited |
+| Recently purchased | No | Limited |
 -->
+
+#### 可用性、验证和故障排除
+
+- 如果存在空属性值或无效条件，则不会在店面或预览面板中呈现推荐。
+- 属性值必须与目录中的内容完全匹配，这包括空格和大小写。
+- 如果没有任何产品符合筛选条件，则推荐不会呈现在店面或预览面板中。
