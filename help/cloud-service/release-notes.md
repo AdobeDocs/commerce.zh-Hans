@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 324e848e9d7e4811b67e00b4f9484233d5350f04
+source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
 workflow-type: tm+mt
-source-wordcount: '8012'
+source-wordcount: '8005'
 ht-degree: 0%
 ---
 # 发行说明
@@ -150,15 +150,7 @@ ht-degree: 0%
 
 默认禁用的选择加入功能将管理员和集成可以通过REST API创建的购物车与客户的活动店面购物车隔离。 启用后，`POST /V1/customers/:customerId/carts`将始终创建新的非活动购物车，管理员和集成呼叫者可以通过购物车REST端点管理该购物车，而无需更改购物者的店面购物车。<!-- ACCS-1153 -->
 
-要启用它，请使用[`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API终结点将`features/admin_quote_isolation/enabled`配置标志设置为`1`：
-
-```json
-{
-  "config": {
-    "features/admin_quote_isolation/enabled": "1"
-  }
-}
-```
+要启用此功能，请联系您的Adobe Commerce客户成功经理或创建支持工单。
 
 ### 通过第三方平台发送事务性电子邮件
 
