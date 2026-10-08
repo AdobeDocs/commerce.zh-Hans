@@ -131,7 +131,7 @@ ht-degree: 0%
 
 ### 按自定义价格添加购物车项目
 
-您现在可以通过将`custom_price`扩展属性添加到标准添加或更新购物车项目REST端点（`POST /V1/carts/:cartId/items`和`PUT /V1/carts/:cartId/items/:itemId`）来设置购物车项目](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price)的[自定义价格。 您必须提供管理员或集成令牌以设置自定义价格。 以负价格或不受支持的产品类型（例如具有动态定价的捆绑产品）发送的请求会被拒绝。<!-- ACCS-1155 -->
+您现在可以通过将`custom_price`扩展属性添加到标准添加或更新购物车项目REST端点（`POST /V1/carts/:cartId/items`和`PUT /V1/carts/:cartId/items/:itemId`）来设置购物车项目[&#128279;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price)的自定义价格。 您必须提供管理员或集成令牌以设置自定义价格。 以负价格或不受支持的产品类型（例如具有动态定价的捆绑产品）发送的请求会被拒绝。<!-- ACCS-1155 -->
 
 ```json
 {
@@ -700,7 +700,7 @@ ht-degree: 0%
 
 * 修复了导入文件验证可能失败的问题。<!-- CCSAAS-4364 -->
 
-* 已从&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**中的&#x200B;**[!UICONTROL Catalog]**部分删除&#x200B;**[!UICONTROL Recently Viewed/Compared Products]**配置，因为它在[!DNL Adobe Commerce as a Cloud Service]管理员中不受支持。<!-- ACCS-793 -->
+* 已从&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;中的&#x200B;**[!UICONTROL Catalog]**&#x200B;部分删除&#x200B;**[!UICONTROL Recently Viewed/Compared Products]**&#x200B;配置，因为它在[!DNL Adobe Commerce as a Cloud Service]管理员中不受支持。<!-- ACCS-793 -->
 
 >[!ENDSHADEBOX]
 
@@ -1014,7 +1014,7 @@ mutation {
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]中不可用的报告仅标记为PaaS （[!BADGE 仅PaaS ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}）。
+>[!DNL Adobe Commerce as a Cloud Service]中不可用的报告仅标记为PaaS （[!BADGE 仅PaaS &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"}）。
 
 ### 通过REST API捕获自定义发票金额
 
