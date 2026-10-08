@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
+source-git-commit: dee10a97e03a115bcd758171082061e95bb6adcc
 workflow-type: tm+mt
-source-wordcount: '8005'
+source-wordcount: '8031'
 ht-degree: 0%
 ---
 # 发行说明
@@ -64,11 +64,11 @@ ht-degree: 0%
 
 ## 2026年10月 — 发行说#1 {#latest}
 
-[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生产]{type=Neutral tooltip="列出的项目当前在生产环境中可用。"}
 
-以下项目将于2026年10月6日添加到生产环境。
+以下项目已于2026年10月7日发布到生产环境。
 
 >[!BEGINSHADEBOX]
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ### 在REST中管理目录价格规则
 
-新的REST API端点使集成能够以编程方式管理和搜索[目录价格规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog)。<!-- ACCS-1621 -->
+新的[REST API端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/catalog-price-rules)允许集成以编程方式管理和搜索[目录价格规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog)。<!-- ACCS-1621 -->
 
 以下端点受`Magento_CatalogRule::promo_catalog`权限保护，该权限还保护“管理目录价格规则”屏幕。 使用此端点需要管理员或集成级别的访问权限。
 
@@ -125,13 +125,13 @@ ht-degree: 0%
 
 ### 通过管理员REST API应用自定义配送折扣
 
-现在，对于不符合购物车价格规则的情况，您可以通过管理员REST API将任意配送折扣应用于购物车。
+对于不符合购物车价格规则的情况，您现在可以通过管理员REST API将任意[配送折扣](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/shipping-discounts)应用于购物车。
 
 使用`POST /V1/carts/:cartId/shipping-discount`设置折扣。 使用此端点需要管理员或集成级别的访问权限。<!-- ACCS-1156 -->
 
 ### 按自定义价格添加购物车项目
 
-您现在可以通过将`custom_price`扩展属性添加到标准添加或更新购物车项目REST端点（`POST /V1/carts/:cartId/items`和`PUT /V1/carts/:cartId/items/:itemId`）来设置购物车项目的自定义价格。 您必须提供管理员或集成令牌以设置自定义价格。 以负价格或不受支持的产品类型（例如具有动态定价的捆绑产品）发送的请求会被拒绝。<!-- ACCS-1155 -->
+您现在可以通过将`custom_price`扩展属性添加到标准添加或更新购物车项目REST端点（`POST /V1/carts/:cartId/items`和`PUT /V1/carts/:cartId/items/:itemId`）来设置购物车项目[&#128279;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price)的自定义价格。 您必须提供管理员或集成令牌以设置自定义价格。 以负价格或不受支持的产品类型（例如具有动态定价的捆绑产品）发送的请求会被拒绝。<!-- ACCS-1155 -->
 
 ```json
 {
@@ -161,6 +161,10 @@ ht-degree: 0%
 * `plugin.customer.api.account_management.activate` — 客户确认其帐户。
 * `plugin.negotiable_quote.api.negotiable_quote_management.decline` — 可协商的报价被拒绝。
 
+### 批量API限制
+
+[批量API](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints)现在强制实施每个请求的最大实体数。 超出限制的请求将返回错误。 [配置引用](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/bulk-api)中的不可配置[!UICONTROL Maximum Entities Per Bulk Request]字段显示限制。 有关详细信息，请参阅[API安全性](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints)。<!-- ACCS-703 -->
+
 ### 增强功能和错误修复
 
 此版本中包含以下选定的增强功能、优化和错误修复：
@@ -168,8 +172,6 @@ ht-degree: 0%
 * 创建或编辑webhook时，[!DNL Commerce Admin]现在显示警告，其中包含Adobe I/O Runtime `X-OW-EXTRA-LOGGING`标头设置为`on`。 标头用于调试，不建议在生产环境中使用。<!-- CCSAAS-5486 -->
 
 * 现在，通过预签名的S3上传URL上传的文件会进行额外的恶意软件扫描。<!-- ACCS-1463 -->
-
-* Bulk API现在强制实施每个请求的最大实体数。 超出限制的请求将返回错误。<!-- ACCS-703 -->
 
 * 修复了产品的可销售数量可能报告不足，从而错误地阻止添加到购物车、REST和GraphQL库存检查的问题。<!-- ACCS-1908 -->
 
@@ -217,7 +219,7 @@ ht-degree: 0%
 
 ### 附加文件和图像以返回请求
 
-通过店面[`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL突变提交退货请求时，客户现在可以上传文件和图像。 使用[`initiateUpload`和`finishUpload`变动](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/)上载文件，然后将返回的键分配给返回项自定义属性。<!-- CCSAAS-5410 -->
+通过店面[`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL突变提交退货请求时，客户现在可以上传文件和图像。 使用[`initiateUpload`突变](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#recaptcha-validation)上载文件，然后将返回的键分配给返回项自定义属性。<!-- CCSAAS-5410 -->
 
 ### 控制库存来源外观
 
