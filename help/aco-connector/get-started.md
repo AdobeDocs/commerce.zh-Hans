@@ -2,7 +2,7 @@
 title: 开始使用[!DNL Adobe Commerce Optimizer Connector]
 description: 了解如何安装[!DNL Adobe Commerce Optimizer Connector]、配置作用域导出设置、启用IMS身份验证以及验证目录同步。
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T16:55:50.934Z'
 last-update: 2026-10-01
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
@@ -60,11 +60,11 @@ ht-degree: 0%
 
 ## 使用该集成的要求 {#requirements-to-use-the-integration}
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7+。 有关详细要求，请参阅[系统要求](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)。
+* [Adobe Commerce](https://business.adobe.com/cn/products/magento/magento-commerce.html) 2.4.7+。 有关详细要求，请参阅[系统要求](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/system-requirements)。
 
 * 具有已设置的沙盒实例的[!DNL Commerce Optimizer]许可证。
 
-* [身份验证密钥](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)以使用编辑器下载连接器中继包。
+* [身份验证密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)以使用编辑器下载连接器中继包。
 
 * 管理员访问[[!DNL Commerce Optimizer] 沙盒实例](../optimizer/get-started.md)。
 
@@ -72,9 +72,9 @@ ht-degree: 0%
 
 * Commerce管理员的管理员访问权限。
 
-* [对 [!DNL Adobe Commerce] 应用程序服务器](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)的命令行访问权限。
+* [对 [!DNL Adobe Commerce] 应用程序服务器](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/project/user-access)的命令行访问权限。
 
-* 开发人员对配置了[!DNL Commerce Optimizer]项目的[IMS组织](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations？)的访问权限。
+* 开发人员对配置了[!DNL Commerce Optimizer]项目的[IMS组织](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations？)的访问权限。
 
 >[!BEGINSHADEBOX]
 
