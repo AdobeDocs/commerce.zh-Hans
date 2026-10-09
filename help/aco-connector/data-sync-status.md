@@ -4,7 +4,8 @@ description: 了解如何验证在[!DNL Adobe Commerce]和[!DNL Adobe Commerce O
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+last-update: 2026-10-01
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -19,6 +20,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -35,8 +38,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-last-update: 2026-10-01
-source-git-commit: 9ed3a09bc4e26e2ef787909700f51e25de0a18fa
+source-git-commit: c76e776250d9f996daf61d3cf62e2070803e998c
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -66,5 +68,5 @@ ht-degree: 0%
 > - [疑难解答](troubleshooting.md) — 诊断凭据、同步和范围导出问题
 > - [自定义Commerce作用域导出配置](./get-started.md#customize-the-commerce-scopes-export-configuration) — 按作用域级别配置馈送、启用和禁用行为以及管理步骤
 > - [连接器模块和馈送端点](reference/connector-reference.md) — 审核模块、API端点和支持的馈送
-> - [Commerce管理员中的“数据馈送同步状态”页面](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — 了解有关可用于监视馈送状态的字段和功能的更多信息
-> - [位于 [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/data-sync){target="_blank"}的数据同步仪表板 — 有关可用于监视目录数据同步的字段和操作的参考文档
+> - [Commerce管理员中的“数据馈送同步状态”页面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — 了解有关可用于监视馈送状态的字段和功能的更多信息
+> - [位于 [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync){target="_blank"}的数据同步仪表板 — 有关可用于监视目录数据同步的字段和操作的参考文档
