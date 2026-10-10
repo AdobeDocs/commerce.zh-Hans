@@ -1,7 +1,7 @@
 ---
-source-git-commit: c751dca1a7620b45068a7820054a842b50837bcd
+source-git-commit: b12fd59e97279b78017bee0403a7e7672adb1957
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1113'
 ht-degree: 1%
 ---
 # 新增功能模板
@@ -9,6 +9,50 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年10月8
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1aed1cc8a66473e936836aef6a2dee4085c8b3f">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月7日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>添加了有关如何根据<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/recommendations/filters#attributes">产品属性</a>筛选推荐的新部分。</p>
+</td>
+      <td>
+        反馈
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/16e5c6a7caf2e541bace72b3eb4898eabb13e24a">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年10月5
 
@@ -374,50 +418,6 @@ ht-degree: 1%
         新主题
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月10日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新了Adobe Commerce Optimizer设置指南，其中包含有关启用和配置私有目录视图以限制使用签名令牌访问目录数据的说明，并更新了相关主题以引用新功能：<br /> — 添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/private-catalog-view">私有目录视图</a>，其中介绍了如何启用目录保护，以便只有使用有效签名令牌的请求才能检索目录视图的数据。<br /> — 添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/restricted-access-keys">受限访问密钥</a>，其中说明了如何创建、分配和旋转用于签名令牌以进行目录保护的密钥。<br /> — 更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view">目录视图</a>，<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/overview">Adobe Commerce Optimizer是什么？</a>，<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/get-started">开始使用</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits">限制和边界</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/launch/launch-checklist">启动清单</a>以及<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector指南</a>，以引用新的私有目录视图和受限访问密钥主题。</p>
-</td>
-      <td>
-        重大更新，新主题
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de0de805f8ecd4f329ce3afc90e28197186856c2">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月7日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c88ec8730e24220b6dfd32da406d1ba3fd3a2ef2">提交</a></td>
     </tr>
   </tbody>
 </table>

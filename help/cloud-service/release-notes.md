@@ -163,7 +163,7 @@ ht-degree: 0%
 
 ### 批量API限制
 
-[批量API](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints)现在强制实施每个请求的最大实体数。 超出限制的请求将返回错误。 [配置引用](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/bulk-api)中的不可配置[!UICONTROL Maximum Entities Per Bulk Request]字段显示限制。 有关详细信息，请参阅[API安全性](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints)。<!-- ACCS-703 -->
+[批量API](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints)现在强制实施每个请求的最大实体数。 超出限制的请求将返回错误。 [配置引用](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/general/bulk-api)中的不可配置[!UICONTROL Maximum Entities Per Bulk Request]字段显示限制。 有关详细信息，请参阅[API安全性](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints)。<!-- ACCS-703 -->
 
 ### 增强功能和错误修复
 
