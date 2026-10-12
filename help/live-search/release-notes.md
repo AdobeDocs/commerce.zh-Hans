@@ -78,7 +78,7 @@ _2025年10月1日_
 
 _2025年4月29日_
 
-![修复](../assets/fix.svg)修复了&#x200B;[**性能**](./performance.md)&#x200B;选项卡上的&#x200B;**导出到CSV**报告未包含日期范围内指定的所有数据的问题。
+![修复](../assets/fix.svg)修复了&#x200B;[**性能**](./performance.md)&#x200B;选项卡上的&#x200B;**导出到CSV**&#x200B;报告未包含日期范围内指定的所有数据的问题。
 ![修复](../assets/fix.svg)修复了在使用搜索查询筛选器时无法保存[促销规则](./rules.md)的问题。
 ![修复](../assets/fix.svg)修复了[固定产品](./facets-manage.md#pinunpin-facet)未列在结果页面顶部的问题。
 
@@ -104,7 +104,7 @@ _2024年9月19日_
 
 _2024年9月4日_
 
-![Fix](../assets/fix.svg)将Facet](boundaries-limits.md#facets)内可返回[的最大存储段数增加到100。
+![Fix](../assets/fix.svg)将Facet[&#128279;](boundaries-limits.md#facets)内可返回的最大存储段数增加到100。
 
 _2024年8月7日_
 

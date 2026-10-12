@@ -116,6 +116,6 @@ Commerce下拉列表会自动检测`commerce-assets-enabled`配置并相应地�
 
 * *AEM Assets Storefront*&#x200B;文档中的[Adobe Commerce集成](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} — 店面配置和图像处理行为。
 
-* 在&#x200B;*AEM Assets*&#x200B;文档中为Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}创作内容时，[集成AEM Assets。
+* 在&#x200B;*AEM Assets*&#x200B;文档中为Edge Delivery Services[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}创作内容时，集成AEM Assets。
 
 * 在Da.live文档中[设置AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和[使用媒体](https://docs.da.live/authors/guides/adding-media){target=_blank}。

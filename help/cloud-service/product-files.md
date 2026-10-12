@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ## 通过产品导入上传
 
-您可以使用[导入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理员导入UI将文件批量附加到产品。 产品文件属性仅支持从外部URL导入，它遵循与产品图像导入](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的[方法2相同的方法。 Commerce从提供的URL下载文件，并将其保存到S3媒体存储中。
+您可以使用[导入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理员导入UI将文件批量附加到产品。 产品文件属性仅支持从外部URL导入，它遵循与产品图像导入[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的方法2相同的方法。 Commerce从提供的URL下载文件，并将其保存到S3媒体存储中。
 
 >[!NOTE]
 >

@@ -48,7 +48,7 @@ ht-degree: 0%
 
 ### Experience Platform
 
-1. 通过查看移动设备应用程序教程](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview)中的[Adobe Experience Cloud了解移动设备应用程序功能。
+1. 通过查看移动设备应用程序教程[&#128279;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview)中的Adobe Experience Cloud了解移动设备应用程序功能。
 
 1. [在Experience Platform中安装和配置](https://developer.adobe.com/client-sdks/home/getting-started/)SDK。
 

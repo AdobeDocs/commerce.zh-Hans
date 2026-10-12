@@ -69,7 +69,7 @@ ht-degree: 1%
 
 `products`、`productAttributes`、`categories`和`prices`馈送重复使用[!DNL SaaS Data Export]索引器收集的数据。 连接器从网站和客户组配置生成`priceBooks`源，并且不依赖于[!DNL SaaS Data Export]索引器。
 
-有关每个馈送的字段级映射详细信息，请参阅 [!DNL Commerce Optimizer Connector] 馈送](field-mapping.md)的[字段映射。
+有关每个馈送的字段级映射详细信息，请参阅 [!DNL Commerce Optimizer Connector] 馈送[&#128279;](field-mapping.md)的字段映射。
 若要根据目录大小估算同步所需的时间，请参阅[估算数据量和同步时间](estimate-data-volume-sync-time.md)。
 
 ## 配置路径
