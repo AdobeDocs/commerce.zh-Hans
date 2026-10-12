@@ -1,25 +1,42 @@
 ---
 title: 测试和验证
-description: 测试和验证有助于确保 [!DNL Payment Services] 功能按预期工作，并为您的客户提供最佳付款选项
+description: 测试和验证有助于确保[!DNL Payment Services]功能按预期工作，并为您的客户提供最佳付款选项
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '806'
 ht-degree: 0%
-
 ---
-
 # 测试和验证
 
-在您向购物者公开[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]之前，最好在沙盒环境&#x200B;_和_&#x200B;中在生产环境中进行测试。 测试和验证有助于确保[!DNL Payment Services]功能按预期工作，并为您的商店和客户提供最佳付款选项。
+在您向购物者公开[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]之前，最好在沙盒环境&#x200B;_和_&#x200B;中在生产环境中进行测试。 测试和验证有助于确保[!DNL Payment Services]功能按预期工作，并为您的商店和客户提供最佳付款选项。
 
 ## 在沙盒环境中测试
 
 在沙盒环境中测试[!DNL Payment Services]是一个重要的验证步骤，即使它是一个仅连接到PayPal沙盒而非实际银行和商家的模拟环境。
 
 1. 使用[信用卡字段](payments-options.md#credit-card-fields)或任何[PayPal付款按钮](payments-options.md#paypal-payment-buttons)成功完成从商店结帐。 有关使用假信用卡进行测试的更多信息，请参阅[测试凭据](#testing-credentials)。
-1. 捕获（当您的付款操作为[设置为`Authorize and Capture`](production.md#set-payment-services-as-payment-method)时）、[退款](refunds.md)或[void](voids.md)刚刚完成的订单。 如果您的付款操作设置为[而不是](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}，则您也可以`Authorize`为订单`Authorize and Capture`创建发票。
+1. 捕获（当您的付款操作为[设置为`Authorize and Capture`](production.md#set-payment-services-as-payment-method)时）、[退款](refunds.md)或[void](voids.md)刚刚完成的订单。 如果您的付款操作设置为`Authorize`而不是`Authorize and Capture`，则您也可以[为订单](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}创建发票。
 1. 在24-48小时内，查看[付款报表](payouts.md)中的交易和其他信息。
 1. 在[订单付款状态报告](order-payment-status.md)中查看订单的详细信息。
 
@@ -58,7 +75,7 @@ Apple Pay需要额外的配置才能进行本地开发。 Apple Pay使用域注�
 * **可公开访问**，Apple必须能够从Internet访问您的域。
 * **HTTPS协议**，Apple Pay仅在安全连接上工作。
 
-使用隧道服务（如[ngrok](https://ngrok.com/)）同时满足这两个要求。 按上述说明设置ngrok后，使用[ngrok](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains) URL **在PayPal中注册沙盒域**。
+使用隧道服务（如[ngrok](https://ngrok.com/)）同时满足这两个要求。 按上述说明设置ngrok后，使用&#x200B;**ngrok** URL [在PayPal中注册沙盒域](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains)。
 
 ### 测试凭据
 
