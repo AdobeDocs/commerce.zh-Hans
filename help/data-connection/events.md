@@ -4,35 +4,45 @@ description: 了解每个行为事件捕获的数据。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: bcabccc9-8a2e-4045-9306-1d999bb75624
-TQID: https://experienceleague.adobe.com/YS3jKQ3jmy76aeaqAp1PR8cGpD0euagdhoqL6CoMAnQ
+TQID: 'https://experienceleague.adobe.com/YS3jKQ3jmy76aeaqAp1PR8cGpD0euagdhoqL6CoMAnQ'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 469
+source-wordcount: '469'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Connection]行为事件
 
 下面列出了安装[!DNL Data Connection]扩展时可用的Commerce行为事件。 这些事件收集的数据将发送到Adobe Experience Platform。 您还可以创建[自定义事件](custom-events.md)以收集未开箱即用的其他数据。
 
-除了以下事件收集的数据之外，您还会获得由Adobe Experience Platform Web SDK提供的[其他数据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/js-overview)。
+除了以下事件收集的数据之外，您还会获得由Adobe Experience Platform Web SDK提供的[其他数据](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)。
 
 行为事件在购物者浏览您的网站时收集来自他们的匿名行为数据。 您可以使用这些事件收集的数据创建针对特定购物者集的促销和促销活动。
 
 >[!NOTE]
 >
->所有行为事件都包含[`identityMap`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/profile/identitymap)字段，其中包括购物者的电子邮件地址（可用时）和ECID。
+>所有行为事件都包含[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)字段，其中包括购物者的电子邮件地址（可用时）和ECID。
 
 ## 店面活动
 
@@ -58,6 +68,6 @@ ht-degree: 0%
 
 Adobe Commerce的![B2B](../assets/b2b.svg)对于B2B商家，您必须[安装](install.md#install-the-b2b-extension) `experience-platform-connector-b2b`扩展才能访问这些事件。
 
-B2B事件包含[申请列表](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/requisition-lists/requisition-lists)信息，例如，是否创建、添加或删除了申请列表。 通过跟踪特定于申请列表的事件，您可以查看客户经常购买的产品，并根据这些数据创建营销活动。
+B2B事件包含[申请列表](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists)信息，例如，是否创建、添加或删除了申请列表。 通过跟踪特定于申请列表的事件，您可以查看客户经常购买的产品，并根据这些数据创建营销活动。
 
 请参阅[开发人员文档](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)以了解有关B2B事件的更多信息。

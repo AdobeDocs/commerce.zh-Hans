@@ -34,10 +34,18 @@ subfeature_v2:
     internal-label: Logs
   - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
     internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -77,7 +85,7 @@ B2B投影将同步的目录内容和定价与共享目录分类和公司分配�
 
 店面会随每个促销API请求发送目录视图ID、价格手册ID和签名令牌。 [!DNL Adobe Commerce Optimizer]根据分配给目录视图的受限制访问密钥验证JWT的RS256签名。 仅当令牌和密钥有效且未过期时，才会返回目录数据。
 
-从购物者通过店面和Commerce后端到[!DNL Adobe Commerce Optimizer]![&#128279;](./assets/b2b-catalog-runtime-authorization.svg){width="700"}的B2B目录请求的运行时授权流
+从购物者通过店面和Commerce后端到[!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-runtime-authorization.svg){width="700"}的B2B目录请求的运行时授权流![
 
 对于私有目录请求，发送以下标头：
 

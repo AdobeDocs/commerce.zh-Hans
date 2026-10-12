@@ -3,13 +3,30 @@ title: 信用卡保险存储
 description: 购物者可以保存（保存）自己的信用卡信息以便将来购买。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
-
 ---
-
 # 信用卡保险存储
 
 通过信用卡保险存储将一次性购物者转化为忠诚客户。 登录的客户可以保存（或“保险库”）他们的信用卡凭据，以便在以后为同一商家帐户内的相同或其他商店购买时使用。
@@ -32,7 +49,7 @@ ht-degree: 0%
 
 1. 在左侧导航中导航到&#x200B;**[!UICONTROL Stored Payment Methods]**&#x200B;以查看其所有存储的付款方法。
 
-   有关详细信息，请参阅[存储的付款方式](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/payments/stored-payment-methods)。
+   有关详细信息，请参阅[存储的付款方式](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods)。
 
 1. 客户单击&#x200B;**[!UICONTROL Add New Card]**&#x200B;以存储新卡。
 
@@ -73,10 +90,10 @@ Commerce存储一个令牌，通过获取客户保存的信用卡信息来帮助
 
 要在“管理员”中使用保险存储信用卡为客户创建订单，请执行以下操作：
 
-1. [创建订单并添加产品](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
-1. 在&#x200B;_[!UICONTROL Payment & Shipping Information]_&#x200B;中，选择&#x200B;**[!UICONTROL Stored Cards]**&#x200B;作为付款方式。
+1. [创建订单并添加产品](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
+1. 在&#x200B;_[!UICONTROL Payment & Shipping Information]_中，选择&#x200B;**[!UICONTROL Stored Cards]**作为付款方式。
 1. 选择所需的保险存储信用卡支付方式。
-1. 完成订单的任何其他必要步骤后，[提交订单](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
+1. 完成订单的任何其他必要步骤后，[提交订单](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
 
    ![在Admin中为客户使用保险存储信用卡](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

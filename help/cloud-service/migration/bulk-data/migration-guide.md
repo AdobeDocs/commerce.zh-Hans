@@ -2,36 +2,48 @@
 title: 运行批量数据迁移
 description: 了解如何使用CLI配置并运行从Adobe Commerce PaaS或内部部署实例到Adobe Commerce as a Cloud Service的批量数据迁移。
 feature: Cloud
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
 TQID: 'https://experienceleague.adobe.com/z9659Vnf2JLxJ4U5p3tEEjurj5Mg3bfKj68Gheq2AXY'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 670b6214b28be93a16130552a226a8cadb487324
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 2802
+source-wordcount: '2802'
 ht-degree: 0%
-
 ---
-
 # 运行批量数据迁移
 
 {{bulk-data-early-access}}
@@ -54,7 +66,7 @@ ht-degree: 0%
 
 设置批量数据迁移的环境：
 
->[!VIDEO](https://video.tv.adobe.com/v/3496130?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3496121)
 
 1. 提取`ccsaas-migration-tools.tar.gz`的内容。
 
@@ -97,7 +109,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### 配置源OAuth凭据
 
->[!VIDEO](https://video.tv.adobe.com/v/3496150?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3496142)
 
 这四个值表示从迁移工具到源存储API的请求。 若要获取它们，请打开源[!UICONTROL Admin]，然后转到&#x200B;[!UICONTROL **系统**] > [!UICONTROL **扩展**] > [!UICONTROL **集成**]。 创建或打开集成，然后将值复制到`.env`：
 
@@ -130,7 +142,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->如果这是您第一次使用Cloud CLI，则还必须将SSH公钥添加到您的帐户。 有关说明，请参阅[安全连接指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/develop/secure-connections)。
+>如果这是您第一次使用Cloud CLI，则还必须将SSH公钥添加到您的帐户。 有关说明，请参阅[安全连接指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)。
 
 ### 调整Commerce管理设置
 
@@ -142,7 +154,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### 配置目标SaaS和IMS凭据
 
->[!VIDEO](https://video.tv.adobe.com/v/3496175?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3496167)
 
 这些是目标的[!DNL Adobe Commerce as a Cloud Service] IMS和API设置。 您需要环境的租户ID、组织ID、IMS OAuth服务器到服务器凭据以及正确的IMS主机。 与您的Adobe团队协调以访问组织、租户和配置文件。 请勿尝试推断或估计敏感值。
 
@@ -247,7 +259,7 @@ CDMS_PORT=443
 
 ## 配置数据库连接文件
 
->[!VIDEO](https://video.tv.adobe.com/v/3496165?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3496152)
 
 `.my.cnf`文件为迁移工具的提取端提供[!DNL MySQL]连接设置。 通过将`.my.cnf.example`复制到项目根目录中的`.my.cnf`来创建它。 分区名称必须与`.env`中的`SOURCE_CONNECTION_NAME`匹配。
 

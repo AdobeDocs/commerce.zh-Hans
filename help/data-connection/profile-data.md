@@ -4,44 +4,52 @@ description: 了解如何创建架构、数据集和数据流，以收集Commerc
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 25741837-f423-4204-8520-80b7cd9d44bd
-TQID: https://experienceleague.adobe.com/I8bptw1tNdzXfCC6hFtn7fuz-BIiALXG4g6lLhga6ec
+TQID: 'https://experienceleague.adobe.com/I8bptw1tNdzXfCC6hFtn7fuz-BIiALXG4g6lLhga6ec'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 340
+source-wordcount: '340'
 ht-degree: 0%
-
 ---
-
 # 更新Commerce数据摄取的配置文件记录架构
 
 当您的购物者在Commerce网站中创建配置文件时，将创建配置文件记录并捕获数据。 您必须先创建特定于配置文件记录的架构和数据集，然后才能将该配置文件数据流式传输到Experience Platform。
 
-1. [创建](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/resources/schemas)架构并将类设置为&#x200B;**个人资料**。
+1. [创建](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)架构并将类设置为&#x200B;**个人资料**。
 
-1. [添加](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/resources/schemas)以下特定于配置文件的字段组：
+1. [添加](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)以下特定于配置文件的字段组：
 
    - identityMap
    - 人口统计详细信息
    - 个人联系人详细信息
    - 用户帐户详细信息
 
-1. [为配置文件启用](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/resources/schemas)架构。
+1. [为配置文件启用](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)架构。
 
    为配置文件启用某个架构后，从该架构创建的任何数据集都将参与Real-Time CDP，后者将合并来自不同源的数据，以构建每个客户的完整视图。
 
-1. [基于您创建或更新的架构创建数据集](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform)。
+1. [基于您创建或更新的架构创建数据集](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform)。
 
    数据集是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。
 
-1. 在Experience Platform中创建包含以下值的[自定义命名空间](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces#create-namespaces)：
+1. 在Experience Platform中创建包含以下值的[自定义命名空间](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces)：
 
    - **显示名称**：_Commerce客户ID_
    - **标识符号**： _CustomerId_

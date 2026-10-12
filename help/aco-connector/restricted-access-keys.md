@@ -3,7 +3,7 @@ title: 管理B2B共享目录的受限访问密钥
 description: 了解如何管理Adobe Commerce Optimizer Connector用于保护B2B共享目录投影的受限制访问密钥。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -34,7 +36,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -42,7 +44,7 @@ ht-degree: 0%
 
 # 管理B2B共享目录的受限访问密钥
 
-[!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B扩展，该扩展当前为私有Beta版。"}
+[!BADGE Private beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B扩展，该扩展当前为私有Beta版。"}
 
 如果您将[!DNL Adobe Commerce] B2B共享目录与[!DNL Adobe Commerce Optimizer Connector B2B extension]一起使用，则扩展会在创建目录视图时自动生成并分配第一个受限访问密钥。 使用Commerce管理员中的[!UICONTROL Restricted Access Keys]页面查看该密钥，并创建、分配或删除其他密钥。
 
@@ -60,7 +62,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关此页上的字段的引用，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[受限访问密钥管理](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"}。—>
+>有关此页上的字段的引用，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[受限访问密钥管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"}。—>
 
 ## 当您需要自动键以外的其他键时 {#when-you-need-more-than-the-automatic-key}
 
@@ -99,7 +101,7 @@ Commerce会生成一个新的密钥对并保留私钥。 “受限访问密钥�
 
 1. 在公司的[!UICONTROL Action]列中，选择[!UICONTROL Edit]。
 
-1. 要查看从分配给公司的共享目录投影的目录视图列表，请展开&#x200B;_[!UICONTROL Catalog Views]_&#x200B;部分。
+1. 要查看从分配给公司的共享目录投影的目录视图列表，请展开&#x200B;_[!UICONTROL Catalog Views]_部分。
 
 选项卡列出了从共享目录投影的目录视图，包括其分配的键值。
 
@@ -159,7 +161,7 @@ Commerce会生成一个新的密钥对并保留私钥。 “受限访问密钥�
 
 >[!MORELIKETHIS]
 >
-> - [管理受限访问密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — 在&#x200B;*Commerce管理指南*&#x200B;中，此页面的完整字段引用 — >
+> - [管理受限访问密钥](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — 在&#x200B;*Commerce管理指南*&#x200B;中，此页面的完整字段引用 — >
 > - [监视目录视图同步](catalog-view-sync-status.md) — 监视这些密钥保护的目录视图
 > - [私有目录视图](/help/optimizer/setup/private-catalog-view.md) — 了解什么是连接器管理的私有目录视图
 > - [受限访问密钥](/help/optimizer/setup/restricted-access-keys.md) — 了解基于ACO Studio的手动密钥流如何用于非B2B用例

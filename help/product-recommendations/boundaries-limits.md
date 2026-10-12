@@ -2,7 +2,15 @@
 title: 边界和限制
 description: 了解[!DNL Product Recommendations]的界限和限制，以确保其满足您的业务需求。
 role: Admin, Developer
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '893'
 ht-degree: 0%
@@ -14,10 +22,10 @@ ht-degree: 0%
 ## 常规
 
 - **包含空格的SKU** — 包含空格的SKU可能会降低推荐相关性，应尽可能避免使用。
-- **购物车页面** — 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面不支持产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。 请参阅[创建推荐](create.md)。
+- **购物车页面** — 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面不支持产品推荐](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。 请参阅[创建推荐](create.md)。
 - **子产品** — 可配置产品的子产品（可见性&#x200B;_不可见_）未显示在推荐单元中。 只能显示可配置（父）产品。 查看[筛选产品](filters.md#product)。
 - **已禁用或不可见的产品** — 单独禁用或不可见的产品永远不会出现在推荐中，也不能在产品筛选器中选择。
-- 推荐单位中不支持具有开始和结束日期的&#x200B;**特殊定价** - [特殊价格](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/pricing/product-price-special)。 具有特殊价格的产品可能会出现在推荐中，但单位不显示特殊价格、开始日期或结束日期。 在打开产品页面之前，购物者会看到常规价格（或您的目录/价格信息源提供的其他价格数据）。
+- 推荐单位中不支持具有开始和结束日期的&#x200B;**特殊定价** - [特殊价格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)。 具有特殊价格的产品可能会出现在推荐中，但单位不显示特殊价格、开始日期或结束日期。 在打开产品页面之前，购物者会看到常规价格（或您的目录/价格信息源提供的其他价格数据）。
 
 ## 推荐单位
 
@@ -51,7 +59,7 @@ ht-degree: 0%
 
 ## B2B
 
-- 产品推荐遵循[类别权限](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/categories/category-permissions)、[共享目录](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/shared-catalogs/catalog-shared)和特定于客户组的定价。 购物者只能根据自己的区段和目录分配看到他们能够访问的产品的推荐。 请参阅[入门](onboarding.md)。
+- 产品推荐遵循[类别权限](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)、[共享目录](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared)和特定于客户组的定价。 购物者只能根据自己的区段和目录分配看到他们能够访问的产品的推荐。 请参阅[入门](onboarding.md)。
 
 ## 数据和就绪性
 
@@ -60,4 +68,4 @@ ht-degree: 0%
 
 ## 故障排除
 
-有关目录同步、建议未显示或其他常见问题的帮助，请搜索[Commerce知识库](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview)或联系[支持部门](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+有关目录同步、建议未显示或其他常见问题的帮助，请搜索[Commerce知识库](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)或联系[支持部门](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

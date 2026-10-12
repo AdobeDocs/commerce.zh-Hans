@@ -3,27 +3,33 @@ title: 自定义自动匹配
 description: 了解自定义自动匹配对于具有复杂匹配逻辑或依赖第三方系统且无法将元数据填充到AEM Assets中的商户特别有用。
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
+TQID: 'https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 7ecedcc7c17abdeb64507d8f74ec6fc103b361cc
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
 ---
 # 自定义自动匹配
 
-如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或者处理来自无法将元数据填充到AEM Assets中的第三方系统的资源。
+如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或者处理来自无法将元数据填充到AEM Assets中的第三方系统的资源。
 
 ## 配置自定义自动匹配
 
@@ -125,9 +131,9 @@ ht-degree: 0%
 
 ## 异步配置保存
 
-如果您的Commerce实例启用了[异步配置保存](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)选项，则配置更改将排入队列并由异步使用者应用，而不是立即保存在同一请求中。 要在此模式下上载自定义自动匹配的`workspace.json`文件，请依次完成以下步骤：
+如果您的Commerce实例启用了[异步配置保存](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)选项，则配置更改将排入队列并由异步使用者应用，而不是立即保存在同一请求中。 要在此模式下上载自定义自动匹配的`workspace.json`文件，请依次完成以下步骤：
 
-1. 确认Commerce异步配置保存已[启用](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)。
+1. 确认Commerce异步配置保存已[启用](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)。
 
 1. 从管理员转到&#x200B;**[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**。
 
@@ -161,7 +167,7 @@ ht-degree: 0%
 
 ## 自定义匹配器API端点
 
-当您使用[App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}生成自定义匹配程序应用程序时，该应用程序必须公开以下端点：
+当您使用[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}生成自定义匹配程序应用程序时，该应用程序必须公开以下端点：
 
 * **App Builder资源到产品URL**&#x200B;端点
 * **App Builder产品到资源URL**&#x200B;端点
@@ -330,7 +336,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | 属性 | 数据类型 | 描述 |
 | --- | --- | --- |
 | `asset_id` | 字符串 | 资产ID。 |
-| `asset_roles` | 数组 | 资产角色。 使用支持的[Commerce资源角色](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，如`thumbnail`、`image`、`small_image`和`swatch_image`。 使用AEM Assets集成扩展1.4.6及更高版本时，也可以使用自定义图像角色（如`hero`或`custom_role_1`）。 |
+| `asset_roles` | 数组 | 资产角色。 使用支持的[Commerce资源角色](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，如`thumbnail`、`image`、`small_image`和`swatch_image`。 使用AEM Assets集成扩展1.4.6及更高版本时，也可以使用自定义图像角色（如`hero`或`custom_role_1`）。 |
 | `asset_format` | 字符串 | 资源格式。 可能的值为`image`和`video`。 |
 | `asset_position` | 数字 | 资产在产品库中的位置。 |
 

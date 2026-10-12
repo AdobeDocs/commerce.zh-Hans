@@ -3,8 +3,25 @@ title: 安全性和合规性
 description: 查看您站点的安全性和合规性要求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=zh-Hans
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 0%
@@ -17,13 +34,13 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce]和[!DNL Magento Open Source]包含对多个安全功能的支持。
 
-请参阅核心用户指南中的[安全性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/security/security){target="_blank"}，以查看安全最佳实践，并了解如何管理管理员会话和凭据、实施验证码以及管理网站限制。
+请参阅核心用户指南中的[安全性](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"}，以查看安全最佳实践，并了解如何管理管理员会话和凭据、实施验证码以及管理网站限制。
 
 ## PCI合规性
 
 支付卡行业(PCI)为通过互联网接受信用卡付款的企业制定了一系列要求。 除了维护安全的环境外，处理客户信用卡信息的商户还需要满足一些标准准则。
 
-有关详细信息，请参阅[PCI合规性指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}。
+有关详细信息，请参阅[PCI合规性指南](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}。
 
 商家可以完成[自我评估问卷(SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}，这是一种自我验证工具，用于评估持卡人数据的安全性。
 
@@ -49,7 +66,7 @@ PCI 3-D Secure (3DS)支持在线购买信用卡时购买者与其信用卡发行
 
 >[!MORELIKETHIS]
 >
-> * 有关详细信息，请参阅设置[&#128279;](configure-admin.md#3ds)中的3DS。
+> * 有关详细信息，请参阅设置](configure-admin.md#3ds)中的[3DS。
 > * 有关用于3DS测试的特定信用卡的更多信息，请参阅PayPal开发人员文档中的[测试卡](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/)。
 
 ### 卡保险存储

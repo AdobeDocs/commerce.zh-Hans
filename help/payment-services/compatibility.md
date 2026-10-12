@@ -1,29 +1,39 @@
 ---
-title: ' [!DNL Payment Services]的兼容性'
-description: 了解 [!DNL Payment Services] 是否在您的国家/地区可用，以及它与Adobe Commerce版本是否兼容。
+title: '[!DNL Payment Services]的兼容性'
+description: 了解[!DNL Payment Services]是否在您的国家/地区可用，以及它与Adobe Commerce版本是否兼容。
 role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
 exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
-TQID: https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4
+TQID: 'https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 4235bf48bb5f24a076621ee5985e9e7316fcb1cc
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 498
+source-wordcount: '499'
 ht-degree: 0%
-
 ---
-
 # [!DNL Payment Services]的兼容性
 
-[!DNL Payment Services]可用于[!DNL Adobe Commerce as a Cloud Service]、[!DNL Adobe Commerce on Cloud]和内部部署的所有受支持版本以及Magento Open Source。 有关特定于版本的信息，请参阅[生命周期策略](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/planning/lifecycle-policy)页面。
+[!DNL Payment Services]可用于[!DNL Adobe Commerce as a Cloud Service]、[!DNL Adobe Commerce on Cloud]和内部部署的所有受支持版本以及Magento Open Source。 有关特定于版本的信息，请参阅[生命周期策略](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)页面。
 
 ## 先决条件
 
@@ -35,7 +45,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   > 有关更多信息，请参阅我们的[Adobe Commerce服务连接器](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)教程视频。
+   > 有关更多信息，请参阅我们的[Adobe Commerce服务连接器](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)教程视频。
 
 1. 如果您已连接实例，请导航到[入门](onboard.md)页面以了解后续步骤。
 
@@ -49,11 +59,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> [!DNL Payment Services]在入门培训期间为其他[&#128279;](../payment-services/production.md#complete-merchant-onboarding)可用国家/地区提供[快速签出功能](../payment-services/payments-options.md)（付款选项的子集）。
+> [!DNL Payment Services]在入门培训期间为其他[可用国家/地区提供[快速签出功能](../payment-services/payments-options.md)（付款选项的子集）](../payment-services/production.md#complete-merchant-onboarding)。
 
 ### 哪个[!DNL Payment Services]选项适合您？
 
->[!VIDEO](https://video.tv.adobe.com/v/3447928?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
 
 有关设置[!DNL Payment Services]扩展的更多信息，请参阅[连接](connect.md)。
 
@@ -105,13 +115,13 @@ ht-degree: 0%
 
 >[!ENDTABS]
 
-有关特定于发行版和版本的详细信息，请参阅[生命周期策略](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/planning/lifecycle-policy)和[[!DNL Payment Services] 发行说明](release-notes.md)页面。
+有关特定于发行版和版本的详细信息，请参阅[生命周期策略](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)和[[!DNL Payment Services] 发行说明](release-notes.md)页面。
 
 要获取完整说明并开始入门流程，请参阅[开始使用 [!DNL Payment Services]](onboard.md)。
 
 ### 接受的信用卡和货币
 
-[!DNL Payment Services]接受可用国家的货币。 有关设置货币汇率的详细信息，请参阅[货币配置](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration)。
+[!DNL Payment Services]接受可用国家的货币。 有关设置货币汇率的详细信息，请参阅[货币配置](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration)。
 
 有关PayPal产品和服务可用的货币和支付方法的更多信息，请参阅以下页面：
 

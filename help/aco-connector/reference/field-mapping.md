@@ -3,7 +3,7 @@ title: '[!DNL Adobe Commerce Optimizer Connector]馈送的字段映射'
 description: 了解从[!DNL Adobe Commerce]目录数据到所有馈送的[!DNL Adobe Commerce Optimizer]摄取API格式的[!DNL Adobe Commerce Optimizer Connector]字段映射。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
@@ -22,6 +22,8 @@ feature_v2:
     internal-label: Admin tools and workspace
   - id: c32adafa-ed01-4b31-997e-2413013911b0
     internal-label: Integrations
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -37,7 +39,7 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 1e34df4f07f9043675104fce55c58e0617463b33
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 2%

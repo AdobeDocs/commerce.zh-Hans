@@ -3,14 +3,31 @@ title: 连接实例
 description: 使用API密钥和私钥连接您的Commerce实例，并在配置中指定数据空间。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
-source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
-
 ---
-
 
 # 连接实例
 
@@ -20,7 +37,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
-> 有关其他信息，请参阅我们的[[!DNL Adobe Commerce] 服务连接器](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)视频。
+> 有关其他信息，请参阅我们的[[!DNL Adobe Commerce] 服务连接器](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)视频。
 
 * 如果您&#x200B;*已连接您的实例*，通过获取并使用API凭据并配置Commerce服务，您可以继续[设置测试沙盒](sandbox.md)。
 * 如果您仍&#x200B;*需要连接实例*，请参阅本主题中有关[获取API凭据](#obtain-api-credentials)和[配置Commerce服务](#configure-commerce-services)的信息。
@@ -32,19 +49,19 @@ ht-degree: 0%
 
 ## 获取API凭据
 
-要使用Commerce SaaS服务，您必须对沙盒和生产环境使用实例的API密钥（Commerce公共API密钥和私钥），这些API密钥在[我的帐户信息板](https://account.magento.com/customer/account/login)中创建和管理。 [可以为Commerce帐户创建密钥对](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/config/services/saas)，一个用于沙盒，一个用于生产，但一次只能活动使用一对密钥。
+要使用Commerce SaaS服务，您必须对沙盒和生产环境使用实例的API密钥（Commerce公共API密钥和私钥），这些API密钥在[我的帐户信息板](https://account.magento.com/customer/account/login)中创建和管理。 [可以为Commerce帐户创建密钥对](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)，一个用于沙盒，一个用于生产，但一次只能活动使用一对密钥。
 
 >[!NOTE]
 >
->在访问[!UICONTROL My Account]仪表板时需要帮助？ 请参阅[创建Commerce帐户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/commerce-account/commerce-account-create)。
+>在访问[!UICONTROL My Account]仪表板时需要帮助？ 请参阅[创建Commerce帐户](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create)。
 
 公共API密钥创建后，始终可在“我的帐户”信息板中使用。 您可以根据需要复制或删除它。 在为沙盒或生产环境创建公共API密钥时，私有API密钥将变得可见；它只能从后续对话框中复制或保存，并且以后无法访问。
 
 给定的API密钥对对适用于环境中的所有Commerce服务，因此，如果您已经为您的实例配置了Commerce服务，则Commerce Services Connector中已存在您的API密钥对。
 
-如果您的API密钥丢失，则必须生成一个新的API密钥对[&#128279;](../landing/saas.md#createsaasenv)并应用[到Admin中的Commerce Services Connector配置](../landing/saas.md#genapikey)和。 如果配置的密钥有误或配置中不存在任何密钥，则付款服务中将显示帐户验证错误对话框，通知您未验证帐户。
+如果您的API密钥丢失，则必须生成一个新的API密钥对[并应用[到Admin中的Commerce Services Connector配置](../landing/saas.md#genapikey)和](../landing/saas.md#createsaasenv)。 如果配置的密钥有误或配置中不存在任何密钥，则付款服务中将显示帐户验证错误对话框，通知您未验证帐户。
 
-查看使用API[&#128279;](../landing/saas.md#availableservices)的可用Commerce服务的列表。
+查看使用API](../landing/saas.md#availableservices)的可用Commerce服务的[列表。
 
 要了解如何为沙盒或生产环境生成API密钥，请参阅[凭据](../landing/saas.md#apikey)。
 
@@ -67,13 +84,13 @@ ht-degree: 0%
 
    如果您尚未为帐户配置Commerce服务，则可以看到此选项。
 
-   您将被定向到管理员&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**&#x200B;中的配置区域，以配置您的Commerce服务连接器。
+   您将被定向到管理员&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**中的配置区域，以配置您的Commerce服务连接器。
 
 1. 要配置Commerce服务，请按照[SaaS配置](../landing/saas.md#saasenv)中所述的步骤操作。
 
    >[!INFO]
    >
-   > 有关其他信息，请参阅我们的[[!DNL Adobe Commerce] 服务连接器](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)视频。
+   > 有关其他信息，请参阅我们的[[!DNL Adobe Commerce] 服务连接器](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)视频。
 
 ## 端点
 

@@ -1,14 +1,27 @@
 ---
 title: 为Commerce Optimizer配置AEM Assets
-description: 了解如何为 [!DNL Adobe Commerce Optimizer]配置AEM Assets集成。
+description: 了解如何为[!DNL Adobe Commerce Optimizer]配置AEM Assets集成。
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 0%
-
 ---
-
 
 # 为[!DNL Adobe Commerce Optimizer]配置AEM Assets
 
@@ -56,7 +69,7 @@ ht-degree: 0%
 
 在配置集成之前，请确保您具有：
 
-* 具有&#x200B;**产品可视化图表**&#x200B;权利文件的活动[!DNL Adobe Commerce Optimizer]实例（捆绑Dynamic Media与OpenAPI功能+ [AEM Assets Prime](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-prime)），或客户提供的AEM Assets许可证（例如，**AEM Assets Ultimate**）已启用Dynamic Media。
+* 具有&#x200B;**产品可视化图表**&#x200B;权利文件的活动[!DNL Adobe Commerce Optimizer]实例（捆绑Dynamic Media与OpenAPI功能+ [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)），或客户提供的AEM Assets许可证（例如，**AEM Assets Ultimate**）已启用Dynamic Media。
 * 访问AEM Assets as a Cloud Service环境。
 * 同一Adobe IMS组织中的[!DNL Commerce Optimizer]和AEM Assets。
 * 在您的AEM Assets环境中启用了OpenAPI的Dynamic Media （请参阅[配置AEM Assets项目](configure-aem.md#prerequisites)以了解启用步骤）。
@@ -85,7 +98,7 @@ ht-degree: 0%
 * AEM Assets事件（已批准、更新和删除资产）
 * [!DNL Commerce Optimizer]目录事件（产品已创建、已更新）
 
-要启动此流程，请[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)，该票证包含以下信息：
+要启动此流程，请[创建支持票证](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)，该票证包含以下信息：
 
 * 在您的[!DNL Commerce Optimizer] URL或Commerce Cloud Manager UI中找到&#x200B;**[!DNL Adobe Commerce Optimizer]租户ID** （实例ID）。
 * 当您[为集成配置了AEM](#configure-aem-assets-first)时，所设置的&#x200B;**AEM Assets项目ID和环境ID**。

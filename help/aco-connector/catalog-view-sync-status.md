@@ -1,10 +1,10 @@
 ---
 title: B2B共享目录的监视器目录视图同步
-last-update: 2026-09-03
+last-update: 2026-09-03T00:00:00.000Z
 description: 使用“目录视图：同步状态”页可以监视和协调已同步到Adobe Commerce Optimizer的目录视图、策略、价格手册引用和关键配置数据。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -35,7 +37,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 1fd5e3d84d5249ce96014cae46e045528d2790d0
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 0%
@@ -66,7 +68,7 @@ ht-degree: 0%
 | **正在弃用** | 您已删除[!DNL Adobe Commerce]中的共享目录。 目录视图仍可访问，直到删除宽限期到期。 默认宽限期为七天。 您可以通过更新[目录视图同步设置](#configure-aco-catalog-view-sync-settings)来修改默认值。 |
 | **孤立** | 目录视图或键是直接在[!DNL Adobe Commerce Optimizer] Studio中创建的，不是由连接器创建的。 查看[查看孤立的已删除条目](#review-orphaned-and-deleted-entries)。 |
 
-[!UICONTROL Healthy]、[!UICONTROL Pending]和[!UICONTROL Deleted]是不需要操作的信息性状态。 有关完整列表，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[同步状态值](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"}。
+[!UICONTROL Healthy]、[!UICONTROL Pending]和[!UICONTROL Deleted]是不需要操作的信息性状态。 有关完整列表，请参阅&#x200B;*Commerce管理指南*&#x200B;中的[同步状态值](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"}。
 
 ### 配置ACO目录视图同步设置 {#configure-aco-catalog-view-sync-settings}
 

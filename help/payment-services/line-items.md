@@ -1,16 +1,27 @@
 ---
-title: ' [!DNL Payment Services]的行项目'
-description: 了解 [!DNL Payment Services] 的行项目以及如何查看商家仪表板中的行项目。
+title: '[!DNL Payment Services]的行项目'
+description: 了解[!DNL Payment Services]的行项目以及如何查看商家仪表板中的行项目。
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '690'
 ht-degree: 0%
-
 ---
-
 # [!DNL Payment Services]的行项目
 
 [!DNL Payment Services]的行项目是订单中包含的项目。 这些行项目提供如下信息：
@@ -29,9 +40,9 @@ ht-degree: 0%
 
 1. 转到&#x200B;**[!UICONTROL Sales]**&#x200B;并选择&#x200B;**[!UICONTROL Payment Methods]**。
 
-1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;部分。
+1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_部分。
 
-1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;部分中，展开&#x200B;_[!UICONTROL Line Items]_&#x200B;部分。
+1. 在&#x200B;_[!UICONTROL Payment Services]_部分中，展开_[!UICONTROL Line Items]_&#x200B;部分。
 
 1. 对于&#x200B;**[!UICONTROL Line Items Enabled]**，选择要启用（默认）的`Yes`或要禁用行项目的`No`。
 
@@ -145,11 +156,11 @@ ht-degree: 0%
 
 +++
 
-有关这些字段及其限制的详细信息，请参阅有关行项目[的](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}PayPal开发人员文档。
+有关这些字段及其限制的详细信息，请参阅有关行项目](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}的[PayPal开发人员文档。
 
 ## 管理行项目
 
-Adobe Commerce [根据每行](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的总额计算税额，如果订购了同一物料的多个数量或者在目录中显示含税价格，则可能会导致舍入问题。 在这种情况下，总数量可以拆分为两行，但数量将等于订购的物料总数。
+Adobe Commerce [根据每行](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的总额计算税额，如果订购了同一物料的多个数量或者在目录中显示含税价格，则可能会导致舍入问题。 在这种情况下，总数量可以拆分为两行，但数量将等于订购的物料总数。
 
 > 贸易商仪表板视图中具有舍入问题的行项目示例
 

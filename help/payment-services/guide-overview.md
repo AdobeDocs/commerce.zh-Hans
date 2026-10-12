@@ -1,18 +1,35 @@
 ---
 title: '[!DNL Payment Services]指南'
-description: ' [!DNL Adobe Commerce] 文档的这些 [!DNL Payment Services] 目标受众。'
+description: 这些 [!DNL Adobe Commerce] 的 [!DNL Payment Services] 文档的目标受众。
 seo-title: Adobe Commerce Payments Services Audience
 seo-description: Describes contents of the [!DNL Payment Services] for Adobe Commerce documentation
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 feature: Payments, Checkout, Paas, Saas
 recommendations: noCatalog
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 0%
-
+source-wordcount: '539'
+ht-degree: 1%
 ---
-
 
 # [!DNL Payment Services]指南
 
@@ -113,16 +130,16 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4用户指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/user-guides/home) — 针对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的以商家为中心的文档
-> * [[!DNL Adobe Commerce] 2.4用户指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/user-guides/home) — 用于生成和自定义[!DNL Adobe Commerce]或[!DNL Magento Open Source]的以开发人员为中心的文档
+> * [[!DNL Adobe Commerce] 2.4用户指南](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) — 针对[!DNL Adobe Commerce]和[!DNL Magento Open Source]的以商家为中心的文档
+> * [[!DNL Adobe Commerce] 2.4用户指南](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) — 用于生成和自定义[!DNL Adobe Commerce]或[!DNL Magento Open Source]的以开发人员为中心的文档
 > * [发行说明](release-notes.md) — 了解有关即将发行的版本、产品详细信息以及哪些Adobe Commerce版本支持[!DNL Payment Services]扩展的更多信息
-> * [帮助中心](https://experienceleague.adobe.com/zh-hans/docs/commerce-knowledge-base/kb/overview) — 在知识库中搜索与[!DNL Payment Services]相关的故障排除文章
-> * [支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)—Commerce客户可以提交票证以接收其他帮助
+> * [帮助中心](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) — 在知识库中搜索与[!DNL Payment Services]相关的故障排除文章
+> * [支持票证](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)—Commerce客户可以提交票证以接收其他帮助
 
 ## 支持
 
 如果您需要了解本指南中未涵盖的有关于[!DNL Payment Services]的信息或有疑问，请联系您的[!DNL Payment Services]销售代表或使用[!DNL Payment Services]主页中的可用资源：
 
->[!VIDEO](https://video.tv.adobe.com/v/3448237?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3447836)
 
 查看[哪个 [!DNL Payment Services] 选项适合您？](compatibility.md#which-payment-services-option-is-right-for-you) 要检查哪个[!DNL Payment Services]选项最适合您的主题。

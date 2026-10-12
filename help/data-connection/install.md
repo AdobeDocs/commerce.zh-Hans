@@ -1,24 +1,28 @@
 ---
-title: 安装 [!DNL Data Connection]
-description: 了解如何从Adobe Commerce安装、更新和卸载 [!DNL Data Connection] 扩展。
+title: 安装[!DNL Data Connection]
+description: 了解如何从Adobe Commerce安装、更新和卸载[!DNL Data Connection]扩展。
 role: Admin, Developer
 feature: Install
 exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
-TQID: https://experienceleague.adobe.com/EbYHB6L9Q7bZNnoz3-yT4aaBcRiLiatvjO-hQyGOwoo
+TQID: 'https://experienceleague.adobe.com/EbYHB6L9Q7bZNnoz3-yT4aaBcRiLiatvjO-hQyGOwoo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+    internal-label: Developer
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 493
+source-wordcount: '494'
 ht-degree: 0%
-
 ---
-
 # 安装[!DNL Data Connection]
 
 在安装扩展之前，[查看先决条件](overview.md#prerequisites)。
@@ -89,7 +93,7 @@ ht-degree: 0%
 
 #### 在云基础架构上
 
-在云基础架构上的Adobe Commerce中，在`.magento.env.yaml`中启用`ENABLE_EVENTING`全局变量。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-global#enable_eventing)。
+在云基础架构上的Adobe Commerce中，在`.magento.env.yaml`中启用`ENABLE_EVENTING`全局变量。 [了解详情](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-global#enable_eventing)。
 
 ```bash
 stage:
@@ -177,4 +181,4 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 ## 卸载[!DNL Data Connection]扩展 {#uninstall}
 
-要卸载[!DNL Data Connection]扩展，请参阅[卸载模块](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。
+要卸载[!DNL Data Connection]扩展，请参阅[卸载模块](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。

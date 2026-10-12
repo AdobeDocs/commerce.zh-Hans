@@ -1,37 +1,46 @@
 ---
 title: 搜索匹配和排名
-description: 了解 [!DNL Adobe Commerce Optimizer] 如何排定精确匹配和近匹配、同字段匹配和跨字段匹配的优先级，以及排名如何与搜索权重、智能排名和促销规则进行交互。
+description: 了解[!DNL Adobe Commerce Optimizer]如何优先处理精确匹配和近匹配、同字段匹配和跨字段匹配，以及排名如何与搜索权重、智能排名和促销规则进行交互。
 role: Admin, Leader, User
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 hide: true
 autotag-review: '2026-06-12T19:49:25.241Z'
 TQID: 'https://experienceleague.adobe.com/GBfssL1pTVx4FKjsi45mDsTx2XyCr0aViexH3OpPjVo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 subfeature_v2:
   - id: faf75e43-5608-48b8-8169-3f8a9b8a5caf
+    internal-label: Storefront optimizations
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
+    internal-label: Optimization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 946
+source-wordcount: '948'
 ht-degree: 0%
-
 ---
-
 # 搜索匹配和排名
 
 >[!IMPORTANT]
 >
->以下功能位于[私人测试版](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/beta)中。
+>以下功能位于[私人测试版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)中。
 
 [!DNL Adobe Commerce Optimizer]将结果排名，以便购物者能够首先看到最相关的产品。 此服务对目录文本&#x200B;**与购物者类型紧密匹配**&#x200B;的产品提升最强，然后支持查询词以有意义的方式一起出现的匹配，最后包括更广泛的匹配（包括支持自动完成样式匹配的行为）。
 
@@ -82,7 +91,7 @@ ht-degree: 0%
 - 从&#x200B;**精确/近**&#x200B;个短语匹配中提升
 - 当&#x200B;**所有查询词**&#x200B;出现在&#x200B;**相同**&#x200B;字段中时提升
 - **智能排名**（启用时），它将文本相关性与行为信号相结合 — 请参阅[智能排名评分的工作原理](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[搜索每个属性的权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文本关联性因素（例如，术语出现的频率以及名称或描述长度）。 在&#x200B;*设置*&#x200B;中，配置哪些属性参与关键词搜索及其相对&#x200B;**[关键词搜索权重](../settings.md)**。
+- **[搜索每个属性的权重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文本关联性因素（例如，术语出现的频率以及名称或描述长度）。 在&#x200B;*设置*&#x200B;中，配置哪些属性参与关键词搜索及其相对&#x200B;**[关键词搜索权重](../settings.md)**。
 - **[促销规则](../merchandising/rules/overview.md)**，例如pin、boost和bury
 
 由于这些信号相互作用，仅在最宽级别匹配的产品有时可以排在更紧的短语匹配之上 — 例如，当&#x200B;**搜索权重**&#x200B;或高权重字段中的词频超过其他位置的较弱短语匹配时。

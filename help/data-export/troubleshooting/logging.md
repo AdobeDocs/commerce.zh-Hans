@@ -1,37 +1,48 @@
 ---
 title: 查看日志并排除故障
-description: 了解如何使用data-export和saas-export日志排除 [!DNL data export] 错误。
+description: 了解如何使用数据导出和saas-export日志对[!DNL data export]错误进行故障排除。
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
+TQID: 'https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+    internal-label: Data collection
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1010
+source-wordcount: '1011'
 ht-degree: 0%
-
 ---
-
 # 查看日志并排除故障
 
 [!DNL data export]扩展提供日志以跟踪数据收集和同步过程。
 
 >[!NOTE]
 >
->您还可以从管理员中的[数据馈送同步状态仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)跟踪产品和类别数据的数据导出馈送的运行状况和性能。
+>您还可以从管理员中的[数据馈送同步状态仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)跟踪产品和类别数据的数据导出馈送的运行状况和性能。
 
 ## 日志
 
@@ -148,7 +159,7 @@ Price feed full resync:
 - 数据导出错误日志(`commerce-data-export-errors.log`)捕获收集阶段发生的错误。
 - SaaS导出错误日志(`saas-export-errors.log`)捕获传输阶段发生的错误。
 
-如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 ### 解决目录同步问题 {#resolvesync}
 

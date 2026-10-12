@@ -4,24 +4,34 @@ description: 了解如何将Adobe Experience Platform Mobile SDK与Headless或�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 02d07abb-8d7f-4f0a-9f96-f42654cd79d3
-TQID: https://experienceleague.adobe.com/iBxx54enSjy-vWbhCSSM-5QSjut6TjcRpWT5wWpeU2Y
+TQID: 'https://experienceleague.adobe.com/iBxx54enSjy-vWbhCSSM-5QSjut6TjcRpWT5wWpeU2Y'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 619
+source-wordcount: '619'
 ht-degree: 0%
-
 ---
-
 # 将Adobe Experience Platform Mobile SDK与Commerce集成
 
 >[!IMPORTANT]
@@ -30,7 +40,7 @@ ht-degree: 0%
 
 将[Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)与Commerce Mobile应用程序集成后，商家可以将Commerce [事件数据](events.md)发送到Experience Platform Edge。
 
-当Commerce事件数据在边缘可用时，其他Adobe Experience Cloud应用程序即可访问该数据。 例如，您可以使用此数据在Real-Time CDP中构建受众，然后[使用这些受众](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/audience-activation)个性化您的Commerce移动应用程序。
+当Commerce事件数据在边缘可用时，其他Adobe Experience Cloud应用程序即可访问该数据。 例如，您可以使用此数据在Real-Time CDP中构建受众，然后[使用这些受众](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation)个性化您的Commerce移动应用程序。
 
 ## 配置
 
@@ -38,7 +48,7 @@ ht-degree: 0%
 
 ### Experience Platform
 
-1. 通过查看移动设备应用程序教程[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/overview)中的Adobe Experience Cloud了解移动设备应用程序功能。
+1. 通过查看移动设备应用程序教程](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview)中的[Adobe Experience Cloud了解移动设备应用程序功能。
 
 1. [在Experience Platform中安装和配置](https://developer.adobe.com/client-sdks/home/getting-started/)SDK。
 
@@ -174,4 +184,4 @@ ht-degree: 0%
 
 ## 后续步骤
 
-要了解如何从移动Real-Time CDP应用程序中检索Commerce受众以告知购物车价格规则、动态块和相关产品规则，请参阅[Audience Activation](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/audience-activation#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)。
+要了解如何从移动Real-Time CDP应用程序中检索Commerce受众以告知购物车价格规则、动态块和相关产品规则，请参阅[Audience Activation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)。

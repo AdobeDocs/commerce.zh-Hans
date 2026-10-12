@@ -5,7 +5,31 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -29,7 +53,7 @@ PayPal沙盒帐户允许您在测试模式下使用[!DNL Payment Services]。 Pa
       如果您在沙盒PayPal载入过程中创建了PayPal沙盒帐户，则必须[重置载入沙盒](#reset-your-sandbox-account)，因为或者您无法验证电子邮件。
 
    1. 选择&#x200B;**[!UICONTROL Business]**&#x200B;作为帐户类型，然后单击&#x200B;**[!UICONTROL Create]**。
-   1. 在&#x200B;_[!UICONTROL Sandbox Accounts]_&#x200B;部分中，单击您创建的沙盒帐户&#x200B;_[!UICONTROL Manage accounts]_&#x200B;列中的三个圆点。
+   1. 在&#x200B;_[!UICONTROL Sandbox Accounts]_部分中，单击您创建的沙盒帐户_[!UICONTROL Manage accounts]_&#x200B;列中的三个圆点。
    1. 单击&#x200B;**[!UICONTROL View/edit account]**。
 
       ![PayPal — 查看/编辑沙盒帐户](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -92,9 +116,9 @@ PayPal沙盒帐户允许您在测试模式下使用[!DNL Payment Services]。 Pa
 
 1. 在左侧面板中，展开&#x200B;**[!UICONTROL Sales]**&#x200B;并选择&#x200B;**[!UICONTROL Payment Methods]**。
 
-1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;部分。
+1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_部分。
 
-1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;部分中，展开&#x200B;_[!UICONTROL General Configuration]_&#x200B;部分。
+1. 在&#x200B;_[!UICONTROL Payment Services]_部分中，展开_[!UICONTROL General Configuration]_&#x200B;部分。
 
 1. 将&#x200B;**[!UICONTROL Method]**&#x200B;设置为`Sandbox`。
 

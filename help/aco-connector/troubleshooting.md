@@ -3,7 +3,7 @@ title: '[!DNL Adobe Commerce Optimizer Connector]疑难解答'
 description: 了解如何解决[!DNL Adobe Commerce] PaaS集成的[!DNL Adobe Commerce Optimizer Connector]凭据、目录同步和范围导出问题。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/ei86QuJ3nQ2d-6NRoAeJslgDxjGlZRejD-Nx-6SAVdc'
 product_v2:
@@ -22,6 +22,8 @@ feature_v2:
     internal-label: Admin tools and workspace
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
     internal-label: Catalog management
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -36,7 +38,7 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -78,4 +80,4 @@ ht-degree: 0%
 
 ## [!DNL SaaS Data Export]诊断
 
-有关较低级别的[!DNL SaaS Data Export]诊断（包括日志位置和馈送重新同步命令），请参阅[[!DNL SaaS Data Export] 疑难解答指南](https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}。
+有关较低级别的[!DNL SaaS Data Export]诊断（包括日志位置和馈送重新同步命令），请参阅[[!DNL SaaS Data Export] 疑难解答指南](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}。
