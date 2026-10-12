@@ -1,7 +1,7 @@
 ---
 title: 推荐过滤器
 description: 了解如何使用筛选器来控制哪些产品出现在[!DNL Adobe Commerce Optimizer]推荐中。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
+source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2364'
 ht-degree: 0%
 ---
 # 筛选产品
@@ -280,3 +280,11 @@ Attribute filter support varies by recommendation type.
 - 如果存在空属性值或无效条件，则不会在店面或预览面板中呈现推荐。
 - 属性值必须与目录中的内容完全匹配，这包括空格和大小写。
 - 如果没有任何产品符合筛选条件，则推荐不会呈现在店面或预览面板中。
+
+### 缺货
+
+以下排除过滤器可以根据库存状态过滤掉产品：
+
+- 缺货 — （仅排除）不包括缺货产品。
+
+![Stock状态筛选器](../../assets/filter-stock-status.png)
