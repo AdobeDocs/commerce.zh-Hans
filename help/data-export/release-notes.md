@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 559efed5340b7076f18a3efc0077f9afd5f8ca48
 workflow-type: tm+mt
-source-wordcount: '3447'
+source-wordcount: '3576'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension]发行说明
@@ -60,6 +60,16 @@ ht-degree: 0%
 >[!DNL SaaS data export]扩展是随[!DNL Live Search]、[!DNL Product Recommendations]和[!DNL Catalog Service]一起自动安装的模块集合。 您可以使用[!DNL Composer]检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 2026版 {#release-notes-2026}
+
+### 103.5.0发行版
+
+_2026年10月13日_
+
+![修复](../assets/fix.svg) **导出的元数据中的属性可见性准确** — 修复了属性可见性字段导出管理员可见性设置而非店面可见性设置的问题。 现在，连接的Commerce服务将获得每个属性的正确可见性。<!--MDEE-932-->
+
+![新](../assets/new.svg) **数字产品属性的范围筛选器** — 已更新产品属性以支持&#x200B;**数字**&#x200B;输入类型。 此输入类型应用于存储小数值（包括负数）的属性，而不显示货币符号。 它们与元数据一起导出，元数据允许[!DNL Live Search]生成范围Facet，因此购物者可以按操作温度等度量进行过滤。<!--MDEE-1416-->
+
+![修复](../assets/fix.svg) **一致的自定义价格属性值** — 自定义价格属性值现在导出时带有两位小数（以商店的默认货币表示），因此店面的价格格式与价格数据格式匹配。<!--MDEE-1459-->
 
 ### 103.4.35发行版
 
