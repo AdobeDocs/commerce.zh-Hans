@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 1051405a754ac98534b8a27472dccbfb2fff19c7
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '602'
 ht-degree: 0%
 ---
 # Adobe Commerce Optimizer Connector发行说明
@@ -52,6 +52,13 @@ ht-degree: 0%
 ![已知问题](../assets/bug.svg)已知问题
 
 ## 2026版
+
+### 1.2.0发行版
+
+_2026年10月13日_
+
+![修复](../assets/fix.svg)为付款服务启用商店馈送。 <!--MDEE-1459-->
+![修复](../assets/fix.svg)产品视频现在同步到[!DNL Adobe Commerce Optimizer]，保留其配置的排序顺序。<!--DATA-7320-->
 
 ### 1.1.1版本
 
