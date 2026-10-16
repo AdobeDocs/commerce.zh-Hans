@@ -1,29 +1,33 @@
 ---
 title: 促销规则
 description: '[!DNL Adobe Commerce Optimizer]推销规则将逻辑与操作结合使用，以塑造搜索结果、默认产品列表和类别页面。'
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+    internal-label: Personalization
+source-git-commit: 44fb94ab5d9ba6deab421a15b391294ec0087f38
 workflow-type: tm+mt
-source-wordcount: 760
+source-wordcount: '821'
 ht-degree: 0%
-
 ---
-
 # 促销规则
 
-促销规则将逻辑与操作相结合，以塑造产品在&#x200B;**搜索结果**、**默认产品清单**（**所有产品清单**）和&#x200B;**类别页面**&#x200B;中的显示方式。 您可以提升、隐藏、固定或隐藏产品，并应用&#x200B;**智能排名**，以便列表能够反映您的业务目标。
+促销规则将逻辑与操作相结合，以塑造产品在&#x200B;**搜索结果**、**默认产品列表**&#x200B;中通过&#x200B;**默认搜索规则**&#x200B;以及在&#x200B;**类别页面**&#x200B;上的显示方式。 您可以提升、隐藏、固定或隐藏产品，并应用&#x200B;**智能排名**，以便列表能够反映您的业务目标。
 
 每个&#x200B;**搜索规则**&#x200B;有三个主要组件：
 
@@ -33,7 +37,7 @@ ht-degree: 0%
 
 **类别规则**&#x200B;使用&#x200B;**类别选择**&#x200B;而不是搜索查询条件；智能排名和手动排名的工作方式与搜索相同，但在[创建和管理规则](add.md)中发现了差异。
 
-您可以为搜索规则组合多个条件和操作，并安排任何规则在某个时段内处于活动状态。 您还可以设置一个&#x200B;**默认规则** （**所有产品列表**），该规则在没有更具体的搜索或类别规则时适用。
+您可以为搜索规则组合多个条件和操作，并安排任何规则在某个时段内处于活动状态。 您还可以设置一个&#x200B;**默认搜索规则**，该规则在没有更具体的搜索或类别规则时应用。
 
 ## 类别规则 {#category-rules}
 
@@ -68,21 +72,21 @@ ht-degree: 0%
 
 ## 默认规则
 
-您可以设置默认规则（**所有产品清单**），该规则在没有提供搜索词或无法应用其他搜索规则时适用。 如果将默认规则设置为“购买次数最多”，则查询将默认使用该排名类型，除非被更具体的搜索词取代。 无法为默认规则设置搜索词。 **类别规则**&#x200B;是独立的：它们仅适用于您选择的类别，不会替换默认列表规则。
+您可以设置在没有提供搜索词或无法应用其他搜索规则时应用的&#x200B;**默认搜索规则**。 如果将默认规则设置为“购买次数最多”，则查询将默认使用该排名类型，除非被更具体的搜索词取代。 无法为默认规则设置搜索词。 **类别规则**&#x200B;是独立的：它们仅适用于您选择的类别，不会替换默认列表规则。
 
 ## 多个规则的优先顺序
 
 以下内容适用于&#x200B;**搜索规则**&#x200B;以及它们如何与给定搜索进行交互。 **类别规则**&#x200B;适用于每个类别；请参阅[创建和管理规则](add.md)，了解它们如何与搜索和默认规则一起使用。
 
 在任何时候，只对一个搜索词应用一个搜索规则。
-如果发现多个规则适用于搜索短语，则会应用所有这些规则。如果两个规则（`rule 1`提升SKU1但`rule 2`隐藏同一SKU）之间存在冲突，则优先使用最近应用的规则(`rule 2`)。
+如果发现多个规则适用于搜索短语，则会应用所有这些规则。 如果两个规则（`rule 1`提升SKU1但`rule 2`隐藏同一SKU）之间存在冲突，则优先使用最近应用的规则(`rule 2`)。
 
 - 规则按“上次修改”时间戳排序。 最近修改的规则将按时间戳顺序最先应用，其后应用旧规则。
 - `query is`条件优先于其他条件。 如果较新的规则包含`query contains`条件，而较旧的规则具有`query is`条件，则应用`query is`规则。
 
 ### 店面请求
 
-如果包含`query is`条件的活动规则与搜索短语匹配，则会应用该规则。如果有多个具有`query is`条件的匹配规则，则应用最近更新的活动规则。
+如果包含`query is`条件的活动规则与搜索短语匹配，则会应用该规则。 如果有多个具有`query is`条件的匹配规则，则应用最近更新的活动规则。
 否则，将应用最近更新的活动规则。
 
 ### 预览请求

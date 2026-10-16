@@ -1,7 +1,7 @@
 ---
 title: 创建和管理规则
 description: 了解如何为搜索、默认产品列表和类别页面创建和管理促销规则。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3d21aed1af575d15c2cea4a42c49169a0fe37d7e
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
-source-wordcount: '4111'
+source-wordcount: '4108'
 ht-degree: 0%
 ---
 # 创建和管理规则
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 | 规则类型 | 用途 |
 | --- | --- |
-| **所有产品列表** | 当不再应用更具体的搜索或类别规则时，跨产品列表的默认排名和促销。 您只能创建一个此类规则；它不能包含条件。 |
+| **默认搜索规则** | 当不再应用更具体的搜索或类别规则时，跨产品列表的默认排名和促销。 您只能创建一个此类规则；它不能包含条件。 |
 | **类别规则** | 将商品推销和排名应用于单个类别，从而控制该类别页面上的产品订单。 |
 | **搜索规则** | 当购物者运行与规则的查询条件匹配的搜索时，应用促销和排名。 |
 
@@ -143,7 +143,7 @@ ht-degree: 0%
 
 ### 智能排名 {#intelligent-ranking}
 
-智能排名使用&#x200B;**行为信号**&#x200B;和（如果适用）AI对产品进行排序。 它适用于&#x200B;**搜索规则**、**所有产品列表**（默认规则）和&#x200B;**类别规则**（类别页面）。 对于购物者&#x200B;**搜索**，排名也将&#x200B;**文本相关性**&#x200B;加到查询中；**类别页面**&#x200B;未以相同方式使用查询文本 — 编辑者侧重于行为策略。
+智能排名使用&#x200B;**行为信号**&#x200B;和（如果适用）AI对产品进行排序。 它适用于&#x200B;**搜索规则**、**默认搜索规则**&#x200B;和&#x200B;**类别规则**（类别页面）。 对于购物者&#x200B;**搜索**，排名也将&#x200B;**文本相关性**&#x200B;加到查询中；**类别页面**&#x200B;未以相同方式使用查询文本 — 编辑者侧重于行为策略。
 
 商店所有者可以设置如下策略。 确切的标签和时间窗口与规则编辑器匹配，并且因规则类型而略有不同。
 
@@ -271,7 +271,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->此功能处于[测试版](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
+>此功能处于[测试版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
 
 **属性排名**&#x200B;自动将&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;操作应用于符合一个或多个属性条件的每个产品，而无需您选择单个SKU。 属性排名与[智能排名](#intelligent-ranking)和[手动排名](#manual-ranking)一起显示在规则编辑器中，可用于&#x200B;**所有产品规则**、**搜索规则**&#x200B;和&#x200B;**类别规则**。 使用它来扩展大型目录中的商品促销，例如，增加给定品牌的所有产品，或将每个产品隐藏在停产的颜色中。
 
@@ -401,7 +401,7 @@ ht-degree: 0%
 | 字段 | 描述 |
 | --- | --- |
 | 名称 | 规则的名称。 规则名称必须唯一。 |
-| 规则类型 | **默认值**（所有产品列表）、**查询**（特定搜索条件）或&#x200B;**类别**（类别页面），具体取决于&#x200B;**规则适用于**。 |
+| 规则类型 | **默认搜索规则**、**查询**（特定搜索条件）或&#x200B;**类别**（类别页面），具体取决于&#x200B;**规则适用于**。 |
 | 开始日期 | 规则的开始日期（如果已计划）。 |
 | 结束日期 | 规则的结束日期（如果已计划）。 |
 | 描述 | 规则的简要说明。 |
