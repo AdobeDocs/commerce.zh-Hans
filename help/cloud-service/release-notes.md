@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 02108257eed58231854947feafc8c48e0a75a8bb
 workflow-type: tm+mt
-source-wordcount: '8064'
+source-wordcount: '8820'
 ht-degree: 0%
 ---
 # 发行说明
@@ -74,7 +74,106 @@ ht-degree: 0%
 >
 >如果您正在本地使用Adobe Commerce或在云基础架构上使用Adobe Commerce，请参阅[Adobe Commerce发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/notes/overview)。
 
-## 2026年10月 — 发行说#1 {#latest}
+## 2026年10月 — 发行说#2 {#latest}
+
+[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下项目将于2026年10月20日在生产环境中可用。
+
+>[!BEGINSHADEBOX]
+
+<!-- CCSAAS-5510, ACCS-1756, ACCS-432, MDEE-1415, PAY-6085 not included due to pending epics and other dependencies -->
+
+### 管理自定义国家/地区区域
+
+新的REST API端点让集成可以为默认区域数据未涵盖的国家管理自定义区域，例如州或省。
+
+无法更改或删除默认（系统）区域。 这些端点需要[!UICONTROL Manage Country Regions]权限。<!-- ACCS-1937 -->
+
+* `GET /V1/directory/countries/:countryId/regions` — 列出并搜索国家/地区的区域。
+* `POST /V1/directory/countries/:countryId/regions` — 在单个请求中创建最多500个自定义区域。 如果有任何区域验证失败，则不会创建任何区域。
+* `PUT /V1/directory/countries/:countryId/regions/:regionId` — 更新自定义区域。
+* `DELETE /V1/directory/countries/:countryId/regions/:regionId` — 删除自定义区域。
+
+### 订阅客户地址事件
+
+集成现在可以通过[!DNL Adobe I/O Events]订阅以下事件，以同步对已注册客户通讯簿所做的更改。 来宾签出地址不会触发这些事件。<!-- ACCS-2095 -->
+
+* `observer.customer_address_delete_commit_after` — 已删除客户地址。
+* `observer.customer_address_save_commit_after` — 已创建或更新客户地址。
+
+### 验证已上载和导入的文件
+
+现在，您可以在请求预签名上传URL时提供可选的SHA-256校验和。 上传文件时，在`x-amz-checksum-sha256`标头中发送相同的值。<!-- ACCS-1464 -->
+
+* GraphQL — 指定`checksum_sha256`字段作为`initiateUpload`突变的输入。
+* REST — 将新的`POST /V1/media/initiate-upload-with-checksum`终结点与`checksumSha256`字段一起使用。
+
+### 查看订单编辑链中的订单合计
+
+`Customer` GraphQL类型现在包含一个`chain_totals(filter: CustomerChainTotalsFilterInput)`字段，该字段在订单编辑链中跨每个订单返回汇总合计。 在带有`original_number`的链中按任意订单编号进行筛选。 仅支持`eq`条件。 此字段使用与`original_number`订单过滤器相同的功能标志，默认情况下该过滤器处于禁用状态。<!-- ACCS-1443 -->
+
+[!DNL Commerce Admin]还可以在[!UICONTROL Order Chains]网格([!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Order Chains])的订单编辑链中以及在订单链详细信息视图的[!UICONTROL Order Chain Totals]摘要中显示合并的总计。
+
+要启用这些字段，请联系您的Adobe Commerce客户成功经理或创建支持工单。
+
+### 检查库存级别的可用性
+
+新的`stockAvailability(skus: [String!]!)` GraphQL查询返回库存级别的可用性，最多可达100个SKU。<!-- ACCS-2079 -->
+
+### 增强功能和错误修复
+
+此版本中包含以下选定的增强功能、优化和错误修复：
+
+* 产品馈送现在通过`ac_inventory`自定义产品属性以及通过`ac_tax_class`和`ac_attribute_set`自定义产品属性设置的税类和属性导出库存和购物车数量设置。<!-- ACCS-1981, MDEE-1129 -->
+
+* 修复了当[!DNL AEM Assets]是可视化图表所有者时，GraphQL中未返回类别图像的问题。<!-- ACCS-1943 -->
+
+* 修复了在使用[!DNL AEM Assets]时创建类别可能返回错误的问题。<!-- CCSAAS-5562 -->
+
+* 修复了礼品注册共享电子邮件无法发送的问题。<!-- CCSAAS-5312 -->
+
+* 修复了在请求运输税标题时，`placeOrder` GraphQL突变可能返回错误的问题。<!-- CCSAAS-5569 -->
+
+* 修复了当属性选项具有已删除商店的标签或没有标签时，产品馈送同步可能会停止的问题。<!-- ACCS-2097 -->
+
+* 修复了在付款授权后，从通过`PUT /V1/carts/:cartId/order`创建的购物车下订单可能失败的问题。<!-- ACCS-2091, PAY-6857 -->
+
+* 修复了在[!DNL Commerce Admin]中从客户的购物车创建订单可能会更改付款授权总数并从客户的店面购物车中删除地址的问题。<!-- ACCS-2100 -->
+
+* 现在，从同一购物车中下订单时通过REST API应用或删除送货折扣会返回可重试错误。<!-- ACCS-2077 -->
+
+* 在添加、更新或删除产品链接时，产品保存事件（`observer.catalog_product_save_commit_after`和`observer.catalog_product_save_after`）现在包括当前相关的产品、追加销售和交叉销售产品。<!-- ACCS-2049 -->
+
+* `/V1/returns` REST端点现在保存并返回自定义属性。<!-- CCSAAS-5588 -->
+
+* 修复了在`CartAddressInput` GraphQL输入中需要`telephone`字段的问题，该问题可能会阻止在结账时显示配送方式。<!-- ACCS-1944 -->
+
+* 修复了使用默认时区而不是网站时区导出具有日期范围的特殊价格的问题。<!-- ACCS-2101 -->
+
+* 修复了通过GraphQL下单的订单的运输成本和税费无法正确交互的问题。<!-- ACCS-1995 -->
+
+* 修复了在网站范围内启用[!UICONTROL Company]和[!UICONTROL Shared Catalog]失败的问题。<!-- ACCS-1999 -->
+
+* 修复了当子产品的可配置属性具有空值时，某些可配置产品停止同步到目录的问题。<!-- ACCS-2107 -->
+
+* 修复了在未设置项目的条件、解决方法或原因时，可能会发送[!UICONTROL New Return]封电子邮件，但不列出返回项目的问题。<!-- CCSAAS-5585 -->
+
+* 修复了无法为具有无输入类型的类别属性的存储加载[!DNL Commerce Admin]中的[!UICONTROL Catalog] > [!UICONTROL Categories]页面的问题。<!-- CCSAAS-5582 -->
+
+* 修复了无法在[!UICONTROL Content] > [!UICONTROL Design] > [!UICONTROL Configuration]中打开[!UICONTROL Global]范围的问题。<!-- CCSAAS-5583 -->
+
+* 修复了无权编辑产品价格或状态的管理员用户无法打开[!UICONTROL Add Product]页面的问题。<!-- CCSAAS-5584 -->
+
+* 修复了在多商店模式下打开税率表单失败的问题。<!-- ACCS-2102 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年10月 — 发行说#1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -130,6 +229,8 @@ ht-degree: 0%
 ### 通过GraphQL审核订单
 
 `CustomerOrdersFilterInput` GraphQL输入对象现在支持`original_number`字段，该字段允许您过滤订单编辑链中的任何订单编号。 响应将原始订单以及从后续编辑创建的所有订单作为单个链返回，与REST中的`order_original_id`过滤器匹配。<!-- ACCS-1442 -->
+
+要启用此功能，请联系您的Adobe Commerce客户成功经理或创建支持工单。
 
 ### 按日期和时间计划目录价格规则
 
