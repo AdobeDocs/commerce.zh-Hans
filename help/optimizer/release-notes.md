@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 0%
@@ -47,7 +47,7 @@ _2026年9月3日_
 
 ### 属性排名（测试版）
 
-[!DNL Adobe Commerce Optimizer]促销规则现在支持&#x200B;**所有产品列表**、**类别规则**&#x200B;和&#x200B;**搜索规则**&#x200B;的&#x200B;[**属性排名**](./merchandising/rules/add.md#attribute-ranking)。 自动将&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;操作应用于匹配一个或多个属性条件（如品牌或类别）的每个产品，而不选择单个SKU。 属性排名为测试版。 [了解详情](./merchandising/rules/add.md#attribute-ranking)。
+[!DNL Adobe Commerce Optimizer]促销规则现在支持&#x200B;**默认搜索规则**、**类别规则**&#x200B;和&#x200B;**搜索规则**&#x200B;的&#x200B;[**属性排名**](./merchandising/rules/add.md#attribute-ranking)。 自动将&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;操作应用于匹配一个或多个属性条件（如品牌或类别）的每个产品，而不选择单个SKU。 属性排名为测试版。 [了解详情](./merchandising/rules/add.md#attribute-ranking)。
 
 {{aco-release}}
 

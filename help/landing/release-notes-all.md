@@ -52,7 +52,7 @@ ht-degree: 0%
       <td><strong>数据服务</strong>
         <p>了解数据服务的最新改进，通过这些改进，我们的Commerce服务能够管理产品数据。</p>
           <ul>
-           <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">SaaS数据导出扩展</a></li>
+           <li><a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/release-notes">SaaS数据导出扩展</a></li>
             <li><a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/data-services/catalog-sync">目录同步</a></li>
           </ul>
       </td>
