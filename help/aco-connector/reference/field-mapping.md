@@ -3,7 +3,7 @@ title: '[!DNL Adobe Commerce Optimizer Connector]馈送的字段映射'
 description: 了解从[!DNL Adobe Commerce]目录数据到所有馈送的[!DNL Adobe Commerce Optimizer]摄取API格式的[!DNL Adobe Commerce Optimizer Connector]字段映射。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b62a0a272684daa2494017d290a711da8e1746b9
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1065'
 ht-degree: 2%
 ---
 
@@ -152,7 +152,10 @@ ht-degree: 2%
 
 `categories`源将[!DNL Adobe Commerce]数据发送到[类别终结点](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}。
 
-将跳过具有空`urlPath`的项目（逻辑根类别），并且从不提交这些项目。
+连接器通过URL路径和存储视图代码标识类别馈送记录。
+- 
+  - 当某个类别移动到类别树中的其他父类别时，同步会为该类别及其子类别发送新路径，并从[!DNL Adobe Commerce Optimizer]中删除它们以前的路径。
+- 将跳过具有空`urlPath`的项目（逻辑根类别），并且从不提交这些项目。
 
 | [!DNL Adobe Commerce]字段 | [!DNL Commerce Optimizer] API字段 | 映射详细信息 |
 | --------------- | -------------- | ------- |

@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1051405a754ac98534b8a27472dccbfb2fff19c7
+source-git-commit: 4f45ba5b177dfb826c49ae3ddc41cb453c6bb93b
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '647'
 ht-degree: 0%
 ---
 # Adobe Commerce Optimizer Connector发行说明
@@ -52,6 +52,12 @@ ht-degree: 0%
 ![已知问题](../assets/bug.svg)已知问题
 
 ## 2026版
+
+### 1.2.1版本
+
+_2026年10月19日_
+
+![修复](../assets/fix.svg) **保留的类别同步行为**-Adobe Commerce Optimizer Connector保留URL路径并将视图代码存储为类别馈送标识符，以保持正确的同步。 在类别树中移动类别时，将同步新路径，并删除以前的路径。<!--MDEE-1473-->
 
 ### 1.2.0发行版
 
