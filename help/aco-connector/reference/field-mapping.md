@@ -153,7 +153,7 @@ ht-degree: 2%
 `categories`源将[!DNL Adobe Commerce]数据发送到[类别终结点](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}。
 
 连接器通过URL路径和存储视图代码标识类别馈送记录。
-- 
+- &#x200B;
   - 当某个类别移动到类别树中的其他父类别时，同步会为该类别及其子类别发送新路径，并从[!DNL Adobe Commerce Optimizer]中删除它们以前的路径。
 - 将跳过具有空`urlPath`的项目（逻辑根类别），并且从不提交这些项目。
 
