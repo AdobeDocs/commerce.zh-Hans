@@ -33,6 +33,6 @@ ht-degree: 0%
 
 ## 隐私
 
-为推荐目的收集的数据不包括任何个人身份信息(PII)。 此外，所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 若要了解更多信息，请参阅[Adobe隐私政策](https://www.adobe.com/privacy/policy.html)。
+为推荐目的收集的数据不包括任何个人身份信息(PII)。 此外，所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 若要了解更多信息，请参阅[Adobe隐私政策](https://www.adobe.com/cn/privacy/policy.html)。
 
 推荐用户可参考[数据同步](../../setup/data-sync.md)页面，了解有关数据同步的更多数据。

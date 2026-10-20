@@ -97,7 +97,7 @@ $.mage.cookies.clear(DNT_COOKIE);
 
 ## 隐私合规
 
-产品推荐数据收集不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）均进行匿名处理。 有关详细信息，请参阅[Adobe隐私政策](https://www.adobe.com/privacy/policy.html)。
+产品推荐数据收集不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）均进行匿名处理。 有关详细信息，请参阅[Adobe隐私政策](https://www.adobe.com/cn/privacy/policy.html)。
 
 >[!TIP]
 >
