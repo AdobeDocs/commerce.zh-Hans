@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9ea19181108118892e238ba2ffce4bb7b451ee94
+source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3719'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension]发行说明
@@ -60,6 +60,16 @@ ht-degree: 0%
 >[!DNL SaaS data export]扩展是随[!DNL Live Search]、[!DNL Product Recommendations]和[!DNL Catalog Service]一起自动安装的模块集合。 您可以使用[!DNL Composer]检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 2026版 {#release-notes-2026}
+
+### 103.5.2发行版
+
+_2026年10月19日_
+
+![修复](../assets/fix.svg) **一致的类别标识** — 已使用在Adobe Commerce as a Cloud Service、Adobe Commerce云和本地支持的[目录服务GraphQL API for Storefront Services](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"}中的类别ID和商店视图代码还原类别馈送标识。 此更新可防止类别移动错误地将类别标记为已删除。<!--MDEE-1473-->
+
+![修复](../assets/fix.svg) **PHP 8.5**&#x200B;上的可靠属性选项处理 — 修复了属性选项值处理，以防止在选项标签引用缺少的存储时出现产品馈送导出错误。<!--MDEE-1472-->
+
+![修复](../assets/fix.svg) **PHP 8.5**&#x200B;上可靠的可配置产品同步 — 修复了null子属性值阻止可配置产品正确同步的问题。<!--MDEE-1474-->
 
 ### 103.5.1发行版
 
