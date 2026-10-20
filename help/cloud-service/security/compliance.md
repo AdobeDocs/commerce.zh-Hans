@@ -63,7 +63,7 @@ Adobe为支持[!DNL Adobe Commerce as a Cloud Service]的基础架构和服务�
 
 - **GDPR和CCPA**： Adobe提供了一些工具和文档，以帮助客户履行数据隐私法规规定的义务。
 
-有关Adobe的认证和合规性文档的完整列表，请访问[Adobe信任中心](https://www.adobe.com/trust/compliance/compliance-list.html){target="_blank"}。
+有关Adobe的认证和合规性文档的完整列表，请访问[Adobe信任中心](https://www.adobe.com/cn/trust/compliance/compliance-list.html){target="_blank"}。
 
 ## 从业者认证
 
