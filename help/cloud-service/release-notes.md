@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 02108257eed58231854947feafc8c48e0a75a8bb
+source-git-commit: ca71a86bb37c1ddd90118b0babd0a9c530b71be9
 workflow-type: tm+mt
-source-wordcount: '8820'
+source-wordcount: '8909'
 ht-degree: 0%
 ---
 # 发行说明
@@ -76,11 +76,11 @@ ht-degree: 0%
 
 ## 2026年10月 — 发行说#2 {#latest}
 
-[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生产]{type=Neutral tooltip="列出的项目当前在生产环境中可用。"}
 
-以下项目将于2026年10月20日在生产环境中可用。
+以下项目已于2026年10月20日发布到生产环境。
 
 >[!BEGINSHADEBOX]
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 ### 管理自定义国家/地区区域
 
-新的REST API端点让集成可以为默认区域数据未涵盖的国家管理自定义区域，例如州或省。
+新的[REST API端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-regions)允许集成管理默认区域数据未涵盖的国家/地区的自定义区域，例如州或省。
 
 无法更改或删除默认（系统）区域。 这些端点需要[!UICONTROL Manage Country Regions]权限。<!-- ACCS-1937 -->
 
@@ -108,8 +108,8 @@ ht-degree: 0%
 
 现在，您可以在请求预签名上传URL时提供可选的SHA-256校验和。 上传文件时，在`x-amz-checksum-sha256`标头中发送相同的值。<!-- ACCS-1464 -->
 
-* GraphQL — 指定`checksum_sha256`字段作为`initiateUpload`突变的输入。
-* REST — 将新的`POST /V1/media/initiate-upload-with-checksum`终结点与`checksumSha256`字段一起使用。
+* GraphQL — 指定`checksum_sha256`字段作为[`initiateUpload`突变](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#checksum-validation)的输入。
+* REST — 将新的[`POST /V1/media/initiate-upload-with-checksum`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads#initiate-the-upload-with-a-checksum)终结点与`checksumSha256`字段一起使用。
 
 ### 查看订单编辑链中的订单合计
 
@@ -121,13 +121,26 @@ ht-degree: 0%
 
 ### 检查库存级别的可用性
 
-新的`stockAvailability(skus: [String!]!)` GraphQL查询返回库存级别的可用性，最多可达100个SKU。<!-- ACCS-2079 -->
+新的[`stockAvailability(skus: [String!]!)`](https://developer.adobe.com/commerce/webapi/graphql/schema/inventory-sources/queries/stock-availability) GraphQL查询返回最多100个SKU的库存级别可用性。<!-- ACCS-2079 -->
+
+>[!IMPORTANT]
+>
+>此版本包括对[`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/inventory-sources/queries/source-availability) GraphQL查询的更改。
+>
+>* `is_saleable`和`backorder_message`字段已从`sourceAvailability`中删除。 改为从`stockAvailability`查询中请求它们。
+
+### 产品信息源库存和数量
+
+产品馈送现在通过`ac_inventory`自定义产品属性以及通过`ac_tax_class`和`ac_attribute_set`自定义产品属性设置的税类和属性导出库存和购物车数量设置。<!-- ACCS-1981, MDEE-1129 -->
+
+<!-- needs link pending COMDOX-1862 -->
+
+由于这些外部端点已更改，因此您需要[手动](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports)重新同步数据馈送。
+
 
 ### 增强功能和错误修复
 
 此版本中包含以下选定的增强功能、优化和错误修复：
-
-* 产品馈送现在通过`ac_inventory`自定义产品属性以及通过`ac_tax_class`和`ac_attribute_set`自定义产品属性设置的税类和属性导出库存和购物车数量设置。<!-- ACCS-1981, MDEE-1129 -->
 
 * 修复了当[!DNL AEM Assets]是可视化图表所有者时，GraphQL中未返回类别图像的问题。<!-- ACCS-1943 -->
 

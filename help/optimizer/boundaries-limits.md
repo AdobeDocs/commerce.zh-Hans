@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1483'
 ht-degree: 0%
 ---
 # 限制和边界
@@ -118,7 +118,6 @@ Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“
 | 每个目录视图的策略 | 允许的数据过滤器数量 | 10 | 否 |
 | 策略中的属性值 | 可配置为进行筛选的产品特征数 | 100 | 否 |
 | [受限访问密钥分配](setup/private-catalog-view.md) | 可分配给单个目录视图的受限制访问键数 | 3 | 否 |
-| [受限访问密钥](setup/restricted-access-keys.md) | 每个环境的密钥数 | 最大100 | 否 |
 | RSA密钥大小（受限访问密钥） | 受限制访问密钥可接受的最小和最大密钥强度 | 最小2048位，最大8192位 | 否 |
 | 受限访问密钥 | 密钥吊销传播延迟 | 由于缓存，最长为5分钟。 延迟过后，由已删除的密钥签名的令牌会被拒绝。 | 不适用 |
 
