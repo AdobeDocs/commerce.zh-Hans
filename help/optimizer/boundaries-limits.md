@@ -2,7 +2,7 @@
 title: Adobe Commerce Optimizer限制和边界
 description: 了解Adobe Commerce Optimizer许可证限制和系统边界。 规划容量、跟踪使用情况，并在超出限制时避免延迟和限制。
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
 product_v2:
@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1483'
 ht-degree: 0%
 ---
 # 限制和边界
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 通过购买[许可证限制和系统边界](#license-limits-and-system-boundaries)部分中描述的许可证包，或通过就独特用例协商自定义许可证，可以增加许可证限制。 请联系您的Adobe客户代表以讨论您的要求。
 
-有关系统边界的问题，请联系[Adobe支持](https://experienceleague.adobe.com/home?lang=zh-Hans#support)。
+有关系统边界的问题，请联系[Adobe支持](https://experienceleague.adobe.com/home?lang=en#support)。
 
 ## 防止出现性能问题
 
@@ -118,7 +118,6 @@ Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“
 | 每个目录视图的策略 | 允许的数据过滤器数量 | 10 | 否 |
 | 策略中的属性值 | 可配置为进行筛选的产品特征数 | 100 | 否 |
 | [受限访问密钥分配](setup/private-catalog-view.md) | 可分配给单个目录视图的受限制访问键数 | 3 | 否 |
-| [受限访问密钥](setup/restricted-access-keys.md) | 每个环境的密钥数 | 最大100 | 否 |
 | RSA密钥大小（受限访问密钥） | 受限制访问密钥可接受的最小和最大密钥强度 | 最小2048位，最大8192位 | 否 |
 | 受限访问密钥 | 密钥吊销传播延迟 | 由于缓存，最长为5分钟。 延迟过后，由已删除的密钥签名的令牌会被拒绝。 | 不适用 |
 
@@ -172,7 +171,7 @@ Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“
 
 | **功能** | **描述** | **基础分配** | **可扩展？** | **备注** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | 构建云原生扩展和集成的能力 | 基于GMV层<p>最小分配：1包/年</p> | 是<p>添加其他包</p> | 有关每个包定义的限制，请参阅：<ul><li>针对每个包定义的限制，[App Builder产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder运行时指南*&#x200B;中的[系统设置和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder存储要求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | 构建云原生扩展和集成的能力 | 基于GMV层<p>最小分配：1包/年</p> | 是<p>添加其他包</p> | 有关每个包定义的限制，请参阅：<ul><li>针对每个包定义的限制，[App Builder产品描述](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder运行时指南*&#x200B;中的[系统设置和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder存储要求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
