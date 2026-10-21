@@ -1,0 +1,63 @@
+---
+title: 见解和指导
+description: 了解Adobe Commerce的实际实施、安全性、产品和工程观点以及战略方向
+TQID: 'https://experienceleague.adobe.com/nVpCq5GPWn9aifhkXUf6EpqUf6ia-8sgjc4gs-VToLY'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
+  - id: ef0c45ae-6bee-4821-a65e-e1e118e8a01c
+    internal-label: Commerce Optimizer
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 0%
+---
+
+# 见解和指导
+
+Adobe Commerce产品管理和工程部分享他们为同行提供的指导：什么适用于生产、什么需要关注，以及如何从您在Adobe Commerce中的投资中获得更多回报。
+
+## 您将找到什么 {#what-youll-find}
+
+在文章发布时，此部分将包括：
+
+- 常见Adobe Commerce用例的实施指南
+- 架构和技术视角
+- 提高性能、安全性、可扩展性和可靠性的实践
+- 将Adobe Commerce与其他系统集成的指南
+- 新功能更新
+- Adobe Commerce专家的经验教训
+
+## 它是给谁的 {#who-its-for}
+
+开发人员、架构师、技术负责人、商业战略人员和业务团队正在与Adobe Commerce合作，无论您是计划实施、解决技术难题还是优化现有资源。
+
+## 开始浏览
+
+- [为购物者和AI代理设计商业平台](agentic-commerce/architectural-foundations-agentic-commerce.md) — 了解如何从单一真实来源为人员和人工智能代理提供服务。 本文介绍了为机器推理而构建的目录、模型上下文协议(MCP)和开放代理商业协议，以及显示代理如何代表您品牌的遥测。
+- [利用Adobe Commerce Live Search改进产品发现](catalog-management/improve-product-discovery-live-search.md) — 了解如何使用搜索性能洞察和语义搜索来帮助购物者查找相关产品。
+
+文章在发布时即添加到此部分。 请回头查看一下可供您立即使用的专家观点、实施策略和建议。

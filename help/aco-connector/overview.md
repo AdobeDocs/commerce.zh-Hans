@@ -1,8 +1,8 @@
 ---
 title: Adobe Commerce Optimizer连接器
-description: 了解[!DNL Adobe Commerce]和[!DNL Adobe Commerce Optimizer]之间的目录同步、搜索和店面投放的[!DNL Adobe Commerce Optimizer Connector]。
+description: 了解[!DNL Adobe Commerce Optimizer Connector]如何将目录数据从Commerce同步到[!DNL Adobe Commerce Optimizer]，以便搜索和店面投放。
 feature: Integration, Storefront, Configuration
-badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
+badgePaas: label="仅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于云项目（Adobe管理的PaaS基础架构）和内部部署项目上的Adobe Commerce 。"
 autotag-review: '2026-06-09T19:00:00.000Z'
 nudge: true
 TQID: 'https://experienceleague.adobe.com/v769V06jl-9YfovpL3HOB-FxovIMZyHxOlHXHvkQmbc'
@@ -89,9 +89,9 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1206'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce Optimizer Connector]
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 ### B2B连接器行为 {#b2b-shared-catalog-projection-specification}
 
-[!DNL Adobe Commerce Optimizer Connector for B2B]通过B2B共享目录和公司分配配置的单向投影将基础连接器扩展到受保护的目录体验。 [!DNL Adobe Commerce]仍然是目录和定价数据的真实来源；B2B连接器以基本目录和定价同步为基础，并管理其连接器生成的预测。
+[!DNL Adobe Commerce Optimizer Connector for B2B]通过B2B共享目录和公司分配配置的单向投影将基础连接器扩展到受保护的目录体验。 [!DNL Adobe Commerce]仍然是目录和定价数据的记录系统。 B2B连接器以基本目录和定价同步为基础，并管理其连接器生成的投影。
 
 有关投影映射、运行时授权流和保护边界，请参阅[B2B共享目录投影](b2b-shared-catalog-projection.md)。 有关设置说明，请参阅[开始使用B2B连接器](/help/aco-connector/get-started-b2b-shared-catalogs.md)。
 
@@ -198,7 +198,7 @@ ht-degree: 0%
 
 - **目录视图和策略** — 对于基本连接器，从[!UICONTROL Store setup]菜单定义特定于区域、品牌或客户的子集和访问规则。 要限制可以查询目录视图的人员，请参阅[私有目录视图](/help/optimizer/setup/private-catalog-view.md)
 - **产品发现和推荐** — 在[!UICONTROL Merchandising]菜单中配置搜索、Facet、促销规则、同义词和推荐单位。 在[!DNL Adobe Commerce Optimizer]中管理搜索和推荐行为；[!DNL Adobe Commerce]管理员中的[!DNL Live Search]和[!DNL Product Recommendations]设置不再适用于这些流
-- **店面连接** — 在正确的[!DNL Adobe Commerce Optimizer]租户、目录视图和促销API端点指向[!DNL Edge Delivery Services]上的Commerce店面或第三方Headless内部版本。 有关自定义Headless集成，请参阅[Headless店面集成](/help/aco-connector/headless-storefront.md)。 有关第三方集成的示例，请参阅针对 [!DNL Adobe Commerce Optimizer]&#x200B;[&#128279;](/help/optimizer/developer/salesforce-connector.md)的Salesforce Commerce Connector
+- **店面连接** — 在正确的[!DNL Adobe Commerce Optimizer]租户、目录视图和促销API端点指向[!DNL Edge Delivery Services]上的Commerce店面或第三方Headless内部版本。 有关自定义Headless集成，请参阅[Headless店面集成](/help/aco-connector/headless-storefront.md)。 有关第三方集成的示例，请参阅针对 [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)的[Salesforce Commerce Connector
 - **结帐** — 将购物车、结帐、订单管理和客户帐户保留在[!DNL Adobe Commerce]或连接的第三方平台上。 必要时使用[!DNL App Builder]和[!DNL API Mesh]进行购物车切换
 
 有关分步配置指南，请参阅[开始使用](/help/aco-connector/get-started.md)和[[!DNL Adobe Commerce Optimizer] 促销工具](/help/optimizer/overview.md#quick-tour)。
