@@ -49,7 +49,7 @@ ht-degree: 0%
 
 - **[!DNL Adobe Commerce as a Cloud Service]** — 使用Commerce Cloud Manager自助配置门户启动沙盒和生产实例。 请参阅[Adobe Commerce as a Cloud Service快速入门](/help/cloud-service/getting-started.md)。
 
-- **云上的Adobe Commerce（合作伙伴）** — 通过Adobe支持提交沙盒请求。 请参阅[云基础架构沙盒请求上的合作伙伴Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests)。
+- **云上的Adobe Commerce（合作伙伴）** — 通过Adobe支持提交沙盒请求。 请参阅[云基础架构沙盒请求上的合作伙伴Adobe Commerce](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests)。
 
 - **Commerce服务** — 在连接生产实例之前，使用沙盒API密钥和[Commerce服务连接器](/help/landing/saas.md)测试服务集成。
 

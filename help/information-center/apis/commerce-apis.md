@@ -100,7 +100,7 @@ ht-degree: 0%
 
 使用API Mesh通过私有或第三方API编排Adobe Commerce API。 使用Adobe Developer App Builder构建自定义应用程序和集成。 有关相关的Commerce可扩展性指导，请参阅[API网格](https://developer.adobe.com/graphql-mesh-gateway/)和[Adobe Commerce可扩展性](https://developer.adobe.com/commerce/extensibility/)。
 
-有关事件驱动的集成，请参阅[Adobe I/O Events for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)。
+有关事件驱动的集成，请参阅[Adobe I/O Events for Adobe Commerce](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)。
 
 
 ### 购物车和结帐切换

@@ -51,7 +51,7 @@ Commerce信息中心是Adobe Commerce文档生态系统的跨产品入口点。 
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>学习和资源</strong><br/>
-<a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/overview" target="_blank">教程</a> - <a href="https://experienceleague.adobe.com/en/playlists?solution=Commerce" target="_blank">视频播放列表</a> - <a href="https://helpx.adobe.com/legal/product-descriptions.html" target="_blank">产品描述</a> - <a href="https://certification.adobe.com/certifications#filters=Adobe%20Commerce" target="_blank">认证</a>
+<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/overview" target="_blank">教程</a> - <a href="https://experienceleague.adobe.com/zh-hans/playlists?solution=Commerce" target="_blank">视频播放列表</a> - <a href="https://helpx.adobe.com/cn/legal/product-descriptions.html" target="_blank">产品描述</a> - <a href="https://certification.adobe.com/certifications#filters=Adobe%20Commerce" target="_blank">认证</a>
 
 </td>
 <td><strong>开发人员资源</strong><br/>
