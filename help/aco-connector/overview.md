@@ -198,7 +198,7 @@ ht-degree: 0%
 
 - **目录视图和策略** — 对于基本连接器，从[!UICONTROL Store setup]菜单定义特定于区域、品牌或客户的子集和访问规则。 要限制可以查询目录视图的人员，请参阅[私有目录视图](/help/optimizer/setup/private-catalog-view.md)
 - **产品发现和推荐** — 在[!UICONTROL Merchandising]菜单中配置搜索、Facet、促销规则、同义词和推荐单位。 在[!DNL Adobe Commerce Optimizer]中管理搜索和推荐行为；[!DNL Adobe Commerce]管理员中的[!DNL Live Search]和[!DNL Product Recommendations]设置不再适用于这些流
-- **店面连接** — 在正确的[!DNL Adobe Commerce Optimizer]租户、目录视图和促销API端点指向[!DNL Edge Delivery Services]上的Commerce店面或第三方Headless内部版本。 有关自定义Headless集成，请参阅[Headless店面集成](/help/aco-connector/headless-storefront.md)。 有关第三方集成的示例，请参阅针对 [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)的[Salesforce Commerce Connector
+- **店面连接** — 在正确的[!DNL Adobe Commerce Optimizer]租户、目录视图和促销API端点指向[!DNL Edge Delivery Services]上的Commerce店面或第三方Headless内部版本。 有关自定义Headless集成，请参阅[Headless店面集成](/help/aco-connector/headless-storefront.md)。 有关第三方集成的示例，请参阅针对 [!DNL Adobe Commerce Optimizer]&#x200B;[&#128279;](/help/optimizer/developer/salesforce-connector.md)的Salesforce Commerce Connector
 - **结帐** — 将购物车、结帐、订单管理和客户帐户保留在[!DNL Adobe Commerce]或连接的第三方平台上。 必要时使用[!DNL App Builder]和[!DNL API Mesh]进行购物车切换
 
 有关分步配置指南，请参阅[开始使用](/help/aco-connector/get-started.md)和[[!DNL Adobe Commerce Optimizer] 促销工具](/help/optimizer/overview.md#quick-tour)。
