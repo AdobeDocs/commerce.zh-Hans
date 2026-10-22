@@ -13,17 +13,18 @@ role_v2:
     internal-label: Developer
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
     internal-label: Leader
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a91925091da28cd0745923894a3faab0374f0a0c
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '106'
 ht-degree: 1%
 ---
 
 <!--
-Copy this file into help/insights/<section>/<slug>.md,
-fill in the sections below, then add it to help/insights/TOC.md.
+Copy this file into help/information-center/guidance-and-insights/<topic>/<slug>.md,
+fill in the sections below, then add it to help/information-center/TOC.md
+under "Insights and guidance".
 Delete this comment block and the bracketed placeholders before publishing.
-See help/insights/README.md for what belongs in Commerce Insights.
+See help/information-center/guidance-and-insights/readme.md for what belongs in Insights and guidance.
 
 
 For feature metadata, feature: "[Pick from the shared feature taxonomy—see feature.yml / metadata.md]"
@@ -41,7 +42,7 @@ noun-phrase style per ExL heading rules.
 
 ## 摘要
 
-[推荐或结果的简短摘要 — 这应该让读者无需阅读整篇论文即可获得要点。]
+[推荐或结果的简短摘要 — 这样读者无需阅读整篇论文即可了解要点。]
 
 ## 背景
 
@@ -53,4 +54,4 @@ noun-phrase style per ExL heading rules.
 
 ## 相关指导
 
-- [链接到相关的架构中心或实施指南页面]
+- [链接到相关的架构选项或实施指南页面]

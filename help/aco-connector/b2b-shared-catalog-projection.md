@@ -1,6 +1,6 @@
 ---
 title: B2B共享目录投影
-description: 了解B2B连接器如何将Adobe Commerce B2B共享目录项目到受保护的Commerce Optimizer目录视图中，以及店面如何解析和授权买方访问。
+description: 了解B2B连接器如何将Adobe Commerce共享目录同步到受保护的Commerce Optimizer目录视图，以及店面如何授权买方访问。
 feature: Integration, Configuration
 role: Admin, Developer
 level: Intermediate
@@ -45,9 +45,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: fe5fc895d1f1cab3bcf081ec699f59192cb215a3
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '594'
 ht-degree: 0%
 ---
 # B2B共享目录投影
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 B2B投影将同步的目录内容和定价与共享目录分类和公司分配上下文相结合。
 
-![关系图将[!DNL Adobe Commerce]存储视图、定价、共享目录和公司分配映射到[!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping.svg){width="800"}中计划的专用目录视图
+![关系图将[!DNL Adobe Commerce]存储视图、定价、共享目录和公司分配映射到[!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping-alternate.svg){width="100%" zoomable="yes"}中计划的专用目录视图
 
 | [!DNL Adobe Commerce]数据 | [!DNL Adobe Commerce Optimizer]个结果 | 用途 |
 | --- | --- | --- |

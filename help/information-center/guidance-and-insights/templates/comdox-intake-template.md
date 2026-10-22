@@ -13,9 +13,9 @@ role_v2:
     internal-label: Developer
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
     internal-label: Leader
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '258'
 ht-degree: 1%
 ---
 
@@ -25,7 +25,7 @@ ticket itself. Copy the section below into the ticket description, fill
 in the brackets, and delete this comment.
 -->
 
-# Commerce分析文章摄取
+# 见解和指导文章摄取
 
 创建票证的链接：
 
@@ -33,7 +33,7 @@ in the brackets, and delete this comment.
 
 ## 标题信息
 
-摘要：为添加Commerce Insights文章……
+摘要：添加见解……和指导文章
 
 优先级：
 
@@ -59,16 +59,16 @@ in the brackets, and delete this comment.
 
 **临时内容？** 否/是 — 如果是，则过期[YYYY-MM-DD]，原因： [例如，与已弃用的功能、有时间限制的迁移窗口、特定活动或促销活动相关]
 
-## 这是否属于Commerce Insights？
+## 这是否属于见解和指南？
 
-Commerce Insights适用于战略指导和白皮书，其中涵盖基于现实场景的安全和实施指南，而不是分步说明或参考文档。 确认这主要是&#x200B;**不是**：
+见解和指导适用于涵盖基于现实场景的安全和实施指导的战略指导和白皮书，而不是分步说明或参考文档。 确认这主要是&#x200B;**不是**：
 
 - [ ]分步配置说明
 - [ ] 教程
 - [ ]参考资料（API/CLI/配置参考）
 - [ ]疑难解答步骤
 
-如果选中了任何框，则它属于相关的产品指南 — 从Insights链接到它，而不是在此处复制。
+如果选中了任何框，则它属于相关的产品指南 — 从分析和指南链接到它，而不是在此处复制。
 
 ## 范围
 
