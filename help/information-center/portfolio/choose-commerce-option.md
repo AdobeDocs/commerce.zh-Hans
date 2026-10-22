@@ -91,7 +91,7 @@ ht-degree: 0%
 | 您的要求 | 推荐的起点 | 拥有交易记录的系统 | 推销和发现 |
 | --- | --- | --- | --- |
 | Adobe以SaaS形式管理Commerce平台。 | [Adobe Commerce as a Cloud Service](/help/cloud-service/overview.md) | Adobe Commerce as a Cloud Service基础 | 使用为Adobe Commerce as a Cloud Service配置的Commerce服务。 有关Adobe Commerce Optimizer集成的可用性，请参阅此表下面的说明。 |
-| 需要Adobe Commerce，并希望保留对云或内部部署基础架构的控制。 | 云或本地[Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview) | Adobe Commerce Foundation | 根据需要使用支持的Commerce服务。 |
+| 需要Adobe Commerce，并希望保留对云或内部部署基础架构的控制。 | 云或本地[Adobe Commerce](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/guide-overview) | Adobe Commerce Foundation | 根据需要使用支持的Commerce服务。 |
 | 在Adobe Commerce上或内部部署，并希望采用Adobe Commerce Optimizer进行发现和促销。 | 具有[Adobe Commerce Optimizer Connector](/help/aco-connector/overview.md)的Adobe Commerce | Adobe Commerce仍然是交易的记录系统。 | 连接器将目录和定价数据同步到Adobe Commerce Optimizer，后者提供发现和促销体验。 |
 | 具有一个第三方商业后端，并且希望在不替换该后端的情况下进行Adobe Commerce Optimizer发现和促销。 | 独立[Adobe Commerce Optimizer](/help/optimizer/overview.md) | 您的第三方商业后端 | 将目录和价格数据发送到Adobe Commerce Optimizer。 通过API Mesh、App Builder或直接集成，将购物车、结账和其他事务性操作与后端集成。 |
 

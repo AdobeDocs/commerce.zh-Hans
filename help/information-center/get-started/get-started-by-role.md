@@ -57,7 +57,7 @@ Adobe Commerce文档跨多个存储库和站点组织。 正确的起点取决�
 
 - [[!DNL Adobe Commerce Optimizer role-based workflows]](/help/optimizer/get-started.md#role-based-workflows)
 
-- [Adobe Commerce快速入门指南](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview)
+- [Adobe Commerce快速入门指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/guide-overview)
 
 
 ## 对于推销员
@@ -90,8 +90,8 @@ Adobe Commerce有两个促销途径。 适用且可用的策略取决于您的�
 
 - 要对Adobe Commerce进行云或本地平台管理，请参阅：
 
-- [云基础架构上的Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
-- 内部部署的[Adobe Commerce操作指南](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home)。
+- [云基础架构上的Commerce指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-on-cloud/user-guide/overview)
+- 内部部署的[Adobe Commerce操作指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/operational-guides/home)。
 
 ## 面向开发人员
 

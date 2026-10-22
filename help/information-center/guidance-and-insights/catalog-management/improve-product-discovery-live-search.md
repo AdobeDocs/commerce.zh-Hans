@@ -47,7 +47,7 @@ Adobe Commerce Live Search提供搜索性能见解，可帮助您发现发现问
 
 ## 在搜索性能中查找信号
 
-在实时搜索性能工作区中，查看量度，例如唯一搜索、零结果搜索、热门结果、点进率、转化率和平均点击位置。 使用它们确定趋势并决定哪些查询或产品需要关注。 [性能](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/performance)
+在实时搜索性能工作区中，查看量度，例如唯一搜索、零结果搜索、热门结果、点进率、转化率和平均点击位置。 使用它们确定趋势并决定哪些查询或产品需要关注。 [性能](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/live-search-admin/performance)
 
 ![实时搜索性能工作区显示独特搜索、平均点击位置、点进率、转化率和零结果率，并带有用于独特搜索、零结果和常用结果的选项卡](../../assets/guidance-and-insights/live-search-performance-dashboard.png){width="800" zoomable="yes"}
 
@@ -65,7 +65,7 @@ Adobe Commerce Live Search提供搜索性能见解，可帮助您发现发现问
 
 购物者并不总是使用目录中的术语描述产品。 比如，寻找“适合整天站立的舒适鞋子”的人可能会对所谓的“缓冲式步行运动鞋”感兴趣。
 
-语义搜索使用含义和上下文以及关键词匹配，帮助将自然语言查询连接到相关产品，即使查询与目录文字不完全匹配。 实时搜索将关键词和语义匹配合并到一个搜索体验中。 [语义搜索](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
+语义搜索使用含义和上下文以及关键词匹配，帮助将自然语言查询连接到相关产品，即使查询与目录文字不完全匹配。 实时搜索将关键词和语义匹配合并到一个搜索体验中。 [语义搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/live-search-admin/semantic-search)
 
 语义匹配有助于探索性搜索，但相关性仍然取决于目录中可用的产品和信息。 对于涉及精确模型、规范或兼容性要求的搜索，检查结果是否保持精确。
 
@@ -73,9 +73,9 @@ Adobe Commerce Live Search提供搜索性能见解，可帮助您发现发现问
 
 具体取决于您使用的Adobe Commerce产品：
 
-- **云基础架构或内部部署上的Adobe Commerce：**&#x200B;可用于Adobe Commerce 2.4.4及更高版本的实时搜索语义搜索。 在“管理员”中，转到“营销”>“SEO和搜索”>“实时搜索”，打开“设置”，启用语义搜索并保存。 它支持英语目录。 [设置 — 语义搜索](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/settings)
-- **Adobe Commerce as a Cloud Service：**&#x200B;系统默认启用语义搜索。 它支持英语目录。 [语义搜索](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
-- **Adobe Commerce Optimizer：**&#x200B;系统默认启用语义搜索。 您可以选择调整控件，如语义提升和相似度阈值。 这些设置还包括模糊搜索选项。 [语义搜索](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/semantic-search) · [设置 — 可选调整](https://experienceleague.adobe.com/en/docs/commerce/optimizer/settings)
+- **云基础架构或内部部署上的Adobe Commerce：**&#x200B;可用于Adobe Commerce 2.4.4及更高版本的实时搜索语义搜索。 在“管理员”中，转到“营销”>“SEO和搜索”>“实时搜索”，打开“设置”，启用语义搜索并保存。 它支持英语目录。 [设置 — 语义搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/live-search-admin/settings)
+- **Adobe Commerce as a Cloud Service：**&#x200B;系统默认启用语义搜索。 它支持英语目录。 [语义搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/live-search-admin/semantic-search)
+- **Adobe Commerce Optimizer：**&#x200B;系统默认启用语义搜索。 您可以选择调整控件，如语义提升和相似度阈值。 这些设置还包括模糊搜索选项。 [语义搜索](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/semantic-search) · [设置 — 可选调整](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/settings)
 
 ## 将搜索见解转化为行动
 
@@ -83,8 +83,8 @@ Adobe Commerce Live Search提供搜索性能见解，可帮助您发现发现问
 
 1. **查找要调查的查询。** 查看零结果搜索、热门查询和低参与度搜索。
 2. **检查购物者要什么。** 确定查询是否指向缺少的产品、措辞不匹配或不清楚的产品数据。
-3. **改进产品信息。** 使产品属性和描述对购物者使用的术语准确而有用。 对于Live Search，Adobe建议设置适当的可搜索属性和权重，并确保属性数据相关。 [实时搜索最佳实践](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice)
-4. **优化搜索体验。** 在适当时，使用搜索规则、同义词和Facet帮助购物者查找并缩小相关结果。 [实时搜索最佳实践](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice)
+3. **改进产品信息。** 使产品属性和描述对购物者使用的术语准确而有用。 对于Live Search，Adobe建议设置适当的可搜索属性和权重，并确保属性数据相关。 [实时搜索最佳实践](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/best-practice)
+4. **优化搜索体验。** 在适当时，使用搜索规则、同义词和Facet帮助购物者查找并缩小相关结果。 [实时搜索最佳实践](https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/best-practice)
 5. **查看结果并重复。** 在进行更改后，监测相同的查询和性能信号，然后根据购物者的行为进行调整。
 
 ## 使每个搜索都可计数
