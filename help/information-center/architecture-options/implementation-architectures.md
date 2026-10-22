@@ -75,9 +75,9 @@ Adobe Commerce实施架构将三个层组合在一起：商业后端（[!DNL Ado
 | 选项 | 记录系统 | 事务路径 | 最佳拟合 |
 | --- | --- | --- | --- |
 | **[!DNL Adobe Commerce as a Cloud Service]与Commerce Foundation** | Adobe管理的Commerce Foundation | 托管Commerce Foundation和连接的Commerce服务 | 希望使用Adobe管理软件即服务(SaaS) Commerce并减少基础架构所有权的客户 |
-| 云中或具有&#x200B;[!DNL Adobe Commerce Optimizer Connector]**的内部部署中的**[!DNL Adobe Commerce] | 现有的Commerce Foundation，用于Commerce数据和交易 | 现有Commerce Foundation API和关联交易服务 | 希望将Optimizer发现和销售功能添加到现有[!DNL Adobe Commerce]部署的客户 |
+| 云中或具有&#x200B;[!DNL Adobe Commerce Optimizer Connector]&#x200B;**的内部部署中的**&#x200B;[!DNL Adobe Commerce] | 现有的Commerce Foundation，用于Commerce数据和交易 | 现有Commerce Foundation API和关联交易服务 | 希望将Optimizer发现和销售功能添加到现有[!DNL Adobe Commerce]部署的客户 |
 | 具有外部商务后端的&#x200B;**独立[!DNL Adobe Commerce Optimizer]** | 现有或第三方商务平台。 目录和价格数据从外部源添加到Optimizer | API Mesh、App Builder或直接集成将店面与第三方购物车、结账、客户、订单、付款、税务、配送和履行服务相连接 | 需要Optimizer功能同时保留现有或第三方事务性商务平台的客户 |
-| 云中或内部部署的Commerce Foundation **中的**[!DNL Adobe Commerce] | Commerce Foundation | Commerce Foundation API和配置的付款、税务、运输、库存和履行集成 | 需要完整[!DNL Adobe Commerce]平台且对云或本地基础架构具有部署控制的客户 |
+| 云中或内部部署的Commerce Foundation **中的**&#x200B;[!DNL Adobe Commerce] | Commerce Foundation | Commerce Foundation API和配置的付款、税务、运输、库存和履行集成 | 需要完整[!DNL Adobe Commerce]平台且对云或本地基础架构具有部署控制的客户 |
 
 ### 店面体验
 
@@ -86,9 +86,9 @@ Storefront连接到Commerce Foundation API、Storefront Services （[!DNL Catalo
 | 选项 | 店面体验 | 店面数据路径 |
 | --- | --- | --- |
 | **[!DNL Adobe Commerce as a Cloud Service]与Commerce Foundation** | 由Edge Delivery Services或其他支持的Headless体验提供支持的Commerce Storefront | Storefront Services以及用于核心平台数据的Commerce Foundation API |
-| 云中或具有&#x200B;[!DNL Adobe Commerce Optimizer Connector]**的内部部署中的**[!DNL Adobe Commerce] | 使用Optimizer体验的Edge Delivery Services或自定义headless店面 | 适用于Optimizer管理的目录和促销数据的Commerce Optimizer促销服务GraphQL API |
+| 云中或具有&#x200B;[!DNL Adobe Commerce Optimizer Connector]&#x200B;**的内部部署中的**&#x200B;[!DNL Adobe Commerce] | 使用Optimizer体验的Edge Delivery Services或自定义headless店面 | 适用于Optimizer管理的目录和促销数据的Commerce Optimizer促销服务GraphQL API |
 | 具有外部商务后端的&#x200B;**独立[!DNL Adobe Commerce Optimizer]** | 由Edge Delivery Services提供支持的Commerce店面或自定义Headless店面 | 用于目录和促销数据的Commerce Optimizer促销服务GraphQL API |
-| 云中或内部部署的Commerce Foundation **中的**[!DNL Adobe Commerce] | Edge Delivery Services、Luma、PWA或自定义headless店面 | Commerce Foundation API，以及配置后的Storefront Services |
+| 云中或内部部署的Commerce Foundation **中的**&#x200B;[!DNL Adobe Commerce] | Edge Delivery Services、Luma、PWA或自定义headless店面 | Commerce Foundation API，以及配置后的Storefront Services |
 
 ## Adobe Commerce as a Cloud Service
 

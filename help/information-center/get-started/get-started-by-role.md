@@ -68,7 +68,7 @@ Adobe Commerce有两个促销途径。 适用且可用的策略取决于您的�
 
 - [什么是Live Search？](/help/live-search/overview.md)
 - [什么是产品推荐？](/help/product-recommendations/overview.md)
-- Adobe Commerce](/help/catalog-service/overview.md)的[目录服务。
+- Adobe Commerce[&#128279;](/help/catalog-service/overview.md)的目录服务。
 
 - **在[!DNL Adobe Commerce Optimizer]**&#x200B;中的本机促销 — 在Adobe Commerce on Cloud或内部部署使用[!DNL Adobe Commerce Optimizer Connector]连接到[!DNL Adobe Commerce Optimizer]时使用。 请参阅[促销概述](/help/optimizer/merchandising/overview.md)。
 
