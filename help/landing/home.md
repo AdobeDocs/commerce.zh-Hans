@@ -1,8 +1,6 @@
 ---
 title: 服务指南主页
-description: 浏览Commerce SaaS服务的Adobe Commerce产品文档
-seo-title: Services for Adobe Commerce
-seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
+description: 查找Adobe Commerce服务文档以了解产品发现、支付、数据同步和集成。 查看可用性和设置指南。
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 TQID: https://experienceleague.adobe.com/zKL5fNTECsNOKZfEl7OUSYHTo-wrh81z3-C7wB1SoWM
@@ -50,23 +48,28 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 last-update: 2026-10-09
-source-git-commit: ad2a6b3d25c2597442ded206ea264bd363a66733
+source-git-commit: 4c3c267873a68560a885c6376cd1137a7503710a
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1522'
 ht-degree: 0%
 ---
 # Adobe Commerce Services指南
 
-Adobe Commerce服务提供强大的功能，可扩展您的店面、简化集成和优化数据管理。
+Adobe Commerce服务提供可组合的功能，可扩展店面体验、连接Adobe和第三方解决方案，并帮助管理商业数据。
+
+
+>[!NOTE]
+>
+>Adobe Commerce服务的可用性、设置和扩展选项因Commerce部署模型和服务而异。 请务必查看特定于服务的指南以获得最准确的信息。
 
 ## Commerce如何连接到服务？
 
-所有Commerce服务都通过[Commerce服务连接器](saas.md)连接到您的Commerce实例。
+对于需要它的服务，[Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)使用API密钥和SaaS数据空间将Commerce实例连接到支持的服务。 连接和数据同步步骤取决于部署模型和服务。
 
-配置Commerce服务连接器后，您可以访问以下功能：
+配置Commerce Services Connector后，您可以访问以下功能：
 
-- **店面服务** — 用于产品发现、推荐和付款的AI支持功能
-- **集成服务** — 连接到Adobe Experience Platform、AEM Assets和其他Adobe解决方案
+* **店面服务** — 用于产品发现、推荐和付款的AI支持功能
+* **集成服务** — 连接到Adobe Experience Platform、AEM Assets和其他Adobe解决方案
 
 这些服务可帮助您提高转化率，提供个性化体验，并更好地利用整个Adobe生态系统的商业数据。
 
@@ -76,9 +79,9 @@ Adobe Commerce服务提供强大的功能，可扩展您的店面、简化集成
 >
 >Adobe建议升级到所有Commerce服务的最新支持版本。 请参阅[发行说明](release-notes-all.md)。
 
-除了这些功能之外，还有一些工具可让您监控从Commerce实例到SaaS平台的数据流。 这些数据工具可以自动同步数据，并帮助您优化性能。
-
 ## 可用服务
+
+以下列表按功能对服务进行分组。 PaaS和SaaS之间的可用性、许可和设置可能会有所不同，并且可能会随服务版本而更改。 按照每个链接指南中的部署模型标签和先决条件进行操作。
 
 >[!BEGINTABS]
 
@@ -143,6 +146,13 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
 </tr>
 </table>
 
+>[!NOTE]
+>
+>
+>Adobe Commerce Optimizer以本机方式提供目录和促销功能，而不使用单独的实时搜索、目录服务和产品推荐服务。 查看[什么是Adobe Commerce Optimizer？](../optimizer/overview.md)
+>
+>对于与Optimizer集成的Adobe Commerce部署，Adobe Commerce Optimizer连接器会处理目录和价格同步，而无需使用Commerce Services Connector进行该同步。 其他集成，如[Payment Services](../payment-services/compatibility.md)和[Data Connection](../data-connection/connect-data.md#configure-the-commerce-services-connector)，仍需要Commerce Services Connector。 请参阅[为Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started)设置连接器。
+
 >[!TAB 集成服务]
 
 集成服务是指将您的Commerce实例连接到Adobe中其他产品或服务的功能。
@@ -193,7 +203,7 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
 
 >[!TAB 数据工具]
 
-数据工具可帮助您管理和优化Commerce实例与所连接服务之间的信息流。 这些工具可确保高效的数据同步、监控同步操作，并通过卸载资源密集型进程来提高性能。
+数据工具可帮助您管理和优化Commerce实例与所连接服务之间的信息流。 这些工具可确保高效的数据同步、监控同步操作，并通过卸载资源密集型进程来提高性能。 它们的可用性和行为因服务和部署模型而异。 有关设置说明、同步、同步操作监视和性能详细信息，请参阅每本指南。
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -224,11 +234,11 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="监控数据同步" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>数据管理仪表板</strong>
          </a>
       </div>
@@ -252,29 +262,29 @@ Storefront服务是一组AI支持的功能，可优化产品发现、个性化�
 |---------|-----------|----------|
 | 改进产品发现和转换 | 购物者找不到他们想要的东西，导致跳出率很高，销售额也出现下滑。 | 使用[实时搜索](../live-search/overview.md)和[产品推荐](../product-recommendations/overview.md)，基于实时购物者行为提供具有拼写容错、即时“键入时搜索”结果、动态彩块化和个性化产品推荐的AI支持搜索。 |
 | 创建全渠道个性化体验 | 您的商业数据处于孤立状态，使您无法跨渠道提供个性化体验。 | 使用[Data Connection](../data-connection/overview.md)将行为、事务性和用户档案数据发送到Adobe Experience Platform。 构建复杂的客户区段，创建放弃的购物车促销活动，定位相似受众，并分析整个客户历程中的季节性趋势。 |
-| 简化数字资产管理 | 跨多个系统管理产品映像和富媒体非常耗时且容易出错。 | [AEM Assets集成](../aem-assets-integration/overview.md)通过将Adobe Commerce连接到Adobe Experience Manager Assets项目、简化工作流并确保在所有接触点上提供一致的品牌体验，提供了集中式资产管理。 |
+| 简化数字资产管理 | 跨多个系统管理产品映像和富媒体非常耗时且容易出错。 | [AEM Assets集成](../aem-assets-integration/overview.md)通过将Adobe Commerce连接到Adobe Experience Manager Assets项目、简化工作流并确保在所有接触点上都提供一致的品牌体验，提供了集中式资产管理。 |
 | 优化支付处理 | 支付选项有限和支付体验缺佳损害了客户满意度和转化率。 | [付款服务](../payment-services/guide-overview.md)提供多种付款方式，包括免息分期付款，并有一个统一的信息板来管理付款、订单和发票。 |
-| 大规模管理数据同步 | 资源密集型索引正在减慢网站速度，并且您无法轻松跟踪数据同步问题。 | [SaaS数据导出](../data-export/overview.md)、[SaaS价格索引器](../price-index/price-indexing.md)和[数据管理仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)自动同步目录、订单和库存数据，将价格计算卸载到Adobe的云基础架构，并实时查看同步状态。 |
+| 大规模管理数据同步 | 资源密集型索引正在减慢网站速度，并且您无法轻松跟踪数据同步问题。 | [SaaS数据导出](../data-export/overview.md)、[SaaS价格索引器](../price-index/price-indexing.md)和[数据管理仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)自动同步目录、订单和库存数据，将价格计算卸载到Adobe的云基础架构，并实时查看同步状态。 |
 | 挽回失去的客户并减少回报 | 高客户流失率和产品回报率正在影响盈利能力。 | 将[Data Connection](../data-connection/overview.md)与Adobe Journey Optimizer和Real-Time CDP结合使用，以识别返回模式、创建回馈促销活动、按行为划分客户区段，以及通过电子邮件和短信发送个性化的重新参与促销活动。 |
 | 制定数据驱动型促销决策 | 您不确定要促销哪些产品或者何时运行促销活动。 | [实时搜索](../live-search/overview.md)提供搜索性能洞察和促销工具，用于访问关键量度、分析搜索词以及使用智能促销规则来根据真实的客户行为和业务目标提升或隐藏产品。 |
 | 维护对敏感数据的合规性 | 您需要处理敏感的客户数据，同时保持HIPAA合规性。 | [Data Connection](../data-connection/overview.md)支持HIPAA，允许您与Experience Platform共享后台数据，同时保持合规性并系统地处理隐私请求。 |
 
 ## Commerce服务如何协作
 
-Adobe Commerce服务构建在统一的平台上。 当您使用多项服务时，您将受益于以下方面：
+Adobe Commerce服务构建在统一的平台上，可以整合这些服务以支持连接的店面、推销、付款、资产和客户数据工作流。 当您使用多项服务时，您将受益于以下方面：
 
-- **统一数据管道** — 在所有服务之间自动同步产品、定价和库存数据，无需重复的数据输入或自定义集成。
-- **实时个性化** — 搜索、浏览和购买的客户行为支持在整个店面中进行智能推荐和排名。
-- **一致的店面集成** — 无论您使用的是由Edge Delivery Services、PWA Studio还是无头实施提供支持的Commerce店面，相同的加载项和API都能在所有平台上无缝工作。
-- **多存储和多语言支持** — 所有服务都会自动遵循您的存储视图、客户区段和B2B目录配置，而无需额外设置。
-- **丰富的产品视觉效果** — 在与AEM Assets集成时，优化的产品图像在搜索结果、产品页面和推荐中始终如一地显示。
-- **连接的客户数据** — 使用Data Connection与Adobe Experience Platform、Real-Time CDP和Journey Optimizer共享购物行为，从而实现跨渠道个性化和活动优化。
+* **统一数据管道** — 在所有服务之间自动同步产品、定价和库存数据，无需重复的数据输入或自定义集成。
+* **实时个性化** — 搜索、浏览和购买的客户行为支持在整个店面中进行智能推荐和排名。
+* **一致的店面集成** — 无论您使用的是由Edge Delivery Services、PWA Studio还是Headless实施提供支持的Commerce店面，都可以访问插件和API，以在所有平台上一致地提供商务体验。
+* **多存储和多语言支持** — 所有服务都会自动遵循您的存储视图、客户区段和B2B目录配置，而无需额外设置。
+* **丰富的产品视觉效果** — 在与AEM Assets集成时，优化的产品图像在搜索结果、产品页面和推荐中始终如一地显示。
+* **连接的客户数据** — 使用Data Connection与Adobe Experience Platform、Real-Time CDP和Journey Optimizer共享购物行为，从而实现跨渠道个性化和活动优化。
 
 例如，当购物者使用Live Search搜索产品，在查看产品推荐后将其添加到购物车，并通过支付服务完成购买时，所有这些活动都将无缝地流经统一的数据管道。 然后，此行为数据可为未来购物者提供更好的搜索结果和更相关的建议。
 
 >[!NOTE]
 >
->必须配置事件数据收集以启用服务之间的行为数据共享。 有关安装说明，请参阅[配置Commerce服务](saas.md#saas-configuration)。
+>要启用与Adobe Experience Platform的行为数据共享，请在Data Connection中配置事件数据收集。 有关安装说明，请参阅[数据连接数据收集](../data-connection/connect-data.md#data-collection)。
 
 每个服务都可以单独使用，但将它们组合在一起可创造更智能、更个性化的购物体验。
 
