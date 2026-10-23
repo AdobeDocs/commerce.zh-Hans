@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2458'
 ht-degree: 0%
 ---
 # 付款选项
@@ -167,6 +167,17 @@ ht-degree: 0%
 
 [!DNL PayPal]按钮在产品页面、迷你购物车、购物车和结帐视图中可见。
 
+#### PayPal Express审核页面
+
+在[!DNL Payment Services] 2.17.0或更高版本中，商家可以为PayPal Express签出配置可选的商家审核页面。 此页面独立于PayPal支付模式，允许购物者在下订单之前查看最终订单总额以及适用的条款和条件。
+
+使用[PayPal付款按钮配置](configure-admin.md#paypal-payment-buttons)中的&#x200B;**[!UICONTROL Skip Review]**&#x200B;控制此步骤：
+
+* `No` — 购物者在完成PayPal付款模式后返回到商家审核页面，并在下订单之前确认该订单。
+* `Yes` — 已跳过商家审核页面。
+
+审阅页面的设定不会取代商家满足适用监管要求的责任。 现有的[Google支付审核页面设置](configure-admin.md#google-pay)是单独配置的。
+
 #### [!DNL Venmo]按钮
 
 客户可以使用[Venmo](https://venmo.com/)按钮签出。
@@ -201,7 +212,7 @@ ht-degree: 0%
 
 PayPal、Pay Later和Venmo付款方法使用[服务器端送货回拨](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/)，使PayPal能够直接与您的Commerce实例通信，以检索送货选项并实时计算总计。
 
-这种服务器端方法允许[!DNL Payment Services]跳过订单确认弹出窗口，从而提供更快、更简化的购买体验。 由于运输成本和税额是通过回调动态计算的，因此买方可以直接在PayPal或Venmo审核页面中查看准确的总额。
+由于配送成本和税额是通过回调动态计算的，因此购物者可以在PayPal或Venmo付款模式中直接看到更新的配送选项和总额。 对于PayPal Express结帐，可选的[商家审核页面](#paypal-express-review-page)是PayPal付款模式之后的单独步骤，由&#x200B;**[!UICONTROL Skip Review]**&#x200B;控制。
 
 >[!NOTE]
 >
@@ -283,7 +294,7 @@ LPM会根据客户的账单地址和网站的基本货币向客户显示。 仅�
 
 ### 订单重新计算
 
-当客户从迷你购物车、购物车或产品页面进入结账流程时，会被定向到订单审核页面，他们可以在PayPal弹出窗口中看到选定的送货地址。 在客户选择发运方法后，订单金额会适当重新计算，并且客户可以看到发运成本和税额。
+当客户从迷你购物车、购物车或产品页面进入PayPal结账流程时，他们可以在PayPal付款模式中查看选定的送货地址。 客户选择发运方法后，订单金额会重新计算，并且客户可以查看发运成本和税额。 对于PayPal Express结帐，可选的[商家审核页面](#paypal-express-review-page)允许客户在下订单之前审核最终总计以及适用的条款和条件。
 
 当客户从结帐页面进入结帐流程时，系统已知道送货地址和最终计算金额，并且总计已正确显示。
 

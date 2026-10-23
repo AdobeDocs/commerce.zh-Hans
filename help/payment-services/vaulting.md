@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # 信用卡保险存储
@@ -100,3 +100,5 @@ Commerce存储一个令牌，通过获取客户保存的信用卡信息来帮助
 ## 安全性
 
 与购物者共享最少信用卡信息；他们只能看到其保险存储信用卡的最后四位数字、过期日期和品牌。 信用卡信息与支付提供商一起存储，以满足[PCI](security.md#pci-compliance)合规性标准。
+
+在[!DNL Payment Services] 2.17.0或更高版本中，可能会要求使用已保存的信用卡付款的购物者完成其发卡商所需的[3D Secure (3DS)身份验证质询](security.md#3ds)。 保存卡不会绕过颁发者所需的身份验证。

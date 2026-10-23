@@ -26,9 +26,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1110'
 ht-degree: 0%
 ---
 # 为生产启用[!DNL Payment Services]
@@ -61,6 +61,8 @@ ht-degree: 0%
    >[!IMPORTANT]
    >
    >[!DNL Payment Services]支持部分捕获。 商家可以部分捕获（开票）订单部分。 例如，您可以单独捕获每个项目，或者现在捕获一个项目，稍后捕获其余项目。
+
+   具有PayPal过度捕获协议的合格商户也可以在[!DNL Payment Services] 2.17.0或更高版本中启用[过度捕获](over-capture.md)。 过度捕获要求将&#x200B;**[!UICONTROL Payment Action]**&#x200B;设置为`Authorize`，并在稍后开票期间执行捕获。
 
 1. 单击&#x200B;**[!UICONTROL Save]**。
 1. 单击&#x200B;**[!UICONTROL Go to Payment Services]**&#x200B;以定向回[!DNL Payment Services]主页。

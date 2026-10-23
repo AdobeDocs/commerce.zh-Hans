@@ -1,19 +1,17 @@
 ---
 user-guide-title: '[!DNL Payment Services] 指南'
 breadcrumb-title: '[!DNL Payment Services]'
-user-guide-description: 本指南提供有关为 [!DNL Adobe Commerce] 或 [!DNL Magento Open Source] 存储安装和配置 [!DNL Payment Services] 的详细信息。
+user-guide-description: 本指南提供有关为[!DNL Adobe Commerce]或[!DNL Magento Open Source]存储安装和配置[!DNL Payment Services]的详细信息。
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
 nudge: true
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '121'
 ht-degree: 2%
-
 ---
-
 
 # Commerce的[!DNL Payment Services] {#payment-services}
 
@@ -39,6 +37,7 @@ ht-degree: 2%
   - [签出 [!DNL Payment Services]](checkout.md)
   - 管理付款 {#manage}
     - [&#x200B; [!DNL Payment Services]的行项目](line-items.md)
+    - [过度捕获](over-capture.md)
     - [退款](refunds.md)
     - [空洞](voids.md)
   - [在管理员中创建订单](create-order.md)
