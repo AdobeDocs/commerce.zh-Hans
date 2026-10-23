@@ -17,7 +17,7 @@ PayPal确定每个商户帐户的过度捕获限制。 在[!DNL Payment Services
 
 >[!NOTE]
 >
->本主题介绍[!DNL Payment Services]扩展中的过度捕获。 对于[!DNL Adobe Commerce as a Cloud Service]，请参阅[自定义捕获量](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)以了解单独的可用性和启用要求。
+>本主题介绍[!DNL Payment Services]扩展中的过度捕获。 对于[!DNL Adobe Commerce as a Cloud Service]，请参阅[自定义捕获量](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)以了解单独的可用性和启用要求。
 
 ## 先决条件
 
@@ -42,7 +42,7 @@ PayPal确定每个商户帐户的过度捕获限制。 在[!DNL Payment Services
 
 ## 捕获授权付款
 
-在管理员开具发票期间会发生过度捕获。 请求的捕获金额必须在PayPal为你的商家帐户批准的限制之内。 请参阅[为标准开票工作流创建发票](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
+在管理员开具发票期间会发生过度捕获。 请求的捕获金额必须在PayPal为你的商家帐户批准的限制之内。 请参阅[为标准开票工作流创建发票](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Orders]**。
 1. 打开具有尚未获取的授权付款的订单。
