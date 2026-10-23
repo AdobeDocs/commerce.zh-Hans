@@ -34,8 +34,8 @@ PayPal确定每个商户帐户的过度捕获限制。 在[!DNL Payment Services
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左侧面板中，展开&#x200B;**[!UICONTROL Sales]**&#x200B;并选择&#x200B;**[!UICONTROL Payment Methods]**。
 1. 使用商店范围选择器选择要配置的网站。
-1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_部分。
-1. 在&#x200B;_[!UICONTROL Payment Services]_部分中，展开_[!UICONTROL General Configuration]_&#x200B;部分。
+1. 展开&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;部分。
+1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;部分中，展开&#x200B;_[!UICONTROL General Configuration]_&#x200B;部分。
 1. 将&#x200B;**[!UICONTROL Over Capture Enabled]**&#x200B;设置为`Yes`。
 1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;保存更改。
 1. 导航到&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然后单击&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以刷新所有无效缓存。
