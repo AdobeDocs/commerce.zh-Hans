@@ -3,7 +3,7 @@ title: 安全性和合规性
 description: 查看您站点的安全性和合规性要求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=zh-Hans
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -21,9 +21,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '729'
 ht-degree: 0%
 ---
 # 安全性和合规性
@@ -34,13 +34,13 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce]和[!DNL Magento Open Source]包含对多个安全功能的支持。
 
-请参阅核心用户指南中的[安全性](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/security/security){target="_blank"}，以查看安全最佳实践，并了解如何管理管理员会话和凭据、实施验证码以及管理网站限制。
+请参阅核心用户指南中的[安全性](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"}，以查看安全最佳实践，并了解如何管理管理员会话和凭据、实施验证码以及管理网站限制。
 
 ## PCI合规性
 
 支付卡行业(PCI)为通过互联网接受信用卡付款的企业制定了一系列要求。 除了维护安全的环境外，处理客户信用卡信息的商户还需要满足一些标准准则。
 
-有关详细信息，请参阅[PCI合规性指南](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}。
+有关详细信息，请参阅[PCI合规性指南](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}。
 
 商家可以完成[自我评估问卷(SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}，这是一种自我验证工具，用于评估持卡人数据的安全性。
 
@@ -58,6 +58,8 @@ PCI 3-D Secure (3DS)支持在线购买信用卡时购买者与其信用卡发行
 
 **[信用卡字段](configure-admin.md#credit-card-fields)**&#x200B;和&#x200B;**[[!DNL Google Pay]](configure-admin.md#google-pay)**&#x200B;均支持3DS。 每个付款方法在Admin中都有自己的3D安全身份验证设置，可以将其设置为`Always`、`When required`或`Off`。
 
+在[!DNL Payment Services] 2.17.0或更高版本中，使用[保存的信用卡](vaulting.md)付款的购物者还可以完成需要颁发者的3DS身份验证挑战。 保存的卡不会免除发卡机构要求的身份验证的付款。
+
 >[!IMPORTANT]
 >
 >3DS要求适用于企业和持卡人银行位于[欧洲经济区](https://www.efta.int/eea) (EEA)和英国的交易记录。 美国商家不需要3DS，但可以根据需要为其交易启用3DS。
@@ -66,7 +68,7 @@ PCI 3-D Secure (3DS)支持在线购买信用卡时购买者与其信用卡发行
 
 >[!MORELIKETHIS]
 >
-> * 有关详细信息，请参阅设置[&#128279;](configure-admin.md#3ds)中的3DS。
+> * 有关详细信息，请参阅设置](configure-admin.md#3ds)中的[3DS。
 > * 有关用于3DS测试的特定信用卡的更多信息，请参阅PayPal开发人员文档中的[测试卡](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/)。
 
 ### 卡保险存储

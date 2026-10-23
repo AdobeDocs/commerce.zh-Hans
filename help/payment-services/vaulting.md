@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # 信用卡保险存储
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 1. 在左侧导航中导航到&#x200B;**[!UICONTROL Stored Payment Methods]**&#x200B;以查看其所有存储的付款方法。
 
-   有关详细信息，请参阅[存储的付款方式](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/payments/stored-payment-methods)。
+   有关详细信息，请参阅[存储的付款方式](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods)。
 
 1. 客户单击&#x200B;**[!UICONTROL Add New Card]**&#x200B;以存储新卡。
 
@@ -90,13 +90,15 @@ Commerce存储一个令牌，通过获取客户保存的信用卡信息来帮助
 
 要在“管理员”中使用保险存储信用卡为客户创建订单，请执行以下操作：
 
-1. [创建订单并添加产品](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
-1. 在&#x200B;_[!UICONTROL Payment & Shipping Information]_&#x200B;中，选择&#x200B;**[!UICONTROL Stored Cards]**&#x200B;作为付款方式。
+1. [创建订单并添加产品](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
+1. 在&#x200B;_[!UICONTROL Payment & Shipping Information]_中，选择&#x200B;**[!UICONTROL Stored Cards]**作为付款方式。
 1. 选择所需的保险存储信用卡支付方式。
-1. 完成订单的任何其他必要步骤后，[提交订单](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
+1. 完成订单的任何其他必要步骤后，[提交订单](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
 
    ![在Admin中为客户使用保险存储信用卡](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## 安全性
 
 与购物者共享最少信用卡信息；他们只能看到其保险存储信用卡的最后四位数字、过期日期和品牌。 信用卡信息与支付提供商一起存储，以满足[PCI](security.md#pci-compliance)合规性标准。
+
+在[!DNL Payment Services] 2.17.0或更高版本中，可能会要求使用已保存的信用卡付款的购物者完成其发卡商所需的[3D Secure (3DS)身份验证质询](security.md#3ds)。 保存卡不会绕过颁发者所需的身份验证。

@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2458'
 ht-degree: 0%
 ---
 # 付款选项
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 * **Standard** — 付款选项（快速结帐）（PayPal信用卡和借记卡）的子集适用于其他受支持的国家/地区。 [信用卡字段](#credit-card-fields)和[Apple Pay](#apple-pay-button)不适用于此入门培训选项。 在新用户引导以启用实时支付时，选择[标准新用户引导选项](../payment-services/production.md#standard-onboarding)。
 
-有关完成Advanced和Standard入门的信息，请参阅[为生产启用 [!DNL Payment Services] &#x200B;](../payment-services/production.md#complete-merchant-onboarding)。
+有关完成Advanced和Standard入门的信息，请参阅[为生产启用 [!DNL Payment Services] ](../payment-services/production.md#complete-merchant-onboarding)。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -149,7 +149,7 @@ ht-degree: 0%
 * 在[!DNL Google Pay]工资表中添加的代码只能从工资表中删除，不能从Commerce购物车页面中删除。
 * 在Adobe Commerce 2.4.4-2.4.6上，由于平台限制，[!DNL Google Pay]工资单中的折扣行可能没有显示任何值。
 * 在Adobe Commerce 2.4.7上，由于GraphQL响应中的平台限制，某些产品（主要是可下载的产品）的折扣值可能不会显示在[!DNL Google Pay]工资单中。
-* 如果应用了自动[购物车价格规则](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart)（例如，“在支出超过$200时优惠$50”），则它将与购物者在工资表中应用的任何代码相结合。 因此，[!DNL Google Pay]工资单中显示的总数可能与订单汇总不同。
+* 如果应用了自动[购物车价格规则](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart)（例如，“在支出超过$200时优惠$50”），则它将与购物者在工资表中应用的任何代码相结合。 因此，[!DNL Google Pay]工资单中显示的总数可能与订单汇总不同。
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -166,6 +166,17 @@ ht-degree: 0%
 客户可以使用PayPal按钮轻松自信地结帐。
 
 [!DNL PayPal]按钮在产品页面、迷你购物车、购物车和结帐视图中可见。
+
+#### PayPal Express审核页面
+
+在[!DNL Payment Services] 2.17.0或更高版本中，商家可以为PayPal Express签出配置可选的商家审核页面。 此页面独立于PayPal支付模式，允许购物者在下订单之前查看最终订单总额以及适用的条款和条件。
+
+使用[PayPal付款按钮配置](configure-admin.md#paypal-payment-buttons)中的&#x200B;**[!UICONTROL Skip Review]**&#x200B;控制此步骤：
+
+* `No` — 购物者在完成PayPal付款模式后返回到商家审核页面，并在下订单之前确认该订单。
+* `Yes` — 已跳过商家审核页面。
+
+审阅页面的设定不会取代商家满足适用监管要求的责任。 现有的[Google支付审核页面设置](configure-admin.md#google-pay)是单独配置的。
 
 #### [!DNL Venmo]按钮
 
@@ -201,7 +212,7 @@ ht-degree: 0%
 
 PayPal、Pay Later和Venmo付款方法使用[服务器端送货回拨](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/)，使PayPal能够直接与您的Commerce实例通信，以检索送货选项并实时计算总计。
 
-这种服务器端方法允许[!DNL Payment Services]跳过订单确认弹出窗口，从而提供更快、更简化的购买体验。 由于运输成本和税额是通过回调动态计算的，因此买方可以直接在PayPal或Venmo审核页面中查看准确的总额。
+由于配送成本和税额是通过回调动态计算的，因此购物者可以在PayPal或Venmo付款模式中直接看到更新的配送选项和总额。 对于PayPal Express结帐，可选的[商家审核页面](#paypal-express-review-page)是PayPal付款模式之后的单独步骤，由&#x200B;**[!UICONTROL Skip Review]**&#x200B;控制。
 
 >[!NOTE]
 >
@@ -219,16 +230,16 @@ PayPal、Pay Later和Venmo付款方法使用[服务器端送货回拨](https://d
 
 要&#x200B;**仅使用&#x200B;_捕获付款_ PayPal付款按钮（_不是_ PayPal信用卡付款选项）**：
 
-1. 请确保您的存储在生产模式[&#128279;](configure-admin.md#general-configuration)中为。
+1. 请确保您的存储在生产模式](configure-admin.md#general-configuration)中为[。
 1. 在“设置”中[配置所需的PayPal付款按钮](configure-admin.md#paypal-payment-buttons)。
-1. 关闭&#x200B;_[!UICONTROL Payment buttons]_&#x200B;部分中的&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;选项_&#x200B;关闭&#x200B;_。
+1. 关闭&#x200B;_[!UICONTROL Payment buttons]_部分中的&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**选项_&#x200B;关闭&#x200B;_。
 
 要&#x200B;**使用现有信用卡提供商&#x200B;_和_ PayPal付款按钮**&#x200B;捕获付款：
 
-1. 请确保您的存储在生产模式[&#128279;](configure-admin.md#general-configuration)中为。
+1. 请确保您的存储在生产模式](configure-admin.md#general-configuration)中为[。
 1. [配置所需的PayPal付款按钮](configure-admin.md#paypal-payment-buttons)。
-1. 关闭&#x200B;_[!UICONTROL Payment buttons]_&#x200B;部分中的&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;选项_&#x200B;关闭&#x200B;_。
-1. 关闭&#x200B;_[!UICONTROL Credit card fields]_&#x200B;部分中的_&#x200B;关闭&#x200B;_&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/payments/payments#payments)。
+1. 关闭&#x200B;_[!UICONTROL Payment buttons]_部分中的&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**选项_&#x200B;关闭&#x200B;_。
+1. 关闭&#x200B;_[!UICONTROL Credit card fields]_部分中的_&#x200B;关闭&#x200B;_**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**选项，并使用您的[现有信用卡提供商帐户](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments#payments)。
 
 ## 本地支付方式
 
@@ -283,7 +294,7 @@ LPM会根据客户的账单地址和网站的基本货币向客户显示。 仅�
 
 ### 订单重新计算
 
-当客户从迷你购物车、购物车或产品页面进入结账流程时，会被定向到订单审核页面，他们可以在PayPal弹出窗口中看到选定的送货地址。 在客户选择发运方法后，订单金额会适当重新计算，并且客户可以看到发运成本和税额。
+当客户从迷你购物车、购物车或产品页面进入PayPal结账流程时，他们可以在PayPal付款模式中查看选定的送货地址。 客户选择发运方法后，订单金额会重新计算，并且客户可以查看发运成本和税额。 对于PayPal Express结帐，可选的[商家审核页面](#paypal-express-review-page)允许客户在下订单之前审核最终总计以及适用的条款和条件。
 
 当客户从结帐页面进入结帐流程时，系统已知道送货地址和最终计算金额，并且总计已正确显示。
 
