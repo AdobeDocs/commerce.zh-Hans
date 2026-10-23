@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
+source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2407'
 ht-degree: 0%
 ---
 # 筛选产品
@@ -225,6 +225,14 @@ ht-degree: 0%
 #### 设置属性过滤器
 
 使用以下步骤可将属性包含或排除规则添加到推荐单元。
+
+>[!TIP]
+>
+>对于要过滤的任何属性，请使用[元数据API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)设置`filterable`参数：
+>
+>{“可筛选”： true}
+>
+>下次将目录与[!DNL Adobe Commerce Optimizer]同步时，该属性将在&#x200B;**属性**&#x200B;菜单中变得可用。
 
 1. 在[创建或编辑](create.md)推荐单元时，转到&#x200B;**[!UICONTROL Filter products]**。
 1. 选择&#x200B;**[!UICONTROL Inclusions]**&#x200B;或&#x200B;**[!UICONTROL Exclusions]**&#x200B;选项卡。 每个选项卡上的徽章会显示已启用该类型过滤器的数量。
