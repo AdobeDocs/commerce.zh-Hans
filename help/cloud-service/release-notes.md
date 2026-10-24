@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ca71a86bb37c1ddd90118b0babd0a9c530b71be9
+source-git-commit: f7a84928b817f21a05ecc9e822ace49e103a8dfd
 workflow-type: tm+mt
-source-wordcount: '8909'
+source-wordcount: '9292'
 ht-degree: 0%
 ---
 # 发行说明
@@ -74,7 +74,66 @@ ht-degree: 0%
 >
 >如果您正在本地使用Adobe Commerce或在云基础架构上使用Adobe Commerce，请参阅[Adobe Commerce发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/notes/overview)。
 
-## 2026年10月 — 发行说#2 {#latest}
+## 2026年10月 — 发行说#3 {#latest}
+
+[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下项目将于2026年10月29日在生产环境中可用。
+
+>[!BEGINSHADEBOX]
+
+### 添加自定义变量以订购评论电子邮件
+
+`observer.email_order_comment_set_template_vars_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)现已可用。 在呈现电子邮件之前，使用它在订单评论电子邮件中添加或更改模板变量。<!-- ACCS-2087 -->
+
+### 导出产品评级
+
+启用产品审阅后，每个产品的已批准审阅计数和平均评级将作为`ac_review_count`和`ac_rating_summary`系统产品属性导出到[!DNL Catalog Service]。 店面可以使用这些属性来显示产品评级。 当审核摘要更改时，产品信息源将更新。 默认情况下，产品审阅处于禁用状态。<!-- ACCS-2196 -->
+
+### 商店贷方退款
+
+`POST /V1/creditmemo/refund` REST终结点现在接受一个可选的`extension_attributes.refund_to_store_credit_amount`字段，该字段将贷项通知单的全部或部分退款给客户的商店贷项。<!-- ACCS-2068 -->
+
+两个新的管理员角色权限控制对存储点数的访问： <!-- ACCS-1961 -->
+
+* [!UICONTROL Customers] > [!UICONTROL All Customers] > [!UICONTROL Manage Store Credit Balances]
+* [!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Orders] > [!UICONTROL Actions] > [!UICONTROL Create] > [!UICONTROL Can Spend Store Credit]
+
+### 发送事务性电子邮件
+
+您现在可以在[!DNL Adobe I/O Events]中订阅以下事件，并使用[!DNL App Builder]从第三方电子邮件平台发送事务性电子邮件： <!-- ACCS-1929 -->
+
+* `observer.company_customer_assign_email_send_after` — 向客户发送了公司工作分配电子邮件。 有效负载包括公司和客户详细信息。
+* `plugin.inventory_in_store_pickup_sales_api.api.notify_orders_are_ready_for_pickup.execute` — 订单已标记为准备好进行店内提货。
+* `plugin.purchase_order.api.purchase_order_management.reject_purchase_order` — 采购订单被拒绝。
+
+<!-- Not including AGENTCOM-2023 (epic incomplete)  -->
+
+### 增强功能和错误修复
+
+此版本中包含以下选定的增强功能、优化和错误修复：
+
+* 修复了新订单、发票和装运在[!DNL Commerce Admin]销售网格中可能需要更长的时间才能显示的问题。<!-- ACCS-2122 -->
+
+* 修复了保存产品时可能会将其相关产品的可销售数量设置为0的问题。<!-- ACCS-2139 -->
+
+* 修复了以下问题：在没有相应的类别权限的情况下，可以通过GraphQL将没有类别分配的产品添加到购物车。<!-- CCSAAS-5560 -->
+
+* 修复了移动类别可能会创建重复类别的问题。<!-- MDEE-1473 -->
+
+* 修复了`/V1/products/external-media` REST端点失败的问题。<!-- ACCS-1776 -->
+
+* 修复了`credit_comment`字段不为空时，`PUT /V1/companyCredits/:id` REST端点返回400错误的问题。 现已保存注释。<!-- ACCS-2141 -->
+
+* PHP弃用、通知和警告不再导致请求失败。 将记录这些消息，并完成请求。<!-- CCSAAS-5602 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年10月 — 发行说#2
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
