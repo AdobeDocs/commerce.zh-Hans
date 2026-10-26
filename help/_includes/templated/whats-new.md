@@ -22,7 +22,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
+      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
 </td>
       <td>
         技术
@@ -44,7 +44,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><br />Payment Services 2.17.0文档添加了针对可选<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options#paypal-express-review-page">PayPal Express审核页面</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/manage/over-capture">过度捕获</a>的指南，包括配置、资格和开票工作流。</p>
+      <td><p><br />Payment Services 2.17.0文档添加了针对可选<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/payments-checkout/payments-options#paypal-express-review-page">PayPal Express审核页面</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/payments-checkout/manage/over-capture">过度捕获</a>的指南，包括配置、资格和开票工作流。</p>
 </td>
       <td>
         重大更新
@@ -66,7 +66,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/information-center/overview">Commerce信息中心</a>，这是客户和合作伙伴探索Adobe Commerce产品、比较实施架构以及规划迁移和集成的新起点。 包括用于店面、支付、Commerce服务、AEM Assets、Adobe Commerce Optimizer、沙盒环境和Adobe Experience Platform的基于角色的导航和实施指南，以及指向详细产品文档的链接。</p>
+      <td><p>添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/information-center/overview">Commerce信息中心</a>，这是客户和合作伙伴探索Adobe Commerce产品、比较实施架构以及规划迁移和集成的新起点。 包括用于店面、支付、Commerce服务、AEM Assets、Adobe Commerce Optimizer、沙盒环境和Adobe Experience Platform的基于角色的导航和实施指南，以及指向详细产品文档的链接。</p>
 </td>
       <td>
         重大更新，新主题
@@ -74,7 +74,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fcb3c575a9af82ee75408fba4b4fe7cee5dbffa4">提交</a></td>
     </tr>
     <tr>
-      <td><p>已更新Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/security/shared-responsibility">共享责任</a>表以包含Adobe Managed Services。</p>
+      <td><p>已更新Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/security/shared-responsibility">共享责任</a>表以包含Adobe Managed Services。</p>
 </td>
       <td>
         重大更新
@@ -96,7 +96,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了“促销规则”文档，将<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview">促销规则概述</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add">创建和管理规则</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">发行说明</a>中的“所有产品列表”规则类型重命名为“默认搜索规则”，与“管理规则类型”菜单中重命名的选项相匹配。</p>
+      <td><p>更新了“促销规则”文档，将<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/overview">促销规则概述</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add">创建和管理规则</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/release-notes">发行说明</a>中的“所有产品列表”规则类型重命名为“默认搜索规则”，与“管理规则类型”菜单中重命名的选项相匹配。</p>
 </td>
       <td>
         反馈
@@ -118,7 +118,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>在<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">创建和管理促销规则</a>中更正了[!UICONTROL Intelligent Ranking Boost]的已记录默认值和范围值：默认值为<code>50</code>（以前记录为<code>5</code>），最大范围是<code>1000</code>（以前记录为<code>100</code>）。</p>
+      <td><p>在<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">创建和管理促销规则</a>中更正了[!UICONTROL Intelligent Ranking Boost]的已记录默认值和范围值：默认值为<code>50</code>（以前记录为<code>5</code>），最大范围是<code>1000</code>（以前记录为<code>100</code>）。</p>
 </td>
       <td>
         技术
@@ -140,7 +140,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了有关<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters">筛选器</a>中推荐单位的新的缺货排除筛选器的文档，该筛选器从推荐中排除缺货产品。</p>
+      <td><p>添加了有关<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/recommendations/filters">筛选器</a>中推荐单位的新的缺货排除筛选器的文档，该筛选器从推荐中排除缺货产品。</p>
 </td>
       <td>
         反馈、重大更新
@@ -148,7 +148,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/abba2327d9c678e374a94c5bc5ed091f401c8aff">提交</a></td>
     </tr>
     <tr>
-      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
+      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
 </td>
       <td>
         技术
@@ -170,7 +170,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -192,7 +192,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了有关如何根据<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#attributes">产品属性</a>筛选推荐的新部分。</p>
+      <td><p>添加了有关如何根据<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/recommendations/filters#attributes">产品属性</a>筛选推荐的新部分。</p>
 </td>
       <td>
         反馈
@@ -214,7 +214,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
+      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
 </td>
       <td>
         技术
@@ -236,7 +236,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce Optimizer Connector指南<br />添加了有关B2B的Adobe Commerce Optimizer Connector的文档：<br /> — 更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">[!DNL Adobe Commerce Optimizer Connector]</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started">为Adobe Commerce</a>设置连接器，以交叉引用有关B2B Commerce的连接器设置的信息。<br /> — 添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/b2b-shared-catalog-projection">B2B共享目录投影</a>主题，以说明Adobe B2B Commerce共享目录如何同步到[!DNL Adobe Commerce Optimizer]。<br /> — 添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started-b2b-shared-catalogs">为B2B Commerce设置连接器</a>以描述扩展安装和同步验证。<br /> — 添加了新主题<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/manage-sync/catalog-view-sync/catalog-view-sync-status">监控目录视图同步</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/manage-sync/catalog-view-sync/restricted-access-keys">管理Adobe B2B Commerce的限制访问密钥</a>。<br />Adobe Commerce Optimizer用户指南<br /> — 更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view">私有目录视图</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/restricted-access-keys">限制访问密钥</a>，以描述与现有手动流一起为B2B共享目录自动设置密钥和目录视图。</p>
+      <td><p>Adobe Commerce Optimizer Connector指南<br />添加了有关B2B的Adobe Commerce Optimizer Connector的文档：<br /> — 更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/overview">[!DNL Adobe Commerce Optimizer Connector]</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/get-started/get-started">为Adobe Commerce</a>设置连接器，以交叉引用有关B2B Commerce的连接器设置的信息。<br /> — 添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/b2b-shared-catalog-projection">B2B共享目录投影</a>主题，以说明Adobe B2B Commerce共享目录如何同步到[!DNL Adobe Commerce Optimizer]。<br /> — 添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/get-started/get-started-b2b-shared-catalogs">为B2B Commerce设置连接器</a>以描述扩展安装和同步验证。<br /> — 添加了新主题<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/manage-sync/catalog-view-sync/catalog-view-sync-status">监控目录视图同步</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aco-optimizer-connector/manage-sync/catalog-view-sync/restricted-access-keys">管理Adobe B2B Commerce的限制访问密钥</a>。<br />Adobe Commerce Optimizer用户指南<br /> — 更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/private-catalog-view">私有目录视图</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/restricted-access-keys">限制访问密钥</a>，以描述与现有手动流一起为B2B共享目录自动设置密钥和目录视图。</p>
 </td>
       <td>
         重大更新，新主题
@@ -258,7 +258,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了有关如何导出<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/custom-product-types">自定义产品类型</a>的信息。</p>
+      <td><p>添加了有关如何导出<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/data-synchronization/custom-product-types">自定义产品类型</a>的信息。</p>
 </td>
       <td>
         新主题
@@ -280,7 +280,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -302,7 +302,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了在同步期间保留<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">自定义AEM映像角色</a>的功能。 此外，还为Adobe Commerce添加了以下功能：<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/check-for-updates">异步检查AEM Assets集成扩展更新</a>。</p>
+      <td><p>添加了在同步期间保留<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/synchronize/custom-match">自定义AEM映像角色</a>的功能。 此外，还为Adobe Commerce添加了以下功能：<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/aem-assets-integration/get-started/check-for-updates">异步检查AEM Assets集成扩展更新</a>。</p>
 </td>
       <td>
         重大更新
@@ -324,7 +324,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>修复了<a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits">PaaS</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create">Commerce Optimizer</a>的产品推荐文档，该文档错误地指出不支持捆绑的产品和分组的产品。</p>
+      <td><p>修复了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/product-recommendations/boundaries-limits">PaaS</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/recommendations/create">Commerce Optimizer</a>的产品推荐文档，该文档错误地指出不支持捆绑的产品和分组的产品。</p>
 </td>
       <td>
         反馈
@@ -346,7 +346,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新了<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview">迁移概述</a>，以说明Commerce Developer Agent如何协助迁移过程。</p>
+      <td><p>更新了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/migration/overview">迁移概述</a>，以说明Commerce Developer Agent如何协助迁移过程。</p>
 </td>
       <td>
         重大更新
@@ -368,7 +368,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -390,7 +390,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -412,7 +412,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
+      <td><p>添加了Adobe Commerce as a Cloud Service的生产<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
 </td>
       <td>
         重大更新
@@ -434,7 +434,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>添加了<a href="https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a>指南，这是Adobe Commerce产品管理和工程部门用于战略实施和安全指导的新主页。</p>
+      <td><p>添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a>指南，这是Adobe Commerce产品管理和工程部门用于战略实施和安全指导的新主页。</p>
 </td>
       <td>
         新主题
@@ -456,7 +456,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>将<a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Live Search扩展</a>更新为4.7.3，以解决在某些情况下，产品列表页面上的“添加到购物车”功能无法与PLP构件配合使用的问题。</p>
+      <td><p>将<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/live-search/release-notes">Live Search扩展</a>更新为4.7.3，以解决在某些情况下，产品列表页面上的“添加到购物车”功能无法与PLP构件配合使用的问题。</p>
 </td>
       <td>
         反馈
