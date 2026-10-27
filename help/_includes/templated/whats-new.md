@@ -1,7 +1,7 @@
 ---
-source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
+source-git-commit: ecad33a6883ee25d21ed358736a2f1e3529c6edf
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1279'
 ht-degree: 1%
 ---
 # 新增功能模板
@@ -9,6 +9,80 @@ ht-degree: 1%
 ## 新增功能
 
 本页包含最近60天所做的更改。 我们将从此列表中排除所有次要更新，例如副本编辑。
+
+### 2026年10月26日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
+</td>
+      <td>
+        技术
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fd4ea4603999043844c786da3ab1e84fb8d4d4aa">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月23日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><br />Payment Services 2.17.0文档添加了针对可选<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/payments-checkout/payments-options#paypal-express-review-page">PayPal Express审核页面</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/payment-services/payments-checkout/manage/over-capture">过度捕获</a>的指南，包括配置、资格和开票工作流。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d2bcc58f34af50f26d4a4f082e5b3fc30089ab58">提交</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月21日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>描述</th>
+      <th>类型</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>添加了<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/information-center/overview">Commerce信息中心</a>，这是客户和合作伙伴探索Adobe Commerce产品、比较实施架构以及规划迁移和集成的新起点。 包括用于店面、支付、Commerce服务、AEM Assets、Adobe Commerce Optimizer、沙盒环境和Adobe Experience Platform的基于角色的导航和实施指南，以及指向详细产品文档的链接。</p>
+</td>
+      <td>
+        重大更新，新主题
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fcb3c575a9af82ee75408fba4b4fe7cee5dbffa4">提交</a></td>
+    </tr>
+    <tr>
+      <td><p>已更新Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/security/shared-responsibility">共享责任</a>表以包含Adobe Managed Services。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/56bb1f5c9723842386af60afe5611c85213f4aeb">提交</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年10月16日
 
@@ -388,80 +462,6 @@ ht-degree: 1%
         反馈
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/01028c8645f0d8ef868aacbaf14e34595bc5ccc1">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月26日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
-</td>
-      <td>
-        技术
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e91727732882ce6a990068bf2bd3c4dc9fc69370">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月25日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>为Adobe Commerce as a Cloud Service添加了沙盒<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes">发行说明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/452a47d6769d90449ece9fe171a01a36df45324d">提交</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月18日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>描述</th>
-      <th>类型</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新了最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>中的<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">数据导出日志代码引用</a>。</p>
-</td>
-      <td>
-        技术
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1291cadbeca63d454eabab31c415b2d037d280ba">提交</a></td>
-    </tr>
-    <tr>
-      <td><p>Adobe Commerce Optimizer现在将私有目录查看限制为单个价格手册。 在<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">私有目录视图</a>、<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view">目录视图</a>和<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/pricebooks">价格手册</a>中了解详情。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">提交</a></td>
     </tr>
   </tbody>
 </table>
