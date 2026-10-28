@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: f3516568bc7e1c14f9eb1a529b28c4775baa6956
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '2009'
 ht-degree: 0%
 ---
 # AEM Assets集成发行说明
@@ -48,6 +48,20 @@ _2025年2月11日_
 ![新问题](../assets/new.svg)现在，商家可以同步产品和类别的图像。
 
 +++
+
+## v1.4.12
+
+_2026年10月28日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.6及更高版本。
+
+![修复了问题](../assets/fix.svg)<!-- Issue ACAP-1335 -->修复了在Adobe Commerce和AEM Assets之间切换可视化所有权时的类别图像处理问题。 AEM资源选择现在存储在专用的`asset_role_image`属性中，当所有权更改时会保留这些选择。 当AEM Assets拥有可视化图表（包括在导出期间特定于商店视图的值）时，类别图像读取和导出使用AEM asset-role值。 类别`image`属性中的现有HTTP/HTTPS AEM资源投放URL已迁移到新属性，并且不会覆盖现有的资源角色值。
+
+![修复了问题](../assets/fix.svg)<!-- Issue ACAP-2180 -->在GraphQL拥有可视化图表的情况下，将类别Adobe Commerce `asset_role_image`字段更正为返回`null`；在AEM Assets拥有可视化图表的情况下，将类别资源角色值更正为返回。
+
+![修复了问题](../assets/fix.svg)<!-- Issue ACAP-2180 -->修复了产品信息源中未正确导出AEM资源角色的问题。 现在，可正确导出AEM资源角色。
+
+![修复了问题](../assets/fix.svg)<!-- Issue ACAP-1338 -->更新了包依赖关系，包括恢复Adobe IMS、Commerce事件和服务ID包的显式要求以及删除显式`magento/framework`要求。
 
 ## v1.4.9
 
