@@ -1,6 +1,6 @@
 ---
 title: 添加Facet
-description: 了解如何将可筛选的产品属性添加为 [!DNL Live Search] Facet。
+description: 了解如何将可筛选的产品属性添加为[!DNL Live Search] Facet。
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
 TQID: https://experienceleague.adobe.com/6mX3QWuZRFuDb1eDnUlPj1yvXZ2qGIdQ4oScxfHjNWY
 product_v2:
@@ -15,13 +15,11 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: a652b6d5659dd6d5aede27d771736222b72b9c5e
 workflow-type: tm+mt
-source-wordcount: 600
-ht-degree: 0%
-
+source-wordcount: '622'
+ht-degree: 3%
 ---
-
 # 添加Facet
 
 除库存状态(`quantity_and_stock_status`)外，任何可筛选的产品属性都可以用作Facet。 *[!UICONTROL Add facets]*&#x200B;面板列出了当前的Facet，并使将其他产品属性分配为Facet变得更轻松。 在此三步流程中，选择某个属性作为Facet，根据需要编辑属性，并将更改发布到店面。
@@ -42,7 +40,7 @@ ht-degree: 0%
    * 要查找特定的产品属性，请在&#x200B;*搜索*&#x200B;框中输入属性名称的前几个字符。 然后，单击&#x200B;**添加**。
 
      要配置价格分面间隔和分组，请参阅[设置](settings.md)。 若要了解详细信息，请转到[Facet类型](facets-type.md)。
-该Facet已添加到*动态Facet*&#x200B;列表的底部，*发布更改*&#x200B;按钮变为可用。
+     该Facet已按升序添加到*动态Facet*&#x200B;列表中，并且&#x200B;*发布更改*&#x200B;按钮将变为可用。
 
 1. 如果找不到要添加的Facet，请转到&#x200B;**商店** >属性> **产品**，并验证该属性是否具有要用作Facet的[必需属性](facets.md)。 如有必要，请更新属性的以下店面属性：
 
