@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Live Search]最佳实践'
-description: 了解在商店中实施 [!DNL Live Search] 的最佳实践。
+description: 了解在您的存储中实施[!DNL Live Search]的最佳实践。
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
 TQID: https://experienceleague.adobe.com/X9zgHooEzDJe-zzmLLXHdVVVFUHVX4be47dOUaJyUXU
@@ -23,13 +23,11 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 2965
+source-wordcount: '3008'
 ht-degree: 0%
-
 ---
-
 # 最佳实践
 
 本文可帮助商家增强其网站搜索功能，确保提供无缝且高效的购物者体验，从而最大限度地提高转化率。 通过遵循概述的策略，您可以了解如何实施高级搜索功能，并不断改进搜索工具以使Adobe Commerce [!DNL Live Search]获得最佳性能。
@@ -94,7 +92,7 @@ ht-degree: 0%
 - 确定产品的最相关属性，并将它们设置为[动态Facet](facets-type.md)。 
 - 设置和排序在您的目录范围内一致且与您的产品高度相关的产品属性，以提高关联性和过滤功能，从而帮助购物者。
 - 确保Facet标签易于理解并在整个站点中以一致的方式命名。 例如，使用“价格范围”而不是“成本”。
-- 避免让购物者不知所措，将小面的数量限制在最重要的方面。 太多选项可能会导致决策疲劳。 默认情况下，[!DNL Live Search]限制为最多100个配置为Facet的属性，并在每个Facet中返回30个存储段。 了解有关[方面限制](boundaries-limits.md#facets)的更多信息。 
+- 避免让购物者不知所措，将小面的数量限制在最重要的方面。 太多选项可能会导致决策疲劳。 默认情况下，[!DNL Live Search]限制为最多100个配置为Facet的属性，并在每个Facet中返回30个存储段。 符合条件的商家可以通过[Adobe支持](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}请求将彩块增加到最多500个；批准取决于资格和绩效评估。 了解有关[方面限制](boundaries-limits.md#facets)的更多信息。
 - 允许购物者同时选择多个筛选条件以优化结果。 例如，允许购物者同时选择“红色”和“蓝色”颜色。
 - 在每个Facet选项旁边显示可用产品的数量，以便让购物者了解他们可期待的搜索结果。
 - 要保持接口干净且可管理（尤其是在移动设备上），请实施可折叠的Facet部分。
@@ -232,7 +230,7 @@ ht-degree: 0%
 了解有关搜索的产品属性的更多信息：
 
 - [将属性设置为可搜索](workspace.md#set-attributes-as-searchable)
-- [为属性分配权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [为属性分配权重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 监控搜索结果
 
