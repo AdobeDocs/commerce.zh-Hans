@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
+source-git-commit: 4f804d488a8c8690ed965c022d673f52c91b3d15
 workflow-type: tm+mt
-source-wordcount: '3719'
+source-wordcount: '3763'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension]发行说明
@@ -60,6 +60,12 @@ ht-degree: 0%
 >[!DNL SaaS data export]扩展是随[!DNL Live Search]、[!DNL Product Recommendations]和[!DNL Catalog Service]一起自动安装的模块集合。 您可以使用[!DNL Composer]检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 2026版 {#release-notes-2026}
+
+### 103.6.0发行版
+
+_2026年10月21日_
+
+![新增](../assets/new.svg) **产品审核摘要属性** — 添加了系统管理的产品属性，这些属性具有批准的审核计数(`ac_review_count`)和平均评分(`ac_rating_summary`)。 启用审核摘要同步后，这些值将导出到目录服务，以便存储端可以显示审核计数和星级评定。<!--MDEE-1414-->
 
 ### 103.5.2发行版
 

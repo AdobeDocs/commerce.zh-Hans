@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f7a84928b817f21a05ecc9e822ace49e103a8dfd
+source-git-commit: d84e54994e01c702c9d3634fbe42409bc4b0ce51
 workflow-type: tm+mt
-source-wordcount: '9292'
+source-wordcount: '9439'
 ht-degree: 0%
 ---
 # 发行说明
@@ -74,13 +74,21 @@ ht-degree: 0%
 >
 >如果您正在本地使用Adobe Commerce或在云基础架构上使用Adobe Commerce，请参阅[Adobe Commerce发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/notes/overview)。
 
+## 管理员UI更改
+
+[!DNL Adobe Commerce as a Cloud Service]管理员的工作方式现在与您已使用的其他Adobe产品一样，具有相同的顶部导航、产品切换器和组织切换器。 只需登录一次，即可在产品和Commerce实例之间无缝切换，而无需分别登录Commerce Cloud Manager和每个实例。 实例切换器和可搜索的Commerce导航可帮助您到达需要加快进展的位置。
+
+每个管理员体验都有自己的URL。 默认情况下，Commerce Cloud Manager中的实例链接使用&#x200B;**[!UICONTROL Admin URL (Unified Shell UI)]**&#x200B;打开新的Commerce Admin体验。 经典UI仍受支持，因此您可以在适应新体验的同时继续使用熟悉的工作流。 要使用经典UI，请打开实例详细信息面板并选择&#x200B;**[!UICONTROL Admin URL (Classic UI)]**。 现有的管理员URL和书签将继续打开经典UI。
+
+在Adobe Unified Experience的[Commerce Admin](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/admin/admin-unified-experience)中了解详情。
+
 ## 2026年10月 — 发行说#3 {#latest}
 
-[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生产]{type=Neutral tooltip="列出的项目当前在生产环境中可用。"}
 
-以下项目将于2026年10月29日在生产环境中可用。
+以下项目已于2026年10月28日发布到生产环境。
 
 >[!BEGINSHADEBOX]
 
@@ -94,9 +102,9 @@ ht-degree: 0%
 
 ### 商店贷方退款
 
-`POST /V1/creditmemo/refund` REST终结点现在接受一个可选的`extension_attributes.refund_to_store_credit_amount`字段，该字段将贷项通知单的全部或部分退款给客户的商店贷项。<!-- ACCS-2068 -->
+[`POST /V1/creditmemo/refund` REST终结点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit)现在接受一个可选的`extension_attributes.refund_to_store_credit_amount`字段，该字段将全部或部分贷项通知单退款给客户的商店贷项。<!-- ACCS-2068 -->
 
-两个新的管理员角色权限控制对存储点数的访问： <!-- ACCS-1961 -->
+两个[新管理员角色权限](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/store-credit/store-credit-using#store-credit-role-resources)控制存储点数的访问权限： <!-- ACCS-1961 -->
 
 * [!UICONTROL Customers] > [!UICONTROL All Customers] > [!UICONTROL Manage Store Credit Balances]
 * [!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Orders] > [!UICONTROL Actions] > [!UICONTROL Create] > [!UICONTROL Can Spend Store Credit]
