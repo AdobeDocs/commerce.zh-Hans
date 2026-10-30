@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: d84e54994e01c702c9d3634fbe42409bc4b0ce51
+source-git-commit: 43c00a414f95900a30103e56820d06077d530e0f
 workflow-type: tm+mt
-source-wordcount: '9439'
+source-wordcount: '9823'
 ht-degree: 0%
 ---
 # 发行说明
@@ -82,7 +82,59 @@ ht-degree: 0%
 
 在Adobe Unified Experience的[Commerce Admin](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/admin/admin-unified-experience)中了解详情。
 
-## 2026年10月 — 发行说#3 {#latest}
+## 2026年11月 — 发行说#1 {#latest}
+
+[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下项目将于2026年11月10日发布到生产环境。
+
+>[!BEGINSHADEBOX]
+
+<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+
+### 更改退货物料属性
+
+新`observer.rma_save_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)允许您在保存返回之前读取返回及其项，然后修改属性值。<!-- ACCS-2062 -->
+
+* 有效负载包括保存创建或编辑项时的返回项，例如，在[!DNL Commerce Admin]中通过REST或通过`requestReturn` GraphQL突变创建返回项时。
+* webhook在保存返回时运行。 如果所需的webhook失败，则不会保存返回。
+
+### 包括配送地址
+
+通过`POST /V1/orders`和`PUT /V1/orders/create` REST端点创建的新非虚拟订单现在需要送货地址。 没有配送地址的请求会返回HTTP 400错误。 此更改可防止没有发运信息的订单导致订单电子邮件失败。<!-- CCSAAS-5351 -->
+
+要创建没有发运地址的订单，请执行以下操作：
+
+* 当订单仅包含数字产品时，将`is_virtual`设置为`1`。
+* 使用`PUT /V1/carts/:cartId/order`端点从购物车下订单。
+
+### 检索[!DNL AEM Assets]类别图像
+
+`CategoryInterface`和`CategoryTree` GraphQL类型现在包含一个`asset_role_image`字段，该字段返回从[!DNL AEM Assets]分配的类别图像。<!-- ACCS-2180 -->
+
+### 增强功能和错误修复
+
+此版本中包含以下选定的增强功能、优化和错误修复：
+
+* 修复了在GraphQL产品查询中返回[!DNL AEM Assets]产品图像时没有图像角色的问题。 若要还原在此修复之前导出的产品的图像角色，请[重新同步产品数据馈送](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports)。<!-- ACCS-2180 -->
+
+* 修复了当订单项还具有自定义选项时，GraphQL订单响应中的`selected_options`缺少可配置产品选项（如颜色或大小）的问题。<!-- CCSAAS-5722 -->
+
+* 修复了在禁用公司的网站上，公司通讯簿规则应用于公司用户的问题。<!-- ACCS-2138 -->
+
+* 修复了在使用修改的配送地址编辑订单时，`POST /V1/orders/:orderId/edit/start` REST端点返回404错误的问题。<!-- ACCS-2220 -->
+
+* 修复了在发送带有空值的可选返回项自定义特性时`requestReturn` GraphQL突变失败的问题。<!-- CCSAAS-5628 -->
+
+* 修复了在执行[!UICONTROL Update attributes]批量操作后删除产品时库存处理可能停止的问题。<!-- CCSAAS-5713 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年10月 — 发行说#3
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
