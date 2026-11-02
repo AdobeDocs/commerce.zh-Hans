@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
+source-git-commit: 8e3471bb89e2dd77c390ee1b8199c835a4f1e6bc
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2452'
 ht-degree: 0%
 ---
 # 筛选产品
@@ -247,6 +247,8 @@ ht-degree: 0%
 >[!NOTE]
 >
 >当您选择其元数据集`number`到`true`的属性（如&#x200B;**大小**）时，**值**&#x200B;字段显示范围输入而非单个文本值。
+
+属性列表取决于您选择的&#x200B;**目录视图**。 如果选择&#x200B;**所有视图**，则列表将基于与第一个目录视图关联的目录源。 如果选择特定目录视图，则列表将基于该视图的目录源。
 
 #### 使用包含和排除条件
 
