@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 43c00a414f95900a30103e56820d06077d530e0f
+source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
 workflow-type: tm+mt
-source-wordcount: '9823'
+source-wordcount: '9775'
 ht-degree: 0%
 ---
 # 发行说明
@@ -147,10 +147,6 @@ ht-degree: 0%
 ### 添加自定义变量以订购评论电子邮件
 
 `observer.email_order_comment_set_template_vars_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)现已可用。 在呈现电子邮件之前，使用它在订单评论电子邮件中添加或更改模板变量。<!-- ACCS-2087 -->
-
-### 导出产品评级
-
-启用产品审阅后，每个产品的已批准审阅计数和平均评级将作为`ac_review_count`和`ac_rating_summary`系统产品属性导出到[!DNL Catalog Service]。 店面可以使用这些属性来显示产品评级。 当审核摘要更改时，产品信息源将更新。 默认情况下，产品审阅处于禁用状态。<!-- ACCS-2196 -->
 
 ### 商店贷方退款
 
