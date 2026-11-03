@@ -18,9 +18,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a00b9e1654a572e1773b5b7e321683332882d86f
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '516'
 ht-degree: 0%
 ---
 # 安装和访问[!DNL App Management]
@@ -36,7 +36,7 @@ ht-degree: 0%
 在关联应用程序之前，请确保您满足以下条件：
 
 | 要求 | 描述 |
-|-------------|-------------|
+| --- | --- |
 | **管理员访问权限** | 具有[!DNL App Management]权限的Commerce管理员 |
 | **已部署应用程序** | App Builder应用程序已部署到您的组织并准备好连接 |
 | **组织访问权限** | 访问部署应用程序的Adobe组织 |
@@ -76,19 +76,19 @@ ht-degree: 0%
 
 1. 导航到&#x200B;**[!UICONTROL Apps]** > **[!UICONTROL App Management]**。
 
-将显示[!DNL App Management]视图。 在这里，您可以关联、配置和管理App Builder应用程序。 有关该屏幕上的搜索、筛选器和&#x200B;**[!UICONTROL Acquire App]**&#x200B;操作，请参阅[管理您的应用程序](manage-app.md)中的[在管理员中查找应用程序](manage-app.md#find-an-application-in-the-admin)。
+将显示[!DNL App Management]视图。 在这里，您可以关联、安装、配置、升级和管理App Builder应用程序。 有关该屏幕上的搜索、筛选器和&#x200B;**[!UICONTROL Acquire App]**&#x200B;操作，请参阅[管理您的应用程序](manage-app.md)中的[在管理员中查找应用程序](manage-app.md#find-an-application-in-the-admin)。
 
 ## 安装App Builder应用程序
 
-如果您需要从Adobe Exchange安装App Builder应用程序（例如，预建的集成或市场应用程序），请参阅[从Adobe Exchange安装App Builder应用程序](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以了解分步说明。
+如果您需要从Adobe Exchange安装App Builder应用程序（例如，预建的集成或市场应用程序），请参阅[从Adobe Exchange安装App Builder应用程序](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以了解分步说明。
 
-安装并部署应用程序后，使用[!DNL App Management]将其与您的Commerce实例[&#128279;](manage-app.md#associate-an-app)关联并配置其设置。
+通过获取和部署App Builder应用程序，您的组织可以使用该应用程序。 若要将其与Commerce实例一起使用，请[关联应用程序](manage-app.md#associate-an-app)，[安装其组件](manage-app.md#install-an-app)（如果适用），以及[在[!DNL App Management]中配置其设置](manage-app.md#configure-settings)。
 
 ## Commerce webhook和应用程序
 
 某些App Builder应用程序使用[Adobe Commerce webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)，以便当某些事件发生时（例如，在保存产品后），Commerce可以通过HTTP调用您的应用程序。 Webhook端点和订阅逻辑由&#x200B;**应用程序开发人员**&#x200B;在生成和部署应用程序时定义；商店管理员不会在应用程序管理中单独配置Webhook。
 
-在您[将应用程序](https://experienceleague.adobe.com/zh-hans/docs/commerce/app-management/manage-app/manage-app)与您的Commerce实例关联并完成应用程序的任何设置指令后，webhook行为将遵循应用程序的实施。
+在您[将应用程序](manage-app.md#associate-an-app)与您的Commerce实例关联、[安装其组件](manage-app.md#install-an-app)并完成应用程序的任何设置指令后，webhook行为将遵循应用程序的实施。 应用程序安装和升级应用开发人员声明的webhook订阅；您无需单独创建这些订阅。
 
 如果[!DNL App Management]无法触发应用程序的验证终结点（例如，无法访问URL或响应不符合要求），则您可能会在[!DNL App Management]仪表板中看到类似以下内容的错误：
 
