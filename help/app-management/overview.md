@@ -18,9 +18,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a00b9e1654a572e1773b5b7e321683332882d86f
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '489'
 ht-degree: 0%
 ---
 # [!DNL App Management] 概述
@@ -37,7 +37,7 @@ Adobe Commerce中的[!DNL App Management]简化了跨商业环境发现、安装
 
 ## [!DNL App Management]提供的内容
 
-* **所有应用都在一个位置**。 从&#x200B;**[!UICONTROL Apps]** > **[!UICONTROL App Management]**&#x200B;关联、配置和管理应用。 [从同一视图中搜索、筛选和获取应用](manage-app.md)。
+* **所有应用都在一个位置**。 从&#x200B;**[!UICONTROL Apps]** > **[!UICONTROL App Management]**&#x200B;关联、安装、配置、升级和管理应用。 [从同一视图中搜索、筛选和获取应用](manage-app.md)。
 * **与您的业务匹配的设置**。 针对多区域或多品牌设置，为每个网站、商店或商店视图应用不同的配置。
 * **自动存储同步**。 在关联应用程序时，将从Commerce导入网站、商店和商店视图。
 * **本机管理体验**。 在不离开Commerce的情况下使用Adobe Exchange或自定义部署中的应用程序。
@@ -45,22 +45,24 @@ Adobe Commerce中的[!DNL App Management]简化了跨商业环境发现、安装
 ## 谁使用[!DNL App Management]？
 
 | 角色 | 用例 |
-|------|----------|
-| **应用管理员** | 在Commerce实例中关联应用程序、配置设置和管理应用程序。 |
+| --- | --- |
+| **应用管理员** | 在Commerce实例中查看应用程序详细信息、关联和安装应用程序、配置设置以及管理升级。 |
 | **Commerce管理员** | 监督整个组织的应用程序配置和权限。 |
 | **技术架构师** | 确保为多商店或多区域部署正确配置了应用程序。 |
 
 ## 您可以执行的操作
 
 * **关联应用**。 通过选择项目和工作区，将App Builder应用程序关联到您的Commerce实例。
+* **查看并安装应用**。 检查应用程序的业务用例和配置，完成预安装说明并监控安装进度。
 * **配置设置**。 通过自动生成的表单调整应用程序设置；在需要时覆盖每个商店或区域的值。
 * **管理作用域**。 使您的商店层次结构与应用程序保持同步，并在正确的级别应用设置。
-* **取消关联应用**。 在弃用集成或清理测试配置时删除应用程序。
+* **升级应用**。 当开发人员部署新版本时，查看并开始升级。 开发人员还可以启用实验性的自动升级。
+* **取消关联应用**。 在停用集成或清理测试配置时删除应用程序之前，请查看受影响的组件和清理要求。
 
 ## 后续步骤
 
 * [安装](install.md)。 确保满足先决条件并访问[!DNL App Management]。
-* [管理您的应用程序](manage-app.md)。 关联、配置和取消关联应用程序。
+* [管理您的应用程序](manage-app.md)。 审核、关联、安装、配置、升级和取消关联应用程序。
 
 ## 面向开发人员
 
