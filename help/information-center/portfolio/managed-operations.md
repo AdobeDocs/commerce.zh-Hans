@@ -28,7 +28,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service]是一个完全托管、无版本的SaaS平台。 Adobe可托管、扩展、保护和更新核心应用程序和基础架构，因此您的团队可以专注于构建出色的购物体验。
 
-具有托管操作&#x200B;**的**[!DNL Adobe Commerce as a Cloud Service]&#x200B;是一款高级产品，它将平台与专门的Adobe Managed Services团队和指定的客户成功工程师(CSE)进行配对。 他们一起监控、指导和优化您的完整商业解决方案，包括您的[!DNL App Builder]应用程序、集成和由[!DNL Edge Delivery Services]提供支持的[!DNL Commerce Storefront]，从上线到启动和持续操作。
+具有托管操作&#x200B;**的**&#x200B;[!DNL Adobe Commerce as a Cloud Service]&#x200B;是一款高级产品，它将平台与专门的Adobe Managed Services团队和指定的客户成功工程师(CSE)进行配对。 他们一起监控、指导和优化您的完整商业解决方案，包括您的[!DNL App Builder]应用程序、集成和由[!DNL Edge Delivery Services]提供支持的[!DNL Commerce Storefront]，从上线到启动和持续操作。
 
 ## 优点
 
