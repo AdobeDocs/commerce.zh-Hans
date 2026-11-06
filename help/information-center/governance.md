@@ -1,9 +1,9 @@
 ---
 title: Commerce信息中心管理
 description: 了解Commerce信息中心的内部治理模型。 未发布到Experience League。
-source-git-commit: a91925091da28cd0745923894a3faab0374f0a0c
+source-git-commit: bd6b2a10f02498b94c8837a27490e943b630c5fc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 ## 所有权
 
-Adobe Commerce文档团队拥有信息中心。 它是在`Adobe-Enterprise-Docs/commerce.en`中创作的，存储库在`metadata.md`中列为`git-repo`。
+Adobe Commerce文档团队管理源自`Adobe-Enterprise-Docs/commerce.en` GitHub存储库的信息中心内容的接收过程、编辑审阅和发布。
 
-没有哪个产品团队拥有它，因为它是跨产品的。 将特定于产品的更正上报给所属产品团队的文档联系人，而不是在此处进行修复。
+没有哪个产品团队拥有它，因为它是跨产品的。 产品和工程所有者应在提交ExL PR之前批准内容。 将特定于产品的更正上报给所属产品团队的文档联系人，而不是在此处进行修复。
 
 ## 信息中心的内容
 
@@ -28,6 +28,8 @@ Adobe Commerce文档团队拥有信息中心。 它是在`Adobe-Enterprise-Docs/
 - 信息中心不整合或迁移产品文档，也不记录各个产品功能。 在编写新内容之前，链接到现有的权威内容。
 
 ## 添加新内容
+
+按照[COMDOX-1864](https://jira.corp.adobe.com/browse/COMDOX-1864)史诗中概述的流程，通过在COMDOX项目中创建JIRA票证来提交文章建议。 使用人工智能的票证描述来生成票证并将其链接到史诗。
 
 ### 现有部分中的文章
 
