@@ -5,7 +5,7 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -25,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 972d2a1118daca17dc17a29e20ada593656960e1
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '564'
 ht-degree: 0%
 ---
 
@@ -42,7 +42,6 @@ ht-degree: 0%
 产品可视化图表允许您通过Adobe Experience Manager (AEM) Assets管理产品图像。 配置适用于Commerce Optimizer的AEM Assets以启用产品可视化图表。 完成配置后，您可以将AEM Assets用作产品映像的集中数字资产管理解决方案，它提供了自动资源审查和管理工作流，使映像与Commerce Optimizer目录保持同步。 该集成按SKU匹配资产和产品。 更新通过Adobe的集成服务流动，因此店面无需手动重新上传即可反映最新媒体。
 
 - [AEM Assets的产品可视化图表](../setup/product-visuals.md)
-- [为Commerce Optimizer配置AEM Assets](../../aem-assets-integration/get-started/configure-aco.md){target="_blank"}
 
 ## Adobe Experience Manager Sites Optimizer {#aem-sites-optimizer}
 
@@ -65,7 +64,7 @@ Adobe Commerce Optimizer Connector是在Adobe Commerce（云或内部部署）�
 
 Adobe Commerce Optimizer可以为使用单独商务平台的店面提供产品发现和促销功能。 店面使用Commerce Optimizer Merchandising Services API进行产品数据、搜索、推荐和促销。 主机商务平台仍负责购物者帐户、购物车、结帐和订单处理。 与主机平台的集成是一种自定义实现，使用API Mesh、App Builder、直接API或这些工具的组合。
 
-对于Salesforce Commerce Cloud (SFCC)，[Adobe Commerce Optimizer SFCC Checkout Starter Kit](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit)提供了示例Edge Delivery Services块和脚本，用于将Adobe Commerce Optimizer店面连接到SFCC购物者、购物车和签出功能。 将其用作参考实施，并适应您的店面；它不是通用的开箱即用连接器。 还提供了Next.js[&#128279;](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"}的Headless店面示例。
+对于Salesforce Commerce Cloud (SFCC)，[Adobe Commerce Optimizer SFCC Checkout Starter Kit](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit)提供了示例Edge Delivery Services块和脚本，用于将Adobe Commerce Optimizer店面连接到SFCC购物者、购物车和签出功能。 将其用作参考实施，并适应您的店面；它不是通用的开箱即用连接器。 还提供了Next.js](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"}的[Headless店面示例。
 
 
 ## Commerce Salesforce Connector {#commerce-salesforce-connector}

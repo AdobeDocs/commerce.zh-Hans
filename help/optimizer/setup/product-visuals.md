@@ -3,7 +3,7 @@ title: AEM Assets的产品可视化图表
 description: 了解如何将AEM Assets用于[!DNL Adobe Commerce Optimizer]中的产品图像。
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '521'
 ht-degree: 0%
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**产品可视化图表**&#x200B;是随[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起提供的包的名称。 它结合了[Dynamic Media与OpenAPI功能](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)和[AEM Assets Prime](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-prime)。
+>**产品可视化图表**&#x200B;是随[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起提供的包的名称。 它结合了[Dynamic Media与OpenAPI功能](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)和[AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)。
 >
 >拥有其他AEM Assets许可证（例如，**AEM Assets Ultimate**）的客户可以使用相同的集成；只有AEM版本会影响载入步骤，而不会影响许可证类型。
 
@@ -54,42 +54,13 @@ ht-degree: 0%
 
 更新的图像可通过店面API（目录服务、实时搜索、产品推荐）获得。
 
-### Source和层配置
-
-AEM Assets中的图像将作为目录层摄取，并采用以下源配置：
-
-> 源配置示例
-
-```json
-{
-  "source": {
-    "locale": "en-US",
-    "layer": "AEM-Assets"
-  }
-}
-```
-
-此配置可确保将AEM Assets图像作为叠加应用于基本产品目录。
-
-## 先决条件
-
-在启用产品可视化图表之前，请确保您满足Commerce Optimizer[&#128279;](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)的先决条件。
-
-## 设置
-
-要启用集成，请[创建支持票证](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)，其中包含您的[!DNL Commerce Optimizer]和AEM Assets详细信息。 Adobe支持配置集成并在Assets集成服务中注册您的租户。
-
-有关入门信息，请参阅[为Commerce Optimizer配置AEM Assets](../../aem-assets-integration/get-started/configure-aco.md)。
-
 ### 配置AEM Assets元数据
 
 要启用自动产品匹配，请使用Commerce元数据在AEM Assets中配置资源。
 
-有关必需的元数据字段和步骤，请参阅[配置AEM Assets](../../aem-assets-integration/get-started/configure-aco.md#configure-aem-assets-first)。
+有关必需的元数据字段和步骤，请参阅[配置AEM Assets](../../aem-assets-integration/get-started/configure-aem.md)。
 
 ## 限制
-
-在使用产品可视化图表之前，请查看[集成限制](../../aem-assets-integration/get-started/configure-aco.md#limitations) — 与层相关的限制，这些限制会影响AEM Assets数据与基础目录的合并方式。
 
 有关容量和使用率分配（资产存储、Dynamic Media操作、用户许可证），请参阅&#x200B;_边界和限制指南_&#x200B;中的[产品可视化限制](../boundaries-limits.md#product-visuals-limits)。
 
@@ -118,4 +89,4 @@ AEM Assets中的图像将作为目录层摄取，并采用以下源配置：
 * [目录层](catalog-layer.md)
 * [目录视图](catalog-view.md)
 * [AEM Assets集成指南](../../aem-assets-integration/overview.md)
-* [产品可视化限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
+* [产品可视化限制和边界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)

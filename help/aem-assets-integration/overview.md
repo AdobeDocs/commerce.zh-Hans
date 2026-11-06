@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1109'
 ht-degree: 1%
 ---
 # 适用于Commerce的AEM Assets集成
@@ -68,27 +68,27 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 ## 使用该集成的要求
 
-若要将此集成与[产品可视化图表或AEM Assets](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets)一起使用，企业必须满足以下要求：
+若要将此集成与[产品可视化图表或AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets)一起使用，企业必须满足以下要求：
 
 >[!BEGINTABS]
 
 >[!TAB 产品视觉效果]
 
-[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}适用于Adobe Commerce、由AEM Assets提供支持的产品可视化以及[AEM Dynamic Media](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效许可证（这些许可证随[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起现成可用）。
+[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}适用于Adobe Commerce、由AEM Assets提供支持的产品可视化以及[AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效许可证（这些许可证随[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起现成可用）。
 
 >[!TAB AEM Assets]
 
-[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}Adobe Commerce、Adobe Experience Manager Assets和[AEM Dynamic Media](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效许可证。
+[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"}Adobe Commerce、Adobe Experience Manager Assets和[AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效许可证。
 
 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"} Adobe Commerce 2.4.5+
 
-* Adobe Commerce 2.4.5+。 有关详细信息，请参阅[系统要求](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
+* Adobe Commerce 2.4.5+。 有关详细信息，请参阅[系统要求](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
 
-仅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} Adobe Experience Manager已配置[Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/overview)
+仅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"} Adobe Experience Manager已配置[Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/overview)
 
 >[!ENDTABS]
 
-配置集成的Adobe Commerce用户必须具有对配置了AEM Assets项目的[IMS组织](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)的访问权限。
+配置集成的Adobe Commerce用户必须具有对配置了AEM Assets项目的[IMS组织](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)的访问权限。
 
 >[!BEGINSHADEBOX]
 
@@ -110,11 +110,11 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 >[!BEGINTABS]
 
->[!TAB 云或本地教程上的Adobe Commerce]
+>[!TAB 云或本地教程]上的Adobe Commerce
 
 要了解Adobe Commerce和AEM Assets如何协作以简化内容工作流，请观看此视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/3447898?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3447837)
 
 >[!TAB Adobe Commerce as a Cloud Service教程]
 
@@ -128,7 +128,7 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 安装和配置AEM Assets集成的流程取决于您的Adobe Commerce部署。 在所有情况下，您首先要配置AEM Assets，然后将Commerce连接到该网站。
 
-要了解集成添加到AEM Assets环境中的命名空间、元数据架构和&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡，请在开始之前查看AEM Assets[&#128279;](metadata.md)中的Commerce元数据。
+要了解集成添加到AEM Assets环境中的命名空间、元数据架构和&#x200B;**[!UICONTROL Commerce]**&#x200B;选项卡，请在开始之前查看AEM Assets](metadata.md)中的[Commerce元数据。
 
 有关本地化的图像替换文本，请参阅AEM Assets元数据中的[本地化的替换文本](metadata.md#localized-alt-text-in-aem-assets-metadata)。 有关设置和同步说明，请参阅[配置AEM Assets项目](get-started/configure-aem.md)和[配置集成](get-started/setup-synchronization.md)。
 
@@ -162,24 +162,8 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 1. 可选。 [启用product-image display](get-started/configure-storefront.md#enable-product-images)，以便由Edge Delivery Services提供支持的店面会呈现AEM管理的产品图像。
 
->[!TAB Adobe Commerce Optimizer]
-
-仅[!BADGE SaaS]{type=Positive tooltip="仅适用于Adobe Commerce Optimizer项目。"}
-
-[!DNL Adobe Commerce Optimizer]它没有管理员配置UI。 Adobe支持部门会从您的载入票证配置集成，因此请先准备AEM Assets。
-
-1. 要支持Commerce元数据，请[配置AEM Assets项目](get-started/configure-aem.md)。 在AEM版本`2026.5.26309`及更高版本上，使用[自助入门培训](get-started/configure-aem.md#enable-aem-commerce-self-service)；在早期版本上，手动安装`assets-commerce`包。
-
-1. [使用您的租户ID、AEM项目ID、AEM环境ID、匹配的规则、层和区域设置提交载入支持票证](get-started/configure-aco.md#onboarding)。
-
-1. [使用您在票证中注册的相同区域设置和层配置目录视图](get-started/configure-aco.md#onboarding)。
-
-1. 可选。 [启用product-image display](get-started/configure-storefront.md#enable-product-images)，以便由Edge Delivery Services提供支持的店面会呈现AEM管理的产品图像。
-
-   有关完整过程、限制和层指南，请参阅[为Commerce Optimizer配置AEM Assets](get-started/configure-aco.md)。
-
 >[!ENDTABS]
 
 ## 支持
 
-如果您需要本指南中未涉及的信息或问题，请联系您的AEM Assets集成销售代表或创建[支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)以获取其他帮助。
+如果您需要本指南中未涉及的信息或问题，请联系您的AEM Assets集成销售代表或创建[支持票证](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)以获取其他帮助。
