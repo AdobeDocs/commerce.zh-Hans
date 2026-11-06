@@ -39,30 +39,30 @@ _推荐单元_
 
 1. 在&#x200B;_管理员_&#x200B;侧边栏上，转到&#x200B;**营销** > _促销活动_ > **产品推荐**&#x200B;以显示&#x200B;_产品推荐_&#x200B;工作区。
 
-1. 指定要显示推荐的[存储视图](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)。
+1. 指定要显示推荐的[存储视图](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/setup/websites-stores-views)。
 
    >[!NOTE]
    >
-   > 必须在默认的存储区视图中创建Page Builder推荐单元，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅[添加内容 — 产品推荐](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)。
+   > 必须在默认的存储区视图中创建Page Builder推荐单元，然后才可以在任何位置使用。 要了解有关使用页面生成器创建产品推荐的更多信息，请参阅[添加内容 — 产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)。
 
 1. 单击&#x200B;**创建推荐**。
 
 1. 在&#x200B;_为您的推荐命名_&#x200B;部分中，输入描述性名称以供内部引用，如`Home page most popular`。
 
-1. [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service项目（Adobe管理的SaaS基础架构）。"}在&#x200B;**店面引用**&#x200B;部分中，输入引用键以标识店面配置中的此推荐单元。 创建推荐后，您可以从&#x200B;**推荐单元详细信息**&#x200B;中[复制其值](#get-the-storefront-reference-key)，并将其用作推荐块中的`referenceKey`。 参考键用于店面配置；店面显示标签是购物者看到的文本。
+1. [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service项目（Adobe管理的SaaS基础架构）。"}在&#x200B;**店面引用**&#x200B;部分中，输入引用键以标识店面配置中的此推荐单元。 创建推荐后，您可以从&#x200B;**推荐单元详细信息**&#x200B;中[复制其值](#get-the-storefront-reference-key)，并将其用作推荐块中的`referenceKey`。 参考键用于店面配置；店面显示标签是购物者看到的文本。
 
 1. 在&#x200B;_选择页面类型_&#x200B;部分中，从以下选项中选择要在其中显示推荐的页面：
 
    >[!NOTE]
    >
-   > 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面上不支持产品推荐](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
+   > 当您的商店配置为将产品添加到购物车后立即[显示购物车页面时，购物车页面上不支持产品推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
 
    * 主页
    * 类别
    * 产品详细信息
    * 购物车
    * 确认
-   * [页面生成器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [页面生成器](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/page-builder/add-content/recommendations)
 
    您最多可以为每种页面类型创建50个有效的推荐单位。 当达到限制时，页面类型将灰显。
 
@@ -106,7 +106,7 @@ _推荐单元_
 
 ## 获取店面参考键
 
-[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service项目（Adobe管理的SaaS基础架构）。"}创建推荐后，使用其参考键在店面中配置推荐单元。
+[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service项目（Adobe管理的SaaS基础架构）。"}创建推荐后，使用其参考键在店面中配置推荐单元。
 
 1. 打开产品推荐的详细信息。
 
