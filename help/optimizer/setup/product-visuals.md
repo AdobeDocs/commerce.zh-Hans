@@ -3,7 +3,7 @@ title: AEM Assets的产品可视化图表
 description: 了解如何将AEM Assets用于[!DNL Adobe Commerce Optimizer]中的产品图像。
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**产品可视化图表**&#x200B;是随[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起提供的包的名称。 它结合了[Dynamic Media与OpenAPI功能](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)和[AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)。
+>**产品可视化图表**&#x200B;是随[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起提供的包的名称。 它结合了[Dynamic Media与OpenAPI功能](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)和[AEM Assets Prime](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-prime)。
 >
 >拥有其他AEM Assets许可证（例如，**AEM Assets Ultimate**）的客户可以使用相同的集成；只有AEM版本会影响载入步骤，而不会影响许可证类型。
 
@@ -89,4 +89,4 @@ ht-degree: 0%
 * [目录层](catalog-layer.md)
 * [目录视图](catalog-view.md)
 * [AEM Assets集成指南](../../aem-assets-integration/overview.md)
-* [产品可视化限制和边界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
+* [产品可视化限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
