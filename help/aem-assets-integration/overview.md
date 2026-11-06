@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1109'
 ht-degree: 1%
 ---
 # 适用于Commerce的AEM Assets集成
@@ -161,22 +161,6 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 1. [在Commerce管理员中配置集成](get-started/setup-synchronization.md)。
 
 1. 可选。 [启用product-image display](get-started/configure-storefront.md#enable-product-images)，以便由Edge Delivery Services提供支持的店面会呈现AEM管理的产品图像。
-
->[!TAB Adobe Commerce Optimizer]
-
-仅[!BADGE SaaS]{type=Positive tooltip="仅适用于Adobe Commerce Optimizer项目。"}
-
-[!DNL Adobe Commerce Optimizer]它没有管理员配置UI。 Adobe支持部门会从您的载入票证配置集成，因此请先准备AEM Assets。
-
-1. 要支持Commerce元数据，请[配置AEM Assets项目](get-started/configure-aem.md)。 在AEM版本`2026.5.26309`及更高版本上，使用[自助入门培训](get-started/configure-aem.md#enable-aem-commerce-self-service)；在早期版本上，手动安装`assets-commerce`包。
-
-1. [使用您的租户ID、AEM项目ID、AEM环境ID、匹配的规则、层和区域设置提交载入支持票证](get-started/configure-aco.md#onboarding)。
-
-1. [使用您在票证中注册的相同区域设置和层配置目录视图](get-started/configure-aco.md#onboarding)。
-
-1. 可选。 [启用product-image display](get-started/configure-storefront.md#enable-product-images)，以便由Edge Delivery Services提供支持的店面会呈现AEM管理的产品图像。
-
-   有关完整过程、限制和层指南，请参阅[为Commerce Optimizer配置AEM Assets](get-started/configure-aco.md)。
 
 >[!ENDTABS]
 

@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f316b57d365b8952223d4d250ac14f113cf48601
+source-git-commit: 0be21c4e838dabb8871eecbfc6c36c34af2d3ff0
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1612'
 ht-degree: 0%
 ---
 # 创建和管理推荐
@@ -48,6 +48,8 @@ _推荐单元_
 
 1. 在&#x200B;_为您的推荐命名_&#x200B;部分中，输入描述性名称以供内部引用，如`Home page most popular`。
 
+1. 在&#x200B;**店面引用**&#x200B;部分中，输入引用键以标识店面配置中的此推荐单元。 创建推荐后，您可以从&#x200B;**推荐单元详细信息**&#x200B;中[复制其值](#get-the-storefront-reference-key)，并将其用作推荐块中的`referenceKey`。 参考键用于店面配置；店面显示标签是购物者看到的文本。
+
 1. 在&#x200B;_选择推荐类型_&#x200B;部分中，根据您的策略指定所需的[推荐类型](types.md)。
 
 1. 在&#x200B;_店面显示标签_&#x200B;部分中，输入购物者可见的[标签](best-practice.md#recommendation-labels)，例如“最畅销商品”。
@@ -66,7 +68,7 @@ _推荐单元_
 
    - **激活**&#x200B;以在您的店面启用推荐单元。
 
-   您的推荐将显示在“推荐”工作区中。 若要在店面中使用推荐，您需要查找[推荐ID](#get-recommendation-id)。
+   您的推荐将显示在“推荐”工作区中。 若要在店面中使用推荐，您需要[推荐ID或参考键](#get-the-recommendation-id-or-reference-key)。
 
 >[!NOTE]
 >
@@ -98,21 +100,17 @@ _推荐的产品预览_&#x200B;面板始终随示例产品选择提供，这些�
 
 对于多店面、多语言或多品牌设置，您可以配置每个推荐是应用于所有目录视图（全局）还是应用于单个[目录视图](../../setup/catalog-view.md)。 了解有关在使用推荐时如何[设置目录视图](../../manage-results/recommendation-performance.md#select-catalog-view)的详细信息。
 
-## 获取推荐ID
+## 获取店面参考键
 
-创建推荐后，您需要检索其ID以在您的店面中实施推荐单元。
+创建推荐后，使用其参考键在店面中配置推荐单元。
 
-1. 在&#x200B;**推荐**&#x200B;页面上，选择推荐。
+1. 在&#x200B;**推荐**&#x200B;页面上，单击推荐名称旁边的信息图标（![信息图标](../../assets/info-icon.png)）以打开&#x200B;**推荐单元详细信息**&#x200B;页面。
 
-1. 单击推荐名称旁边的信息图标（![信息图标](../../assets/info-icon.png)）。
+   ![获取推荐ID](../../assets/get-ref-id.png)
 
-   此时将显示&#x200B;**推荐单元详细信息**&#x200B;页。
+1. 从&#x200B;**店面引用键**&#x200B;部分复制值。
 
-   ![获取推荐ID](../../assets/get-rec-id.png)
-
-1. 在&#x200B;**推荐ID**&#x200B;部分中，复制ID。
-
-1. 使用此ID在您的Edge Delivery Services店面中配置[推荐放置区](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/)。
+1. 在店面`product-recommendations`块中，使用此参考键在您的Edge Delivery Services店面中配置[推荐放置区](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/)。
 
 ## 管理现有推荐
 
@@ -127,6 +125,7 @@ _推荐的产品预览_&#x200B;面板始终随示例产品选择提供，这些�
 1. 在菜单中，您可以&#x200B;**停用**、**删除**&#x200B;或&#x200B;**编辑**&#x200B;推荐。 如果选择&#x200B;**编辑**，则可以根据需要调整以下设置：
 
    - 推荐名称
+   - 引用键
    - 店面标签
    - 产品数量
    - 筛选产品

@@ -3,7 +3,7 @@ title: 目录层
 description: 了解目录层如何允许您修改产品数据而不更改原始源数据，以便您可以安全地自定义并随时恢复更改。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -27,13 +27,11 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: 1533
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # 目录层
 
 目录层允许您在不更改原始源数据的情况下修改产品数据。 图层通过在基本目录之上创建一个图层来修改产品属性，如名称、描述、图像、链接和元数据。 原始产品数据保持不变，允许您安全自定义产品并随时恢复更改。
@@ -67,8 +65,6 @@ ht-degree: 0%
 * **产品视觉效果** — 将AEM Assets中的产品图像作为图层应用于基础目录之上。
 
 ## AEM-Assets layer
-
-当您启用[产品可视化图表](product-visuals.md)时，AEM Assets集成会自动创建和管理专门用于AEM Assets内容的目录层。 默认图层名称为`AEM-Assets`；但是，您可以在AEM Assets集成[&#128279;](../../aem-assets-integration/get-started/configure-aco.md)中的新用户引导期间指定自定义名称。
 
 此层包含与AEM Assets同步的产品图像。 与其他目录层一样，它是通过[产品层API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}填充的。 Assets集成服务将AEM资源元数据和交付URL转换为API格式，并在AEM Assets中批准资源时自动发送数据。
 

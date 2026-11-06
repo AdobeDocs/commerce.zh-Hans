@@ -15,18 +15,17 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
     internal-label: Behavioral data
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 97fda73b4f68154aa6fe66eee61ef2d68be979ca
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # 编辑推荐
 
 通过“编辑推荐”页面，您可以调整构成推荐的各个设置。 除页面类型和推荐类型外，所有设置都可以编辑。 可以编辑以下设置：
 
 - [推荐名称](#name)
+- [引用键](#reference-key)
 - [店面标签](#label)
 - [产品数量](#number)
 - [版面和位置](#placement)
@@ -51,6 +50,10 @@ ht-degree: 0%
 选择用于指示推荐目的的描述性名称。 该名称供内部参考，不会显示在店面中。
 
 ![编辑名称](assets/edit-name.png)
+
+### 引用键 {#reference-key}
+
+用于标识店面配置中的推荐单元的键。
 
 ### 店面标签 {#label}
 

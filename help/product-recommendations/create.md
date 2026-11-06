@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+source-git-commit: 1effb98aaefee32d6479ffdc0737367edc8d1a3a
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1665'
 ht-degree: 0%
 ---
 # 创建新推荐
@@ -48,6 +48,8 @@ _推荐单元_
 1. 单击&#x200B;**创建推荐**。
 
 1. 在&#x200B;_为您的推荐命名_&#x200B;部分中，输入描述性名称以供内部引用，如`Home page most popular`。
+
+1. [!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service项目（Adobe管理的SaaS基础架构）。"}在&#x200B;**店面引用**&#x200B;部分中，输入引用键以标识店面配置中的此推荐单元。 创建推荐后，您可以从&#x200B;**推荐单元详细信息**&#x200B;中[复制其值](#get-the-storefront-reference-key)，并将其用作推荐块中的`referenceKey`。 参考键用于店面配置；店面显示标签是购物者看到的文本。
 
 1. 在&#x200B;_选择页面类型_&#x200B;部分中，从以下选项中选择要在其中显示推荐的页面：
 
@@ -101,6 +103,20 @@ _推荐单元_
 >[!IMPORTANT]
 >
 >某些浏览器可能会阻止阻止阻止产品推荐按预期工作的关键脚本。
+
+## 获取店面参考键
+
+[!BADGE 仅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service项目（Adobe管理的SaaS基础架构）。"}创建推荐后，使用其参考键在店面中配置推荐单元。
+
+1. 打开产品推荐的详细信息。
+
+   ![获取推荐ID](./assets/get-ref-id.png)
+
+1. 从&#x200B;**引用键**&#x200B;部分复制值。
+
+   较早的推荐可能会显示&#x200B;**[!UICONTROL Unit ID]**&#x200B;而不是&#x200B;**[!UICONTROL Reference Key]**。 您可以继续在店面中使用&#x200B;**[!UICONTROL Unit ID]**，但[!DNL Adobe Commerce]建议您更新现有推荐以使用&#x200B;**[!UICONTROL Reference Key]**。
+
+1. 在店面`product-recommendations`块中，使用此参考键在您的Edge Delivery Services店面中配置[推荐放置区](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/)。
 
 ## 就绪指示器
 

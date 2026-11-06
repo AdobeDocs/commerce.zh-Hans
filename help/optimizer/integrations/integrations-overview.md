@@ -25,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 972d2a1118daca17dc17a29e20ada593656960e1
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '564'
 ht-degree: 0%
 ---
 
@@ -42,7 +42,6 @@ ht-degree: 0%
 产品可视化图表允许您通过Adobe Experience Manager (AEM) Assets管理产品图像。 配置适用于Commerce Optimizer的AEM Assets以启用产品可视化图表。 完成配置后，您可以将AEM Assets用作产品映像的集中数字资产管理解决方案，它提供了自动资源审查和管理工作流，使映像与Commerce Optimizer目录保持同步。 该集成按SKU匹配资产和产品。 更新通过Adobe的集成服务流动，因此店面无需手动重新上传即可反映最新媒体。
 
 - [AEM Assets的产品可视化图表](../setup/product-visuals.md)
-- [为Commerce Optimizer配置AEM Assets](../../aem-assets-integration/get-started/configure-aco.md){target="_blank"}
 
 ## Adobe Experience Manager Sites Optimizer {#aem-sites-optimizer}
 
