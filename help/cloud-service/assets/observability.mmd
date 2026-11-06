@@ -1,48 +1,41 @@
----
-source-git-commit: 65c2720f8e21089e45948a2a5fe3828ca28f0dbd
-workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 0%
+%%{ init: { "flowchart": { "curve": "linear" } } }%%
 
----
-%%{ init： { &quot;flowchart&quot;： { &quot;curve&quot;： &quot;linear&quot; } } }%%
+graph BT
+    subgraph commerce["Adobe Commerce"]
+        event_mod["Eventing \n Module"]
+        webhook_mod["Webhook \n Module"]
+        admin_sdk["Admin UI \n SDK"]
+    end
 
-图形BT
-子图形commerce[&quot;Adobe Commerce&quot;]
-event_mod[“事件\n模块”]
-webhook_mod[&quot;Webhook \n模块&quot;]
-admin_sdk[“管理员UI \n SDK”]
-结束
+    subgraph appbuilder["App Builder"]
+        int_sk["Integration \n Starter Kit"]
+        checkout_sk["Checkout \n Starter Kit"]
+        generic_app["Generic \n Application"]
+    end
 
-    subgraph appbuilder[&quot;App Builder&quot;]
-    int_sk[&quot;集成\n入门工具包&quot;]
-    checkout_sk[&quot;签出\n入门工具包&quot;]
-    generic_app[&quot;通用\n应用程序&quot;]
+    subgraph apimesh["API Mesh"]
+        api_mesh_log["API Mesh \n Logging"]
     end
-    
-    subgraph apimesh[&quot;API网格&quot;]
-    api_mesh_log[&quot;API网格\n日志记录&quot;]
+
+    subgraph storefront["Storefront"]
+        cdn_rum["CDN / Real User \n Monitoring"]
+        op_tel["Operational \n Telemetry"]
     end
-    
-    subgraph storefront[&quot;Storefront&quot;]
-    cdn_rum[&quot;CDN / Real User \n监视”]
-    op_tel[“操作\n遥测”]
-    end
-    
-    commerce —> obs_mod[“可观察性\n模块”]
-    appbuilder —> aio_tel[“AIO库\n遥测”]
-    
-    obs_mod —> OTel[“OpenTelemetry”]
-    aio_tel —> OTel
-    
-    OTel —>后端[“第三方可观察性”\n（例如： Grafana， New Relic splunk）”]
-    api_mesh_log —>后端
-    cdn_rum —>后端
-    op_tel —>后端
-    
-    样式商务填充：#cc0000，颜色：#fff，描边：#cc0000
-    样式appbuilder填充：#cc0000，颜色：#fff，描边：#cc0000
-    样式模板填充：#cc0000，颜色：#fff，描边：#cc0000
-    样式店面填充：#cc0000，颜色：#fff，描边：#cc0000
-    样式后端填充：#f0f0f0，颜色：#333，描边：#999
-    样式OTEL填充颜色：#fff #333 #333
+
+    commerce --> obs_mod["Observability \n Module"]
+    appbuilder --> aio_tel["AIO lib \n Telemetry"]
+
+    obs_mod --> OTel["OpenTelemetry"]
+    aio_tel --> OTel
+
+    OTel --> backends["Third-party Observability \n (For example: Grafana, New Relic, Splunk)"]
+    api_mesh_log --> backends
+    cdn_rum --> backends
+    op_tel --> backends
+
+    style commerce fill:#cc0000,color:#fff,stroke:#cc0000
+    style appbuilder fill:#cc0000,color:#fff,stroke:#cc0000
+    style apimesh fill:#cc0000,color:#fff,stroke:#cc0000
+    style storefront fill:#cc0000,color:#fff,stroke:#cc0000
+    style backends fill:#f0f0f0,color:#333,stroke:#999
+    style OTel fill:#fff,color:#333,stroke:#333
