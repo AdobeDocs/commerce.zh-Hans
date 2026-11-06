@@ -65,7 +65,7 @@ Adobe Commerce Optimizer Connector是在Adobe Commerce（云或内部部署）�
 
 Adobe Commerce Optimizer可以为使用单独商务平台的店面提供产品发现和促销功能。 店面使用Commerce Optimizer Merchandising Services API进行产品数据、搜索、推荐和促销。 主机商务平台仍负责购物者帐户、购物车、结帐和订单处理。 与主机平台的集成是一种自定义实现，使用API Mesh、App Builder、直接API或这些工具的组合。
 
-对于Salesforce Commerce Cloud (SFCC)，[Adobe Commerce Optimizer SFCC Checkout Starter Kit](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit)提供了示例Edge Delivery Services块和脚本，用于将Adobe Commerce Optimizer店面连接到SFCC购物者、购物车和签出功能。 将其用作参考实施，并适应您的店面；它不是通用的开箱即用连接器。 还提供了Next.js](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"}的[Headless店面示例。
+对于Salesforce Commerce Cloud (SFCC)，[Adobe Commerce Optimizer SFCC Checkout Starter Kit](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit)提供了示例Edge Delivery Services块和脚本，用于将Adobe Commerce Optimizer店面连接到SFCC购物者、购物车和签出功能。 将其用作参考实施，并适应您的店面；它不是通用的开箱即用连接器。 还提供了Next.js[&#128279;](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"}的Headless店面示例。
 
 
 ## Commerce Salesforce Connector {#commerce-salesforce-connector}
