@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
+source-git-commit: ab9c4d33ab0254c0c4ba990cd91ed01226d3abb9
 workflow-type: tm+mt
-source-wordcount: '9775'
+source-wordcount: '9964'
 ht-degree: 0%
 ---
 # 发行说明
@@ -92,7 +92,9 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+### 将产品添加到购物车时应用自定义属性
+
+通过在`CartItemInput.custom_attributes`字段中指定键/值对数组，您现在可以将自定义属性应用于具有[`addProductsToCart`突变](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/add-products)的购物车项目。<!-- ACCS-1980 -->
 
 ### 更改退货物料属性
 
@@ -100,6 +102,10 @@ ht-degree: 0%
 
 * 有效负载包括保存创建或编辑项时的返回项，例如，在[!DNL Commerce Admin]中通过REST或通过`requestReturn` GraphQL突变创建返回项时。
 * webhook在保存返回时运行。 如果所需的webhook失败，则不会保存返回。
+
+### 从装运中排除物料
+
+新`plugin.magento.out_of_process_shipping_methods.api.shipment_item_filter.filter` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)允许您从新装运中排除订单项目，如第三方履行的项目。<!-- ACCS-2088 -->
 
 ### 包括配送地址
 
@@ -113,6 +119,14 @@ ht-degree: 0%
 ### 检索[!DNL AEM Assets]类别图像
 
 `CategoryInterface`和`CategoryTree` GraphQL类型现在包含一个`asset_role_image`字段，该字段返回从[!DNL AEM Assets]分配的类别图像。<!-- ACCS-2180 -->
+
+### 检索客户商店贷方余额
+
+新的`GET /V1/customers/:customerId/balance` REST终结点返回客户的商店贷方余额。 此端点需要[!UICONTROL Manage Store Credit Balances]权限。<!-- CCSAAS-5274 -->
+
+### 检索发票项目行总计
+
+`InvoiceItemInterface` GraphQL类型现在包含一个`row_total`字段，该字段返回了发票项的已存储行小计。<!-- USF-4460 -->
 
 ### 增强功能和错误修复
 
@@ -129,6 +143,16 @@ ht-degree: 0%
 * 修复了在发送带有空值的可选返回项自定义特性时`requestReturn` GraphQL突变失败的问题。<!-- CCSAAS-5628 -->
 
 * 修复了在执行[!UICONTROL Update attributes]批量操作后删除产品时库存处理可能停止的问题。<!-- CCSAAS-5713 -->
+
+* 修复了放弃的购物车提醒电子邮件可以发送其他提醒电子邮件的问题。<!-- CCSAAS-5707 -->
+
+* 修复了未发送价格和补货通知电子邮件的问题。<!-- ACCS-2268 -->
+
+* 修复了`plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` webhook可能忽略`custom_attributes`的问题。<!-- CEXT-6870, CEXT-6959 -->
+
+* 修复了在使用进程外总计收集器时，`addProductsToCart` GraphQL突变可能返回错误的问题。<!-- ACCS-2263, CEXT-6986 -->
+
+* 修复了在从购物车中删除可配置产品后，GraphQL购物车查询和变动可能返回错误的问题。<!-- CCSAAS-5721 -->
 
 {{accs-release}}
 
