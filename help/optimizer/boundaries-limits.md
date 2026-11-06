@@ -2,7 +2,7 @@
 title: Adobe Commerce Optimizer限制和边界
 description: 了解Adobe Commerce Optimizer许可证限制和系统边界。 规划容量、跟踪使用情况，并在超出限制时避免延迟和限制。
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
 product_v2:
@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
+source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1486'
 ht-degree: 0%
 ---
 # 限制和边界
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 通过购买[许可证限制和系统边界](#license-limits-and-system-boundaries)部分中描述的许可证包，或通过就独特用例协商自定义许可证，可以增加许可证限制。 请联系您的Adobe客户代表以讨论您的要求。
 
-有关系统边界的问题，请联系[Adobe支持](https://experienceleague.adobe.com/home?lang=zh-Hans#support)。
+有关系统边界的问题，请联系[Adobe支持](https://experienceleague.adobe.com/home?lang=en#support)。
 
 ## 防止出现性能问题
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 | --- | --- | --- | --- |
 | 产品视觉效果高级用户 | 具有完整数字资产管理功能（包括AI工具、[!DNL Adobe Express]/[!DNL Firefly]集成和Content Hub共享）的许可用户，可处理核心DAM任务和高级云原生功能以实现最佳效率。 | 2 | 是<p>升级到[!DNL AEM Assets]许可证</p> |
 | 产品可视化协作者用户 | 通过AEM Commerce集成访问和使用资源，使用[!DNL Adobe Express]和[!DNL Firefly]创建和编辑内容，以及（如果启用）通过Content Hub门户利用批准的资源。 | 2 | 是<p>升级到[!DNL AEM Assets]许可证</p> |
-| 产品可视化存储 | 为资产分配的存储空间 | 1 TB存储 | 否 |
+| 产品可视化存储 | 为资产分配的存储空间 | 1 TB存储 | 是<p>升级到[!DNL AEM Assets]许可证</p> |
 | 动态媒体使用情况 | 拨备动态媒体处理业务，包括：<ul><li>图像投放</li><li>智能成像</li><li>视频交付</li></ul><p>有关详细信息，请参阅下面的&#x200B;*计算Dynamic Media使用情况*。 | 基于商品总值<p>最小分配：每月500万次操作</p> | 是<ul><li>购买许可证以进行其他操作</li><li>升级到[!DNL AEM Assets]许可证</li></ul> |
 | 视频交付 | 视频投放或下载的备抵 | 300个视频，每个视频1分钟 | 是<p>升级到[!DNL AEM Assets]许可证</p> |
 | 资源生成 | 访问用于创建图像的[!DNL Adobe Express]和[!DNL Adobe Firefly]创作AI | 无 | 单独购买Generative AI积分 |
@@ -171,7 +171,7 @@ Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“
 
 | **功能** | **描述** | **基础分配** | **可扩展？** | **备注** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | 构建云原生扩展和集成的能力 | 基于GMV层<p>最小分配：1包/年</p> | 是<p>添加其他包</p> | 有关每个包定义的限制，请参阅：<ul><li>针对每个包定义的限制，[App Builder产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder运行时指南*&#x200B;中的[系统设置和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder存储要求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | 构建云原生扩展和集成的能力 | 基于GMV层<p>最小分配：1包/年</p> | 是<p>添加其他包</p> | 有关每个包定义的限制，请参阅：<ul><li>针对每个包定义的限制，[App Builder产品描述](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder运行时指南*&#x200B;中的[系统设置和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder存储要求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
