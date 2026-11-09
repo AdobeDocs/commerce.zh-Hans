@@ -22,7 +22,7 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b3ce7cadce74310cef2b7253b965eccb4a17107d
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 1. 测试完成时恢复原始基本URL配置。
 
-如果端点的响应时间少于5秒，则PayPal在弹出窗口中显示错误消息。
+如果端点的响应时间超过5秒，则PayPal在弹出窗口中显示一条错误消息。
 
 #### Apple Pay本地开发
 
