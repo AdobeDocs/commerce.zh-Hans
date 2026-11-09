@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 autotag-review: '2026-06-18T16:01:44.084Z'
 TQID: 'https://experienceleague.adobe.com/fGnz7X-DD5KzHhVtS0VR2NpVVEpwMQjzD2l0KO97-r4'
 product_v2:
@@ -48,9 +48,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 19c1c7d4cfaa6192169e8005e6bb323a0940d875
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1348'
 ht-degree: 0%
 ---
 # 快速入门
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 >[!TAB 系统管理员和商家工作流]
 
-此图表提供了系统管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/cn/business/enterprise.html)。
+此图表提供了系统管理员和商家如何访问和管理[!DNL Adobe Commerce as a Cloud Service]实例的简要概述。 有关管理员工作流的详细信息，请参阅[Adobe Admin Console指南](https://helpx.adobe.com/business/enterprise.html)。
 
 ![Adobe Commerce as a Cloud Service的系统管理员和商家工作流程图](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 | 了解平台 | 了解Adobe Commerce as a Cloud Service架构和优势 | [概述](overview.md) |
 | 比较功能 | 了解Cloud Service与其他Adobe Commerce产品之间的差异 | [功能比较](feature-comparison.md) |
 | 创建实例 | 配置沙盒和生产环境 | [创建实例](#create-an-instance) |
-| 设置用户管理 | 添加用户、分配角色和管理权限 | [用户管理](user-management.md) |
+| 设置用户管理 | 在Commerce管理员中，通过Adobe Admin Console添加用户和管理访问权限，以及配置角色和权限。 | [用户管理](user-management.md) |
 | 设置[!DNL AEM Assets]和[!DNL Product Visuals]（可选） | 添加用户、分配角色和管理权限 | [用户管理](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB 商家]
@@ -251,7 +251,7 @@ ht-degree: 0%
 
 有两种方法可以将您的目录导入[!DNL Adobe Commerce as a Cloud Service]：
 
-* [**Commerce管理员**](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/import/data-import) — 一个用户友好的界面，允许您通过单击几下导入目录数据。
+* [**Commerce管理员**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) — 一个用户友好的界面，允许您通过单击几下导入目录数据。
 * [**导入JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) — 一个REST API，允许您以编程方式导入目录数据。
 
 ### 设置店面
