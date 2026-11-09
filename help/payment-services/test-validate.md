@@ -22,7 +22,7 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b3ce7cadce74310cef2b7253b965eccb4a17107d
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 在沙盒环境中测试[!DNL Payment Services]是一个重要的验证步骤，即使它是一个仅连接到PayPal沙盒而非实际银行和商家的模拟环境。
 
 1. 使用[信用卡字段](payments-options.md#credit-card-fields)或任何[PayPal付款按钮](payments-options.md#paypal-payment-buttons)成功完成从商店结帐。 有关使用假信用卡进行测试的更多信息，请参阅[测试凭据](#testing-credentials)。
-1. 捕获（当您的付款操作为[设置为`Authorize and Capture`](production.md#set-payment-services-as-payment-method)时）、[退款](refunds.md)或[void](voids.md)刚刚完成的订单。 如果您的付款操作设置为`Authorize`而不是`Authorize and Capture`，则您也可以[为订单](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}创建发票。
+1. 捕获（当您的付款操作为[设置为`Authorize and Capture`](production.md#set-payment-services-as-payment-method)时）、[退款](refunds.md)或[void](voids.md)刚刚完成的订单。 如果您的付款操作设置为`Authorize`而不是`Authorize and Capture`，则您也可以[为订单](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}创建发票。
 1. 在24-48小时内，查看[付款报表](payouts.md)中的交易和其他信息。
 1. 在[订单付款状态报告](order-payment-status.md)中查看订单的详细信息。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 1. 测试完成时恢复原始基本URL配置。
 
-如果端点的响应时间少于5秒，则PayPal在弹出窗口中显示错误消息。
+如果端点的响应时间超过5秒，则PayPal在弹出窗口中显示一条错误消息。
 
 #### Apple Pay本地开发
 
