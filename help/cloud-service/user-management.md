@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 8ed4d2fa87f7a91c3c9c21817391003488c55046
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1961'
 ht-degree: 0%
 ---
 # User和Identity Management
@@ -54,6 +54,8 @@ ht-degree: 0%
 ## 了解角色
 
 以下角色可用于[!DNL Adobe Commerce as a Cloud Service]。 要查看或编辑这些角色，请在Commerce管理员中导航到&#x200B;[!UICONTROL **系统**] > [!UICONTROL **权限**] > [!UICONTROL **用户角色**]。
+
+您可以在Commerce管理员中创建自定义角色，以便向用户提供比标准Adobe Admin Console角色更精细的权限。 当用户随后通过Adobe IMS登录时，自定义Commerce角色和分配将保留。 用户仍然必须能够通过Adobe Admin Console访问Adobe Commerce as a Cloud Service实例。 要创建自定义角色，请[在Commerce管理员中定义角色](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role)。
 
 * **用户** — 用户具有Commerce管理员的管理员访问权限，但在Admin Console中无法管理产品级别的访问权限。 用户还可以使用积分在[!DNL Commerce Cloud Manager]中[创建实例](./getting-started.md#create-an-instance)。
 
@@ -134,6 +136,8 @@ ht-degree: 0%
 ## 添加用户
 
 以下说明提供了有关如何将用户添加到[!DNL Commerce Cloud Manager]和Commerce管理员的信息。 [!DNL Commerce Cloud Manager]界面允许您创建和管理Commerce实例。 所有用户（包括开发人员和管理员）都需要执行此流程。
+
+要创建自定义角色，您可以[在Adobe Admin Console管理员中定义角色](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role)，而不是使用Commerce中定义的更广泛角色。
 
 >[!NOTE]
 >
