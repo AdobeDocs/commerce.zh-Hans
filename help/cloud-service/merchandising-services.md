@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: c67e36c5a607fa1112a3a34b71c89de1b0162b10
+source-git-commit: 0bda134570bb3bf2f43da545917dedc95394df5e
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '947'
 ht-degree: 0%
 ---
 
@@ -75,9 +75,9 @@ Adobe Commerce as a Cloud Service现在通过促销服务支持可组合目录�
 
 ## CCDM会引入哪些更改？
 
-原始目录模型使用目录服务将产品数据交付到店面，实时搜索和产品推荐提供搜索、销售和推荐功能。 在此模型中，Commerce使用[SaaS数据导出](https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/overview)进行同步。
+原始目录模型使用目录服务将产品数据交付到店面，实时搜索和产品推荐提供搜索、销售和推荐功能。 在此模型中，Commerce使用[SaaS数据导出](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview)进行同步。
 
-通过CCDM，这些功能与支持Adobe Commerce Optimizer的目录基础相同。 [目录视图](../optimizer/setup/catalog-view.md)和[策略](../optimizer/setup/policies.md)定义可用于店面的目录上下文。 策略决定了产品分类，并且促销规则可以应用于所有目录视图或针对特定视图进行定制。
+通过CCDM，这些功能与支持Adobe Commerce Optimizer的目录基础相同。 [目录视图](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view)和[策略](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies)定义可用于店面的目录上下文。 策略决定了产品分类，并且促销规则可以应用于所有目录视图或针对特定视图进行定制。
 
 这会更改目录的配置、访问和推销方式。 CCDM以原始Commerce目录的搜索、推荐和促销功能为基础，同时在目录视图级别引入控件。 其他管理和报告功能如下所述。
 
@@ -99,9 +99,9 @@ Commerce基金会仍然是产品和价格的规范来源。 产品和价格数�
 
 ## 商家有哪些新增功能？
 
-通过新模型，您可以将现有促销规则范围限定为所有目录视图或特定视图。 这样，您就可以将促销应用于每个店面受众。 了解如何[将促销规则范围设定为目录视图](../optimizer/merchandising/rules/add.md#create-a-rule)。
+通过新模型，您可以将现有促销规则范围限定为所有目录视图或特定视图。 这样，您就可以将促销应用于每个店面受众。 了解如何[将促销规则范围设定为目录视图](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add)。
 
-在Admin中，您可以使用[!UICONTROL Catalog Views]和[!UICONTROL Policies]配置目录上下文。 您还可以使用[!UICONTROL Success Metrics]查看收入、转化、参与度、客户获取和跳出率。 有关详细信息，请参阅[成功量度](../optimizer/manage-results/success-metrics.md)。
+在Admin中，您可以使用[!UICONTROL Catalog Views]和[!UICONTROL Policies]配置目录上下文。 您还可以使用[!UICONTROL Success Metrics]查看收入、转化、参与度、客户获取和跳出率。 有关详细信息，请参阅[成功量度](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics)。
 
 ## 采用之前的注意事项
 
@@ -126,7 +126,7 @@ Commerce基金会仍然是产品和价格的规范来源。 产品和价格数�
 
 ### 管理体验
 
-带有CCDM的Adobe Commerce as a Cloud Service使用[[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell)。 Adobe独立于CCDM发布了Unified Shell。 原始目录服务模型上的现有实例保留对Classic和Unified Shell的访问权限。
+带有CCDM的Adobe Commerce as a Cloud Service使用[[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell)。 Adobe独立于CCDM发布了Unified Shell。 原始目录服务模型上的现有实例保留对Classic和Unified Shell的访问权限。
 
 ### 限制
 
