@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 7b6ed19c7ca30a72bda94c8af60ba27324bcb2ea
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1418'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce as a Cloud Service] 概述
@@ -89,7 +89,7 @@ ht-degree: 0%
       <img src="../assets/icon-checkmark-circle-outline.svg" alt="复选标记" align="center"> <strong>促销服务</strong>
     </td>
     <td align="left">
-      管理产品目录、定价和库存的后端服务
+      管理产品目录和定价的后端服务。 默认情况下，新组织使用可组合目录数据模型(CCDM)。
     </td>
   </tr>
   <tr>
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 请观看以下视频，了解[!DNL Adobe Commerce as a Cloud Service]架构的简介。 视频下方提供了说明体系结构的图。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443277?captions=chi_hans&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 此图说明了[!DNL Adobe Commerce as a Cloud Service]和所有Adobe Experience Cloud解决方案之间的数据流。
 
@@ -124,25 +124,20 @@ ht-degree: 0%
 
 要使用[!DNL Storefront Builder]的基于文档的简单创作或可视化编辑功能在几分钟内创建丰富体验，请使用由[!DNL Edge Delivery Services]提供支持的Adobe的[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/en/tools/commerce-storefront/)。
 
-[!DNL Commerce Storefront]是完全无头的，具有分离架构，通过GraphQL API层提供所有Adobe Merchandising服务和数据。 此架构允许团队独立于Commerce Foundation开发其前台，从而提供使用新兴技术构建和测试新接触点的灵活性。
+[!DNL Commerce Storefront]是完全无头的，具有分离架构，通过GraphQL API层提供促销服务和数据。 此架构允许团队独立于Commerce Foundation开发其前台，从而提供使用新兴技术构建和测试新接触点的灵活性。
 
 >[!NOTE]
 >
 >[!DNL Adobe Commerce as a Cloud Service]不支持Luma店面。 如果您是从[!DNL Adobe Commerce on Cloud]或内部部署迁移，请参阅[现有店面](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts)以了解过渡指南。
 
-## Adobe Merchandising服务和支付服务
+## 商品推销和支付服务
 
-Adobe提供了一组丰富的智能、可组合的推销服务，帮助您支持关键业务目标。 这些服务还提供了对大规模优化性能至关重要的API。
+Merchandising Services支持[!DNL Adobe Commerce as a Cloud Service]中的两个目录数据模型：
 
-- [[!DNL Live Search]](../live-search/overview.md) — 使用此AI支持的搜索工具，为购物者提供更智能、更快速且相关的结果。 有关设置说明，请参阅[设置 [!DNL Live Search]](../live-search/workspace.md)。
-- [[!DNL Product Recommendations]](../product-recommendations/overview.md) — 根据购物者行为、流行趋势、产品相似性等添加AI支持的推荐。 有关配置说明，请参阅[[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md)。
-- [目录服务](../catalog-service/guide-overview.md) — 为客户提供优化的产品体验，同时提高性能、改进可扩展性和提高转化率。
+- **目录服务模型** — 使用[!DNL Catalog Service]和[!DNL Live Search]以及[!DNL Product Recommendations]向店面提供目录数据、搜索和推荐。
+- [**可组合目录数据模型(CCDM)**(merchandising-services.md)] — 使用目录视图、策略、目录源和价格手册来定义可供店面使用的产品和价格。 CCDM也是[!DNL Adobe Commerce Optimizer]的目录基础。
 
-  >[!NOTE]
-  >
-  >目录服务自动包含在[!DNL Live Search]和[!DNL Product Recommendations]中。
-
-- [支付服务](../payment-services/guide-overview.md) — 通过提供各种支付方式（包括免息分期付款）以及单一处理、订单和发票视图，提高客户满意度。 有关配置说明，请参阅[Payment Services主页](../payment-services/payments-home.md)。
+[付款服务](../payment-services/guide-overview.md)支持付款方式，并提供付款处理、订单和发票的视图。 有关配置说明，请参阅[Payment Services主页](../payment-services/payments-home.md)。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -238,7 +233,7 @@ Adobe提供了以下开发人员工具来构建集成和自定义：
 
 ### 简化的入门
 
-使用[!UICONTROL Commerce Cloud Manager]自助配置门户在几分钟内启动沙盒和生产实例。 您需要的所有功能（包括促销服务、Headless Commerce实例和[!DNL App Builder]）均已自动配置并与实例集成。
+使用[!UICONTROL Commerce Cloud Manager]自助配置门户在几分钟内启动沙盒和生产实例。 所需的基础架构（包括促销服务、Headless Commerce实例和[!DNL App Builder]）已自动配置并与实例集成。
 
 请参阅[快速入门](getting-started.md)，了解如何创建和管理Commerce实例。
 
@@ -259,7 +254,7 @@ Adobe Commerce on Cloud的典型升级过程包括创建备份、克隆实例、
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
