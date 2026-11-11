@@ -75,7 +75,7 @@ Adobe Commerce as a Cloud Service现在通过促销服务支持可组合目录�
 
 ## CCDM会引入哪些更改？
 
-原始目录模型使用目录服务将产品数据交付到店面，实时搜索和产品推荐提供搜索、销售和推荐功能。 在此模型中，Commerce使用[SaaS数据导出](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview)进行同步。
+原始目录模型使用目录服务将产品数据交付到店面，实时搜索和产品推荐提供搜索、销售和推荐功能。 在此模型中，Commerce使用[SaaS数据导出](https://experienceleague.adobe.com/zh-hans/docs/commerce/saas-data-export/overview)进行同步。
 
 通过CCDM，这些功能与支持Adobe Commerce Optimizer的目录基础相同。 [目录视图](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view)和[策略](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies)定义可用于店面的目录上下文。 策略决定了产品分类，并且促销规则可以应用于所有目录视图或针对特定视图进行定制。
 
@@ -126,7 +126,7 @@ Commerce基金会仍然是产品和价格的规范来源。 产品和价格数�
 
 ### 管理体验
 
-带有CCDM的Adobe Commerce as a Cloud Service使用[[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell)。 Adobe独立于CCDM发布了Unified Shell。 原始目录服务模型上的现有实例保留对Classic和Unified Shell的访问权限。
+带有CCDM的Adobe Commerce as a Cloud Service使用[[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell)。 Adobe独立于CCDM发布了Unified Shell。 原始目录服务模型上的现有实例保留对Classic和Unified Shell的访问权限。
 
 ### 限制
 
