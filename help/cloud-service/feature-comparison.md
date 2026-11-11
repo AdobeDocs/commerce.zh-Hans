@@ -51,9 +51,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92240ffdb1444d600679ad8392902f543b0d84e3
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1111'
 ht-degree: 0%
 ---
 # 功能比较
@@ -98,7 +98,10 @@ Adobe Commerce提供三种部署模型：
         <tr>
             <td>目录促销</td>
             <td><a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/content-design/staging/content-staging">内容暂存</a>，<a href="https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">可视化促销器</a></td>
-            <td><a href="../catalog-service/overview.md">目录服务</a></td>
+            <td>
+                <p><strong>可组合目录数据模型(CCDM)：</strong> <a href="../optimizer/setup/catalog-view.md">促销服务</a>使用目录视图、策略、目录源和价格手册来定义店面目录上下文。</p>
+                <p><strong>原始目录服务模型：</strong> <a href="../catalog-service/guide-overview.md">目录服务</a>提供目录数据以及实时搜索和产品推荐。</p>
+            </td>
         </tr>
         <tr>
             <td>支付</td>
@@ -214,8 +217,8 @@ Adobe Commerce提供三种部署模型：
         </tr>
         <tr>
             <td>应用程序市场</td>
-            <td>用于[!DNL App Builder]应用程序的[Magento Marketplace](https://marketplace.magento.com/) （PHP扩展）和[Exchange Marketplace](https://commercemarketplace.adobe.com)（推荐）</td>
-            <td>[!DNL App Builder] 来自[[!DNL Exchange Marketplace]](https://commercemarketplace.adobe.com)的应用程序</td>
+            <td>针对[!DNL App Builder]个应用程序的<a href="https://marketplace.magento.com/">Magento Marketplace</a> （PHP扩展）和<a href="https://commercemarketplace.adobe.com">Exchange Marketplace</a> （推荐）</td>
+            <td>[!DNL App Builder] 应用程序来自 <a href="https://commercemarketplace.adobe.com">[!DNL Exchange Marketplace]</a></td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>数据和存储</strong></td>
@@ -256,4 +259,3 @@ Adobe Commerce提供三种部署模型：
 >- 考虑[!DNL API Mesh]以扩展API功能。
 >- 监控Adobe的持续平台演变和新功能发布。
 >- 根据可用的可扩展性选项评估特定于行业的数据模型要求。
-

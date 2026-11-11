@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ab9c4d33ab0254c0c4ba990cd91ed01226d3abb9
+source-git-commit: 2123503aaa8088baab9b9a5e3ce9c3036518061e
 workflow-type: tm+mt
-source-wordcount: '9964'
+source-wordcount: '10011'
 ht-degree: 0%
 ---
 # 发行说明
@@ -84,11 +84,11 @@ ht-degree: 0%
 
 ## 2026年11月 — 发行说#1 {#latest}
 
-[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生产]{type=Neutral tooltip="列出的项目当前在生产环境中可用。"}
 
-以下项目将于2026年11月10日发布到生产环境。
+以下项目已于2026年11月10日发布到生产环境。
 
 >[!BEGINSHADEBOX]
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 ### 包括配送地址
 
-通过`POST /V1/orders`和`PUT /V1/orders/create` REST端点创建的新非虚拟订单现在需要送货地址。 没有配送地址的请求会返回HTTP 400错误。 此更改可防止没有发运信息的订单导致订单电子邮件失败。<!-- CCSAAS-5351 -->
+通过`POST /V1/orders`和`PUT /V1/orders/create` REST端点创建的新非虚拟订单现在需要[送货地址](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management#shipping-address-requirement-for-new-orders)。 没有配送地址的请求会返回HTTP 400错误。 此更改可防止没有发运信息的订单导致订单电子邮件失败。<!-- CCSAAS-5351 -->
 
 要创建没有发运地址的订单，请执行以下操作：
 
@@ -118,15 +118,15 @@ ht-degree: 0%
 
 ### 检索[!DNL AEM Assets]类别图像
 
-`CategoryInterface`和`CategoryTree` GraphQL类型现在包含一个`asset_role_image`字段，该字段返回从[!DNL AEM Assets]分配的类别图像。<!-- ACCS-2180 -->
+`CategoryInterface`和`CategoryTree` GraphQL类型现在包含一个[`asset_role_image`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/interfaces/category#aem-assets-category-images)字段，该字段返回从[!DNL AEM Assets]分配的类别图像。<!-- ACCS-2180 -->
 
 ### 检索客户商店贷方余额
 
-新的`GET /V1/customers/:customerId/balance` REST终结点返回客户的商店贷方余额。 此端点需要[!UICONTROL Manage Store Credit Balances]权限。<!-- CCSAAS-5274 -->
+新的[`GET /V1/customers/:customerId/balance`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit#retrieve-a-customers-store-credit-balance) REST终结点返回客户的商店贷方余额。 此端点需要[!UICONTROL Manage Store Credit Balances]权限。<!-- CCSAAS-5274 -->
 
 ### 检索发票项目行总计
 
-`InvoiceItemInterface` GraphQL类型现在包含一个`row_total`字段，该字段返回了发票项的已存储行小计。<!-- USF-4460 -->
+[`InvoiceItemInterface`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/interfaces/invoice-item#invoice-item-row-totals) GraphQL类型现在包含一个`row_total`字段，该字段返回了发票项的已存储行小计。<!-- USF-4460 -->
 
 ### 增强功能和错误修复
 
@@ -153,6 +153,8 @@ ht-degree: 0%
 * 修复了在使用进程外总计收集器时，`addProductsToCart` GraphQL突变可能返回错误的问题。<!-- ACCS-2263, CEXT-6986 -->
 
 * 修复了在从购物车中删除可配置产品后，GraphQL购物车查询和变动可能返回错误的问题。<!-- CCSAAS-5721 -->
+
+* 修复了保存或检索具有许多已保存地址的客户时可能会超时的问题。<!-- CCSAAS-5599 -->
 
 {{accs-release}}
 
