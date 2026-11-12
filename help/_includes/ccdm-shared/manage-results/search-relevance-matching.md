@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 >[!IMPORTANT]
 >
->以下功能位于[私人测试版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)中。
+>以下功能位于[私人测试版](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/beta)中。
 
 使用可组合目录数据模型(CCDM)的促销服务将结果排名，这样购物者就可以首先看到最相关的产品。 服务会启动目录文本&#x200B;**与购物者查询**&#x200B;紧密匹配的产品，然后支持同时出现术语的匹配，最后包括更广泛的匹配。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 - 从&#x200B;**精确/近**&#x200B;个短语匹配中提升
 - 当&#x200B;**所有查询词**&#x200B;出现在&#x200B;**相同**&#x200B;字段中时提升
 - **智能排名**（启用时），它将文本相关性与行为信号相结合 — 请参阅[智能排名评分的工作原理](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[搜索每个属性的权重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文本关联性因素（例如，术语在名称或描述长度中出现的频率）。 在&#x200B;*设置*&#x200B;中，配置哪些属性参与关键词搜索及其相对&#x200B;**[关键词搜索权重](../settings.md)**。
+- **[搜索每个属性的权重](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文本关联性因素（例如，术语在名称或描述长度中出现的频率）。 在&#x200B;*设置*&#x200B;中，配置哪些属性参与关键词搜索及其相对&#x200B;**[关键词搜索权重](../settings.md)**。
 - **[促销规则](../merchandising/rules/overview.md)**，例如pin、boost和bury
 
 由于信号相互作用，因此，当&#x200B;**搜索权重**&#x200B;或词频超过较弱的词组匹配时，广泛匹配有时排在较紧的词组匹配之前。
