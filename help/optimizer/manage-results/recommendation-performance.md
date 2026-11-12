@@ -1,7 +1,7 @@
 ---
 title: 推荐性能
 description: 推荐性能页面可向insight提供产品推荐的性能信息。
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
 TQID: https://experienceleague.adobe.com/YDgbC964pr7YI4Yas7pHTgnzDY2oxk-uR-eM6eVJE1w
 product_v2:
@@ -21,110 +21,11 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: c1cb3bd1edf0f79bfae357160dd370a5c18730d1
 workflow-type: tm+mt
-source-wordcount: 958
+source-wordcount: '44'
 ht-degree: 0%
-
 ---
-
 # 推荐性能
 
-“推荐性能”页显示已配置推荐的列表，以及帮助您评估其效果的关键量度。 您可以配置视图以显示过去一天、一周或月的量度。 这些见解显示查看或单击每个推荐单元的频率，可帮助您评估性能并识别优化机会。
-
->[!INFO]
->
->推荐单元是包含推荐的产品&#x200B;_项目_&#x200B;的构件。
-
-![推荐性能](../assets/rec-performance.png){zoomable="yes"}
-
-## 查看报表
-
-1. 选择应用您推荐的&#x200B;**目录视图**，如&#x200B;*所有视图*。
-
-   在推荐中了解有关[目录视图](#select-catalog-view)的更多信息。
-
-1. 单击&#x200B;**[!UICONTROL Date Range]**&#x200B;并选择以下范围之一：
-
-   ![推荐日期范围](../assets/rec-perf-date-range.png)
-
-   推荐表将更新以显示该日期范围和目录视图的量度。
-
-## 自定义表
-
-1. 单击左上角的![列选择器](../assets/icon-show-hide-columns.png)图标以自定义表。
-
-   可见的列具有复选标记。
-
-1. 在菜单中，执行以下任一操作：
-
-   - 要显示隐藏的列，请单击任何不带复选标记的列名称。
-   - 要隐藏可见列，请单击带有复选标记的任何列名称。
-
-   将刷新表以仅包含选定的列。
-
-## 查看详细信息
-
-1. 在表中，单击要检查的建议旁边的（![更多选择器](../assets/btn-more.png)）图标。
-
-1. 要更改推荐的状态，请单击&#x200B;**激活**&#x200B;或&#x200B;**停用**。
-
-## 创建或管理推荐
-
-了解如何[创建新推荐或管理现有](../merchandising/recommendations/create.md)推荐。
-
-## Workspace控件
-
-| 控件 | 描述 |
-|---|---|
-| ![日期范围](../assets/rec-perf-date-range.png) | 确定用于量度计算的时间范围。 |
-| ![列选择器](../assets/icon-show-hide-columns.png) | 确定“推荐”表中显示的列。 |
-| 创建推荐 | 打开[新建推荐](../merchandising/recommendations/create.md)页面。 |
-| [目录视图](#select-catalog-view) | 选择目录视图可筛选表以仅显示适用于所选目录视图的那些推荐。 当您[创建](../merchandising/recommendations/create.md)新推荐时，此选择也用作目录视图。 选项为&#x200B;*所有视图*&#x200B;或特定的[目录视图](../setup/catalog-view.md)。 |
-
-## 列描述
-
-| 列 | 描述 |
-|---|---|
-| 名称 | 推荐的名称。 |
-| 页面 | 显示推荐的页面。 |
-| 类型 | 推荐类型。 |
-| 状态 | 推荐状态。 选项：不活动/活动/草稿 |
-| 已创建 | 创建推荐的日期。 |
-| 上次编辑时间 | 上次编辑推荐的日期。 |
-| 展示次数 | 在页面上加载和呈现推荐单元的次数。 位于浏览器视区折叠下方的推荐单元将在页面上呈现，即使购物者未查看也是如此。 在这种情况下，呈现的单位被计为一次展示，但只有在购物者将单位滚动到观看中时才计为一次观看。 |
-| 展示次数 | （可视展示次数）注册至少一个视图的推荐单元数。 例如，如果推荐单元有两行，每行具有两个产品，并且购物者看不到后两个产品，但前两个产品是，则活动仍会计为一次展示。 |
-| 视图 | 购物者浏览器视区中显示的推荐单位数。 如果购物者多次向上或向下滚动页面，则事件会触发多次，而每次都可以查看设备。 |
-| 点击次数 | 购物者点击推荐单元中项目的次数与购物者点击推荐单元中&#x200B;**添加到购物车**&#x200B;按钮的次数之和 |
-| 收入 | 在当前时间范围内由推荐驱动的收入。 |
-| Lt收入 | （生命周期收入）由推荐驱动的生命周期收入。 |
-| 可见性 | 注册查看的推荐单元的百分比。 |
-| CTR | （点进率）注册一次点击的推荐的单位展示次数百分比。 CTR会计算所有展示，即使设备未进入购物者的视图。 如果未查看推荐单元，则不太可能单击该单元。 但是，这些不可见的展示计为CTR分数，并降低了总体CTR百分比。 |
-| vCTR | （可视点进率）仅根据可视展示（实际出现在购物者屏幕可视部分的推荐）来测量点击次数，从而更准确地衡量购物者参与度。 |
-
-## 选择目录视图
-
-**推荐**&#x200B;页面上的&#x200B;**[!UICONTROL Catalog view]**&#x200B;选择器执行两项操作：
-
-1. **筛选表** — 仅显示适用于所选目录视图的推荐（及其量度）。
-1. **设置新推荐的范围** — 当您[创建](../merchandising/recommendations/create.md)推荐时，所选目录视图将用作单位的范围。 选项为&#x200B;*所有视图*&#x200B;或特定的[目录视图](../setup/catalog-view.md)。
-
-   - **所有视图** — 推荐适用于所有目录视图（产品可用性仍按视图进行过滤）。
-   - **目录视图** — 推荐仅适用于选定的目录视图（例如，一个店面、语言或品牌）。
-
-通过为每个建议案指定目录视图，您可以：
-
-- 为所有目录视图（全局）或一个目录视图配置推荐。
-- 在[创建](../merchandising/recommendations/create.md)推荐页面上按目录视图预览和筛选产品。
-- 仅显示每个店面可用的产品。
-- 查看每个目录视图的量度和店面行为。
-
-### 目录视图如何过滤产品
-
-产品可用性是按目录视图强制实施的，即使对于&#x200B;**所有视图**&#x200B;选择下的推荐单位也是如此。 除了您在推荐单元上设置的任何[包含或排除过滤器](../merchandising/recommendations/filters.md)之外，此功能也有效。
-
-**示例：在所有视图选择下具有包含过滤器的推荐**
-
-- **所有视图**&#x200B;推荐包括SKU：SKU_ABC、SKU_CDE、SKU_XYZ。
-- **目录视图： Kingsbluff**&#x200B;无法销售SKU_ABC或SKU_CDE。 **显示的：** SKU_XYZ以及对Kingsbluff有效的任何其他SKU。
-- **目录视图： Arkbridge**&#x200B;无法销售任何包含的SKU。 **显示：**&#x200B;仅Arkbridge允许的SKU。 如果没有可用的推荐单元，则该店面不会显示推荐单元。
+{{$include /help/_includes/ccdm-shared/manage-results/recommendation-performance.md}}
