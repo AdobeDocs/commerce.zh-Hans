@@ -1,7 +1,7 @@
 ---
 title: 促销规则
 description: '[!DNL Adobe Commerce Optimizer]推销规则将逻辑与操作结合使用，以塑造搜索结果、默认产品列表和类别页面。'
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
 product_v2:
@@ -20,79 +20,11 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 44fb94ab5d9ba6deab421a15b391294ec0087f38
+source-git-commit: bf31ff18371ba3eae99753430b7083ea44bf3394
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '46'
 ht-degree: 0%
 ---
 # 促销规则
 
-促销规则将逻辑与操作相结合，以塑造产品在&#x200B;**搜索结果**、**默认产品列表**&#x200B;中通过&#x200B;**默认搜索规则**&#x200B;以及在&#x200B;**类别页面**&#x200B;上的显示方式。 您可以提升、隐藏、固定或隐藏产品，并应用&#x200B;**智能排名**，以便列表能够反映您的业务目标。
-
-每个&#x200B;**搜索规则**&#x200B;有三个主要组件：
-
-- **条件** — 基于查询的要求，当购物者的搜索匹配时会触发操作。
-- **事件** — 满足条件时发生的操作（手动排名和相关事件）。
-- **详细信息** — 规则的名称、可选时间范围和描述。
-
-**类别规则**&#x200B;使用&#x200B;**类别选择**&#x200B;而不是搜索查询条件；智能排名和手动排名的工作方式与搜索相同，但在[创建和管理规则](add.md)中发现了差异。
-
-您可以为搜索规则组合多个条件和操作，并安排任何规则在某个时段内处于活动状态。 您还可以设置一个&#x200B;**默认搜索规则**，该规则在没有更具体的搜索或类别规则时应用。
-
-## 类别规则 {#category-rules}
-
-**类别规则**&#x200B;控制&#x200B;**类别页面**&#x200B;上的产品顺序。 您可以选择一个或多个类别，然后应用智能排名（例如，查看次数最多、趋势最多的类别）和手动操作，例如固定、提升和掩盖。 它们不使用搜索查询条件。 有关设置步骤、规则类型以及排名在类别与搜索中的适用方式，请参阅[创建和管理规则](add.md)。
-
-## 要求
-
-简单&#x200B;**搜索规则**&#x200B;可以具有单个条件和单个事件，而复杂规则最多可以具有10个触发最多25个事件的条件。 **类别规则**&#x200B;遵循与手动排名相同的事件限制；它们不使用查询条件。
-
-规则可以具有：
-
-- 最多10个&#x200B;**条件**（仅限搜索规则）
-- 最多25个&#x200B;**事件**
-
-查询文本可以包含：
-
-- 字母数字字符（字母和数字）
-- 大写或小写字符。 将忽略大小写。
-
-## 逻辑运算符
-
-逻辑运算符`AND`和`OR`连接两个条件并返回不同的结果。 在多个条件的规则中使用的所有逻辑运算符是相同的。 无法在同一规则中同时使用`AND`和`OR`。
-
-### 匹配运算符
-
-匹配运算符`All`和`Any`确定用于连接规则中多个条件的逻辑运算符，并可用于更改现有运算符。
-
-- `All` — 使用`AND`逻辑运算符连接多个条件。 使用`All`匹配运算符的规则只能有一个`Search query is`条件。
-- `Any` — 使用`OR`逻辑运算符连接多个条件。
-
-在构成复杂规则时，使用缩进写出规则有助于描述返回要达到的结果所需的条件、关联事件和产品名称或SKU。 然后，构建规则并对结果进行测试。
-
-## 默认规则
-
-您可以设置在没有提供搜索词或无法应用其他搜索规则时应用的&#x200B;**默认搜索规则**。 如果将默认规则设置为“购买次数最多”，则查询将默认使用该排名类型，除非被更具体的搜索词取代。 无法为默认规则设置搜索词。 **类别规则**&#x200B;是独立的：它们仅适用于您选择的类别，不会替换默认列表规则。
-
-## 多个规则的优先顺序
-
-以下内容适用于&#x200B;**搜索规则**&#x200B;以及它们如何与给定搜索进行交互。 **类别规则**&#x200B;适用于每个类别；请参阅[创建和管理规则](add.md)，了解它们如何与搜索和默认规则一起使用。
-
-在任何时候，只对一个搜索词应用一个搜索规则。
-如果发现多个规则适用于搜索短语，则会应用所有这些规则。 如果两个规则（`rule 1`提升SKU1但`rule 2`隐藏同一SKU）之间存在冲突，则优先使用最近应用的规则(`rule 2`)。
-
-- 规则按“上次修改”时间戳排序。 最近修改的规则将按时间戳顺序最先应用，其后应用旧规则。
-- `query is`条件优先于其他条件。 如果较新的规则包含`query contains`条件，而较旧的规则具有`query is`条件，则应用`query is`规则。
-
-### 店面请求
-
-如果包含`query is`条件的活动规则与搜索短语匹配，则会应用该规则。 如果有多个具有`query is`条件的匹配规则，则应用最近更新的活动规则。
-否则，将应用最近更新的活动规则。
-
-### 预览请求
-
-在[!DNL Adobe Commerce Optimizer]中发出的请求的工作方式略有不同。 预览[!DNL Adobe Commerce Optimizer]时，将应用所有规则，包括已过期和已计划的规则。
-
-- 如果正在预览的规则具有`query is`条件，则应用它。
-- 如果要预览的规则不具有`query is`条件，但发现具有`query is`条件的后续活动匹配规则，则应用`query is`规则。
-- 如果正在预览的规则不具有`query is`条件，并且未找到具有`query is`条件的其他规则，则应用正在预览的规则。
+{{$include /help/_includes/ccdm-shared/merchandising/rules/overview.md}}
