@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 7b6ed19c7ca30a72bda94c8af60ba27324bcb2ea
+source-git-commit: 213fcf83118eb60b0e80db224192963592945d8d
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1416'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce as a Cloud Service] 概述
@@ -135,7 +135,7 @@ ht-degree: 0%
 Merchandising Services支持[!DNL Adobe Commerce as a Cloud Service]中的两个目录数据模型：
 
 - **目录服务模型** — 使用[!DNL Catalog Service]和[!DNL Live Search]以及[!DNL Product Recommendations]向店面提供目录数据、搜索和推荐。
-- [**可组合目录数据模型(CCDM)**(merchandising-services.md)] — 使用目录视图、策略、目录源和价格手册来定义可供店面使用的产品和价格。 CCDM也是[!DNL Adobe Commerce Optimizer]的目录基础。
+- [**可组合目录数据模型(CCDM)**](merchandising-services.md) — 使用目录视图、策略、目录源和价格手册来定义可供店面使用的产品和价格。 CCDM也是[!DNL Adobe Commerce Optimizer]的目录基础。
 
 [付款服务](../payment-services/guide-overview.md)支持付款方式，并提供付款处理、订单和发票的视图。 有关配置说明，请参阅[Payment Services主页](../payment-services/payments-home.md)。
 
