@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 2123503aaa8088baab9b9a5e3ce9c3036518061e
+source-git-commit: c77ccb87ac61a4dae8adc3079bb8aac7a4a9bf58
 workflow-type: tm+mt
-source-wordcount: '10011'
+source-wordcount: '10458'
 ht-degree: 0%
 ---
 # 发行说明
@@ -82,7 +82,74 @@ ht-degree: 0%
 
 在Adobe Unified Experience的[Commerce Admin](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/admin/admin-unified-experience)中了解详情。
 
-## 2026年11月 — 发行说#1 {#latest}
+## 2026年11月 — 发行说#2 {#latest}
+
+[!BADGE 沙盒]{type=Caution tooltip="列出的项目当前仅在沙盒环境中可用。 Adobe首先在沙盒环境中提供新版本，以便在该版本在生产环境中可用之前提供时间来测试即将进行的更改。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下项目已于2026年11月18日发布到沙盒环境。
+
+>[!BEGINSHADEBOX]
+
+### 产品评价
+
+[产品评论](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/marketing/merchandising/product-reviews/product-reviews)现在可用于[!DNL Adobe Commerce as a Cloud Service]。<!-- ACCS-2277, ACCS-432 -->
+
+默认情况下，产品审阅处于禁用状态。 要启用审阅，请导航到[!UICONTROL Stores] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Catalog] > [!UICONTROL Product Reviews]，清除[!UICONTROL Use System Value]复选框并将[!UICONTROL Enabled]设置为&#x200B;**是**。
+
+使用[`reviews`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/reviews) GraphQL查询检索审核，使用[`createProductReview`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/mutations/create-review)变异创建审核。
+
+### 自定义属性
+
+此发行版本引入了几个用于处理自定义属性的新REST和GraphQL功能：
+
+* **贷项通知单**
+  * `GET /V1/creditmemos` REST终结点现在可以按自定义属性值筛选贷项通知单。 在搜索条件中使用`custom_attributes.<code>`字段名称，如`searchCriteria[filter_groups][0][filters][0][field]=custom_attributes.is_appeasement`。<!-- ACCS-2158, ACCS-1915, ACCS-2159, ACCS-2221 -->
+
+  >[!IMPORTANT]
+  >
+  >默认情况下，此功能处于禁用状态。 要启用此功能，请联系您的Adobe Commerce客户成功经理或创建支持工单。
+
+* **订单**
+  * 新的`POST /V1/orders/:orderId/customAttributes` REST端点添加或更新现有订单上的自定义属性。<!-- ACCS-2137 -->
+* **返回**
+  * 除了退货之外，退货授权(RMA)现在还支持退货本身的自定义属性。<!-- CEXT-6925 -->
+    * `/V1/returns` REST端点保存并在返回时返回`custom_attributes`。
+    * GraphQL `Return`类型包含`custom_attributes`字段。
+  * 当返回具有`return_address`自定义属性时，Commerce使用该地址而不是配置的返回地址。 您可以通过`/V1/returns` REST端点或`observer.rma_save_before` webhook设置此属性。<!-- ACCS-2184 -->
+
+### 增强功能和错误修复
+
+此版本中包含以下选定的增强功能、优化和错误修复：
+
+* 修复了通过`PUT /V1/system/config` REST端点保存[!DNL AEM Assets]集成设置时未同步产品图像的问题。<!-- ACCS-2282 -->
+
+* 修复了在启用多个库存来源后，免费礼品车价格规则中的礼品SKU选择器未打开的问题。<!-- ACCS-2208 -->
+
+* 修复了从公司的共享目录中删除产品时，B2B购买者无法返回店面中已发运项目的问题。<!-- ACCS-2283, AC-19727 -->
+
+* 修复了客户另外收到一封电子邮件“您已链接到公司”的问题。<!-- ACCS-2292, ACCS-856 -->
+
+* 可协商报价和报价模板现在包括`created_by`个GraphQL字段，其中包括卖方的姓名和买方的姓名。<!-- USF-4511 -->
+
+* 修复了`POST /V1/customers` REST端点返回400错误的问题。<!-- CCSAAS-5786 -->
+
+* 保存客户时，不再重新保存未更改的地址。<!-- CCSAAS-5599 -->
+
+* 修复了关闭[!UICONTROL Manage Stock]的同一产品的同时订单可能会失败的问题。<!-- CCSAAS-5778, ACP2E-5457 -->
+
+* 修复了在您退还全部剩余开票数量时`POST /V1/invoice/:invoiceId/refund` REST端点返回错误的问题。<!-- CCSAAS-5794, AC-16056 -->
+
+* 改进了`GET /V1/products` REST端点的性能。<!-- CCSAAS-4664 -->
+
+* 产品CSV导入现在支持不以文件扩展名结尾的图像URL。<!-- CCSAAS-5605 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年11月 — 发行说#1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
