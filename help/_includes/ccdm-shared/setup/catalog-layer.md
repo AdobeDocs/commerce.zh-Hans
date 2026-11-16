@@ -96,7 +96,7 @@ ht-degree: 0%
 
 ## 在UI中手动添加目录层
 
-目录视图UI允许您手动创建和管理层，这对于生成AI支持的推荐的Sites Optimizer等集成特别有用。 对于批量层操作，请使用上面描述的数据摄取API方法[](#add-a-catalog-layer-via-data-ingestion)。
+目录视图UI允许您手动创建和管理层，这对于生成AI支持的推荐的Sites Optimizer等集成特别有用。 对于批量层操作，请使用上面描述的数据摄取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
 
 如果目录视图中不存在Sites Optimizer图层，则Sites Optimizer中的自动修复功能会自动创建一个图层，并为其分配最高优先级（最高编号）。 如果删除此图层，则会在下次运行Sites Optimizer中的自动修复功能时重新创建此图层，并将现有图层移动到较低顺序编号。 如果Sites Optimizer层的订单号不同，则自动修复功能不会更改其优先级。
 
