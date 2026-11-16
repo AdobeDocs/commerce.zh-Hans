@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '391'
 ht-degree: 5%
 ---
 # [!DNL SaaS Data Export] 指南
@@ -47,7 +47,6 @@ SaaS数据导出收集和导出各种类型的数据，称为&#x200B;_馈送_，
 - **目录实体源**&#x200B;聚合产品数据。 数据包括产品、产品属性、产品价格、产品变体、类别、类别权限和产品权限。
 - **范围馈送**&#x200B;汇总客户组、网站、商店和商店视图的数据。
 - **销售订单馈送**&#x200B;汇总订单数据，包括其相关实体，如发票、装运、贷项通知单等。
-- **多Source库存馈送**&#x200B;汇总有关库存库存状态物料的数据。
 
 SaaS数据导出是作为PHP扩展提供的，支持自动和手动同步：
 

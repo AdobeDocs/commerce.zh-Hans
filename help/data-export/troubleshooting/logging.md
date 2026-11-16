@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 0%
 ---
 # 查看日志并排除故障
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您还可以从管理员中的[数据馈送同步状态仪表板](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)跟踪产品和类别数据的数据导出馈送的运行状况和性能。
+>您还可以从管理员中的[数据馈送同步状态仪表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)跟踪产品和类别数据的数据导出馈送的运行状况和性能。
 
 ## 日志
 
@@ -159,7 +159,7 @@ Price feed full resync:
 - 数据导出错误日志(`commerce-data-export-errors.log`)捕获收集阶段发生的错误。
 - SaaS导出错误日志(`saas-export-errors.log`)捕获传输阶段发生的错误。
 
-如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+如果看到与配置或第三方扩展无关的错误，请提交包含尽可能多信息的[支持票证](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 ### 解决目录同步问题 {#resolvesync}
 
@@ -181,7 +181,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 
 ### 在馈送索引表中保留有效负载
 
-对于Commerce SaaS数据导出扩展(`magento/module-data-exporter`) 103.3.0及更高版本，立即导出馈送在索引表中仅保留最低要求数据。 信息源包括所有目录和库存状态信息源。
+对于Commerce SaaS数据导出扩展(`magento/module-data-exporter`) 103.3.0及更高版本，立即导出馈送在索引表中仅保留最低要求数据。 信息源包括所有目录信息源。
 
 不建议在生产环境中保留索引表中的有效负荷数据，但在开发人员环境中可能很有用。 在重新同步馈送时，通过添加`PERSIST_EXPORTED_FEED=1`环境变量在索引中包含馈送有效负载。
 
