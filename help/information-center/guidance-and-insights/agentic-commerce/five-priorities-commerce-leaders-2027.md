@@ -168,7 +168,7 @@ Adobe的代理商务方向包括以下功能：为AI做好准备的产品发现�
 
 **准备好让您的企业为AI支持的商务做准备了吗？**
 
-[探索Adobe Commerce as a Cloud Service](https://business.adobe.com/products/commerce.html)，了解Adobe如何帮助您打造更互联的智能购物体验。
+[探索Adobe Commerce as a Cloud Service](https://business.adobe.com/cn/products/commerce.html)，了解Adobe如何帮助您打造更互联的智能购物体验。
 
 >[!ENDSHADEBOX]
 
