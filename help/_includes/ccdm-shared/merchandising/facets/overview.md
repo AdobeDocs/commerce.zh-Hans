@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/facets/overview.md
+https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hans/blob/main/help/_includes/ccdm-shared/merchandising/facets/overview.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -43,7 +43,7 @@ Facet聚合按如下方式执行：如果店面具有三个Facet（类别、颜�
 
 了解有关产品属性及其属性的更多信息：
 
-- 有关连接到Adobe Commerce后端的部署，请参阅[产品属性概述](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)
+- 有关连接到Adobe Commerce后端的部署，请参阅[产品属性概述](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes)
 - 对于使用第三方Commerce后端的部署，请参阅[数据摄取元数据API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)。
 
 ## 分层搜索和搜索类型扩展

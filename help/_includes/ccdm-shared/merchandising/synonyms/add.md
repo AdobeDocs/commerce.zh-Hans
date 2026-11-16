@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/add.md
+https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hans/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/add.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -68,13 +68,13 @@ This includes related images in help/assets/ccdm-shared/.
 
 | 字段 | 描述 |
 |--- |--- |
-| [类型](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/type) | 确定同义词与关键字的含义相同，还是关键字的子集。 选项：<br />双向（默认） — 与关键字具有相同含义并返回相同搜索结果的术语<br />单向 — 是关键字的子集的术语。 单向同义词返回的特定产品列表更窄。 |
+| [类型](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/synonyms/type) | 确定同义词与关键字的含义相同，还是关键字的子集。 选项：<br />双向（默认） — 与关键字具有相同含义并返回相同搜索结果的术语<br />单向 — 是关键字的子集的术语。 单向同义词返回的特定产品列表更窄。 |
 | 关键词 | 通常与目录中的一系列产品相关的单词。 |
 | 扩展 | 与关键字具有相同或相似含义的其他术语。 |
 
 ## 管理同义词
 
-按照这些说明管理现有[同义词](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/overview)。
+按照这些说明管理现有[同义词](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/synonyms/overview)。
 
 ## 查找同义词
 

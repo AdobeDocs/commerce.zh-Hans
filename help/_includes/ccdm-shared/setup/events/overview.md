@@ -6,7 +6,7 @@ ht-degree: 10%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/events/overview.md
+https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hans/blob/main/help/_includes/ccdm-shared/setup/events/overview.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -22,7 +22,7 @@ This includes related images in help/assets/ccdm-shared/.
 
 >[!NOTE]
 >
->数据收集不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 [了解详情](https://www.adobe.com/privacy/experience-cloud.html)。
+>数据收集不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 [了解详情](https://www.adobe.com/cn/privacy/experience-cloud.html)。
 
 通过&#x200B;**事件**&#x200B;页面，您可以观察正在收集的店面事件数据。 通过查看事件数据收集，商家可以验证他们是否已正确实施店面事件，以及是否成功捕获了事件。 商家可以使用此页面识别潜在问题，并采取措施解决任何事件问题。
 
@@ -184,4 +184,4 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于推
 
 ## 支持
 
-如果您发现任何数据差异，或者如果推荐和搜索结果未按预期工作，请[提交支持票证](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+如果您发现任何数据差异，或者如果推荐和搜索结果未按预期工作，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
