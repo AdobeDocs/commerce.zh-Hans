@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '310'
 ht-degree: 0%
 ---
+# Recommendations最佳实践
+
 Adobe建议在使用推荐时遵循以下准则：
 
 - 使推荐类型多样化。 如果客户反复建议相同的产品，则开始忽略推荐。

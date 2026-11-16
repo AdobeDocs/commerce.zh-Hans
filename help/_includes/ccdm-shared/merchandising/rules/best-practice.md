@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '455'
 ht-degree: 0%
 ---
+# 促销规则最佳实践
+
 为了优化转化和收入，请实施有效的&#x200B;**搜索规则**、强大的&#x200B;**默认列表**&#x200B;规则和&#x200B;**[类别规则](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add#rule-types)**。 使用销售数据、库存、促销活动和[智能排名](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking)调整排名。
 
 建立精心考虑的&#x200B;**默认规则**&#x200B;至关重要。 您的[默认规则](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/overview#default-rule)确定在没有更具体的搜索规则应用时搜索结果的初始排序方式，这提高了发现和购买的可能性。 请定期检查，以使其与购物者需求和促销活动保持同步。

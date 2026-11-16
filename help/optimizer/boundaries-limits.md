@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
+source-git-commit: 57a905703b11ef8fc4ca4527a5fc136dc81615cc
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1491'
 ht-degree: 0%
 ---
 # 限制和边界
@@ -151,7 +151,7 @@ Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“
 | 可搜索属性 | 可以为目录搜索编制索引的产品特征数 | 200 | 否 |
 | 可排序的属性 | 在搜索和类别页面上可用作排序选项的产品特征数。 | 50 | 否 |
 | 搜索分页深度 | 通过搜索分页可访问的最大产品数（例如，第100页×100个产品/页面） | 1万 | 否 |
-| Facet | 可过滤的产品属性（如品牌、颜色、大小和价格）的数量，可配置这些属性以帮助购物者优化搜索结果和浏览类别 | 100<p>必须是可筛选的属性</p> | 否 |
+| Facet | 可过滤的产品属性（如品牌、颜色、大小和价格）的数量，可配置这些属性以帮助购物者优化搜索结果和浏览类别 | 100<p>必须是可筛选的属性</p> | 是<p>可以通过支持请求增加</p> |
 | 每个方面的选项 | 购物者可在Facet中选择的可过滤产品属性值的数量（例如，“红色”、“蓝色”表示颜色，“小”、“Medium”表示大小） | 100 | 是<p>可以通过支持请求增加</p> |
 
 {style="table-layout:auto"}

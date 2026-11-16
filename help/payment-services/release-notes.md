@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
+source-git-commit: d112f591ea46e4f3bdc081566a9a036df4ccfe5a
 workflow-type: tm+mt
-source-wordcount: '5663'
+source-wordcount: '5695'
 ht-degree: 0%
 ---
 
@@ -131,6 +131,13 @@ _2021年6月28日_
 >
 > 经常发行版本以根据需要提供新功能和修复。 发布计划未修复。
 
+## v2.17.1
+
+_2026年11月16日_
+
+[!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.6及更高版本
+
+![修复了问题](../assets/fix.svg)<!-- PAY-7254 -->修复了以下问题：PayPal付款审批后，条款和条件复选框被清除，购物者无法完成结账。
 
 ## v2.17.0
 
@@ -543,7 +550,7 @@ _2023年9月27日_
 
 [!BADGE 支持]{type=Informative tooltip="支持"} Adobe Commerce版本2.4.4及更高版本
 
-![修复了问题](../assets/fix.svg)<!-- Issue PAY-4870 -->修复了在使用最新版本发送扩展版本时，Storefront中正确填充新标头属性的问题。 以前，在`1.3.0`版本的Commerce Services连接器中，您无法从[!DNL Payment Services]扩展扩展`User-Agent header`。
+<!-- Issue PAY-4870 --> 修复了在使用最新版本发送扩展版本时，Storefront中正确填充新标题属性的问题。 以前，在`1.3.0`版本的Commerce Services连接器中，您无法从[!DNL Payment Services]扩展扩展`User-Agent header`。
 
 ## v2.2.0
 

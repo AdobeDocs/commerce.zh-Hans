@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# 活动
+
 事件是通过利用实时数据洞察来增强购物体验并提高转化率的重要工具。
 
 使用可组合目录数据模型(CCDM)的促销服务会自动将店面事件部署到您的站点。 这些事件从购物者在您网站上的互动中捕获数据。 此匿名数据支持[推荐](../../manage-results/recommendation-performance.md)、[产品发现](../../manage-results/search-performance.md)和[成功量度](../../manage-results/success-metrics.md)。

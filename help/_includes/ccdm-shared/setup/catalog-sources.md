@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '510'
 ht-degree: 0%
 ---
+# 目录源
+
 目录源代表产品、属性和类别的权威范围。 它们通常映射到语言、受众或原始系统边界，并决定搜索、过滤和排序行为。
 
 ## 目录源与相关概念

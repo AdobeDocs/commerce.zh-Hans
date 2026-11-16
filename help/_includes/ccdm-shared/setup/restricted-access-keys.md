@@ -1,10 +1,10 @@
 ---
-source-git-commit: b6b737220a6dadf55b03da54e8d74226ed578cd0
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1633'
 ht-degree: 0%
 ---
-# 访问密钥受限
+# 受限访问密钥
 
 受限访问密钥允许授权客户端应用程序访问[专用目录视图](private-catalog-view.md) — 只有携带分配密钥中的有效签名令牌的请求才能检索目录数据。 所有其他请求都将被拒绝，包括来自无法明确访问此目录视图的购物者的请求，以及探测Adobe Commerce促销服务API的脚本。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 使用带有CCDM的Adobe Commerce as a Cloud Service或通过连接器连接到Adobe Commerce的Adobe Commerce Optimizer的客户可以从Commerce管理员生成RSA密钥对。 请参阅[管理受限访问密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
 
->[!TAB Adobe Commerce Optimizer Studio — 手动密钥管理]
+>[!TAB Adobe Commerce Optimizer Studio]
 
 使用Adobe Commerce Optimizer Studio的客户必须生成和管理自己的RSA密钥对，然后将公钥添加到系统中。 这是具有第三方后端的Adobe Commerce Optimizer所需的工作流。 使用连接器的客户也可以使用此工作流而不是Commerce管理员。
 
@@ -136,7 +136,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 请参阅[键选择和轮换](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation)。 这适用于带有CCDM的Adobe Commerce as a Cloud Service以及通过Adobe Commerce Optimizer连接器与Adobe Commerce Optimizer集成的Adobe Commerce项目。
 
->[!TAB Adobe Commerce Optimizer Studio（手动密钥管理）]
+>[!TAB Adobe Commerce Optimizer Studio]
 
 对于具有第三方后端的Adobe Commerce Optimizer，此过程是必需的。 使用该连接器的客户也可以使用该连接器，而不是Commerce管理员。
 
@@ -154,3 +154,4 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 ## 更多此类内容
 
 - [私有目录视图](private-catalog-view.md) — 了解如何使用受限制的访问密钥保护目录视图。
+

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '872'
 ht-degree: 0%
 ---
+# 促销设置
+
 使用&#x200B;*设置*&#x200B;工作区为店面配置搜索和产品发现。 可以使用以下选项卡：
 
 - **彩块化** — 配置用作搜索过滤器的价格范围组和间隔。

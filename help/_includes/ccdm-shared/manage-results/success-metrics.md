@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '2821'
+source-wordcount: '2823'
 ht-degree: 0%
 ---
+# 成功量度
+
 本页概述了存储的关键性能度量。 目标是了解使用可组合目录数据模型(CCDM)实施促销服务的结果，以确定增长机会和优化领域。
 
 ![成功量度报告](/help/assets/ccdm-shared/manage-results/success-metrics.png)

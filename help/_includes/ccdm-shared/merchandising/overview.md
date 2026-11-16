@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '302'
 ht-degree: 0%
 ---
+# Adobe Merchandising
+
 了解如何通过产品发现和推荐，为购物者创建个性化体验。
 
 这些Adobe Merchandising服务基于可组合目录数据模型(CCDM)构建，可将&#x200B;*产品数据*&#x200B;与&#x200B;*产品上下文*&#x200B;分开。 产品数据包括SKU、属性、元数据、资源和价格。 产品上下文定义如何传递该数据，包括[目录视图](/help/optimizer/setup/catalog-view.md)、[数据访问策略](/help/optimizer/setup/policies.md)和[目录源](/help/optimizer/setup/catalog-sources.md) （区域设置）。 由于目录视图和策略控制店面数据，因此您可以为B2B、B2C和D2C模型编写自定义目录，并定制购物体验，而无需复制基本数据。
