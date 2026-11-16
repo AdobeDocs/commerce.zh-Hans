@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '2823'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/manage-results/success-metrics.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 成功量度
 
 本页概述了存储的关键性能度量。 目标是了解使用可组合目录数据模型(CCDM)实施促销服务的结果，以确定增长机会和优化领域。
@@ -68,7 +78,7 @@ C2PA元数据是基于[C2PA开放标准](https://c2pa.org/)的、易于篡改的
 
 ![检查样本](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
-了解有关[生成AI内容透明度](https://experienceleague.adobe.com/zh-hans/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)的更多信息。
+了解有关[生成AI内容透明度](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)的更多信息。
 
 ## 将成功量度和Sites Optimizer结合使用
 

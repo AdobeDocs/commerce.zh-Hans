@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/add.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 创建同义词
 
 通过添加您自己的同义词策划列表来提高客户参与度。 每个目录源最多可以添加200个同义词。
@@ -22,7 +32,7 @@ ht-degree: 0%
 ### 双向同义词
 
 1. 输入要匹配的&#x200B;**关键字**&#x200B;词或短语。
-1. 输入要作为关键字的同义词添加的&#x200B;**扩展**&#x200B;术语。 用逗号分隔多个术语。
+1. 输入要作为关键字的同义词添加的&#x200B;**扩展**术语。 用逗号分隔多个术语。
 在此示例中，要匹配的关键字是“pants”，而扩展术语集是“trousers， slacks”。
 
    ![双向同义词](/help/assets/ccdm-shared/synonyms/synonym-add-two-way.png)
@@ -58,13 +68,13 @@ ht-degree: 0%
 
 | 字段 | 描述 |
 |--- |--- |
-| [类型](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/synonyms/type) | 确定同义词与关键字的含义相同，还是关键字的子集。 选项：<br />双向（默认） — 与关键字具有相同含义并返回相同搜索结果的术语<br />单向 — 是关键字的子集的术语。 单向同义词返回的特定产品列表更窄。 |
+| [类型](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/type) | 确定同义词与关键字的含义相同，还是关键字的子集。 选项：<br />双向（默认） — 与关键字具有相同含义并返回相同搜索结果的术语<br />单向 — 是关键字的子集的术语。 单向同义词返回的特定产品列表更窄。 |
 | 关键词 | 通常与目录中的一系列产品相关的单词。 |
 | 扩展 | 与关键字具有相同或相似含义的其他术语。 |
 
 ## 管理同义词
 
-按照这些说明管理现有[同义词](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/synonyms/overview)。
+按照这些说明管理现有[同义词](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/overview)。
 
 ## 查找同义词
 

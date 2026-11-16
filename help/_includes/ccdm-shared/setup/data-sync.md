@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/data-sync.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 目录同步
 
 “**数据同步**”页显示从数据源(现有Commerce目录、产品信息管理(PIM)系统、企业资源规划(ERP)系统等)传输到Merchandising Services数据层的产品数据的同步状态概览。
@@ -51,4 +61,4 @@ ht-degree: 0%
 
 ## 验证数据同步是否正常工作
 
-对于使用Adobe Commerce作为上游数据源的项目，您可以监视数据导出过程，并从数据馈送同步状态页面启动重新同步操作。 有关详细信息，请参阅[数据馈送同步状态监视](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)。
+对于使用Adobe Commerce作为上游数据源的项目，您可以监视数据导出过程，并从数据馈送同步状态页面启动重新同步操作。 有关详细信息，请参阅[数据馈送同步状态监视](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)。
