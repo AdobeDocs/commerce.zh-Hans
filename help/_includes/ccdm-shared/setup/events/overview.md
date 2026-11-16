@@ -1,16 +1,18 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# 活动
+
 事件是通过利用实时数据洞察来增强购物体验并提高转化率的重要工具。
 
 使用可组合目录数据模型(CCDM)的促销服务会自动将店面事件部署到您的站点。 这些事件从购物者在您网站上的互动中捕获数据。 此匿名数据支持[推荐](../../manage-results/recommendation-performance.md)、[产品发现](../../manage-results/search-performance.md)和[成功量度](../../manage-results/success-metrics.md)。
 
 >[!NOTE]
 >
->数据收集不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 [了解详情](https://www.adobe.com/cn/privacy/experience-cloud.html)。
+>数据收集不包括个人身份信息(PII)。 所有用户标识符（如Cookie ID和IP地址）都经过严格匿名处理。 [了解详情](https://www.adobe.com/privacy/experience-cloud.html)。
 
 通过&#x200B;**事件**&#x200B;页面，您可以观察正在收集的店面事件数据。 通过查看事件数据收集，商家可以验证他们是否已正确实施店面事件，以及是否成功捕获了事件。 商家可以使用此页面识别潜在问题，并采取措施解决任何事件问题。
 
@@ -172,4 +174,4 @@ _冷启动_&#x200B;问题是指模型训练并生效所需的时间。 对于推
 
 ## 支持
 
-如果您发现任何数据差异，或者如果推荐和搜索结果未按预期工作，请[提交支持票证](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+如果您发现任何数据差异，或者如果推荐和搜索结果未按预期工作，请[提交支持票证](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

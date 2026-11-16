@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 0%
 ---
+# 促销规则
+
 促销规则将逻辑与操作相结合，以塑造产品在&#x200B;**搜索结果**、**默认产品列表**&#x200B;中通过&#x200B;**默认搜索规则**&#x200B;以及在&#x200B;**类别页面**&#x200B;上的显示方式。 您可以提升、隐藏、固定或隐藏产品，并应用&#x200B;**智能排名**，以便列表能够反映您的业务目标。
 
 每个&#x200B;**搜索规则**&#x200B;有三个主要组件：
@@ -12,13 +14,13 @@ ht-degree: 0%
 - **事件** — 满足条件时发生的操作（手动排名和相关事件）。
 - **详细信息** — 规则的名称、可选时间范围和描述。
 
-**类别规则**&#x200B;使用&#x200B;**类别选择**&#x200B;而不是搜索查询条件；智能排名和手动排名的工作方式与搜索相同，但在[创建和管理规则](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add)中发现了差异。
+**类别规则**&#x200B;使用&#x200B;**类别选择**&#x200B;而不是搜索查询条件；智能排名和手动排名的工作方式与搜索相同，但在[创建和管理规则](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add)中发现了差异。
 
 您可以为搜索规则组合多个条件和操作，并安排任何规则在某个时段内处于活动状态。 您还可以设置一个&#x200B;**默认搜索规则**，该规则在没有更具体的搜索或类别规则时应用。
 
 ## 类别规则 {#category-rules}
 
-**类别规则**&#x200B;控制&#x200B;**类别页面**&#x200B;上的产品顺序。 您可以选择一个或多个类别，然后应用智能排名（例如，查看次数最多、趋势最多的类别）和手动操作，例如固定、提升和掩盖。 它们不使用搜索查询条件。 有关设置步骤、规则类型以及排名在类别与搜索中的适用方式，请参阅[创建和管理规则](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add)。
+**类别规则**&#x200B;控制&#x200B;**类别页面**&#x200B;上的产品顺序。 您可以选择一个或多个类别，然后应用智能排名（例如，查看次数最多、趋势最多的类别）和手动操作，例如固定、提升和掩盖。 它们不使用搜索查询条件。 有关设置步骤、规则类型以及排名在类别与搜索中的适用方式，请参阅[创建和管理规则](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add)。
 
 ## 要求
 
@@ -53,7 +55,7 @@ ht-degree: 0%
 
 ## 多个规则的优先顺序
 
-以下内容适用于&#x200B;**搜索规则**&#x200B;以及它们如何与给定搜索进行交互。 **类别规则**&#x200B;适用于每个类别；请参阅[创建和管理规则](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add)，了解它们如何与搜索和默认规则一起使用。
+以下内容适用于&#x200B;**搜索规则**&#x200B;以及它们如何与给定搜索进行交互。 **类别规则**&#x200B;适用于每个类别；请参阅[创建和管理规则](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add)，了解它们如何与搜索和默认规则一起使用。
 
 在任何时候，只对一个搜索词应用一个搜索规则。
 如果发现多个规则适用于搜索短语，则会应用所有这些规则。 如果两个规则（`rule 1`提升SKU1但`rule 2`隐藏同一SKU）之间存在冲突，则优先使用最近应用的规则(`rule 2`)。

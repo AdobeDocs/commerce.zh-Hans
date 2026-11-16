@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '487'
 ht-degree: 0%
 ---
+# 目录同步
+
 “**数据同步**”页显示从数据源(现有Commerce目录、产品信息管理(PIM)系统、企业资源规划(ERP)系统等)传输到Merchandising Services数据层的产品数据的同步状态概览。
 
 **数据同步**&#x200B;页面提供了有关店面产品数据可用性的宝贵见解，确保可及时向购物者显示这些数据。
@@ -49,4 +51,4 @@ ht-degree: 0%
 
 ## 验证数据同步是否正常工作
 
-对于使用Adobe Commerce作为上游数据源的项目，您可以监视数据导出过程，并从数据馈送同步状态页面启动重新同步操作。 有关详细信息，请参阅[数据馈送同步状态监视](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)。
+对于使用Adobe Commerce作为上游数据源的项目，您可以监视数据导出过程，并从数据馈送同步状态页面启动重新同步操作。 有关详细信息，请参阅[数据馈送同步状态监视](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)。

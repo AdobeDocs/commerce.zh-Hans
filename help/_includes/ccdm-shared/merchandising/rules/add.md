@@ -1,16 +1,18 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '4094'
+source-wordcount: '4098'
 ht-degree: 0%
 ---
+# 创建和管理规则
+
 构建规则需要选择应用规则的目录视图、配置规则描述、类型并定义其条件和排名、测试结果和发布规则。
 
 ## 创建规则 {#create-a-rule}
 
 1. 从菜单中，转到&#x200B;_促销_ > **促销规则**。
-1. （可选）使用&#x200B;**目录视图**&#x200B;下拉列表选择应用规则的目录视图。
-您创建的规则将作用域限定于选定的视图（如果选择&#x200B;**所有视图**，则限定于所有目录视图）。 请参阅[选择目录视图](workspace.md#select-catalog-view)，了解目录视图作用域的工作方式。
+1. （可选）使用&#x200B;**目录视图**下拉列表选择应用规则的目录视图。
+您创建的规则将作用域限定于选定的视图（如果选择**所有视图**，则限定于所有目录视图）。 请参阅[选择目录视图](workspace.md#select-catalog-view)，了解目录视图作用域的工作方式。
 
 1. 单击&#x200B;**[!UICONTROL Create rule]**&#x200B;启动规则编辑器。
 
@@ -208,7 +210,7 @@ ht-degree: 0%
 
 有关设置搜索权重的信息：
 
-- 有关所有Adobe Commerce部署，请参阅&#x200B;_目录管理指南_&#x200B;中的[搜索结果](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results)。
+- 有关所有Adobe Commerce部署，请参阅&#x200B;_目录管理指南_&#x200B;中的[搜索结果](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)。
 - 有关独立的Adobe Commerce Optimizer部署，请参阅&#x200B;_Merchandising Services Developer Guide_&#x200B;中的[元数据REST API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)。
 
 ### 手动排名 {#manual-ranking}
@@ -244,7 +246,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->此功能处于[测试版](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
+>此功能处于[测试版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
 
 **属性排名**&#x200B;自动将&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;操作应用于符合一个或多个属性条件的每个产品，而无需您选择单个SKU。 属性排名与[智能排名](#intelligent-ranking)和[手动排名](#manual-ranking)一起显示在规则编辑器中，可用于&#x200B;**所有产品规则**、**搜索规则**&#x200B;和&#x200B;**类别规则**。 使用它来扩展大型目录中的商品促销，例如，增加给定品牌的所有产品，或将每个产品隐藏在停产的颜色中。
 
@@ -295,7 +297,7 @@ ht-degree: 0%
 
 ## 编辑、查看和删除规则 {#edit-view-and-delete-rules}
 
-要更新现有规则的属性，请按照以下说明操作。 创建规则后，不能更改该规则的目录视图（范围）；创建规则时会设置范围。 请参阅[选择目录视图](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view)。
+要更新现有规则的属性，请按照以下说明操作。 创建规则后，不能更改该规则的目录视图（范围）；创建规则时会设置范围。 请参阅[选择目录视图](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view)。
 
 ### 编辑规则
 

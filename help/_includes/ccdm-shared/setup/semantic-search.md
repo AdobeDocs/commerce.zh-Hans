@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '567'
 ht-degree: 0%
 ---
+# 语义搜索
+
 语义搜索使用人工智能来理解购物者的含义，而不仅仅是他们键入的准确单词。 即使您的目录没有使用相关短语，诸如“海滩婚礼的礼服”或“整天穿着舒适的鞋子”之类的查询也可以返回相关产品。
 
 产品发现系统将关键字匹配和语义匹配结合在一个搜索体验中。 您不会在店面中管理单独的关键字和语义模式。

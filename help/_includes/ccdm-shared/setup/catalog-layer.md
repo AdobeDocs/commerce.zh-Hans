@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1470'
 ht-degree: 0%
 ---
+# 目录层
+
 目录层允许您在不更改原始源数据的情况下修改产品数据。 图层通过在基本目录之上创建一个图层来修改产品属性，如名称、描述、图像、链接和元数据。 原始产品数据保持不变，允许您安全自定义产品并随时恢复更改。
 
 ![目录层](/help/assets/ccdm-shared/setup/catalog-layers.png)
@@ -94,7 +96,7 @@ ht-degree: 0%
 
 ## 在UI中手动添加目录层
 
-目录视图UI允许您手动创建和管理层，这对于生成AI支持的推荐的Sites Optimizer等集成特别有用。 对于批量层操作，请使用上面描述的数据摄取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
+目录视图UI允许您手动创建和管理层，这对于生成AI支持的推荐的Sites Optimizer等集成特别有用。 对于批量层操作，请使用上面描述的数据摄取API方法[](#add-a-catalog-layer-via-data-ingestion)。
 
 如果目录视图中不存在Sites Optimizer图层，则Sites Optimizer中的自动修复功能会自动创建一个图层，并为其分配最高优先级（最高编号）。 如果删除此图层，则会在下次运行Sites Optimizer中的自动修复功能时重新创建此图层，并将现有图层移动到较低顺序编号。 如果Sites Optimizer层的订单号不同，则自动修复功能不会更改其优先级。
 
@@ -197,6 +199,6 @@ ht-degree: 0%
 ## 更多此类内容
 
 * [目录视图](catalog-view.md) — 为不同的店面配置目录视图
-* [产品视觉效果](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/product-visuals) — 将AEM Assets用于产品图像
+* [产品视觉效果](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) — 将AEM Assets用于产品图像
 * [机会](../manage-results/opportunities.md) — 了解使用目录层的AI支持优化
 * [受限访问密钥](restricted-access-keys.md) — 使用签名令牌身份验证保护目录视图

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '917'
 ht-degree: 0%
 ---
+# 推荐性能
+
 “推荐性能”页显示已配置推荐的列表，以及帮助您评估其效果的关键量度。 您可以配置视图以显示过去一天、一周或月的量度。 这些见解显示查看或单击每个推荐单元的频率，可帮助您评估性能并识别优化机会。
 
 >[!INFO]

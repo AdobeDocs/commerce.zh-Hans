@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1559'
 ht-degree: 0%
 ---
+# 创建和管理推荐
+
 在创建推荐时，您创建了一个包含推荐产品&#x200B;_项_&#x200B;的&#x200B;_推荐单元_，或构件。
 
 ![推荐单位](/help/assets/ccdm-shared/recommendations/unit.png)

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '177'
 ht-degree: 1%
 ---
+# Facet Workspace
+
 *Facet*&#x200B;工作区列出了当前可用的所有Facet，并允许访问设置和管理Facet所需的工具。 固定多面首先出现在现有Facet列表中，然后是动态Facet。 您可以搜索Facet列表。
 
 ![Facet Workspace](/help/assets/ccdm-shared/facets/facet-workspace.png)

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '740'
 ht-degree: 0%
 ---
+# Adobe Merchandising服务的目录视图概述
+
 <!--This shared include file contains the conceptual and architecture overview of catalog views for Adobe Merchandising Services-->
 
 目录视图定义客户端可以检索的产品和定价。 它结合了目录源、目录层、策略和价格手册以支持不同的品牌、地区、业务部门或渠道。
@@ -38,7 +40,7 @@ ht-degree: 0%
 
 - **Adobe Commerce后端** — 系统将导出Commerce目录馈送，将它们映射到数据摄取REST API所需的格式，并将馈送数据同步到Adobe Merchandising Services数据层。 在此模型中，Adobe Commerce管理初始同步和后续更新。 信息源包括产品、类别、产品属性、价格和价格手册。
 
-- **第三方后端或源系统** — 连接器或集成服务通过API、事件或导出馈送从源检索目录数据，然后针对可组合目录数据模型(CCDM)架构映射和验证该数据，并使用数据摄取REST API将数据同步到Adobe Merchandising服务层。 该集成负责初始加载并发送以后的更改。 平台特定的连接器（如Adobe的[Salesforce Commerce Connector](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/developer/salesforce-connector)）可以提供起点。
+- **第三方后端或源系统** — 连接器或集成服务通过API、事件或导出馈送从源检索目录数据，然后针对可组合目录数据模型(CCDM)架构映射和验证该数据，并使用数据摄取REST API将数据同步到Adobe Merchandising服务层。 该集成负责初始加载并发送以后的更改。 平台特定的连接器（如Adobe的[Salesforce Commerce Connector](https://experienceleague.adobe.com/en/docs/commerce/optimizer/developer/salesforce-connector)）可以提供起点。
 
 **2. 统一的基本目录**
 引入的数据在目录服务数据管道中创建统一的基本目录。 此单一来源可消除跨业务部门的数据重复。

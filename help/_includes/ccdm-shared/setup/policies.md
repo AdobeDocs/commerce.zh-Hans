@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '993'
 ht-degree: 0%
 ---
+# 支持
+
 策略定义应用于目录视图中产品的过滤器。 他们帮助定制返回店面或渠道的产品分类。 这可确保将正确的内容交付到正确的目标。 例如，实体商店、市场以及Google、Facebook和Instagram等广告渠道。
 
 策略使用产品属性（如品牌、模型或部件类别）根据业务需求定制目录数据。 &#x200B;

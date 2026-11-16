@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 ---
+# 专用目录视图
+
 默认情况下，[目录视图](catalog-view.md)是公用的。 限制对目录视图的访问，以便只有具有有效签名令牌的请求才能检索其数据。
 
 目录视图通过以下两种方式之一变为专用：
@@ -96,7 +98,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->对于使用带有CCDM的促销服务的Adobe Commerce B2B部署，您可以从Commerce管理员&#x200B;**受限访问密钥**&#x200B;页面（**系统** > **数据传输**）管理访问密钥。 有关详细信息，请参阅&#x200B;*[!DNL Adobe Commerce Optimizer Connector]集成指南*&#x200B;中的[受限访问密钥管理](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
+>对于使用带有CCDM的促销服务的Adobe Commerce B2B部署，您可以从Commerce管理员&#x200B;**受限访问密钥**&#x200B;页面（**系统** > **数据传输**）管理访问密钥。 有关详细信息，请参阅&#x200B;*[!DNL Adobe Commerce Optimizer Connector]集成指南*&#x200B;中的[受限访问密钥管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
 
 ## 更多此类内容
 

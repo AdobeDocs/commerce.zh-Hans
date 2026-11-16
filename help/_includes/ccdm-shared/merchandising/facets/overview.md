@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '921'
 ht-degree: 0%
 ---
+# Facet
+
 Facet是一种高性能筛选方法，它使用属性值的多个维度作为搜索条件。
 
 ![已过滤的搜索结果](/help/assets/ccdm-shared/facets/storefront-search-results-run.png)
@@ -31,7 +33,7 @@ Facet聚合按如下方式执行：如果店面具有三个Facet（类别、颜�
 
 了解有关产品属性及其属性的更多信息：
 
-- 有关连接到Adobe Commerce后端的部署，请参阅[产品属性概述](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/product-attributes/product-attributes)
+- 有关连接到Adobe Commerce后端的部署，请参阅[产品属性概述](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)
 - 对于使用第三方Commerce后端的部署，请参阅[数据摄取元数据API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)。
 
 ## 分层搜索和搜索类型扩展
