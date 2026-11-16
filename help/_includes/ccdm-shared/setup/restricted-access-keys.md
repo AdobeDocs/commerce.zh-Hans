@@ -10,7 +10,7 @@ ht-degree: 0%
 
 受限访问密钥通过以下两种方式之一进行设置：
 
-- **自动为B2B共享目录** — 系统为与B2B共享目录关联的目录视图设置并分配初始密钥。 然后，您可以通过Commerce管理员管理密钥和密钥分配。 请参阅&#x200B;*Commerce管理指南*&#x200B;中的[目录视图身份验证](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。 自动配置在以下部署中可用：
+- **自动为B2B共享目录** — 系统为与B2B共享目录关联的目录视图设置并分配初始密钥。 然后，您可以通过Commerce管理员管理密钥和密钥分配。 请参阅&#x200B;*Commerce管理指南*&#x200B;中的[目录视图身份验证](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。 自动配置在以下部署中可用：
 
   - 适用于Adobe Commerce B2B的&#x200B;**具有CCDM的Adobe Commerce as a Cloud Service**。
   - **云端或内部部署上的Adobe Commerce**&#x200B;通过[!DNL Adobe Commerce Optimizer Connector for B2B]与Adobe Commerce Optimizer集成。 需要连接器的B2B扩展。
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本节及后面的两个部分介绍了管理受限访问密钥的手动过程。 对于具有自动密钥设置的B2B共享目录，请从Commerce管理员管理密钥。 请参阅[受限访问密钥](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
+>本节及后面的两个部分介绍了管理受限访问密钥的手动过程。 对于具有自动密钥设置的B2B共享目录，请从Commerce管理员管理密钥。 请参阅[受限访问密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
 
 ### 添加受限访问密钥
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!TAB Adobe Commerce管理员]
 
-使用带有CCDM的Adobe Commerce as a Cloud Service或通过连接器连接到Adobe Commerce的Adobe Commerce Optimizer的客户可以从Commerce管理员生成RSA密钥对。 请参阅[管理受限访问密钥](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
+使用带有CCDM的Adobe Commerce as a Cloud Service或通过连接器连接到Adobe Commerce的Adobe Commerce Optimizer的客户可以从Commerce管理员生成RSA密钥对。 请参阅[管理受限访问密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
 
 >[!TAB Adobe Commerce Optimizer Studio]
 
@@ -113,7 +113,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 受限制访问密钥的管理方式为以下两种方式之一，具体取决于您使用目录保护的方式：
 
-- **自动，对于B2B共享目录** — 对于使用带有CCDM的促销服务的Adobe Commerce B2B部署，以及通过[!DNL Adobe Commerce Optimizer Connector for B2B]集成的Adobe Commerce Optimizer部署（需要B2B扩展），该服务将在创建目录视图时自动生成并分配第一个受限访问密钥。 每个目录视图都有自己的键。 之后，您可以从共享目录或公司帐户页面管理每个密钥。 您还可以从Commerce管理员&#x200B;**受限访问密钥**&#x200B;页面（**系统** > **数据传输**）查看和管理密钥。 请参阅[管理目录视图配置](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。
+- **自动，对于B2B共享目录** — 对于使用带有CCDM的促销服务的Adobe Commerce B2B部署，以及通过[!DNL Adobe Commerce Optimizer Connector for B2B]集成的Adobe Commerce Optimizer部署（需要B2B扩展），该服务将在创建目录视图时自动生成并分配第一个受限访问密钥。 每个目录视图都有自己的键。 之后，您可以从共享目录或公司帐户页面管理每个密钥。 您还可以从Commerce管理员&#x200B;**受限访问密钥**&#x200B;页面（**系统** > **数据传输**）查看和管理密钥。 请参阅[管理目录视图配置](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。
 
   共享目录和存储视图的每个组合都投影为单独的目录视图。 投影是导出到用于该组合的促销服务数据层的目录视图、策略、价格手册引用和受限访问关键配置数据。 因此，分配给多个商店视图的共享目录将生成多个目录视图，每个视图都具有自己的键。 编辑或旋转一个目录视图的键而不影响其他目录视图。
 
@@ -134,7 +134,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 >[!TAB Adobe Commerce管理员]
 
-请参阅[键选择和轮换](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation)。 这适用于带有CCDM的Adobe Commerce as a Cloud Service以及通过Adobe Commerce Optimizer连接器与Adobe Commerce Optimizer集成的Adobe Commerce项目。
+请参阅[键选择和轮换](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation)。 这适用于带有CCDM的Adobe Commerce as a Cloud Service以及通过Adobe Commerce Optimizer连接器与Adobe Commerce Optimizer集成的Adobe Commerce项目。
 
 >[!TAB Adobe Commerce Optimizer Studio]
 
@@ -149,7 +149,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 ## 限制
 
-查看[目录视图和策略限制](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)。
+查看[目录视图和策略限制](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits)。
 
 ## 更多此类内容
 

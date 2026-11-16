@@ -8,7 +8,7 @@ ht-degree: 0%
 
 下面提供了创建同义词时的最佳实践列表。
 
-- 默认情况下，系统会管理拼写错误。 要包含购物者可能使用的单词，请设置同义词。 这些字词不同于您在目录中指定的字。 您不希望因为某人正在查找“沙发”，而您的产品却被列为“沙发”而丢失销售。 通过输入客户可能用于查找您的产品的所有字词来捕获广泛的搜索词。 为了改进结果，[将同义词设置为单向或双向](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type)。
+- 默认情况下，系统会管理拼写错误。 要包含购物者可能使用的单词，请设置同义词。 这些字词不同于您在目录中指定的字。 您不希望因为某人正在查找“沙发”，而您的产品却被列为“沙发”而丢失销售。 通过输入客户可能用于查找您的产品的所有字词来捕获广泛的搜索词。 为了改进结果，[将同义词设置为单向或双向](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type)。
 
 - 将品牌名称和缩写映射到其全名，例如“HP”映射到“Hewlett-Packard”，将常用产品昵称映射到“iPhone”映射到“Apple iPhone”。
 

@@ -68,7 +68,7 @@ C2PA元数据是基于[C2PA开放标准](https://c2pa.org/)的、易于篡改的
 
 ![检查样本](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
-了解有关[生成AI内容透明度](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)的更多信息。
+了解有关[生成AI内容透明度](https://experienceleague.adobe.com/zh-hans/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)的更多信息。
 
 ## 将成功量度和Sites Optimizer结合使用
 
