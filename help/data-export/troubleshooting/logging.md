@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 0%
 ---
 # 查看日志并排除故障
@@ -181,7 +181,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 
 ### 在馈送索引表中保留有效负载
 
-对于Commerce SaaS数据导出扩展(`magento/module-data-exporter`) 103.3.0及更高版本，立即导出馈送在索引表中仅保留最低要求数据。 信息源包括所有目录和库存状态信息源。
+对于Commerce SaaS数据导出扩展(`magento/module-data-exporter`) 103.3.0及更高版本，立即导出馈送在索引表中仅保留最低要求数据。 信息源包括所有目录信息源。
 
 不建议在生产环境中保留索引表中的有效负荷数据，但在开发人员环境中可能很有用。 在重新同步馈送时，通过添加`PERSIST_EXPORTED_FEED=1`环境变量在索引中包含馈送有效负载。
 

@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hans/blob/main/help/_includes/ccdm-shared/setup/restricted-access-keys.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 受限访问密钥
 
 受限访问密钥允许授权客户端应用程序访问[专用目录视图](private-catalog-view.md) — 只有携带分配密钥中的有效签名令牌的请求才能检索目录数据。 所有其他请求都将被拒绝，包括来自无法明确访问此目录视图的购物者的请求，以及探测Adobe Commerce促销服务API的脚本。

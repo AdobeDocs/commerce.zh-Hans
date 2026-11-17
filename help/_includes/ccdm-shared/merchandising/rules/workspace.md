@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 1%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hans/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 《促销规则》 Workspace
 
 *促销规则*&#x200B;工作区列出了当前选择的规则及其状态，并提供了对创建和管理规则所需工具的访问权限。 您可以将规则范围设置为所有[目录视图](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/catalog-view) （全局）或单个目录视图。 请参阅[选择目录视图](#select-catalog-view)，了解如何按目录视图进行筛选和为每个目录视图创建规则。 从工作区中，您可以：

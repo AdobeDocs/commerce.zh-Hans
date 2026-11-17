@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 4f804d488a8c8690ed965c022d673f52c91b3d15
+source-git-commit: b26c1c90a5d88f2a321d5ada807e8f44a0f64342
 workflow-type: tm+mt
-source-wordcount: '3763'
+source-wordcount: '3788'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension]发行说明
@@ -60,6 +60,13 @@ ht-degree: 0%
 >[!DNL SaaS data export]扩展是随[!DNL Live Search]、[!DNL Product Recommendations]和[!DNL Catalog Service]一起自动安装的模块集合。 您可以使用[!DNL Composer]检查系统上安装的版本。 在某些情况下，您可能希望升级系统上的数据导出扩展以获取修复或新功能，而不更新Commerce服务版本。
 
 ## 2026版 {#release-notes-2026}
+
+### 103.6.1发行版
+
+_2026年11月16日_
+
+![修复](../assets/fix.svg)已删除`InventoryDataExporter`和`SaaSInventory`模块。 因此，不再导出某些与清单相关的数据。 <!--MDEE-1482-->
+![修复](../assets/fix.svg)删除过时的中继。<!--MDEE-1197-->
 
 ### 103.6.0发行版
 

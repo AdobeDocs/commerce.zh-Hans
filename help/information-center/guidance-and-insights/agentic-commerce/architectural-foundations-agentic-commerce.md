@@ -49,23 +49,21 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f54c816fd23786ec519d5c890bc2664c3dcf8c6f
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1323'
 ht-degree: 0%
 ---
 
 # 为购物者和人工智能代理设计商业平台
+
+![代理商务平台的英雄插图，其中人类和人工智能代理与单个真实来源进行交互](../../assets/guidance-and-insights/agentic-commerce-hero.png "代理商务平台的架构基础"){width="800"}
 
 <table style="table-layout:auto">
 <tr style="border: 0;">
    <td valign="middle" style="vertical-align: middle;"><img alt="苏利亚·拉梅什的肖像" src="../../assets/guidance-and-insights/agentic-commerce-author-avatar-slamech.png" width="96"><br><strong>Surya Lamech</strong><br><em>主要产品营销经理</em></td>
 </tr>
 </table>
-
-![代理商务平台的英雄插图，其中人类和人工智能代理与单个真实来源进行交互](../../assets/guidance-and-insights/agentic-commerce-hero.png "代理商务平台的架构基础")
-
-*设计一个人类和人工智能代理与单一真实来源交互的商务平台。*
 
 Commerce正在经历结构性转变。 客户不再仅依赖搜索引擎或浏览店面来探索他们的选项。 相反，他们利用LLM支持的界面、聊天式助理和智能购物工具来提问、比较不同零售商的产品，并加快早期决策过程。
 

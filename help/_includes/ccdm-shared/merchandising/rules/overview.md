@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hans/blob/main/help/_includes/ccdm-shared/merchandising/rules/overview.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 促销规则
 
 促销规则将逻辑与操作相结合，以塑造产品在&#x200B;**搜索结果**、**默认产品列表**&#x200B;中通过&#x200B;**默认搜索规则**&#x200B;以及在&#x200B;**类别页面**&#x200B;上的显示方式。 您可以提升、隐藏、固定或隐藏产品，并应用&#x200B;**智能排名**，以便列表能够反映您的业务目标。
