@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1ae5d65ee5d00924657c36059250d38642777c34
+source-git-commit: 02a5f5be4f64c4f8c2f45eabcb69315e94665b49
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1795'
 ht-degree: 0%
 ---
 # 新增功能模板
@@ -12,6 +12,12 @@ ht-degree: 0%
 
 | 描述 | 类型 | 日期/来源 |
 | --- | --- | --- |
+| 更新了[Facet限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits)，以反映通过支持请求可以增加配置的最大Facet数。 | 技术 | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/d21c7401d0111c3e6b8dd1d65b26d4b480008011) |
+| 在2027年添加了[代理商务：商业领袖的五个优先级](https://experienceleague.adobe.com/zh-hans/docs/commerce/information-center/insights-and-guidance/five-priorities-commerce-leaders-2027)文章，通过专注于产品数据准备情况、可发现性、代理就绪的商业基础架构、测量和实验，帮助商业领袖准备人工智能辅助购物。 | 新主题 | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/b16b6868cabf8bfe6682c4e512c192713a408cfa) |
+| 为Adobe Commerce as a Cloud Service添加了沙盒[发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes)。 | 发行说明 | [2026年11月13日](https://github.com/AdobeDocs/commerce.en/commit/c109643e7791468bfae958025144c968e8595f95) |
+| 更新了Adobe Commerce Optimizer文档以使用可组合目录数据模型(CCDM)来涵盖Adobe Commerce as a Cloud Service，包括从Commerce Admin和Optimizer Studio打开每个工作区的说明：<br/> — 更新了包含两个产品导航的[设置](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/settings)。<br/> — 更新了包含两个产品导航的[数据同步](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/data-sync)。<br/> — 更新了包含两个产品导航的[策略](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/policies)。<br/> — 更新了包含两个产品导航和步骤的[受限访问密钥](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/restricted-access-keys)。<br/> — 更新了包含导航的[事件概述](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/setup/events/overview)两个产品的。<br/> — 已更新[成功量度](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/manage-results/success-metrics)，并导航两个产品。<br/> — 已更新[搜索性能](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/manage-results/search-performance)，并导航两个产品。<br/> — 已更新同时导航两个产品的[机会](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/manage-results/opportunities)。 | 重大更新 | [2026年11月12日](https://github.com/AdobeDocs/commerce.en/commit/4d359fed500408f4207581bcb2a9dfbc558f1c06) |
+| 添加了Adobe Commerce as a Cloud Service的生产[发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes)。 | 发行说明 | [2026年11月11日](https://github.com/AdobeDocs/commerce.en/commit/03d9f91906fd99c90437560a3f076feafc717eae) |
+| 添加了[促销服务](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/merchandising-services)，该指南介绍了CCDM及其对目录管理、店面和迁移的影响。 | 新主题 | [2026年11月11日](https://github.com/AdobeDocs/commerce.en/commit/342e938a7f18e06a25f574a73edbe747822a8a14) |
 | 记录了产品推荐的新参考键字段，您可以使用它来配置店面`product-recommendations`块：<br/> — 更新了[创建和管理推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/recommendations/create)，包含参考键创建、检索和管理步骤。<br/> — 更新了[创建新推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce/product-recommendations/admin/create)，包含参考键创建和检索步骤。<br/> — 更新了[使用可编辑的参考键设置编辑推荐](https://experienceleague.adobe.com/zh-hans/docs/commerce/product-recommendations/admin/edit)。 | 重大更新 | [2026年11月6日](https://github.com/AdobeDocs/commerce.en/commit/a69eec87f2386d06741f6cd865de0f37567b0b3b) |
 | 为Adobe Commerce as a Cloud Service添加了沙盒[发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes)。 | 发行说明 | [2026年11月5日](https://github.com/AdobeDocs/commerce.en/commit/8da72aa99416dc0925c1a033859bc70cb30a2aa4) |
 | 添加了[Managed Operations](https://experienceleague.adobe.com/zh-hans/docs/commerce/information-center/explore-platforms-and-services/managed-operations)，它描述了为Adobe Commerce as a Cloud Service提供的高级新服务，其中添加了一个指定的客户成功工程师和全天候监控。 | 新主题 | [2026年11月5日](https://github.com/AdobeDocs/commerce.en/commit/489e7d71d58d1ad8d2a804bddddabdfebb746935) |
@@ -38,4 +44,3 @@ ht-degree: 0%
 | 修复了[PaaS](https://experienceleague.adobe.com/zh-hans/docs/commerce/product-recommendations/boundaries-limits)和[Commerce Optimizer](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/recommendations/create)的产品推荐文档，该文档错误地指出不支持捆绑的产品和分组的产品。 | 反馈 | [2026年9月25日](https://github.com/AdobeDocs/commerce.en/commit/55b17947196acfa459934e4ee373469b84e16ea1) |
 | 更新了[迁移概述](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/migration/overview)，以说明Commerce Developer Agent如何协助迁移过程。 | 重大更新 | [2026年9月24日](https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53) |
 | 添加了Adobe Commerce as a Cloud Service的生产[发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes)。 | 重大更新 | [2026年9月23日](https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b) |
-| 为Adobe Commerce as a Cloud Service添加了沙盒[发行说明](https://experienceleague.adobe.com/zh-hans/docs/commerce/cloud-service/release-notes)。 | 重大更新 | [2026年9月17日](https://github.com/AdobeDocs/commerce.en/commit/7f70bbf40218de2cec3482e1bc4d135d1a9022ae) |

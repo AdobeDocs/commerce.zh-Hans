@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 560ae770ae76d28e3358fb4f195aa1f2a03362c8
+source-git-commit: 80794cd843b054e043bae4129e1092e31b6e5730
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '2045'
 ht-degree: 0%
 ---
 # User和Identity Management
@@ -200,6 +200,14 @@ ht-degree: 0%
 >在将开发人员添加为开发人员之前，为其分配用户角色。 基本Commerce权限需要用户角色。
 
 Admin Console中的![开发人员和管理员选项卡选项](./assets/tab-select.png){width="600" zoomable="yes"}
+
+### 角色疑难解答
+
+如果您登录Adobe Commerce管理员后只看到&#x200B;[!UICONTROL **目录**]&#x200B;部分，则您可能会被分配&#x200B;**用户**&#x200B;角色。 如果您需要访问管理员的其他区域，则需要[将自己添加为Admin Console中的&#x200B;**开发人员**](#add-developers-and-product-profile-admins)。
+
+如果您无权访问Admin Console，请联系贵组织的产品配置文件管理员或系统管理员，要求他们为您提供适当的权限。
+
+有关授予每个角色的权限的信息，请查看[角色资源](#role-resources)。
 
 ## 角色资源
 
