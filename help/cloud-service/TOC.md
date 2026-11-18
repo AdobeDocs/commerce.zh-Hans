@@ -9,9 +9,9 @@ product_v2:
     internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
     internal-label: Commerce as a Cloud Service
-source-git-commit: 896b53de478dbb3acc4a4ab8b26c8ae9e10ec8d2
+source-git-commit: af9c81b93d4ad1ff75a0380ec3fd4e3e5f374e3a
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '231'
 ht-degree: 3%
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 3%
 - [促销服务](merchandising-services.md)
 - [功能比较](feature-comparison.md)
 - [快速入门](getting-started.md)
+- [限制和边界](boundaries-limits.md)
 - [用户和身份管理](user-management.md)
 - [店面](storefront.md)
 - [用例](use-cases.md)
@@ -40,11 +41,11 @@ ht-degree: 3%
       - [客户就绪性核对清单](migration/bulk-data/readiness-checklist.md)
       - [验证迁移服务访问权限](migration/bulk-data/cdms-access.md)
       - [运行批量数据迁移](migration/bulk-data/migration-guide.md)
-      - [视频演练](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
+      - [视频演练](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
     - [迁移评估工具](migration/assessment.md)
     - [编码工具](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"}
   - {hide-from-toc}[文档RAG服务](migration/doc-rag.md)
-- [客户登录](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [客户登录](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [礼品卡帐户REST端点](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [通过REST触发的电子邮件](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - 教程 {#tutorials}
@@ -58,6 +59,6 @@ ht-degree: 3%
   - [GraphQL架构](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
   - [REST API架构](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [视频教程](https://experienceleague.adobe.com/zh-hans/playlists/accs-getting-started-product-overview){target="_blank"}
+- [视频教程](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [发行说明](release-notes.md)
-- [返回到Commerce服务主页](https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/home)
+- [返回到Commerce服务主页](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
