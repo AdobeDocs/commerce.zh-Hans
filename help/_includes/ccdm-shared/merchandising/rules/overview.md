@@ -12,7 +12,7 @@ ht-degree: 0%
 - **事件** — 满足条件时发生的操作（手动排名和相关事件）。
 - **详细信息** — 规则的名称、可选时间范围和描述。
 
-**类别规则**&#x200B;使用&#x200B;**类别选择**&#x200B;而不是搜索查询条件；智能排名和手动排名的工作方式与搜索相同，但在[创建和管理规则](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add)中发现了差异。
+**类别规则**&#x200B;使用&#x200B;**类别选择**&#x200B;而不是搜索查询条件；智能排名和手动排名的工作方式与搜索相同，但在[创建和管理规则](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add)中发现了差异。
 
 您可以组合搜索规则的多个条件和操作，并安排规则在某个时段内处于活动状态。 搜索隐藏规则使用查询条件来阻止结果，而不是对产品进行排名。 您还可以设置一个&#x200B;**默认搜索规则**，该规则在没有更具体的搜索或类别规则时应用。
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 搜索禁止显示规则是一种促销规则类型，它会阻止匹配购物者查询的结果。 这些搜索不会返回店面的任何产品。 在规则变为活动状态后，验证店面的实际无结果演示。
 
-使用搜索禁止显示功能设置搜索限制、品牌限制或不应返回结果的特定术语。 条件支持&#x200B;**查询是**，**查询包含**，**查询以**&#x200B;开头，且&#x200B;**查询以**&#x200B;结尾。 有关配置和管理步骤，请参阅[创建和管理搜索禁止显示规则](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules)。 有关示例，请参阅[最佳实践](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/best-practice#search-suppression-best-practices)。
+使用搜索禁止显示功能设置搜索限制、品牌限制或不应返回结果的特定术语。 条件支持&#x200B;**查询是**，**查询包含**，**查询以**&#x200B;开头，且&#x200B;**查询以**&#x200B;结尾。 有关配置和管理步骤，请参阅[创建和管理搜索禁止显示规则](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules)。 有关示例，请参阅[最佳实践](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/best-practice#search-suppression-best-practices)。
 
 搜索隐藏仅影响搜索体验。 它不会通过类别导航、促销页面、推荐或直接产品URL来更改产品可见性。 它不能替代目录范围的产品可见性或访问控制。
 
@@ -31,13 +31,13 @@ ht-degree: 0%
 | 搜索规则 | 对于与活动搜索隐藏规则匹配的查询，店面显示一个搜索结果页面，其中不含任何产品。搜索规则中的排名操作不会覆盖禁止显示。 未阻止的查询将继续使用适用的促销规则。 |
 | 类别规则 | 类别导航和类别促销不受搜索禁止显示的影响。 即使某个产品的搜索查询被阻止，该产品也可以在类别中保持可见。 |
 | 默认搜索规则 | 搜索禁止显示块匹配查询，而默认搜索规则定义默认排名和产品排除。 默认排名不会恢复阻止查询的结果。 |
-| 基于属性的促销事件 | 这些事件将操作应用于符合属性条件的产品，如[属性排名](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)中所述。 搜索隐藏会改为阻止匹配查询的结果，而不考虑在其他情况下将匹配哪些产品。 |
+| 基于属性的促销事件 | 这些事件将操作应用于符合属性条件的产品，如[属性排名](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)中所述。 搜索隐藏会改为阻止匹配查询的结果，而不考虑在其他情况下将匹配哪些产品。 |
 
 **默认搜索规则**&#x200B;通过手动排除或具有&#x200B;**隐藏**&#x200B;操作的基于属性的促销事件&#x200B;**排除的产品，也将从**&#x200B;搜索建议和自动完成&#x200B;**中排除。**&#x200B;这可以使产品排除在整个搜索体验中保持一致，并与使用搜索隐藏规则阻止查询不同。
 
 ## 类别规则 {#category-rules}
 
-**类别规则**&#x200B;控制&#x200B;**类别页面**&#x200B;上的产品顺序。 您可以选择一个或多个类别，然后应用智能排名（例如，查看次数最多、趋势最多的类别）和手动操作，例如固定、提升和掩盖。 它们不使用搜索查询条件。 有关设置步骤、规则类型以及排名在类别与搜索中的适用方式，请参阅[创建和管理规则](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add)。
+**类别规则**&#x200B;控制&#x200B;**类别页面**&#x200B;上的产品顺序。 您可以选择一个或多个类别，然后应用智能排名（例如，查看次数最多、趋势最多的类别）和手动操作，例如固定、提升和掩盖。 它们不使用搜索查询条件。 有关设置步骤、规则类型以及排名在类别与搜索中的适用方式，请参阅[创建和管理规则](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add)。
 
 ## 要求
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 ## 多个规则的优先顺序
 
-此部分说明排名搜索规则如何应用于购物者的查询并与之交互。 搜索规则排名不会覆盖搜索禁止显示：当活动禁止显示规则与查询匹配时，店面不会返回该搜索的产品。 类别规则适用于所选类别。 有关搜索、类别和默认搜索规则的详细信息，请参阅[创建和管理规则](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add)。
+此部分说明排名搜索规则如何应用于购物者的查询并与之交互。 搜索规则排名不会覆盖搜索禁止显示：当活动禁止显示规则与查询匹配时，店面不会返回该搜索的产品。 类别规则适用于所选类别。 有关搜索、类别和默认搜索规则的详细信息，请参阅[创建和管理规则](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add)。
 
 在任何时候，只对一个搜索词应用一个搜索规则。
 如果发现多个规则适用于搜索短语，则会应用所有这些规则。 如果两个规则（`rule 1`提升SKU1但`rule 2`隐藏同一SKU）之间存在冲突，则优先使用最近应用的规则(`rule 2`)。
