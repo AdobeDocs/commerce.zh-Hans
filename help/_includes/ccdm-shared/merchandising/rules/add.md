@@ -1,28 +1,16 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: 3478e3f0162b553d03c4ac4f5b3000b8aabd8c66
 workflow-type: tm+mt
-source-wordcount: '4098'
+source-wordcount: '4826'
 ht-degree: 0%
 ---
-<!--
-SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hans/blob/main/help/_includes/ccdm-shared/merchandising/rules/add.md
-
-This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
-Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
-are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
-This includes related images in help/assets/ccdm-shared/.
--->
-
-# 创建和管理规则
-
-构建规则需要选择应用规则的目录视图、配置规则描述、类型并定义其条件和排名、测试结果和发布规则。
+构建规则需要选择应用规则的目录视图，配置规则描述和类型（搜索、搜索隐藏、默认搜索或类别），定义其条件和排名（如果适用），在预览可用时对结果进行测试，以及发布规则。 搜索禁止显示规则不显示预览。
 
 ## 创建规则 {#create-a-rule}
 
 1. 从菜单中，转到&#x200B;_促销_ > **促销规则**。
-1. （可选）使用&#x200B;**目录视图**&#x200B;下拉列表选择应用规则的目录视图。
-您创建的规则将作用域限定于选定的视图（如果选择&#x200B;**所有视图**，则限定于所有目录视图）。 请参阅[选择目录视图](workspace.md#select-catalog-view)，了解目录视图作用域的工作方式。
+1. （可选）使用&#x200B;**目录视图**下拉列表选择应用规则的目录视图。
+您创建的规则将作用域限定于选定的视图（如果选择**所有视图**，则限定于所有目录视图）。 请参阅[选择目录视图](workspace.md#select-catalog-view)，了解目录视图作用域的工作方式。
 
 1. 单击&#x200B;**[!UICONTROL Create rule]**&#x200B;启动规则编辑器。
 
@@ -37,8 +25,9 @@ This includes related images in help/assets/ccdm-shared/.
 | **默认搜索规则** | 当不再应用更具体的搜索或类别规则时，跨产品列表的默认排名和促销。 您只能创建一个此类规则；它不能包含条件。 |
 | **类别规则** | 将商品推销和排名应用于单个类别，从而控制该类别页面上的产品订单。 |
 | **搜索规则** | 当购物者运行与规则的查询条件匹配的搜索时，应用促销和排名。 |
+| **搜索禁止显示规则** | 防止匹配的搜索查询返回产品，因此店面显示一个不含产品的搜索结果页面。 通过类别导航、促销页面、推荐和直接产品URL查看产品不受影响。 |
 
-在&#x200B;**构建规则**&#x200B;部分中，您可以定义规则名称、计划、规则是否适用于所有列表或特定搜索条件以及排名类型。
+在&#x200B;**构建规则**&#x200B;部分中，您可以定义规则名称、计划、规则类型以及任何适用的条件和排名。 搜索禁止规则阻止匹配查询，而不是排名产品。
 
 1. 在&#x200B;**[!UICONTROL Name]**&#x200B;字段中，输入规则的名称。 所有规则名称必须唯一。
 1. 在&#x200B;**[!UICONTROL Description]**&#x200B;字段中，输入规则的描述。
@@ -90,6 +79,28 @@ This includes related images in help/assets/ccdm-shared/.
 1. 要添加其他条件，请单击&#x200B;**添加条件**&#x200B;并重复该过程。
 1. 或者，按照以下部分所述，设置[智能排名](#intelligent-ranking)、[手动排名](#manual-ranking)或[属性排名](#attribute-ranking)。 相同的控件适用于类别页面，并标注出任何差异。
 
+>[!TAB 搜索禁止显示规则]
+
+搜索隐藏规则会阻止符合其条件的查询的结果。 它不需要产品级别的排名操作。 匹配的查询未返回任何产品，店面显示一个搜索结果页面，其中没有任何产品。
+
+>[!NOTE]
+>
+>搜索禁止显示规则不显示预览。 在发布之前查看查询条件，然后在规则激活后，验证店面上的匹配搜索和不匹配搜索。
+
+1. 在&#x200B;**[!UICONTROL Rule applies to]**&#x200B;中，选择&#x200B;**搜索禁止显示规则**。
+1. Select查询条件并输入要匹配的文本：
+
+   | 条件 | 当查询被阻止时 | 示例 |
+   | --- | --- | --- |
+   | **查询为** | 整个查询与指定的文本匹配。 | `restricted item`个块该确切的查询。 |
+   | **查询包含** | 查询包含指定的文本。 | `restricted brand`个块`buy restricted brand shoes`。 |
+   | **查询开始于** | 查询以指定的文本开始。 | `restricted brand`个块`restricted brand accessories`。 |
+   | **查询结束于** | 查询以指定的文本结束。 | `restricted item`个块`discount restricted item`。 |
+
+1. 完成[计划和发布步骤](#schedule-publish-search-suppression)。
+
+有关范围以及与其他规则的交互，请参阅[搜索禁止显示规则](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)。
+
 >[!TAB 类别规则]
 
 类别规则控制&#x200B;**类别页面**&#x200B;上产品的订购方式。 将&#x200B;**类别规则**&#x200B;与&#x200B;**智能排名**&#x200B;和&#x200B;**手动**&#x200B;操作相结合，以组织发现、运行促销活动并使类别页面与您的策略保持一致。
@@ -122,6 +133,44 @@ This includes related images in help/assets/ccdm-shared/.
    ![类别操作菜单](/help/assets/ccdm-shared/rules/category-action-menu.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+### 创建和管理搜索禁止显示规则 {#search-suppression-rules}
+
+使用此工作流可阻止搜索词，而无需更改店面其他位置的产品可见性。
+
+1. 打开&#x200B;**促销** > **促销规则**。
+1. 需要限制的Select **所有视图**&#x200B;或特定&#x200B;**目录视图**。
+1. 单击&#x200B;**[!UICONTROL Create rule]**。
+1. 输入唯一的&#x200B;**Name**&#x200B;和说明该限制的&#x200B;**Description**。
+1. 在&#x200B;**[!UICONTROL Rule applies to]**&#x200B;下，选择&#x200B;**搜索禁止显示规则**。
+1. 配置&#x200B;**查询为**，**查询包含**，**查询开始于**，或&#x200B;**查询结束于**，如上面的&#x200B;**搜索禁止显示规则**&#x200B;选项卡中所述。
+1. 完成[计划和发布步骤](#schedule-publish-search-suppression)。
+
+#### 计划和发布搜索禁止显示规则 {#schedule-publish-search-suppression}
+
+1. 在&#x200B;**[!UICONTROL Date range]**&#x200B;中，设置限制的开始日期，并根据需要设置结束日期。 使用未来的开始日期来计划规则。
+1. 查看查询条件。
+1. 单击&#x200B;**保存并发布**。
+1. 在&#x200B;*促销规则*&#x200B;工作区中查找规则并确认其状态和日期。 计划规则在启用的情况下在其配置的日期范围内生效。
+1. 规则变为活动状态后，确认匹配的店面搜索显示搜索结果页面，且不含任何产品。 缓存的查询结果可能需要长达15分钟才能刷新。
+
+#### 编辑搜索禁止显示规则
+
+1. 在&#x200B;*促销规则*&#x200B;工作区中，找到该规则并打开&#x200B;**更多** (...) > **编辑**。
+1. 根据需要更新其查询条件、名称、描述或日期范围。
+1. 查看更新的查询条件。
+1. 单击&#x200B;**保存并发布**&#x200B;以发布更改。
+1. 更新后的规则变为活动后，验证店面上的匹配搜索和非匹配搜索。 缓存的查询结果可能需要长达15分钟才能刷新。
+
+创建后无法更改目录视图范围。 要将限制应用于其他范围，请在该目录视图中创建规则。
+
+#### 启用或禁用搜索禁止显示规则
+
+1. 在&#x200B;*促销规则*&#x200B;工作区中，找到该规则并打开&#x200B;**更多** (...) 菜单。
+1. Select **禁用规则**&#x200B;以停止应用搜索限制，或&#x200B;**启用规则**&#x200B;以根据其配置的日期应用搜索限制。
+1. 在工作区中确认规则的状态。
+
+禁用规则将保留其配置。 要更改其条件或计划，请编辑并发布规则。 有关详细信息，请参阅[促销规则Workspace](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace)。
 
 ### 智能排名 {#intelligent-ranking}
 
@@ -220,7 +269,7 @@ This includes related images in help/assets/ccdm-shared/.
 
 有关设置搜索权重的信息：
 
-- 有关所有Adobe Commerce部署，请参阅&#x200B;_目录管理指南_&#x200B;中的[搜索结果](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/catalog/search/search-results)。
+- 有关所有Adobe Commerce部署，请参阅&#x200B;_目录管理指南_&#x200B;中的[搜索结果](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)。
 - 有关独立的Adobe Commerce Optimizer部署，请参阅&#x200B;_Merchandising Services Developer Guide_&#x200B;中的[元数据REST API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)。
 
 ### 手动排名 {#manual-ranking}
@@ -252,11 +301,13 @@ This includes related images in help/assets/ccdm-shared/.
 
 1. 对于多个事件，选择满足条件时要触发的任何其他事件。
 
+在&#x200B;**默认搜索规则**&#x200B;中配置&#x200B;**[!UICONTROL Hide a product]**&#x200B;时，排除的产品也将从&#x200B;**搜索建议中删除，并自动完成**。 若要阻止整个查询而不是所选产品，请使用[搜索禁止显示规则](#search-suppression-rules)。
+
 ### 属性排名 {#attribute-ranking}
 
 >[!AVAILABILITY]
 >
->此功能处于[测试版](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
+>此功能处于[测试版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
 
 **属性排名**&#x200B;自动将&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;操作应用于符合一个或多个属性条件的每个产品，而无需您选择单个SKU。 属性排名与[智能排名](#intelligent-ranking)和[手动排名](#manual-ranking)一起显示在规则编辑器中，可用于&#x200B;**所有产品规则**、**搜索规则**&#x200B;和&#x200B;**类别规则**。 使用它来扩展大型目录中的商品促销，例如，增加给定品牌的所有产品，或将每个产品隐藏在停产的颜色中。
 
@@ -277,6 +328,8 @@ This includes related images in help/assets/ccdm-shared/.
 
 固定功能在属性排名中不可用，因为固定功能将一个产品分配给一个精确位置，而属性条件可以同时匹配多个产品。 若要固定特定产品，请直接在该SKU上使用[手动排名](#manual-ranking)。
 
+属性排名条件也称为&#x200B;**基于属性的促销事件**。 **默认搜索规则**&#x200B;中由&#x200B;**[!UICONTROL Hide]**&#x200B;操作排除的产品也将从&#x200B;**搜索建议和自动完成**&#x200B;中排除，就像该规则中的手动排除一样。 这些产品级排除项不同于[搜索隐藏](#search-suppression-rules)，后者会阻止匹配查询的所有结果。
+
 #### 属性排名如何与智能排名交互
 
 当规则将智能排名策略与一个或多个属性条件组合在一起时，属性操作将优先处理与之匹配的任何产品。 智能排名会继续订购其余的不匹配产品。
@@ -293,6 +346,8 @@ This includes related images in help/assets/ccdm-shared/.
 
 ### 最终确定规则 {#finalizing-the-rule}
 
+对于搜索禁止显示规则，请改为遵循[计划并发布搜索禁止显示规则](#schedule-publish-search-suppression)。 这些规则不显示预览。
+
 1. 在测试窗格中检查规则的结果。
 1. 如果规则具有多个查询，请测试每个可能受规则影响的查询。
 1. 完成后，单击&#x200B;**保存并发布**。
@@ -303,19 +358,19 @@ This includes related images in help/assets/ccdm-shared/.
 
 >[!NOTE]
 >
->当选择默认排序顺序“排序依据：最相关”时，规则和手动排名产品将应用于&#x200B;**搜索**&#x200B;结果。 如果购物者将排序顺序更改为诸如按名称排序之类的排序，则规则和手动排名不再有效。 对于&#x200B;**类别**&#x200B;列表，[手动排名](#manual-ranking)中描述了默认排序行为。
+>当选择默认排序顺序“排序依据：最相关”时，将排名规则和手动排名产品应用于&#x200B;**搜索**&#x200B;结果。 如果购物者将排序顺序更改为按名称排序等，则排名规则和手动排名将不再有效。 此排名行为不允许阻止的查询绕过搜索抑制。 对于&#x200B;**类别**&#x200B;列表，[手动排名](#manual-ranking)中描述了默认排序行为。
 
 ## 编辑、查看和删除规则 {#edit-view-and-delete-rules}
 
-要更新现有规则的属性，请按照以下说明操作。 创建规则后，不能更改该规则的目录视图（范围）；创建规则时会设置范围。 请参阅[选择目录视图](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view)。
+要更新现有规则的属性，请按照以下说明操作。 创建规则后，不能更改该规则的目录视图（范围）；创建规则时会设置范围。 请参阅[选择目录视图](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view)。
 
 ### 编辑规则
 
 1. 在&#x200B;*促销规则*&#x200B;工作区上，在网格中查找要编辑的规则，然后单击&#x200B;**更多** (...) 选项。
 1. 单击&#x200B;**编辑**&#x200B;以访问规则编辑器。
-1. 根据需要更新条件、运算符和事件。
+1. 更新适用于规则类型的条件、运算符和事件。 搜索禁止显示规则使用查询条件而不是排名事件。
 1. 根据需要更新名称、开始和结束日期以及说明字段。 所有规则名称必须唯一。
-1. 测试规则。
+1. 如果预览可用，则测试规则。 对于搜索禁止显示规则，请改为查看查询条件，并在更新的规则变为活动状态后验证店面搜索。
 1. 发布更改。
 该规则已添加到*规则*&#x200B;工作区中的列表。 尽管活动规则会立即生效，但刷新店面中的缓存查询结果可能需要15分钟。
 
@@ -386,7 +441,7 @@ This includes related images in help/assets/ccdm-shared/.
 | 字段 | 描述 |
 | --- | --- |
 | 名称 | 规则的名称。 规则名称必须唯一。 |
-| 规则类型 | **默认搜索规则**、**查询**（特定搜索条件）或&#x200B;**类别**（类别页面），具体取决于&#x200B;**规则适用于**。 |
+| 规则类型 | **默认搜索规则**、**查询**（特定搜索条件）、**搜索隐藏规则**（块匹配查询）或&#x200B;**类别**（类别页面），具体取决于&#x200B;**规则适用于**。 |
 | 开始日期 | 规则的开始日期（如果已计划）。 |
 | 结束日期 | 规则的结束日期（如果已计划）。 |
 | 描述 | 规则的简要说明。 |
