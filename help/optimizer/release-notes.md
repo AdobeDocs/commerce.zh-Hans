@@ -25,9 +25,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
+source-git-commit: 3968a572a628342334fe760526e81ab089b86904
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1960'
 ht-degree: 0%
 ---
 # 发行说明
@@ -39,6 +39,64 @@ ht-degree: 0%
 
   {{aco-api-updates-and-dropins}}
 
+## 2026年11
+
+>[!BEGINSHADEBOX]
+
+_2026年11月2日_
+
+![修复](../assets/fix.svg) **推荐筛选器区域设置** — 阐明了当您选择&#x200B;**[!UICONTROL All Views]**&#x200B;时，属性列表会使用与第一个目录视图关联的目录源。 请参阅[推荐筛选器](./merchandising/recommendations/filters.md)。
+
+_2026年11月6日_
+
+![新建](../assets/new.svg) **第三方购物车和签出集成** — 添加了有关将第三方购物车和签出服务与[!DNL Adobe Commerce Optimizer]集成的指南。 查看[集成](./integrations/integrations-overview.md#third-party-cart-and-checkout-integration)。
+
+![修复](../assets/fix.svg) **产品可视化存储** — 阐明您可以通过升级[!DNL AEM Assets]许可证来扩展[!DNL Product Visuals]的存储容量。 查看[限制和边界](./boundaries-limits.md#product-visuals-limits)。
+
+![修复](../assets/fix.svg) **AEM Assets安装指南** — 删除了[!DNL AEM Assets]的独立[!DNL Adobe Commerce Optimizer]安装流程，并将安装指南定向到常规[!DNL AEM Assets]配置文档。 查看[集成](./integrations/integrations-overview.md#product-visuals)、[目录层](./setup/catalog-layer.md)和[产品视觉效果](./setup/product-visuals.md)。
+
+![新建](../assets/new.svg) **推荐引用键** — 在配置店面推荐块时，记录&#x200B;**[!UICONTROL Reference Key]**&#x200B;作为推荐ID的替代项。 请参阅[创建和管理推荐](./merchandising/recommendations/create.md#get-the-storefront-reference-key)。
+
+_2026年11月16日_
+
+![新](../assets/new.svg) **Facet容量** — 记录您可通过客户支持请求增加Facet限制。 查看[限制和边界](./boundaries-limits.md#catalog-views-and-policies)。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年10
+
+>[!BEGINSHADEBOX]
+
+_2026年10月1日_
+
+![新](../assets/new.svg) **B2B共享目录视图** — 记录如何将B2B共享目录自动配置为专用目录视图，以及手动设置选项以用于其他用例。 另外还阐明限制访问密钥轮换不会自动进行。 查看[私有目录视图](./setup/private-catalog-view.md)、[受限访问密钥](./setup/restricted-access-keys.md)、[数据同步](./setup/data-sync.md)和[启动核对清单](./launch/launch-checklist.md)。
+
+_2026年10月12日_
+
+![新](../assets/new.svg) **缺货推荐筛选器** — 添加了缺货排除筛选器，该筛选器允许您防止缺货产品出现在推荐单位中。 请参阅[推荐筛选器](./merchandising/recommendations/filters.md#out-of-stock)。
+
+_2026年10月14日_
+
+![修复](../assets/fix.svg) **智能排名提升值** — 将记录的默认值更正为`50`，将最大值更正为`1000`。 请参阅[创建和管理促销规则](./merchandising/rules/add.md#intelligent-ranking-boost)。
+
+_2026年10月16日_
+
+![修复](../assets/fix.svg) **默认搜索规则名称** — 已将促销规则名称从[!UICONTROL All product listings]更新为[!UICONTROL Default search rule]以匹配管理界面。 请参阅[促销规则概述](./merchandising/rules/overview.md)和[创建和管理促销规则](./merchandising/rules/add.md)。
+
+_2026年10月21日_
+
+![修复](../assets/fix.svg) **受限访问密钥限制** — 从记录的限制中删除了每个环境的受限访问密钥计数。 查看[限制和边界](./boundaries-limits.md#catalog-views-and-policies)。
+
+_2026年10月22日_
+
+![新](../assets/new.svg) **推荐属性筛选器** — 添加了有关通过元数据API启用属性筛选器的指导。 请参阅[推荐筛选器](./merchandising/recommendations/filters.md#attributes)。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## 2026年9月
 
 >[!BEGINSHADEBOX]
@@ -49,6 +107,11 @@ _2026年9月3日_
 
 [!DNL Adobe Commerce Optimizer]促销规则现在支持&#x200B;**默认搜索规则**、**类别规则**&#x200B;和&#x200B;**搜索规则**&#x200B;的&#x200B;[**属性排名**](./merchandising/rules/add.md#attribute-ranking)。 自动将&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;操作应用于匹配一个或多个属性条件（如品牌或类别）的每个产品，而不选择单个SKU。 属性排名为测试版。 [了解详情](./merchandising/rules/add.md#attribute-ranking)。
 
+_2026年9月9日_
+
+![新建](../assets/new.svg) **多值HTTP标头触发器策略** — 使用`HTTP_HEADER`传输类型的触发器策略现在可以在单个标头中接收多个逗号分隔值（例如，`AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`）。 使用`IN`的策略筛选器使用`OR`语义评估值。 使用`EQUALS`、`GREATER_THAN_EQUAL`或`LESS_THAN_EQUAL`的筛选器在标头包含多个值时拒绝请求并出现验证错误。 此行为仅适用于使用`HTTP_HEADER`传输触发策略。 [了解详情](./setup/policies.md#multi-value-http-header-triggers)。
+<!--COMOPT-2439-->
+
 {{aco-release}}
 
 >[!ENDSHADEBOX]
@@ -56,11 +119,6 @@ _2026年9月3日_
 ## 2026年8月
 
 >[!BEGINSHADEBOX]
-
-_2026年9月9日_
-
-![新建](../assets/new.svg) **多值HTTP标头触发器策略** — 使用`HTTP_HEADER`传输类型的触发器策略现在可以在单个标头中接收多个逗号分隔值（例如，`AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`）。 使用`IN`的策略筛选器使用`OR`语义评估值。 使用`EQUALS`、`GREATER_THAN_EQUAL`或`LESS_THAN_EQUAL`的筛选器在标头包含多个值时拒绝请求并出现验证错误。 此行为仅适用于使用`HTTP_HEADER`传输触发策略。 [了解详情](./setup/policies.md#multi-value-http-header-triggers)。
-<!--COMOPT-2439-->
 
 _2026年8月7日_
 
@@ -371,4 +429,3 @@ EU生产区域(**eu1**)可用于IMS组织。 当您在Cloud Manager中[添加 [!
 {{aco-release}}
 
 >[!ENDSHADEBOX]
-

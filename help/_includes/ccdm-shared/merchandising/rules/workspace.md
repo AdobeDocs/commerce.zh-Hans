@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: e3be9274ca8db80d3559b24a5c8be36f5d61b2ba
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 1%
+source-wordcount: '1154'
+ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
@@ -23,6 +23,8 @@ This includes related images in help/assets/ccdm-shared/.
 - 激活/停用规则
 - 删除规则
 - 访问规则编辑器
+
+工作区还包含&#x200B;**[搜索禁止显示规则](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)**。 使用相同的规则管理控件编辑、计划、启用或禁用这些规则。 要配置查询条件和发布更改，请参阅[创建和管理搜索禁止显示规则](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules)。 搜索禁止显示规则不显示预览。
 
 ![促销规则Workspace](/help/assets/ccdm-shared/rules/rules-workspace.png)
 
@@ -60,6 +62,14 @@ This includes related images in help/assets/ccdm-shared/.
    - 编辑规则
    - 删除规则
    - 启用/禁用规则
+
+## 启用或禁用规则 {#enable-disable-rule}
+
+1. 在&#x200B;*促销规则*&#x200B;工作区中找到该规则。
+1. 打开&#x200B;**更多** (...) 菜单并选择&#x200B;**启用规则**&#x200B;或&#x200B;**禁用规则**。 您还可以在详细信息面板中使用&#x200B;**Enabled**&#x200B;控件。
+1. 确认已更新的状态。 对于已启用且具有未来开始日期的规则，直到该日期才会终止计划。
+
+对于&#x200B;**搜索禁止显示规则**，禁用该规则会阻止匹配查询而不删除其条件。 其他活动禁止显示规则仍可以阻止这些查询。 要更改规则的条件或日期，请选择&#x200B;**编辑**，查看更改，然后单击&#x200B;**保存并发布**。
 
 ## 列描述
 
@@ -124,6 +134,6 @@ This includes related images in help/assets/ccdm-shared/.
    您创建的规则将作用域限定在选定的目录视图中。
 1. 在[规则编辑器](add.md)中生成您的规则。
 
-   在编辑器中，定义条件、事件和详细信息。 该规则仅适用于该目录视图中的搜索结果。
+   在编辑器中，定义适用于规则类型的条件、事件和详细信息。 搜索禁止显示规则使用查询条件仅阻止选定目录视图中的结果。 它们不会通过类别导航、促销页面、推荐或直接产品URL来更改产品可见性。
 
 创建规则后，无法更改规则的目录视图（范围）。 要将类似的逻辑应用于其他目录视图，请先创建新规则并选择该目录视图，然后再创建。
