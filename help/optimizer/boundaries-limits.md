@@ -2,7 +2,7 @@
 title: Adobe Commerce Optimizer限制和边界
 description: 了解Adobe Commerce Optimizer许可证限制和系统边界。 规划容量、跟踪使用情况，并在超出限制时避免延迟和限制。
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
 product_v2:
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 通过购买[许可证限制和系统边界](#license-limits-and-system-boundaries)部分中描述的许可证包，或通过就独特用例协商自定义许可证，可以增加许可证限制。 请联系您的Adobe客户代表以讨论您的要求。
 
-有关系统边界的问题，请联系[Adobe支持](https://experienceleague.adobe.com/home?lang=en#support)。
+有关系统边界的问题，请联系[Adobe支持](https://experienceleague.adobe.com/home?lang=zh-Hans#support)。
 
 ## 防止出现性能问题
 
@@ -128,7 +128,7 @@ Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“
 
 这些要求不排除产品可视化图表中包含的Dynamic Media （具有OpenAPI功能）用于资产交付。 仅使用App Builder不需要AEM Assets Ultimate；该要求取决于应用程序使用的AEM Assets API。
 
-有关产品可视化以外的更广泛的企业DAM、API、可扩展性和内容供应链要求，请参阅[AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)。
+有关产品可视化以外的更广泛的企业DAM、API、可扩展性和内容供应链要求，请参阅[AEM Assets Ultimate](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)。
 
 ### 目录视图和策略
 
@@ -191,7 +191,7 @@ Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“
 
 | **功能** | **描述** | **基础分配** | **可扩展？** | **备注** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | 构建云原生扩展和集成的能力 | 基于GMV层<p>最小分配：1包/年</p> | 是<p>添加其他包</p> | 有关每个包定义的限制，请参阅：<ul><li>针对每个包定义的限制，[App Builder产品描述](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder运行时指南*&#x200B;中的[系统设置和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder存储要求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | 构建云原生扩展和集成的能力 | 基于GMV层<p>最小分配：1包/年</p> | 是<p>添加其他包</p> | 有关每个包定义的限制，请参阅：<ul><li>针对每个包定义的限制，[App Builder产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder运行时指南*&#x200B;中的[系统设置和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder存储要求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 

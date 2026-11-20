@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer项目（Adobe管理的SaaS基础架构）。"
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
@@ -145,7 +145,7 @@ Merchandising Services支持[!DNL Adobe Commerce as a Cloud Service]中的两个
 
 该集成可确保数字资产（如产品图像或营销内容）根据SKU或其他关键属性动态链接到相应的促销实体，包括Adobe Commerce中的产品和类别。
 
-[!DNL Product Visuals]包含在[!DNL Adobe Commerce as a Cloud Service]中。 它将[AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)（轻量级DAM）与具有OpenAPI功能的Dynamic Media捆绑在一起，以便进行资源交付。
+[!DNL Product Visuals]包含在[!DNL Adobe Commerce as a Cloud Service]中。 它将[AEM Assets Prime](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-prime)（轻量级DAM）与具有OpenAPI功能的Dynamic Media捆绑在一起，以便进行资源交付。
 
 或者，[!DNL Adobe Commerce as a Cloud Service]中的本机功能提供了用于存储和管理数字资产的基本资产管理工具。
 
@@ -153,7 +153,7 @@ Merchandising Services支持[!DNL Adobe Commerce as a Cloud Service]中的两个
 
 ### [!DNL Product Visuals]或[!DNL AEM Assets Ultimate]
 
-以下比较可帮助您选择supply chain内容需要的最佳选项。 产品可视化图表支持以Commerce为中心的资源管理。 [AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)支持更广泛的企业DAM和复杂的内容供应链，包括UI可扩展性、API驱动的自动化和自定义代码部署。
+以下比较可帮助您选择supply chain内容需要的最佳选项。 产品可视化图表支持以Commerce为中心的资源管理。 [AEM Assets Ultimate](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)支持更广泛的企业DAM和复杂的内容供应链，包括UI可扩展性、API驱动的自动化和自定义代码部署。
 
 >[!IMPORTANT]
 >
@@ -268,7 +268,7 @@ Adobe Commerce on Cloud的典型升级过程包括创建备份、克隆实例、
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
