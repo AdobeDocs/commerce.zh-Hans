@@ -3,7 +3,7 @@ title: AEM Assets的产品可视化图表
 description: 了解如何将AEM Assets用于[!DNL Adobe Commerce Optimizer]中的产品图像。
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hans/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
+badgeSaas: label="仅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="仅适用于Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]项目（Adobe管理的SaaS基础结构）。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '567'
 ht-degree: 0%
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**产品可视化图表**&#x200B;是随[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起提供的包的名称。 它结合了[Dynamic Media与OpenAPI功能](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)和[AEM Assets Prime](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-prime)。
+>**产品可视化图表**&#x200B;是随[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起提供的包的名称。 它结合了[Dynamic Media与OpenAPI功能](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)和[AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)。
 >
->拥有其他AEM Assets许可证（例如，**AEM Assets Ultimate**）的客户可以使用相同的集成；只有AEM版本会影响载入步骤，而不会影响许可证类型。
+>拥有其他AEM Assets许可证的客户（如[AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)）可以使用相同的集成。 Ultimate未包含在产品可视化中，它需要AEM Assets Ultimate附加组件SKU。 请联系您的Adobe客户代表以获取许可和进行配置。 AEM版本确定了载入方法；可用功能和环境取决于授权。 查看[产品可视化限制](../boundaries-limits.md#product-visuals-limits)。
 
 ## 主要优势
 
-* **集中式资源管理**：管理企业级数字资产管理解决方案AEM Assets中的所有产品映像。
+* **集中式资源管理**：在AEM Assets中管理产品映像，以用于以Commerce为中心的资源管理用例。
 * **自动同步**：在AEM Assets中批准或更新资产时，产品图像会自动同步。
 * **Dynamic Media投放**：利用Dynamic Media的OpenAPI功能优化图像投放。
 * **目录图层**：产品图像应用为目录图层，允许您在基本目录上叠加AEM Assets图像。
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 限制
 
-有关容量和使用率分配（资产存储、Dynamic Media操作、用户许可证），请参阅&#x200B;_边界和限制指南_&#x200B;中的[产品可视化限制](../boundaries-limits.md#product-visuals-limits)。
+有关功能权利、容量和使用分配（资产存储、Dynamic Media操作、用户许可证），请参阅&#x200B;_边界和限制指南_&#x200B;中的[产品可视化限制](../boundaries-limits.md#product-visuals-limits)。
 
 ## 使用产品可视化图表
 
@@ -89,4 +89,4 @@ ht-degree: 0%
 * [目录层](catalog-layer.md)
 * [目录视图](catalog-view.md)
 * [AEM Assets集成指南](../../aem-assets-integration/overview.md)
-* [产品可视化限制和边界](https://experienceleague.adobe.com/zh-hans/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
+* [产品可视化限制和边界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)

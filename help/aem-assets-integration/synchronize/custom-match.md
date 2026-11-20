@@ -22,20 +22,24 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # 自定义自动匹配
 
-如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或者处理来自无法将元数据填充到AEM Assets中的第三方系统的资源。
+如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或者处理来自无法将元数据填充到AEM Assets中的第三方系统的资源。
+
+>[!NOTE]
+>
+>如果您的自定义匹配器或Adobe Developer App Builder集成需要AEM Assets API才能以编程方式管理资源或元数据，则需要AEM Assets Ultimate权利。 此要求取决于应用程序使用的API，而不是仅取决于App Builder的使用。 查看[产品可视化限制](../../optimizer/boundaries-limits.md#product-visuals-limits)。
 
 ## 配置自定义自动匹配
 
-1. 在Commerce管理员中，导航到&#x200B;**[!UICONTROL Store]** >配置> **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
+1. 在Commerce管理员中，导航到&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
-1. 选择&#x200B;**[!UICONTROL Custom Matcher]**&#x200B;作为匹配规则。
+1. 将Select **[!UICONTROL Custom Matcher]**&#x200B;作为匹配规则。
 
 1. 当您选择此匹配规则时，管理员会显示用于配置&#x200B;**端点**&#x200B;和自定义匹配逻辑所需&#x200B;**身份验证参数**&#x200B;的其他字段。
 
@@ -129,11 +133,15 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL Save Config]**。
 
+应用配置后，[验证集成](../get-started/setup-synchronization.md#verify-the-integration)是否包含批准的资源和您的自定义匹配器关联的产品。
+
+仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}如果同步失败，请查看[集成日志](../get-started/logs.md)。
+
 ## 异步配置保存
 
-如果您的Commerce实例启用了[异步配置保存](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)选项，则配置更改将排入队列并由异步使用者应用，而不是立即保存在同一请求中。 要在此模式下上载自定义自动匹配的`workspace.json`文件，请依次完成以下步骤：
+如果您的Commerce实例启用了[异步配置保存](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)选项，则配置更改将排入队列并由异步使用者应用，而不是立即保存在同一请求中。 要在此模式下上载自定义自动匹配的`workspace.json`文件，请依次完成以下步骤：
 
-1. 确认Commerce异步配置保存已[启用](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)。
+1. 确认Commerce异步配置保存已[启用](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)。
 
 1. 从管理员转到&#x200B;**[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**。
 
@@ -167,7 +175,7 @@ ht-degree: 0%
 
 ## 自定义匹配器API端点
 
-当您使用[App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}生成自定义匹配程序应用程序时，该应用程序必须公开以下端点：
+当您使用[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}生成自定义匹配程序应用程序时，该应用程序必须公开以下端点：
 
 * **App Builder资源到产品URL**&#x200B;端点
 * **App Builder产品到资源URL**&#x200B;端点
@@ -336,7 +344,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | 属性 | 数据类型 | 描述 |
 | --- | --- | --- |
 | `asset_id` | 字符串 | 资产ID。 |
-| `asset_roles` | 数组 | 资产角色。 使用支持的[Commerce资源角色](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，如`thumbnail`、`image`、`small_image`和`swatch_image`。 使用AEM Assets集成扩展1.4.6及更高版本时，也可以使用自定义图像角色（如`hero`或`custom_role_1`）。 |
+| `asset_roles` | 数组 | 资产角色。 使用支持的[Commerce资源角色](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，如`thumbnail`、`image`、`small_image`和`swatch_image`。 使用AEM Assets集成扩展1.4.6及更高版本时，也可以使用自定义图像角色（如`hero`或`custom_role_1`）。 |
 | `asset_format` | 字符串 | 资源格式。 可能的值为`image`和`video`。 |
 | `asset_position` | 数字 | 资产在产品库中的位置。 |
 

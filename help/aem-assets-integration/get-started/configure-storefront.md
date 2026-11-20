@@ -26,9 +26,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '664'
 ht-degree: 0%
 ---
 # 配置您的店面
@@ -53,6 +53,8 @@ Commerce下拉列表会自动检测`commerce-assets-enabled`配置并相应地�
 
 有关将AEM Assets与由Edge Delivery Services提供支持的Commerce店面结合使用的更多信息，请参阅&#x200B;*AEM Assets店面*&#x200B;文档中的[Adobe Commerce集成](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)主题。
 
+保存店面配置后，[验证集成](setup-synchronization.md#verify-the-integration)是否具有与产品关联的已批准资产。 确认店面显示预期的图像。 如果不能，在对店面图像投放进行故障诊断之前，请检查产品关联、可视化图表所有者和同步结果。 对于Adobe Commerce Optimizer，请遵循[优化程序验证工作流](configure-aco.md#match-by-sku-workflow-example)。
+
 >[!TIP]
 >
 >要允许作者浏览并将AEM Assets插入静态内容页面，请参阅[将AEM Assets连接到Da.live以进行静态内容创作](#connect-aem-assets-authoring)。
@@ -67,7 +69,7 @@ Commerce下拉列表会自动检测`commerce-assets-enabled`配置并相应地�
 
 >[!NOTE]
 >
->有关详细的设置说明，请参阅Da.live文档中的[设置AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和AEM Assets文档中的[在为AEM Assets创作内容时集成Edge Delivery Services](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}。
+>有关详细的设置说明，请参阅Da.live文档中的[设置AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和AEM Assets文档中的[在为AEM Assets创作内容时集成Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}。
 
 ### 步骤1：在Da.live中打开您的站点配置
 
@@ -116,6 +118,6 @@ Commerce下拉列表会自动检测`commerce-assets-enabled`配置并相应地�
 
 * *AEM Assets Storefront*&#x200B;文档中的[Adobe Commerce集成](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} — 店面配置和图像处理行为。
 
-* 在&#x200B;*AEM Assets*&#x200B;文档中为Edge Delivery Services[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}创作内容时，集成AEM Assets。
+* 在&#x200B;*AEM Assets*&#x200B;文档中为Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}创作内容时，[集成AEM Assets。
 
 * 在Da.live文档中[设置AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和[使用媒体](https://docs.da.live/authors/guides/adding-media){target=_blank}。

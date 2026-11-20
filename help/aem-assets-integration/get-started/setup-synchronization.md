@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1355'
 ht-degree: 1%
 ---
 # 配置集成
@@ -38,11 +38,11 @@ ht-degree: 1%
 
 识别AEM Assets项目后，选择用于在Adobe Commerce和AEM Assets之间同步资产的匹配规则。
 
-* **[!UICONTROL Match by product SKU]** — 将资源元数据中的SKU与[Commerce产品SKU](https://experienceleague.adobe.com/zh-hans/docs/commerce-operations/implementation-playbook/glossary#sku)匹配的默认规则，以确保资源与正确的产品关联。
+* **[!UICONTROL Match by product SKU]** — 将资源元数据中的SKU与[Commerce产品SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)匹配的默认规则，以确保资源与正确的产品关联。
 
-* **[!UICONTROL Custom match]** — 匹配规则，用于需要自定义匹配逻辑的更复杂方案或特定业务要求。 实施自定义匹配需要在Adobe Developer App Builder中开发自定义代码以定义资源与产品的匹配方式。 更多详细信息即将推出……
+* **[!UICONTROL Custom match]** — 匹配规则，用于需要自定义匹配逻辑的更复杂方案或特定业务要求。 实施自定义匹配需要在Adobe Developer App Builder中开发自定义代码以定义资源与产品的匹配方式。 请参阅[自定义自动匹配](../synchronize/custom-match.md)。
 
-对于初始设置，使用默认的&#x200B;*按产品SKU匹配*&#x200B;规则。
+对于初始设置，请使用默认&#x200B;**[!UICONTROL Match by product SKU]**&#x200B;规则。
 
 ## 要求
 
@@ -52,15 +52,13 @@ ht-degree: 1%
 
 * [!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"} [安装Adobe Commerce包](configure-commerce.md)以添加扩展并生成使用该扩展所需的凭据和连接。
 
-* [用户权限和IMS](permissions.md) — 配置资产选择器和自动填充的配置字段（程序ID、环境ID、域映射）所需的权限。
+* [用户权限和IMS](permissions.md) — 配置资产选择器、AEM环境选择和域映射所需的权限。
 
 ## 配置连接
 
-1. 从Commerce管理员中，打开AEM Assets集成配置。
+![AEM Assets集成配置具有示例环境和域值](../assets/aem-assets-view.png){width="900" zoomable="yes"}
 
-   1. 转到&#x200B;**[!UICONTROL Store]** >配置> **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
-
-      ![AEM Assets集成启用该集成](../assets/aem-assets-view.png){width="600" zoomable="yes"}
+1. 从Commerce管理员转到&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
 >[!INFO]
 >
@@ -68,17 +66,17 @@ ht-degree: 1%
 
 1. 仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}输入&#x200B;**[!UICONTROL Asset Selector IMS Client ID]**。
 
-   要启用资产选择器并自动填充“项目ID”和“环境ID”字段，需要使用此ID。 请参阅[用户权限和IMS](permissions.md)以获取此ID。 有关资产选择器的详细信息，请参阅[手动选择资产](../synchronize/asset-selector-integration.md)。
+   启用资产选择器需要此ID。 请参阅[用户权限和IMS](permissions.md)以获取此ID。 有关资产选择器的详细信息，请参阅[手动选择资产](../synchronize/asset-selector-integration.md)。
 
-1. 从下拉菜单中选择AEM Assets环境&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**。
+1. 从&#x200B;**[!UICONTROL AEM Environment]**&#x200B;中，选择在[配置AEM Assets项目](configure-aem.md)中配置的环境。
 
-   当您的Commerce管理员用户具有以下[用户权限](permissions.md#user-permissions-and-ims)体验时，即会显示选择器：**Adobe Commerce as a Cloud Service**、**Adobe Commerce Optimizer**&#x200B;和&#x200B;**Adobe Commerce on Cloud Infrastructure**&#x200B;集成可以从您的IMS链接会话中自动填充这些字段，而不是依赖粘贴的ID。
+   该列表包括您的用户具有“创作”或“交付”产品配置文件的AEM环境。 如果缺少所需的环境，请检查[用户权限和IMS](permissions.md)。
 
-   如果选择器不可用，请从AEM Cloud Manager复制&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**，或从创作URL派生它们： `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/`（将占位符替换为标识符）。
+   如果您的配置显示单独的&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**&#x200B;字段，请指定该环境的标识符。 对于手动输入，请从AEM Cloud Manager复制它们，或从创作URL派生它们： `https://author-p<ProgramID>-e<EnvironmentID>.adobeaemcloud.com/`。 仅输入数字标识符，不带`p`和`e`前缀。
 
-   您必须清除这两个字段的&#x200B;**[!UICONTROL Use system value]**，然后才能手动粘贴或选择新值。
+   对于具有&#x200B;**[!UICONTROL Use system value]**&#x200B;复选框的字段，请在覆盖默认值之前清除该复选框。
 
-   ![AEM Assets集成表单，带有项目ID和环境ID选择器](../assets/aem-assets-view.png){width="600" zoomable="yes"}
+1. 检查&#x200B;**[!UICONTROL AEM Domain Mapping]**。 可用域会根据选定的AEM环境自动加载。 如果您的项目使用自定义资产交付域，请按照[配置自定义域URL](#optional-configure-the-custom-domain-url)操作。
 
 1. [!BADGE 仅限PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}选择[[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment)以在Commerce和资源匹配服务之间验证请求。
 
@@ -88,10 +86,14 @@ ht-degree: 1%
 
 1. 从&#x200B;**[!UICONTROL Asset matching rule]**&#x200B;下拉列表中选择一个资源匹配规则以进行资源同步。
 
-   * 为[默认自动匹配](../synchronize/default-match.md)选择&#x200B;**[!UICONTROL Match by SKU]**，
-   * 为[自定义自动匹配](../synchronize/custom-match.md)选择&#x200B;**[!UICONTROL Custom match]**（需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。）
+   * [的Select **[!UICONTROL Match by product SKU]**&#x200B;默认自动匹配](../synchronize/default-match.md)。
+   * 用于[自定义自动匹配](../synchronize/custom-match.md)的Select **[!UICONTROL Custom match]**。 此选项需要[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。
 
-1. 将为AEM Assets产品SKU定义的[Commerce元数据字段名称](configure-aem.md#define-the-metadata-profile)添加到&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;字段`commerce:skus`中（默认情况下）。
+1. 对于&#x200B;**[!UICONTROL Match by product SKU]**，在&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;字段中输入[AEM Assets元数据属性名称](../metadata.md)。 默认值为`commerce:skus`。
+
+   输入属性名称，而不是产品SKU值。 将实际产品SKU添加到AEM Assets中每个资源的&#x200B;**[!UICONTROL Product Data]**&#x200B;元数据，如[默认自动匹配](../synchronize/default-match.md)中所述。
+
+1. 查看[可视化图表所有者](#configure-the-visualization-owner)设置。 在迁移过程中，保留&#x200B;**Adobe Commerce**&#x200B;所有权，直到资产同步完成。
 
 1. 选择&#x200B;**[!UICONTROL Save Config]**&#x200B;以应用更新并启动资产同步。
 
@@ -123,7 +125,7 @@ ht-degree: 1%
 
 有关字段名称、验证规则和Commerce结果，请参阅AEM Assets中的[Commerce元数据](../metadata.md)。
 
-### 配置可视化图表所有者
+## 配置可视化图表所有者
 
 **可视化所有者**&#x200B;设置确定在集成中提供产品图像的系统：
 
@@ -133,35 +135,63 @@ ht-degree: 1%
 
 管理员显示该所有者的可用图像，而其余图像则呈灰显状态，并带有&#x200B;**hidden**&#x200B;标签。
 
-有关图像显示行为的详细信息，请参阅[设置图像详细信息](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主题。
+有关图像显示行为的详细信息，请参阅[设置图像详细信息](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主题。
 
 >[!TIP]
 >
 > 从Commerce迁移到AEM Assets期间，请将&#x200B;**可视化所有者**&#x200B;设置为Commerce以避免图像链接损坏。 成功与AEM Assets同步所有产品后，切换到AEM Assets所有者以完成过渡。 这可以确保映像在整个过程中持续可用。
 
-1. 导航到&#x200B;**[!UICONTROL Store]** >配置> **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
+1. 导航到&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
-   ![AEM Assets集成可视化所有者功能](../assets/visualization-owner-detail.png){width="400" zoomable="yes"}
+   将![可视化所有者设置为AEM Assets](../assets/visualization-owner-detail.png){width="700" zoomable="yes"}
 
-1. 选择&#x200B;**可视化所有者**&#x200B;源以显示图像。
+1. Select **可视化所有者**&#x200B;源以显示图像。
 
-1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;以应用更新并启动资产同步。
+1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;以应用更新。
 
-### 可选。 配置自定义域URL
+   在切换到&#x200B;**AEM Assets**&#x200B;之前，[请验证资源是否与预期的产品](#verify-the-integration)相关联。 然后[配置您的店面](configure-storefront.md)以显示AEM Assets产品图像。
+
+## 可选。 配置自定义域URL
 
 如果已为AEM Assets as a Cloud Service项目配置了[自定义域名](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank}，则必须将该域名添加到Commerce存储配置，以便Commerce的AEM Assets集成可以使用该域名。
 
-1. 导航到&#x200B;**[!UICONTROL Store]** >配置> **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
+从AEM管理员处获取配置的资源投放自定义域URL。 此设置取代了AEM投放URL；它不是用于标识项目ID和环境ID的AEM创作URL。 如果您的项目不使用自定义域，则保持域映射不变。
 
-   ![AEM Assets集成启用该集成](../assets/aem-assets-view.png){width="700" zoomable="yes"}
+>[!NOTE]
+>
+>配置自定义域URL不会更新以前同步的资源的URL。 这些资源保留其以前的URL，直到在AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}中重新处理[为止。 保存自定义域配置后，重新处理这些资产以更新其URL以使用自定义域。
 
-1. 将&#x200B;**自定义域URL**&#x200B;添加到&#x200B;**[!UICONTROL Asset Custom Domain]**&#x200B;字段。
+1. 导航到&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
-1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;以应用更新并启动资产同步。
+1. 确认选定的&#x200B;**[!UICONTROL AEM Environment]**，然后从&#x200B;**[!UICONTROL AEM Domain Mapping]**&#x200B;中选择配置的自定义域。 将为所选环境自动加载可用域。
+
+![具有示例值的AEM环境和域选择器](../assets/aem-assets-environment-domain.png){width="700" zoomable="yes"}
+
+    对于显示**[!UICONTROL Asset Custom Domain]**文本字段的配置，请在该字段中输入自定义域URL。
+
+1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;以应用更新。
+
+## 验证集成
+
+>[!NOTE]
+>
+>同步状态不适用于Adobe Commerce Optimizer。 请按照[Commerce Optimizer验证工作流](configure-aco.md#match-by-sku-workflow-example)进行操作，而不是执行下面的Commerce管理员检查。
+
+1. 选择现有的Commerce产品并记下其SKU。
+
+1. 在AEM Assets中，将测试资产标记为&#x200B;**[!UICONTROL Eligible for Commerce]**，将其与该产品SKU相关联，并设置其角色和位置。 批准资产。 查看[默认自动匹配](../synchronize/default-match.md)，或使用您配置的[自定义匹配规则](../synchronize/custom-match.md)。
+
+1. 同步完成后，在Commerce管理员中打开该产品，并检查其&#x200B;**[!UICONTROL Images And Videos]**&#x200B;部分中的相关资源、角色和位置。 请参阅[管理资源](../manage-assets.md)。
+
+1. 查看[同步状态](sync-status.md)以了解资产的同步结果。 如果同步失败，请查看&#x200B;**[!UICONTROL Error]**&#x200B;列。
+
+1. 选择&#x200B;**AEM Assets**&#x200B;作为可视化图表所有者并完成[店面配置](configure-storefront.md)后，在店面中打开产品并确认显示预期的图像。
+
+仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}有关其他同步疑难解答，请查看[集成日志](logs.md)。
 
 ## 下一步
 
-* **配置您的Commerce店面** — 要将AEM Assets与由Edge Delivery Services提供支持的Commerce店面一起使用，请完成&#x200B;*Adobe Commerce店面文档*&#x200B;的[AEM Assets集成](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)主题中所述的店面配置。
+* [配置您的Commerce店面](configure-storefront.md)，以便使用Edge Delivery Services显示AEM Assets中的产品图像。
 
 * 在Adobe Commerce与AEM Assets集成之间设置[匹配规则](../synchronize/default-match.md)。
 
