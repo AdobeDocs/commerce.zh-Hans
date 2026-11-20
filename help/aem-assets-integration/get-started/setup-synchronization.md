@@ -159,7 +159,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->配置自定义域URL不会更新以前同步的资源的URL。 这些资源保留其以前的URL，直到在AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}中重新处理[为止。 保存自定义域配置后，重新处理这些资产以更新其URL以使用自定义域。
+>配置自定义域URL不会更新以前同步的资源的URL。 这些资源保留其以前的URL，直到在AEM Assets[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}中重新处理为止。 保存自定义域配置后，重新处理这些资产以更新其URL以使用自定义域。
 
 1. 导航到&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
@@ -167,7 +167,7 @@ ht-degree: 1%
 
 ![具有示例值的AEM环境和域选择器](../assets/aem-assets-environment-domain.png){width="700" zoomable="yes"}
 
-    对于显示**[!UICONTROL Asset Custom Domain]**文本字段的配置，请在该字段中输入自定义域URL。
+    对于显示&#x200B;**[!UICONTROL Asset Custom Domain]**&#x200B;文本字段的配置，请在该字段中输入自定义域URL。
 
 1. 单击&#x200B;**[!UICONTROL Save Config]**&#x200B;以应用更新。
 
