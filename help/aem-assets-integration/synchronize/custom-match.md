@@ -22,20 +22,24 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # 自定义自动匹配
 
 如果默认自动匹配策略（**OOTB自动匹配**）与您的特定业务要求不一致，请选择自定义匹配选项。 此选项支持使用[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hans/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)开发自定义匹配器应用程序，该应用程序可处理复杂的匹配逻辑，或者处理来自无法将元数据填充到AEM Assets中的第三方系统的资源。
 
+>[!NOTE]
+>
+>如果您的自定义匹配器或Adobe Developer App Builder集成需要AEM Assets API才能以编程方式管理资源或元数据，则需要AEM Assets Ultimate权利。 此要求取决于应用程序使用的API，而不是仅取决于App Builder的使用。 查看[产品可视化限制](../../optimizer/boundaries-limits.md#product-visuals-limits)。
+
 ## 配置自定义自动匹配
 
-1. 在Commerce管理员中，导航到&#x200B;**[!UICONTROL Store]** >配置> **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
+1. 在Commerce管理员中，导航到&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
-1. 选择&#x200B;**[!UICONTROL Custom Matcher]**&#x200B;作为匹配规则。
+1. 将Select **[!UICONTROL Custom Matcher]**&#x200B;作为匹配规则。
 
 1. 当您选择此匹配规则时，管理员会显示用于配置&#x200B;**端点**&#x200B;和自定义匹配逻辑所需&#x200B;**身份验证参数**&#x200B;的其他字段。
 
@@ -128,6 +132,10 @@ ht-degree: 0%
 1. 从每个流的下拉菜单中选择相应的运行时操作。
 
 1. 单击&#x200B;**[!UICONTROL Save Config]**。
+
+应用配置后，[验证集成](../get-started/setup-synchronization.md#verify-the-integration)是否包含批准的资源和您的自定义匹配器关联的产品。
+
+仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}如果同步失败，请查看[集成日志](../get-started/logs.md)。
 
 ## 异步配置保存
 

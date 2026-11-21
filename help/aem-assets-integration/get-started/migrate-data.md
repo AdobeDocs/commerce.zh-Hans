@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1055'
 ht-degree: 0%
 ---
 # 将媒体文件迁移到AEM Assets DAM
@@ -42,6 +42,10 @@ Adobe Commerce和Adobe Experience Manager (AEM)均提供内置功能，以简化
 | **云存储帐户** | <ul><li>AWS S3或Azure Blob Storage帐户</li><li>专用容器/存储段配置</li><li>身份验证凭据</li></ul> |
 | **Source内容** | <ul><li>准备好迁移的有组织的媒体文件</li><li>AEM Assets</a>支持的<a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">格式的图像和视频文件。</li><li>干净的重复资源</li></li> |
 | **元数据准备** | <ul><li>为AEM Assets资源配置的<a href="configure-aem.md">Commerce元数据配置文件</a></li><li>每个资源的映射元数据值</li><li>CSV文件编辑器（例如Microsoft Excel）</li></ul> |
+
+>[!IMPORTANT]
+>
+>受支持的批量上传和批量元数据操作本身不需要AEM Assets Ultimate。 需要AEM Assets API（包括基于API的元数据进出口）的编程迁移或元数据工作流需要AEM Assets Ultimate。 在选择迁移方法之前，请查看[产品可视化限制](../../optimizer/boundaries-limits.md#product-visuals-limits)。
 
 ## 迁移最佳实践
 
@@ -159,4 +163,4 @@ assetPath,commerce:positions{{Number: multi}},commerce:isCommerce{{String}},comm
 >
 > [批量导入工具视频演示](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
 > [提示、最佳实践和限制](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> [使用API上载或引入资源](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> [使用API上载或引入资源](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload) — 在实施API驱动的迁移之前，请查看[产品可视化限制](../../optimizer/boundaries-limits.md#product-visuals-limits)。

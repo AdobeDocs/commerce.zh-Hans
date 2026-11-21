@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 57a905703b11ef8fc4ca4527a5fc136dc81615cc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1708'
 ht-degree: 0%
 ---
 # 限制和边界
@@ -77,9 +77,11 @@ ht-degree: 0%
 
 ### [!DNL Product Visuals]限制
 
+产品可视化支持以Commerce为中心的资源管理用例，包括管理产品资源、Commerce元数据和资源交付。 受支持的批量上传和批量元数据操作本身不需要AEM Assets Ultimate。 需要AEM Assets API的程序化资源和元数据管理有单独的授权要求。
+
 | **功能** | **描述** | **基础分配** | **可扩展？** |
 | --- | --- | --- | --- |
-| 产品视觉效果高级用户 | 具有完整数字资产管理功能（包括AI工具、[!DNL Adobe Express]/[!DNL Firefly]集成和Content Hub共享）的许可用户，可处理核心DAM任务和高级云原生功能以实现最佳效率。 | 2 | 是<p>升级到[!DNL AEM Assets]许可证</p> |
+| 产品视觉效果高级用户 | 具有产品可视化图表中包含的资产管理功能的许可用户，包括AI工具、[!DNL Adobe Express]/[!DNL Firefly]集成和Content Hub共享。 | 2 | 是<p>升级到[!DNL AEM Assets]许可证</p> |
 | 产品可视化协作者用户 | 通过AEM Commerce集成访问和使用资源，使用[!DNL Adobe Express]和[!DNL Firefly]创建和编辑内容，以及（如果启用）通过Content Hub门户利用批准的资源。 | 2 | 是<p>升级到[!DNL AEM Assets]许可证</p> |
 | 产品可视化存储 | 为资产分配的存储空间 | 1 TB存储 | 是<p>升级到[!DNL AEM Assets]许可证</p> |
 | 动态媒体使用情况 | 拨备动态媒体处理业务，包括：<ul><li>图像投放</li><li>智能成像</li><li>视频交付</li></ul><p>有关详细信息，请参阅下面的&#x200B;*计算Dynamic Media使用情况*。 | 基于商品总值<p>最小分配：每月500万次操作</p> | 是<ul><li>购买许可证以进行其他操作</li><li>升级到[!DNL AEM Assets]许可证</li></ul> |
@@ -108,7 +110,25 @@ Dynamic Media的使用情况跟踪进入[!DNL Adobe Commerce Optimizer]内的“
 
 >[!NOTE]
 >
->上述限制涵盖容量和使用分配。 有关产品可视化功能概述和功能约束，请参阅[AEM Assets的产品可视化图表](setup/product-visuals.md)。
+>本节介绍容量、使用分配和权利边界。 有关产品可视化功能概述，请参阅[AEM Assets的产品可视化图表](setup/product-visuals.md)。
+
+#### 何时需要AEM Assets Ultimate？
+
+>[!IMPORTANT]
+>
+>产品可视化不包括对AEM Assets创作API的访问。 如果集成或自定义应用程序需要拥有创作API权限才能以编程方式管理资源或元数据，请购买AEM Assets Ultimate附加组件SKU。 产品可视化图表中未包含Ultimate 。 请联系您的Adobe客户代表以获取许可和进行配置。
+
+以下各项需要AEM Assets Ultimate：
+
+- AEM Assets创作API访问。
+- 基于API的元数据集成，包括元数据进出口。
+- 自定义集成和自动化需要AEM Assets API才能以编程方式管理资源或元数据。
+- 依赖这些AEM Assets API的Adobe Developer App Builder集成。
+- AEM Assets暂存环境和开发环境。
+
+这些要求不排除产品可视化图表中包含的Dynamic Media （具有OpenAPI功能）用于资产交付。 仅使用App Builder不需要AEM Assets Ultimate；该要求取决于应用程序使用的AEM Assets API。
+
+有关产品可视化以外的更广泛的企业DAM、API、可扩展性和内容供应链要求，请参阅[AEM Assets Ultimate](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)。
 
 ### 目录视图和策略
 

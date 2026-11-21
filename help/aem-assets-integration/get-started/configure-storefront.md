@@ -26,9 +26,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '664'
 ht-degree: 0%
 ---
 # 配置您的店面
@@ -52,6 +52,8 @@ AEM Assets集成显示AEM Assets而不是Adobe Commerce中的产品图像，从�
 Commerce下拉列表会自动检测`commerce-assets-enabled`配置并相应地调整图像处理。
 
 有关将AEM Assets与由Edge Delivery Services提供支持的Commerce店面结合使用的更多信息，请参阅&#x200B;*AEM Assets店面*&#x200B;文档中的[Adobe Commerce集成](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)主题。
+
+保存店面配置后，[验证集成](setup-synchronization.md#verify-the-integration)是否具有与产品关联的已批准资产。 确认店面显示预期的图像。 如果不能，在对店面图像投放进行故障诊断之前，请检查产品关联、可视化图表所有者和同步结果。 对于Adobe Commerce Optimizer，请遵循[优化程序验证工作流](configure-aco.md#match-by-sku-workflow-example)。
 
 >[!TIP]
 >

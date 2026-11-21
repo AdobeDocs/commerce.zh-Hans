@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1188'
 ht-degree: 1%
 ---
 # 适用于Commerce的AEM Assets集成
@@ -65,6 +65,8 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 * **扩展更新通知** — 使用AEM Assets Integration扩展版本1.4.6或更高版本，Commerce将检查新的扩展版本，并通知管理员中的管理员。 请参阅[检查扩展更新](get-started/check-for-updates.md)。
 
 替换文本本地化不会更改产品图像分配或库映射。 存储视图资源可用性是一个单独的功能，替代文本工作流不包含该功能。
+
+由AEM Assets提供支持的产品可视化图表支持Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer中以Commerce为中心的资源管理用例。 有关所支持的功能、容量限制以及需要AEM Assets Ultimate的功能，请参阅[产品可视化限制](../optimizer/boundaries-limits.md#product-visuals-limits)。
 
 ## 使用该集成的要求
 
@@ -142,7 +144,7 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 1. 要支持Commerce元数据，请[配置AEM Assets项目](get-started/configure-aem.md)。 在AEM版本`2026.5.26309`及更高版本上，使用[自助入门培训](get-started/configure-aem.md#enable-aem-commerce-self-service)；在早期版本上，手动安装`assets-commerce`包。
 
-1. [配置IMS用户权限](get-started/permissions.md)，以便资产选择器和自动填充的&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**&#x200B;字段可用。
+1. [为Asset Selector和AEM环境和域选择配置IMS用户权限](get-started/permissions.md)。
 
 1. [在Commerce管理员中配置集成](get-started/setup-synchronization.md)。
 
@@ -156,13 +158,17 @@ AEM Assets集成通过自动化资产管理工作流解决了此难题。 该集
 
 1. [安装Adobe Commerce包](get-started/configure-commerce.md)以添加扩展并生成所需的凭据和连接。
 
-1. [配置IMS用户权限](get-started/permissions.md)，以便资产选择器和自动填充的&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**&#x200B;字段可用。
+1. [为Asset Selector和AEM环境和域选择配置IMS用户权限](get-started/permissions.md)。
 
 1. [在Commerce管理员中配置集成](get-started/setup-synchronization.md)。
 
 1. 可选。 [启用product-image display](get-started/configure-storefront.md#enable-product-images)，以便由Edge Delivery Services提供支持的店面会呈现AEM管理的产品图像。
 
 >[!ENDTABS]
+
+完成设置后，[通过产品关联和同步将集成](get-started/setup-synchronization.md#verify-the-integration)从符合条件的已批准资产验证到店面显示。 对于Adobe Commerce Optimizer，请遵循[优化程序验证工作流](get-started/configure-aco.md#match-by-sku-workflow-example)；同步状态不可用。
+
+有关类别图像分配和验证，请参阅[管理类别图像](manage-assets.md#category-images)。
 
 ## 支持
 

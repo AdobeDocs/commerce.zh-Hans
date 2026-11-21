@@ -22,9 +22,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 0%
 ---
 # 默认自动匹配
@@ -33,13 +33,13 @@ Commerce的AEM Assets集成提供了基于&#x200B;**AEM Assets**&#x200B;元数�
 
 ## 配置自动匹配机制
 
-1. 在Commerce管理员中，导航到&#x200B;**[!UICONTROL Store]** >配置> **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
+1. 在Commerce管理员中，导航到&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
-1. 将&#x200B;**[!UICONTROL Match by SKU]**&#x200B;指定为匹配规则。
+1. 将&#x200B;**[!UICONTROL Match by product SKU]**&#x200B;指定为匹配规则。
 
-   ![默认自动匹配规则](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
+   ![按产品SKU规则和元数据属性名称匹配](../assets/ootb-matching-rule.png){width="700" zoomable="yes"}
 
-1. 输入用于在AEM Assets中标识资源的元数据字段名称。
+1. 在&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;中，输入在AEM Assets中存储产品SKU的[元数据属性名称](../metadata.md)，而不是实际的SKU值。
 
    >[!NOTE]
    >
@@ -69,4 +69,6 @@ Commerce的AEM Assets集成提供了基于&#x200B;**AEM Assets**&#x200B;元数�
 
    ![示例元数据](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
-此方法可确保正确地链接数字资源并在Adobe Commerce中显示这些资源。 此外，它还可让商家和营销人员直接在AEM Assets中管理角色和资产定位，从而在所有参与渠道中提供一致的集中式图像选择和排序机制。
+批准资产后，[验证产品关联、同步结果和店面显示](../get-started/setup-synchronization.md#verify-the-integration)。 如果资产未显示，请查看[同步状态](../get-started/sync-status.md)。 对于Adobe Commerce Optimizer，请改用[优化程序验证工作流](../get-started/configure-aco.md#match-by-sku-workflow-example)；同步状态不可用。
+
+仅[!BADGE PaaS]{type=Informative tooltip="仅适用于云项目上的Adobe Commerce（Adobe管理的PaaS基础架构）。"}有关其他同步疑难解答，请查看[集成日志](../get-started/logs.md)。

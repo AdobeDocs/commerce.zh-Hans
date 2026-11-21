@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 213fcf83118eb60b0e80db224192963592945d8d
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1641'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce as a Cloud Service] 概述
@@ -141,31 +141,36 @@ Merchandising Services支持[!DNL Adobe Commerce as a Cloud Service]中的两个
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
-产品可视化图表使用数字资源管理(DAM)系统来帮助简化资源管理，该系统与Adobe Experience Manager集成以管理富媒体内容。
+产品可视化支持以Commerce为中心的数字资源管理(DAM)，包括管理产品资源、Commerce元数据和由Adobe Experience Manager Assets提供支持的资源交付。
 
 该集成可确保数字资产（如产品图像或营销内容）根据SKU或其他关键属性动态链接到相应的促销实体，包括Adobe Commerce中的产品和类别。
 
-[!DNL Product Visuals]与[!DNL Adobe Commerce as a Cloud Service]一起以本机方式可用，提供了[!DNL AEM Assets]中的部分功能。
+[!DNL Product Visuals]包含在[!DNL Adobe Commerce as a Cloud Service]中。 它将[AEM Assets Prime](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-prime)（轻量级DAM）与具有OpenAPI功能的Dynamic Media捆绑在一起，以便进行资源交付。
 
 或者，[!DNL Adobe Commerce as a Cloud Service]中的本机功能提供了用于存储和管理数字资产的基本资产管理工具。
 
 查看[AEM Assets集成](../aem-assets-integration/overview.md)指南，详细了解如何将[!DNL Product Visuals powered by AEM Assets]与[!DNL Adobe Commerce as a Cloud Service]集成。
 
-### [!DNL Product Visuals]或[!DNL AEM Assets]
+### [!DNL Product Visuals]或[!DNL AEM Assets Ultimate]
 
-以下比较可帮助您选择supply chain所需内容的最佳选项：
+以下比较可帮助您选择supply chain内容需要的最佳选项。 产品可视化图表支持以Commerce为中心的资源管理。 [AEM Assets Ultimate](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)支持更广泛的企业DAM和复杂的内容供应链，包括UI可扩展性、API驱动的自动化和自定义代码部署。
+
+>[!IMPORTANT]
+>
+>AEM Assets Ultimate未包含在产品可视化图表中。 要使用Ultimate，请购买AEM Assets Ultimate附加组件SKU。 请联系您的Adobe客户代表以讨论许可和配置。
 
 <table>
   <tr>
     <td align="left">
       <strong>[!DNL Product Visuals powered by AEM Assets]</strong>
       <ul>
+        <li>随Adobe Commerce as a Cloud Service提供</li>
         <li>集成的自动化产品图像和视频Digital Asset Manager (DAM)</li>
         <li>调整图像大小、裁切和转换图像</li>
         <li>高速图像和视频传送</li>
         <li>根据客户端浏览器功能优化图像格式、大小和质量</li>
         <li>访问Adobe Express和Adobe Firefly</li>
-        <li>图像/视频投放容量和用户访问的使用限制</li>
+        <li>资产存储、图像/视频投放容量和用户访问的使用限制</li>
         <li>集成的资产选择器</li>
       </ul>
     </td>
@@ -174,13 +179,18 @@ Merchandising Services支持[!DNL Adobe Commerce as a Cloud Service]中的两个
       <img src="../assets/icon-double-chevron-right.svg" alt="V形" width="100">
     </td>
     <td align="left">
-      <strong>AEM Assets</strong>
+      <strong>[!DNL AEM Assets Ultimate]</strong>
       <ul>
+        <li>需要AEM Assets Ultimate附加组件SKU</li>
         <li>产品可视化图表的所有功能</li>
         <li>Full marketing Digital Asset Manager (DAM)</li>
-        <li>无限制用户（按用户付费）</li>
-        <li>无限制的图像和视频交付</li>
-        <li>高级资产管理功能：</li>
+        <li>基于已购许可证的用户访问权限</li>
+        <li>基于许可的Dynamic Media容量的图像和视频交付</li>
+        <li>AEM Assets创作API访问和集成，使用AEM Assets API以编程方式管理资源或元数据</li>
+        <li>基于API的元数据集成，包括元数据进出口</li>
+        <li>UI可扩展性、API驱动的自动化和自定义代码部署</li>
+        <li>AEM Assets暂存和开发环境</li>
+        <li>高级资产管理功能，以及Dynamic Media功能均受适用的附加组件许可证的约束：</li>
         <ul>
           <li>360°旋转集和交互式查看器</li>
           <li>3D模型支持和沉浸式内容</li>
@@ -199,6 +209,10 @@ Merchandising Services支持[!DNL Adobe Commerce as a Cloud Service]中的两个
     </td>
   </tr>
 </table>
+
+>[!NOTE]
+>
+>受支持的批量上传和批量元数据操作本身不需要AEM Assets Ultimate。 仅使用App Builder不需要Ultimate；该要求取决于应用程序使用的AEM Assets API。 产品可视化包括具有OpenAPI功能的Dynamic Media，可用于资产交付。 有关功能权利、容量和使用情况分配，请参阅[产品可视化限制](../optimizer/boundaries-limits.md#product-visuals-limits)。
 
 ## 开发人员平台
 

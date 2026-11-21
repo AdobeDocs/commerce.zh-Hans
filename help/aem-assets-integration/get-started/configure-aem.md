@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1900'
 ht-degree: 1%
 ---
 # 配置AEM Assets项目
@@ -65,6 +65,10 @@ ht-degree: 1%
 
   您的Commerce实例和AEM Assets创作环境必须位于同一个IMS组织中。
 
+>[!NOTE]
+>
+>AEM Assets暂存环境和开发环境需要AEM Assets Ultimate。 在规划这些环境之前，请查看[产品可视化限制](../../optimizer/boundaries-limits.md#product-visuals-limits)。 此要求适用于AEM Assets环境，而不适用于Commerce沙盒环境。
+
 ### 步骤1：创建项目和环境
 
 在Cloud Manager中创建项目是一个多步骤的过程 — 项目及其环境可通过多个步骤配置并一起保存。
@@ -77,7 +81,7 @@ ht-degree: 1%
 
    ![已选择Dynamic Media的Cloud Manager解决方案和加载项步骤](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
 
-1. 在&#x200B;**[!UICONTROL Add Environment]**&#x200B;步骤中，输入&#x200B;**生产**&#x200B;和&#x200B;**暂存**&#x200B;环境的名称，然后选择区域。
+1. 在&#x200B;**[!UICONTROL Add Environment]**&#x200B;步骤中，输入&#x200B;**生产**&#x200B;环境名称，然后选择区域。 如果您的权利包括暂存环境，请同时输入&#x200B;**暂存**&#x200B;环境名称。
 
    >[!IMPORTANT]
    >
@@ -152,7 +156,7 @@ ht-degree: 1%
 
 1. 导航到您的Cloud Manager。
 
-1. 选择所需的环境。
+1. Select所需的环境。
 
 1. 启用具有OpenAPI功能的&#x200B;**Dynamic Media**。
 
@@ -225,7 +229,7 @@ ht-degree: 1%
 
 1. 将&#x200B;**Product**&#x200B;组件拖放到&#x200B;**Commerce**&#x200B;选项卡中，并将其映射到属性`commerce:skus`。
 
-1. 选中&#x200B;**显示角色**&#x200B;和&#x200B;**显示顺序**&#x200B;的复选框。
+1. Select **显示角色**&#x200B;和&#x200B;**显示顺序**&#x200B;的复选框。
 
 1. 将&#x200B;**checkbox**&#x200B;组件拖放到&#x200B;**Commerce**&#x200B;选项卡中，并将其映射到属性`commerce:isCommerce`。 将&#x200B;**是**&#x200B;和&#x200B;**否**&#x200B;定义为选项。
 

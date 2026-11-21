@@ -15,9 +15,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '966'
 ht-degree: 0%
 ---
 # 用户权限和IMS
@@ -27,14 +27,18 @@ ht-degree: 0%
 * 对于Adobe Commerce as a Cloud Service，管理员默认启用IMS身份验证。
 * 对于云端或内部部署的Adobe Commerce，IMS是可选的。
 
-  [为Commerce启用IMS](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank}提供了增强的配置UI（资产选择器、自动填充的下拉列表），但您可以通过手动输入&#x200B;**项目ID**&#x200B;和&#x200B;**环境ID**&#x200B;来配置不使用IMS的集成。
+  [为Commerce启用IMS](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank}通过资产选择器以及环境和域下拉列表提供增强的配置UI。 如果您的配置显示单独的&#x200B;**项目ID**&#x200B;和&#x200B;**环境ID**&#x200B;字段，则可以手动输入这些标识符而不使用IMS。
 
 使用IMS时，AEM Assets集成还需要特定的&#x200B;**Adobe Admin Console产品配置文件**。 在Commerce管理员中配置集成的用户需要&#x200B;**AEM Assets DM OpenAPI Users - delivery**&#x200B;产品配置文件，或作为回退的&#x200B;**author**&#x200B;产品配置文件。 此访问可通过用户IMS组织中的Admin Console产品配置文件进行控制，并启用：
 
 * **资产选择器**&#x200B;允许您在管理类别图像或页面生成器内容时从AEM Assets中选择图像。
-* **自动填充配置字段**，如&#x200B;**项目ID**、**环境ID**&#x200B;和&#x200B;**域映射**&#x200B;下拉列表，这些下拉列表从用户的IMS会话中提取值。
+* **自动填充了从用户的IMS会话中提取值的配置字段**，包括&#x200B;**AEM环境**&#x200B;和&#x200B;**AEM域映射**&#x200B;下拉列表。 请参阅[为环境选择和手动ID输入配置集成](setup-synchronization.md)。
 
 如果没有正确的权限，资产选择器将不可用，并且这些字段显示空白或需要手动输入。
+
+>[!IMPORTANT]
+>
+> Adobe Admin Console产品配置文件控制用户对集成功能的访问；它们不会更改许可授权。 分配作者产品配置文件不会向产品可视化客户授予AEM Assets创作API访问权限。 有关权利要求，请参阅[产品可视化限制](../../optimizer/boundaries-limits.md#product-visuals-limits)。
 
 >[!BEGINSHADEBOX]
 
@@ -52,12 +56,12 @@ Adobe IMS提供用户标识和组织上下文，而Adobe Admin Console定义他�
 
 * **作者产品配置文件**。 需要才能访问AEM Assets UI。 当用户的Admin Console中没有AEM交付产品配置文件时，还可以用作资产选择器和配置UI的回退。
 
-域（包括项目ID、环境ID和域映射）已分配给AEM交付产品配置文件。 该集成会从&#x200B;**AEM交付产品配置文件**&#x200B;中加载域（如果可用），或回退到&#x200B;**作者产品配置文件**（如果AEM交付产品配置文件不在用户的Admin Console中）。 用户需要以下配置文件之一：
+该集成会从&#x200B;**AEM交付产品配置文件**&#x200B;中加载环境和域映射（如果可用），或回退到&#x200B;**作者产品配置文件**（如果AEM交付产品配置文件不在用户的Admin Console中）。 用户需要以下配置文件之一：
 
-* 在Commerce管理配置中填充&#x200B;**项目ID**、**环境ID**&#x200B;和&#x200B;**域映射**&#x200B;下拉列表。
+* 填充Commerce管理配置中的&#x200B;**AEM环境**&#x200B;和&#x200B;**AEM域映射**&#x200B;下拉列表。
 * 使用资源选择器从AEM Assets中浏览并选择资源。
 
-如果两个配置文件均未配置，则用户可以手动输入&#x200B;**项目ID**&#x200B;和&#x200B;**环境ID**，但资产选择器不可用。
+如果两个配置文件均未配置，则资产选择器不可用。 如果您的配置显示单独的&#x200B;**项目ID**&#x200B;和&#x200B;**环境ID**&#x200B;字段，则可以手动输入标识符。
 
 ## 按部署类型授予权限
 
@@ -83,7 +87,7 @@ Adobe IMS提供用户标识和组织上下文，而Adobe Admin Console定义他�
 
 Paa需要&#x200B;**IMS客户端ID**&#x200B;才能启用资产选择器。 请参阅[配置AEM Assets项目](configure-aem.md#prerequisites)以了解先决条件，包括使用OpenAPI启用Dynamic Media时如何获取IMS客户端ID。
 
-要使用资产选择器和自动填充的配置字段（项目ID、环境ID、域映射），请执行以下操作：
+要使用资产选择器以及&#x200B;**AEM环境**&#x200B;和&#x200B;**AEM域映射**&#x200B;下拉列表，请执行以下操作：
 
 1. [为Commerce启用Adobe IMS](https://experienceleague.adobe.com/zh-hans/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank}，以便Commerce管理员使用IMS身份验证并可以读取用户的Admin Console产品配置文件。
 
@@ -91,7 +95,7 @@ Paa需要&#x200B;**IMS客户端ID**&#x200B;才能启用资产选择器。 请参
 
 1. 从[Adobe Admin Console](https://adminconsole.adobe.com/)，将用户添加到&#x200B;**AEM Assets DM OpenAPI Users - delivery**&#x200B;产品配置文件，或添加到&#x200B;**author**&#x200B;产品配置文件作为后备。
 
-如果没有IMS，您仍然可以通过在Commerce管理员中手动输入项目ID和环境ID来配置集成。
+对于显示单独的程序ID和环境ID字段的配置，无需使用IMS即可手动输入。 请参阅[配置集成](setup-synchronization.md)。
 
 >[!ENDTABS]
 
